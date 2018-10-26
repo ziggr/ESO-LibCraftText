@@ -1,0 +1,37 @@
+Are you an add-on developer who compares quest names against a list of strings to figure out which quest is a daily crafting writ? Master writ?
+
+This is a tiny library of localized strings for crafting quest recognition.
+
+GitHub repo at https://github.com/ziggr/ESO-LibCraftText
+
+[highlight="Lua"]
+LibCraftText.DAILY_QUEST_TITLES = {
+    [bs] = "Blacksmith Writ"
+,   [cl] = "Clothier Writ"
+,   [en] = "Enchanter Writ"
+,   [al] = "Alchemist Writ"
+,   [pr] = "Provisioner Writ"
+,   [ww] = "Woodworker Writ"
+,   [jw] = "Jewelry Crafting Writ"
+}
+...
+LibCraftText.ROLIS_QUEST_TURN_IN = {
+
+    ["accept"]         = "<Accept the contract."
+,   ["finish"]         = "<Finish the job.>"
+,   ["deliver_substr"] = "Deliver"
+
+,   [bs] = "I've finished the Blacksmithing job."
+,   [cl] = "I've finished the Clothier job."
+,   [en] = "I've finished the Enchanting job."
+,   [al] = "I've finished the Alchemy job."
+,   [pr] = "I've finished the Provisioning job."
+,   [ww] = "I've finished the Woodworking job."
+,   [jw] = "I've finished the Jewelry job."
+}
+
+... and a few more
+[/highlight]
+
+EN/English strings supplied.
+DE/German and FR/French placeholder files supplied, but full of EN/English strings for now.

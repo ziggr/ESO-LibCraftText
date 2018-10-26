@@ -1,0 +1,4 @@
+[B]4.2.1 2018-10-26[/B]
+[LIST]
+[*] Initial release, en-english strings
+[/LIST]
