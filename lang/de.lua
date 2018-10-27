@@ -9,13 +9,13 @@ local ww = CRAFTING_TYPE_WOODWORKING     -- 6
 local jw = CRAFTING_TYPE_JEWELRYCRAFTING -- 7
 
 LibCraftText.DAILY_QUEST_TITLES = {
-    [bs] = "Blacksmith Writ"
-,   [cl] = "Clothier Writ"
-,   [en] = "Enchanter Writ"
-,   [al] = "Alchemist Writ"
-,   [pr] = "Provisioner Writ"
-,   [ww] = "Woodworker Writ"
-,   [jw] = "Jewelry Crafting Writ"
+    [bs] = "Schmiedeschrieb"            -- "Blacksmith Writ"
+,   [cl] = "Schneiderschrieb"           -- "Clothier Writ"
+,   [en] = "Verzaubererschrieb"         -- "Enchanter Writ"
+,   [al] = "Alchemistenschrieb"         -- "Alchemist Writ"
+,   [pr] = "Versorgerschrieb"           -- "Provisioner Writ"
+,   [ww] = "Schreinerschrieb"           -- "Woodworker Writ"
+,   [jw] = "Schmuckhandwerksschrieb"    -- "Jewelry Crafting Writ"
 }
 
                         -- SURPRISE! "A Masterful Weapon" is used
@@ -27,13 +27,16 @@ LibCraftText.DAILY_QUEST_TITLES = {
                         -- light vs. medium armor)
                         --
 LibCraftText.MASTER_QUEST_TITLES = {
-    [bs] = {"A Masterful Plate"     , "A Masterful Weapon"    }
-,   [cl] = {"Masterful Tailoring"   , "Masterful Leatherwear" }
-,   [en] = {"A Masterful Glyph"     }
-,   [al] = {"A Masterful Concoction"}
-,   [pr] = {"A Masterful Feast"     }
-,   [ww] = {"A Masterful Shield"    , "A Masterful Weapon"    }
-,   [jw] = {"Masterful Jewelry"     }
+    [bs] = { "Eine meisterhafte Rüstung"         -- "A Masterful Plate"
+           , "Eine meisterhafte Waffe"       }   -- "A Masterful Weapon"        }
+,   [cl] = { "Ein meisterhaftes Gewand"          -- "Masterful Tailoring"
+           , "Meisterhafte Lederwaren"           -- "Masterful Leatherwear"     }
+,   [en] = { "Eine meisterhafte Glyphe"      }   -- "A Masterful Glyph"         }
+,   [al] = { "Ein meisterhaftes Gebräu"      }   -- "A Masterful Concoction"    }
+,   [pr] = { "Ein meisterhaftes Mahl"        }   -- "A Masterful Feast"         }
+,   [ww] = { "Ein meisterhafter Schild"          -- "A Masterful Shield"
+           , "Eine meisterhafte Waffe"       }   -- "A Masterful Weapon"        }
+,   [jw] = { "Ein meisterhaftes Schmuckstück"}   -- "Masterful Jewelry"         }
 }
 
 LibCraftText.ROLIS_QUEST_TURN_IN = {

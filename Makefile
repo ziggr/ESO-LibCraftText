@@ -4,7 +4,10 @@ put:
 	rsync -vrt --delete --exclude=.git . /Volumes/Elder\ Scrolls\ Online/live/AddOns/LibCraftText
 
 get:
-	cp -f /Volumes/Elder\ Scrolls\ Online/live/SavedVariables/ZZDailyWrits.lua data/
+	cp -f /Volumes/Elder\ Scrolls\ Online/live/SavedVariables/LibCraftText.lua data/
+
+getpts:
+	cp -f /Volumes/Elder\ Scrolls\ Online/pts/SavedVariables/LibCraftText.lua data/
 
 
 zip:

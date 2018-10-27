@@ -6,5 +6,25 @@
 
 LibCraftText.lua
 
+                        # Separate each language to its own Lua file,
+                        # preferably in a directory.
+                        # Then add the following to your addon manifest to load
+                        # the strings.
+                        # Note: it's important to have a default in light of
+                        # the Spanish and Russian fan translation projects.
+                        # https://wiki.esoui.com/How_to_add_localization_support
+lang/en.lua
 lang/$(language).lua
 
+
+
+
+
+# Discover: Learn craft text by scanning quest journal and listening for
+#           quest state changes.
+#
+# Normally leave these two lines commented out: LibCraftText does not
+# require saved variables, nor to most users ever want to run "/lsc scan"
+#
+## SavedVariables: LibCraftTextVars
+LibCraftText_Discover.lua

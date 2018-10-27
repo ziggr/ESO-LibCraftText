@@ -1,5 +1,12 @@
 LibCraftText = {}
 
+-- AVOID FEATURE CREEP: Add no code here
+--
+-- You can't have bugs or API maintenance work in code if you don't have code.
+-- So don't have code.
+--
+-- Put craft quest utility code in a different library.
+
 -- Daily Crafting Writ Quests ------------------------------------------------
 
 -- Return CRAFTING_TYPE_BLACKSMITHING for "Blacksmithing Writ" and so on.

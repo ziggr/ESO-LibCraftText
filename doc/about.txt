@@ -33,5 +33,18 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 ... and a few more
 [/highlight]
 
-EN/English strings supplied.
-DE/German and FR/French placeholder files supplied, but full of EN/English strings for now.
+
+[B]Languages Supported[/B]
+[list]
+[*] EN English - done
+[*] FR French - daily, master done. Rolis todo (placeholder file)
+[*] DE German - daily, master done. Rolis todo (placehodler file)
+[*] RU Russian - todo
+[*] ES Spanish - todo
+[*] IT Italian - todo
+[*] JP Japanese - todo
+[/LIST]
+
+[I]Daily crafting:[/I] I'll fetch them for all languages soon.
+
+[I]Master writs/Rolis:[/I] I'm waiting until ZOS fixes the October 2018 "cannot interact with any crafting stations in player housing" bug that is really making life difficult for guild hall users on both PTS and Live servers.

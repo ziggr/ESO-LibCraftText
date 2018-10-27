@@ -2,9 +2,9 @@
 -- For less typing
 local bs = CRAFTING_TYPE_BLACKSMITHING   -- 1
 local cl = CRAFTING_TYPE_CLOTHIER        -- 2
-local en = CRAFTING_TYPE_ENCHANTING     --  3
-local al = CRAFTING_TYPE_ALCHEMY        --  4
-local pr = CRAFTING_TYPE_PROVISIONING   --  5
+local en = CRAFTING_TYPE_ENCHANTING      -- 3
+local al = CRAFTING_TYPE_ALCHEMY         -- 4
+local pr = CRAFTING_TYPE_PROVISIONING    -- 5
 local ww = CRAFTING_TYPE_WOODWORKING     -- 6
 local jw = CRAFTING_TYPE_JEWELRYCRAFTING -- 7
 
@@ -27,13 +27,16 @@ LibCraftText.DAILY_QUEST_TITLES = {
                         -- light vs. medium armor)
                         --
 LibCraftText.MASTER_QUEST_TITLES = {
-    [bs] = {"A Masterful Plate"     , "A Masterful Weapon"    }
-,   [cl] = {"Masterful Tailoring"   , "Masterful Leatherwear" }
-,   [en] = {"A Masterful Glyph"     }
-,   [al] = {"A Masterful Concoction"}
-,   [pr] = {"A Masterful Feast"     }
-,   [ww] = {"A Masterful Shield"    , "A Masterful Weapon"    }
-,   [jw] = {"Masterful Jewelry"     }
+    [bs] = {"A Masterful Plate"
+           , "A Masterful Weapon"       }
+,   [cl] = {"Masterful Tailoring"
+           , "Masterful Leatherwear"    }
+,   [en] = {"A Masterful Glyph"         }
+,   [al] = {"A Masterful Concoction"    }
+,   [pr] = {"A Masterful Feast"         }
+,   [ww] = {"A Masterful Shield"
+           , "A Masterful Weapon"       }
+,   [jw] = {"Masterful Jewelry"         }
 }
 
 LibCraftText.ROLIS_QUEST_TURN_IN = {
