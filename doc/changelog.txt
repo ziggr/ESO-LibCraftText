@@ -1,3 +1,12 @@
+[B]4.2.2 2018-10-27[/B]
+[LIST]
+[*] DE German and FR French strings added for daily and master writ
+    quest names.
+[*] Lots of behind-the-scenes automation to help collect translations from
+    ESO client and use them to generate translation files. See GitHub repo
+    for details.
+[/LIST]
+
 [B]4.2.1 2018-10-26[/B]
 [LIST]
 [*] Initial release, en-english strings
