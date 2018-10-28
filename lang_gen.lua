@@ -168,6 +168,7 @@ end
 
 local function escape_quote(t)
     local tt = t
+    tt = string.gsub(tt,'\\','\\\\')
     tt = string.gsub(tt,'"','\\"')
     tt = string.gsub(tt,'\n','\\n')
     return tt
@@ -197,6 +198,10 @@ function WriteLangs()
     end
 end
 
+local function escape_re(t)
+    return t:gsub("%%","%%%%")
+end
+
 -- Replace all $XXX with their
 function ReplaceKeys(template_line, lang)
     local pos_delim = template_line:find("%$")
@@ -218,7 +223,7 @@ function ReplaceKeys(template_line, lang)
     for k, entry_hash in pairs(DB) do
                         -- fallback to en if no translation yet
         local val = entry_hash[lang] or entry_hash.en
-        val = escape_quote(val)
+        val = escape_re(val)    -- Some lang strings are REs with % escapes. Retain them.
         local key = k
         local key_padded = string.format("%-"..tostring(repl_len).."s", key)
         local val_padded = string.format("%-"..tostring(repl_len).."s", '"'..val..'"')

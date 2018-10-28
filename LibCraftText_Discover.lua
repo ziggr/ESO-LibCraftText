@@ -65,6 +65,7 @@ function LibCraftText.SlashCommand(args)
     if (not args) or args:lower() == "scan" then
         Info("Scanning...")
         LibCraftText.ScanQuestJournal()
+        LibCraftText.DiscoverMasterValues()
     elseif args:lower() == "forget" then
         LibCraftText.Forget()
         Info("Forgotten.")
@@ -77,9 +78,12 @@ function LibCraftText.SlashCommand(args)
 end
 
 function LibCraftText.Forget()
-    LibCraftText.saved_var.quests     = nil
-    LibCraftText.saved_var.steps      = nil
-    LibCraftText.saved_var.conditions = nil
+    LibCraftText.saved_var.quests          = nil
+    LibCraftText.saved_var.steps           = nil
+    LibCraftText.saved_var.conditions      = nil
+    LibCraftText.saved_var.set             = nil
+    LibCraftText.saved_var.item            = nil
+    LibCraftText.saved_var.master_template = nil
 end
 
 local function find_i(want, list)
@@ -226,6 +230,71 @@ LibCraftText.JQCI = {
 , is_credit_shared      = 6 -- boolean
 , is_visible            = 7 -- boolean
 }
+
+-- -- Master Writ requirements: set, style, alch effect, and so on --------------
+
+function LibCraftText.DiscoverMasterValues()
+    local self = LibCraftText
+    local lang = self.CurrLang()
+
+                        -- REPLACE WITH A BETTER LINK WITH A MOTIF-CARRYING ITEM
+
+                        -- BS master writ, to gather base text template.
+    self.saved_var.master_template    = self.saved_var.master_template or {}
+    self.saved_var.master_template.bs = self.saved_var.master_template.bs or {}
+    local t = "|H1:item:138798:6:1:0:0:0:59:255:4:%d:23:0:0:0:0:0:0:0:0:0:76000|h|h"
+    local item_link = string.format(t, 178) -- 178 = "Armor Master"
+    local b = GenerateMasterWritBaseText(item_link)
+    self.saved_var.master_template.bs[lang] = b
+
+                        -- Item: Rubedite Axe
+    local item_list = {
+          18, 24                            -- necklace, ring
+        , 26, 28, 29, 30, 31, 32, 34, 75    -- light armor, including jerkin
+        , 35, 37, 38, 39, 40, 41, 43        -- medium armor
+        , 44, 46, 47, 48, 49, 50, 52        -- heavy armor
+        , 52, 56, 59, 67, 68, 69, 62        -- bs weapons
+        , 70, 72, 73, 74, 70                -- ww weapons
+        , 65                                -- shield
+        }
+
+    self.saved_var.item = self.saved_var.item or {}
+    local item = self.saved_var.item
+    local item_ct = 0
+    local t = "|H1:item:138798:6:1:0:0:0:%d:255:4:178:23:0:0:0:0:0:0:0:0:0:76000|h|h"
+
+    local re = self.MASTER_BASE_TEXT_RE.item
+    for _, i in ipairs(item_list) do
+        local item_link = string.format(t, i)
+        local b = GenerateMasterWritBaseText(item_link)
+        local _,_,f = string.find(b,re)
+        if f then
+            item[i] = item[i] or {}
+            item[i][lang] = f
+            item_ct = item_ct + 1
+        end
+    end
+    Info("discovered item_ct:"..tostring(item_ct))
+
+                        -- Set Bonus: "Armor Master", aka writ4
+    self.saved_var.set             = self.saved_var.set or {}
+    local set = self.saved_var.set
+    local set_ct = 0
+    local t = "|H1:item:138798:6:1:0:0:0:59:255:4:%d:23:0:0:0:0:0:0:0:0:0:76000|h|h"
+
+    local re = self.MASTER_BASE_TEXT_RE.set
+    for i=1,500 do
+        local item_link = string.format(t, i)
+        local b = GenerateMasterWritBaseText(item_link)
+        local _,_,f = string.find(b,re)
+        if f then
+            set[i] = set[i] or {}
+            set[i][lang] = f
+            set_ct = set_ct + 1
+        end
+    end
+    Info("discovered set_ct:"..tostring(set_ct))
+end
 
 -- Util ----------------------------------------------------------------------
 

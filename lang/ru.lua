@@ -46,6 +46,15 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Особенность"          -- "Trait"
 }
 
+LibCraftText.MASTER_BASE_TEXT_RE = {
+    ["item"   ] = "nСоздать предмет %(.*%);"    -- "Craft an? (.*);"
+,   ["quality"] = "качество: ([^;]*)"      -- "Quality: (.*);"
+,   ["set"    ] = "комплект: (.*)"           -- "Set: (.*)"
+,   ["style"  ] = "Style: ([^;]*)"                   -- "Style: (.*)"
+,   ["trait"  ] = "особенность: ([^;]*)"    -- "Trait: (.*);"
+
+}
+
 LibCraftText.ROLIS_QUEST_TURN_IN = {
 
     ["rolis"]          = "Rolis Hlaalu"              -- "Rolis Hlaalu"

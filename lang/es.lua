@@ -46,6 +46,15 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Rasgo"                           -- "Trait"
 }
 
+LibCraftText.MASTER_BASE_TEXT_RE = {
+    ["item"   ] = "Fabricar: ([^;]*)"                -- "Craft an? (.*);"
+,   ["quality"] = "Calidad: ([^;]*)"               -- "Quality: (.*);"
+,   ["set"    ] = "Conjunto: (.*)"                   -- "Set: (.*)"
+,   ["style"  ] = "Style: ([^;]*)"                   -- "Style: (.*)"
+,   ["trait"  ] = "Rasgo: ([^;]*)"                   -- "Trait: (.*);"
+
+}
+
 LibCraftText.ROLIS_QUEST_TURN_IN = {
 
     ["rolis"]          = "Rolis Hlaalu"              -- "Rolis Hlaalu"

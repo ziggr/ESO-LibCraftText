@@ -74,6 +74,8 @@ LANG_KEY = {
 ,   ["$QUALITY_4"] = "Epic"
 ,   ["$QUALITY_5"] = "Legendary"
 
+,   ["$MASTER_CRAFT_ITEM_RE"] = "Craft an? (.*);"
+
                         -- Nice surprise: master writs all have the same
                         -- step text.
 ,   ["$MASTER_STEP_1"] = "I need to create the item specified by my contract."
@@ -121,6 +123,12 @@ LANG_KEY = {
 ,   ["$MASTER_COND_SUB_PROGRESS_0_01"] = "• Progress: 0 / 1"
 ,   ["$MASTER_COND_SUB_PROGRESS_0_08"] = "• Progress: 0 / 8"
 ,   ["$MASTER_COND_SUB_PROGRESS_0_20"] = "• Progress: 0 / 20"
+
+,   ["$MASTER_WRIT_BASE_TEXT_RE_ITEM"    ]  = "Craft an? ([^;]*);"
+,   ["$MASTER_WRIT_BASE_TEXT_RE_QUALITY" ]  = "Quality: ([^;]*)"
+,   ["$MASTER_WRIT_BASE_TEXT_RE_TRAIT"   ]  = "Trait: ([^;]*)"
+,   ["$MASTER_WRIT_BASE_TEXT_RE_STYLE"   ]  = "Style: ([^;]*)"
+,   ["$MASTER_WRIT_BASE_TEXT_RE_SET"     ]  = "Set: (.*)"
 
 ,   ["$ROLIS_NAME"           ] = "Rolis Hlaalu"
 ,   ["$ROLIS_ACCEPT_CONTRACT"] = "<Accept the contract.>"

@@ -836,4 +836,46 @@ LANG_DB = {
               key = "$ROLIS_NAME"
           ,   en  = "Rolis Hlaalu"
           }
+, [108] = {   key = "$MASTER_WRIT_BASE_TEXT_RE_ITEM"
+          ,   en  = "Craft an? ([^;]*);"
+          ,   de  = "Stellt ein\\S* (.*) mit"
+          ,   fr  = "Fabriquez un\\S* ([^;]*)"
+          ,   es  = "Fabricar: ([^;]*)"
+          ,   it  = "Crea un\\S* ([^;]*)"
+          ,   ru  = "nСоздать предмет %(.*%);"
+          }
+, [109] = {
+              key = "$MASTER_WRIT_BASE_TEXT_RE_QUALITY"
+          ,   es  = "Calidad: ([^;]*)"
+          ,   ja  = "Quality: ([^;]*)"
+          ,   fr  = "Qualité : ([^;]*)"
+          ,   de  = "Qualität: (.*)\n?"
+          ,   en  = "Quality: ([^;]*)"
+          ,   ru  = "качество: ([^;]*)"
+          ,   it  = "Qualità: ([^;]*)"
+      }
+, [110] = {
+              key = "$MASTER_WRIT_BASE_TEXT_RE_TRAIT"
+          ,   es = "Rasgo: ([^;]*)"
+          ,   ja = "Trait: ([^;]*)"
+          ,   fr = "Trait : ([^;]*)"
+          ,   de = "Eigenschaft: (.*)\n"
+          ,   en = "Trait: ([^;]*)"
+          ,   ru = "особенность: ([^;]*)"
+          ,   it = "Tratti: (.*)"
+          }
+, [111] = {
+              key = "$MASTER_WRIT_BASE_TEXT_RE_STYLE"
+          ,   en = "Style: ([^;]*)"
+          }
+, [112] = {
+              key = "$MASTER_WRIT_BASE_TEXT_RE_SET"
+          ,   es = "Conjunto: (.*)"
+          ,   ja = "Set: (.*)"
+          ,   fr = "Ensemble : (.*)"
+          ,   de = "Set: (.*)\n"
+          ,   en = "Set: (.*)"
+          ,   ru = "комплект: (.*)"
+          ,   it = "Set: (.*)"
+      }
 }
