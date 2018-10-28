@@ -4,42 +4,49 @@ LANG_DB = {
          ,   en  = "Alchemist Writ"
          ,   de  = "Alchemistenschrieb"
          ,   fr  = "Commande d'alchimie"
+         ,   es  = "Encargo de alquimia"
          }
 , [ 2] = {
              key = "$DAILY_BS"
          ,   en  = "Blacksmith Writ"
          ,   de  = "Schmiedeschrieb"
          ,   fr  = "Commande de forge"
+         ,   es  = "Encargo de herrería"
          }
 , [ 3] = {
              key = "$DAILY_CL"
          ,   en  = "Clothier Writ"
          ,   de  = "Schneiderschrieb"
          ,   fr  = "Commande de tailleur"
+         ,   es  = "Encargo de sastrería"
          }
 , [ 4] = {
              key = "$DAILY_EN"
          ,   en  = "Enchanter Writ"
          ,   de  = "Verzaubererschrieb"
          ,   fr  = "Commandes d'enchantement"
+         ,   es  = "Encargo de encantamiento"
          }
 , [ 5] = {
              key = "$DAILY_JW"
          ,   en  = "Jewelry Crafting Writ"
          ,   de  = "Schmuckhandwerksschrieb"
          ,   fr  = "Commande de joaillerie"
+         ,   es  = "Encargo de artesanía de joyería"
          }
 , [ 6] = {
              key = "$DAILY_PR"
          ,   en  = "Provisioner Writ"
          ,   de  = "Versorgerschrieb"
          ,   fr  = "Commande de cuisine"
+         ,   es  = "Encargo de provisiones"
          }
 , [ 7] = {
              key = "$DAILY_WW"
          ,   en  = "Woodworker Writ"
          ,   de  = "Schreinerschrieb"
          ,   fr  = "Commande de travail du bois"
+         ,   es  = "Encargo de carpintería"
          }
 , [ 8] = {
              key = "$FINISHED_AL"
@@ -98,6 +105,7 @@ LANG_DB = {
          ,   en  = "Masterful Leatherwear"
          ,   de  = "Meisterhafte Lederwaren"
          ,   fr  = "Un vêtement de cuir magistral"
+         ,   es  = "Una prenda de cuero magistral"
          }
 , [20] = {
              key = "$MASTER_PLATE"
@@ -122,6 +130,7 @@ LANG_DB = {
          ,   en  = "A Masterful Weapon"
          ,   de  = "Eine meisterhafte Waffe"
          ,   fr  = "Une arme magistrale"
+         ,   es  = "Un arma magistral"
          }
 , [24] = {
              key = "$ROLIS_ACCEPT_CONTRACT"

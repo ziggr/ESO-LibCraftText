@@ -209,3 +209,4 @@ WriteDB()           -- Write to output file.
 WriteLang("en")
 WriteLang("de")
 WriteLang("fr")
+WriteLang("es")
