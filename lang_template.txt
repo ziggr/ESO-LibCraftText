@@ -1,0 +1,57 @@
+
+-- For less typing
+local bs = CRAFTING_TYPE_BLACKSMITHING   -- 1
+local cl = CRAFTING_TYPE_CLOTHIER        -- 2
+local en = CRAFTING_TYPE_ENCHANTING      -- 3
+local al = CRAFTING_TYPE_ALCHEMY         -- 4
+local pr = CRAFTING_TYPE_PROVISIONING    -- 5
+local ww = CRAFTING_TYPE_WOODWORKING     -- 6
+local jw = CRAFTING_TYPE_JEWELRYCRAFTING -- 7
+
+LibCraftText.DAILY_QUEST_TITLES = {
+    [bs] = $DAILY_BS                        -- "Blacksmith Writ"
+,   [cl] = $DAILY_CL                        -- "Clothier Writ"
+,   [en] = $DAILY_EN                        -- "Enchanter Writ"
+,   [al] = $DAILY_AL                        -- "Alchemist Writ"
+,   [pr] = $DAILY_PR                        -- "Provisioner Writ"
+,   [ww] = $DAILY_WW                        -- "Woodworker Writ"
+,   [jw] = $DAILY_JW                        -- "Jewelry Crafting Writ"
+}
+
+                        -- SURPRISE! "A Masterful Weapon" is used
+                        -- by both Blacksmithing and Woodworking.
+                        --
+                        -- Why a list? Because BS, CL, and WW can all
+                        -- use different quest titles depending on what
+                        -- item they requested (armor vs. weapon,
+                        -- light vs. medium armor)
+                        --
+LibCraftText.MASTER_QUEST_TITLES = {
+    [bs] = { $MASTER_PLATE                        --  "A Masterful Plate"
+           , $MASTER_WEAPON                     } --  "A Masterful Weapon"
+,   [cl] = { $MASTER_TAILOR                       --  "Masterful Tailoring"
+           , $MASTER_LEATHER                    } --  "Masterful Leatherwear"
+,   [en] = { $MASTER_GLYPH                      } --  "A Masterful Glyph"
+,   [al] = { $MASTER_CONCOCT                    } --  "A Masterful Concoction"
+,   [pr] = { $MASTER_FEAST                      } --  "A Masterful Feast"
+,   [ww] = { $MASTER_SHIELD                       --  "A Masterful Shield"
+           , $MASTER_WEAPON                     } --  "A Masterful Weapon"
+,   [jw] = { $MASTER_JEWELRY                    } --  "Masterful Jewelry"
+}
+
+LibCraftText.ROLIS_QUEST_TURN_IN = {
+
+    ["rolis"]          = $ROLIS_NAME                 -- "Rolis Hlaalu"
+,   ["accept"]         = $ACCEPT_CONTRACT            -- "<Accept the contract.>"
+,   ["finish"]         = $FINISH_JOB                 -- "<Finish the job.>"
+,   ["deliver_substr"] = $DELIVER_SUBSTR             -- "Deliver"
+
+,   [bs] = $FINISHED_BS                              -- "I've finished the Blacksmithing job."
+,   [cl] = $FINISHED_CL                              -- "I've finished the Clothier job."
+,   [en] = $FINISHED_EN                              -- "I've finished the Enchanting job."
+,   [al] = $FINISHED_AL                              -- "I've finished the Alchemy job."
+,   [pr] = $FINISHED_PR                              -- "I've finished the Provisioning job."
+,   [ww] = $FINISHED_WW                              -- "I've finished the Woodworking job."
+,   [jw] = $FINISHED_JW                              -- "I've finished the Jewelry job."
+}
+

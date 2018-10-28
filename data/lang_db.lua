@@ -2,6 +2,8 @@ LANG_DB = {
   [ 1] = {
              key = "$ACCEPT_CONTRACT"
          ,   en  = "<Accept the contract.>"
+         ,   de  = "<Nehmt den Auftrag an.>"
+         ,   fr  = "<Accepter le contrat>"
          }
 , [ 2] = {
              key = "$DAILY_AL"
@@ -48,6 +50,8 @@ LANG_DB = {
 , [ 9] = {
              key = "$DELIVER_SUBSTR"
          ,   en  = "Deliver"
+         ,   de  = "Beliefert"
+         ,   fr  = "Livrez"
          }
 , [10] = {
              key = "$FINISHED_AL"
@@ -80,6 +84,8 @@ LANG_DB = {
 , [17] = {
              key = "$FINISH_JOB"
          ,   en  = "<Finish the job.>"
+         ,   de  = "<Auftrag abschließen.>"
+         ,   fr  = "<Finir le travail.>"
          }
 , [18] = {
              key = "$MASTER_CONCOCT"

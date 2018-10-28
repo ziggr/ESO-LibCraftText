@@ -120,6 +120,85 @@ function WriteDB()
     FILE:write("}\n")
 end
 
+function WriteLangs()
+    for _,lang in ipairs(LANG_LIST) do
+        WriteLang(lang)
+    end
+end
+
+-- Replace all $XXX with their
+function ReplaceKeys(template_line, lang)
+    local pos_delim = template_line:find("%$")
+    if not (pos_delim and pos_delim < template_line:len())
+        then return template_line
+    end
+
+                        -- How many characters of room do we have before
+                        -- our replacement text bumps into a comment or bracket?
+    local pos_comment = template_line:find("%-%-")
+    local pos_end     = pos_delim + 10
+    if pos_comment then pos_end = pos_comment end
+    local repl_len = pos_end - pos_delim - 4
+-- print(tostring(pos_delim)
+-- ..".."..tostring(pos_comment)
+-- .."  "..template_line)
+
+    local out_line = template_line
+    for k, entry_hash in pairs(DB) do
+                        -- fallback to en if no translation yet
+        local val = entry_hash[lang] or entry_hash.en
+        local key = k
+        local key_padded = string.format("%-"..tostring(repl_len).."s", key)
+        local val_padded = string.format("%-"..tostring(repl_len).."s", '"'..val..'"')
+        out_line, ct = out_line:gsub(key_padded, val_padded)
+
+                        -- SURPRISE! Lua strings are BYTES not CHARS! This
+                        -- matters when val is a string with umlauts or other
+                        -- non-ASCII code points. The difference will cause all
+                        -- this careful alignment work to be off by the number
+                        -- of extra bytes of utf-8 wide chars. Oh well.
+                        --
+                        -- Lua 5.3 adds _some_ UTF-8 handling, but I don't care
+                        -- enough upgrade from 5.2 and recode to fix this
+                        -- today.
+
+        if (0 < ct) and (repl_len < (val:len() + 2)) then
+            Warn(string.format("Replacement exceeds space:%d < %d:\"%s\""
+                              , repl_len
+                              , val:len() + 2
+                              , val))
+        end
+
+-- if k == "$ROLIS_NAME" and template_line:find(k) then
+-- print("k:'"..k.."'\n")
+-- print("key_padded:'"..key_padded.."'\n")
+-- print("val_padded:'"..val_padded.."'\n")
+-- print("line:'"..out_line.."'\n")
+-- print("pos_delim  :"..tostring(pos_delim))
+-- print("pos_comment:"..tostring(pos_comment))
+-- print("pos_end    :"..tostring(pos_end))
+-- print("repl_len   :"..tostring(repl_len))
+--end
+
+    end
+    return out_line
+end
+
+function WriteLang(lang)
+    local IN_FILE        = "lang_template.txt"
+    local template_lines = io.lines(IN_FILE)
+
+    -- local LANG_OUT_FILE = string.format("lang/%s_out.lua", lang)
+    local LANG_OUT_FILE = string.format("lang/%s.lua", lang)
+    local FILE = assert(io.open(LANG_OUT_FILE, "w"))
+    for template_line in template_lines do
+        local out_line = ReplaceKeys(template_line, lang)
+        FILE:write(out_line)
+        FILE:write("\n")
+    end
+    FILE:close()
+end
+
 -- main ----------------------------------------------------------------------
 ImportDB()          -- Original database
 ImportKeys()        -- Force keys/EN into existence, mostly to catch new strings.
@@ -127,3 +206,6 @@ ImportSavedVars()   -- Read anything recently scraped from ESO via `/lct scan`.
 ExportDB()          -- Sequence results into a stable output order.
 WriteDB()           -- Write to output file.
 
+WriteLang("en")
+WriteLang("de")
+WriteLang("fr")
