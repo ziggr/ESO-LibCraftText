@@ -5,6 +5,7 @@ LANG_DB = {
          ,   de  = "Alchemistenschrieb"
          ,   fr  = "Commande d'alchimie"
          ,   es  = "Encargo de alquimia"
+         ,   ru  = "Заказ алхимику"
          ,   ja  = "錬金術師の依頼"
          }
 , [ 2] = {
@@ -13,6 +14,7 @@ LANG_DB = {
          ,   de  = "Schmiedeschrieb"
          ,   fr  = "Commande de forge"
          ,   es  = "Encargo de herrería"
+         ,   ru  = "Заказ кузнецу"
          ,   ja  = "鍛冶師の依頼"
          }
 , [ 3] = {
@@ -21,6 +23,7 @@ LANG_DB = {
          ,   de  = "Schneiderschrieb"
          ,   fr  = "Commande de tailleur"
          ,   es  = "Encargo de sastrería"
+         ,   ru  = "Заказ портному"
          ,   ja  = "仕立師の依頼"
          }
 , [ 4] = {
@@ -29,6 +32,7 @@ LANG_DB = {
          ,   de  = "Verzaubererschrieb"
          ,   fr  = "Commandes d'enchantement"
          ,   es  = "Encargo de encantamiento"
+         ,   ru  = "Заказ зачарователю"
          ,   ja  = "付呪師の依頼"
          }
 , [ 5] = {
@@ -37,6 +41,7 @@ LANG_DB = {
          ,   de  = "Schmuckhandwerksschrieb"
          ,   fr  = "Commande de joaillerie"
          ,   es  = "Encargo de artesanía de joyería"
+         ,   ru  = "Заказ ювелиру"
          ,   ja  = "宝飾師のクラフト依頼"
          }
 , [ 6] = {
@@ -45,6 +50,7 @@ LANG_DB = {
          ,   de  = "Versorgerschrieb"
          ,   fr  = "Commande de cuisine"
          ,   es  = "Encargo de provisiones"
+         ,   ru  = "Заказ снабженцу"
          ,   ja  = "調理師の依頼"
          }
 , [ 7] = {
@@ -53,6 +59,7 @@ LANG_DB = {
          ,   de  = "Schreinerschrieb"
          ,   fr  = "Commande de travail du bois"
          ,   es  = "Encargo de carpintería"
+         ,   ru  = "Заказ столяру"
          ,   ja  = "木工師の依頼"
          }
 , [ 8] = {
@@ -113,6 +120,7 @@ LANG_DB = {
          ,   de  = "Meisterhafte Lederwaren"
          ,   fr  = "Un vêtement de cuir magistral"
          ,   es  = "Una prenda de cuero magistral"
+         ,   ru  = "Искусные кожаные доспехи"
          ,   ja  = "優れた革装備"
          }
 , [20] = {
@@ -139,6 +147,7 @@ LANG_DB = {
          ,   de  = "Eine meisterhafte Waffe"
          ,   fr  = "Une arme magistrale"
          ,   es  = "Un arma magistral"
+         ,   ru  = "Искусное оружие"
          ,   ja  = "優れた武器"
          }
 , [24] = {

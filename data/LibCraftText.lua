@@ -1,75 +1,75 @@
 LibCraftTextVars =
 {
-    ["Default"] =
+    ["Default"] = 
     {
-        ["@ziggr"] =
+        ["@ziggr"] = 
         {
-            ["$AccountWide"] =
+            ["$AccountWide"] = 
             {
-                ["quests"] =
+                ["version"] = 1,
+                ["quests"] = 
                 {
-                    [2] =
+                    [2] = 
                     {
                         ["en"] = "Clothier Writ",
-                        ["es"] = "Encargo de sastrería",
-                        ["ja"] = "仕立師の依頼",
+                        ["ru"] = "Заказ портному",
+                        ["it"] = "Clothier Writ",
                     },
-                    [3] =
+                    [3] = 
                     {
                         ["en"] = "Blacksmith Writ",
-                        ["es"] = "Encargo de herrería",
-                        ["ja"] = "鍛冶師の依頼",
+                        ["ru"] = "Заказ кузнецу",
+                        ["it"] = "Blacksmith Writ",
                     },
-                    [4] =
+                    [4] = 
                     {
                         ["en"] = "Woodworker Writ",
-                        ["es"] = "Encargo de carpintería",
-                        ["ja"] = "木工師の依頼",
+                        ["ru"] = "Заказ столяру",
+                        ["it"] = "Woodworker Writ",
                     },
-                    [5] =
+                    [5] = 
                     {
                         ["en"] = "Enchanter Writ",
-                        ["es"] = "Encargo de encantamiento",
-                        ["ja"] = "付呪師の依頼",
+                        ["ru"] = "Заказ зачарователю",
+                        ["it"] = "Enchanter Writ",
                     },
-                    [6] =
+                    [6] = 
                     {
                         ["en"] = "Provisioner Writ",
-                        ["es"] = "Encargo de provisiones",
-                        ["ja"] = "調理師の依頼",
+                        ["ru"] = "Заказ снабженцу",
+                        ["it"] = "Provisioner Writ",
                     },
-                    [7] =
+                    [7] = 
                     {
                         ["en"] = "A Masterful Weapon",
-                        ["es"] = "Un arma magistral",
-                        ["ja"] = "優れた武器",
+                        ["ru"] = "Искусное оружие",
+                        ["it"] = "A Masterful Weapon",
                     },
-                    [8] =
+                    [8] = 
                     {
                         ["en"] = "A Masterful Weapon",
-                        ["es"] = "Un arma magistral",
-                        ["ja"] = "優れた武器",
+                        ["ru"] = "Искусное оружие",
+                        ["it"] = "A Masterful Weapon",
                     },
-                    [9] =
+                    [9] = 
                     {
                         ["en"] = "Masterful Leatherwear",
-                        ["es"] = "Una prenda de cuero magistral",
-                        ["ja"] = "優れた革装備",
+                        ["ru"] = "Искусные кожаные доспехи",
+                        ["it"] = "Masterful Leatherwear",
                     },
-                    [10] =
+                    [10] = 
                     {
                         ["en"] = "Alchemist Writ",
-                        ["es"] = "Encargo de alquimia",
-                        ["ja"] = "錬金術師の依頼",
+                        ["ru"] = "Заказ алхимику",
+                        ["it"] = "",
                     },
-                    [11] =
+                    [11] = 
                     {
                         ["en"] = "Jewelry Crafting Writ",
-                        ["es"] = "Encargo de artesanía de joyería",
-                        ["ja"] = "宝飾師のクラフト依頼",
+                        ["ru"] = "Заказ ювелиру",
+                        ["it"] = "",
                     },
                 },
-                ["version"] = 1,
             },
         },
     },
