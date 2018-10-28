@@ -44,7 +44,7 @@ end
 -- Can return 0 for "<Finish the job.>" when the dialog text is obviously
 -- some sort of master writ turn-in, but type is unknown.
 --
-function LibCraftText.RolixDialogOptionToCraftingType(dialog_text)
+function LibCraftText.RolisDialogOptionToCraftingType(dialog_text)
     LibCraftText.BuildReverseLookupTables()
     return LibCraftText.ROLIS_QUEST_TURN_IN[dialog_text]
 end
