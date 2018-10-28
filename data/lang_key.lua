@@ -21,7 +21,8 @@ LANG_KEY = {
 ,   ["$DAILY_STEP_WW_A0"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their woodworkers. They need several Bows and Shields to outfit their warriors."
 ,   ["$DAILY_STEP_JW_A0"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Platinum Ring and a Platinum Necklace to complete my contract."
 
-                        -- Then use the above FULL STRING translations to hand-craft substring translations.
+                        -- Then use the above FULL STRING translations to hand-
+                        -- craft substring translations.
 ,   ["$DAILY_STEP_BS_A1"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their smiths."
 ,   ["$DAILY_STEP_BS_A2"] = "They need several Helms, Daggers, and Pauldrons to outfit their warriors."
 ,   ["$DAILY_STEP_CL_A1"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their leatherworkers."
@@ -86,6 +87,32 @@ LANG_KEY = {
 ,   ["$MASTER_COND_CL_1"] = "Craft an Ancestor Silk Sash with the following Properties:\n• Quality: Epic\n• Trait: Reinforced\n• Set: Varen's Legacy\n• Style: Worm Cult\n• Progress: 0 / 1"
 ,   ["$MASTER_COND_AL_1"] = "Craft an Essence of Ravage Health with the following Traits:\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progress: 0 / 20"
 ,   ["$MASTER_COND_JW_1"] = "Craft a Platinum Ring with the following Properties:\n• Quality: Legendary\n• Trait: Protective\n• Set: Armor Master\n• Progress: 0 / 1"
+
+,   ["$MASTER_COND_SUB_EN_1"] = "Craft a Superb Glyph of Reduce Spell Cost"
+,   ["$MASTER_COND_SUB_BS_1"] = "Craft a Rubedite Cuirass with the following Properties:"
+,   ["$MASTER_COND_SUB_WW_1"] = "Craft a Ruby Ash Shield with the following Properties:"
+,   ["$MASTER_COND_SUB_PR_1"] = "Craft a Lusty Argonian Maid Mazte"
+,   ["$MASTER_COND_SUB_CL_1"] = "Craft an Ancestor Silk Sash with the following Properties:"
+,   ["$MASTER_COND_SUB_AL_1"] = "Craft an Essence of Ravage Health with the following Traits:"
+,   ["$MASTER_COND_SUB_JW_1"] = "Craft a Platinum Ring with the following Properties:"
+,   ["$MASTER_COND_SUB_QUAL_4"] = "• Quality: Epic"
+,   ["$MASTER_COND_SUB_QUAL_5"] = "• Quality: Legendary"
+,   ["$MASTER_COND_SUB_TRAIT_INVIGORATING"] = "• Trait: Invigorating"
+,   ["$MASTER_COND_SUB_TRAIT_PROTECTIVE"  ] = "• Trait: Protective"
+,   ["$MASTER_COND_SUB_TRAIT_REINFORCED"  ] = "• Trait: Reinforced"
+,   ["$MASTER_COND_SUB_TRAIT_STURDY"      ] = "• Trait: Sturdy"
+,   ["$MASTER_COND_SUB_SET_ARMOR_MASTER"  ] = "• Set: Armor Master"
+,   ["$MASTER_COND_SUB_SET_ORGNUMS_SCALES"] = "• Set: Orgnum's Scales"
+,   ["$MASTER_COND_SUB_SET_VARENS_LEGACY" ] = "• Set: Varen's Legacy"
+,   ["$MASTER_COND_SUB_MOTIF_PSIJIC_ORDER"] = "• Style: Psijic Order"
+,   ["$MASTER_COND_SUB_MOTIF_WOOD_ELF"    ] = "• Style: Wood Elf"
+,   ["$MASTER_COND_SUB_MOTIF_WORM_CULT"   ] = "• Style: Worm Cult"
+,   ["$MASTER_COND_SUB_ALCH_EFFECT_BREACH"] = "• Breach"
+,   ["$MASTER_COND_SUB_ALCH_EFFECT_SPELL_POWER"] = "• Increase Spell Power"
+,   ["$MASTER_COND_SUB_ALCH_EFFECT_RAVAGE_HEALTH"] = "• Ravage Health"
+,   ["$MASTER_COND_SUB_PROGRESS_0_01"] = "• Progress: 0 / 1"
+,   ["$MASTER_COND_SUB_PROGRESS_0_08"] = "• Progress: 0 / 8"
+,   ["$MASTER_COND_SUB_PROGRESS_0_20"] = "• Progress: 0 / 20"
 
 ,   ["$ROLIS_NAME"           ] = "Rolis Hlaalu"
 ,   ["$ROLIS_ACCEPT_CONTRACT"] = "<Accept the contract.>"

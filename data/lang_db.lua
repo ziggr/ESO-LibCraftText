@@ -420,6 +420,223 @@ LANG_DB = {
          ,   ja  = "Craft a 好色なアルゴニアンの侍女のマッツェ\n• Progress: 0 / 8"
          }
 , [59] = {
+             key = "$MASTER_COND_SUB_ALCH_EFFECT_BREACH"
+         ,   en  = "• Breach"
+         ,   fr  = "• Brèche"
+         ,   ru  = "• Разрыв"
+         ,   ja  = "• 侵害"
+         }
+, [60] = {
+             key = "$MASTER_COND_SUB_ALCH_EFFECT_RAVAGE_HEALTH"
+         ,   en  = "• Ravage Health"
+         ,   fr  = "• Réduit la Santé"
+         ,   ru  = "• Опустошение здоровья"
+         ,   ja  = "• 体力減少"
+         }
+, [61] = {
+             key = "$MASTER_COND_SUB_ALCH_EFFECT_SPELL_POWER"
+         ,   en  = "• Increase Spell Power"
+         ,   fr  = "• Augmente la puissance des sorts"
+         ,   ru  = "• Увеличение силы заклинаний"
+         ,   ja  = "• 呪文攻撃力上昇"
+         }
+, [62] = {
+             key = "$MASTER_COND_SUB_AL_1"
+         ,   en  = "Craft an Essence of Ravage Health with the following Traits:"
+         ,   fr  = "Fabriquez une essence de ravage de Santé avec les traits suivants : "
+         ,   it  = "Crea un Ravage Health con i seguenti tratti:"
+         ,   ru  = "Создать предмет (Essence of Ravage Health) со следующими эффектами:"
+         ,   ja  = "Craft a 体力減少 のエキス with the following Traits:"
+         }
+, [63] = {
+             key = "$MASTER_COND_SUB_BS_1"
+         ,   en  = "Craft a Rubedite Cuirass with the following Properties:"
+         ,   de  = "Stellt einen Rubeditkürass mit bestimmten Eigenschaften her."
+         ,   fr  = "Fabriquez une cuirasse en cuprite avec les caractéristiques suivantes : "
+         ,   es  = "Fabricar: Coraza de rubedita con los siguientes rasgos: "
+         ,   it  = "Crea un Corazza con le seguenti proprietà:"
+         ,   ru  = "Создать предмет (Rubedite Cuirass) со следующими характеристиками:"
+         ,   ja  = "Craft a ルベダイトの胸当て with the following Properties:"
+         }
+, [64] = {
+             key = "$MASTER_COND_SUB_CL_1"
+         ,   en  = "Craft an Ancestor Silk Sash with the following Properties:"
+         ,   de  = "Stellt eine Ahnenseidenschärpe mit bestimmten Eigenschaften her."
+         ,   fr  = "Fabriquez un Baudrier en soie ancestrale avec les caractéristiques suivantes : "
+         ,   es  = "Fabricar: Banda de seda ancestral con los siguientes rasgos: "
+         ,   it  = "Crea un Fascia con le seguenti proprietà:"
+         ,   ru  = "Создать предмет (Ancestor Silk Sash) со следующими характеристиками:"
+         ,   ja  = "Craft a 先人のシルクのサッシュ with the following Properties:"
+         }
+, [65] = {
+             key = "$MASTER_COND_SUB_EN_1"
+         ,   en  = "Craft a Superb Glyph of Reduce Spell Cost"
+         ,   de  = "Stellt eine prächtige Glyphe der Zauberkostenminderung her "
+         ,   fr  = "Fabriquez un glyphe superbe du mage"
+         ,   it  = "Crea un Glifo of Reduce Spell Cost"
+         ,   ja  = "Craft a 最上のグリフ (呪文消費減少)"
+         }
+, [66] = {
+             key = "$MASTER_COND_SUB_JW_1"
+         ,   en  = "Craft a Platinum Ring with the following Properties:"
+         ,   de  = "Stellt einen Platinring mit bestimmten Eigenschaften her."
+         ,   fr  = "Fabriquez un Anneau en platine avec les caractéristiques suivantes : "
+         ,   it  = "Crea un Ring con le seguenti proprietà:"
+         ,   ru  = "Создать предмет (platinum Ring) со следующими характеристиками:"
+         ,   ja  = "Craft a プラチナの指輪 with the following Properties:"
+         }
+, [67] = {
+             key = "$MASTER_COND_SUB_MOTIF_PSIJIC_ORDER"
+         ,   en  = "• Style: Psijic Order"
+         ,   de  = "• Qualität: Episch"
+         ,   fr  = "• Style : Ordre psijique"
+         ,   es  = "• Estilo: Orden Psijic"
+         ,   it  = "• Stile:"
+         ,   ru  = "• Стиль: орден Псиджиков"
+         ,   ja  = "• Style: サイジック"
+         }
+, [68] = {
+             key = "$MASTER_COND_SUB_MOTIF_WOOD_ELF"
+         ,   en  = "• Style: Wood Elf"
+         ,   de  = "• Qualität: Episch"
+         ,   fr  = "• Style : Elfe des bois"
+         ,   es  = "• Estilo: Elfo del bosque"
+         ,   it  = "• Stile:"
+         ,   ru  = "• Стиль: босмерский"
+         ,   ja  = "• Style: ウッドエルフ"
+         }
+, [69] = {
+             key = "$MASTER_COND_SUB_MOTIF_WORM_CULT"
+         ,   en  = "• Style: Worm Cult"
+         ,   de  = "• Qualität: Episch"
+         ,   fr  = "• Style : Culte du Ver"
+         ,   es  = "• Estilo: Culto del Gusano"
+         ,   it  = "• Stile:"
+         ,   ru  = "• Стиль: культ Червя"
+         ,   ja  = "• Style: 虫の教団"
+         }
+, [70] = {
+             key = "$MASTER_COND_SUB_PROGRESS_0_01"
+         ,   en  = "• Progress: 0 / 1"
+         ,   de  = "• Fortschritt: 0/1"
+         ,   fr  = "• Progression : 0/1"
+         ,   es  = "• Progreso: 0/1"
+         ,   it  = "• Progresso: 0 / 1"
+         ,   ru  = "• Прогресс: 0 / 1"
+         }
+, [71] = {
+             key = "$MASTER_COND_SUB_PROGRESS_0_08"
+         ,   en  = "• Progress: 0 / 8"
+         ,   de  = "• Fortschritt: 0/8"
+         ,   fr  = "• Progression : 0/8"
+         ,   es  = "• Progreso: 0/8"
+         ,   it  = "• Progresso: 0 / 8"
+         }
+, [72] = {
+             key = "$MASTER_COND_SUB_PROGRESS_0_20"
+         ,   en  = "• Progress: 0 / 20"
+         ,   fr  = "• Progression : 0/20"
+         ,   it  = "• Progresso: 0 / 20"
+         ,   ru  = "• Прогресс: 0 / 20"
+         }
+, [73] = {
+             key = "$MASTER_COND_SUB_PR_1"
+         ,   en  = "Craft a Lusty Argonian Maid Mazte"
+         ,   de  = "Stellt etwas Mazte der munteren argonischen Maid her"
+         ,   fr  = "Fabriquez un mazté de la femme de chambre argonienne"
+         ,   es  = "Preparæ Mazte de la sensual doncella argoniana"
+         ,   it  = "Crea un Lusty Argonian Maid Mazte"
+         ,   ja  = "Craft a 好色なアルゴニアンの侍女のマッツェ"
+         }
+, [74] = {
+             key = "$MASTER_COND_SUB_QUAL_4"
+         ,   en  = "• Quality: Epic"
+         ,   de  = "• Set: Varens Erbe"
+         ,   fr  = "• Qualité : Épique"
+         ,   es  = "• Calidad: Épico"
+         ,   it  = "• Qualità: Epico"
+         ,   ru  = "• Качество: Эпическое"
+         }
+, [75] = {
+             key = "$MASTER_COND_SUB_QUAL_5"
+         ,   en  = "• Quality: Legendary"
+         ,   de  = "• Set: Rüstungsmeister"
+         ,   fr  = "• Qualité : Légendaire"
+         ,   it  = "• Qualità: Leggendario"
+         ,   ru  = "• Качество: Легендарное"
+         }
+, [76] = {
+             key = "$MASTER_COND_SUB_SET_ARMOR_MASTER"
+         ,   en  = "• Set: Armor Master"
+         ,   de  = "• Qualität: Legendär"
+         ,   fr  = "• Ensemble : Maître armurier"
+         ,   ru  = "• Комплект: Armor Master"
+         ,   ja  = "• Set: 鎧匠"
+         }
+, [77] = {
+             key = "$MASTER_COND_SUB_SET_ORGNUMS_SCALES"
+         ,   en  = "• Set: Orgnum's Scales"
+         ,   de  = "• Eigenschaft: Belebend"
+         ,   fr  = "• Ensemble : les Écailles d'Orgnum"
+         ,   es  = "• Conjunto: Escamas de Orgnum"
+         ,   ru  = "• Комплект: Orgnum's Scales"
+         ,   ja  = "• Set: オルグヌム鱗"
+         }
+, [78] = {
+             key = "$MASTER_COND_SUB_SET_VARENS_LEGACY"
+         ,   en  = "• Set: Varen's Legacy"
+         ,   de  = "• Eigenschaft: Verstärkt"
+         ,   fr  = "• Ensemble : l’Héritage de Varen"
+         ,   es  = "• Conjunto: Legado de Varen"
+         ,   ru  = "• Комплект: Varen's Legacy"
+         ,   ja  = "• Set: ヴァレンレガシー"
+         }
+, [79] = {
+             key = "$MASTER_COND_SUB_TRAIT_INVIGORATING"
+         ,   en  = "• Trait: Invigorating"
+         ,   de  = "• Stil: Psijik-Orden"
+         ,   fr  = "• Trait : Revigorant"
+         ,   es  = "• Rasgo: Vigorizante"
+         ,   it  = "• Tratti: Prospero"
+         ,   ru  = "• Особенность: Invigorating"
+         }
+, [80] = {
+             key = "$MASTER_COND_SUB_TRAIT_PROTECTIVE"
+         ,   en  = "• Trait: Protective"
+         ,   de  = "• Eigenschaft: Schützend"
+         ,   fr  = "• Trait : Protecteur"
+         ,   it  = "• Tratti: Protective"
+         ,   ru  = "• Особенность: Protective"
+         }
+, [81] = {
+             key = "$MASTER_COND_SUB_TRAIT_REINFORCED"
+         ,   en  = "• Trait: Reinforced"
+         ,   de  = "• Stil: Wurmkult"
+         ,   fr  = "• Trait : Renforcé"
+         ,   es  = "• Rasgo: Reforzado"
+         ,   it  = "• Tratti: Rinforzato"
+         ,   ru  = "• Особенность: Reinforced"
+         }
+, [82] = {
+             key = "$MASTER_COND_SUB_TRAIT_STURDY"
+         ,   en  = "• Trait: Sturdy"
+         ,   de  = "• Stil: Waldelfen"
+         ,   fr  = "• Trait : Solide"
+         ,   es  = "• Rasgo: Resistente"
+         ,   it  = "• Tratti: Robusto"
+         ,   ru  = "• Особенность: Sturdy"
+         }
+, [83] = {
+             key = "$MASTER_COND_SUB_WW_1"
+         ,   en  = "Craft a Ruby Ash Shield with the following Properties:"
+         ,   de  = "Stellt einen Rubineschenschild mit bestimmten Eigenschaften her."
+         ,   fr  = "Fabriquez un bouclier en frêne roux avec les caractéristiques suivantes : "
+         ,   es  = "Fabricar: Escudo de     fresno rubí con los siguientes rasgos: "
+         ,   it  = "Crea un Scudo con le seguenti proprietà:"
+         ,   ru  = "Создать предмет (Ruby Ash Shield) со следующими характеристиками:"
+         ,   ja  = "Craft a ルビーアッシュの盾 with the following Properties:"
+         }
+, [84] = {
              key = "$MASTER_COND_TRAVEL_AD"
          ,   en  = "Travel to Elden Root to Meet Your Contact"
          ,   de  = "Reist nach Eldenwurz, um Euren Kontakt zu treffen"
@@ -429,7 +646,7 @@ LANG_DB = {
          ,   ru  = "Отправиться в Элден-Рут, чтобы встретиться с работодателем"
          ,   ja  = "エルデンルートへ行って代理人と会う"
          }
-, [60] = {
+, [85] = {
              key = "$MASTER_COND_TRAVEL_DC"
          ,   en  = "Travel to Wayrest to Meet Your Contact"
          ,   de  = "Reist nach Wegesruh, um Euren Kontakt zu treffen"
@@ -439,7 +656,7 @@ LANG_DB = {
          ,   ru  = "Отправиться в Вэйрест, чтобы встретиться с работодателем"
          ,   ja  = "ウェイレストへ行って代理人と会う"
          }
-, [61] = {
+, [86] = {
              key = "$MASTER_COND_TRAVEL_EP"
          ,   en  = "Travel to Mournhold to Meet Your Contact"
          ,   de  = "Reist nach Gramfeste, um Euren Kontakt zu treffen"
@@ -449,7 +666,7 @@ LANG_DB = {
          ,   ru  = "Отправиться в Морнхолд, чтобы встретиться с работодателем"
          ,   ja  = "モーンホールドへ行って代理人と会う"
          }
-, [62] = {
+, [87] = {
              key = "$MASTER_COND_WW_1"
          ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Invigorating\n• Set: Orgnum's Scales\n• Style: Psijic Order\n• Progress: 0 / 1"
          ,   de  = "Stellt einen Rubineschenschild mit bestimmten Eigenschaften her.\n• Set: Orgnums Schuppen\n• Stil: Psijik-Orden\n• Eigenschaft: Belebend\n• Qualität: Episch\n• Fortschritt: 0/1"
@@ -459,7 +676,7 @@ LANG_DB = {
          ,   ru  = "Создать предмет (Ruby Ash Shield) со следующими характеристиками:\n• Качество: Эпическое\n• Особенность: Invigorating\n• Комплект: Orgnum's Scales\n• Стиль: орден Псиджиков\n• Прогресс: 0 / 1"
          ,   ja  = "Craft a ルビーアッシュの盾 with the following Properties:\n• Quality: Epic\n• Trait: Invigorating\n• Set: オルグヌム鱗\n• Style: サイジック\n• Progress: 0 / 1"
          }
-, [63] = {
+, [88] = {
              key = "$MASTER_FEAST"
          ,   en  = "A Masterful Feast"
          ,   de  = "Ein meisterhaftes Mahl"
@@ -468,7 +685,7 @@ LANG_DB = {
          ,   ru  = "Искусный пир"
          ,   ja  = "優れた料理"
          }
-, [64] = {
+, [89] = {
              key = "$MASTER_GLYPH"
          ,   en  = "A Masterful Glyph"
          ,   de  = "Eine meisterhafte Glyphe"
@@ -477,7 +694,7 @@ LANG_DB = {
          ,   ru  = "Искусный глиф"
          ,   ja  = "優れたグリフ"
          }
-, [65] = {
+, [90] = {
              key = "$MASTER_JEWELRY"
          ,   en  = "Masterful Jewelry"
          ,   de  = "Ein meisterhaftes Schmuckstück"
@@ -486,7 +703,7 @@ LANG_DB = {
          ,   ru  = "Искусные ювелирные изделия"
          ,   ja  = "優れた宝飾"
          }
-, [66] = {
+, [91] = {
              key = "$MASTER_LEATHER"
          ,   en  = "Masterful Leatherwear"
          ,   de  = "Meisterhafte Lederwaren"
@@ -495,7 +712,7 @@ LANG_DB = {
          ,   ru  = "Искусные кожаные доспехи"
          ,   ja  = "優れた革装備"
          }
-, [67] = {
+, [92] = {
              key = "$MASTER_PLATE"
          ,   en  = "A Masterful Plate"
          ,   de  = "Eine meisterhafte Rüstung"
@@ -504,7 +721,7 @@ LANG_DB = {
          ,   ru  = "Искусные латы"
          ,   ja  = "優れた防具"
          }
-, [68] = {
+, [93] = {
              key = "$MASTER_SHIELD"
          ,   en  = "A Masterful Shield"
          ,   de  = "Ein meisterhafter Schild"
@@ -513,7 +730,7 @@ LANG_DB = {
          ,   ru  = "Искусный щит"
          ,   ja  = "優れた盾"
          }
-, [69] = {
+, [94] = {
              key = "$MASTER_STEP_1"
          ,   en  = "I need to create the item specified by my contract."
          ,   de  = "Ich muss den Gegenstand aus meinem Vertrag herstellen."
@@ -522,7 +739,7 @@ LANG_DB = {
          ,   ru  = "Мне нужно создать предмет, указанный в моем контракте."
          ,   ja  = "契約で指定されたアイテムを作成する"
          }
-, [70] = {
+, [95] = {
              key = "$MASTER_STEP_N"
          ,   en  = "I need to create the items specified by my contract."
          ,   de  = "Ich muss die Gegenstände aus meinem Vertrag herstellen."
@@ -531,7 +748,7 @@ LANG_DB = {
          ,   ru  = "Мне нужно создать предметы, указанные в моем контракте."
          ,   ja  = "契約で指定されたアイテムを作成する"
          }
-, [71] = {
+, [96] = {
              key = "$MASTER_TAILOR"
          ,   en  = "Masterful Tailoring"
          ,   de  = "Ein meisterhaftes Gewand"
@@ -540,7 +757,7 @@ LANG_DB = {
          ,   ru  = "Искусные тканевые доспехи"
          ,   ja  = "優れた服"
          }
-, [72] = {
+, [97] = {
              key = "$MASTER_WEAPON"
          ,   en  = "A Masterful Weapon"
          ,   de  = "Eine meisterhafte Waffe"
@@ -549,25 +766,25 @@ LANG_DB = {
          ,   ru  = "Искусное оружие"
          ,   ja  = "優れた武器"
          }
-, [73] = {
+, [98] = {
              key = "$ROLIS_ACCEPT_CONTRACT"
          ,   en  = "<Accept the contract.>"
          ,   de  = "<Nehmt den Auftrag an.>"
          ,   fr  = "<Accepter le contrat>"
          }
-, [74] = {
+, [99] = {
              key = "$ROLIS_DELIVER_SUBSTR"
          ,   en  = "Deliver"
          ,   de  = "Beliefert"
          ,   fr  = "Livrez"
          }
-, [75] = {
+, [100] = {
              key = "$ROLIS_FINISH_JOB"
          ,   en  = "<Finish the job.>"
          ,   de  = "<Auftrag abschließen.>"
          ,   fr  = "<Finir le travail.>"
          }
-, [76] = {
+, [101] = {
              key = "$ROLIS_NAME"
          ,   en  = "Rolis Hlaalu"
          }

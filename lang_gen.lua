@@ -85,6 +85,19 @@ function ImportSavedVars()
     end
 end
 
+-- From http://lua-users.org/wiki/SplitJoin
+function split(str,sep)
+    local ret={}
+    local n=1
+    for w in str:gmatch("([^"..sep.."]*)") do
+        ret[n] = ret[n] or w -- only set once (so the blank after a string is ignored)
+        if w=="" then
+            n = n + 1
+        end -- step forwards on a blank but not a string
+    end
+    return ret
+end
+
 function ImportSavedVarLangTable(lang_table)
     if not lang_table and lang_table.en then return end
 
@@ -99,6 +112,28 @@ function ImportSavedVarLangTable(lang_table)
             -- Skip NOP translations
         if value ~= "" and not (key ~= "en" and value == lang_table.en) then
             entry[lang] = value
+        end
+    end
+
+                        -- Attempt to extract substrings.
+    local delim = "\n"
+    local en_sub = split(lang_table.en, delim)
+    if #en_sub <= 1 then return end
+    for lang, value in pairs(lang_table) do
+        if value then
+            local tr_sub = split(value, delim)
+            if #tr_sub == #en_sub then
+                for i, en in ipairs(en_sub) do
+                    local tr = tr_sub[i]
+                    key = EN_KEYS[en]
+                    if not key then
+                        Warn("SavedVars: unknown string '"..tostring(en).."'")
+                    elseif tr and tr ~= en then
+                        entry = DB[key]
+                        entry[lang] = tr
+                    end
+                end
+            end
         end
     end
 end
