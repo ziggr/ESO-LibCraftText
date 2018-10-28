@@ -5,6 +5,7 @@ LANG_DB = {
          ,   de  = "Alchemistenschrieb"
          ,   fr  = "Commande d'alchimie"
          ,   es  = "Encargo de alquimia"
+         ,   ja  = "錬金術師の依頼"
          }
 , [ 2] = {
              key = "$DAILY_BS"
@@ -12,6 +13,7 @@ LANG_DB = {
          ,   de  = "Schmiedeschrieb"
          ,   fr  = "Commande de forge"
          ,   es  = "Encargo de herrería"
+         ,   ja  = "鍛冶師の依頼"
          }
 , [ 3] = {
              key = "$DAILY_CL"
@@ -19,6 +21,7 @@ LANG_DB = {
          ,   de  = "Schneiderschrieb"
          ,   fr  = "Commande de tailleur"
          ,   es  = "Encargo de sastrería"
+         ,   ja  = "仕立師の依頼"
          }
 , [ 4] = {
              key = "$DAILY_EN"
@@ -26,6 +29,7 @@ LANG_DB = {
          ,   de  = "Verzaubererschrieb"
          ,   fr  = "Commandes d'enchantement"
          ,   es  = "Encargo de encantamiento"
+         ,   ja  = "付呪師の依頼"
          }
 , [ 5] = {
              key = "$DAILY_JW"
@@ -33,6 +37,7 @@ LANG_DB = {
          ,   de  = "Schmuckhandwerksschrieb"
          ,   fr  = "Commande de joaillerie"
          ,   es  = "Encargo de artesanía de joyería"
+         ,   ja  = "宝飾師のクラフト依頼"
          }
 , [ 6] = {
              key = "$DAILY_PR"
@@ -40,6 +45,7 @@ LANG_DB = {
          ,   de  = "Versorgerschrieb"
          ,   fr  = "Commande de cuisine"
          ,   es  = "Encargo de provisiones"
+         ,   ja  = "調理師の依頼"
          }
 , [ 7] = {
              key = "$DAILY_WW"
@@ -47,6 +53,7 @@ LANG_DB = {
          ,   de  = "Schreinerschrieb"
          ,   fr  = "Commande de travail du bois"
          ,   es  = "Encargo de carpintería"
+         ,   ja  = "木工師の依頼"
          }
 , [ 8] = {
              key = "$FINISHED_AL"
@@ -106,6 +113,7 @@ LANG_DB = {
          ,   de  = "Meisterhafte Lederwaren"
          ,   fr  = "Un vêtement de cuir magistral"
          ,   es  = "Una prenda de cuero magistral"
+         ,   ja  = "優れた革装備"
          }
 , [20] = {
              key = "$MASTER_PLATE"
@@ -131,6 +139,7 @@ LANG_DB = {
          ,   de  = "Eine meisterhafte Waffe"
          ,   fr  = "Une arme magistrale"
          ,   es  = "Un arma magistral"
+         ,   ja  = "優れた武器"
          }
 , [24] = {
              key = "$ROLIS_ACCEPT_CONTRACT"

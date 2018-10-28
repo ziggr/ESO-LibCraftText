@@ -14,7 +14,7 @@ DB = {}                 -- key   = "$DAILY_BS"
 EN_KEYS = {}            -- key   = "Blacksmithing Writ"
                         -- value = "$DAILY_BS"
 
-LANG_LIST = { "en", "de", "fr", "es", "it", "ru", "jp" }
+LANG_LIST = { "en", "de", "fr", "es", "it", "ru", "ja" }
 
 function Warn(msg)
     print(msg.."\n")
@@ -205,8 +205,4 @@ ImportKeys()        -- Force keys/EN into existence, mostly to catch new strings
 ImportSavedVars()   -- Read anything recently scraped from ESO via `/lct scan`.
 ExportDB()          -- Sequence results into a stable output order.
 WriteDB()           -- Write to output file.
-
-WriteLang("en")
-WriteLang("de")
-WriteLang("fr")
-WriteLang("es")
+WriteLangs()        -- Write lang/nn.lua translation files.
