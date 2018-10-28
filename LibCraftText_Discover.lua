@@ -77,7 +77,9 @@ function LibCraftText.SlashCommand(args)
 end
 
 function LibCraftText.Forget()
-    LibCraftText.saved_var.quests = nil
+    LibCraftText.saved_var.quests     = nil
+    LibCraftText.saved_var.steps      = nil
+    LibCraftText.saved_var.conditions = nil
 end
 
 local function find_i(want, list)
@@ -131,11 +133,63 @@ function LibCraftText.ScanQuest(quest_index)
                         -- Only daily and master writ CRAFTING quests matter.
     local jqi = { GetJournalQuestInfo(quest_index) }
     if jqi[self.JQI.quest_type] ~= QUEST_TYPE_CRAFTING then
-        return
+        return nil
     end
+
+    self.ScanQuestSteps(quest_index)
 
     local quest_name = jqi[self.JQI.quest_name]
     return quest_name
+end
+
+function LibCraftText.ScanQuestSteps(quest_index)
+    local self = LibCraftText
+    local jqi = { GetJournalQuestInfo(quest_index) }
+    if jqi[self.JQI.quest_type] ~= QUEST_TYPE_CRAFTING then
+        return nil
+    end
+
+    local step_ct = GetJournalQuestNumSteps(quest_index)
+    for step_i = 1,step_ct do
+        local step_info  = { GetJournalQuestStepInfo(quest_index, step_i) }
+        local step_text  = step_info[self.JQSI.step_text]
+        self.RecordStepText(quest_index,step_i,step_text)
+
+        local condition_ct = step_info[self.JQSI.num_conditions]
+        for cond_i = 1,condition_ct do
+            local cond_info = { GetJournalQuestConditionInfo(
+                                        quest_index, step_i, cond_i) }
+            local cond_text = cond_info[self.JQCI.condition_text]
+            self.RecordConditionText(quest_index, step_i, cond_i, cond_text)
+        end
+    end
+end
+
+function LibCraftText.RecordStepText(quest_index, step_index, step_text)
+    local self = LibCraftText
+    local lang = self.CurrLang()
+    if not (step_text and step_text ~= "") then return end
+    self.saved_var.steps = self.saved_var.steps or {}
+    self.saved_var.steps[quest_index] = self.saved_var.steps[quest_index] or {}
+    self.saved_var.steps[quest_index][step_index]
+                          = self.saved_var.steps[quest_index][step_index] or {}
+    self.saved_var.steps[quest_index][step_index][lang] = step_text
+end
+
+function LibCraftText.RecordConditionText( quest_index, step_index
+                                         , condition_index, condition_text)
+    local self = LibCraftText
+    local lang = self.CurrLang()
+    if not (condition_text and condition_text ~= "") then return end
+    self.saved_var.conditions = self.saved_var.conditions or {}
+    self.saved_var.conditions[quest_index]
+            = self.saved_var.conditions[quest_index] or {}
+    self.saved_var.conditions[quest_index][step_index]
+            = self.saved_var.conditions[quest_index][step_index] or {}
+    self.saved_var.conditions[quest_index][step_index][condition_index]
+            = self.saved_var.conditions[quest_index][step_index][condition_index] or {}
+    self.saved_var.conditions[quest_index][step_index][condition_index][lang]
+            = condition_text
 end
 
 -- GetJournalQuestInfo() returns:
@@ -151,6 +205,26 @@ LibCraftText.JQI = {
 , pushed                =  9 -- boolean
 , quest_type            = 10 -- number
 , instance_display_type = 11 -- number InstanceDisplayType
+}
+
+-- GetJournalQuestStepInfo() returns
+LibCraftText.JQSI = {
+  step_text             = 1 -- string
+, visibility            = 2 -- number:nilable
+, step_type             = 3 -- number
+, tracker_override_text = 4 -- string
+, num_conditions        = 5 -- number
+}
+
+-- GetJournalQuestConditionInfo() returns
+LibCraftText.JQCI = {
+  condition_text        = 1 -- string
+, current               = 2 -- number
+, max                   = 3 -- number
+, is_fail_condition     = 4 -- boolean
+, is_complete           = 5 -- boolean
+, is_credit_shared      = 6 -- boolean
+, is_visible            = 7 -- boolean
 }
 
 -- Util ----------------------------------------------------------------------
