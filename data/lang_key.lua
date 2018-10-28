@@ -66,6 +66,14 @@ LANG_KEY = {
 ,   ["$MASTER_WEAPON"  ] = "A Masterful Weapon"
 ,   ["$MASTER_JEWELRY" ] = "Masterful Jewelry"
 
+,   ["$MASTER_LABEL_QUALITY" ] = "Quality"
+,   ["$MASTER_LABEL_SET"     ] = "Set"
+,   ["$MASTER_LABEL_STYLE"   ] = "Style"
+,   ["$MASTER_LABEL_TRAIT"   ] = "Trait"
+
+,   ["$QUALITY_4"] = "Epic"
+,   ["$QUALITY_5"] = "Legendary"
+
                         -- Nice surprise: master writs all have the same
                         -- step text.
 ,   ["$MASTER_STEP_1"] = "I need to create the item specified by my contract."

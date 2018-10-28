@@ -177,16 +177,16 @@ function WriteDB()
     local FILE = assert(io.open(DB_FILE_OUT, "w"))
     FILE:write("LANG_DB = {\n")
     for i,entry_list in ipairs(LANG_DB) do
-        FILE:write(string.format("%s [%2d] = {\n", comma(i), i))
+        FILE:write(string.format("%s [%3d] = {\n", comma(i), i))
         for lang_i, kv in ipairs(entry_list) do
             local key = '"'..kv[1]..'"'
-            FILE:write(string.format('         %s   %-3s = "%s"\n'
+            FILE:write(string.format('          %s   %-3s = "%s"\n'
                                     , comma(lang_i)
                                     , kv[1]
                                     , escape_quote(kv[2])
                                     ))
         end
-        FILE:write("         }\n")
+        FILE:write("          }\n")
     end
     FILE:write("}\n")
 end
