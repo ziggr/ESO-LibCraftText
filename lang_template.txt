@@ -42,9 +42,9 @@ LibCraftText.MASTER_QUEST_TITLES = {
 LibCraftText.ROLIS_QUEST_TURN_IN = {
 
     ["rolis"]          = $ROLIS_NAME                 -- "Rolis Hlaalu"
-,   ["accept"]         = $ACCEPT_CONTRACT            -- "<Accept the contract.>"
-,   ["finish"]         = $FINISH_JOB                 -- "<Finish the job.>"
-,   ["deliver_substr"] = $DELIVER_SUBSTR             -- "Deliver"
+,   ["accept"]         = $ROLIS_ACCEPT_CONTRACT      -- "<Accept the contract.>"
+,   ["finish"]         = $ROLIS_FINISH_JOB           -- "<Finish the job.>"
+,   ["deliver_substr"] = $ROLIS_DELIVER_SUBSTR       -- "Deliver"
 
 ,   [bs] = $FINISHED_BS                              -- "I've finished the Blacksmithing job."
 ,   [cl] = $FINISHED_CL                              -- "I've finished the Clothier job."

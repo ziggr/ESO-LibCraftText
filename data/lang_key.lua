@@ -18,10 +18,10 @@ LANG_KEY = {
 ,   ["$MASTER_WEAPON"  ] = "A Masterful Weapon"
 ,   ["$MASTER_JEWELRY" ] = "Masterful Jewelry"
 
-,   ["$ROLIS_NAME"     ] = "Rolis Hlaalu"
-,   ["$ACCEPT_CONTRACT"] = "<Accept the contract.>"
-,   ["$FINISH_JOB"     ] = "<Finish the job.>"
-,   ["$DELIVER_SUBSTR" ] = "Deliver"
+,   ["$ROLIS_NAME"           ] = "Rolis Hlaalu"
+,   ["$ROLIS_ACCEPT_CONTRACT"] = "<Accept the contract.>"
+,   ["$ROLIS_FINISH_JOB"     ] = "<Finish the job.>"
+,   ["$ROLIS_DELIVER_SUBSTR" ] = "Deliver"
 
 ,   ["$FINISHED_BS"    ] = "I've finished the Blacksmithing job."
 ,   ["$FINISHED_CL"    ] = "I've finished the Clothier job."
