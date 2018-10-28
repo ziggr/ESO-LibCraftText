@@ -2,7 +2,7 @@ Are you an add-on developer who compares quest names against a list of strings t
 
 This is a tiny library of localized strings for crafting quest recognition.
 
-GitHub repo at https://github.com/ziggr/ESO-LibCraftText
+GitHub repo at [URL="https://github.com/ziggr/ESO-LibCraftText"]https://github.com/ziggr/ESO-LibCraftText[/URL].
 
 [highlight="Lua"]
 LibCraftText.DAILY_QUEST_TITLES = {
