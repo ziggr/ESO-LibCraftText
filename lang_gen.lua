@@ -1,15 +1,24 @@
 
-KEY_FILE    = "data/lang_key.lua"
-DB_FILE     = "data/lang_db.lua"
-DB_FILE_OUT = "data/lang_db_out.lua"
+KEY_FILE         = "data/lang_key.lua"
+DB_FILE          = "data/lang_db.lua"
+DB_FILE_OUT      = "data/lang_db_out.lua"
+SAVED_VARS_FILE  = "data/LibCraftText.lua"
 
 dofile(KEY_FILE)
 dofile(DB_FILE)
+dofile(SAVED_VARS_FILE)
 
-DB = {}                 -- key = "$DAILY_BS"
+DB = {}                 -- key   = "$DAILY_BS"
                         -- value = table: { ["en"] = "Blacksmithing Writ" }
 
+EN_KEYS = {}            -- key   = "Blacksmithing Writ"
+                        -- value = "$DAILY_BS"
+
 LANG_LIST = { "en", "de", "fr", "es", "it", "ru", "jp" }
+
+function Warn(msg)
+    print(msg.."\n")
+end
 
 -- Print contents of `tbl`, with indentation.
 -- `indent` sets the initial level of indentation.
@@ -46,6 +55,25 @@ function ImportKeys()
     for k, v in pairs(LANG_KEY) do
         DB[k] = DB[k] or {}
         DB[k]["en"] = v
+        EN_KEYS[v] = k
+    end
+end
+
+-- Import ESO SavedVars file
+function ImportSavedVars()
+    local quest_list = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].quests
+    for qi, lang_table in pairs(quest_list) do
+        if lang_table.en then
+            local key = EN_KEYS[lang_table.en]
+            if not key then
+                Warn("SavedVars: unknown string '"..tostring(lang_table.en).."'")
+            else
+                local entry = DB[key]
+                for lang, value in pairs(lang_table) do
+                    entry[lang] = value
+                end
+            end
+        end
     end
 end
 
@@ -95,7 +123,7 @@ end
 -- main ----------------------------------------------------------------------
 ImportDB()          -- Original database
 ImportKeys()        -- Force keys/EN into existence, mostly to catch new strings.
-
+ImportSavedVars()   -- Read anything recently scraped from ESO via `/lct scan`.
 ExportDB()          -- Sequence results into a stable output order.
 WriteDB()           -- Write to output file.
 
