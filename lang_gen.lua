@@ -42,7 +42,9 @@ function ImportDB()
     for _, vlist in ipairs(LANG_DB) do
         local entry = {}
         for k, v in pairs(vlist) do
-            entry[k] = v
+            if v ~= "" and not(k ~= "en" and v == entry.en) then
+                entry[k] = v
+            end
         end
         if entry.key then
             DB[entry.key] = entry
@@ -70,7 +72,10 @@ function ImportSavedVars()
             else
                 local entry = DB[key]
                 for lang, value in pairs(lang_table) do
-                    entry[lang] = value
+                        -- Skip NOP translations
+                    if value ~= "" and not (key ~= "en" and value == lang_table.en) then
+                        entry[lang] = value
+                    end
                 end
             end
         end
