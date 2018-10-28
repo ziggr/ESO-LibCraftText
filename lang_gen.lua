@@ -65,19 +65,40 @@ end
 function ImportSavedVars()
     local quest_list = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].quests
     for qi, lang_table in pairs(quest_list) do
-        if lang_table.en then
-            local key = EN_KEYS[lang_table.en]
-            if not key then
-                Warn("SavedVars: unknown string '"..tostring(lang_table.en).."'")
-            else
-                local entry = DB[key]
-                for lang, value in pairs(lang_table) do
-                        -- Skip NOP translations
-                    if value ~= "" and not (key ~= "en" and value == lang_table.en) then
-                        entry[lang] = value
-                    end
-                end
+        ImportSavedVarLangTable(lang_table)
+    end
+
+    local steps = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].steps
+    for qi, step_list in pairs(steps) do
+        for si, lang_table in pairs(step_list) do
+            ImportSavedVarLangTable(lang_table)
+        end
+    end
+
+    local conditions = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].conditions
+    for qi, step_list in pairs(conditions) do
+        for si, cond_list in pairs(step_list) do
+            for ci, lang_table in pairs(cond_list) do
+                ImportSavedVarLangTable(lang_table)
             end
+        end
+    end
+end
+
+function ImportSavedVarLangTable(lang_table)
+    if not lang_table and lang_table.en then return end
+
+    local key = EN_KEYS[lang_table.en]
+    if not key then
+        Warn("SavedVars: unknown string '"..tostring(lang_table.en).."'")
+        return
+    end
+
+    local entry = DB[key]
+    for lang, value in pairs(lang_table) do
+            -- Skip NOP translations
+        if value ~= "" and not (key ~= "en" and value == lang_table.en) then
+            entry[lang] = value
         end
     end
 end
@@ -110,6 +131,13 @@ local function comma(i)
     if i == 1 then return " " else return "," end
 end
 
+local function escape_quote(t)
+    local tt = t
+    tt = string.gsub(tt,'"','\\"')
+    tt = string.gsub(tt,'\n','\\n')
+    return tt
+end
+
 function WriteDB()
     local FILE = assert(io.open(DB_FILE_OUT, "w"))
     FILE:write("LANG_DB = {\n")
@@ -118,7 +146,10 @@ function WriteDB()
         for lang_i, kv in ipairs(entry_list) do
             local key = '"'..kv[1]..'"'
             FILE:write(string.format('         %s   %-3s = "%s"\n'
-                                    , comma(lang_i), kv[1], kv[2]))
+                                    , comma(lang_i)
+                                    , kv[1]
+                                    , escape_quote(kv[2])
+                                    ))
         end
         FILE:write("         }\n")
     end
@@ -152,6 +183,7 @@ function ReplaceKeys(template_line, lang)
     for k, entry_hash in pairs(DB) do
                         -- fallback to en if no translation yet
         local val = entry_hash[lang] or entry_hash.en
+        val = escape_quote(val)
         local key = k
         local key_padded = string.format("%-"..tostring(repl_len).."s", key)
         local val_padded = string.format("%-"..tostring(repl_len).."s", '"'..val..'"')
