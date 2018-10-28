@@ -27,16 +27,23 @@ LibCraftText.DAILY_QUEST_TITLES = {
                         -- light vs. medium armor)
                         --
 LibCraftText.MASTER_QUEST_TITLES = {
-    [bs] = { "Искусные латы"          --  "A Masterful Plate"
-           , "Искусное оружие"    } --  "A Masterful Weapon"
-,   [cl] = { "Искусные тканевые доспехи"    --  "Masterful Tailoring"
-           , "Искусные кожаные доспехи"  } --  "Masterful Leatherwear"
-,   [en] = { "Искусный глиф"        } --  "A Masterful Glyph"
-,   [al] = { "Искусное варево"    } --  "A Masterful Concoction"
-,   [pr] = { "Искусный пир"          } --  "A Masterful Feast"
-,   [ww] = { "Искусный щит"            --  "A Masterful Shield"
-           , "Искусное оружие"    } --  "A Masterful Weapon"
-,   [jw] = { "Искусные ювелирные изделия"  } --  "Masterful Jewelry"
+    [bs] = { "Искусные латы"          -- "A Masterful Plate"
+           , "Искусное оружие"    } -- "A Masterful Weapon"
+,   [cl] = { "Искусные тканевые доспехи"    -- "Masterful Tailoring"
+           , "Искусные кожаные доспехи"  } -- "Masterful Leatherwear"
+,   [en] = { "Искусный глиф"        } -- "A Masterful Glyph"
+,   [al] = { "Искусное варево"    } -- "A Masterful Concoction"
+,   [pr] = { "Искусный пир"          } -- "A Masterful Feast"
+,   [ww] = { "Искусный щит"            -- "A Masterful Shield"
+           , "Искусное оружие"    } -- "A Masterful Weapon"
+,   [jw] = { "Искусные ювелирные изделия"  } -- "Masterful Jewelry"
+}
+
+LibCraftText.MASTER_LABELS = {
+    ["quality"] =  "Качество"                -- "Quality"
+,   ["set"    ] =  "Комплект"                -- "Set"
+,   ["style"  ] =  "Стиль"                      -- "Style"
+,   ["trait"  ] =  "Особенность"          -- "Trait"
 }
 
 LibCraftText.ROLIS_QUEST_TURN_IN = {

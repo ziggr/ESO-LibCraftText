@@ -27,16 +27,23 @@ LibCraftText.DAILY_QUEST_TITLES = {
                         -- light vs. medium armor)
                         --
 LibCraftText.MASTER_QUEST_TITLES = {
-    [bs] = { "Una protección magistral"          --  "A Masterful Plate"
-           , "Un arma magistral"                } --  "A Masterful Weapon"
-,   [cl] = { "Una prenda de tela magistral"       --  "Masterful Tailoring"
-           , "Una prenda de cuero magistral"    } --  "Masterful Leatherwear"
-,   [en] = { "Un glifo magistral"               } --  "A Masterful Glyph"
-,   [al] = { "Una mezcla magistral"             } --  "A Masterful Concoction"
-,   [pr] = { "Un festín magistral"             } --  "A Masterful Feast"
-,   [ww] = { "Un escudo magistral"                --  "A Masterful Shield"
-           , "Un arma magistral"                } --  "A Masterful Weapon"
-,   [jw] = { "Joyería magistral"               } --  "Masterful Jewelry"
+    [bs] = { "Una protección magistral"          -- "A Masterful Plate"
+           , "Un arma magistral"                } -- "A Masterful Weapon"
+,   [cl] = { "Una prenda de tela magistral"       -- "Masterful Tailoring"
+           , "Una prenda de cuero magistral"    } -- "Masterful Leatherwear"
+,   [en] = { "Un glifo magistral"               } -- "A Masterful Glyph"
+,   [al] = { "Una mezcla magistral"             } -- "A Masterful Concoction"
+,   [pr] = { "Un festín magistral"             } -- "A Masterful Feast"
+,   [ww] = { "Un escudo magistral"                -- "A Masterful Shield"
+           , "Un arma magistral"                } -- "A Masterful Weapon"
+,   [jw] = { "Joyería magistral"               } -- "Masterful Jewelry"
+}
+
+LibCraftText.MASTER_LABELS = {
+    ["quality"] =  "Calidad"                         -- "Quality"
+,   ["set"    ] =  "Set"                             -- "Set"
+,   ["style"  ] =  "Estilo"                          -- "Style"
+,   ["trait"  ] =  "Rasgo"                           -- "Trait"
 }
 
 LibCraftText.ROLIS_QUEST_TURN_IN = {

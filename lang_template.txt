@@ -27,16 +27,23 @@ LibCraftText.DAILY_QUEST_TITLES = {
                         -- light vs. medium armor)
                         --
 LibCraftText.MASTER_QUEST_TITLES = {
-    [bs] = { $MASTER_PLATE                        --  "A Masterful Plate"
-           , $MASTER_WEAPON                     } --  "A Masterful Weapon"
-,   [cl] = { $MASTER_TAILOR                       --  "Masterful Tailoring"
-           , $MASTER_LEATHER                    } --  "Masterful Leatherwear"
-,   [en] = { $MASTER_GLYPH                      } --  "A Masterful Glyph"
-,   [al] = { $MASTER_CONCOCT                    } --  "A Masterful Concoction"
-,   [pr] = { $MASTER_FEAST                      } --  "A Masterful Feast"
-,   [ww] = { $MASTER_SHIELD                       --  "A Masterful Shield"
-           , $MASTER_WEAPON                     } --  "A Masterful Weapon"
-,   [jw] = { $MASTER_JEWELRY                    } --  "Masterful Jewelry"
+    [bs] = { $MASTER_PLATE                        -- "A Masterful Plate"
+           , $MASTER_WEAPON                     } -- "A Masterful Weapon"
+,   [cl] = { $MASTER_TAILOR                       -- "Masterful Tailoring"
+           , $MASTER_LEATHER                    } -- "Masterful Leatherwear"
+,   [en] = { $MASTER_GLYPH                      } -- "A Masterful Glyph"
+,   [al] = { $MASTER_CONCOCT                    } -- "A Masterful Concoction"
+,   [pr] = { $MASTER_FEAST                      } -- "A Masterful Feast"
+,   [ww] = { $MASTER_SHIELD                       -- "A Masterful Shield"
+           , $MASTER_WEAPON                     } -- "A Masterful Weapon"
+,   [jw] = { $MASTER_JEWELRY                    } -- "Masterful Jewelry"
+}
+
+LibCraftText.MASTER_LABELS = {
+    ["quality"] =  $MASTER_LABEL_QUALITY             -- "Quality"
+,   ["set"    ] =  $MASTER_LABEL_SET                 -- "Set"
+,   ["style"  ] =  $MASTER_LABEL_STYLE               -- "Style"
+,   ["trait"  ] =  $MASTER_LABEL_TRAIT               -- "Trait"
 }
 
 LibCraftText.ROLIS_QUEST_TURN_IN = {
