@@ -37,14 +37,12 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 [B]Languages Supported[/B]
 [list]
 [*] EN English - done
-[*] FR French - daily, master done. Rolis todo (placeholder file)
-[*] DE German - daily, master done. Rolis todo (placehodler file)
-[*] RU Russian - todo - [URL="https://www.esoui.com/downloads/info1347-RuESO.html"]RuESO[/URL]
-[*] ES Spanish - todo - [URL="https://www.esoui.com/downloads/info838-ESOSpanishTranslationWIP-74.26.html"]ESO Spanish Translation[/URL]
-[*] IT Italian - todo - [URL="https://www.esoui.com/downloads/info1067-ESOItalianTranslationWIP.html"]ESO Italian Translation[/URL]
-[*] JA Japanese - todo - [URL="https://www.esoui.com/downloads/info2154-ESO-JapaneseLocalization.html"]ESO Japanese Translation[/URL]
+[*] FR French - daily, master done. Rolis todo
+[*] DE German - daily, master done. Rolis todo
+[*] RU Russian - daily, master done. Rolis todo - [URL="https://www.esoui.com/downloads/info1347-RuESO.html"]RuESO[/URL]
+[*] ES Spanish - daily, master done. Rolis todo - [URL="https://www.esoui.com/downloads/info838-ESOSpanishTranslationWIP-74.26.html"]ESO Spanish Translation[/URL]
+[*] IT Italian - todo - [URL="https://www.esoui.com/downloads/info1067-ESOItalianTranslationWIP.html"]ESO Italian Translation[/URL] has not yet gotten to crafting writs. Placeholder file.
+[*] JA Japanese - daily, master done. Rolis todo - [URL="https://www.esoui.com/downloads/info2154-ESO-JapaneseLocalization.html"]ESO Japanese Translation[/URL]
 [/LIST]
-
-[I]Daily crafting:[/I] I'll fetch them for all languages soon.
 
 [I]Master writs/Rolis:[/I] I'm waiting until ZOS fixes the October 2018 "cannot interact with any crafting stations in player housing" bug that is really making life difficult for guild hall users on both PTS and Live servers.

@@ -1,3 +1,13 @@
+[B]4.2.3 2018-10-27[/B]
+[LIST]
+[*] ES Spanish
+[*] RU Russian
+[*] JA Japanese
+[*] All daily and master crafting writ names translated.
+[*] Still missing Rolis dialog, will deal with later if/when I can get a
+    guild hall's tables to actually [i]work[/i] on PTS.
+[/LIST]
+
 [B]4.2.2 2018-10-27[/B]
 [LIST]
 [*] DE German and FR French strings added for daily and master writ
