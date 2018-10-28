@@ -27,16 +27,16 @@ LibCraftText.DAILY_QUEST_TITLES = {
                         -- light vs. medium armor)
                         --
 LibCraftText.MASTER_QUEST_TITLES = {
-    [bs] = { "A Masterful Plate"                  --  "A Masterful Plate"
+    [bs] = { "優れた防具"                    --  "A Masterful Plate"
            , "優れた武器"                  } --  "A Masterful Weapon"
-,   [cl] = { "Masterful Tailoring"                --  "Masterful Tailoring"
+,   [cl] = { "優れた服"                       --  "Masterful Tailoring"
            , "優れた革装備"               } --  "Masterful Leatherwear"
-,   [en] = { "A Masterful Glyph"                } --  "A Masterful Glyph"
-,   [al] = { "A Masterful Concoction"           } --  "A Masterful Concoction"
-,   [pr] = { "A Masterful Feast"                } --  "A Masterful Feast"
-,   [ww] = { "A Masterful Shield"                 --  "A Masterful Shield"
+,   [en] = { "優れたグリフ"               } --  "A Masterful Glyph"
+,   [al] = { "優れた調合薬"               } --  "A Masterful Concoction"
+,   [pr] = { "優れた料理"                  } --  "A Masterful Feast"
+,   [ww] = { "優れた盾"                       --  "A Masterful Shield"
            , "優れた武器"                  } --  "A Masterful Weapon"
-,   [jw] = { "Masterful Jewelry"                } --  "Masterful Jewelry"
+,   [jw] = { "優れた宝飾"                  } --  "Masterful Jewelry"
 }
 
 LibCraftText.ROLIS_QUEST_TURN_IN = {

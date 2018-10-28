@@ -95,24 +95,36 @@ LANG_DB = {
          ,   en  = "A Masterful Concoction"
          ,   de  = "Ein meisterhaftes Gebräu"
          ,   fr  = "Une concoction magistrale"
+         ,   es  = "Una mezcla magistral"
+         ,   ru  = "Искусное варево"
+         ,   ja  = "優れた調合薬"
          }
 , [16] = {
              key = "$MASTER_FEAST"
          ,   en  = "A Masterful Feast"
          ,   de  = "Ein meisterhaftes Mahl"
          ,   fr  = "Un festin magistral"
+         ,   es  = "Un festín magistral"
+         ,   ru  = "Искусный пир"
+         ,   ja  = "優れた料理"
          }
 , [17] = {
              key = "$MASTER_GLYPH"
          ,   en  = "A Masterful Glyph"
          ,   de  = "Eine meisterhafte Glyphe"
          ,   fr  = "Un glyphe magistral"
+         ,   es  = "Un glifo magistral"
+         ,   ru  = "Искусный глиф"
+         ,   ja  = "優れたグリフ"
          }
 , [18] = {
              key = "$MASTER_JEWELRY"
          ,   en  = "Masterful Jewelry"
          ,   de  = "Ein meisterhaftes Schmuckstück"
          ,   fr  = "Joaillerie magistrale"
+         ,   es  = "Joyería magistral"
+         ,   ru  = "Искусные ювелирные изделия"
+         ,   ja  = "優れた宝飾"
          }
 , [19] = {
              key = "$MASTER_LEATHER"
@@ -128,18 +140,27 @@ LANG_DB = {
          ,   en  = "A Masterful Plate"
          ,   de  = "Eine meisterhafte Rüstung"
          ,   fr  = "Une protection magistrale"
+         ,   es  = "Una protección magistral"
+         ,   ru  = "Искусные латы"
+         ,   ja  = "優れた防具"
          }
 , [21] = {
              key = "$MASTER_SHIELD"
          ,   en  = "A Masterful Shield"
          ,   de  = "Ein meisterhafter Schild"
          ,   fr  = "Un bouclier magistral"
+         ,   es  = "Un escudo magistral"
+         ,   ru  = "Искусный щит"
+         ,   ja  = "優れた盾"
          }
 , [22] = {
              key = "$MASTER_TAILOR"
          ,   en  = "Masterful Tailoring"
          ,   de  = "Ein meisterhaftes Gewand"
          ,   fr  = "Une tenue magistrale"
+         ,   es  = "Una prenda de tela magistral"
+         ,   ru  = "Искусные тканевые доспехи"
+         ,   ja  = "優れた服"
          }
 , [23] = {
              key = "$MASTER_WEAPON"

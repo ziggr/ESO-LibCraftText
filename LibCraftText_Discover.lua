@@ -88,7 +88,7 @@ local function find_i(want, list)
 end
 
 function LibCraftText.NextLang(want_lang)
-    local lang_list = { "en", "de", "fr" }--, "ru", "es", "it", "jp" }
+    local lang_list = { "en", "de", "fr", "ru", "es", "it", "ja" }
     local curr_lang = LibCraftText.CurrLang()
     local curr_i    = find_i(curr_lang, lang_list)
     local want_i    = find_i(want_lang, lang_list)

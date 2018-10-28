@@ -27,16 +27,16 @@ LibCraftText.DAILY_QUEST_TITLES = {
                         -- light vs. medium armor)
                         --
 LibCraftText.MASTER_QUEST_TITLES = {
-    [bs] = { "A Masterful Plate"                  --  "A Masterful Plate"
+    [bs] = { "Искусные латы"          --  "A Masterful Plate"
            , "Искусное оружие"    } --  "A Masterful Weapon"
-,   [cl] = { "Masterful Tailoring"                --  "Masterful Tailoring"
+,   [cl] = { "Искусные тканевые доспехи"    --  "Masterful Tailoring"
            , "Искусные кожаные доспехи"  } --  "Masterful Leatherwear"
-,   [en] = { "A Masterful Glyph"                } --  "A Masterful Glyph"
-,   [al] = { "A Masterful Concoction"           } --  "A Masterful Concoction"
-,   [pr] = { "A Masterful Feast"                } --  "A Masterful Feast"
-,   [ww] = { "A Masterful Shield"                 --  "A Masterful Shield"
+,   [en] = { "Искусный глиф"        } --  "A Masterful Glyph"
+,   [al] = { "Искусное варево"    } --  "A Masterful Concoction"
+,   [pr] = { "Искусный пир"          } --  "A Masterful Feast"
+,   [ww] = { "Искусный щит"            --  "A Masterful Shield"
            , "Искусное оружие"    } --  "A Masterful Weapon"
-,   [jw] = { "Masterful Jewelry"                } --  "Masterful Jewelry"
+,   [jw] = { "Искусные ювелирные изделия"  } --  "Masterful Jewelry"
 }
 
 LibCraftText.ROLIS_QUEST_TURN_IN = {
