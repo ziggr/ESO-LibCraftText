@@ -47,7 +47,7 @@ LibCraftText.MASTER_LABELS = {
 }
 
 LibCraftText.MASTER_BASE_TEXT_RE = {
-    ["item"   ] = "Fabriquez un\S* ([^;]*)"          -- "Craft an? (.*);"
+    ["item"   ] = "Fabriquez un\\S* ([^;]*)"         -- "Craft an? (.*);"
 ,   ["quality"] = "Qualité : ([^;]*)"            -- "Quality: (.*);"
 ,   ["set"    ] = "Ensemble : (.*)"                 -- "Set: (.*)"
 ,   ["style"  ] = "Style: ([^;]*)"                   -- "Style: (.*)"

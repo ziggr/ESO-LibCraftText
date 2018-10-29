@@ -221,8 +221,10 @@ function ReplaceKeys(template_line, lang)
 
     local out_line = template_line
     for k, entry_hash in pairs(DB) do
+
                         -- fallback to en if no translation yet
         local val = entry_hash[lang] or entry_hash.en
+        val = escape_quote(val)
         val = escape_re(val)    -- Some lang strings are REs with % escapes. Retain them.
         local key = k
         local key_padded = string.format("%-"..tostring(repl_len).."s", key)
