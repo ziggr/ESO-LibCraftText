@@ -73,7 +73,7 @@ function LibCraftText.SlashCommand(args)
     if (not args) or args:lower() == "scan" then
         Info("Scanning...")
         LibCraftText.ScanQuestJournal()
-        LibCraftText.DiscoverMasterValues()
+        LibCraftText.DiscoverMaterials()
     elseif args:lower() == "forget" then
         LibCraftText.Forget()
         Info("Forgotten.")
@@ -89,9 +89,10 @@ function LibCraftText.Forget()
     LibCraftText.saved_var.quests          = nil
     LibCraftText.saved_var.steps           = nil
     LibCraftText.saved_var.conditions      = nil
-    LibCraftText.saved_var.set             = nil
-    LibCraftText.saved_var.item            = nil
-    LibCraftText.saved_var.master_template = nil
+
+    LibCraftText.saved_var.materials       = nil
+    LibCraftText.saved_var.items           = nil
+
 end
 
 local function find_i(want, list)
@@ -239,104 +240,155 @@ LibCraftText.JQCI = {
 , is_visible            = 7 -- boolean
 }
 
--- -- Master Writ requirements: set, style, alch effect, and so on --------------
+--[[
 
-                        -- Values for bs/cl/ww/jw master writs, "writ1" field,
-                        -- that produce valid craftable item requests
-                        -- such as "Cuirass" or "Necklace"
-LibCraftText.WRIT1_GEAR = {
-      [jw] = { 18, 24 }                          -- necklace, ring
-    , [cl] = { 26, 28, 29, 30, 31, 32, 34, 75    -- light armor, including jerkin
-             , 35, 37, 38, 39, 40, 41, 43 }      -- medium armor
-    , [bs] = { 44, 46, 47, 48, 49, 50, 52        -- heavy armor
-             , 52, 56, 59, 67, 68, 69, 62 }      -- bs weapons
-    , [ww] = { 70, 72, 73, 74, 70                -- ww weapons
-             , 65 }                              -- shield
-}
+    HOW TO PARSE DAILY CRAFTING CONDITIONS?
 
-function LibCraftText.DiscoverMasterValues()
+    German squishes words together.
+    French, Spanish reorders adjectival materials AFTER item name
+    Japanese puts the adj+item BEFORE the "craft wo suru" verb
+
+    The verbs change depending on crafting type:
+    "prepara" potion, "fabrica" dagger, "adquiere" mudcrab chitin
+
+    10 mats, can probably find names by scanning
+    37 or so gear items, can probably scan those names, too, even if
+
+
+function LibCraftText.DiscoverDaily(quest_index, step_index
+        , condition_index, cond_text)
     local self = LibCraftText
-    local lang = self.CurrLang()
+    local quest_name = GetJournalQuestInfo(quest_index)
+    local crafting_type = LibCraftText.DailyQuestNameToCraftingType(quest_name)
 
-                        -- REPLACE WITH A BETTER LINK WITH A MOTIF-CARRYING ITEM
-
-                        -- BS master writ, to gather base text template.
-    self.saved_var.master_template    = self.saved_var.master_template or {}
-    self.saved_var.master_template.bs = self.saved_var.master_template.bs or {}
-    local t = "|H1:item:138798:6:1:0:0:0:59:255:4:%d:23:0:0:0:0:0:0:0:0:0:76000|h|h"
-    local item_link = string.format(t, 178) -- 178 = "Armor Master"
-    local b = GenerateMasterWritBaseText(item_link)
-    self.saved_var.master_template.bs[lang] = b
-
-                        -- gear, writ1: craftable armor,weapons and jewelry
-                        -- "Cuirass", "Sword", "Inferno Staff:, "Necklace"
-    self.saved_var.item = self.saved_var.item or {}
-    local item    = self.saved_var.item
-    local item_ct = 0
-    for crafting_type, item_num_list in pairs(self.WRIT1_GEAR) do
-        for _,item_num in pairs(item_num_list) do
-            local item_name = self.ToItemName(crafting_type, item_num)
-            item[i] = item[i] or {}
-            item[i][lang] = item_name
-            item_ct = item_ct + 1
-        end
-    end
-    Info("discovered item_ct:"..tostring(item_ct))
-
-                        -- Set Bonus: "Armor Master", aka writ4
-    self.saved_var.set             = self.saved_var.set or {}
-    local set = self.saved_var.set
-    local set_ct = 0
-    local t = "|H1:item:138798:6:1:0:0:0:59:255:4:%d:23:0:0:0:0:0:0:0:0:0:76000|h|h"
-
-    local re = self.MASTER_BASE_TEXT_RE.set
-    for i=1,500 do
-        local item_link = string.format(t, i)
-        local b = GenerateMasterWritBaseText(item_link)
-        local _,_,f = string.find(b,re)
-        if f then
-            set[i] = set[i] or {}
-            set[i][lang] = f
-            set_ct = set_ct + 1
-        end
-    end
-    Info("discovered set_ct:"..tostring(set_ct))
-end
-
--- Convert a writ1 value to a name like "Cuirass"
-function LibCraftText.ToItemName(crafting_type, item_num)
-    self = LibCraftText
-
-                        -- ZIG REPLACE WITH REAL LINKS
-    local example_writ_links = {
-          [bs] = "|H1:item:121527:6:1:0:0:0:%d:188:5:148:5:19:0:0:0:0:0:0:0:0:917700|h|h"
-        , [cl] = "|H1:item:121527:6:1:0:0:0:%d:188:5:148:5:19:0:0:0:0:0:0:0:0:917700|h|h"
-        , [ww] = "|H1:item:121527:6:1:0:0:0:%d:188:5:148:5:19:0:0:0:0:0:0:0:0:917700|h|h"
-        , [jw] = "|H1:item:138798:6:1:0:0:0:%d:255:4:178:23:0:0:0:0:0:0:0:0:0:76000|h|h"
-        }
-    local item_link    = example_writ_links[crafting_type]:format(item_num)
-
-                        -- Parsing sealed master writs is NOT part of our
-                        -- feature set: these regexes are just for our own
-                        -- internal parsing.
-    local RE = {
-               ,   en  = "Craft an? ([^;]*);"
-               ,   de  = "Stellt ein\\S* (.*) mit"
-               ,   fr  = "Fabriquez un\\S* ([^;]*)"
-               ,   es  = "Fabricar: ([^;]*)"
-               ,   it  = "Crea un\\S* ([^;]*)"
-               ,   ru  = "nСоздать предмет %(.*%);"
+                        -- Bootstrap: eventually these need to live in lang_db.
+                        -- But after a full 3-day cycle of  rank 10
+                        -- Rubedite/Ruby Ash/Ancestor Silk/Platinum daily
+                        -- writs, you will have extracted all possible daily
+                        -- write items.
+                        --
+                        -- So use lang_db MATS table if you got one, but fall
+                        -- back to these if you don't.
+    local MATS = {
+        [bs] = {
+               ,   en  = { "Rubedite" }
+               ,   de  = { "Rubedit" }
+               ,   fr  = { "cuprite" }
+               ,   es  = { "rubedita" }
+               ,   ja  = { "ルベダイト" }
                }
-    local lang = self.CurrLang()
-    local re = RE[lang] or RE.en
+    }
 
-    local b = GenerateMasterWritBaseText(item_link)
-    local _,_,f = string.find(b,re)
-    return f
+
+    local RE = {
+        [bs] = {   en  = "Craft Normal $MAT $ITEM: 0 / 1"
+               ,   de  = "Stellt normale $MAT$ITEM her: 0/1"
+               ,   fr  = "Fabriquez une? $ITEM en $MAT normal : 0/1"
+               ,   es  = "Fabrica une $ITEM de $MAT normal: 0/1"
+               ,   it  = "Craft $MAT $ITEM: 0 / 1"
+               ,   ja  = "$MATの$ITEM(ノーマル)を生産する: 0 / 1"
+               }
+    ,   [cl]   {   en  = "Craft Normal $MAT $ITEM: 0 / 1"
+               ,   de  = "Stellt normale Rubedolederschulterkappen her: 0/1"
+               ,   fr  = "Fabriquez des coques d'épaules en cuir pourpre normales : 0/1"
+               ,   es  = "Fabrica unas hombreras de cuero rubedo normales: 0/1"
+               ,   it  = "Craft Rubedo Leather Arm Cops: 0 / 1"
+               ,   ja  = "ルベドレザーのアームカップ(ノーマル)を生産する: 0 / 1"
+               }
+    }
 end
 
+]]
 
+-- Get all BS LGT MED WW JW base crafting materials,
+-- fill saved_vars.mats with table.
+--
+-- If this can be gleaned at runtime, then there's not reason to include it
+-- in lang_template.lua files. But for simplicity, I just ight anyway.
 
+function LibCraftText.DiscoverMaterials()
+    local self = LibCraftText
+    self.saved_var.materials = self.saved_var.materials or {}
+    local materials = self.saved_var.materials
+    local lang  = self.CurrLang()
+
+                        -- As of 2018-10-29, Italian translation lacks any
+                        -- material substring in its master writ base text.
+                        -- Since the Italian translation leaves its daily
+                        -- crafting writ steps in EN english anyway, I'm okay
+                        -- with skipping material substring extraction for
+                        -- Italian.
+    if lang == "it" then return end
+
+    local writ2 = {
+       ["bs" ] = {   1,   9, 156, 160, 164, 168, 172, 176, 180, 188  }
+    ,  ["lgt"] = {   5,  45,  47,  49,  51, 125, 126, 127, 128, 194  }
+    ,  ["med"] = { 148, 154, 158, 162, 166, 170, 174, 131, 132, 190  }
+    ,  ["ww" ] = {   2,  18,  20,  22,  24, 133, 134, 135, 136, 192  }
+    ,  ["jw" ] = {   6,  56, 137, 139, 255                           }
+    }
+    local template = {
+       ["bs" ] = "|H1:item:119563:6:1:0:0:0:69:%d:4:74:8:35:0:0:0:0:0:0:0:0:66000|h|h"
+    ,  ["lgt"] = "|H1:item:119694:6:1:0:0:0:32:%d:4:79:14:65:0:0:0:0:0:0:0:0:63000|h|h"
+    ,  ["med"] = "|H1:item:119695:6:1:0:0:0:37:%d:4:81:11:62:0:0:0:0:0:0:0:0:61500|h|h"
+    ,  ["ww" ] = "|H1:item:119681:6:1:0:0:0:74:%d:4:95:26:34:0:0:0:0:0:0:0:0:529000|h|h"
+    ,  ["jw" ] = "|H1:item:138798:6:1:0:0:0:18:%d:4:176:30:0:0:0:0:0:0:0:0:0:656000|h|h"
+    }
+    local RE = {
+       ["bs" ] = { en = "Craft an? (.*) Maul;"
+                 , de = "Stellt einen (.*)streitkolben mit bestimmten Eigenschaften her."
+                 , fr = "Fabriquez une masse d'arme [en ]*([^;]*);"
+                 , ru = "Создать предмет %((.*) Maul%);"
+                 , es = "Fabricar: Maza de ([^;]*);"
+                 , it = nil -- base_text lacks ANY material substring!
+                 , ja = "Craft a (.*)の大槌;"
+                 }
+    ,  ["lgt"] = { en = "Craft an? (.*) Shoes;"
+                 , de = "Stellt einige (.*)schuhe mit bestimmten Eigenschaften her."
+                 , fr = "Fabriquez des Chaussures [en ]*([^;]*);"
+                 , ru = "Создать предмет %((.*) Shoes%);"
+                 , es = "Fabricar: Zapatos de ([^;]*);"
+                 , it = nil -- base_text lacks ANY material substring!
+                 , ja = "Craft a (.*)の靴;"
+                 }
+    ,  ["med"] = { en = "Craft an? (.*) Jack"
+                 , de = "Stellt ein (.*) ?.ams mit bestimmten Eigenschaften her."
+                 , fr = "Fabriquez un gilet [en ]*([^;]*);"
+                 , ru = "Создать предмет %((.*) Jack%);"
+                 , es = "Fabricar: Pechera [de ]*([^;]*);"
+                 , it = nil -- base_text lacks ANY material substring!
+                 , ja = "Craft a (.*)の胴当て;"
+                 }
+    ,  ["ww" ] = { en = "Craft an? (.*) Lightning Staff;"
+                 , de = "Stellt einen (.*)blitzstab mit bestimmten Eigenschaften her."
+                 , fr = "Fabriquez un Bâton de foudre en ([^;]*);"
+                 , ru = "Создать предмет %((.*) Lightning Staff%);"
+                 , es = "Fabricar: Vara eléctrica de \t?([^;]*);"
+                 , it = nil -- base_text lacks ANY material substring!
+                 , ja = "Craft a (.*)の稲妻の杖;"
+                 }
+    ,  ["jw" ] = { en = "Craft an? (.*) Necklace;"
+                 , de = "Stellt einen (.*)kette mit bestimmten Eigenschaften her."
+                 , fr = "Fabriquez un Collier en ([^;]*);"
+                 , ru = "Создать предмет %((.*) Necklace%);"
+                 , es = "Fabricar: Collar de ([^;]*);"
+                 , it = nil -- base_text lacks ANY material substring!
+                 , ja = "Craft a (.*)のネックレス;"
+                 }
+    }
+
+    for weight, list in pairs(writ2)  do
+        materials[weight] = materials[weight] or {}
+        materials[weight][lang] = {}
+        for i,item_num in ipairs(writ2[weight]) do
+            local item_link = template[weight]:format(item_num)
+            local b = GenerateMasterWritBaseText(item_link)
+            local re = RE[weight][lang] or RE[weight].en
+            local _,_,f = string.find(b,re)
+            table.insert(materials[weight][lang], f or b)
+        end
+    end
+end
 
 -- Util ----------------------------------------------------------------------
 
@@ -344,3 +396,15 @@ function LibCraftText.CurrLang()
     return GetCVar("language.2")
 end
 
+
+
+
+-- bs  |H1:item:119563:6:1:0:0:0:69:188:4:74:8:35:0:0:0:0:0:0:0:0:66000|h|h
+-- lgt |H1:item:119694:6:1:0:0:0:32:194:4:79:14:65:0:0:0:0:0:0:0:0:63000|h|h
+-- med |H1:item:119695:6:1:0:0:0:37:190:4:81:11:62:0:0:0:0:0:0:0:0:61500|h|h
+-- ww  |H1:item:119681:6:1:0:0:0:74:192:4:95:26:34:0:0:0:0:0:0:0:0:529000|h|h
+-- jw  |H1:item:138798:6:1:0:0:0:18:255:4:176:30:0:0:0:0:0:0:0:0:0:656000|h|h
+
+-- al  |H1:item:119705:6:1:0:0:0:199:19:3:1:0:0:0:0:0:0:0:0:0:0:50000|h|h
+-- en  |H1:item:119564:6:1:0:0:0:26587:225:4:0:0:0:0:0:0:0:0:0:0:0:22000|h|h
+-- pr  |H1:item:119693:6:1:0:0:0:68253:0:0:0:0:0:0:0:0:0:0:0:0:0:20000|h|h

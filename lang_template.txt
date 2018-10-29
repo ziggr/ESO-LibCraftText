@@ -46,15 +46,6 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  $MASTER_LABEL_TRAIT               -- "Trait"
 }
 
-LibCraftText.MASTER_BASE_TEXT_RE = {
-    ["item"   ] = $MASTER_WRIT_BASE_TEXT_RE_ITEM     -- "Craft an? (.*);"
-,   ["quality"] = $MASTER_WRIT_BASE_TEXT_RE_QUALITY  -- "Quality: (.*);"
-,   ["set"    ] = $MASTER_WRIT_BASE_TEXT_RE_SET      -- "Set: (.*)"
-,   ["style"  ] = $MASTER_WRIT_BASE_TEXT_RE_STYLE    -- "Style: (.*)"
-,   ["trait"  ] = $MASTER_WRIT_BASE_TEXT_RE_TRAIT    -- "Trait: (.*);"
-
-}
-
 LibCraftText.ROLIS_QUEST_TURN_IN = {
 
     ["rolis"]          = $ROLIS_NAME                 -- "Rolis Hlaalu"
