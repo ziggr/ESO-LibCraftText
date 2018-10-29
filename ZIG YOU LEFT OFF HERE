@@ -3,6 +3,26 @@ ZIG YOU LEFT OFF HERE
 Goal is a table of regexes that can parse daily and master writ quest condition text.
 Goal is NOT a translation table of set/trait/whatever strings.
 
+Need REGEXes:
+    Given a sealed master writ condition text:
+    -- get requested crafting item, AS A STRING
+    -- get requested crafting material AS A STRING
+    -- get requested quality AS A STRING
+    -- get requested set bonus AS A STRING
+    -- get requested motif AS A STRING
+    -- get requested trait AS A STRING
+    -- get alchemy potion/poison name AS A STRING
+    -- get alchemy potion/poison level AS A STRING
+    -- get alchemy effect list, AS A STRING list
+    -- get enchant level AS A STRING
+    -- get enchant name AS A STRING
+    -- get food/drink name AS A STRING
+    Given a DAILY writ condition, same as above but likely DIFFERENT regexes:
+
+Now, from those strings, get some sort of integer/constant.
+THAT is where having tables of gear names, sets, materials, styles, all come in
+handy. Which of those can be generated at runtime?
+
 
 
 The only reason I'm playing with SEALED MASTER WRIT item_links is that it's easy

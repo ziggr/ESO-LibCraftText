@@ -72,8 +72,7 @@ end
 function LibCraftText.SlashCommand(args)
     if (not args) or args:lower() == "scan" then
         Info("Scanning...")
-        LibCraftText.ScanQuestJournal()
-        LibCraftText.DiscoverMaterials()
+        LibCraftText.Scan()
     elseif args:lower() == "forget" then
         LibCraftText.Forget()
         Info("Forgotten.")
@@ -81,8 +80,14 @@ function LibCraftText.SlashCommand(args)
         local want_lang = args:sub(6,7):lower()
         LibCraftText.NextLang(want_lang)
     else
-        Info("Unkonwn command: '"..tostring(args).."'")
+        Info("Unknown command: '"..tostring(args).."'")
     end
+end
+
+function LibCraftText.Scan()
+    LibCraftText.ScanQuestJournal()
+    LibCraftText.DiscoverMaterials()
+    LibCraftText.DiscoverItems()
 end
 
 function LibCraftText.Forget()
@@ -380,12 +385,94 @@ function LibCraftText.DiscoverMaterials()
     for weight, list in pairs(writ2)  do
         materials[weight] = materials[weight] or {}
         materials[weight][lang] = {}
-        for i,item_num in ipairs(writ2[weight]) do
-            local item_link = template[weight]:format(item_num)
+        for i,mat_num in ipairs(writ2[weight]) do
+            local item_link = template[weight]:format(mat_num)
             local b = GenerateMasterWritBaseText(item_link)
             local re = RE[weight][lang] or RE[weight].en
             local _,_,f = string.find(b,re)
             table.insert(materials[weight][lang], f or b)
+        end
+    end
+end
+
+function LibCraftText.DiscoverItems()
+    local self = LibCraftText
+    self.saved_var.items = self.saved_var.items or {}
+    local items = self.saved_var.items
+    local lang  = self.CurrLang()
+
+    local writ1 = {
+      ["bs" ] = { 53, 56, 59, 68, 69, 67, 62        -- bs weapons
+                , 46, 50, 52, 44, 49, 47, 48 }      -- heavy armor
+    , ["lgt"] = { 28, 75, 32, 34, 26, 31, 29, 30 }  -- light armor, including jerkin
+    , ["med"] = { 37, 41, 43, 35, 40, 38, 39 }      -- medium armor
+    , ["ww" ] = { 70, 72, 73, 74, 71                -- ww weapons
+                , 65 }                              -- shield
+    , ["jw" ] = { 18, 24 }                          -- necklace, ring
+    }
+    local template = {
+       ["bs" ] = "|H1:item:119563:6:1:0:0:0:%d:188:4:74:8:35:0:0:0:0:0:0:0:0:66000|h|h"
+    ,  ["lgt"] = "|H1:item:119694:6:1:0:0:0:%d:194:4:79:14:65:0:0:0:0:0:0:0:0:63000|h|h"
+    ,  ["med"] = "|H1:item:119695:6:1:0:0:0:%d:190:4:81:11:62:0:0:0:0:0:0:0:0:61500|h|h"
+    ,  ["ww" ] = "|H1:item:119681:6:1:0:0:0:%d:192:4:95:26:34:0:0:0:0:0:0:0:0:529000|h|h"
+    ,  ["jw" ] = "|H1:item:138798:6:1:0:0:0:%d:255:4:176:30:0:0:0:0:0:0:0:0:0:656000|h|h"
+    }
+    local RE = {
+       ["bs" ] = { en = "Craft a Rubedite ([^;]*);"
+                 , de = "Stellt ein[eniga]* Rubedit(.*) mit bestimmten Eigenschaften her."
+                 , fr = "Fabriquez [unedes]* (.*) en cuprite;"
+                 , ru = "Создать предмет %(Rubedite ([^;]*)%);"
+                 , es = "Fabricar: (.*) de rubedita;"
+                 , it = "Crea un ([^;]*);"
+                 , ja = "Craft a ルベダイトの([^;]*);"
+                 }
+    ,  ["lgt"] = { en = "Craft an Ancestor Silk ([^;]*);"
+                 , de = "Stellt ein[eniga]* Ahnenseiden(.*) mit bestimmten Eigenschaften her."
+                 , fr = "Fabriquez [unedes]* (.*) en soie ancestrales?;"
+                 , ru = "Создать предмет %(Ancestor Silk ([^;]*)%);"
+                 , es = "Fabricar: (.*) de seda ancestral;"
+                 , it = "Crea un ([^;]*);"
+                 , ja = "Craft a 先人のシルクの([^;]*);"
+                 }
+    ,  ["med"] = { en = "Craft a Rubedo Leather ([^;]*);"
+                 , de = "Stellt ein[eniga]* Rubedoleder(.*) mit bestimmten Eigenschaften her."
+                 , fr = "Fabriquez [unedes]* (.*) en cuir pourpres?;"
+                 , ru = "Создать предмет %(Rubedo Leather ([^;]*)%);"
+                 , es = "Fabricar: (.*) de cuero rubedo;"
+                 , it = "Crea un ([^;]*);"
+                 , ja = "Craft a ルベドレザーの([^;]*);"
+                 }
+    ,  ["ww" ] = { en = "Craft a Ruby Ash ([^;]*);"
+                 , de = "Stellt ein[eniga]* Rubineschen(.*) mit bestimmten Eigenschaften her."
+                 , fr = "Fabriquez [unedes]* (.*) en frêne roux;"
+                 , ru = "Создать предмет %(Ruby Ash ([^;]*)%);"
+                 , es = "Fabricar: (.*) de \t?fresno rubí;"
+                 , it = "Crea un ([^;]*);"
+                 , ja = "Craft a ルビーアッシュの([^;]*);"
+                 }
+    ,  ["jw" ] = { en = "Craft a platinum ([^;]*);"
+                 , de = "Stellt ein[eniga]* Platin(.*) mit bestimmten Eigenschaften her."
+                 , fr = "Fabriquez [unedes]* (.*) en platine;"
+                 , ru = "Создать предмет %(platinum ([^;]*)%);"
+                 , es = "Fabricar: (.*) de platino;"
+                 , it = "Crea un ([^;]*);"
+                 , ja = "Craft a プラチナの([^;]*);"
+                 }
+    }
+items["ww "] = nil
+
+    for weight, list in pairs(writ1)  do
+        items[weight] = items[weight] or {}
+        items[weight][lang] = {}
+        for i,item_num in ipairs(writ1[weight]) do
+            local item_link = template[weight]:format(item_num)
+            local b = GenerateMasterWritBaseText(item_link)
+            local re = RE[weight][lang] or RE[weight].en
+            local f = nil
+            if re then
+                _,_,f = string.find(b,re)
+            end
+            table.insert(items[weight][lang], f or b)
         end
     end
 end
