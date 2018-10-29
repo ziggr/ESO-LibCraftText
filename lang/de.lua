@@ -46,15 +46,6 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Eigenschaft"                     -- "Trait"
 }
 
-LibCraftText.MASTER_BASE_TEXT_RE = {
-    ["item"   ] = "Stellt ein\\S* (.*) mit"          -- "Craft an? (.*);"
-,   ["quality"] = "Qualität: (.*)\n?"             -- "Quality: (.*);"
-,   ["set"    ] = "Set: (.*)\n"                      -- "Set: (.*)"
-,   ["style"  ] = "Style: ([^;]*)"                   -- "Style: (.*)"
-,   ["trait"  ] = "Eigenschaft: (.*)\n"              -- "Trait: (.*);"
-
-}
-
 LibCraftText.ROLIS_QUEST_TURN_IN = {
 
     ["rolis"]          = "Rolis Hlaalu"              -- "Rolis Hlaalu"
@@ -71,3 +62,56 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 ,   [jw] = "I've finished the Jewelry job."          -- "I've finished the Jewelry job."
 }
 
+LibCraftText.MATERIALS = {
+    ["bs" ] = { "Eisen"              -- "iron"
+              , "Stahl"              -- "steel"
+              , "Oreichalkos"        -- "orichalc"
+              , "Dwemer"             -- "dwarven"
+              , "Ebenerz"            -- "ebon"
+              , "Kalzinium"          -- "calcinium"
+              , "Galatit"            -- "galatite"
+              , "Flinksilber"        -- "quicksilver"
+              , "Leerenstahl"        -- "voidsteel"
+              , "Rubedit"            -- "Rubedite"
+              }
+,   ["lgt"] = { "Jute"               -- "homespun"
+              , "Flachs"             -- "linen"
+              , "Baumwoll"           -- "cotton"
+              , "Spinnenseiden"      -- "spidersilk"
+              , "Ebengarn"           -- "ebonthread"
+              , "Kresh"              -- "kresh"
+              , "Eisenstoff"         -- "ironthread"
+              , "Silberstoff"        -- "silverweave"
+              , "Leerenstoff"        -- "shadowspun"
+              , "Ahnenseiden"        -- "Ancestor Silk"
+              }
+,   ["med"] = { "Rohleder"           -- "rawhide"
+              , "Halbleder"          -- "hide"
+              , "Leder"              -- "leather"
+              , "Hartleder"          -- "full-leather"
+              , "Wildleder"          -- "fell"
+              , "Rauleder"           -- "brigandine"
+              , "Eisenleder"         -- "ironhide"
+              , "prächtiges "       -- "superb"
+              , "Schattenleder"      -- "shadowhide"
+              , "Rubedoleder"        -- "Rubedo Leather"
+              }
+,   ["ww" ] = { "Ahorn"              -- "maple"
+              , "Eichen"             -- "oak"
+              , "Buchen"             -- "beech"
+              , "Hickory"            -- "hickory"
+              , "Eiben"              -- "yew"
+              , "Birken"             -- "birch"
+              , "Eschen"             -- "ash"
+              , "Mahagoni"           -- "mahogany"
+              , "Nachtholz"          -- "nightwood"
+              , "Rubineschen"        -- "Ruby Ash"
+              }
+,   ["jw" ] = { "Zinn"               -- "pewter"
+              , "Kupfer"             -- "copper"
+              , "Silber"             -- "silver"
+              , "Elektrum"           -- "electrum"
+              , "Platin"             -- "platinum"
+              }
+
+}

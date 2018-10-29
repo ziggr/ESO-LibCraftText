@@ -46,15 +46,6 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Tratti"                          -- "Trait"
 }
 
-LibCraftText.MASTER_BASE_TEXT_RE = {
-    ["item"   ] = "Crea un\\S* ([^;]*)"              -- "Craft an? (.*);"
-,   ["quality"] = "Qualità: ([^;]*)"              -- "Quality: (.*);"
-,   ["set"    ] = "Set: (.*)"                        -- "Set: (.*)"
-,   ["style"  ] = "Style: ([^;]*)"                   -- "Style: (.*)"
-,   ["trait"  ] = "Tratti: (.*)"                     -- "Trait: (.*);"
-
-}
-
 LibCraftText.ROLIS_QUEST_TURN_IN = {
 
     ["rolis"]          = "Rolis Hlaalu"              -- "Rolis Hlaalu"
@@ -71,3 +62,56 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 ,   [jw] = "I've finished the Jewelry job."          -- "I've finished the Jewelry job."
 }
 
+LibCraftText.MATERIALS = {
+    ["bs" ] = { "iron"               -- "iron"
+              , "steel"              -- "steel"
+              , "orichalc"           -- "orichalc"
+              , "dwarven"            -- "dwarven"
+              , "ebon"               -- "ebon"
+              , "calcinium"          -- "calcinium"
+              , "galatite"           -- "galatite"
+              , "quicksilver"        -- "quicksilver"
+              , "voidsteel"          -- "voidsteel"
+              , "Rubedite"           -- "Rubedite"
+              }
+,   ["lgt"] = { "homespun"           -- "homespun"
+              , "linen"              -- "linen"
+              , "cotton"             -- "cotton"
+              , "spidersilk"         -- "spidersilk"
+              , "ebonthread"         -- "ebonthread"
+              , "kresh"              -- "kresh"
+              , "ironthread"         -- "ironthread"
+              , "silverweave"        -- "silverweave"
+              , "shadowspun"         -- "shadowspun"
+              , "Ancestor Silk"      -- "Ancestor Silk"
+              }
+,   ["med"] = { "rawhide"            -- "rawhide"
+              , "hide"               -- "hide"
+              , "leather"            -- "leather"
+              , "full-leather"       -- "full-leather"
+              , "fell"               -- "fell"
+              , "brigandine"         -- "brigandine"
+              , "ironhide"           -- "ironhide"
+              , "superb"             -- "superb"
+              , "shadowhide"         -- "shadowhide"
+              , "Rubedo Leather"     -- "Rubedo Leather"
+              }
+,   ["ww" ] = { "maple"              -- "maple"
+              , "oak"                -- "oak"
+              , "beech"              -- "beech"
+              , "hickory"            -- "hickory"
+              , "yew"                -- "yew"
+              , "birch"              -- "birch"
+              , "ash"                -- "ash"
+              , "mahogany"           -- "mahogany"
+              , "nightwood"          -- "nightwood"
+              , "Ruby Ash"           -- "Ruby Ash"
+              }
+,   ["jw" ] = { "pewter"             -- "pewter"
+              , "copper"             -- "copper"
+              , "silver"             -- "silver"
+              , "electrum"           -- "electrum"
+              , "platinum"           -- "platinum"
+              }
+
+}

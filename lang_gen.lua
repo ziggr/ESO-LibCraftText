@@ -83,6 +83,22 @@ function ImportSavedVars()
             end
         end
     end
+
+    local materials = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].materials
+    for weight, lang_list in pairs(materials) do
+        for lang, level_list in pairs(lang_list) do
+            for level, text in pairs(level_list) do
+                        -- Special case to omit Italian material strings
+                        -- which are the entire master writ base text innstead
+                        -- of a material name
+                if lang ~= "it" then
+                    local key = string.format("$MATERIAL_%s_%02d", weight:upper(), level)
+                    local entry = DB[key]
+                    entry[lang] = text
+                end
+            end
+        end
+    end
 end
 
 -- From http://lua-users.org/wiki/SplitJoin

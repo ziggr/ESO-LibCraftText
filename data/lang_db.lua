@@ -631,7 +631,7 @@ LANG_DB = {
           ,   en  = "Craft a Ruby Ash Shield with the following Properties:"
           ,   de  = "Stellt einen Rubineschenschild mit bestimmten Eigenschaften her."
           ,   fr  = "Fabriquez un bouclier en frêne roux avec les caractéristiques suivantes : "
-          ,   es  = "Fabricar: Escudo de    fresno rubí con los siguientes rasgos: "
+          ,   es  = "Fabricar: Escudo de 	fresno rubí con los siguientes rasgos: "
           ,   it  = "Crea un Scudo con le seguenti proprietà:"
           ,   ru  = "Создать предмет (Ruby Ash Shield) со следующими характеристиками:"
           ,   ja  = "Craft a ルビーアッシュの盾 with the following Properties:"
@@ -671,12 +671,16 @@ LANG_DB = {
           ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Invigorating\n• Set: Orgnum's Scales\n• Style: Psijic Order\n• Progress: 0 / 1"
           ,   de  = "Stellt einen Rubineschenschild mit bestimmten Eigenschaften her.\n• Set: Orgnums Schuppen\n• Stil: Psijik-Orden\n• Eigenschaft: Belebend\n• Qualität: Episch\n• Fortschritt: 0/1"
           ,   fr  = "Fabriquez un bouclier en frêne roux avec les caractéristiques suivantes : \n• Qualité : Épique\n• Trait : Revigorant\n• Ensemble : les Écailles d'Orgnum\n• Style : Ordre psijique\n• Progression : 0/1"
-          ,   es  = "Fabricar: Escudo de    fresno rubí con los siguientes rasgos: \n• Calidad: Épico\n• Rasgo: Vigorizante\n• Conjunto: Escamas de Orgnum\n• Estilo: Orden Psijic\n• Progreso: 0/1"
+          ,   es  = "Fabricar: Escudo de 	fresno rubí con los siguientes rasgos: \n• Calidad: Épico\n• Rasgo: Vigorizante\n• Conjunto: Escamas de Orgnum\n• Estilo: Orden Psijic\n• Progreso: 0/1"
           ,   it  = "Crea un Scudo con le seguenti proprietà:\n• Qualità: Epico\n• Tratti: Prospero\n• Set: Orgnum's Scales\n• Stile:\n• Progresso: 0 / 1"
           ,   ru  = "Создать предмет (Ruby Ash Shield) со следующими характеристиками:\n• Качество: Эпическое\n• Особенность: Invigorating\n• Комплект: Orgnum's Scales\n• Стиль: орден Псиджиков\n• Прогресс: 0 / 1"
           ,   ja  = "Craft a ルビーアッシュの盾 with the following Properties:\n• Quality: Epic\n• Trait: Invigorating\n• Set: オルグヌム鱗\n• Style: サイジック\n• Progress: 0 / 1"
           }
 , [ 88] = {
+              key = "$MASTER_CRAFT_ITEM_RE"
+          ,   en  = "Craft an? (.*);"
+          }
+, [ 89] = {
               key = "$MASTER_FEAST"
           ,   en  = "A Masterful Feast"
           ,   de  = "Ein meisterhaftes Mahl"
@@ -685,7 +689,7 @@ LANG_DB = {
           ,   ru  = "Искусный пир"
           ,   ja  = "優れた料理"
           }
-, [ 89] = {
+, [ 90] = {
               key = "$MASTER_GLYPH"
           ,   en  = "A Masterful Glyph"
           ,   de  = "Eine meisterhafte Glyphe"
@@ -694,7 +698,7 @@ LANG_DB = {
           ,   ru  = "Искусный глиф"
           ,   ja  = "優れたグリフ"
           }
-, [ 90] = {
+, [ 91] = {
               key = "$MASTER_JEWELRY"
           ,   en  = "Masterful Jewelry"
           ,   de  = "Ein meisterhaftes Schmuckstück"
@@ -703,7 +707,7 @@ LANG_DB = {
           ,   ru  = "Искусные ювелирные изделия"
           ,   ja  = "優れた宝飾"
           }
-, [ 91] = {
+, [ 92] = {
               key = "$MASTER_LABEL_QUALITY"
           ,   en  = "Quality"
           ,   de  = "Qualität"
@@ -712,13 +716,13 @@ LANG_DB = {
           ,   it  = "Qualità"
           ,   ru  = "Качество"
           }
-, [ 92] = {
+, [ 93] = {
               key = "$MASTER_LABEL_SET"
           ,   en  = "Set"
           ,   fr  = "Ensemble"
           ,   ru  = "Комплект"
           }
-, [ 93] = {
+, [ 94] = {
               key = "$MASTER_LABEL_STYLE"
           ,   en  = "Style"
           ,   de  = "Stil"
@@ -726,7 +730,7 @@ LANG_DB = {
           ,   it  = "Stile"
           ,   ru  = "Стиль"
           }
-, [ 94] = {
+, [ 95] = {
               key = "$MASTER_LABEL_TRAIT"
           ,   en  = "Trait"
           ,   de  = "Eigenschaft"
@@ -734,7 +738,7 @@ LANG_DB = {
           ,   it  = "Tratti"
           ,   ru  = "Особенность"
           }
-, [ 95] = {
+, [ 96] = {
               key = "$MASTER_LEATHER"
           ,   en  = "Masterful Leatherwear"
           ,   de  = "Meisterhafte Lederwaren"
@@ -743,7 +747,7 @@ LANG_DB = {
           ,   ru  = "Искусные кожаные доспехи"
           ,   ja  = "優れた革装備"
           }
-, [ 96] = {
+, [ 97] = {
               key = "$MASTER_PLATE"
           ,   en  = "A Masterful Plate"
           ,   de  = "Eine meisterhafte Rüstung"
@@ -752,7 +756,7 @@ LANG_DB = {
           ,   ru  = "Искусные латы"
           ,   ja  = "優れた防具"
           }
-, [ 97] = {
+, [ 98] = {
               key = "$MASTER_SHIELD"
           ,   en  = "A Masterful Shield"
           ,   de  = "Ein meisterhafter Schild"
@@ -761,7 +765,7 @@ LANG_DB = {
           ,   ru  = "Искусный щит"
           ,   ja  = "優れた盾"
           }
-, [ 98] = {
+, [ 99] = {
               key = "$MASTER_STEP_1"
           ,   en  = "I need to create the item specified by my contract."
           ,   de  = "Ich muss den Gegenstand aus meinem Vertrag herstellen."
@@ -770,7 +774,7 @@ LANG_DB = {
           ,   ru  = "Мне нужно создать предмет, указанный в моем контракте."
           ,   ja  = "契約で指定されたアイテムを作成する"
           }
-, [ 99] = {
+, [100] = {
               key = "$MASTER_STEP_N"
           ,   en  = "I need to create the items specified by my contract."
           ,   de  = "Ich muss die Gegenstände aus meinem Vertrag herstellen."
@@ -779,7 +783,7 @@ LANG_DB = {
           ,   ru  = "Мне нужно создать предметы, указанные в моем контракте."
           ,   ja  = "契約で指定されたアイテムを作成する"
           }
-, [100] = {
+, [101] = {
               key = "$MASTER_TAILOR"
           ,   en  = "Masterful Tailoring"
           ,   de  = "Ein meisterhaftes Gewand"
@@ -788,7 +792,7 @@ LANG_DB = {
           ,   ru  = "Искусные тканевые доспехи"
           ,   ja  = "優れた服"
           }
-, [101] = {
+, [102] = {
               key = "$MASTER_WEAPON"
           ,   en  = "A Masterful Weapon"
           ,   de  = "Eine meisterhafte Waffe"
@@ -797,7 +801,432 @@ LANG_DB = {
           ,   ru  = "Искусное оружие"
           ,   ja  = "優れた武器"
           }
-, [102] = {
+, [103] = {
+              key = "$MASTER_WRIT_BASE_TEXT_RE_ITEM"
+          ,   en  = "Craft an? ([^;]*);"
+          }
+, [104] = {
+              key = "$MASTER_WRIT_BASE_TEXT_RE_QUALITY"
+          ,   en  = "Quality: ([^;]*)"
+          }
+, [105] = {
+              key = "$MASTER_WRIT_BASE_TEXT_RE_SET"
+          ,   en  = "Set: (.*)"
+          }
+, [106] = {
+              key = "$MASTER_WRIT_BASE_TEXT_RE_STYLE"
+          ,   en  = "Style: ([^;]*)"
+          }
+, [107] = {
+              key = "$MASTER_WRIT_BASE_TEXT_RE_TRAIT"
+          ,   en  = "Trait: ([^;]*)"
+          }
+, [108] = {
+              key = "$MATERIAL_BS_01"
+          ,   en  = "iron"
+          ,   de  = "Eisen"
+          ,   fr  = "fer"
+          ,   es  = "hierro"
+          ,   ru  = "iron"
+          ,   ja  = "鉄"
+          }
+, [109] = {
+              key = "$MATERIAL_BS_02"
+          ,   en  = "steel"
+          ,   de  = "Stahl"
+          ,   fr  = "acier"
+          ,   es  = "acero"
+          ,   ru  = "steel"
+          ,   ja  = "鋼鉄"
+          }
+, [110] = {
+              key = "$MATERIAL_BS_03"
+          ,   en  = "orichalc"
+          ,   de  = "Oreichalkos"
+          ,   fr  = "orichalque"
+          ,   es  = "oricalco"
+          ,   ru  = "orichalc"
+          ,   ja  = "オリハルコン"
+          }
+, [111] = {
+              key = "$MATERIAL_BS_04"
+          ,   en  = "dwarven"
+          ,   de  = "Dwemer"
+          ,   fr  = "dwemère"
+          ,   es  = "acero enano"
+          ,   ru  = "dwarven"
+          ,   ja  = "ドワーフ"
+          }
+, [112] = {
+              key = "$MATERIAL_BS_05"
+          ,   en  = "ebon"
+          ,   de  = "Ebenerz"
+          ,   fr  = "ébonite"
+          ,   es  = "ébano"
+          ,   ru  = "ebon"
+          ,   ja  = "黒檀"
+          }
+, [113] = {
+              key = "$MATERIAL_BS_06"
+          ,   en  = "calcinium"
+          ,   de  = "Kalzinium"
+          ,   fr  = "calcinium"
+          ,   es  = "calcinio"
+          ,   ru  = "calcinium"
+          ,   ja  = "カルシニウム"
+          }
+, [114] = {
+              key = "$MATERIAL_BS_07"
+          ,   en  = "galatite"
+          ,   de  = "Galatit"
+          ,   fr  = "galatite"
+          ,   es  = "galatita"
+          ,   ru  = "galatite"
+          ,   ja  = "ガラタイト"
+          }
+, [115] = {
+              key = "$MATERIAL_BS_08"
+          ,   en  = "quicksilver"
+          ,   de  = "Flinksilber"
+          ,   fr  = "mercure"
+          ,   es  = "azogue"
+          ,   ru  = "quicksilver"
+          ,   ja  = "水銀"
+          }
+, [116] = {
+              key = "$MATERIAL_BS_09"
+          ,   en  = "voidsteel"
+          ,   de  = "Leerenstahl"
+          ,   fr  = "acier du néant"
+          ,   es  = "acero del vacío"
+          ,   ru  = "voidsteel"
+          ,   ja  = "虚無の鉄"
+          }
+, [117] = {
+              key = "$MATERIAL_BS_10"
+          ,   en  = "Rubedite"
+          ,   de  = "Rubedit"
+          ,   fr  = "cuprite"
+          ,   es  = "rubedita"
+          ,   ru  = "Rubedite"
+          ,   ja  = "ルベダイト"
+          }
+, [118] = {
+              key = "$MATERIAL_JW_01"
+          ,   en  = "pewter"
+          ,   de  = "Zinn"
+          ,   fr  = "étain"
+          ,   es  = "peltre"
+          ,   ru  = "pewter"
+          ,   ja  = "ピューター"
+          }
+, [119] = {
+              key = "$MATERIAL_JW_02"
+          ,   en  = "copper"
+          ,   de  = "Kupfer"
+          ,   fr  = "cuivre"
+          ,   es  = "cobre"
+          ,   ru  = "copper"
+          ,   ja  = "銅"
+          }
+, [120] = {
+              key = "$MATERIAL_JW_03"
+          ,   en  = "silver"
+          ,   de  = "Silber"
+          ,   fr  = "argent"
+          ,   es  = "plata"
+          ,   ru  = "silver"
+          ,   ja  = "銀"
+          }
+, [121] = {
+              key = "$MATERIAL_JW_04"
+          ,   en  = "electrum"
+          ,   de  = "Elektrum"
+          ,   fr  = "électrum"
+          ,   es  = "electro"
+          ,   ru  = "electrum"
+          ,   ja  = "琥珀金"
+          }
+, [122] = {
+              key = "$MATERIAL_JW_05"
+          ,   en  = "platinum"
+          ,   de  = "Platin"
+          ,   fr  = "platine"
+          ,   es  = "platino"
+          ,   ru  = "platinum"
+          ,   ja  = "プラチナ"
+          }
+, [123] = {
+              key = "$MATERIAL_LGT_01"
+          ,   en  = "homespun"
+          ,   de  = "Jute"
+          ,   fr  = "artisanales"
+          ,   es  = "tejido artesanal"
+          ,   ru  = "homespun"
+          ,   ja  = "手織り布"
+          }
+, [124] = {
+              key = "$MATERIAL_LGT_02"
+          ,   en  = "linen"
+          ,   de  = "Flachs"
+          ,   fr  = "lin"
+          ,   es  = "lino"
+          ,   ru  = "linen"
+          ,   ja  = "リネン"
+          }
+, [125] = {
+              key = "$MATERIAL_LGT_03"
+          ,   en  = "cotton"
+          ,   de  = "Baumwoll"
+          ,   fr  = "coton"
+          ,   es  = "algodón"
+          ,   ru  = "cotton"
+          ,   ja  = "コットン"
+          }
+, [126] = {
+              key = "$MATERIAL_LGT_04"
+          ,   en  = "spidersilk"
+          ,   de  = "Spinnenseiden"
+          ,   fr  = "soie d'araignée"
+          ,   es  = "seda de araña"
+          ,   ru  = "spidersilk"
+          ,   ja  = "スパイダーシルク"
+          }
+, [127] = {
+              key = "$MATERIAL_LGT_05"
+          ,   en  = "ebonthread"
+          ,   de  = "Ebengarn"
+          ,   fr  = "fil d'ébonite"
+          ,   es  = "hilo de ébano"
+          ,   ru  = "ebonthread"
+          ,   ja  = "エボンスレッド"
+          }
+, [128] = {
+              key = "$MATERIAL_LGT_06"
+          ,   en  = "kresh"
+          ,   de  = "Kresh"
+          ,   fr  = "kresh"
+          ,   es  = "kresh"
+          ,   ru  = "kresh"
+          ,   ja  = "クレッシュ"
+          }
+, [129] = {
+              key = "$MATERIAL_LGT_07"
+          ,   en  = "ironthread"
+          ,   de  = "Eisenstoff"
+          ,   fr  = "fil de fer"
+          ,   es  = "hilo de hierro"
+          ,   ru  = "ironthread"
+          ,   ja  = "アイアンスレッド"
+          }
+, [130] = {
+              key = "$MATERIAL_LGT_08"
+          ,   en  = "silverweave"
+          ,   de  = "Silberstoff"
+          ,   fr  = "fil d'argent"
+          ,   es  = "hilo de plata"
+          ,   ru  = "silverweave"
+          ,   ja  = "シルバーウィーブ"
+          }
+, [131] = {
+              key = "$MATERIAL_LGT_09"
+          ,   en  = "shadowspun"
+          ,   de  = "Leerenstoff"
+          ,   fr  = "tissombre"
+          ,   es  = "tejido sombrío"
+          ,   ru  = "shadowspun"
+          ,   ja  = "影の布"
+          }
+, [132] = {
+              key = "$MATERIAL_LGT_10"
+          ,   en  = "Ancestor Silk"
+          ,   de  = "Ahnenseiden"
+          ,   fr  = "soie ancestrales"
+          ,   es  = "seda ancestral"
+          ,   ru  = "Ancestor Silk"
+          ,   ja  = "先人のシルク"
+          }
+, [133] = {
+              key = "$MATERIAL_MED_01"
+          ,   en  = "rawhide"
+          ,   de  = "Rohleder"
+          ,   fr  = "cuir brut"
+          ,   es  = "piel cruda"
+          ,   ru  = "rawhide"
+          ,   ja  = "生皮"
+          }
+, [134] = {
+              key = "$MATERIAL_MED_02"
+          ,   en  = "hide"
+          ,   de  = "Halbleder"
+          ,   fr  = "peau"
+          ,   es  = "piel"
+          ,   ru  = "hide"
+          ,   ja  = "皮"
+          }
+, [135] = {
+              key = "$MATERIAL_MED_03"
+          ,   en  = "leather"
+          ,   de  = "Leder"
+          ,   fr  = "cuir"
+          ,   es  = "cuero"
+          ,   ru  = "leather"
+          ,   ja  = "革"
+          }
+, [136] = {
+              key = "$MATERIAL_MED_04"
+          ,   en  = "full-leather"
+          ,   de  = "Hartleder"
+          ,   fr  = "cuir complet"
+          ,   es  = "cuero tratado"
+          ,   ru  = "full-leather"
+          ,   ja  = "フルレザー"
+          }
+, [137] = {
+              key = "$MATERIAL_MED_05"
+          ,   en  = "fell"
+          ,   de  = "Wildleder"
+          ,   fr  = "déchu"
+          ,   es  = "piel impía"
+          ,   ru  = "fell"
+          ,   ja  = "フェルハイド"
+          }
+, [138] = {
+              key = "$MATERIAL_MED_06"
+          ,   en  = "brigandine"
+          ,   de  = "Rauleder"
+          ,   fr  = "cuir clouté"
+          ,   es  = "brigantina"
+          ,   ru  = "brigandine"
+          ,   ja  = "ブリガンダイン"
+          }
+, [139] = {
+              key = "$MATERIAL_MED_07"
+          ,   en  = "ironhide"
+          ,   de  = "Eisenleder"
+          ,   fr  = "peau de fer"
+          ,   es  = "piel férrea"
+          ,   ru  = "ironhide"
+          ,   ja  = "アイアンハイド"
+          }
+, [140] = {
+              key = "$MATERIAL_MED_08"
+          ,   en  = "superb"
+          ,   de  = "prächtiges "
+          ,   fr  = "superbe"
+          ,   es  = "soberbio"
+          ,   ru  = "superb"
+          ,   ja  = "最上"
+          }
+, [141] = {
+              key = "$MATERIAL_MED_09"
+          ,   en  = "shadowhide"
+          ,   de  = "Schattenleder"
+          ,   fr  = "peau d'ombre"
+          ,   es  = "piel sombría"
+          ,   ru  = "shadowhide"
+          ,   ja  = "シャドウハイド"
+          }
+, [142] = {
+              key = "$MATERIAL_MED_10"
+          ,   en  = "Rubedo Leather"
+          ,   de  = "Rubedoleder"
+          ,   fr  = "cuir pourpre"
+          ,   es  = "cuero rubedo"
+          ,   ru  = "Rubedo Leather"
+          ,   ja  = "ルベドレザー"
+          }
+, [143] = {
+              key = "$MATERIAL_WW_01"
+          ,   en  = "maple"
+          ,   de  = "Ahorn"
+          ,   fr  = "érable"
+          ,   es  = "arce"
+          ,   ru  = "maple"
+          ,   ja  = "カエデ"
+          }
+, [144] = {
+              key = "$MATERIAL_WW_02"
+          ,   en  = "oak"
+          ,   de  = "Eichen"
+          ,   fr  = "chêne"
+          ,   es  = "roble"
+          ,   ru  = "oak"
+          ,   ja  = "カシ"
+          }
+, [145] = {
+              key = "$MATERIAL_WW_03"
+          ,   en  = "beech"
+          ,   de  = "Buchen"
+          ,   fr  = "hêtre"
+          ,   es  = "haya"
+          ,   ru  = "beech"
+          ,   ja  = "ブナノキ"
+          }
+, [146] = {
+              key = "$MATERIAL_WW_04"
+          ,   en  = "hickory"
+          ,   de  = "Hickory"
+          ,   fr  = "noyer"
+          ,   es  = "nogal"
+          ,   ru  = "hickory"
+          ,   ja  = "ヒッコリー"
+          }
+, [147] = {
+              key = "$MATERIAL_WW_05"
+          ,   en  = "yew"
+          ,   de  = "Eiben"
+          ,   fr  = "if"
+          ,   es  = "tejo"
+          ,   ru  = "yew"
+          ,   ja  = "イチイ"
+          }
+, [148] = {
+              key = "$MATERIAL_WW_06"
+          ,   en  = "birch"
+          ,   de  = "Birken"
+          ,   fr  = "bouleau"
+          ,   es  = "abedul"
+          ,   ru  = "birch"
+          ,   ja  = "カバノキ"
+          }
+, [149] = {
+              key = "$MATERIAL_WW_07"
+          ,   en  = "ash"
+          ,   de  = "Eschen"
+          ,   fr  = "frêne"
+          ,   es  = "fresno"
+          ,   ru  = "ash"
+          ,   ja  = "アッシュ"
+          }
+, [150] = {
+              key = "$MATERIAL_WW_08"
+          ,   en  = "mahogany"
+          ,   de  = "Mahagoni"
+          ,   fr  = "acajou"
+          ,   es  = "caoba"
+          ,   ru  = "mahogany"
+          ,   ja  = "マホガニー"
+          }
+, [151] = {
+              key = "$MATERIAL_WW_09"
+          ,   en  = "nightwood"
+          ,   de  = "Nachtholz"
+          ,   fr  = "bois de nuit"
+          ,   es  = "nocteca"
+          ,   ru  = "nightwood"
+          ,   ja  = "ナイトウッド"
+          }
+, [152] = {
+              key = "$MATERIAL_WW_10"
+          ,   en  = "Ruby Ash"
+          ,   de  = "Rubineschen"
+          ,   fr  = "frêne roux"
+          ,   es  = "fresno rubí"
+          ,   ru  = "Ruby Ash"
+          ,   ja  = "ルビーアッシュ"
+          }
+, [153] = {
               key = "$QUALITY_4"
           ,   en  = "Epic"
           ,   de  = "Episch"
@@ -806,7 +1235,7 @@ LANG_DB = {
           ,   it  = "Epico"
           ,   ru  = "Эпическое"
           }
-, [103] = {
+, [154] = {
               key = "$QUALITY_5"
           ,   en  = "Legendary"
           ,   de  = "Legendär"
@@ -814,25 +1243,25 @@ LANG_DB = {
           ,   it  = "Leggendario"
           ,   ru  = "Легендарное"
           }
-, [104] = {
+, [155] = {
               key = "$ROLIS_ACCEPT_CONTRACT"
           ,   en  = "<Accept the contract.>"
           ,   de  = "<Nehmt den Auftrag an.>"
           ,   fr  = "<Accepter le contrat>"
           }
-, [105] = {
+, [156] = {
               key = "$ROLIS_DELIVER_SUBSTR"
           ,   en  = "Deliver"
           ,   de  = "Beliefert"
           ,   fr  = "Livrez"
           }
-, [106] = {
+, [157] = {
               key = "$ROLIS_FINISH_JOB"
           ,   en  = "<Finish the job.>"
           ,   de  = "<Auftrag abschließen.>"
           ,   fr  = "<Finir le travail.>"
           }
-, [107] = {
+, [158] = {
               key = "$ROLIS_NAME"
           ,   en  = "Rolis Hlaalu"
           }

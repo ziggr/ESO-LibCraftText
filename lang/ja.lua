@@ -46,15 +46,6 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Trait"                           -- "Trait"
 }
 
-LibCraftText.MASTER_BASE_TEXT_RE = {
-    ["item"   ] = "Craft an? ([^;]*);"               -- "Craft an? (.*);"
-,   ["quality"] = "Quality: ([^;]*)"               -- "Quality: (.*);"
-,   ["set"    ] = "Set: (.*)"                        -- "Set: (.*)"
-,   ["style"  ] = "Style: ([^;]*)"                   -- "Style: (.*)"
-,   ["trait"  ] = "Trait: ([^;]*)"                   -- "Trait: (.*);"
-
-}
-
 LibCraftText.ROLIS_QUEST_TURN_IN = {
 
     ["rolis"]          = "Rolis Hlaalu"              -- "Rolis Hlaalu"
@@ -71,3 +62,56 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 ,   [jw] = "I've finished the Jewelry job."          -- "I've finished the Jewelry job."
 }
 
+LibCraftText.MATERIALS = {
+    ["bs" ] = { "鉄"                -- "iron"
+              , "鋼鉄"             -- "steel"
+              , "オリハルコン"    -- "orichalc"
+              , "ドワーフ"       -- "dwarven"
+              , "黒檀"             -- "ebon"
+              , "カルシニウム"    -- "calcinium"
+              , "ガラタイト"    -- "galatite"
+              , "水銀"             -- "quicksilver"
+              , "虚無の鉄"       -- "voidsteel"
+              , "ルベダイト"    -- "Rubedite"
+              }
+,   ["lgt"] = { "手織り布"       -- "homespun"
+              , "リネン"          -- "linen"
+              , "コットン"       -- "cotton"
+              , "スパイダーシルク"    -- "spidersilk"
+              , "エボンスレッド"    -- "ebonthread"
+              , "クレッシュ"    -- "kresh"
+              , "アイアンスレッド"    -- "ironthread"
+              , "シルバーウィーブ"    -- "silverweave"
+              , "影の布"          -- "shadowspun"
+              , "先人のシルク"    -- "Ancestor Silk"
+              }
+,   ["med"] = { "生皮"             -- "rawhide"
+              , "皮"                -- "hide"
+              , "革"                -- "leather"
+              , "フルレザー"    -- "full-leather"
+              , "フェルハイド"    -- "fell"
+              , "ブリガンダイン"    -- "brigandine"
+              , "アイアンハイド"    -- "ironhide"
+              , "最上"             -- "superb"
+              , "シャドウハイド"    -- "shadowhide"
+              , "ルベドレザー"    -- "Rubedo Leather"
+              }
+,   ["ww" ] = { "カエデ"          -- "maple"
+              , "カシ"             -- "oak"
+              , "ブナノキ"       -- "beech"
+              , "ヒッコリー"    -- "hickory"
+              , "イチイ"          -- "yew"
+              , "カバノキ"       -- "birch"
+              , "アッシュ"       -- "ash"
+              , "マホガニー"    -- "mahogany"
+              , "ナイトウッド"    -- "nightwood"
+              , "ルビーアッシュ"    -- "Ruby Ash"
+              }
+,   ["jw" ] = { "ピューター"    -- "pewter"
+              , "銅"                -- "copper"
+              , "銀"                -- "silver"
+              , "琥珀金"          -- "electrum"
+              , "プラチナ"       -- "platinum"
+              }
+
+}

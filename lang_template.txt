@@ -62,3 +62,56 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 ,   [jw] = $FINISHED_JW                              -- "I've finished the Jewelry job."
 }
 
+LibCraftText.MATERIALS = {
+    ["bs" ] = { $MATERIAL_BS_01      -- "iron"
+              , $MATERIAL_BS_02      -- "steel"
+              , $MATERIAL_BS_03      -- "orichalc"
+              , $MATERIAL_BS_04      -- "dwarven"
+              , $MATERIAL_BS_05      -- "ebon"
+              , $MATERIAL_BS_06      -- "calcinium"
+              , $MATERIAL_BS_07      -- "galatite"
+              , $MATERIAL_BS_08      -- "quicksilver"
+              , $MATERIAL_BS_09      -- "voidsteel"
+              , $MATERIAL_BS_10      -- "Rubedite"
+              }
+,   ["lgt"] = { $MATERIAL_LGT_01     -- "homespun"
+              , $MATERIAL_LGT_02     -- "linen"
+              , $MATERIAL_LGT_03     -- "cotton"
+              , $MATERIAL_LGT_04     -- "spidersilk"
+              , $MATERIAL_LGT_05     -- "ebonthread"
+              , $MATERIAL_LGT_06     -- "kresh"
+              , $MATERIAL_LGT_07     -- "ironthread"
+              , $MATERIAL_LGT_08     -- "silverweave"
+              , $MATERIAL_LGT_09     -- "shadowspun"
+              , $MATERIAL_LGT_10     -- "Ancestor Silk"
+              }
+,   ["med"] = { $MATERIAL_MED_01     -- "rawhide"
+              , $MATERIAL_MED_02     -- "hide"
+              , $MATERIAL_MED_03     -- "leather"
+              , $MATERIAL_MED_04     -- "full-leather"
+              , $MATERIAL_MED_05     -- "fell"
+              , $MATERIAL_MED_06     -- "brigandine"
+              , $MATERIAL_MED_07     -- "ironhide"
+              , $MATERIAL_MED_08     -- "superb"
+              , $MATERIAL_MED_09     -- "shadowhide"
+              , $MATERIAL_MED_10     -- "Rubedo Leather"
+              }
+,   ["ww" ] = { $MATERIAL_WW_01      -- "maple"
+              , $MATERIAL_WW_02      -- "oak"
+              , $MATERIAL_WW_03      -- "beech"
+              , $MATERIAL_WW_04      -- "hickory"
+              , $MATERIAL_WW_05      -- "yew"
+              , $MATERIAL_WW_06      -- "birch"
+              , $MATERIAL_WW_07      -- "ash"
+              , $MATERIAL_WW_08      -- "mahogany"
+              , $MATERIAL_WW_09      -- "nightwood"
+              , $MATERIAL_WW_10      -- "Ruby Ash"
+              }
+,   ["jw" ] = { $MATERIAL_JW_01      -- "pewter"
+              , $MATERIAL_JW_02      -- "copper"
+              , $MATERIAL_JW_03      -- "silver"
+              , $MATERIAL_JW_04      -- "electrum"
+              , $MATERIAL_JW_05      -- "platinum"
+              }
+
+}

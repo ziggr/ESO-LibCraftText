@@ -303,8 +303,8 @@ end
 -- Get all BS LGT MED WW JW base crafting materials,
 -- fill saved_vars.mats with table.
 --
--- If this can be gleaned at runtime, then there's not reason to include it
--- in lang_template.lua files. But for simplicity, I just ight anyway.
+-- If this can be gleaned at runtime, then there's no reason to include it
+-- in lang_template.lua files. But I'll include it for now.
 
 function LibCraftText.DiscoverMaterials()
     local self = LibCraftText

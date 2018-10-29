@@ -46,15 +46,6 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Rasgo"                           -- "Trait"
 }
 
-LibCraftText.MASTER_BASE_TEXT_RE = {
-    ["item"   ] = "Fabricar: ([^;]*)"                -- "Craft an? (.*);"
-,   ["quality"] = "Calidad: ([^;]*)"               -- "Quality: (.*);"
-,   ["set"    ] = "Conjunto: (.*)"                   -- "Set: (.*)"
-,   ["style"  ] = "Style: ([^;]*)"                   -- "Style: (.*)"
-,   ["trait"  ] = "Rasgo: ([^;]*)"                   -- "Trait: (.*);"
-
-}
-
 LibCraftText.ROLIS_QUEST_TURN_IN = {
 
     ["rolis"]          = "Rolis Hlaalu"              -- "Rolis Hlaalu"
@@ -71,3 +62,56 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 ,   [jw] = "I've finished the Jewelry job."          -- "I've finished the Jewelry job."
 }
 
+LibCraftText.MATERIALS = {
+    ["bs" ] = { "hierro"             -- "iron"
+              , "acero"              -- "steel"
+              , "oricalco"           -- "orichalc"
+              , "acero enano"        -- "dwarven"
+              , "ébano"             -- "ebon"
+              , "calcinio"           -- "calcinium"
+              , "galatita"           -- "galatite"
+              , "azogue"             -- "quicksilver"
+              , "acero del vacío"    -- "voidsteel"
+              , "rubedita"           -- "Rubedite"
+              }
+,   ["lgt"] = { "tejido artesanal"    -- "homespun"
+              , "lino"               -- "linen"
+              , "algodón"           -- "cotton"
+              , "seda de araña"     -- "spidersilk"
+              , "hilo de ébano"     -- "ebonthread"
+              , "kresh"              -- "kresh"
+              , "hilo de hierro"     -- "ironthread"
+              , "hilo de plata"      -- "silverweave"
+              , "tejido sombrío"    -- "shadowspun"
+              , "seda ancestral"     -- "Ancestor Silk"
+              }
+,   ["med"] = { "piel cruda"         -- "rawhide"
+              , "piel"               -- "hide"
+              , "cuero"              -- "leather"
+              , "cuero tratado"      -- "full-leather"
+              , "piel impía"        -- "fell"
+              , "brigantina"         -- "brigandine"
+              , "piel férrea"       -- "ironhide"
+              , "soberbio"           -- "superb"
+              , "piel sombría"      -- "shadowhide"
+              , "cuero rubedo"       -- "Rubedo Leather"
+              }
+,   ["ww" ] = { "arce"               -- "maple"
+              , "roble"              -- "oak"
+              , "haya"               -- "beech"
+              , "nogal"              -- "hickory"
+              , "tejo"               -- "yew"
+              , "abedul"             -- "birch"
+              , "fresno"             -- "ash"
+              , "caoba"              -- "mahogany"
+              , "nocteca"            -- "nightwood"
+              , "fresno rubí"       -- "Ruby Ash"
+              }
+,   ["jw" ] = { "peltre"             -- "pewter"
+              , "cobre"              -- "copper"
+              , "plata"              -- "silver"
+              , "electro"            -- "electrum"
+              , "platino"            -- "platinum"
+              }
+
+}
