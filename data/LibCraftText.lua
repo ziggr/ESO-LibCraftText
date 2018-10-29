@@ -6,643 +6,6 @@ LibCraftTextVars =
         {
             ["$AccountWide"] = 
             {
-                ["quests"] = 
-                {
-                    [2] = 
-                    {
-                        ["en"] = "Clothier Writ",
-                    },
-                    [3] = 
-                    {
-                        ["en"] = "Blacksmith Writ",
-                    },
-                    [4] = 
-                    {
-                        ["en"] = "Woodworker Writ",
-                    },
-                    [5] = 
-                    {
-                        ["en"] = "Enchanter Writ",
-                    },
-                    [6] = 
-                    {
-                        ["en"] = "Provisioner Writ",
-                    },
-                    [7] = 
-                    {
-                        ["en"] = "A Masterful Glyph",
-                    },
-                    [8] = 
-                    {
-                        ["en"] = "A Masterful Plate",
-                    },
-                    [9] = 
-                    {
-                        ["en"] = "A Masterful Shield",
-                    },
-                    [10] = 
-                    {
-                        ["en"] = "A Masterful Feast",
-                    },
-                    [11] = 
-                    {
-                        ["en"] = "Masterful Tailoring",
-                    },
-                    [12] = 
-                    {
-                        ["en"] = "A Masterful Concoction",
-                    },
-                    [13] = 
-                    {
-                        ["en"] = "Alchemist Writ",
-                    },
-                    [14] = 
-                    {
-                        ["en"] = "Masterful Jewelry",
-                    },
-                    [15] = 
-                    {
-                        ["en"] = "Jewelry Crafting Writ",
-                    },
-                },
-                ["steps"] = 
-                {
-                    [2] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their leatherworkers. They need several Helmets, Arm Cops, and Bracers to outfit their warriors.",
-                        },
-                    },
-                    [3] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their smiths. They need several Helms, Daggers, and Pauldrons to outfit their warriors.",
-                        },
-                    },
-                    [4] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their woodworkers. They need several Bows and Shields to outfit their warriors.",
-                        },
-                    },
-                    [5] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their enchanters. They need a Superb Glyph of Stamina and a Ta Aspect Rune to outfit their warriors.",
-                        },
-                    },
-                    [6] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their provisioners. I've been tasked with creating Firsthold Fruit and Cheese Plate and Muthsera's Remorse to complete my contract.",
-                        },
-                    },
-                    [7] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "I need to create the item specified by my contract.",
-                        },
-                    },
-                    [8] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "I need to create the item specified by my contract.",
-                        },
-                    },
-                    [9] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "I need to create the item specified by my contract.",
-                        },
-                    },
-                    [10] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "I need to create the items specified by my contract.",
-                        },
-                    },
-                    [11] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "I need to create the item specified by my contract.",
-                        },
-                    },
-                    [12] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "I need to create the item specified by my contract.",
-                        },
-                    },
-                    [13] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their alchemists. I've been tasked with creating an Essence of Stamina and acquiring Mudcrab Chitin to complete my contract.",
-                        },
-                    },
-                    [14] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "I need to create the item specified by my contract.",
-                        },
-                    },
-                    [15] = 
-                    {
-                        [1] = 
-                        {
-                            ["en"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Platinum Ring and a Platinum Necklace to complete my contract.",
-                        },
-                    },
-                },
-                ["version"] = 1,
-                ["conditions"] = 
-                {
-                    [2] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Craft Normal Rubedo Leather Helmet: 0 / 1",
-                            },
-                            [2] = 
-                            {
-                                ["en"] = "Craft Normal Rubedo Leather Arm Cops: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["en"] = "Craft Normal Rubedo Leather Bracers: 0 / 1",
-                            },
-                        },
-                    },
-                    [3] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Craft Normal Rubedite Helm: 0 / 1",
-                            },
-                            [2] = 
-                            {
-                                ["en"] = "Craft Normal Rubedite Dagger: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["en"] = "Craft Normal Rubedite Pauldron: 0 / 1",
-                            },
-                        },
-                    },
-                    [4] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Craft Normal Ruby Ash Bow: 0 / 2",
-                            },
-                            [2] = 
-                            {
-                                ["en"] = "Craft Normal Ruby Ash Shield: 0 / 1",
-                            },
-                        },
-                    },
-                    [5] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["en"] = "Craft Superb Glyph of Stamina With Ta: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["en"] = "Acquire Ta Aspect Rune: 1 / 1",
-                            },
-                        },
-                    },
-                    [6] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["en"] = "Craft Firsthold Fruit and Cheese Plate: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["en"] = "Craft Muthsera's Remorse: 0 / 1",
-                            },
-                        },
-                    },
-                    [7] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Craft a Superb Glyph of Reduce Spell Cost\n• Quality: Epic\n• Progress: 0 / 1",
-                            },
-                        },
-                        [2] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Elden Root to Meet Your Contact",
-                            },
-                        },
-                        [3] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Wayrest to Meet Your Contact",
-                            },
-                        },
-                        [4] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Mournhold to Meet Your Contact",
-                            },
-                        },
-                    },
-                    [8] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Craft a Rubedite Cuirass with the following Properties:\n• Quality: Epic\n• Trait: Sturdy\n• Set: Varen's Legacy\n• Style: Wood Elf\n• Progress: 0 / 1",
-                            },
-                        },
-                        [2] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Elden Root to Meet Your Contact",
-                            },
-                        },
-                        [3] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Wayrest to Meet Your Contact",
-                            },
-                        },
-                        [4] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Mournhold to Meet Your Contact",
-                            },
-                        },
-                    },
-                    [9] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Invigorating\n• Set: Orgnum's Scales\n• Style: Psijic Order\n• Progress: 0 / 1",
-                            },
-                        },
-                        [2] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Elden Root to Meet Your Contact",
-                            },
-                        },
-                        [3] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Wayrest to Meet Your Contact",
-                            },
-                        },
-                        [4] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Mournhold to Meet Your Contact",
-                            },
-                        },
-                    },
-                    [10] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Craft a Lusty Argonian Maid Mazte\n• Progress: 0 / 8",
-                            },
-                        },
-                        [2] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Elden Root to Meet Your Contact",
-                            },
-                        },
-                        [3] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Wayrest to Meet Your Contact",
-                            },
-                        },
-                        [4] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Mournhold to Meet Your Contact",
-                            },
-                        },
-                    },
-                    [11] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Craft an Ancestor Silk Sash with the following Properties:\n• Quality: Epic\n• Trait: Reinforced\n• Set: Varen's Legacy\n• Style: Worm Cult\n• Progress: 0 / 1",
-                            },
-                        },
-                        [2] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Elden Root to Meet Your Contact",
-                            },
-                        },
-                        [3] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Wayrest to Meet Your Contact",
-                            },
-                        },
-                        [4] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Mournhold to Meet Your Contact",
-                            },
-                        },
-                    },
-                    [12] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Craft an Essence of Ravage Health with the following Traits:\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progress: 0 / 20",
-                            },
-                        },
-                        [2] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Elden Root to Meet Your Contact",
-                            },
-                        },
-                        [3] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Wayrest to Meet Your Contact",
-                            },
-                        },
-                        [4] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Mournhold to Meet Your Contact",
-                            },
-                        },
-                    },
-                    [13] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Craft Essence of Stamina: 0 / 1",
-                            },
-                            [2] = 
-                            {
-                                ["en"] = "Acquire Mudcrab Chitin: 3 / 3",
-                            },
-                        },
-                    },
-                    [14] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Craft a Platinum Ring with the following Properties:\n• Quality: Legendary\n• Trait: Protective\n• Set: Armor Master\n• Progress: 0 / 1",
-                            },
-                        },
-                        [2] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Elden Root to Meet Your Contact",
-                            },
-                        },
-                        [3] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Wayrest to Meet Your Contact",
-                            },
-                        },
-                        [4] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Travel to Mournhold to Meet Your Contact",
-                            },
-                        },
-                    },
-                    [15] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
-                                ["en"] = "Craft a Platinum Ring: 0 / 1",
-                            },
-                            [2] = 
-                            {
-                                ["en"] = "Craft a Platinum Necklace: 0 / 1",
-                            },
-                        },
-                    },
-                },
-                ["item"] = 
-                {
-                    [65] = 
-                    {
-                        ["en"] = "platinum Shield; Quality: Epic; Trait: Robust",
-                    },
-                    [67] = 
-                    {
-                        ["en"] = "platinum Greatsword; Quality: Epic; Trait: Robust",
-                    },
-                    [68] = 
-                    {
-                        ["en"] = "platinum Battle Axe; Quality: Epic; Trait: Robust",
-                    },
-                    [69] = 
-                    {
-                        ["en"] = "platinum Maul; Quality: Epic; Trait: Robust",
-                    },
-                    [70] = 
-                    {
-                        ["en"] = "platinum Bow; Quality: Epic; Trait: Robust",
-                    },
-                    [72] = 
-                    {
-                        ["en"] = "platinum Inferno Staff; Quality: Epic; Trait: Robust",
-                    },
-                    [73] = 
-                    {
-                        ["en"] = "platinum Ice Staff; Quality: Epic; Trait: Robust",
-                    },
-                    [74] = 
-                    {
-                        ["en"] = "platinum Lightning Staff; Quality: Epic; Trait: Robust",
-                    },
-                    [75] = 
-                    {
-                        ["en"] = "platinum Jerkin; Quality: Epic; Trait: Robust",
-                    },
-                    [18] = 
-                    {
-                        ["en"] = "platinum Necklace; Quality: Epic; Trait: Robust",
-                    },
-                    [24] = 
-                    {
-                        ["en"] = "platinum Ring; Quality: Epic; Trait: Robust",
-                    },
-                    [26] = 
-                    {
-                        ["en"] = "platinum Hat; Quality: Epic; Trait: Robust",
-                    },
-                    [28] = 
-                    {
-                        ["en"] = "platinum Robe; Quality: Epic; Trait: Robust",
-                    },
-                    [29] = 
-                    {
-                        ["en"] = "platinum Epaulets; Quality: Epic; Trait: Robust",
-                    },
-                    [30] = 
-                    {
-                        ["en"] = "platinum Sash; Quality: Epic; Trait: Robust",
-                    },
-                    [31] = 
-                    {
-                        ["en"] = "platinum Breeches; Quality: Epic; Trait: Robust",
-                    },
-                    [32] = 
-                    {
-                        ["en"] = "platinum Shoes; Quality: Epic; Trait: Robust",
-                    },
-                    [34] = 
-                    {
-                        ["en"] = "platinum Gloves; Quality: Epic; Trait: Robust",
-                    },
-                    [35] = 
-                    {
-                        ["en"] = "platinum Helmet; Quality: Epic; Trait: Robust",
-                    },
-                    [37] = 
-                    {
-                        ["en"] = "platinum Jack; Quality: Epic; Trait: Robust",
-                    },
-                    [38] = 
-                    {
-                        ["en"] = "platinum Arm Cops; Quality: Epic; Trait: Robust",
-                    },
-                    [39] = 
-                    {
-                        ["en"] = "platinum Belt; Quality: Epic; Trait: Robust",
-                    },
-                    [40] = 
-                    {
-                        ["en"] = "platinum Guards; Quality: Epic; Trait: Robust",
-                    },
-                    [41] = 
-                    {
-                        ["en"] = "platinum Boots; Quality: Epic; Trait: Robust",
-                    },
-                    [43] = 
-                    {
-                        ["en"] = "platinum Bracers; Quality: Epic; Trait: Robust",
-                    },
-                    [44] = 
-                    {
-                        ["en"] = "platinum Helm; Quality: Epic; Trait: Robust",
-                    },
-                    [46] = 
-                    {
-                        ["en"] = "platinum Cuirass; Quality: Epic; Trait: Robust",
-                    },
-                    [47] = 
-                    {
-                        ["en"] = "platinum Pauldron; Quality: Epic; Trait: Robust",
-                    },
-                    [48] = 
-                    {
-                        ["en"] = "platinum Girdle; Quality: Epic; Trait: Robust",
-                    },
-                    [49] = 
-                    {
-                        ["en"] = "platinum Greaves; Quality: Epic; Trait: Robust",
-                    },
-                    [50] = 
-                    {
-                        ["en"] = "platinum Sabatons; Quality: Epic; Trait: Robust",
-                    },
-                    [52] = 
-                    {
-                        ["en"] = "platinum Gauntlets; Quality: Epic; Trait: Robust",
-                    },
-                    [56] = 
-                    {
-                        ["en"] = "platinum Mace; Quality: Epic; Trait: Robust",
-                    },
-                    [59] = 
-                    {
-                        ["en"] = "platinum Sword; Quality: Epic; Trait: Robust",
-                    },
-                    [62] = 
-                    {
-                        ["en"] = "platinum Dagger; Quality: Epic; Trait: Robust",
-                    },
-                },
-                ["master_template"] = 
-                {
-                    ["bs"] = 
-                    {
-                        ["en"] = "Consume to start quest:\nCraft a platinum Sword; Quality: Epic; Trait: Robust; Set: Armor Master",
-                    },
-                },
                 ["set"] = 
                 {
                     [19] = 
@@ -2140,6 +1503,643 @@ LibCraftTextVars =
                     [428] = 
                     {
                         ["en"] = "Perfect Mender's Ward",
+                    },
+                },
+                ["version"] = 1,
+                ["quests"] = 
+                {
+                    [2] = 
+                    {
+                        ["en"] = "Clothier Writ",
+                    },
+                    [3] = 
+                    {
+                        ["en"] = "Blacksmith Writ",
+                    },
+                    [4] = 
+                    {
+                        ["en"] = "Woodworker Writ",
+                    },
+                    [5] = 
+                    {
+                        ["en"] = "Enchanter Writ",
+                    },
+                    [6] = 
+                    {
+                        ["en"] = "Provisioner Writ",
+                    },
+                    [7] = 
+                    {
+                        ["en"] = "A Masterful Glyph",
+                    },
+                    [8] = 
+                    {
+                        ["en"] = "A Masterful Plate",
+                    },
+                    [9] = 
+                    {
+                        ["en"] = "A Masterful Shield",
+                    },
+                    [10] = 
+                    {
+                        ["en"] = "A Masterful Feast",
+                    },
+                    [11] = 
+                    {
+                        ["en"] = "Masterful Tailoring",
+                    },
+                    [12] = 
+                    {
+                        ["en"] = "A Masterful Concoction",
+                    },
+                    [13] = 
+                    {
+                        ["en"] = "Alchemist Writ",
+                    },
+                    [14] = 
+                    {
+                        ["en"] = "Masterful Jewelry",
+                    },
+                    [15] = 
+                    {
+                        ["en"] = "Jewelry Crafting Writ",
+                    },
+                },
+                ["master_template"] = 
+                {
+                    ["bs"] = 
+                    {
+                        ["en"] = "Consume to start quest:\nCraft a platinum Sword; Quality: Epic; Trait: Robust; Set: Armor Master",
+                    },
+                },
+                ["conditions"] = 
+                {
+                    [2] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Craft Normal Rubedo Leather Helmet: 0 / 1",
+                            },
+                            [2] = 
+                            {
+                                ["en"] = "Craft Normal Rubedo Leather Arm Cops: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["en"] = "Craft Normal Rubedo Leather Bracers: 0 / 1",
+                            },
+                        },
+                    },
+                    [3] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Craft Normal Rubedite Helm: 0 / 1",
+                            },
+                            [2] = 
+                            {
+                                ["en"] = "Craft Normal Rubedite Dagger: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["en"] = "Craft Normal Rubedite Pauldron: 0 / 1",
+                            },
+                        },
+                    },
+                    [4] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Craft Normal Ruby Ash Bow: 0 / 2",
+                            },
+                            [2] = 
+                            {
+                                ["en"] = "Craft Normal Ruby Ash Shield: 0 / 1",
+                            },
+                        },
+                    },
+                    [5] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["en"] = "Craft Superb Glyph of Stamina With Ta: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["en"] = "Acquire Ta Aspect Rune: 1 / 1",
+                            },
+                        },
+                    },
+                    [6] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["en"] = "Craft Firsthold Fruit and Cheese Plate: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["en"] = "Craft Muthsera's Remorse: 0 / 1",
+                            },
+                        },
+                    },
+                    [7] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Craft a Superb Glyph of Reduce Spell Cost\n• Quality: Epic\n• Progress: 0 / 1",
+                            },
+                        },
+                        [2] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Elden Root to Meet Your Contact",
+                            },
+                        },
+                        [3] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Wayrest to Meet Your Contact",
+                            },
+                        },
+                        [4] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Mournhold to Meet Your Contact",
+                            },
+                        },
+                    },
+                    [8] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Craft a Rubedite Cuirass with the following Properties:\n• Quality: Epic\n• Trait: Sturdy\n• Set: Varen's Legacy\n• Style: Wood Elf\n• Progress: 0 / 1",
+                            },
+                        },
+                        [2] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Elden Root to Meet Your Contact",
+                            },
+                        },
+                        [3] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Wayrest to Meet Your Contact",
+                            },
+                        },
+                        [4] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Mournhold to Meet Your Contact",
+                            },
+                        },
+                    },
+                    [9] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Invigorating\n• Set: Orgnum's Scales\n• Style: Psijic Order\n• Progress: 0 / 1",
+                            },
+                        },
+                        [2] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Elden Root to Meet Your Contact",
+                            },
+                        },
+                        [3] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Wayrest to Meet Your Contact",
+                            },
+                        },
+                        [4] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Mournhold to Meet Your Contact",
+                            },
+                        },
+                    },
+                    [10] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Craft a Lusty Argonian Maid Mazte\n• Progress: 0 / 8",
+                            },
+                        },
+                        [2] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Elden Root to Meet Your Contact",
+                            },
+                        },
+                        [3] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Wayrest to Meet Your Contact",
+                            },
+                        },
+                        [4] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Mournhold to Meet Your Contact",
+                            },
+                        },
+                    },
+                    [11] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Craft an Ancestor Silk Sash with the following Properties:\n• Quality: Epic\n• Trait: Reinforced\n• Set: Varen's Legacy\n• Style: Worm Cult\n• Progress: 0 / 1",
+                            },
+                        },
+                        [2] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Elden Root to Meet Your Contact",
+                            },
+                        },
+                        [3] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Wayrest to Meet Your Contact",
+                            },
+                        },
+                        [4] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Mournhold to Meet Your Contact",
+                            },
+                        },
+                    },
+                    [12] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Craft an Essence of Ravage Health with the following Traits:\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progress: 0 / 20",
+                            },
+                        },
+                        [2] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Elden Root to Meet Your Contact",
+                            },
+                        },
+                        [3] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Wayrest to Meet Your Contact",
+                            },
+                        },
+                        [4] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Mournhold to Meet Your Contact",
+                            },
+                        },
+                    },
+                    [13] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Craft Essence of Stamina: 0 / 1",
+                            },
+                            [2] = 
+                            {
+                                ["en"] = "Acquire Mudcrab Chitin: 3 / 3",
+                            },
+                        },
+                    },
+                    [14] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Craft a Platinum Ring with the following Properties:\n• Quality: Legendary\n• Trait: Protective\n• Set: Armor Master\n• Progress: 0 / 1",
+                            },
+                        },
+                        [2] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Elden Root to Meet Your Contact",
+                            },
+                        },
+                        [3] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Wayrest to Meet Your Contact",
+                            },
+                        },
+                        [4] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Travel to Mournhold to Meet Your Contact",
+                            },
+                        },
+                    },
+                    [15] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["en"] = "Craft a Platinum Ring: 0 / 1",
+                            },
+                            [2] = 
+                            {
+                                ["en"] = "Craft a Platinum Necklace: 0 / 1",
+                            },
+                        },
+                    },
+                },
+                ["steps"] = 
+                {
+                    [2] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their leatherworkers. They need several Helmets, Arm Cops, and Bracers to outfit their warriors.",
+                        },
+                    },
+                    [3] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their smiths. They need several Helms, Daggers, and Pauldrons to outfit their warriors.",
+                        },
+                    },
+                    [4] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their woodworkers. They need several Bows and Shields to outfit their warriors.",
+                        },
+                    },
+                    [5] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their enchanters. They need a Superb Glyph of Stamina and a Ta Aspect Rune to outfit their warriors.",
+                        },
+                    },
+                    [6] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their provisioners. I've been tasked with creating Firsthold Fruit and Cheese Plate and Muthsera's Remorse to complete my contract.",
+                        },
+                    },
+                    [7] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "I need to create the item specified by my contract.",
+                        },
+                    },
+                    [8] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "I need to create the item specified by my contract.",
+                        },
+                    },
+                    [9] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "I need to create the item specified by my contract.",
+                        },
+                    },
+                    [10] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "I need to create the items specified by my contract.",
+                        },
+                    },
+                    [11] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "I need to create the item specified by my contract.",
+                        },
+                    },
+                    [12] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "I need to create the item specified by my contract.",
+                        },
+                    },
+                    [13] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their alchemists. I've been tasked with creating an Essence of Stamina and acquiring Mudcrab Chitin to complete my contract.",
+                        },
+                    },
+                    [14] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "I need to create the item specified by my contract.",
+                        },
+                    },
+                    [15] = 
+                    {
+                        [1] = 
+                        {
+                            ["en"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Platinum Ring and a Platinum Necklace to complete my contract.",
+                        },
+                    },
+                },
+                ["item"] = 
+                {
+                    [65] = 
+                    {
+                        ["en"] = "platinum Shield",
+                    },
+                    [67] = 
+                    {
+                        ["en"] = "platinum Greatsword",
+                    },
+                    [68] = 
+                    {
+                        ["en"] = "platinum Battle Axe",
+                    },
+                    [69] = 
+                    {
+                        ["en"] = "platinum Maul",
+                    },
+                    [70] = 
+                    {
+                        ["en"] = "platinum Bow",
+                    },
+                    [72] = 
+                    {
+                        ["en"] = "platinum Inferno Staff",
+                    },
+                    [73] = 
+                    {
+                        ["en"] = "platinum Ice Staff",
+                    },
+                    [74] = 
+                    {
+                        ["en"] = "platinum Lightning Staff",
+                    },
+                    [75] = 
+                    {
+                        ["en"] = "platinum Jerkin",
+                    },
+                    [18] = 
+                    {
+                        ["en"] = "platinum Necklace",
+                    },
+                    [24] = 
+                    {
+                        ["en"] = "platinum Ring",
+                    },
+                    [26] = 
+                    {
+                        ["en"] = "platinum Hat",
+                    },
+                    [28] = 
+                    {
+                        ["en"] = "platinum Robe",
+                    },
+                    [29] = 
+                    {
+                        ["en"] = "platinum Epaulets",
+                    },
+                    [30] = 
+                    {
+                        ["en"] = "platinum Sash",
+                    },
+                    [31] = 
+                    {
+                        ["en"] = "platinum Breeches",
+                    },
+                    [32] = 
+                    {
+                        ["en"] = "platinum Shoes",
+                    },
+                    [34] = 
+                    {
+                        ["en"] = "platinum Gloves",
+                    },
+                    [35] = 
+                    {
+                        ["en"] = "platinum Helmet",
+                    },
+                    [37] = 
+                    {
+                        ["en"] = "platinum Jack",
+                    },
+                    [38] = 
+                    {
+                        ["en"] = "platinum Arm Cops",
+                    },
+                    [39] = 
+                    {
+                        ["en"] = "platinum Belt",
+                    },
+                    [40] = 
+                    {
+                        ["en"] = "platinum Guards",
+                    },
+                    [41] = 
+                    {
+                        ["en"] = "platinum Boots",
+                    },
+                    [43] = 
+                    {
+                        ["en"] = "platinum Bracers",
+                    },
+                    [44] = 
+                    {
+                        ["en"] = "platinum Helm",
+                    },
+                    [46] = 
+                    {
+                        ["en"] = "platinum Cuirass",
+                    },
+                    [47] = 
+                    {
+                        ["en"] = "platinum Pauldron",
+                    },
+                    [48] = 
+                    {
+                        ["en"] = "platinum Girdle",
+                    },
+                    [49] = 
+                    {
+                        ["en"] = "platinum Greaves",
+                    },
+                    [50] = 
+                    {
+                        ["en"] = "platinum Sabatons",
+                    },
+                    [52] = 
+                    {
+                        ["en"] = "platinum Gauntlets",
+                    },
+                    [56] = 
+                    {
+                        ["en"] = "platinum Mace",
+                    },
+                    [59] = 
+                    {
+                        ["en"] = "platinum Sword",
+                    },
+                    [62] = 
+                    {
+                        ["en"] = "platinum Dagger",
                     },
                 },
             },

@@ -12,6 +12,14 @@ LibCraftText                   = LibCraftText or {}
 LibCraftText.name              = "LibCraftText"
 LibCraftText.saved_var_version = 1
 
+-- For less typing
+local bs = CRAFTING_TYPE_BLACKSMITHING   -- 1
+local cl = CRAFTING_TYPE_CLOTHIER        -- 2
+local en = CRAFTING_TYPE_ENCHANTING      -- 3
+local al = CRAFTING_TYPE_ALCHEMY         -- 4
+local pr = CRAFTING_TYPE_PROVISIONING    -- 5
+local ww = CRAFTING_TYPE_WOODWORKING     -- 6
+local jw = CRAFTING_TYPE_JEWELRYCRAFTING -- 7
 
 local function Info(msg)
     d("|c999999LCT: "..msg)
@@ -233,6 +241,19 @@ LibCraftText.JQCI = {
 
 -- -- Master Writ requirements: set, style, alch effect, and so on --------------
 
+                        -- Values for bs/cl/ww/jw master writs, "writ1" field,
+                        -- that produce valid craftable item requests
+                        -- such as "Cuirass" or "Necklace"
+LibCraftText.WRIT1_GEAR = {
+      [jw] = { 18, 24 }                          -- necklace, ring
+    , [cl] = { 26, 28, 29, 30, 31, 32, 34, 75    -- light armor, including jerkin
+             , 35, 37, 38, 39, 40, 41, 43 }      -- medium armor
+    , [bs] = { 44, 46, 47, 48, 49, 50, 52        -- heavy armor
+             , 52, 56, 59, 67, 68, 69, 62 }      -- bs weapons
+    , [ww] = { 70, 72, 73, 74, 70                -- ww weapons
+             , 65 }                              -- shield
+}
+
 function LibCraftText.DiscoverMasterValues()
     local self = LibCraftText
     local lang = self.CurrLang()
@@ -247,30 +268,16 @@ function LibCraftText.DiscoverMasterValues()
     local b = GenerateMasterWritBaseText(item_link)
     self.saved_var.master_template.bs[lang] = b
 
-                        -- Item: Rubedite Axe
-    local item_list = {
-          18, 24                            -- necklace, ring
-        , 26, 28, 29, 30, 31, 32, 34, 75    -- light armor, including jerkin
-        , 35, 37, 38, 39, 40, 41, 43        -- medium armor
-        , 44, 46, 47, 48, 49, 50, 52        -- heavy armor
-        , 52, 56, 59, 67, 68, 69, 62        -- bs weapons
-        , 70, 72, 73, 74, 70                -- ww weapons
-        , 65                                -- shield
-        }
-
+                        -- gear, writ1: craftable armor,weapons and jewelry
+                        -- "Cuirass", "Sword", "Inferno Staff:, "Necklace"
     self.saved_var.item = self.saved_var.item or {}
-    local item = self.saved_var.item
+    local item    = self.saved_var.item
     local item_ct = 0
-    local t = "|H1:item:138798:6:1:0:0:0:%d:255:4:178:23:0:0:0:0:0:0:0:0:0:76000|h|h"
-
-    local re = self.MASTER_BASE_TEXT_RE.item
-    for _, i in ipairs(item_list) do
-        local item_link = string.format(t, i)
-        local b = GenerateMasterWritBaseText(item_link)
-        local _,_,f = string.find(b,re)
-        if f then
+    for crafting_type, item_num_list in pairs(self.WRIT1_GEAR) do
+        for _,item_num in pairs(item_num_list) do
+            local item_name = self.ToItemName(crafting_type, item_num)
             item[i] = item[i] or {}
-            item[i][lang] = f
+            item[i][lang] = item_name
             item_ct = item_ct + 1
         end
     end
@@ -295,6 +302,41 @@ function LibCraftText.DiscoverMasterValues()
     end
     Info("discovered set_ct:"..tostring(set_ct))
 end
+
+-- Convert a writ1 value to a name like "Cuirass"
+function LibCraftText.ToItemName(crafting_type, item_num)
+    self = LibCraftText
+
+                        -- ZIG REPLACE WITH REAL LINKS
+    local example_writ_links = {
+          [bs] = "|H1:item:121527:6:1:0:0:0:%d:188:5:148:5:19:0:0:0:0:0:0:0:0:917700|h|h"
+        , [cl] = "|H1:item:121527:6:1:0:0:0:%d:188:5:148:5:19:0:0:0:0:0:0:0:0:917700|h|h"
+        , [ww] = "|H1:item:121527:6:1:0:0:0:%d:188:5:148:5:19:0:0:0:0:0:0:0:0:917700|h|h"
+        , [jw] = "|H1:item:138798:6:1:0:0:0:%d:255:4:178:23:0:0:0:0:0:0:0:0:0:76000|h|h"
+        }
+    local item_link    = example_writ_links[crafting_type]:format(item_num)
+
+                        -- Parsing sealed master writs is NOT part of our
+                        -- feature set: these regexes are just for our own
+                        -- internal parsing.
+    local RE = {
+               ,   en  = "Craft an? ([^;]*);"
+               ,   de  = "Stellt ein\\S* (.*) mit"
+               ,   fr  = "Fabriquez un\\S* ([^;]*)"
+               ,   es  = "Fabricar: ([^;]*)"
+               ,   it  = "Crea un\\S* ([^;]*)"
+               ,   ru  = "nСоздать предмет %(.*%);"
+               }
+    local lang = self.CurrLang()
+    local re = RE[lang] or RE.en
+
+    local b = GenerateMasterWritBaseText(item_link)
+    local _,_,f = string.find(b,re)
+    return f
+end
+
+
+
 
 -- Util ----------------------------------------------------------------------
 

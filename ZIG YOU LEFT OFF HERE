@@ -1,0 +1,80 @@
+ZIG YOU LEFT OFF HERE
+
+Goal is a table of regexes that can parse daily and master writ quest condition text.
+Goal is NOT a translation table of set/trait/whatever strings.
+
+
+
+The only reason I'm playing with SEALED MASTER WRIT item_links is that it's easy
+to write code to fabricate and iterate through them to see different values.
+These values are likely to appear in QUEST CONDITION text later, so having tables
+of them around in translation database can accelerate hand-work when calculating
+regex strings. Especially for languages I cannot easily read (RU I'm looking at you).
+
+Questions:
+    -- do I really need lists of materials?
+
+
+NEED SEALED MASTER WRITE ITEM LINKS FOR
+-- HVY "rubedite Cuirass"
+-- LGT "ancestor silk Arm Cops"
+-- WW  "ruby ash Inferno Staff"
+-- JW  "platinum Necklace"
+
+Make sure that new .ToItemName() function works for all items, all languages
+
+Use above output to figure out internal regex that will remove material name from item name.
+
+-- continue on to other gear writ fields
+    -- trait
+    -- quality (get all 5 even though master writs only need last two)
+    -- style/motif
+    -- materials (bs, lgt, med, ww, jw)
+
+Use the above to generate tables
+Do NOT generate tables for set, style
+Might have better way to get trait, I think there's an API for that
+
+
+The
+
+trying to extract "Cuirass" from "platinum Cuirass"
+
+which implies some modified scan of items from sealed master write itemlinks
+-- get proper BS/CL/WW/JW writ links?
+-- use known material that you can scan for
+-- probably burn the RE strings into a table within _Discover.lua's Discover() code rather than adding to lang_db because these are NOT the same RE strings that you use to scan quest conditions.
+
+Will eventually get a list of craftable gear items
+
+-- sets (already got that!)
+-- quality (got that, could roll qualities 1-5 for grins)
+-- traits
+-- motif
+
+-- probably should NOT add these to generated lang files: they are all
+-- available from the ESO client at runtime. Could supply a function
+-- to return them, given a writN number
+
+-- ItemName(number) -> "Cuirass"
+-- MaterialName(qual, crafting_type) -> "Ruby Ash"
+-- Quality(level) -> "Epic"
+-- Set(num) -> "Armor Master"
+-- Motif(num) -> "Worm Cult"
+
+-- Glyph
+-- Alchemy item
+-- Alchemy effect
+-- Provisioning Item
+
+Use these very same functions to power Discover()
+But again, this is num->text generation which is the opposite of parse.
+There's no reason to include these in lang files
+And including them in public API is Feature Creep don't do it.
+
+But including them in Discovery() might be helpful as we figure out parse
+REs for quest text? Barely. But I _am_ curious. So I'm doing it.
+
+
+
+
