@@ -99,6 +99,30 @@ function ImportSavedVars()
             end
         end
     end
+
+    local items = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].items
+                        -- BEGIN COPYPASTA FROM LibCraftText.DiscoverItems()
+    local writ1 = {
+      ["bs" ] = { 53, 56, 59, 68, 69, 67, 62        -- bs weapons
+                , 46, 50, 52, 44, 49, 47, 48 }      -- heavy armor
+    , ["lgt"] = { 28, 75, 32, 34, 26, 31, 29, 30 }  -- light armor, including jerkin
+    , ["med"] = { 37, 41, 43, 35, 40, 38, 39 }      -- medium armor
+    , ["ww" ] = { 70, 72, 73, 74, 71                -- ww weapons
+                , 65 }                              -- shield
+    , ["jw" ] = { 18, 24 }                          -- necklace, ring
+    }
+                        -- END COPYPASTA FROM LibCraftText.DiscoverItems()
+    for weight, lang_list in pairs(items) do
+        local item_num_list = writ1[weight]
+        for lang, item_list in pairs(lang_list) do
+            for i, text in pairs(item_list) do
+                local item_num = item_num_list[i]
+                local key = string.format("$ITEM_%02d", item_num)
+                local entry = DB[key]
+                entry[lang] = text
+            end
+        end
+    end
 end
 
 -- From http://lua-users.org/wiki/SplitJoin
