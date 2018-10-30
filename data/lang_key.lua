@@ -1,3 +1,9 @@
+-- Key here is the important part
+-- Value is a default/US English string, but not really used much.
+--          The value is used for reverse english->key lookup sometimes
+--          when saved vars importer somehow has table of en/de/fr/etc values
+--          but no key.
+
 LANG_KEY = {
     ["$DAILY_BS"       ] = "Blacksmith Writ"
 ,   ["$DAILY_CL"       ] = "Clothier Writ"
@@ -232,4 +238,34 @@ LANG_KEY = {
 ,   ["$QUALITY_3"] = "Superior"
 ,   ["$QUALITY_4"] = "Epic"
 ,   ["$QUALITY_5"] = "Legendary"
+
+,   ["$TRAIT_WEAPON_POWERED"      ] = "powered"
+,   ["$TRAIT_WEAPON_CHARGED"      ] = "charged"
+,   ["$TRAIT_WEAPON_PRECISE"      ] = "precise"
+,   ["$TRAIT_WEAPON_INFUSED"      ] = "infused"
+,   ["$TRAIT_WEAPON_DEFENDING"    ] = "defending"
+,   ["$TRAIT_WEAPON_TRAINING"     ] = "training"
+,   ["$TRAIT_WEAPON_SHARPENED"    ] = "sharpened"
+,   ["$TRAIT_WEAPON_DECISIVE"     ] = "decisive"
+,   ["$TRAIT_WEAPON_NIRNHONED"    ] = "nirnhoned"
+,   ["$TRAIT_ARMOR_STURDY"        ] = "sturdy"
+,   ["$TRAIT_ARMOR_IMPENETRABLE"  ] = "impenetrable"
+,   ["$TRAIT_ARMOR_REINFORCED"    ] = "reinforced"
+,   ["$TRAIT_ARMOR_WELL_FITTED"   ] = "well-fitted"
+,   ["$TRAIT_ARMOR_TRAINING"      ] = "training"
+,   ["$TRAIT_ARMOR_INFUSED"       ] = "infused"
+,   ["$TRAIT_ARMOR_PROSPEROUS"    ] = "invigorating"
+,   ["$TRAIT_ARMOR_DIVINES"       ] = "divines"
+,   ["$TRAIT_ARMOR_NIRNHONED"     ] = "nirnhoned"
+,   ["$TRAIT_JEWELRY_ARCANE"      ] = "arcane"
+,   ["$TRAIT_JEWELRY_HEALTHY"     ] = "healthy"
+,   ["$TRAIT_JEWELRY_ROBUST"      ] = "robust"
+,   ["$TRAIT_JEWELRY_TRIUNE"      ] = "triune"
+,   ["$TRAIT_JEWELRY_INFUSED"     ] = "infused"
+,   ["$TRAIT_JEWELRY_PROTECTIVE"  ] = "protective"
+,   ["$TRAIT_JEWELRY_SWIFT"       ] = "swift"
+,   ["$TRAIT_JEWELRY_HARMONY"     ] = "harmony"
+,   ["$TRAIT_JEWELRY_BLOODTHIRSTY"] = "bloodthirsty"
+
+
 }

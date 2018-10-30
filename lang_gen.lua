@@ -132,6 +132,75 @@ function ImportSavedVars()
             entry[lang] = text
         end
     end
+
+    local trait_keys = {
+        [ 1] = "$TRAIT_WEAPON_POWERED"
+    ,   [ 2] = "$TRAIT_WEAPON_CHARGED"
+    ,   [ 3] = "$TRAIT_WEAPON_PRECISE"
+    ,   [ 4] = "$TRAIT_WEAPON_INFUSED"
+    ,   [ 5] = "$TRAIT_WEAPON_DEFENDING"
+    ,   [ 6] = "$TRAIT_WEAPON_TRAINING"
+    ,   [ 7] = "$TRAIT_WEAPON_SHARPENED"
+    ,   [ 8] = "$TRAIT_WEAPON_DECISIVE"
+    ,   [25] = "$TRAIT_WEAPON_NIRNHONED"    -- ZZ CHECK THIS vs ARMOR
+    ,   [11] = "$TRAIT_ARMOR_STURDY"
+    ,   [12] = "$TRAIT_ARMOR_IMPENETRABLE"
+    ,   [13] = "$TRAIT_ARMOR_REINFORCED"
+    ,   [14] = "$TRAIT_ARMOR_WELL_FITTED"
+    ,   [15] = "$TRAIT_ARMOR_TRAINING"
+    ,   [16] = "$TRAIT_ARMOR_INFUSED"
+    ,   [17] = "$TRAIT_ARMOR_PROSPEROUS"
+    ,   [18] = "$TRAIT_ARMOR_DIVINES"
+    ,   [26] = "$TRAIT_ARMOR_NIRNHONED"
+    ,   [22] = "$TRAIT_JEWELRY_ARCANE"
+    ,   [21] = "$TRAIT_JEWELRY_HEALTHY"
+    ,   [23] = "$TRAIT_JEWELRY_ROBUST"
+    ,   [30] = "$TRAIT_JEWELRY_TRIUNE"
+    ,   [33] = "$TRAIT_JEWELRY_INFUSED"
+    ,   [32] = "$TRAIT_JEWELRY_PROTECTIVE"
+    ,   [28] = "$TRAIT_JEWELRY_SWIFT"
+    ,   [29] = "$TRAIT_JEWELRY_HARMONY"
+    ,   [31] = "$TRAIT_JEWELRY_BLOODTHIRSTY"
+    }
+    local traits = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].traits
+    for trait_num, lang_table in pairs(traits) do
+        if 0 ~= trait_num then
+            local key = trait_keys[trait_num]
+            DB[key] = DB[key] or {}
+            local entry = DB[key]
+            entry.key = key
+            for lang,text in pairs(lang_table) do
+                entry[lang] = text
+            end
+        end
+    end
+
+    local sets = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].sets
+    for set_num, lang_table in pairs(sets) do
+        if 0 ~= set_num then
+            local key = string.format("$SET_%03d", set_num)
+            DB[key] = DB[key] or {}
+            local entry = DB[key]
+            entry.key = key
+            for lang,text in pairs(lang_table) do
+                entry[lang] = text
+            end
+        end
+    end
+
+    local motifs = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].motifs
+    for motif_num, lang_table in pairs(motifs) do
+        if 0 ~= motif_num then
+            local key = string.format("$MOTIF_%03d", motif_num)
+            DB[key] = DB[key] or {}
+            local entry = DB[key]
+            entry.key = key
+            for lang,text in pairs(lang_table) do
+                entry[lang] = text
+            end
+        end
+    end
+
 end
 
 -- From http://lua-users.org/wiki/SplitJoin
@@ -150,7 +219,7 @@ end
 function ImportSavedVarLangTable(lang_table)
     if not lang_table and lang_table.en then return end
 
-    local key = EN_KEYS[lang_table.en]
+    local key = lang_table.key or EN_KEYS[lang_table.en]
     if not key then
         Warn("SavedVars: unknown string '"..tostring(lang_table.en).."'")
         return

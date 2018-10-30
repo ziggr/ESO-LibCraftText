@@ -62,6 +62,16 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 ,   [jw] = "I've finished the Jewelry job."          -- "I've finished the Jewelry job."
 }
 
+--
+-- Generatable strings
+--
+-- ziggr suspects that NONE of these are necessary, and will eventually be
+-- replaced by language-specific regexes to parse quest condition text, and
+-- (hopefully) small extractor/generator functions that can generate tables
+-- of crafting values at runtime. There's no way ziggr is including a 79-entry
+-- motif table, or a 45-entry set bonus table.
+--
+
 LibCraftText.MATERIALS = {
     ["bs" ] = { "fer"                -- "iron"
               , "acier"              -- "steel"
