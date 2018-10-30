@@ -5,12 +5,12 @@ Goal is NOT a translation table of set/trait/whatever strings.
 
 Need REGEXes:
     Given a sealed master writ condition text:
-    -- get requested crafting item, AS A STRING
-    -- get requested crafting material AS A STRING
-    -- get requested quality AS A STRING
-    -- get requested set bonus AS A STRING
+    -- get requested crafting item, AS A STRING     --v extracted for later use
+    -- get requested crafting material AS A STRING  --v extracted for later use
+    -- get requested quality AS A STRING            --v extracted for later use
+    -- get requested trait AS A STRING              <-- EXTRACT THIS NEXT
+    -- get requested set bonus AS A STRING (can extract for self-knowledge, but do NOT put this in lang files: generate on-the-fly programmatically if you really need it.)
     -- get requested motif AS A STRING
-    -- get requested trait AS A STRING
     -- get alchemy potion/poison name AS A STRING
     -- get alchemy potion/poison level AS A STRING
     -- get alchemy effect list, AS A STRING list
@@ -18,6 +18,12 @@ Need REGEXes:
     -- get enchant name AS A STRING
     -- get food/drink name AS A STRING
     Given a DAILY writ condition, same as above but likely DIFFERENT regexes:
+
+All these string tables that I'm fetching by programmatically rolling through sealed master writs? I can do that at user runtime, too.
+-- PRO table: flat, easy to understand just by reading, cannot have bugs (but can have stale text)
+-- CON table: won't match updated text: requires zig time to update
+-- CON table: consumes space on load instead of space on use.
+
 
 Now, from those strings, get some sort of integer/constant.
 THAT is where having tables of gear names, sets, materials, styles, all come in

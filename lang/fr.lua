@@ -153,6 +153,13 @@ LibCraftText.ITEMS = {
 , [65] = "bouclier"                  -- "Shield"
 , [18] = "Collier"                   -- "Necklace"
 , [24] = "Anneau"                    -- "Ring"
-
-
 }
+
+LibCraftText.QUALITIES = {
+    [1] = "Normal"                   -- "Normal"
+,   [2] = "Raffiné"                 -- "Fine"
+,   [3] = "Supérieur"               -- "Superior"
+,   [4] = "Épique"                  -- "Epic"
+,   [5] = "Légendaire"              -- "Legendary"
+}
+

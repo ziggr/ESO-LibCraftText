@@ -227,4 +227,9 @@ LANG_KEY = {
 ,   ["$ITEM_18"] = "Necklace"
 ,   ["$ITEM_24"] = "Ring"
 
+,   ["$QUALITY_1"] = "Normal"
+,   ["$QUALITY_2"] = "Fine"
+,   ["$QUALITY_3"] = "Superior"
+,   ["$QUALITY_4"] = "Epic"
+,   ["$QUALITY_5"] = "Legendary"
 }

@@ -123,6 +123,15 @@ function ImportSavedVars()
             end
         end
     end
+
+    local qualities = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].qualities
+    for lang, qual_list in pairs(qualities) do
+        for i, text in pairs(qual_list) do
+            local key = string.format("$QUALITY_%d", i)
+            local entry = DB[key]
+            entry[lang] = text
+        end
+    end
 end
 
 -- From http://lua-users.org/wiki/SplitJoin

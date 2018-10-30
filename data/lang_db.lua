@@ -1597,6 +1597,36 @@ LANG_DB = {
           ,   ja  = "ルビーアッシュ"
           }
 , [190] = {
+              key = "$QUALITY_1"
+          ,   en  = "Normal"
+          ,   de  = "Normal"
+          ,   fr  = "Normal"
+          ,   es  = "Normal"
+          ,   it  = "Normale"
+          ,   ru  = "Обычное"
+          ,   ja  = "Normal"
+          }
+, [191] = {
+              key = "$QUALITY_2"
+          ,   en  = "Fine"
+          ,   de  = "Erlesen"
+          ,   fr  = "Raffiné"
+          ,   es  = "Bueno"
+          ,   it  = "Buono"
+          ,   ru  = "Хорошее"
+          ,   ja  = "Fine"
+          }
+, [192] = {
+              key = "$QUALITY_3"
+          ,   en  = "Superior"
+          ,   de  = "Überlegen"
+          ,   fr  = "Supérieur"
+          ,   es  = "Superior"
+          ,   it  = "Superiore"
+          ,   ru  = "Превосходное"
+          ,   ja  = "Superior"
+          }
+, [193] = {
               key = "$QUALITY_4"
           ,   en  = "Epic"
           ,   de  = "Episch"
@@ -1604,34 +1634,37 @@ LANG_DB = {
           ,   es  = "Épico"
           ,   it  = "Epico"
           ,   ru  = "Эпическое"
+          ,   ja  = "Epic"
           }
-, [191] = {
+, [194] = {
               key = "$QUALITY_5"
           ,   en  = "Legendary"
           ,   de  = "Legendär"
           ,   fr  = "Légendaire"
+          ,   es  = "Legendario"
           ,   it  = "Leggendario"
           ,   ru  = "Легендарное"
+          ,   ja  = "Legendary"
           }
-, [192] = {
+, [195] = {
               key = "$ROLIS_ACCEPT_CONTRACT"
           ,   en  = "<Accept the contract.>"
           ,   de  = "<Nehmt den Auftrag an.>"
           ,   fr  = "<Accepter le contrat>"
           }
-, [193] = {
+, [196] = {
               key = "$ROLIS_DELIVER_SUBSTR"
           ,   en  = "Deliver"
           ,   de  = "Beliefert"
           ,   fr  = "Livrez"
           }
-, [194] = {
+, [197] = {
               key = "$ROLIS_FINISH_JOB"
           ,   en  = "<Finish the job.>"
           ,   de  = "<Auftrag abschließen.>"
           ,   fr  = "<Finir le travail.>"
           }
-, [195] = {
+, [198] = {
               key = "$ROLIS_NAME"
           ,   en  = "Rolis Hlaalu"
           }

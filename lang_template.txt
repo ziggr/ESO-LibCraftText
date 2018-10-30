@@ -153,6 +153,13 @@ LibCraftText.ITEMS = {
 , [65] = $ITEM_65                    -- "Shield"
 , [18] = $ITEM_18                    -- "Necklace"
 , [24] = $ITEM_24                    -- "Ring"
-
-
 }
+
+LibCraftText.QUALITIES = {
+    [1] = $QUALITY_1                 -- "Normal"
+,   [2] = $QUALITY_2                 -- "Fine"
+,   [3] = $QUALITY_3                 -- "Superior"
+,   [4] = $QUALITY_4                 -- "Epic"
+,   [5] = $QUALITY_5                 -- "Legendary"
+}
+

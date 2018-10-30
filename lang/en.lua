@@ -153,6 +153,13 @@ LibCraftText.ITEMS = {
 , [65] = "Shield"                    -- "Shield"
 , [18] = "Necklace"                  -- "Necklace"
 , [24] = "Ring"                      -- "Ring"
-
-
 }
+
+LibCraftText.QUALITIES = {
+    [1] = "Normal"                   -- "Normal"
+,   [2] = "Fine"                     -- "Fine"
+,   [3] = "Superior"                 -- "Superior"
+,   [4] = "Epic"                     -- "Epic"
+,   [5] = "Legendary"                -- "Legendary"
+}
+

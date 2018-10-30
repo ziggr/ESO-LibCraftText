@@ -88,16 +88,22 @@ function LibCraftText.Scan()
     LibCraftText.ScanQuestJournal()
     LibCraftText.DiscoverMaterials()
     LibCraftText.DiscoverItems()
+    LibCraftText.DiscoverQualities()
+    LibCraftText.DiscoverTraits()
+    LibCraftText.DiscoverSets()
+    LibCraftText.DiscoverMotifs()
 end
 
 function LibCraftText.Forget()
     LibCraftText.saved_var.quests          = nil
     LibCraftText.saved_var.steps           = nil
     LibCraftText.saved_var.conditions      = nil
-
     LibCraftText.saved_var.materials       = nil
     LibCraftText.saved_var.items           = nil
-
+    LibCraftText.saved_var.qualities       = nil
+    LibCraftText.saved_var.traits          = nil
+    LibCraftText.saved_var.sets            = nil
+    LibCraftText.saved_var.motifs          = nil
 end
 
 local function find_i(want, list)
@@ -459,7 +465,6 @@ function LibCraftText.DiscoverItems()
                  , ja = "Craft a プラチナの([^;]*);"
                  }
     }
-items["ww "] = nil
 
     for weight, list in pairs(writ1)  do
         items[weight] = items[weight] or {}
@@ -475,6 +480,147 @@ items["ww "] = nil
             table.insert(items[weight][lang], f or b)
         end
     end
+end
+
+function LibCraftText.DiscoverQualities()
+    local self = LibCraftText
+    self.saved_var.qualities = self.saved_var.qualities or {}
+    local qualities = self.saved_var.qualities
+    local lang  = self.CurrLang()
+
+    local template = "|H1:item:138798:6:1:0:0:0:24:255:%d:176:30:0:0:0:0:0:0:0:0:0:656000|h|h"
+
+    local RE = { en = "Quality: ([^;]*);"
+               , de = "Qualität: ([^;]*)"
+               , fr = "Qualité : ([^;]*)"
+               , ru = "качество: ([^;]*);"
+               , es = "Calidad: ([^;]*);"
+               , it = "Qualità: ([^;]*);"
+               , ja = "Quality: ([^;]*);"
+               }
+
+    qualities[lang] = {}
+    for quality_num = 1,5 do
+        local item_link = template:format(quality_num)
+        local b = GenerateMasterWritBaseText(item_link)
+        local re = RE[lang] or RE.en
+        local f = nil
+        if re then
+            _,_,f = string.find(b,re)
+        end
+        table.insert(qualities[lang], f or b)
+    end
+end
+
+function LibCraftText.DiscoverTraits()
+    local self = LibCraftText
+    self.saved_var.traits = self.saved_var.traits or {}
+    local traits = self.saved_var.traits
+    local lang  = self.CurrLang()
+
+    local writ5 = {
+      weapon  = {   1,  2,  3,  4,  5,  6,  7,  8, 26 }
+    , armor   = {  11, 12, 13, 14, 15, 16, 17, 18, 25 }
+    , jewelry = {  22, 21, 23, 30, 33, 32, 28, 29, 31 }
+    }
+    local template = {
+        weapon  = "|H1:item:119563:6:1:0:0:0:53:188:4:74:%d:35:0:0:0:0:0:0:0:0:66000|h|h"
+    ,   armor   = "|H1:item:119694:6:1:0:0:0:28:194:4:79:%d:65:0:0:0:0:0:0:0:0:63000|h|h"
+    ,   jewelry = "|H1:item:138798:6:1:0:0:0:24:255:4:176:%d:0:0:0:0:0:0:0:0:0:656000|h|h"
+    }
+
+    local RE = { en = "Trait: ([^;]*);"
+               , de = "Eigenschaft: ([^;\n]*)\n"
+               , fr = "Trait : ([^;]*);"
+               , ru = "особенность: ([^;]*);"
+               , es = "Rasgo: ([^;]*);"
+               , it = "Tratti: ([^;]*);"
+               , ja = "Trait: ([^;]*);"
+               }
+
+    for ttype, trait_list in pairs(writ5)  do
+        for i,trait_num in ipairs(trait_list) do
+            local item_link = template[ttype]:format(trait_num)
+            local b = GenerateMasterWritBaseText(item_link)
+            local re = RE[lang] or RE.en
+            local _,_,f = string.find(b,re)
+            if f then
+                traits[trait_num] = traits[trait_num] or {}
+                traits[trait_num][lang] = f
+            else
+                traits[0] = traits[0] or {}
+                traits[0][lang] = b
+            end
+        end
+    end
+end
+
+function LibCraftText.DiscoverSets()
+    local self = LibCraftText
+    self.saved_var.sets = self.saved_var.sets or {}
+    local sets = self.saved_var.sets
+    local lang  = self.CurrLang()
+
+                        -- writ4
+    local template = "|H1:item:119563:6:1:0:0:0:53:188:4:%d:8:35:0:0:0:0:0:0:0:0:66000|h|h"
+
+    local RE = { en = "Set: ([^;]*);"
+               , de = "Set: ([^;\n]*)\n"
+               , fr = "Ensemble : ([^;]*);"
+               , ru = "комплект: ([^;]*);"
+               , es = "Conjunto: ([^;]*);"
+               , it = "Set: ([^;]*)"
+               , ja = "Set: ([^;]*);"
+               }
+
+    for set_num = 1,500 do
+        local item_link = template:format(set_num)
+        local b = GenerateMasterWritBaseText(item_link)
+        local re = RE[lang] or RE.en
+        local _,_,f = string.find(b,re)
+        if f then
+            sets[set_num] = sets[set_num] or {}
+            sets[set_num][lang] = f
+        else
+            sets[0] = sets[0] or {}
+            sets[0][lang] = b
+        end
+    end
+
+end
+
+function LibCraftText.DiscoverMotifs()
+    local self = LibCraftText
+    self.saved_var.motifs = self.saved_var.motifs or {}
+    local motifs = self.saved_var.motifs
+    local lang   = self.CurrLang()
+
+                        -- writ6
+    local template = "|H1:item:119563:6:1:0:0:0:53:188:4:178:8:%d:0:0:0:0:0:0:0:0:66000|h|h"
+
+    local RE = { en = "Style: ([^;]*)"
+               , de = "Stil: ([^;\n]*)\n"
+               , fr = "Style : ([^;]*)"
+               , ru = "стиль: ([^;]*)"
+               , es = "Estilo: ([^;]*)"
+               , it = "Stile: ([^;\n]*)"  -- Italian master writ base text lacks VALUES after the "Stile" label. Grr.
+               , ja = "Style: ([^;]*)"
+               }
+
+    for motif_num = 1,100 do
+        local item_link = template:format(motif_num)
+        local b = GenerateMasterWritBaseText(item_link)
+        local re = RE[lang] or RE.en
+        local _,_,f = string.find(b,re)
+        if f then
+            motifs[motif_num] = motifs[motif_num] or {}
+            motifs[motif_num][lang] = f
+        else
+            motifs[0] = motifs[0] or {}
+            motifs[0][lang] = b
+        end
+    end
+
 end
 
 -- Util ----------------------------------------------------------------------
