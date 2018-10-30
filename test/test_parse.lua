@@ -37,11 +37,12 @@ LibCraftText.RE_CONDITION_CL = {
 ,   ["es"] = "Fabrica une? (.*) de (.*) normal: 0/1"
 ,   ["it"] = "Craft (.*): 0 / 1"
 ,   ["ru"] = "Craft Normal (.*): 0 / 1"
-,   ["ja"] = "(.*)の(.)%(ノーマル%)を生産する: 0 / 1"
+,   ["ja"] = "(.*)の(.*)%(ノーマル%)を生産する: 0 / 1"
 }
 function LibCraftText.ParseConditionCL(cond_text)
-    local lang      = LibCraftText.CurrLang()
-    local re        = LibCraftText.RE_CONDITION_CL[lang]
+    local self      = LibCraftText
+    local lang      = self.CurrLang()
+    local re        = self.RE_CONDITION_CL[lang]
     local _,_,g1,g2 = string.find(cond_text, re)
 
                         -- Some languages put material (adjective) before
@@ -58,18 +59,61 @@ function LibCraftText.ParseConditionCL(cond_text)
                         -- search.
     local matitem = g1
     if g2 then matitem = matitem .. "/" .. g2 end
+    if not matitem then return nil end
 
-g1 = "Rubedo Leather"
-g2 = "Helmet"
-    if g2 then
-        return { material_name = g1 -- "Rubedo Leather"
-               , item_name     = g2 -- "Helm"
-               }
-   end
+    local material_list = self.MaterialList()
+    local item_list     = self.ItemList()
+    local found         = {}
+    found.material_name = self.LongestMatch( matitem
+                                           , material_list["lgt"]
+                                           , material_list["med"]
+                                           )
+    found.item_name    = self.LongestMatch( matitem
+                                          , item_list
+                                          )
+    return found
 end
+
+                        -- Return the longest element of string_list (or
+                        -- optional string_list2)  that exists within
+                        -- `search_within_me`.
+function LibCraftText.LongestMatch(search_within_me, string_list, string_list2)
+    local match = nil
+    local swm = search_within_me:lower()
+    for _,list in ipairs({string_list, string_list2}) do
+        if list then
+            for _,str in pairs(list) do
+                if swm:find(str:lower()) then
+                    if (not match) or (match:len() < str:len()) then
+                        -- Have I mentioned how much I miss `continue` ?
+                        match = str
+                    end
+                end
+            end
+        end
+    end
+    return match
+end
+
+function LibCraftText.MaterialList()
+    return LibCraftText.MATERIALS
+end
+
+function LibCraftText.ItemList()
+    return LibCraftText.ITEMS
+end
+
 -- End Belonga LCT -----------------------------------------------------------
 
-LANG_ORDER = { "en", "de", "fr", "ru", "es", "it", "ja" }
+                        -- The 6 supported languages.
+                        -- Italian is not yet supported because its
+                        -- translation is partial: master writ base text
+                        -- uses Italian text ("Elmetto") but daily crafting
+                        -- writ conditions still use English ("Helmet").
+                        -- Pick one or the other, I'm not about to double up
+                        -- my code to support fallback-to-English.
+                        --
+LANG_ORDER = { "en", "de", "fr", "ru", "es", "ja" }
 
 TestDailyCondition = {}
 
@@ -109,15 +153,18 @@ end
 function TestDailyCondition.TestCL()
     local fodder = {
       ["en"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , "Rubedo Leather", "Helmet" }
-    , ["de"] = { "Stellt normale Rubedolederhelme her: 0/1"        , "Rubedoleder"   , "helme"  }
+    , ["de"] = { "Stellt normale Rubedolederhelme her: 0/1"        , "Rubedoleder"   , "helm"   } -- what about that trailing "e" on "helme"?
     , ["fr"] = { "Fabriquez un casque en cuir pourpre normal : 0/1", "cuir pourpre"  , "casque" }
     , ["ru"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , "Rubedo Leather", "Helmet" }
-    , ["es"] = { "Fabrica un casco de cuero rubedo normal: 0/1"    , "cuero rubedo"  , "casco"  }
-    , ["it"] = { "Craft Rubedo Leather Helmet: 0 / 1"              , "Rubedo Leather", "Helmet" }
+    , ["es"] = { "Fabrica un casco de cuero rubedo normal: 0/1"    , "cuero rubedo"  , "Casco"  }
+    --, ["it"] = { "Craft Rubedo Leather Helmet: 0 / 1"              , "Rubedo Leather", "Helmet" }
     , ["ja"] = { "ルベドレザーの兜(ノーマル)を生産する: 0 / 1"           , "ルベドレザー"    , "兜"     }
     }
 
     local f = fodder[LibCraftText.CurrLang()]
+    if not f then return end
+        -- italian doesn't work: it uses true Italian
+
     local input, expect_mat, expect_item = unpack(f)
     local expect = { material_name = expect_mat
                    , item_name     = expect_item

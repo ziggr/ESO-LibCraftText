@@ -23,7 +23,7 @@ zip:
 lang:
 	lua lang_gen.lua
 
-# --repeat 7 to loop through all 7 supported languages
+# --repeat 6 to loop through all 6 supported languages. Skipping Italian.
 test:
 	lua test/test_parse.lua --repeat 7
 

@@ -2764,7 +2764,7 @@ end
         end
 
         -- ZZ MOD BEGIN include iteration's language code
-        LANG_ORDER = { "en", "de", "fr", "ru", "es", "it", "ja" }
+        LANG_ORDER = { "en", "de", "fr", "ru", "es", "ja" }
         local iter_msg
         iter_msg = self.exeRepeat and 'iteration '..self.currentCount
                     .." "..LANG_ORDER[self.currentCount]
