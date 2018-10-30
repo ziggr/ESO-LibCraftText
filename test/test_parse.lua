@@ -49,9 +49,27 @@ LibCraftText.RE_CONDITION_CL = {
 ,   ["ja"] = "(.*)の(.*)%(ノーマル%)を生産する: 0 / 1"
 }
 function LibCraftText.ParseConditionCL(cond_text)
+    local self          = LibCraftText
+    local lang          = self.CurrLang()
+    local material_list = self.MaterialList()
+    local item_list     = self.ItemList()[cl]
+    return self.ParseConditionSmithing( cond_text
+                                      , self.RE_CONDITION_CL[lang]
+                                      , item_list
+                                      , material_list["lgt"]
+                                      , material_list["med"]
+                                      )
+end
+
+function LibCraftText.ParseConditionSmithing(
+          cond_text
+        , re
+        , item_list
+        , material_list
+        , material_list2 -- optional
+        )
+
     local self      = LibCraftText
-    local lang      = self.CurrLang()
-    local re        = self.RE_CONDITION_CL[lang]
     local _,_,g1,g2 = string.find(cond_text, re)
 
                         -- Some languages put material (adjective) before
@@ -70,13 +88,11 @@ function LibCraftText.ParseConditionCL(cond_text)
     if g2 then matitem = matitem .. "/" .. g2 end
     if not matitem then return nil end
 
-    local material_list = self.MaterialList()
-    local item_list     = self.ItemList()[cl]
     local found         = {}
     found.material_name, found.material_num
         = self.LongestMatch( matitem
-                           , material_list["lgt"]
-                           , material_list["med"]
+                           , material_list
+                           , material_list2
                            )
     found.item_name, found.item_num
         = self.LongestMatch( matitem
