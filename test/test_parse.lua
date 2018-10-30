@@ -64,13 +64,15 @@ function LibCraftText.ParseConditionCL(cond_text)
     local material_list = self.MaterialList()
     local item_list     = self.ItemList()
     local found         = {}
-    found.material_name = self.LongestMatch( matitem
-                                           , material_list["lgt"]
-                                           , material_list["med"]
-                                           )
-    found.item_name    = self.LongestMatch( matitem
-                                          , item_list
-                                          )
+    found.material_name, found.material_num
+        = self.LongestMatch( matitem
+                           , material_list["lgt"]
+                           , material_list["med"]
+                           )
+    found.item_name, found.material_num
+        = self.LongestMatch( matitem
+                           , item_list
+                           )
     return found
 end
 
@@ -173,13 +175,26 @@ function TestDailyCondition.TestCL()
     luaunit.assertEquals(got, expect)
 end
 
--- TestSomething = {}
--- function TestSomething:TestDailyQuestNameEN()
---     require("en")
---     luaunit.assertEquals(1,1)
---     luaunit.assertEquals(1,1)
---     luaunit.assertEquals(1,1)
--- end
+function TestDailyCondition.YestBS()
+    local fodder = {
+      ["en"] = { "Craft Normal Rubedite Helm: 0 / 1"           , "Rubedite" , "Helm"    }
+    , ["de"] = { "Stellt normale Rubedithauben her: 0/1"       , "Rubedit"  , "hauben"  }
+    , ["fr"] = { "Fabriquez un heaume en cuprite normal : 0/1" , "cuprite"  , "heaume"  }
+    , ["es"] = { "Fabrica un yelmo de rubedita normal: 0/1"    , "rubedita" , "yelmo"   }
+    --, ["it"] = { "Craft Rubedite Helm: 0 / 1"                  ,
+    , ["ja"] = { "ルベダイトの兜(ノーマル)を生産する: 0 / 1"         , "ルベダイト", "兜"      }
+    }
+    local f = fodder[LibCraftText.CurrLang()]
+    if not f then return end
+        -- italian doesn't work: it uses true Italian
+
+    local input, expect_mat, expect_item = unpack(f)
+    local expect = { material_name = expect_mat
+                   , item_name     = expect_item
+                   }
+    local got    = LibCraftText.ParseConditionBS(input)
+    luaunit.assertEquals(got, expect)
+end
 
 
 function TestDailyCondition.TestNothing()

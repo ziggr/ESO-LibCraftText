@@ -29,7 +29,9 @@ TEST-DRIVEN-DEVELOPMENT time!
     of the same tables from runtime ZOS code: just seed the JIT cache BEFORE
     running test loops.
 
-
+SPLIT item table into bs/lgt/med/ww/jw
+    use actual master writ item numbers not ordinals
+    return correct ordinals as part of ParseXX() functions
 
 
 
