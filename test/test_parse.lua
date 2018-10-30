@@ -11,6 +11,15 @@ CRAFTING_TYPE_PROVISIONING      = 5
 CRAFTING_TYPE_WOODWORKING       = 6
 CRAFTING_TYPE_JEWELRYCRAFTING   = 7
 
+-- for less typing
+local bs = CRAFTING_TYPE_BLACKSMITHING
+local cl = CRAFTING_TYPE_CLOTHIER
+local en = CRAFTING_TYPE_ENCHANTING
+local al = CRAFTING_TYPE_ALCHEMY
+local pr = CRAFTING_TYPE_PROVISIONING
+local ww = CRAFTING_TYPE_WOODWORKING
+local jw = CRAFTING_TYPE_JEWELRYCRAFTING
+
 
 
 -- Belonga LCT ---------------------------------------------------------------
@@ -62,14 +71,14 @@ function LibCraftText.ParseConditionCL(cond_text)
     if not matitem then return nil end
 
     local material_list = self.MaterialList()
-    local item_list     = self.ItemList()
+    local item_list     = self.ItemList()[cl]
     local found         = {}
     found.material_name, found.material_num
         = self.LongestMatch( matitem
                            , material_list["lgt"]
                            , material_list["med"]
                            )
-    found.item_name, found.material_num
+    found.item_name, found.item_num
         = self.LongestMatch( matitem
                            , item_list
                            )
@@ -80,21 +89,22 @@ end
                         -- optional string_list2)  that exists within
                         -- `search_within_me`.
 function LibCraftText.LongestMatch(search_within_me, string_list, string_list2)
-    local match = nil
+    local match_str, match_key = nil
     local swm = search_within_me:lower()
     for _,list in ipairs({string_list, string_list2}) do
         if list then
-            for _,str in pairs(list) do
+            for key,str in pairs(list) do
                 if swm:find(str:lower()) then
-                    if (not match) or (match:len() < str:len()) then
+                    if (not match_str) or (match_str:len() < str:len()) then
                         -- Have I mentioned how much I miss `continue` ?
-                        match = str
+                        match_str = str
+                        match_key = key
                     end
                 end
             end
         end
     end
-    return match
+    return match_str, match_key
 end
 
 function LibCraftText.MaterialList()
@@ -154,24 +164,25 @@ end
 
 function TestDailyCondition.TestCL()
     local fodder = {
-      ["en"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , "Rubedo Leather", "Helmet" }
-    , ["de"] = { "Stellt normale Rubedolederhelme her: 0/1"        , "Rubedoleder"   , "helm"   } -- what about that trailing "e" on "helme"?
-    , ["fr"] = { "Fabriquez un casque en cuir pourpre normal : 0/1", "cuir pourpre"  , "casque" }
-    , ["ru"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , "Rubedo Leather", "Helmet" }
-    , ["es"] = { "Fabrica un casco de cuero rubedo normal: 0/1"    , "cuero rubedo"  , "Casco"  }
-    --, ["it"] = { "Craft Rubedo Leather Helmet: 0 / 1"              , "Rubedo Leather", "Helmet" }
-    , ["ja"] = { "ルベドレザーの兜(ノーマル)を生産する: 0 / 1"           , "ルベドレザー"    , "兜"     }
+      ["en"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , 10, "Rubedo Leather", 35, "Helmet" }
+    , ["de"] = { "Stellt normale Rubedolederhelme her: 0/1"        , 10, "Rubedoleder"   , 35, "helm"   } -- what about that trailing "e" on "helme"?
+    , ["fr"] = { "Fabriquez un casque en cuir pourpre normal : 0/1", 10, "cuir pourpre"  , 35, "casque" }
+    , ["ru"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , 10, "Rubedo Leather", 35, "Helmet" }
+    , ["es"] = { "Fabrica un casco de cuero rubedo normal: 0/1"    , 10, "cuero rubedo"  , 35, "Casco"  }
+    --, ["it"] = { "Craft Rubedo Leather Helmet: 0 / 1"              , 10, "Rubedo Leather", 35, "Helmet" }
+    , ["ja"] = { "ルベドレザーの兜(ノーマル)を生産する: 0 / 1"           , 10, "ルベドレザー"    , 35, "兜"     }
     }
 
     local f = fodder[LibCraftText.CurrLang()]
     if not f then return end
         -- italian doesn't work: it uses true Italian
 
-    local input, expect_mat, expect_item = unpack(f)
-    local expect = { material_name = expect_mat
-                   , item_name     = expect_item
+    local expect = { material_num  = f[2]
+                   , material_name = f[3]
+                   , item_num      = f[4]
+                   , item_name     = f[5]
                    }
-    local got    = LibCraftText.ParseConditionCL(input)
+    local got    = LibCraftText.ParseConditionCL(f[1])
     luaunit.assertEquals(got, expect)
 end
 
