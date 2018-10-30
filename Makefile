@@ -1,4 +1,4 @@
-.PHONY: put zip lang
+.PHONY: put zip lang test
 
 put:
 	rsync -vrt --delete --exclude=.git --exclude=l10n-unofficial --exclude=published . /Volumes/Elder\ Scrolls\ Online/live/AddOns/LibCraftText
@@ -22,3 +22,7 @@ zip:
 
 lang:
 	lua lang_gen.lua
+
+test:
+	lua test/test_parse.lua
+

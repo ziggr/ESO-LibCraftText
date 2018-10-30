@@ -5,12 +5,34 @@ Goal is NOT a translation table of set/trait/whatever strings.
 
 Need REGEXes:
     Given a sealed master writ condition text:
-    -- get requested crafting item, AS A STRING     --v extracted for later use
-    -- get requested crafting material AS A STRING  --v extracted for later use
-    -- get requested quality AS A STRING            --v extracted for later use
-    -- get requested trait AS A STRING              <-- EXTRACT THIS NEXT
-    -- get requested set bonus AS A STRING (can extract for self-knowledge, but do NOT put this in lang files: generate on-the-fly programmatically if you really need it.)
+    -- get requested crafting item, AS A STRING
+    -- get requested crafting material AS A STRING
+    -- get requested quality AS A STRING
+    -- get requested trait AS A STRING
+    -- get requested set bonus AS A STRING
     -- get requested motif AS A STRING
+
+    Now, use the above strings to help you craft language-specific regexes that
+    can parse daily and master craft condition text and return above values, AS
+    STRINGS.
+
+    Later, work on on-demand generators that can convert the above strings to
+    useful numeric values (basically move DiscoverXXX() functions into the main
+    lua file as public API, with different API and with lazy caching because
+    hokey smokes some of those loops are expensive.
+
+TEST-DRIVEN-DEVELOPMENT time!
+    need `make test` to run hundreds of strings through API
+    and verify output.
+
+    Test scaffolding could use lang_db.lua as a replacement for JIT-scrape
+    of the same tables from runtime ZOS code: just seed the JIT cache BEFORE
+    running test loops.
+
+
+
+
+
     -- get alchemy potion/poison name AS A STRING
     -- get alchemy potion/poison level AS A STRING
     -- get alchemy effect list, AS A STRING list
