@@ -44,9 +44,9 @@ end
 LibCraftText.RE_CONDITION_DAILY = {
     ["en"] = "Craft Normal (.*): 0 / 1"
 ,   ["de"] = "Stellt normale (.*) her: 0/1"
-,   ["fr"] = "Fabriquez une? (.*) en (.*) normal : 0/1"
+,   ["fr"] = "Fabriquez [uneds]+ (.*) en (.*) normal[es]* : 0/1"
 ,   ["ru"] = "Craft Normal (.*): 0 / 1"
-,   ["es"] = "Fabrica une? (.*) de (.*) normal: 0/1"
+,   ["es"] = "Fabrica [unaos]+ (.*) de (.*) normal[es]*: 0/1"
 ,   ["it"] = "Craft (.*): 0 / 1"
 ,   ["ja"] = "(.*)の(.*)%(ノーマル%)を生産する: 0 / 1"
 }
@@ -59,7 +59,7 @@ LibCraftText.RE_CONDITION_DAILY = {
 -- glyph, potion, or food, or acquire an alchemy or enchanting material,
 -- return nil.
 --
-function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text, re)
+function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
     local self  = LibCraftText
     local lang  = self.CurrLang()
     local re    = self.RE_CONDITION_DAILY[lang]
@@ -79,6 +79,7 @@ function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text, re)
     local _,_,g1,g2 = string.find(cond_text, re)
     local matitem = g1
     if g2 then matitem = matitem .. "/" .. g2 end
+-- print(string.format("matitem:'%s'",tostring(matitem)))
     if not matitem then return nil end
     matitem = matitem:lower()
 
@@ -152,33 +153,57 @@ end
 
 function TestDailyCondition.TestAL()
     local fodder = {
-      ["en"] = { "Craft Essence of Stamina: 0 / 1"         , nil }
-    , ["de"] = { "Stellt Essenzen der Ausdauer her: 0/1"   , nil }
-    , ["fr"] = { "Fabriquez une essence de Vigueur : 0/1"  , nil }
-    , ["es"] = { "Prepara una esencia de aguante: 0/1"     , nil }
-    , ["it"] = { "TRACKER GOAL TEXT: 0 / 1"                , nil }
-    , ["ja"] = { "スタミナのエキスを生産する: 0 / 1"           , nil }
+      { { ["en"] = "Craft Essence of Stamina: 0 / 1"
+        , ["de"] = "Stellt Essenzen der Ausdauer her: 0/1"
+        , ["fr"] = "Fabriquez une essence de Vigueur : 0/1"
+        , ["es"] = "Prepara una esencia de aguante: 0/1"
+        , ["it"] = "TRACKER GOAL TEXT: 0 / 1"
+        , ["ja"] = "スタミナのエキスを生産する: 0 / 1"
+        }
+      , nil  -- NEEDS TO CHANGE TO potion/poison, level, effect list
+      }
     }
-    local f = fodder[LibCraftText.CurrLang()]
-    if not f then return end
-
-    local expect = nil
-    local got    = LibCraftText.ParseDailyConditionGear(al, f[1])
-    luaunit.assertEquals(got, expect)
+    for _,f in ipairs(fodder) do
+        local input  = f[1][LibCraftText.CurrLang()]
+        if not input then return end
+        local expect = f[2]
+        local got    = LibCraftText.ParseDailyConditionGear(al, input)
+        luaunit.assertEquals(got, expect)
+    end
 end
 
 function TestDailyCondition.TestBS()
 
     local fodder = {
-      { { ["en"] = "Craft Normal Rubedite Helm: 0 / 1"
+      { {
+          ["en"] = "Craft Normal Rubedite Helm: 0 / 1"
         , ["de"] = "Stellt normale Rubedithauben her: 0/1"        -- what about the extra "n" in "hauben" ? Direct object declension?
         , ["fr"] = "Fabriquez un heaume en cuprite normal : 0/1"
         , ["es"] = "Fabrica un yelmo de rubedita normal: 0/1"
-        --["it"] = "Craft Rubedite Helm: 0 / 1"
         , ["ja"] = "ルベダイトの兜(ノーマル)を生産する: 0 / 1"
         }
       , LCT.MATERIAL.RUBEDITE
       , LCT.ITEM.HELM
+      }
+    , { {
+          ["en"] = "Craft Normal Rubedite Dagger: 0 / 1"
+        , ["de"] = "Stellt normale Rubeditdolche her: 0/1"
+        , ["fr"] = "Fabriquez une dague en cuprite normale : 0/1"
+        , ["es"] = "Fabrica una daga de rubedita normal: 0/1"
+        , ["ja"] = "ルベダイトの短剣(ノーマル)を生産する: 0 / 1"
+        }
+      , LCT.MATERIAL.RUBEDITE
+      , LCT.ITEM.DAGGER
+      }
+    , { {
+          ["en"] = "Craft Normal Rubedite Pauldron: 0 / 1"
+        , ["de"] = "Stellt normale Rubeditschulterschutze her: 0/1"
+        , ["fr"] = "Fabriquez des spallières en cuprite normales : 0/1"
+        , ["es"] = "Fabrica unos espaldarones de rubedita normales: 0/1"
+        , ["ja"] = "ルベダイトのポールドロン(ノーマル)を生産する: 0 / 1"
+        }
+      , LCT.MATERIAL.RUBEDITE
+      , LCT.ITEM.PAULDRON
       }
     }
     for _,f in ipairs(fodder) do
@@ -194,22 +219,27 @@ end
 
 function TestDailyCondition.TestCL()
     local fodder = {
-      ["en"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET }
-    , ["de"] = { "Stellt normale Rubedolederhelme her: 0/1"        , LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET } -- what about that trailing "e" on "helme"?
-    , ["fr"] = { "Fabriquez un casque en cuir pourpre normal : 0/1", LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET }
-    , ["ru"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET }
-    , ["es"] = { "Fabrica un casco de cuero rubedo normal: 0/1"    , LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET }
-    --["it"] = { "Craft Rubedo Leather Helmet: 0 / 1"              , LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET }
-    , ["ja"] = { "ルベドレザーの兜(ノーマル)を生産する: 0 / 1"           , LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET }
+      { {
+          ["en"] = "Craft Normal Rubedo Leather Helmet: 0 / 1"
+        , ["de"] = "Stellt normale Rubedolederhelme her: 0/1"
+        , ["fr"] = "Fabriquez un casque en cuir pourpre normal : 0/1"
+        , ["ru"] = "Craft Normal Rubedo Leather Helmet: 0 / 1"
+        , ["es"] = "Fabrica un casco de cuero rubedo normal: 0/1"
+        , ["ja"] = "ルベドレザーの兜(ノーマル)を生産する: 0 / 1"
+        }
+      , LCT.MATERIAL.RUBEDO_LEATHER
+      , LCT.ITEM.HELMET
+      }
     }
-    local f = fodder[LibCraftText.CurrLang()]
-    if not f then return end
-
-    local expect = { material = f[2]
-                   , item     = f[3]
-                   }
-    local got    = LibCraftText.ParseDailyConditionGear(cl, f[1])
-    luaunit.assertEquals(got, expect)
+    for _,f in ipairs(fodder) do
+        local input = f[1][LibCraftText.CurrLang()]
+        if not input then return end
+        local expect = { material = f[2]
+                       , item     = f[3]
+                       }
+        local got    = LibCraftText.ParseDailyConditionGear(cl, input)
+        luaunit.assertEquals(got, expect)
+    end
 end
 
 
