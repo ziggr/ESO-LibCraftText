@@ -14,41 +14,31 @@ local pr = CRAFTING_TYPE_PROVISIONING    or 5
 local ww = CRAFTING_TYPE_WOODWORKING     or 6
 local jw = CRAFTING_TYPE_JEWELRYCRAFTING or 7
 
-LibCraftText.DAILY_QUEST_TITLES = {
-    [bs] = "Blacksmith Writ"                -- "Blacksmith Writ"
-,   [cl] = "Clothier Writ"                  -- "Clothier Writ"
-,   [en] = "Enchanter Writ"                 -- "Enchanter Writ"
-,   [al] = "Alchemist Writ"                 -- "Alchemist Writ"
-,   [pr] = "Provisioner Writ"               -- "Provisioner Writ"
-,   [ww] = "Woodworker Writ"                -- "Woodworker Writ"
-,   [jw] = "Jewelry Crafting Writ"          -- "Jewelry Crafting Writ"
-}
-
                         -- Identify which list of crafting materials.
 LibCraftText.MAT_SET_ID = {
-  ["LIGHT"  ] = "mat_lgt"
-, ["MEDIUM" ] = "mat_med"
-, ["HEAVY"  ] = "mat_hvy"
-, ["WOOD"   ] = "wd"
-, ["JEWELRY"] = "jw"
+    LIGHT           = "mat_lgt"
+,   MEDIUM          = "mat_med"
+,   HEAVY           = "mat_hvy"
+,   WOOD            = "mat_wood"
+,   JEWELRY         = "mat_jewl"
 }
                         -- For less typing
-local mat_lgt  = LibCraftText.MAT_SET_ID.LIGHT
-local mat_med  = LibCraftText.MAT_SET_ID.MEDIUM
-local mat_hvy  = LibCraftText.MAT_SET_ID.HEAVY
-local mat_wood = LibCraftText.MAT_SET_ID.WOOD
-local mat_jewl = LibCraftText.MAT_SET_ID.JEWELRY
+local mat_lgt       = LibCraftText.MAT_SET_ID.LIGHT
+local mat_med       = LibCraftText.MAT_SET_ID.MEDIUM
+local mat_hvy       = LibCraftText.MAT_SET_ID.HEAVY
+local mat_wood      = LibCraftText.MAT_SET_ID.WOOD
+local mat_jewl      = LibCraftText.MAT_SET_ID.JEWELRY
 
                         -- Identify which list of traits.
 LibCraftText.TRAIT_SET_ID = {
-    ["WEAPON" ] = "trait_weap"
-,   ["ARMOR"  ] = "trait_armr"
-,   ["JEWELRY"] = "trait_jewl"
+    WEAPON          = "trait_weap"
+,   ARMOR           = "trait_armr"
+,   JEWELRY         = "trait_jewl"
 }
                         -- For less typing
-local trait_weap = LibCraftText.TRAIT_SET_ID.WEAPON
-local trait_armr = LibCraftText.TRAIT_SET_ID.ARMOR
-local trait_jewl = LibCraftText.TRAIT_SET_ID.JEWELRY
+local trait_weap    = LibCraftText.TRAIT_SET_ID.WEAPON
+local trait_armr    = LibCraftText.TRAIT_SET_ID.ARMOR
+local trait_jewl    = LibCraftText.TRAIT_SET_ID.JEWELRY
 
 
 -- Craftable Gear ------------------------------------------------------------
@@ -130,72 +120,82 @@ LibCraftText.ITEM = {
 -- name             string that appears in material requested in daily
 --                  crafting quests and master writ conditions.
 --
--- crafting_type    Blacksmithing, Clothier, Woodworking, or Jewelry Crafting?
---
--- mat_set_id       What set of crafting materials is this material in?
+-- level_index      ordinal 1..10 (or 1..5) to sort materials by level.
 --
 -- material_index   crafting index passed as an argument to ZOS API functions
 --                  like GetSmithingPatternResultLink() and others
 --
 -- master_writ2     value for `writ2` field in sealed master writ item links.
 --
--- level_index      ordinal 1..10 (or 1..5) to sort materials by level.
+-- crafting_type    Blacksmithing, Clothier, Woodworking, or Jewelry Crafting?
+--
+-- mat_set_id       What set of crafting materials is this material in?
 --
 
 LibCraftText.MATERIAL = {
-  ["IRON"          ] = { name="iron"              , crafting_type=bs, mat_set_id=mat_hvy , material_index= 1, master_writ2=  1, level_index= 1  } -- "iron"
-, ["STEEL"         ] = { name="steel"             , crafting_type=bs, mat_set_id=mat_hvy , material_index= 8, master_writ2=  9, level_index= 2  } -- "steel"
-, ["ORICHALC"      ] = { name="orichalc"          , crafting_type=bs, mat_set_id=mat_hvy , material_index=13, master_writ2=156, level_index= 3  } -- "orichalc"
-, ["DWARVEN"       ] = { name="dwarven"           , crafting_type=bs, mat_set_id=mat_hvy , material_index=18, master_writ2=160, level_index= 4  } -- "dwarven"
-, ["EBON"          ] = { name="ebon"              , crafting_type=bs, mat_set_id=mat_hvy , material_index=23, master_writ2=164, level_index= 5  } -- "ebon"
-, ["CALCINIUM"     ] = { name="calcinium"         , crafting_type=bs, mat_set_id=mat_hvy , material_index=26, master_writ2=168, level_index= 6  } -- "calcinium"
-, ["GALATITE"      ] = { name="galatite"          , crafting_type=bs, mat_set_id=mat_hvy , material_index=29, master_writ2=172, level_index= 7  } -- "galatite"
-, ["QUICKSILVER"   ] = { name="quicksilver"       , crafting_type=bs, mat_set_id=mat_hvy , material_index=32, master_writ2=176, level_index= 8  } -- "quicksilver"
-, ["VOIDSTEEL"     ] = { name="voidsteel"         , crafting_type=bs, mat_set_id=mat_hvy , material_index=34, master_writ2=180, level_index= 9  } -- "voidsteel"
-, ["RUBEDITE"      ] = { name="Rubedite"          , crafting_type=bs, mat_set_id=mat_hvy , material_index=40, master_writ2=188, level_index=10  } -- "Rubedite"
+  ["IRON"          ] = { name="iron"              , level_index= 1, material_index= 1, master_writ2=  1, crafting_type=bs, mat_set_id=mat_hvy   } -- "iron"
+, ["STEEL"         ] = { name="steel"             , level_index= 2, material_index= 8, master_writ2=  9, crafting_type=bs, mat_set_id=mat_hvy   } -- "steel"
+, ["ORICHALC"      ] = { name="orichalc"          , level_index= 3, material_index=13, master_writ2=156, crafting_type=bs, mat_set_id=mat_hvy   } -- "orichalc"
+, ["DWARVEN"       ] = { name="dwarven"           , level_index= 4, material_index=18, master_writ2=160, crafting_type=bs, mat_set_id=mat_hvy   } -- "dwarven"
+, ["EBON"          ] = { name="ebon"              , level_index= 5, material_index=23, master_writ2=164, crafting_type=bs, mat_set_id=mat_hvy   } -- "ebon"
+, ["CALCINIUM"     ] = { name="calcinium"         , level_index= 6, material_index=26, master_writ2=168, crafting_type=bs, mat_set_id=mat_hvy   } -- "calcinium"
+, ["GALATITE"      ] = { name="galatite"          , level_index= 7, material_index=29, master_writ2=172, crafting_type=bs, mat_set_id=mat_hvy   } -- "galatite"
+, ["QUICKSILVER"   ] = { name="quicksilver"       , level_index= 8, material_index=32, master_writ2=176, crafting_type=bs, mat_set_id=mat_hvy   } -- "quicksilver"
+, ["VOIDSTEEL"     ] = { name="voidsteel"         , level_index= 9, material_index=34, master_writ2=180, crafting_type=bs, mat_set_id=mat_hvy   } -- "voidsteel"
+, ["RUBEDITE"      ] = { name="Rubedite"          , level_index=10, material_index=40, master_writ2=188, crafting_type=bs, mat_set_id=mat_hvy   } -- "Rubedite"
 
-, ["HOMESPUN"      ] = { name="homespun"          , crafting_type=cl, mat_set_id=mat_lgt , material_index= 1, master_writ2=  5, level_index= 1 } -- "homespun"
-, ["LINEN"         ] = { name="linen"             , crafting_type=cl, mat_set_id=mat_lgt , material_index= 8, master_writ2= 45, level_index= 2 } -- "linen"
-, ["COTTON"        ] = { name="cotton"            , crafting_type=cl, mat_set_id=mat_lgt , material_index=13, master_writ2= 47, level_index= 3 } -- "cotton"
-, ["SPIDERSILK"    ] = { name="spidersilk"        , crafting_type=cl, mat_set_id=mat_lgt , material_index=18, master_writ2= 49, level_index= 4 } -- "spidersilk"
-, ["EBONTHREAD"    ] = { name="ebonthread"        , crafting_type=cl, mat_set_id=mat_lgt , material_index=23, master_writ2= 51, level_index= 5 } -- "ebonthread"
-, ["KRESH"         ] = { name="kresh"             , crafting_type=cl, mat_set_id=mat_lgt , material_index=26, master_writ2=125, level_index= 6 } -- "kresh"
-, ["IRONTHREAD"    ] = { name="ironthread"        , crafting_type=cl, mat_set_id=mat_lgt , material_index=29, master_writ2=126, level_index= 7 } -- "ironthread"
-, ["SILVERWEAVE"   ] = { name="silverweave"       , crafting_type=cl, mat_set_id=mat_lgt , material_index=32, master_writ2=127, level_index= 8 } -- "silverweave"
-, ["SHADOWSPUN"    ] = { name="shadowspun"        , crafting_type=cl, mat_set_id=mat_lgt , material_index=34, master_writ2=128, level_index= 9 } -- "shadowspun"
-, ["ANCESTOR_SILK" ] = { name="Ancestor Silk"     , crafting_type=cl, mat_set_id=mat_lgt , material_index=40, master_writ2=194, level_index=10 } -- "Ancestor Silk"
+, ["HOMESPUN"      ] = { name="homespun"          , level_index= 1, material_index= 1, master_writ2=  5, crafting_type=cl, mat_set_id=mat_lgt  } -- "homespun"
+, ["LINEN"         ] = { name="linen"             , level_index= 2, material_index= 8, master_writ2= 45, crafting_type=cl, mat_set_id=mat_lgt  } -- "linen"
+, ["COTTON"        ] = { name="cotton"            , level_index= 3, material_index=13, master_writ2= 47, crafting_type=cl, mat_set_id=mat_lgt  } -- "cotton"
+, ["SPIDERSILK"    ] = { name="spidersilk"        , level_index= 4, material_index=18, master_writ2= 49, crafting_type=cl, mat_set_id=mat_lgt  } -- "spidersilk"
+, ["EBONTHREAD"    ] = { name="ebonthread"        , level_index= 5, material_index=23, master_writ2= 51, crafting_type=cl, mat_set_id=mat_lgt  } -- "ebonthread"
+, ["KRESH"         ] = { name="kresh"             , level_index= 6, material_index=26, master_writ2=125, crafting_type=cl, mat_set_id=mat_lgt  } -- "kresh"
+, ["IRONTHREAD"    ] = { name="ironthread"        , level_index= 7, material_index=29, master_writ2=126, crafting_type=cl, mat_set_id=mat_lgt  } -- "ironthread"
+, ["SILVERWEAVE"   ] = { name="silverweave"       , level_index= 8, material_index=32, master_writ2=127, crafting_type=cl, mat_set_id=mat_lgt  } -- "silverweave"
+, ["SHADOWSPUN"    ] = { name="shadowspun"        , level_index= 9, material_index=34, master_writ2=128, crafting_type=cl, mat_set_id=mat_lgt  } -- "shadowspun"
+, ["ANCESTOR_SILK" ] = { name="Ancestor Silk"     , level_index=10, material_index=40, master_writ2=194, crafting_type=cl, mat_set_id=mat_lgt  } -- "Ancestor Silk"
 
-, ["RAWHIDE"       ] = { name="rawhide"           , crafting_type=cl, mat_set_id=mat_med , material_index= 1, master_writ2=148, level_index= 1 } -- "rawhide"
-, ["HIDE"          ] = { name="hide"              , crafting_type=cl, mat_set_id=mat_med , material_index= 8, master_writ2=154, level_index= 2 } -- "hide"
-, ["LEATHER"       ] = { name="leather"           , crafting_type=cl, mat_set_id=mat_med , material_index=13, master_writ2=158, level_index= 3 } -- "leather"
-, ["FULL_LEATHER"  ] = { name="full-leather"      , crafting_type=cl, mat_set_id=mat_med , material_index=18, master_writ2=162, level_index= 4 } -- "full-leather"
-, ["FELL"          ] = { name="fell"              , crafting_type=cl, mat_set_id=mat_med , material_index=23, master_writ2=166, level_index= 5 } -- "fell"
-, ["BRIGANDINE"    ] = { name="brigandine"        , crafting_type=cl, mat_set_id=mat_med , material_index=26, master_writ2=170, level_index= 6 } -- "brigandine"
-, ["IRONHIDE"      ] = { name="ironhide"          , crafting_type=cl, mat_set_id=mat_med , material_index=29, master_writ2=174, level_index= 7 } -- "ironhide"
-, ["SUPERB"        ] = { name="superb"            , crafting_type=cl, mat_set_id=mat_med , material_index=32, master_writ2=131, level_index= 8 } -- "superb"
-, ["SHADOWHIDE"    ] = { name="shadowhide"        , crafting_type=cl, mat_set_id=mat_med , material_index=34, master_writ2=132, level_index= 9 } -- "shadowhide"
-, ["RUBEDO_LEATHER"] = { name="Rubedo Leather"    , crafting_type=cl, mat_set_id=mat_med , material_index=40, master_writ2=190, level_index=10 } -- "Rubedo Leather"
+, ["RAWHIDE"       ] = { name="rawhide"           , level_index= 1, material_index= 1, master_writ2=148, crafting_type=cl, mat_set_id=mat_med  } -- "rawhide"
+, ["HIDE"          ] = { name="hide"              , level_index= 2, material_index= 8, master_writ2=154, crafting_type=cl, mat_set_id=mat_med  } -- "hide"
+, ["LEATHER"       ] = { name="leather"           , level_index= 3, material_index=13, master_writ2=158, crafting_type=cl, mat_set_id=mat_med  } -- "leather"
+, ["FULL_LEATHER"  ] = { name="full-leather"      , level_index= 4, material_index=18, master_writ2=162, crafting_type=cl, mat_set_id=mat_med  } -- "full-leather"
+, ["FELL"          ] = { name="fell"              , level_index= 5, material_index=23, master_writ2=166, crafting_type=cl, mat_set_id=mat_med  } -- "fell"
+, ["BRIGANDINE"    ] = { name="brigandine"        , level_index= 6, material_index=26, master_writ2=170, crafting_type=cl, mat_set_id=mat_med  } -- "brigandine"
+, ["IRONHIDE"      ] = { name="ironhide"          , level_index= 7, material_index=29, master_writ2=174, crafting_type=cl, mat_set_id=mat_med  } -- "ironhide"
+, ["SUPERB"        ] = { name="superb"            , level_index= 8, material_index=32, master_writ2=131, crafting_type=cl, mat_set_id=mat_med  } -- "superb"
+, ["SHADOWHIDE"    ] = { name="shadowhide"        , level_index= 9, material_index=34, master_writ2=132, crafting_type=cl, mat_set_id=mat_med  } -- "shadowhide"
+, ["RUBEDO_LEATHER"] = { name="Rubedo Leather"    , level_index=10, material_index=40, master_writ2=190, crafting_type=cl, mat_set_id=mat_med  } -- "Rubedo Leather"
 
-, ["MAPLE"         ] = { name="maple"             , crafting_type=ww, mat_set_id=mat_wood, material_index= 1, master_writ2=  2, level_index= 1  } -- "maple"
-, ["OAK"           ] = { name="oak"               , crafting_type=ww, mat_set_id=mat_wood, material_index= 8, master_writ2= 18, level_index= 2  } -- "oak"
-, ["BEECH"         ] = { name="beech"             , crafting_type=ww, mat_set_id=mat_wood, material_index=13, master_writ2= 20, level_index= 3  } -- "beech"
-, ["HICKORY"       ] = { name="hickory"           , crafting_type=ww, mat_set_id=mat_wood, material_index=18, master_writ2= 22, level_index= 4  } -- "hickory"
-, ["YEW"           ] = { name="yew"               , crafting_type=ww, mat_set_id=mat_wood, material_index=23, master_writ2= 24, level_index= 5  } -- "yew"
-, ["BIRCH"         ] = { name="birch"             , crafting_type=ww, mat_set_id=mat_wood, material_index=26, master_writ2=133, level_index= 6  } -- "birch"
-, ["ASH"           ] = { name="ash"               , crafting_type=ww, mat_set_id=mat_wood, material_index=29, master_writ2=134, level_index= 7  } -- "ash"
-, ["MAHOGANY"      ] = { name="mahogany"          , crafting_type=ww, mat_set_id=mat_wood, material_index=32, master_writ2=135, level_index= 8  } -- "mahogany"
-, ["NIGHTWOOD"     ] = { name="nightwood"         , crafting_type=ww, mat_set_id=mat_wood, material_index=34, master_writ2=136, level_index= 9  } -- "nightwood"
-, ["RUBY_ASH"      ] = { name="Ruby Ash"          , crafting_type=ww, mat_set_id=mat_wood, material_index=40, master_writ2=192, level_index=10  } -- "Ruby Ash"
+, ["MAPLE"         ] = { name="maple"             , level_index= 1, material_index= 1, master_writ2=  2, crafting_type=ww, mat_set_id=mat_wood  } -- "maple"
+, ["OAK"           ] = { name="oak"               , level_index= 2, material_index= 8, master_writ2= 18, crafting_type=ww, mat_set_id=mat_wood  } -- "oak"
+, ["BEECH"         ] = { name="beech"             , level_index= 3, material_index=13, master_writ2= 20, crafting_type=ww, mat_set_id=mat_wood  } -- "beech"
+, ["HICKORY"       ] = { name="hickory"           , level_index= 4, material_index=18, master_writ2= 22, crafting_type=ww, mat_set_id=mat_wood  } -- "hickory"
+, ["YEW"           ] = { name="yew"               , level_index= 5, material_index=23, master_writ2= 24, crafting_type=ww, mat_set_id=mat_wood  } -- "yew"
+, ["BIRCH"         ] = { name="birch"             , level_index= 6, material_index=26, master_writ2=133, crafting_type=ww, mat_set_id=mat_wood  } -- "birch"
+, ["ASH"           ] = { name="ash"               , level_index= 7, material_index=29, master_writ2=134, crafting_type=ww, mat_set_id=mat_wood  } -- "ash"
+, ["MAHOGANY"      ] = { name="mahogany"          , level_index= 8, material_index=32, master_writ2=135, crafting_type=ww, mat_set_id=mat_wood  } -- "mahogany"
+, ["NIGHTWOOD"     ] = { name="nightwood"         , level_index= 9, material_index=34, master_writ2=136, crafting_type=ww, mat_set_id=mat_wood  } -- "nightwood"
+, ["RUBY_ASH"      ] = { name="Ruby Ash"          , level_index=10, material_index=40, master_writ2=192, crafting_type=ww, mat_set_id=mat_wood  } -- "Ruby Ash"
 
-, ["PEWTER"        ] = { name="pewter"            , crafting_type=jw, mat_set_id=mat_jewl, material_index= 1, master_writ2=  6, level_index= 1  } -- "pewter"
-, ["COPPER"        ] = { name="copper"            , crafting_type=jw, mat_set_id=mat_jewl, material_index=13, master_writ2= 56, level_index= 2  } -- "copper"
-, ["SILVER"        ] = { name="silver"            , crafting_type=jw, mat_set_id=mat_jewl, material_index=26, master_writ2=137, level_index= 3  } -- "silver"
-, ["ELECTRUM"      ] = { name="electrum"          , crafting_type=jw, mat_set_id=mat_jewl, material_index=33, master_writ2=139, level_index= 4  } -- "electrum"
-, ["PLATINUM"      ] = { name="platinum"          , crafting_type=jw, mat_set_id=mat_jewl, material_index=40, master_writ2=255, level_index= 5  } -- "platinum"
+, ["PEWTER"        ] = { name="pewter"            , level_index= 1, material_index= 1, master_writ2=  6, crafting_type=jw, mat_set_id=mat_jewl  } -- "pewter"
+, ["COPPER"        ] = { name="copper"            , level_index= 2, material_index=13, master_writ2= 56, crafting_type=jw, mat_set_id=mat_jewl  } -- "copper"
+, ["SILVER"        ] = { name="silver"            , level_index= 3, material_index=26, master_writ2=137, crafting_type=jw, mat_set_id=mat_jewl  } -- "silver"
+, ["ELECTRUM"      ] = { name="electrum"          , level_index= 4, material_index=33, master_writ2=139, crafting_type=jw, mat_set_id=mat_jewl  } -- "electrum"
+, ["PLATINUM"      ] = { name="platinum"          , level_index= 5, material_index=40, master_writ2=255, crafting_type=jw, mat_set_id=mat_jewl  } -- "platinum"
 }
 
 
 -- Quest Titles --------------------------------------------------------------
+
+LibCraftText.DAILY_QUEST_TITLES = {
+    [bs] = "Blacksmith Writ"                -- "Blacksmith Writ"
+,   [cl] = "Clothier Writ"                  -- "Clothier Writ"
+,   [en] = "Enchanter Writ"                 -- "Enchanter Writ"
+,   [al] = "Alchemist Writ"                 -- "Alchemist Writ"
+,   [pr] = "Provisioner Writ"               -- "Provisioner Writ"
+,   [ww] = "Woodworker Writ"                -- "Woodworker Writ"
+,   [jw] = "Jewelry Crafting Writ"          -- "Jewelry Crafting Writ"
+}
 
                         -- SURPRISE! "A Masterful Weapon" is used
                         -- by both Blacksmithing and Woodworking.
