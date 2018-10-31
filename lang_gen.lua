@@ -39,7 +39,7 @@ end
 
 -- Import previous database from ordinal LANG_DB into hashtable DB.
 function ImportDB()
-    for _, vlist in ipairs(LANG_DB) do
+    for _, vlist in pairs(LANG_DB) do
         local entry = {}
         for k, v in pairs(vlist) do
             if v ~= "" and not(k ~= "en" and v == entry.en) then
@@ -59,6 +59,10 @@ function ImportKeys()
         DB[k]["en"] = v
         EN_KEYS[v] = k
     end
+end
+
+function Decaret(text)
+    return text:gsub("%^.*","")
 end
 
 -- Import ESO SavedVars file
@@ -201,6 +205,26 @@ function ImportSavedVars()
         end
     end
 
+    local items = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].items_from_stations
+    local ct_abbrev = { [1] = "BS"
+                      , [2] = "CL"
+                      , [6] = "WW"
+                      , [7] = "JW"
+                      }
+    for crafting_type, pattern_list in pairs(items) do
+        for pattern_index, lang_table in pairs(pattern_list) do
+            local key = string.format( "$ITEM_%s_%02d"
+                                     , ct_abbrev[crafting_type]
+                                     , pattern_index
+                                     )
+            DB[key] = DB[key] or {}
+            local entry = DB[key]
+            entry.key = key
+            for lang,text in pairs(lang_table) do
+                entry[lang] = Decaret(text)
+            end
+        end
+    end
 end
 
 -- From http://lua-users.org/wiki/SplitJoin

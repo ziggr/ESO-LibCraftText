@@ -57,6 +57,7 @@ function LibCraftText.RegisterSlashCommands()
         local cc = { { "scan"   , "Scan quest journal for crafting quest text" }
                    , { "forget" , "Forget all discovered data"                 }
                    , { "lang"   , "Switch to 'next' language"                  }
+                   , { "en"     , "Switch to English language"                 }
                    }
         for _,c in ipairs(cc) do
             local sub = cmd:RegisterSubCommand()
@@ -79,6 +80,8 @@ function LibCraftText.SlashCommand(args)
     elseif args:sub(1,4):lower() == "lang" then
         local want_lang = args:sub(6,7):lower()
         LibCraftText.NextLang(want_lang)
+    elseif args:lower() == "en" then
+        SetCVar("language.2", "en")
     else
         Info("Unknown command: '"..tostring(args).."'")
     end
@@ -633,6 +636,10 @@ function LibCraftText.RegisterCraftingStationListener()
             )
 end
 
+function Decaret(str)
+    return zo_strformat("<<1>>", str)
+end
+
 -- GetSmithingPatternResultLink(11, 1, 5, 1) ==> "Heaume en Fer"
 
 
@@ -658,17 +665,64 @@ function LibCraftText.OnCraftingStationInteract(event_code, crafting_type, same_
     local sv = self.saved_var.items_from_stations
     sv[crafting_type] = sv[crafting_type] or {}
     local lang = self.CurrLang()
+
+    local RE = {
+        [bs] = {   en = { "iron (.*)" }
+               ,   de = { "Eisen(.*)" }
+               ,   fr = { "(.*) en fer" }
+               ,   es = { "(.*) de hierro" }
+               ,   it = { "(.*)" }
+               ,   ru = { "iron (.*)" }
+               ,   ja = { "鉄の(.*)" }
+               }
+      , [cl] = {   en = { "homespun (.*)"       , "rawhide (.*)"        }
+               ,   de = { "Jute(.*)"            , "Rohleder(.*)"        }
+               ,   fr = { "(.*) artisana"       , "(.*) en cuir"        }
+               ,   es = { "(.*) de tejido "     , "(.*) de piel cruda"  }
+               ,   it = { "(.*)"                                        }
+               ,   ru = { "homespun (.*)"       , "rawhide (.*)"        }
+               ,   ja = { "手織り布の(.*)"       , "生皮の(.*)"           }
+               }
+      , [ww] = {   en = { "maple (.*)" }
+               ,   de = { "Ahorn(.*)" }
+               ,   fr = { "(.*) en érable" }
+               ,   es = { "(.*) de arce" }
+               ,   it = { "(.*)" }
+               ,   ru = { "maple (.*)" }
+               ,   ja = { "カエデの(.*)" }
+               }
+      , [jw] = {   en = { "pewter (.*)" }
+               ,   de = { "Zinn(.*)" }
+               ,   fr = { "(.*) en étain" }
+               ,   es = { "(.*) de peltre" }
+               ,   it = { "(.*)" }
+               ,   ru = { "pewter (.*)" }
+               ,   ja = { "ピューターの(.*)" }
+               }
+    }
+    local re_list   = RE[crafting_type][lang]
+
     for pattern_index, mat_ct in ipairs(mat_ct_list) do
-        local item_link = GetSmithingPatternResultLink(
-                  pattern_index
-                , 1
-                , mat_ct
-                , 1
-                )
+        local item_link = GetSmithingPatternResultLink( pattern_index
+                                                      , 1
+                                                      , mat_ct
+                                                      , 1
+                                                      )
         local item_name = GetItemLinkName(item_link)
+        item_name       = Decaret(item_name)
+        local f = nil
+        for _,re in ipairs(re_list) do
+            _,_,f = string.find(item_name,re)
+            if f then break end
+        end
         sv[crafting_type][pattern_index] = sv[crafting_type][pattern_index] or {}
-        sv[crafting_type][pattern_index][lang] = item_name
-Info(item_name)
+        sv[crafting_type][pattern_index][lang] = f or ("!!! "..item_name)
+if f then
+    Info(tostring(f))
+else
+    Error("!!! '"..tostring(item_name).."'' no match re:"..table.concat(re_list,", "))
+end
+
     end
 end
 
