@@ -22,6 +22,7 @@ zip:
 
 lang:
 	lua lang_gen.lua
+	lua lang/en.lua
 	lua lang/*.lua
 
 # --repeat 6 to loop through all 6 supported languages. Skipping Italian.
