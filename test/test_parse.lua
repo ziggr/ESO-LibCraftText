@@ -168,22 +168,28 @@ function TestDailyCondition.TestAL()
 end
 
 function TestDailyCondition.TestBS()
-    local fodder = {
-      ["en"] = { "Craft Normal Rubedite Helm: 0 / 1"           , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
-    , ["de"] = { "Stellt normale Rubedithauben her: 0/1"       , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM } -- what about the extra "n" in "hauben" ? Direct object declension?
-    , ["fr"] = { "Fabriquez un heaume en cuprite normal : 0/1" , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
-    , ["es"] = { "Fabrica un yelmo de rubedita normal: 0/1"    , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
-    --["it"] = { "Craft Rubedite Helm: 0 / 1"                  , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
-    , ["ja"] = { "ルベダイトの兜(ノーマル)を生産する: 0 / 1"        , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
-    }
-    local f = fodder[LibCraftText.CurrLang()]
-    if not f then return end
 
-    local expect = { material = f[2]
-                   , item     = f[3]
-                   }
-    local got    = LibCraftText.ParseDailyConditionGear(bs, f[1])
-    luaunit.assertEquals(got, expect)
+    local fodder = {
+      { { ["en"] = "Craft Normal Rubedite Helm: 0 / 1"
+        , ["de"] = "Stellt normale Rubedithauben her: 0/1"        -- what about the extra "n" in "hauben" ? Direct object declension?
+        , ["fr"] = "Fabriquez un heaume en cuprite normal : 0/1"
+        , ["es"] = "Fabrica un yelmo de rubedita normal: 0/1"
+        --["it"] = "Craft Rubedite Helm: 0 / 1"
+        , ["ja"] = "ルベダイトの兜(ノーマル)を生産する: 0 / 1"
+        }
+      , LCT.MATERIAL.RUBEDITE
+      , LCT.ITEM.HELM
+      }
+    }
+    for _,f in ipairs(fodder) do
+        local input = f[1][LibCraftText.CurrLang()]
+        if not input then return end
+        local expect = { material = f[2]
+                       , item     = f[3]
+                       }
+        local got    = LibCraftText.ParseDailyConditionGear(bs, input)
+        luaunit.assertEquals(got, expect)
+    end
 end
 
 function TestDailyCondition.TestCL()
