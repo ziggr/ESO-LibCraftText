@@ -92,18 +92,20 @@ function LibCraftText.Scan()
     LibCraftText.DiscoverTraits()
     LibCraftText.DiscoverSets()
     LibCraftText.DiscoverMotifs()
+    LibCraftText.RegisterCraftingStationListener()
 end
 
 function LibCraftText.Forget()
-    LibCraftText.saved_var.quests          = nil
-    LibCraftText.saved_var.steps           = nil
-    LibCraftText.saved_var.conditions      = nil
-    LibCraftText.saved_var.materials       = nil
-    LibCraftText.saved_var.items           = nil
-    LibCraftText.saved_var.qualities       = nil
-    LibCraftText.saved_var.traits          = nil
-    LibCraftText.saved_var.sets            = nil
-    LibCraftText.saved_var.motifs          = nil
+    LibCraftText.saved_var.quests               = nil
+    LibCraftText.saved_var.steps                = nil
+    LibCraftText.saved_var.conditions           = nil
+    LibCraftText.saved_var.materials            = nil
+    LibCraftText.saved_var.items                = nil
+    LibCraftText.saved_var.qualities            = nil
+    LibCraftText.saved_var.traits               = nil
+    LibCraftText.saved_var.sets                 = nil
+    LibCraftText.saved_var.motifs               = nil
+    LibCraftText.saved_var.items_from_stations  = nil
 end
 
 local function find_i(want, list)
@@ -622,6 +624,54 @@ function LibCraftText.DiscoverMotifs()
     end
 
 end
+
+function LibCraftText.RegisterCraftingStationListener()
+    EVENT_MANAGER:RegisterForEvent(
+              LibCraftText.name
+            , EVENT_CRAFTING_STATION_INTERACT
+            , LibCraftText.OnCraftingStationInteract
+            )
+end
+
+-- GetSmithingPatternResultLink(11, 1, 5, 1) ==> "Heaume en Fer"
+
+
+                        -- material count for a level 1 version of each of the
+                        -- 14 or so patterns at each equipment crafting
+                        -- station.
+LibCraftText.STATION_API_INPUT = {
+    [bs] = { 3, 3, 3, 5, 5, 5, 2,   7, 5, 5, 5, 6, 5, 5 }
+,   [cl] = { 7, 7, 5, 5, 5, 6, 5, 5,   7, 5, 5, 5, 6, 5, 5 }
+,   [ww] = { 3, 6, 3, 3, 3, 3 }
+,   [jw] = { 2, 3 }
+}
+function LibCraftText.OnCraftingStationInteract(event_code, crafting_type, same_station)
+    local self = LibCraftText
+    d("ec:"..tostring(event_code)
+        .." ct:"..tostring(crafting_type)
+        .." ss:"..tostring(same_station)
+        )
+    local mat_ct_list = self.STATION_API_INPUT[crafting_type]
+    if not mat_ct_list then return end
+
+    self.saved_var.items_from_stations = self.saved_var.items_from_stations or {}
+    local sv = self.saved_var.items_from_stations
+    sv[crafting_type] = sv[crafting_type] or {}
+    local lang = self.CurrLang()
+    for pattern_index, mat_ct in ipairs(mat_ct_list) do
+        local item_link = GetSmithingPatternResultLink(
+                  pattern_index
+                , 1
+                , mat_ct
+                , 1
+                )
+        local item_name = GetItemLinkName(item_link)
+        sv[crafting_type][pattern_index] = sv[crafting_type][pattern_index] or {}
+        sv[crafting_type][pattern_index][lang] = item_name
+Info(item_name)
+    end
+end
+
 
 -- Util ----------------------------------------------------------------------
 

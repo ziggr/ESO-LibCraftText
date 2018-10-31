@@ -34,6 +34,44 @@ SPLIT item table into bs/lgt/med/ww/jw
     return correct ordinals as part of ParseXX() functions
 
 
+LIVE confirmation of BS Helm
+    master writ base text      daily quest      forge
+en  Helm                       Helm
+de  haube                      hauben
+fr  casque                     heaume           heaume
+
+|H1:item:119680:6:1:0:0:0:44:188:4:41:18:34:0:0:0:0:0:0:0:0:57500|h|h
+Rubedite helm
+epic
+divines
+Whitestrakes Retribution
+Imperial
+
+Ayep. French uses DIFFERENT words for the same Rubedite Headwear, "casque" and "heaume", depending on where you are. The master writ base text seems iffy. If I _accept_ a master writ quest for a BS Headpiece "casque", what happens to its condition text once absorbed? Still says "casque" not "heaume"
+
+I could walk up to the forge and other stations and gather names from API, I think.
+
+, [44] = { item_id = 44, item_name = "Rubedite Helm",               school = HVY, base_mat_ct = 13, trait_set = ARMOR , research_line = HVY.HEAD,           motif_page = PG.HELMETS  , dol_pattern_index = 11 }
+
+When docked at a BS station:
+
+GetSmithingPatternResultLink(
+      number patternIndex
+    , number materialIndex
+    , number materialQuantity
+    , number itemStyleId
+    , number traitIndex
+    , number LinkStyle linkStyle
+    )
+
+GetSmithingPatternResultLink(11, 1, 5, 1) ==> "Heaume en Fer"
+GetSmithingPatternResultLink(11,31,13, 1) ==> "Heaume en Galatite"
+GetSmithingPatternResultLink(11,41,13, 1) ==> "Heaume en Cuprite"
+
+So ayep, sure enough, the master writ base text and condition text both ask for one thing, but the daily writ cond text and the smithing API use another. I'm gonna call this a translation bug in the ESO client and patch around it.
+
+So I need MORE discovery code: have a listener active for a crafting station attach, and then roll through the 14 or so craftable items. That'll be a hardcoded API table. Record the results in "items_from_station".
+
 
     -- get alchemy potion/poison name AS A STRING
     -- get alchemy potion/poison level AS A STRING
