@@ -125,7 +125,9 @@ LibCraftText.MATERIALS = {
               }
 }
 
-LibCraftText.ITEMS = {
+-- These are the item names that appear in master writs.
+-- numeric index is the value for "writ1" field of sealed master writs.
+LibCraftText.ITEMS_MASTER = {
   [bs] = {
            [53] = $MASTER_ITEM_53             -- "Axe"
          , [56] = $MASTER_ITEM_56             -- "Mace"
@@ -173,6 +175,61 @@ LibCraftText.ITEMS = {
          }
 }
 
+-- These are the item names from crafting stations. Surprise! They occasionally
+-- differ from what master writs use. For example, blacksmithing head piece,
+-- in FR French is called "heaume" at the crafting station, but "casque" in
+-- a sealed master blacksmithing writ. Grrr.
+--
+-- Numeric index is the pattern_index used as arg1 to
+-- GetSmithingPatternItemLink() and other crafting station APIs.
+--
+LibCraftText.ITEMS_STATION = {
+  [bs] = {
+           [ 1] = $ITEM_BS_01                 -- "axe"
+         , [ 2] = $ITEM_BS_02                 -- "mace"
+         , [ 3] = $ITEM_BS_03                 -- "wword"
+         , [ 4] = $ITEM_BS_04                 -- "battle Axe"
+         , [ 5] = $ITEM_BS_05                 -- "maul"
+         , [ 6] = $ITEM_BS_06                 -- "greatsword"
+         , [ 7] = $ITEM_BS_07                 -- "dagger"
+         , [ 8] = $ITEM_BS_08                 -- "cuirass"
+         , [ 9] = $ITEM_BS_09                 -- "sabatons"
+         , [10] = $ITEM_BS_10                 -- "gauntlets"
+         , [11] = $ITEM_BS_11                 -- "helm"
+         , [12] = $ITEM_BS_12                 -- "greaves"
+         , [13] = $ITEM_BS_13                 -- "pauldron"
+         , [14] = $ITEM_BS_14                 -- "girdle"
+         }
+, [cl] = {
+           [ 1] = $ITEM_CL_01                 -- "robe"
+         , [ 2] = $ITEM_CL_02                 -- "jerkin"
+         , [ 3] = $ITEM_CL_03                 -- "shoes"
+         , [ 4] = $ITEM_CL_04                 -- "gloves"
+         , [ 5] = $ITEM_CL_05                 -- "hat"
+         , [ 6] = $ITEM_CL_06                 -- "breeches"
+         , [ 7] = $ITEM_CL_07                 -- "epaulets"
+         , [ 8] = $ITEM_CL_08                 -- "sash"
+         , [ 9] = $ITEM_CL_09                 -- "jack"
+         , [10] = $ITEM_CL_10                 -- "boots"
+         , [11] = $ITEM_CL_11                 -- "bracers"
+         , [12] = $ITEM_CL_12                 -- "helmet"
+         , [13] = $ITEM_CL_13                 -- "guards"
+         , [14] = $ITEM_CL_14                 -- "arm cops"
+         , [15] = $ITEM_CL_15                 -- "belt"
+         }
+, [ww] = {
+           [ 1] = $ITEM_WW_01                 -- "bow"
+         , [ 3] = $ITEM_WW_03                 -- "inferno staff"
+         , [ 4] = $ITEM_WW_04                 -- "ice staff"
+         , [ 5] = $ITEM_WW_05                 -- "lightning staff"
+         , [ 6] = $ITEM_WW_06                 -- "restoration staff"
+         , [ 2] = $ITEM_WW_02                 -- "shield"
+         }
+, [jw] = {
+           [ 2] = $ITEM_JW_02                 -- "necklace"
+         , [ 1] = $ITEM_JW_01                 -- "ring"
+         }
+}
 LibCraftText.QUALITIES = {
     [1] = $QUALITY_1                 -- "Normal"
 ,   [2] = $QUALITY_2                 -- "Fine"

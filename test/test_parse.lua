@@ -39,6 +39,8 @@ function LibCraftText.CurrLang()
     return GetCVar("language.2")
 end
 
+-- DAILY crafting conditions
+
 LibCraftText.RE_CONDITION_CL = {
     ["en"] = "Craft Normal (.*): 0 / 1"
 ,   ["de"] = "Stellt normale (.*) her: 0/1"
@@ -48,12 +50,12 @@ LibCraftText.RE_CONDITION_CL = {
 ,   ["it"] = "Craft (.*): 0 / 1"
 ,   ["ja"] = "(.*)の(.*)%(ノーマル%)を生産する: 0 / 1"
 }
-function LibCraftText.ParseConditionCL(cond_text)
+function LibCraftText.ParseDailyConditionCL(cond_text)
     local self          = LibCraftText
     local lang          = self.CurrLang()
     local material_list = self.MaterialList()
     local item_list     = self.ItemList()[cl]
-    return self.ParseConditionSmithing( cond_text
+    return self.ParseDailyConditionSmithing( cond_text
                                       , self.RE_CONDITION_CL[lang]
                                       , item_list
                                       , material_list["lgt"]
@@ -70,12 +72,12 @@ LibCraftText.RE_CONDITION_BS = {
 ,   ["it"]  = "Craft (.*): 0 / 1"
 ,   ["ja"]  = "(.*)の(.*)%(ノーマル%)を生産する: 0 / 1"
 }
-function LibCraftText.ParseConditionBS(cond_text)
+function LibCraftText.ParseDailyConditionBS(cond_text)
     local self          = LibCraftText
     local lang          = self.CurrLang()
     local material_list = self.MaterialList()
     local item_list     = self.ItemList()[bs]
-    return self.ParseConditionSmithing( cond_text
+    return self.ParseDailyConditionSmithing( cond_text
                                       , self.RE_CONDITION_BS[lang]
                                       , item_list
                                       , material_list["bs" ]
@@ -83,7 +85,7 @@ function LibCraftText.ParseConditionBS(cond_text)
 end
 
 
-function LibCraftText.ParseConditionSmithing(
+function LibCraftText.ParseDailyConditionSmithing(
           cond_text
         , re
         , item_list
@@ -150,7 +152,7 @@ function LibCraftText.MaterialList()
 end
 
 function LibCraftText.ItemList()
-    return LibCraftText.ITEMS
+    return LibCraftText.ITEMS_STATION
 end
 
 -- End Belonga LCT -----------------------------------------------------------
@@ -202,46 +204,44 @@ end
 
 function TestDailyCondition.TestCL()
     local fodder = {
-      ["en"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , 10, "Rubedo Leather", 35, "Helmet" }
-    , ["de"] = { "Stellt normale Rubedolederhelme her: 0/1"        , 10, "Rubedoleder"   , 35, "helm"   } -- what about that trailing "e" on "helme"?
-    , ["fr"] = { "Fabriquez un casque en cuir pourpre normal : 0/1", 10, "cuir pourpre"  , 35, "casque" }
-    , ["ru"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , 10, "Rubedo Leather", 35, "Helmet" }
-    , ["es"] = { "Fabrica un casco de cuero rubedo normal: 0/1"    , 10, "cuero rubedo"  , 35, "Casco"  }
-    --, ["it"] = { "Craft Rubedo Leather Helmet: 0 / 1"              , 10, "Rubedo Leather", 35, "Helmet" }
-    , ["ja"] = { "ルベドレザーの兜(ノーマル)を生産する: 0 / 1"           , 10, "ルベドレザー"    , 35, "兜"     }
+      ["en"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , 10, "Rubedo Leather", 12, "helmet" }
+    , ["de"] = { "Stellt normale Rubedolederhelme her: 0/1"        , 10, "Rubedoleder"   , 12, "helm"   } -- what about that trailing "e" on "helme"?
+    , ["fr"] = { "Fabriquez un casque en cuir pourpre normal : 0/1", 10, "cuir pourpre"  , 12, "casque" }
+    , ["ru"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , 10, "Rubedo Leather", 12, "helmet" }
+    , ["es"] = { "Fabrica un casco de cuero rubedo normal: 0/1"    , 10, "cuero rubedo"  , 12, "Casco"  }
+    --["it"] = { "Craft Rubedo Leather Helmet: 0 / 1"              , 10, "Rubedo Leather", 12, "Helmet" }
+    , ["ja"] = { "ルベドレザーの兜(ノーマル)を生産する: 0 / 1"           , 10, "ルベドレザー"    , 12, "兜"     }
     }
     local f = fodder[LibCraftText.CurrLang()]
     if not f then return end
-        -- italian doesn't work: it uses true Italian
 
     local expect = { material_num  = f[2]
                    , material_name = f[3]
                    , item_num      = f[4]
                    , item_name     = f[5]
                    }
-    local got    = LibCraftText.ParseConditionCL(f[1])
+    local got    = LibCraftText.ParseDailyConditionCL(f[1])
     luaunit.assertEquals(got, expect)
 end
 
 function TestDailyCondition.TestBS()
     local fodder = {
-      ["en"] = { "Craft Normal Rubedite Helm: 0 / 1"           , 10, "Rubedite" , 44, "Helm"    }
-    , ["de"] = { "Stellt normale Rubedithauben her: 0/1"       , 10, "Rubedit"  , 44, "haube"   } -- what about the extra "n" in "hauben" ? What's up with all the plurals?
-    , ["fr"] = { "Fabriquez un heaume en cuprite normal : 0/1" , 10, "cuprite"  , 44, "heaume"  } -- live cond_text is "heaume" not "casque", why do daily != master? Check this.
-    , ["es"] = { "Fabrica un yelmo de rubedita normal: 0/1"    , 10, "rubedita" , 44, "yelmo"   } -- again, was "yelmo" in live
-    --, ["it"] = { "Craft Rubedite Helm: 0 / 1"                  , 10,
-    , ["ja"] = { "ルベダイトの兜(ノーマル)を生産する: 0 / 1"         , 10, "ルベダイト", 44, "兜"      }
+      ["en"] = { "Craft Normal Rubedite Helm: 0 / 1"           , 10, "Rubedite" , 11, "helm"    }
+    , ["de"] = { "Stellt normale Rubedithauben her: 0/1"       , 10, "Rubedit"  , 11, "haube"   } -- what about the extra "n" in "hauben" ? What's up with all the plurals?
+    , ["fr"] = { "Fabriquez un heaume en cuprite normal : 0/1" , 10, "cuprite"  , 11, "heaume"  } -- live cond_text is "heaume" not "casque", why do daily != master? Check this.
+    , ["es"] = { "Fabrica un yelmo de rubedita normal: 0/1"    , 10, "rubedita" , 11, "yelmo"   } -- again, was "yelmo" in live
+    --["it"] = { "Craft Rubedite Helm: 0 / 1"                  , 10,
+    , ["ja"] = { "ルベダイトの兜(ノーマル)を生産する: 0 / 1"         , 10, "ルベダイト", 11, "兜"      }
     }
     local f = fodder[LibCraftText.CurrLang()]
     if not f then return end
-        -- italian doesn't work: it uses true Italian
 
     local expect = { material_num  = f[2]
                    , material_name = f[3]
                    , item_num      = f[4]
                    , item_name     = f[5]
                    }
-    local got    = LibCraftText.ParseConditionBS(f[1])
+    local got    = LibCraftText.ParseDailyConditionBS(f[1])
     luaunit.assertEquals(got, expect)
 end
 

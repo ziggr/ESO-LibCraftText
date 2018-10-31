@@ -125,7 +125,9 @@ LibCraftText.MATERIALS = {
               }
 }
 
-LibCraftText.ITEMS = {
+-- These are the item names that appear in master writs.
+-- numeric index is the value for "writ1" field of sealed master writs.
+LibCraftText.ITEMS_MASTER = {
   [bs] = {
            [53] = "斧"                       -- "Axe"
          , [56] = "メイス"                 -- "Mace"
@@ -173,6 +175,61 @@ LibCraftText.ITEMS = {
          }
 }
 
+-- These are the item names from crafting stations. Surprise! They occasionally
+-- differ from what master writs use. For example, blacksmithing head piece,
+-- in FR French is called "heaume" at the crafting station, but "casque" in
+-- a sealed master blacksmithing writ. Grrr.
+--
+-- Numeric index is the pattern_index used as arg1 to
+-- GetSmithingPatternItemLink() and other crafting station APIs.
+--
+LibCraftText.ITEMS_STATION = {
+  [bs] = {
+           [ 1] = "斧"                       -- "axe"
+         , [ 2] = "メイス"                 -- "mace"
+         , [ 3] = "剣"                       -- "wword"
+         , [ 4] = "両手斧"                 -- "battle Axe"
+         , [ 5] = "大槌"                    -- "maul"
+         , [ 6] = "大剣"                    -- "greatsword"
+         , [ 7] = "短剣"                    -- "dagger"
+         , [ 8] = "胸当て"                 -- "cuirass"
+         , [ 9] = "サバトン"              -- "sabatons"
+         , [10] = "篭手"                    -- "gauntlets"
+         , [11] = "兜"                       -- "helm"
+         , [12] = "グリーヴ"              -- "greaves"
+         , [13] = "ポールドロン"        -- "pauldron"
+         , [14] = "ガードル"              -- "girdle"
+         }
+, [cl] = {
+           [ 1] = "ローブ"                 -- "robe"
+         , [ 2] = "ジャーキン"           -- "jerkin"
+         , [ 3] = "靴"                       -- "shoes"
+         , [ 4] = "手袋"                    -- "gloves"
+         , [ 5] = "帽子"                    -- "hat"
+         , [ 6] = "パンツ"                 -- "breeches"
+         , [ 7] = "肩当て"                 -- "epaulets"
+         , [ 8] = "サッシュ"              -- "sash"
+         , [ 9] = "胴当て"                 -- "jack"
+         , [10] = "ブーツ"                 -- "boots"
+         , [11] = "腕当て"                 -- "bracers"
+         , [12] = "兜"                       -- "helmet"
+         , [13] = "すね当て"              -- "guards"
+         , [14] = "アームカップ"        -- "arm cops"
+         , [15] = "ベルト"                 -- "belt"
+         }
+, [ww] = {
+           [ 1] = "弓"                       -- "bow"
+         , [ 3] = "業火の杖"              -- "inferno staff"
+         , [ 4] = "氷の杖"                 -- "ice staff"
+         , [ 5] = "稲妻の杖"              -- "lightning staff"
+         , [ 6] = "回復の杖"              -- "restoration staff"
+         , [ 2] = "盾"                       -- "shield"
+         }
+, [jw] = {
+           [ 2] = "ネックレス"           -- "necklace"
+         , [ 1] = "リング"                 -- "ring"
+         }
+}
 LibCraftText.QUALITIES = {
     [1] = "Normal"                   -- "Normal"
 ,   [2] = "Fine"                     -- "Fine"

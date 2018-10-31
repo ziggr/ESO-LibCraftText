@@ -125,7 +125,9 @@ LibCraftText.MATERIALS = {
               }
 }
 
-LibCraftText.ITEMS = {
+-- These are the item names that appear in master writs.
+-- numeric index is the value for "writ1" field of sealed master writs.
+LibCraftText.ITEMS_MASTER = {
   [bs] = {
            [53] = "Hacha"                     -- "Axe"
          , [56] = "Maza"                      -- "Mace"
@@ -173,6 +175,61 @@ LibCraftText.ITEMS = {
          }
 }
 
+-- These are the item names from crafting stations. Surprise! They occasionally
+-- differ from what master writs use. For example, blacksmithing head piece,
+-- in FR French is called "heaume" at the crafting station, but "casque" in
+-- a sealed master blacksmithing writ. Grrr.
+--
+-- Numeric index is the pattern_index used as arg1 to
+-- GetSmithingPatternItemLink() and other crafting station APIs.
+--
+LibCraftText.ITEMS_STATION = {
+  [bs] = {
+           [ 1] = "Hacha"                     -- "axe"
+         , [ 2] = "Maza"                      -- "mace"
+         , [ 3] = "Espada"                    -- "wword"
+         , [ 4] = "hacha de batalla"          -- "battle Axe"
+         , [ 5] = "Maza"                      -- "maul"
+         , [ 6] = "Mandoble"                  -- "greatsword"
+         , [ 7] = "Daga"                      -- "dagger"
+         , [ 8] = "Coraza"                    -- "cuirass"
+         , [ 9] = "escarpes"                  -- "sabatons"
+         , [10] = "guanteletes"               -- "gauntlets"
+         , [11] = "yelmo"                     -- "helm"
+         , [12] = "grebas"                    -- "greaves"
+         , [13] = "espaldarones"              -- "pauldron"
+         , [14] = "Faja"                      -- "girdle"
+         }
+, [cl] = {
+           [ 1] = "Túnica"                   -- "robe"
+         , [ 2] = "Jubón"                    -- "jerkin"
+         , [ 3] = "Zapatos"                   -- "shoes"
+         , [ 4] = "guantes"                   -- "gloves"
+         , [ 5] = "Capucha"                   -- "hat"
+         , [ 6] = "calzones"                  -- "breeches"
+         , [ 7] = "Cubrehombros"              -- "epaulets"
+         , [ 8] = "banda"                     -- "sash"
+         , [ 9] = "pechera"                   -- "jack"
+         , [10] = "botas"                     -- "boots"
+         , [11] = "brazales"                  -- "bracers"
+         , [12] = "Casco"                     -- "helmet"
+         , [13] = "musleras"                  -- "guards"
+         , [14] = "Hombreras"                 -- "arm cops"
+         , [15] = "Cinturón"                 -- "belt"
+         }
+, [ww] = {
+           [ 1] = "Arco"                      -- "bow"
+         , [ 3] = "Vara infernal"             -- "inferno staff"
+         , [ 4] = "vara glaciar"              -- "ice staff"
+         , [ 5] = "vara eléctrica"           -- "lightning staff"
+         , [ 6] = "vara restauradora"         -- "restoration staff"
+         , [ 2] = "Escudo"                    -- "shield"
+         }
+, [jw] = {
+           [ 2] = "collar"                    -- "necklace"
+         , [ 1] = "anillo"                    -- "ring"
+         }
+}
 LibCraftText.QUALITIES = {
     [1] = "Normal"                   -- "Normal"
 ,   [2] = "Bueno"                    -- "Fine"
