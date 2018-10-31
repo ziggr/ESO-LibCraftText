@@ -44,7 +44,7 @@ end
 LibCraftText.RE_CONDITION_DAILY = {
     ["en"] = "Craft Normal (.*): 0 / 1"
 ,   ["de"] = "Stellt normale (.*) her: 0/1"
-,   ["fr"] = "Fabriquez [uneds]+ (.*) en (.*) normal[es]* : 0/1"
+,   ["fr"] = "Fabriquez [uneds]+ (.*) en (.*) norma[lesaux]* : 0/1"
 ,   ["ru"] = "Craft Normal (.*): 0 / 1"
 ,   ["es"] = "Fabrica [unaos]+ (.*) de (.*) normal[es]*: 0/1"
 ,   ["it"] = "Craft (.*): 0 / 1"
@@ -153,14 +153,25 @@ end
 
 function TestDailyCondition.TestAL()
     local fodder = {
-      { { ["en"] = "Craft Essence of Stamina: 0 / 1"
+      { {
+          ["en"] = "Craft Essence of Stamina: 0 / 1"
         , ["de"] = "Stellt Essenzen der Ausdauer her: 0/1"
         , ["fr"] = "Fabriquez une essence de Vigueur : 0/1"
         , ["es"] = "Prepara una esencia de aguante: 0/1"
-        , ["it"] = "TRACKER GOAL TEXT: 0 / 1"
         , ["ja"] = "スタミナのエキスを生産する: 0 / 1"
         }
       , nil  -- NEEDS TO CHANGE TO potion/poison, level, effect list
+      }
+    , { {
+          ["en"] = "Acquire Mudcrab Chitin: 3 / 3"
+        , ["de"] = "Besorgt etwas Schlammkrabbenchitin: 3/3"
+        , ["fr"] = "Acquérez une chitine de vasard : 3/3"
+        , ["es"] = "Adquiere quitina de cangrejo del barro: 3/3"
+        , ["it"] = "TRACKER GOAL TEXT: 3 / 3"
+        , ["ru"] = "Раздобыть — Хитин грязевого краба: 3 / 3"
+        , ["ja"] = "マッドクラブキチンを手に入れる: 3 / 3"
+        }
+      , nil
       }
     }
     for _,f in ipairs(fodder) do
@@ -230,6 +241,27 @@ function TestDailyCondition.TestCL()
       , LCT.MATERIAL.RUBEDO_LEATHER
       , LCT.ITEM.HELMET
       }
+      , { {
+            ["en"] = "Craft Normal Rubedo Leather Arm Cops: 0 / 1"
+          , ["de"] = "Stellt normale Rubedolederschulterkappen her: 0/1"
+          , ["fr"] = "Fabriquez des coques d'épaules en cuir pourpre normales : 0/1"
+          , ["es"] = "Fabrica unas hombreras de cuero rubedo normales: 0/1"
+          , ["ja"] = "ルベドレザーのアームカップ(ノーマル)を生産する: 0 / 1"
+        }
+      , LCT.MATERIAL.RUBEDO_LEATHER
+      , LCT.ITEM.ARM_COPS
+      }
+      , { {
+            ["en"] = "Craft Normal Rubedo Leather Bracers: 0 / 1"
+          , ["de"] = "Stellt normale Rubedolederarmschienen her: 0/1"
+          , ["fr"] = "Fabriquez des brassards en cuir pourpre normaux : 0/1"
+          , ["es"] = "Fabrica unos brazales de cuero rubedo normales: 0/1"
+          , ["ja"] = "ルベドレザーの腕当て(ノーマル)を生産する: 0 / 1"
+        }
+      , LCT.MATERIAL.RUBEDO_LEATHER
+      , LCT.ITEM.BRACERS
+      }
+
     }
     for _,f in ipairs(fodder) do
         local input = f[1][LibCraftText.CurrLang()]
@@ -242,9 +274,57 @@ function TestDailyCondition.TestCL()
     end
 end
 
-
-function TestDailyCondition.TestNothing()
+function TestDailyCondition.TestEN()
+    local fodder = {
+      { {
+          ["en"] = "Craft Essence of Stamina: 0 / 1"
+        , ["de"] = "Stellt Essenzen der Ausdauer her: 0/1"
+        , ["fr"] = "Fabriquez une essence de Vigueur : 0/1"
+        , ["es"] = "Prepara una esencia de aguante: 0/1"
+        , ["ja"] = "スタミナのエキスを生産する: 0 / 1"
+        }
+      , nil  -- NEEDS TO CHANGE TO potion/poison, level, effect list
+      }
+    , { {
+          ["en"] = "Acquire Mudcrab Chitin: 3 / 3"
+        , ["de"] = "Besorgt etwas Schlammkrabbenchitin: 3/3"
+        , ["fr"] = "Acquérez une chitine de vasard : 3/3"
+        , ["es"] = "Adquiere quitina de cangrejo del barro: 3/3"
+        , ["it"] = "TRACKER GOAL TEXT: 3 / 3"
+        , ["ru"] = "Раздобыть — Хитин грязевого краба: 3 / 3"
+        , ["ja"] = "マッドクラブキチンを手に入れる: 3 / 3"
+        }
+      , nil  -- NEEDS TO CHANGE TO potion/poison, level, effect list
+      }
+    , { {
+          ["en"]  = "Craft Superb Glyph of Stamina With Ta: 0 / 1"
+        , ["de"]  = "Stellt mit einer Ta-Rune eine prächtige Glyphe der Ausdauer her: 0/1"
+        , ["fr"]  = "Fabriquez un glyphe de Vigueur superbe avec Ta : 0/1"
+        , ["es"]  = "Fabrica un glifo soberbio de aguante con Ta: 0/1"
+        , ["ja"]  = "ターの最上のグリフ(スタミナ)を生産する: 0 / 1"
+        }
+      , nil  -- NEEDS TO CHANGE TO potion/poison, level, effect list
+      }
+    , { {
+          ["en"]  = "Acquire Ta Aspect Rune: 1 / 1"
+        , ["de"]  = "Beschafft eine Ta-Aspektrune: 1/1"
+        , ["fr"]  = "Acquérez une rune d'aspect Ta : 1/1"
+        , ["es"]  = "Adquiere una runa de aspecto Ta: 1/1"
+        , ["ru"]  = "Добыть руну аспекта Та: 1 / 1"
+        , ["ja"]  = "ターの品質ルーンを手に入れる: 1 / 1"
+        }
+      , nil  -- NEEDS TO CHANGE TO potion/poison, level, effect list
+      }
+    }
+    for _,f in ipairs(fodder) do
+        local input  = f[1][LibCraftText.CurrLang()]
+        if not input then return end
+        local expect = f[2]
+        local got    = LibCraftText.ParseDailyConditionGear(al, input)
+        luaunit.assertEquals(got, expect)
+    end
 end
+
 
 
 
