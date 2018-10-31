@@ -20,7 +20,7 @@ local pr = CRAFTING_TYPE_PROVISIONING
 local ww = CRAFTING_TYPE_WOODWORKING
 local jw = CRAFTING_TYPE_JEWELRYCRAFTING
 
-
+local LCT = LibCraftText
 
 -- Belonga LCT ---------------------------------------------------------------
 
@@ -51,16 +51,10 @@ LibCraftText.RE_CONDITION_CL = {
 ,   ["ja"] = "(.*)の(.*)%(ノーマル%)を生産する: 0 / 1"
 }
 function LibCraftText.ParseDailyConditionCL(cond_text)
-    local self          = LibCraftText
-    local lang          = self.CurrLang()
-    local material_list = self.MaterialList()
-    local item_list     = self.ItemList()[cl]
-    return self.ParseDailyConditionSmithing( cond_text
-                                      , self.RE_CONDITION_CL[lang]
-                                      , item_list
-                                      , material_list["lgt"]
-                                      , material_list["med"]
-                                      )
+    local self  = LibCraftText
+    local lang  = self.CurrLang()
+    local re    = self.RE_CONDITION_CL[lang]
+    return self.ParseDailyConditionSmithing(cl, cond_text, re)
 end
 
 LibCraftText.RE_CONDITION_BS = {
@@ -73,28 +67,15 @@ LibCraftText.RE_CONDITION_BS = {
 ,   ["ja"]  = "(.*)の(.*)%(ノーマル%)を生産する: 0 / 1"
 }
 function LibCraftText.ParseDailyConditionBS(cond_text)
-    local self          = LibCraftText
-    local lang          = self.CurrLang()
-    local material_list = self.MaterialList()
-    local item_list     = self.ItemList()[bs]
-    return self.ParseDailyConditionSmithing( cond_text
-                                      , self.RE_CONDITION_BS[lang]
-                                      , item_list
-                                      , material_list["bs" ]
-                                      )
+    local self  = LibCraftText
+    local lang  = self.CurrLang()
+    local re    = self.RE_CONDITION_BS[lang]
+    return self.ParseDailyConditionSmithing(bs, cond_text, re)
 end
 
 
-function LibCraftText.ParseDailyConditionSmithing(
-          cond_text
-        , re
-        , item_list
-        , material_list
-        , material_list2 -- optional
-        )
-
+function LibCraftText.ParseDailyConditionSmithing(crafting_type, cond_text, re)
     local self      = LibCraftText
-    local _,_,g1,g2 = string.find(cond_text, re)
 
                         -- Some languages put material (adjective) before
                         -- item (noun). Others put the material after.
@@ -105,65 +86,45 @@ function LibCraftText.ParseDailyConditionSmithing(
                         -- of material, item, and language. So instead, we loop
                         -- through known materials and items looking for
                         -- matches.
-
+                        --
                         -- Smush g1 and g2 into a single string that we can
                         -- search.
+    local _,_,g1,g2 = string.find(cond_text, re)
     local matitem = g1
     if g2 then matitem = matitem .. "/" .. g2 end
     if not matitem then return nil end
+    matitem = matitem:lower()
 
-    local found         = {}
-    found.material_name, found.material_num
-        = self.LongestMatch( matitem
-                           , material_list
-                           , material_list2
-                           )
-    found.item_name, found.item_num
-        = self.LongestMatch( matitem
-                           , item_list
-                           )
+    local found = {}
+    found.item    = self.LongestMatch(matitem, self.ITEM,     "name", crafting_type)
+    found.material = self.LongestMatch(matitem, self.MATERIAL, "name", crafting_type)
     return found
 end
 
-                        -- Return the longest element of string_list (or
-                        -- optional string_list2)  that exists within
-                        -- `search_within_me`.
-function LibCraftText.LongestMatch(search_within_me, string_list, string_list2)
-    local match_str, match_key = nil
-    local swm = search_within_me:lower()
-    for _,list in ipairs({string_list, string_list2}) do
-        if list then
-            for key,str in pairs(list) do
-                if swm:find(str:lower()) then
-                    if (not match_str) or (match_str:len() < str:len()) then
-                        -- Have I mentioned how much I miss `continue` ?
-                        match_str = str
-                        match_key = key
-                    end
+                        -- Return the row with the longest matching field.
+function LibCraftText.LongestMatch(find_me, rows, field_name, crafting_type)
+    local longest_match   = { name=nil, row=nil }
+    local field_name      = "name"
+    for _, row in pairs(rows) do
+        if row.crafting_type == crafting_type then
+            local name = row[field_name]
+            if find_me:find(name:lower()) then
+                if (not longest_match.name) or (longest_match.name:len() < name:len()) then
+                    longest_match.name = name
+                    longest_match.row  = row
                 end
             end
         end
     end
-    return match_str, match_key
-end
-
-function LibCraftText.MaterialList()
-    return LibCraftText.MATERIALS
-end
-
-function LibCraftText.ItemList()
-    return LibCraftText.ITEMS_STATION
+    return longest_match.row
 end
 
 -- End Belonga LCT -----------------------------------------------------------
 
-                        -- The 6 supported languages.
-                        -- Italian is not yet supported because its
-                        -- translation is partial: master writ base text
-                        -- uses Italian text ("Elmetto") but daily crafting
-                        -- writ conditions still use English ("Helmet").
-                        -- Pick one or the other, I'm not about to double up
-                        -- my code to support fallback-to-English.
+                        -- The 6 supported languages. Italian is not yet
+                        -- supported because its translation is partial:
+                        -- instead of "Craft a Platinum Ring: 0 / 1", Italian
+                        -- displays information-free "TRACKER GOAL TEXT: 0 / 1"
                         --
 LANG_ORDER = { "en", "de", "fr", "ru", "es", "ja" }
 
@@ -204,21 +165,19 @@ end
 
 function TestDailyCondition.TestCL()
     local fodder = {
-      ["en"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , 10, "Rubedo Leather", 12, "helmet" }
-    , ["de"] = { "Stellt normale Rubedolederhelme her: 0/1"        , 10, "Rubedoleder"   , 12, "helm"   } -- what about that trailing "e" on "helme"?
-    , ["fr"] = { "Fabriquez un casque en cuir pourpre normal : 0/1", 10, "cuir pourpre"  , 12, "casque" }
-    , ["ru"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , 10, "Rubedo Leather", 12, "helmet" }
-    , ["es"] = { "Fabrica un casco de cuero rubedo normal: 0/1"    , 10, "cuero rubedo"  , 12, "Casco"  }
-    --["it"] = { "Craft Rubedo Leather Helmet: 0 / 1"              , 10, "Rubedo Leather", 12, "Helmet" }
-    , ["ja"] = { "ルベドレザーの兜(ノーマル)を生産する: 0 / 1"           , 10, "ルベドレザー"    , 12, "兜"     }
+      ["en"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET }
+    , ["de"] = { "Stellt normale Rubedolederhelme her: 0/1"        , LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET } -- what about that trailing "e" on "helme"?
+    , ["fr"] = { "Fabriquez un casque en cuir pourpre normal : 0/1", LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET }
+    , ["ru"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET }
+    , ["es"] = { "Fabrica un casco de cuero rubedo normal: 0/1"    , LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET }
+    --["it"] = { "Craft Rubedo Leather Helmet: 0 / 1"              , LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET }
+    , ["ja"] = { "ルベドレザーの兜(ノーマル)を生産する: 0 / 1"           , LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET }
     }
     local f = fodder[LibCraftText.CurrLang()]
     if not f then return end
 
-    local expect = { material_num  = f[2]
-                   , material_name = f[3]
-                   , item_num      = f[4]
-                   , item_name     = f[5]
+    local expect = { material = f[2]
+                   , item     = f[3]
                    }
     local got    = LibCraftText.ParseDailyConditionCL(f[1])
     luaunit.assertEquals(got, expect)
@@ -226,20 +185,18 @@ end
 
 function TestDailyCondition.TestBS()
     local fodder = {
-      ["en"] = { "Craft Normal Rubedite Helm: 0 / 1"           , 10, "Rubedite" , 11, "helm"    }
-    , ["de"] = { "Stellt normale Rubedithauben her: 0/1"       , 10, "Rubedit"  , 11, "haube"   } -- what about the extra "n" in "hauben" ? What's up with all the plurals?
-    , ["fr"] = { "Fabriquez un heaume en cuprite normal : 0/1" , 10, "cuprite"  , 11, "heaume"  } -- live cond_text is "heaume" not "casque", why do daily != master? Check this.
-    , ["es"] = { "Fabrica un yelmo de rubedita normal: 0/1"    , 10, "rubedita" , 11, "yelmo"   } -- again, was "yelmo" in live
-    --["it"] = { "Craft Rubedite Helm: 0 / 1"                  , 10,
-    , ["ja"] = { "ルベダイトの兜(ノーマル)を生産する: 0 / 1"         , 10, "ルベダイト", 11, "兜"      }
+      ["en"] = { "Craft Normal Rubedite Helm: 0 / 1"           , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
+    , ["de"] = { "Stellt normale Rubedithauben her: 0/1"       , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM } -- what about the extra "n" in "hauben" ? What's up with all the plurals?
+    , ["fr"] = { "Fabriquez un heaume en cuprite normal : 0/1" , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM } -- live cond_text is "heaume" not "casque", why do daily != master? Check this.
+    , ["es"] = { "Fabrica un yelmo de rubedita normal: 0/1"    , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM } -- again, was "yelmo" in live
+    --["it"] = { "Craft Rubedite Helm: 0 / 1"                  , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
+    , ["ja"] = { "ルベダイトの兜(ノーマル)を生産する: 0 / 1"        , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
     }
     local f = fodder[LibCraftText.CurrLang()]
     if not f then return end
 
-    local expect = { material_num  = f[2]
-                   , material_name = f[3]
-                   , item_num      = f[4]
-                   , item_name     = f[5]
+    local expect = { material = f[2]
+                   , item     = f[3]
                    }
     local got    = LibCraftText.ParseDailyConditionBS(f[1])
     luaunit.assertEquals(got, expect)
