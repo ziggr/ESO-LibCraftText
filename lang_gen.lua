@@ -117,7 +117,7 @@ function ImportSavedVars()
         for lang, item_list in pairs(lang_list) do
             for i, text in pairs(item_list) do
                 local item_num = item_num_list[i]
-                local key = string.format("$ITEM_%02d", item_num)
+                local key = string.format("$MASTER_ITEM_%02d", item_num)
                 local entry = DB[key]
                 entry[lang] = text
             end
