@@ -1,12 +1,13 @@
+LibCraftText = LibCraftText or {}
 
--- For less typing
-local bs = CRAFTING_TYPE_BLACKSMITHING   -- 1
-local cl = CRAFTING_TYPE_CLOTHIER        -- 2
-local en = CRAFTING_TYPE_ENCHANTING      -- 3
-local al = CRAFTING_TYPE_ALCHEMY         -- 4
-local pr = CRAFTING_TYPE_PROVISIONING    -- 5
-local ww = CRAFTING_TYPE_WOODWORKING     -- 6
-local jw = CRAFTING_TYPE_JEWELRYCRAFTING -- 7
+                        -- For less typing
+local bs = CRAFTING_TYPE_BLACKSMITHING   or 1
+local cl = CRAFTING_TYPE_CLOTHIER        or 2
+local en = CRAFTING_TYPE_ENCHANTING      or 3
+local al = CRAFTING_TYPE_ALCHEMY         or 4
+local pr = CRAFTING_TYPE_PROVISIONING    or 5
+local ww = CRAFTING_TYPE_WOODWORKING     or 6
+local jw = CRAFTING_TYPE_JEWELRYCRAFTING or 7
 
 LibCraftText.DAILY_QUEST_TITLES = {
     [bs] = "Blacksmith Writ"                -- "Blacksmith Writ"
@@ -62,6 +63,32 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 ,   [jw] = "I've finished the Jewelry job."          -- "I've finished the Jewelry job."
 }
 
+                        -- Identify which list of crafting materials.
+LibCraftText.MAT_SET_ID = {
+  ["LIGHT"  ] = "lgt"
+, ["MEDIUM" ] = "med"
+, ["HEAVY"  ] = "hvy"
+, ["WOOD"   ] = "wd"
+, ["JEWELRY"] = "jw"
+}
+                        -- For less typing
+local lgt = LibCraftText.MAT_SET_ID.LIGHT
+local med = LibCraftText.MAT_SET_ID.MEDIUM
+local hvy = LibCraftText.MAT_SET_ID.HEAVY
+local ww  = LibCraftText.MAT_SET_ID.WOOD
+local jw  = LibCraftText.MAT_SET_ID.JEWELRY
+
+                        -- Identify which list of traits.
+LibCraftText.TRAIT_SET_ID = {
+    ["WEAPON" ] = "weap"
+,   ["ARMOR"  ] = "arm"
+,   ["JEWELRY"] = "jw"
+}
+                        -- For less typing
+local weap = LibCraftText.TRAIT_SET_ID.WEAPON
+local armr = LibCraftText.TRAIT_SET_ID.ARMOR
+local jewl = LibCraftText.TRAIT_SET_ID.JEWELRY
+
 --
 -- Generatable strings
 --
@@ -73,7 +100,7 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 --
 
 LibCraftText.MATERIALS = {
-    ["bs" ] = { "iron"               -- "iron"
+    [hvy] =   { "iron"               -- "iron"
               , "steel"              -- "steel"
               , "orichalc"           -- "orichalc"
               , "dwarven"            -- "dwarven"
@@ -84,7 +111,7 @@ LibCraftText.MATERIALS = {
               , "voidsteel"          -- "voidsteel"
               , "Rubedite"           -- "Rubedite"
               }
-,   ["lgt"] = { "homespun"           -- "homespun"
+,   [lgt] =   { "homespun"           -- "homespun"
               , "linen"              -- "linen"
               , "cotton"             -- "cotton"
               , "spidersilk"         -- "spidersilk"
@@ -95,7 +122,7 @@ LibCraftText.MATERIALS = {
               , "shadowspun"         -- "shadowspun"
               , "Ancestor Silk"      -- "Ancestor Silk"
               }
-,   ["med"] = { "rawhide"            -- "rawhide"
+,   [med] =   { "rawhide"            -- "rawhide"
               , "hide"               -- "hide"
               , "leather"            -- "leather"
               , "full-leather"       -- "full-leather"
@@ -106,7 +133,7 @@ LibCraftText.MATERIALS = {
               , "shadowhide"         -- "shadowhide"
               , "Rubedo Leather"     -- "Rubedo Leather"
               }
-,   ["ww" ] = { "maple"              -- "maple"
+,   [ww ] =   { "maple"              -- "maple"
               , "oak"                -- "oak"
               , "beech"              -- "beech"
               , "hickory"            -- "hickory"
@@ -117,7 +144,7 @@ LibCraftText.MATERIALS = {
               , "nightwood"          -- "nightwood"
               , "Ruby Ash"           -- "Ruby Ash"
               }
-,   ["jw" ] = { "pewter"             -- "pewter"
+,   [jw ] =   { "pewter"             -- "pewter"
               , "copper"             -- "copper"
               , "silver"             -- "silver"
               , "electrum"           -- "electrum"
@@ -238,3 +265,75 @@ LibCraftText.QUALITIES = {
 ,   [5] = "Legendary"                -- "Legendary"
 }
 
+
+
+
+-- Craftable Gear ------------------------------------------------------------
+--
+-- Answer the question "what gear item does this crafting quest require?"
+-- An axe? Light robe? Wooden shield?
+
+-- name             string that appears in daily crafting writs and tooltip
+--                  text when crafting this item at a crafting station.
+--
+-- master_name      string that appears in a sealed master writ's tooltip,
+--                  or an accepted master writ quest's conditions.
+--                  SURPRISE! `master_name` does not always match `name`
+--                  value in all languages. FR French heavy head piece
+--                  is "heaume" most of the time, but "casque" in master writs.
+--                  There are several examples of this mismatch, scattered
+--                  throughout different languages.
+--
+-- pattern_index    crafting index passed as an argument to ZOS API functions
+--                  like GetSmithingPatternInfo() and others.
+--
+-- master_writ1     value for `writ1` field in sealed master writ item links.
+--
+-- crafting_type    Blacksmithing, Clothier, Woodworking, or Jewelry Crafting?
+--
+-- mat_set_id       Which set of crafting materials to use for this item?
+--
+-- trait_set_id     Which set of traits apply to this item?
+--
+LibCraftText.ITEM = {
+  ["H1_AXE"         ] = { name="axe"                  , master_name="Axe"                       , pattern_index= 1, master_writ1=53, crafting_type=bs, mat_set_id=hvy, trait_set_id=weap } -- "axe"
+, ["H1_MACE"        ] = { name="mace"                 , master_name="Mace"                      , pattern_index= 2, master_writ1=56, crafting_type=bs, mat_set_id=hvy, trait_set_id=weap } -- "mace"
+, ["H1_SWORD"       ] = { name="sword"                , master_name="Sword"                     , pattern_index= 3, master_writ1=59, crafting_type=bs, mat_set_id=hvy, trait_set_id=weap } -- "sword"
+, ["H2_BATTLE_AXE"  ] = { name="battle axe"           , master_name="Battle Axe"                , pattern_index= 4, master_writ1=68, crafting_type=bs, mat_set_id=hvy, trait_set_id=weap } -- "battle Axe"
+, ["H2_MAUL"        ] = { name="maul"                 , master_name="Maul"                      , pattern_index= 5, master_writ1=69, crafting_type=bs, mat_set_id=hvy, trait_set_id=weap } -- "maul"
+, ["H2_GREATSWORD"  ] = { name="greatsword"           , master_name="Greatsword"                , pattern_index= 6, master_writ1=67, crafting_type=bs, mat_set_id=hvy, trait_set_id=weap } -- "greatsword"
+, ["DAGGER"         ] = { name="dagger"               , master_name="Dagger"                    , pattern_index= 7, master_writ1=62, crafting_type=bs, mat_set_id=hvy, trait_set_id=weap } -- "dagger"
+, ["CUIRASS"        ] = { name="cuirass"              , master_name="Cuirass"                   , pattern_index= 8, master_writ1=46, crafting_type=bs, mat_set_id=hvy, trait_set_id=armr } -- "cuirass"
+, ["SABATONS"       ] = { name="sabatons"             , master_name="Sabatons"                  , pattern_index= 9, master_writ1=50, crafting_type=bs, mat_set_id=hvy, trait_set_id=armr } -- "sabatons"
+, ["GAUNTLETS"      ] = { name="gauntlets"            , master_name="Gauntlets"                 , pattern_index=10, master_writ1=52, crafting_type=bs, mat_set_id=hvy, trait_set_id=armr } -- "gauntlets"
+, ["HELM"           ] = { name="helm"                 , master_name="Helm"                      , pattern_index=11, master_writ1=44, crafting_type=bs, mat_set_id=hvy, trait_set_id=armr } -- "helm"
+, ["GREAVES"        ] = { name="greaves"              , master_name="Greaves"                   , pattern_index=12, master_writ1=49, crafting_type=bs, mat_set_id=hvy, trait_set_id=armr } -- "greaves"
+, ["PAULDRON"       ] = { name="pauldron"             , master_name="Pauldron"                  , pattern_index=13, master_writ1=47, crafting_type=bs, mat_set_id=hvy, trait_set_id=armr } -- "pauldron"
+, ["GIRDLE"         ] = { name="girdle"               , master_name="Girdle"                    , pattern_index=14, master_writ1=48, crafting_type=bs, mat_set_id=hvy, trait_set_id=armr } -- "girdle"
+
+, ["ROBE"           ] = { name="robe"                 , master_name="Robe"                      , pattern_index= 1, master_writ1=28, crafting_type=cl, mat_set_id=lgt, trait_set_id=armr } -- "robe"
+, ["JERKIN"         ] = { name="jerkin"               , master_name="Jerkin"                    , pattern_index= 2, master_writ1=75, crafting_type=cl, mat_set_id=lgt, trait_set_id=armr } -- "jerkin"
+, ["SHOES"          ] = { name="shoes"                , master_name="Shoes"                     , pattern_index= 3, master_writ1=32, crafting_type=cl, mat_set_id=lgt, trait_set_id=armr } -- "shoes"
+, ["GLOVES"         ] = { name="gloves"               , master_name="Gloves"                    , pattern_index= 4, master_writ1=34, crafting_type=cl, mat_set_id=lgt, trait_set_id=armr } -- "gloves"
+, ["HAT"            ] = { name="hat"                  , master_name="Hat"                       , pattern_index= 5, master_writ1=26, crafting_type=cl, mat_set_id=lgt, trait_set_id=armr } -- "hat"
+, ["BREECHES"       ] = { name="breeches"             , master_name="Breeches"                  , pattern_index= 6, master_writ1=31, crafting_type=cl, mat_set_id=lgt, trait_set_id=armr } -- "breeches"
+, ["EPAULETS"       ] = { name="epaulets"             , master_name="Epaulets"                  , pattern_index= 7, master_writ1=29, crafting_type=cl, mat_set_id=lgt, trait_set_id=armr } -- "epaulets"
+, ["SASH"           ] = { name="sash"                 , master_name="Sash"                      , pattern_index= 8, master_writ1=30, crafting_type=cl, mat_set_id=lgt, trait_set_id=armr } -- "sash"
+, ["JACK"           ] = { name="jack"                 , master_name="Jack"                      , pattern_index= 9, master_writ1=37, crafting_type=cl, mat_set_id=med, trait_set_id=armr } -- "jack"
+, ["BOOTS"          ] = { name="boots"                , master_name="Boots"                     , pattern_index=10, master_writ1=41, crafting_type=cl, mat_set_id=med, trait_set_id=armr } -- "boots"
+, ["BRACERS"        ] = { name="bracers"              , master_name="Bracers"                   , pattern_index=11, master_writ1=43, crafting_type=cl, mat_set_id=med, trait_set_id=armr } -- "bracers"
+, ["HELMET"         ] = { name="helmet"               , master_name="Helmet"                    , pattern_index=12, master_writ1=35, crafting_type=cl, mat_set_id=med, trait_set_id=armr } -- "helmet"
+, ["GUARDS"         ] = { name="guards"               , master_name="Guards"                    , pattern_index=13, master_writ1=40, crafting_type=cl, mat_set_id=med, trait_set_id=armr } -- "guards"
+, ["ARM_COPS"       ] = { name="arm cops"             , master_name="Arm Cops"                  , pattern_index=14, master_writ1=38, crafting_type=cl, mat_set_id=med, trait_set_id=armr } -- "arm cops"
+, ["BELT"           ] = { name="belt"                 , master_name="Belt"                      , pattern_index=15, master_writ1=39, crafting_type=cl, mat_set_id=med, trait_set_id=armr } -- "belt"
+
+, ["BOW"            ] = { name="bow"                  , master_name="Bow"                       , pattern_index= 1, master_writ1=70, crafting_type=ww, mat_set_id=ww , trait_set_id=weap } -- "bow"
+, ["INFERNO_STAFF"  ] = { name="inferno staff"        , master_name="Inferno Staff"             , pattern_index= 3, master_writ1=72, crafting_type=ww, mat_set_id=ww , trait_set_id=weap } -- "inferno staff"
+, ["ICE_STAFF"      ] = { name="ice staff"            , master_name="Ice Staff"                 , pattern_index= 4, master_writ1=73, crafting_type=ww, mat_set_id=ww , trait_set_id=weap } -- "ice staff"
+, ["LIGHTNING_STAFF"] = { name="lightning staff"      , master_name="Lightning Staff"           , pattern_index= 5, master_writ1=74, crafting_type=ww, mat_set_id=ww , trait_set_id=weap } -- "lightning staff"
+, ["RESTO_STAFF"    ] = { name="restoration staff"    , master_name="Restoration Staff"         , pattern_index= 6, master_writ1=71, crafting_type=ww, mat_set_id=ww , trait_set_id=weap } -- "restoration staff"
+, ["SHIELD"         ] = { name="shield"               , master_name="Shield"                    , pattern_index= 2, master_writ1=65, crafting_type=ww, mat_set_id=ww , trait_set_id=armr } -- "shield"
+
+, ["NECKLACE"       ] = { name="necklace"             , master_name="Necklace"                  , pattern_index= 2, master_writ1=18, crafting_type=js, mat_set_id=jw , trait_set_id=jewl } -- "necklace"
+, ["RING"           ] = { name="ring"                 , master_name="Ring"                      , pattern_index= 1, master_writ1=24, crafting_type=js, mat_set_id=jw , trait_set_id=jewl } -- "ring"
+}

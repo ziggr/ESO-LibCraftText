@@ -354,8 +354,11 @@ function ReplaceKeys(template_line, lang)
                         -- How many characters of room do we have before
                         -- our replacement text bumps into a comment or bracket?
     local pos_comment = template_line:find("%-%-")
+    local pos_comma   = template_line:find(",", pos_delim)
+
     local pos_end     = pos_delim + 10
     if pos_comment then pos_end = pos_comment end
+    if pos_comma   then pos_end = math.min(pos_end, pos_comma) end
     local repl_len = pos_end - pos_delim - 4
 -- print(tostring(pos_delim)
 -- ..".."..tostring(pos_comment)

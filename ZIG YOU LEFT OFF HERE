@@ -81,8 +81,10 @@ So I need MORE discovery code: have a listener active for a crafting station att
     -- get food/drink name AS A STRING
     Given a DAILY writ condition, same as above but likely DIFFERENT regexes:
 
-All these string tables that I'm fetching by programmatically rolling through sealed master writs? I can do that at user runtime, too.
--- PRO table: flat, easy to understand just by reading, cannot have bugs (but can have stale text)
+All these string tables that I'm fetching by programmatically rolling through
+sealed master writs? I can do that at user runtime, too.
+-- PRO table: flat, easy to understand just by reading, cannot have bugs
+    (but can have stale text)
 -- CON table: won't match updated text: requires zig time to update
 -- CON table: consumes space on load instead of space on use.
 
@@ -90,6 +92,19 @@ All these string tables that I'm fetching by programmatically rolling through se
 Now, from those strings, get some sort of integer/constant.
 THAT is where having tables of gear names, sets, materials, styles, all come in
 handy. Which of those can be generated at runtime?
+
+
+2018-10-30 22:58:00 -0700
+Okay, with that 4-hour detour over, I now have a SECOND set of item names and pattern_index numbers and they all work and pass tests.
+
+But the language files "en.lua" are getting long and cluttered and it's really
+confusing to decide which lists to use and such. And the lists aren't flat.
+It's all a mess now.
+
+Part of me wants to flatten into a single list of item records, and then within
+each record, list the crafting pattern_index and name, the master writ  writ1
+number and name, the crafting_type, the gear weight (if any)
+
 
 
 
