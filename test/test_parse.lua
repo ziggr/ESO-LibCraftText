@@ -41,7 +41,7 @@ end
 
 -- DAILY crafting conditions
 
-LibCraftText.RE_CONDITION_CL = {
+LibCraftText.RE_CONDITION_DAILY = {
     ["en"] = "Craft Normal (.*): 0 / 1"
 ,   ["de"] = "Stellt normale (.*) her: 0/1"
 ,   ["fr"] = "Fabriquez une? (.*) en (.*) normal : 0/1"
@@ -50,32 +50,19 @@ LibCraftText.RE_CONDITION_CL = {
 ,   ["it"] = "Craft (.*): 0 / 1"
 ,   ["ja"] = "(.*)の(.*)%(ノーマル%)を生産する: 0 / 1"
 }
-function LibCraftText.ParseDailyConditionCL(cond_text)
+
+-- If the supplied condition requests that we craft a weapon, armor, or jewelry
+-- item at a BS/CL/WW/JW station, return the requested item and material rows
+-- from LibCraftText.ITEM and LibCraftText.MATERIAL.
+--
+-- If the supplied condition request something else, such as a consumable
+-- glyph, potion, or food, or acquire an alchemy or enchanting material,
+-- return nil.
+--
+function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text, re)
     local self  = LibCraftText
     local lang  = self.CurrLang()
-    local re    = self.RE_CONDITION_CL[lang]
-    return self.ParseDailyConditionSmithing(cl, cond_text, re)
-end
-
-LibCraftText.RE_CONDITION_BS = {
-    ["en"]  = "Craft Normal (.*): 0 / 1"
-,   ["de"]  = "Stellt normale (.*) her: 0/1"
-,   ["fr"]  = "Fabriquez un (.*) en (.*) normal : 0/1"
-,   ["ru"]  = "Craft Normal (.*): 0 / 1"
-,   ["es"]  = "Fabrica un (.*) de (.*) normal: 0/1"
-,   ["it"]  = "Craft (.*): 0 / 1"
-,   ["ja"]  = "(.*)の(.*)%(ノーマル%)を生産する: 0 / 1"
-}
-function LibCraftText.ParseDailyConditionBS(cond_text)
-    local self  = LibCraftText
-    local lang  = self.CurrLang()
-    local re    = self.RE_CONDITION_BS[lang]
-    return self.ParseDailyConditionSmithing(bs, cond_text, re)
-end
-
-
-function LibCraftText.ParseDailyConditionSmithing(crafting_type, cond_text, re)
-    local self      = LibCraftText
+    local re    = self.RE_CONDITION_DAILY[lang]
 
                         -- Some languages put material (adjective) before
                         -- item (noun). Others put the material after.
@@ -95,8 +82,8 @@ function LibCraftText.ParseDailyConditionSmithing(crafting_type, cond_text, re)
     if not matitem then return nil end
     matitem = matitem:lower()
 
-    local found = {}
-    found.item    = self.LongestMatch(matitem, self.ITEM,     "name", crafting_type)
+    local found    = {}
+    found.item     = self.LongestMatch(matitem, self.ITEM,     "name", crafting_type)
     found.material = self.LongestMatch(matitem, self.MATERIAL, "name", crafting_type)
     return found
 end
@@ -163,6 +150,42 @@ function TestDailyCondition:setUp()
     -- print(want_lang.."  "..LibCraftText.DAILY_QUEST_TITLES[1])
 end
 
+function TestDailyCondition.TestAL()
+    local fodder = {
+      ["en"] = { "Craft Essence of Stamina: 0 / 1"         , nil }
+    , ["de"] = { "Stellt Essenzen der Ausdauer her: 0/1"   , nil }
+    , ["fr"] = { "Fabriquez une essence de Vigueur : 0/1"  , nil }
+    , ["es"] = { "Prepara una esencia de aguante: 0/1"     , nil }
+    , ["it"] = { "TRACKER GOAL TEXT: 0 / 1"                , nil }
+    , ["ja"] = { "スタミナのエキスを生産する: 0 / 1"           , nil }
+    }
+    local f = fodder[LibCraftText.CurrLang()]
+    if not f then return end
+
+    local expect = nil
+    local got    = LibCraftText.ParseDailyConditionGear(al, f[1])
+    luaunit.assertEquals(got, expect)
+end
+
+function TestDailyCondition.TestBS()
+    local fodder = {
+      ["en"] = { "Craft Normal Rubedite Helm: 0 / 1"           , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
+    , ["de"] = { "Stellt normale Rubedithauben her: 0/1"       , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM } -- what about the extra "n" in "hauben" ? Direct object declension?
+    , ["fr"] = { "Fabriquez un heaume en cuprite normal : 0/1" , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
+    , ["es"] = { "Fabrica un yelmo de rubedita normal: 0/1"    , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
+    --["it"] = { "Craft Rubedite Helm: 0 / 1"                  , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
+    , ["ja"] = { "ルベダイトの兜(ノーマル)を生産する: 0 / 1"        , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
+    }
+    local f = fodder[LibCraftText.CurrLang()]
+    if not f then return end
+
+    local expect = { material = f[2]
+                   , item     = f[3]
+                   }
+    local got    = LibCraftText.ParseDailyConditionGear(bs, f[1])
+    luaunit.assertEquals(got, expect)
+end
+
 function TestDailyCondition.TestCL()
     local fodder = {
       ["en"] = { "Craft Normal Rubedo Leather Helmet: 0 / 1"       , LCT.MATERIAL.RUBEDO_LEATHER, LCT.ITEM.HELMET }
@@ -179,26 +202,7 @@ function TestDailyCondition.TestCL()
     local expect = { material = f[2]
                    , item     = f[3]
                    }
-    local got    = LibCraftText.ParseDailyConditionCL(f[1])
-    luaunit.assertEquals(got, expect)
-end
-
-function TestDailyCondition.TestBS()
-    local fodder = {
-      ["en"] = { "Craft Normal Rubedite Helm: 0 / 1"           , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
-    , ["de"] = { "Stellt normale Rubedithauben her: 0/1"       , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM } -- what about the extra "n" in "hauben" ? What's up with all the plurals?
-    , ["fr"] = { "Fabriquez un heaume en cuprite normal : 0/1" , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM } -- live cond_text is "heaume" not "casque", why do daily != master? Check this.
-    , ["es"] = { "Fabrica un yelmo de rubedita normal: 0/1"    , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM } -- again, was "yelmo" in live
-    --["it"] = { "Craft Rubedite Helm: 0 / 1"                  , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
-    , ["ja"] = { "ルベダイトの兜(ノーマル)を生産する: 0 / 1"        , LCT.MATERIAL.RUBEDITE, LCT.ITEM.HELM }
-    }
-    local f = fodder[LibCraftText.CurrLang()]
-    if not f then return end
-
-    local expect = { material = f[2]
-                   , item     = f[3]
-                   }
-    local got    = LibCraftText.ParseDailyConditionBS(f[1])
+    local got    = LibCraftText.ParseDailyConditionGear(cl, f[1])
     luaunit.assertEquals(got, expect)
 end
 
