@@ -126,6 +126,7 @@ function LibCraftText.Forget()
                    , "motifs"
                    , "items_from_stations"
                    , "skill_rank"
+                   , "alliance"
                    }
     for _,field in ipairs(fields) do
         LibCraftText.saved_var [field] = nil
@@ -266,6 +267,14 @@ function LibCraftText.ScanSkillRanks()
         self.saved_char.skill_rank = self.saved_char.skill_rank or {}
         self.saved_char.skill_rank[crafting_type] = skill_rank
     end
+
+    local ALLIANCE = {
+          [ALLIANCE_ALDMERI_DOMINION]       = "AD"
+        , [ALLIANCE_EBONHEART_PACT  ]       = "EP"
+        , [ALLIANCE_DAGGERFALL_COVENANT]    = "DC"
+        }
+    local alliance_id = GetUnitAlliance("player")
+    self.saved_char.alliance = ALLIANCE[alliance_id]
 end
 
 -- GetJournalQuestInfo() returns:
