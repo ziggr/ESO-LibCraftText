@@ -42,23 +42,23 @@ end
 -- DAILY crafting conditions
 
 LibCraftText.RE_CONDITION_DAILY = {
-    ["en"] = { "Craft Normal (.*): 0 / 1"
-             , "Craft a (.*): 0 / 1"
+    ["en"] = { "Craft Normal (.*): "
+             , "Craft a (.*): "
              }
-,   ["de"] = { "Stellt normale (.*) her: 0/1"
-             , "Stellt ein[en]* (.*) her: 0/1"
+,   ["de"] = { "Stellt normale (.*) her: "
+             , "Stellt ein[en]* (.*) her: "
              }
-,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norma[lesaux]* : 0/1"
-             , "Fabriquez un (.*) en (.*): 0/1"
+,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norma[lesaux]* : "
+             , "Fabriquez un (.*) en (.*): "
              }
-,   ["ru"] = { "Craft Normal (.*): 0 / 1"
-             , "Craft a (.*): 0 / 1"
+,   ["ru"] = { "Craft Normal (.*): "
+             , "Craft a (.*): "
              }
-,   ["es"] = { "Fabrica [unaos]+ (.*) de (.*) normal[es]*: 0/1"
-             , "Fabrica un (.*) de (.*): 0/1"
+,   ["es"] = { "Fabrica [unaos]+ (.*) de (.*) normal[es]*: "
+             , "Fabrica un (.*) de (.*): "
              }
-,   ["ja"] = { "(.*)の(.*)%(ノーマル%)を生産する: 0 / 1"
-             , "(.*)の(.*)を作る: 0 / 1"
+,   ["ja"] = { "(.*)の(.*)%(ノーマル%)を生産する: "
+             , "(.*)の(.*)を作る: "
              }
 }
 
@@ -93,31 +93,39 @@ function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
         matitem = g1
         if g2 then matitem = matitem .. "/" .. g2 end
         if matitem then break end
+
+        -- print(string.format( "matitem:'%s' cond_text:'%s'  re:'%s'"
+        --                    , tostring(matitem)
+        --                    , tostring(cond_text)
+        --                    , tostring(re)
+        --                    ))
     end
     if not matitem then
-        -- print(string.format( "matitem:'%s' cond_text:'%s"
+        -- print(string.format( "matitem:'%s' cond_text:'%s'"
         --                    , tostring(matitem)
-        --                    , ,tostring(cond_text)))
+        --                    , tostring(cond_text)))
         return nil
     end
     matitem = matitem:lower()
 
     local found    = {}
-    found.item     = self.LongestMatch(matitem, self.ITEM,     "name", crafting_type, "master_name")
-    found.material = self.LongestMatch(matitem, self.MATERIAL, "name", crafting_type)
+    found.item     = self.LongestMatch(matitem, self.ITEM     , crafting_type
+                            , "name", "master_name", "name_plural")
+    found.material = self.LongestMatch(matitem, self.MATERIAL , crafting_type
+                            , "name")
     if not (found.item or found.material) then return nil end
     return found
 end
 
                         -- Return the row with the longest matching field.
-function LibCraftText.LongestMatch(find_me, rows, field_name, crafting_type, optional_field_name_2)
+function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ... )
     local longest_match   = { name=nil, row=nil }
-    for _,fieldname in pairs({ field_name, optional_field_name_2 }) do
+    for _,fieldname in pairs({ field_name, ... }) do
         if not fieldname then break end
         for _, row in pairs(rows) do
             if row.crafting_type == crafting_type then
                 local name = row[fieldname]
-                if find_me:find(name:lower()) then
+                if name and find_me:find(name:lower()) then
                     if (not longest_match.name) or (longest_match.name:len() < name:len()) then
                         longest_match.name = name
                         longest_match.row  = row
@@ -383,6 +391,73 @@ function TestDailyCondition.TestJW()
     end
 end
 
+function TestDailyCondition.TestPR()
+    local fodder = {
+      { {
+          ["en"] = "Craft Firsthold Fruit and Cheese Plate: 0 / 1"
+        , ["de"] = "Stellt eine Ersthalt-Käseplatte mit Früchten her: 0/1"
+        , ["fr"] = "Préparez un plateau de fruits et de fromage de Prime-Tenure : 0/1"
+        , ["es"] = "Preparæ plato de frutas y queso de Primada: 0/1"
+        , ["ru"] = "Создать — сырная тарелка с фруктами по-фестхолдски: 0 / 1"
+        , ["ja"] = "ファーストホールドの果実とチーズのプレートを生産する: 0 / 1"
+        }
+      , nil
+      }
+    , { {
+          ["en"] = "Craft Muthsera's Remorse: 0 / 1"
+        , ["de"] = "Stellt Muthseras Reue her: 0/1"
+        , ["fr"] = "Préparez un remords de Muthséra : 0/1"
+        , ["es"] = "Preparæ remordimiento de muthsera: 0/1"
+        , ["ru"] = "Создать — «Раскаяние мутсэры»: 0 / 1"
+        , ["ja"] = "ムスセラの良心の呵責を生産する: 0 / 1"
+        }
+      , nil
+      }
+    }
+    for _,f in ipairs(fodder) do
+        local input  = f[1][LibCraftText.CurrLang()]
+        if not input then return end
+        local expect = f[2]
+        local got    = LibCraftText.ParseDailyConditionGear(jw, input)
+        luaunit.assertEquals(got, expect)
+    end
+end
+
+function TestDailyCondition.TestWW()
+    local fodder = {
+      { {
+          ["en"] = "Craft Normal Ruby Ash Bow: 0 / 2"
+        , ["de"] = "Stellt normale Rubineschenbögen her: 0/2"
+        , ["fr"] = "Fabriquez un arc en frêne roux normal : 0/2"
+        , ["es"] = "Fabrica un arco de fresno rubí normal: 0/2"
+        , ["it"] = "Craft Ruby Ash Bow: 0 / 2"
+        , ["ja"] = "ルビーアッシュの弓(ノーマル)を生産する: 0 / 2"
+        }
+      , LCT.MATERIAL.RUBY_ASH
+      , LCT.ITEM.BOW
+      }
+    , { {
+          ["en"] = "Craft Normal Ruby Ash Shield: 0 / 1"
+        , ["de"] = "Stellt normale Rubineschenschilde her: 0/1"
+        , ["fr"] = "Fabriquez un bouclier en frêne roux normal : 0/1"
+        , ["es"] = "Fabrica un escudo de fresno rubí normal: 0/1"
+        , ["it"] = "Craft Ruby Ash Shield: 0 / 1"
+        , ["ja"] = "ルビーアッシュの盾(ノーマル)を生産する: 0 / 1"
+        }
+      , LCT.MATERIAL.RUBY_ASH
+      , LCT.ITEM.SHIELD
+      }
+    }
+    for _,f in ipairs(fodder) do
+        local input  = f[1][LibCraftText.CurrLang()]
+        if not input then return end
+        local expect = { material = f[2]
+                       , item     = f[3]
+                       }
+        local got    = LibCraftText.ParseDailyConditionGear(ww, input)
+        luaunit.assertEquals(got, expect)
+    end
+end
 
 
 
