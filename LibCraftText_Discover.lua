@@ -100,6 +100,7 @@ end
 
 function LibCraftText.Scan()
     LibCraftText.ScanQuestJournal()
+    LibCraftText.ScanSkillRanks()
 end
 
 function LibCraftText.Discover()
@@ -124,6 +125,7 @@ function LibCraftText.Forget()
                    , "sets"
                    , "motifs"
                    , "items_from_stations"
+                   , "skill_rank"
                    }
     for _,field in ipairs(fields) do
         LibCraftText.saved_var [field] = nil
@@ -239,6 +241,31 @@ function LibCraftText.RecordConditionText( quest_index, step_index
             = self.saved_char.conditions[quest_index][step_index][condition_index] or {}
     self.saved_char.conditions[quest_index][step_index][condition_index][lang]
             = condition_text
+end
+
+local SKILL_ID = {
+      [bs] =  70041    -- Metalworking
+    , [cl] =  70044    -- Tailoring
+    , [en] =  70045    -- Potency Improvement
+    , [al] =  70043    -- Solvent Expertise
+    , [pr] =  44650    -- Recipe Improvement
+    , [ww] =  70046    -- Woodworking
+    , [jw] = 103636    -- Engraver
+}
+function LibCraftText.SkillRank(crafting_type)
+    local ability_skill_id = SKILL_ID[crafting_type]
+    local keys = { GetSpecificSkillAbilityKeysByAbilityId(ability_skill_id) }
+    local skill_rank = GetSkillAbilityUpgradeInfo(unpack(keys))
+    return skill_rank
+end
+
+function LibCraftText.ScanSkillRanks()
+    local self = LibCraftText
+    for crafting_type,_ in ipairs(SKILL_ID) do
+        local skill_rank = self.SkillRank(crafting_type)
+        self.saved_char.skill_rank = self.saved_char.skill_rank or {}
+        self.saved_char.skill_rank[crafting_type] = skill_rank
+    end
 end
 
 -- GetJournalQuestInfo() returns:
