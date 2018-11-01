@@ -117,15 +117,29 @@ function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
     return found
 end
 
+local DE_UMLAUT = { ["ä"] = "a"
+                  , ["ö"] = "o"
+                  , ["ü"] = "u"
+                  }
+function LibCraftText.DeUmlaut(t)
+    tt = t
+    for k,v in pairs(DE_UMLAUT) do
+        tt = tt:gsub(k,v)
+    end
+    return tt
+end
                         -- Return the row with the longest matching field.
 function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ... )
-    local longest_match   = { name=nil, row=nil }
+    local longest_match      = { name=nil, row=nil }
+    local find_me_lower      = find_me:lower()
+    local find_me_deumlauted = LibCraftText.DeUmlaut(find_me_lower)
     for _,fieldname in pairs({ field_name, ... }) do
         if not fieldname then break end
         for _, row in pairs(rows) do
             if row.crafting_type == crafting_type then
                 local name = row[fieldname]
-                if name and find_me:find(name:lower()) then
+                if name and (  find_me_lower:find(name:lower())
+                             or find_me_deumlauted:find(LibCraftText.DeUmlaut(name)) ) then
                     if (not longest_match.name) or (longest_match.name:len() < name:len()) then
                         longest_match.name = name
                         longest_match.row  = row
