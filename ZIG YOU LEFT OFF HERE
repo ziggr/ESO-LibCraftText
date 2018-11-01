@@ -184,16 +184,16 @@ REs for quest text? Barely. But I _am_ curious. So I'm doing it.
 ---
 PTS 2018-11 Characters
 
-EP 10 hammer-meets-thumb
-DC  1   ziggr-alt-one   1A=2018-11-01
-AD  2   ziggr-alt-two   2A=2018-11-01
-EP  3   ziggr-alt-three 3A=2018-11-01
-DC  4   ziggr-alt-four  4A=2018-11-01
-AD  5   ziggr-alt-five  5A=2018-11-01
-EP  6 1 ziggr-alt-six   6A=2018-11-01
-DC  7 2 ziggr-alt-seven 7A=2018-11-01
-AD  8 1 ziggr-alt-eight 8A=2018-11-01
-EP  9 2 ziggr-alt-nine  9A=2018-11-01
+DC  1   ziggr-alt-one       1A=2018-11-01
+AD  2   ziggr-alt-two       2A=2018-11-01
+EP  3   ziggr-alt-three     3A=2018-11-01
+DC  4   ziggr-alt-four      4A=2018-11-01
+AD  5   ziggr-alt-five      5A=2018-11-01
+EP  6 1 ziggr-alt-six       6A=2018-11-01
+DC  7 2 ziggr-alt-seven     7A=2018-11-01
+AD  8 1 ziggr-alt-eight     8A=2018-11-01
+EP  9 2 ziggr-alt-nine      9A=2018-11-01
+EP 10 6 hammer-meets-thumb 10A=2018-11-01
 
 Faction PR Recipes
 DC 12.4..
