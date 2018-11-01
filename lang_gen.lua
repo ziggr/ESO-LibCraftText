@@ -16,6 +16,25 @@ EN_KEYS = {}            -- key   = "Blacksmithing Writ"
 
 LANG_LIST = { "en", "de", "fr", "es", "it", "ru", "ja" }
 
+                        -- For less typing
+local bs = CRAFTING_TYPE_BLACKSMITHING   or 1
+local cl = CRAFTING_TYPE_CLOTHIER        or 2
+local en = CRAFTING_TYPE_ENCHANTING      or 3
+local al = CRAFTING_TYPE_ALCHEMY         or 4
+local pr = CRAFTING_TYPE_PROVISIONING    or 5
+local ww = CRAFTING_TYPE_WOODWORKING     or 6
+local jw = CRAFTING_TYPE_JEWELRYCRAFTING or 7
+
+CRAFTING_TYPE_ABBREV = {
+      [bs] = "BS"
+    , [cl] = "CL"
+    , [en] = "EN"
+    , [al] = "AL"
+    , [pr] = "PR"
+    , [ww] = "WW"
+    , [jw] = "JW"
+}
+
 function Warn(msg)
     print(msg.."\n")
 end
@@ -32,6 +51,7 @@ CHAR = {
 , ["ziggr-alt-nine"    ]={ name="ziggr-alt-nine"    , faction="EP", rank={ AL=8, BS= 9, CL= 9, EN= 9, JW=5, PR=2, WW= 9 }}
 , ["hammer-meets-thumb"]={ name="hammer-meets-thumb", faction="EP", rank={ AL=8, BS=10, CL=10, EN=10, JW=5, PR=6, WW=10 }}
 }
+
 
 -- Print contents of `tbl`, with indentation.
 -- `indent` sets the initial level of indentation.
@@ -78,28 +98,58 @@ function Decaret(text)
     return text:gsub("%^.*","")
 end
 
--- Import ESO SavedVars file
-function ImportSavedVars()
-    local quest_list = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].quests
-    for qi, lang_table in pairs(quest_list) do
-        ImportSavedVarLangTable(lang_table)
-    end
+local DAILY_QUEST_TITLE_TO_CRAFTING_TYPE =
+{
+      ["Blacksmith Writ"        ] = bs
+    , ["Clothier Writ"          ] = cl
+    , ["Woodworker Writ"        ] = ww
+    , ["Enchanter Writ"         ] = en
+    , ["Provisioner Writ"       ] = pr
+    , ["Alchemist Writ"         ] = al
+    , ["Jewelry Crafting Writ"  ] = jw
+}
+function ImportSavedChars()
+    for char_name, saved_chars in pairs(LibCraftTextVars.Default["@ziggr"]) do
+        local alliance    = saved_chars.alliance or "XX"
+        local skill_ranks = saved_chars.alliance
 
-    local steps = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].steps
-    for qi, step_list in pairs(steps) do
-        for si, lang_table in pairs(step_list) do
+
+    end
+end
+
+function ImportQuests(qsc_container)
+    local quest_list = qsc_container.quests
+    if quest_list then
+        for qi, lang_table in pairs(quest_list) do
             ImportSavedVarLangTable(lang_table)
         end
     end
 
-    local conditions = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].conditions
-    for qi, step_list in pairs(conditions) do
-        for si, cond_list in pairs(step_list) do
-            for ci, lang_table in pairs(cond_list) do
+    local steps = qsc_container.steps
+    if steps then
+        for qi, step_list in pairs(steps) do
+            for si, lang_table in pairs(step_list) do
                 ImportSavedVarLangTable(lang_table)
             end
         end
     end
+
+    local conditions = qsc_container.conditions
+    if conditions then
+        for qi, step_list in pairs(conditions) do
+            for si, cond_list in pairs(step_list) do
+                for ci, lang_table in pairs(cond_list) do
+                    ImportSavedVarLangTable(lang_table)
+                end
+            end
+        end
+    end
+end
+
+-- Import ESO SavedVars file
+function ImportSavedVars()
+    local qsc_container = LibCraftTextVars.Default["@ziggr"]["$AccountWide"]
+    ImportQuests(qsc_container)
 
     local materials = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].materials
     for weight, lang_list in pairs(materials) do
@@ -219,22 +269,19 @@ function ImportSavedVars()
     end
 
     local items = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].items_from_stations
-    local ct_abbrev = { [1] = "BS"
-                      , [2] = "CL"
-                      , [6] = "WW"
-                      , [7] = "JW"
-                      }
-    for crafting_type, pattern_list in pairs(items) do
-        for pattern_index, lang_table in pairs(pattern_list) do
-            local key = string.format( "$ITEM_%s_%02d"
-                                     , ct_abbrev[crafting_type]
-                                     , pattern_index
-                                     )
-            DB[key] = DB[key] or {}
-            local entry = DB[key]
-            entry.key = key
-            for lang,text in pairs(lang_table) do
-                entry[lang] = Decaret(text)
+    if items then
+        for crafting_type, pattern_list in pairs(items) do
+            for pattern_index, lang_table in pairs(pattern_list) do
+                local key = string.format( "$ITEM_%s_%02d"
+                                         , CRAFTING_TYPE_ABBREV[crafting_type]
+                                         , pattern_index
+                                         )
+                DB[key] = DB[key] or {}
+                local entry = DB[key]
+                entry.key = key
+                for lang,text in pairs(lang_table) do
+                    entry[lang] = Decaret(text)
+                end
             end
         end
     end
@@ -453,6 +500,7 @@ end
 ImportDB()          -- Original database
 ImportKeys()        -- Force keys/EN into existence, mostly to catch new strings.
 ImportSavedVars()   -- Read anything recently scraped from ESO via `/lct scan`.
+ImportSavedChars()  -- Read per-char quests
 ExportDB()          -- Sequence results into a stable output order.
 WriteDB()           -- Write to output file.
 WriteLangs()        -- Write lang/nn.lua translation files.
