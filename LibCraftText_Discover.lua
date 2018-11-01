@@ -39,6 +39,12 @@ function LibCraftText.OnAddOnLoaded(event, addonName)
                             , nil
                             , self.default
                             )
+        self.saved_char = ZO_SavedVars:New(
+                              "LibCraftTextVars"
+                            , self.saved_var_version
+                            , nil
+                            , self.default
+                            )
     end
 end
 
@@ -54,10 +60,11 @@ function LibCraftText.RegisterSlashCommands()
                                 , function(arg) LibCraftText.SlashCommand(arg) end
                                 , "Scan quest journal for craft text")
 
-        local cc = { { "scan"   , "Scan quest journal for crafting quest text" }
-                   , { "forget" , "Forget all discovered data"                 }
-                   , { "lang"   , "Switch to 'next' language"                  }
-                   , { "en"     , "Switch to English language"                 }
+        local cc = { { "scan"       , "Scan quest journal for crafting quest text" }
+                   , { "forget"     , "Forget all discovered data"                 }
+                   , { "lang"       , "Switch to 'next' language"                  }
+                   , { "en"         , "Switch to English language"                 }
+                   , { "discover"   , "Extract material and item names"            }
                    }
         for _,c in ipairs(cc) do
             local sub = cmd:RegisterSubCommand()
@@ -74,6 +81,10 @@ function LibCraftText.SlashCommand(args)
     if (not args) or args:lower() == "scan" then
         Info("Scanning...")
         LibCraftText.Scan()
+    elseif args:lower() == "discover" then
+        Info("Discovering...")
+        LibCraftText.Discover()
+        Info("Ready for you to interact with 4 equipment crafting stations.")
     elseif args:lower() == "forget" then
         LibCraftText.Forget()
         Info("Forgotten.")
@@ -89,6 +100,9 @@ end
 
 function LibCraftText.Scan()
     LibCraftText.ScanQuestJournal()
+end
+
+function LibCraftText.Discover()
     LibCraftText.DiscoverMaterials()
     LibCraftText.DiscoverItems()
     LibCraftText.DiscoverQualities()
@@ -99,16 +113,22 @@ function LibCraftText.Scan()
 end
 
 function LibCraftText.Forget()
-    LibCraftText.saved_var.quests               = nil
-    LibCraftText.saved_var.steps                = nil
-    LibCraftText.saved_var.conditions           = nil
-    LibCraftText.saved_var.materials            = nil
-    LibCraftText.saved_var.items                = nil
-    LibCraftText.saved_var.qualities            = nil
-    LibCraftText.saved_var.traits               = nil
-    LibCraftText.saved_var.sets                 = nil
-    LibCraftText.saved_var.motifs               = nil
-    LibCraftText.saved_var.items_from_stations  = nil
+    local fields = {
+                     "quests"
+                   , "steps"
+                   , "conditions"
+                   , "materials"
+                   , "items"
+                   , "qualities"
+                   , "traits"
+                   , "sets"
+                   , "motifs"
+                   , "items_from_stations"
+                   }
+    for _,field in ipairs(fields) do
+        LibCraftText.saved_var [field] = nil
+        LibCraftText.saved_char[field] = nil
+    end
 end
 
 local function find_i(want, list)
@@ -146,12 +166,12 @@ function LibCraftText.ScanQuestJournal()
     local lang         = self.CurrLang()
     Info("lang: "..tostring(lang))
 
-    self.saved_var.quests = self.saved_var.quests or {}
+    self.saved_char.quests = self.saved_char.quests or {}
     for qi = 1, MAX_JOURNAL_QUESTS do
         local qinfo = self.ScanQuest(qi)
         if qinfo then
-            self.saved_var.quests[qi] = self.saved_var.quests[qi] or {}
-            self.saved_var.quests[qi][lang] = qinfo
+            self.saved_char.quests[qi] = self.saved_char.quests[qi] or {}
+            self.saved_char.quests[qi][lang] = qinfo
             Info("qi:"..tostring(qi).." "..tostring(qinfo))
         end
     end
@@ -198,11 +218,11 @@ function LibCraftText.RecordStepText(quest_index, step_index, step_text)
     local self = LibCraftText
     local lang = self.CurrLang()
     if not (step_text and step_text ~= "") then return end
-    self.saved_var.steps = self.saved_var.steps or {}
-    self.saved_var.steps[quest_index] = self.saved_var.steps[quest_index] or {}
-    self.saved_var.steps[quest_index][step_index]
-                          = self.saved_var.steps[quest_index][step_index] or {}
-    self.saved_var.steps[quest_index][step_index][lang] = step_text
+    self.saved_char.steps = self.saved_char.steps or {}
+    self.saved_char.steps[quest_index] = self.saved_char.steps[quest_index] or {}
+    self.saved_char.steps[quest_index][step_index]
+                          = self.saved_char.steps[quest_index][step_index] or {}
+    self.saved_char.steps[quest_index][step_index][lang] = step_text
 end
 
 function LibCraftText.RecordConditionText( quest_index, step_index
@@ -210,14 +230,14 @@ function LibCraftText.RecordConditionText( quest_index, step_index
     local self = LibCraftText
     local lang = self.CurrLang()
     if not (condition_text and condition_text ~= "") then return end
-    self.saved_var.conditions = self.saved_var.conditions or {}
-    self.saved_var.conditions[quest_index]
-            = self.saved_var.conditions[quest_index] or {}
-    self.saved_var.conditions[quest_index][step_index]
-            = self.saved_var.conditions[quest_index][step_index] or {}
-    self.saved_var.conditions[quest_index][step_index][condition_index]
-            = self.saved_var.conditions[quest_index][step_index][condition_index] or {}
-    self.saved_var.conditions[quest_index][step_index][condition_index][lang]
+    self.saved_char.conditions = self.saved_char.conditions or {}
+    self.saved_char.conditions[quest_index]
+            = self.saved_char.conditions[quest_index] or {}
+    self.saved_char.conditions[quest_index][step_index]
+            = self.saved_char.conditions[quest_index][step_index] or {}
+    self.saved_char.conditions[quest_index][step_index][condition_index]
+            = self.saved_char.conditions[quest_index][step_index][condition_index] or {}
+    self.saved_char.conditions[quest_index][step_index][condition_index][lang]
             = condition_text
 end
 
