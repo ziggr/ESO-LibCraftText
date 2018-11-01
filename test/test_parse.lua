@@ -117,6 +117,18 @@ function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
     return found
 end
 
+-- If the supplied condition requests that we craft a potion or poison at
+-- an AL station, return the requested item and level.
+--
+-- If the supplied condition requests something else, such as gear,
+-- or acquire some alchemy or enchanting material, return nil.
+--
+function LibCraftText.ParseDailyConditionCraftAL(cond_text)
+    return "Essence of Stamina"
+end
+
+
+
 local DE_UMLAUT = { ["ä"] = "a"
                   , ["ö"] = "o"
                   , ["ü"] = "u"
@@ -323,26 +335,6 @@ end
 function TestDailyCondition.TestEN()
     local fodder = {
       { {
-          ["en"] = "Craft Essence of Stamina: 0 / 1"
-        , ["de"] = "Stellt Essenzen der Ausdauer her: 0/1"
-        , ["fr"] = "Fabriquez une essence de Vigueur : 0/1"
-        , ["es"] = "Prepara una esencia de aguante: 0/1"
-        , ["ja"] = "スタミナのエキスを生産する: 0 / 1"
-        }
-      , nil  -- NEEDS TO CHANGE TO potion/poison, level, effect list
-      }
-    , { {
-          ["en"] = "Acquire Mudcrab Chitin: 3 / 3"
-        , ["de"] = "Besorgt etwas Schlammkrabbenchitin: 3/3"
-        , ["fr"] = "Acquérez une chitine de vasard : 3/3"
-        , ["es"] = "Adquiere quitina de cangrejo del barro: 3/3"
-        , ["it"] = "TRACKER GOAL TEXT: 3 / 3"
-        , ["ru"] = "Раздобыть — Хитин грязевого краба: 3 / 3"
-        , ["ja"] = "マッドクラブキチンを手に入れる: 3 / 3"
-        }
-      , nil  -- NEEDS TO CHANGE TO potion/poison, level, effect list
-      }
-    , { {
           ["en"]  = "Craft Superb Glyph of Stamina With Ta: 0 / 1"
         , ["de"]  = "Stellt mit einer Ta-Rune eine prächtige Glyphe der Ausdauer her: 0/1"
         , ["fr"]  = "Fabriquez un glyphe de Vigueur superbe avec Ta : 0/1"
