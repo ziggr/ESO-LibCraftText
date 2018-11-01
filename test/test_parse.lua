@@ -42,13 +42,24 @@ end
 -- DAILY crafting conditions
 
 LibCraftText.RE_CONDITION_DAILY = {
-    ["en"] = "Craft Normal (.*): 0 / 1"
-,   ["de"] = "Stellt normale (.*) her: 0/1"
-,   ["fr"] = "Fabriquez [uneds]+ (.*) en (.*) norma[lesaux]* : 0/1"
-,   ["ru"] = "Craft Normal (.*): 0 / 1"
-,   ["es"] = "Fabrica [unaos]+ (.*) de (.*) normal[es]*: 0/1"
-,   ["it"] = "Craft (.*): 0 / 1"
-,   ["ja"] = "(.*)の(.*)%(ノーマル%)を生産する: 0 / 1"
+    ["en"] = { "Craft Normal (.*): 0 / 1"
+             , "Craft a (.*): 0 / 1"
+             }
+,   ["de"] = { "Stellt normale (.*) her: 0/1"
+             , "Stellt ein[en]* (.*) her: 0/1"
+             }
+,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norma[lesaux]* : 0/1"
+             , "Fabriquez un (.*) en (.*): 0/1"
+             }
+,   ["ru"] = { "Craft Normal (.*): 0 / 1"
+             , "Craft a (.*): 0 / 1"
+             }
+,   ["es"] = { "Fabrica [unaos]+ (.*) de (.*) normal[es]*: 0/1"
+             , "Fabrica un (.*) de (.*): 0/1"
+             }
+,   ["ja"] = { "(.*)の(.*)%(ノーマル%)を生産する: 0 / 1"
+             , "(.*)の(.*)を作る: 0 / 1"
+             }
 }
 
 -- If the supplied condition requests that we craft a weapon, armor, or jewelry
@@ -60,9 +71,9 @@ LibCraftText.RE_CONDITION_DAILY = {
 -- return nil.
 --
 function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
-    local self  = LibCraftText
-    local lang  = self.CurrLang()
-    local re    = self.RE_CONDITION_DAILY[lang]
+    local self      = LibCraftText
+    local lang      = self.CurrLang()
+    local re_list   = self.RE_CONDITION_DAILY[lang]
 
                         -- Some languages put material (adjective) before
                         -- item (noun). Others put the material after.
@@ -76,30 +87,43 @@ function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
                         --
                         -- Smush g1 and g2 into a single string that we can
                         -- search.
-    local _,_,g1,g2 = string.find(cond_text, re)
-    local matitem = g1
-    if g2 then matitem = matitem .. "/" .. g2 end
--- print(string.format("matitem:'%s'",tostring(matitem)))
-    if not matitem then return nil end
+    local matitem = nil
+    for _,re in ipairs(re_list) do
+        local _,_,g1,g2 = string.find(cond_text, re)
+        matitem = g1
+        if g2 then matitem = matitem .. "/" .. g2 end
+        if matitem then break end
+    end
+    if not matitem then
+        -- print(string.format( "matitem:'%s' cond_text:'%s"
+        --                    , tostring(matitem)
+        --                    , ,tostring(cond_text)))
+        return nil
+    end
     matitem = matitem:lower()
 
     local found    = {}
-    found.item     = self.LongestMatch(matitem, self.ITEM,     "name", crafting_type)
+    found.item     = self.LongestMatch(matitem, self.ITEM,     "name", crafting_type, "master_name")
     found.material = self.LongestMatch(matitem, self.MATERIAL, "name", crafting_type)
+    if not (found.item or found.material) then return nil end
     return found
 end
 
                         -- Return the row with the longest matching field.
-function LibCraftText.LongestMatch(find_me, rows, field_name, crafting_type)
+function LibCraftText.LongestMatch(find_me, rows, field_name, crafting_type, optional_field_name_2)
     local longest_match   = { name=nil, row=nil }
-    local field_name      = "name"
-    for _, row in pairs(rows) do
-        if row.crafting_type == crafting_type then
-            local name = row[field_name]
-            if find_me:find(name:lower()) then
-                if (not longest_match.name) or (longest_match.name:len() < name:len()) then
-                    longest_match.name = name
-                    longest_match.row  = row
+    for _,fieldname in pairs({ field_name, optional_field_name_2 }) do
+        if not fieldname then break end
+        for _, row in pairs(rows) do
+            if row.crafting_type == crafting_type then
+                local name = row[fieldname]
+                if find_me:find(name:lower()) then
+                    if (not longest_match.name) or (longest_match.name:len() < name:len()) then
+                        longest_match.name = name
+                        longest_match.row  = row
+-- print(string.format("yep   find_me:'%s'  row:'%s'", find_me, name:lower()))
+                    end
+-- else print(string.format("nope  find_me:'%s'  row:'%s'", find_me, name:lower()))
                 end
             end
         end
@@ -325,6 +349,39 @@ function TestDailyCondition.TestEN()
     end
 end
 
+function TestDailyCondition.TestJW()
+    local fodder = {
+      { {
+          ["en"] = "Craft a Platinum Ring: 0 / 1"
+        , ["de"] = "Stellt einen Platinring her: 0/1"
+        , ["fr"] = "Fabriquez un anneau en platine : 0/1"
+        , ["es"] = "Fabrica un anillo de platino: 0/1"
+        , ["ja"] = "プラチナの指輪を作る: 0 / 1"
+        }
+      , LCT.MATERIAL.PLATINUM
+      , LCT.ITEM.RING
+      }
+    , { {
+          ["en"] = "Craft a Platinum Necklace: 0 / 1"
+        , ["de"] = "Stellt eine Platinhalskette her: 0/1"
+        , ["fr"] = "Fabriquez un collier en platine : 0/1"
+        , ["es"] = "Fabrica un collar de platino: 0/1"
+        , ["ja"] = "プラチナのネックレスを作る: 0 / 1"
+        }
+      , LCT.MATERIAL.PLATINUM
+      , LCT.ITEM.NECKLACE
+      }
+    }
+    for _,f in ipairs(fodder) do
+        local input  = f[1][LibCraftText.CurrLang()]
+        if not input then return end
+        local expect = { material = f[2]
+                       , item     = f[3]
+                       }
+        local got    = LibCraftText.ParseDailyConditionGear(jw, input)
+        luaunit.assertEquals(got, expect)
+    end
+end
 
 
 

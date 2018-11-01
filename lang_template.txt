@@ -55,7 +55,10 @@ local trait_jewl    = LibCraftText.TRAIT_SET_ID.JEWELRY
 --                  value in all languages. FR French heavy head piece
 --                  is "heaume" most of the time, but "casque" in master writs.
 --                  There are several examples of this mismatch, scattered
---                  throughout different languages.
+--                  throughout different languages. Or the particularly evil
+--                  JP Japanese ring, which uses "リング" (phonetic "ringu")
+--                  at the crafting station, but kanji "指輪" (yubi-wa, aka
+--                  finger-ring) within daily crafting request condition text.
 --
 -- pattern_index    crafting index passed as an argument to ZOS API functions
 --                  like GetSmithingPatternInfo() and others.
@@ -107,8 +110,8 @@ LibCraftText.ITEM = {
 , ["RESTO_STAFF"    ] = { name=$ITEM_WW_06            , master_name=$MASTER_ITEM_71             , pattern_index= 6, master_writ1=71, crafting_type=ww, mat_set_id=mat_wood, trait_set_id=trait_weap } -- "restoration staff"
 , ["SHIELD"         ] = { name=$ITEM_WW_02            , master_name=$MASTER_ITEM_65             , pattern_index= 2, master_writ1=65, crafting_type=ww, mat_set_id=mat_wood, trait_set_id=trait_armr } -- "shield"
 
-, ["NECKLACE"       ] = { name=$ITEM_JW_02            , master_name=$MASTER_ITEM_18             , pattern_index= 2, master_writ1=18, crafting_type=js, mat_set_id=mat_jewl, trait_set_id=trait_jewl } -- "necklace"
-, ["RING"           ] = { name=$ITEM_JW_01            , master_name=$MASTER_ITEM_24             , pattern_index= 1, master_writ1=24, crafting_type=js, mat_set_id=mat_jewl, trait_set_id=trait_jewl } -- "ring"
+, ["NECKLACE"       ] = { name=$ITEM_JW_02            , master_name=$MASTER_ITEM_18             , pattern_index= 2, master_writ1=18, crafting_type=jw, mat_set_id=mat_jewl, trait_set_id=trait_jewl } -- "necklace"
+, ["RING"           ] = { name=$ITEM_JW_01            , master_name=$MASTER_ITEM_24             , pattern_index= 1, master_writ1=24, crafting_type=jw, mat_set_id=mat_jewl, trait_set_id=trait_jewl } -- "ring"
 }
 
 
