@@ -77,15 +77,15 @@ LibCraftText.ITEM = {
 , ["H1_SWORD"       ] = { name="schwert"              , master_name="schwert"                   , pattern_index= 3, master_writ1=59, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_weap } -- "sword"
 , ["H2_BATTLE_AXE"  ] = { name="streitaxt"            , master_name="streitaxt"                 , pattern_index= 4, master_writ1=68, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_weap } -- "battle Axe"
 , ["H2_MAUL"        ] = { name="streitkolben"         , master_name="streitkolben"              , pattern_index= 5, master_writ1=69, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_weap } -- "maul"
-, ["H2_GREATSWORD"  ] = { name="bidenhänder"         , master_name="bidenhänder"              , pattern_index= 6, master_writ1=67, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_weap } -- "greatsword"
+, ["H2_GREATSWORD"  ] = { name="bidenhänder"          , master_name="bidenhänder"               , pattern_index= 6, master_writ1=67, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_weap } -- "greatsword"
 , ["DAGGER"         ] = { name="dolch"                , master_name="dolch"                     , pattern_index= 7, master_writ1=62, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_weap } -- "dagger"
-, ["CUIRASS"        ] = { name="kürass"              , master_name="kürass"                   , pattern_index= 8, master_writ1=46, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_armr } -- "cuirass"
+, ["CUIRASS"        ] = { name="kürass"               , master_name="kürass"                    , pattern_index= 8, master_writ1=46, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_armr } -- "cuirass"
 , ["SABATONS"       ] = { name="panzerschuhe"         , master_name="panzerschuhe"              , pattern_index= 9, master_writ1=50, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_armr } -- "sabatons"
 , ["GAUNTLETS"      ] = { name="hentzen"              , master_name="hentzen"                   , pattern_index=10, master_writ1=52, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_armr } -- "gauntlets"
 , ["HELM"           ] = { name="haube"                , master_name="haube"                     , pattern_index=11, master_writ1=44, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_armr } -- "helm"
 , ["GREAVES"        ] = { name="beinschienen"         , master_name="beinschienen"              , pattern_index=12, master_writ1=49, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_armr } -- "greaves"
 , ["PAULDRON"       ] = { name="schulterschutz"       , master_name="schulterschutz"            , pattern_index=13, master_writ1=47, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_armr } -- "pauldron"
-, ["GIRDLE"         ] = { name="gürtel"              , master_name="gürtel"                   , pattern_index=14, master_writ1=48, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_armr } -- "girdle"
+, ["GIRDLE"         ] = { name="gürtel"               , master_name="gürtel"                    , pattern_index=14, master_writ1=48, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_armr } -- "girdle"
 
 , ["ROBE"           ] = { name="robe"                 , master_name="robe"                      , pattern_index= 1, master_writ1=28, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "robe"
 , ["JERKIN"         ] = { name="jacke"                , master_name="jacke"                     , pattern_index= 2, master_writ1=75, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "jerkin"
@@ -94,7 +94,7 @@ LibCraftText.ITEM = {
 , ["HAT"            ] = { name="hut"                  , master_name="hut"                       , pattern_index= 5, master_writ1=26, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "hat"
 , ["BREECHES"       ] = { name="beinkleider"          , master_name="beinkleider"               , pattern_index= 6, master_writ1=31, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "breeches"
 , ["EPAULETS"       ] = { name="schulterpolster"      , master_name="schulterpolster"           , pattern_index= 7, master_writ1=29, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "epaulets"
-, ["SASH"           ] = { name="schärpe"             , master_name="schärpe"                  , pattern_index= 8, master_writ1=30, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "sash"
+, ["SASH"           ] = { name="schärpe"              , master_name="schärpe"                   , pattern_index= 8, master_writ1=30, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "sash"
 , ["JACK"           ] = { name="wams"                 , master_name="wams"                      , pattern_index= 9, master_writ1=37, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "jack"
 , ["BOOTS"          ] = { name="stiefel"              , master_name="stiefel"                   , pattern_index=10, master_writ1=41, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "boots"
 , ["BRACERS"        ] = { name="armschienen"          , master_name="armschienen"               , pattern_index=11, master_writ1=43, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "bracers"
@@ -165,7 +165,7 @@ LibCraftText.MATERIAL = {
 , ["FELL"          ] = { name="Wildleder"         , level_index= 5, material_index=23, master_writ2=166, crafting_type=cl, mat_set_id=mat_med  } -- "fell"
 , ["BRIGANDINE"    ] = { name="Rauleder"          , level_index= 6, material_index=26, master_writ2=170, crafting_type=cl, mat_set_id=mat_med  } -- "brigandine"
 , ["IRONHIDE"      ] = { name="Eisenleder"        , level_index= 7, material_index=29, master_writ2=174, crafting_type=cl, mat_set_id=mat_med  } -- "ironhide"
-, ["SUPERB"        ] = { name="prächtiges "      , level_index= 8, material_index=32, master_writ2=131, crafting_type=cl, mat_set_id=mat_med  } -- "superb"
+, ["SUPERB"        ] = { name="prächtiges "       , level_index= 8, material_index=32, master_writ2=131, crafting_type=cl, mat_set_id=mat_med  } -- "superb"
 , ["SHADOWHIDE"    ] = { name="Schattenleder"     , level_index= 9, material_index=34, master_writ2=132, crafting_type=cl, mat_set_id=mat_med  } -- "shadowhide"
 , ["RUBEDO_LEATHER"] = { name="Rubedoleder"       , level_index=10, material_index=40, master_writ2=190, crafting_type=cl, mat_set_id=mat_med  } -- "Rubedo Leather"
 
@@ -209,23 +209,23 @@ LibCraftText.DAILY_QUEST_TITLES = {
                         -- light vs. medium armor)
                         --
 LibCraftText.MASTER_QUEST_TITLES = {
-    [bs] = { "Eine meisterhafte Rüstung"         -- "A Masterful Plate"
+    [bs] = { "Eine meisterhafte Rüstung"          -- "A Masterful Plate"
            , "Eine meisterhafte Waffe"          } -- "A Masterful Weapon"
 ,   [cl] = { "Ein meisterhaftes Gewand"           -- "Masterful Tailoring"
            , "Meisterhafte Lederwaren"          } -- "Masterful Leatherwear"
 ,   [en] = { "Eine meisterhafte Glyphe"         } -- "A Masterful Glyph"
-,   [al] = { "Ein meisterhaftes Gebräu"        } -- "A Masterful Concoction"
+,   [al] = { "Ein meisterhaftes Gebräu"         } -- "A Masterful Concoction"
 ,   [pr] = { "Ein meisterhaftes Mahl"           } -- "A Masterful Feast"
 ,   [ww] = { "Ein meisterhafter Schild"           -- "A Masterful Shield"
            , "Eine meisterhafte Waffe"          } -- "A Masterful Weapon"
-,   [jw] = { "Ein meisterhaftes Schmuckstück"  } -- "Masterful Jewelry"
+,   [jw] = { "Ein meisterhaftes Schmuckstück"   } -- "Masterful Jewelry"
 }
 
 
 -- Random Unsorted Stuff -----------------------------------------------------
 
 LibCraftText.MASTER_LABELS = {
-    ["quality"] =  "Qualität"                       -- "Quality"
+    ["quality"] =  "Qualität"                        -- "Quality"
 ,   ["set"    ] =  "Set"                             -- "Set"
 ,   ["style"  ] =  "Stil"                            -- "Style"
 ,   ["trait"  ] =  "Eigenschaft"                     -- "Trait"
@@ -250,8 +250,8 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 LibCraftText.QUALITIES = {
     [1] = "Normal"                   -- "Normal"
 ,   [2] = "Erlesen"                  -- "Fine"
-,   [3] = "Überlegen"               -- "Superior"
+,   [3] = "Überlegen"                -- "Superior"
 ,   [4] = "Episch"                   -- "Epic"
-,   [5] = "Legendär"                -- "Legendary"
+,   [5] = "Legendär"                 -- "Legendary"
 }
 

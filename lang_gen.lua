@@ -344,6 +344,19 @@ local function escape_re(t)
     return t:gsub("%%","%%%%")
 end
 
+-- unicode strlen(). Sort of. Works well enough for our UTF-8 encoded text.
+local function ustrlen(str)
+    local _, count = str:gsub( "[^\128-\193]", "")
+    return count
+end
+
+local function pad(want_len, str)
+    local str_len = ustrlen(str)
+    local pad_len = math.max(0,want_len - str_len)
+    local pad = string.format("%"..pad_len.."s","")
+    return str .. pad
+end
+
 -- Replace all $XXX with their
 function ReplaceKeys(template_line, lang)
     local pos_delim = template_line:find("%$")
@@ -373,7 +386,7 @@ function ReplaceKeys(template_line, lang)
         val = escape_re(val)    -- Some lang strings are REs with % escapes. Retain them.
         local key = k
         local key_padded = string.format("%-"..tostring(repl_len).."s", key)
-        local val_padded = string.format("%-"..tostring(repl_len).."s", '"'..val..'"')
+        local val_padded = pad(repl_len, '"'..val..'"')
         out_line, ct = out_line:gsub(key_padded, val_padded)
 
                         -- SURPRISE! Lua strings are BYTES not CHARS! This

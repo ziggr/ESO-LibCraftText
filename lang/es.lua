@@ -87,8 +87,8 @@ LibCraftText.ITEM = {
 , ["PAULDRON"       ] = { name="espaldarones"         , master_name="Espaldarones"              , pattern_index=13, master_writ1=47, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_armr } -- "pauldron"
 , ["GIRDLE"         ] = { name="Faja"                 , master_name="Faja"                      , pattern_index=14, master_writ1=48, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_armr } -- "girdle"
 
-, ["ROBE"           ] = { name="Túnica"              , master_name="Túnica"                   , pattern_index= 1, master_writ1=28, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "robe"
-, ["JERKIN"         ] = { name="Jubón"               , master_name="Jubón"                    , pattern_index= 2, master_writ1=75, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "jerkin"
+, ["ROBE"           ] = { name="Túnica"               , master_name="Túnica"                    , pattern_index= 1, master_writ1=28, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "robe"
+, ["JERKIN"         ] = { name="Jubón"                , master_name="Jubón"                     , pattern_index= 2, master_writ1=75, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "jerkin"
 , ["SHOES"          ] = { name="Zapatos"              , master_name="Zapatos"                   , pattern_index= 3, master_writ1=32, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "shoes"
 , ["GLOVES"         ] = { name="guantes"              , master_name="Guantes"                   , pattern_index= 4, master_writ1=34, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "gloves"
 , ["HAT"            ] = { name="Capucha"              , master_name="Capucha"                   , pattern_index= 5, master_writ1=26, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "hat"
@@ -101,12 +101,12 @@ LibCraftText.ITEM = {
 , ["HELMET"         ] = { name="Casco"                , master_name="Casco"                     , pattern_index=12, master_writ1=35, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "helmet"
 , ["GUARDS"         ] = { name="musleras"             , master_name="Musleras"                  , pattern_index=13, master_writ1=40, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "guards"
 , ["ARM_COPS"       ] = { name="Hombreras"            , master_name="Hombreras"                 , pattern_index=14, master_writ1=38, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "arm cops"
-, ["BELT"           ] = { name="Cinturón"            , master_name="Cinturón"                 , pattern_index=15, master_writ1=39, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "belt"
+, ["BELT"           ] = { name="Cinturón"             , master_name="Cinturón"                  , pattern_index=15, master_writ1=39, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "belt"
 
 , ["BOW"            ] = { name="Arco"                 , master_name="Arco"                      , pattern_index= 1, master_writ1=70, crafting_type=ww, mat_set_id=mat_wood, trait_set_id=trait_weap } -- "bow"
 , ["INFERNO_STAFF"  ] = { name="Vara infernal"        , master_name="Vara infernal"             , pattern_index= 3, master_writ1=72, crafting_type=ww, mat_set_id=mat_wood, trait_set_id=trait_weap } -- "inferno staff"
 , ["ICE_STAFF"      ] = { name="vara glaciar"         , master_name="Vara glaciar"              , pattern_index= 4, master_writ1=73, crafting_type=ww, mat_set_id=mat_wood, trait_set_id=trait_weap } -- "ice staff"
-, ["LIGHTNING_STAFF"] = { name="vara eléctrica"      , master_name="Vara eléctrica"           , pattern_index= 5, master_writ1=74, crafting_type=ww, mat_set_id=mat_wood, trait_set_id=trait_weap } -- "lightning staff"
+, ["LIGHTNING_STAFF"] = { name="vara eléctrica"       , master_name="Vara eléctrica"            , pattern_index= 5, master_writ1=74, crafting_type=ww, mat_set_id=mat_wood, trait_set_id=trait_weap } -- "lightning staff"
 , ["RESTO_STAFF"    ] = { name="vara restauradora"    , master_name="Vara restauradora"         , pattern_index= 6, master_writ1=71, crafting_type=ww, mat_set_id=mat_wood, trait_set_id=trait_weap } -- "restoration staff"
 , ["SHIELD"         ] = { name="Escudo"               , master_name="Escudo"                    , pattern_index= 2, master_writ1=65, crafting_type=ww, mat_set_id=mat_wood, trait_set_id=trait_armr } -- "shield"
 
@@ -140,7 +140,7 @@ LibCraftText.MATERIAL = {
 , ["STEEL"         ] = { name="acero"             , level_index= 2, material_index= 8, master_writ2=  9, crafting_type=bs, mat_set_id=mat_hvy   } -- "steel"
 , ["ORICHALC"      ] = { name="oricalco"          , level_index= 3, material_index=13, master_writ2=156, crafting_type=bs, mat_set_id=mat_hvy   } -- "orichalc"
 , ["DWARVEN"       ] = { name="acero enano"       , level_index= 4, material_index=18, master_writ2=160, crafting_type=bs, mat_set_id=mat_hvy   } -- "dwarven"
-, ["EBON"          ] = { name="ébano"            , level_index= 5, material_index=23, master_writ2=164, crafting_type=bs, mat_set_id=mat_hvy   } -- "ebon"
+, ["EBON"          ] = { name="ébano"             , level_index= 5, material_index=23, master_writ2=164, crafting_type=bs, mat_set_id=mat_hvy   } -- "ebon"
 , ["CALCINIUM"     ] = { name="calcinio"          , level_index= 6, material_index=26, master_writ2=168, crafting_type=bs, mat_set_id=mat_hvy   } -- "calcinium"
 , ["GALATITE"      ] = { name="galatita"          , level_index= 7, material_index=29, master_writ2=172, crafting_type=bs, mat_set_id=mat_hvy   } -- "galatite"
 , ["QUICKSILVER"   ] = { name="azogue"            , level_index= 8, material_index=32, master_writ2=176, crafting_type=bs, mat_set_id=mat_hvy   } -- "quicksilver"
@@ -149,9 +149,9 @@ LibCraftText.MATERIAL = {
 
 , ["HOMESPUN"      ] = { name="tejido artesanal"    , level_index= 1, material_index= 1, master_writ2=  5, crafting_type=cl, mat_set_id=mat_lgt  } -- "homespun"
 , ["LINEN"         ] = { name="lino"              , level_index= 2, material_index= 8, master_writ2= 45, crafting_type=cl, mat_set_id=mat_lgt  } -- "linen"
-, ["COTTON"        ] = { name="algodón"          , level_index= 3, material_index=13, master_writ2= 47, crafting_type=cl, mat_set_id=mat_lgt  } -- "cotton"
-, ["SPIDERSILK"    ] = { name="seda de araña"    , level_index= 4, material_index=18, master_writ2= 49, crafting_type=cl, mat_set_id=mat_lgt  } -- "spidersilk"
-, ["EBONTHREAD"    ] = { name="hilo de ébano"    , level_index= 5, material_index=23, master_writ2= 51, crafting_type=cl, mat_set_id=mat_lgt  } -- "ebonthread"
+, ["COTTON"        ] = { name="algodón"           , level_index= 3, material_index=13, master_writ2= 47, crafting_type=cl, mat_set_id=mat_lgt  } -- "cotton"
+, ["SPIDERSILK"    ] = { name="seda de araña"     , level_index= 4, material_index=18, master_writ2= 49, crafting_type=cl, mat_set_id=mat_lgt  } -- "spidersilk"
+, ["EBONTHREAD"    ] = { name="hilo de ébano"     , level_index= 5, material_index=23, master_writ2= 51, crafting_type=cl, mat_set_id=mat_lgt  } -- "ebonthread"
 , ["KRESH"         ] = { name="kresh"             , level_index= 6, material_index=26, master_writ2=125, crafting_type=cl, mat_set_id=mat_lgt  } -- "kresh"
 , ["IRONTHREAD"    ] = { name="hilo de hierro"    , level_index= 7, material_index=29, master_writ2=126, crafting_type=cl, mat_set_id=mat_lgt  } -- "ironthread"
 , ["SILVERWEAVE"   ] = { name="hilo de plata"     , level_index= 8, material_index=32, master_writ2=127, crafting_type=cl, mat_set_id=mat_lgt  } -- "silverweave"
@@ -162,11 +162,11 @@ LibCraftText.MATERIAL = {
 , ["HIDE"          ] = { name="piel"              , level_index= 2, material_index= 8, master_writ2=154, crafting_type=cl, mat_set_id=mat_med  } -- "hide"
 , ["LEATHER"       ] = { name="cuero"             , level_index= 3, material_index=13, master_writ2=158, crafting_type=cl, mat_set_id=mat_med  } -- "leather"
 , ["FULL_LEATHER"  ] = { name="cuero tratado"     , level_index= 4, material_index=18, master_writ2=162, crafting_type=cl, mat_set_id=mat_med  } -- "full-leather"
-, ["FELL"          ] = { name="piel impía"       , level_index= 5, material_index=23, master_writ2=166, crafting_type=cl, mat_set_id=mat_med  } -- "fell"
+, ["FELL"          ] = { name="piel impía"        , level_index= 5, material_index=23, master_writ2=166, crafting_type=cl, mat_set_id=mat_med  } -- "fell"
 , ["BRIGANDINE"    ] = { name="brigantina"        , level_index= 6, material_index=26, master_writ2=170, crafting_type=cl, mat_set_id=mat_med  } -- "brigandine"
-, ["IRONHIDE"      ] = { name="piel férrea"      , level_index= 7, material_index=29, master_writ2=174, crafting_type=cl, mat_set_id=mat_med  } -- "ironhide"
+, ["IRONHIDE"      ] = { name="piel férrea"       , level_index= 7, material_index=29, master_writ2=174, crafting_type=cl, mat_set_id=mat_med  } -- "ironhide"
 , ["SUPERB"        ] = { name="soberbio"          , level_index= 8, material_index=32, master_writ2=131, crafting_type=cl, mat_set_id=mat_med  } -- "superb"
-, ["SHADOWHIDE"    ] = { name="piel sombría"     , level_index= 9, material_index=34, master_writ2=132, crafting_type=cl, mat_set_id=mat_med  } -- "shadowhide"
+, ["SHADOWHIDE"    ] = { name="piel sombría"      , level_index= 9, material_index=34, master_writ2=132, crafting_type=cl, mat_set_id=mat_med  } -- "shadowhide"
 , ["RUBEDO_LEATHER"] = { name="cuero rubedo"      , level_index=10, material_index=40, master_writ2=190, crafting_type=cl, mat_set_id=mat_med  } -- "Rubedo Leather"
 
 , ["MAPLE"         ] = { name="arce"              , level_index= 1, material_index= 1, master_writ2=  2, crafting_type=ww, mat_set_id=mat_wood  } -- "maple"
@@ -178,7 +178,7 @@ LibCraftText.MATERIAL = {
 , ["ASH"           ] = { name="fresno"            , level_index= 7, material_index=29, master_writ2=134, crafting_type=ww, mat_set_id=mat_wood  } -- "ash"
 , ["MAHOGANY"      ] = { name="caoba"             , level_index= 8, material_index=32, master_writ2=135, crafting_type=ww, mat_set_id=mat_wood  } -- "mahogany"
 , ["NIGHTWOOD"     ] = { name="nocteca"           , level_index= 9, material_index=34, master_writ2=136, crafting_type=ww, mat_set_id=mat_wood  } -- "nightwood"
-, ["RUBY_ASH"      ] = { name="fresno rubí"      , level_index=10, material_index=40, master_writ2=192, crafting_type=ww, mat_set_id=mat_wood  } -- "Ruby Ash"
+, ["RUBY_ASH"      ] = { name="fresno rubí"       , level_index=10, material_index=40, master_writ2=192, crafting_type=ww, mat_set_id=mat_wood  } -- "Ruby Ash"
 
 , ["PEWTER"        ] = { name="peltre"            , level_index= 1, material_index= 1, master_writ2=  6, crafting_type=jw, mat_set_id=mat_jewl  } -- "pewter"
 , ["COPPER"        ] = { name="cobre"             , level_index= 2, material_index=13, master_writ2= 56, crafting_type=jw, mat_set_id=mat_jewl  } -- "copper"
@@ -191,12 +191,12 @@ LibCraftText.MATERIAL = {
 -- Quest Titles --------------------------------------------------------------
 
 LibCraftText.DAILY_QUEST_TITLES = {
-    [bs] = "Encargo de herrería"           -- "Blacksmith Writ"
-,   [cl] = "Encargo de sastrería"          -- "Clothier Writ"
+    [bs] = "Encargo de herrería"            -- "Blacksmith Writ"
+,   [cl] = "Encargo de sastrería"           -- "Clothier Writ"
 ,   [en] = "Encargo de encantamiento"       -- "Enchanter Writ"
 ,   [al] = "Encargo de alquimia"            -- "Alchemist Writ"
 ,   [pr] = "Encargo de provisiones"         -- "Provisioner Writ"
-,   [ww] = "Encargo de carpintería"        -- "Woodworker Writ"
+,   [ww] = "Encargo de carpintería"         -- "Woodworker Writ"
 ,   [jw] = "Encargo de artesanía de joyería"    -- "Jewelry Crafting Writ"
 }
 
@@ -209,16 +209,16 @@ LibCraftText.DAILY_QUEST_TITLES = {
                         -- light vs. medium armor)
                         --
 LibCraftText.MASTER_QUEST_TITLES = {
-    [bs] = { "Una protección magistral"          -- "A Masterful Plate"
+    [bs] = { "Una protección magistral"           -- "A Masterful Plate"
            , "Un arma magistral"                } -- "A Masterful Weapon"
 ,   [cl] = { "Una prenda de tela magistral"       -- "Masterful Tailoring"
            , "Una prenda de cuero magistral"    } -- "Masterful Leatherwear"
 ,   [en] = { "Un glifo magistral"               } -- "A Masterful Glyph"
 ,   [al] = { "Una mezcla magistral"             } -- "A Masterful Concoction"
-,   [pr] = { "Un festín magistral"             } -- "A Masterful Feast"
+,   [pr] = { "Un festín magistral"              } -- "A Masterful Feast"
 ,   [ww] = { "Un escudo magistral"                -- "A Masterful Shield"
            , "Un arma magistral"                } -- "A Masterful Weapon"
-,   [jw] = { "Joyería magistral"               } -- "Masterful Jewelry"
+,   [jw] = { "Joyería magistral"                } -- "Masterful Jewelry"
 }
 
 
@@ -251,7 +251,7 @@ LibCraftText.QUALITIES = {
     [1] = "Normal"                   -- "Normal"
 ,   [2] = "Bueno"                    -- "Fine"
 ,   [3] = "Superior"                 -- "Superior"
-,   [4] = "Épico"                   -- "Epic"
+,   [4] = "Épico"                    -- "Epic"
 ,   [5] = "Legendario"               -- "Legendary"
 }
 

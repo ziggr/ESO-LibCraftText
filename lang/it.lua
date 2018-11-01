@@ -225,7 +225,7 @@ LibCraftText.MASTER_QUEST_TITLES = {
 -- Random Unsorted Stuff -----------------------------------------------------
 
 LibCraftText.MASTER_LABELS = {
-    ["quality"] =  "Qualità"                        -- "Quality"
+    ["quality"] =  "Qualità"                         -- "Quality"
 ,   ["set"    ] =  "Set"                             -- "Set"
 ,   ["style"  ] =  "Stile"                           -- "Style"
 ,   ["trait"  ] =  "Tratti"                          -- "Trait"
