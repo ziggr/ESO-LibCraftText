@@ -4,8 +4,866 @@ LibCraftTextVars =
     {
         ["@ziggr"] = 
         {
+            ["ziggr-alt-one"] = 
+            {
+                ["steps"] = 
+                {
+                    [8] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation d'un anneau et d'un collier d'étain.",
+                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, einen Zinnring und eine Zinnhalskette herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Sip of Health and acquiring some blessed thistle to complete my contract.",
+                            ["ru"] = "This writ is from a trade consortium, merchants passing goods across Nirn. I've been tasked with creating a Pewter Ring and a Pewter Necklace to complete my contract.",
+                            ["ja"] = "ニルン各地に商品を流通させる貿易組合からの依頼だ。契約を遂行するにはピューターの指輪1個とピューターのネックレス1個を作る",
+                            ["es"] = "This writ is from a trade consortium, merchants passing goods across Nirn. I've been tasked with creating a Pewter Ring and a Pewter Necklace to complete my contract.",
+                        },
+                    },
+                    [2] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane d'un consortium, des marchands itinérants de Nirn. On m'a confié la confection de plusieurs casques, coques et brassards en cuir brut.",
+                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, mehrere Helme, Schulterkappen und Armschienen aus Rohleder herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Rawide Helmets, Arm Cops, and Bracers to complete my contract.",
+                            ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо создать несколько комплектов шлемов, наплечников и наручей из сыромятной кожи.",
+                            ["ja"] = "依頼はニルン全土で品物の交易を行う、貿易協会からのものだ。この契約の完了のために課されているのは、複数の生皮の兜、アームカップそして腕当ての生産だ",
+                            ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado hacer varios cascos, hombreras y brazales de cuero crudo para completar mi contrato.",
+                            ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Rawide Helmets, Arm Cops, and Bracers to complete my contract.",
+                        },
+                    },
+                    [3] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane d'un consortium marchand qui fait transiter des denrées sur tout Nirn. On m'a confié la conception de plusieurs casques, dagues et spallières en fer.",
+                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, mehrere Helme, Dolche und Schulterschutze aus Eisen herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Iron Helms, Daggers, and Pauldrons to complete my contract.",
+                            ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо создать несколько железных шлемов, кинжалов и наплечников.",
+                            ["ja"] = "依頼はニルン全土で品物の交易を行う、貿易協会からのものだ。この契約の完了のために課されているのは、複数の鉄の兜、短剣、そしてポールドロンの生産だ",
+                            ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado hacer varios yelmos, dagas y espaldarones de hierro para completar mi contrato.",
+                            ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Iron Helms, Daggers, and Pauldrons to complete my contract.",
+                        },
+                    },
+                    [4] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands qui transportent les denrées aux quatre coins de Nirn. On m'a commandé de fabriquer plusieurs arcs et boucliers en érable.",
+                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, mehrere Bögen und Schilde aus Ahorn herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Maple Bows and Shields to complete my contract.",
+                            ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо сделать из клена несколько луков и щитов.",
+                            ["ja"] = "依頼はニルン全土で品物の交易を行う、貿易協会からのものだ。この契約の完了のために課されているのは、複数のカエデの弓、およびカエデの盾の生産だ",
+                            ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado hacer varios arcos y escudos de arce para completar mi contrato.",
+                            ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Maple Bows and Shields to complete my contract.",
+                        },
+                    },
+                    [5] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands qui transportent les denrées aux quatre coins de Nirn. On m'a commandé de fabriquer un glyphe de Vigueur insignifiant et d'acquérir une rune d'aspect Ta.",
+                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, eine unbedeutende Glyphe der Ausdauer herzustellen und eine Ta-Aspektrune zu besorgen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a trade consortium, merchants passing goods across Nirn. I've been tasked with creating a Pewter Ring and a Pewter Necklace to complete my contract.",
+                            ["ru"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Trifling Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
+                            ["ja"] = "依頼はニルン全土で品物の交易を行う、貿易協会からのものだ。この契約の完了のために課されているのは、初歩のグリフ(スタミナ)の生産、およびターの品質ルーンの入手だ",
+                            ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado crear un glifo mediocre de aguante y conseguir una runa de aspecto Ta para completar mi contrato.",
+                            ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Trifling Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
+                        },
+                    },
+                    [6] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands qui transportent les denrées aux quatre coins de Nirn. On m'a demandé de préparer des pommes cuites et un mazté à la fleur de citronnier. Je dois livrer ces denrées en Glénumbrie.",
+                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, einige Bratäpfel und etwas Zitrusblütenmazte herzustellen, um meinen Kontrakt zu erfüllen. Die Händler erwarten die Lieferung in Glenumbra.",
+                            ["en"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating Baked Apples and Lemon Flower Mazte to complete my contract. The merchants expect delivery in Glenumbra.",
+                            ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо создать печеные яблоки и лимонный мацт. Торговцы ожидают поставку в Гленумбре.",
+                            ["ja"] = "ニルン各地に商品を流通させる貿易組合からの依頼だ。契約を遂行するには焼きリンゴとレモンフラワーのマッツェを作らなければならない。商人たちはグレナンブラで配達を待っている",
+                            ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado preparar manzanas asadas y Mazte de azahar para completar mi contrato. Los mercaderes esperan la entrega en Glenumbra.",
+                            ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating Baked Apples and Lemon Flower Mazte to complete my contract. The merchants expect delivery in Glenumbra.",
+                        },
+                    },
+                    [7] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation d'une gorgée de Santé et l'acquisition d’un chardon béni.",
+                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, ein Schlückchen des Lebens herzustellen und etwas Benediktenkraut zu besorgen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Trifling Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
+                            ["ru"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Sip of Health and acquiring some благословенный чертополох to complete my contract.",
+                            ["ja"] = "ニルン各地に商品を流通させる貿易組合からの依頼だ。契約を遂行するには体力の雫を作り、聖なるシッスルを手に入れなければならない",
+                            ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado crear un sorbo de salud y conseguir algo de cardo bendito para completar mi contrato.",
+                            ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Sip of Health and acquiring some blessed thistle to complete my contract.",
+                        },
+                    },
+                },
+                ["conditions"] = 
+                {
+                    [8] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Fabriquez un anneau en étain : 0/1",
+                                ["de"] = "Stellt einen Zinnring her: 0/1",
+                                ["en"] = "Craft Sip of Health: 0 / 1",
+                                ["ru"] = "Craft a Pewter Ring: 0 / 1",
+                                ["ja"] = "ピューターの指輪を作る: 0 / 1",
+                                ["es"] = "Fabrica un anillo de peltre: 0/1",
+                                ["it"] = "TRACKER GOAL TEXT: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Fabriquez un collier en étain : 0/1",
+                                ["de"] = "Stellt eine Zinnhalskette her: 0/1",
+                                ["en"] = "Acquire Blessed Thistle: 3 / 3",
+                                ["ru"] = "Craft a Pewter Necklace: 0 / 1",
+                                ["ja"] = "ピューターのネックレスを作る: 0 / 1",
+                                ["es"] = "Fabrica un collar de peltre: 0/1",
+                                ["it"] = "TRACKER GOAL TEXT: 0 / 1",
+                            },
+                        },
+                    },
+                    [2] = 
+                    {
+                        [1] = 
+                        {
+                            [4] = 
+                            {
+                                ["fr"] = "Fabriquez des brassards en cuir brut normaux : 0/1",
+                                ["de"] = "Stellt normale Rohlederarmschienen her: 0/1",
+                                ["en"] = "Craft Normal Rawhide Bracers: 0 / 1",
+                                ["ru"] = "Craft Normal Rawhide Bracers: 0 / 1",
+                                ["ja"] = "生皮の腕当て(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unos brazales de piel cruda normales: 0/1",
+                                ["it"] = "Craft Rawhide Bracers: 0 / 1",
+                            },
+                            [2] = 
+                            {
+                                ["fr"] = "Fabriquez un casque en cuir brut normal : 0/1",
+                                ["de"] = "Stellt normale Rohlederhelme her: 0/1",
+                                ["en"] = "Craft Normal Rawhide Helmet: 0 / 1",
+                                ["ru"] = "Craft Normal Rawhide Helmet: 0 / 1",
+                                ["ja"] = "生皮の兜(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un yelmo de piel cruda normal: 0/1",
+                                ["it"] = "Craft Rawhide Helmet: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Fabriquez des coques d'épaules en cuir brut normales : 0/1",
+                                ["de"] = "Stellt normale Rohlederschulterkappen her: 0/1",
+                                ["en"] = "Craft Normal Rawhide Arm Cops: 0 / 1",
+                                ["ru"] = "Craft Normal Rawhide Arm Cops: 0 / 1",
+                                ["ja"] = "生皮のアームカップ(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unas hombreras de piel cruda normales: 0/1",
+                                ["it"] = "Craft Rawhide Arm Cops: 0 / 1",
+                            },
+                        },
+                    },
+                    [3] = 
+                    {
+                        [1] = 
+                        {
+                            [4] = 
+                            {
+                                ["fr"] = "Fabriquez des spallières en fer normales : 0/1",
+                                ["de"] = "Stellt normale Eisenschulterschutze her: 0/1",
+                                ["en"] = "Craft Normal Iron Pauldron: 0 / 1",
+                                ["ru"] = "Craft Normal Iron Pauldron: 0 / 1",
+                                ["ja"] = "鉄のポールドロン(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unos espaldarones de hierro normales: 0/1",
+                                ["it"] = "Craft Iron Pauldron: 0 / 1",
+                            },
+                            [2] = 
+                            {
+                                ["fr"] = "Fabriquez un heaume en fer normal : 0/1",
+                                ["de"] = "Stellt normale Eisenhauben her: 0/1",
+                                ["en"] = "Craft Normal Iron Helm: 0 / 1",
+                                ["ru"] = "Craft Normal Iron Helm: 0 / 1",
+                                ["ja"] = "鉄の兜(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un yelmo de hierro normal: 0/1",
+                                ["it"] = "Craft Iron Helm: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Fabriquez une dague en fer normale : 0/1",
+                                ["de"] = "Stellt normale Eisendolche her: 0/1",
+                                ["en"] = "Craft Normal Iron Dagger: 0 / 1",
+                                ["ru"] = "Craft Normal Iron Dagger: 0 / 1",
+                                ["ja"] = "鉄の短剣(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una daga de hierro normal: 0/1",
+                                ["it"] = "Craft Iron Dagger: 0 / 1",
+                            },
+                        },
+                    },
+                    [4] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Fabriquez un arc en érable normal : 0/2",
+                                ["de"] = "Stellt normale Ahornbögen her: 0/2",
+                                ["en"] = "Craft Normal Maple Bow: 0 / 2",
+                                ["ru"] = "Craft Normal Maple Bow: 0 / 2",
+                                ["ja"] = "カエデの弓(ノーマル)を生産する: 0 / 2",
+                                ["es"] = "Fabrica un arco de arce normal: 0/2",
+                                ["it"] = "Craft Maple Bow: 0 / 2",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Fabriquez un bouclier en érable normal : 0/1",
+                                ["de"] = "Stellt normale Ahornschilde her: 0/1",
+                                ["en"] = "Craft Normal Maple Shield: 0 / 1",
+                                ["ru"] = "Craft Normal Maple Shield: 0 / 1",
+                                ["ja"] = "カエデの盾(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un escudo de arce normal: 0/1",
+                                ["it"] = "Craft Maple Shield: 0 / 1",
+                            },
+                        },
+                    },
+                    [5] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Fabriquez un glyphe insignifiant vigoureux avec Ta : 0/1",
+                                ["de"] = "Stellt mit einer Ta-Rune eine unbedeutende Glyphe der Ausdauer her: 0/1",
+                                ["en"] = "Craft a Pewter Ring: 0 / 1",
+                                ["ru"] = "Craft Trifling Glyph of Stamina With Ta: 0 / 1",
+                                ["ja"] = "ターの初歩のグリフ(スタミナ)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un glifo mediocre de aguante con Ta: 0/1",
+                                ["it"] = "Craft Trifling Glyph of Stamina: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Acquérez une rune d'aspect Ta : 1/1",
+                                ["de"] = "Beschafft eine Ta-Aspektrune: 1/1",
+                                ["en"] = "Craft a Pewter Necklace: 0 / 1",
+                                ["ru"] = "Добыть руну аспекта Та: 1 / 1",
+                                ["ja"] = "ターの品質ルーンを手に入れる: 1 / 1",
+                                ["es"] = "Adquiere una runa de aspecto Ta: 1/1",
+                                ["it"] = "Acquire Ta Aspect Rune: 1 / 1",
+                            },
+                        },
+                    },
+                    [6] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Préparez un mazté à la fleur de citronnier : 0/1",
+                                ["de"] = "Stellt etwas Zitrusblütenmazte her: 0/1",
+                                ["en"] = "Craft Lemon Flower Mazte: 0 / 1",
+                                ["ru"] = "Создать — лимонный мацт: 0 / 1",
+                                ["ja"] = "レモンフラワーのマッツェを生産する: 0 / 1",
+                                ["es"] = "Preparæ Mazte de azahar: 0/1",
+                                ["it"] = "Craft Lemon Flower Mazte: 0 / 1",
+                            },
+                            [1] = 
+                            {
+                                ["fr"] = "Préparez des pommes cuites : 0/1",
+                                ["de"] = "Stellt einige Bratäpfel her: 0/1",
+                                ["en"] = "Craft Baked Apples: 0 / 1",
+                                ["ru"] = "Создать — печеные яблоки: 0 / 1",
+                                ["ja"] = "焼きリンゴを生産する: 0 / 1",
+                                ["es"] = "Preparæ manzanas asadas: 0/1",
+                                ["it"] = "Craft Baked Apples: 0 / 1",
+                            },
+                        },
+                    },
+                    [7] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Préparez une gorgée de Santé : 0/1",
+                                ["de"] = "Stellt Schlückchen des Lebens her: 0/1",
+                                ["en"] = "Craft Trifling Glyph of Stamina With Ta: 0 / 1",
+                                ["ru"] = "Создать глоток здоровья (Sip of Health): 0 / 1",
+                                ["ja"] = "体力の雫を生産する: 0 / 1",
+                                ["es"] = "Prepara un sorbo de salud: 0/1",
+                                ["it"] = "Craft Sip of Health: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Acquérez un chardon béni : 3/3",
+                                ["de"] = "Besorgt etwas Benediktenkraut: 3/3",
+                                ["en"] = "Acquire Ta Aspect Rune: 1 / 1",
+                                ["ru"] = "Раздобыть — благословенный чертополох: 3 / 3",
+                                ["ja"] = "聖なるシッスルを手に入れる: 3 / 3",
+                                ["es"] = "Adquiere cardo bendito: 3/3",
+                                ["it"] = "Acquire blessed thistle: 3 / 3",
+                            },
+                        },
+                    },
+                },
+                ["version"] = 1,
+                ["quests"] = 
+                {
+                    [8] = 
+                    {
+                        ["fr"] = "Commande de joaillerie",
+                        ["de"] = "Schmuckhandwerksschrieb",
+                        ["en"] = "Alchemist Writ",
+                        ["ru"] = "Заказ ювелиру",
+                        ["ja"] = "宝飾師のクラフト依頼",
+                        ["es"] = "Encargo de artesanía de joyería",
+                        ["it"] = "",
+                    },
+                    [2] = 
+                    {
+                        ["fr"] = "Commande de tailleur",
+                        ["de"] = "Schneiderschrieb",
+                        ["en"] = "Clothier Writ",
+                        ["ru"] = "Заказ портному",
+                        ["ja"] = "仕立師の依頼",
+                        ["es"] = "Encargo de sastrería",
+                        ["it"] = "Clothier Writ",
+                    },
+                    [3] = 
+                    {
+                        ["fr"] = "Commande de forge",
+                        ["de"] = "Schmiedeschrieb",
+                        ["en"] = "Blacksmith Writ",
+                        ["ru"] = "Заказ кузнецу",
+                        ["ja"] = "鍛冶師の依頼",
+                        ["es"] = "Encargo de herrería",
+                        ["it"] = "Blacksmith Writ",
+                    },
+                    [4] = 
+                    {
+                        ["fr"] = "Commande de travail du bois",
+                        ["de"] = "Schreinerschrieb",
+                        ["en"] = "Woodworker Writ",
+                        ["ru"] = "Заказ столяру",
+                        ["ja"] = "木工師の依頼",
+                        ["es"] = "Encargo de carpintería",
+                        ["it"] = "Woodworker Writ",
+                    },
+                    [5] = 
+                    {
+                        ["fr"] = "Commandes d'enchantement",
+                        ["de"] = "Verzaubererschrieb",
+                        ["en"] = "Jewelry Crafting Writ",
+                        ["ru"] = "Заказ зачарователю",
+                        ["ja"] = "付呪師の依頼",
+                        ["es"] = "Encargo de encantamiento",
+                        ["it"] = "Enchanter Writ",
+                    },
+                    [6] = 
+                    {
+                        ["fr"] = "Commande de cuisine",
+                        ["de"] = "Versorgerschrieb",
+                        ["en"] = "Provisioner Writ",
+                        ["ru"] = "Заказ снабженцу",
+                        ["ja"] = "調理師の依頼",
+                        ["es"] = "Encargo de provisiones",
+                        ["it"] = "Provisioner Writ",
+                    },
+                    [7] = 
+                    {
+                        ["fr"] = "Commande d'alchimie",
+                        ["de"] = "Alchemistenschrieb",
+                        ["en"] = "Enchanter Writ",
+                        ["ru"] = "Заказ алхимику",
+                        ["ja"] = "錬金術師の依頼",
+                        ["es"] = "Encargo de alquimia",
+                        ["it"] = "Alchemist Writ",
+                    },
+                },
+            },
             ["$AccountWide"] = 
             {
+                ["motifs"] = 
+                {
+                    [0] = 
+                    {
+                        ["en"] = "Consume to start quest:\nCraft a Rubedite Axe; Quality: Epic; Trait: Decisive; Set: Armor Master; Style:",
+                    },
+                    [1] = 
+                    {
+                        ["en"] = "Breton",
+                    },
+                    [2] = 
+                    {
+                        ["en"] = "Redguard",
+                    },
+                    [3] = 
+                    {
+                        ["en"] = "Orc",
+                    },
+                    [4] = 
+                    {
+                        ["en"] = "Dark Elf",
+                    },
+                    [5] = 
+                    {
+                        ["en"] = "Nord",
+                    },
+                    [6] = 
+                    {
+                        ["en"] = "Argonian",
+                    },
+                    [7] = 
+                    {
+                        ["en"] = "High Elf",
+                    },
+                    [8] = 
+                    {
+                        ["en"] = "Wood Elf",
+                    },
+                    [9] = 
+                    {
+                        ["en"] = "Khajiit",
+                    },
+                    [10] = 
+                    {
+                        ["en"] = "Unique",
+                    },
+                    [11] = 
+                    {
+                        ["en"] = "Thieves Guild",
+                    },
+                    [12] = 
+                    {
+                        ["en"] = "Dark Brotherhood",
+                    },
+                    [13] = 
+                    {
+                        ["en"] = "Malacath",
+                    },
+                    [14] = 
+                    {
+                        ["en"] = "Dwemer",
+                    },
+                    [15] = 
+                    {
+                        ["en"] = "Ancient Elf",
+                    },
+                    [16] = 
+                    {
+                        ["en"] = "Order of the Hour",
+                    },
+                    [17] = 
+                    {
+                        ["en"] = "Barbaric",
+                    },
+                    [18] = 
+                    {
+                        ["en"] = "Bandit",
+                    },
+                    [19] = 
+                    {
+                        ["en"] = "Primal",
+                    },
+                    [20] = 
+                    {
+                        ["en"] = "Daedric",
+                    },
+                    [21] = 
+                    {
+                        ["en"] = "Trinimac",
+                    },
+                    [22] = 
+                    {
+                        ["en"] = "Ancient Orc",
+                    },
+                    [23] = 
+                    {
+                        ["en"] = "Daggerfall Covenant",
+                    },
+                    [24] = 
+                    {
+                        ["en"] = "Ebonheart Pact",
+                    },
+                    [25] = 
+                    {
+                        ["en"] = "Aldmeri Dominion",
+                    },
+                    [26] = 
+                    {
+                        ["en"] = "Mercenary",
+                    },
+                    [27] = 
+                    {
+                        ["en"] = "Celestial",
+                    },
+                    [28] = 
+                    {
+                        ["en"] = "Glass",
+                    },
+                    [29] = 
+                    {
+                        ["en"] = "Xivkyn",
+                    },
+                    [30] = 
+                    {
+                        ["en"] = "Soul Shriven",
+                    },
+                    [31] = 
+                    {
+                        ["en"] = "Draugr",
+                    },
+                    [32] = 
+                    {
+                        ["en"] = "Maormer",
+                    },
+                    [33] = 
+                    {
+                        ["en"] = "Akaviri",
+                    },
+                    [34] = 
+                    {
+                        ["en"] = "Imperial",
+                    },
+                    [35] = 
+                    {
+                        ["en"] = "Yokudan",
+                    },
+                    [36] = 
+                    {
+                        ["en"] = "Universal",
+                    },
+                    [37] = 
+                    {
+                        ["en"] = "Reach Winter",
+                    },
+                    [38] = 
+                    {
+                        ["en"] = "Tsaesci",
+                    },
+                    [39] = 
+                    {
+                        ["en"] = "Minotaur",
+                    },
+                    [40] = 
+                    {
+                        ["en"] = "Ebony",
+                    },
+                    [41] = 
+                    {
+                        ["en"] = "Abah's Watch",
+                    },
+                    [42] = 
+                    {
+                        ["en"] = "Skinchanger",
+                    },
+                    [43] = 
+                    {
+                        ["en"] = "Morag Tong",
+                    },
+                    [44] = 
+                    {
+                        ["en"] = "Ra Gada",
+                    },
+                    [45] = 
+                    {
+                        ["en"] = "Dro-m'Athra",
+                    },
+                    [46] = 
+                    {
+                        ["en"] = "Assassins League",
+                    },
+                    [47] = 
+                    {
+                        ["en"] = "Outlaw",
+                    },
+                    [48] = 
+                    {
+                        ["en"] = "Redoran",
+                    },
+                    [49] = 
+                    {
+                        ["en"] = "Hlaalu",
+                    },
+                    [50] = 
+                    {
+                        ["en"] = "Militant Ordinator",
+                    },
+                    [51] = 
+                    {
+                        ["en"] = "Telvanni",
+                    },
+                    [52] = 
+                    {
+                        ["en"] = "Buoyant Armiger",
+                    },
+                    [53] = 
+                    {
+                        ["en"] = "Frostcaster",
+                    },
+                    [54] = 
+                    {
+                        ["en"] = "Ashlander",
+                    },
+                    [55] = 
+                    {
+                        ["en"] = "Worm Cult",
+                    },
+                    [56] = 
+                    {
+                        ["en"] = "Silken Ring",
+                    },
+                    [57] = 
+                    {
+                        ["en"] = "Mazzatun",
+                    },
+                    [58] = 
+                    {
+                        ["en"] = "Grim Harlequin",
+                    },
+                    [59] = 
+                    {
+                        ["en"] = "Hollowjack",
+                    },
+                    [60] = 
+                    {
+                        ["en"] = "Refabricated",
+                    },
+                    [61] = 
+                    {
+                        ["en"] = "Bloodforge",
+                    },
+                    [62] = 
+                    {
+                        ["en"] = "Dreadhorn",
+                    },
+                    [65] = 
+                    {
+                        ["en"] = "Apostle",
+                    },
+                    [66] = 
+                    {
+                        ["en"] = "Ebonshadow",
+                    },
+                    [67] = 
+                    {
+                        ["en"] = "Undaunted",
+                    },
+                    [68] = 
+                    {
+                        ["en"] = "USE ME",
+                    },
+                    [69] = 
+                    {
+                        ["en"] = "Fang Lair",
+                    },
+                    [70] = 
+                    {
+                        ["en"] = "Scalecaller",
+                    },
+                    [71] = 
+                    {
+                        ["en"] = "Psijic Order",
+                    },
+                    [72] = 
+                    {
+                        ["en"] = "Sapiarch",
+                    },
+                    [73] = 
+                    {
+                        ["en"] = "Welkynar",
+                    },
+                    [74] = 
+                    {
+                        ["en"] = "Dremora",
+                    },
+                    [75] = 
+                    {
+                        ["en"] = "Pyandonean",
+                    },
+                    [76] = 
+                    {
+                        ["en"] = "Divine Prosecution",
+                    },
+                    [77] = 
+                    {
+                        ["en"] = "Huntsman",
+                    },
+                    [78] = 
+                    {
+                        ["en"] = "Silver Dawn",
+                    },
+                    [79] = 
+                    {
+                        ["en"] = "Dead-Water",
+                    },
+                    [80] = 
+                    {
+                        ["en"] = "Honor Guard",
+                    },
+                    [81] = 
+                    {
+                        ["en"] = "Elder Argonian",
+                    },
+                },
+                ["qualities"] = 
+                {
+                    ["en"] = 
+                    {
+                        [1] = "Normal",
+                        [2] = "Fine",
+                        [3] = "Superior",
+                        [4] = "Epic",
+                        [5] = "Legendary",
+                    },
+                },
+                ["version"] = 1,
+                ["materials"] = 
+                {
+                    ["ww"] = 
+                    {
+                        ["en"] = 
+                        {
+                            [1] = "maple",
+                            [2] = "oak",
+                            [3] = "beech",
+                            [4] = "hickory",
+                            [5] = "yew",
+                            [6] = "birch",
+                            [7] = "ash",
+                            [8] = "mahogany",
+                            [9] = "nightwood",
+                            [10] = "Ruby Ash",
+                        },
+                    },
+                    ["bs"] = 
+                    {
+                        ["en"] = 
+                        {
+                            [1] = "iron",
+                            [2] = "steel",
+                            [3] = "orichalc",
+                            [4] = "dwarven",
+                            [5] = "ebon",
+                            [6] = "calcinium",
+                            [7] = "galatite",
+                            [8] = "quicksilver",
+                            [9] = "voidsteel",
+                            [10] = "Rubedite",
+                        },
+                    },
+                    ["lgt"] = 
+                    {
+                        ["en"] = 
+                        {
+                            [1] = "homespun",
+                            [2] = "linen",
+                            [3] = "cotton",
+                            [4] = "spidersilk",
+                            [5] = "ebonthread",
+                            [6] = "kresh",
+                            [7] = "ironthread",
+                            [8] = "silverweave",
+                            [9] = "shadowspun",
+                            [10] = "Ancestor Silk",
+                        },
+                    },
+                    ["med"] = 
+                    {
+                        ["en"] = 
+                        {
+                            [1] = "rawhide",
+                            [2] = "hide",
+                            [3] = "leather",
+                            [4] = "full-leather",
+                            [5] = "fell",
+                            [6] = "brigandine",
+                            [7] = "ironhide",
+                            [8] = "superb",
+                            [9] = "shadowhide",
+                            [10] = "Rubedo Leather",
+                        },
+                    },
+                    ["jw"] = 
+                    {
+                        ["en"] = 
+                        {
+                            [1] = "pewter",
+                            [2] = "copper",
+                            [3] = "silver",
+                            [4] = "electrum",
+                            [5] = "platinum",
+                        },
+                    },
+                },
+                ["items"] = 
+                {
+                    ["ww"] = 
+                    {
+                        ["en"] = 
+                        {
+                            [1] = "Bow",
+                            [2] = "Inferno Staff",
+                            [3] = "Ice Staff",
+                            [4] = "Lightning Staff",
+                            [5] = "Restoration Staff",
+                            [6] = "Shield",
+                        },
+                    },
+                    ["bs"] = 
+                    {
+                        ["en"] = 
+                        {
+                            [1] = "Axe",
+                            [2] = "Mace",
+                            [3] = "Sword",
+                            [4] = "Battle Axe",
+                            [5] = "Maul",
+                            [6] = "Greatsword",
+                            [7] = "Dagger",
+                            [8] = "Cuirass",
+                            [9] = "Sabatons",
+                            [10] = "Gauntlets",
+                            [11] = "Helm",
+                            [12] = "Greaves",
+                            [13] = "Pauldron",
+                            [14] = "Girdle",
+                        },
+                    },
+                    ["lgt"] = 
+                    {
+                        ["en"] = 
+                        {
+                            [8] = "Sash",
+                            [1] = "Robe",
+                            [2] = "Jerkin",
+                            [3] = "Shoes",
+                            [4] = "Gloves",
+                            [5] = "Hat",
+                            [6] = "Breeches",
+                            [7] = "Epaulets",
+                        },
+                    },
+                    ["med"] = 
+                    {
+                        ["en"] = 
+                        {
+                            [1] = "Jack",
+                            [2] = "Boots",
+                            [3] = "Bracers",
+                            [4] = "Helmet",
+                            [5] = "Guards",
+                            [6] = "Arm Cops",
+                            [7] = "Belt",
+                        },
+                    },
+                    ["jw"] = 
+                    {
+                        ["en"] = 
+                        {
+                            [2] = "Ring",
+                            [1] = "Necklace",
+                        },
+                    },
+                },
                 ["traits"] = 
                 {
                     [32] = 
@@ -117,74 +975,11 @@ LibCraftTextVars =
                         ["en"] = "Bloodthirsty",
                     },
                 },
-                ["items"] = 
+                ["master_template"] = 
                 {
-                    ["ww"] = 
-                    {
-                        ["en"] = 
-                        {
-                            [1] = "Bow",
-                            [2] = "Inferno Staff",
-                            [3] = "Ice Staff",
-                            [4] = "Lightning Staff",
-                            [5] = "Restoration Staff",
-                            [6] = "Shield",
-                        },
-                    },
-                    ["med"] = 
-                    {
-                        ["en"] = 
-                        {
-                            [1] = "Jack",
-                            [2] = "Boots",
-                            [3] = "Bracers",
-                            [4] = "Helmet",
-                            [5] = "Guards",
-                            [6] = "Arm Cops",
-                            [7] = "Belt",
-                        },
-                    },
-                    ["jw"] = 
-                    {
-                        ["en"] = 
-                        {
-                            [2] = "Ring",
-                            [1] = "Necklace",
-                        },
-                    },
                     ["bs"] = 
                     {
-                        ["en"] = 
-                        {
-                            [1] = "Axe",
-                            [2] = "Mace",
-                            [3] = "Sword",
-                            [4] = "Battle Axe",
-                            [5] = "Maul",
-                            [6] = "Greatsword",
-                            [7] = "Dagger",
-                            [8] = "Cuirass",
-                            [9] = "Sabatons",
-                            [10] = "Gauntlets",
-                            [11] = "Helm",
-                            [12] = "Greaves",
-                            [13] = "Pauldron",
-                            [14] = "Girdle",
-                        },
-                    },
-                    ["lgt"] = 
-                    {
-                        ["en"] = 
-                        {
-                            [8] = "Sash",
-                            [1] = "Robe",
-                            [2] = "Jerkin",
-                            [3] = "Shoes",
-                            [4] = "Gloves",
-                            [5] = "Hat",
-                            [6] = "Breeches",
-                            [7] = "Epaulets",
-                        },
+                        ["en"] = "Consume to start quest:\nCraft a platinum Sword; Quality: Epic; Trait: Robust; Set: Armor Master",
                     },
                 },
                 ["sets"] = 
@@ -1690,424 +2485,757 @@ LibCraftTextVars =
                         ["en"] = "Perfect Mender's Ward",
                     },
                 },
-                ["version"] = 1,
-                ["materials"] = 
+            },
+            ["ziggr-alt-four"] = 
+            {
+                ["steps"] = 
                 {
-                    ["ww"] = 
-                    {
-                        ["en"] = 
-                        {
-                            [1] = "maple",
-                            [2] = "oak",
-                            [3] = "beech",
-                            [4] = "hickory",
-                            [5] = "yew",
-                            [6] = "birch",
-                            [7] = "ash",
-                            [8] = "mahogany",
-                            [9] = "nightwood",
-                            [10] = "Ruby Ash",
-                        },
-                    },
-                    ["med"] = 
-                    {
-                        ["en"] = 
-                        {
-                            [1] = "rawhide",
-                            [2] = "hide",
-                            [3] = "leather",
-                            [4] = "full-leather",
-                            [5] = "fell",
-                            [6] = "brigandine",
-                            [7] = "ironhide",
-                            [8] = "superb",
-                            [9] = "shadowhide",
-                            [10] = "Rubedo Leather",
-                        },
-                    },
-                    ["jw"] = 
-                    {
-                        ["en"] = 
-                        {
-                            [1] = "pewter",
-                            [2] = "copper",
-                            [3] = "silver",
-                            [4] = "electrum",
-                            [5] = "platinum",
-                        },
-                    },
-                    ["bs"] = 
-                    {
-                        ["en"] = 
-                        {
-                            [1] = "iron",
-                            [2] = "steel",
-                            [3] = "orichalc",
-                            [4] = "dwarven",
-                            [5] = "ebon",
-                            [6] = "calcinium",
-                            [7] = "galatite",
-                            [8] = "quicksilver",
-                            [9] = "voidsteel",
-                            [10] = "Rubedite",
-                        },
-                    },
-                    ["lgt"] = 
-                    {
-                        ["en"] = 
-                        {
-                            [1] = "homespun",
-                            [2] = "linen",
-                            [3] = "cotton",
-                            [4] = "spidersilk",
-                            [5] = "ebonthread",
-                            [6] = "kresh",
-                            [7] = "ironthread",
-                            [8] = "silverweave",
-                            [9] = "shadowspun",
-                            [10] = "Ancestor Silk",
-                        },
-                    },
-                },
-                ["master_template"] = 
-                {
-                    ["bs"] = 
-                    {
-                        ["en"] = "Consume to start quest:\nCraft a platinum Sword; Quality: Epic; Trait: Robust; Set: Armor Master",
-                    },
-                },
-                ["motifs"] = 
-                {
-                    [0] = 
-                    {
-                        ["en"] = "Consume to start quest:\nCraft a Rubedite Axe; Quality: Epic; Trait: Decisive; Set: Armor Master; Style:",
-                    },
                     [1] = 
                     {
-                        ["en"] = "Breton",
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane de la guilde des guerriers. Ils achètent des vivres pour leur campagne contre les Daedra. On m'a demandé de préparer une tourte au groin de mammouth et un thé des deux zéphyrs.",
+                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde. Sie will für Vorräte bezahlen, die ihr in ihrem Kampf gegen die Daedra helfen. Ich wurde damit beauftragt, eine Mammutrüsselpastete und etwas Doppelsturmtee herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from the Fighters Guild. They offer pay for supplies to help them in their fight against the Daedra. I've been tasked with creating Mammoth Snout Pie and Two-Zephyr Tea to complete my contract.",
+                            ["ru"] = "This writ is from the Fighters Guild. They offer pay for supplies to help them in their fight against the Daedra. I've been tasked with creating пирог с хоботом мамонта and чай «Два зефира» to complete my contract.",
+                            ["ja"] = "戦士ギルドからの依頼だ。金銭と交換で、デイドラとの抗争に役立つ物資を求めている。契約を遂行するにはマンモスの鼻のパイとトゥーゼファーティーを作らなければならない",
+                            ["es"] = "Este encargo es del Gremio de Luchadores. Ofrecen pagar por suministros que los ayuden en su lucha contra los daedra. Me han encargado preparar pastel de trompa de mamut y té de Dos-Céfiros para completar mi contrato.",
+                            ["it"] = "This writ is from the Fighters Guild. They offer pay for supplies to help them in their fight against the Daedra. I've been tasked with creating Mammoth Snout Pie and Two-Zephyr Tea to complete my contract.",
+                        },
                     },
                     [2] = 
                     {
-                        ["en"] = "Redguard",
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane de la guilde des guerriers qui cherche à faciliter sa lutte contre les Daedra. Ils m'ont commandé un glyphe de Magie modéré et l'acquisition d'une rune d'essence Oko.",
+                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde, die Hilfe bei ihrem Kampf gegen die Daedra braucht. Ich wurde damit beauftragt, eine moderate Glyphe der Magicka herzustellen und eine Oko-Essenzrune zu besorgen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating a Moderate Glyph of Magicka and acquiring an Oko Essence Rune to complete my contract.",
+                            ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating a Moderate Glyph of Magicka and acquiring an Oko Essence Rune to complete my contract.",
+                            ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。この契約の完了のために課されているのは、中堅のグリフ(マジカ)の生産と、オコの本質ルーンの入手だ",
+                            ["es"] = "Este encargo es del Gremio de Luchadores, buscando ayuda en su lucha contra los daedra. Me han encargado crear un glifo moderado de magia y conseguir una runa de esencia Oko para completar mi contrato.",
+                            ["it"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating a Moderate Glyph of Magicka and acquiring an Oko Essence Rune to complete my contract.",
+                        },
                     },
                     [3] = 
                     {
-                        ["en"] = "Orc",
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane de la guilde des guerriers, qui paie toute contribution à sa campagne contre les Daedra. On m'a commandé la préparation d'une solution de Vigueur et la livraison d’une cardamine des prés.",
+                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde, die Hilfe bei ihrem Kampf gegen die Daedra braucht. Ich wurde damit beauftragt, eine Lösung der Ausdauer herzustellen und etwas Wiesenschaumkraut zu besorgen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating a Solution of Stamina and acquiring some lady's smock to complete my contract.",
+                            ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating a Solution of Stamina and acquiring some луговой сердечник to complete my contract.",
+                            ["ja"] = "戦士ギルドからの依頼で、デイドラとの抗争に役立つものを求めている。契約を遂行するにはスタミナの液体薬を作り、タネツケバナを手に入れる必要がある",
+                            ["es"] = "Este encargo es del Gremio de Luchadores. Ofrecen pagar por suministros que los ayuden en su lucha contra los daedra. Me han encargado crear una solución de aguante y conseguir algo de cardamina para completar mi contrato.",
+                            ["it"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating a Solution of Stamina and acquiring some lady's smock to complete my contract.",
+                        },
                     },
                     [4] = 
                     {
-                        ["en"] = "Dark Elf",
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane de la guilde des guerriers, qui cherche de l'aide dans sa lutte contre les Daedra. On m'a commandé la confection de plusieurs robes, braies et épaulettes en soie d'araignée.",
+                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde, die Hilfe bei ihrem Kampf gegen die Daedra braucht. Ich wurde damit beauftragt, mehrere Roben, Beinkleider und Schulterpolster aus Spinnenseide herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Spidersilk Robes, Breeches, and Epaulets to complete my contract.",
+                            ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Spidersilk Robes, Breeches, and Epaulets to complete my contract.",
+                            ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。この契約の完了のために課されているのは、複数のスパイダーシルクのローブ、パンツそして肩当ての生産だ",
+                            ["es"] = "Este encargo es del Gremio de Luchadores, buscando ayuda en su lucha contra los daedra. Me han encargado hacer varias túnicas, pantalones y hombreras de seda de araña para completar mi contrato.",
+                            ["it"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Spidersilk Robes, Breeches, and Epaulets to complete my contract.",
+                        },
                     },
                     [5] = 
                     {
-                        ["en"] = "Nord",
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane de la guilde des guerriers qui cherche à faciliter sa lutte contre les Daedra. Ils m'ont commandé plusieurs épées, cuirasses et grèves dwemers.",
+                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde, die Hilfe bei ihrem Kampf gegen die Daedra braucht. Ich wurde damit beauftragt, mehrere Schwerter, Kürasse und Beinschienen im Stil der Dwemer herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Dwarven Swords, Cuirass, and Greaves to complete my contract.",
+                            ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Dwarven Swords, Cuirass, and Greaves to complete my contract.",
+                            ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。この契約の完了のために課されているのは、複数のドワーフの剣、胸当てそしてグリーヴの生産だ",
+                            ["es"] = "Este encargo es del Gremio de Luchadores, buscando ayuda en su lucha contra los daedra. Me han encargado hacer varias espadas, corazas y grebas enanas para completar mi contrato.",
+                            ["it"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Dwarven Swords, Cuirass, and Greaves to complete my contract.",
+                        },
                     },
                     [6] = 
                     {
-                        ["en"] = "Argonian",
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane de la guilde des guerriers qui cherche à faciliter sa lutte contre les Daedra. Ils m'ont commandé plusieurs bâtons de rétablissement et boucliers en noyer.",
+                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde, die Hilfe bei ihrem Kampf gegen die Daedra braucht. Ich wurde damit beauftragt, mehrere Heilungsstäbe und Schilde aus Hickory herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Hickory Restoration Staves and Shields to complete my contract.",
+                            ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Hickory Restoration Staves and Shields to complete my contract.",
+                            ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。この契約の完了のために課されているのは、複数のヒッコリーの回復の杖、およびヒッコリーの盾の生産だ",
+                            ["es"] = "Este encargo es del Gremio de Luchadores, buscando ayuda en su lucha contra los daedra. Me han encargado hacer varias varas de restauración y escudos de nogal para completar mi contrato.",
+                            ["it"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Hickory Restoration Staves and Shields to complete my contract.",
+                        },
                     },
                     [7] = 
                     {
-                        ["en"] = "High Elf",
-                    },
-                    [8] = 
-                    {
-                        ["en"] = "Wood Elf",
-                    },
-                    [9] = 
-                    {
-                        ["en"] = "Khajiit",
-                    },
-                    [10] = 
-                    {
-                        ["en"] = "Unique",
-                    },
-                    [11] = 
-                    {
-                        ["en"] = "Thieves Guild",
-                    },
-                    [12] = 
-                    {
-                        ["en"] = "Dark Brotherhood",
-                    },
-                    [13] = 
-                    {
-                        ["en"] = "Malacath",
-                    },
-                    [14] = 
-                    {
-                        ["en"] = "Dwemer",
-                    },
-                    [15] = 
-                    {
-                        ["en"] = "Ancient Elf",
-                    },
-                    [16] = 
-                    {
-                        ["en"] = "Order of the Hour",
-                    },
-                    [17] = 
-                    {
-                        ["en"] = "Barbaric",
-                    },
-                    [18] = 
-                    {
-                        ["en"] = "Bandit",
-                    },
-                    [19] = 
-                    {
-                        ["en"] = "Primal",
-                    },
-                    [20] = 
-                    {
-                        ["en"] = "Daedric",
-                    },
-                    [21] = 
-                    {
-                        ["en"] = "Trinimac",
-                    },
-                    [22] = 
-                    {
-                        ["en"] = "Ancient Orc",
-                    },
-                    [23] = 
-                    {
-                        ["en"] = "Daggerfall Covenant",
-                    },
-                    [24] = 
-                    {
-                        ["en"] = "Ebonheart Pact",
-                    },
-                    [25] = 
-                    {
-                        ["en"] = "Aldmeri Dominion",
-                    },
-                    [26] = 
-                    {
-                        ["en"] = "Mercenary",
-                    },
-                    [27] = 
-                    {
-                        ["en"] = "Celestial",
-                    },
-                    [28] = 
-                    {
-                        ["en"] = "Glass",
-                    },
-                    [29] = 
-                    {
-                        ["en"] = "Xivkyn",
-                    },
-                    [30] = 
-                    {
-                        ["en"] = "Soul Shriven",
-                    },
-                    [31] = 
-                    {
-                        ["en"] = "Draugr",
-                    },
-                    [32] = 
-                    {
-                        ["en"] = "Maormer",
-                    },
-                    [33] = 
-                    {
-                        ["en"] = "Akaviri",
-                    },
-                    [34] = 
-                    {
-                        ["en"] = "Imperial",
-                    },
-                    [35] = 
-                    {
-                        ["en"] = "Yokudan",
-                    },
-                    [36] = 
-                    {
-                        ["en"] = "Universal",
-                    },
-                    [37] = 
-                    {
-                        ["en"] = "Reach Winter",
-                    },
-                    [38] = 
-                    {
-                        ["en"] = "Tsaesci",
-                    },
-                    [39] = 
-                    {
-                        ["en"] = "Minotaur",
-                    },
-                    [40] = 
-                    {
-                        ["en"] = "Ebony",
-                    },
-                    [41] = 
-                    {
-                        ["en"] = "Abah's Watch",
-                    },
-                    [42] = 
-                    {
-                        ["en"] = "Skinchanger",
-                    },
-                    [43] = 
-                    {
-                        ["en"] = "Morag Tong",
-                    },
-                    [44] = 
-                    {
-                        ["en"] = "Ra Gada",
-                    },
-                    [45] = 
-                    {
-                        ["en"] = "Dro-m'Athra",
-                    },
-                    [46] = 
-                    {
-                        ["en"] = "Assassins League",
-                    },
-                    [47] = 
-                    {
-                        ["en"] = "Outlaw",
-                    },
-                    [48] = 
-                    {
-                        ["en"] = "Redoran",
-                    },
-                    [49] = 
-                    {
-                        ["en"] = "Hlaalu",
-                    },
-                    [50] = 
-                    {
-                        ["en"] = "Militant Ordinator",
-                    },
-                    [51] = 
-                    {
-                        ["en"] = "Telvanni",
-                    },
-                    [52] = 
-                    {
-                        ["en"] = "Buoyant Armiger",
-                    },
-                    [53] = 
-                    {
-                        ["en"] = "Frostcaster",
-                    },
-                    [54] = 
-                    {
-                        ["en"] = "Ashlander",
-                    },
-                    [55] = 
-                    {
-                        ["en"] = "Worm Cult",
-                    },
-                    [56] = 
-                    {
-                        ["en"] = "Silken Ring",
-                    },
-                    [57] = 
-                    {
-                        ["en"] = "Mazzatun",
-                    },
-                    [58] = 
-                    {
-                        ["en"] = "Grim Harlequin",
-                    },
-                    [59] = 
-                    {
-                        ["en"] = "Hollowjack",
-                    },
-                    [60] = 
-                    {
-                        ["en"] = "Refabricated",
-                    },
-                    [61] = 
-                    {
-                        ["en"] = "Bloodforge",
-                    },
-                    [62] = 
-                    {
-                        ["en"] = "Dreadhorn",
-                    },
-                    [65] = 
-                    {
-                        ["en"] = "Apostle",
-                    },
-                    [66] = 
-                    {
-                        ["en"] = "Ebonshadow",
-                    },
-                    [67] = 
-                    {
-                        ["en"] = "Undaunted",
-                    },
-                    [68] = 
-                    {
-                        ["en"] = "USE ME",
-                    },
-                    [69] = 
-                    {
-                        ["en"] = "Fang Lair",
-                    },
-                    [70] = 
-                    {
-                        ["en"] = "Scalecaller",
-                    },
-                    [71] = 
-                    {
-                        ["en"] = "Psijic Order",
-                    },
-                    [72] = 
-                    {
-                        ["en"] = "Sapiarch",
-                    },
-                    [73] = 
-                    {
-                        ["en"] = "Welkynar",
-                    },
-                    [74] = 
-                    {
-                        ["en"] = "Dremora",
-                    },
-                    [75] = 
-                    {
-                        ["en"] = "Pyandonean",
-                    },
-                    [76] = 
-                    {
-                        ["en"] = "Divine Prosecution",
-                    },
-                    [77] = 
-                    {
-                        ["en"] = "Huntsman",
-                    },
-                    [78] = 
-                    {
-                        ["en"] = "Silver Dawn",
-                    },
-                    [79] = 
-                    {
-                        ["en"] = "Dead-Water",
-                    },
-                    [80] = 
-                    {
-                        ["en"] = "Honor Guard",
-                    },
-                    [81] = 
-                    {
-                        ["en"] = "Elder Argonian",
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation de trois anneaux d'électrum.",
+                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde, die Hilfe bei ihrem Kampf gegen die Daedra braucht. Ich wurde damit beauftragt, drei Elektrumringe herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating three Electrum Rings to complete my contract.",
+                            ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating three Electrum Rings to complete my contract.",
+                            ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。契約を遂行するには琥珀金の指輪3個を作る",
+                            ["es"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating three Electrum Rings to complete my contract.",
+                        },
                     },
                 },
-                ["qualities"] = 
+                ["conditions"] = 
                 {
-                    ["en"] = 
+                    [1] = 
                     {
-                        [1] = "Normal",
-                        [2] = "Fine",
-                        [3] = "Superior",
-                        [4] = "Epic",
-                        [5] = "Legendary",
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Préparez une tourte au groin de mammouth : 0/1",
+                                ["de"] = "Stellt eine Mammutrüsselpastete her: 0/1",
+                                ["en"] = "Craft Mammoth Snout Pie: 0 / 1",
+                                ["ru"] = "Создать — пирог с хоботом мамонта: 0 / 1",
+                                ["ja"] = "マンモスの鼻のパイを生産する: 0 / 1",
+                                ["es"] = "Preparæ pastel de trompa de mamut: 0/1",
+                                ["it"] = "Craft Mammoth Snout Pie: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Préparez un thé des deux zéphyrs : 0/1",
+                                ["de"] = "Stellt etwas Doppelsturmtee her: 0/1",
+                                ["en"] = "Craft Two-Zephyr Tea: 0 / 1",
+                                ["ru"] = "Создать — чай «Два зефира»: 0 / 1",
+                                ["ja"] = "トゥーゼファーティーを生産する: 0 / 1",
+                                ["es"] = "Preparæ té de Dos-Céfiros: 0/1",
+                                ["it"] = "Craft Two-Zephyr Tea: 0 / 1",
+                            },
+                        },
+                    },
+                    [2] = 
+                    {
+                        [1] = 
+                        {
+                            [3] = 
+                            {
+                                ["fr"] = "Acquérez une rune d'essence Oko : 1/1",
+                                ["de"] = "Beschafft eine Oko-Essenzrune: 1/1",
+                                ["en"] = "Acquire Oko Essence Rune: 1 / 1",
+                                ["ru"] = "Добыть руну сущности Око: 1 / 1",
+                                ["ja"] = "オコの本質ルーンを手に入れる: 1 / 1",
+                                ["es"] = "Adquiere una runa de esencia Oko: 1/1",
+                                ["it"] = "Acquire Oko Essence Rune: 1 / 1",
+                            },
+                            [1] = 
+                            {
+                                ["fr"] = "Fabriquez un glyphe modéré magique avec Ta : 0/1",
+                                ["de"] = "Stellt mit einer Ta-Rune eine moderate Glyphe der Magicka her: 0/1",
+                                ["en"] = "Craft Moderate Glyph of Magicka With Ta: 0 / 1",
+                                ["ru"] = "Craft Moderate Glyph of Magicka With Ta: 0 / 1",
+                                ["ja"] = "ターの中堅のグリフ(マジカ)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un glifo moderado de magia con Ta: 0/1",
+                                ["it"] = "Craft Moderate Glyph of Magicka: 0 / 1",
+                            },
+                        },
+                    },
+                    [3] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Préparez une solution de Vigueur : 0/1",
+                                ["de"] = "Stellt Lösungen der Ausdauer her: 0/1",
+                                ["en"] = "Craft Solution of Stamina: 0 / 1",
+                                ["ru"] = "Craft Solution of Stamina: 0 / 1",
+                                ["ja"] = "スタミナの液体薬を生産する: 0 / 1",
+                                ["es"] = "Prepara una solución de aguante: 0/1",
+                                ["it"] = "Craft Solution of Stamina: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Acquérez une cardamine des prés : 3/3",
+                                ["de"] = "Besorgt etwas Wiesenschaumkraut: 3/3",
+                                ["en"] = "Acquire Lady's Smock: 3 / 3",
+                                ["ru"] = "Раздобыть — луговой сердечник: 3 / 3",
+                                ["ja"] = "タネツケバナを手に入れる: 3 / 3",
+                                ["es"] = "Adquiere cardamina: 3/3",
+                                ["it"] = "Acquire lady's smock: 3 / 3",
+                            },
+                        },
+                    },
+                    [4] = 
+                    {
+                        [1] = 
+                        {
+                            [4] = 
+                            {
+                                ["fr"] = "Fabriquez des épaulettes en soie d'araignée normales : 0/1",
+                                ["de"] = "Stellt normale Spinnenseidenschulterpolster her: 0/1",
+                                ["en"] = "Craft Normal Spidersilk Epaulets: 0 / 1",
+                                ["ru"] = "Craft Normal Spidersilk Epaulets: 0 / 1",
+                                ["ja"] = "スパイダーシルクの肩当て(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unos cubrehombros de seda de araña normales: 0/1",
+                                ["it"] = "Craft Spidersilk Epaulets: 0 / 1",
+                            },
+                            [2] = 
+                            {
+                                ["fr"] = "Fabriquez une robe en soie d'araignée normale : 0/1",
+                                ["de"] = "Stellt normale Spinnenseidenroben her: 0/1",
+                                ["en"] = "Craft Normal Spidersilk Robe: 0 / 1",
+                                ["ru"] = "Craft Normal Spidersilk Robe: 0 / 1",
+                                ["ja"] = "スパイダーシルクのローブ(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una túnica de seda de araña normal: 0/1",
+                                ["it"] = "Craft Spidersilk Robe: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Fabriquez des braies en soie d'araignée normales : 0/1",
+                                ["de"] = "Stellt normale Spinnenseidenbeinkleider her: 0/1",
+                                ["en"] = "Craft Normal Spidersilk Breeches: 0 / 1",
+                                ["ru"] = "Craft Normal Spidersilk Breeches: 0 / 1",
+                                ["ja"] = "スパイダーシルクのパンツ(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unos calzones de seda de araña normales: 0/1",
+                                ["it"] = "Craft Spidersilk Breeches: 0 / 1",
+                            },
+                        },
+                    },
+                    [5] = 
+                    {
+                        [1] = 
+                        {
+                            [4] = 
+                            {
+                                ["fr"] = "Fabriquez des grèves dwemer normales : 0/1",
+                                ["de"] = "Stellt normale Dwemerbeinschienen her: 0/1",
+                                ["en"] = "Craft Normal Dwarven Greaves: 0 / 1",
+                                ["ru"] = "Craft Normal Dwarven Greaves: 0 / 1",
+                                ["ja"] = "ドワーフのグリーヴ(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unas grebas de acero enano normales: 0/1",
+                                ["it"] = "Craft Dwarven Greaves: 0 / 1",
+                            },
+                            [2] = 
+                            {
+                                ["fr"] = "Fabriquez une épée dwemer normale : 0/1",
+                                ["de"] = "Stellt normale Dwemerschwerter her: 0/1",
+                                ["en"] = "Craft Normal Dwarven Sword: 0 / 1",
+                                ["ru"] = "Craft Normal Dwarven Sword: 0 / 1",
+                                ["ja"] = "ドワーフの剣(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una espada de acero enano normal: 0/1",
+                                ["it"] = "Craft Dwarven Sword: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Fabriquez une cuirasse dwemer normale : 0/1",
+                                ["de"] = "Stellt normale Dwemerkürasse her: 0/1",
+                                ["en"] = "Craft Normal Dwarven Cuirass: 0 / 1",
+                                ["ru"] = "Craft Normal Dwarven Cuirass: 0 / 1",
+                                ["ja"] = "ドワーフの胸当て(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una coraza de acero enano normal: 0/1",
+                                ["it"] = "Craft Dwarven Cuirass: 0 / 1",
+                            },
+                        },
+                    },
+                    [6] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Fabriquez un bâton de rétablissement en noyer normal : 0/2",
+                                ["de"] = "Stellt normale Hickoryheilungsstäbe her: 0/2",
+                                ["en"] = "Craft Normal Hickory Restoration Staff: 0 / 2",
+                                ["ru"] = "Craft Normal Hickory Restoration Staff: 0 / 2",
+                                ["ja"] = "ヒッコリーの回復の杖(ノーマル)を生産する: 0 / 2",
+                                ["es"] = "Fabrica una vara restauradora de nogal normal: 0/2",
+                                ["it"] = "Craft Hickory Restoration Staff: 0 / 2",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Fabriquez un bouclier en noyer normal : 0/1",
+                                ["de"] = "Stellt normale Hickoryschilde her: 0/1",
+                                ["en"] = "Craft Normal Hickory Shield: 0 / 1",
+                                ["ru"] = "Craft Normal Hickory Shield: 0 / 1",
+                                ["ja"] = "ヒッコリーの盾(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un escudo de nogal normal: 0/1",
+                                ["it"] = "Craft Hickory Shield: 0 / 1",
+                            },
+                        },
+                    },
+                    [7] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Fabriquez trois anneaux en électrum : 0/3",
+                                ["de"] = "Stellt drei Elektrumringe her: 0/3",
+                                ["en"] = "Craft Three Electrum Rings: 0 / 3",
+                                ["ru"] = "Craft three Electrum Rings: 0 / 3",
+                                ["ja"] = "琥珀金の指輪を3個作る: 0 / 3",
+                                ["es"] = "Fabrica tres anillos de electro: 0/3",
+                                ["it"] = "TRACKER GOAL TEXT: 0 / 3",
+                            },
+                        },
+                    },
+                },
+                ["version"] = 1,
+                ["quests"] = 
+                {
+                    [1] = 
+                    {
+                        ["fr"] = "Commande de cuisine",
+                        ["de"] = "Versorgerschrieb",
+                        ["en"] = "Provisioner Writ",
+                        ["ru"] = "Заказ снабженцу",
+                        ["ja"] = "調理師の依頼",
+                        ["es"] = "Encargo de provisiones",
+                        ["it"] = "Provisioner Writ",
+                    },
+                    [2] = 
+                    {
+                        ["fr"] = "Commandes d'enchantement",
+                        ["de"] = "Verzaubererschrieb",
+                        ["en"] = "Enchanter Writ",
+                        ["ru"] = "Заказ зачарователю",
+                        ["ja"] = "付呪師の依頼",
+                        ["es"] = "Encargo de encantamiento",
+                        ["it"] = "Enchanter Writ",
+                    },
+                    [3] = 
+                    {
+                        ["fr"] = "Commande d'alchimie",
+                        ["de"] = "Alchemistenschrieb",
+                        ["en"] = "Alchemist Writ",
+                        ["ru"] = "Заказ алхимику",
+                        ["ja"] = "錬金術師の依頼",
+                        ["es"] = "Encargo de alquimia",
+                        ["it"] = "Alchemist Writ",
+                    },
+                    [4] = 
+                    {
+                        ["fr"] = "Commande de tailleur",
+                        ["de"] = "Schneiderschrieb",
+                        ["en"] = "Clothier Writ",
+                        ["ru"] = "Заказ портному",
+                        ["ja"] = "仕立師の依頼",
+                        ["es"] = "Encargo de sastrería",
+                        ["it"] = "Clothier Writ",
+                    },
+                    [5] = 
+                    {
+                        ["fr"] = "Commande de forge",
+                        ["de"] = "Schmiedeschrieb",
+                        ["en"] = "Blacksmith Writ",
+                        ["ru"] = "Заказ кузнецу",
+                        ["ja"] = "鍛冶師の依頼",
+                        ["es"] = "Encargo de herrería",
+                        ["it"] = "Blacksmith Writ",
+                    },
+                    [6] = 
+                    {
+                        ["fr"] = "Commande de travail du bois",
+                        ["de"] = "Schreinerschrieb",
+                        ["en"] = "Woodworker Writ",
+                        ["ru"] = "Заказ столяру",
+                        ["ja"] = "木工師の依頼",
+                        ["es"] = "Encargo de carpintería",
+                        ["it"] = "Woodworker Writ",
+                    },
+                    [7] = 
+                    {
+                        ["fr"] = "Commande de joaillerie",
+                        ["de"] = "Schmuckhandwerksschrieb",
+                        ["en"] = "Jewelry Crafting Writ",
+                        ["ru"] = "Заказ ювелиру",
+                        ["ja"] = "宝飾師のクラフト依頼",
+                        ["es"] = "Encargo de artesanía de joyería",
+                        ["it"] = "",
+                    },
+                },
+            },
+            ["ziggr-alt-six"] = 
+            {
+                ["steps"] = 
+                {
+                    [1] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane d'une branche de la guilde des mages. Ils cherchent à approvisionner leurs efforts dans le royaume daedrique de Havreglace. On m'a commandé plusieurs chaussures, chapeaux et baudriers en kresh pour remplir mon contrat.",
+                            ["de"] = "Dieser Schrieb stammt von einem Zweig der Magiergilde. Er will sich für seine Unternehmungen im daedrischen Reich Kalthafen ausrüsten und versorgen. Ich wurde damit beauftragt, mehrere Schuhe, Hüte und Schärpen aus Kresh herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating several Kresh Shoes, Hats, and Sashes to complete my contract.",
+                            ["ru"] = "Этот заказ поступил от оружейного подразделения Гильдии магов. Им нужно обеспечение для сражения в Хладной Гавани. Чтобы выполнить контракт, мне нужно создать несколько башмаков, головных уборов и поясов из волокон креша.",
+                            ["ja"] = "依頼は魔術師ギルドの戦闘部隊からのものだ。彼らはデイドラの領域コールドハーバーにおける戦線に、物資と装備を供給する方法を探している。この契約の完了のために課されているのは、複数のクレッシュの帽子、靴そしてサッシュの生産だ",
+                            ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministros y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado hacer varios zapatos, capuchas y bandas de kresh para completar mi contrato.",
+                            ["it"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating several Kresh Shoes, Hats, and Sashes to complete my contract.",
+                        },
+                    },
+                    [2] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane de la guilde des mages. Ils cherchent à ravitailler et armer leurs efforts dans le domaine daedrique de Havreglace. On m'a commandé de fabriquer des épées longues, solerets et gantelets en calcinium.",
+                            ["de"] = "Dieser Schrieb stammt von einem Zweig der Magiergilde. Er will sich für seine Unternehmungen im daedrischen Reich Kalthafen ausrüsten und versorgen. Ich wurde damit beauftragt, mehrere Bidenhänder, Panzerschuhe und Hentzen aus Kalzinium herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating several Calcinium Greatswords, Sabatons, and Gauntlets to complete my contract.",
+                            ["ru"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating several Calcinium Greatswords, Sabatons, and Gauntlets to complete my contract.",
+                            ["ja"] = "依頼は魔術師ギルドからのものだ。彼らはデイドラの領域コールドハーバーにおける戦線に、物資と装備を供給する方法を探している。この契約の完了のために課されているのは、複数のカルシニウムの大剣、サバトン、篭手の生産だ",
+                            ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministros y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado hacer varios mandobles, escarpes y guanteletes de calcinio para completar mi contrato.",
+                            ["it"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating several Calcinium Greatswords, Sabatons, and Gauntlets to complete my contract.",
+                        },
+                    },
+                    [3] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane d'une branche de la guilde des mages. Ils cherchent à ravitailler et armer leurs efforts dans le domaine daedrique de Havreglace. On m'a commandé de fabriquer plusieurs bâtons infernaux, bâtons de glace et bâtons de foudre en bouleau.",
+                            ["de"] = "Dieser Schrieb stammt von einem Zweig der Magiergilde. Er will sich für seine Unternehmungen im daedrischen Reich Kalthafen ausrüsten und versorgen. Ich wurde damit beauftragt, mehrere Flammenstäbe, Froststäbe und Blitzstäbe aus Birke herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating several Birch Inferno Staves, Ice Staves, and Lightning Staves to complete my contract.",
+                            ["ru"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating several Birch Inferno Staves, Ice Staves, and Lightning Staves to complete my contract.",
+                            ["ja"] = "依頼は魔術師ギルドの戦闘部隊からのものだ。彼らはデイドラの領域コールドハーバーにおける戦線に、物資と装備を供給する方法を探している。この契約の完了のために課されているのは、複数のカバノキの業火の杖、氷の杖そして稲妻の杖の生産だ",
+                            ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministros y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado hacer varias varas infernales, glaciares y eléctricas de abedul para completar mi contrato.",
+                            ["it"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating several Birch Inferno Staves, Ice Staves, and Lightning Staves to complete my contract.",
+                        },
+                    },
+                    [4] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation de deux colliers de platine.",
+                            ["de"] = "Dieser Schrieb stammt von einer Gruppe „unabhängiger Händler“, die Geld gegen Waren tauschen. Ich wurde damit beauftragt, zwei Platinketten herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating two Platinum Necklaces to complete my contract.",
+                            ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating two Platinum Necklaces to complete my contract.",
+                            ["ja"] = "依頼は金貨を物資に替えている「独立系商人」の団体からのものだ。契約を遂行するにはプラチナのネックレス2個を作る",
+                            ["es"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating two Platinum Necklaces to complete my contract.",
+                        },
+                    },
+                    [5] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands qui transportent les denrées aux quatre coins de Nirn. On m'a demandé de préparer un maïs rôti et une bière brune à la noisette. Je dois livrer ces denrées aux Éboulis.",
+                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, etwas Grillmais und etwas Nussbraunale herzustellen, um meinen Kontrakt zu erfüllen. Die Händler erwarten die Lieferung in Steinfälle.",
+                            ["en"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating Roast Corn and Nut Brown Ale to complete my contract. The merchants expect delivery in Stonefalls.",
+                            ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо изготовить жареная кукуруза и темный ореховый эль. Торговцы ожидают поставку в Стоунфолзе.",
+                            ["ja"] = "ニルン各地に商品を流通させる貿易組合からの依頼だ。契約を遂行するには焼きトウモロコシとナット・ブラウンエールを作らなければならない。商人たちはストンフォールで配達を待っている",
+                            ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado preparar maíz tostado y cerveza negra con avellanas para completar mi contrato. Los mercaderes esperan la entrega en Páramo de Piedra.",
+                            ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating Roast Corn and Nut Brown Ale to complete my contract. The merchants expect delivery in Stonefalls.",
+                        },
+                    },
+                    [6] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande émane d'une branche de la guilde des mages. Ils cherchent à ravitailler et armer leurs efforts dans le domaine daedrique de Havreglace. On m'a commandé de fabriquer un glyphe de Santé majeur et d'acquérir une rune de puissance Idode.",
+                            ["de"] = "Dieser Schrieb stammt von einem Zweig der Magiergilde. Er will sich für seine Unternehmungen im daedrischen Reich Kalthafen ausrüsten und versorgen. Ich wurde damit beauftragt, eine hervorragende Glyphe des Lebens herzustellen und eine Idode-Machtrune zu besorgen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating a Greater Glyph of Health and acquiring an Idode Potency Rune to complete my contract.",
+                            ["ru"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating a Greater Glyph of Health and acquiring an Idode Potency Rune to complete my contract.",
+                            ["ja"] = "依頼は魔術師ギルドの戦闘部隊からのものだ。彼らはデイドラの領域コールドハーバーにおける戦線に、物資と装備を供給する方法を探している。この契約の完了のために課されているのは、希少なグリフ(体力)の生産と、イドデの効力ルーンの入手だ",
+                            ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministros y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado crear un glifo superior de vida y conseguir una runa de potencia Idode para completar mi contrato.",
+                            ["it"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating a Greater Glyph of Health and acquiring an Idode Potency Rune to complete my contract.",
+                        },
+                    },
+                    [7] = 
+                    {
+                        [1] = 
+                        {
+                            ["fr"] = "Cette commande est adressée par l'un des maîtres approvisionneurs de Belkarth. Celui-ci cherche des fournitures alchimiques pour équiper les explorateurs fraîchement débarqués. On m'a demandé de préparer une panacée de Santé et de ramener une nirnrave.",
+                            ["de"] = "Dieser Schrieb stammt von einem der Meisterbevorrater von Belkarth. Dieser sucht nach alchemistischen Vorräten für neu eingetroffene Forscher. Ich wurde damit beauftragt, eine Panazee des Lebens herzustellen und etwas Nirnwurz zu besorgen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from one of the Belkarth supply masters. This one seeks alchemical supplies for newly arrived explorers. I've been tasked with creating a Panacea of Health and acquiring some nirnroot in order to complete my contract.",
+                            ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks alchemical supplies for newly arrived explorers. I've been tasked with creating a Panacea of Health and acquiring some корень Нирна in order to complete my contract.",
+                            ["ja"] = "ベルカースの補給係からの依頼だ。新しい冒険者向けの錬金術用品を求めている。契約を遂行するには体力の万能薬を作り、ニルンルートを手に入れなければならない",
+                            ["es"] = "Este encargo es de uno de los encargados del suministro de Belkarth. Éste busca armas y armaduras para los exploradores recién llegados. Me han encargado crear una panacea de salud y conseguir algo de raíz de nirn para completar mi contrato.",
+                            ["it"] = "This writ is from one of the Belkarth supply masters. This one seeks alchemical supplies for newly arrived explorers. I've been tasked with creating a Panacea of Health and acquiring some nirnroot in order to complete my contract.",
+                        },
+                    },
+                },
+                ["conditions"] = 
+                {
+                    [1] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["fr"] = "Fabriquez des chaussures en soie d'araignée normales : 0/1",
+                                ["de"] = "Stellt normale Kreshschuhe her: 0/1",
+                                ["en"] = "Craft Normal Kresh Shoes: 0 / 1",
+                                ["ru"] = "Craft Normal Kresh Shoes: 0 / 1",
+                                ["ja"] = "クレッシュの靴(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unos zapatos de seda de araña normales: 0/1",
+                                ["it"] = "Craft Kresh Shoes: 0 / 1",
+                            },
+                            [2] = 
+                            {
+                                ["fr"] = "Fabriquez un baudrier en soie d'araignée normal : 0/1",
+                                ["de"] = "Stellt normale Kreshhüte her: 0/1",
+                                ["en"] = "Craft Normal Kresh Hat: 0 / 1",
+                                ["ru"] = "Craft Normal Kresh Hat: 0 / 1",
+                                ["ja"] = "クレッシュの帽子(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una banda de seda de araña normal: 0/1",
+                                ["it"] = "Craft Kresh Hat: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Fabriquez un baudrier en kresh normal : 0/1",
+                                ["de"] = "Stellt normale Kreshschärpen her: 0/1",
+                                ["en"] = "Craft Normal Kresh Sash: 0 / 1",
+                                ["ru"] = "Craft Normal Kresh Sash: 0 / 1",
+                                ["ja"] = "クレッシュのサッシュ(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una banda de kresh normal: 0/1",
+                                ["it"] = "Craft Kresh Sash: 0 / 1",
+                            },
+                        },
+                    },
+                    [2] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["fr"] = "Fabriquez une épée longue en calcinium normale : 0/1",
+                                ["de"] = "Stellt normale Kalziniumbidenhänder her: 0/1",
+                                ["en"] = "Craft Normal Calcinium Greatsword: 0 / 1",
+                                ["ru"] = "Craft Normal Calcinium Greatsword: 0 / 1",
+                                ["ja"] = "カルシニウムの大剣(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un mandoble de calcinio normal: 0/1",
+                                ["it"] = "Craft Calcinium Greatsword: 0 / 1",
+                            },
+                            [2] = 
+                            {
+                                ["fr"] = "Fabriquez des solerets en calcinium normaux : 0/1",
+                                ["de"] = "Stellt normale Kalziniumpanzerschuhe her: 0/1",
+                                ["en"] = "Craft Normal Calcinium Sabatons: 0 / 1",
+                                ["ru"] = "Craft Normal Calcinium Sabatons: 0 / 1",
+                                ["ja"] = "カルシニウムのサバトン(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unos escarpes de calcinio normales: 0/1",
+                                ["it"] = "Craft Calcinium Sabatons: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Fabriquez des gantelets en calcinium normaux : 0/1",
+                                ["de"] = "Stellt normale Kalziniumhentzen her: 0/1",
+                                ["en"] = "Craft Normal Calcinium Gauntlets: 0 / 1",
+                                ["ru"] = "Craft Normal Calcinium Gauntlets: 0 / 1",
+                                ["ja"] = "カルシニウムの篭手(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unos guanteletes de calcinio normales: 0/1",
+                                ["it"] = "Craft Calcinium Gauntlets: 0 / 1",
+                            },
+                        },
+                    },
+                    [3] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["fr"] = "Fabriquez un bâton infernal en bouleau normal : 0/1",
+                                ["de"] = "Stellt normale Birkenflammenstäbe her: 0/1",
+                                ["en"] = "Craft Normal Birch Inferno Staff: 0 / 1",
+                                ["ru"] = "Craft Normal Birch Inferno Staff: 0 / 1",
+                                ["ja"] = "カバノキの業火の杖(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una vara infernal de abedul normal: 0/1",
+                                ["it"] = "Craft Birch Inferno Staff: 0 / 1",
+                            },
+                            [2] = 
+                            {
+                                ["fr"] = "Fabriquez un bâton de glace en bouleau normal : 0/1",
+                                ["de"] = "Stellt normale Birkenfroststäbe her: 0/1",
+                                ["en"] = "Craft Normal Birch Ice Staff: 0 / 1",
+                                ["ru"] = "Craft Normal Birch Ice Staff: 0 / 1",
+                                ["ja"] = "カバノキの氷の杖(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una vara glaciar de abedul normal: 0/1",
+                                ["it"] = "Craft Birch Ice Staff: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Fabriquez un bâton de foudre en bouleau normal : 0/1",
+                                ["de"] = "Stellt normale Birkenblitzstäbe her: 0/1",
+                                ["en"] = "Craft Normal Birch Lightning Staff: 0 / 1",
+                                ["ru"] = "Craft Normal Birch Lightning Staff: 0 / 1",
+                                ["ja"] = "カバノキの稲妻の杖(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una vara eléctrica de abedul normal: 0/1",
+                                ["it"] = "Craft Birch Lightning Staff: 0 / 1",
+                            },
+                        },
+                    },
+                    [4] = 
+                    {
+                        [1] = 
+                        {
+                            [1] = 
+                            {
+                                ["fr"] = "Fabriquez deux colliers en platine : 0/2",
+                                ["de"] = "Stellt zwei Platinhalsketten her: 0/2",
+                                ["en"] = "Craft Two Platinum Necklaces: 0 / 2",
+                                ["ru"] = "Craft two Platinum Necklaces: 0 / 2",
+                                ["ja"] = "プラチナのネックレスを2個作る: 0 / 2",
+                                ["es"] = "Fabrica dos colgantes de platino: 0/2",
+                                ["it"] = "TRACKER GOAL TEXT: 0 / 2",
+                            },
+                        },
+                    },
+                    [5] = 
+                    {
+                        [2] = 
+                        {
+                            [1] = 
+                            {
+                                ["fr"] = "Les brasseurs et cuisiniers peuvent fournir des recettes",
+                                ["de"] = "Brauer und Köche verkaufen Rezepte",
+                                ["en"] = "Brewers and Cooks Can Provide Recipes",
+                                ["ru"] = "Пивовары и повара могут снабдить вас рецептами",
+                                ["ja"] = "醸造家と料理人はレシピを提供できる",
+                                ["es"] = "Los cerveceros y los cocineros pueden proporcionar recetas",
+                                ["it"] = "TRACKER GOAL TEXT",
+                            },
+                        },
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Préparez un maïs rôti : 0/1",
+                                ["de"] = "Stellt etwas Grillmais her: 0/1",
+                                ["en"] = "Craft Roast Corn: 0 / 1",
+                                ["ru"] = "Создать — жареная кукуруза: 0 / 1",
+                                ["ja"] = "焼きトウモロコシを生産する: 0 / 1",
+                                ["es"] = "Preparæ maíz tostado: 0/1",
+                                ["it"] = "Craft Roast Corn: 0 / 1",
+                            },
+                            [3] = 
+                            {
+                                ["fr"] = "Préparez une bière brune à la noisette : 0/1",
+                                ["de"] = "Stellt etwas Nussbraunale her: 0/1",
+                                ["en"] = "Craft Nut Brown Ale: 0 / 1",
+                                ["ru"] = "Создать — темный ореховый эль: 0 / 1",
+                                ["ja"] = "ナット・ブラウンエールを生産する: 0 / 1",
+                                ["es"] = "Preparæ cerveza negra con avellanas: 0/1",
+                                ["it"] = "Craft Nut Brown Ale: 0 / 1",
+                            },
+                        },
+                    },
+                    [6] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Acquérez une rune de puissance Idode : 1/1",
+                                ["de"] = "Beschafft eine Idode-Machtrune: 1/1",
+                                ["en"] = "Acquire Idode Potency Rune: 1 / 1",
+                                ["ru"] = "Добыть руну силы Идоде: 1 / 1",
+                                ["ja"] = "イドデの効力ルーンを手に入れる: 1 / 1",
+                                ["es"] = "Adquiere una runa de potencia Idode: 1/1",
+                                ["it"] = "Acquire Idode Potency Rune: 1 / 1",
+                            },
+                            [1] = 
+                            {
+                                ["fr"] = "Fabriquez un glyphe majeur vital avec Ta : 0/1",
+                                ["de"] = "Stellt mit einer Ta-Rune eine hervorragende Glyphe des Lebens her: 0/1",
+                                ["en"] = "Craft Greater Glyph of Health With Ta: 0 / 1",
+                                ["ru"] = "Craft Greater Glyph of Health With Ta: 0 / 1",
+                                ["ja"] = "ターの希少なグリフ(体力)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un glifo superior de vida con Ta: 0/1",
+                                ["it"] = "Craft Greater Glyph of Health: 0 / 1",
+                            },
+                        },
+                    },
+                    [7] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Acquérez une nirnrave : 3/3",
+                                ["de"] = "Besorgt eine Nirnwurz: 3/3",
+                                ["en"] = "Acquire Nirnroot: 3 / 3",
+                                ["ru"] = "Раздобыть — корень Нирна: 3 / 3",
+                                ["ja"] = "ニルンルートを手に入れる: 3 / 3",
+                                ["es"] = "Adquiere raíz de nirn: 3/3",
+                                ["it"] = "Acquire nirnroot: 3 / 3",
+                            },
+                            [1] = 
+                            {
+                                ["fr"] = "Préparez une panacée de Santé : 0/1",
+                                ["de"] = "Stellt Panazeen des Lebens her: 0/1",
+                                ["en"] = "Craft Panacea of Health: 0 / 1",
+                                ["ru"] = "Craft Panacea of Health: 0 / 1",
+                                ["ja"] = "体力の万能薬を生産する: 0 / 1",
+                                ["es"] = "Prepara una panacea de salud: 0/1",
+                                ["it"] = "Craft Panacea of Health: 0 / 1",
+                            },
+                        },
+                    },
+                },
+                ["version"] = 1,
+                ["quests"] = 
+                {
+                    [1] = 
+                    {
+                        ["fr"] = "Commande de tailleur",
+                        ["de"] = "Schneiderschrieb",
+                        ["en"] = "Clothier Writ",
+                        ["ru"] = "Заказ портному",
+                        ["ja"] = "仕立師の依頼",
+                        ["es"] = "Encargo de sastrería",
+                        ["it"] = "Clothier Writ",
+                    },
+                    [2] = 
+                    {
+                        ["fr"] = "Commande de forge",
+                        ["de"] = "Schmiedeschrieb",
+                        ["en"] = "Blacksmith Writ",
+                        ["ru"] = "Заказ кузнецу",
+                        ["ja"] = "鍛冶師の依頼",
+                        ["es"] = "Encargo de herrería",
+                        ["it"] = "Blacksmith Writ",
+                    },
+                    [3] = 
+                    {
+                        ["fr"] = "Commande de travail du bois",
+                        ["de"] = "Schreinerschrieb",
+                        ["en"] = "Woodworker Writ",
+                        ["ru"] = "Заказ столяру",
+                        ["ja"] = "木工師の依頼",
+                        ["es"] = "Encargo de carpintería",
+                        ["it"] = "Woodworker Writ",
+                    },
+                    [4] = 
+                    {
+                        ["fr"] = "Commande de joaillerie",
+                        ["de"] = "Schmuckhandwerksschrieb",
+                        ["en"] = "Jewelry Crafting Writ",
+                        ["ru"] = "Заказ ювелиру",
+                        ["ja"] = "宝飾師のクラフト依頼",
+                        ["es"] = "Encargo de artesanía de joyería",
+                        ["it"] = "",
+                    },
+                    [5] = 
+                    {
+                        ["fr"] = "Commande de cuisine",
+                        ["de"] = "Versorgerschrieb",
+                        ["en"] = "Provisioner Writ",
+                        ["ru"] = "Заказ снабженцу",
+                        ["ja"] = "調理師の依頼",
+                        ["es"] = "Encargo de provisiones",
+                        ["it"] = "Provisioner Writ",
+                    },
+                    [6] = 
+                    {
+                        ["fr"] = "Commandes d'enchantement",
+                        ["de"] = "Verzaubererschrieb",
+                        ["en"] = "Enchanter Writ",
+                        ["ru"] = "Заказ зачарователю",
+                        ["ja"] = "付呪師の依頼",
+                        ["es"] = "Encargo de encantamiento",
+                        ["it"] = "Enchanter Writ",
+                    },
+                    [7] = 
+                    {
+                        ["fr"] = "Commande d'alchimie",
+                        ["de"] = "Alchemistenschrieb",
+                        ["en"] = "Alchemist Writ",
+                        ["ru"] = "Заказ алхимику",
+                        ["ja"] = "錬金術師の依頼",
+                        ["es"] = "Encargo de alquimia",
+                        ["it"] = "Alchemist Writ",
                     },
                 },
             },
@@ -2214,7 +3342,6 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["version"] = 1,
                 ["conditions"] = 
                 {
                     [2] = 
@@ -2541,6 +3668,7 @@ LibCraftTextVars =
                         },
                     },
                 },
+                ["version"] = 1,
                 ["quests"] = 
                 {
                     [2] = 
@@ -2601,7 +3729,7 @@ LibCraftTextVars =
                     },
                 },
             },
-            ["ziggr-alt-five"] = 
+            ["ziggr-alt-three"] = 
             {
                 ["steps"] = 
                 {
@@ -2609,94 +3737,93 @@ LibCraftTextVars =
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from a group of \"independent merchants,\" trading coin for supplies. I've been tasked with creating several Ebonthread Robes, Breeches, and Epaulets to complete my contract.",
-                            ["fr"] = "Cette commande est adressée par un groupe de « marchands indépendants » qui échangent de l'or contre leurs réserves. On m'a commandé la confection de plusieurs robes, braies et épaulettes en fil d'ébonite pour remplir mon contrat.",
-                            ["ru"] = "This writ is from a group of \"independent merchants,\" trading coin for supplies. I've been tasked with creating several Ebonthread Robes, Breeches, and Epaulets to complete my contract.",
-                            ["en"] = "This writ is from a group of \"independent merchants,\" trading coin for supplies. I've been tasked with creating several Ebonthread Robes, Breeches, and Epaulets to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einer Gruppe „unabhängiger Händler“, die Geld gegen Waren tauschen. Ich wurde damit beauftragt, mehrere Roben, Beinkleider und Schulterpolster aus Ebengarn herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ja"] = "依頼は金貨を物資に替えている「独立系商人」の団体からのものだ。この契約の完了のために課されているのは、複数のエボンスレッドのローブ、パンツそして肩当ての生産だ",
-                            ["es"] = "Este encargo es de un grupo de \"mercaderes independientes\", cambiando moneda por suministros. Me han encargado hacer varias túnicas, pantalones y hombreras de hilo de ébano para completar mi contrato.",
+                            ["fr"] = "Cette commande émane d'un groupe consacré à la défense des populations déplacées par le conflit qui déchire Nirn. On m'a confié la fabrication de plusieurs casques, coques et brassards en cuir.",
+                            ["de"] = "Dieser Schrieb stammt von einer Gruppe, welche all jene beschützen will, die durch die Kämpfe in Nirn ihre Heimat verloren haben. Ich wurde damit beauftragt, mehrere Helme, Schulterkappen und Armschienen aus Leder herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Leather Helmets, Arm Cops, and Bracers to complete my contract.",
+                            ["ru"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Leather Helmets, Arm Cops, and Bracers to complete my contract.",
+                            ["ja"] = "依頼はニルン各地の戦闘によって故郷を追われた人々を守ろうとしている団体からのものだ。この契約の完了のために課されているのは、複数の革の兜、アームカップそして腕当ての生産だ",
+                            ["es"] = "Este encargo es de un grupo que intenta defender a los refugiados desplazados por los combates en todo Nirn. Me han encargado hacer varios cascos, hombreras y brazales de cuero para completar mi contrato.",
+                            ["it"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Leather Helmets, Arm Cops, and Bracers to complete my contract.",
                         },
                     },
                     [2] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Ebony Swords, Cuirass, and Greaves to complete my contract.",
-                            ["fr"] = "Cette commande émane de « marchands indépendants » qui ravitaillent les plus offrants. Ils m'ont commandé plusieurs épées, cuirasses et grèves en ébonite.",
-                            ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Ebony Swords, Cuirass, and Greaves to complete my contract.",
-                            ["en"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Ebony Swords, Cuirass, and Greaves to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einer Gruppe „unabhängiger Händler“, die Geld gegen Waren tauschen. Ich wurde damit beauftragt, mehrere Schwerter, Kürasse und Beinschienen aus Ebenerz herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ja"] = "依頼は金貨を物資に替えている「独立系商人」の団体からのものだ。この契約の完了のために課されているのは、複数の黒檀の剣、胸当てそしてグリーヴの生産だ",
-                            ["es"] = "Este encargo es de un grupo de \"mercaderes independientes\", cambiando moneda por suministros. Me han encargado hacer varias espadas, corazas y grebas de ébano para completar mi contrato.",
+                            ["fr"] = "Cette commande émane d'un groupe qui cherche à défendre les populations déplacées par le conflit qui déchire Nirn. On m'a confié la fabrication de plusieurs casques, dagues et spallières en orichalque.",
+                            ["de"] = "Dieser Schrieb stammt von einer Gruppe, welche all jene beschützen will, die durch die Kämpfe in Nirn ihre Heimat verloren haben. Ich wurde damit beauftragt, mehrere Helme, Dolche und Schulterschutze aus Oreichalkos herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Orichalcum Helms, Daggers, and Pauldrons to complete my contract.",
+                            ["ru"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Orichalcum Helms, Daggers, and Pauldrons to complete my contract.",
+                            ["ja"] = "依頼はニルン各地の戦闘によって故郷を追われた人々を守ろうとしている団体からのものだ。この契約の完了のために課されているのは、複数のオリハルコンの兜、短剣、そしてポールドロンの生産だ",
+                            ["es"] = "Este encargo es de un grupo que intenta defender a los refugiados desplazados por los combates en todo Nirn. Me han encargado hacer varios yelmos dagas y espaldarones de oricalco, para completar mi contrato.",
+                            ["it"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Orichalcum Helms, Daggers, and Pauldrons to complete my contract.",
                         },
                     },
                     [3] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Yew Restoration Staves and Shields to complete my contract.",
-                            ["fr"] = "Cette commande émane de « marchands indépendants » qui ravitaillent les plus offrants. On m'a commandé de fabriquer plusieurs bâtons de rétablissement et boucliers en if.",
-                            ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Yew Restoration Staves and Shields to complete my contract.",
-                            ["en"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Yew Restoration Staves and Shields to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einer Gruppe „unabhängiger Händler“, die Geld gegen Waren tauschen. Ich wurde damit beauftragt, mehrere Heilungsstäbe und Schilde aus Eibe herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ja"] = "依頼は金貨を物資に替えている「独立系商人」の団体からのものだ。この契約の完了のために課されているのは、複数のイチイの回復の杖、およびイチイの盾の生産だ",
-                            ["es"] = "Este encargo es de un grupo de \"mercaderes independientes\", cambiando moneda por suministros. Me han encargado hacer varias varas de restauración y escudos de tejo para completar mi contrato.",
+                            ["fr"] = "Cette commande émane d'un groupe qui cherche à défendre les populations déplacées par le conflit qui déchire Nirn. On m'a confié la fabrication de plusieurs arcs et boucliers en hêtre.",
+                            ["de"] = "Dieser Schrieb stammt von einer Gruppe, welche all jene beschützen will, die durch die Kämpfe in Nirn ihre Heimat verloren haben. Ich wurde damit beauftragt, mehrere Bögen und Schilde aus Buche herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Beech Bows and Shields to complete my contract.",
+                            ["ru"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Beech Bows and Shields to complete my contract.",
+                            ["ja"] = "依頼はニルン各地の戦闘によって故郷を追われた人々を守ろうとしている団体からのものだ。この契約の完了のために課されているのは、複数のブナノキの弓およびブナノキの盾の生産だ",
+                            ["es"] = "Este encargo es de un grupo que intenta defender a los refugiados desplazados por los combates en todo Nirn. Me han encargado hacer varios arcos y escudos de haya para completar mi contrato.",
+                            ["it"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Beech Bows and Shields to complete my contract.",
                         },
                     },
                     [4] = 
                     {
                         [1] = 
                         {
-                            ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating three Platinum Rings to complete my contract.",
-                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation de trois anneaux de platine.",
-                            ["en"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating three Platinum Rings to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einer Gruppe „unabhängiger Händler“, die Geld gegen Waren tauschen. Ich wurde damit beauftragt, drei Platinringe herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ja"] = "依頼は金貨を物資に替えている「独立系商人」の団体からのものだ。契約を遂行するにはプラチナの指輪3個を作る",
-                            ["es"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating three Platinum Rings to complete my contract.",
+                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation d'un anneau et d'un collier d'argent. ",
+                            ["de"] = "Dieser Schrieb stammt von einer Gruppe, welche all jene beschützt, die durch die Kämpfe in Nirn ihre Heimat verloren haben. Ich wurde damit beauftragt, einen Silberring und eine Silberkette herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a group defending people displaced by fighting across Nirn. I've been tasked with creating a Silver Ring and a Silver Necklace to complete my contract.",
+                            ["ru"] = "This writ is from a group defending people displaced by fighting across Nirn. I've been tasked with creating a Silver Ring and a Silver Necklace to complete my contract.",
+                            ["ja"] = "依頼はニルン各地の戦闘によって故郷を追われた人々を守ろうとしている団体からのものだ。契約を遂行するには銀の指輪1個と銀のネックレス1個を作る",
+                            ["es"] = "This writ is from a group defending people displaced by fighting across Nirn. I've been tasked with creating a Silver Ring and a Silver Necklace to complete my contract.",
                         },
                     },
                     [5] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating Millet-Stuffed Pork Loin and Aetherial Tea to complete my contract.",
-                            ["fr"] = "Cette commande émane de la guilde des mages. Ils cherchent à alimenter leur effort de guerre dans le royaume daedrique de Havreglace. On m'a engagée pour préparer un filet-mignon de porc farci au millet et un thé éthérien.",
-                            ["ru"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating свиная вырезка с начинкой из пшена and этерический чай to complete my contract.",
-                            ["en"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating Millet-Stuffed Pork Loin and Aetherial Tea to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einem Zweig der Magiergilde. Er will sich für seine Unternehmungen im daedrischen Reich Kalthafen ausrüsten und versorgen. Ich wurde damit beauftragt, eine gefüllte Schweinelende mit Hirse und etwas Ätherischen Tee herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ja"] = "魔術師ギルドのある機関からの依頼だ。コールドハーバーにおけるデイドラの領域での抗争で必要な武器や物資を求めている。契約を遂行するには雑穀の豚腰肉包み焼きとエセリアルティーを作らなければならない",
-                            ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministrar y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado preparar lomo de cerdo relleno de mijo y té aeterio para completar mi contrato.",
+                            ["fr"] = "Cette commande émane d'une association humanitaire qui porte secours aux réfugiés déplacés par la guerre. On m'a demandé de préparer des bananes cuites de Fort-tempête et un thé maormer, puis de les livrer à Fangeombre.",
+                            ["de"] = "Dieser Schrieb stammt von einer Hilfsorganisation für Flüchtlinge, die versucht, all jene zu versorgen und zu verteidigen, die durch die Kämpfe in Nirn heimatlos geworden sind. Ich wurde beauftragt, einige Sturmfeste-Backbananen und etwas Maormertee herzustellen, um meinen Kontrakt zu erfüllen. Die Organisation erwartet die Lieferung in Schattenfenn.",
+                            ["en"] = "This writ is from a refugee relief organization trying to feed and defend people displaced by fighting across Nirn. I've been tasked with creating Stormhold Baked Bananas and Maormer Tea to complete my contract. The organization expects delivery in Shadowfen.",
+                            ["ru"] = "This writ is from a refugee relief organization trying to feed and defend people displaced by fighting across Nirn. I've been tasked with creating печеные бананы по-стормхолдски and маормерский чай to complete my contract. The organization expects delivery in Shadowfen.",
+                            ["ja"] = "ニルン中の戦争により家を失った人々を守り食べさせる避難民救済組織からの依頼だ。契約を遂行するにはストームホールドの焼きバナナとマオマーティーを作らなければならない。組織はシャドウフェンで配達を待っている",
+                            ["es"] = "Este encargo es de una organización de ayuda a los refugiados que intenta alimentar y defender a las personas desplazadas por los combates en todo Nirn. Me han encargado preparar plátanos asados de Fuertormenta y Té maormer para completar mi contrato. La organización espera la entrega en Pantano de las Sombras.",
+                            ["it"] = "This writ is from a refugee relief organization trying to feed and defend people displaced by fighting across Nirn. I've been tasked with creating Stormhold Baked Bananas and Maormer Tea to complete my contract. The organization expects delivery in Shadowfen.",
                         },
                     },
                     [6] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Strong Glyph of Magicka and acquiring a Makko Essence Rune to complete my contract.",
-                            ["fr"] = "Cette commande émane de « marchands indépendants » qui ravitaillent les plus offrants. Ils m'ont demandé un glyphe de Magie fort et une essence de rune Makko.",
-                            ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Strong Glyph of Magicka and acquiring a Makko Essence Rune to complete my contract.",
-                            ["en"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Strong Glyph of Magicka and acquiring a Makko Essence Rune to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einer Gruppe „unabhängiger Händler“, die Geld gegen Waren tauschen. Ich wurde damit beauftragt, eine starke Glyphe der Magicka herzustellen und eine Makko-Essenzrune zu besorgen, um meinen Kontrakt zu erfüllen.",
-                            ["ja"] = "依頼は金貨を物資に替えている「独立系商人」の団体からのものだ。この契約の完了のために課されているのは、強力なグリフ(マジカ)の生産と、マッコの本質ルーンの入手だ",
-                            ["es"] = "Este encargo es de un grupo de \"mercaderes independientes\", cambiando moneda por suministros. Me han encargado crear un glifo fuerte de magia y conseguir una runa de esencia Makko para completar mi contrato.",
+                            ["fr"] = "Cette commande émane d'une branche de la guilde des mages. Ils cherchent à ravitailler et armer leurs efforts dans le domaine daedrique de Havreglace. On m'a commandé de fabriquer un glyphe de Vigueur mineur et d'acquérir une rune d'aspect Ta.",
+                            ["de"] = "Dieser Schrieb stammt von einer Gruppe, welche all jene beschützen will, die durch die Kämpfe in Nirn ihre Heimat verloren haben. Ich wurde damit beauftragt, eine niedere Glyphe der Ausdauer herzustellen und eine Ta-Aspektrune zu besorgen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating a Minor Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
+                            ["ru"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating a Minor Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
+                            ["ja"] = "依頼はニルン各地の戦闘によって故郷を追われた人々を守ろうとしている団体からのものだ。この契約の完了のために課されているのは、一般的なグリフ(スタミナ)の生産と、ターの品質ルーンの入手だ",
+                            ["es"] = "Este encargo es de un grupo que intenta defender a los refugiados desplazados por los combates en todo Nirn. Me han encargado crear un glifo aguante de menor y conseguir una runa de aspecto Ta para completar mi contrato.",
+                            ["it"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating a Minor Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
                         },
                     },
                     [7] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating an Elixir of Stamina and acquiring some Water Hyacinth to complete my contract.",
-                            ["fr"] = "Cette commande émane d'une branche de la guilde des mages. Ils cherchent à ravitailler et armer leur effort de guerre dans le royaume daedrique de Havreglace. On m'a confié la préparation d'un élixir de Vigueur et l'acquisition de quelques jacinthes d'eau.",
-                            ["ru"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating an Elixir of Stamina and acquiring some Water Hyacinth to complete my contract.",
-                            ["en"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating an Elixir of Stamina and acquiring some Water Hyacinth to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einem Zweig der Magiergilde. Er will sich für seine Unternehmungen im daedrischen Reich Kalthafen ausrüsten und versorgen. Ich wurde damit beauftragt, ein Elixier der Ausdauer herzustellen und etwas Wasserhyazinthe zu besorgen, um meinen Kontrakt zu erfüllen.",
-                            ["ja"] = "魔術師ギルドのある部門からの依頼で、コールドハーバーにおけるデイドラの領域での抗争で必要な武器や物資を求めている。契約を遂行するにはスタミナの霊薬を作り、ホテイアオイを手に入れなければならない",
-                            ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministrar y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado crear un elixir de aguante y conseguir para completar mi contrato.",
+                            ["fr"] = "Cette commande émane d'une organisation humanitaire qui cherche à nourrir et défendre les réfugiés de Nirn. On m'a commandé une potion de Santé et une cardamine des prés.",
+                            ["de"] = "Dieser Schrieb stammt von einer Hilfsorganisation für Flüchtlinge, die versucht, all jene zu versorgen und zu verteidigen, die durch die Kämpfe in Nirn heimatlos geworden sind. Ich wurde damit beauftragt, einen Trank des Lebens herzustellen und etwas Wiesenschaumkraut zu besorgen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from an organization that seeks to feed and defend refugees across Nirn. I've been tasked with creating a Potion of Health and acquiring some lady's smock to complete my contract.",
+                            ["ru"] = "This writ is from an organization that seeks to feed and defend refugees across Nirn. I've been tasked with creating a Potion of Health and acquiring some луговой сердечник to complete my contract.",
+                            ["ja"] = "ニルン中の避難民を守り食べさせようとしている組織からの依頼だ。契約を遂行するには体力の薬を作り、タネツケバナを手に入れなければならない",
+                            ["es"] = "Este encargo es de una organización que busca alimentar y defender a las personas desplazadas por los combates en todo Nirn. Me han encargado crear una poción de salud y conseguir algo de cardamina para completar mi contrato.",
+                            ["it"] = "This writ is from an organization that seeks to feed and defend refugees across Nirn. I've been tasked with creating a Potion of Health and acquiring some lady's smock to complete my contract.",
                         },
                     },
                 },
-                ["version"] = 1,
                 ["conditions"] = 
                 {
                     [1] = 
@@ -2705,33 +3832,33 @@ LibCraftTextVars =
                         {
                             [1] = 
                             {
-                                ["it"] = "Craft Ebonthread Robe: 0 / 1",
-                                ["fr"] = "Fabriquez une robe en fil d'ébonite normale : 0/1",
-                                ["ru"] = "Craft Normal Ebonthread Robe: 0 / 1",
-                                ["en"] = "Craft Normal Ebonthread Robe: 0 / 1",
-                                ["de"] = "Stellt normale Ebengarnroben her: 0/1",
-                                ["ja"] = "エボンスレッドのローブ(ノーマル)を生産する: 0 / 1",
-                                ["es"] = "Fabrica una túnica de hilo de ébano normal: 0/1",
+                                ["fr"] = "Fabriquez un casque en cuir normal : 0/1",
+                                ["de"] = "Stellt normale Lederhelme her: 0/1",
+                                ["en"] = "Craft Normal Leather Helmet: 0 / 1",
+                                ["ru"] = "Craft Normal Leather Helmet: 0 / 1",
+                                ["ja"] = "革の兜(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un casco de cuero normal: 0/1",
+                                ["it"] = "Craft Leather Helmet: 0 / 1",
                             },
                             [2] = 
                             {
-                                ["it"] = "Craft Ebonthread Breeches: 0 / 1",
-                                ["fr"] = "Fabriquez des braies en fil d'ébonite normales : 0/1",
-                                ["ru"] = "Craft Normal Ebonthread Breeches: 0 / 1",
-                                ["en"] = "Craft Normal Ebonthread Breeches: 0 / 1",
-                                ["de"] = "Stellt normale Ebengarnbeinkleider her: 0/1",
-                                ["ja"] = "エボンスレッドのパンツ(ノーマル)を生産する: 0 / 1",
-                                ["es"] = "Fabrica unos calzones de hilo de ébano normales: 0/1",
+                                ["fr"] = "Fabriquez des coques d'épaules en cuir normales : 0/1",
+                                ["de"] = "Stellt normale Lederschulterkappen her: 0/1",
+                                ["en"] = "Craft Normal Leather Arm Cops: 0 / 1",
+                                ["ru"] = "Craft Normal Leather Arm Cops: 0 / 1",
+                                ["ja"] = "革のアームカップ(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unas hombreras de cuero normales: 0/1",
+                                ["it"] = "Craft Leather Arm Cops: 0 / 1",
                             },
                             [3] = 
                             {
-                                ["it"] = "Craft Ebonthread Epaulets: 0 / 1",
-                                ["fr"] = "Fabriquez des épaulettes en fil d'ébonite normales : 0/1",
-                                ["ru"] = "Craft Normal Ebonthread Epaulets: 0 / 1",
-                                ["en"] = "Craft Normal Ebonthread Epaulets: 0 / 1",
-                                ["de"] = "Stellt normale Ebengarnschulterpolster her: 0/1",
-                                ["ja"] = "エボンスレッドの肩当て(ノーマル)を生産する: 0 / 1",
-                                ["es"] = "Fabrica unos cubrehombros de hilo de ébano normales: 0/1",
+                                ["fr"] = "Fabriquez des brassards en cuir normaux : 0/1",
+                                ["de"] = "Stellt normale Lederarmschienen her: 0/1",
+                                ["en"] = "Craft Normal Leather Bracers: 0 / 1",
+                                ["ru"] = "Craft Normal Leather Bracers: 0 / 1",
+                                ["ja"] = "革の腕当て(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unos brazaletes de cuero normales: 0/1",
+                                ["it"] = "Craft Leather Bracers: 0 / 1",
                             },
                         },
                     },
@@ -2741,33 +3868,33 @@ LibCraftTextVars =
                         {
                             [1] = 
                             {
-                                ["it"] = "Craft Ebony Sword: 0 / 1",
-                                ["fr"] = "Fabriquez une épée en ébonite normale : 0/1",
-                                ["ru"] = "Craft Normal Ebony Sword: 0 / 1",
-                                ["en"] = "Craft Normal Ebony Sword: 0 / 1",
-                                ["de"] = "Stellt normale Ebenerzschwerter her: 0/1",
-                                ["ja"] = "黒檀の剣(ノーマル)を生産する: 0 / 1",
-                                ["es"] = "Fabrica una espada de ébano normal: 0/1",
+                                ["fr"] = "Fabriquez un heaume en orichalque normal : 0/1",
+                                ["de"] = "Stellt normale Oreichalkoshauben her: 0/1",
+                                ["en"] = "Craft Normal Orichalcum Helm: 0 / 1",
+                                ["ru"] = "Craft Normal Orichalcum Helm: 0 / 1",
+                                ["ja"] = "オリハルコンの兜(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un yelmo de oricalco normal: 0/1",
+                                ["it"] = "Craft Orichalcum Helm: 0 / 1",
                             },
                             [2] = 
                             {
-                                ["it"] = "Craft Ebony Cuirass: 0 / 1",
-                                ["fr"] = "Fabriquez une cuirasse en ébonite normale : 0/1",
-                                ["ru"] = "Craft Normal Ebony Cuirass: 0 / 1",
-                                ["en"] = "Craft Normal Ebony Cuirass: 0 / 1",
-                                ["de"] = "Stellt normale Ebenerzkürasse her: 0/1",
-                                ["ja"] = "黒檀の胸当て(ノーマル)を生産する: 0 / 1",
-                                ["es"] = "Fabrica una coraza de ébano normal: 0/1",
+                                ["fr"] = "Fabriquez une dague en orichalque normale : 0/1",
+                                ["de"] = "Stellt normale Oreichalkosdolche her: 0/1",
+                                ["en"] = "Craft Normal Orichalcum Dagger: 0 / 1",
+                                ["ru"] = "Craft Normal Orichalcum Dagger: 0 / 1",
+                                ["ja"] = "オリハルコンの短剣(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una daga de oricalco normal: 0/1",
+                                ["it"] = "Craft Orichalcum Dagger: 0 / 1",
                             },
                             [3] = 
                             {
-                                ["it"] = "Craft Ebony Greaves: 0 / 1",
-                                ["fr"] = "Fabriquez des grèves en ébonite normales : 0/1",
-                                ["ru"] = "Craft Normal Ebony Greaves: 0 / 1",
-                                ["en"] = "Craft Normal Ebony Greaves: 0 / 1",
-                                ["de"] = "Stellt normale Ebenerzbeinschienen her: 0/1",
-                                ["ja"] = "黒檀のグリーヴ(ノーマル)を生産する: 0 / 1",
-                                ["es"] = "Fabrica unas grebas de ébano normales: 0/1",
+                                ["fr"] = "Fabriquez des spallières en orichalque normales : 0/1",
+                                ["de"] = "Stellt normale Oreichalkosschulterschutze her: 0/1",
+                                ["en"] = "Craft Normal Orichalcum Pauldron: 0 / 1",
+                                ["ru"] = "Craft Normal Orichalcum Pauldron: 0 / 1",
+                                ["ja"] = "オリハルコンのポールドロン(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unos espaldarones de oricalco normales: 0/1",
+                                ["it"] = "Craft Orichalcum Pauldron: 0 / 1",
                             },
                         },
                     },
@@ -2777,23 +3904,23 @@ LibCraftTextVars =
                         {
                             [2] = 
                             {
-                                ["it"] = "Craft Yew Shield: 0 / 1",
-                                ["fr"] = "Fabriquez un bouclier en if normal : 0/1",
-                                ["ru"] = "Craft Normal Yew Shield: 0 / 1",
-                                ["en"] = "Craft Normal Yew Shield: 0 / 1",
-                                ["de"] = "Stellt normale Eibenschilde her: 0/1",
-                                ["ja"] = "イチイの盾(ノーマル)を生産する: 0 / 1",
-                                ["es"] = "Fabrica un escudo de tejo normal: 0/1",
+                                ["fr"] = "Fabriquez un bouclier en hêtre normal : 0/1",
+                                ["de"] = "Stellt normale Buchenschilde her: 0/1",
+                                ["en"] = "Craft Normal Beech Shield: 0 / 1",
+                                ["ru"] = "Craft Normal Beech Shield: 0 / 1",
+                                ["ja"] = "ブナノキの盾(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un escudo de haya normal: 0/1",
+                                ["it"] = "Craft Beech Shield: 0 / 1",
                             },
                             [1] = 
                             {
-                                ["it"] = "Craft Yew Restoration Staff: 0 / 2",
-                                ["fr"] = "Fabriquez un bâton de rétablissement en if normal : 0/2",
-                                ["ru"] = "Craft Normal Yew Restoration Staff: 0 / 2",
-                                ["en"] = "Craft Normal Yew Restoration Staff: 0 / 2",
-                                ["de"] = "Stellt normale Eibenheilungsstäbe her: 0/2",
-                                ["ja"] = "イチイの回復の杖(ノーマル)を生産する: 0 / 2",
-                                ["es"] = "Fabrica una vara restauradora de tejo normal: 0/2",
+                                ["fr"] = "Fabriquez un arc en hêtre normal : 0/2",
+                                ["de"] = "Stellt normale Buchenbögen her: 0/2",
+                                ["en"] = "Craft Normal Beech Bow: 0 / 2",
+                                ["ru"] = "Craft Normal Beech Bow: 0 / 2",
+                                ["ja"] = "ブナノキの弓(ノーマル)を生産する: 0 / 2",
+                                ["es"] = "Fabrica un arco de haya normal: 0/2",
+                                ["it"] = "Craft Beech Bow: 0 / 2",
                             },
                         },
                     },
@@ -2801,15 +3928,25 @@ LibCraftTextVars =
                     {
                         [1] = 
                         {
+                            [2] = 
+                            {
+                                ["fr"] = "Fabriquez un collier d'argent : 0/1",
+                                ["de"] = "Stellt eine Silberhalskette her: 0/1",
+                                ["en"] = "Craft a Silver Necklace: 0 / 1",
+                                ["ru"] = "Craft a Silver Necklace: 0 / 1",
+                                ["ja"] = "銀のネックレスを作る: 0 / 1",
+                                ["es"] = "Fabrica un collar de plata: 0/1",
+                                ["it"] = "TRACKER GOAL TEXT: 0 / 1",
+                            },
                             [1] = 
                             {
-                                ["it"] = "TRACKER GOAL TEXT: 0 / 3",
-                                ["fr"] = "Fabriquez trois anneaux en platine : 0/3",
-                                ["ru"] = "Craft three Platinum Rings: 0 / 3",
-                                ["en"] = "Craft Three Platinum Rings: 0 / 3",
-                                ["de"] = "Stellt drei Platinringe her: 0/3",
-                                ["ja"] = "プラチナの指輪を3個作る: 0 / 3",
-                                ["es"] = "Fabrica tres anillos de platino: 0/3",
+                                ["fr"] = "Fabriquez un anneau d'argent : 0/1",
+                                ["de"] = "Stellt einen Silberring her: 0/1",
+                                ["en"] = "Craft a Silver Ring: 0 / 1",
+                                ["ru"] = "Craft a Silver Ring: 0 / 1",
+                                ["ja"] = "銀の指輪を作る: 0 / 1",
+                                ["es"] = "Fabrica un anillo de plata: 0/1",
+                                ["it"] = "TRACKER GOAL TEXT: 0 / 1",
                             },
                         },
                     },
@@ -2819,23 +3956,23 @@ LibCraftTextVars =
                         {
                             [2] = 
                             {
-                                ["it"] = "Craft Aetherial Tea: 0 / 1",
-                                ["fr"] = "Préparez un thé éthérien : 0/1",
-                                ["ru"] = "Создать — этерический чай: 0 / 1",
-                                ["en"] = "Craft Aetherial Tea: 0 / 1",
-                                ["de"] = "Stellt etwas Ätherischen Tee her: 0/1",
-                                ["ja"] = "エセリアルティーを生産する: 0 / 1",
-                                ["es"] = "Preparæ té aeterio: 0/1",
+                                ["fr"] = "Préparez un thé maormer : 0/1",
+                                ["de"] = "Stellt etwas Maormertee her: 0/1",
+                                ["en"] = "Craft Maormer Tea: 0 / 1",
+                                ["ru"] = "Создать — маормерский чай: 0 / 1",
+                                ["ja"] = "マオマーティーを生産する: 0 / 1",
+                                ["es"] = "Preparæ Té maormer: 0/1",
+                                ["it"] = "Craft Maormer Tea: 0 / 1",
                             },
                             [1] = 
                             {
-                                ["it"] = "Craft Millet-Stuffed Pork Loin: 0 / 1",
-                                ["fr"] = "Préparez un filet-mignon de porc farci au millet : 0/1",
-                                ["ru"] = "Создать — свиная вырезка с начинкой из пшена: 0 / 1",
-                                ["en"] = "Craft Millet-Stuffed Pork Loin: 0 / 1",
-                                ["de"] = "Stellt eine gefüllte Schweinelende mit Hirse her: 0/1",
-                                ["ja"] = "雑穀の豚腰肉包み焼きを生産する: 0 / 1",
-                                ["es"] = "Preparæ lomo de cerdo relleno de mijo: 0/1",
+                                ["fr"] = "Préparez des bananes cuites de Fort-tempête : 0/1",
+                                ["de"] = "Stellt einige Sturmfeste-Backbananen her: 0/1",
+                                ["en"] = "Craft Stormhold Baked Bananas: 0 / 1",
+                                ["ru"] = "Создать — печеные бананы по-стормхолдски: 0 / 1",
+                                ["ja"] = "ストームホールドの焼きバナナを生産する: 0 / 1",
+                                ["es"] = "Preparæ plátanos asados de Fuertormenta: 0/1",
+                                ["it"] = "Craft Stormhold Baked Bananas: 0 / 1",
                             },
                         },
                     },
@@ -2845,23 +3982,23 @@ LibCraftTextVars =
                         {
                             [2] = 
                             {
-                                ["it"] = "Acquire Makko Essence Rune: 1 / 1",
-                                ["fr"] = "Acquérez une rune d'essence Makko : 1/1",
-                                ["ru"] = "Добыть руну сущности Макко: 1 / 1",
-                                ["en"] = "Acquire Makko Essence Rune: 1 / 1",
-                                ["de"] = "Beschafft eine Makko-Essenzrune: 1/1",
-                                ["ja"] = "マッコの本質ルーンを手に入れる: 1 / 1",
-                                ["es"] = "Adquiere una runa de esencia Makko: 1/1",
+                                ["fr"] = "Acquérez une rune d'aspect Ta : 1/1",
+                                ["de"] = "Beschafft eine Ta-Aspektrune: 1/1",
+                                ["en"] = "Acquire Ta Aspect Rune: 1 / 1",
+                                ["ru"] = "Добыть руну аспекта Та: 1 / 1",
+                                ["ja"] = "ターの品質ルーンを手に入れる: 1 / 1",
+                                ["es"] = "Adquiere una runa de aspecto Ta: 1/1",
+                                ["it"] = "Acquire Ta Aspect Rune: 1 / 1",
                             },
                             [1] = 
                             {
-                                ["it"] = "Craft Strong Glyph of Magicka: 0 / 1",
-                                ["fr"] = "Fabriquez un glyphe fort magique avec Ta : 0/1",
-                                ["ru"] = "Craft Strong Glyph of Magicka With Ta: 0 / 1",
-                                ["en"] = "Craft Strong Glyph of Magicka With Ta: 0 / 1",
-                                ["de"] = "Stellt mit einer Ta-Rune eine starke Glyphe der Magicka her: 0/1",
-                                ["ja"] = "ターの強力なグリフ(マジカ)を生産する: 0 / 1",
-                                ["es"] = "Fabrica un glifo fuerte de magia con Ta: 0/1",
+                                ["fr"] = "Fabriquez un glyphe mineur vigoureux avec Ta : 0/1",
+                                ["de"] = "Stellt mit einer Ta-Rune eine niedere Glyphe der Ausdauer her: 0/1",
+                                ["en"] = "Craft Minor Glyph of Stamina With Ta: 0 / 1",
+                                ["ru"] = "Craft Minor Glyph of Stamina With Ta: 0 / 1",
+                                ["ja"] = "ターの一般的なグリフ(スタミナ)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un glifo menor de aguante con Ta: 0/1",
+                                ["it"] = "Craft Minor Glyph of Stamina: 0 / 1",
                             },
                         },
                     },
@@ -2871,98 +4008,99 @@ LibCraftTextVars =
                         {
                             [2] = 
                             {
-                                ["it"] = "Acquire Water Hyacinth: 3 / 3",
-                                ["fr"] = "Acquérez de la jacinthe d'eau : 3/3",
-                                ["ru"] = "Добыть водный гиацинт: 3 / 3",
-                                ["en"] = "Acquire Water Hyacinth: 3 / 3",
-                                ["de"] = "Beschafft eine Wasserhyazinthe: 3/3",
-                                ["ja"] = "ホテイアオイを手に入れる: 3 / 3",
-                                ["es"] = "Adquiere jacinto de agua: 3/3",
+                                ["fr"] = "Acquérez une cardamine des prés : 3/3",
+                                ["de"] = "Besorgt etwas Wiesenschaumkraut: 3/3",
+                                ["en"] = "Acquire Lady's Smock: 3 / 3",
+                                ["ru"] = "Раздобыть — луговой сердечник: 3 / 3",
+                                ["ja"] = "タネツケバナを手に入れる: 3 / 3",
+                                ["es"] = "Adquiere cardamina: 3/3",
+                                ["it"] = "Acquire lady's smock: 3 / 3",
                             },
                             [1] = 
                             {
-                                ["it"] = "Craft Elixir of Stamina: 0 / 1",
-                                ["fr"] = "Préparez un élixir de Vigueur : 0/1",
-                                ["ru"] = "Craft Elixir of Stamina: 0 / 1",
-                                ["en"] = "Craft Elixir of Stamina: 0 / 1",
-                                ["de"] = "Stellt Elixiere der Ausdauer her: 0/1",
-                                ["ja"] = "スタミナの霊薬を生産する: 0 / 1",
-                                ["es"] = "Prepara un elixir de aguante: 0/1",
+                                ["fr"] = "Préparez une potion de Santé : 0/1",
+                                ["de"] = "Stellt Tränke des Lebens her: 0/1",
+                                ["en"] = "Craft Potion of Health: 0 / 1",
+                                ["ru"] = "Craft Potion of Health: 0 / 1",
+                                ["ja"] = "体力の薬を生産する: 0 / 1",
+                                ["es"] = "Prepara una poción de salud: 0/1",
+                                ["it"] = "Craft Potion of Health: 0 / 1",
                             },
                         },
                     },
                 },
+                ["version"] = 1,
                 ["quests"] = 
                 {
                     [1] = 
                     {
-                        ["it"] = "Clothier Writ",
                         ["fr"] = "Commande de tailleur",
-                        ["ru"] = "Заказ портному",
-                        ["en"] = "Clothier Writ",
                         ["de"] = "Schneiderschrieb",
+                        ["en"] = "Clothier Writ",
+                        ["ru"] = "Заказ портному",
                         ["ja"] = "仕立師の依頼",
                         ["es"] = "Encargo de sastrería",
+                        ["it"] = "Clothier Writ",
                     },
                     [2] = 
                     {
-                        ["it"] = "Blacksmith Writ",
                         ["fr"] = "Commande de forge",
-                        ["ru"] = "Заказ кузнецу",
-                        ["en"] = "Blacksmith Writ",
                         ["de"] = "Schmiedeschrieb",
+                        ["en"] = "Blacksmith Writ",
+                        ["ru"] = "Заказ кузнецу",
                         ["ja"] = "鍛冶師の依頼",
                         ["es"] = "Encargo de herrería",
+                        ["it"] = "Blacksmith Writ",
                     },
                     [3] = 
                     {
-                        ["it"] = "Woodworker Writ",
                         ["fr"] = "Commande de travail du bois",
-                        ["ru"] = "Заказ столяру",
-                        ["en"] = "Woodworker Writ",
                         ["de"] = "Schreinerschrieb",
+                        ["en"] = "Woodworker Writ",
+                        ["ru"] = "Заказ столяру",
                         ["ja"] = "木工師の依頼",
                         ["es"] = "Encargo de carpintería",
+                        ["it"] = "Woodworker Writ",
                     },
                     [4] = 
                     {
-                        ["it"] = "",
                         ["fr"] = "Commande de joaillerie",
-                        ["ru"] = "Заказ ювелиру",
-                        ["en"] = "Jewelry Crafting Writ",
                         ["de"] = "Schmuckhandwerksschrieb",
+                        ["en"] = "Jewelry Crafting Writ",
+                        ["ru"] = "Заказ ювелиру",
                         ["ja"] = "宝飾師のクラフト依頼",
                         ["es"] = "Encargo de artesanía de joyería",
+                        ["it"] = "",
                     },
                     [5] = 
                     {
-                        ["it"] = "Provisioner Writ",
                         ["fr"] = "Commande de cuisine",
-                        ["ru"] = "Заказ снабженцу",
-                        ["en"] = "Provisioner Writ",
                         ["de"] = "Versorgerschrieb",
+                        ["en"] = "Provisioner Writ",
+                        ["ru"] = "Заказ снабженцу",
                         ["ja"] = "調理師の依頼",
                         ["es"] = "Encargo de provisiones",
+                        ["it"] = "Provisioner Writ",
                     },
                     [6] = 
                     {
-                        ["it"] = "Enchanter Writ",
                         ["fr"] = "Commandes d'enchantement",
-                        ["ru"] = "Заказ зачарователю",
-                        ["en"] = "Enchanter Writ",
                         ["de"] = "Verzaubererschrieb",
+                        ["en"] = "Enchanter Writ",
+                        ["ru"] = "Заказ зачарователю",
                         ["ja"] = "付呪師の依頼",
                         ["es"] = "Encargo de encantamiento",
+                        ["it"] = "Enchanter Writ",
                     },
                     [7] = 
                     {
-                        ["it"] = "Alchemist Writ",
                         ["fr"] = "Commande d'alchimie",
-                        ["ru"] = "Заказ алхимику",
-                        ["en"] = "Alchemist Writ",
                         ["de"] = "Alchemistenschrieb",
+                        ["en"] = "Alchemist Writ",
+                        ["ru"] = "Заказ алхимику",
                         ["ja"] = "錬金術師の依頼",
                         ["es"] = "Encargo de alquimia",
+                        ["it"] = "Alchemist Writ",
                     },
                 },
             },
@@ -2974,94 +4112,93 @@ LibCraftTextVars =
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from the resupply arm of the military, a group charged with keeping the troops in Cyrodiil outfitted. I've been tasked with creating Garlic Pumpkin Seeds and Treacleberry Tea to complete my contract.  The military expects delivery in Grahtwood.",
                             ["fr"] = "Cette commande émane de l'office d'intendance militaire, qui se charge d'alimenter les troupes en Cyrodiil. On m'a demandé de préparer des graines de citrouille à l'ail et un thé de mélassine. L'armée attend cette livraison au bois de Graht.",
-                            ["es"] = "Este encargo es de la rama de reabastecimiento de los militares, un grupo encargado de mantener equipadas a las tropas en Cyrodiil. Me han encargado preparar semillas de calabaza con ajo y té de bayamelaza para completar mi contrato. Los militares esperan la entrega en el Bosque de Graht.",
-                            ["en"] = "This writ is from the resupply arm of the military, a group charged with keeping the troops in Cyrodiil outfitted. I've been tasked with creating Garlic Pumpkin Seeds and Treacleberry Tea to complete my contract.  The military expects delivery in Grahtwood.",
                             ["de"] = "Dieser Schrieb stammt vom Versorgungsarm des Militärs, einer Gruppe, die dafür verantwortlich ist, die Truppen in Cyrodiil auszurüsten. Ich wurde damit beauftragt, einige Kürbissamen mit Knoblauch und etwas Sirupbeerentee herzustellen, um meinen Kontrakt zu erfüllen. Das Militär erwartet die Lieferung in Grahtwald.",
+                            ["en"] = "This writ is from the resupply arm of the military, a group charged with keeping the troops in Cyrodiil outfitted. I've been tasked with creating Garlic Pumpkin Seeds and Treacleberry Tea to complete my contract.  The military expects delivery in Grahtwood.",
                             ["ru"] = "This writ is from the resupply arm of the military, a group charged with keeping the troops in Cyrodiil outfitted. I've been tasked with creating тыквенные семена с чесноком and ягодный чай с патокой to complete my contract.  The military expects delivery in Grahtwood.",
                             ["ja"] = "シロディールにいる兵たちの装備を担当する、軍の物資補給係からの依頼だ。契約を遂行するにはカボチャの種のニンニク炒めとトリークルベリーティーを作らなければならない。軍はグラーウッドで配達を待っている",
+                            ["es"] = "Este encargo es de la rama de reabastecimiento de los militares, un grupo encargado de mantener equipadas a las tropas en Cyrodiil. Me han encargado preparar semillas de calabaza con ajo y té de bayamelaza para completar mi contrato. Los militares esperan la entrega en el Bosque de Graht.",
+                            ["it"] = "This writ is from the resupply arm of the military, a group charged with keeping the troops in Cyrodiil outfitted. I've been tasked with creating Garlic Pumpkin Seeds and Treacleberry Tea to complete my contract.  The military expects delivery in Grahtwood.",
                         },
                     },
                     [2] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Petty Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
                             ["fr"] = "Cette commande émane de l'armée, qui veut ravitailler les troupes à Cyrodiil. On m'a commandé de fabriquer un petit glyphe de Vigueur et d'acquérir une rune d'aspect Ta.",
-                            ["es"] = "Este encargo es de los militares, buscando mantener equipadas a las tropas en Cyrodiil. Me han encargado crear un glifo insignificante de aguante y conseguir una runa de aspecto Ta para completar mi contrato.",
-                            ["en"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Petty Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
                             ["de"] = "Dieser Schrieb stammt vom Militär, das seine Truppen in Cyrodiil ausstatten will. Ich wurde damit beauftragt, eine winzige Glyphe der Ausdauer herzustellen und eine Ta-Aspektrune zu besorgen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Petty Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
                             ["ru"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Petty Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
                             ["ja"] = "依頼はシロディールの兵士たちの装備の状態を維持したい軍隊からのものだ。この契約の完了のために課されているのは、不出来なグリフ(スタミナ)の生産と、ターの品質ルーンの入手だ",
+                            ["es"] = "Este encargo es de los militares, buscando mantener equipadas a las tropas en Cyrodiil. Me han encargado crear un glifo insignificante de aguante y conseguir una runa de aspecto Ta para completar mi contrato.",
+                            ["it"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Petty Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
                         },
                     },
                     [3] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Dram of Stamina and acquiring some bugloss to complete my contract.",
                             ["fr"] = "Cette commande émane de l'office d'intendance militaire, qui se charge d'alimenter les troupes en Cyrodiil. On m'a demandé de préparer une goutte de Vigueur et d'acquérir une noctuelle.",
-                            ["es"] = "Este encargo es de la rama de reabastecimiento de los militares, un grupo encargado de mantener equipadas a las tropas en Cyrodiil. Me han encargado crear un trago de aguante y conseguir algo de lengua de buey para completar mi contrato.",
-                            ["en"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Dram of Stamina and acquiring some bugloss to complete my contract.",
                             ["de"] = "Dieser Schrieb stammt vom Militär, das seine Truppen in Cyrodiil ausstatten will. Ich wurde damit beauftragt, einen Schluck der Ausdauer herzustellen und etwas Wolfsauge zu besorgen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Dram of Stamina and acquiring some bugloss to complete my contract.",
                             ["ru"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Dram of Stamina and acquiring some воловик to complete my contract.",
                             ["ja"] = "軍からの依頼で、シロディールの兵たちのための装備を求めている。契約を遂行するにはスタミナの飲み薬を作り、ムラサキ草を手に入れなければならない",
+                            ["es"] = "Este encargo es de la rama de reabastecimiento de los militares, un grupo encargado de mantener equipadas a las tropas en Cyrodiil. Me han encargado crear un trago de aguante y conseguir algo de lengua de buey para completar mi contrato.",
+                            ["it"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Dram of Stamina and acquiring some bugloss to complete my contract.",
                         },
                     },
                     [4] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Hide Helmets, Arm Cops, and Bracers to complete my contract.",
                             ["fr"] = "Cette commande émane de l'armée, qui cherche à équiper ses troupes en Cyrodiil. On m'a confié la confection de plusieurs casques, coques et brassards en peau.",
-                            ["es"] = "Este encargo es de los militares, buscando mantener equipadas a las tropas en Cyrodiil. Me han encargado hacer varios cascos, hombreras y brazales de cuero para completar mi contrato.",
-                            ["en"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Hide Helmets, Arm Cops, and Bracers to complete my contract.",
                             ["de"] = "Dieser Schrieb stammt vom Militär, das seine Truppen in Cyrodiil ausstatten will. Ich wurde damit beauftragt, mehrere Helme, Schulterkappen und Armschienen aus Halbleder herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Hide Helmets, Arm Cops, and Bracers to complete my contract.",
                             ["ru"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Hide Helmets, Arm Cops, and Bracers to complete my contract.",
                             ["ja"] = "依頼はシロディールの兵士たちの装備の状態を維持したい軍隊からのものだ。この契約の完了のために課されているのは、複数の皮の兜、アームカップそして腕当ての生産だ",
+                            ["es"] = "Este encargo es de los militares, buscando mantener equipadas a las tropas en Cyrodiil. Me han encargado hacer varios cascos, hombreras y brazales de cuero para completar mi contrato.",
+                            ["it"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Hide Helmets, Arm Cops, and Bracers to complete my contract.",
                         },
                     },
                     [5] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Steel Helms, Daggers, and Pauldrons to complete my contract.",
                             ["fr"] = "Cette commande émane de l'armée, qui cherche à équiper ses troupes en Cyrodiil. On m'a confié la confection de plusieurs casques, dagues et spallières en acier.",
-                            ["es"] = "Este encargo es de los militares, buscando mantener equipadas a las tropas en Cyrodiil. Me han encargado hacer varios yelmos, dagas y espaldarones de acero para completar mi contrato.",
-                            ["en"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Steel Helms, Daggers, and Pauldrons to complete my contract.",
                             ["de"] = "Dieser Schrieb stammt vom Militär, das seine Truppen in Cyrodiil ausstatten will. Ich wurde damit beauftragt, mehrere Helme, Dolche und Schulterschutze aus Stahl herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Steel Helms, Daggers, and Pauldrons to complete my contract.",
                             ["ru"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Steel Helms, Daggers, and Pauldrons to complete my contract.",
                             ["ja"] = "依頼はシロディールの兵士たちの装備の状態を維持したい軍隊からのものだ。この契約の完了のために課されているのは、複数の鋼鉄の兜、短剣、そしてポールドロンの生産だ",
+                            ["es"] = "Este encargo es de los militares, buscando mantener equipadas a las tropas en Cyrodiil. Me han encargado hacer varios yelmos, dagas y espaldarones de acero para completar mi contrato.",
+                            ["it"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Steel Helms, Daggers, and Pauldrons to complete my contract.",
                         },
                     },
                     [6] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from the resupply arm of the military, a group charged with keeping the troops in Cyrodiil outfitted. I've been tasked with creating several Oak Bows and Shields to complete my contract.",
                             ["fr"] = "Cette commande émane de l'armée, qui veut ravitailler les troupes à Cyrodiil. On m'a commandé de fabriquer plusieurs arcs et boucliers en chêne.",
-                            ["es"] = "Este encargo es de los militares, buscando mantener equipadas a las tropas en Cyrodiil. Me han encargado hacer varios arcos y escudos de roble para completar mi contrato.",
-                            ["en"] = "This writ is from the resupply arm of the military, a group charged with keeping the troops in Cyrodiil outfitted. I've been tasked with creating several Oak Bows and Shields to complete my contract.",
                             ["de"] = "Dieser Schrieb stammt vom Versorgungsarm des Militärs, einer Gruppe, die dafür verantwortlich ist, die Truppen in Cyrodiil auszurüsten. Ich wurde damit beauftragt, mehrere Bögen und Schilde aus Eiche herzustellen, um meinen Kontrakt erfüllen.",
+                            ["en"] = "This writ is from the resupply arm of the military, a group charged with keeping the troops in Cyrodiil outfitted. I've been tasked with creating several Oak Bows and Shields to complete my contract.",
                             ["ru"] = "This writ is from the resupply arm of the military, a group charged with keeping the troops in Cyrodiil outfitted. I've been tasked with creating several Oak Bows and Shields to complete my contract.",
                             ["ja"] = "依頼はシロディールの兵士たちの装備の維持管理を職務とする、軍の補給部隊からのものだ。この契約の完了のために課されているのは、複数のカシの弓、およびカシの盾の生産だ",
+                            ["es"] = "Este encargo es de los militares, buscando mantener equipadas a las tropas en Cyrodiil. Me han encargado hacer varios arcos y escudos de roble para completar mi contrato.",
+                            ["it"] = "This writ is from the resupply arm of the military, a group charged with keeping the troops in Cyrodiil outfitted. I've been tasked with creating several Oak Bows and Shields to complete my contract.",
                         },
                     },
                     [7] = 
                     {
                         [1] = 
                         {
-                            ["ru"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Copper Ring and Copper Necklace to complete my contract.",
                             ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation d'un anneau et d'un collier de cuivre.",
-                            ["en"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Copper Ring and Copper Necklace to complete my contract.",
                             ["de"] = "Dieser Schrieb stammt vom Militär, das seine Truppen in Cyrodiil ausstatten will. Ich wurde damit beauftragt, einen Kupferring und eine Kupferkette herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["es"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Copper Ring and Copper Necklace to complete my contract.",
+                            ["en"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Copper Ring and Copper Necklace to complete my contract.",
+                            ["ru"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Copper Ring and Copper Necklace to complete my contract.",
                             ["ja"] = "依頼はシロディールの兵士たちの装備の状態を維持したい軍隊からのものだ。契約を遂行するには銅の指輪1個と銅のネックレス1個を作る",
+                            ["es"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Copper Ring and Copper Necklace to complete my contract.",
                         },
                     },
                 },
-                ["version"] = 1,
                 ["conditions"] = 
                 {
                     [1] = 
@@ -3070,23 +4207,23 @@ LibCraftTextVars =
                         {
                             [2] = 
                             {
-                                ["it"] = "Craft Garlic Pumpkin Seeds: 0 / 1",
                                 ["fr"] = "Préparez des graines de citrouille à l'ail : 0/1",
-                                ["es"] = "Preparæ semillas de calabaza con ajo: 0/1",
-                                ["en"] = "Craft Garlic Pumpkin Seeds: 0 / 1",
                                 ["de"] = "Stellt einige Kürbissamen mit Knoblauch her: 0/1",
+                                ["en"] = "Craft Garlic Pumpkin Seeds: 0 / 1",
                                 ["ru"] = "Создать — тыквенные семена с чесноком: 0 / 1",
                                 ["ja"] = "カボチャの種のニンニク炒めを生産する: 0 / 1",
+                                ["es"] = "Preparæ semillas de calabaza con ajo: 0/1",
+                                ["it"] = "Craft Garlic Pumpkin Seeds: 0 / 1",
                             },
                             [3] = 
                             {
-                                ["it"] = "Craft Treacleberry Tea: 0 / 1",
                                 ["fr"] = "Préparez un thé de mélassine : 0/1",
-                                ["es"] = "Preparæ té de bayamelaza: 0/1",
-                                ["en"] = "Craft Treacleberry Tea: 0 / 1",
                                 ["de"] = "Stellt etwas Sirupbeerentee her: 0/1",
+                                ["en"] = "Craft Treacleberry Tea: 0 / 1",
                                 ["ru"] = "Создать — ягодный чай с патокой: 0 / 1",
                                 ["ja"] = "トリークルベリーティーを生産する: 0 / 1",
+                                ["es"] = "Preparæ té de bayamelaza: 0/1",
+                                ["it"] = "Craft Treacleberry Tea: 0 / 1",
                             },
                         },
                     },
@@ -3096,23 +4233,23 @@ LibCraftTextVars =
                         {
                             [2] = 
                             {
-                                ["it"] = "Craft Petty Glyph of Stamina: 0 / 1",
                                 ["fr"] = "Fabriquez un petit glyphe vigoureux avec Ta : 0/1",
-                                ["es"] = "Fabrica un glifo insignificante de aguante con Ta: 0/1",
-                                ["en"] = "Craft Petty Glyph of Stamina With Ta: 0 / 1",
                                 ["de"] = "Stellt mit einer Ta-Rune eine winzige Glyphe der Ausdauer her: 0/1",
+                                ["en"] = "Craft Petty Glyph of Stamina With Ta: 0 / 1",
                                 ["ru"] = "Craft Petty Glyph of Stamina With Ta: 0 / 1",
                                 ["ja"] = "ターの不出来なグリフ(スタミナ)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un glifo insignificante de aguante con Ta: 0/1",
+                                ["it"] = "Craft Petty Glyph of Stamina: 0 / 1",
                             },
                             [3] = 
                             {
-                                ["it"] = "Acquire Ta Aspect Rune: 1 / 1",
                                 ["fr"] = "Acquérez une rune d'aspect Ta : 1/1",
-                                ["es"] = "Adquiere una runa de aspecto Ta: 1/1",
-                                ["en"] = "Acquire Ta Aspect Rune: 1 / 1",
                                 ["de"] = "Beschafft eine Ta-Aspektrune: 1/1",
+                                ["en"] = "Acquire Ta Aspect Rune: 1 / 1",
                                 ["ru"] = "Добыть руну аспекта Та: 1 / 1",
                                 ["ja"] = "ターの品質ルーンを手に入れる: 1 / 1",
+                                ["es"] = "Adquiere una runa de aspecto Ta: 1/1",
+                                ["it"] = "Acquire Ta Aspect Rune: 1 / 1",
                             },
                         },
                     },
@@ -3122,23 +4259,23 @@ LibCraftTextVars =
                         {
                             [2] = 
                             {
-                                ["it"] = "Craft Dram of Stamina: 0 / 1",
                                 ["fr"] = "Préparez une goutte de Vigueur : 0/1",
-                                ["es"] = "Prepara un trago de aguante: 0/1",
-                                ["en"] = "Craft Dram of Stamina: 0 / 1",
                                 ["de"] = "Stellt Schlücke der Ausdauer her: 0/1",
+                                ["en"] = "Craft Dram of Stamina: 0 / 1",
                                 ["ru"] = "Craft Dram of Stamina: 0 / 1",
                                 ["ja"] = "スタミナの飲み薬を生産する: 0 / 1",
+                                ["es"] = "Prepara un trago de aguante: 0/1",
+                                ["it"] = "Craft Dram of Stamina: 0 / 1",
                             },
                             [3] = 
                             {
-                                ["it"] = "Acquire bugloss: 3 / 3",
                                 ["fr"] = "Acquérez une noctuelle : 3/3",
-                                ["es"] = "Adquiere lengua de buey: 3/3",
-                                ["en"] = "Acquire Bugloss: 3 / 3",
                                 ["de"] = "Besorgt etwas Wolfsauge: 3/3",
+                                ["en"] = "Acquire Bugloss: 3 / 3",
                                 ["ru"] = "Раздобыть — воловик: 3 / 3",
                                 ["ja"] = "ムラサキ草を手に入れる: 3 / 3",
+                                ["es"] = "Adquiere lengua de buey: 3/3",
+                                ["it"] = "Acquire bugloss: 3 / 3",
                             },
                         },
                     },
@@ -3148,33 +4285,33 @@ LibCraftTextVars =
                         {
                             [4] = 
                             {
-                                ["it"] = "Craft Hide Bracers: 0 / 1",
                                 ["fr"] = "Fabriquez des brassards en peau normaux : 0/1",
-                                ["es"] = "Fabrica unos brazales de piel normales: 0/1",
-                                ["en"] = "Craft Normal Hide Bracers: 0 / 1",
                                 ["de"] = "Stellt normale Halblederarmschienen her: 0/1",
+                                ["en"] = "Craft Normal Hide Bracers: 0 / 1",
                                 ["ru"] = "Craft Normal Hide Bracers: 0 / 1",
                                 ["ja"] = "皮の腕当て(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unos brazales de piel normales: 0/1",
+                                ["it"] = "Craft Hide Bracers: 0 / 1",
                             },
                             [2] = 
                             {
-                                ["it"] = "Craft Hide Helmet: 0 / 1",
                                 ["fr"] = "Fabriquez un casque en peau normal : 0/1",
-                                ["es"] = "Fabrica un casco de piel normal: 0/1",
-                                ["en"] = "Craft Normal Hide Helmet: 0 / 1",
                                 ["de"] = "Stellt normale Halblederhelme her: 0/1",
+                                ["en"] = "Craft Normal Hide Helmet: 0 / 1",
                                 ["ru"] = "Craft Normal Hide Helmet: 0 / 1",
                                 ["ja"] = "皮の兜(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un casco de piel normal: 0/1",
+                                ["it"] = "Craft Hide Helmet: 0 / 1",
                             },
                             [3] = 
                             {
-                                ["it"] = "Craft Hide Arm Cops: 0 / 1",
                                 ["fr"] = "Fabriquez des coques d'épaules en peau normales : 0/1",
-                                ["es"] = "Fabrica unas hombreras de piel normales: 0/1",
-                                ["en"] = "Craft Normal Hide Arm Cops: 0 / 1",
                                 ["de"] = "Stellt normale Halblederschulterkappen her: 0/1",
+                                ["en"] = "Craft Normal Hide Arm Cops: 0 / 1",
                                 ["ru"] = "Craft Normal Hide Arm Cops: 0 / 1",
                                 ["ja"] = "皮のアームカップ(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unas hombreras de piel normales: 0/1",
+                                ["it"] = "Craft Hide Arm Cops: 0 / 1",
                             },
                         },
                     },
@@ -3184,33 +4321,33 @@ LibCraftTextVars =
                         {
                             [4] = 
                             {
-                                ["it"] = "Craft Steel Pauldron: 0 / 1",
                                 ["fr"] = "Fabriquez des spallières en acier normales : 0/1",
-                                ["es"] = "Fabrica unos espaldarones de acero normales: 0/1",
-                                ["en"] = "Craft Normal Steel Pauldron: 0 / 1",
                                 ["de"] = "Stellt normale Stahlschulterschutze her: 0/1",
+                                ["en"] = "Craft Normal Steel Pauldron: 0 / 1",
                                 ["ru"] = "Craft Normal Steel Pauldron: 0 / 1",
                                 ["ja"] = "鋼鉄のポールドロン(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unos espaldarones de acero normales: 0/1",
+                                ["it"] = "Craft Steel Pauldron: 0 / 1",
                             },
                             [2] = 
                             {
-                                ["it"] = "Craft Steel Helm: 0 / 1",
                                 ["fr"] = "Fabriquez un heaume en acier normal : 0/1",
-                                ["es"] = "Fabrica un yelmo de acero normal: 0/1",
-                                ["en"] = "Craft Normal Steel Helm: 0 / 1",
                                 ["de"] = "Stellt normale Stahlhauben her: 0/1",
+                                ["en"] = "Craft Normal Steel Helm: 0 / 1",
                                 ["ru"] = "Craft Normal Steel Helm: 0 / 1",
                                 ["ja"] = "鋼鉄の兜(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un yelmo de acero normal: 0/1",
+                                ["it"] = "Craft Steel Helm: 0 / 1",
                             },
                             [3] = 
                             {
-                                ["it"] = "Craft Steel Dagger: 0 / 1",
                                 ["fr"] = "Fabriquez une dague en acier normale : 0/1",
-                                ["es"] = "Fabrica una daga de acero normal: 0/1",
-                                ["en"] = "Craft Normal Steel Dagger: 0 / 1",
                                 ["de"] = "Stellt normale Stahldolche her: 0/1",
+                                ["en"] = "Craft Normal Steel Dagger: 0 / 1",
                                 ["ru"] = "Craft Normal Steel Dagger: 0 / 1",
                                 ["ja"] = "鋼鉄の短剣(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una daga de acero normal: 0/1",
+                                ["it"] = "Craft Steel Dagger: 0 / 1",
                             },
                         },
                     },
@@ -3220,23 +4357,23 @@ LibCraftTextVars =
                         {
                             [2] = 
                             {
-                                ["it"] = "Craft Oak Bow: 0 / 2",
                                 ["fr"] = "Fabriquez un arc en chêne normal : 0/2",
-                                ["es"] = "Fabrica un arco de roble normal: 0/2",
-                                ["en"] = "Craft Normal Oak Bow: 0 / 2",
                                 ["de"] = "Stellt normale Eichenbögen her: 0/2",
+                                ["en"] = "Craft Normal Oak Bow: 0 / 2",
                                 ["ru"] = "Craft Normal Oak Bow: 0 / 2",
                                 ["ja"] = "カシの弓(ノーマル)を生産する: 0 / 2",
+                                ["es"] = "Fabrica un arco de roble normal: 0/2",
+                                ["it"] = "Craft Oak Bow: 0 / 2",
                             },
                             [3] = 
                             {
-                                ["it"] = "Craft Oak Shield: 0 / 1",
                                 ["fr"] = "Fabriquez un bouclier normal : 0/1",
-                                ["es"] = "Fabrica un escudo de roble normal: 0/1",
-                                ["en"] = "Craft Normal Oak Shield: 0 / 1",
                                 ["de"] = "Stellt normale Eichenschilde her: 0/1",
+                                ["en"] = "Craft Normal Oak Shield: 0 / 1",
                                 ["ru"] = "Craft Normal Oak Shield: 0 / 1",
                                 ["ja"] = "カシの盾(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un escudo de roble normal: 0/1",
+                                ["it"] = "Craft Oak Shield: 0 / 1",
                             },
                         },
                     },
@@ -3246,481 +4383,103 @@ LibCraftTextVars =
                         {
                             [2] = 
                             {
-                                ["it"] = "TRACKER GOAL TEXT: 0 / 1",
                                 ["fr"] = "Fabriquez un anneau en cuivre : 0/1",
-                                ["es"] = "Fabrica un anillo de cobre: 0/1",
-                                ["en"] = "Craft a Copper Ring: 0 / 1",
                                 ["de"] = "Stellt einen Kupferring her: 0/1",
+                                ["en"] = "Craft a Copper Ring: 0 / 1",
                                 ["ru"] = "Craft a Copper Ring: 0 / 1",
                                 ["ja"] = "銅の指輪を作る: 0 / 1",
+                                ["es"] = "Fabrica un anillo de cobre: 0/1",
+                                ["it"] = "TRACKER GOAL TEXT: 0 / 1",
                             },
                             [3] = 
                             {
-                                ["it"] = "TRACKER GOAL TEXT: 0 / 1",
                                 ["fr"] = "Fabriquez un collier en cuivre : 0/1",
-                                ["es"] = "Fabrica un collar de cobre: 0/1",
-                                ["en"] = "Craft a Copper Necklace: 0 / 1",
                                 ["de"] = "Stellt eine Kupferhalskette her: 0/1",
+                                ["en"] = "Craft a Copper Necklace: 0 / 1",
                                 ["ru"] = "Craft a Copper Necklace: 0 / 1",
                                 ["ja"] = "銅のネックレスを作る: 0 / 1",
+                                ["es"] = "Fabrica un collar de cobre: 0/1",
+                                ["it"] = "TRACKER GOAL TEXT: 0 / 1",
                             },
                         },
                     },
                 },
+                ["version"] = 1,
                 ["quests"] = 
                 {
                     [1] = 
                     {
-                        ["it"] = "Provisioner Writ",
                         ["fr"] = "Commande de cuisine",
-                        ["es"] = "Encargo de provisiones",
-                        ["en"] = "Provisioner Writ",
                         ["de"] = "Versorgerschrieb",
+                        ["en"] = "Provisioner Writ",
                         ["ru"] = "Заказ снабженцу",
                         ["ja"] = "調理師の依頼",
-                    },
-                    [2] = 
-                    {
-                        ["it"] = "Enchanter Writ",
-                        ["fr"] = "Commandes d'enchantement",
-                        ["es"] = "Encargo de encantamiento",
-                        ["en"] = "Enchanter Writ",
-                        ["de"] = "Verzaubererschrieb",
-                        ["ru"] = "Заказ зачарователю",
-                        ["ja"] = "付呪師の依頼",
-                    },
-                    [3] = 
-                    {
-                        ["it"] = "Alchemist Writ",
-                        ["fr"] = "Commande d'alchimie",
-                        ["es"] = "Encargo de alquimia",
-                        ["en"] = "Alchemist Writ",
-                        ["de"] = "Alchemistenschrieb",
-                        ["ru"] = "Заказ алхимику",
-                        ["ja"] = "錬金術師の依頼",
-                    },
-                    [4] = 
-                    {
-                        ["it"] = "Clothier Writ",
-                        ["fr"] = "Commande de tailleur",
-                        ["es"] = "Encargo de sastrería",
-                        ["en"] = "Clothier Writ",
-                        ["de"] = "Schneiderschrieb",
-                        ["ru"] = "Заказ портному",
-                        ["ja"] = "仕立師の依頼",
-                    },
-                    [5] = 
-                    {
-                        ["it"] = "Blacksmith Writ",
-                        ["fr"] = "Commande de forge",
-                        ["es"] = "Encargo de herrería",
-                        ["en"] = "Blacksmith Writ",
-                        ["de"] = "Schmiedeschrieb",
-                        ["ru"] = "Заказ кузнецу",
-                        ["ja"] = "鍛冶師の依頼",
-                    },
-                    [6] = 
-                    {
-                        ["it"] = "Woodworker Writ",
-                        ["fr"] = "Commande de travail du bois",
-                        ["es"] = "Encargo de carpintería",
-                        ["en"] = "Woodworker Writ",
-                        ["de"] = "Schreinerschrieb",
-                        ["ru"] = "Заказ столяру",
-                        ["ja"] = "木工師の依頼",
-                    },
-                    [7] = 
-                    {
-                        ["it"] = "",
-                        ["fr"] = "Commande de joaillerie",
-                        ["es"] = "Encargo de artesanía de joyería",
-                        ["en"] = "Jewelry Crafting Writ",
-                        ["de"] = "Schmuckhandwerksschrieb",
-                        ["ru"] = "Заказ ювелиру",
-                        ["ja"] = "宝飾師のクラフト依頼",
-                    },
-                },
-            },
-            ["ziggr-alt-six"] = 
-            {
-                ["version"] = 1,
-            },
-            ["ziggr-alt-one"] = 
-            {
-                ["steps"] = 
-                {
-                    [8] = 
-                    {
-                        [1] = 
-                        {
-                            ["ru"] = "This writ is from a trade consortium, merchants passing goods across Nirn. I've been tasked with creating a Pewter Ring and a Pewter Necklace to complete my contract.",
-                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation d'un anneau et d'un collier d'étain.",
-                            ["en"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Sip of Health and acquiring some blessed thistle to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, einen Zinnring und eine Zinnhalskette herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["es"] = "This writ is from a trade consortium, merchants passing goods across Nirn. I've been tasked with creating a Pewter Ring and a Pewter Necklace to complete my contract.",
-                            ["ja"] = "ニルン各地に商品を流通させる貿易組合からの依頼だ。契約を遂行するにはピューターの指輪1個とピューターのネックレス1個を作る",
-                        },
-                    },
-                    [2] = 
-                    {
-                        [1] = 
-                        {
-                            ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Rawide Helmets, Arm Cops, and Bracers to complete my contract.",
-                            ["fr"] = "Cette commande émane d'un consortium, des marchands itinérants de Nirn. On m'a confié la confection de plusieurs casques, coques et brassards en cuir brut.",
-                            ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado hacer varios cascos, hombreras y brazales de cuero crudo para completar mi contrato.",
-                            ["en"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Rawide Helmets, Arm Cops, and Bracers to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, mehrere Helme, Schulterkappen und Armschienen aus Rohleder herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо создать несколько комплектов шлемов, наплечников и наручей из сыромятной кожи.",
-                            ["ja"] = "依頼はニルン全土で品物の交易を行う、貿易協会からのものだ。この契約の完了のために課されているのは、複数の生皮の兜、アームカップそして腕当ての生産だ",
-                        },
-                    },
-                    [3] = 
-                    {
-                        [1] = 
-                        {
-                            ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Iron Helms, Daggers, and Pauldrons to complete my contract.",
-                            ["fr"] = "Cette commande émane d'un consortium marchand qui fait transiter des denrées sur tout Nirn. On m'a confié la conception de plusieurs casques, dagues et spallières en fer.",
-                            ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado hacer varios yelmos, dagas y espaldarones de hierro para completar mi contrato.",
-                            ["en"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Iron Helms, Daggers, and Pauldrons to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, mehrere Helme, Dolche und Schulterschutze aus Eisen herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо создать несколько железных шлемов, кинжалов и наплечников.",
-                            ["ja"] = "依頼はニルン全土で品物の交易を行う、貿易協会からのものだ。この契約の完了のために課されているのは、複数の鉄の兜、短剣、そしてポールドロンの生産だ",
-                        },
-                    },
-                    [4] = 
-                    {
-                        [1] = 
-                        {
-                            ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Maple Bows and Shields to complete my contract.",
-                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands qui transportent les denrées aux quatre coins de Nirn. On m'a commandé de fabriquer plusieurs arcs et boucliers en érable.",
-                            ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado hacer varios arcos y escudos de arce para completar mi contrato.",
-                            ["en"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Maple Bows and Shields to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, mehrere Bögen und Schilde aus Ahorn herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо сделать из клена несколько луков и щитов.",
-                            ["ja"] = "依頼はニルン全土で品物の交易を行う、貿易協会からのものだ。この契約の完了のために課されているのは、複数のカエデの弓、およびカエデの盾の生産だ",
-                        },
-                    },
-                    [5] = 
-                    {
-                        [1] = 
-                        {
-                            ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Trifling Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
-                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands qui transportent les denrées aux quatre coins de Nirn. On m'a commandé de fabriquer un glyphe de Vigueur insignifiant et d'acquérir une rune d'aspect Ta.",
-                            ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado crear un glifo mediocre de aguante y conseguir una runa de aspecto Ta para completar mi contrato.",
-                            ["en"] = "This writ is from a trade consortium, merchants passing goods across Nirn. I've been tasked with creating a Pewter Ring and a Pewter Necklace to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, eine unbedeutende Glyphe der Ausdauer herzustellen und eine Ta-Aspektrune zu besorgen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Trifling Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
-                            ["ja"] = "依頼はニルン全土で品物の交易を行う、貿易協会からのものだ。この契約の完了のために課されているのは、初歩のグリフ(スタミナ)の生産、およびターの品質ルーンの入手だ",
-                        },
-                    },
-                    [6] = 
-                    {
-                        [1] = 
-                        {
-                            ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating Baked Apples and Lemon Flower Mazte to complete my contract. The merchants expect delivery in Glenumbra.",
-                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands qui transportent les denrées aux quatre coins de Nirn. On m'a demandé de préparer des pommes cuites et un mazté à la fleur de citronnier. Je dois livrer ces denrées en Glénumbrie.",
-                            ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado preparar manzanas asadas y Mazte de azahar para completar mi contrato. Los mercaderes esperan la entrega en Glenumbra.",
-                            ["en"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating Baked Apples and Lemon Flower Mazte to complete my contract. The merchants expect delivery in Glenumbra.",
-                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, einige Bratäpfel und etwas Zitrusblütenmazte herzustellen, um meinen Kontrakt zu erfüllen. Die Händler erwarten die Lieferung in Glenumbra.",
-                            ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо создать печеные яблоки и лимонный мацт. Торговцы ожидают поставку в Гленумбре.",
-                            ["ja"] = "ニルン各地に商品を流通させる貿易組合からの依頼だ。契約を遂行するには焼きリンゴとレモンフラワーのマッツェを作らなければならない。商人たちはグレナンブラで配達を待っている",
-                        },
-                    },
-                    [7] = 
-                    {
-                        [1] = 
-                        {
-                            ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Sip of Health and acquiring some blessed thistle to complete my contract.",
-                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation d'une gorgée de Santé et l'acquisition d’un chardon béni.",
-                            ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado crear un sorbo de salud y conseguir algo de cardo bendito para completar mi contrato.",
-                            ["en"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Trifling Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einem Handelskonsortium: Kaufleute, die Waren durch ganz Nirn transportieren. Ich wurde damit beauftragt, ein Schlückchen des Lebens herzustellen und etwas Benediktenkraut zu besorgen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Sip of Health and acquiring some благословенный чертополох to complete my contract.",
-                            ["ja"] = "ニルン各地に商品を流通させる貿易組合からの依頼だ。契約を遂行するには体力の雫を作り、聖なるシッスルを手に入れなければならない",
-                        },
-                    },
-                },
-                ["version"] = 1,
-                ["conditions"] = 
-                {
-                    [8] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["it"] = "TRACKER GOAL TEXT: 0 / 1",
-                                ["fr"] = "Fabriquez un anneau en étain : 0/1",
-                                ["es"] = "Fabrica un anillo de peltre: 0/1",
-                                ["en"] = "Craft Sip of Health: 0 / 1",
-                                ["de"] = "Stellt einen Zinnring her: 0/1",
-                                ["ru"] = "Craft a Pewter Ring: 0 / 1",
-                                ["ja"] = "ピューターの指輪を作る: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["it"] = "TRACKER GOAL TEXT: 0 / 1",
-                                ["fr"] = "Fabriquez un collier en étain : 0/1",
-                                ["es"] = "Fabrica un collar de peltre: 0/1",
-                                ["en"] = "Acquire Blessed Thistle: 3 / 3",
-                                ["de"] = "Stellt eine Zinnhalskette her: 0/1",
-                                ["ru"] = "Craft a Pewter Necklace: 0 / 1",
-                                ["ja"] = "ピューターのネックレスを作る: 0 / 1",
-                            },
-                        },
-                    },
-                    [2] = 
-                    {
-                        [1] = 
-                        {
-                            [4] = 
-                            {
-                                ["it"] = "Craft Rawhide Bracers: 0 / 1",
-                                ["fr"] = "Fabriquez des brassards en cuir brut normaux : 0/1",
-                                ["es"] = "Fabrica unos brazales de piel cruda normales: 0/1",
-                                ["en"] = "Craft Normal Rawhide Bracers: 0 / 1",
-                                ["de"] = "Stellt normale Rohlederarmschienen her: 0/1",
-                                ["ru"] = "Craft Normal Rawhide Bracers: 0 / 1",
-                                ["ja"] = "生皮の腕当て(ノーマル)を生産する: 0 / 1",
-                            },
-                            [2] = 
-                            {
-                                ["it"] = "Craft Rawhide Helmet: 0 / 1",
-                                ["fr"] = "Fabriquez un casque en cuir brut normal : 0/1",
-                                ["es"] = "Fabrica un yelmo de piel cruda normal: 0/1",
-                                ["en"] = "Craft Normal Rawhide Helmet: 0 / 1",
-                                ["de"] = "Stellt normale Rohlederhelme her: 0/1",
-                                ["ru"] = "Craft Normal Rawhide Helmet: 0 / 1",
-                                ["ja"] = "生皮の兜(ノーマル)を生産する: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["it"] = "Craft Rawhide Arm Cops: 0 / 1",
-                                ["fr"] = "Fabriquez des coques d'épaules en cuir brut normales : 0/1",
-                                ["es"] = "Fabrica unas hombreras de piel cruda normales: 0/1",
-                                ["en"] = "Craft Normal Rawhide Arm Cops: 0 / 1",
-                                ["de"] = "Stellt normale Rohlederschulterkappen her: 0/1",
-                                ["ru"] = "Craft Normal Rawhide Arm Cops: 0 / 1",
-                                ["ja"] = "生皮のアームカップ(ノーマル)を生産する: 0 / 1",
-                            },
-                        },
-                    },
-                    [3] = 
-                    {
-                        [1] = 
-                        {
-                            [4] = 
-                            {
-                                ["it"] = "Craft Iron Pauldron: 0 / 1",
-                                ["fr"] = "Fabriquez des spallières en fer normales : 0/1",
-                                ["es"] = "Fabrica unos espaldarones de hierro normales: 0/1",
-                                ["en"] = "Craft Normal Iron Pauldron: 0 / 1",
-                                ["de"] = "Stellt normale Eisenschulterschutze her: 0/1",
-                                ["ru"] = "Craft Normal Iron Pauldron: 0 / 1",
-                                ["ja"] = "鉄のポールドロン(ノーマル)を生産する: 0 / 1",
-                            },
-                            [2] = 
-                            {
-                                ["it"] = "Craft Iron Helm: 0 / 1",
-                                ["fr"] = "Fabriquez un heaume en fer normal : 0/1",
-                                ["es"] = "Fabrica un yelmo de hierro normal: 0/1",
-                                ["en"] = "Craft Normal Iron Helm: 0 / 1",
-                                ["de"] = "Stellt normale Eisenhauben her: 0/1",
-                                ["ru"] = "Craft Normal Iron Helm: 0 / 1",
-                                ["ja"] = "鉄の兜(ノーマル)を生産する: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["it"] = "Craft Iron Dagger: 0 / 1",
-                                ["fr"] = "Fabriquez une dague en fer normale : 0/1",
-                                ["es"] = "Fabrica una daga de hierro normal: 0/1",
-                                ["en"] = "Craft Normal Iron Dagger: 0 / 1",
-                                ["de"] = "Stellt normale Eisendolche her: 0/1",
-                                ["ru"] = "Craft Normal Iron Dagger: 0 / 1",
-                                ["ja"] = "鉄の短剣(ノーマル)を生産する: 0 / 1",
-                            },
-                        },
-                    },
-                    [4] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["it"] = "Craft Maple Bow: 0 / 2",
-                                ["fr"] = "Fabriquez un arc en érable normal : 0/2",
-                                ["es"] = "Fabrica un arco de arce normal: 0/2",
-                                ["en"] = "Craft Normal Maple Bow: 0 / 2",
-                                ["de"] = "Stellt normale Ahornbögen her: 0/2",
-                                ["ru"] = "Craft Normal Maple Bow: 0 / 2",
-                                ["ja"] = "カエデの弓(ノーマル)を生産する: 0 / 2",
-                            },
-                            [3] = 
-                            {
-                                ["it"] = "Craft Maple Shield: 0 / 1",
-                                ["fr"] = "Fabriquez un bouclier en érable normal : 0/1",
-                                ["es"] = "Fabrica un escudo de arce normal: 0/1",
-                                ["en"] = "Craft Normal Maple Shield: 0 / 1",
-                                ["de"] = "Stellt normale Ahornschilde her: 0/1",
-                                ["ru"] = "Craft Normal Maple Shield: 0 / 1",
-                                ["ja"] = "カエデの盾(ノーマル)を生産する: 0 / 1",
-                            },
-                        },
-                    },
-                    [5] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["it"] = "Craft Trifling Glyph of Stamina: 0 / 1",
-                                ["fr"] = "Fabriquez un glyphe insignifiant vigoureux avec Ta : 0/1",
-                                ["es"] = "Fabrica un glifo mediocre de aguante con Ta: 0/1",
-                                ["en"] = "Craft a Pewter Ring: 0 / 1",
-                                ["de"] = "Stellt mit einer Ta-Rune eine unbedeutende Glyphe der Ausdauer her: 0/1",
-                                ["ru"] = "Craft Trifling Glyph of Stamina With Ta: 0 / 1",
-                                ["ja"] = "ターの初歩のグリフ(スタミナ)を生産する: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["it"] = "Acquire Ta Aspect Rune: 1 / 1",
-                                ["fr"] = "Acquérez une rune d'aspect Ta : 1/1",
-                                ["es"] = "Adquiere una runa de aspecto Ta: 1/1",
-                                ["en"] = "Craft a Pewter Necklace: 0 / 1",
-                                ["de"] = "Beschafft eine Ta-Aspektrune: 1/1",
-                                ["ru"] = "Добыть руну аспекта Та: 1 / 1",
-                                ["ja"] = "ターの品質ルーンを手に入れる: 1 / 1",
-                            },
-                        },
-                    },
-                    [6] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["it"] = "Craft Lemon Flower Mazte: 0 / 1",
-                                ["fr"] = "Préparez un mazté à la fleur de citronnier : 0/1",
-                                ["es"] = "Preparæ Mazte de azahar: 0/1",
-                                ["en"] = "Craft Lemon Flower Mazte: 0 / 1",
-                                ["de"] = "Stellt etwas Zitrusblütenmazte her: 0/1",
-                                ["ru"] = "Создать — лимонный мацт: 0 / 1",
-                                ["ja"] = "レモンフラワーのマッツェを生産する: 0 / 1",
-                            },
-                            [1] = 
-                            {
-                                ["it"] = "Craft Baked Apples: 0 / 1",
-                                ["fr"] = "Préparez des pommes cuites : 0/1",
-                                ["es"] = "Preparæ manzanas asadas: 0/1",
-                                ["en"] = "Craft Baked Apples: 0 / 1",
-                                ["de"] = "Stellt einige Bratäpfel her: 0/1",
-                                ["ru"] = "Создать — печеные яблоки: 0 / 1",
-                                ["ja"] = "焼きリンゴを生産する: 0 / 1",
-                            },
-                        },
-                    },
-                    [7] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["it"] = "Craft Sip of Health: 0 / 1",
-                                ["fr"] = "Préparez une gorgée de Santé : 0/1",
-                                ["es"] = "Prepara un sorbo de salud: 0/1",
-                                ["en"] = "Craft Trifling Glyph of Stamina With Ta: 0 / 1",
-                                ["de"] = "Stellt Schlückchen des Lebens her: 0/1",
-                                ["ru"] = "Создать глоток здоровья (Sip of Health): 0 / 1",
-                                ["ja"] = "体力の雫を生産する: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["it"] = "Acquire blessed thistle: 3 / 3",
-                                ["fr"] = "Acquérez un chardon béni : 3/3",
-                                ["es"] = "Adquiere cardo bendito: 3/3",
-                                ["en"] = "Acquire Ta Aspect Rune: 1 / 1",
-                                ["de"] = "Besorgt etwas Benediktenkraut: 3/3",
-                                ["ru"] = "Раздобыть — благословенный чертополох: 3 / 3",
-                                ["ja"] = "聖なるシッスルを手に入れる: 3 / 3",
-                            },
-                        },
-                    },
-                },
-                ["quests"] = 
-                {
-                    [8] = 
-                    {
-                        ["it"] = "",
-                        ["fr"] = "Commande de joaillerie",
-                        ["es"] = "Encargo de artesanía de joyería",
-                        ["en"] = "Alchemist Writ",
-                        ["de"] = "Schmuckhandwerksschrieb",
-                        ["ru"] = "Заказ ювелиру",
-                        ["ja"] = "宝飾師のクラフト依頼",
-                    },
-                    [2] = 
-                    {
-                        ["it"] = "Clothier Writ",
-                        ["fr"] = "Commande de tailleur",
-                        ["es"] = "Encargo de sastrería",
-                        ["en"] = "Clothier Writ",
-                        ["de"] = "Schneiderschrieb",
-                        ["ru"] = "Заказ портному",
-                        ["ja"] = "仕立師の依頼",
-                    },
-                    [3] = 
-                    {
-                        ["it"] = "Blacksmith Writ",
-                        ["fr"] = "Commande de forge",
-                        ["es"] = "Encargo de herrería",
-                        ["en"] = "Blacksmith Writ",
-                        ["de"] = "Schmiedeschrieb",
-                        ["ru"] = "Заказ кузнецу",
-                        ["ja"] = "鍛冶師の依頼",
-                    },
-                    [4] = 
-                    {
-                        ["it"] = "Woodworker Writ",
-                        ["fr"] = "Commande de travail du bois",
-                        ["es"] = "Encargo de carpintería",
-                        ["en"] = "Woodworker Writ",
-                        ["de"] = "Schreinerschrieb",
-                        ["ru"] = "Заказ столяру",
-                        ["ja"] = "木工師の依頼",
-                    },
-                    [5] = 
-                    {
-                        ["it"] = "Enchanter Writ",
-                        ["fr"] = "Commandes d'enchantement",
-                        ["es"] = "Encargo de encantamiento",
-                        ["en"] = "Jewelry Crafting Writ",
-                        ["de"] = "Verzaubererschrieb",
-                        ["ru"] = "Заказ зачарователю",
-                        ["ja"] = "付呪師の依頼",
-                    },
-                    [6] = 
-                    {
-                        ["it"] = "Provisioner Writ",
-                        ["fr"] = "Commande de cuisine",
                         ["es"] = "Encargo de provisiones",
-                        ["en"] = "Provisioner Writ",
-                        ["de"] = "Versorgerschrieb",
-                        ["ru"] = "Заказ снабженцу",
-                        ["ja"] = "調理師の依頼",
+                        ["it"] = "Provisioner Writ",
+                    },
+                    [2] = 
+                    {
+                        ["fr"] = "Commandes d'enchantement",
+                        ["de"] = "Verzaubererschrieb",
+                        ["en"] = "Enchanter Writ",
+                        ["ru"] = "Заказ зачарователю",
+                        ["ja"] = "付呪師の依頼",
+                        ["es"] = "Encargo de encantamiento",
+                        ["it"] = "Enchanter Writ",
+                    },
+                    [3] = 
+                    {
+                        ["fr"] = "Commande d'alchimie",
+                        ["de"] = "Alchemistenschrieb",
+                        ["en"] = "Alchemist Writ",
+                        ["ru"] = "Заказ алхимику",
+                        ["ja"] = "錬金術師の依頼",
+                        ["es"] = "Encargo de alquimia",
+                        ["it"] = "Alchemist Writ",
+                    },
+                    [4] = 
+                    {
+                        ["fr"] = "Commande de tailleur",
+                        ["de"] = "Schneiderschrieb",
+                        ["en"] = "Clothier Writ",
+                        ["ru"] = "Заказ портному",
+                        ["ja"] = "仕立師の依頼",
+                        ["es"] = "Encargo de sastrería",
+                        ["it"] = "Clothier Writ",
+                    },
+                    [5] = 
+                    {
+                        ["fr"] = "Commande de forge",
+                        ["de"] = "Schmiedeschrieb",
+                        ["en"] = "Blacksmith Writ",
+                        ["ru"] = "Заказ кузнецу",
+                        ["ja"] = "鍛冶師の依頼",
+                        ["es"] = "Encargo de herrería",
+                        ["it"] = "Blacksmith Writ",
+                    },
+                    [6] = 
+                    {
+                        ["fr"] = "Commande de travail du bois",
+                        ["de"] = "Schreinerschrieb",
+                        ["en"] = "Woodworker Writ",
+                        ["ru"] = "Заказ столяру",
+                        ["ja"] = "木工師の依頼",
+                        ["es"] = "Encargo de carpintería",
+                        ["it"] = "Woodworker Writ",
                     },
                     [7] = 
                     {
-                        ["it"] = "Alchemist Writ",
-                        ["fr"] = "Commande d'alchimie",
-                        ["es"] = "Encargo de alquimia",
-                        ["en"] = "Enchanter Writ",
-                        ["de"] = "Alchemistenschrieb",
-                        ["ru"] = "Заказ алхимику",
-                        ["ja"] = "錬金術師の依頼",
+                        ["fr"] = "Commande de joaillerie",
+                        ["de"] = "Schmuckhandwerksschrieb",
+                        ["en"] = "Jewelry Crafting Writ",
+                        ["ru"] = "Заказ ювелиру",
+                        ["ja"] = "宝飾師のクラフト依頼",
+                        ["es"] = "Encargo de artesanía de joyería",
+                        ["it"] = "",
                     },
                 },
             },
-            ["ziggr-alt-three"] = 
+            ["ziggr-alt-five"] = 
             {
                 ["steps"] = 
                 {
@@ -3728,94 +4487,93 @@ LibCraftTextVars =
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Leather Helmets, Arm Cops, and Bracers to complete my contract.",
-                            ["fr"] = "Cette commande émane d'un groupe consacré à la défense des populations déplacées par le conflit qui déchire Nirn. On m'a confié la fabrication de plusieurs casques, coques et brassards en cuir.",
-                            ["es"] = "Este encargo es de un grupo que intenta defender a los refugiados desplazados por los combates en todo Nirn. Me han encargado hacer varios cascos, hombreras y brazales de cuero para completar mi contrato.",
-                            ["en"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Leather Helmets, Arm Cops, and Bracers to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einer Gruppe, welche all jene beschützen will, die durch die Kämpfe in Nirn ihre Heimat verloren haben. Ich wurde damit beauftragt, mehrere Helme, Schulterkappen und Armschienen aus Leder herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Leather Helmets, Arm Cops, and Bracers to complete my contract.",
-                            ["ja"] = "依頼はニルン各地の戦闘によって故郷を追われた人々を守ろうとしている団体からのものだ。この契約の完了のために課されているのは、複数の革の兜、アームカップそして腕当ての生産だ",
+                            ["fr"] = "Cette commande est adressée par un groupe de « marchands indépendants » qui échangent de l'or contre leurs réserves. On m'a commandé la confection de plusieurs robes, braies et épaulettes en fil d'ébonite pour remplir mon contrat.",
+                            ["de"] = "Dieser Schrieb stammt von einer Gruppe „unabhängiger Händler“, die Geld gegen Waren tauschen. Ich wurde damit beauftragt, mehrere Roben, Beinkleider und Schulterpolster aus Ebengarn herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a group of \"independent merchants,\" trading coin for supplies. I've been tasked with creating several Ebonthread Robes, Breeches, and Epaulets to complete my contract.",
+                            ["ru"] = "This writ is from a group of \"independent merchants,\" trading coin for supplies. I've been tasked with creating several Ebonthread Robes, Breeches, and Epaulets to complete my contract.",
+                            ["ja"] = "依頼は金貨を物資に替えている「独立系商人」の団体からのものだ。この契約の完了のために課されているのは、複数のエボンスレッドのローブ、パンツそして肩当ての生産だ",
+                            ["es"] = "Este encargo es de un grupo de \"mercaderes independientes\", cambiando moneda por suministros. Me han encargado hacer varias túnicas, pantalones y hombreras de hilo de ébano para completar mi contrato.",
+                            ["it"] = "This writ is from a group of \"independent merchants,\" trading coin for supplies. I've been tasked with creating several Ebonthread Robes, Breeches, and Epaulets to complete my contract.",
                         },
                     },
                     [2] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Orichalcum Helms, Daggers, and Pauldrons to complete my contract.",
-                            ["fr"] = "Cette commande émane d'un groupe qui cherche à défendre les populations déplacées par le conflit qui déchire Nirn. On m'a confié la fabrication de plusieurs casques, dagues et spallières en orichalque.",
-                            ["es"] = "Este encargo es de un grupo que intenta defender a los refugiados desplazados por los combates en todo Nirn. Me han encargado hacer varios yelmos dagas y espaldarones de oricalco, para completar mi contrato.",
-                            ["en"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Orichalcum Helms, Daggers, and Pauldrons to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einer Gruppe, welche all jene beschützen will, die durch die Kämpfe in Nirn ihre Heimat verloren haben. Ich wurde damit beauftragt, mehrere Helme, Dolche und Schulterschutze aus Oreichalkos herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Orichalcum Helms, Daggers, and Pauldrons to complete my contract.",
-                            ["ja"] = "依頼はニルン各地の戦闘によって故郷を追われた人々を守ろうとしている団体からのものだ。この契約の完了のために課されているのは、複数のオリハルコンの兜、短剣、そしてポールドロンの生産だ",
+                            ["fr"] = "Cette commande émane de « marchands indépendants » qui ravitaillent les plus offrants. Ils m'ont commandé plusieurs épées, cuirasses et grèves en ébonite.",
+                            ["de"] = "Dieser Schrieb stammt von einer Gruppe „unabhängiger Händler“, die Geld gegen Waren tauschen. Ich wurde damit beauftragt, mehrere Schwerter, Kürasse und Beinschienen aus Ebenerz herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Ebony Swords, Cuirass, and Greaves to complete my contract.",
+                            ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Ebony Swords, Cuirass, and Greaves to complete my contract.",
+                            ["ja"] = "依頼は金貨を物資に替えている「独立系商人」の団体からのものだ。この契約の完了のために課されているのは、複数の黒檀の剣、胸当てそしてグリーヴの生産だ",
+                            ["es"] = "Este encargo es de un grupo de \"mercaderes independientes\", cambiando moneda por suministros. Me han encargado hacer varias espadas, corazas y grebas de ébano para completar mi contrato.",
+                            ["it"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Ebony Swords, Cuirass, and Greaves to complete my contract.",
                         },
                     },
                     [3] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Beech Bows and Shields to complete my contract.",
-                            ["fr"] = "Cette commande émane d'un groupe qui cherche à défendre les populations déplacées par le conflit qui déchire Nirn. On m'a confié la fabrication de plusieurs arcs et boucliers en hêtre.",
-                            ["es"] = "Este encargo es de un grupo que intenta defender a los refugiados desplazados por los combates en todo Nirn. Me han encargado hacer varios arcos y escudos de haya para completar mi contrato.",
-                            ["en"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Beech Bows and Shields to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einer Gruppe, welche all jene beschützen will, die durch die Kämpfe in Nirn ihre Heimat verloren haben. Ich wurde damit beauftragt, mehrere Bögen und Schilde aus Buche herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Beech Bows and Shields to complete my contract.",
-                            ["ja"] = "依頼はニルン各地の戦闘によって故郷を追われた人々を守ろうとしている団体からのものだ。この契約の完了のために課されているのは、複数のブナノキの弓およびブナノキの盾の生産だ",
+                            ["fr"] = "Cette commande émane de « marchands indépendants » qui ravitaillent les plus offrants. On m'a commandé de fabriquer plusieurs bâtons de rétablissement et boucliers en if.",
+                            ["de"] = "Dieser Schrieb stammt von einer Gruppe „unabhängiger Händler“, die Geld gegen Waren tauschen. Ich wurde damit beauftragt, mehrere Heilungsstäbe und Schilde aus Eibe herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Yew Restoration Staves and Shields to complete my contract.",
+                            ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Yew Restoration Staves and Shields to complete my contract.",
+                            ["ja"] = "依頼は金貨を物資に替えている「独立系商人」の団体からのものだ。この契約の完了のために課されているのは、複数のイチイの回復の杖、およびイチイの盾の生産だ",
+                            ["es"] = "Este encargo es de un grupo de \"mercaderes independientes\", cambiando moneda por suministros. Me han encargado hacer varias varas de restauración y escudos de tejo para completar mi contrato.",
+                            ["it"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Yew Restoration Staves and Shields to complete my contract.",
                         },
                     },
                     [4] = 
                     {
                         [1] = 
                         {
-                            ["ru"] = "This writ is from a group defending people displaced by fighting across Nirn. I've been tasked with creating a Silver Ring and a Silver Necklace to complete my contract.",
-                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation d'un anneau et d'un collier d'argent. ",
-                            ["en"] = "This writ is from a group defending people displaced by fighting across Nirn. I've been tasked with creating a Silver Ring and a Silver Necklace to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einer Gruppe, welche all jene beschützt, die durch die Kämpfe in Nirn ihre Heimat verloren haben. Ich wurde damit beauftragt, einen Silberring und eine Silberkette herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["es"] = "This writ is from a group defending people displaced by fighting across Nirn. I've been tasked with creating a Silver Ring and a Silver Necklace to complete my contract.",
-                            ["ja"] = "依頼はニルン各地の戦闘によって故郷を追われた人々を守ろうとしている団体からのものだ。契約を遂行するには銀の指輪1個と銀のネックレス1個を作る",
+                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation de trois anneaux de platine.",
+                            ["de"] = "Dieser Schrieb stammt von einer Gruppe „unabhängiger Händler“, die Geld gegen Waren tauschen. Ich wurde damit beauftragt, drei Platinringe herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating three Platinum Rings to complete my contract.",
+                            ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating three Platinum Rings to complete my contract.",
+                            ["ja"] = "依頼は金貨を物資に替えている「独立系商人」の団体からのものだ。契約を遂行するにはプラチナの指輪3個を作る",
+                            ["es"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating three Platinum Rings to complete my contract.",
                         },
                     },
                     [5] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from a refugee relief organization trying to feed and defend people displaced by fighting across Nirn. I've been tasked with creating Stormhold Baked Bananas and Maormer Tea to complete my contract. The organization expects delivery in Shadowfen.",
-                            ["fr"] = "Cette commande émane d'une association humanitaire qui porte secours aux réfugiés déplacés par la guerre. On m'a demandé de préparer des bananes cuites de Fort-tempête et un thé maormer, puis de les livrer à Fangeombre.",
-                            ["es"] = "Este encargo es de una organización de ayuda a los refugiados que intenta alimentar y defender a las personas desplazadas por los combates en todo Nirn. Me han encargado preparar plátanos asados de Fuertormenta y Té maormer para completar mi contrato. La organización espera la entrega en Pantano de las Sombras.",
-                            ["en"] = "This writ is from a refugee relief organization trying to feed and defend people displaced by fighting across Nirn. I've been tasked with creating Stormhold Baked Bananas and Maormer Tea to complete my contract. The organization expects delivery in Shadowfen.",
-                            ["de"] = "Dieser Schrieb stammt von einer Hilfsorganisation für Flüchtlinge, die versucht, all jene zu versorgen und zu verteidigen, die durch die Kämpfe in Nirn heimatlos geworden sind. Ich wurde beauftragt, einige Sturmfeste-Backbananen und etwas Maormertee herzustellen, um meinen Kontrakt zu erfüllen. Die Organisation erwartet die Lieferung in Schattenfenn.",
-                            ["ru"] = "This writ is from a refugee relief organization trying to feed and defend people displaced by fighting across Nirn. I've been tasked with creating печеные бананы по-стормхолдски and маормерский чай to complete my contract. The organization expects delivery in Shadowfen.",
-                            ["ja"] = "ニルン中の戦争により家を失った人々を守り食べさせる避難民救済組織からの依頼だ。契約を遂行するにはストームホールドの焼きバナナとマオマーティーを作らなければならない。組織はシャドウフェンで配達を待っている",
+                            ["fr"] = "Cette commande émane de la guilde des mages. Ils cherchent à alimenter leur effort de guerre dans le royaume daedrique de Havreglace. On m'a engagée pour préparer un filet-mignon de porc farci au millet et un thé éthérien.",
+                            ["de"] = "Dieser Schrieb stammt von einem Zweig der Magiergilde. Er will sich für seine Unternehmungen im daedrischen Reich Kalthafen ausrüsten und versorgen. Ich wurde damit beauftragt, eine gefüllte Schweinelende mit Hirse und etwas Ätherischen Tee herzustellen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating Millet-Stuffed Pork Loin and Aetherial Tea to complete my contract.",
+                            ["ru"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating свиная вырезка с начинкой из пшена and этерический чай to complete my contract.",
+                            ["ja"] = "魔術師ギルドのある機関からの依頼だ。コールドハーバーにおけるデイドラの領域での抗争で必要な武器や物資を求めている。契約を遂行するには雑穀の豚腰肉包み焼きとエセリアルティーを作らなければならない",
+                            ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministrar y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado preparar lomo de cerdo relleno de mijo y té aeterio para completar mi contrato.",
+                            ["it"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating Millet-Stuffed Pork Loin and Aetherial Tea to complete my contract.",
                         },
                     },
                     [6] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating a Minor Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
-                            ["fr"] = "Cette commande émane d'une branche de la guilde des mages. Ils cherchent à ravitailler et armer leurs efforts dans le domaine daedrique de Havreglace. On m'a commandé de fabriquer un glyphe de Vigueur mineur et d'acquérir une rune d'aspect Ta.",
-                            ["es"] = "Este encargo es de un grupo que intenta defender a los refugiados desplazados por los combates en todo Nirn. Me han encargado crear un glifo aguante de menor y conseguir una runa de aspecto Ta para completar mi contrato.",
-                            ["en"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating a Minor Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einer Gruppe, welche all jene beschützen will, die durch die Kämpfe in Nirn ihre Heimat verloren haben. Ich wurde damit beauftragt, eine niedere Glyphe der Ausdauer herzustellen und eine Ta-Aspektrune zu besorgen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating a Minor Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
-                            ["ja"] = "依頼はニルン各地の戦闘によって故郷を追われた人々を守ろうとしている団体からのものだ。この契約の完了のために課されているのは、一般的なグリフ(スタミナ)の生産と、ターの品質ルーンの入手だ",
+                            ["fr"] = "Cette commande émane de « marchands indépendants » qui ravitaillent les plus offrants. Ils m'ont demandé un glyphe de Magie fort et une essence de rune Makko.",
+                            ["de"] = "Dieser Schrieb stammt von einer Gruppe „unabhängiger Händler“, die Geld gegen Waren tauschen. Ich wurde damit beauftragt, eine starke Glyphe der Magicka herzustellen und eine Makko-Essenzrune zu besorgen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Strong Glyph of Magicka and acquiring a Makko Essence Rune to complete my contract.",
+                            ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Strong Glyph of Magicka and acquiring a Makko Essence Rune to complete my contract.",
+                            ["ja"] = "依頼は金貨を物資に替えている「独立系商人」の団体からのものだ。この契約の完了のために課されているのは、強力なグリフ(マジカ)の生産と、マッコの本質ルーンの入手だ",
+                            ["es"] = "Este encargo es de un grupo de \"mercaderes independientes\", cambiando moneda por suministros. Me han encargado crear un glifo fuerte de magia y conseguir una runa de esencia Makko para completar mi contrato.",
+                            ["it"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Strong Glyph of Magicka and acquiring a Makko Essence Rune to complete my contract.",
                         },
                     },
                     [7] = 
                     {
                         [1] = 
                         {
-                            ["it"] = "This writ is from an organization that seeks to feed and defend refugees across Nirn. I've been tasked with creating a Potion of Health and acquiring some lady's smock to complete my contract.",
-                            ["fr"] = "Cette commande émane d'une organisation humanitaire qui cherche à nourrir et défendre les réfugiés de Nirn. On m'a commandé une potion de Santé et une cardamine des prés.",
-                            ["es"] = "Este encargo es de una organización que busca alimentar y defender a las personas desplazadas por los combates en todo Nirn. Me han encargado crear una poción de salud y conseguir algo de cardamina para completar mi contrato.",
-                            ["en"] = "This writ is from an organization that seeks to feed and defend refugees across Nirn. I've been tasked with creating a Potion of Health and acquiring some lady's smock to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von einer Hilfsorganisation für Flüchtlinge, die versucht, all jene zu versorgen und zu verteidigen, die durch die Kämpfe in Nirn heimatlos geworden sind. Ich wurde damit beauftragt, einen Trank des Lebens herzustellen und etwas Wiesenschaumkraut zu besorgen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "This writ is from an organization that seeks to feed and defend refugees across Nirn. I've been tasked with creating a Potion of Health and acquiring some луговой сердечник to complete my contract.",
-                            ["ja"] = "ニルン中の避難民を守り食べさせようとしている組織からの依頼だ。契約を遂行するには体力の薬を作り、タネツケバナを手に入れなければならない",
+                            ["fr"] = "Cette commande émane d'une branche de la guilde des mages. Ils cherchent à ravitailler et armer leur effort de guerre dans le royaume daedrique de Havreglace. On m'a confié la préparation d'un élixir de Vigueur et l'acquisition de quelques jacinthes d'eau.",
+                            ["de"] = "Dieser Schrieb stammt von einem Zweig der Magiergilde. Er will sich für seine Unternehmungen im daedrischen Reich Kalthafen ausrüsten und versorgen. Ich wurde damit beauftragt, ein Elixier der Ausdauer herzustellen und etwas Wasserhyazinthe zu besorgen, um meinen Kontrakt zu erfüllen.",
+                            ["en"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating an Elixir of Stamina and acquiring some Water Hyacinth to complete my contract.",
+                            ["ru"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating an Elixir of Stamina and acquiring some Water Hyacinth to complete my contract.",
+                            ["ja"] = "魔術師ギルドのある部門からの依頼で、コールドハーバーにおけるデイドラの領域での抗争で必要な武器や物資を求めている。契約を遂行するにはスタミナの霊薬を作り、ホテイアオイを手に入れなければならない",
+                            ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministrar y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado crear un elixir de aguante y conseguir para completar mi contrato.",
+                            ["it"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating an Elixir of Stamina and acquiring some Water Hyacinth to complete my contract.",
                         },
                     },
                 },
-                ["version"] = 1,
                 ["conditions"] = 
                 {
                     [1] = 
@@ -3824,33 +4582,33 @@ LibCraftTextVars =
                         {
                             [1] = 
                             {
-                                ["it"] = "Craft Leather Helmet: 0 / 1",
-                                ["fr"] = "Fabriquez un casque en cuir normal : 0/1",
-                                ["es"] = "Fabrica un casco de cuero normal: 0/1",
-                                ["en"] = "Craft Normal Leather Helmet: 0 / 1",
-                                ["de"] = "Stellt normale Lederhelme her: 0/1",
-                                ["ru"] = "Craft Normal Leather Helmet: 0 / 1",
-                                ["ja"] = "革の兜(ノーマル)を生産する: 0 / 1",
+                                ["fr"] = "Fabriquez une robe en fil d'ébonite normale : 0/1",
+                                ["de"] = "Stellt normale Ebengarnroben her: 0/1",
+                                ["en"] = "Craft Normal Ebonthread Robe: 0 / 1",
+                                ["ru"] = "Craft Normal Ebonthread Robe: 0 / 1",
+                                ["ja"] = "エボンスレッドのローブ(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una túnica de hilo de ébano normal: 0/1",
+                                ["it"] = "Craft Ebonthread Robe: 0 / 1",
                             },
                             [2] = 
                             {
-                                ["it"] = "Craft Leather Arm Cops: 0 / 1",
-                                ["fr"] = "Fabriquez des coques d'épaules en cuir normales : 0/1",
-                                ["es"] = "Fabrica unas hombreras de cuero normales: 0/1",
-                                ["en"] = "Craft Normal Leather Arm Cops: 0 / 1",
-                                ["de"] = "Stellt normale Lederschulterkappen her: 0/1",
-                                ["ru"] = "Craft Normal Leather Arm Cops: 0 / 1",
-                                ["ja"] = "革のアームカップ(ノーマル)を生産する: 0 / 1",
+                                ["fr"] = "Fabriquez des braies en fil d'ébonite normales : 0/1",
+                                ["de"] = "Stellt normale Ebengarnbeinkleider her: 0/1",
+                                ["en"] = "Craft Normal Ebonthread Breeches: 0 / 1",
+                                ["ru"] = "Craft Normal Ebonthread Breeches: 0 / 1",
+                                ["ja"] = "エボンスレッドのパンツ(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unos calzones de hilo de ébano normales: 0/1",
+                                ["it"] = "Craft Ebonthread Breeches: 0 / 1",
                             },
                             [3] = 
                             {
-                                ["it"] = "Craft Leather Bracers: 0 / 1",
-                                ["fr"] = "Fabriquez des brassards en cuir normaux : 0/1",
-                                ["es"] = "Fabrica unos brazaletes de cuero normales: 0/1",
-                                ["en"] = "Craft Normal Leather Bracers: 0 / 1",
-                                ["de"] = "Stellt normale Lederarmschienen her: 0/1",
-                                ["ru"] = "Craft Normal Leather Bracers: 0 / 1",
-                                ["ja"] = "革の腕当て(ノーマル)を生産する: 0 / 1",
+                                ["fr"] = "Fabriquez des épaulettes en fil d'ébonite normales : 0/1",
+                                ["de"] = "Stellt normale Ebengarnschulterpolster her: 0/1",
+                                ["en"] = "Craft Normal Ebonthread Epaulets: 0 / 1",
+                                ["ru"] = "Craft Normal Ebonthread Epaulets: 0 / 1",
+                                ["ja"] = "エボンスレッドの肩当て(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unos cubrehombros de hilo de ébano normales: 0/1",
+                                ["it"] = "Craft Ebonthread Epaulets: 0 / 1",
                             },
                         },
                     },
@@ -3860,33 +4618,33 @@ LibCraftTextVars =
                         {
                             [1] = 
                             {
-                                ["it"] = "Craft Orichalcum Helm: 0 / 1",
-                                ["fr"] = "Fabriquez un heaume en orichalque normal : 0/1",
-                                ["es"] = "Fabrica un yelmo de oricalco normal: 0/1",
-                                ["en"] = "Craft Normal Orichalcum Helm: 0 / 1",
-                                ["de"] = "Stellt normale Oreichalkoshauben her: 0/1",
-                                ["ru"] = "Craft Normal Orichalcum Helm: 0 / 1",
-                                ["ja"] = "オリハルコンの兜(ノーマル)を生産する: 0 / 1",
+                                ["fr"] = "Fabriquez une épée en ébonite normale : 0/1",
+                                ["de"] = "Stellt normale Ebenerzschwerter her: 0/1",
+                                ["en"] = "Craft Normal Ebony Sword: 0 / 1",
+                                ["ru"] = "Craft Normal Ebony Sword: 0 / 1",
+                                ["ja"] = "黒檀の剣(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una espada de ébano normal: 0/1",
+                                ["it"] = "Craft Ebony Sword: 0 / 1",
                             },
                             [2] = 
                             {
-                                ["it"] = "Craft Orichalcum Dagger: 0 / 1",
-                                ["fr"] = "Fabriquez une dague en orichalque normale : 0/1",
-                                ["es"] = "Fabrica una daga de oricalco normal: 0/1",
-                                ["en"] = "Craft Normal Orichalcum Dagger: 0 / 1",
-                                ["de"] = "Stellt normale Oreichalkosdolche her: 0/1",
-                                ["ru"] = "Craft Normal Orichalcum Dagger: 0 / 1",
-                                ["ja"] = "オリハルコンの短剣(ノーマル)を生産する: 0 / 1",
+                                ["fr"] = "Fabriquez une cuirasse en ébonite normale : 0/1",
+                                ["de"] = "Stellt normale Ebenerzkürasse her: 0/1",
+                                ["en"] = "Craft Normal Ebony Cuirass: 0 / 1",
+                                ["ru"] = "Craft Normal Ebony Cuirass: 0 / 1",
+                                ["ja"] = "黒檀の胸当て(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica una coraza de ébano normal: 0/1",
+                                ["it"] = "Craft Ebony Cuirass: 0 / 1",
                             },
                             [3] = 
                             {
-                                ["it"] = "Craft Orichalcum Pauldron: 0 / 1",
-                                ["fr"] = "Fabriquez des spallières en orichalque normales : 0/1",
-                                ["es"] = "Fabrica unos espaldarones de oricalco normales: 0/1",
-                                ["en"] = "Craft Normal Orichalcum Pauldron: 0 / 1",
-                                ["de"] = "Stellt normale Oreichalkosschulterschutze her: 0/1",
-                                ["ru"] = "Craft Normal Orichalcum Pauldron: 0 / 1",
-                                ["ja"] = "オリハルコンのポールドロン(ノーマル)を生産する: 0 / 1",
+                                ["fr"] = "Fabriquez des grèves en ébonite normales : 0/1",
+                                ["de"] = "Stellt normale Ebenerzbeinschienen her: 0/1",
+                                ["en"] = "Craft Normal Ebony Greaves: 0 / 1",
+                                ["ru"] = "Craft Normal Ebony Greaves: 0 / 1",
+                                ["ja"] = "黒檀のグリーヴ(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica unas grebas de ébano normales: 0/1",
+                                ["it"] = "Craft Ebony Greaves: 0 / 1",
                             },
                         },
                     },
@@ -3896,23 +4654,23 @@ LibCraftTextVars =
                         {
                             [2] = 
                             {
-                                ["it"] = "Craft Beech Shield: 0 / 1",
-                                ["fr"] = "Fabriquez un bouclier en hêtre normal : 0/1",
-                                ["es"] = "Fabrica un escudo de haya normal: 0/1",
-                                ["en"] = "Craft Normal Beech Shield: 0 / 1",
-                                ["de"] = "Stellt normale Buchenschilde her: 0/1",
-                                ["ru"] = "Craft Normal Beech Shield: 0 / 1",
-                                ["ja"] = "ブナノキの盾(ノーマル)を生産する: 0 / 1",
+                                ["fr"] = "Fabriquez un bouclier en if normal : 0/1",
+                                ["de"] = "Stellt normale Eibenschilde her: 0/1",
+                                ["en"] = "Craft Normal Yew Shield: 0 / 1",
+                                ["ru"] = "Craft Normal Yew Shield: 0 / 1",
+                                ["ja"] = "イチイの盾(ノーマル)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un escudo de tejo normal: 0/1",
+                                ["it"] = "Craft Yew Shield: 0 / 1",
                             },
                             [1] = 
                             {
-                                ["it"] = "Craft Beech Bow: 0 / 2",
-                                ["fr"] = "Fabriquez un arc en hêtre normal : 0/2",
-                                ["es"] = "Fabrica un arco de haya normal: 0/2",
-                                ["en"] = "Craft Normal Beech Bow: 0 / 2",
-                                ["de"] = "Stellt normale Buchenbögen her: 0/2",
-                                ["ru"] = "Craft Normal Beech Bow: 0 / 2",
-                                ["ja"] = "ブナノキの弓(ノーマル)を生産する: 0 / 2",
+                                ["fr"] = "Fabriquez un bâton de rétablissement en if normal : 0/2",
+                                ["de"] = "Stellt normale Eibenheilungsstäbe her: 0/2",
+                                ["en"] = "Craft Normal Yew Restoration Staff: 0 / 2",
+                                ["ru"] = "Craft Normal Yew Restoration Staff: 0 / 2",
+                                ["ja"] = "イチイの回復の杖(ノーマル)を生産する: 0 / 2",
+                                ["es"] = "Fabrica una vara restauradora de tejo normal: 0/2",
+                                ["it"] = "Craft Yew Restoration Staff: 0 / 2",
                             },
                         },
                     },
@@ -3920,543 +4678,169 @@ LibCraftTextVars =
                     {
                         [1] = 
                         {
-                            [2] = 
-                            {
-                                ["it"] = "TRACKER GOAL TEXT: 0 / 1",
-                                ["fr"] = "Fabriquez un collier d'argent : 0/1",
-                                ["es"] = "Fabrica un collar de plata: 0/1",
-                                ["en"] = "Craft a Silver Necklace: 0 / 1",
-                                ["de"] = "Stellt eine Silberhalskette her: 0/1",
-                                ["ru"] = "Craft a Silver Necklace: 0 / 1",
-                                ["ja"] = "銀のネックレスを作る: 0 / 1",
-                            },
                             [1] = 
                             {
-                                ["it"] = "TRACKER GOAL TEXT: 0 / 1",
-                                ["fr"] = "Fabriquez un anneau d'argent : 0/1",
-                                ["es"] = "Fabrica un anillo de plata: 0/1",
-                                ["en"] = "Craft a Silver Ring: 0 / 1",
-                                ["de"] = "Stellt einen Silberring her: 0/1",
-                                ["ru"] = "Craft a Silver Ring: 0 / 1",
-                                ["ja"] = "銀の指輪を作る: 0 / 1",
-                            },
-                        },
-                    },
-                    [5] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["it"] = "Craft Maormer Tea: 0 / 1",
-                                ["fr"] = "Préparez un thé maormer : 0/1",
-                                ["es"] = "Preparæ Té maormer: 0/1",
-                                ["en"] = "Craft Maormer Tea: 0 / 1",
-                                ["de"] = "Stellt etwas Maormertee her: 0/1",
-                                ["ru"] = "Создать — маормерский чай: 0 / 1",
-                                ["ja"] = "マオマーティーを生産する: 0 / 1",
-                            },
-                            [1] = 
-                            {
-                                ["it"] = "Craft Stormhold Baked Bananas: 0 / 1",
-                                ["fr"] = "Préparez des bananes cuites de Fort-tempête : 0/1",
-                                ["es"] = "Preparæ plátanos asados de Fuertormenta: 0/1",
-                                ["en"] = "Craft Stormhold Baked Bananas: 0 / 1",
-                                ["de"] = "Stellt einige Sturmfeste-Backbananen her: 0/1",
-                                ["ru"] = "Создать — печеные бананы по-стормхолдски: 0 / 1",
-                                ["ja"] = "ストームホールドの焼きバナナを生産する: 0 / 1",
-                            },
-                        },
-                    },
-                    [6] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["it"] = "Acquire Ta Aspect Rune: 1 / 1",
-                                ["fr"] = "Acquérez une rune d'aspect Ta : 1/1",
-                                ["es"] = "Adquiere una runa de aspecto Ta: 1/1",
-                                ["en"] = "Acquire Ta Aspect Rune: 1 / 1",
-                                ["de"] = "Beschafft eine Ta-Aspektrune: 1/1",
-                                ["ru"] = "Добыть руну аспекта Та: 1 / 1",
-                                ["ja"] = "ターの品質ルーンを手に入れる: 1 / 1",
-                            },
-                            [1] = 
-                            {
-                                ["it"] = "Craft Minor Glyph of Stamina: 0 / 1",
-                                ["fr"] = "Fabriquez un glyphe mineur vigoureux avec Ta : 0/1",
-                                ["es"] = "Fabrica un glifo menor de aguante con Ta: 0/1",
-                                ["en"] = "Craft Minor Glyph of Stamina With Ta: 0 / 1",
-                                ["de"] = "Stellt mit einer Ta-Rune eine niedere Glyphe der Ausdauer her: 0/1",
-                                ["ru"] = "Craft Minor Glyph of Stamina With Ta: 0 / 1",
-                                ["ja"] = "ターの一般的なグリフ(スタミナ)を生産する: 0 / 1",
-                            },
-                        },
-                    },
-                    [7] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["it"] = "Acquire lady's smock: 3 / 3",
-                                ["fr"] = "Acquérez une cardamine des prés : 3/3",
-                                ["es"] = "Adquiere cardamina: 3/3",
-                                ["en"] = "Acquire Lady's Smock: 3 / 3",
-                                ["de"] = "Besorgt etwas Wiesenschaumkraut: 3/3",
-                                ["ru"] = "Раздобыть — луговой сердечник: 3 / 3",
-                                ["ja"] = "タネツケバナを手に入れる: 3 / 3",
-                            },
-                            [1] = 
-                            {
-                                ["it"] = "Craft Potion of Health: 0 / 1",
-                                ["fr"] = "Préparez une potion de Santé : 0/1",
-                                ["es"] = "Prepara una poción de salud: 0/1",
-                                ["en"] = "Craft Potion of Health: 0 / 1",
-                                ["de"] = "Stellt Tränke des Lebens her: 0/1",
-                                ["ru"] = "Craft Potion of Health: 0 / 1",
-                                ["ja"] = "体力の薬を生産する: 0 / 1",
-                            },
-                        },
-                    },
-                },
-                ["quests"] = 
-                {
-                    [1] = 
-                    {
-                        ["it"] = "Clothier Writ",
-                        ["fr"] = "Commande de tailleur",
-                        ["es"] = "Encargo de sastrería",
-                        ["en"] = "Clothier Writ",
-                        ["de"] = "Schneiderschrieb",
-                        ["ru"] = "Заказ портному",
-                        ["ja"] = "仕立師の依頼",
-                    },
-                    [2] = 
-                    {
-                        ["it"] = "Blacksmith Writ",
-                        ["fr"] = "Commande de forge",
-                        ["es"] = "Encargo de herrería",
-                        ["en"] = "Blacksmith Writ",
-                        ["de"] = "Schmiedeschrieb",
-                        ["ru"] = "Заказ кузнецу",
-                        ["ja"] = "鍛冶師の依頼",
-                    },
-                    [3] = 
-                    {
-                        ["it"] = "Woodworker Writ",
-                        ["fr"] = "Commande de travail du bois",
-                        ["es"] = "Encargo de carpintería",
-                        ["en"] = "Woodworker Writ",
-                        ["de"] = "Schreinerschrieb",
-                        ["ru"] = "Заказ столяру",
-                        ["ja"] = "木工師の依頼",
-                    },
-                    [4] = 
-                    {
-                        ["it"] = "",
-                        ["fr"] = "Commande de joaillerie",
-                        ["es"] = "Encargo de artesanía de joyería",
-                        ["en"] = "Jewelry Crafting Writ",
-                        ["de"] = "Schmuckhandwerksschrieb",
-                        ["ru"] = "Заказ ювелиру",
-                        ["ja"] = "宝飾師のクラフト依頼",
-                    },
-                    [5] = 
-                    {
-                        ["it"] = "Provisioner Writ",
-                        ["fr"] = "Commande de cuisine",
-                        ["es"] = "Encargo de provisiones",
-                        ["en"] = "Provisioner Writ",
-                        ["de"] = "Versorgerschrieb",
-                        ["ru"] = "Заказ снабженцу",
-                        ["ja"] = "調理師の依頼",
-                    },
-                    [6] = 
-                    {
-                        ["it"] = "Enchanter Writ",
-                        ["fr"] = "Commandes d'enchantement",
-                        ["es"] = "Encargo de encantamiento",
-                        ["en"] = "Enchanter Writ",
-                        ["de"] = "Verzaubererschrieb",
-                        ["ru"] = "Заказ зачарователю",
-                        ["ja"] = "付呪師の依頼",
-                    },
-                    [7] = 
-                    {
-                        ["it"] = "Alchemist Writ",
-                        ["fr"] = "Commande d'alchimie",
-                        ["es"] = "Encargo de alquimia",
-                        ["en"] = "Alchemist Writ",
-                        ["de"] = "Alchemistenschrieb",
-                        ["ru"] = "Заказ алхимику",
-                        ["ja"] = "錬金術師の依頼",
-                    },
-                },
-            },
-            ["ziggr-alt-four"] = 
-            {
-                ["steps"] = 
-                {
-                    [1] = 
-                    {
-                        [1] = 
-                        {
-                            ["it"] = "This writ is from the Fighters Guild. They offer pay for supplies to help them in their fight against the Daedra. I've been tasked with creating Mammoth Snout Pie and Two-Zephyr Tea to complete my contract.",
-                            ["fr"] = "Cette commande émane de la guilde des guerriers. Ils achètent des vivres pour leur campagne contre les Daedra. On m'a demandé de préparer une tourte au groin de mammouth et un thé des deux zéphyrs.",
-                            ["es"] = "Este encargo es del Gremio de Luchadores. Ofrecen pagar por suministros que los ayuden en su lucha contra los daedra. Me han encargado preparar pastel de trompa de mamut y té de Dos-Céfiros para completar mi contrato.",
-                            ["en"] = "This writ is from the Fighters Guild. They offer pay for supplies to help them in their fight against the Daedra. I've been tasked with creating Mammoth Snout Pie and Two-Zephyr Tea to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde. Sie will für Vorräte bezahlen, die ihr in ihrem Kampf gegen die Daedra helfen. Ich wurde damit beauftragt, eine Mammutrüsselpastete und etwas Doppelsturmtee herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "This writ is from the Fighters Guild. They offer pay for supplies to help them in their fight against the Daedra. I've been tasked with creating пирог с хоботом мамонта and чай «Два зефира» to complete my contract.",
-                            ["ja"] = "戦士ギルドからの依頼だ。金銭と交換で、デイドラとの抗争に役立つ物資を求めている。契約を遂行するにはマンモスの鼻のパイとトゥーゼファーティーを作らなければならない",
-                        },
-                    },
-                    [2] = 
-                    {
-                        [1] = 
-                        {
-                            ["it"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating a Moderate Glyph of Magicka and acquiring an Oko Essence Rune to complete my contract.",
-                            ["fr"] = "Cette commande émane de la guilde des guerriers qui cherche à faciliter sa lutte contre les Daedra. Ils m'ont commandé un glyphe de Magie modéré et l'acquisition d'une rune d'essence Oko.",
-                            ["es"] = "Este encargo es del Gremio de Luchadores, buscando ayuda en su lucha contra los daedra. Me han encargado crear un glifo moderado de magia y conseguir una runa de esencia Oko para completar mi contrato.",
-                            ["en"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating a Moderate Glyph of Magicka and acquiring an Oko Essence Rune to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde, die Hilfe bei ihrem Kampf gegen die Daedra braucht. Ich wurde damit beauftragt, eine moderate Glyphe der Magicka herzustellen und eine Oko-Essenzrune zu besorgen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating a Moderate Glyph of Magicka and acquiring an Oko Essence Rune to complete my contract.",
-                            ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。この契約の完了のために課されているのは、中堅のグリフ(マジカ)の生産と、オコの本質ルーンの入手だ",
-                        },
-                    },
-                    [3] = 
-                    {
-                        [1] = 
-                        {
-                            ["it"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating a Solution of Stamina and acquiring some lady's smock to complete my contract.",
-                            ["fr"] = "Cette commande émane de la guilde des guerriers, qui paie toute contribution à sa campagne contre les Daedra. On m'a commandé la préparation d'une solution de Vigueur et la livraison d’une cardamine des prés.",
-                            ["es"] = "Este encargo es del Gremio de Luchadores. Ofrecen pagar por suministros que los ayuden en su lucha contra los daedra. Me han encargado crear una solución de aguante y conseguir algo de cardamina para completar mi contrato.",
-                            ["en"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating a Solution of Stamina and acquiring some lady's smock to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde, die Hilfe bei ihrem Kampf gegen die Daedra braucht. Ich wurde damit beauftragt, eine Lösung der Ausdauer herzustellen und etwas Wiesenschaumkraut zu besorgen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating a Solution of Stamina and acquiring some луговой сердечник to complete my contract.",
-                            ["ja"] = "戦士ギルドからの依頼で、デイドラとの抗争に役立つものを求めている。契約を遂行するにはスタミナの液体薬を作り、タネツケバナを手に入れる必要がある",
-                        },
-                    },
-                    [4] = 
-                    {
-                        [1] = 
-                        {
-                            ["it"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Spidersilk Robes, Breeches, and Epaulets to complete my contract.",
-                            ["fr"] = "Cette commande émane de la guilde des guerriers, qui cherche de l'aide dans sa lutte contre les Daedra. On m'a commandé la confection de plusieurs robes, braies et épaulettes en soie d'araignée.",
-                            ["es"] = "Este encargo es del Gremio de Luchadores, buscando ayuda en su lucha contra los daedra. Me han encargado hacer varias túnicas, pantalones y hombreras de seda de araña para completar mi contrato.",
-                            ["en"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Spidersilk Robes, Breeches, and Epaulets to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde, die Hilfe bei ihrem Kampf gegen die Daedra braucht. Ich wurde damit beauftragt, mehrere Roben, Beinkleider und Schulterpolster aus Spinnenseide herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Spidersilk Robes, Breeches, and Epaulets to complete my contract.",
-                            ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。この契約の完了のために課されているのは、複数のスパイダーシルクのローブ、パンツそして肩当ての生産だ",
-                        },
-                    },
-                    [5] = 
-                    {
-                        [1] = 
-                        {
-                            ["it"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Dwarven Swords, Cuirass, and Greaves to complete my contract.",
-                            ["fr"] = "Cette commande émane de la guilde des guerriers qui cherche à faciliter sa lutte contre les Daedra. Ils m'ont commandé plusieurs épées, cuirasses et grèves dwemers.",
-                            ["es"] = "Este encargo es del Gremio de Luchadores, buscando ayuda en su lucha contra los daedra. Me han encargado hacer varias espadas, corazas y grebas enanas para completar mi contrato.",
-                            ["en"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Dwarven Swords, Cuirass, and Greaves to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde, die Hilfe bei ihrem Kampf gegen die Daedra braucht. Ich wurde damit beauftragt, mehrere Schwerter, Kürasse und Beinschienen im Stil der Dwemer herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Dwarven Swords, Cuirass, and Greaves to complete my contract.",
-                            ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。この契約の完了のために課されているのは、複数のドワーフの剣、胸当てそしてグリーヴの生産だ",
-                        },
-                    },
-                    [6] = 
-                    {
-                        [1] = 
-                        {
-                            ["it"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Hickory Restoration Staves and Shields to complete my contract.",
-                            ["fr"] = "Cette commande émane de la guilde des guerriers qui cherche à faciliter sa lutte contre les Daedra. Ils m'ont commandé plusieurs bâtons de rétablissement et boucliers en noyer.",
-                            ["es"] = "Este encargo es del Gremio de Luchadores, buscando ayuda en su lucha contra los daedra. Me han encargado hacer varias varas de restauración y escudos de nogal para completar mi contrato.",
-                            ["en"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Hickory Restoration Staves and Shields to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde, die Hilfe bei ihrem Kampf gegen die Daedra braucht. Ich wurde damit beauftragt, mehrere Heilungsstäbe und Schilde aus Hickory herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Hickory Restoration Staves and Shields to complete my contract.",
-                            ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。この契約の完了のために課されているのは、複数のヒッコリーの回復の杖、およびヒッコリーの盾の生産だ",
-                        },
-                    },
-                    [7] = 
-                    {
-                        [1] = 
-                        {
-                            ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating three Electrum Rings to complete my contract.",
-                            ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation de trois anneaux d'électrum.",
-                            ["en"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating three Electrum Rings to complete my contract.",
-                            ["de"] = "Dieser Schrieb stammt von der Kriegergilde, die Hilfe bei ihrem Kampf gegen die Daedra braucht. Ich wurde damit beauftragt, drei Elektrumringe herzustellen, um meinen Kontrakt zu erfüllen.",
-                            ["es"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating three Electrum Rings to complete my contract.",
-                            ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。契約を遂行するには琥珀金の指輪3個を作る",
-                        },
-                    },
-                },
-                ["version"] = 1,
-                ["conditions"] = 
-                {
-                    [1] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["it"] = "Craft Mammoth Snout Pie: 0 / 1",
-                                ["fr"] = "Préparez une tourte au groin de mammouth : 0/1",
-                                ["es"] = "Preparæ pastel de trompa de mamut: 0/1",
-                                ["en"] = "Craft Mammoth Snout Pie: 0 / 1",
-                                ["de"] = "Stellt eine Mammutrüsselpastete her: 0/1",
-                                ["ru"] = "Создать — пирог с хоботом мамонта: 0 / 1",
-                                ["ja"] = "マンモスの鼻のパイを生産する: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["it"] = "Craft Two-Zephyr Tea: 0 / 1",
-                                ["fr"] = "Préparez un thé des deux zéphyrs : 0/1",
-                                ["es"] = "Preparæ té de Dos-Céfiros: 0/1",
-                                ["en"] = "Craft Two-Zephyr Tea: 0 / 1",
-                                ["de"] = "Stellt etwas Doppelsturmtee her: 0/1",
-                                ["ru"] = "Создать — чай «Два зефира»: 0 / 1",
-                                ["ja"] = "トゥーゼファーティーを生産する: 0 / 1",
-                            },
-                        },
-                    },
-                    [2] = 
-                    {
-                        [1] = 
-                        {
-                            [1] = 
-                            {
-                                ["it"] = "Craft Moderate Glyph of Magicka: 0 / 1",
-                                ["fr"] = "Fabriquez un glyphe modéré magique avec Ta : 0/1",
-                                ["es"] = "Fabrica un glifo moderado de magia con Ta: 0/1",
-                                ["en"] = "Craft Moderate Glyph of Magicka With Ta: 0 / 1",
-                                ["de"] = "Stellt mit einer Ta-Rune eine moderate Glyphe der Magicka her: 0/1",
-                                ["ru"] = "Craft Moderate Glyph of Magicka With Ta: 0 / 1",
-                                ["ja"] = "ターの中堅のグリフ(マジカ)を生産する: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["it"] = "Acquire Oko Essence Rune: 1 / 1",
-                                ["fr"] = "Acquérez une rune d'essence Oko : 1/1",
-                                ["es"] = "Adquiere una runa de esencia Oko: 1/1",
-                                ["en"] = "Acquire Oko Essence Rune: 1 / 1",
-                                ["de"] = "Beschafft eine Oko-Essenzrune: 1/1",
-                                ["ru"] = "Добыть руну сущности Око: 1 / 1",
-                                ["ja"] = "オコの本質ルーンを手に入れる: 1 / 1",
-                            },
-                        },
-                    },
-                    [3] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["it"] = "Craft Solution of Stamina: 0 / 1",
-                                ["fr"] = "Préparez une solution de Vigueur : 0/1",
-                                ["es"] = "Prepara una solución de aguante: 0/1",
-                                ["en"] = "Craft Solution of Stamina: 0 / 1",
-                                ["de"] = "Stellt Lösungen der Ausdauer her: 0/1",
-                                ["ru"] = "Craft Solution of Stamina: 0 / 1",
-                                ["ja"] = "スタミナの液体薬を生産する: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["it"] = "Acquire lady's smock: 3 / 3",
-                                ["fr"] = "Acquérez une cardamine des prés : 3/3",
-                                ["es"] = "Adquiere cardamina: 3/3",
-                                ["en"] = "Acquire Lady's Smock: 3 / 3",
-                                ["de"] = "Besorgt etwas Wiesenschaumkraut: 3/3",
-                                ["ru"] = "Раздобыть — луговой сердечник: 3 / 3",
-                                ["ja"] = "タネツケバナを手に入れる: 3 / 3",
-                            },
-                        },
-                    },
-                    [4] = 
-                    {
-                        [1] = 
-                        {
-                            [4] = 
-                            {
-                                ["it"] = "Craft Spidersilk Epaulets: 0 / 1",
-                                ["fr"] = "Fabriquez des épaulettes en soie d'araignée normales : 0/1",
-                                ["es"] = "Fabrica unos cubrehombros de seda de araña normales: 0/1",
-                                ["en"] = "Craft Normal Spidersilk Epaulets: 0 / 1",
-                                ["de"] = "Stellt normale Spinnenseidenschulterpolster her: 0/1",
-                                ["ru"] = "Craft Normal Spidersilk Epaulets: 0 / 1",
-                                ["ja"] = "スパイダーシルクの肩当て(ノーマル)を生産する: 0 / 1",
-                            },
-                            [2] = 
-                            {
-                                ["it"] = "Craft Spidersilk Robe: 0 / 1",
-                                ["fr"] = "Fabriquez une robe en soie d'araignée normale : 0/1",
-                                ["es"] = "Fabrica una túnica de seda de araña normal: 0/1",
-                                ["en"] = "Craft Normal Spidersilk Robe: 0 / 1",
-                                ["de"] = "Stellt normale Spinnenseidenroben her: 0/1",
-                                ["ru"] = "Craft Normal Spidersilk Robe: 0 / 1",
-                                ["ja"] = "スパイダーシルクのローブ(ノーマル)を生産する: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["it"] = "Craft Spidersilk Breeches: 0 / 1",
-                                ["fr"] = "Fabriquez des braies en soie d'araignée normales : 0/1",
-                                ["es"] = "Fabrica unos calzones de seda de araña normales: 0/1",
-                                ["en"] = "Craft Normal Spidersilk Breeches: 0 / 1",
-                                ["de"] = "Stellt normale Spinnenseidenbeinkleider her: 0/1",
-                                ["ru"] = "Craft Normal Spidersilk Breeches: 0 / 1",
-                                ["ja"] = "スパイダーシルクのパンツ(ノーマル)を生産する: 0 / 1",
-                            },
-                        },
-                    },
-                    [5] = 
-                    {
-                        [1] = 
-                        {
-                            [4] = 
-                            {
-                                ["it"] = "Craft Dwarven Greaves: 0 / 1",
-                                ["fr"] = "Fabriquez des grèves dwemer normales : 0/1",
-                                ["es"] = "Fabrica unas grebas de acero enano normales: 0/1",
-                                ["en"] = "Craft Normal Dwarven Greaves: 0 / 1",
-                                ["de"] = "Stellt normale Dwemerbeinschienen her: 0/1",
-                                ["ru"] = "Craft Normal Dwarven Greaves: 0 / 1",
-                                ["ja"] = "ドワーフのグリーヴ(ノーマル)を生産する: 0 / 1",
-                            },
-                            [2] = 
-                            {
-                                ["it"] = "Craft Dwarven Sword: 0 / 1",
-                                ["fr"] = "Fabriquez une épée dwemer normale : 0/1",
-                                ["es"] = "Fabrica una espada de acero enano normal: 0/1",
-                                ["en"] = "Craft Normal Dwarven Sword: 0 / 1",
-                                ["de"] = "Stellt normale Dwemerschwerter her: 0/1",
-                                ["ru"] = "Craft Normal Dwarven Sword: 0 / 1",
-                                ["ja"] = "ドワーフの剣(ノーマル)を生産する: 0 / 1",
-                            },
-                            [3] = 
-                            {
-                                ["it"] = "Craft Dwarven Cuirass: 0 / 1",
-                                ["fr"] = "Fabriquez une cuirasse dwemer normale : 0/1",
-                                ["es"] = "Fabrica una coraza de acero enano normal: 0/1",
-                                ["en"] = "Craft Normal Dwarven Cuirass: 0 / 1",
-                                ["de"] = "Stellt normale Dwemerkürasse her: 0/1",
-                                ["ru"] = "Craft Normal Dwarven Cuirass: 0 / 1",
-                                ["ja"] = "ドワーフの胸当て(ノーマル)を生産する: 0 / 1",
-                            },
-                        },
-                    },
-                    [6] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
-                                ["it"] = "Craft Hickory Restoration Staff: 0 / 2",
-                                ["fr"] = "Fabriquez un bâton de rétablissement en noyer normal : 0/2",
-                                ["es"] = "Fabrica una vara restauradora de nogal normal: 0/2",
-                                ["en"] = "Craft Normal Hickory Restoration Staff: 0 / 2",
-                                ["de"] = "Stellt normale Hickoryheilungsstäbe her: 0/2",
-                                ["ru"] = "Craft Normal Hickory Restoration Staff: 0 / 2",
-                                ["ja"] = "ヒッコリーの回復の杖(ノーマル)を生産する: 0 / 2",
-                            },
-                            [3] = 
-                            {
-                                ["it"] = "Craft Hickory Shield: 0 / 1",
-                                ["fr"] = "Fabriquez un bouclier en noyer normal : 0/1",
-                                ["es"] = "Fabrica un escudo de nogal normal: 0/1",
-                                ["en"] = "Craft Normal Hickory Shield: 0 / 1",
-                                ["de"] = "Stellt normale Hickoryschilde her: 0/1",
-                                ["ru"] = "Craft Normal Hickory Shield: 0 / 1",
-                                ["ja"] = "ヒッコリーの盾(ノーマル)を生産する: 0 / 1",
-                            },
-                        },
-                    },
-                    [7] = 
-                    {
-                        [1] = 
-                        {
-                            [2] = 
-                            {
+                                ["fr"] = "Fabriquez trois anneaux en platine : 0/3",
+                                ["de"] = "Stellt drei Platinringe her: 0/3",
+                                ["en"] = "Craft Three Platinum Rings: 0 / 3",
+                                ["ru"] = "Craft three Platinum Rings: 0 / 3",
+                                ["ja"] = "プラチナの指輪を3個作る: 0 / 3",
+                                ["es"] = "Fabrica tres anillos de platino: 0/3",
                                 ["it"] = "TRACKER GOAL TEXT: 0 / 3",
-                                ["fr"] = "Fabriquez trois anneaux en électrum : 0/3",
-                                ["es"] = "Fabrica tres anillos de electro: 0/3",
-                                ["en"] = "Craft Three Electrum Rings: 0 / 3",
-                                ["de"] = "Stellt drei Elektrumringe her: 0/3",
-                                ["ru"] = "Craft three Electrum Rings: 0 / 3",
-                                ["ja"] = "琥珀金の指輪を3個作る: 0 / 3",
+                            },
+                        },
+                    },
+                    [5] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Préparez un thé éthérien : 0/1",
+                                ["de"] = "Stellt etwas Ätherischen Tee her: 0/1",
+                                ["en"] = "Craft Aetherial Tea: 0 / 1",
+                                ["ru"] = "Создать — этерический чай: 0 / 1",
+                                ["ja"] = "エセリアルティーを生産する: 0 / 1",
+                                ["es"] = "Preparæ té aeterio: 0/1",
+                                ["it"] = "Craft Aetherial Tea: 0 / 1",
+                            },
+                            [1] = 
+                            {
+                                ["fr"] = "Préparez un filet-mignon de porc farci au millet : 0/1",
+                                ["de"] = "Stellt eine gefüllte Schweinelende mit Hirse her: 0/1",
+                                ["en"] = "Craft Millet-Stuffed Pork Loin: 0 / 1",
+                                ["ru"] = "Создать — свиная вырезка с начинкой из пшена: 0 / 1",
+                                ["ja"] = "雑穀の豚腰肉包み焼きを生産する: 0 / 1",
+                                ["es"] = "Preparæ lomo de cerdo relleno de mijo: 0/1",
+                                ["it"] = "Craft Millet-Stuffed Pork Loin: 0 / 1",
+                            },
+                        },
+                    },
+                    [6] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Acquérez une rune d'essence Makko : 1/1",
+                                ["de"] = "Beschafft eine Makko-Essenzrune: 1/1",
+                                ["en"] = "Acquire Makko Essence Rune: 1 / 1",
+                                ["ru"] = "Добыть руну сущности Макко: 1 / 1",
+                                ["ja"] = "マッコの本質ルーンを手に入れる: 1 / 1",
+                                ["es"] = "Adquiere una runa de esencia Makko: 1/1",
+                                ["it"] = "Acquire Makko Essence Rune: 1 / 1",
+                            },
+                            [1] = 
+                            {
+                                ["fr"] = "Fabriquez un glyphe fort magique avec Ta : 0/1",
+                                ["de"] = "Stellt mit einer Ta-Rune eine starke Glyphe der Magicka her: 0/1",
+                                ["en"] = "Craft Strong Glyph of Magicka With Ta: 0 / 1",
+                                ["ru"] = "Craft Strong Glyph of Magicka With Ta: 0 / 1",
+                                ["ja"] = "ターの強力なグリフ(マジカ)を生産する: 0 / 1",
+                                ["es"] = "Fabrica un glifo fuerte de magia con Ta: 0/1",
+                                ["it"] = "Craft Strong Glyph of Magicka: 0 / 1",
+                            },
+                        },
+                    },
+                    [7] = 
+                    {
+                        [1] = 
+                        {
+                            [2] = 
+                            {
+                                ["fr"] = "Acquérez de la jacinthe d'eau : 3/3",
+                                ["de"] = "Beschafft eine Wasserhyazinthe: 3/3",
+                                ["en"] = "Acquire Water Hyacinth: 3 / 3",
+                                ["ru"] = "Добыть водный гиацинт: 3 / 3",
+                                ["ja"] = "ホテイアオイを手に入れる: 3 / 3",
+                                ["es"] = "Adquiere jacinto de agua: 3/3",
+                                ["it"] = "Acquire Water Hyacinth: 3 / 3",
+                            },
+                            [1] = 
+                            {
+                                ["fr"] = "Préparez un élixir de Vigueur : 0/1",
+                                ["de"] = "Stellt Elixiere der Ausdauer her: 0/1",
+                                ["en"] = "Craft Elixir of Stamina: 0 / 1",
+                                ["ru"] = "Craft Elixir of Stamina: 0 / 1",
+                                ["ja"] = "スタミナの霊薬を生産する: 0 / 1",
+                                ["es"] = "Prepara un elixir de aguante: 0/1",
+                                ["it"] = "Craft Elixir of Stamina: 0 / 1",
                             },
                         },
                     },
                 },
+                ["version"] = 1,
                 ["quests"] = 
                 {
                     [1] = 
                     {
-                        ["it"] = "Provisioner Writ",
-                        ["fr"] = "Commande de cuisine",
-                        ["es"] = "Encargo de provisiones",
-                        ["en"] = "Provisioner Writ",
-                        ["de"] = "Versorgerschrieb",
-                        ["ru"] = "Заказ снабженцу",
-                        ["ja"] = "調理師の依頼",
+                        ["fr"] = "Commande de tailleur",
+                        ["de"] = "Schneiderschrieb",
+                        ["en"] = "Clothier Writ",
+                        ["ru"] = "Заказ портному",
+                        ["ja"] = "仕立師の依頼",
+                        ["es"] = "Encargo de sastrería",
+                        ["it"] = "Clothier Writ",
                     },
                     [2] = 
                     {
-                        ["it"] = "Enchanter Writ",
-                        ["fr"] = "Commandes d'enchantement",
-                        ["es"] = "Encargo de encantamiento",
-                        ["en"] = "Enchanter Writ",
-                        ["de"] = "Verzaubererschrieb",
-                        ["ru"] = "Заказ зачарователю",
-                        ["ja"] = "付呪師の依頼",
+                        ["fr"] = "Commande de forge",
+                        ["de"] = "Schmiedeschrieb",
+                        ["en"] = "Blacksmith Writ",
+                        ["ru"] = "Заказ кузнецу",
+                        ["ja"] = "鍛冶師の依頼",
+                        ["es"] = "Encargo de herrería",
+                        ["it"] = "Blacksmith Writ",
                     },
                     [3] = 
                     {
-                        ["it"] = "Alchemist Writ",
-                        ["fr"] = "Commande d'alchimie",
-                        ["es"] = "Encargo de alquimia",
-                        ["en"] = "Alchemist Writ",
-                        ["de"] = "Alchemistenschrieb",
-                        ["ru"] = "Заказ алхимику",
-                        ["ja"] = "錬金術師の依頼",
+                        ["fr"] = "Commande de travail du bois",
+                        ["de"] = "Schreinerschrieb",
+                        ["en"] = "Woodworker Writ",
+                        ["ru"] = "Заказ столяру",
+                        ["ja"] = "木工師の依頼",
+                        ["es"] = "Encargo de carpintería",
+                        ["it"] = "Woodworker Writ",
                     },
                     [4] = 
                     {
-                        ["it"] = "Clothier Writ",
-                        ["fr"] = "Commande de tailleur",
-                        ["es"] = "Encargo de sastrería",
-                        ["en"] = "Clothier Writ",
-                        ["de"] = "Schneiderschrieb",
-                        ["ru"] = "Заказ портному",
-                        ["ja"] = "仕立師の依頼",
+                        ["fr"] = "Commande de joaillerie",
+                        ["de"] = "Schmuckhandwerksschrieb",
+                        ["en"] = "Jewelry Crafting Writ",
+                        ["ru"] = "Заказ ювелиру",
+                        ["ja"] = "宝飾師のクラフト依頼",
+                        ["es"] = "Encargo de artesanía de joyería",
+                        ["it"] = "",
                     },
                     [5] = 
                     {
-                        ["it"] = "Blacksmith Writ",
-                        ["fr"] = "Commande de forge",
-                        ["es"] = "Encargo de herrería",
-                        ["en"] = "Blacksmith Writ",
-                        ["de"] = "Schmiedeschrieb",
-                        ["ru"] = "Заказ кузнецу",
-                        ["ja"] = "鍛冶師の依頼",
+                        ["fr"] = "Commande de cuisine",
+                        ["de"] = "Versorgerschrieb",
+                        ["en"] = "Provisioner Writ",
+                        ["ru"] = "Заказ снабженцу",
+                        ["ja"] = "調理師の依頼",
+                        ["es"] = "Encargo de provisiones",
+                        ["it"] = "Provisioner Writ",
                     },
                     [6] = 
                     {
-                        ["it"] = "Woodworker Writ",
-                        ["fr"] = "Commande de travail du bois",
-                        ["es"] = "Encargo de carpintería",
-                        ["en"] = "Woodworker Writ",
-                        ["de"] = "Schreinerschrieb",
-                        ["ru"] = "Заказ столяру",
-                        ["ja"] = "木工師の依頼",
+                        ["fr"] = "Commandes d'enchantement",
+                        ["de"] = "Verzaubererschrieb",
+                        ["en"] = "Enchanter Writ",
+                        ["ru"] = "Заказ зачарователю",
+                        ["ja"] = "付呪師の依頼",
+                        ["es"] = "Encargo de encantamiento",
+                        ["it"] = "Enchanter Writ",
                     },
                     [7] = 
                     {
-                        ["it"] = "",
-                        ["fr"] = "Commande de joaillerie",
-                        ["es"] = "Encargo de artesanía de joyería",
-                        ["en"] = "Jewelry Crafting Writ",
-                        ["de"] = "Schmuckhandwerksschrieb",
-                        ["ru"] = "Заказ ювелиру",
-                        ["ja"] = "宝飾師のクラフト依頼",
+                        ["fr"] = "Commande d'alchimie",
+                        ["de"] = "Alchemistenschrieb",
+                        ["en"] = "Alchemist Writ",
+                        ["ru"] = "Заказ алхимику",
+                        ["ja"] = "錬金術師の依頼",
+                        ["es"] = "Encargo de alquimia",
+                        ["it"] = "Alchemist Writ",
                     },
                 },
             },
