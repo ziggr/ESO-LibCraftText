@@ -179,6 +179,16 @@ But including them in Discovery() might be helpful as we figure out parse
 REs for quest text? Barely. But I _am_ curious. So I'm doing it.
 
 
+AUTOSCAN? The 7-language loop of
+    /lct scan
+    /lct lang
+    /lct scan
+    /lct lang
+    ...
+    /lct scan
+    /logout
+    Is super-annoying, and I'm gonna have to do it, daily for the next several days.
+
 
 
 ---

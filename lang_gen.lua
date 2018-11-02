@@ -36,7 +36,7 @@ CRAFTING_TYPE_ABBREV = {
 }
 
 function Warn(msg)
-    print(msg.."\n")
+    print(msg)
 end
 
 CHAR = {
@@ -98,6 +98,13 @@ function Decaret(text)
     return text:gsub("%^.*","")
 end
 
+function table_len(t)
+    if not t then return nil end
+    local ct = 0
+    for _,_ in pairs(t) do ct = ct+1 end
+    return ct
+end
+
 local DAILY_QUEST_TITLE_TO_CRAFTING_TYPE =
 {
       ["Blacksmith Writ"        ] = bs
@@ -108,14 +115,142 @@ local DAILY_QUEST_TITLE_TO_CRAFTING_TYPE =
     , ["Alchemist Writ"         ] = al
     , ["Jewelry Crafting Writ"  ] = jw
 }
+
+function AllSameCraftingType(crafting_type, quest_titles)
+    local abbrev = CRAFTING_TYPE_ABBREV[crafting_type]
+    if not abbrev then return false end
+    abbrev = abbrev:upper()
+    local key    = "$DAILY_"..abbrev
+    local db_table = DB[key]
+    if not db_table then
+        Warn("Missing table for "..key)
+        return false
+    end
+
+    for _,lang in ipairs(LANG_LIST) do
+        local expect = db_table[lang] or ""
+        local got    = quest_titles[lang] or ""
+        if (lang ~= "it") and (expect ~= got) then
+            Warn(string.format("%s  expect:'%s' ~= got:'%s'", lang, expect, got))
+            return false
+        end
+    end
+    return true
+end
+
 function ImportSavedChars()
     for char_name, saved_chars in pairs(LibCraftTextVars.Default["@ziggr"]) do
-        local alliance    = saved_chars.alliance or "XX"
-        local skill_ranks = saved_chars.alliance
-
-
+        ImportSavedChar(char_name, saved_chars)
     end
 end
+
+
+function ImportSavedChar(char_name, saved_chars)
+    if char_name == "$AccountWide" then return end
+
+    local quest_ct = table_len(saved_chars.quests)
+    local step_ct = table_len(saved_chars.steps)
+    local cond_ct = table_len(saved_chars.conditions)
+    if (not quest_ct) or (quest_ct ~= step_ct) or (quest_ct ~= cond_ct) then
+        Warn(string.format("char:%20s  skipping quests. quest_ct:%s  step_ct:%s  cond_ct:%s"
+            , char_name
+            , quest_ct
+            , step_ct
+            , cond_ct
+            ))
+        return
+    end
+
+
+    for quest_index,_ in pairs(saved_chars.quests) do
+        ImportSavedCharQuests(char_name, saved_chars, quest_index)
+    end
+end
+
+function ImportSavedCharQuests(char_name, saved_chars, quest_index)
+    local quest_title = saved_chars.quests[quest_index]
+    local crafting_type = DAILY_QUEST_TITLE_TO_CRAFTING_TYPE[quest_title.en]
+    if not crafting_type then
+        -- Warn(string.format("char:%20s  skipping quest:%d %s %s. Non-daily. ## WRITE ME."
+        -- , char_name
+        -- , quest_index
+        -- , quest_title.en
+        -- , CRAFTING_TYPE_ABBREV[crafting_type]
+        -- ))
+        return
+    end
+
+    if not AllSameCraftingType(crafting_type, quest_title) then
+        Warn(string.format("char:%20s  skipping quest:%d %s %s. Language mismatch."
+        , char_name
+        , quest_index
+        , quest_title.en
+        , CRAFTING_TYPE_ABBREV[crafting_type]
+        ))
+        return
+    end
+
+    local key_fodder    = nil
+    local ct_abbrev     = CRAFTING_TYPE_ABBREV[crafting_type]:upper()
+    local alliance      = saved_chars.alliance
+    if not alliance then
+        Warn(string.format("char:%20s  skipping quest:%d %s %s. Missing alliance."
+        , char_name
+        , quest_index
+        , quest_title.en
+        , CRAFTING_TYPE_ABBREV[crafting_type]
+        ))
+        return
+    end
+
+    local skill_ranks   = saved_chars.skill_rank or {}
+    local skill_rank    = skill_ranks[crafting_type]
+    if not skill_rank then
+        Warn(string.format("char:%-20s  skipping quest:%d %s %s. Missing skill_rank."
+        , char_name
+        , quest_index
+        , quest_title.en
+        , CRAFTING_TYPE_ABBREV[crafting_type]
+        ))
+        return
+    end
+
+    local key_fodder = nil
+    if (crafting_type == CRAFTING_TYPE_PROVISIONING and skill_rank <= 3) then
+        key_fodder = string.format("DAILY_COND_%s_%02d_%s_"
+                                  , ct_abbrev
+                                  , skill_rank
+                                  , alliance
+                                  )
+print("food")
+    else
+        key_fodder = string.format("DAILY_COND_%s_%02d_"
+                                  , ct_abbrev
+                                  , skill_rank
+                                  , alliance
+                                  )
+    end
+
+    Warn(string.format("Hiya! %-20s %s  %s"
+                      , char_name
+                      , key_fodder
+                      , quest_title.en
+                      ))
+end
+
+--[[
+    assign a quest key for this quest
+        -- title ==> crafting type
+        -- skill_rank[ctype] ==> rank:  _JW_05_
+        -- conditions ==> ordinal _JW_05_12
+            look for the set of conditions in existing lang_db
+            if exact match, then return that existing lang_db key number
+            if not, then increment a a per JW_05 counter
+
+    probably want some preventative shields here:
+        use lang_db's quest title entries to check that
+        all 7 quest titles are for the same crafting type before continuing.
+]]
 
 function ImportQuests(qsc_container)
     local quest_list = qsc_container.quests
