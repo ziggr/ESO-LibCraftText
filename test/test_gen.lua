@@ -15,6 +15,8 @@ C = {
 
 ,   new_cond_ct = 0         -- how many new cond_text inputs did MergeLangDB()
                             -- add?
+
+,   preamble_lines = {}     -- Any data lines before "COND_TEXT_FODDER = {"
 }
 
 
@@ -26,13 +28,19 @@ function C.ReadGenData()
     local FILE = io.open(GENFILE,"r")
     local re_input   = 'input="([^"]*)"'
     local re_expect  = 'expect=({.*}) *}$'
+    local in_cond_fodder = false
     for line in FILE:lines() do
-        local _,_,input          = line:find(re_input)
-        local _,_,expect_as_text = line:find(re_expect)
-        if input then
-            expect_as_text = expect_as_text or "{}"
-            -- print("in:"..input.." expect_as_text:"..tostring(expect_as_text))
-            C.cond_unique[input] = expect_as_text
+        in_cond_fodder = in_cond_fodder or line:find("^COND_TEXT_FODDER")
+        if not in_cond_fodder then
+            table.insert(C.preamble_lines, line)
+        else
+            local _,_,input          = line:find(re_input)
+            local _,_,expect_as_text = line:find(re_expect)
+            if input then
+                expect_as_text = expect_as_text or "{}"
+                -- print("in:"..input.." expect_as_text:"..tostring(expect_as_text))
+                C.cond_unique[input] = expect_as_text
+            end
         end
     end
 end
@@ -68,7 +76,10 @@ function C.WriteGenData()
     local FILE = assert(io.open(GENFILE, "w"))
     FILE:write("COND_TEXT_FODDER = {\n")
     local comma = " "
-
+    for _,line in ipairs(C.preamble_lines) do
+        FILE:write(line)
+        FILE:write("\n")
+    end
     for _,cond_text in ipairs(C.sorted_keys(C.cond_unique)) do
         local expect_as_text = C.cond_unique[cond_text]
         FILE:write(string.format( "%s { input=%-50s, expect=%-50s }\n"
