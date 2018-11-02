@@ -3,6 +3,10 @@ require("../LibCraftText")
 require("utils_test")
 luaunit = require("luaunit")
 
+TestDailyCondition = {}
+TestDailyCondition.setUpOuter =  Test.setUpOuter
+TestDailyCondition.setUp      =  Test.setUp
+
 -- Testing scaffolding
 CRAFTING_TYPE_BLACKSMITHING     = 1
 CRAFTING_TYPE_CLOTHIER          = 2
@@ -30,9 +34,6 @@ local LCT = LibCraftText
 
 -- End Belonga LCT -----------------------------------------------------------
 
-TestDailyCondition = {}
-TestDailyCondition.setUpOuter =  Test.setUpOuter
-TestDailyCondition.setUp      =  Test.setUp
 
 function TestDailyCondition.TestAL()
     local fodder = {
