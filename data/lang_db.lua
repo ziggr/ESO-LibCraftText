@@ -32,7 +32,6 @@ LANG_DB = {
           ,   de  = "Stellt Schlückchen des Lebens her"
           ,   fr  = "Préparez une gorgée de Santé "
           ,   es  = "Prepara un sorbo de salud"
-          ,   it  = "Craft Sip of Health"
           ,   ru  = "Создать глоток здоровья (Sip of Health)"
           ,   ja  = "体力の雫を生産する"
           }
@@ -52,8 +51,6 @@ LANG_DB = {
           ,   de  = "Stellt Schlücke der Ausdauer her"
           ,   fr  = "Préparez une goutte de Vigueur "
           ,   es  = "Prepara un trago de aguante"
-          ,   it  = "Craft Dram of Stamina"
-          ,   ru  = "Craft Dram of Stamina"
           ,   ja  = "スタミナの飲み薬を生産する"
           }
 , [  7] = {
@@ -82,8 +79,6 @@ LANG_DB = {
           ,   de  = "Stellt Tränke des Lebens her"
           ,   fr  = "Préparez une potion de Santé "
           ,   es  = "Prepara una poción de salud"
-          ,   it  = "Craft Potion of Health"
-          ,   ru  = "Craft Potion of Health"
           ,   ja  = "体力の薬を生産する"
           }
 , [ 10] = {
@@ -92,8 +87,6 @@ LANG_DB = {
           ,   de  = "Stellt Lösungen der Ausdauer her"
           ,   fr  = "Préparez une solution de Vigueur "
           ,   es  = "Prepara una solución de aguante"
-          ,   it  = "Craft Solution of Stamina"
-          ,   ru  = "Craft Solution of Stamina"
           ,   ja  = "スタミナの液体薬を生産する"
           }
 , [ 11] = {
@@ -112,7 +105,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Wasserhyazinthe"
           ,   fr  = "Acquérez de la jacinthe d'eau "
           ,   es  = "Adquiere jacinto de agua"
-          ,   it  = "Acquire Water Hyacinth"
           ,   ru  = "Добыть водный гиацинт"
           ,   ja  = "ホテイアオイを手に入れる"
           }
@@ -122,8 +114,6 @@ LANG_DB = {
           ,   de  = "Stellt Elixiere der Ausdauer her"
           ,   fr  = "Préparez un élixir de Vigueur "
           ,   es  = "Prepara un elixir de aguante"
-          ,   it  = "Craft Elixir of Stamina"
-          ,   ru  = "Craft Elixir of Stamina"
           ,   ja  = "スタミナの霊薬を生産する"
           }
 , [ 14] = {
@@ -143,7 +133,6 @@ LANG_DB = {
           ,   fr  = "Préparez une panacée de Santé "
           ,   es  = "Prepara una panacea de salud"
           ,   it  = "Craft Greater Glyph of Health"
-          ,   ru  = "Craft Panacea of Health"
           ,   ja  = "体力の万能薬を生産する"
           }
 , [ 16] = {
@@ -162,8 +151,6 @@ LANG_DB = {
           ,   de  = "Stellt Panazeen des Lebens her"
           ,   fr  = "Préparez une panacée de Santé "
           ,   es  = "Prepara una panacea de salud"
-          ,   it  = "Craft Panacea of Health"
-          ,   ru  = "Craft Panacea of Health"
           ,   ja  = "体力の万能薬を生産する"
           }
 , [ 18] = {
@@ -172,7 +159,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Oko-Essenzrune"
           ,   fr  = "Acquérez une rune d'essence Oko "
           ,   es  = "Adquiere una runa de esencia Oko"
-          ,   it  = "Acquire Oko Essence Rune"
           ,   ru  = "Добыть руну сущности Око"
           ,   ja  = "オコの本質ルーンを手に入れる"
           }
@@ -193,7 +179,6 @@ LANG_DB = {
           ,   fr  = "Fabriquer un poison de Dégâts de Magie IX "
           ,   es  = "Prepara un veneno de daño a la magia IX"
           ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft Damage Magicka Poison IX"
           ,   ja  = "マジカ減少の毒9を生産する"
           }
 , [ 21] = {
@@ -202,7 +187,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Oko-Essenzrune"
           ,   fr  = "Acquérez une rune d'essence Oko "
           ,   es  = "Adquiere una runa de esencia Oko"
-          ,   it  = "Acquire Oko Essence Rune"
           ,   ru  = "Добыть руну сущности Око"
           ,   ja  = "オコの本質ルーンを手に入れる"
           }
@@ -223,7 +207,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une essence de ravage de Santé "
           ,   es  = "Prepara una esencia reducción de salud"
           ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft Essence of Ravage Health"
           ,   ja  = "体力減少のエキスを生産する"
           }
 , [ 24] = {
@@ -233,7 +216,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bâton de foudre en acajou normal "
           ,   es  = "Fabrica una vara eléctrica de caoba normal"
           ,   it  = "Craft Mahogany Lightning Staff"
-          ,   ru  = "Craft Normal Mahogany Lightning Staff"
           ,   ja  = "マホガニーの稲妻の杖(ノーマル)を生産する"
           }
 , [ 25] = {
@@ -253,7 +235,6 @@ LANG_DB = {
           ,   fr  = "Fabriquer un poison de Drain de Santé IX "
           ,   es  = "Prepara veneno de absorción de vida IX"
           ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft Drain Health Poison IX"
           ,   ja  = "体力吸収の毒9を生産する"
           }
 , [ 27] = {
@@ -262,7 +243,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Ta-Aspektrune"
           ,   fr  = "Acquérez une rune d'aspect Ta "
           ,   es  = "Adquiere una runa de aspecto Ta"
-          ,   it  = "Acquire Ta Aspect Rune"
           ,   ru  = "Добыть руну аспекта Та"
           ,   ja  = "ターの品質ルーンを手に入れる"
           }
@@ -292,7 +272,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des spallières en fer normales "
           ,   es  = "Fabrica unos espaldarones de hierro normales"
           ,   it  = "Craft Iron Pauldron"
-          ,   ru  = "Craft Normal Iron Pauldron"
           ,   ja  = "鉄のポールドロン(ノーマル)を生産する"
           }
 , [ 31] = {
@@ -302,7 +281,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une dague en fer normale "
           ,   es  = "Fabrica una daga de hierro normal"
           ,   it  = "Craft Iron Dagger"
-          ,   ru  = "Craft Normal Iron Dagger"
           ,   ja  = "鉄の短剣(ノーマル)を生産する"
           }
 , [ 32] = {
@@ -312,7 +290,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un heaume en fer normal "
           ,   es  = "Fabrica un yelmo de hierro normal"
           ,   it  = "Craft Iron Helm"
-          ,   ru  = "Craft Normal Iron Helm"
           ,   ja  = "鉄の兜(ノーマル)を生産する"
           }
 , [ 33] = {
@@ -322,7 +299,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des spallières en acier normales "
           ,   es  = "Fabrica unos espaldarones de acero normales"
           ,   it  = "Craft Steel Pauldron"
-          ,   ru  = "Craft Normal Steel Pauldron"
           ,   ja  = "鋼鉄のポールドロン(ノーマル)を生産する"
           }
 , [ 34] = {
@@ -332,7 +308,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une dague en acier normale "
           ,   es  = "Fabrica una daga de acero normal"
           ,   it  = "Craft Steel Dagger"
-          ,   ru  = "Craft Normal Steel Dagger"
           ,   ja  = "鋼鉄の短剣(ノーマル)を生産する"
           }
 , [ 35] = {
@@ -342,7 +317,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un heaume en acier normal "
           ,   es  = "Fabrica un yelmo de acero normal"
           ,   it  = "Craft Steel Helm"
-          ,   ru  = "Craft Normal Steel Helm"
           ,   ja  = "鋼鉄の兜(ノーマル)を生産する"
           }
 , [ 36] = {
@@ -352,7 +326,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une dague en orichalque normale "
           ,   es  = "Fabrica una daga de oricalco normal"
           ,   it  = "Craft Orichalcum Dagger"
-          ,   ru  = "Craft Normal Orichalcum Dagger"
           ,   ja  = "オリハルコンの短剣(ノーマル)を生産する"
           }
 , [ 37] = {
@@ -362,7 +335,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un heaume en orichalque normal "
           ,   es  = "Fabrica un yelmo de oricalco normal"
           ,   it  = "Craft Orichalcum Helm"
-          ,   ru  = "Craft Normal Orichalcum Helm"
           ,   ja  = "オリハルコンの兜(ノーマル)を生産する"
           }
 , [ 38] = {
@@ -372,7 +344,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des spallières en orichalque normales "
           ,   es  = "Fabrica unos espaldarones de oricalco normales"
           ,   it  = "Craft Orichalcum Pauldron"
-          ,   ru  = "Craft Normal Orichalcum Pauldron"
           ,   ja  = "オリハルコンのポールドロン(ノーマル)を生産する"
           }
 , [ 39] = {
@@ -382,7 +353,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des grèves dwemer normales "
           ,   es  = "Fabrica unas grebas de acero enano normales"
           ,   it  = "Craft Dwarven Greaves"
-          ,   ru  = "Craft Normal Dwarven Greaves"
           ,   ja  = "ドワーフのグリーヴ(ノーマル)を生産する"
           }
 , [ 40] = {
@@ -392,7 +362,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une cuirasse dwemer normale "
           ,   es  = "Fabrica una coraza de acero enano normal"
           ,   it  = "Craft Dwarven Cuirass"
-          ,   ru  = "Craft Normal Dwarven Cuirass"
           ,   ja  = "ドワーフの胸当て(ノーマル)を生産する"
           }
 , [ 41] = {
@@ -402,7 +371,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une épée dwemer normale "
           ,   es  = "Fabrica una espada de acero enano normal"
           ,   it  = "Craft Dwarven Sword"
-          ,   ru  = "Craft Normal Dwarven Sword"
           ,   ja  = "ドワーフの剣(ノーマル)を生産する"
           }
 , [ 42] = {
@@ -412,7 +380,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une cuirasse en ébonite normale "
           ,   es  = "Fabrica una coraza de ébano normal"
           ,   it  = "Craft Ebony Cuirass"
-          ,   ru  = "Craft Normal Ebony Cuirass"
           ,   ja  = "黒檀の胸当て(ノーマル)を生産する"
           }
 , [ 43] = {
@@ -422,7 +389,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une épée en ébonite normale "
           ,   es  = "Fabrica una espada de ébano normal"
           ,   it  = "Craft Ebony Sword"
-          ,   ru  = "Craft Normal Ebony Sword"
           ,   ja  = "黒檀の剣(ノーマル)を生産する"
           }
 , [ 44] = {
@@ -432,7 +398,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des grèves en ébonite normales "
           ,   es  = "Fabrica unas grebas de ébano normales"
           ,   it  = "Craft Ebony Greaves"
-          ,   ru  = "Craft Normal Ebony Greaves"
           ,   ja  = "黒檀のグリーヴ(ノーマル)を生産する"
           }
 , [ 45] = {
@@ -442,7 +407,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des solerets en calcinium normaux "
           ,   es  = "Fabrica unos escarpes de calcinio normales"
           ,   it  = "Craft Kresh Hat"
-          ,   ru  = "Craft Normal Calcinium Sabatons"
           ,   ja  = "カルシニウムのサバトン(ノーマル)を生産する"
           }
 , [ 46] = {
@@ -452,7 +416,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une épée longue en calcinium normale "
           ,   es  = "Fabrica un mandoble de calcinio normal"
           ,   it  = "Craft Kresh Shoes"
-          ,   ru  = "Craft Normal Calcinium Greatsword"
           ,   ja  = "カルシニウムの大剣(ノーマル)を生産する"
           }
 , [ 47] = {
@@ -462,7 +425,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des gantelets en calcinium normaux "
           ,   es  = "Fabrica unos guanteletes de calcinio normales"
           ,   it  = "Craft Kresh Sash"
-          ,   ru  = "Craft Normal Calcinium Gauntlets"
           ,   ja  = "カルシニウムの篭手(ノーマル)を生産する"
           }
 , [ 48] = {
@@ -472,7 +434,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une cuirasse en galatite normale "
           ,   es  = "Fabrica una coraza de galatita normal"
           ,   it  = "Craft Galatite Cuirass"
-          ,   ru  = "Craft Normal Galatite Cuirass"
           ,   ja  = "ガラタイトの胸当て(ノーマル)を生産する"
           }
 , [ 49] = {
@@ -482,7 +443,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une épée en galatite normale "
           ,   es  = "Fabrica una espada de galatita normal"
           ,   it  = "Craft Galatite Sword"
-          ,   ru  = "Craft Normal Galatite Sword"
           ,   ja  = "ガラタイトの剣(ノーマル)を生産する"
           }
 , [ 50] = {
@@ -492,7 +452,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des grèves en galatite normales "
           ,   es  = "Fabrica unas grebas de galatita normales"
           ,   it  = "Craft Galatite Greaves"
-          ,   ru  = "Craft Normal Galatite Greaves"
           ,   ja  = "ガラタイトのグリーヴ(ノーマル)を生産する"
           }
 , [ 51] = {
@@ -512,7 +471,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des solerets en mercure normaux "
           ,   es  = "Fabrica unos escarpes de azogue normales"
           ,   it  = "Craft Quicksilver Sabatons"
-          ,   ru  = "Craft Normal Quicksilver Sabatons"
           ,   ja  = "水銀のサバトン(ノーマル)を生産する"
           }
 , [ 53] = {
@@ -522,7 +480,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une épée longue en mercure normale "
           ,   es  = "Fabrica un mandoble de azogue normal"
           ,   it  = "Craft Quicksilver Greatsword"
-          ,   ru  = "Craft Normal Quicksilver Greatsword"
           ,   ja  = "水銀の大剣(ノーマル)を生産する"
           }
 , [ 54] = {
@@ -532,7 +489,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des gantelets en mercure normaux "
           ,   es  = "Fabrica unos guanteletes de azogue normales"
           ,   it  = "Craft Quicksilver Gauntlets"
-          ,   ru  = "Craft Normal Quicksilver Gauntlets"
           ,   ja  = "水銀の篭手(ノーマル)を生産する"
           }
 , [ 55] = {
@@ -542,7 +498,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une dague en acier du néant normale "
           ,   es  = "Fabrica una daga de acero del vacío normal"
           ,   it  = "Craft Voidsteel Dagger"
-          ,   ru  = "Craft Normal Voidsteel Dagger"
           ,   ja  = "虚無の鉄の短剣(ノーマル)を生産する"
           }
 , [ 56] = {
@@ -552,7 +507,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un heaume en acier du néant normal "
           ,   es  = "Fabrica un yelmo de acero del vacío normal"
           ,   it  = "Craft Voidsteel Helm"
-          ,   ru  = "Craft Normal Voidsteel Helm"
           ,   ja  = "虚無の鉄の兜(ノーマル)を生産する"
           }
 , [ 57] = {
@@ -562,7 +516,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des spallières en acier du néant normales "
           ,   es  = "Fabrica unos espaldarones de acero del vacío normales"
           ,   it  = "Craft Voidsteel Pauldron"
-          ,   ru  = "Craft Normal Voidsteel Pauldron"
           ,   ja  = "虚無の鉄のポールドロン(ノーマル)を生産する"
           }
 , [ 58] = {
@@ -572,7 +525,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une cuirasse en cuprite normale "
           ,   es  = "Fabrica una coraza de rubedita normal"
           ,   it  = "Craft Rubedite Cuirass"
-          ,   ru  = "Craft Normal Rubedite Cuirass"
           ,   ja  = "ルベダイトの胸当て(ノーマル)を生産する"
           }
 , [ 59] = {
@@ -582,7 +534,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une robe en soie ancestrale normale "
           ,   es  = "Fabrica una túnica de seda ancestral normal"
           ,   it  = "Craft Ancestor Silk Robe"
-          ,   ru  = "Craft Normal Ancestor Silk Robe"
           ,   ja  = "先人のシルクのローブ(ノーマル)を生産する"
           }
 , [ 60] = {
@@ -592,7 +543,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une épée en cuprite normale "
           ,   es  = "Fabrica una espada de rubedita normal"
           ,   it  = "Craft Rubedite Sword"
-          ,   ru  = "Craft Normal Rubedite Sword"
           ,   ja  = "ルベダイトの剣(ノーマル)を生産する"
           }
 , [ 61] = {
@@ -602,7 +552,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des grèves en cuprite normales "
           ,   es  = "Fabrica unas grebas de rubedita normales"
           ,   it  = "Craft Rubedite Greaves"
-          ,   ru  = "Craft Normal Rubedite Greaves"
           ,   ja  = "ルベダイトのグリーヴ(ノーマル)を生産する"
           }
 , [ 62] = {
@@ -639,7 +588,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des brassards en cuir brut normaux "
           ,   es  = "Fabrica unos brazales de piel cruda normales"
           ,   it  = "Craft Rawhide Bracers"
-          ,   ru  = "Craft Normal Rawhide Bracers"
           ,   ja  = "生皮の腕当て(ノーマル)を生産する"
           }
 , [ 66] = {
@@ -649,7 +597,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des coques d'épaules en cuir brut normales "
           ,   es  = "Fabrica unas hombreras de piel cruda normales"
           ,   it  = "Craft Rawhide Arm Cops"
-          ,   ru  = "Craft Normal Rawhide Arm Cops"
           ,   ja  = "生皮のアームカップ(ノーマル)を生産する"
           }
 , [ 67] = {
@@ -659,7 +606,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un casque en cuir brut normal "
           ,   es  = "Fabrica un yelmo de piel cruda normal"
           ,   it  = "Craft Rawhide Helmet"
-          ,   ru  = "Craft Normal Rawhide Helmet"
           ,   ja  = "生皮の兜(ノーマル)を生産する"
           }
 , [ 68] = {
@@ -669,7 +615,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des brassards en peau normaux "
           ,   es  = "Fabrica unos brazales de piel normales"
           ,   it  = "Craft Hide Bracers"
-          ,   ru  = "Craft Normal Hide Bracers"
           ,   ja  = "皮の腕当て(ノーマル)を生産する"
           }
 , [ 69] = {
@@ -679,7 +624,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des coques d'épaules en peau normales "
           ,   es  = "Fabrica unas hombreras de piel normales"
           ,   it  = "Craft Hide Arm Cops"
-          ,   ru  = "Craft Normal Hide Arm Cops"
           ,   ja  = "皮のアームカップ(ノーマル)を生産する"
           }
 , [ 70] = {
@@ -689,7 +633,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un casque en peau normal "
           ,   es  = "Fabrica un casco de piel normal"
           ,   it  = "Craft Hide Helmet"
-          ,   ru  = "Craft Normal Hide Helmet"
           ,   ja  = "皮の兜(ノーマル)を生産する"
           }
 , [ 71] = {
@@ -699,7 +642,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des coques d'épaules en cuir normales "
           ,   es  = "Fabrica unas hombreras de cuero normales"
           ,   it  = "Craft Leather Arm Cops"
-          ,   ru  = "Craft Normal Leather Arm Cops"
           ,   ja  = "革のアームカップ(ノーマル)を生産する"
           }
 , [ 72] = {
@@ -709,7 +651,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un casque en cuir normal "
           ,   es  = "Fabrica un casco de cuero normal"
           ,   it  = "Craft Leather Helmet"
-          ,   ru  = "Craft Normal Leather Helmet"
           ,   ja  = "革の兜(ノーマル)を生産する"
           }
 , [ 73] = {
@@ -719,7 +660,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des brassards en cuir normaux "
           ,   es  = "Fabrica unos brazaletes de cuero normales"
           ,   it  = "Craft Leather Bracers"
-          ,   ru  = "Craft Normal Leather Bracers"
           ,   ja  = "革の腕当て(ノーマル)を生産する"
           }
 , [ 74] = {
@@ -729,7 +669,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des épaulettes en soie d'araignée normales "
           ,   es  = "Fabrica unos cubrehombros de seda de araña normales"
           ,   it  = "Craft Spidersilk Epaulets"
-          ,   ru  = "Craft Normal Spidersilk Epaulets"
           ,   ja  = "スパイダーシルクの肩当て(ノーマル)を生産する"
           }
 , [ 75] = {
@@ -739,7 +678,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un glyphe modéré magique avec Ta "
           ,   es  = "Fabrica un glifo moderado de magia con Ta"
           ,   it  = "Craft Moderate Glyph of Magicka"
-          ,   ru  = "Craft Moderate Glyph of Magicka With Ta"
           ,   ja  = "ターの中堅のグリフ(マジカ)を生産する"
           }
 , [ 76] = {
@@ -749,7 +687,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des braies en soie d'araignée normales "
           ,   es  = "Fabrica unos calzones de seda de araña normales"
           ,   it  = "Craft Spidersilk Breeches"
-          ,   ru  = "Craft Normal Spidersilk Breeches"
           ,   ja  = "スパイダーシルクのパンツ(ノーマル)を生産する"
           }
 , [ 77] = {
@@ -759,7 +696,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une robe en soie d'araignée normale "
           ,   es  = "Fabrica una túnica de seda de araña normal"
           ,   it  = "Craft Spidersilk Robe"
-          ,   ru  = "Craft Normal Spidersilk Robe"
           ,   ja  = "スパイダーシルクのローブ(ノーマル)を生産する"
           }
 , [ 78] = {
@@ -769,7 +705,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des braies en fil d'ébonite normales "
           ,   es  = "Fabrica unos calzones de hilo de ébano normales"
           ,   it  = "Craft Ebonthread Breeches"
-          ,   ru  = "Craft Normal Ebonthread Breeches"
           ,   ja  = "エボンスレッドのパンツ(ノーマル)を生産する"
           }
 , [ 79] = {
@@ -779,7 +714,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une robe en fil d'ébonite normale "
           ,   es  = "Fabrica una túnica de hilo de ébano normal"
           ,   it  = "Craft Ebonthread Robe"
-          ,   ru  = "Craft Normal Ebonthread Robe"
           ,   ja  = "エボンスレッドのローブ(ノーマル)を生産する"
           }
 , [ 80] = {
@@ -789,7 +723,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des épaulettes en fil d'ébonite normales "
           ,   es  = "Fabrica unos cubrehombros de hilo de ébano normales"
           ,   it  = "Craft Ebonthread Epaulets"
-          ,   ru  = "Craft Normal Ebonthread Epaulets"
           ,   ja  = "エボンスレッドの肩当て(ノーマル)を生産する"
           }
 , [ 81] = {
@@ -799,7 +732,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un baudrier en soie d'araignée normal "
           ,   es  = "Fabrica una banda de seda de araña normal"
           ,   it  = "Craft Calcinium Sabatons"
-          ,   ru  = "Craft Normal Kresh Hat"
           ,   ja  = "クレッシュの帽子(ノーマル)を生産する"
           }
 , [ 82] = {
@@ -809,7 +741,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des chaussures en soie d'araignée normales "
           ,   es  = "Fabrica unos zapatos de seda de araña normales"
           ,   it  = "Craft Calcinium Greatsword"
-          ,   ru  = "Craft Normal Kresh Shoes"
           ,   ja  = "クレッシュの靴(ノーマル)を生産する"
           }
 , [ 83] = {
@@ -819,7 +750,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un baudrier en kresh normal "
           ,   es  = "Fabrica una banda de kresh normal"
           ,   it  = "Craft Calcinium Gauntlets"
-          ,   ru  = "Craft Normal Kresh Sash"
           ,   ja  = "クレッシュのサッシュ(ノーマル)を生産する"
           }
 , [ 84] = {
@@ -829,7 +759,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des braies en fil de fer normales "
           ,   es  = "Fabrica unos calzones de hilo férreo normales"
           ,   it  = "Craft Ironthread Breeches"
-          ,   ru  = "Craft Normal Ironthread Breeches"
           ,   ja  = "アイアンスレッドのパンツ(ノーマル)を生産する"
           }
 , [ 85] = {
@@ -839,7 +768,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une robe en fil de fer normale "
           ,   es  = "Fabrica una túnica de hilo férreo normal"
           ,   it  = "Craft Ironthread Robe"
-          ,   ru  = "Craft Normal Ironthread Robe"
           ,   ja  = "アイアンスレッドのローブ(ノーマル)を生産する"
           }
 , [ 86] = {
@@ -849,7 +777,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des épaulettes en fil de fer normales "
           ,   es  = "Fabrica unos cubrehombros de hilo férreo normales"
           ,   it  = "Craft Ironthread Epaulets"
-          ,   ru  = "Craft Normal Ironthread Epaulets"
           ,   ja  = "アイアンスレッドの肩当て(ノーマル)を生産する"
           }
 , [ 87] = {
@@ -859,7 +786,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un chapeau en fil d'argent normal "
           ,   es  = "Fabrica una capucha de hilo de plata normal"
           ,   it  = "Craft Silverweave Hat"
-          ,   ru  = "Craft Normal Silverweave Hat"
           ,   ja  = "シルバーウィーブの帽子(ノーマル)を生産する"
           }
 , [ 88] = {
@@ -869,7 +795,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des chaussures en fil d'argent normales "
           ,   es  = "Fabrica unos zapatos de hilo de plata normales"
           ,   it  = "Craft Silverweave Shoes"
-          ,   ru  = "Craft Normal Silverweave Shoes"
           ,   ja  = "シルバーウィーブの靴(ノーマル)を生産する"
           }
 , [ 89] = {
@@ -879,7 +804,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un baudrier en fil d'argent normal "
           ,   es  = "Fabrica una banda de hilo de plata normal"
           ,   it  = "Craft Silverweave Sash"
-          ,   ru  = "Craft Normal Silverweave Sash"
           ,   ja  = "シルバーウィーブのサッシュ(ノーマル)を生産する"
           }
 , [ 90] = {
@@ -889,7 +813,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des coques d'épaules en peau d'ombre normales "
           ,   es  = "Fabrica unas hombreras de piel sombría normales"
           ,   it  = "Craft Shadowhide Arm Cops"
-          ,   ru  = "Craft Normal Shadowhide Arm Cops"
           ,   ja  = "シャドウハイドのアームカップ(ノーマル)を生産する"
           }
 , [ 91] = {
@@ -899,7 +822,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un casque en peau d'ombre normal "
           ,   es  = "Fabrica un casco de piel sombría normal"
           ,   it  = "Craft Shadowhide Helmet"
-          ,   ru  = "Craft Normal Shadowhide Helmet"
           ,   ja  = "シャドウハイドの兜(ノーマル)を生産する"
           }
 , [ 92] = {
@@ -909,7 +831,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des brassards en peau d'ombre normaux "
           ,   es  = "Fabrica unos brazales de piel sombría normales"
           ,   it  = "Craft Shadowhide Bracers"
-          ,   ru  = "Craft Normal Shadowhide Bracers"
           ,   ja  = "シャドウハイドの腕当て(ノーマル)を生産する"
           }
 , [ 93] = {
@@ -919,7 +840,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une cuirasse en cuprite normale "
           ,   es  = "Fabrica una coraza de rubedita normal"
           ,   it  = "Craft Rubedite Cuirass"
-          ,   ru  = "Craft Normal Rubedite Cuirass"
           ,   ja  = "ルベダイトの胸当て(ノーマル)を生産する"
           }
 , [ 94] = {
@@ -929,7 +849,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une robe en soie ancestrale normale "
           ,   es  = "Fabrica una túnica de seda ancestral normal"
           ,   it  = "Craft Ancestor Silk Robe"
-          ,   ru  = "Craft Normal Ancestor Silk Robe"
           ,   ja  = "先人のシルクのローブ(ノーマル)を生産する"
           }
 , [ 95] = {
@@ -939,7 +858,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des épaulettes en soie ancestrale normales "
           ,   es  = "Fabrica unos cubrehombros de seda ancestral normales"
           ,   it  = "Craft Ancestor Silk Epaulets"
-          ,   ru  = "Craft Normal Ancestor Silk Epaulets"
           ,   ja  = "先人のシルクの肩当て(ノーマル)を生産する"
           }
 , [ 96] = {
@@ -949,7 +867,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des braies en soie ancestrale normales "
           ,   es  = "Fabrica unos calzones de seda ancestral normales"
           ,   it  = "Craft Ancestor Silk Breeches"
-          ,   ru  = "Craft Normal Ancestor Silk Breeches"
           ,   ja  = "先人のシルクのパンツ(ノーマル)を生産する"
           }
 , [ 97] = {
@@ -986,7 +903,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un glyphe insignifiant vigoureux avec Ta "
           ,   es  = "Fabrica un glifo mediocre de aguante con Ta"
           ,   it  = "Craft Trifling Glyph of Stamina"
-          ,   ru  = "Craft Trifling Glyph of Stamina With Ta"
           ,   ja  = "ターの初歩のグリフ(スタミナ)を生産する"
           }
 , [101] = {
@@ -995,7 +911,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Ta-Aspektrune"
           ,   fr  = "Acquérez une rune d'aspect Ta "
           ,   es  = "Adquiere una runa de aspecto Ta"
-          ,   it  = "Acquire Ta Aspect Rune"
           ,   ru  = "Добыть руну аспекта Та"
           ,   ja  = "ターの品質ルーンを手に入れる"
           }
@@ -1006,7 +921,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des brassards en peau normaux "
           ,   es  = "Fabrica unos brazales de piel normales"
           ,   it  = "Craft Hide Bracers"
-          ,   ru  = "Craft Normal Hide Bracers"
           ,   ja  = "皮の腕当て(ノーマル)を生産する"
           }
 , [103] = {
@@ -1015,7 +929,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Ta-Aspektrune"
           ,   fr  = "Acquérez une rune d'aspect Ta "
           ,   es  = "Adquiere una runa de aspecto Ta"
-          ,   it  = "Acquire Ta Aspect Rune"
           ,   ru  = "Добыть руну аспекта Та"
           ,   ja  = "ターの品質ルーンを手に入れる"
           }
@@ -1026,7 +939,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un petit glyphe vigoureux avec Ta "
           ,   es  = "Fabrica un glifo insignificante de aguante con Ta"
           ,   it  = "Craft Petty Glyph of Stamina"
-          ,   ru  = "Craft Petty Glyph of Stamina With Ta"
           ,   ja  = "ターの不出来なグリフ(スタミナ)を生産する"
           }
 , [105] = {
@@ -1035,7 +947,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Ta-Aspektrune"
           ,   fr  = "Acquérez une rune d'aspect Ta "
           ,   es  = "Adquiere una runa de aspecto Ta"
-          ,   it  = "Acquire Ta Aspect Rune"
           ,   ru  = "Добыть руну аспекта Та"
           ,   ja  = "ターの品質ルーンを手に入れる"
           }
@@ -1046,7 +957,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un glyphe mineur vigoureux avec Ta "
           ,   es  = "Fabrica un glifo menor de aguante con Ta"
           ,   it  = "Craft Minor Glyph of Stamina"
-          ,   ru  = "Craft Minor Glyph of Stamina With Ta"
           ,   ja  = "ターの一般的なグリフ(スタミナ)を生産する"
           }
 , [107] = {
@@ -1056,7 +966,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des épaulettes en soie d'araignée normales "
           ,   es  = "Fabrica unos cubrehombros de seda de araña normales"
           ,   it  = "Craft Spidersilk Epaulets"
-          ,   ru  = "Craft Normal Spidersilk Epaulets"
           ,   ja  = "スパイダーシルクの肩当て(ノーマル)を生産する"
           }
 , [108] = {
@@ -1066,7 +975,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un glyphe modéré magique avec Ta "
           ,   es  = "Fabrica un glifo moderado de magia con Ta"
           ,   it  = "Craft Moderate Glyph of Magicka"
-          ,   ru  = "Craft Moderate Glyph of Magicka With Ta"
           ,   ja  = "ターの中堅のグリフ(マジカ)を生産する"
           }
 , [109] = {
@@ -1075,7 +983,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Oko-Essenzrune"
           ,   fr  = "Acquérez une rune d'essence Oko "
           ,   es  = "Adquiere una runa de esencia Oko"
-          ,   it  = "Acquire Oko Essence Rune"
           ,   ru  = "Добыть руну сущности Око"
           ,   ja  = "オコの本質ルーンを手に入れる"
           }
@@ -1086,7 +993,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une robe en soie d'araignée normale "
           ,   es  = "Fabrica una túnica de seda de araña normal"
           ,   it  = "Craft Spidersilk Robe"
-          ,   ru  = "Craft Normal Spidersilk Robe"
           ,   ja  = "スパイダーシルクのローブ(ノーマル)を生産する"
           }
 , [111] = {
@@ -1095,7 +1001,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Makko-Essenzrune"
           ,   fr  = "Acquérez une rune d'essence Makko "
           ,   es  = "Adquiere una runa de esencia Makko"
-          ,   it  = "Acquire Makko Essence Rune"
           ,   ru  = "Добыть руну сущности Макко"
           ,   ja  = "マッコの本質ルーンを手に入れる"
           }
@@ -1106,7 +1011,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un glyphe fort magique avec Ta "
           ,   es  = "Fabrica un glifo fuerte de magia con Ta"
           ,   it  = "Craft Strong Glyph of Magicka"
-          ,   ru  = "Craft Strong Glyph of Magicka With Ta"
           ,   ja  = "ターの強力なグリフ(マジカ)を生産する"
           }
 , [113] = {
@@ -1125,7 +1029,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un glyphe majeur vital avec Ta "
           ,   es  = "Fabrica un glifo superior de vida con Ta"
           ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft Greater Glyph of Health With Ta"
           ,   ja  = "ターの希少なグリフ(体力)を生産する"
           }
 , [115] = {
@@ -1133,9 +1036,7 @@ LANG_DB = {
           ,   en  = "Craft Grand Glyph of Magicka With Ta"
           ,   de  = "Stellt mit einer Ta-Rune eine gewaltige Glyphe der Magicka her"
           ,   fr  = "Fabriquez un glyphe de Magie grandiose avec Ta "
-          ,   es  = "Craft Grand Glyph of Magicka With Ta"
           ,   it  = "Craft Grand Glyph of Magicka"
-          ,   ru  = "Craft Grand Glyph of Magicka With Ta"
           ,   ja  = "ターの至高のグリフ(マジカ)を生産する"
           }
 , [116] = {
@@ -1154,7 +1055,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Oko-Essenzrune"
           ,   fr  = "Acquérez une rune d'essence Oko "
           ,   es  = "Adquiere una runa de esencia Oko"
-          ,   it  = "Acquire Oko Essence Rune"
           ,   ru  = "Добыть руну сущности Око"
           ,   ja  = "オコの本質ルーンを手に入れる"
           }
@@ -1164,7 +1064,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Kedeko-Machtrune"
           ,   fr  = "Acquérez une rune de puissance Kédéko "
           ,   es  = "Adquiere una runa de potencia Kedeko"
-          ,   it  = "Acquire Kedeko Potency Rune"
           ,   ru  = "Добыть руну силы Кедеко"
           ,   ja  = "ケデコの効力ルーンを手に入れる"
           }
@@ -1175,7 +1074,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un glyphe splendide vital avec Ta "
           ,   es  = "Fabrica un glifo espléndido de vida con Ta"
           ,   it  = "Craft Splendid Glyph of Health"
-          ,   ru  = "Craft Splendid Glyph of Health With Ta"
           ,   ja  = "ターの究極のグリフ(体力)を生産する"
           }
 , [120] = {
@@ -1185,7 +1083,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un baudrier en fil d'argent normal "
           ,   es  = "Fabrica una banda de hilo de plata normal"
           ,   it  = "Craft Silverweave Sash"
-          ,   ru  = "Craft Normal Silverweave Sash"
           ,   ja  = "シルバーウィーブのサッシュ(ノーマル)を生産する"
           }
 , [121] = {
@@ -1195,7 +1092,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un collier en platine "
           ,   es  = "Fabrica un collar de platino"
           ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft a Platinum Necklace"
           ,   ja  = "プラチナのネックレスを作る"
           }
 , [122] = {
@@ -1205,7 +1101,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un glyphe monumental vigoureux avec Ta "
           ,   es  = "Fabrica un glifo monumental de aguante con Ta"
           ,   it  = "Craft Monumental Glyph of Stamina"
-          ,   ru  = "Craft Monumental Glyph of Stamina With Ta"
           ,   ja  = "ターの伝説のグリフ(スタミナ)を生産する"
           }
 , [123] = {
@@ -1214,7 +1109,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Ta-Aspektrune"
           ,   fr  = "Acquérez une rune d'aspect Ta "
           ,   es  = "Adquiere una runa de aspecto Ta"
-          ,   it  = "Acquire Ta Aspect Rune"
           ,   ru  = "Добыть руну аспекта Та"
           ,   ja  = "ターの品質ルーンを手に入れる"
           }
@@ -1225,7 +1119,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un glyphe de Magie superbe avec Ta "
           ,   es  = "Fabrica un glifo soberbio de magia con Ta"
           ,   it  = "Craft Superb Glyph of Magicka"
-          ,   ru  = "Craft Superb Glyph of Magicka With Ta"
           ,   ja  = "ターの最上のグリフ(マジカ)を生産する"
           }
 , [125] = {
@@ -1244,7 +1137,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Oko-Essenzrune"
           ,   fr  = "Acquérez une rune d'essence Oko "
           ,   es  = "Adquiere una runa de esencia Oko"
-          ,   it  = "Acquire Oko Essence Rune"
           ,   ru  = "Добыть руну сущности Око"
           ,   ja  = "オコの本質ルーンを手に入れる"
           }
@@ -1274,7 +1166,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un anneau en étain "
           ,   es  = "Fabrica un anillo de peltre"
           ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft a Pewter Ring"
           ,   ja  = "ピューターの指輪を作る"
           }
 , [130] = {
@@ -1284,7 +1175,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un collier en étain "
           ,   es  = "Fabrica un collar de peltre"
           ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft a Pewter Necklace"
           ,   ja  = "ピューターのネックレスを作る"
           }
 , [131] = {
@@ -1294,7 +1184,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un anneau en cuivre "
           ,   es  = "Fabrica un anillo de cobre"
           ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft a Copper Ring"
           ,   ja  = "銅の指輪を作る"
           }
 , [132] = {
@@ -1304,7 +1193,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un collier en cuivre "
           ,   es  = "Fabrica un collar de cobre"
           ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft a Copper Necklace"
           ,   ja  = "銅のネックレスを作る"
           }
 , [133] = {
@@ -1314,7 +1202,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un collier d'argent "
           ,   es  = "Fabrica un collar de plata"
           ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft a Silver Necklace"
           ,   ja  = "銀のネックレスを作る"
           }
 , [134] = {
@@ -1324,7 +1211,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un anneau d'argent "
           ,   es  = "Fabrica un anillo de plata"
           ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft a Silver Ring"
           ,   ja  = "銀の指輪を作る"
           }
 , [135] = {
@@ -1373,7 +1259,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Wasserhyazinthe"
           ,   fr  = "Acquérez de la jacinthe d'eau "
           ,   es  = "Adquiere jacinto de agua"
-          ,   it  = "Acquire Water Hyacinth"
           ,   ru  = "Добыть водный гиацинт"
           ,   ja  = "ホテイアオイを手に入れる"
           }
@@ -1394,7 +1279,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un collier en platine "
           ,   es  = "Fabrica un collar de platino"
           ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft a Platinum Necklace"
           ,   ja  = "プラチナのネックレスを作る"
           }
 , [142] = {
@@ -1404,7 +1288,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un anneau en platine "
           ,   es  = "Fabrica un anillo de platino"
           ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft a Platinum Ring"
           ,   ja  = "プラチナの指輪を作る"
           }
 , [143] = {
@@ -1441,7 +1324,6 @@ LANG_DB = {
           ,   de  = "Stellt eine Ofenkartoffel her"
           ,   fr  = "Préparez une pomme de terre au four "
           ,   es  = "Preparæ patata asada"
-          ,   it  = "Craft Baked Potato"
           ,   ru  = "Создать — печеный картофель"
           ,   ja  = "ベイクドポテトを生産する"
           }
@@ -1452,7 +1334,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez une épée longue en mercure normale "
           ,   es  = "Fabrica un mandoble de azogue normal"
           ,   it  = "Craft Quicksilver Greatsword"
-          ,   ru  = "Craft Normal Quicksilver Greatsword"
           ,   ja  = "水銀の大剣(ノーマル)を生産する"
           }
 , [148] = {
@@ -1461,7 +1342,6 @@ LANG_DB = {
           ,   de  = "Stellt etwas Rotweizenbier her"
           ,   fr  = "Préparez une bière de seigle rousse "
           ,   es  = "Preparæ cerveza roja de centeno"
-          ,   it  = "Craft Red Rye Beer"
           ,   ru  = "Создать — красное ржаное пиво"
           ,   ja  = "赤いライ麦ビールを生産する"
           }
@@ -1471,7 +1351,6 @@ LANG_DB = {
           ,   de  = "Stellt etwas Zitrusblütenmazte her"
           ,   fr  = "Préparez un mazté à la fleur de citronnier "
           ,   es  = "Preparæ Mazte de azahar"
-          ,   it  = "Craft Lemon Flower Mazte"
           ,   ru  = "Создать — лимонный мацт"
           ,   ja  = "レモンフラワーのマッツェを生産する"
           }
@@ -1481,7 +1360,6 @@ LANG_DB = {
           ,   de  = "Stellt einige Bratäpfel her"
           ,   fr  = "Préparez des pommes cuites "
           ,   es  = "Preparæ manzanas asadas"
-          ,   it  = "Craft Baked Apples"
           ,   ru  = "Создать — печеные яблоки"
           ,   ja  = "焼きリンゴを生産する"
           }
@@ -1501,7 +1379,6 @@ LANG_DB = {
           ,   de  = "Stellt etwas Grillmais her"
           ,   fr  = "Préparez un maïs rôti "
           ,   es  = "Preparæ maíz tostado"
-          ,   it  = "Craft Roast Corn"
           ,   ru  = "Создать — жареная кукуруза"
           ,   ja  = "焼きトウモロコシを生産する"
           }
@@ -1511,7 +1388,6 @@ LANG_DB = {
           ,   de  = "Stellt etwas Nussbraunale her"
           ,   fr  = "Préparez une bière brune à la noisette "
           ,   es  = "Preparæ cerveza negra con avellanas"
-          ,   it  = "Craft Nut Brown Ale"
           ,   ru  = "Создать — темный ореховый эль"
           ,   ja  = "ナット・ブラウンエールを生産する"
           }
@@ -1522,7 +1398,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des spallières en acier normales "
           ,   es  = "Fabrica unos espaldarones de acero normales"
           ,   it  = "Craft Steel Pauldron"
-          ,   ru  = "Craft Normal Steel Pauldron"
           ,   ja  = "鋼鉄のポールドロン(ノーマル)を生産する"
           }
 , [155] = {
@@ -1531,7 +1406,6 @@ LANG_DB = {
           ,   de  = "Stellt etwas Sirupbeerentee her"
           ,   fr  = "Préparez un thé de mélassine "
           ,   es  = "Preparæ té de bayamelaza"
-          ,   it  = "Craft Treacleberry Tea"
           ,   ru  = "Создать — ягодный чай с патокой"
           ,   ja  = "トリークルベリーティーを生産する"
           }
@@ -1541,7 +1415,6 @@ LANG_DB = {
           ,   de  = "Stellt einige Kürbissamen mit Knoblauch her"
           ,   fr  = "Préparez des graines de citrouille à l'ail "
           ,   es  = "Preparæ semillas de calabaza con ajo"
-          ,   it  = "Craft Garlic Pumpkin Seeds"
           ,   ru  = "Создать — тыквенные семена с чесноком"
           ,   ja  = "カボチャの種のニンニク炒めを生産する"
           }
@@ -1551,7 +1424,6 @@ LANG_DB = {
           ,   de  = "Stellt eine bretonische Fleischwurst her"
           ,   fr  = "Préparez une saucisse de porc brétonne "
           ,   es  = "Preparæ Salchicha de cerdo bretona"
-          ,   it  = "Craft Breton Pork Sausage"
           ,   ru  = "Создать — бретонская свиная колбаса"
           ,   ja  = "ブレトンのポークソーセージを生産する"
           }
@@ -1561,7 +1433,6 @@ LANG_DB = {
           ,   de  = "Stellt etwas Ingwerbier her"
           ,   fr  = "Préparez une bière de froment au gingembre "
           ,   es  = "Preparæ Cerveza de trigo y jengibre"
-          ,   it  = "Craft Ginger Wheat Beer"
           ,   ru  = "Создать — пшенично-имбирное пиво"
           ,   ja  = "ジンジャービールを生産する"
           }
@@ -1571,7 +1442,6 @@ LANG_DB = {
           ,   de  = "Stellt eine Redoran-Pfeffermelone her"
           ,   fr  = "Préparez un melon poivré de Rédoran "
           ,   es  = "Preparæ Melón a la pimienta Redoran"
-          ,   it  = "Craft Redoran Peppered Melon"
           ,   ru  = "Создать — редоранская перченая дыня"
           ,   ja  = "レドランのペッパードメロンを生産する"
           }
@@ -1581,7 +1451,6 @@ LANG_DB = {
           ,   de  = "Stellt etwas Bitterzitrustee her"
           ,   fr  = "Préparez un infusion de citron amer "
           ,   es  = "Preparæ Té de limón amargo"
-          ,   it  = "Craft Bitterlemon Tea"
           ,   ru  = "Создать — горький чай с лимоном"
           ,   ja  = "ビターレモンティーを生産する"
           }
@@ -1591,7 +1460,6 @@ LANG_DB = {
           ,   de  = "Stellt etwas Maormertee her"
           ,   fr  = "Préparez un thé maormer "
           ,   es  = "Preparæ Té maormer"
-          ,   it  = "Craft Maormer Tea"
           ,   ru  = "Создать — маормерский чай"
           ,   ja  = "マオマーティーを生産する"
           }
@@ -1601,7 +1469,6 @@ LANG_DB = {
           ,   de  = "Stellt einige Sturmfeste-Backbananen her"
           ,   fr  = "Préparez des bananes cuites de Fort-tempête "
           ,   es  = "Preparæ plátanos asados de Fuertormenta"
-          ,   it  = "Craft Stormhold Baked Bananas"
           ,   ru  = "Создать — печеные бананы по-стормхолдски"
           ,   ja  = "ストームホールドの焼きバナナを生産する"
           }
@@ -1612,7 +1479,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez des grèves dwemer normales "
           ,   es  = "Fabrica unas grebas de acero enano normales"
           ,   it  = "Craft Dwarven Greaves"
-          ,   ru  = "Craft Normal Dwarven Greaves"
           ,   ja  = "ドワーフのグリーヴ(ノーマル)を生産する"
           }
 , [164] = {
@@ -1621,7 +1487,6 @@ LANG_DB = {
           ,   de  = "Stellt etwas Doppelsturmtee her"
           ,   fr  = "Préparez un thé des deux zéphyrs "
           ,   es  = "Preparæ té de Dos-Céfiros"
-          ,   it  = "Craft Two-Zephyr Tea"
           ,   ru  = "Создать — чай «Два зефира»"
           ,   ja  = "トゥーゼファーティーを生産する"
           }
@@ -1631,7 +1496,6 @@ LANG_DB = {
           ,   de  = "Stellt eine Mammutrüsselpastete her"
           ,   fr  = "Préparez une tourte au groin de mammouth "
           ,   es  = "Preparæ pastel de trompa de mamut"
-          ,   it  = "Craft Mammoth Snout Pie"
           ,   ru  = "Создать — пирог с хоботом мамонта"
           ,   ja  = "マンモスの鼻のパイを生産する"
           }
@@ -1641,7 +1505,6 @@ LANG_DB = {
           ,   de  = "Stellt etwas Ätherischen Tee her"
           ,   fr  = "Préparez un thé éthérien "
           ,   es  = "Preparæ té aeterio"
-          ,   it  = "Craft Aetherial Tea"
           ,   ru  = "Создать — этерический чай"
           ,   ja  = "エセリアルティーを生産する"
           }
@@ -1651,7 +1514,6 @@ LANG_DB = {
           ,   de  = "Stellt eine gefüllte Schweinelende mit Hirse her"
           ,   fr  = "Préparez un filet-mignon de porc farci au millet "
           ,   es  = "Preparæ lomo de cerdo relleno de mijo"
-          ,   it  = "Craft Millet-Stuffed Pork Loin"
           ,   ru  = "Создать — свиная вырезка с начинкой из пшена"
           ,   ja  = "雑穀の豚腰肉包み焼きを生産する"
           }
@@ -1661,7 +1523,6 @@ LANG_DB = {
           ,   de  = "Stellt etwas Lilmoth-Vettelfisch mit Knoblauch her"
           ,   fr  = "Préparez une anguille des harfreuses à l'ail de Lilmoth "
           ,   es  = "Preparæ pez bruja al ajo de Lilmoth"
-          ,   it  = "Craft Lilmoth Garlic Hagfish"
           ,   ru  = "Создать — пиявкорот с чесноком по-лилмотски"
           ,   ja  = "リルモスのニンニクのヌタウナギ焼きを生産する"
           }
@@ -1671,7 +1532,6 @@ LANG_DB = {
           ,   de  = "Stellt etwas Rabenvetteltonikum her"
           ,   fr  = "Préparez un tonique de harfreuse "
           ,   es  = "Preparæ tónico de bruja cuervo"
-          ,   it  = "Craft Hagraven's Tonic"
           ,   ru  = "Создать — тоник ворожеи"
           ,   ja  = "ハグレイヴンのトニックを生産する"
           }
@@ -1702,7 +1562,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un arc en érable normal "
           ,   es  = "Fabrica un arco de arce normal"
           ,   it  = "Craft Maple Bow"
-          ,   ru  = "Craft Normal Maple Bow"
           ,   ja  = "カエデの弓(ノーマル)を生産する"
           }
 , [173] = {
@@ -1712,7 +1571,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bouclier en érable normal "
           ,   es  = "Fabrica un escudo de arce normal"
           ,   it  = "Craft Maple Shield"
-          ,   ru  = "Craft Normal Maple Shield"
           ,   ja  = "カエデの盾(ノーマル)を生産する"
           }
 , [174] = {
@@ -1722,7 +1580,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un arc en chêne normal "
           ,   es  = "Fabrica un arco de roble normal"
           ,   it  = "Craft Oak Bow"
-          ,   ru  = "Craft Normal Oak Bow"
           ,   ja  = "カシの弓(ノーマル)を生産する"
           }
 , [175] = {
@@ -1732,7 +1589,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bouclier normal "
           ,   es  = "Fabrica un escudo de roble normal"
           ,   it  = "Craft Oak Shield"
-          ,   ru  = "Craft Normal Oak Shield"
           ,   ja  = "カシの盾(ノーマル)を生産する"
           }
 , [176] = {
@@ -1742,7 +1598,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bouclier en hêtre normal "
           ,   es  = "Fabrica un escudo de haya normal"
           ,   it  = "Craft Beech Shield"
-          ,   ru  = "Craft Normal Beech Shield"
           ,   ja  = "ブナノキの盾(ノーマル)を生産する"
           }
 , [177] = {
@@ -1752,7 +1607,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un arc en hêtre normal "
           ,   es  = "Fabrica un arco de haya normal"
           ,   it  = "Craft Beech Bow"
-          ,   ru  = "Craft Normal Beech Bow"
           ,   ja  = "ブナノキの弓(ノーマル)を生産する"
           }
 , [178] = {
@@ -1762,7 +1616,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bâton de rétablissement en noyer normal "
           ,   es  = "Fabrica una vara restauradora de nogal normal"
           ,   it  = "Craft Hickory Restoration Staff"
-          ,   ru  = "Craft Normal Hickory Restoration Staff"
           ,   ja  = "ヒッコリーの回復の杖(ノーマル)を生産する"
           }
 , [179] = {
@@ -1772,7 +1625,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bouclier en noyer normal "
           ,   es  = "Fabrica un escudo de nogal normal"
           ,   it  = "Craft Hickory Shield"
-          ,   ru  = "Craft Normal Hickory Shield"
           ,   ja  = "ヒッコリーの盾(ノーマル)を生産する"
           }
 , [180] = {
@@ -1782,7 +1634,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bouclier en if normal "
           ,   es  = "Fabrica un escudo de tejo normal"
           ,   it  = "Craft Yew Shield"
-          ,   ru  = "Craft Normal Yew Shield"
           ,   ja  = "イチイの盾(ノーマル)を生産する"
           }
 , [181] = {
@@ -1792,7 +1643,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bâton de rétablissement en if normal "
           ,   es  = "Fabrica una vara restauradora de tejo normal"
           ,   it  = "Craft Yew Restoration Staff"
-          ,   ru  = "Craft Normal Yew Restoration Staff"
           ,   ja  = "イチイの回復の杖(ノーマル)を生産する"
           }
 , [182] = {
@@ -1802,7 +1652,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bâton de glace en bouleau normal "
           ,   es  = "Fabrica una vara glaciar de abedul normal"
           ,   it  = "Craft Birch Ice Staff"
-          ,   ru  = "Craft Normal Birch Ice Staff"
           ,   ja  = "カバノキの氷の杖(ノーマル)を生産する"
           }
 , [183] = {
@@ -1812,7 +1661,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bâton infernal en bouleau normal "
           ,   es  = "Fabrica una vara infernal de abedul normal"
           ,   it  = "Craft Birch Inferno Staff"
-          ,   ru  = "Craft Normal Birch Inferno Staff"
           ,   ja  = "カバノキの業火の杖(ノーマル)を生産する"
           }
 , [184] = {
@@ -1822,7 +1670,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bâton de foudre en bouleau normal "
           ,   es  = "Fabrica una vara eléctrica de abedul normal"
           ,   it  = "Craft Birch Lightning Staff"
-          ,   ru  = "Craft Normal Birch Lightning Staff"
           ,   ja  = "カバノキの稲妻の杖(ノーマル)を生産する"
           }
 , [185] = {
@@ -1832,7 +1679,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bouclier en frêne normal "
           ,   es  = "Fabrica un escudo de fresno normal"
           ,   it  = "Craft Ash Shield"
-          ,   ru  = "Craft Normal Ash Shield"
           ,   ja  = "アッシュの盾(ノーマル)を生産する"
           }
 , [186] = {
@@ -1842,7 +1688,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bâton de rétablissement en frêne normal "
           ,   es  = "Fabrica una vara restauradora de fresno normal"
           ,   it  = "Craft Ash Restoration Staff"
-          ,   ru  = "Craft Normal Ash Restoration Staff"
           ,   ja  = "アッシュの回復の杖(ノーマル)を生産する"
           }
 , [187] = {
@@ -1852,7 +1697,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bâton de glace en acajou normal "
           ,   es  = "Fabrica una vara glaciar de caoba normal"
           ,   it  = "Craft Mahogany Ice Staff"
-          ,   ru  = "Craft Normal Mahogany Ice Staff"
           ,   ja  = "マホガニーの氷の杖(ノーマル)を生産する"
           }
 , [188] = {
@@ -1862,7 +1706,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bâton infernal en acajou normal "
           ,   es  = "Fabrica una vara infernal de caoba normal"
           ,   it  = "Craft Mahogany Inferno Staff"
-          ,   ru  = "Craft Normal Mahogany Inferno Staff"
           ,   ja  = "マホガニーの業火の杖(ノーマル)を生産する"
           }
 , [189] = {
@@ -1872,7 +1715,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bâton de foudre en acajou normal "
           ,   es  = "Fabrica una vara eléctrica de caoba normal"
           ,   it  = "Craft Mahogany Lightning Staff"
-          ,   ru  = "Craft Normal Mahogany Lightning Staff"
           ,   ja  = "マホガニーの稲妻の杖(ノーマル)を生産する"
           }
 , [190] = {
@@ -1882,7 +1724,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bouclier en bois de nuit normal "
           ,   es  = "Fabrica un escudo de nocteca normal"
           ,   it  = "Craft Nightwood Shield"
-          ,   ru  = "Craft Normal Nightwood Shield"
           ,   ja  = "ナイトウッドの盾(ノーマル)を生産する"
           }
 , [191] = {
@@ -1892,7 +1733,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un arc en bois de nuit normal "
           ,   es  = "Fabrica un arco de nocteca normal"
           ,   it  = "Craft Nightwood Bow"
-          ,   ru  = "Craft Normal Nightwood Bow"
           ,   ja  = "ナイトウッドの弓(ノーマル)を生産する"
           }
 , [192] = {
@@ -1902,7 +1742,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bouclier en frêne roux normal "
           ,   es  = "Fabrica un escudo de fresno rubí normal"
           ,   it  = "Craft Ruby Ash Shield"
-          ,   ru  = "Craft Normal Ruby Ash Shield"
           ,   ja  = "ルビーアッシュの盾(ノーマル)を生産する"
           }
 , [193] = {
@@ -1912,7 +1751,6 @@ LANG_DB = {
           ,   fr  = "Fabriquez un bâton de rétablissement en frêne roux normal "
           ,   es  = "Fabrica una vara restauradora de fresno rubí normal"
           ,   it  = "Craft Ruby Ash Restoration Staff"
-          ,   ru  = "Craft Normal Ruby Ash Restoration Staff"
           ,   ja  = "ルビーアッシュの回復の杖(ノーマル)を生産する"
           }
 , [194] = {

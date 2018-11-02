@@ -302,8 +302,8 @@ function EntriesMatch(a,b)
         if lang ~= "it" then
                         -- Strip trailing counts so that
                         -- "Craft Ring: 0/3" and "Craft Ring: 0/1" match.
-            local aa = colon_strip(a[lang])
-            local bb = colon_strip(b[lang])
+            local aa = colon_strip(a[lang] or a.en)
+            local bb = colon_strip(b[lang] or b.en)
             if aa ~= bb then return false end
         end
     end
@@ -320,7 +320,10 @@ function colon_strip(text)
                         -- Apparently safe for daily crafting writs, though:
                         -- no daily crafting writ conditions put anything
                         -- but counts after a colon.
-    return text:gsub(" ?:.*","")
+  return text:gsub(" ?:.*","")
+  -- local r = text:gsub(":.*","") -- %s*
+  --   r = r:gsub(" *$","")
+  --   return r
 end
 
 --[[
