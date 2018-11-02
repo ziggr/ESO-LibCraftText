@@ -17,13 +17,20 @@ EN_KEYS = {}            -- key   = "Blacksmithing Writ"
 LANG_LIST = { "en", "de", "fr", "es", "it", "ru", "ja" }
 
                         -- For less typing
-local bs = CRAFTING_TYPE_BLACKSMITHING   or 1
-local cl = CRAFTING_TYPE_CLOTHIER        or 2
-local en = CRAFTING_TYPE_ENCHANTING      or 3
-local al = CRAFTING_TYPE_ALCHEMY         or 4
-local pr = CRAFTING_TYPE_PROVISIONING    or 5
-local ww = CRAFTING_TYPE_WOODWORKING     or 6
-local jw = CRAFTING_TYPE_JEWELRYCRAFTING or 7
+CRAFTING_TYPE_BLACKSMITHING   = CRAFTING_TYPE_BLACKSMITHING   or 1
+CRAFTING_TYPE_CLOTHIER        = CRAFTING_TYPE_CLOTHIER        or 2
+CRAFTING_TYPE_ENCHANTING      = CRAFTING_TYPE_ENCHANTING      or 3
+CRAFTING_TYPE_ALCHEMY         = CRAFTING_TYPE_ALCHEMY         or 4
+CRAFTING_TYPE_PROVISIONING    = CRAFTING_TYPE_PROVISIONING    or 5
+CRAFTING_TYPE_WOODWORKING     = CRAFTING_TYPE_WOODWORKING     or 6
+CRAFTING_TYPE_JEWELRYCRAFTING = CRAFTING_TYPE_JEWELRYCRAFTING or 7
+bs = CRAFTING_TYPE_BLACKSMITHING
+cl = CRAFTING_TYPE_CLOTHIER
+en = CRAFTING_TYPE_ENCHANTING
+al = CRAFTING_TYPE_ALCHEMY
+pr = CRAFTING_TYPE_PROVISIONING
+ww = CRAFTING_TYPE_WOODWORKING
+jw = CRAFTING_TYPE_JEWELRYCRAFTING
 
 CRAFTING_TYPE_ABBREV = {
       [bs] = "BS"
@@ -163,11 +170,11 @@ function ImportSavedChar(char_name, saved_chars)
 
 
     for quest_index,_ in pairs(saved_chars.quests) do
-        ImportSavedCharQuests(char_name, saved_chars, quest_index)
+        ImportSavedCharQuestConditions(char_name, saved_chars, quest_index)
     end
 end
 
-function ImportSavedCharQuests(char_name, saved_chars, quest_index)
+function ImportSavedCharQuestConditions(char_name, saved_chars, quest_index)
     local quest_title = saved_chars.quests[quest_index]
     local crafting_type = DAILY_QUEST_TITLE_TO_CRAFTING_TYPE[quest_title.en]
     if not crafting_type then
@@ -190,11 +197,10 @@ function ImportSavedCharQuests(char_name, saved_chars, quest_index)
         return
     end
 
-    local key_fodder    = nil
     local ct_abbrev     = CRAFTING_TYPE_ABBREV[crafting_type]:upper()
     local alliance      = saved_chars.alliance
-    if not alliance then
-        Warn(string.format("char:%20s  skipping quest:%d %s %s. Missing alliance."
+    if (crafting_type == pr) and (not alliance) then
+        Warn(string.format("char:%20s  skipping quest:%d %s %s. Missing alliance for Provisioning."
         , char_name
         , quest_index
         , quest_title.en
@@ -217,25 +223,104 @@ function ImportSavedCharQuests(char_name, saved_chars, quest_index)
 
     local key_fodder = nil
     if (crafting_type == CRAFTING_TYPE_PROVISIONING and skill_rank <= 3) then
-        key_fodder = string.format("DAILY_COND_%s_%02d_%s_"
+        key_fodder = string.format("$DAILY_COND_%s_%02d_%s_"
                                   , ct_abbrev
                                   , skill_rank
                                   , alliance
                                   )
-print("food")
     else
-        key_fodder = string.format("DAILY_COND_%s_%02d_"
+        key_fodder = string.format("$DAILY_COND_%s_%02d_"
                                   , ct_abbrev
                                   , skill_rank
-                                  , alliance
                                   )
     end
 
-    Warn(string.format("Hiya! %-20s %s  %s"
-                      , char_name
-                      , key_fodder
-                      , quest_title.en
-                      ))
+    local conditions = saved_chars.conditions[quest_index]
+    for step_i, steps in pairs(conditions) do
+        for cond_i,condition in pairs(steps) do
+            local key = ImportSavedCharQuestCondition(key_fodder, condition)
+            if key then
+-- Warn(string.format("%-20s %-22s  %s"
+--                   , char_name
+--                   , key
+--                   , DB[key].en
+--                   ))
+            end
+        end
+    end
+end
+
+function ImportSavedCharQuestCondition(key_fodder, condition)
+    local pree_key = PrexistingCondition(key_fodder, condition)
+    if pree_key then
+        Warn(string.format( "Skipping previously known %s %s"
+                          , pree_key
+                          , tostring(condition and colon_strip(condition.en))
+                          ))
+        return nil
+    end
+
+    local slot = NextUnusedConditionIndex(key_fodder)
+    local key  = ConditionKey(key_fodder, slot)
+    local entry = { ["key"] = key }
+    for i,lang in ipairs(LANG_LIST) do
+        entry[lang] = colon_strip(condition[lang])
+    end
+    DB[key] = entry
+    return key
+end
+
+function ConditionKey(key_fodder, i)
+    return string.format("%s%02d", key_fodder, i)
+end
+
+function PrexistingCondition(key_fodder, condition)
+    for i = 1,99 do
+        local key   = ConditionKey(key_fodder,i)
+        local entry = DB[key]
+        if EntriesMatch(condition, entry) then return key end
+    end
+end
+
+function NextUnusedConditionIndex(key_fodder)
+    for i = 1,99 do
+        local key   = ConditionKey(key_fodder,i)
+        local entry = DB[key]
+        if not entry then return i end
+    end
+    Warn("No unused condition for "..key_fodder)
+    return nil
+end
+
+-- Do two entries match? All 6 supported languages?
+function EntriesMatch(a,b)
+                        -- nil vs. nil
+    if not (a or b) then return true end
+    if (a and not b) or (b and not a) then return false end
+
+    for i, lang in ipairs(LANG_LIST) do
+        if lang ~= "it" then
+                        -- Strip trailing counts so that
+                        -- "Craft Ring: 0/3" and "Craft Ring: 0/1" match.
+            local aa = colon_strip(a[lang])
+            local bb = colon_strip(b[lang])
+            if aa ~= bb then return false end
+        end
+    end
+    return true
+end
+
+-- Remove the ": 0 / 1" stuff at the end of a crafting request.
+-- "Craft Normal Dwarven Greaves: 0 / 1" ==> "Craft Normal Dwarven Greaves"
+function colon_strip(text)
+    if not text then return text end
+                        -- This regex is too aggressive, will clear out
+                        -- words after colon line "Trait: arcane".
+                        -- Do not use on split lines from sealed master writs.
+                        -- Apparently safe for daily crafting writs, though:
+                        -- no daily crafting writ conditions put anything
+                        -- but counts after a colon.
+    return text:gsub(" ?:.*","")
 end
 
 --[[
