@@ -1,4 +1,4 @@
-.PHONY: put zip lang test
+.PHONY: put zip lang test gentest
 
 put:
 	rsync -vrt --delete --exclude=.git --exclude=l10n-unofficial --exclude=published . /Volumes/Elder\ Scrolls\ Online/live/AddOns/LibCraftText
@@ -29,3 +29,9 @@ lang:
 test:
 	lua test/test_parse.lua --repeat 7
 
+gentest: test/gen_test.data.lua
+	lua test/test_gen.lua
+
+
+test/gen_test.data.lua: test/gen_test.lua data/lang_db.lua
+	lua test/gen_test.lua

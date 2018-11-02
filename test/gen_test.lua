@@ -70,9 +70,6 @@ function C.sorted_keys(t)
 end
 
 function C.WriteGenData()
-                        -- Nothing new to write? Leave file untouched.
-    if C.new_cond_ct <= 0 then return end
-
     local FILE = assert(io.open(GENFILE, "w"))
     FILE:write("COND_TEXT_FODDER = {\n")
     local comma = " "
