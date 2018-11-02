@@ -1,286 +1,286 @@
 COND_TEXT_FODDER = {
-  { input="Acquire Alkahest"                                , }
-, { input="Acquire Blessed Thistle"                         , }
-, { input="Acquire Bugloss"                                 , }
-, { input="Acquire Deni Essence Rune"                       , }
-, { input="Acquire Idode Potency Rune"                      , }
-, { input="Acquire Jayde Potency Rune"                      , }
-, { input="Acquire Jode Potency Rune"                       , }
-, { input="Acquire Kedeko Potency Rune"                     , }
-, { input="Acquire Lady's Smock"                            , }
-, { input="Acquire Lorkhan's Tears"                         , }
-, { input="Acquire Makko Essence Rune"                      , }
-, { input="Acquire Makkoma Essence Rune"                    , }
-, { input="Acquire Mountain Flower"                         , }
-, { input="Acquire Mudcrab Chitin"                          , }
-, { input="Acquire Mudcrab Chitin: 3 / 3"                , }
-, { input="Acquire Nirnroot"                                , }
-, { input="Acquire Ode Potency Rune"                        , }
-, { input="Acquire Oko Essence Rune"                        , }
-, { input="Acquire Pristine Water"                          , }
-, { input="Acquire Purified Water"                          , }
-, { input="Acquire Rede Potency Rune"                       , }
-, { input="Acquire Spider Egg"                              , }
-, { input="Acquire Ta Aspect Rune"                          , }
-, { input="Acquire Ta Aspect Rune: 1 / 1"                , }
-, { input="Acquire Violet Coprinus"                         , }
-, { input="Acquire Water Hyacinth"                          , }
-, { input="Acquire Wormwood"                                , }
-, { input="Brewers and Cooks Can Provide Recipes"           , }
-, { input="Craft Aetherial Tea"                             , }
-, { input="Craft Baked Apples"                              , }
-, { input="Craft Baked Potato"                              , }
-, { input="Craft Barley Nectar"                             , }
-, { input="Craft Battaglir Chowder"                         , }
-, { input="Craft Bitterlemon Tea"                           , }
-, { input="Craft Bog-Iron Ale"                              , }
-, { input="Craft Breton Pork Sausage"                       , }
-, { input="Craft Carrot Soup"                               , }
-, { input="Craft Chicken Breast"                            , }
-, { input="Craft Damage Magicka Poison IX"                  , }
-, { input="Craft Damage Stamina Poison IX"                  , }
-, { input="Craft Drain Health Poison IX"                    , }
-, { input="Craft Dram of Ravage Magicka"                    , }
-, { input="Craft Dram of Stamina"                           , }
-, { input="Craft Elixir of Ravage Magicka"                  , }
-, { input="Craft Elixir of Stamina"                         , }
-, { input="Craft Eltheric Hooch"                            , }
-, { input="Craft Essence of Ravage Health"                  , }
-, { input="Craft Essence of Stamina"                        , }
-, { input="Craft Essence of Stamina: 0 / 1"              , }
-, { input="Craft Firsthold Fruit and Cheese Plate"          , }
-, { input="Craft Firsthold Fruit and Cheese Plate: 0 / 1", }
-, { input="Craft Garlic Pumpkin Seeds"                      , }
-, { input="Craft Ginger Wheat Beer"                         , }
-, { input="Craft Golden Lager"                              , }
-, { input="Craft Grand Glyph of Magicka With Ta"            , }
-, { input="Craft Grand Glyph of Stamina With Ta"            , }
-, { input="Craft Grandpa's Bedtime Tonic"                   , }
-, { input="Craft Greater Glyph of Health With Ta"           , }
-, { input="Craft Greater Glyph of Magicka With Ta"          , }
-, { input="Craft Hagraven's Tonic"                          , }
-, { input="Craft Jerall View Inn Carrot Cake"               , }
-, { input="Craft Lemon Flower Mazte"                        , }
-, { input="Craft Lilmoth Garlic Hagfish"                    , }
-, { input="Craft Mammoth Snout Pie"                         , }
-, { input="Craft Maormer Tea"                               , }
-, { input="Craft Mazte"                                     , }
-, { input="Craft Millet-Stuffed Pork Loin"                  , }
-, { input="Craft Minor Glyph of Health With Ta"             , }
-, { input="Craft Minor Glyph of Stamina With Ta"            , }
-, { input="Craft Moderate Glyph of Magicka With Ta"         , }
-, { input="Craft Monumental Glyph of Health With Ta"        , }
-, { input="Craft Monumental Glyph of Stamina With Ta"       , }
-, { input="Craft Muthsera's Remorse"                        , }
-, { input="Craft Muthsera's Remorse: 0 / 1"              , }
-, { input="Craft Nibenese Garlic Carrots"                   , }
-, { input="Craft Normal Ancestor Silk Breeches"             , }
-, { input="Craft Normal Ancestor Silk Epaulets"             , }
-, { input="Craft Normal Ancestor Silk Robe"                 , }
-, { input="Craft Normal Ash Bow"                            , }
-, { input="Craft Normal Ash Restoration Staff"              , }
-, { input="Craft Normal Ash Shield"                         , }
-, { input="Craft Normal Beech Bow"                          , }
-, { input="Craft Normal Beech Ice Staff"                    , }
-, { input="Craft Normal Beech Inferno Staff"                , }
-, { input="Craft Normal Beech Lightning Staff"              , }
-, { input="Craft Normal Beech Shield"                       , }
-, { input="Craft Normal Birch Ice Staff"                    , }
-, { input="Craft Normal Birch Inferno Staff"                , }
-, { input="Craft Normal Birch Lightning Staff"              , }
-, { input="Craft Normal Birch Restoration Staff"            , }
-, { input="Craft Normal Birch Shield"                       , }
-, { input="Craft Normal Calcinium Cuirass"                  , }
-, { input="Craft Normal Calcinium Gauntlets"                , }
-, { input="Craft Normal Calcinium Greatsword"               , }
-, { input="Craft Normal Calcinium Greaves"                  , }
-, { input="Craft Normal Calcinium Sabatons"                 , }
-, { input="Craft Normal Calcinium Sword"                    , }
-, { input="Craft Normal Cotton Hat"                         , }
-, { input="Craft Normal Cotton Sash"                        , }
-, { input="Craft Normal Cotton Shoes"                       , }
-, { input="Craft Normal Dwarven Cuirass"                    , }
-, { input="Craft Normal Dwarven Greaves"                    , }
-, { input="Craft Normal Dwarven Sword"                      , }
-, { input="Craft Normal Ebonthread Breeches"                , }
-, { input="Craft Normal Ebonthread Epaulets"                , }
-, { input="Craft Normal Ebonthread Robe"                    , }
-, { input="Craft Normal Ebony Cuirass"                      , }
-, { input="Craft Normal Ebony Dagger"                       , }
-, { input="Craft Normal Ebony Greaves"                      , }
-, { input="Craft Normal Ebony Helm"                         , }
-, { input="Craft Normal Ebony Pauldron"                     , }
-, { input="Craft Normal Ebony Sword"                        , }
-, { input="Craft Normal Fell Arm Cops"                      , }
-, { input="Craft Normal Fell Bracers"                       , }
-, { input="Craft Normal Fell Helmet"                        , }
-, { input="Craft Normal Galatite Cuirass"                   , }
-, { input="Craft Normal Galatite Dagger"                    , }
-, { input="Craft Normal Galatite Greaves"                   , }
-, { input="Craft Normal Galatite Helm"                      , }
-, { input="Craft Normal Galatite Pauldron"                  , }
-, { input="Craft Normal Galatite Sword"                     , }
-, { input="Craft Normal Hickory Restoration Staff"          , }
-, { input="Craft Normal Hickory Shield"                     , }
-, { input="Craft Normal Hide Arm Cops"                      , }
-, { input="Craft Normal Hide Bracers"                       , }
-, { input="Craft Normal Hide Helmet"                        , }
-, { input="Craft Normal Homespun Hat"                       , }
-, { input="Craft Normal Homespun Sash"                      , }
-, { input="Craft Normal Homespun Shoes"                     , }
-, { input="Craft Normal Iron Dagger"                        , }
-, { input="Craft Normal Iron Gauntlets"                     , }
-, { input="Craft Normal Iron Greatsword"                    , }
-, { input="Craft Normal Iron Helm"                          , }
-, { input="Craft Normal Iron Pauldron"                      , }
-, { input="Craft Normal Iron Sabatons"                      , }
-, { input="Craft Normal Ironhide Arm Cops"                  , }
-, { input="Craft Normal Ironhide Bracers"                   , }
-, { input="Craft Normal Ironhide Helmet"                    , }
-, { input="Craft Normal Ironthread Breeches"                , }
-, { input="Craft Normal Ironthread Epaulets"                , }
-, { input="Craft Normal Ironthread Robe"                    , }
-, { input="Craft Normal Kresh Breeches"                     , }
-, { input="Craft Normal Kresh Epaulets"                     , }
-, { input="Craft Normal Kresh Hat"                          , }
-, { input="Craft Normal Kresh Robe"                         , }
-, { input="Craft Normal Kresh Sash"                         , }
-, { input="Craft Normal Kresh Shoes"                        , }
-, { input="Craft Normal Leather Arm Cops"                   , }
-, { input="Craft Normal Leather Bracers"                    , }
-, { input="Craft Normal Leather Helmet"                     , }
-, { input="Craft Normal Linen Hat"                          , }
-, { input="Craft Normal Linen Sash"                         , }
-, { input="Craft Normal Linen Shoes"                        , }
-, { input="Craft Normal Mahogany Ice Staff"                 , }
-, { input="Craft Normal Mahogany Inferno Staff"             , }
-, { input="Craft Normal Mahogany Lightning Staff"           , }
-, { input="Craft Normal Mahogany Restoration Staff"         , }
-, { input="Craft Normal Mahogany Shield"                    , }
-, { input="Craft Normal Maple Bow"                          , }
-, { input="Craft Normal Maple Ice Staff"                    , }
-, { input="Craft Normal Maple Inferno Staff"                , }
-, { input="Craft Normal Maple Lightning Staff"              , }
-, { input="Craft Normal Maple Shield"                       , }
-, { input="Craft Normal Nightwood Bow"                      , }
-, { input="Craft Normal Nightwood Ice Staff"                , }
-, { input="Craft Normal Nightwood Inferno Staff"            , }
-, { input="Craft Normal Nightwood Lightning Staff"          , }
-, { input="Craft Normal Nightwood Shield"                   , }
-, { input="Craft Normal Oak Bow"                            , }
-, { input="Craft Normal Oak Ice Staff"                      , }
-, { input="Craft Normal Oak Inferno Staff"                  , }
-, { input="Craft Normal Oak Lightning Staff"                , }
-, { input="Craft Normal Oak Shield"                         , }
-, { input="Craft Normal Orichalcum Dagger"                  , }
-, { input="Craft Normal Orichalcum Gauntlets"               , }
-, { input="Craft Normal Orichalcum Greatsword"              , }
-, { input="Craft Normal Orichalcum Helm"                    , }
-, { input="Craft Normal Orichalcum Pauldron"                , }
-, { input="Craft Normal Orichalcum Sabatons"                , }
-, { input="Craft Normal Quicksilver Cuirass"                , }
-, { input="Craft Normal Quicksilver Gauntlets"              , }
-, { input="Craft Normal Quicksilver Greatsword"             , }
-, { input="Craft Normal Quicksilver Greaves"                , }
-, { input="Craft Normal Quicksilver Sabatons"               , }
-, { input="Craft Normal Quicksilver Sword"                  , }
-, { input="Craft Normal Rawhide Arm Cops"                   , }
-, { input="Craft Normal Rawhide Bracers"                    , }
-, { input="Craft Normal Rawhide Helmet"                     , }
-, { input="Craft Normal Rubedite Cuirass"                   , }
-, { input="Craft Normal Rubedite Dagger"                    , }
-, { input="Craft Normal Rubedite Dagger: 0 / 1"          , }
-, { input="Craft Normal Rubedite Greaves"                   , }
-, { input="Craft Normal Rubedite Helm"                      , }
-, { input="Craft Normal Rubedite Helm: 0 / 1"            , }
-, { input="Craft Normal Rubedite Pauldron"                  , }
-, { input="Craft Normal Rubedite Pauldron: 0 / 1"        , }
-, { input="Craft Normal Rubedite Sword"                     , }
-, { input="Craft Normal Rubedo Leather Arm Cops"            , }
-, { input="Craft Normal Rubedo Leather Arm Cops: 0 / 1"  , }
-, { input="Craft Normal Rubedo Leather Bracers"             , }
-, { input="Craft Normal Rubedo Leather Bracers: 0 / 1"   , }
-, { input="Craft Normal Rubedo Leather Helmet"              , }
-, { input="Craft Normal Rubedo Leather Helmet: 0 / 1"    , }
-, { input="Craft Normal Ruby Ash Bow"                       , }
-, { input="Craft Normal Ruby Ash Bow: 0 / 2"             , }
-, { input="Craft Normal Ruby Ash Restoration Staff"         , }
-, { input="Craft Normal Ruby Ash Shield"                    , }
-, { input="Craft Normal Ruby Ash Shield: 0 / 1"          , }
-, { input="Craft Normal Shadowhide Arm Cops"                , }
-, { input="Craft Normal Shadowhide Bracers"                 , }
-, { input="Craft Normal Shadowhide Helmet"                  , }
-, { input="Craft Normal Shadowspun Hat"                     , }
-, { input="Craft Normal Shadowspun Sash"                    , }
-, { input="Craft Normal Shadowspun Shoes"                   , }
-, { input="Craft Normal Silverweave Breeches"               , }
-, { input="Craft Normal Silverweave Epaulets"               , }
-, { input="Craft Normal Silverweave Hat"                    , }
-, { input="Craft Normal Silverweave Robe"                   , }
-, { input="Craft Normal Silverweave Sash"                   , }
-, { input="Craft Normal Silverweave Shoes"                  , }
-, { input="Craft Normal Spidersilk Breeches"                , }
-, { input="Craft Normal Spidersilk Epaulets"                , }
-, { input="Craft Normal Spidersilk Robe"                    , }
-, { input="Craft Normal Steel Dagger"                       , }
-, { input="Craft Normal Steel Gauntlets"                    , }
-, { input="Craft Normal Steel Greatsword"                   , }
-, { input="Craft Normal Steel Helm"                         , }
-, { input="Craft Normal Steel Pauldron"                     , }
-, { input="Craft Normal Steel Sabatons"                     , }
-, { input="Craft Normal Voidsteel Dagger"                   , }
-, { input="Craft Normal Voidsteel Gauntlets"                , }
-, { input="Craft Normal Voidsteel Greatsword"               , }
-, { input="Craft Normal Voidsteel Helm"                     , }
-, { input="Craft Normal Voidsteel Pauldron"                 , }
-, { input="Craft Normal Voidsteel Sabatons"                 , }
-, { input="Craft Normal Yew Bow"                            , }
-, { input="Craft Normal Yew Restoration Staff"              , }
-, { input="Craft Normal Yew Shield"                         , }
-, { input="Craft Nut Brown Ale"                             , }
-, { input="Craft Orcrest Garlic Apple Jelly"                , }
-, { input="Craft Panacea of Health"                         , }
-, { input="Craft Panacea of Magicka"                        , }
-, { input="Craft Pellitine Tomato Rice"                     , }
-, { input="Craft Petty Glyph of Health With Ta"             , }
-, { input="Craft Petty Glyph of Stamina With Ta"            , }
-, { input="Craft Potion of Health"                          , }
-, { input="Craft Potion of Magicka"                         , }
-, { input="Craft Red Rye Beer"                              , }
-, { input="Craft Redoran Peppered Melon"                    , }
-, { input="Craft Roast Corn"                                , }
-, { input="Craft Seaflower Tea"                             , }
-, { input="Craft Sip of Health"                             , }
-, { input="Craft Sip of Magicka"                            , }
-, { input="Craft Solution of Stamina"                       , }
-, { input="Craft Sour Mash"                                 , }
-, { input="Craft Splendid Glyph of Health With Ta"          , }
-, { input="Craft Splendid Glyph of Magicka With Ta"         , }
-, { input="Craft Stormhold Baked Bananas"                   , }
-, { input="Craft Strong Glyph of Magicka With Ta"           , }
-, { input="Craft Strong Glyph of Stamina With Ta"           , }
-, { input="Craft Superb Glyph of Magicka With Ta"           , }
-, { input="Craft Superb Glyph of Stamina With Ta"           , }
-, { input="Craft Superb Glyph of Stamina With Ta: 0 / 1" , }
-, { input="Craft Three Electrum Rings"                      , }
-, { input="Craft Three Platinum Rings"                      , }
-, { input="Craft Treacleberry Tea"                          , }
-, { input="Craft Trifling Glyph of Health With Ta"          , }
-, { input="Craft Trifling Glyph of Stamina With Ta"         , }
-, { input="Craft Two Copper Necklaces"                      , }
-, { input="Craft Two Pewter Necklaces"                      , }
-, { input="Craft Two Platinum Necklaces"                    , }
-, { input="Craft Two Silver Necklaces"                      , }
-, { input="Craft Two-Zephyr Tea"                            , }
-, { input="Craft a Copper Necklace"                         , }
-, { input="Craft a Copper Ring"                             , }
-, { input="Craft a Pewter Necklace"                         , }
-, { input="Craft a Pewter Ring"                             , }
-, { input="Craft a Platinum Necklace"                       , }
-, { input="Craft a Platinum Necklace: 0 / 1"             , }
-, { input="Craft a Platinum Ring"                           , }
-, { input="Craft a Platinum Ring: 0 / 1"                 , }
-, { input="Craft a Silver Necklace"                         , }
-, { input="Craft a Silver Ring"                             , }
-, { input="Deliver Goods to Nearest Writ Quartermaster"     , }
+  { input="Acquire Alkahest"                                , expect={}                                                 }
+, { input="Acquire Blessed Thistle"                         , expect={}                                                 }
+, { input="Acquire Bugloss"                                 , expect={}                                                 }
+, { input="Acquire Deni Essence Rune"                       , expect={}                                                 }
+, { input="Acquire Idode Potency Rune"                      , expect={}                                                 }
+, { input="Acquire Jayde Potency Rune"                      , expect={}                                                 }
+, { input="Acquire Jode Potency Rune"                       , expect={}                                                 }
+, { input="Acquire Kedeko Potency Rune"                     , expect={}                                                 }
+, { input="Acquire Lady's Smock"                            , expect={}                                                 }
+, { input="Acquire Lorkhan's Tears"                         , expect={}                                                 }
+, { input="Acquire Makko Essence Rune"                      , expect={}                                                 }
+, { input="Acquire Makkoma Essence Rune"                    , expect={}                                                 }
+, { input="Acquire Mountain Flower"                         , expect={}                                                 }
+, { input="Acquire Mudcrab Chitin"                          , expect={}                                                 }
+, { input="Acquire Mudcrab Chitin: 3 / 3"                , expect={}                                                 }
+, { input="Acquire Nirnroot"                                , expect={}                                                 }
+, { input="Acquire Ode Potency Rune"                        , expect={}                                                 }
+, { input="Acquire Oko Essence Rune"                        , expect={}                                                 }
+, { input="Acquire Pristine Water"                          , expect={}                                                 }
+, { input="Acquire Purified Water"                          , expect={}                                                 }
+, { input="Acquire Rede Potency Rune"                       , expect={}                                                 }
+, { input="Acquire Spider Egg"                              , expect={}                                                 }
+, { input="Acquire Ta Aspect Rune"                          , expect={}                                                 }
+, { input="Acquire Ta Aspect Rune: 1 / 1"                , expect={}                                                 }
+, { input="Acquire Violet Coprinus"                         , expect={}                                                 }
+, { input="Acquire Water Hyacinth"                          , expect={}                                                 }
+, { input="Acquire Wormwood"                                , expect={}                                                 }
+, { input="Brewers and Cooks Can Provide Recipes"           , expect={}                                                 }
+, { input="Craft Aetherial Tea"                             , expect={}                                                 }
+, { input="Craft Baked Apples"                              , expect={}                                                 }
+, { input="Craft Baked Potato"                              , expect={}                                                 }
+, { input="Craft Barley Nectar"                             , expect={}                                                 }
+, { input="Craft Battaglir Chowder"                         , expect={}                                                 }
+, { input="Craft Bitterlemon Tea"                           , expect={}                                                 }
+, { input="Craft Bog-Iron Ale"                              , expect={}                                                 }
+, { input="Craft Breton Pork Sausage"                       , expect={}                                                 }
+, { input="Craft Carrot Soup"                               , expect={}                                                 }
+, { input="Craft Chicken Breast"                            , expect={}                                                 }
+, { input="Craft Damage Magicka Poison IX"                  , expect={}                                                 }
+, { input="Craft Damage Stamina Poison IX"                  , expect={}                                                 }
+, { input="Craft Drain Health Poison IX"                    , expect={}                                                 }
+, { input="Craft Dram of Ravage Magicka"                    , expect={}                                                 }
+, { input="Craft Dram of Stamina"                           , expect={}                                                 }
+, { input="Craft Elixir of Ravage Magicka"                  , expect={}                                                 }
+, { input="Craft Elixir of Stamina"                         , expect={}                                                 }
+, { input="Craft Eltheric Hooch"                            , expect={}                                                 }
+, { input="Craft Essence of Ravage Health"                  , expect={}                                                 }
+, { input="Craft Essence of Stamina"                        , expect={}                                                 }
+, { input="Craft Essence of Stamina: 0 / 1"              , expect={}                                                 }
+, { input="Craft Firsthold Fruit and Cheese Plate"          , expect={}                                                 }
+, { input="Craft Firsthold Fruit and Cheese Plate: 0 / 1", expect={}                                                 }
+, { input="Craft Garlic Pumpkin Seeds"                      , expect={}                                                 }
+, { input="Craft Ginger Wheat Beer"                         , expect={}                                                 }
+, { input="Craft Golden Lager"                              , expect={}                                                 }
+, { input="Craft Grand Glyph of Magicka With Ta"            , expect={}                                                 }
+, { input="Craft Grand Glyph of Stamina With Ta"            , expect={}                                                 }
+, { input="Craft Grandpa's Bedtime Tonic"                   , expect={}                                                 }
+, { input="Craft Greater Glyph of Health With Ta"           , expect={}                                                 }
+, { input="Craft Greater Glyph of Magicka With Ta"          , expect={}                                                 }
+, { input="Craft Hagraven's Tonic"                          , expect={}                                                 }
+, { input="Craft Jerall View Inn Carrot Cake"               , expect={}                                                 }
+, { input="Craft Lemon Flower Mazte"                        , expect={}                                                 }
+, { input="Craft Lilmoth Garlic Hagfish"                    , expect={}                                                 }
+, { input="Craft Mammoth Snout Pie"                         , expect={}                                                 }
+, { input="Craft Maormer Tea"                               , expect={}                                                 }
+, { input="Craft Mazte"                                     , expect={}                                                 }
+, { input="Craft Millet-Stuffed Pork Loin"                  , expect={}                                                 }
+, { input="Craft Minor Glyph of Health With Ta"             , expect={}                                                 }
+, { input="Craft Minor Glyph of Stamina With Ta"            , expect={}                                                 }
+, { input="Craft Moderate Glyph of Magicka With Ta"         , expect={}                                                 }
+, { input="Craft Monumental Glyph of Health With Ta"        , expect={}                                                 }
+, { input="Craft Monumental Glyph of Stamina With Ta"       , expect={}                                                 }
+, { input="Craft Muthsera's Remorse"                        , expect={}                                                 }
+, { input="Craft Muthsera's Remorse: 0 / 1"              , expect={}                                                 }
+, { input="Craft Nibenese Garlic Carrots"                   , expect={}                                                 }
+, { input="Craft Normal Ancestor Silk Breeches"             , expect={}                                                 }
+, { input="Craft Normal Ancestor Silk Epaulets"             , expect={}                                                 }
+, { input="Craft Normal Ancestor Silk Robe"                 , expect={}                                                 }
+, { input="Craft Normal Ash Bow"                            , expect={}                                                 }
+, { input="Craft Normal Ash Restoration Staff"              , expect={}                                                 }
+, { input="Craft Normal Ash Shield"                         , expect={}                                                 }
+, { input="Craft Normal Beech Bow"                          , expect={}                                                 }
+, { input="Craft Normal Beech Ice Staff"                    , expect={}                                                 }
+, { input="Craft Normal Beech Inferno Staff"                , expect={}                                                 }
+, { input="Craft Normal Beech Lightning Staff"              , expect={}                                                 }
+, { input="Craft Normal Beech Shield"                       , expect={}                                                 }
+, { input="Craft Normal Birch Ice Staff"                    , expect={}                                                 }
+, { input="Craft Normal Birch Inferno Staff"                , expect={}                                                 }
+, { input="Craft Normal Birch Lightning Staff"              , expect={}                                                 }
+, { input="Craft Normal Birch Restoration Staff"            , expect={}                                                 }
+, { input="Craft Normal Birch Shield"                       , expect={}                                                 }
+, { input="Craft Normal Calcinium Cuirass"                  , expect={}                                                 }
+, { input="Craft Normal Calcinium Gauntlets"                , expect={}                                                 }
+, { input="Craft Normal Calcinium Greatsword"               , expect={}                                                 }
+, { input="Craft Normal Calcinium Greaves"                  , expect={}                                                 }
+, { input="Craft Normal Calcinium Sabatons"                 , expect={}                                                 }
+, { input="Craft Normal Calcinium Sword"                    , expect={}                                                 }
+, { input="Craft Normal Cotton Hat"                         , expect={}                                                 }
+, { input="Craft Normal Cotton Sash"                        , expect={}                                                 }
+, { input="Craft Normal Cotton Shoes"                       , expect={}                                                 }
+, { input="Craft Normal Dwarven Cuirass"                    , expect={}                                                 }
+, { input="Craft Normal Dwarven Greaves"                    , expect={}                                                 }
+, { input="Craft Normal Dwarven Sword"                      , expect={}                                                 }
+, { input="Craft Normal Ebonthread Breeches"                , expect={}                                                 }
+, { input="Craft Normal Ebonthread Epaulets"                , expect={}                                                 }
+, { input="Craft Normal Ebonthread Robe"                    , expect={}                                                 }
+, { input="Craft Normal Ebony Cuirass"                      , expect={}                                                 }
+, { input="Craft Normal Ebony Dagger"                       , expect={}                                                 }
+, { input="Craft Normal Ebony Greaves"                      , expect={}                                                 }
+, { input="Craft Normal Ebony Helm"                         , expect={}                                                 }
+, { input="Craft Normal Ebony Pauldron"                     , expect={}                                                 }
+, { input="Craft Normal Ebony Sword"                        , expect={}                                                 }
+, { input="Craft Normal Fell Arm Cops"                      , expect={}                                                 }
+, { input="Craft Normal Fell Bracers"                       , expect={}                                                 }
+, { input="Craft Normal Fell Helmet"                        , expect={}                                                 }
+, { input="Craft Normal Galatite Cuirass"                   , expect={}                                                 }
+, { input="Craft Normal Galatite Dagger"                    , expect={}                                                 }
+, { input="Craft Normal Galatite Greaves"                   , expect={}                                                 }
+, { input="Craft Normal Galatite Helm"                      , expect={}                                                 }
+, { input="Craft Normal Galatite Pauldron"                  , expect={}                                                 }
+, { input="Craft Normal Galatite Sword"                     , expect={}                                                 }
+, { input="Craft Normal Hickory Restoration Staff"          , expect={}                                                 }
+, { input="Craft Normal Hickory Shield"                     , expect={}                                                 }
+, { input="Craft Normal Hide Arm Cops"                      , expect={}                                                 }
+, { input="Craft Normal Hide Bracers"                       , expect={}                                                 }
+, { input="Craft Normal Hide Helmet"                        , expect={}                                                 }
+, { input="Craft Normal Homespun Hat"                       , expect={}                                                 }
+, { input="Craft Normal Homespun Sash"                      , expect={}                                                 }
+, { input="Craft Normal Homespun Shoes"                     , expect={}                                                 }
+, { input="Craft Normal Iron Dagger"                        , expect={}                                                 }
+, { input="Craft Normal Iron Gauntlets"                     , expect={}                                                 }
+, { input="Craft Normal Iron Greatsword"                    , expect={}                                                 }
+, { input="Craft Normal Iron Helm"                          , expect={}                                                 }
+, { input="Craft Normal Iron Pauldron"                      , expect={}                                                 }
+, { input="Craft Normal Iron Sabatons"                      , expect={}                                                 }
+, { input="Craft Normal Ironhide Arm Cops"                  , expect={}                                                 }
+, { input="Craft Normal Ironhide Bracers"                   , expect={}                                                 }
+, { input="Craft Normal Ironhide Helmet"                    , expect={}                                                 }
+, { input="Craft Normal Ironthread Breeches"                , expect={}                                                 }
+, { input="Craft Normal Ironthread Epaulets"                , expect={}                                                 }
+, { input="Craft Normal Ironthread Robe"                    , expect={}                                                 }
+, { input="Craft Normal Kresh Breeches"                     , expect={}                                                 }
+, { input="Craft Normal Kresh Epaulets"                     , expect={}                                                 }
+, { input="Craft Normal Kresh Hat"                          , expect={}                                                 }
+, { input="Craft Normal Kresh Robe"                         , expect={}                                                 }
+, { input="Craft Normal Kresh Sash"                         , expect={}                                                 }
+, { input="Craft Normal Kresh Shoes"                        , expect={}                                                 }
+, { input="Craft Normal Leather Arm Cops"                   , expect={}                                                 }
+, { input="Craft Normal Leather Bracers"                    , expect={}                                                 }
+, { input="Craft Normal Leather Helmet"                     , expect={}                                                 }
+, { input="Craft Normal Linen Hat"                          , expect={}                                                 }
+, { input="Craft Normal Linen Sash"                         , expect={}                                                 }
+, { input="Craft Normal Linen Shoes"                        , expect={}                                                 }
+, { input="Craft Normal Mahogany Ice Staff"                 , expect={}                                                 }
+, { input="Craft Normal Mahogany Inferno Staff"             , expect={}                                                 }
+, { input="Craft Normal Mahogany Lightning Staff"           , expect={}                                                 }
+, { input="Craft Normal Mahogany Restoration Staff"         , expect={}                                                 }
+, { input="Craft Normal Mahogany Shield"                    , expect={}                                                 }
+, { input="Craft Normal Maple Bow"                          , expect={}                                                 }
+, { input="Craft Normal Maple Ice Staff"                    , expect={}                                                 }
+, { input="Craft Normal Maple Inferno Staff"                , expect={}                                                 }
+, { input="Craft Normal Maple Lightning Staff"              , expect={}                                                 }
+, { input="Craft Normal Maple Shield"                       , expect={}                                                 }
+, { input="Craft Normal Nightwood Bow"                      , expect={}                                                 }
+, { input="Craft Normal Nightwood Ice Staff"                , expect={}                                                 }
+, { input="Craft Normal Nightwood Inferno Staff"            , expect={}                                                 }
+, { input="Craft Normal Nightwood Lightning Staff"          , expect={}                                                 }
+, { input="Craft Normal Nightwood Shield"                   , expect={}                                                 }
+, { input="Craft Normal Oak Bow"                            , expect={}                                                 }
+, { input="Craft Normal Oak Ice Staff"                      , expect={}                                                 }
+, { input="Craft Normal Oak Inferno Staff"                  , expect={}                                                 }
+, { input="Craft Normal Oak Lightning Staff"                , expect={}                                                 }
+, { input="Craft Normal Oak Shield"                         , expect={}                                                 }
+, { input="Craft Normal Orichalcum Dagger"                  , expect={}                                                 }
+, { input="Craft Normal Orichalcum Gauntlets"               , expect={}                                                 }
+, { input="Craft Normal Orichalcum Greatsword"              , expect={}                                                 }
+, { input="Craft Normal Orichalcum Helm"                    , expect={}                                                 }
+, { input="Craft Normal Orichalcum Pauldron"                , expect={}                                                 }
+, { input="Craft Normal Orichalcum Sabatons"                , expect={}                                                 }
+, { input="Craft Normal Quicksilver Cuirass"                , expect={}                                                 }
+, { input="Craft Normal Quicksilver Gauntlets"              , expect={}                                                 }
+, { input="Craft Normal Quicksilver Greatsword"             , expect={}                                                 }
+, { input="Craft Normal Quicksilver Greaves"                , expect={}                                                 }
+, { input="Craft Normal Quicksilver Sabatons"               , expect={}                                                 }
+, { input="Craft Normal Quicksilver Sword"                  , expect={}                                                 }
+, { input="Craft Normal Rawhide Arm Cops"                   , expect={}                                                 }
+, { input="Craft Normal Rawhide Bracers"                    , expect={}                                                 }
+, { input="Craft Normal Rawhide Helmet"                     , expect={}                                                 }
+, { input="Craft Normal Rubedite Cuirass"                   , expect={}                                                 }
+, { input="Craft Normal Rubedite Dagger"                    , expect={}                                                 }
+, { input="Craft Normal Rubedite Dagger: 0 / 1"          , expect={}                                                 }
+, { input="Craft Normal Rubedite Greaves"                   , expect={}                                                 }
+, { input="Craft Normal Rubedite Helm"                      , expect={}                                                 }
+, { input="Craft Normal Rubedite Helm: 0 / 1"            , expect={}                                                 }
+, { input="Craft Normal Rubedite Pauldron"                  , expect={}                                                 }
+, { input="Craft Normal Rubedite Pauldron: 0 / 1"        , expect={}                                                 }
+, { input="Craft Normal Rubedite Sword"                     , expect={}                                                 }
+, { input="Craft Normal Rubedo Leather Arm Cops"            , expect={}                                                 }
+, { input="Craft Normal Rubedo Leather Arm Cops: 0 / 1"  , expect={}                                                 }
+, { input="Craft Normal Rubedo Leather Bracers"             , expect={}                                                 }
+, { input="Craft Normal Rubedo Leather Bracers: 0 / 1"   , expect={}                                                 }
+, { input="Craft Normal Rubedo Leather Helmet"              , expect={}                                                 }
+, { input="Craft Normal Rubedo Leather Helmet: 0 / 1"    , expect={}                                                 }
+, { input="Craft Normal Ruby Ash Bow"                       , expect={}                                                 }
+, { input="Craft Normal Ruby Ash Bow: 0 / 2"             , expect={}                                                 }
+, { input="Craft Normal Ruby Ash Restoration Staff"         , expect={}                                                 }
+, { input="Craft Normal Ruby Ash Shield"                    , expect={}                                                 }
+, { input="Craft Normal Ruby Ash Shield: 0 / 1"          , expect={}                                                 }
+, { input="Craft Normal Shadowhide Arm Cops"                , expect={}                                                 }
+, { input="Craft Normal Shadowhide Bracers"                 , expect={}                                                 }
+, { input="Craft Normal Shadowhide Helmet"                  , expect={}                                                 }
+, { input="Craft Normal Shadowspun Hat"                     , expect={}                                                 }
+, { input="Craft Normal Shadowspun Sash"                    , expect={}                                                 }
+, { input="Craft Normal Shadowspun Shoes"                   , expect={}                                                 }
+, { input="Craft Normal Silverweave Breeches"               , expect={}                                                 }
+, { input="Craft Normal Silverweave Epaulets"               , expect={}                                                 }
+, { input="Craft Normal Silverweave Hat"                    , expect={}                                                 }
+, { input="Craft Normal Silverweave Robe"                   , expect={}                                                 }
+, { input="Craft Normal Silverweave Sash"                   , expect={}                                                 }
+, { input="Craft Normal Silverweave Shoes"                  , expect={}                                                 }
+, { input="Craft Normal Spidersilk Breeches"                , expect={}                                                 }
+, { input="Craft Normal Spidersilk Epaulets"                , expect={}                                                 }
+, { input="Craft Normal Spidersilk Robe"                    , expect={}                                                 }
+, { input="Craft Normal Steel Dagger"                       , expect={}                                                 }
+, { input="Craft Normal Steel Gauntlets"                    , expect={}                                                 }
+, { input="Craft Normal Steel Greatsword"                   , expect={}                                                 }
+, { input="Craft Normal Steel Helm"                         , expect={}                                                 }
+, { input="Craft Normal Steel Pauldron"                     , expect={}                                                 }
+, { input="Craft Normal Steel Sabatons"                     , expect={}                                                 }
+, { input="Craft Normal Voidsteel Dagger"                   , expect={}                                                 }
+, { input="Craft Normal Voidsteel Gauntlets"                , expect={}                                                 }
+, { input="Craft Normal Voidsteel Greatsword"               , expect={}                                                 }
+, { input="Craft Normal Voidsteel Helm"                     , expect={}                                                 }
+, { input="Craft Normal Voidsteel Pauldron"                 , expect={}                                                 }
+, { input="Craft Normal Voidsteel Sabatons"                 , expect={}                                                 }
+, { input="Craft Normal Yew Bow"                            , expect={}                                                 }
+, { input="Craft Normal Yew Restoration Staff"              , expect={}                                                 }
+, { input="Craft Normal Yew Shield"                         , expect={}                                                 }
+, { input="Craft Nut Brown Ale"                             , expect={}                                                 }
+, { input="Craft Orcrest Garlic Apple Jelly"                , expect={}                                                 }
+, { input="Craft Panacea of Health"                         , expect={}                                                 }
+, { input="Craft Panacea of Magicka"                        , expect={}                                                 }
+, { input="Craft Pellitine Tomato Rice"                     , expect={}                                                 }
+, { input="Craft Petty Glyph of Health With Ta"             , expect={}                                                 }
+, { input="Craft Petty Glyph of Stamina With Ta"            , expect={}                                                 }
+, { input="Craft Potion of Health"                          , expect={}                                                 }
+, { input="Craft Potion of Magicka"                         , expect={}                                                 }
+, { input="Craft Red Rye Beer"                              , expect={}                                                 }
+, { input="Craft Redoran Peppered Melon"                    , expect={}                                                 }
+, { input="Craft Roast Corn"                                , expect={}                                                 }
+, { input="Craft Seaflower Tea"                             , expect={}                                                 }
+, { input="Craft Sip of Health"                             , expect={}                                                 }
+, { input="Craft Sip of Magicka"                            , expect={}                                                 }
+, { input="Craft Solution of Stamina"                       , expect={}                                                 }
+, { input="Craft Sour Mash"                                 , expect={}                                                 }
+, { input="Craft Splendid Glyph of Health With Ta"          , expect={}                                                 }
+, { input="Craft Splendid Glyph of Magicka With Ta"         , expect={}                                                 }
+, { input="Craft Stormhold Baked Bananas"                   , expect={}                                                 }
+, { input="Craft Strong Glyph of Magicka With Ta"           , expect={}                                                 }
+, { input="Craft Strong Glyph of Stamina With Ta"           , expect={}                                                 }
+, { input="Craft Superb Glyph of Magicka With Ta"           , expect={}                                                 }
+, { input="Craft Superb Glyph of Stamina With Ta"           , expect={}                                                 }
+, { input="Craft Superb Glyph of Stamina With Ta: 0 / 1" , expect={}                                                 }
+, { input="Craft Three Electrum Rings"                      , expect={}                                                 }
+, { input="Craft Three Platinum Rings"                      , expect={}                                                 }
+, { input="Craft Treacleberry Tea"                          , expect={}                                                 }
+, { input="Craft Trifling Glyph of Health With Ta"          , expect={}                                                 }
+, { input="Craft Trifling Glyph of Stamina With Ta"         , expect={}                                                 }
+, { input="Craft Two Copper Necklaces"                      , expect={}                                                 }
+, { input="Craft Two Pewter Necklaces"                      , expect={}                                                 }
+, { input="Craft Two Platinum Necklaces"                    , expect={}                                                 }
+, { input="Craft Two Silver Necklaces"                      , expect={}                                                 }
+, { input="Craft Two-Zephyr Tea"                            , expect={}                                                 }
+, { input="Craft a Copper Necklace"                         , expect={}                                                 }
+, { input="Craft a Copper Ring"                             , expect={}                                                 }
+, { input="Craft a Pewter Necklace"                         , expect={}                                                 }
+, { input="Craft a Pewter Ring"                             , expect={}                                                 }
+, { input="Craft a Platinum Necklace"                       , expect={}                                                 }
+, { input="Craft a Platinum Necklace: 0 / 1"             , expect={}                                                 }
+, { input="Craft a Platinum Ring"                           , expect={}                                                 }
+, { input="Craft a Platinum Ring: 0 / 1"                 , expect={}                                                 }
+, { input="Craft a Silver Necklace"                         , expect={}                                                 }
+, { input="Craft a Silver Ring"                             , expect={}                                                 }
+, { input="Deliver Goods to Nearest Writ Quartermaster"     , expect={}                                                 }
 }

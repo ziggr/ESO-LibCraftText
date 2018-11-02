@@ -5,11 +5,16 @@ dofile("data/lang_db.lua")
 
 GENFILE = "test/test_gen.data.lua"
 
-COND_TEXT_FODDER = {}       -- deprecated, favor cond_unique
-
 C = {
-    cond_unique = {}        -- [cond_text] = genfile fodder
-,   new_cond_ct = 0         -- how many new cond_text inputs did MergeLangDB() add?
+    cond_unique = {}
+
+                            -- [cond_text] = "{ key=CONST, key2=OTHERCONST }"
+                            -- key is the EN condition text and value is a
+                            -- text/string representation of the Lua table of
+                            -- expected key/value pairs.
+
+,   new_cond_ct = 0         -- how many new cond_text inputs did MergeLangDB()
+                            -- add?
 }
 
 
@@ -18,12 +23,17 @@ C = {
 function C.ReadGenData()
                         -- Read current list of condition text and
                         -- expected results.
-    COND_TEXT_FODDER = {}
-    dofile(GENFILE)
-                            -- Retain old condition text keys
-    C.cond_unique = {}
-    for _,fodder in ipairs(COND_TEXT_FODDER) do
-        C.cond_unique[fodder.input] = fodder
+    local FILE = io.open(GENFILE,"r")
+    local re_input   = 'input="([^"]*)"'
+    local re_expect  = 'expect=({.*}) *}$'
+    for line in FILE:lines() do
+        local _,_,input          = line:find(re_input)
+        local _,_,expect_as_text = line:find(re_expect)
+        if input then
+            expect_as_text = expect_as_text or "{}"
+            -- print("in:"..input.." expect_as_text:"..tostring(expect_as_text))
+            C.cond_unique[input] = expect_as_text
+        end
     end
 end
 
@@ -35,14 +45,14 @@ function C.MergeLangDB()
         if key:find("$DAILY_COND_") and lang_table.en then
             if not C.cond_unique[lang_table.en] then
                 C.new_cond_ct = C.new_cond_ct + 1
-                C.cond_unique[lang_table.en] = { input = lang_table.en }
+                C.cond_unique[lang_table.en] = "{}"
             end
         end
     end
 end
 
 function C.sorted_keys(t)
-    sorted = {}
+    local sorted = {}
     for k,_ in pairs(t) do
         table.insert(sorted, k)
     end
@@ -60,22 +70,13 @@ function C.WriteGenData()
     local comma = " "
 
     for _,cond_text in ipairs(C.sorted_keys(C.cond_unique)) do
-        fodder = C.cond_unique[cond_text]
-        FILE:write(string.format( "%s { input=%-50s, "
+        local expect_as_text = C.cond_unique[cond_text]
+        FILE:write(string.format( "%s { input=%-50s, expect=%-50s }\n"
                                 , comma
                                 , '"'..cond_text..'"'
+                                , expect_as_text
                                 ))
         comma = ","
-
-        for expect_key,value in pairs(fodder or {}) do
-            if expect_key ~= "input" then
-                FILE:write(string.format("%-20s = %-20s, "
-                                        , expect_key
-                                        , value
-                                        ))
-            end
-        end
-        FILE:write("}\n")
     end
     FILE:write("}\n")
     print(string.format("%d new lines added to %s.", C.new_cond_ct, GENFILE))
