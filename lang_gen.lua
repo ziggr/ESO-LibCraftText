@@ -310,6 +310,7 @@ function EntriesMatch(a,b)
     return true
 end
 
+NBSP = " " -- C2 A0
 -- Remove the ": 0 / 1" stuff at the end of a crafting request.
 -- "Craft Normal Dwarven Greaves: 0 / 1" ==> "Craft Normal Dwarven Greaves"
 function colon_strip(text)
@@ -320,10 +321,9 @@ function colon_strip(text)
                         -- Apparently safe for daily crafting writs, though:
                         -- no daily crafting writ conditions put anything
                         -- but counts after a colon.
-  return text:gsub(" ?:.*","")
-  -- local r = text:gsub(":.*","") -- %s*
-  --   r = r:gsub(" *$","")
-  --   return r
+  local r = text:gsub(" ?:.*","")
+  r = r:gsub(NBSP.."+$","")
+  return r
 end
 
 --[[
