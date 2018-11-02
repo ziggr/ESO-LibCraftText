@@ -22,6 +22,10 @@ local jw = CRAFTING_TYPE_JEWELRYCRAFTING
 
 local LCT = LibCraftText
 
+local function Warn(msg)
+    print(msg)
+end
+
 -- Belonga LCT ---------------------------------------------------------------
 
 -- Test Scaffolding to enable unit tests to force a specific language.
@@ -465,7 +469,60 @@ function TestDailyCondition.TestWW()
     end
 end
 
+local COND_TEXT_EN = {}
 
+function TestDailyCondition.TestLangDBConditions()
+                        -- Scan through all condition text to make sure
+                        -- that it doesn't crash the parser.
+                        --
+                        -- Does NOT check for correct result.
+                        -- Do that elsewhere.
+    dofile("data/lang_db.lua")
+    for k,lang_table in pairs(LANG_DB) do
+        local key   = lang_table.key
+        if key:find("$DAILY_COND_") then
+            TestDailyCondition.OneLangDBCondition(lang_table)
+        end
+    end
+
+    --                     -- NOT part of this text, just tinkering around
+    -- if (LibCraftText.CurrLang() == "en") then
+    --     local cond_text_list = {}
+    --     for cond_text,_ in pairs(COND_TEXT_EN) do
+    --         table.insert(cond_text_list,cond_text)
+    --     end
+    --     table.sort(cond_text_list)
+    --     for _,cond_text in ipairs(cond_text_list) do
+    --         print(string.format(", { %-50s, }", '"'..cond_text..'"'))
+    --     end
+    -- end
+end
+
+local ABBREV_R = {
+    ["bs"] = bs
+,   ["cl"] = cl
+,   ["en"] = en
+,   ["al"] = al
+,   ["pr"] = pr
+,   ["ww"] = ww
+,   ["jw"] = jw
+}
+function TestDailyCondition.OneLangDBCondition(lang_table)
+    local key       = lang_table.key
+    local _,_,ctxt = key:find("$DAILY_COND_(..)_")
+    if not ctxt then return end
+    local crafting_type = ABBREV_R[ctxt:lower()]
+
+    local cond_text = lang_table[LibCraftText.CurrLang()]
+    if not cond_text then return end
+    local result = LibCraftText.ParseDailyConditionGear(crafting_text, cond_text)
+
+
+    --                     -- NOT part of this test, just tinkering around.
+    -- if (LibCraftText.CurrLang() == "en") then
+    --     COND_TEXT_EN[cond_text] = crafting_type
+    -- end
+end
 
 
 os.exit( luaunit.LuaUnit.run() )
