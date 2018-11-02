@@ -129,7 +129,7 @@ function LibCraftText.Forget()
                    , "alliance"
                    }
     for _,field in ipairs(fields) do
-        LibCraftText.saved_var [field] = nil
+        -- LibCraftText.saved_var [field] = nil  Uncomment only when you really need to.
         LibCraftText.saved_char[field] = nil
     end
 end
