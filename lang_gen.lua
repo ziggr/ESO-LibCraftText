@@ -46,19 +46,6 @@ function Warn(msg)
     print(msg)
 end
 
-CHAR = {
-  ["ziggr-alt-one"     ]={ name="ziggr-alt-one"     , faction="DC", rank={ AL=1, BS= 1, CL= 1, EN= 1, JW=1, PR=1, WW= 1 }}
-, ["ziggr-alt-two"     ]={ name="ziggr-alt-two"     , faction="AD", rank={ AL=2, BS= 2, CL= 2, EN= 2, JW=2, PR=2, WW= 2 }}
-, ["ziggr-alt-three"   ]={ name="ziggr-alt-three"   , faction="EP", rank={ AL=3, BS= 3, CL= 3, EN= 3, JW=3, PR=3, WW= 3 }}
-, ["ziggr-alt-four"    ]={ name="ziggr-alt-four"    , faction="DC", rank={ AL=4, BS= 4, CL= 4, EN= 4, JW=4, PR=4, WW= 4 }}
-, ["ziggr-alt-five"    ]={ name="ziggr-alt-five"    , faction="AD", rank={ AL=5, BS= 5, CL= 5, EN= 5, JW=5, PR=5, WW= 5 }}
-, ["ziggr-alt-six"     ]={ name="ziggr-alt-six"     , faction="EP", rank={ AL=6, BS= 6, CL= 6, EN= 6, JW=5, PR=1, WW= 6 }}
-, ["ziggr-alt-seven"   ]={ name="ziggr-alt-seven"   , faction="DC", rank={ AL=7, BS= 7, CL= 7, EN= 7, JW=5, PR=2, WW= 7 }}
-, ["ziggr-alt-eight"   ]={ name="ziggr-alt-eight"   , faction="AD", rank={ AL=8, BS= 8, CL= 8, EN= 8, JW=5, PR=1, WW= 8 }}
-, ["ziggr-alt-nine"    ]={ name="ziggr-alt-nine"    , faction="EP", rank={ AL=8, BS= 9, CL= 9, EN= 9, JW=5, PR=2, WW= 9 }}
-, ["hammer-meets-thumb"]={ name="hammer-meets-thumb", faction="EP", rank={ AL=8, BS=10, CL=10, EN=10, JW=5, PR=6, WW=10 }}
-}
-
 
 -- Print contents of `tbl`, with indentation.
 -- `indent` sets the initial level of indentation.
@@ -665,30 +652,37 @@ function ReplaceKeys(template_line, lang)
 
                         -- fallback to en if no translation yet
         local val = entry_hash[lang] or entry_hash.en
-        val = escape_quote(val)
-        val = escape_re(val)    -- Some lang strings are REs with % escapes. Retain them.
-        local key = k
-        local key_padded = string.format("%-"..tostring(repl_len).."s", key)
-        local val_padded = pad(repl_len, '"'..val..'"')
-        out_line, ct = out_line:gsub(key_padded, val_padded)
+                                    -- The hack we use to shovel IT Italian
+                                    -- blank quest titles into Jewelry daily
+                                    -- causes some spurious DAILY_COND_JW_05_08
+                                    -- conditions with just a single italian
+                                    -- "TRACKER GOAL TEXT" value. Skip those.
+        if val then
 
-                        -- SURPRISE! Lua strings are BYTES not CHARS! This
-                        -- matters when val is a string with umlauts or other
-                        -- non-ASCII code points. The difference will cause all
-                        -- this careful alignment work to be off by the number
-                        -- of extra bytes of utf-8 wide chars. Oh well.
-                        --
-                        -- Lua 5.3 adds _some_ UTF-8 handling, but I don't care
-                        -- enough upgrade from 5.2 and recode to fix this
-                        -- today.
+            val = escape_quote(val)
+            val = escape_re(val)    -- Some lang strings are REs with % escapes. Retain them.
+            local key = k
+            local key_padded = string.format("%-"..tostring(repl_len).."s", key)
+            local val_padded = pad(repl_len, '"'..val..'"')
+            out_line, ct = out_line:gsub(key_padded, val_padded)
 
-        if (0 < ct) and (repl_len < (val:len() + 2)) then
-            Warn(string.format("Replacement exceeds space:%d < %d:\"%s\""
-                              , repl_len
-                              , val:len() + 2
-                              , val))
+                            -- SURPRISE! Lua strings are BYTES not CHARS! This
+                            -- matters when val is a string with umlauts or other
+                            -- non-ASCII code points. The difference will cause all
+                            -- this careful alignment work to be off by the number
+                            -- of extra bytes of utf-8 wide chars. Oh well.
+                            --
+                            -- Lua 5.3 adds _some_ UTF-8 handling, but I don't care
+                            -- enough upgrade from 5.2 and recode to fix this
+                            -- today.
+
+            if (0 < ct) and (repl_len < (val:len() + 2)) then
+                Warn(string.format("Replacement exceeds space:%d < %d:\"%s\""
+                                  , repl_len
+                                  , val:len() + 2
+                                  , val))
+            end
         end
-
 -- if k == "$ROLIS_NAME" and template_line:find(k) then
 -- print("k:'"..k.."'\n")
 -- print("key_padded:'"..key_padded.."'\n")

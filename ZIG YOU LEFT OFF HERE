@@ -194,16 +194,16 @@ AUTOSCAN? The 7-language loop of
 ---
 PTS 2018-11 Characters
 
-DC  1   ziggr-alt-one       1A=2018-11-01   7 lang 7 quests
-AD  2   ziggr-alt-two       2A=2018-11-01   7 lang 7 quests
-EP  3   ziggr-alt-three     3A=2018-11-01   7 lang 7 quests
-DC  4   ziggr-alt-four      4A=2018-11-01   7 lang 7 quests
-AD  5   ziggr-alt-five      5A=2018-11-01   7 lang 7 quests
-EP  6 1 ziggr-alt-six       6A=2018-11-01   7 lang 7 quests
-DC  7 2 ziggr-alt-seven     7A=2018-11-01   7 lang 7 quests
-AD  8 1 ziggr-alt-eight     8A=2018-11-01   7 lang 7 quests
-EP  9 2 ziggr-alt-nine      9A=2018-11-01   7 lang 7 quests
-EP 10 6 hammer-meets-thumb 10A=2018-11-01   7 lang 7 quests
+DC  1   ziggr-alt-one       1A=2018-11-01 B=02
+AD  2   ziggr-alt-two       2A=2018-11-01 B=02
+EP  3   ziggr-alt-three     3A=2018-11-01 B=02
+DC  4   ziggr-alt-four      4A=2018-11-01 B=02
+AD  5   ziggr-alt-five      5A=2018-11-01 B=02
+EP  6 1 ziggr-alt-six       6A=2018-11-01 B=02
+DC  7 2 ziggr-alt-seven     7A=2018-11-01 B=02
+AD  8 1 ziggr-alt-eight     8A=2018-11-01 B=02
+EP  9 2 ziggr-alt-nine      9A=2018-11-01 B=02
+EP 10 6 hammer-meets-thumb 10A=2018-11-02      C=01
 
 Faction PR Recipes
 DC 12.4..

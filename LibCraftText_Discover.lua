@@ -163,6 +163,25 @@ function LibCraftText.NextLang(want_lang)
     SetCVar("language.2", want_lang2)
 end
 
+function LibCraftText.ToQuestIndexOverride(quest_index)
+    local self       = LibCraftText
+    local jqi        = { GetJournalQuestInfo(quest_index) }
+    if jqi[self.JQI.quest_type] ~= QUEST_TYPE_CRAFTING then
+        return nil
+    end
+    local quest_name = jqi[self.JQI.quest_name]
+    local ctype      = self.DailyQuestNameToCraftingType(quest_name)
+    if (not ctype)
+                        -- Hack for broken IT Italian translation
+            and quest_name == ""
+            and GetCVar("language.2") == "it" then
+        ctype = CRAFTING_TYPE_JEWELRYCRAFTING
+    end
+    local quest_index_key_override = self.CRAFTING_TYPE_ABBREV[ctype]
+    local qi         = quest_index_key_override or quest_index
+    return qi
+end
+
 -- Quest Journal -------------------------------------------------------------
 function LibCraftText.ScanQuestJournal()
     local self         = LibCraftText
@@ -170,12 +189,13 @@ function LibCraftText.ScanQuestJournal()
     Info("lang: "..tostring(lang))
 
     self.saved_char.quests = self.saved_char.quests or {}
-    for qi = 1, MAX_JOURNAL_QUESTS do
-        local qinfo = self.ScanQuest(qi)
-        if qinfo then
-            self.saved_char.quests[qi] = self.saved_char.quests[qi] or {}
-            self.saved_char.quests[qi][lang] = qinfo
-            Info("qi:"..tostring(qi).." "..tostring(qinfo))
+    for quest_index = 1, MAX_JOURNAL_QUESTS do
+        local quest_name = self.ScanQuest(quest_index)
+        if quest_name then
+            local qi_override = self.ToQuestIndexOverride(quest_index)
+            self.saved_char.quests[qi_override] = self.saved_char.quests[qi_override] or {}
+            self.saved_char.quests[qi_override][lang] = quest_name
+            Info("qi:"..tostring(qi_override).." "..tostring(quest_name))
         end
     end
 end
@@ -194,6 +214,16 @@ function LibCraftText.ScanQuest(quest_index)
     return quest_name
 end
 
+LibCraftText.CRAFTING_TYPE_ABBREV = {
+    [bs] = "bs"
+,   [cl] = "cl"
+,   [en] = "en"
+,   [al] = "al"
+,   [pr] = "pr"
+,   [ww] = "ww"
+,   [jw] = "jw"
+}
+
 function LibCraftText.ScanQuestSteps(quest_index)
     local self = LibCraftText
     local jqi = { GetJournalQuestInfo(quest_index) }
@@ -201,46 +231,53 @@ function LibCraftText.ScanQuestSteps(quest_index)
         return nil
     end
 
+    local qi_override   = self.ToQuestIndexOverride(quest_index)
+
     local step_ct = GetJournalQuestNumSteps(quest_index)
     for step_i = 1,step_ct do
         local step_info  = { GetJournalQuestStepInfo(quest_index, step_i) }
         local step_text  = step_info[self.JQSI.step_text]
-        self.RecordStepText(quest_index,step_i,step_text)
+        self.RecordStepText( quest_index, step_i, step_text
+                           , qi_override )
 
         local condition_ct = step_info[self.JQSI.num_conditions]
         for cond_i = 1,condition_ct do
             local cond_info = { GetJournalQuestConditionInfo(
                                         quest_index, step_i, cond_i) }
             local cond_text = cond_info[self.JQCI.condition_text]
-            self.RecordConditionText(quest_index, step_i, cond_i, cond_text)
+            self.RecordConditionText( quest_index, step_i, cond_i, cond_text
+                                    , qi_override)
         end
     end
 end
 
-function LibCraftText.RecordStepText(quest_index, step_index, step_text)
+function LibCraftText.RecordStepText(quest_index, step_index, step_text, quest_index_key_override)
     local self = LibCraftText
     local lang = self.CurrLang()
     if not (step_text and step_text ~= "") then return end
+    local qi = quest_index_key_override or quest_index
     self.saved_char.steps = self.saved_char.steps or {}
-    self.saved_char.steps[quest_index] = self.saved_char.steps[quest_index] or {}
-    self.saved_char.steps[quest_index][step_index]
-                          = self.saved_char.steps[quest_index][step_index] or {}
-    self.saved_char.steps[quest_index][step_index][lang] = step_text
+    self.saved_char.steps[qi] = self.saved_char.steps[qi] or {}
+    self.saved_char.steps[qi][step_index]
+                          = self.saved_char.steps[qi][step_index] or {}
+    self.saved_char.steps[qi][step_index][lang] = step_text
 end
 
 function LibCraftText.RecordConditionText( quest_index, step_index
-                                         , condition_index, condition_text)
+                                         , condition_index, condition_text
+                                         , quest_index_key_override )
     local self = LibCraftText
     local lang = self.CurrLang()
+    local qi = quest_index_key_override or quest_index
     if not (condition_text and condition_text ~= "") then return end
     self.saved_char.conditions = self.saved_char.conditions or {}
-    self.saved_char.conditions[quest_index]
-            = self.saved_char.conditions[quest_index] or {}
-    self.saved_char.conditions[quest_index][step_index]
-            = self.saved_char.conditions[quest_index][step_index] or {}
-    self.saved_char.conditions[quest_index][step_index][condition_index]
-            = self.saved_char.conditions[quest_index][step_index][condition_index] or {}
-    self.saved_char.conditions[quest_index][step_index][condition_index][lang]
+    self.saved_char.conditions[qi]
+            = self.saved_char.conditions[qi] or {}
+    self.saved_char.conditions[qi][step_index]
+            = self.saved_char.conditions[qi][step_index] or {}
+    self.saved_char.conditions[qi][step_index][condition_index]
+            = self.saved_char.conditions[qi][step_index][condition_index] or {}
+    self.saved_char.conditions[qi][step_index][condition_index][lang]
             = condition_text
 end
 
