@@ -1,17 +1,17 @@
 LibCraftTextVars =
 {
-    ["Default"] = 
+    ["Default"] =
     {
-        ["@ziggr"] = 
+        ["@ziggr"] =
         {
-            ["ziggr-alt-three"] = 
+            ["ziggr-alt-three"] =
             {
                 ["alliance"] = "EP",
-                ["steps"] = 
+                ["steps"] =
                 {
-                    ["al"] = 
+                    ["al"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de una organización que busca alimentar y defender a las personas desplazadas por los combates en todo Nirn. Me han encargado crear una poción de magia y conseguir algo de para completar mi contrato.",
                             ["it"] = "This writ is from an organization that seeks to defend refugees across Nirn. I've been tasked with creating a Potion of Magicka and acquiring some Mountain Flower to complete my contract.",
@@ -22,9 +22,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from an organization that seeks to defend refugees across Nirn. I've been tasked with creating a Potion of Magicka and acquiring some Mountain Flower to complete my contract.",
                         },
                     },
-                    ["cl"] = 
+                    ["cl"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un grupo que intenta defender a los refugiados desplazados por los combates en todo Nirn. Me han encargado hacer varios zapatos, capuchas y bandas de algodón para completar mi contrato.",
                             ["it"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Cotton Shoes, Hats, and Sashes to complete my contract.",
@@ -35,9 +35,9 @@ LibCraftTextVars =
                             ["ru"] = "Этот заказ поступил от группы, которая пытается защитить людей, потерявшихся во время сражений по всему Нирну. Чтобы выполнить контракт, мне нужно создать несколько хлопковых башмаков, головных уборов и поясов из эбенового волокна.",
                         },
                     },
-                    ["bs"] = 
+                    ["bs"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un grupo que intenta defender a los refugiados desplazados por los combates en todo Nirn. Me han encargado hacer varios mandobles, escarpes y guanteletes de oricalco para completar mi contrato.",
                             ["it"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Orichalcum Greatswords, Sabatons, and Gauntlets to complete my contract.",
@@ -48,9 +48,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Orichalcum Greatswords, Sabatons, and Gauntlets to complete my contract.",
                         },
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un grupo que intenta defender a los refugiados desplazados por los combates en todo Nirn. Me han encargado hacer varias varas infernales, glaciares y eléctricas de haya para completar mi contrato.",
                             ["it"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Beech Inferno Staves, Ice Staves, and Lightning Staves to complete my contract.",
@@ -61,9 +61,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a group trying to defend people displaced by fighting across Nirn. I've been tasked with creating several Beech Inferno Staves, Ice Staves, and Lightning Staves to complete my contract.",
                         },
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "This writ is from a group defending people displaced by fighting across Nirn. I've been tasked with creating two Silver Necklaces to complete my contract.",
                             ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation de deux colliers d'argent.",
@@ -73,9 +73,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a group defending people displaced by fighting across Nirn. I've been tasked with creating two Silver Necklaces to complete my contract.",
                         },
                     },
-                    ["en"] = 
+                    ["en"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un grupo que defiende a los refugiados desplazados por los combates en todo Nirn. Me han encargado crear un glifo menor de vida y conseguir una runa de potencia Jayde para completar mi contrato.",
                             ["it"] = "This writ is from a group defending people displaced by fighting across Nirn. I've been tasked with creating a Minor Glyph of Health and acquiring a Jayde Potency Rune to complete my contract.",
@@ -86,9 +86,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a group defending people displaced by fighting across Nirn. I've been tasked with creating a Minor Glyph of Health and acquiring a Jayde Potency Rune to complete my contract.",
                         },
                     },
-                    ["pr"] = 
+                    ["pr"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de una organización de ayuda a los refugiados que intenta alimentar y defender a las personas desplazadas por los combates en todo Nirn. Me han encargado preparar Pastel de zanahoria \"El Paisaje de Jerall\" y Malta agria para completar mi contrato. La organización espera la entrega en Pantano de las Sombras.",
                             ["it"] = "This writ is from a refugee relief organization trying to feed and defend people displaced by fighting across Nirn. I've been tasked with creating Jerall View Inn Carrot Cake and Sour Mash to complete my contract. The organization expects delivery in Shadowfen.",
@@ -100,7 +100,7 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["skill_rank"] = 
+                ["skill_rank"] =
                 {
                     [1] = 3,
                     [2] = 3,
@@ -110,13 +110,13 @@ LibCraftTextVars =
                     [6] = 3,
                     [7] = 3,
                 },
-                ["conditions"] = 
+                ["conditions"] =
                 {
-                    ["al"] = 
+                    ["al"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Adquiere una flor de montaña: 3/3",
                                 ["it"] = "Acquire Mountain Flower: 3 / 3",
@@ -126,7 +126,7 @@ LibCraftTextVars =
                                 ["de"] = "Beschafft eine Bergblume: 3/3",
                                 ["ru"] = "Добыть горноцвет: 3 / 3",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Prepara una poción de magia: 0/1",
                                 ["it"] = "Craft Potion of Magicka: 0 / 1",
@@ -138,11 +138,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["cl"] = 
+                    ["cl"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica unos zapatos de algodón normales: 0/1",
                                 ["it"] = "Craft Cotton Shoes: 0 / 1",
@@ -152,7 +152,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Baumwollschuhe her: 0/1",
                                 ["ru"] = "Craft Normal Cotton Shoes: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica una capucha de algodón normal: 0/1",
                                 ["it"] = "Craft Cotton Hat: 0 / 1",
@@ -162,7 +162,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Baumwollhüte her: 0/1",
                                 ["ru"] = "Craft Normal Cotton Hat: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica una banda de algodón normal: 0/1",
                                 ["it"] = "Craft Cotton Sash: 0 / 1",
@@ -174,11 +174,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["bs"] = 
+                    ["bs"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un mandoble de oricalco normal: 0/1",
                                 ["it"] = "Craft Orichalcum Greatsword: 0 / 1",
@@ -188,7 +188,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Oreichalkosbidenhänder her: 0/1",
                                 ["ru"] = "Craft Normal Orichalcum Greatsword: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica unos escarpes de oricalco normales: 0/1",
                                 ["it"] = "Craft Orichalcum Sabatons: 0 / 1",
@@ -198,7 +198,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Oreichalkospanzerschuhe her: 0/1",
                                 ["ru"] = "Craft Normal Orichalcum Sabatons: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unos guanteletes de oricalco normales: 0/1",
                                 ["it"] = "Craft Orichalcum Gauntlets: 0 / 1",
@@ -210,11 +210,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica una vara infernal de haya normal: 0/1",
                                 ["it"] = "Craft Beech Inferno Staff: 0 / 1",
@@ -224,7 +224,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Buchenflammenstäbe her: 0/1",
                                 ["ru"] = "Craft Normal Beech Inferno Staff: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica una vara glaciar de haya normal: 0/1",
                                 ["it"] = "Craft Beech Ice Staff: 0 / 1",
@@ -234,7 +234,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Buchenfroststäbe her: 0/1",
                                 ["ru"] = "Craft Normal Beech Ice Staff: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica una vara eléctrica de haya normal: 0/1",
                                 ["it"] = "Craft Beech Lightning Staff: 0 / 1",
@@ -246,11 +246,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica dos colgantes de plata: 0/2",
                                 ["it"] = "TRACKER GOAL TEXT: 0 / 2",
@@ -262,11 +262,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["en"] = 
+                    ["en"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Adquiere una runa de potencia Jayde: 1/1",
                                 ["it"] = "Acquire Jayde Potency Rune: 1 / 1",
@@ -276,7 +276,7 @@ LibCraftTextVars =
                                 ["de"] = "Beschafft eine Jayde-Machtrune: 1/1",
                                 ["ru"] = "Добыть руну силы Джайде: 1 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un glifo menor de vida con Ta: 0/1",
                                 ["it"] = "Craft Minor Glyph of Health: 0 / 1",
@@ -288,11 +288,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["pr"] = 
+                    ["pr"] =
                     {
-                        [2] = 
+                        [2] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Los cerveceros y los cocineros pueden proporcionar recetas",
                                 ["it"] = "TRACKER GOAL TEXT",
@@ -303,9 +303,9 @@ LibCraftTextVars =
                                 ["ru"] = "Пивовары и повара могут снабдить вас рецептами",
                             },
                         },
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Preparæ Pastel de zanahoria \"El Paisaje de Jerall\": 0/1",
                                 ["it"] = "Craft Jerall View Inn Carrot Cake: 0 / 1",
@@ -315,7 +315,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt einen Jerallblick-Karottenkuchen her: 0/1",
                                 ["ru"] = "Создать — морковный торт таверны «Радушие Джерола»: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Preparæ Malta agria: 0/1",
                                 ["it"] = "Craft Sour Mash: 0 / 1",
@@ -329,9 +329,9 @@ LibCraftTextVars =
                     },
                 },
                 ["version"] = 1,
-                ["quests"] = 
+                ["quests"] =
                 {
-                    ["al"] = 
+                    ["al"] =
                     {
                         ["es"] = "Encargo de alquimia",
                         ["it"] = "Alchemist Writ",
@@ -341,7 +341,7 @@ LibCraftTextVars =
                         ["de"] = "Alchemistenschrieb",
                         ["ru"] = "Заказ алхимику",
                     },
-                    ["cl"] = 
+                    ["cl"] =
                     {
                         ["es"] = "Encargo de sastrería",
                         ["it"] = "Clothier Writ",
@@ -351,7 +351,7 @@ LibCraftTextVars =
                         ["de"] = "Schneiderschrieb",
                         ["ru"] = "Заказ портному",
                     },
-                    ["bs"] = 
+                    ["bs"] =
                     {
                         ["es"] = "Encargo de herrería",
                         ["it"] = "Blacksmith Writ",
@@ -361,7 +361,7 @@ LibCraftTextVars =
                         ["de"] = "Schmiedeschrieb",
                         ["ru"] = "Заказ кузнецу",
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
                         ["es"] = "Encargo de carpintería",
                         ["it"] = "Woodworker Writ",
@@ -371,7 +371,7 @@ LibCraftTextVars =
                         ["de"] = "Schreinerschrieb",
                         ["ru"] = "Заказ столяру",
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
                         ["es"] = "Encargo de artesanía de joyería",
                         ["it"] = "",
@@ -381,7 +381,7 @@ LibCraftTextVars =
                         ["de"] = "Schmuckhandwerksschrieb",
                         ["ru"] = "Заказ ювелиру",
                     },
-                    ["en"] = 
+                    ["en"] =
                     {
                         ["es"] = "Encargo de encantamiento",
                         ["it"] = "Enchanter Writ",
@@ -391,7 +391,7 @@ LibCraftTextVars =
                         ["de"] = "Verzaubererschrieb",
                         ["ru"] = "Заказ зачарователю",
                     },
-                    ["pr"] = 
+                    ["pr"] =
                     {
                         ["es"] = "Encargo de provisiones",
                         ["it"] = "Provisioner Writ",
@@ -403,14 +403,14 @@ LibCraftTextVars =
                     },
                 },
             },
-            ["ziggr-alt-one"] = 
+            ["ziggr-alt-one"] =
             {
                 ["alliance"] = "DC",
-                ["steps"] = 
+                ["steps"] =
                 {
-                    [8] = 
+                    [8] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado crear un sorbo de magia y conseguir algo de para completar mi contrato.",
                             ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Sip of Magicka and acquiring some wormwood to complete my contract.",
@@ -421,9 +421,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Sip of Magicka and acquiring some wormwood to complete my contract.",
                         },
                     },
-                    [2] = 
+                    [2] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado hacer varios zapatos, capuchas y bandas de tejido artesanal para completar mi contrato.",
                             ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Homespun Shoes, Hats, and Sashes to complete my contract.",
@@ -434,9 +434,9 @@ LibCraftTextVars =
                             ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих товары по всему Нирну. Чтобы выполнить свой контракт, мне надо создать несколько домотканых башмаков, головных уборов и поясов.",
                         },
                     },
-                    [3] = 
+                    [3] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado hacer varios mandobles, escarpes y guanteletes de hierro para completar mi contrato.",
                             ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Iron Greatswords, Sabatons, and Gauntlets to complete my contract.",
@@ -447,9 +447,9 @@ LibCraftTextVars =
                             ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо создать несколько комплектов железных двуручных мечей, сабатонов и перчаток.",
                         },
                     },
-                    [4] = 
+                    [4] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado hacer varias varas infernales, glaciares y eléctricas de arce para completar mi contrato.",
                             ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating several Maple Inferno Staves, Ice Staves, and Lightning Staves to complete my contract.",
@@ -460,9 +460,9 @@ LibCraftTextVars =
                             ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо сделать из клена несколько огненных и ледяных посохов, а также посохов молний.",
                         },
                     },
-                    [5] = 
+                    [5] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "This writ is from a trade consortium, merchants passing goods across Nirn. I've been tasked with creating two Pewter Necklaces to complete my contract.",
                             ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating a Trifling Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
@@ -473,9 +473,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a trade consortium, merchants passing goods across Nirn. I've been tasked with creating two Pewter Necklaces to complete my contract.",
                         },
                     },
-                    [6] = 
+                    [6] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado preparar Sopa de zanahoria y Cerveza rubia dorada para completar mi contrato. Los mercaderes esperan la entrega en Glenumbra.",
                             ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating Carrot Soup and Golden Lager to complete my contract. The merchants expect delivery in Glenumbra.",
@@ -486,9 +486,9 @@ LibCraftTextVars =
                             ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо создать морковный суп и золотой лагер. Торговцы ожидают поставку в Гленумбре.",
                         },
                     },
-                    [7] = 
+                    [7] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado crear un glifo mediocre de vida y conseguir una runa de potencia Jode para completar mi contrato.",
                             ["it"] = "This writ is from a trade consortium, merchants passing goods across Nirn. I've been tasked with creating a Trifling Glyph of Health and acquiring a Jode Potency Rune to complete my contract.",
@@ -500,7 +500,7 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["skill_rank"] = 
+                ["skill_rank"] =
                 {
                     [1] = 1,
                     [2] = 1,
@@ -510,13 +510,13 @@ LibCraftTextVars =
                     [6] = 1,
                     [7] = 1,
                 },
-                ["conditions"] = 
+                ["conditions"] =
                 {
-                    [8] = 
+                    [8] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Prepara un sorbo de magia: 0/1",
                                 ["it"] = "Craft Sip of Magicka: 0 / 1",
@@ -526,7 +526,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt Schlückchen der Magicka her: 0/1",
                                 ["ru"] = "Craft Sip of Magicka: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Adquiere artemisia: 3/3",
                                 ["it"] = "Acquire Wormwood: 3 / 3",
@@ -538,11 +538,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [2] = 
+                    [2] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [4] = 
+                            [4] =
                             {
                                 ["es"] = "Fabrica una banda de tejido artesanal normal: 0/1",
                                 ["it"] = "Craft Homespun Sash: 0 / 1",
@@ -552,7 +552,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Juteschärpen her: 0/1",
                                 ["ru"] = "Craft Normal Homespun Sash: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica unos zapatos de tejido artesanal normales: 0/1",
                                 ["it"] = "Craft Homespun Shoes: 0 / 1",
@@ -562,7 +562,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Juteschuhe her: 0/1",
                                 ["ru"] = "Craft Normal Homespun Shoes: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica una capucha de tejido artesanal normal: 0/1",
                                 ["it"] = "Craft Homespun Hat: 0 / 1",
@@ -574,11 +574,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [3] = 
+                    [3] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [4] = 
+                            [4] =
                             {
                                 ["es"] = "Fabrica unos guanteletes de hierro normales: 0/1",
                                 ["it"] = "Craft Iron Gauntlets: 0 / 1",
@@ -588,7 +588,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Eisenhentzen her: 0/1",
                                 ["ru"] = "Craft Normal Iron Gauntlets: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un mandoble de hierro normal: 0/1",
                                 ["it"] = "Craft Iron Greatsword: 0 / 1",
@@ -598,7 +598,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Eisenbidenhänder her: 0/1",
                                 ["ru"] = "Craft Normal Iron Greatsword: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unos escarpes de hierro normales: 0/1",
                                 ["it"] = "Craft Iron Sabatons: 0 / 1",
@@ -610,11 +610,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [4] = 
+                    [4] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [4] = 
+                            [4] =
                             {
                                 ["es"] = "Fabrica una vara eléctrica de arce normal: 0/1",
                                 ["it"] = "Craft Maple Lightning Staff: 0 / 1",
@@ -624,7 +624,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Ahornblitzstäbe her: 0/1",
                                 ["ru"] = "Craft Normal Maple Lightning Staff: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica una vara infernal de arce normal: 0/1",
                                 ["it"] = "Craft Maple Inferno Staff: 0 / 1",
@@ -634,7 +634,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Ahornflammenstäbe her: 0/1",
                                 ["ru"] = "Craft Normal Maple Inferno Staff: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica una vara glaciar de arce normal: 0/1",
                                 ["it"] = "Craft Maple Ice Staff: 0 / 1",
@@ -646,11 +646,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [5] = 
+                    [5] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica dos collares de peltre: 0/2",
                                 ["it"] = "TRACKER GOAL TEXT: 0 / 2",
@@ -660,7 +660,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt zwei Zinnhalsketten her: 0/2",
                                 ["ru"] = "Craft two Pewter Necklaces: 0 / 2",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Adquiere una runa de aspecto Ta: 1/1",
                                 ["it"] = "Acquire Ta Aspect Rune: 1 / 1",
@@ -672,11 +672,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [6] = 
+                    [6] =
                     {
-                        [2] = 
+                        [2] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Los cerveceros y los cocineros pueden proporcionar recetas",
                                 ["it"] = "TRACKER GOAL TEXT",
@@ -687,9 +687,9 @@ LibCraftTextVars =
                                 ["ru"] = "Пивовары и повара могут снабдить вас рецептами",
                             },
                         },
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Preparæ manzanas asadas: 0/1",
                                 ["it"] = "Craft Baked Apples: 0 / 1",
@@ -699,7 +699,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt einige Bratäpfel her: 0/1",
                                 ["ru"] = "Создать — печеные яблоки: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Preparæ Sopa de zanahoria: 0/1",
                                 ["it"] = "Craft Carrot Soup: 0 / 1",
@@ -709,7 +709,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt etwas Karottensuppe her: 0/1",
                                 ["ru"] = "Создать — морковный суп: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Preparæ Cerveza rubia dorada: 0/1",
                                 ["it"] = "Craft Golden Lager: 0 / 1",
@@ -721,11 +721,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [7] = 
+                    [7] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un glifo mediocre de vida con Ta: 0/1",
                                 ["it"] = "Craft Trifling Glyph of Health: 0 / 1",
@@ -735,7 +735,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt mit einer Ta-Rune eine unbedeutende Glyphe des Lebens her: 0/1",
                                 ["ru"] = "Craft Trifling Glyph of Health With Ta: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Adquiere una runa de potencia Jode: 1/1",
                                 ["it"] = "Acquire Jode Potency Rune: 1 / 1",
@@ -749,9 +749,9 @@ LibCraftTextVars =
                     },
                 },
                 ["version"] = 1,
-                ["quests"] = 
+                ["quests"] =
                 {
-                    [8] = 
+                    [8] =
                     {
                         ["es"] = "Encargo de alquimia",
                         ["it"] = "Alchemist Writ",
@@ -761,7 +761,7 @@ LibCraftTextVars =
                         ["de"] = "Alchemistenschrieb",
                         ["ru"] = "Заказ алхимику",
                     },
-                    [2] = 
+                    [2] =
                     {
                         ["es"] = "Encargo de sastrería",
                         ["it"] = "Clothier Writ",
@@ -771,7 +771,7 @@ LibCraftTextVars =
                         ["de"] = "Schneiderschrieb",
                         ["ru"] = "Заказ портному",
                     },
-                    [3] = 
+                    [3] =
                     {
                         ["es"] = "Encargo de herrería",
                         ["it"] = "Blacksmith Writ",
@@ -781,7 +781,7 @@ LibCraftTextVars =
                         ["de"] = "Schmiedeschrieb",
                         ["ru"] = "Заказ кузнецу",
                     },
-                    [4] = 
+                    [4] =
                     {
                         ["es"] = "Encargo de carpintería",
                         ["it"] = "Woodworker Writ",
@@ -791,7 +791,7 @@ LibCraftTextVars =
                         ["de"] = "Schreinerschrieb",
                         ["ru"] = "Заказ столяру",
                     },
-                    [5] = 
+                    [5] =
                     {
                         ["es"] = "Encargo de artesanía de joyería",
                         ["it"] = "",
@@ -801,7 +801,7 @@ LibCraftTextVars =
                         ["de"] = "Schmuckhandwerksschrieb",
                         ["ru"] = "Заказ ювелиру",
                     },
-                    [6] = 
+                    [6] =
                     {
                         ["es"] = "Encargo de provisiones",
                         ["it"] = "Provisioner Writ",
@@ -811,7 +811,7 @@ LibCraftTextVars =
                         ["de"] = "Versorgerschrieb",
                         ["ru"] = "Заказ снабженцу",
                     },
-                    [7] = 
+                    [7] =
                     {
                         ["es"] = "Encargo de encantamiento",
                         ["it"] = "Enchanter Writ",
@@ -823,14 +823,14 @@ LibCraftTextVars =
                     },
                 },
             },
-            ["ziggr-alt-four"] = 
+            ["ziggr-alt-four"] =
             {
                 ["alliance"] = "DC",
-                ["steps"] = 
+                ["steps"] =
                 {
-                    [1] = 
+                    [1] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Gremio de Luchadores, buscando ayuda en su lucha contra los daedra. Me han encargado hacer varios cascos, hombreras y brazales de cuero tratado para completar mi contrato.",
                             ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。この契約の完了のために課されているのは、複数のフルレザーの兜、アームカップそして腕当ての生産だ",
@@ -839,9 +839,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Full-Leather Helmets, Arm Cops, and Bracers  to complete my contract.",
                         },
                     },
-                    [2] = 
+                    [2] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Gremio de Luchadores, buscando ayuda en su lucha contra los daedra. Me han encargado hacer varios yelmos enanos, dagas y espaldarones para completar mi contrato.",
                             ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。この契約の完了のために課されているのは、複数のドワーフの兜、短剣、そしてポールドロンの生産だ",
@@ -850,9 +850,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating several Dwarven Helms, Daggers, and Pauldrons to complete my contract.",
                         },
                     },
-                    [3] = 
+                    [3] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Gremio de Luchadores, buscando ayuda en su lucha contra los daedra. Me han encargado hacer varios arcos y escudos de nogal para completar mi contrato.",
                             ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。この契約の完了のために課されているのは、複数のヒッコリーの弓、およびヒッコリーの盾の生産だ",
@@ -861,9 +861,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the Fighters Guild. They offer pay for supplies to help them in their fight against the Daedra. I've been tasked with creating several Hickory Bows and Shields to complete my contract.",
                         },
                     },
-                    [4] = 
+                    [4] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。契約を遂行するには琥珀金の指輪1個と琥珀金のネックレス1個を作る",
                             ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation d'un anneau et d'un collier d'électrum.",
@@ -871,9 +871,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating an Electrum Ring and an Electrum Necklace to complete my contract.",
                         },
                     },
-                    [5] = 
+                    [5] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Gremio de Luchadores. Ofrecen pagar por suministros que los ayuden en su lucha contra los daedra. Me han encargado preparar crostata de jazbay de Skyrim y maratón de Blue Road para completar mi contrato.",
                             ["ja"] = "戦士ギルドからの依頼だ。金銭と交換で、デイドラとの抗争に役立つ物資を求めている。契約を遂行するにはスカイリムのジャズベイ・クロスタータとブルーロード・マラソンを作らなければならない",
@@ -882,9 +882,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the Fighters Guild. They offer pay for supplies to help them in their fight against the Daedra. I've been tasked with creating песочная полоска с желе из винограда джазби and «Марафон по Синей дороге» to complete my contract.",
                         },
                     },
-                    [6] = 
+                    [6] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Gremio de Luchadores, buscando ayuda en su lucha contra los daedra. Me han encargado crear un glifo moderado de aguante y conseguir una runa de aspecto Ta para completar mi contrato.",
                             ["ja"] = "依頼はデイドラとの戦いのために支援を求めている、戦士ギルドからのものだ。この契約の完了のために課されているのは、中堅のグリフ(スタミナ)の生産と、ターの品質ルーンの入手だ",
@@ -893,9 +893,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the Fighters Guild, seeking help in their fight against the Daedra. I've been tasked with creating a Moderate Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
                         },
                     },
-                    [7] = 
+                    [7] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Gremio de Luchadores. Ofrecen pagar por suministros que los ayuden en su lucha contra los daedra. Me han encargado crear una solución de reducción de aguante y conseguir algo de agua filtrada para completar mi contrato.",
                             ["ja"] = "戦士ギルドからの依頼で、デイドラとの抗争に役立つものを求めている。契約を遂行するにはスタミナ減少の液体薬を作り、ろ過水を手に入れなければならない",
@@ -905,7 +905,7 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["skill_rank"] = 
+                ["skill_rank"] =
                 {
                     [1] = 4,
                     [2] = 4,
@@ -915,13 +915,13 @@ LibCraftTextVars =
                     [6] = 4,
                     [7] = 4,
                 },
-                ["conditions"] = 
+                ["conditions"] =
                 {
-                    [1] = 
+                    [1] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [4] = 
+                            [4] =
                             {
                                 ["es"] = "Fabrica unos brazales de cuero tratado normales: 0/1",
                                 ["ja"] = "フルレザーの腕当て(ノーマル)を生産する: 0 / 1",
@@ -929,7 +929,7 @@ LibCraftTextVars =
                                 ["it"] = "Craft Full-Leather Bracers: 0 / 1",
                                 ["ru"] = "Craft Normal Full-Leather Bracers: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un casco de cuero tratado normal: 0/1",
                                 ["ja"] = "フルレザーの兜(ノーマル)を生産する: 0 / 1",
@@ -937,7 +937,7 @@ LibCraftTextVars =
                                 ["it"] = "Craft Full-Leather Helmet: 0 / 1",
                                 ["ru"] = "Craft Normal Full-Leather Helmet: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unas hombreras de cuero tratado normales: 0/1",
                                 ["ja"] = "フルレザーのアームカップ(ノーマル)を生産する: 0 / 1",
@@ -947,11 +947,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [2] = 
+                    [2] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [4] = 
+                            [4] =
                             {
                                 ["es"] = "Fabrica unos espaldarones de acero enano normales: 0/1",
                                 ["ja"] = "ドワーフのポールドロン(ノーマル)を生産する: 0 / 1",
@@ -959,7 +959,7 @@ LibCraftTextVars =
                                 ["it"] = "Craft Dwarven Pauldrons: 0 / 1",
                                 ["ru"] = "Craft Normal Dwarven Pauldrons: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un yelmo de acero enano normal: 0/1",
                                 ["ja"] = "ドワーフの兜(ノーマル)を生産する: 0 / 1",
@@ -967,7 +967,7 @@ LibCraftTextVars =
                                 ["it"] = "Craft Dwarven Helm: 0 / 1",
                                 ["ru"] = "Craft Normal Dwarven Helm: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica una daga de acero enano normal: 0/1",
                                 ["ja"] = "ドワーフの短剣(ノーマル)を生産する: 0 / 1",
@@ -977,11 +977,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [3] = 
+                    [3] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un arco de nogal normal: 0/2",
                                 ["ja"] = "ヒッコリーの弓(ノーマル)を生産する: 0 / 2",
@@ -989,7 +989,7 @@ LibCraftTextVars =
                                 ["it"] = "Craft Hickory Bow: 0 / 2",
                                 ["ru"] = "Craft Normal Hickory Bow: 0 / 2",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica un escudo de nogal normal: 0/1",
                                 ["ja"] = "ヒッコリーの盾(ノーマル)を生産する: 0 / 1",
@@ -999,11 +999,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [4] = 
+                    [4] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un anillo de electro: 0/1",
                                 ["ja"] = "琥珀金の指輪を作る: 0 / 1",
@@ -1011,7 +1011,7 @@ LibCraftTextVars =
                                 ["it"] = "TRACKER GOAL TEXT: 0 / 1",
                                 ["ru"] = "Craft an Electrum Ring: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica un collar de electro: 0/1",
                                 ["ja"] = "琥珀金のネックレスを作る: 0 / 1",
@@ -1021,11 +1021,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [5] = 
+                    [5] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Preparæ crostata de jazbay de Skyrim: 0/1",
                                 ["ja"] = "スカイリムのジャズベイ・クロスタータを生産する: 0 / 1",
@@ -1033,7 +1033,7 @@ LibCraftTextVars =
                                 ["it"] = "Craft Skyrim Jazbay Crostata: 0 / 1",
                                 ["ru"] = "Создать — песочная полоска с желе из винограда джазби: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Preparæ maratón de Blue Road: 0/1",
                                 ["ja"] = "ブルーロード・マラソンを生産する: 0 / 1",
@@ -1043,11 +1043,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [6] = 
+                    [6] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Adquiere una runa de aspecto Ta: 1/1",
                                 ["ja"] = "ターの品質ルーンを手に入れる: 1 / 1",
@@ -1055,7 +1055,7 @@ LibCraftTextVars =
                                 ["it"] = "Acquire Ta Aspect Rune: 1 / 1",
                                 ["ru"] = "Добыть руну аспекта Та: 1 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un glifo moderado de aguante con Ta: 0/1",
                                 ["ja"] = "ターの中堅のグリフ(スタミナ)を生産する: 0 / 1",
@@ -1065,11 +1065,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [7] = 
+                    [7] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Crea una solución de reducción de aguante: 0/1",
                                 ["ja"] = "スタミナ減少の液体薬を生産する: 0 / 1",
@@ -1077,7 +1077,7 @@ LibCraftTextVars =
                                 ["it"] = "Craft Solution of Ravage Stamina: 0 / 1",
                                 ["ru"] = "Craft Solution of Ravage Stamina: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Adquiere agua filtrada: 3/3",
                                 ["ja"] = "ろ過水を手に入れる: 3 / 3",
@@ -1089,9 +1089,9 @@ LibCraftTextVars =
                     },
                 },
                 ["version"] = 1,
-                ["quests"] = 
+                ["quests"] =
                 {
-                    [1] = 
+                    [1] =
                     {
                         ["es"] = "Encargo de sastrería",
                         ["ja"] = "仕立師の依頼",
@@ -1099,7 +1099,7 @@ LibCraftTextVars =
                         ["it"] = "Clothier Writ",
                         ["ru"] = "Заказ портному",
                     },
-                    [2] = 
+                    [2] =
                     {
                         ["es"] = "Encargo de herrería",
                         ["ja"] = "鍛冶師の依頼",
@@ -1107,7 +1107,7 @@ LibCraftTextVars =
                         ["it"] = "Blacksmith Writ",
                         ["ru"] = "Заказ кузнецу",
                     },
-                    [3] = 
+                    [3] =
                     {
                         ["es"] = "Encargo de carpintería",
                         ["ja"] = "木工師の依頼",
@@ -1115,7 +1115,7 @@ LibCraftTextVars =
                         ["it"] = "Woodworker Writ",
                         ["ru"] = "Заказ столяру",
                     },
-                    [4] = 
+                    [4] =
                     {
                         ["es"] = "Encargo de artesanía de joyería",
                         ["ja"] = "宝飾師のクラフト依頼",
@@ -1123,7 +1123,7 @@ LibCraftTextVars =
                         ["it"] = "",
                         ["ru"] = "Заказ ювелиру",
                     },
-                    [5] = 
+                    [5] =
                     {
                         ["es"] = "Encargo de provisiones",
                         ["ja"] = "調理師の依頼",
@@ -1131,7 +1131,7 @@ LibCraftTextVars =
                         ["it"] = "Provisioner Writ",
                         ["ru"] = "Заказ снабженцу",
                     },
-                    [6] = 
+                    [6] =
                     {
                         ["es"] = "Encargo de encantamiento",
                         ["ja"] = "付呪師の依頼",
@@ -1139,7 +1139,7 @@ LibCraftTextVars =
                         ["it"] = "Enchanter Writ",
                         ["ru"] = "Заказ зачарователю",
                     },
-                    [7] = 
+                    [7] =
                     {
                         ["es"] = "Encargo de alquimia",
                         ["ja"] = "錬金術師の依頼",
@@ -1149,14 +1149,14 @@ LibCraftTextVars =
                     },
                 },
             },
-            ["ziggr-alt-six"] = 
+            ["ziggr-alt-six"] =
             {
                 ["alliance"] = "EP",
-                ["steps"] = 
+                ["steps"] =
                 {
-                    [1] = 
+                    [1] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado preparar pechuga de pollo y cerveza del Pantano de Hierro para completar mi contrato. Los mercaderes esperan la entrega en Páramo de Piedra.",
                             ["fr"] = "Cette commande émane d'un consortium commercial, des marchands qui transportent les denrées aux quatre coins de Nirn. On m'a demandé de préparer un blanc de poulet et une bière de Tourbefer. Je dois livrer ces denrées aux Éboulis.",
@@ -1166,9 +1166,9 @@ LibCraftTextVars =
                             ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо изготовить куриная грудка и болотнорудный эль. Торговцы ожидают поставку в Стоунфолзе.",
                         },
                     },
-                    [2] = 
+                    [2] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministros y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado crear un glifo superior de magia y conseguir una runa de esencia Deni para completar mi contrato.",
                             ["fr"] = "Cette commande émane d'une branche de la guilde des mages. Ils cherchent à ravitailler et armer leurs efforts dans le domaine daedrique de Havreglace. Ils m'ont commandé un glyphe de Magie majeur et l'acquisition d'une rune d'essence Deni.",
@@ -1178,9 +1178,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating a Greater Glyph of Magicka and acquiring a Deni Essence Rune to complete my contract.",
                         },
                     },
-                    [3] = 
+                    [3] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los encargados del suministro de Belkarth. Éste busca armas y armaduras para los exploradores recién llegados. Me han encargado crear una panacea de magia y conseguir algo de raíz de nirn para completar mi contrato.",
                             ["fr"] = "Cette commande est adressée par l'un des maîtres approvisionneurs de Belkarth. Celui-ci cherche des fournitures alchimiques pour équiper les explorateurs fraîchement débarqués. On m'a demandé de préparer une panacée de Magie et de ramener une nirnrave.",
@@ -1190,9 +1190,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks to supply newly arrived explorers. I've been tasked with creating a Panacea of Magicka and acquiring some корень Нирна in order to complete my contract.",
                         },
                     },
-                    [4] = 
+                    [4] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministros y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado hacer varias túnicas, pantalones y hombreras de kresh para completar mi contrato.",
                             ["fr"] = "Cette commande émane d'une branche de la guilde des mages. Ils cherchent à approvisionner leurs efforts dans le royaume daedrique de Havreglace. On m'a commandé plusieurs robes, braies et épaulettes en kresh pour remplir mon contrat.",
@@ -1202,9 +1202,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating several Kresh Robes, Breeches, and Epaulets to complete my contract.",
                         },
                     },
-                    [5] = 
+                    [5] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministros y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado hacer varias espadas, corazas y grebas de calcinio para completar mi contrato.",
                             ["fr"] = "Cette commande émane de la guilde des mages. Ils cherchent à ravitailler et armer leurs efforts dans le domaine daedrique de Havreglace. On m'a commandé de fabriquer des épées, cuirasses et grèves en calcinium.",
@@ -1214,9 +1214,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating several Calcinium Swords, Cuirass, and Greaves to complete my contract.",
                         },
                     },
-                    [6] = 
+                    [6] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministros y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado hacer varias varas de restauración y escudos de abedul para completar mi contrato.",
                             ["fr"] = "Cette commande émane d'une branche de la guilde des mages. Ils cherchent à ravitailler et armer leurs efforts dans le domaine daedrique de Havreglace. On m'a commandé de fabriquer plusieurs bâtons de rétablissement et boucliers en bouleau.",
@@ -1226,9 +1226,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating several Birch Restoration Staves and Shields to complete my contract.",
                         },
                     },
-                    [7] = 
+                    [7] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating three Platinum Rings to complete my contract.",
                             ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation de trois anneaux de platine.",
@@ -1239,7 +1239,7 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["skill_rank"] = 
+                ["skill_rank"] =
                 {
                     [1] = 6,
                     [2] = 6,
@@ -1249,13 +1249,13 @@ LibCraftTextVars =
                     [6] = 6,
                     [7] = 5,
                 },
-                ["conditions"] = 
+                ["conditions"] =
                 {
-                    [1] = 
+                    [1] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Preparæ pechuga de pollo: 0/1",
                                 ["fr"] = "Préparez un blanc de poulet : 0/1",
@@ -1264,7 +1264,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt eine Hühnerbrust her: 0/1",
                                 ["ru"] = "Создать — куриная грудка: 0 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Preparæ cerveza del Pantano de Hierro: 0/1",
                                 ["fr"] = "Préparez une bière de Tourbefer : 0/1",
@@ -1275,11 +1275,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [2] = 
+                    [2] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Adquiere una runa de esencia Deni: 1/1",
                                 ["fr"] = "Acquérez une rune d'essence Deni : 1/1",
@@ -1288,7 +1288,7 @@ LibCraftTextVars =
                                 ["de"] = "Beschafft eine Deni-Essenzrune: 1/1",
                                 ["ru"] = "Добыть руну сущности Дени: 1 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un glifo grande de magia con Ta: 0/1",
                                 ["fr"] = "Fabriquez un glyphe majeur magique avec Ta : 0/1",
@@ -1299,11 +1299,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [3] = 
+                    [3] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Adquiere raíz de nirn: 3/3",
                                 ["fr"] = "Acquérez une nirnrave : 3/3",
@@ -1312,7 +1312,7 @@ LibCraftTextVars =
                                 ["de"] = "Besorgt eine Nirnwurz: 3/3",
                                 ["ru"] = "Раздобыть — корень Нирна: 3 / 3",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Prepara una panacea de magia: 0/1",
                                 ["fr"] = "Préparez une panacée de Magie : 0/1",
@@ -1323,11 +1323,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [4] = 
+                    [4] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica una túnica de kresh normal: 0/1",
                                 ["fr"] = "Fabriquez une robe en kresh normale : 0/1",
@@ -1336,7 +1336,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Kreshroben her: 0/1",
                                 ["ru"] = "Craft Normal Kresh Robe: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica unos calzones de kresh normales: 0/1",
                                 ["fr"] = "Fabriquez des braies en kresh normales : 0/1",
@@ -1345,7 +1345,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Kreshbeinkleider her: 0/1",
                                 ["ru"] = "Craft Normal Kresh Breeches: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unos cubrehombros de kresh normales: 0/1",
                                 ["fr"] = "Fabriquez des épaulettes en kresh normales : 0/1",
@@ -1356,11 +1356,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [5] = 
+                    [5] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica una espada de calcinio normal: 0/1",
                                 ["fr"] = "Fabriquez une épée en calcinium normale : 0/1",
@@ -1369,7 +1369,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Kalziniumschwerter her: 0/1",
                                 ["ru"] = "Craft Normal Calcinium Sword: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica una coraza de calcinio normal: 0/1",
                                 ["fr"] = "Fabriquez une cuirasse en calcinium normale : 0/1",
@@ -1378,7 +1378,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Kalziniumkürasse her: 0/1",
                                 ["ru"] = "Craft Normal Calcinium Cuirass: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unas grebas de calcinio normales: 0/1",
                                 ["fr"] = "Fabriquez des grèves en calcinium normales : 0/1",
@@ -1389,11 +1389,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [6] = 
+                    [6] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un escudo de abedul normal: 0/1",
                                 ["fr"] = "Fabriquez un bouclier en bouleau normal : 0/1",
@@ -1402,7 +1402,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Birkenschilde her: 0/1",
                                 ["ru"] = "Craft Normal Birch Shield: 0 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica una vara restauradora de abedul normal: 0/2",
                                 ["fr"] = "Fabriquez un bâton de rétablissement en bouleau normal : 0/2",
@@ -1413,11 +1413,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [7] = 
+                    [7] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica tres anillos de platino: 0/3",
                                 ["fr"] = "Fabriquez trois anneaux en platine : 0/3",
@@ -1430,9 +1430,9 @@ LibCraftTextVars =
                     },
                 },
                 ["version"] = 1,
-                ["quests"] = 
+                ["quests"] =
                 {
-                    [1] = 
+                    [1] =
                     {
                         ["es"] = "Encargo de provisiones",
                         ["fr"] = "Commande de cuisine",
@@ -1441,7 +1441,7 @@ LibCraftTextVars =
                         ["de"] = "Versorgerschrieb",
                         ["ru"] = "Заказ снабженцу",
                     },
-                    [2] = 
+                    [2] =
                     {
                         ["es"] = "Encargo de encantamiento",
                         ["fr"] = "Commandes d'enchantement",
@@ -1450,7 +1450,7 @@ LibCraftTextVars =
                         ["de"] = "Verzaubererschrieb",
                         ["ru"] = "Заказ зачарователю",
                     },
-                    [3] = 
+                    [3] =
                     {
                         ["es"] = "Encargo de alquimia",
                         ["fr"] = "Commande d'alchimie",
@@ -1459,7 +1459,7 @@ LibCraftTextVars =
                         ["de"] = "Alchemistenschrieb",
                         ["ru"] = "Заказ алхимику",
                     },
-                    [4] = 
+                    [4] =
                     {
                         ["es"] = "Encargo de sastrería",
                         ["fr"] = "Commande de tailleur",
@@ -1468,7 +1468,7 @@ LibCraftTextVars =
                         ["de"] = "Schneiderschrieb",
                         ["ru"] = "Заказ портному",
                     },
-                    [5] = 
+                    [5] =
                     {
                         ["es"] = "Encargo de herrería",
                         ["fr"] = "Commande de forge",
@@ -1477,7 +1477,7 @@ LibCraftTextVars =
                         ["de"] = "Schmiedeschrieb",
                         ["ru"] = "Заказ кузнецу",
                     },
-                    [6] = 
+                    [6] =
                     {
                         ["es"] = "Encargo de carpintería",
                         ["fr"] = "Commande de travail du bois",
@@ -1486,7 +1486,7 @@ LibCraftTextVars =
                         ["de"] = "Schreinerschrieb",
                         ["ru"] = "Заказ столяру",
                     },
-                    [7] = 
+                    [7] =
                     {
                         ["es"] = "Encargo de artesanía de joyería",
                         ["fr"] = "Commande de joaillerie",
@@ -1497,14 +1497,14 @@ LibCraftTextVars =
                     },
                 },
             },
-            ["ziggr-alt-five"] = 
+            ["ziggr-alt-five"] =
             {
                 ["alliance"] = "AD",
-                ["steps"] = 
+                ["steps"] =
                 {
-                    ["al"] = 
+                    ["al"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministrar y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado crear un elixir de reducción de magia y conseguir agua purificada para completar mi contrato.",
                             ["it"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating an Elixir of Ravage Magicka and acquiring some Purified Water to complete my contract.",
@@ -1515,9 +1515,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating an Elixir of Ravage Magicka and acquiring some Purified Water to complete my contract.",
                         },
                     },
-                    ["cl"] = 
+                    ["cl"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un grupo de \"mercaderes independientes\", cambiando moneda por suministros. Me han encargado hacer varios cascos, hombreras y brazales de piel impía para completar mi contrato.",
                             ["it"] = "This writ is from a group of \"independent merchants,\" trading coin for supplies. I've been tasked with creating several Fell Hide Helmets, Arm Cops, and Bracers to complete my contract.",
@@ -1528,9 +1528,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a group of \"independent merchants,\" trading coin for supplies. I've been tasked with creating several Fell Hide Helmets, Arm Cops, and Bracers to complete my contract.",
                         },
                     },
-                    ["bs"] = 
+                    ["bs"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un grupo de \"mercaderes independientes\", cambiando moneda por suministros. Me han encargado hacer varios yelmos, dagas y espaldarones de ébano para completar mi contrato.",
                             ["it"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Ebony Helms, Daggers, and Pauldrons to complete my contract.",
@@ -1541,9 +1541,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Ebony Helms, Daggers, and Pauldrons to complete my contract.",
                         },
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un grupo de \"mercaderes independientes\", cambiando moneda por suministros. Me han encargado hacer varios arcos y escudos de tejo para completar mi contrato.",
                             ["it"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Yew Bows and Shields to complete my contract.",
@@ -1554,9 +1554,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating several Yew Bows and Shields to complete my contract.",
                         },
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Platinum Ring and a Platinum Necklace to complete my contract.",
                             ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation d'un anneau et d'un collier de platine.",
@@ -1566,9 +1566,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Platinum Ring and a Platinum Necklace to complete my contract.",
                         },
                     },
-                    ["en"] = 
+                    ["en"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un grupo de \"mercaderes independientes\", cambiando moneda por suministros. Me han encargado crear un glifo fuerte de aguante y conseguir una runa de aspecto Ta para completar mi contrato.",
                             ["it"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Strong Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
@@ -1579,9 +1579,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Strong Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
                         },
                     },
-                    ["pr"] = 
+                    ["pr"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de una rama del Gremio de Magos. Buscan suministrar y armar a sus efectivos en el reino daédrico de Puerto Gélido. Me han encargado preparar jalea de manzana y ajo de Orcelia y tónico de dormir del abuelo para completar mi contrato.",
                             ["it"] = "This writ is from an arm of the Mages Guild. They seek to supply and arm their efforts in the Daedric realm of Coldharbour. I've been tasked with creating Orcrest Garlic Apple Jelly and Grandpa's Bedtime Tonic to complete my contract.",
@@ -1593,7 +1593,7 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["skill_rank"] = 
+                ["skill_rank"] =
                 {
                     [1] = 5,
                     [2] = 5,
@@ -1603,13 +1603,13 @@ LibCraftTextVars =
                     [6] = 5,
                     [7] = 5,
                 },
-                ["conditions"] = 
+                ["conditions"] =
                 {
-                    ["al"] = 
+                    ["al"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Adquiere agua purificada: 3/3",
                                 ["it"] = "Acquire Purified Water: 3 / 3",
@@ -1619,7 +1619,7 @@ LibCraftTextVars =
                                 ["de"] = "Beschafft gereinigtes Wasser: 3/3",
                                 ["ru"] = "Добыть дистиллированную воду: 3 / 3",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Crea un elixir de reducción de magia: 0/1",
                                 ["it"] = "Craft an Elixir of Ravage Magicka: 0 / 1",
@@ -1631,11 +1631,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["cl"] = 
+                    ["cl"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un casco de piel impía normal: 0/1",
                                 ["it"] = "Craft Fell Helmet: 0 / 1",
@@ -1645,7 +1645,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Wildlederhelme her: 0/1",
                                 ["ru"] = "Craft Normal Fell Helmet: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica unas hombreras de piel impía normales: 0/1",
                                 ["it"] = "Craft Fell Arm Cops: 0 / 1",
@@ -1655,7 +1655,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Wildlederschulterkappen her: 0/1",
                                 ["ru"] = "Craft Normal Fell Arm Cops: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unos brazales de piel impía normales: 0/1",
                                 ["it"] = "Craft Fell Bracers: 0 / 1",
@@ -1667,11 +1667,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["bs"] = 
+                    ["bs"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un yelmo de ébano normal: 0/1",
                                 ["it"] = "Craft Ebony Helm: 0 / 1",
@@ -1681,7 +1681,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Ebenerzhauben her: 0/1",
                                 ["ru"] = "Craft Normal Ebony Helm: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica una daga de ébano normal: 0/1",
                                 ["it"] = "Craft Ebony Dagger: 0 / 1",
@@ -1691,7 +1691,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Ebenerzdolche her: 0/1",
                                 ["ru"] = "Craft Normal Ebony Dagger: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unos espaldarones de ébano normales: 0/1",
                                 ["it"] = "Craft Ebony Pauldron: 0 / 1",
@@ -1703,11 +1703,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un escudo de tejo normal: 0/1",
                                 ["it"] = "Craft Yew Shield: 0 / 1",
@@ -1717,7 +1717,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Eibenschilde her: 0/1",
                                 ["ru"] = "Craft Normal Yew Shield: 0 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un arco de tejo normal: 0/2",
                                 ["it"] = "Craft Yew Bow: 0 / 2",
@@ -1729,11 +1729,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un collar de platino: 0/1",
                                 ["it"] = "TRACKER GOAL TEXT: 0 / 1",
@@ -1743,7 +1743,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt eine Platinhalskette her: 0/1",
                                 ["ru"] = "Craft a Platinum Necklace: 0 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un anillo de platino: 0/1",
                                 ["it"] = "TRACKER GOAL TEXT: 0 / 1",
@@ -1755,11 +1755,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["en"] = 
+                    ["en"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Adquiere una runa de aspecto Ta: 1/1",
                                 ["it"] = "Acquire Ta Aspect Rune: 1 / 1",
@@ -1769,7 +1769,7 @@ LibCraftTextVars =
                                 ["de"] = "Beschafft eine Ta-Aspektrune: 1/1",
                                 ["ru"] = "Добыть руну аспекта Та: 1 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un glifo fuerte de aguante con Ta: 0/1",
                                 ["it"] = "Craft Strong Glyph of Stamina: 0 / 1",
@@ -1781,11 +1781,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["pr"] = 
+                    ["pr"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Preparæ tónico de dormir del abuelo: 0/1",
                                 ["it"] = "Craft Grandpa's Bedtime Tonic: 0 / 1",
@@ -1795,7 +1795,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt Großvaters Nachttonikum her: 0/1",
                                 ["ru"] = "Создать — тоник «Дедушкин сонный час»: 0 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Preparæ jalea de manzana y ajo de Orcelia: 0/1",
                                 ["it"] = "Craft Orcrest Garlic Apple Jelly: 0 / 1",
@@ -1809,9 +1809,9 @@ LibCraftTextVars =
                     },
                 },
                 ["version"] = 1,
-                ["quests"] = 
+                ["quests"] =
                 {
-                    ["al"] = 
+                    ["al"] =
                     {
                         ["es"] = "Encargo de alquimia",
                         ["it"] = "Alchemist Writ",
@@ -1821,7 +1821,7 @@ LibCraftTextVars =
                         ["de"] = "Alchemistenschrieb",
                         ["ru"] = "Заказ алхимику",
                     },
-                    ["cl"] = 
+                    ["cl"] =
                     {
                         ["es"] = "Encargo de sastrería",
                         ["it"] = "Clothier Writ",
@@ -1831,7 +1831,7 @@ LibCraftTextVars =
                         ["de"] = "Schneiderschrieb",
                         ["ru"] = "Заказ портному",
                     },
-                    ["bs"] = 
+                    ["bs"] =
                     {
                         ["es"] = "Encargo de herrería",
                         ["it"] = "Blacksmith Writ",
@@ -1841,7 +1841,7 @@ LibCraftTextVars =
                         ["de"] = "Schmiedeschrieb",
                         ["ru"] = "Заказ кузнецу",
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
                         ["es"] = "Encargo de carpintería",
                         ["it"] = "Woodworker Writ",
@@ -1851,7 +1851,7 @@ LibCraftTextVars =
                         ["de"] = "Schreinerschrieb",
                         ["ru"] = "Заказ столяру",
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
                         ["es"] = "Encargo de artesanía de joyería",
                         ["it"] = "",
@@ -1861,7 +1861,7 @@ LibCraftTextVars =
                         ["de"] = "Schmuckhandwerksschrieb",
                         ["ru"] = "Заказ ювелиру",
                     },
-                    ["en"] = 
+                    ["en"] =
                     {
                         ["es"] = "Encargo de encantamiento",
                         ["it"] = "Enchanter Writ",
@@ -1871,7 +1871,7 @@ LibCraftTextVars =
                         ["de"] = "Verzaubererschrieb",
                         ["ru"] = "Заказ зачарователю",
                     },
-                    ["pr"] = 
+                    ["pr"] =
                     {
                         ["es"] = "Encargo de provisiones",
                         ["it"] = "Provisioner Writ",
@@ -1883,14 +1883,14 @@ LibCraftTextVars =
                     },
                 },
             },
-            ["hammer-meets-thumb"] = 
+            ["hammer-meets-thumb"] =
             {
                 ["alliance"] = "EP",
-                ["steps"] = 
+                ["steps"] =
                 {
-                    [2] = 
+                    [2] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Comité cívico de Venganza y Renovación de Orsinium, que necesita más suministros pero no quiere faltar el respeto a sus talabarteros. Necesitan bastantes cascos, hombreras y brazales para vestir a sus guerreros.",
                             ["it"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their leatherworkers. They need several Helmets, Arm Cops, and Bracers to outfit their warriors.",
@@ -1901,9 +1901,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their leatherworkers. They need several Helmets, Arm Cops, and Bracers to outfit their warriors.",
                         },
                     },
-                    [3] = 
+                    [3] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Comité cívico de Venganza y Renovación de Orsinium, que necesita más suministros pero no quiere faltar el respeto a sus herreros. Necesitan bastantes yelmos, dagas y espaldarones para vestir a sus guerreros.",
                             ["it"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their smiths. They need several Helms, Daggers, and Pauldrons to outfit their warriors.",
@@ -1914,9 +1914,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their smiths. They need several Helms, Daggers, and Pauldrons to outfit their warriors.",
                         },
                     },
-                    [4] = 
+                    [4] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Comité cívico de Venganza y Renovación de Orsinium, que necesita más suministros pero no quiere faltar el respeto a sus carpinteros. Necesitan bastantes arcos y escudos para vestir a sus guerreros.",
                             ["it"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their woodworkers. They need several Bows and Shields to outfit their warriors.",
@@ -1927,9 +1927,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their woodworkers. They need several Bows and Shields to outfit their warriors.",
                         },
                     },
-                    [5] = 
+                    [5] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Comité cívico de Venganza y Renovación de Orsinium, que necesitan más provisiones pero tratando de no estorbar a sus encantadores. Necesitan un glifo soberbio de aguante y una runa de esencia Ta para equipar a sus guerreros.",
                             ["it"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their enchanters. They need a Superb Glyph of Stamina and a Ta Aspect Rune to outfit their warriors.",
@@ -1940,9 +1940,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their enchanters. They need a Superb Glyph of Stamina and a Ta Aspect Rune to outfit their warriors.",
                         },
                     },
-                    [6] = 
+                    [6] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Comité cívico de Venganza y Renovación de Orsinium, que necesita más suministros pero no quiere faltar el respeto a sus cocineros. Me han encargado hacer plato de frutas y queso de Primada y remordimiento de muthsera para completar mi contrato.",
                             ["it"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their provisioners. I've been tasked with creating Firsthold Fruit and Cheese Plate and Muthsera's Remorse to complete my contract.",
@@ -1953,9 +1953,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their provisioners. I've been tasked with creating сырная тарелка с фруктами по-фестхолдски and «Раскаяние мутсэры» to complete my contract.",
                         },
                     },
-                    [7] = 
+                    [7] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Tengo que crear el objeto especificado en mi contrato.",
                             ["it"] = "I need to create the item specified by my contract.",
@@ -1966,9 +1966,9 @@ LibCraftTextVars =
                             ["ru"] = "Мне нужно создать предмет, указанный в моем контракте.",
                         },
                     },
-                    [8] = 
+                    [8] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Tengo que crear el objeto especificado en mi contrato.",
                             ["it"] = "I need to create the item specified by my contract.",
@@ -1979,9 +1979,9 @@ LibCraftTextVars =
                             ["ru"] = "Мне нужно создать предмет, указанный в моем контракте.",
                         },
                     },
-                    [9] = 
+                    [9] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Tengo que crear el objeto especificado en mi contrato.",
                             ["it"] = "I need to create the item specified by my contract.",
@@ -1992,9 +1992,9 @@ LibCraftTextVars =
                             ["ru"] = "Мне нужно создать предмет, указанный в моем контракте.",
                         },
                     },
-                    [10] = 
+                    [10] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Tengo que crear los objetos especificados en mi contrato.",
                             ["it"] = "I need to create the items specified by my contract.",
@@ -2005,9 +2005,9 @@ LibCraftTextVars =
                             ["ru"] = "Мне нужно создать предметы, указанные в моем контракте.",
                         },
                     },
-                    [11] = 
+                    [11] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Tengo que crear el objeto especificado en mi contrato.",
                             ["it"] = "I need to create the item specified by my contract.",
@@ -2018,9 +2018,9 @@ LibCraftTextVars =
                             ["ru"] = "Мне нужно создать предмет, указанный в моем контракте.",
                         },
                     },
-                    [12] = 
+                    [12] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Tengo que crear el objeto especificado en mi contrato.",
                             ["it"] = "I need to create the item specified by my contract.",
@@ -2031,9 +2031,9 @@ LibCraftTextVars =
                             ["ru"] = "Мне нужно создать предмет, указанный в моем контракте.",
                         },
                     },
-                    [13] = 
+                    [13] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Comité Cívico de Venganza y Renovación de Orsinium, que necesita más suministros pero no quiere faltar el respeto a sus alquimistas. Me han encargado hacer un veneno de daño a la salud IX y conseguir algunas belladonas para completar mi contrato.",
                             ["fr"] = "Cette commande émane du Comité civique de Vengeance et du Renouveau d'Orsinium, qui a besoin de fournitures mais ne veut pas manquer de respect à ses alchimistes. On m'a demandé de préparer un poison de dégâts de Santé IX et d'acquérir de la belladone pour remplir la commande.",
@@ -2043,9 +2043,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their alchemists. I've been tasked with creating a Damage Health Poison IX and acquiring Nightshade to complete my contract.",
                         },
                     },
-                    [14] = 
+                    [14] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Tengo que crear el objeto especificado en mi contrato.",
                             ["fr"] = "Je dois créer l'objet spécifié par le contrat.",
@@ -2055,9 +2055,9 @@ LibCraftTextVars =
                             ["ru"] = "Мне нужно создать предмет, указанный в моем контракте.",
                         },
                     },
-                    [15] = 
+                    [15] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Platinum Ring and a Platinum Necklace to complete my contract.",
                             ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation d'un anneau et d'un collier de platine.",
@@ -2068,7 +2068,7 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["skill_rank"] = 
+                ["skill_rank"] =
                 {
                     [1] = 10,
                     [2] = 10,
@@ -2078,13 +2078,13 @@ LibCraftTextVars =
                     [6] = 10,
                     [7] = 5,
                 },
-                ["conditions"] = 
+                ["conditions"] =
                 {
-                    [2] = 
+                    [2] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un casco de cuero rubedo normal: 0/1",
                                 ["it"] = "Craft Rubedo Leather Helmet: 0 / 1",
@@ -2094,7 +2094,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Rubedolederhelme her: 0/1",
                                 ["ru"] = "Craft Normal Rubedo Leather Helmet: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica unas hombreras de cuero rubedo normales: 0/1",
                                 ["it"] = "Craft Rubedo Leather Arm Cops: 0 / 1",
@@ -2104,7 +2104,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Rubedolederschulterkappen her: 0/1",
                                 ["ru"] = "Craft Normal Rubedo Leather Arm Cops: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unos brazales de cuero rubedo normales: 0/1",
                                 ["it"] = "Craft Rubedo Leather Bracers: 0 / 1",
@@ -2116,11 +2116,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [3] = 
+                    [3] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un yelmo de rubedita normal: 0/1",
                                 ["it"] = "Craft Rubedite Helm: 0 / 1",
@@ -2130,7 +2130,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Rubedithauben her: 0/1",
                                 ["ru"] = "Craft Normal Rubedite Helm: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica una daga de rubedita normal: 0/1",
                                 ["it"] = "Craft Rubedite Dagger: 0 / 1",
@@ -2140,7 +2140,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Rubeditdolche her: 0/1",
                                 ["ru"] = "Craft Normal Rubedite Dagger: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unos espaldarones de rubedita normales: 0/1",
                                 ["it"] = "Craft Rubedite Pauldron: 0 / 1",
@@ -2152,11 +2152,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [4] = 
+                    [4] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un escudo de fresno rubí normal: 0/1",
                                 ["it"] = "Craft Ruby Ash Shield: 0 / 1",
@@ -2166,7 +2166,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Rubineschenschilde her: 0/1",
                                 ["ru"] = "Craft Normal Ruby Ash Shield: 0 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un arco de fresno rubí normal: 0/2",
                                 ["it"] = "Craft Ruby Ash Bow: 0 / 2",
@@ -2178,11 +2178,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [5] = 
+                    [5] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un glifo soberbio de aguante con Ta: 0/1",
                                 ["it"] = "Craft Superb Glyph of Stamina: 0 / 1",
@@ -2192,7 +2192,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt mit einer Ta-Rune eine prächtige Glyphe der Ausdauer her: 0/1",
                                 ["ru"] = "Craft Superb Glyph of Stamina With Ta: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Adquiere una runa de aspecto Ta: 1/1",
                                 ["it"] = "Acquire Ta Aspect Rune: 1 / 1",
@@ -2204,11 +2204,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [6] = 
+                    [6] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Preparæ plato de frutas y queso de Primada: 0/1",
                                 ["it"] = "Craft Firsthold Fruit and Cheese Plate: 0 / 1",
@@ -2218,7 +2218,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt eine Ersthalt-Käseplatte mit Früchten her: 0/1",
                                 ["ru"] = "Создать — сырная тарелка с фруктами по-фестхолдски: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Preparæ remordimiento de muthsera: 0/1",
                                 ["it"] = "Craft Muthsera's Remorse: 0 / 1",
@@ -2230,11 +2230,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [7] = 
+                    [7] =
                     {
-                        [4] = 
+                        [4] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en El Duelo",
                                 ["it"] = "Travel to Mournhold to Meet your Contact",
@@ -2245,9 +2245,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Морнхолд, чтобы встретиться с работодателем",
                             },
                         },
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un glifo soberbio de brujería• Calidad: Épico\n• Progreso: 0/1",
                                 ["it"] = "Crea un Glifo of Reduce Spell Cost\n• Qualità: Epico\n• Progresso: 0 / 1",
@@ -2258,9 +2258,9 @@ LibCraftTextVars =
                                 ["ru"] = "Создать предмет:\nSuperb Glyph of Reduce Spell Cost\n• Качество: Эпическое\n• Прогресс: 0 / 1",
                             },
                         },
-                        [2] = 
+                        [2] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Raíz de Elden",
                                 ["it"] = "Travel to Elden Root to Meet your Contact",
@@ -2271,9 +2271,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Элден-Рут, чтобы встретиться с работодателем",
                             },
                         },
-                        [3] = 
+                        [3] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Quietud",
                                 ["it"] = "Travel to Wayrest to Meet your Contact",
@@ -2285,11 +2285,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [8] = 
+                    [8] =
                     {
-                        [4] = 
+                        [4] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en El Duelo",
                                 ["it"] = "Travel to Mournhold to Meet your Contact",
@@ -2300,9 +2300,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Морнхолд, чтобы встретиться с работодателем",
                             },
                         },
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabricar: Casco de rubedita con los siguientes rasgos: \n• Calidad: Épico\n• Rasgo: Divino\n• Conjunto: Castigo de Descarga Blanca\n• Estilo: Imperial\n• Progreso: 0/1",
                                 ["it"] = "Crea un Elmo con le seguenti proprietà:\n• Qualità: Epico\n• Tratti: Divino\n• Set: Whitestrake's Retribution\n• Stile:\n• Progresso: 0 / 1",
@@ -2313,9 +2313,9 @@ LibCraftTextVars =
                                 ["ru"] = "Создать предмет (Rubedite Helm) со следующими характеристиками:\n• Качество: Эпическое\n• Особенность: Divines\n• Комплект: Whitestrake's Retribution\n• Стиль: имперский\n• Прогресс: 0 / 1",
                             },
                         },
-                        [2] = 
+                        [2] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Raíz de Elden",
                                 ["it"] = "Travel to Elden Root to Meet your Contact",
@@ -2326,9 +2326,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Элден-Рут, чтобы встретиться с работодателем",
                             },
                         },
-                        [3] = 
+                        [3] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Quietud",
                                 ["it"] = "Travel to Wayrest to Meet your Contact",
@@ -2340,11 +2340,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [9] = 
+                    [9] =
                     {
-                        [4] = 
+                        [4] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en El Duelo",
                                 ["it"] = "Travel to Mournhold to Meet your Contact",
@@ -2355,9 +2355,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Морнхолд, чтобы встретиться с работодателем",
                             },
                         },
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabricar: Escudo de \tfresno rubí con los siguientes rasgos: \n• Calidad: Épico\n• Rasgo: Vigorizante\n• Conjunto: Escamas de Orgnum\n• Estilo: Orden Psijic\n• Progreso: 0/1",
                                 ["it"] = "Crea un Scudo con le seguenti proprietà:\n• Qualità: Epico\n• Tratti: Prospero\n• Set: Orgnum's Scales\n• Stile:\n• Progresso: 0 / 1",
@@ -2368,9 +2368,9 @@ LibCraftTextVars =
                                 ["ru"] = "Создать предмет (Ruby Ash Shield) со следующими характеристиками:\n• Качество: Эпическое\n• Особенность: Invigorating\n• Комплект: Orgnum's Scales\n• Стиль: орден Псиджиков\n• Прогресс: 0 / 1",
                             },
                         },
-                        [2] = 
+                        [2] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Raíz de Elden",
                                 ["it"] = "Travel to Elden Root to Meet your Contact",
@@ -2381,9 +2381,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Элден-Рут, чтобы встретиться с работодателем",
                             },
                         },
-                        [3] = 
+                        [3] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Quietud",
                                 ["it"] = "Travel to Wayrest to Meet your Contact",
@@ -2395,11 +2395,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [10] = 
+                    [10] =
                     {
-                        [4] = 
+                        [4] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en El Duelo",
                                 ["it"] = "Travel to Mournhold to Meet your Contact",
@@ -2410,9 +2410,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Морнхолд, чтобы встретиться с работодателем",
                             },
                         },
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Preparæ Mazte de la sensual doncella argoniana\n• Progreso: 0/8",
                                 ["it"] = "Crea un Lusty Argonian Maid Mazte\n• Progresso: 0 / 8",
@@ -2423,9 +2423,9 @@ LibCraftTextVars =
                                 ["ru"] = "Создать предмет:\nмацт «Похотливая аргонианская дев\n• Прогресс: 0 / 8",
                             },
                         },
-                        [2] = 
+                        [2] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Raíz de Elden",
                                 ["it"] = "Travel to Elden Root to Meet your Contact",
@@ -2436,9 +2436,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Элден-Рут, чтобы встретиться с работодателем",
                             },
                         },
-                        [3] = 
+                        [3] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Quietud",
                                 ["it"] = "Travel to Wayrest to Meet your Contact",
@@ -2450,11 +2450,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [11] = 
+                    [11] =
                     {
-                        [4] = 
+                        [4] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en El Duelo",
                                 ["it"] = "Travel to Mournhold to Meet your Contact",
@@ -2465,9 +2465,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Морнхолд, чтобы встретиться с работодателем",
                             },
                         },
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabricar: Banda de seda ancestral con los siguientes rasgos: \n• Calidad: Épico\n• Rasgo: Reforzado\n• Conjunto: Legado de Varen\n• Estilo: Culto del Gusano\n• Progreso: 0/1",
                                 ["it"] = "Crea un Fascia con le seguenti proprietà:\n• Qualità: Epico\n• Tratti: Rinforzato\n• Set: Varen's Legacy\n• Stile:\n• Progresso: 0 / 1",
@@ -2478,9 +2478,9 @@ LibCraftTextVars =
                                 ["ru"] = "Создать предмет (Ancestor Silk Sash) со следующими характеристиками:\n• Качество: Эпическое\n• Особенность: Reinforced\n• Комплект: Varen's Legacy\n• Стиль: культ Червя\n• Прогресс: 0 / 1",
                             },
                         },
-                        [2] = 
+                        [2] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Raíz de Elden",
                                 ["it"] = "Travel to Elden Root to Meet your Contact",
@@ -2491,9 +2491,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Элден-Рут, чтобы встретиться с работодателем",
                             },
                         },
-                        [3] = 
+                        [3] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Quietud",
                                 ["it"] = "Travel to Wayrest to Meet your Contact",
@@ -2505,11 +2505,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [12] = 
+                    [12] =
                     {
-                        [4] = 
+                        [4] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en El Duelo",
                                 ["it"] = "Travel to Mournhold to Meet your Contact",
@@ -2520,9 +2520,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Морнхолд, чтобы встретиться с работодателем",
                             },
                         },
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabricæ una esencia de reducción de salud con las siguientes propiedades:• La Grieta• Aumento de poder mágico• Reducción de salud\n• Progreso: 0/20",
                                 ["it"] = "Crea un Ravage Health con i seguenti tratti:\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progresso: 0 / 20",
@@ -2533,9 +2533,9 @@ LibCraftTextVars =
                                 ["ru"] = "Создать предмет (Essence of Ravage Health) со следующими эффектами:\n• Разрыв\n• Увеличение силы заклинаний\n• Опустошение здоровья\n• Прогресс: 0 / 20",
                             },
                         },
-                        [2] = 
+                        [2] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Raíz de Elden",
                                 ["it"] = "Travel to Elden Root to Meet your Contact",
@@ -2546,9 +2546,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Элден-Рут, чтобы встретиться с работодателем",
                             },
                         },
-                        [3] = 
+                        [3] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Quietud",
                                 ["it"] = "Travel to Wayrest to Meet your Contact",
@@ -2560,11 +2560,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [13] = 
+                    [13] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Entrega la mercancía al intendente más cercano",
                                 ["it"] = "TRACKER GOAL TEXT",
@@ -2576,11 +2576,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [14] = 
+                    [14] =
                     {
-                        [4] = 
+                        [4] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en El Duelo",
                                 ["it"] = "TRACKER GOAL TEXT",
@@ -2591,9 +2591,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Морнхолд, чтобы встретиться с работодателем",
                             },
                         },
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabricar: Anillo de platino con los siguientes rasgos: \n• Calidad: Legendario\n• Rasgo: Protector\n• Conjunto: Maestro armero\n\n• Progreso: 0/1",
                                 ["it"] = "Crea un Ring con le seguenti proprietà:\n• Qualità: Leggendario\n• Tratti: Protective\n• Set: Armor Master\n• Progresso: 0 / 1",
@@ -2604,9 +2604,9 @@ LibCraftTextVars =
                                 ["ru"] = "Создать предмет (platinum Ring) со следующими характеристиками:\n• Качество: Легендарное\n• Особенность: Protective\n• Комплект: Armor Master\n• Прогресс: 0 / 1",
                             },
                         },
-                        [2] = 
+                        [2] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Raíz de Elden",
                                 ["it"] = "TRACKER GOAL TEXT",
@@ -2617,9 +2617,9 @@ LibCraftTextVars =
                                 ["ru"] = "Отправиться в Элден-Рут, чтобы встретиться с работодателем",
                             },
                         },
-                        [3] = 
+                        [3] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Reúnete con tu contacto en Quietud",
                                 ["it"] = "TRACKER GOAL TEXT",
@@ -2631,11 +2631,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [15] = 
+                    [15] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un collar de platino: 0/1",
                                 ["it"] = "TRACKER GOAL TEXT: 0 / 1",
@@ -2645,7 +2645,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt eine Platinhalskette her: 0/1",
                                 ["ru"] = "Craft a Platinum Necklace: 0 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un anillo de platino: 0/1",
                                 ["it"] = "TRACKER GOAL TEXT: 0 / 1",
@@ -2659,9 +2659,9 @@ LibCraftTextVars =
                     },
                 },
                 ["version"] = 1,
-                ["quests"] = 
+                ["quests"] =
                 {
-                    [2] = 
+                    [2] =
                     {
                         ["es"] = "Encargo de sastrería",
                         ["it"] = "Clothier Writ",
@@ -2671,7 +2671,7 @@ LibCraftTextVars =
                         ["de"] = "Schneiderschrieb",
                         ["ru"] = "Заказ портному",
                     },
-                    [3] = 
+                    [3] =
                     {
                         ["es"] = "Encargo de herrería",
                         ["it"] = "Blacksmith Writ",
@@ -2681,7 +2681,7 @@ LibCraftTextVars =
                         ["de"] = "Schmiedeschrieb",
                         ["ru"] = "Заказ кузнецу",
                     },
-                    [4] = 
+                    [4] =
                     {
                         ["es"] = "Encargo de carpintería",
                         ["it"] = "Woodworker Writ",
@@ -2691,7 +2691,7 @@ LibCraftTextVars =
                         ["de"] = "Schreinerschrieb",
                         ["ru"] = "Заказ столяру",
                     },
-                    [5] = 
+                    [5] =
                     {
                         ["es"] = "Encargo de encantamiento",
                         ["it"] = "Enchanter Writ",
@@ -2701,7 +2701,7 @@ LibCraftTextVars =
                         ["de"] = "Verzaubererschrieb",
                         ["ru"] = "Заказ зачарователю",
                     },
-                    [6] = 
+                    [6] =
                     {
                         ["es"] = "Encargo de provisiones",
                         ["it"] = "Provisioner Writ",
@@ -2711,7 +2711,7 @@ LibCraftTextVars =
                         ["de"] = "Versorgerschrieb",
                         ["ru"] = "Заказ снабженцу",
                     },
-                    [7] = 
+                    [7] =
                     {
                         ["es"] = "Un glifo magistral",
                         ["it"] = "A Masterful Glyph",
@@ -2721,7 +2721,7 @@ LibCraftTextVars =
                         ["de"] = "Eine meisterhafte Glyphe",
                         ["ru"] = "Искусный глиф",
                     },
-                    [8] = 
+                    [8] =
                     {
                         ["es"] = "Una protección magistral",
                         ["it"] = "A Masterful Plate",
@@ -2731,7 +2731,7 @@ LibCraftTextVars =
                         ["de"] = "Eine meisterhafte Rüstung",
                         ["ru"] = "Искусные латы",
                     },
-                    [9] = 
+                    [9] =
                     {
                         ["es"] = "Un escudo magistral",
                         ["it"] = "A Masterful Shield",
@@ -2741,7 +2741,7 @@ LibCraftTextVars =
                         ["de"] = "Ein meisterhafter Schild",
                         ["ru"] = "Искусный щит",
                     },
-                    [10] = 
+                    [10] =
                     {
                         ["es"] = "Un festín magistral",
                         ["it"] = "A Masterful Feast",
@@ -2751,7 +2751,7 @@ LibCraftTextVars =
                         ["de"] = "Ein meisterhaftes Mahl",
                         ["ru"] = "Искусный пир",
                     },
-                    [11] = 
+                    [11] =
                     {
                         ["es"] = "Una prenda de tela magistral",
                         ["it"] = "Masterful Tailoring",
@@ -2761,7 +2761,7 @@ LibCraftTextVars =
                         ["de"] = "Ein meisterhaftes Gewand",
                         ["ru"] = "Искусные тканевые доспехи",
                     },
-                    [12] = 
+                    [12] =
                     {
                         ["es"] = "Una mezcla magistral",
                         ["it"] = "A Masterful Concoction",
@@ -2771,7 +2771,7 @@ LibCraftTextVars =
                         ["de"] = "Ein meisterhaftes Gebräu",
                         ["ru"] = "Искусное варево",
                     },
-                    [13] = 
+                    [13] =
                     {
                         ["es"] = "Encargo de alquimia",
                         ["it"] = "",
@@ -2781,7 +2781,7 @@ LibCraftTextVars =
                         ["de"] = "Alchemistenschrieb",
                         ["ru"] = "Заказ алхимику",
                     },
-                    [14] = 
+                    [14] =
                     {
                         ["es"] = "Joyería magistral",
                         ["it"] = "",
@@ -2791,7 +2791,7 @@ LibCraftTextVars =
                         ["de"] = "Ein meisterhaftes Schmuckstück",
                         ["ru"] = "Искусные ювелирные изделия",
                     },
-                    [15] = 
+                    [15] =
                     {
                         ["es"] = "Encargo de artesanía de joyería",
                         ["it"] = "",
@@ -2803,14 +2803,14 @@ LibCraftTextVars =
                     },
                 },
             },
-            ["ziggr-alt-eight"] = 
+            ["ziggr-alt-eight"] =
             {
                 ["alliance"] = "AD",
-                ["steps"] = 
+                ["steps"] =
                 {
-                    [1] = 
+                    [1] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los encargados del suministro de Belkarth. Éste busca armaduras de hilo de plata para los aventureros veteranos. Me han encargado hacer varias túnicas, pantalones y hombreras para completar mi contrato.",
                             ["it"] = "This writ is from one of the Belkarth supply masters. This one seeks Silverweave armor for veteran adventurers. I've been tasked with creating several Robes, Breeches, and Epaulets to complete my contract.",
@@ -2821,9 +2821,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks Silverweave armor for veteran adventurers. I've been tasked with creating several Robes, Breeches, and Epaulets to complete my contract.",
                         },
                     },
-                    [2] = 
+                    [2] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los encargados del suministro de Belkarth. Éste busca armaduras de azogue para los aventureros veteranos. Me han encargado hacer varias espadas, corazas y grebas para completar mi contrato.",
                             ["it"] = "This writ is from one of the Belkarth supply masters. This one seeks Quicksilver armor for veteran adventurers. I've been tasked with creating several Swords, Cuirass, and Greaves to complete my contract.",
@@ -2834,9 +2834,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks Quicksilver armor for veteran adventurers. I've been tasked with creating several Swords, Cuirass, and Greaves to complete my contract.",
                         },
                     },
-                    [3] = 
+                    [3] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los encargados del suministro de Belkarth. Éste busca armas y armaduras para los aventureros veteranos. Me han encargado hacer varias varas de restauración y escudos de caoba para completar mi contrato.",
                             ["it"] = "This writ is from one of the Belkarth supply masters. This one seeks arms and armor for veteran adventurers. I've been tasked with creating several Mahogany Restoration Staves and Shields to complete my contract.",
@@ -2847,9 +2847,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks arms and armor for veteran adventurers. I've been tasked with creating several Mahogany Restoration Staves and Shields to complete my contract.",
                         },
                     },
-                    [4] = 
+                    [4] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating three Platinum Rings to complete my contract.",
                             ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation de trois anneaux de platine.",
@@ -2859,9 +2859,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating three Platinum Rings to complete my contract.",
                         },
                     },
-                    [5] = 
+                    [5] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de un consorcio comercial, mercaderes que mueven mercancías a través de la faz de Nirn. Me han encargado preparar pechuga de pollo y mazte para completar mi contrato. Los mercaderes esperan la entrega en Auridon.",
                             ["it"] = "This writ is from a trade consortium, merchants passing goods across the face of Nirn. I've been tasked with creating Chicken Breast and Mazte to complete my contract. The merchants expect delivery in Auridon.",
@@ -2872,9 +2872,9 @@ LibCraftTextVars =
                             ["ru"] = "Этот заказ поступил от торгового консорциума — торговцев, продающих свои товары по всему Нирну. Чтобы выполнить контракт, мне надо создать куриная грудка и мацт. Торговцы ожидают поставку на Ауридоне.",
                         },
                     },
-                    [6] = 
+                    [6] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los encargados del suministro de Belkarth. Éste busca armas y armaduras para los aventureros veteranos. Me han encargado crear un glifo espléndido de magia y conseguir una runa de esencia Makkoma para completar mi contrato.",
                             ["it"] = "This writ is from one of the Belkarth supply masters. This one seeks arms and armor for veteran adventurers. I've been tasked with creating a Splendid Glyph of Magicka and acquiring a Makkoma Essence Rune to complete my contract.",
@@ -2885,9 +2885,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks arms and armor for veteran adventurers. I've been tasked with creating a Splendid Glyph of Magicka and acquiring a Makkoma Essence Rune to complete my contract.",
                         },
                     },
-                    [7] = 
+                    [7] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Comité cívico de Venganza y Renovación de Orsinium, que necesita más suministros pero no quiere faltar el respeto a sus alquimistas. Me han encargado hacer una esencia de aguante y conseguir conseguir algunas quitinas de cangrejo del barro para completar mi contrato.",
                             ["fr"] = "Cette commande émane du Comité civique de Vengeance et du Renouveau d'Orsinium, qui a besoin de fournitures mais ne veut pas manquer de respect à ses cuisiniers. On m'a demandé de préparer une essence de Vigueur et d'acquérir de la chitine de vasard pour remplir la commande.",
@@ -2898,7 +2898,7 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["skill_rank"] = 
+                ["skill_rank"] =
                 {
                     [1] = 8,
                     [2] = 8,
@@ -2908,13 +2908,13 @@ LibCraftTextVars =
                     [6] = 8,
                     [7] = 5,
                 },
-                ["conditions"] = 
+                ["conditions"] =
                 {
-                    [1] = 
+                    [1] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica una túnica de hilo de plata normal: 0/1",
                                 ["it"] = "Craft Silverweave Robe: 0 / 1",
@@ -2924,7 +2924,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Silberstoffroben her: 0/1",
                                 ["ru"] = "Craft Normal Silverweave Robe: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica unos calzones de hilo de plata normales: 0/1",
                                 ["it"] = "Craft Silverweave Breeches: 0 / 1",
@@ -2934,7 +2934,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Silberstoffbeinkleider her: 0/1",
                                 ["ru"] = "Craft Normal Silverweave Breeches: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unos cubrehombros de hilo de plata normales: 0/1",
                                 ["it"] = "Craft Silverweave Epaulets: 0 / 1",
@@ -2946,11 +2946,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [2] = 
+                    [2] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica una espada de azogue normal: 0/1",
                                 ["it"] = "Craft Quicksilver Sword: 0 / 1",
@@ -2960,7 +2960,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Flinksilberschwerter her: 0/1",
                                 ["ru"] = "Craft Normal Quicksilver Sword: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica una coraza de azogue normal: 0/1",
                                 ["it"] = "Craft Quicksilver Cuirass: 0 / 1",
@@ -2970,7 +2970,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Flinksilberkürasse her: 0/1",
                                 ["ru"] = "Craft Normal Quicksilver Cuirass: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unas grebas de azogue normales: 0/1",
                                 ["it"] = "Craft Quicksilver Greaves: 0 / 1",
@@ -2982,11 +2982,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [3] = 
+                    [3] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un escudo de caoba normal: 0/1",
                                 ["it"] = "Craft Mahogany Shield: 0 / 1",
@@ -2996,7 +2996,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Mahagonischilde her: 0/1",
                                 ["ru"] = "Craft Normal Mahogany Shield: 0 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica una vara restauradora de caoba normal: 0/2",
                                 ["it"] = "Craft Mahogany Restoration Staff: 0 / 2",
@@ -3008,11 +3008,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [4] = 
+                    [4] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica tres anillos de platino: 0/3",
                                 ["it"] = "TRACKER GOAL TEXT: 0 / 3",
@@ -3024,11 +3024,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [5] = 
+                    [5] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Preparæ pechuga de pollo: 0/1",
                                 ["it"] = "Craft Chicken Breast: 0 / 1",
@@ -3038,7 +3038,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt eine Hühnerbrust her: 0/1",
                                 ["ru"] = "Создать — куриная грудка: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Preparæ mazte: 0/1",
                                 ["it"] = "Craft Mazte: 0 / 1",
@@ -3050,11 +3050,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [6] = 
+                    [6] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un glifo espléndido de magia con Ta: 0/1",
                                 ["it"] = "Craft Splendid Glyph of Magicka: 0 / 1",
@@ -3064,7 +3064,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt mit einer Ta-Rune eine vortreffliche Glyphe der Magicka her: 0/1",
                                 ["ru"] = "Craft Splendid Glyph of Magicka With Ta: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Adquiere una runa de esencia Makkoma: 1/1",
                                 ["it"] = "Acquire Makkoma Essence Rune: 1 / 1",
@@ -3076,11 +3076,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [7] = 
+                    [7] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Adquiere quitina de cangrejo del barro: 3/3",
                                 ["it"] = "TRACKER GOAL TEXT: 3 / 3",
@@ -3090,7 +3090,7 @@ LibCraftTextVars =
                                 ["de"] = "Besorgt etwas Schlammkrabbenchitin: 3/3",
                                 ["ru"] = "Раздобыть — Хитин грязевого краба: 3 / 3",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Prepara una esencia de aguante: 0/1",
                                 ["it"] = "TRACKER GOAL TEXT: 0 / 1",
@@ -3104,9 +3104,9 @@ LibCraftTextVars =
                     },
                 },
                 ["version"] = 1,
-                ["quests"] = 
+                ["quests"] =
                 {
-                    [1] = 
+                    [1] =
                     {
                         ["es"] = "Encargo de sastrería",
                         ["it"] = "Clothier Writ",
@@ -3116,7 +3116,7 @@ LibCraftTextVars =
                         ["de"] = "Schneiderschrieb",
                         ["ru"] = "Заказ портному",
                     },
-                    [2] = 
+                    [2] =
                     {
                         ["es"] = "Encargo de herrería",
                         ["it"] = "Blacksmith Writ",
@@ -3126,7 +3126,7 @@ LibCraftTextVars =
                         ["de"] = "Schmiedeschrieb",
                         ["ru"] = "Заказ кузнецу",
                     },
-                    [3] = 
+                    [3] =
                     {
                         ["es"] = "Encargo de carpintería",
                         ["it"] = "Woodworker Writ",
@@ -3136,7 +3136,7 @@ LibCraftTextVars =
                         ["de"] = "Schreinerschrieb",
                         ["ru"] = "Заказ столяру",
                     },
-                    [4] = 
+                    [4] =
                     {
                         ["es"] = "Encargo de artesanía de joyería",
                         ["it"] = "",
@@ -3146,7 +3146,7 @@ LibCraftTextVars =
                         ["de"] = "Schmuckhandwerksschrieb",
                         ["ru"] = "Заказ ювелиру",
                     },
-                    [5] = 
+                    [5] =
                     {
                         ["es"] = "Encargo de provisiones",
                         ["it"] = "Provisioner Writ",
@@ -3156,7 +3156,7 @@ LibCraftTextVars =
                         ["de"] = "Versorgerschrieb",
                         ["ru"] = "Заказ снабженцу",
                     },
-                    [6] = 
+                    [6] =
                     {
                         ["es"] = "Encargo de encantamiento",
                         ["it"] = "Enchanter Writ",
@@ -3166,7 +3166,7 @@ LibCraftTextVars =
                         ["de"] = "Verzaubererschrieb",
                         ["ru"] = "Заказ зачарователю",
                     },
-                    [7] = 
+                    [7] =
                     {
                         ["es"] = "Encargo de alquimia",
                         ["it"] = "",
@@ -3178,14 +3178,14 @@ LibCraftTextVars =
                     },
                 },
             },
-            ["ziggr-alt-seven"] = 
+            ["ziggr-alt-seven"] =
             {
                 ["alliance"] = "DC",
-                ["steps"] = 
+                ["steps"] =
                 {
-                    ["al"] = 
+                    ["al"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los encargados del suministro de Belkarth. Éste busca armas y armaduras para los exploradores recién llegados. Me han encargado crear una panacea de magia y conseguir algo de raíz de nirn para completar mi contrato.",
                             ["it"] = "This writ is from one of the Belkarth supply masters. This one seeks to supply newly arrived explorers. I've been tasked with creating a Panacea of Magicka and acquiring some nirnroot in order to complete my contract.",
@@ -3196,9 +3196,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks to supply newly arrived explorers. I've been tasked with creating a Panacea of Magicka and acquiring some корень Нирна in order to complete my contract.",
                         },
                     },
-                    ["cl"] = 
+                    ["cl"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los encargados del suministro de Belkarth. Éste busca armaduras de piel férrea para los exploradores recién llegados. Me han encargado hacer varios cascos, hombreras y brazales para completar mi contrato.",
                             ["it"] = "This writ is from one of the Belkarth supply masters. This one seeks Ironhide armor for newly arrived explorers. I've been tasked with creating several Helmets, Arm Cops, and Bracers to complete my contract.",
@@ -3209,9 +3209,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks Ironhide armor for newly arrived explorers. I've been tasked with creating several Helmets, Arm Cops, and Bracers to complete my contract.",
                         },
                     },
-                    ["bs"] = 
+                    ["bs"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los encargados del suministro de Belkarth. Éste busca armas y armaduras de galatita para los exploradores recién llegados. Me han encargado hacer varios yelmos, dagas y espaldarones para completar mi contrato.",
                             ["it"] = "This writ is from one of the Belkarth supply masters. This one seeks Galatite arms and armor for newly arrived explorers. I've been tasked with creating several Helms, Daggers, and Pauldrons to complete my contract.",
@@ -3222,9 +3222,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks Galatite arms and armor for newly arrived explorers. I've been tasked with creating several Helms, Daggers, and Pauldrons to complete my contract.",
                         },
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los encargados del suministro de Belkarth. Éste busca armas y armaduras para los exploradores recién llegados. Me han encargado hacer varios arcos y escudos de fresno para completar mi contrato.",
                             ["it"] = "This writ is from one of the Belkarth supply masters. This one seeks arms and armor for newly arrived explorers. I've been tasked with creating several Ash Bows and Shields to complete my contract.",
@@ -3235,9 +3235,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks arms and armor for newly arrived explorers. I've been tasked with creating several Ash Bows and Shields to complete my contract.",
                         },
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Platinum Ring and a Platinum Necklace to complete my contract.",
                             ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation d'un anneau et d'un collier de platine.",
@@ -3247,9 +3247,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating a Platinum Ring and a Platinum Necklace to complete my contract.",
                         },
                     },
-                    ["en"] = 
+                    ["en"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los encargados del suministro de Belkarth. Éste busca armas y armaduras para los exploradores recién llegados. Me han encargado crear un glifo grande de aguante y conseguir una runa de aspecto Ta para completar mi contrato.",
                             ["it"] = "This writ is from one of the Belkarth supply masters. This one seeks arms and armor for newly arrived explorers. I've been tasked with creating a Grand Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
@@ -3260,9 +3260,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks arms and armor for newly arrived explorers. I've been tasked with creating a Grand Glyph of Stamina and acquiring a Ta Aspect Rune to complete my contract.",
                         },
                     },
-                    ["pr"] = 
+                    ["pr"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de la rama de reabastecimiento de los militares, un grupo encargado de mantener equipadas a las tropas en Cyrodiil. Me han encargado preparar Arroz con tomate Pellitine y Té de flor marina para completar mi contrato. Los militares esperan la entrega en Refugio de la Tormenta.",
                             ["it"] = "This writ is from the resupply arm of the military, a group charged with keeping the troops in Cyrodiil outfitted. I've been tasked with creating Pellitine Tomato Rice and Seaflower Tea to complete my contract.  The military expects delivery in Stormhaven.",
@@ -3274,7 +3274,7 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["skill_rank"] = 
+                ["skill_rank"] =
                 {
                     [1] = 7,
                     [2] = 7,
@@ -3284,13 +3284,13 @@ LibCraftTextVars =
                     [6] = 7,
                     [7] = 5,
                 },
-                ["conditions"] = 
+                ["conditions"] =
                 {
-                    ["al"] = 
+                    ["al"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Adquiere raíz de nirn: 3/3",
                                 ["it"] = "Acquire nirnroot: 3 / 3",
@@ -3300,7 +3300,7 @@ LibCraftTextVars =
                                 ["de"] = "Besorgt eine Nirnwurz: 3/3",
                                 ["ru"] = "Раздобыть — корень Нирна: 3 / 3",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Prepara una panacea de magia: 0/1",
                                 ["it"] = "Craft Panacea of Magicka: 0 / 1",
@@ -3312,11 +3312,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["cl"] = 
+                    ["cl"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un casco de piel férrea normal: 0/1",
                                 ["it"] = "Craft Ironhide Helmet: 0 / 1",
@@ -3326,7 +3326,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Eisenlederhelme her: 0/1",
                                 ["ru"] = "Craft Normal Ironhide Helmet: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica unas hombreras de piel férrea normales: 0/1",
                                 ["it"] = "Craft Ironhide Arm Cops: 0 / 1",
@@ -3336,7 +3336,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Eisenlederschulterkappen her: 0/1",
                                 ["ru"] = "Craft Normal Ironhide Arm Cops: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unos brazales de piel férrea normales: 0/1",
                                 ["it"] = "Craft Ironhide Bracers: 0 / 1",
@@ -3348,11 +3348,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["bs"] = 
+                    ["bs"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un yelmo de galatita normal: 0/1",
                                 ["it"] = "Craft Galatite Helm: 0 / 1",
@@ -3362,7 +3362,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Galatithauben her: 0/1",
                                 ["ru"] = "Craft Normal Galatite Helm: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica una daga de galatita normal: 0/1",
                                 ["it"] = "Craft Galatite Dagger: 0 / 1",
@@ -3372,7 +3372,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Galatitdolche her: 0/1",
                                 ["ru"] = "Craft Normal Galatite Dagger: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unos espaldarones de galatita normales: 0/1",
                                 ["it"] = "Craft Galatite Pauldron: 0 / 1",
@@ -3384,11 +3384,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un escudo de fresno normal: 0/1",
                                 ["it"] = "Craft Ash Shield: 0 / 1",
@@ -3398,7 +3398,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Eschenschilde her: 0/1",
                                 ["ru"] = "Craft Normal Ash Shield: 0 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un arco de fresno normal: 0/2",
                                 ["it"] = "Craft Ash Bow: 0 / 2",
@@ -3410,11 +3410,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un collar de platino: 0/1",
                                 ["it"] = "TRACKER GOAL TEXT: 0 / 1",
@@ -3424,7 +3424,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt eine Platinhalskette her: 0/1",
                                 ["ru"] = "Craft a Platinum Necklace: 0 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un anillo de platino: 0/1",
                                 ["it"] = "TRACKER GOAL TEXT: 0 / 1",
@@ -3436,11 +3436,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["en"] = 
+                    ["en"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un glifo grande de aguante con Ta: 0/1",
                                 ["it"] = "Craft Grand Glyph of Stamina: 0 / 1",
@@ -3450,7 +3450,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt mit einer Ta-Rune eine gewaltige Glyphe der Ausdauer her: 0/1",
                                 ["ru"] = "Craft Grand Glyph of Stamina With Ta: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Adquiere una runa de aspecto Ta: 1/1",
                                 ["it"] = "Acquire Ta Aspect Rune: 1 / 1",
@@ -3462,11 +3462,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["pr"] = 
+                    ["pr"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Preparæ Arroz con tomate Pellitine: 0/1",
                                 ["it"] = "Craft Pellitine Tomato Rice: 0 / 1",
@@ -3476,7 +3476,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt etwas Pellitine-Tomatenreis her: 0/1",
                                 ["ru"] = "Создать — пеллитинский рис с томатом: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Preparæ Té de flor marina: 0/1",
                                 ["it"] = "Craft Seaflower Tea: 0 / 1",
@@ -3490,9 +3490,9 @@ LibCraftTextVars =
                     },
                 },
                 ["version"] = 1,
-                ["quests"] = 
+                ["quests"] =
                 {
-                    ["al"] = 
+                    ["al"] =
                     {
                         ["es"] = "Encargo de alquimia",
                         ["it"] = "Alchemist Writ",
@@ -3502,7 +3502,7 @@ LibCraftTextVars =
                         ["de"] = "Alchemistenschrieb",
                         ["ru"] = "Заказ алхимику",
                     },
-                    ["cl"] = 
+                    ["cl"] =
                     {
                         ["es"] = "Encargo de sastrería",
                         ["it"] = "Clothier Writ",
@@ -3512,7 +3512,7 @@ LibCraftTextVars =
                         ["de"] = "Schneiderschrieb",
                         ["ru"] = "Заказ портному",
                     },
-                    ["bs"] = 
+                    ["bs"] =
                     {
                         ["es"] = "Encargo de herrería",
                         ["it"] = "Blacksmith Writ",
@@ -3522,7 +3522,7 @@ LibCraftTextVars =
                         ["de"] = "Schmiedeschrieb",
                         ["ru"] = "Заказ кузнецу",
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
                         ["es"] = "Encargo de carpintería",
                         ["it"] = "Woodworker Writ",
@@ -3532,7 +3532,7 @@ LibCraftTextVars =
                         ["de"] = "Schreinerschrieb",
                         ["ru"] = "Заказ столяру",
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
                         ["es"] = "Encargo de artesanía de joyería",
                         ["it"] = "",
@@ -3542,7 +3542,7 @@ LibCraftTextVars =
                         ["de"] = "Schmuckhandwerksschrieb",
                         ["ru"] = "Заказ ювелиру",
                     },
-                    ["en"] = 
+                    ["en"] =
                     {
                         ["es"] = "Encargo de encantamiento",
                         ["it"] = "Enchanter Writ",
@@ -3552,7 +3552,7 @@ LibCraftTextVars =
                         ["de"] = "Verzaubererschrieb",
                         ["ru"] = "Заказ зачарователю",
                     },
-                    ["pr"] = 
+                    ["pr"] =
                     {
                         ["es"] = "Encargo de provisiones",
                         ["it"] = "Provisioner Writ",
@@ -3564,13 +3564,13 @@ LibCraftTextVars =
                     },
                 },
             },
-            ["$AccountWide"] = 
+            ["$AccountWide"] =
             {
-                ["items_from_stations"] = 
+                ["items_from_stations"] =
                 {
-                    [2] = 
+                    [2] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Túnica",
                             ["it"] = "veste",
@@ -3580,7 +3580,7 @@ LibCraftTextVars =
                             ["de"] = "robe",
                             ["ru"] = "robe",
                         },
-                        [2] = 
+                        [2] =
                         {
                             ["es"] = "Jubón",
                             ["it"] = "giaco",
@@ -3590,7 +3590,7 @@ LibCraftTextVars =
                             ["de"] = "jacke",
                             ["ru"] = "jerkin",
                         },
-                        [3] = 
+                        [3] =
                         {
                             ["es"] = "Zapatos",
                             ["it"] = "scarpe",
@@ -3600,7 +3600,7 @@ LibCraftTextVars =
                             ["de"] = "schuhe",
                             ["ru"] = "shoes",
                         },
-                        [4] = 
+                        [4] =
                         {
                             ["es"] = "guantes",
                             ["it"] = "guanti",
@@ -3610,7 +3610,7 @@ LibCraftTextVars =
                             ["de"] = "handschuhe",
                             ["ru"] = "gloves",
                         },
-                        [5] = 
+                        [5] =
                         {
                             ["es"] = "Capucha",
                             ["it"] = "cappello",
@@ -3620,7 +3620,7 @@ LibCraftTextVars =
                             ["de"] = "hut",
                             ["ru"] = "hat",
                         },
-                        [6] = 
+                        [6] =
                         {
                             ["es"] = "calzones",
                             ["it"] = "calzoni",
@@ -3630,7 +3630,7 @@ LibCraftTextVars =
                             ["de"] = "beinkleider",
                             ["ru"] = "breeches",
                         },
-                        [7] = 
+                        [7] =
                         {
                             ["es"] = "Cubrehombros",
                             ["it"] = "coprispalle",
@@ -3640,7 +3640,7 @@ LibCraftTextVars =
                             ["de"] = "schulterpolster",
                             ["ru"] = "epaulets",
                         },
-                        [8] = 
+                        [8] =
                         {
                             ["es"] = "banda",
                             ["it"] = "fascia",
@@ -3650,7 +3650,7 @@ LibCraftTextVars =
                             ["de"] = "schärpe",
                             ["ru"] = "sash",
                         },
-                        [9] = 
+                        [9] =
                         {
                             ["es"] = "pechera",
                             ["it"] = "corpetto",
@@ -3660,7 +3660,7 @@ LibCraftTextVars =
                             ["de"] = "wams",
                             ["ru"] = "jack",
                         },
-                        [10] = 
+                        [10] =
                         {
                             ["es"] = "botas",
                             ["it"] = "stivali",
@@ -3670,7 +3670,7 @@ LibCraftTextVars =
                             ["de"] = "stiefel",
                             ["ru"] = "boots",
                         },
-                        [11] = 
+                        [11] =
                         {
                             ["es"] = "brazales",
                             ["it"] = "bracciali",
@@ -3680,7 +3680,7 @@ LibCraftTextVars =
                             ["de"] = "armschienen",
                             ["ru"] = "bracers",
                         },
-                        [12] = 
+                        [12] =
                         {
                             ["es"] = "Casco",
                             ["it"] = "elmetto",
@@ -3690,7 +3690,7 @@ LibCraftTextVars =
                             ["de"] = "helm",
                             ["ru"] = "helmet",
                         },
-                        [13] = 
+                        [13] =
                         {
                             ["es"] = "musleras",
                             ["it"] = "pantaloni",
@@ -3700,7 +3700,7 @@ LibCraftTextVars =
                             ["de"] = "schoner",
                             ["ru"] = "guards",
                         },
-                        [14] = 
+                        [14] =
                         {
                             ["es"] = "Hombreras",
                             ["it"] = "spalline",
@@ -3710,7 +3710,7 @@ LibCraftTextVars =
                             ["de"] = "schulterkappen",
                             ["ru"] = "arm cops",
                         },
-                        [15] = 
+                        [15] =
                         {
                             ["es"] = "Cinturón",
                             ["it"] = "cintura",
@@ -3721,9 +3721,9 @@ LibCraftTextVars =
                             ["ru"] = "belt",
                         },
                     },
-                    [1] = 
+                    [1] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Hacha",
                             ["it"] = "ascia",
@@ -3733,7 +3733,7 @@ LibCraftTextVars =
                             ["de"] = "axt",
                             ["ru"] = "axe",
                         },
-                        [2] = 
+                        [2] =
                         {
                             ["es"] = "Maza",
                             ["it"] = "mazza",
@@ -3743,7 +3743,7 @@ LibCraftTextVars =
                             ["de"] = "keule",
                             ["ru"] = "mace",
                         },
-                        [3] = 
+                        [3] =
                         {
                             ["es"] = "Espada",
                             ["it"] = "spada",
@@ -3753,7 +3753,7 @@ LibCraftTextVars =
                             ["de"] = "schwert",
                             ["ru"] = "sword",
                         },
-                        [4] = 
+                        [4] =
                         {
                             ["es"] = "hacha de batalla",
                             ["it"] = "ascia da battaglia",
@@ -3763,7 +3763,7 @@ LibCraftTextVars =
                             ["de"] = "streitaxt",
                             ["ru"] = "battle axe",
                         },
-                        [5] = 
+                        [5] =
                         {
                             ["es"] = "Maza",
                             ["it"] = "maglio",
@@ -3773,7 +3773,7 @@ LibCraftTextVars =
                             ["de"] = "streitkolben",
                             ["ru"] = "maul",
                         },
-                        [6] = 
+                        [6] =
                         {
                             ["es"] = "Mandoble",
                             ["it"] = "spadone",
@@ -3783,7 +3783,7 @@ LibCraftTextVars =
                             ["de"] = "bidenhänder",
                             ["ru"] = "greatsword",
                         },
-                        [7] = 
+                        [7] =
                         {
                             ["es"] = "Daga",
                             ["it"] = "pugnale",
@@ -3793,7 +3793,7 @@ LibCraftTextVars =
                             ["de"] = "dolch",
                             ["ru"] = "dagger",
                         },
-                        [8] = 
+                        [8] =
                         {
                             ["es"] = "Coraza",
                             ["it"] = "corazza",
@@ -3803,7 +3803,7 @@ LibCraftTextVars =
                             ["de"] = "kürass",
                             ["ru"] = "cuirass",
                         },
-                        [9] = 
+                        [9] =
                         {
                             ["es"] = "escarpes",
                             ["it"] = "schinieri",
@@ -3813,7 +3813,7 @@ LibCraftTextVars =
                             ["de"] = "panzerschuhe",
                             ["ru"] = "sabatons",
                         },
-                        [10] = 
+                        [10] =
                         {
                             ["es"] = "guanteletes",
                             ["it"] = "mittene",
@@ -3823,7 +3823,7 @@ LibCraftTextVars =
                             ["de"] = "hentzen",
                             ["ru"] = "gauntlets",
                         },
-                        [11] = 
+                        [11] =
                         {
                             ["es"] = "yelmo",
                             ["it"] = "elmo",
@@ -3833,7 +3833,7 @@ LibCraftTextVars =
                             ["de"] = "haube",
                             ["ru"] = "helm",
                         },
-                        [12] = 
+                        [12] =
                         {
                             ["es"] = "grebas",
                             ["it"] = "gambali",
@@ -3843,7 +3843,7 @@ LibCraftTextVars =
                             ["de"] = "beinschienen",
                             ["ru"] = "greaves",
                         },
-                        [13] = 
+                        [13] =
                         {
                             ["es"] = "espaldarones",
                             ["it"] = "spallaccio",
@@ -3853,7 +3853,7 @@ LibCraftTextVars =
                             ["de"] = "schulterschutz",
                             ["ru"] = "pauldron",
                         },
-                        [14] = 
+                        [14] =
                         {
                             ["es"] = "Faja",
                             ["it"] = "cinturone",
@@ -3864,9 +3864,9 @@ LibCraftTextVars =
                             ["ru"] = "girdle",
                         },
                     },
-                    [6] = 
+                    [6] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Arco",
                             ["it"] = "arco",
@@ -3876,7 +3876,7 @@ LibCraftTextVars =
                             ["de"] = "bogen",
                             ["ru"] = "bow",
                         },
-                        [2] = 
+                        [2] =
                         {
                             ["es"] = "Escudo",
                             ["it"] = "scudo",
@@ -3886,7 +3886,7 @@ LibCraftTextVars =
                             ["de"] = "schild",
                             ["ru"] = "shield",
                         },
-                        [3] = 
+                        [3] =
                         {
                             ["es"] = "Vara infernal",
                             ["it"] = "bastone del fuoco",
@@ -3896,7 +3896,7 @@ LibCraftTextVars =
                             ["de"] = "flammenstab",
                             ["ru"] = "inferno staff",
                         },
-                        [4] = 
+                        [4] =
                         {
                             ["es"] = "vara glaciar",
                             ["it"] = "bastone del gelo",
@@ -3906,7 +3906,7 @@ LibCraftTextVars =
                             ["de"] = "froststab",
                             ["ru"] = "ice staff",
                         },
-                        [5] = 
+                        [5] =
                         {
                             ["es"] = "vara eléctrica",
                             ["it"] = "bastone del fulmine",
@@ -3916,7 +3916,7 @@ LibCraftTextVars =
                             ["de"] = "blitzstab",
                             ["ru"] = "lightning staff",
                         },
-                        [6] = 
+                        [6] =
                         {
                             ["es"] = "vara restauradora",
                             ["it"] = "bastone di cura",
@@ -3927,9 +3927,9 @@ LibCraftTextVars =
                             ["ru"] = "restoration staff",
                         },
                     },
-                    [7] = 
+                    [7] =
                     {
-                        [2] = 
+                        [2] =
                         {
                             ["es"] = "collar",
                             ["it"] = "collana",
@@ -3939,7 +3939,7 @@ LibCraftTextVars =
                             ["de"] = "halskette",
                             ["ru"] = "necklace",
                         },
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "anillo",
                             ["it"] = "anello",
@@ -3951,9 +3951,9 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["sets"] = 
+                ["sets"] =
                 {
-                    [0] = 
+                    [0] =
                     {
                         ["es"] = "Consumir para iniciar la misión:\nFabricar: Hacha de rubedita; Calidad: Épico; Rasgo: Decisivo; Estilo: Yokudan",
                         ["it"] = "Consuma per iniziare la missione:\nCrea un Axe; Qualità: Epico; Tratti: Decisivo; Stile:",
@@ -3963,7 +3963,7 @@ LibCraftTextVars =
                         ["de"] = "Verbrauchen, um eine Quest zu beginnen:\nStellt eine Rubeditaxt mit bestimmten Eigenschaften her.\n\nStil: Yokudaner\nEigenschaft: Entschlossen\nQualität: Episch",
                         ["ru"] = "Используйте, чтобы начать задание:\nСоздать предмет (Rubedite Axe); качество: Эпическое; особенность: Decisive; стиль: йокуданский",
                     },
-                    [19] = 
+                    [19] =
                     {
                         ["es"] = "Vestimentas del Brujo",
                         ["it"] = "Paramenti dello Stregone",
@@ -3973,7 +3973,7 @@ LibCraftTextVars =
                         ["de"] = "Gewänder des Hexers",
                         ["ru"] = "Vestments of the Warlock",
                     },
-                    [20] = 
+                    [20] =
                     {
                         ["es"] = "Armadura del brujo",
                         ["it"] = "Witchman Armor",
@@ -3983,7 +3983,7 @@ LibCraftTextVars =
                         ["de"] = "Hexenwerk",
                         ["ru"] = "Witchman Armor",
                     },
-                    [21] = 
+                    [21] =
                     {
                         ["es"] = "Guardia Dragón Akaviri",
                         ["it"] = "Akaviri Dragonguard",
@@ -3993,7 +3993,7 @@ LibCraftTextVars =
                         ["de"] = "akavirische Drachengarde",
                         ["ru"] = "Akaviri Dragonguard",
                     },
-                    [22] = 
+                    [22] =
                     {
                         ["es"] = "Manto de soñador",
                         ["it"] = "Dreamer's Mantle",
@@ -4003,7 +4003,7 @@ LibCraftTextVars =
                         ["de"] = "Mantel des Träumers",
                         ["ru"] = "Dreamer's Mantle",
                     },
-                    [23] = 
+                    [23] =
                     {
                         ["es"] = "Espíritu del arquero",
                         ["it"] = "Archer's Mind",
@@ -4013,7 +4013,7 @@ LibCraftTextVars =
                         ["de"] = "Schützensinn",
                         ["ru"] = "Archer's Mind",
                     },
-                    [24] = 
+                    [24] =
                     {
                         ["es"] = "Fortuna del lacayo",
                         ["it"] = "Footman's Fortune",
@@ -4023,7 +4023,7 @@ LibCraftTextVars =
                         ["de"] = "Geschick des Fußsoldaten",
                         ["ru"] = "Footman's Fortune",
                     },
-                    [25] = 
+                    [25] =
                     {
                         ["es"] = "Rosa del Desierto",
                         ["it"] = "Desert Rose",
@@ -4033,7 +4033,7 @@ LibCraftTextVars =
                         ["de"] = "Wüstenrose",
                         ["ru"] = "Desert Rose",
                     },
-                    [26] = 
+                    [26] =
                     {
                         ["es"] = "Harapos de prisionero",
                         ["it"] = "Prisoner's Rags",
@@ -4043,7 +4043,7 @@ LibCraftTextVars =
                         ["de"] = "Lumpen des Gefangenen",
                         ["ru"] = "Prisoner's Rags",
                     },
-                    [27] = 
+                    [27] =
                     {
                         ["es"] = "Legado de Fiord",
                         ["it"] = "Fiord's Legacy",
@@ -4053,7 +4053,7 @@ LibCraftTextVars =
                         ["de"] = "Fiords Erbe",
                         ["ru"] = "Fiord's Legacy",
                     },
-                    [28] = 
+                    [28] =
                     {
                         ["es"] = "Piel de corteza",
                         ["it"] = "Barkskin",
@@ -4063,7 +4063,7 @@ LibCraftTextVars =
                         ["de"] = "Borkenhaut",
                         ["ru"] = "Barkskin",
                     },
-                    [29] = 
+                    [29] =
                     {
                         ["es"] = "Malla de sargento",
                         ["it"] = "Sergeant's Mail",
@@ -4073,7 +4073,7 @@ LibCraftTextVars =
                         ["de"] = "Rüstung des Feldwebels",
                         ["ru"] = "Sergeant's Mail",
                     },
-                    [30] = 
+                    [30] =
                     {
                         ["es"] = "Caparazón de bichotrueno",
                         ["it"] = "Thunderbug's Carapace",
@@ -4083,7 +4083,7 @@ LibCraftTextVars =
                         ["de"] = "Donnerkäferpanzer",
                         ["ru"] = "Thunderbug's Carapace",
                     },
-                    [31] = 
+                    [31] =
                     {
                         ["es"] = "Seda del sol",
                         ["it"] = "Sete del Sole",
@@ -4093,7 +4093,7 @@ LibCraftTextVars =
                         ["de"] = "Sonnenseide",
                         ["ru"] = "Silks of the Sun",
                     },
-                    [32] = 
+                    [32] =
                     {
                         ["es"] = "Hábito del Curandero",
                         ["it"] = "Healer's Habit",
@@ -4103,7 +4103,7 @@ LibCraftTextVars =
                         ["de"] = "Bräuche des Heilers",
                         ["ru"] = "Healer's Habit",
                     },
-                    [33] = 
+                    [33] =
                     {
                         ["es"] = "Picadura de la víbora",
                         ["it"] = "Viper's Sting",
@@ -4113,7 +4113,7 @@ LibCraftTextVars =
                         ["de"] = "Vipernbiss",
                         ["ru"] = "Viper's Sting",
                     },
-                    [34] = 
+                    [34] =
                     {
                         ["es"] = "Abrazo de la Madre Noche",
                         ["it"] = "Night Mother's Embrace",
@@ -4123,7 +4123,7 @@ LibCraftTextVars =
                         ["de"] = "Umarmung der Mutter der Nacht",
                         ["ru"] = "Night Mother's Embrace",
                     },
-                    [35] = 
+                    [35] =
                     {
                         ["es"] = "Jinete Ilusorio",
                         ["it"] = "Knightmare",
@@ -4133,7 +4133,7 @@ LibCraftTextVars =
                         ["de"] = "Albtraumritter",
                         ["ru"] = "Knightmare",
                     },
-                    [36] = 
+                    [36] =
                     {
                         ["es"] = "Armadura de la Herencia Velada",
                         ["it"] = "Armor of the Veiled Heritance",
@@ -4143,7 +4143,7 @@ LibCraftTextVars =
                         ["de"] = "Rüstung des Schleiererbes",
                         ["ru"] = "Armor of the Veiled Heritance",
                     },
-                    [37] = 
+                    [37] =
                     {
                         ["es"] = "Viento Efímero",
                         ["it"] = "Death's Wind",
@@ -4153,7 +4153,7 @@ LibCraftTextVars =
                         ["de"] = "Todeswind",
                         ["ru"] = "Death's Wind",
                     },
-                    [38] = 
+                    [38] =
                     {
                         ["es"] = "Abrazo del Crepúsculo",
                         ["it"] = "Twilight's Embrace",
@@ -4163,7 +4163,7 @@ LibCraftTextVars =
                         ["de"] = "Zwielichtkuss",
                         ["ru"] = "Twilight's Embrace",
                     },
-                    [39] = 
+                    [39] =
                     {
                         ["es"] = "Orden de Alessia",
                         ["it"] = "Alessian Order",
@@ -4173,7 +4173,7 @@ LibCraftTextVars =
                         ["de"] = "alessianischer Orden",
                         ["ru"] = "Alessian Order",
                     },
-                    [40] = 
+                    [40] =
                     {
                         ["es"] = "Silencio Noctívago",
                         ["it"] = "Night's Silence",
@@ -4183,7 +4183,7 @@ LibCraftTextVars =
                         ["de"] = "Stille der Nacht",
                         ["ru"] = "Night's Silence",
                     },
-                    [41] = 
+                    [41] =
                     {
                         ["es"] = "Castigo de Descarga Blanca",
                         ["it"] = "Whitestrake's Retribution",
@@ -4193,7 +4193,7 @@ LibCraftTextVars =
                         ["de"] = "Weißplankes Vergeltung",
                         ["ru"] = "Whitestrake's Retribution",
                     },
-                    [43] = 
+                    [43] =
                     {
                         ["es"] = "Armadura de la Seductora",
                         ["it"] = "Armatura della Seduttrice",
@@ -4203,7 +4203,7 @@ LibCraftTextVars =
                         ["de"] = "Rüstung der Verführung",
                         ["ru"] = "Armor of the Seducer",
                     },
-                    [44] = 
+                    [44] =
                     {
                         ["es"] = "Beso del Vampiro",
                         ["it"] = "Vampire's Kiss",
@@ -4213,7 +4213,7 @@ LibCraftTextVars =
                         ["de"] = "Kuss des Vampirs",
                         ["ru"] = "Vampire's Kiss",
                     },
-                    [46] = 
+                    [46] =
                     {
                         ["es"] = "Sedas del noble duelista",
                         ["it"] = "Noble Duelist's Silks",
@@ -4223,7 +4223,7 @@ LibCraftTextVars =
                         ["de"] = "Seide des edlen Duellanten",
                         ["ru"] = "Noble Duelist's Silks",
                     },
-                    [47] = 
+                    [47] =
                     {
                         ["es"] = "Túnica de la Mano Marchita",
                         ["it"] = "Vesti del Necromante",
@@ -4233,7 +4233,7 @@ LibCraftTextVars =
                         ["de"] = "Roben der Verdorrten Hand",
                         ["ru"] = "Robes of the Withered Hand",
                     },
-                    [48] = 
+                    [48] =
                     {
                         ["es"] = "Regalo de Magnus",
                         ["it"] = "Magnus' Gift",
@@ -4243,7 +4243,7 @@ LibCraftTextVars =
                         ["de"] = "Magnus' Gabe",
                         ["ru"] = "Magnus' Gift",
                     },
-                    [49] = 
+                    [49] =
                     {
                         ["es"] = "Sombra de la Montaña Roja",
                         ["it"] = "Ombra della Montagna Rossa",
@@ -4253,7 +4253,7 @@ LibCraftTextVars =
                         ["de"] = "Schatten des Roten Berges",
                         ["ru"] = "Shadow of the Red Mountain",
                     },
-                    [50] = 
+                    [50] =
                     {
                         ["es"] = "El Morag Tong",
                         ["it"] = "The Morag Tong",
@@ -4263,7 +4263,7 @@ LibCraftTextVars =
                         ["de"] = "Morag Tong",
                         ["ru"] = "The Morag Tong",
                     },
-                    [51] = 
+                    [51] =
                     {
                         ["es"] = "Mirada de la Madre Noche",
                         ["it"] = "Night Mother's Gaze",
@@ -4273,7 +4273,7 @@ LibCraftTextVars =
                         ["de"] = "Blick der Mutter der Nacht",
                         ["ru"] = "Night Mother's Gaze",
                     },
-                    [52] = 
+                    [52] =
                     {
                         ["es"] = "Grito de acero",
                         ["it"] = "Beckoning Steel",
@@ -4283,7 +4283,7 @@ LibCraftTextVars =
                         ["de"] = "klingender Stahl",
                         ["ru"] = "Beckoning Steel",
                     },
-                    [53] = 
+                    [53] =
                     {
                         ["es"] = "Fragua gélida",
                         ["it"] = "The Ice Furnace",
@@ -4293,7 +4293,7 @@ LibCraftTextVars =
                         ["de"] = "Eisschmiede",
                         ["ru"] = "The Ice Furnace",
                     },
-                    [54] = 
+                    [54] =
                     {
                         ["es"] = "Control de cenizas",
                         ["it"] = "Ashen Grip",
@@ -4303,7 +4303,7 @@ LibCraftTextVars =
                         ["de"] = "Aschengriff",
                         ["ru"] = "Ashen Grip",
                     },
-                    [55] = 
+                    [55] =
                     {
                         ["es"] = "Velo de orador",
                         ["it"] = "Prayer Shawl",
@@ -4313,7 +4313,7 @@ LibCraftTextVars =
                         ["de"] = "Gebetstuch",
                         ["ru"] = "Prayer Shawl",
                     },
-                    [56] = 
+                    [56] =
                     {
                         ["es"] = "Abrazo de Stendarr",
                         ["it"] = "Stendarr's Embrace",
@@ -4323,7 +4323,7 @@ LibCraftTextVars =
                         ["de"] = "Stendarrs Umarmung",
                         ["ru"] = "Stendarr's Embrace",
                     },
-                    [57] = 
+                    [57] =
                     {
                         ["es"] = "Bondad de Syrabane",
                         ["it"] = "Syrabane's Grip",
@@ -4333,7 +4333,7 @@ LibCraftTextVars =
                         ["de"] = "Syrabanns Griff",
                         ["ru"] = "Syrabane's Grip",
                     },
-                    [58] = 
+                    [58] =
                     {
                         ["es"] = "Piel del hombre lobo",
                         ["it"] = "Hide of the Werewolf",
@@ -4343,7 +4343,7 @@ LibCraftTextVars =
                         ["de"] = "Fell des Werwolfs",
                         ["ru"] = "Hide of the Werewolf",
                     },
-                    [59] = 
+                    [59] =
                     {
                         ["es"] = "Beso de Kyne",
                         ["it"] = "Kyne's Kiss",
@@ -4353,7 +4353,7 @@ LibCraftTextVars =
                         ["de"] = "Kynes Kuss",
                         ["ru"] = "Kyne's Kiss",
                     },
-                    [60] = 
+                    [60] =
                     {
                         ["es"] = "Rastroscuro",
                         ["it"] = "Darkstride",
@@ -4363,7 +4363,7 @@ LibCraftTextVars =
                         ["de"] = "Dunkelschritt",
                         ["ru"] = "Darkstride",
                     },
-                    [61] = 
+                    [61] =
                     {
                         ["es"] = "Asesino del rey dreugh",
                         ["it"] = "Dreugh King Slayer",
@@ -4373,7 +4373,7 @@ LibCraftTextVars =
                         ["de"] = "Dreughkönigsschlächter",
                         ["ru"] = "Dreugh King Slayer",
                     },
-                    [62] = 
+                    [62] =
                     {
                         ["es"] = "caparazón del retoño",
                         ["it"] = "Hatchling's Shell",
@@ -4383,7 +4383,7 @@ LibCraftTextVars =
                         ["de"] = "Schlüpflingspanzer",
                         ["ru"] = "Hatchling's Shell",
                     },
-                    [63] = 
+                    [63] =
                     {
                         ["es"] = "El mastodonte",
                         ["it"] = "The Juggernaut",
@@ -4393,7 +4393,7 @@ LibCraftTextVars =
                         ["de"] = "Koloss",
                         ["ru"] = "The Juggernaut",
                     },
-                    [64] = 
+                    [64] =
                     {
                         ["es"] = "Ropajes del funambulista sombrío",
                         ["it"] = "Shadow Dancer's Raiment",
@@ -4403,7 +4403,7 @@ LibCraftTextVars =
                         ["de"] = "Kleidung des Schattentänzers",
                         ["ru"] = "Shadow Dancer's Raiment",
                     },
-                    [65] = 
+                    [65] =
                     {
                         ["es"] = "Toque de la Espina Sangrienta",
                         ["it"] = "Bloodthorn's Touch",
@@ -4413,7 +4413,7 @@ LibCraftTextVars =
                         ["de"] = "Spur eines Blutdorns",
                         ["ru"] = "Bloodthorn's Touch",
                     },
-                    [66] = 
+                    [66] =
                     {
                         ["es"] = "Vestiduras del Hist",
                         ["it"] = "Robes of the Hist",
@@ -4423,7 +4423,7 @@ LibCraftTextVars =
                         ["de"] = "Roben des Hist",
                         ["ru"] = "Robes of the Hist",
                     },
-                    [67] = 
+                    [67] =
                     {
                         ["es"] = "Caminante sombría",
                         ["it"] = "Shadow Walker",
@@ -4433,7 +4433,7 @@ LibCraftTextVars =
                         ["de"] = "Schattengänger",
                         ["ru"] = "Shadow Walker",
                     },
-                    [68] = 
+                    [68] =
                     {
                         ["es"] = "Estigio",
                         ["it"] = "Stygian",
@@ -4443,7 +4443,7 @@ LibCraftTextVars =
                         ["de"] = "Stygier",
                         ["ru"] = "Stygian",
                     },
-                    [69] = 
+                    [69] =
                     {
                         ["es"] = "Andares del guardabosques",
                         ["it"] = "Ranger's Gait",
@@ -4453,7 +4453,7 @@ LibCraftTextVars =
                         ["de"] = "Laufstil des Waldläufers",
                         ["ru"] = "Ranger's Gait",
                     },
-                    [70] = 
+                    [70] =
                     {
                         ["es"] = "Despiadada de la Séptima Legión",
                         ["it"] = "Seventh Legion Brute",
@@ -4463,7 +4463,7 @@ LibCraftTextVars =
                         ["de"] = "Rohling der siebten Legion",
                         ["ru"] = "Seventh Legion Brute",
                     },
-                    [71] = 
+                    [71] =
                     {
                         ["es"] = "Perdición de Durok",
                         ["it"] = "Durok's Bane",
@@ -4473,7 +4473,7 @@ LibCraftTextVars =
                         ["de"] = "Duroks Fluch",
                         ["ru"] = "Durok's Bane",
                     },
-                    [72] = 
+                    [72] =
                     {
                         ["es"] = "Armadura pesada de Nikulas",
                         ["it"] = "Armatura Pesante di Nikulas",
@@ -4483,7 +4483,7 @@ LibCraftTextVars =
                         ["de"] = "Nikulas' schwere Rüstung",
                         ["ru"] = "Nikulas' Heavy Armor",
                     },
-                    [73] = 
+                    [73] =
                     {
                         ["es"] = "Enemigo de Oblivion",
                         ["it"] = "Oblivion's Foe",
@@ -4493,7 +4493,7 @@ LibCraftTextVars =
                         ["de"] = "Erinnerung",
                         ["ru"] = "Oblivion's Foe",
                     },
-                    [74] = 
+                    [74] =
                     {
                         ["es"] = "Ojo del Espectro",
                         ["it"] = "Spectre's Eye",
@@ -4503,7 +4503,7 @@ LibCraftTextVars =
                         ["de"] = "Schemenauge",
                         ["ru"] = "Spectre's Eye",
                     },
-                    [75] = 
+                    [75] =
                     {
                         ["es"] = "Pacto de Torug",
                         ["it"] = "Torug's Pact",
@@ -4513,7 +4513,7 @@ LibCraftTextVars =
                         ["de"] = "Torugs Pakt",
                         ["ru"] = "Torug's Pact",
                     },
-                    [76] = 
+                    [76] =
                     {
                         ["es"] = "Vestimenta de alteración maestra",
                         ["it"] = "Robes of Alteration Mastery",
@@ -4523,7 +4523,7 @@ LibCraftTextVars =
                         ["de"] = "Roben der Veränderungsbeherrschung",
                         ["ru"] = "Robes of Alteration Mastery",
                     },
-                    [77] = 
+                    [77] =
                     {
                         ["es"] = "Cruzado",
                         ["it"] = "Crusader",
@@ -4533,7 +4533,7 @@ LibCraftTextVars =
                         ["de"] = "Glaubenskrieger",
                         ["ru"] = "Crusader",
                     },
-                    [78] = 
+                    [78] =
                     {
                         ["es"] = "Corteza de Hist",
                         ["it"] = "Hist Bark",
@@ -4543,7 +4543,7 @@ LibCraftTextVars =
                         ["de"] = "Histrinde",
                         ["ru"] = "Hist Bark",
                     },
-                    [79] = 
+                    [79] =
                     {
                         ["es"] = "Sendero del Sauce",
                         ["it"] = "Willow's Path",
@@ -4553,7 +4553,7 @@ LibCraftTextVars =
                         ["de"] = "Weidenpfad",
                         ["ru"] = "Willow's Path",
                     },
-                    [80] = 
+                    [80] =
                     {
                         ["es"] = "Rabia de Hunding",
                         ["it"] = "Hunding's Rage",
@@ -4563,7 +4563,7 @@ LibCraftTextVars =
                         ["de"] = "Hundings Zorn",
                         ["ru"] = "Hunding's Rage",
                     },
-                    [81] = 
+                    [81] =
                     {
                         ["es"] = "Canción de Lamae",
                         ["it"] = "Song of Lamae",
@@ -4573,7 +4573,7 @@ LibCraftTextVars =
                         ["de"] = "Lied der Lamien",
                         ["ru"] = "Song of Lamae",
                     },
-                    [82] = 
+                    [82] =
                     {
                         ["es"] = "Baluarte de Alessia",
                         ["it"] = "Alessia's Bulwark",
@@ -4583,7 +4583,7 @@ LibCraftTextVars =
                         ["de"] = "Alessias Bollwerk",
                         ["ru"] = "Alessia's Bulwark",
                     },
-                    [83] = 
+                    [83] =
                     {
                         ["es"] = "Azote de elfos",
                         ["it"] = "Elf Bane",
@@ -4593,7 +4593,7 @@ LibCraftTextVars =
                         ["de"] = "Elfenfluch",
                         ["ru"] = "Elf Bane",
                     },
-                    [84] = 
+                    [84] =
                     {
                         ["es"] = "Escamas de Orgnum",
                         ["it"] = "Orgnum's Scales",
@@ -4603,7 +4603,7 @@ LibCraftTextVars =
                         ["de"] = "Orgnums Schuppen",
                         ["ru"] = "Orgnum's Scales",
                     },
-                    [85] = 
+                    [85] =
                     {
                         ["es"] = "Piedad de Almalexia",
                         ["it"] = "Almalexia's Mercy",
@@ -4613,7 +4613,7 @@ LibCraftTextVars =
                         ["de"] = "Almalexias Gnade",
                         ["ru"] = "Almalexia's Mercy",
                     },
-                    [86] = 
+                    [86] =
                     {
                         ["es"] = "Elegancia de la reina",
                         ["it"] = "Queen's Elegance",
@@ -4623,7 +4623,7 @@ LibCraftTextVars =
                         ["de"] = "Eleganz der Königin",
                         ["ru"] = "Queen's Elegance",
                     },
-                    [87] = 
+                    [87] =
                     {
                         ["es"] = "Ojos de Mara",
                         ["it"] = "Eyes of Mara",
@@ -4633,7 +4633,7 @@ LibCraftTextVars =
                         ["de"] = "Augen von Mara",
                         ["ru"] = "Eyes of Mara",
                     },
-                    [88] = 
+                    [88] =
                     {
                         ["es"] = "Vestimenta de maestría destructora",
                         ["it"] = "Robes of Destruction Mastery",
@@ -4643,7 +4643,7 @@ LibCraftTextVars =
                         ["de"] = "Roben der Zerstörungsbeherrschung",
                         ["ru"] = "Robes of Destruction Mastery",
                     },
-                    [89] = 
+                    [89] =
                     {
                         ["es"] = "Centinela",
                         ["it"] = "Sentry",
@@ -4653,7 +4653,7 @@ LibCraftTextVars =
                         ["de"] = "Wachposten",
                         ["ru"] = "Sentry",
                     },
-                    [90] = 
+                    [90] =
                     {
                         ["es"] = "Mordisco de senche",
                         ["it"] = "Senche's Bite",
@@ -4663,7 +4663,7 @@ LibCraftTextVars =
                         ["de"] = "Biss des Senche",
                         ["ru"] = "Senche's Bite",
                     },
-                    [91] = 
+                    [91] =
                     {
                         ["es"] = "Linde de Oblivion",
                         ["it"] = "Oblivion's Edge",
@@ -4673,7 +4673,7 @@ LibCraftTextVars =
                         ["de"] = "Vorteil des Vergessens",
                         ["ru"] = "Oblivion's Edge",
                     },
-                    [92] = 
+                    [92] =
                     {
                         ["es"] = "Esperanza de Kagrenac",
                         ["it"] = "Kagrenac's Hope",
@@ -4683,7 +4683,7 @@ LibCraftTextVars =
                         ["de"] = "Kagrenacs Hoffnung",
                         ["ru"] = "Kagrenac's Hope",
                     },
-                    [93] = 
+                    [93] =
                     {
                         ["es"] = "Armadura de caballero de la tormenta",
                         ["it"] = "Storm Knight's Plate",
@@ -4693,7 +4693,7 @@ LibCraftTextVars =
                         ["de"] = "Wut des Sturmritters",
                         ["ru"] = "Storm Knight's Plate",
                     },
-                    [94] = 
+                    [94] =
                     {
                         ["es"] = "Armadura Bendita de Meridia",
                         ["it"] = "Meridia's Blessed Armor",
@@ -4703,7 +4703,7 @@ LibCraftTextVars =
                         ["de"] = "Meridias gesegnete Rüstung",
                         ["ru"] = "Meridia's Blessed Armor",
                     },
-                    [95] = 
+                    [95] =
                     {
                         ["es"] = "Maldición de Shalidor",
                         ["it"] = "Shalidor's Curse",
@@ -4713,7 +4713,7 @@ LibCraftTextVars =
                         ["de"] = "Shalidors Fluch",
                         ["ru"] = "Shalidor's Curse",
                     },
-                    [96] = 
+                    [96] =
                     {
                         ["es"] = "Armadura de la sinceridad",
                         ["it"] = "Armor of Truth",
@@ -4723,7 +4723,7 @@ LibCraftTextVars =
                         ["de"] = "Rüstung der Wahrheit",
                         ["ru"] = "Armor of Truth",
                     },
-                    [97] = 
+                    [97] =
                     {
                         ["es"] = "El Archimago",
                         ["it"] = "The Arch-Mage",
@@ -4733,7 +4733,7 @@ LibCraftTextVars =
                         ["de"] = "Erzmagier",
                         ["ru"] = "The Arch-Mage",
                     },
-                    [98] = 
+                    [98] =
                     {
                         ["es"] = "Necropotencia",
                         ["it"] = "Necropotence",
@@ -4743,7 +4743,7 @@ LibCraftTextVars =
                         ["de"] = "Nekropotenz",
                         ["ru"] = "Necropotence",
                     },
-                    [99] = 
+                    [99] =
                     {
                         ["es"] = "Salvación",
                         ["it"] = "Salvation",
@@ -4753,7 +4753,7 @@ LibCraftTextVars =
                         ["de"] = "Erlösung",
                         ["ru"] = "Salvation",
                     },
-                    [100] = 
+                    [100] =
                     {
                         ["es"] = "Ojo de halcón",
                         ["it"] = "Hawk's Eye",
@@ -4763,7 +4763,7 @@ LibCraftTextVars =
                         ["de"] = "Falkenauge",
                         ["ru"] = "Hawk's Eye",
                     },
-                    [101] = 
+                    [101] =
                     {
                         ["es"] = "Aflicción",
                         ["it"] = "Affliction",
@@ -4773,7 +4773,7 @@ LibCraftTextVars =
                         ["de"] = "Elend",
                         ["ru"] = "Affliction",
                     },
-                    [102] = 
+                    [102] =
                     {
                         ["es"] = "Escamas de Destripadunas",
                         ["it"] = "Duneripper's Scales",
@@ -4783,7 +4783,7 @@ LibCraftTextVars =
                         ["de"] = "Schuppen des Dünenbrechers",
                         ["ru"] = "Duneripper's Scales",
                     },
-                    [103] = 
+                    [103] =
                     {
                         ["es"] = "Fragua mágica",
                         ["it"] = "Magicka Furnace",
@@ -4793,7 +4793,7 @@ LibCraftTextVars =
                         ["de"] = "Magickaschmiede",
                         ["ru"] = "Magicka Furnace",
                     },
-                    [104] = 
+                    [104] =
                     {
                         ["es"] = "Comemaldiciones",
                         ["it"] = "Curse Eater",
@@ -4803,7 +4803,7 @@ LibCraftTextVars =
                         ["de"] = "Fluchfresser",
                         ["ru"] = "Curse Eater",
                     },
-                    [105] = 
+                    [105] =
                     {
                         ["es"] = "Gemelas",
                         ["it"] = "Twin Sisters",
@@ -4813,7 +4813,7 @@ LibCraftTextVars =
                         ["de"] = "Zwillingsschwestern",
                         ["ru"] = "Twin Sisters",
                     },
-                    [106] = 
+                    [106] =
                     {
                         ["es"] = "Arco de la reina Silvestre",
                         ["it"] = "Wilderqueen's Arch",
@@ -4823,7 +4823,7 @@ LibCraftTextVars =
                         ["de"] = "Bogen der Wildkönigin",
                         ["ru"] = "Wilderqueen's Arch",
                     },
-                    [107] = 
+                    [107] =
                     {
                         ["es"] = "Bendición del árbol del Wyrd",
                         ["it"] = "Wyrd Tree's Blessing",
@@ -4833,7 +4833,7 @@ LibCraftTextVars =
                         ["de"] = "Segen des Wyrdbaums",
                         ["ru"] = "Wyrd Tree's Blessing",
                     },
-                    [108] = 
+                    [108] =
                     {
                         ["es"] = "Saqueador",
                         ["it"] = "Ravager",
@@ -4843,7 +4843,7 @@ LibCraftTextVars =
                         ["de"] = "Verwüster",
                         ["ru"] = "Ravager",
                     },
-                    [109] = 
+                    [109] =
                     {
                         ["es"] = "Luz de Cyrodiil",
                         ["it"] = "Light of Cyrodiil",
@@ -4853,7 +4853,7 @@ LibCraftTextVars =
                         ["de"] = "Licht von Cyrodiil",
                         ["ru"] = "Light of Cyrodiil",
                     },
-                    [110] = 
+                    [110] =
                     {
                         ["es"] = "Santuario",
                         ["it"] = "Sanctuary",
@@ -4863,7 +4863,7 @@ LibCraftTextVars =
                         ["de"] = "Heiligtum",
                         ["ru"] = "Sanctuary",
                     },
-                    [111] = 
+                    [111] =
                     {
                         ["es"] = "Guarda de Cyrodiil",
                         ["it"] = "Ward of Cyrodiil",
@@ -4873,7 +4873,7 @@ LibCraftTextVars =
                         ["de"] = "Schutz von Cyrodiil",
                         ["ru"] = "Ward of Cyrodiil",
                     },
-                    [112] = 
+                    [112] =
                     {
                         ["es"] = "Terror nocturno",
                         ["it"] = "Night Terror",
@@ -4883,7 +4883,7 @@ LibCraftTextVars =
                         ["de"] = "Nachtschrecken",
                         ["ru"] = "Night Terror",
                     },
-                    [113] = 
+                    [113] =
                     {
                         ["es"] = "Cimera de Cyrodiil",
                         ["it"] = "Crest of Cyrodiil",
@@ -4893,7 +4893,7 @@ LibCraftTextVars =
                         ["de"] = "Wappen von Cyrodiil",
                         ["ru"] = "Crest of Cyrodiil",
                     },
-                    [114] = 
+                    [114] =
                     {
                         ["es"] = "Alma luminosa",
                         ["it"] = "Soulshine",
@@ -4903,7 +4903,7 @@ LibCraftTextVars =
                         ["de"] = "Seelenschein",
                         ["ru"] = "Soulshine",
                     },
-                    [116] = 
+                    [116] =
                     {
                         ["es"] = "Séquito de destrucción",
                         ["it"] = "The Destruction Suite",
@@ -4913,7 +4913,7 @@ LibCraftTextVars =
                         ["de"] = "Garnitur der Zerstörung",
                         ["ru"] = "The Destruction Suite",
                     },
-                    [117] = 
+                    [117] =
                     {
                         ["es"] = "Reliquias del físico Ansur",
                         ["it"] = "Relics of the Physician, Ansur",
@@ -4923,7 +4923,7 @@ LibCraftTextVars =
                         ["de"] = "Relikte des Mediziners Ansur",
                         ["ru"] = "Relics of the Physician, Ansur",
                     },
-                    [118] = 
+                    [118] =
                     {
                         ["es"] = "Tesoros de Forjatierra",
                         ["it"] = "Treasures of the Earthforge",
@@ -4933,7 +4933,7 @@ LibCraftTextVars =
                         ["de"] = "Schätze der Erdenschmiede",
                         ["ru"] = "Treasures of the Earthforge",
                     },
-                    [119] = 
+                    [119] =
                     {
                         ["es"] = "Reliquias de la rebelión",
                         ["it"] = "Relics of the Rebellion",
@@ -4943,7 +4943,7 @@ LibCraftTextVars =
                         ["de"] = "Relikte der Rebellion",
                         ["ru"] = "Relics of the Rebellion",
                     },
-                    [120] = 
+                    [120] =
                     {
                         ["es"] = "Armas de Infernace",
                         ["it"] = "Arms of Infernace",
@@ -4953,7 +4953,7 @@ LibCraftTextVars =
                         ["de"] = "Waffen Infernals",
                         ["ru"] = "Arms of Infernace",
                     },
-                    [121] = 
+                    [121] =
                     {
                         ["es"] = "Armas de los ancestros",
                         ["it"] = "Arms of the Ancestors",
@@ -4963,7 +4963,7 @@ LibCraftTextVars =
                         ["de"] = "Waffen der Ahnen",
                         ["ru"] = "Arms of the Ancestors",
                     },
-                    [122] = 
+                    [122] =
                     {
                         ["es"] = "Armadura de ébano",
                         ["it"] = "Ebon Armory",
@@ -4973,7 +4973,7 @@ LibCraftTextVars =
                         ["de"] = "Ebenerzarsenal",
                         ["ru"] = "Ebon Armory",
                     },
-                    [123] = 
+                    [123] =
                     {
                         ["es"] = "Manto de Hircine",
                         ["it"] = "Hircine's Veneer",
@@ -4983,7 +4983,7 @@ LibCraftTextVars =
                         ["de"] = "Hircines Schein",
                         ["ru"] = "Hircine's Veneer",
                     },
-                    [124] = 
+                    [124] =
                     {
                         ["es"] = "Vestimenta del Gusano",
                         ["it"] = "The Worm's Raiment",
@@ -4993,7 +4993,7 @@ LibCraftTextVars =
                         ["de"] = "Garderobe des Wurms",
                         ["ru"] = "The Worm's Raiment",
                     },
-                    [125] = 
+                    [125] =
                     {
                         ["es"] = "Cólera del Imperio",
                         ["it"] = "Wrath of the Imperium",
@@ -5003,7 +5003,7 @@ LibCraftTextVars =
                         ["de"] = "Zorn des Kaiserreichs",
                         ["ru"] = "Wrath of the Imperium",
                     },
-                    [126] = 
+                    [126] =
                     {
                         ["es"] = "Gracia de los Ancestros",
                         ["it"] = "Grace of the Ancients",
@@ -5013,7 +5013,7 @@ LibCraftTextVars =
                         ["de"] = "Anmut der Uralten",
                         ["ru"] = "Grace of the Ancients",
                     },
-                    [127] = 
+                    [127] =
                     {
                         ["es"] = "Golpe mortal",
                         ["it"] = "Deadly Strike",
@@ -5023,7 +5023,7 @@ LibCraftTextVars =
                         ["de"] = "tödlicher Stoß",
                         ["ru"] = "Deadly Strike",
                     },
-                    [128] = 
+                    [128] =
                     {
                         ["es"] = "Bendición de los Potentados",
                         ["it"] = "Blessing of the Potentates",
@@ -5033,7 +5033,7 @@ LibCraftTextVars =
                         ["de"] = "Segen des Potentaten",
                         ["ru"] = "Blessing of the Potentates",
                     },
-                    [129] = 
+                    [129] =
                     {
                         ["es"] = "Retribución",
                         ["it"] = "Vengeance Leech",
@@ -5043,7 +5043,7 @@ LibCraftTextVars =
                         ["de"] = "saugende Vergeltung",
                         ["ru"] = "Vengeance Leech",
                     },
-                    [130] = 
+                    [130] =
                     {
                         ["es"] = "Ojo de Águila",
                         ["it"] = "Eagle Eye",
@@ -5053,7 +5053,7 @@ LibCraftTextVars =
                         ["de"] = "Adlerauge",
                         ["ru"] = "Eagle Eye",
                     },
-                    [131] = 
+                    [131] =
                     {
                         ["es"] = "Bastión de las tierras centrales",
                         ["it"] = "Bastion of the Heartland",
@@ -5063,7 +5063,7 @@ LibCraftTextVars =
                         ["de"] = "Bastion des Herzlandes",
                         ["ru"] = "Bastion of the Heartland",
                     },
-                    [132] = 
+                    [132] =
                     {
                         ["es"] = "Escudo del Bravo",
                         ["it"] = "Shield of the Valiant",
@@ -5073,7 +5073,7 @@ LibCraftTextVars =
                         ["de"] = "Schild des Tapferen",
                         ["ru"] = "Shield of the Valiant",
                     },
-                    [133] = 
+                    [133] =
                     {
                         ["es"] = "Parapeto del vertiginoso",
                         ["it"] = "Buffer of the Swift",
@@ -5083,7 +5083,7 @@ LibCraftTextVars =
                         ["de"] = "Dämpfer des Geschwinden",
                         ["ru"] = "Buffer of the Swift",
                     },
-                    [134] = 
+                    [134] =
                     {
                         ["es"] = "Sudario del Liche",
                         ["it"] = "Shroud of the Lich",
@@ -5093,7 +5093,7 @@ LibCraftTextVars =
                         ["de"] = "Tuch des Lich",
                         ["ru"] = "Shroud of the Lich",
                     },
-                    [135] = 
+                    [135] =
                     {
                         ["es"] = "Legado del Draugr",
                         ["it"] = "Draugr's Heritage",
@@ -5103,7 +5103,7 @@ LibCraftTextVars =
                         ["de"] = "Erbe des Draugrs",
                         ["ru"] = "Draugr's Heritage",
                     },
-                    [136] = 
+                    [136] =
                     {
                         ["es"] = "Guerrero inmortal",
                         ["it"] = "Immortal Warrior",
@@ -5113,7 +5113,7 @@ LibCraftTextVars =
                         ["de"] = "unsterblicher Krieger",
                         ["ru"] = "Immortal Warrior",
                     },
-                    [137] = 
+                    [137] =
                     {
                         ["es"] = "Guerrero frenético",
                         ["it"] = "Berserking Warrior",
@@ -5123,7 +5123,7 @@ LibCraftTextVars =
                         ["de"] = "tobender Krieger",
                         ["ru"] = "Berserking Warrior",
                     },
-                    [138] = 
+                    [138] =
                     {
                         ["es"] = "Guerrero defensor",
                         ["it"] = "Defending Warrior",
@@ -5133,7 +5133,7 @@ LibCraftTextVars =
                         ["de"] = "verteidigender Krieger",
                         ["ru"] = "Defending Warrior",
                     },
-                    [139] = 
+                    [139] =
                     {
                         ["es"] = "Mago sabio",
                         ["it"] = "Wise Mage",
@@ -5143,7 +5143,7 @@ LibCraftTextVars =
                         ["de"] = "weiser Magier",
                         ["ru"] = "Wise Mage",
                     },
-                    [140] = 
+                    [140] =
                     {
                         ["es"] = "Mago destructor",
                         ["it"] = "Destructive Mage",
@@ -5153,7 +5153,7 @@ LibCraftTextVars =
                         ["de"] = "zerstörerischer Magier",
                         ["ru"] = "Destructive Mage",
                     },
-                    [141] = 
+                    [141] =
                     {
                         ["es"] = "Mago sanador",
                         ["it"] = "Healing Mage",
@@ -5163,7 +5163,7 @@ LibCraftTextVars =
                         ["de"] = "heilender Magier",
                         ["ru"] = "Healing Mage",
                     },
-                    [142] = 
+                    [142] =
                     {
                         ["es"] = "Serpiente veloz",
                         ["it"] = "Quick Serpent",
@@ -5173,7 +5173,7 @@ LibCraftTextVars =
                         ["de"] = "flinke Schlange",
                         ["ru"] = "Quick Serpent",
                     },
-                    [143] = 
+                    [143] =
                     {
                         ["es"] = "Serpiente venenosa",
                         ["it"] = "Poisonous Serpent",
@@ -5183,7 +5183,7 @@ LibCraftTextVars =
                         ["de"] = "Giftschlange",
                         ["ru"] = "Poisonous Serpent",
                     },
-                    [144] = 
+                    [144] =
                     {
                         ["es"] = "Serpiente doblecolmillo",
                         ["it"] = "Twice-Fanged Serpent",
@@ -5193,7 +5193,7 @@ LibCraftTextVars =
                         ["de"] = "doppelzüngige Schlange",
                         ["ru"] = "Twice-Fanged Serpent",
                     },
-                    [145] = 
+                    [145] =
                     {
                         ["es"] = "Camino del Fuego",
                         ["it"] = "Way of Fire",
@@ -5203,7 +5203,7 @@ LibCraftTextVars =
                         ["de"] = "Weg des Feuers",
                         ["ru"] = "Way of Fire",
                     },
-                    [146] = 
+                    [146] =
                     {
                         ["es"] = "Camino del Aire",
                         ["it"] = "Way of Air",
@@ -5213,7 +5213,7 @@ LibCraftTextVars =
                         ["de"] = "Weg der Luft",
                         ["ru"] = "Way of Air",
                     },
-                    [147] = 
+                    [147] =
                     {
                         ["es"] = "Camino del conocimiento marcial",
                         ["it"] = "Way of Martial Knowledge",
@@ -5223,7 +5223,7 @@ LibCraftTextVars =
                         ["de"] = "Weg der Kampfkunst",
                         ["ru"] = "Way of Martial Knowledge",
                     },
-                    [148] = 
+                    [148] =
                     {
                         ["es"] = "Senda de la Arena",
                         ["it"] = "Way of the Arena",
@@ -5233,7 +5233,7 @@ LibCraftTextVars =
                         ["de"] = "Weg der Arena",
                         ["ru"] = "Way of the Arena",
                     },
-                    [155] = 
+                    [155] =
                     {
                         ["es"] = "Baluarte intrépido",
                         ["it"] = "Undaunted Bastion",
@@ -5243,7 +5243,7 @@ LibCraftTextVars =
                         ["de"] = "Unerschrockenen-Bastion",
                         ["ru"] = "Undaunted Bastion",
                     },
-                    [156] = 
+                    [156] =
                     {
                         ["es"] = "Infiltrado Intrépido",
                         ["it"] = "Undaunted Infiltrator",
@@ -5253,7 +5253,7 @@ LibCraftTextVars =
                         ["de"] = "Unerschrockener Infiltrator",
                         ["ru"] = "Undaunted Infiltrator",
                     },
-                    [157] = 
+                    [157] =
                     {
                         ["es"] = "Desenmarañador Intrépido",
                         ["it"] = "Undaunted Unweaver",
@@ -5263,7 +5263,7 @@ LibCraftTextVars =
                         ["de"] = "Unerschrockener Entflechter",
                         ["ru"] = "Undaunted Unweaver",
                     },
-                    [158] = 
+                    [158] =
                     {
                         ["es"] = "Ascuas protectoras",
                         ["it"] = "Embershield",
@@ -5273,7 +5273,7 @@ LibCraftTextVars =
                         ["de"] = "Glutschild",
                         ["ru"] = "Embershield",
                     },
-                    [159] = 
+                    [159] =
                     {
                         ["es"] = "Llama divisora",
                         ["it"] = "Sunderflame",
@@ -5283,7 +5283,7 @@ LibCraftTextVars =
                         ["de"] = "Trennflamme",
                         ["ru"] = "Sunderflame",
                     },
-                    [160] = 
+                    [160] =
                     {
                         ["es"] = "Conjurador abrasador",
                         ["it"] = "Burning Spellweave",
@@ -5293,7 +5293,7 @@ LibCraftTextVars =
                         ["de"] = "Branntzauberweber",
                         ["ru"] = "Burning Spellweave",
                     },
-                    [161] = 
+                    [161] =
                     {
                         ["es"] = "Estrella renacida",
                         ["it"] = "Twice-Born Star",
@@ -5303,7 +5303,7 @@ LibCraftTextVars =
                         ["de"] = "Doppelstern",
                         ["ru"] = "Twice-Born Star",
                     },
-                    [162] = 
+                    [162] =
                     {
                         ["es"] = "Engendro de Mephala",
                         ["it"] = "Spawn of Mephala",
@@ -5313,7 +5313,7 @@ LibCraftTextVars =
                         ["de"] = "Mephalas Brut",
                         ["ru"] = "Spawn of Mephala",
                     },
-                    [163] = 
+                    [163] =
                     {
                         ["es"] = "Engendro de sangre",
                         ["it"] = "Blood Spawn",
@@ -5323,7 +5323,7 @@ LibCraftTextVars =
                         ["de"] = "Blutbrut",
                         ["ru"] = "Blood Spawn",
                     },
-                    [164] = 
+                    [164] =
                     {
                         ["es"] = "lord guardián",
                         ["it"] = "Lord Warden",
@@ -5333,7 +5333,7 @@ LibCraftTextVars =
                         ["de"] = "Hochwärter",
                         ["ru"] = "Lord Warden",
                     },
-                    [165] = 
+                    [165] =
                     {
                         ["es"] = "Azote Segador",
                         ["it"] = "Scourge Harvester",
@@ -5343,7 +5343,7 @@ LibCraftTextVars =
                         ["de"] = "Geißelernter",
                         ["ru"] = "Scourge Harvester",
                     },
-                    [166] = 
+                    [166] =
                     {
                         ["es"] = "guardián del Motor",
                         ["it"] = "Engine Guardian",
@@ -5353,7 +5353,7 @@ LibCraftTextVars =
                         ["de"] = "Maschinenwächter",
                         ["ru"] = "Engine Guardian",
                     },
-                    [167] = 
+                    [167] =
                     {
                         ["es"] = "Llama Nocturna",
                         ["it"] = "Nightflame",
@@ -5363,7 +5363,7 @@ LibCraftTextVars =
                         ["de"] = "Nachtflamme",
                         ["ru"] = "Nightflame",
                     },
-                    [168] = 
+                    [168] =
                     {
                         ["es"] = "Nerien'eth",
                         ["it"] = "Nerien'eth",
@@ -5373,7 +5373,7 @@ LibCraftTextVars =
                         ["de"] = "Nerien'eth",
                         ["ru"] = "Nerien'eth",
                     },
-                    [169] = 
+                    [169] =
                     {
                         ["es"] = "valkyn Skoria",
                         ["it"] = "Valkyn Skoria",
@@ -5383,7 +5383,7 @@ LibCraftTextVars =
                         ["de"] = "Valkyn Skoria",
                         ["ru"] = "Valkyn Skoria",
                     },
-                    [170] = 
+                    [170] =
                     {
                         ["es"] = "Fauces del Infierno",
                         ["it"] = "Maw of the Infernal",
@@ -5393,7 +5393,7 @@ LibCraftTextVars =
                         ["de"] = "Schlund des Infernalen",
                         ["ru"] = "Maw of the Infernal",
                     },
-                    [171] = 
+                    [171] =
                     {
                         ["es"] = "Guerrero eterno",
                         ["it"] = "Eternal Warrior",
@@ -5403,7 +5403,7 @@ LibCraftTextVars =
                         ["de"] = "ewiger Krieger",
                         ["ru"] = "Eternal Warrior",
                     },
-                    [172] = 
+                    [172] =
                     {
                         ["es"] = "Mago infalible",
                         ["it"] = "Infallible Mage",
@@ -5413,7 +5413,7 @@ LibCraftTextVars =
                         ["de"] = "unfehlbare Magierin",
                         ["ru"] = "Infallible Mage",
                     },
-                    [173] = 
+                    [173] =
                     {
                         ["es"] = "Serpiente despiadada",
                         ["it"] = "Vicious Serpent",
@@ -5423,7 +5423,7 @@ LibCraftTextVars =
                         ["de"] = "boshafte Schlange",
                         ["ru"] = "Vicious Serpent",
                     },
-                    [176] = 
+                    [176] =
                     {
                         ["es"] = "Conquista del Noble",
                         ["it"] = "Noble's Conquest",
@@ -5433,7 +5433,7 @@ LibCraftTextVars =
                         ["de"] = "Adelssieg",
                         ["ru"] = "Noble's Conquest",
                     },
-                    [177] = 
+                    [177] =
                     {
                         ["es"] = "Redistribuidor",
                         ["it"] = "Redistributor",
@@ -5443,7 +5443,7 @@ LibCraftTextVars =
                         ["de"] = "Umverteilung",
                         ["ru"] = "Redistributor",
                     },
-                    [178] = 
+                    [178] =
                     {
                         ["es"] = "Maestro armero",
                         ["it"] = "Armor Master",
@@ -5453,7 +5453,7 @@ LibCraftTextVars =
                         ["de"] = "Rüstungsmeister",
                         ["ru"] = "Armor Master",
                     },
-                    [179] = 
+                    [179] =
                     {
                         ["es"] = "Rosa negra",
                         ["it"] = "Black Rose",
@@ -5463,7 +5463,7 @@ LibCraftTextVars =
                         ["de"] = "schwarze Rose",
                         ["ru"] = "Black Rose",
                     },
-                    [180] = 
+                    [180] =
                     {
                         ["es"] = "Asalto Poderoso",
                         ["it"] = "Powerful Assault",
@@ -5473,7 +5473,7 @@ LibCraftTextVars =
                         ["de"] = "kraftvoller Ansturm",
                         ["ru"] = "Powerful Assault",
                     },
-                    [181] = 
+                    [181] =
                     {
                         ["es"] = "Servicio Meritorio",
                         ["it"] = "Meritorious Service",
@@ -5483,7 +5483,7 @@ LibCraftTextVars =
                         ["de"] = "meritorischer Dienst",
                         ["ru"] = "Meritorious Service",
                     },
-                    [183] = 
+                    [183] =
                     {
                         ["es"] = "Molag Kena",
                         ["it"] = "Molag Kena",
@@ -5493,7 +5493,7 @@ LibCraftTextVars =
                         ["de"] = "Molag Kena",
                         ["ru"] = "Molag Kena",
                     },
-                    [184] = 
+                    [184] =
                     {
                         ["es"] = "Marca de Imperium",
                         ["it"] = "Brands of Imperium",
@@ -5503,7 +5503,7 @@ LibCraftTextVars =
                         ["de"] = "Male des Kaiserreichs",
                         ["ru"] = "Brands of Imperium",
                     },
-                    [185] = 
+                    [185] =
                     {
                         ["es"] = "Poder Curativo",
                         ["it"] = "Spell Power Cure",
@@ -5513,7 +5513,7 @@ LibCraftTextVars =
                         ["de"] = "Magiekraftheilung",
                         ["ru"] = "Spell Power Cure",
                     },
-                    [186] = 
+                    [186] =
                     {
                         ["es"] = "Armas de la descarga",
                         ["it"] = "Jolting Arms",
@@ -5523,7 +5523,7 @@ LibCraftTextVars =
                         ["de"] = "rüttelnde Rüstung",
                         ["ru"] = "Jolting Arms",
                     },
-                    [187] = 
+                    [187] =
                     {
                         ["es"] = "Pirata de pantanos",
                         ["it"] = "Swamp Raider",
@@ -5533,7 +5533,7 @@ LibCraftTextVars =
                         ["de"] = "Sumpfräuber",
                         ["ru"] = "Swamp Raider",
                     },
-                    [188] = 
+                    [188] =
                     {
                         ["es"] = "Maestro de la Tormenta",
                         ["it"] = "Storm Master",
@@ -5543,7 +5543,7 @@ LibCraftTextVars =
                         ["de"] = "Sturmmeister",
                         ["ru"] = "Storm Master",
                     },
-                    [190] = 
+                    [190] =
                     {
                         ["es"] = "Mago satírico",
                         ["it"] = "Scathing Mage",
@@ -5553,7 +5553,7 @@ LibCraftTextVars =
                         ["de"] = "verletzender Magier",
                         ["ru"] = "Scathing Mage",
                     },
-                    [193] = 
+                    [193] =
                     {
                         ["es"] = "Impulso abrumador",
                         ["it"] = "Overwhelming Surge",
@@ -5563,7 +5563,7 @@ LibCraftTextVars =
                         ["de"] = "überwältigende Woge",
                         ["ru"] = "Overwhelming Surge",
                     },
-                    [194] = 
+                    [194] =
                     {
                         ["es"] = "Médico de Combate",
                         ["it"] = "Combat Physician",
@@ -5573,7 +5573,7 @@ LibCraftTextVars =
                         ["de"] = "Feldarzt",
                         ["ru"] = "Combat Physician",
                     },
-                    [195] = 
+                    [195] =
                     {
                         ["es"] = "Veneno Purificado",
                         ["it"] = "Sheer Venom",
@@ -5583,7 +5583,7 @@ LibCraftTextVars =
                         ["de"] = "Reingift",
                         ["ru"] = "Sheer Venom",
                     },
-                    [196] = 
+                    [196] =
                     {
                         ["es"] = "Placa Absorbente",
                         ["it"] = "Leeching Plate",
@@ -5593,7 +5593,7 @@ LibCraftTextVars =
                         ["de"] = "auslaugende Rüstung",
                         ["ru"] = "Leeching Plate",
                     },
-                    [197] = 
+                    [197] =
                     {
                         ["es"] = "Atormentador",
                         ["it"] = "Tormentor",
@@ -5603,7 +5603,7 @@ LibCraftTextVars =
                         ["de"] = "Quälender",
                         ["ru"] = "Tormentor",
                     },
-                    [198] = 
+                    [198] =
                     {
                         ["es"] = "Ladrón de Esencias",
                         ["it"] = "Essence Thief",
@@ -5613,7 +5613,7 @@ LibCraftTextVars =
                         ["de"] = "Essenzdieb",
                         ["ru"] = "Essence Thief",
                     },
-                    [199] = 
+                    [199] =
                     {
                         ["es"] = "Rompescudos",
                         ["it"] = "Shield Breaker",
@@ -5623,7 +5623,7 @@ LibCraftTextVars =
                         ["de"] = "Schildbrecher",
                         ["ru"] = "Shield Breaker",
                     },
-                    [200] = 
+                    [200] =
                     {
                         ["es"] = "Fénix",
                         ["it"] = "Phoenix",
@@ -5633,7 +5633,7 @@ LibCraftTextVars =
                         ["de"] = "Phönix",
                         ["ru"] = "Phoenix",
                     },
-                    [201] = 
+                    [201] =
                     {
                         ["es"] = "Armadura Reactiva",
                         ["it"] = "Reactive Armor",
@@ -5643,7 +5643,7 @@ LibCraftTextVars =
                         ["de"] = "reaktive Rüstung",
                         ["ru"] = "Reactive Armor",
                     },
-                    [204] = 
+                    [204] =
                     {
                         ["es"] = "Endurance",
                         ["it"] = "Endurance",
@@ -5653,7 +5653,7 @@ LibCraftTextVars =
                         ["de"] = "Beständigkeit",
                         ["ru"] = "Endurance",
                     },
-                    [205] = 
+                    [205] =
                     {
                         ["es"] = "Voluntad",
                         ["it"] = "Willpower",
@@ -5663,7 +5663,7 @@ LibCraftTextVars =
                         ["de"] = "Willenskraft",
                         ["ru"] = "Willpower",
                     },
-                    [206] = 
+                    [206] =
                     {
                         ["es"] = "Agilidad",
                         ["it"] = "Agility",
@@ -5673,7 +5673,7 @@ LibCraftTextVars =
                         ["de"] = "Agilität",
                         ["ru"] = "Agility",
                     },
-                    [207] = 
+                    [207] =
                     {
                         ["es"] = "Ley de Julianos",
                         ["it"] = "Law of Julianos",
@@ -5683,7 +5683,7 @@ LibCraftTextVars =
                         ["de"] = "Gesetz von Julianos",
                         ["ru"] = "Law of Julianos",
                     },
-                    [208] = 
+                    [208] =
                     {
                         ["es"] = "Prueba de fuego",
                         ["it"] = "Trial by Fire",
@@ -5693,7 +5693,7 @@ LibCraftTextVars =
                         ["de"] = "Feuertaufe",
                         ["ru"] = "Trial by Fire",
                     },
-                    [209] = 
+                    [209] =
                     {
                         ["es"] = "Armor of the Code",
                         ["it"] = "Armor of the Code",
@@ -5703,7 +5703,7 @@ LibCraftTextVars =
                         ["de"] = "Armor of the Code",
                         ["ru"] = "Armor of the Code",
                     },
-                    [210] = 
+                    [210] =
                     {
                         ["es"] = "Marca del Paria",
                         ["it"] = "Mark of the Pariah",
@@ -5713,7 +5713,7 @@ LibCraftTextVars =
                         ["de"] = "Zeichen des Ausgestoßenen",
                         ["ru"] = "Mark of the Pariah",
                     },
-                    [211] = 
+                    [211] =
                     {
                         ["es"] = "Permagel",
                         ["it"] = "Permafrost",
@@ -5723,7 +5723,7 @@ LibCraftTextVars =
                         ["de"] = "Permafrost",
                         ["ru"] = "Permafrost",
                     },
-                    [212] = 
+                    [212] =
                     {
                         ["es"] = "corazón de espino",
                         ["it"] = "Briarheart",
@@ -5733,7 +5733,7 @@ LibCraftTextVars =
                         ["de"] = "Dornenherz",
                         ["ru"] = "Briarheart",
                     },
-                    [213] = 
+                    [213] =
                     {
                         ["es"] = "Protector Glorioso",
                         ["it"] = "Glorious Defender",
@@ -5743,7 +5743,7 @@ LibCraftTextVars =
                         ["de"] = "ruhmreicher Verteidiger",
                         ["ru"] = "Glorious Defender",
                     },
-                    [214] = 
+                    [214] =
                     {
                         ["es"] = "Para Bellum",
                         ["it"] = "Para Bellum",
@@ -5753,7 +5753,7 @@ LibCraftTextVars =
                         ["de"] = "Para Bellum",
                         ["ru"] = "Para Bellum",
                     },
-                    [215] = 
+                    [215] =
                     {
                         ["es"] = "Sucesión Elemental",
                         ["it"] = "Elemental Succession",
@@ -5763,7 +5763,7 @@ LibCraftTextVars =
                         ["de"] = "Elementarfolge",
                         ["ru"] = "Elemental Succession",
                     },
-                    [216] = 
+                    [216] =
                     {
                         ["es"] = "Líder de la caza",
                         ["it"] = "Hunt Leader",
@@ -5773,7 +5773,7 @@ LibCraftTextVars =
                         ["de"] = "Jagdleiter",
                         ["ru"] = "Hunt Leader",
                     },
-                    [217] = 
+                    [217] =
                     {
                         ["es"] = "Sangrinvernal",
                         ["it"] = "Winterborn",
@@ -5783,7 +5783,7 @@ LibCraftTextVars =
                         ["de"] = "Winterkind",
                         ["ru"] = "Winterborn",
                     },
-                    [218] = 
+                    [218] =
                     {
                         ["es"] = "Valor de Trinimac",
                         ["it"] = "Trinimac's Valor",
@@ -5793,7 +5793,7 @@ LibCraftTextVars =
                         ["de"] = "Trinimacs Heldenmut",
                         ["ru"] = "Trinimac's Valor",
                     },
-                    [219] = 
+                    [219] =
                     {
                         ["es"] = "Morkuldin",
                         ["it"] = "Morkuldin",
@@ -5803,7 +5803,7 @@ LibCraftTextVars =
                         ["de"] = "Morkuldin",
                         ["ru"] = "Morkuldin",
                     },
-                    [224] = 
+                    [224] =
                     {
                         ["es"] = "Favor de Tava",
                         ["it"] = "Tava's Favor",
@@ -5813,7 +5813,7 @@ LibCraftTextVars =
                         ["de"] = "Tavas Gunst",
                         ["ru"] = "Tava's Favor",
                     },
-                    [225] = 
+                    [225] =
                     {
                         ["es"] = "Alquimista astuto",
                         ["it"] = "Clever Alchemist",
@@ -5823,7 +5823,7 @@ LibCraftTextVars =
                         ["de"] = "schlauer Alchemist",
                         ["ru"] = "Clever Alchemist",
                     },
-                    [226] = 
+                    [226] =
                     {
                         ["es"] = "Caza Eterna",
                         ["it"] = "Eternal Hunt",
@@ -5833,7 +5833,7 @@ LibCraftTextVars =
                         ["de"] = "ewige Jagd",
                         ["ru"] = "Eternal Hunt",
                     },
-                    [227] = 
+                    [227] =
                     {
                         ["es"] = "Maldición de Bahraha",
                         ["it"] = "Bahraha's Curse",
@@ -5843,7 +5843,7 @@ LibCraftTextVars =
                         ["de"] = "Bahrahas Fluch",
                         ["ru"] = "Bahraha's Curse",
                     },
-                    [228] = 
+                    [228] =
                     {
                         ["es"] = "Escamas de Syvarra",
                         ["it"] = "Syvarra's Scales",
@@ -5853,7 +5853,7 @@ LibCraftTextVars =
                         ["de"] = "Syvarras Schuppen",
                         ["ru"] = "Syvarra's Scales",
                     },
-                    [229] = 
+                    [229] =
                     {
                         ["es"] = "Remedio crepuscular",
                         ["it"] = "Twilight Remedy",
@@ -5863,7 +5863,7 @@ LibCraftTextVars =
                         ["de"] = "Zwielichtgenesung",
                         ["ru"] = "Twilight Remedy",
                     },
-                    [230] = 
+                    [230] =
                     {
                         ["es"] = "Danzalunas",
                         ["it"] = "Moondancer",
@@ -5873,7 +5873,7 @@ LibCraftTextVars =
                         ["de"] = "Mondtänzer",
                         ["ru"] = "Moondancer",
                     },
-                    [231] = 
+                    [231] =
                     {
                         ["es"] = "Bastión Lunar",
                         ["it"] = "Lunar Bastion",
@@ -5883,7 +5883,7 @@ LibCraftTextVars =
                         ["de"] = "Mondbastion",
                         ["ru"] = "Lunar Bastion",
                     },
-                    [232] = 
+                    [232] =
                     {
                         ["es"] = "Rugido de Alkosh",
                         ["it"] = "Roar of Alkosh",
@@ -5893,7 +5893,7 @@ LibCraftTextVars =
                         ["de"] = "Brüllen von Alkosh",
                         ["ru"] = "Roar of Alkosh",
                     },
-                    [234] = 
+                    [234] =
                     {
                         ["es"] = "Emblema del tirador",
                         ["it"] = "Marksman's Crest",
@@ -5903,7 +5903,7 @@ LibCraftTextVars =
                         ["de"] = "Wappen des Meisterschützen",
                         ["ru"] = "Marksman's Crest",
                     },
-                    [235] = 
+                    [235] =
                     {
                         ["es"] = "Ropajes de transmutación",
                         ["it"] = "Robes of Transmutation",
@@ -5913,7 +5913,7 @@ LibCraftTextVars =
                         ["de"] = "Roben der Transmutation",
                         ["ru"] = "Robes of Transmutation",
                     },
-                    [236] = 
+                    [236] =
                     {
                         ["es"] = "Muerte cruel",
                         ["it"] = "Vicious Death",
@@ -5923,7 +5923,7 @@ LibCraftTextVars =
                         ["de"] = "grausamer Tod",
                         ["ru"] = "Vicious Death",
                     },
-                    [237] = 
+                    [237] =
                     {
                         ["es"] = "Enfoque de Leki",
                         ["it"] = "Leki's Focus",
@@ -5933,7 +5933,7 @@ LibCraftTextVars =
                         ["de"] = "Lekis Fokus",
                         ["ru"] = "Leki's Focus",
                     },
-                    [238] = 
+                    [238] =
                     {
                         ["es"] = "Astucia de Fasalla",
                         ["it"] = "Fasalla's Guile",
@@ -5943,7 +5943,7 @@ LibCraftTextVars =
                         ["de"] = "Fasallas List",
                         ["ru"] = "Fasalla's Guile",
                     },
-                    [239] = 
+                    [239] =
                     {
                         ["es"] = "Furia del guerrero",
                         ["it"] = "Warrior's Fury",
@@ -5953,7 +5953,7 @@ LibCraftTextVars =
                         ["de"] = "Raserei des Kriegers",
                         ["ru"] = "Warrior's Fury",
                     },
-                    [240] = 
+                    [240] =
                     {
                         ["es"] = "Gladiador de Kvatch",
                         ["it"] = "Kvatch Gladiator",
@@ -5963,7 +5963,7 @@ LibCraftTextVars =
                         ["de"] = "Gladiator von Kvatch",
                         ["ru"] = "Kvatch Gladiator",
                     },
-                    [241] = 
+                    [241] =
                     {
                         ["es"] = "Legado de Varen",
                         ["it"] = "Varen's Legacy",
@@ -5973,7 +5973,7 @@ LibCraftTextVars =
                         ["de"] = "Varens Erbe",
                         ["ru"] = "Varen's Legacy",
                     },
-                    [242] = 
+                    [242] =
                     {
                         ["es"] = "Aptitud de Pelinal",
                         ["it"] = "Pelinal's Aptitude",
@@ -5983,7 +5983,7 @@ LibCraftTextVars =
                         ["de"] = "Pelinals Talent",
                         ["ru"] = "Pelinal's Aptitude",
                     },
-                    [243] = 
+                    [243] =
                     {
                         ["es"] = "Piel de Morihaus",
                         ["it"] = "Hide of Morihaus",
@@ -5993,7 +5993,7 @@ LibCraftTextVars =
                         ["de"] = "Haut von Morihaus",
                         ["ru"] = "Hide of Morihaus",
                     },
-                    [244] = 
+                    [244] =
                     {
                         ["es"] = "Estrategia de flanqueo",
                         ["it"] = "Flanking Strategist",
@@ -6003,7 +6003,7 @@ LibCraftTextVars =
                         ["de"] = "flankierender Stratege",
                         ["ru"] = "Flanking Strategist",
                     },
-                    [245] = 
+                    [245] =
                     {
                         ["es"] = "Toque de Sithis",
                         ["it"] = "Sithis' Touch",
@@ -6013,7 +6013,7 @@ LibCraftTextVars =
                         ["de"] = "Sithis' Berührung",
                         ["ru"] = "Sithis' Touch",
                     },
-                    [246] = 
+                    [246] =
                     {
                         ["es"] = "Venganza de Galerion",
                         ["it"] = "Galerion's Revenge",
@@ -6023,7 +6023,7 @@ LibCraftTextVars =
                         ["de"] = "Galerions Revanche",
                         ["ru"] = "Galerion's Revenge",
                     },
-                    [247] = 
+                    [247] =
                     {
                         ["es"] = "canónigo del veneno",
                         ["it"] = "Vicecanon of Venom",
@@ -6033,7 +6033,7 @@ LibCraftTextVars =
                         ["de"] = "Vizekanoniker des Gifts",
                         ["ru"] = "Vicecanon of Venom",
                     },
-                    [248] = 
+                    [248] =
                     {
                         ["es"] = "Músculos del precursor",
                         ["it"] = "Thews of the Harbinger",
@@ -6043,7 +6043,7 @@ LibCraftTextVars =
                         ["de"] = "Muskeln des Vorboten",
                         ["ru"] = "Thews of the Harbinger",
                     },
-                    [253] = 
+                    [253] =
                     {
                         ["es"] = "Constitución imperial",
                         ["it"] = "Imperial Physique",
@@ -6053,7 +6053,7 @@ LibCraftTextVars =
                         ["de"] = "kaiserliche Physis",
                         ["ru"] = "Imperial Physique",
                     },
-                    [256] = 
+                    [256] =
                     {
                         ["es"] = "Chudan la Imponente",
                         ["it"] = "Mighty Chudan",
@@ -6063,7 +6063,7 @@ LibCraftTextVars =
                         ["de"] = "mächtiger Chudan",
                         ["ru"] = "Mighty Chudan",
                     },
-                    [257] = 
+                    [257] =
                     {
                         ["es"] = "Velidreth",
                         ["it"] = "Velidreth",
@@ -6073,7 +6073,7 @@ LibCraftTextVars =
                         ["de"] = "Velidreth",
                         ["ru"] = "Velidreth",
                     },
-                    [258] = 
+                    [258] =
                     {
                         ["es"] = "Plasma ámbar",
                         ["it"] = "Amber Plasm",
@@ -6083,7 +6083,7 @@ LibCraftTextVars =
                         ["de"] = "Bernsteinplasma",
                         ["ru"] = "Amber Plasm",
                     },
-                    [259] = 
+                    [259] =
                     {
                         ["es"] = "Castigo de Heem-Jas",
                         ["it"] = "Heem-Jas' Retribution",
@@ -6093,7 +6093,7 @@ LibCraftTextVars =
                         ["de"] = "Heem-Jas' Vergeltung",
                         ["ru"] = "Heem-Jas' Retribution",
                     },
-                    [260] = 
+                    [260] =
                     {
                         ["es"] = "Aspecto de Mazzatun",
                         ["it"] = "Aspect of Mazzatun",
@@ -6103,7 +6103,7 @@ LibCraftTextVars =
                         ["de"] = "Aspekt von Mazzatun",
                         ["ru"] = "Aspect of Mazzatun",
                     },
-                    [261] = 
+                    [261] =
                     {
                         ["es"] = "Hilos de seda",
                         ["it"] = "Gossamer",
@@ -6113,7 +6113,7 @@ LibCraftTextVars =
                         ["de"] = "Gespinst",
                         ["ru"] = "Gossamer",
                     },
-                    [262] = 
+                    [262] =
                     {
                         ["es"] = "Creaviudas",
                         ["it"] = "Widowmaker",
@@ -6123,7 +6123,7 @@ LibCraftTextVars =
                         ["de"] = "Witwenmacher",
                         ["ru"] = "Widowmaker",
                     },
-                    [263] = 
+                    [263] =
                     {
                         ["es"] = "Mano de Mephala",
                         ["it"] = "Hand of Mephala",
@@ -6133,7 +6133,7 @@ LibCraftTextVars =
                         ["de"] = "Hand von Mephala",
                         ["ru"] = "Hand of Mephala",
                     },
-                    [264] = 
+                    [264] =
                     {
                         ["es"] = "Araña gigante",
                         ["it"] = "Giant Spider",
@@ -6143,7 +6143,7 @@ LibCraftTextVars =
                         ["de"] = "Riesenspinne",
                         ["ru"] = "Giant Spider",
                     },
-                    [265] = 
+                    [265] =
                     {
                         ["es"] = "Desgarrasombras",
                         ["it"] = "Shadowrend",
@@ -6153,7 +6153,7 @@ LibCraftTextVars =
                         ["de"] = "Schattenriss",
                         ["ru"] = "Shadowrend",
                     },
-                    [266] = 
+                    [266] =
                     {
                         ["es"] = "Kra'gh",
                         ["it"] = "Kra'gh",
@@ -6163,7 +6163,7 @@ LibCraftTextVars =
                         ["de"] = "Kra'gh",
                         ["ru"] = "Kra'gh",
                     },
-                    [267] = 
+                    [267] =
                     {
                         ["es"] = "Madre del ejambre",
                         ["it"] = "Swarm Mother",
@@ -6173,7 +6173,7 @@ LibCraftTextVars =
                         ["de"] = "Schwarmmutter",
                         ["ru"] = "Swarm Mother",
                     },
-                    [268] = 
+                    [268] =
                     {
                         ["es"] = "Centinela de Rkugamz",
                         ["it"] = "Sentinel of Rkugamz",
@@ -6183,7 +6183,7 @@ LibCraftTextVars =
                         ["de"] = "Wachposten von Rkugamz",
                         ["ru"] = "Sentinel of Rkugamz",
                     },
-                    [269] = 
+                    [269] =
                     {
                         ["es"] = "Zarzahogadora",
                         ["it"] = "Chokethorn",
@@ -6193,7 +6193,7 @@ LibCraftTextVars =
                         ["de"] = "Würgedorn",
                         ["ru"] = "Chokethorn",
                     },
-                    [270] = 
+                    [270] =
                     {
                         ["es"] = "Zarpaembarrada",
                         ["it"] = "Slimecraw",
@@ -6203,7 +6203,7 @@ LibCraftTextVars =
                         ["de"] = "Schleimkropf",
                         ["ru"] = "Slimecraw",
                     },
-                    [271] = 
+                    [271] =
                     {
                         ["es"] = "Sellistrix",
                         ["it"] = "Sellistrix",
@@ -6213,7 +6213,7 @@ LibCraftTextVars =
                         ["de"] = "Sellistrix",
                         ["ru"] = "Sellistrix",
                     },
-                    [272] = 
+                    [272] =
                     {
                         ["es"] = "guardián infernal",
                         ["it"] = "Infernal Guardian",
@@ -6223,7 +6223,7 @@ LibCraftTextVars =
                         ["de"] = "infernaler Wächter",
                         ["ru"] = "Infernal Guardian",
                     },
-                    [273] = 
+                    [273] =
                     {
                         ["es"] = "llambris",
                         ["it"] = "Ilambris",
@@ -6233,7 +6233,7 @@ LibCraftTextVars =
                         ["de"] = "Ilambris",
                         ["ru"] = "Ilambris",
                     },
-                    [274] = 
+                    [274] =
                     {
                         ["es"] = "Corazón Helado",
                         ["it"] = "Iceheart",
@@ -6243,7 +6243,7 @@ LibCraftTextVars =
                         ["de"] = "Eisherz",
                         ["ru"] = "Iceheart",
                     },
-                    [275] = 
+                    [275] =
                     {
                         ["es"] = "Puñotormenta",
                         ["it"] = "Stormfist",
@@ -6253,7 +6253,7 @@ LibCraftTextVars =
                         ["de"] = "Sturmfaust",
                         ["ru"] = "Stormfist",
                     },
-                    [276] = 
+                    [276] =
                     {
                         ["es"] = "Escamatrémula",
                         ["it"] = "Tremorscale",
@@ -6263,7 +6263,7 @@ LibCraftTextVars =
                         ["de"] = "Bebenschuppe",
                         ["ru"] = "Tremorscale",
                     },
-                    [277] = 
+                    [277] =
                     {
                         ["es"] = "esqueleto pirata",
                         ["it"] = "Pirate Skeleton",
@@ -6273,7 +6273,7 @@ LibCraftTextVars =
                         ["de"] = "Piratenskelett",
                         ["ru"] = "Pirate Skeleton",
                     },
-                    [278] = 
+                    [278] =
                     {
                         ["es"] = "rey trol",
                         ["it"] = "The Troll King",
@@ -6283,7 +6283,7 @@ LibCraftTextVars =
                         ["de"] = "Trollkönig",
                         ["ru"] = "The Troll King",
                     },
-                    [279] = 
+                    [279] =
                     {
                         ["es"] = "Selene",
                         ["it"] = "Selene",
@@ -6293,7 +6293,7 @@ LibCraftTextVars =
                         ["de"] = "Selene",
                         ["ru"] = "Selene",
                     },
-                    [280] = 
+                    [280] =
                     {
                         ["es"] = "Grothdarr",
                         ["it"] = "Grothdarr",
@@ -6303,7 +6303,7 @@ LibCraftTextVars =
                         ["de"] = "Grothdarr",
                         ["ru"] = "Grothdarr",
                     },
-                    [281] = 
+                    [281] =
                     {
                         ["es"] = "Armadura del aprendiz",
                         ["it"] = "Armor of the Trainee",
@@ -6313,7 +6313,7 @@ LibCraftTextVars =
                         ["de"] = "Rüstung des Auszubildenden",
                         ["ru"] = "Armor of the Trainee",
                     },
-                    [282] = 
+                    [282] =
                     {
                         ["es"] = "Capa del vampiro",
                         ["it"] = "Vampire Cloak",
@@ -6323,7 +6323,7 @@ LibCraftTextVars =
                         ["de"] = "Vampirumhang",
                         ["ru"] = "Vampire Cloak",
                     },
-                    [283] = 
+                    [283] =
                     {
                         ["es"] = "Cantor de espada",
                         ["it"] = "Sword-Singer",
@@ -6333,7 +6333,7 @@ LibCraftTextVars =
                         ["de"] = "Schwertsänger",
                         ["ru"] = "Sword-Singer",
                     },
-                    [284] = 
+                    [284] =
                     {
                         ["es"] = "Orden de Diagna",
                         ["it"] = "Order of Diagna",
@@ -6343,7 +6343,7 @@ LibCraftTextVars =
                         ["de"] = "Orden von Diagna",
                         ["ru"] = "Order of Diagna",
                     },
-                    [285] = 
+                    [285] =
                     {
                         ["es"] = "Lord vampiro",
                         ["it"] = "Vampire Lord",
@@ -6353,7 +6353,7 @@ LibCraftTextVars =
                         ["de"] = "Vampirfürst",
                         ["ru"] = "Vampire Lord",
                     },
-                    [286] = 
+                    [286] =
                     {
                         ["es"] = "Espinas de spriggan",
                         ["it"] = "Spriggan's Thorns",
@@ -6363,7 +6363,7 @@ LibCraftTextVars =
                         ["de"] = "Dornen des Zweiglings",
                         ["ru"] = "Spriggan's Thorns",
                     },
-                    [287] = 
+                    [287] =
                     {
                         ["es"] = "Pacto verde",
                         ["it"] = "Green Pact",
@@ -6373,7 +6373,7 @@ LibCraftTextVars =
                         ["de"] = "der Grüne Pakt",
                         ["ru"] = "Green Pact",
                     },
-                    [288] = 
+                    [288] =
                     {
                         ["es"] = "Equipo de apicultor",
                         ["it"] = "Beekeeper's Gear",
@@ -6383,7 +6383,7 @@ LibCraftTextVars =
                         ["de"] = "Werkzeug des Bienenhüters",
                         ["ru"] = "Beekeeper's Gear",
                     },
-                    [289] = 
+                    [289] =
                     {
                         ["es"] = "Vestiduras del hilandero",
                         ["it"] = "Spinner's Garments",
@@ -6393,7 +6393,7 @@ LibCraftTextVars =
                         ["de"] = "Gewänder des Webers",
                         ["ru"] = "Spinner's Garments",
                     },
-                    [290] = 
+                    [290] =
                     {
                         ["es"] = "Traficante de skooma",
                         ["it"] = "Skooma Smuggler",
@@ -6403,7 +6403,7 @@ LibCraftTextVars =
                         ["de"] = "Skoomaschmuggler",
                         ["ru"] = "Skooma Smuggler",
                     },
-                    [291] = 
+                    [291] =
                     {
                         ["es"] = "Exoesqueleto de shalk",
                         ["it"] = "Shalk Exoskeleton",
@@ -6413,7 +6413,7 @@ LibCraftTextVars =
                         ["de"] = "Schröterpanzer",
                         ["ru"] = "Shalk Exoskeleton",
                     },
-                    [292] = 
+                    [292] =
                     {
                         ["es"] = "Pesar de madre",
                         ["it"] = "Mother's Sorrow",
@@ -6423,7 +6423,7 @@ LibCraftTextVars =
                         ["de"] = "Muttertränen",
                         ["ru"] = "Mother's Sorrow",
                     },
-                    [293] = 
+                    [293] =
                     {
                         ["es"] = "Doctor de la plaga",
                         ["it"] = "Plague Doctor",
@@ -6433,7 +6433,7 @@ LibCraftTextVars =
                         ["de"] = "Seuchendoktor",
                         ["ru"] = "Plague Doctor",
                     },
-                    [294] = 
+                    [294] =
                     {
                         ["es"] = "Patrimonio de Ysgramor",
                         ["it"] = "Ysgramor's Birthright",
@@ -6443,7 +6443,7 @@ LibCraftTextVars =
                         ["de"] = "Ysgramors Geburtsrecht",
                         ["ru"] = "Ysgramor's Birthright",
                     },
-                    [295] = 
+                    [295] =
                     {
                         ["es"] = "Prófugo",
                         ["it"] = "Jailbreaker",
@@ -6453,7 +6453,7 @@ LibCraftTextVars =
                         ["de"] = "Ausbrecher",
                         ["ru"] = "Jailbreaker",
                     },
-                    [296] = 
+                    [296] =
                     {
                         ["es"] = "Espeleólogo",
                         ["it"] = "Spelunker",
@@ -6463,7 +6463,7 @@ LibCraftTextVars =
                         ["de"] = "Höhlenforscher",
                         ["ru"] = "Spelunker",
                     },
-                    [297] = 
+                    [297] =
                     {
                         ["es"] = "Hábito de Sectario de la Araña",
                         ["it"] = "Spider Cultist Cowl",
@@ -6473,7 +6473,7 @@ LibCraftTextVars =
                         ["de"] = "Spinnenkultistenkutte",
                         ["ru"] = "Spider Cultist Cowl",
                     },
-                    [298] = 
+                    [298] =
                     {
                         ["es"] = "Orador luminoso",
                         ["it"] = "Light Speaker",
@@ -6483,7 +6483,7 @@ LibCraftTextVars =
                         ["de"] = "Lichtsprecher",
                         ["ru"] = "Light Speaker",
                     },
-                    [299] = 
+                    [299] =
                     {
                         ["es"] = "Hiladientes",
                         ["it"] = "Toothrow",
@@ -6493,7 +6493,7 @@ LibCraftTextVars =
                         ["de"] = "Zahnreihe",
                         ["ru"] = "Toothrow",
                     },
-                    [300] = 
+                    [300] =
                     {
                         ["es"] = "Toque de netch",
                         ["it"] = "Netch's Touch",
@@ -6503,7 +6503,7 @@ LibCraftTextVars =
                         ["de"] = "Berührung des Netch",
                         ["ru"] = "Netch's Touch",
                     },
-                    [301] = 
+                    [301] =
                     {
                         ["es"] = "Fuerza del autómata",
                         ["it"] = "Strength of the Automaton",
@@ -6513,7 +6513,7 @@ LibCraftTextVars =
                         ["de"] = "Stärke des Automaten",
                         ["ru"] = "Strength of the Automaton",
                     },
-                    [302] = 
+                    [302] =
                     {
                         ["es"] = "Leviatán",
                         ["it"] = "Leviathan",
@@ -6523,7 +6523,7 @@ LibCraftTextVars =
                         ["de"] = "Leviathan",
                         ["ru"] = "Leviathan",
                     },
-                    [303] = 
+                    [303] =
                     {
                         ["es"] = "Canto de lamia",
                         ["it"] = "Lamia's Song",
@@ -6533,7 +6533,7 @@ LibCraftTextVars =
                         ["de"] = "Lied der Lamie",
                         ["ru"] = "Lamia's Song",
                     },
-                    [304] = 
+                    [304] =
                     {
                         ["es"] = "Medusa",
                         ["it"] = "Medusa",
@@ -6543,7 +6543,7 @@ LibCraftTextVars =
                         ["de"] = "versteinernder Blick",
                         ["ru"] = "Medusa",
                     },
-                    [305] = 
+                    [305] =
                     {
                         ["es"] = "Buscador de tesoros",
                         ["it"] = "Treasure Hunter",
@@ -6553,7 +6553,7 @@ LibCraftTextVars =
                         ["de"] = "Schatzjäger",
                         ["ru"] = "Treasure Hunter",
                     },
-                    [307] = 
+                    [307] =
                     {
                         ["es"] = "Draugr Colosal",
                         ["it"] = "Draugr Hulk",
@@ -6563,7 +6563,7 @@ LibCraftTextVars =
                         ["de"] = "schwerfälliger Draugr",
                         ["ru"] = "Draugr Hulk",
                     },
-                    [308] = 
+                    [308] =
                     {
                         ["es"] = "Harapos del pirata de hueso",
                         ["it"] = "Bone Pirate's Tatters",
@@ -6573,7 +6573,7 @@ LibCraftTextVars =
                         ["de"] = "Lumpen des Knochenpiraten",
                         ["ru"] = "Bone Pirate's Tatters",
                     },
-                    [309] = 
+                    [309] =
                     {
                         ["es"] = "Malla del caballero errante",
                         ["it"] = "Knight-errant's Mail",
@@ -6583,7 +6583,7 @@ LibCraftTextVars =
                         ["de"] = "Platten des Wanderritters",
                         ["ru"] = "Knight-errant's Mail",
                     },
-                    [310] = 
+                    [310] =
                     {
                         ["es"] = "Danzador de espadas",
                         ["it"] = "Sword Dancer",
@@ -6593,7 +6593,7 @@ LibCraftTextVars =
                         ["de"] = "Schwerttänzer",
                         ["ru"] = "Sword Dancer",
                     },
-                    [311] = 
+                    [311] =
                     {
                         ["es"] = "Desafiador",
                         ["it"] = "Rattlecage",
@@ -6603,7 +6603,7 @@ LibCraftTextVars =
                         ["de"] = "Klapperkäfig",
                         ["ru"] = "Rattlecage",
                     },
-                    [312] = 
+                    [312] =
                     {
                         ["es"] = "Tremorscale",
                         ["it"] = "Tremorscale",
@@ -6613,7 +6613,7 @@ LibCraftTextVars =
                         ["de"] = "Tremorscale",
                         ["ru"] = "Tremorscale",
                     },
-                    [313] = 
+                    [313] =
                     {
                         ["es"] = "Cuchilla titánica",
                         ["it"] = "Masters Duel Wield",
@@ -6623,7 +6623,7 @@ LibCraftTextVars =
                         ["de"] = "titanisches Trennen",
                         ["ru"] = "Titanic Cleave",
                     },
-                    [314] = 
+                    [314] =
                     {
                         ["es"] = "Remedio perforante",
                         ["it"] = "Masters Two Handed",
@@ -6633,7 +6633,7 @@ LibCraftTextVars =
                         ["de"] = "durchschlagende Genesung",
                         ["ru"] = "Puncturing Remedy",
                     },
-                    [315] = 
+                    [315] =
                     {
                         ["es"] = "Cuchilladas obstinadas",
                         ["it"] = "Masters One Hand and Shield",
@@ -6643,7 +6643,7 @@ LibCraftTextVars =
                         ["de"] = "stechende Schnitte",
                         ["ru"] = "Stinging Slashes",
                     },
-                    [316] = 
+                    [316] =
                     {
                         ["es"] = "Flecha cáustica",
                         ["it"] = "Masters Destruction Staff",
@@ -6653,7 +6653,7 @@ LibCraftTextVars =
                         ["de"] = "beißender Pfeil",
                         ["ru"] = "Caustic Arrow",
                     },
-                    [317] = 
+                    [317] =
                     {
                         ["es"] = "Impacto destructivo",
                         ["it"] = "Masters Duel Wield",
@@ -6663,7 +6663,7 @@ LibCraftTextVars =
                         ["de"] = "zerstörerischer Einschlag",
                         ["ru"] = "Destructive Impact",
                     },
-                    [318] = 
+                    [318] =
                     {
                         ["es"] = "Gran rejuvenecimiento",
                         ["it"] = "Masters Restoration Staff",
@@ -6673,7 +6673,7 @@ LibCraftTextVars =
                         ["de"] = "große Verjüngung",
                         ["ru"] = "Grand Rejuvenation",
                     },
-                    [320] = 
+                    [320] =
                     {
                         ["es"] = "Doncella guerrera",
                         ["it"] = "War Maiden",
@@ -6683,7 +6683,7 @@ LibCraftTextVars =
                         ["de"] = "Kriegsjungfer",
                         ["ru"] = "War Maiden",
                     },
-                    [321] = 
+                    [321] =
                     {
                         ["es"] = "Profanador",
                         ["it"] = "Defiler",
@@ -6693,7 +6693,7 @@ LibCraftTextVars =
                         ["de"] = "Schänder",
                         ["ru"] = "Defiler",
                     },
-                    [322] = 
+                    [322] =
                     {
                         ["es"] = "Poeta guerrero",
                         ["it"] = "Warrior-Poet",
@@ -6703,7 +6703,7 @@ LibCraftTextVars =
                         ["de"] = "Kriegerpoet",
                         ["ru"] = "Warrior-Poet",
                     },
-                    [323] = 
+                    [323] =
                     {
                         ["es"] = "Astucia de asesino",
                         ["it"] = "Assassin's Guile",
@@ -6713,7 +6713,7 @@ LibCraftTextVars =
                         ["de"] = "Assassinenlist",
                         ["ru"] = "Assassin's Guile",
                     },
-                    [324] = 
+                    [324] =
                     {
                         ["es"] = "Engaño daédrico",
                         ["it"] = "Daedric Trickery",
@@ -6723,7 +6723,7 @@ LibCraftTextVars =
                         ["de"] = "daedrische Gaunerei",
                         ["ru"] = "Daedric Trickery",
                     },
-                    [325] = 
+                    [325] =
                     {
                         ["es"] = "Rompecadenas",
                         ["it"] = "Shacklebreaker",
@@ -6733,7 +6733,7 @@ LibCraftTextVars =
                         ["de"] = "Kettensprenger",
                         ["ru"] = "Shacklebreaker",
                     },
-                    [326] = 
+                    [326] =
                     {
                         ["es"] = "Desafío de la vanguardia",
                         ["it"] = "Vanguard's Challenge",
@@ -6743,7 +6743,7 @@ LibCraftTextVars =
                         ["de"] = "Vorhutdisput",
                         ["ru"] = "Vanguard's Challenge",
                     },
-                    [327] = 
+                    [327] =
                     {
                         ["es"] = "Equipo del cobarde",
                         ["it"] = "Coward's Gear",
@@ -6753,7 +6753,7 @@ LibCraftTextVars =
                         ["de"] = "Feiglingstracht",
                         ["ru"] = "Coward's Gear",
                     },
-                    [328] = 
+                    [328] =
                     {
                         ["es"] = "Asesino de caballeros",
                         ["it"] = "Knight Slayer",
@@ -6763,7 +6763,7 @@ LibCraftTextVars =
                         ["de"] = "Ritterschlächter",
                         ["ru"] = "Knight Slayer",
                     },
-                    [329] = 
+                    [329] =
                     {
                         ["es"] = "Sentencia del mago",
                         ["it"] = "Wizard's Riposte",
@@ -6773,7 +6773,7 @@ LibCraftTextVars =
                         ["de"] = "Zaubererreplik",
                         ["ru"] = "Wizard's Riposte",
                     },
-                    [330] = 
+                    [330] =
                     {
                         ["es"] = "Defensa automática",
                         ["it"] = "Automated Defense",
@@ -6783,7 +6783,7 @@ LibCraftTextVars =
                         ["de"] = "automatisierte Verteidigung",
                         ["ru"] = "Automated Defense",
                     },
-                    [331] = 
+                    [331] =
                     {
                         ["es"] = "Máquina de guerra",
                         ["it"] = "War Machine",
@@ -6793,7 +6793,7 @@ LibCraftTextVars =
                         ["de"] = "Kriegsmaschine",
                         ["ru"] = "War Machine",
                     },
-                    [332] = 
+                    [332] =
                     {
                         ["es"] = "maestro arquitecto",
                         ["it"] = "Master Architect",
@@ -6803,7 +6803,7 @@ LibCraftTextVars =
                         ["de"] = "Meisterarchitekt",
                         ["ru"] = "Master Architect",
                     },
-                    [333] = 
+                    [333] =
                     {
                         ["es"] = "Guardia del inventor",
                         ["it"] = "Inventor's Guard",
@@ -6813,7 +6813,7 @@ LibCraftTextVars =
                         ["de"] = "Erfindergarde",
                         ["ru"] = "Inventor's Guard",
                     },
-                    [334] = 
+                    [334] =
                     {
                         ["es"] = "Armadura inexpugnable",
                         ["it"] = "Impregnable Armor",
@@ -6823,7 +6823,7 @@ LibCraftTextVars =
                         ["de"] = "unüberwindliche Rüstung",
                         ["ru"] = "Impregnable Armor",
                     },
-                    [335] = 
+                    [335] =
                     {
                         ["es"] = "Remanso del draugr",
                         ["fr"] = "le Repos du Draugr",
@@ -6832,7 +6832,7 @@ LibCraftTextVars =
                         ["de"] = "Draugrruhe",
                         ["ru"] = "Draugr's Rest",
                     },
-                    [336] = 
+                    [336] =
                     {
                         ["es"] = "Pilar de Nirn",
                         ["fr"] = "Pilier de Nirn",
@@ -6841,7 +6841,7 @@ LibCraftTextVars =
                         ["de"] = "Säulen von Nirn",
                         ["ru"] = "Pillar of Nirn",
                     },
-                    [337] = 
+                    [337] =
                     {
                         ["es"] = "Sangre férrea",
                         ["fr"] = "Sang de fer",
@@ -6850,7 +6850,7 @@ LibCraftTextVars =
                         ["de"] = "Eisenblut",
                         ["ru"] = "Ironblood",
                     },
-                    [338] = 
+                    [338] =
                     {
                         ["es"] = "Flor de fuego",
                         ["fr"] = "Fleur de feu",
@@ -6859,7 +6859,7 @@ LibCraftTextVars =
                         ["de"] = "Flammenblüte",
                         ["ru"] = "Flame Blossom",
                     },
-                    [339] = 
+                    [339] =
                     {
                         ["es"] = "Chupasangre",
                         ["fr"] = "la Buveur de sang",
@@ -6868,7 +6868,7 @@ LibCraftTextVars =
                         ["de"] = "Bluttrinker",
                         ["ru"] = "Blooddrinker",
                     },
-                    [340] = 
+                    [340] =
                     {
                         ["es"] = "Jardín de la bruja cuervo",
                         ["fr"] = "Jardin de la harfreuse",
@@ -6877,7 +6877,7 @@ LibCraftTextVars =
                         ["de"] = "Vettelgarten",
                         ["ru"] = "Hagraven's Garden",
                     },
-                    [341] = 
+                    [341] =
                     {
                         ["es"] = "Sangretérrea",
                         ["fr"] = "Sangreterre",
@@ -6886,7 +6886,7 @@ LibCraftTextVars =
                         ["de"] = "Erdbluter",
                         ["ru"] = "Earthgore",
                     },
-                    [342] = 
+                    [342] =
                     {
                         ["es"] = "Domihaus",
                         ["fr"] = "Domihaus",
@@ -6895,7 +6895,7 @@ LibCraftTextVars =
                         ["de"] = "Domihaus",
                         ["ru"] = "Domihaus",
                     },
-                    [343] = 
+                    [343] =
                     {
                         ["es"] = "Legado de Caluurion",
                         ["fr"] = "l’Héritage de Caluurion",
@@ -6904,7 +6904,7 @@ LibCraftTextVars =
                         ["de"] = "Caluurions Erbe",
                         ["ru"] = "Caluurion's Legacy",
                     },
-                    [344] = 
+                    [344] =
                     {
                         ["es"] = "Aspecto de Vivificación",
                         ["fr"] = "Apparence de vivification",
@@ -6913,7 +6913,7 @@ LibCraftTextVars =
                         ["de"] = "Stärkungsprunk",
                         ["ru"] = "Trappings of Invigoration",
                     },
-                    [345] = 
+                    [345] =
                     {
                         ["es"] = "Favor de Ulfnor",
                         ["fr"] = "la Faveur d'Ulfnor",
@@ -6922,7 +6922,7 @@ LibCraftTextVars =
                         ["de"] = "Ulfnors Gunst",
                         ["ru"] = "Ulfnor's Favor",
                     },
-                    [346] = 
+                    [346] =
                     {
                         ["es"] = "Exhortación de Jorvuld",
                         ["fr"] = "le Conseil de Jorvuld",
@@ -6931,7 +6931,7 @@ LibCraftTextVars =
                         ["de"] = "Jorvulds Führung",
                         ["ru"] = "Jorvuld's Guidance",
                     },
-                    [347] = 
+                    [347] =
                     {
                         ["es"] = "Lanzaplagas",
                         ["fr"] = "Lance-peste",
@@ -6940,7 +6940,7 @@ LibCraftTextVars =
                         ["de"] = "Seuchenschleuder",
                         ["ru"] = "Plague Slinger",
                     },
-                    [348] = 
+                    [348] =
                     {
                         ["es"] = "Maldición de Doylemish",
                         ["fr"] = "la Malédiction de Doylemish",
@@ -6949,7 +6949,7 @@ LibCraftTextVars =
                         ["de"] = "Fluch von Doylemish",
                         ["ru"] = "Curse of Doylemish",
                     },
-                    [349] = 
+                    [349] =
                     {
                         ["es"] = "Thurvokun",
                         ["fr"] = "Thurvokun",
@@ -6958,7 +6958,7 @@ LibCraftTextVars =
                         ["de"] = "Thurvokun",
                         ["ru"] = "Thurvokun",
                     },
-                    [350] = 
+                    [350] =
                     {
                         ["es"] = "Zaan",
                         ["fr"] = "Zaan",
@@ -6967,7 +6967,7 @@ LibCraftTextVars =
                         ["de"] = "Zaan",
                         ["ru"] = "Zaan",
                     },
-                    [351] = 
+                    [351] =
                     {
                         ["es"] = "Axioma innato",
                         ["fr"] = "Axiome inné",
@@ -6976,7 +6976,7 @@ LibCraftTextVars =
                         ["de"] = "Kernaxiom",
                         ["ru"] = "Innate Axiom",
                     },
-                    [352] = 
+                    [352] =
                     {
                         ["es"] = "Cobre reforzado",
                         ["fr"] = "Airain fortifié",
@@ -6985,7 +6985,7 @@ LibCraftTextVars =
                         ["de"] = "Messingpanzer",
                         ["ru"] = "Fortified Brass",
                     },
-                    [353] = 
+                    [353] =
                     {
                         ["es"] = "Agudeza mecánica",
                         ["fr"] = "Acuité mécanique",
@@ -6994,7 +6994,7 @@ LibCraftTextVars =
                         ["de"] = "Mechanikblick",
                         ["ru"] = "Mechanical Acuity",
                     },
-                    [354] = 
+                    [354] =
                     {
                         ["es"] = "Inventor demente",
                         ["fr"] = "Bricoleur fou",
@@ -7003,7 +7003,7 @@ LibCraftTextVars =
                         ["de"] = "Wahntüftler",
                         ["ru"] = "Mad Tinkerer",
                     },
-                    [355] = 
+                    [355] =
                     {
                         ["es"] = "Oscuridad insondable",
                         ["fr"] = "Ténèbres insondables",
@@ -7012,7 +7012,7 @@ LibCraftTextVars =
                         ["de"] = "unermessliche Dunkelheit",
                         ["ru"] = "Unfathomable Darkness",
                     },
-                    [356] = 
+                    [356] =
                     {
                         ["es"] = "Energía viva",
                         ["fr"] = "Haute tension",
@@ -7021,7 +7021,7 @@ LibCraftTextVars =
                         ["de"] = "Stromschlag",
                         ["ru"] = "Livewire",
                     },
-                    [357] = 
+                    [357] =
                     {
                         ["es"] = "Corte disciplinado (Perfeccionado)",
                         ["fr"] = "Entaille disciplinée (perfectionnée)",
@@ -7030,7 +7030,7 @@ LibCraftTextVars =
                         ["de"] = "disziplinierter Schnitt (vollendet)",
                         ["ru"] = "Disciplined Slash (Perfected)",
                     },
-                    [358] = 
+                    [358] =
                     {
                         ["es"] = "Posición defensiva (Perfeccionado)",
                         ["fr"] = "Position défensive (perfectionnée)",
@@ -7039,7 +7039,7 @@ LibCraftTextVars =
                         ["de"] = "defensive Position (vollendet)",
                         ["ru"] = "Defensive Position (Perfected)",
                     },
-                    [359] = 
+                    [359] =
                     {
                         ["es"] = "Ciclón caótico (Perfeccionado)",
                         ["fr"] = "tourbillon chaotique (perfectionné)",
@@ -7048,7 +7048,7 @@ LibCraftTextVars =
                         ["de"] = "chaotischer Wirbelwind (vollendet)",
                         ["ru"] = "Chaotic Whirlwind (Perfected)",
                     },
-                    [360] = 
+                    [360] =
                     {
                         ["es"] = "Perforadora (Perfeccionado)",
                         ["fr"] = "Jaillissement perforant (perfectionné)",
@@ -7057,7 +7057,7 @@ LibCraftTextVars =
                         ["de"] = "durchdringende Salve (vollendet)",
                         ["ru"] = "Piercing Spray (Perfected)",
                     },
-                    [361] = 
+                    [361] =
                     {
                         ["es"] = "Fuerza concentrada (Perfeccionado)",
                         ["fr"] = "Force concentrée (perfectionnée)",
@@ -7066,7 +7066,7 @@ LibCraftTextVars =
                         ["de"] = "konzentrierte Kraft (vollendet)",
                         ["ru"] = "Concentrated Force (Perfected)",
                     },
-                    [362] = 
+                    [362] =
                     {
                         ["es"] = "Bendición eterna (Perfeccionado)",
                         ["fr"] = "Bénédiction intemporelle (perfectionnée)",
@@ -7075,7 +7075,7 @@ LibCraftTextVars =
                         ["de"] = "zeitloser Segen (vollendet)",
                         ["ru"] = "Timeless Blessing (Perfected)",
                     },
-                    [363] = 
+                    [363] =
                     {
                         ["es"] = "Corte disciplinado",
                         ["fr"] = "Entaille disciplinée",
@@ -7084,7 +7084,7 @@ LibCraftTextVars =
                         ["de"] = "disziplinierter Schnitt",
                         ["ru"] = "Disciplined Slash",
                     },
-                    [364] = 
+                    [364] =
                     {
                         ["es"] = "Posición defensiva",
                         ["fr"] = "Position défensive",
@@ -7093,7 +7093,7 @@ LibCraftTextVars =
                         ["de"] = "defensive Position",
                         ["ru"] = "Defensive Position",
                     },
-                    [365] = 
+                    [365] =
                     {
                         ["es"] = "Ciclón caótico",
                         ["fr"] = "tourbillon chaotique",
@@ -7102,7 +7102,7 @@ LibCraftTextVars =
                         ["de"] = "chaotischer Wirbelwind",
                         ["ru"] = "Chaotic Whirlwind",
                     },
-                    [366] = 
+                    [366] =
                     {
                         ["es"] = "Perforadora",
                         ["fr"] = "Jaillissement perforant",
@@ -7111,7 +7111,7 @@ LibCraftTextVars =
                         ["de"] = "durchdringende Salve",
                         ["ru"] = "Piercing Spray",
                     },
-                    [367] = 
+                    [367] =
                     {
                         ["es"] = "Fuerza concentrada",
                         ["fr"] = "Force concentrée",
@@ -7120,7 +7120,7 @@ LibCraftTextVars =
                         ["de"] = "konzentrierte Kraft",
                         ["ru"] = "Concentrated Force",
                     },
-                    [368] = 
+                    [368] =
                     {
                         ["es"] = "Bendición eterna",
                         ["fr"] = "Bénédiction intemporelle",
@@ -7129,7 +7129,7 @@ LibCraftTextVars =
                         ["de"] = "zeitloser Segen",
                         ["ru"] = "Timeless Blessing",
                     },
-                    [369] = 
+                    [369] =
                     {
                         ["es"] = "Carga despiadada",
                         ["fr"] = "la Charge impitoyable",
@@ -7138,7 +7138,7 @@ LibCraftTextVars =
                         ["de"] = "gnadenloser Ansturm",
                         ["ru"] = "Merciless Charge",
                     },
-                    [370] = 
+                    [370] =
                     {
                         ["es"] = "Hendidura inexorable",
                         ["fr"] = "l’Entaille ravageuse",
@@ -7147,7 +7147,7 @@ LibCraftTextVars =
                         ["de"] = "tobender Schnitt",
                         ["ru"] = "Rampaging Slash",
                     },
-                    [371] = 
+                    [371] =
                     {
                         ["es"] = "Diluvio cruel",
                         ["fr"] = "le Déluge cruel",
@@ -7156,7 +7156,7 @@ LibCraftTextVars =
                         ["de"] = "grausamer Schlaghagel",
                         ["ru"] = "Cruel Flurry",
                     },
-                    [372] = 
+                    [372] =
                     {
                         ["es"] = "Liberación atronadora",
                         ["fr"] = "la Volée tonitruante",
@@ -7165,7 +7165,7 @@ LibCraftTextVars =
                         ["de"] = "donnernde Salve",
                         ["ru"] = "Thunderous Volley",
                     },
-                    [373] = 
+                    [373] =
                     {
                         ["es"] = "Muro aplastante",
                         ["fr"] = "le Mur écrasant",
@@ -7174,7 +7174,7 @@ LibCraftTextVars =
                         ["de"] = "zermalmende Mauer",
                         ["ru"] = "Crushing Wall",
                     },
-                    [374] = 
+                    [374] =
                     {
                         ["es"] = "Regeneración precisa",
                         ["fr"] = "la Régénération précise",
@@ -7183,7 +7183,7 @@ LibCraftTextVars =
                         ["de"] = "präzise Regeneration",
                         ["ru"] = "Precise Regeneration",
                     },
-                    [380] = 
+                    [380] =
                     {
                         ["es"] = "Profeta",
                         ["fr"] = "l’Ensemble du Prophète",
@@ -7192,7 +7192,7 @@ LibCraftTextVars =
                         ["de"] = "Prophet",
                         ["ru"] = "Prophet's",
                     },
-                    [381] = 
+                    [381] =
                     {
                         ["es"] = "Alma desgarrada",
                         ["fr"] = "l’Âme brisée",
@@ -7201,7 +7201,7 @@ LibCraftTextVars =
                         ["de"] = "zerbrochene Seele",
                         ["ru"] = "Broken Soul",
                     },
-                    [382] = 
+                    [382] =
                     {
                         ["es"] = "Gracia agraciada",
                         ["fr"] = "Grâce maussade",
@@ -7210,7 +7210,7 @@ LibCraftTextVars =
                         ["de"] = "Anmut der Gräue",
                         ["ru"] = "Grace of Gloom",
                     },
-                    [383] = 
+                    [383] =
                     {
                         ["es"] = "Ferocidad del grifo",
                         ["fr"] = "Férocité du griffon",
@@ -7219,7 +7219,7 @@ LibCraftTextVars =
                         ["de"] = "Wildheit des Greifen",
                         ["ru"] = "Gryphon's Ferocity",
                     },
-                    [384] = 
+                    [384] =
                     {
                         ["es"] = "Sabiduría de Vano",
                         ["fr"] = "la Sagesse de Vanus",
@@ -7228,7 +7228,7 @@ LibCraftTextVars =
                         ["de"] = "Weisheit von Vanus",
                         ["ru"] = "Wisdom of Vanus",
                     },
-                    [385] = 
+                    [385] =
                     {
                         ["es"] = "Jinete adepto",
                         ["fr"] = "l’Adepte cavalier",
@@ -7237,7 +7237,7 @@ LibCraftTextVars =
                         ["de"] = "versierter Reiter",
                         ["ru"] = "Adept Rider",
                     },
-                    [386] = 
+                    [386] =
                     {
                         ["es"] = "Semblanza de Sload",
                         ["fr"] = "l’Aspect du Sload",
@@ -7246,7 +7246,7 @@ LibCraftTextVars =
                         ["de"] = "Kreckenantlitz",
                         ["ru"] = "Sload's Semblance",
                     },
-                    [387] = 
+                    [387] =
                     {
                         ["es"] = "Favor de Nocturnal",
                         ["fr"] = "Faveur de Nocturne",
@@ -7255,7 +7255,7 @@ LibCraftTextVars =
                         ["de"] = "Nocturnals Gunst",
                         ["ru"] = "Nocturnal's Favor",
                     },
-                    [388] = 
+                    [388] =
                     {
                         ["es"] = "Égida de Galenwe",
                         ["fr"] = "Égide de Galenwe",
@@ -7264,7 +7264,7 @@ LibCraftTextVars =
                         ["de"] = "Ägis von Galenwe",
                         ["ru"] = "Aegis of Galenwe",
                     },
-                    [389] = 
+                    [389] =
                     {
                         ["es"] = "Blasón de Relequen",
                         ["fr"] = "Armes de Relequen",
@@ -7273,7 +7273,7 @@ LibCraftTextVars =
                         ["de"] = "Waffen von Relequen",
                         ["ru"] = "Arms of Relequen",
                     },
-                    [390] = 
+                    [390] =
                     {
                         ["es"] = "Manto de Siroria",
                         ["fr"] = "Manteau de Siroria",
@@ -7282,7 +7282,7 @@ LibCraftTextVars =
                         ["de"] = "Mantel von Siroria",
                         ["ru"] = "Mantle of Siroria",
                     },
-                    [391] = 
+                    [391] =
                     {
                         ["es"] = "Vestimentas de Olorime",
                         ["fr"] = "Vêture d'Olorimë",
@@ -7291,7 +7291,7 @@ LibCraftTextVars =
                         ["de"] = "Gewandung von Olorime",
                         ["ru"] = "Vestment of Olorime",
                     },
-                    [392] = 
+                    [392] =
                     {
                         ["es"] = "Égida perfecta de Galenwe",
                         ["fr"] = "Égide parfaite de Galenwe",
@@ -7300,7 +7300,7 @@ LibCraftTextVars =
                         ["de"] = "perfekte Ägis von Galenwe",
                         ["ru"] = "Perfect Aegis of Galenwe",
                     },
-                    [393] = 
+                    [393] =
                     {
                         ["es"] = "Blasón perfecto de Relequen",
                         ["fr"] = "Armes parfaites de Relequen",
@@ -7309,7 +7309,7 @@ LibCraftTextVars =
                         ["de"] = "perfekte Waffen von Relequen",
                         ["ru"] = "Perfect Arms of Relequen",
                     },
-                    [394] = 
+                    [394] =
                     {
                         ["es"] = "Manto perfecto de Siroria",
                         ["fr"] = "Manteau parfait de Siroria",
@@ -7318,7 +7318,7 @@ LibCraftTextVars =
                         ["de"] = "perfekter Mantel von Siroria",
                         ["ru"] = "Perfect Mantle of Siroria",
                     },
-                    [395] = 
+                    [395] =
                     {
                         ["es"] = "Vestimentas perfectas de Olorime",
                         ["fr"] = "la vêture parfaite d'Olorimë",
@@ -7327,7 +7327,7 @@ LibCraftTextVars =
                         ["de"] = "perfekte Gewandung von Olorime",
                         ["ru"] = "Perfect Vestment of Olorime",
                     },
-                    [397] = 
+                    [397] =
                     {
                         ["es"] = "Balorgh",
                         ["fr"] = "Balorgh",
@@ -7336,7 +7336,7 @@ LibCraftTextVars =
                         ["de"] = "Balorgh",
                         ["ru"] = "Balorgh",
                     },
-                    [398] = 
+                    [398] =
                     {
                         ["es"] = "Vykosa",
                         ["fr"] = "Vykosa",
@@ -7345,7 +7345,7 @@ LibCraftTextVars =
                         ["de"] = "Vykosa",
                         ["ru"] = "Vykosa",
                     },
-                    [399] = 
+                    [399] =
                     {
                         ["es"] = "Compasión de Hanu",
                         ["fr"] = "la Compassion de Hanu",
@@ -7354,7 +7354,7 @@ LibCraftTextVars =
                         ["de"] = "Hanus Mitgefühl",
                         ["ru"] = "Hanu's Compassion",
                     },
-                    [400] = 
+                    [400] =
                     {
                         ["es"] = "Luna de sangre",
                         ["fr"] = "la Lune de sang",
@@ -7363,7 +7363,7 @@ LibCraftTextVars =
                         ["de"] = "Blutmond",
                         ["ru"] = "Blood Moon",
                     },
-                    [401] = 
+                    [401] =
                     {
                         ["es"] = "Amparo de Ursus",
                         ["fr"] = "le Havre d'Ursus",
@@ -7372,7 +7372,7 @@ LibCraftTextVars =
                         ["de"] = "Zuflucht von Ursus",
                         ["ru"] = "Haven of Ursus",
                     },
-                    [402] = 
+                    [402] =
                     {
                         ["es"] = "Cazador de la Luna",
                         ["fr"] = "le Chasseur lunaire",
@@ -7381,7 +7381,7 @@ LibCraftTextVars =
                         ["de"] = "Mondjäger",
                         ["ru"] = "Moon Hunter",
                     },
-                    [403] = 
+                    [403] =
                     {
                         ["es"] = "Licántropo salvaje",
                         ["fr"] = "le Loup-garou sauvage",
@@ -7390,7 +7390,7 @@ LibCraftTextVars =
                         ["de"] = "wilder Werwolf",
                         ["ru"] = "Savage Werewolf",
                     },
-                    [404] = 
+                    [404] =
                     {
                         ["es"] = "Tenacidad del Carcelero",
                         ["fr"] = "la Ténacité du Geôlier",
@@ -7399,7 +7399,7 @@ LibCraftTextVars =
                         ["de"] = "Tenazität des Kerkermeisters",
                         ["ru"] = "Jailer's Tenacity",
                     },
-                    [405] = 
+                    [405] =
                     {
                         ["fr"] = "la Vantardise de Vive-Gorge",
                         ["ja"] = "ブライトスロートの自慢",
@@ -7407,7 +7407,7 @@ LibCraftTextVars =
                         ["de"] = "Hellhalsstolz",
                         ["ru"] = "Bright-Throat's Boast",
                     },
-                    [406] = 
+                    [406] =
                     {
                         ["fr"] = "la Duplicité d'Aiguemortes",
                         ["ja"] = "デッドウォーターの奸智",
@@ -7415,7 +7415,7 @@ LibCraftTextVars =
                         ["de"] = "Totwassertücke",
                         ["ru"] = "Dead-Water's Guile",
                     },
-                    [407] = 
+                    [407] =
                     {
                         ["fr"] = "le Champion de l'Hist",
                         ["ja"] = "ヒストの勇者",
@@ -7423,7 +7423,7 @@ LibCraftTextVars =
                         ["de"] = "Histchampion",
                         ["ru"] = "Champion of the Hist",
                     },
-                    [408] = 
+                    [408] =
                     {
                         ["fr"] = "Collectionneur de marqueurs funéraires",
                         ["ja"] = "墓標コレクター",
@@ -7431,7 +7431,7 @@ LibCraftTextVars =
                         ["de"] = "Grabpflocksammler",
                         ["ru"] = "Grave-Stake Collector",
                     },
-                    [409] = 
+                    [409] =
                     {
                         ["fr"] = "le Chaman Naga",
                         ["ja"] = "ナガ呪術師",
@@ -7439,7 +7439,7 @@ LibCraftTextVars =
                         ["de"] = "Nagaschamane",
                         ["ru"] = "Naga Shaman",
                     },
-                    [410] = 
+                    [410] =
                     {
                         ["fr"] = "la Puissance de la Légion perdue",
                         ["ja"] = "失われた軍団の力",
@@ -7447,7 +7447,7 @@ LibCraftTextVars =
                         ["de"] = "Macht der Verlorenen Legion",
                         ["ru"] = "Might of the Lost Legion",
                     },
-                    [411] = 
+                    [411] =
                     {
                         ["fr"] = "Charge vaillante",
                         ["ja"] = "勇士の突撃",
@@ -7455,7 +7455,7 @@ LibCraftTextVars =
                         ["de"] = "galanter Ansturm",
                         ["ru"] = "Gallant Charge",
                     },
-                    [412] = 
+                    [412] =
                     {
                         ["fr"] = "Uppercut radial",
                         ["ja"] = "放射アッパーカット",
@@ -7463,7 +7463,7 @@ LibCraftTextVars =
                         ["de"] = "Rundum-Aufwärtsschnitt",
                         ["ru"] = "Radial Uppercut",
                     },
-                    [413] = 
+                    [413] =
                     {
                         ["fr"] = "Cape spectrale",
                         ["ja"] = "形なきクローク",
@@ -7471,7 +7471,7 @@ LibCraftTextVars =
                         ["de"] = "spektraler Mantel",
                         ["ru"] = "Spectral Cloak",
                     },
-                    [414] = 
+                    [414] =
                     {
                         ["fr"] = "Tir virulent",
                         ["ja"] = "有毒ショット",
@@ -7479,7 +7479,7 @@ LibCraftTextVars =
                         ["de"] = "virulenter Schuss",
                         ["ru"] = "Virulent Shot",
                     },
-                    [415] = 
+                    [415] =
                     {
                         ["fr"] = "Impulsion sauvage",
                         ["ja"] = "激しい衝撃",
@@ -7487,7 +7487,7 @@ LibCraftTextVars =
                         ["de"] = "wilder Impuls",
                         ["ru"] = "Wild Impulse",
                     },
-                    [416] = 
+                    [416] =
                     {
                         ["fr"] = "Garde du soigneur",
                         ["ja"] = "癒し手の結界",
@@ -7495,7 +7495,7 @@ LibCraftTextVars =
                         ["de"] = "Schutz des Pflegers",
                         ["ru"] = "Mender's Ward",
                     },
-                    [417] = 
+                    [417] =
                     {
                         ["fr"] = "Fureur indomptable",
                         ["ja"] = "不屈の激昂",
@@ -7503,7 +7503,7 @@ LibCraftTextVars =
                         ["de"] = "unbeugsamer Zorn",
                         ["ru"] = "Indomitable Fury",
                     },
-                    [418] = 
+                    [418] =
                     {
                         ["fr"] = "Stratège des sorts",
                         ["ja"] = "魔法戦略家",
@@ -7511,7 +7511,7 @@ LibCraftTextVars =
                         ["de"] = "Zauberstratege",
                         ["ru"] = "Spell Strategist",
                     },
-                    [419] = 
+                    [419] =
                     {
                         ["fr"] = "Acrobate du champ de bataille",
                         ["ja"] = "戦場アクロバット",
@@ -7519,7 +7519,7 @@ LibCraftTextVars =
                         ["de"] = "Schlachtfeldakrobat",
                         ["ru"] = "Battlefield Acrobat",
                     },
-                    [420] = 
+                    [420] =
                     {
                         ["fr"] = "Soldat de l'angoisse",
                         ["ja"] = "苦痛の戦士",
@@ -7527,7 +7527,7 @@ LibCraftTextVars =
                         ["de"] = "Soldat der Pein",
                         ["ru"] = "Soldier of Anguish",
                     },
-                    [421] = 
+                    [421] =
                     {
                         ["fr"] = "Héros inébranlable",
                         ["ja"] = "頑強な英雄",
@@ -7535,7 +7535,7 @@ LibCraftTextVars =
                         ["de"] = "standhafter Held",
                         ["ru"] = "Steadfast Hero",
                     },
-                    [422] = 
+                    [422] =
                     {
                         ["fr"] = "Défense du bataillon",
                         ["ja"] = "大隊の守り手",
@@ -7543,7 +7543,7 @@ LibCraftTextVars =
                         ["de"] = "Bataillonsverteidiger",
                         ["ru"] = "Battalion Defender",
                     },
-                    [423] = 
+                    [423] =
                     {
                         ["fr"] = "Charge galante parfaite",
                         ["ja"] = "完全な勇士の突撃",
@@ -7551,7 +7551,7 @@ LibCraftTextVars =
                         ["de"] = "perfekter galanter Ansturm",
                         ["ru"] = "Perfect Gallant Charge",
                     },
-                    [424] = 
+                    [424] =
                     {
                         ["fr"] = "Uppercut radial parfait",
                         ["ja"] = "完全な放射アッパーカット",
@@ -7559,7 +7559,7 @@ LibCraftTextVars =
                         ["de"] = "perfekter Rundum-Aufwärtsschnitt",
                         ["ru"] = "Perfect Radial Uppercut",
                     },
-                    [425] = 
+                    [425] =
                     {
                         ["fr"] = "Cape spectrale parfaite",
                         ["ja"] = "完全な形なきクローク",
@@ -7567,7 +7567,7 @@ LibCraftTextVars =
                         ["de"] = "perfekter spektraler Mantel",
                         ["ru"] = "Perfect Spectral Cloak",
                     },
-                    [426] = 
+                    [426] =
                     {
                         ["fr"] = "Tir virulent parfait",
                         ["ja"] = "完全な有毒ショット",
@@ -7575,7 +7575,7 @@ LibCraftTextVars =
                         ["de"] = "perfekter virulenter Schuss",
                         ["ru"] = "Perfect Virulent Shot",
                     },
-                    [427] = 
+                    [427] =
                     {
                         ["fr"] = "Impulsion sauvage parfaite",
                         ["ja"] = "完全な衝撃",
@@ -7583,7 +7583,7 @@ LibCraftTextVars =
                         ["de"] = "perfekter wilder Impuls",
                         ["ru"] = "Perfect Wild Impulse",
                     },
-                    [428] = 
+                    [428] =
                     {
                         ["fr"] = "Garde du guérisseur parfaite",
                         ["ja"] = "完全な癒し手の結界",
@@ -7592,18 +7592,18 @@ LibCraftTextVars =
                         ["ru"] = "Perfect Mender's Ward",
                     },
                 },
-                ["master_template"] = 
+                ["master_template"] =
                 {
-                    ["bs"] = 
+                    ["bs"] =
                     {
                         ["en"] = "Consume to start quest:\nCraft a platinum Sword; Quality: Epic; Trait: Robust; Set: Armor Master",
                     },
                 },
-                ["materials"] = 
+                ["materials"] =
                 {
-                    ["bs"] = 
+                    ["bs"] =
                     {
-                        ["es"] = 
+                        ["es"] =
                         {
                             [1] = "hierro",
                             [2] = "acero",
@@ -7616,7 +7616,7 @@ LibCraftTextVars =
                             [9] = "acero del vacío",
                             [10] = "rubedita",
                         },
-                        ["fr"] = 
+                        ["fr"] =
                         {
                             [1] = "fer",
                             [2] = "acier",
@@ -7629,7 +7629,7 @@ LibCraftTextVars =
                             [9] = "acier du néant",
                             [10] = "cuprite",
                         },
-                        ["ja"] = 
+                        ["ja"] =
                         {
                             [1] = "鉄",
                             [2] = "鋼鉄",
@@ -7642,7 +7642,7 @@ LibCraftTextVars =
                             [9] = "虚無の鉄",
                             [10] = "ルベダイト",
                         },
-                        ["en"] = 
+                        ["en"] =
                         {
                             [1] = "iron",
                             [2] = "steel",
@@ -7655,7 +7655,7 @@ LibCraftTextVars =
                             [9] = "voidsteel",
                             [10] = "Rubedite",
                         },
-                        ["de"] = 
+                        ["de"] =
                         {
                             [1] = "Eisen",
                             [2] = "Stahl",
@@ -7668,7 +7668,7 @@ LibCraftTextVars =
                             [9] = "Leerenstahl",
                             [10] = "Rubedit",
                         },
-                        ["ru"] = 
+                        ["ru"] =
                         {
                             [1] = "iron",
                             [2] = "steel",
@@ -7682,9 +7682,9 @@ LibCraftTextVars =
                             [10] = "Rubedite",
                         },
                     },
-                    ["med"] = 
+                    ["med"] =
                     {
-                        ["es"] = 
+                        ["es"] =
                         {
                             [1] = "piel cruda",
                             [2] = "piel",
@@ -7697,7 +7697,7 @@ LibCraftTextVars =
                             [9] = "piel sombría",
                             [10] = "cuero rubedo",
                         },
-                        ["fr"] = 
+                        ["fr"] =
                         {
                             [1] = "cuir brut",
                             [2] = "peau",
@@ -7710,7 +7710,7 @@ LibCraftTextVars =
                             [9] = "peau d'ombre",
                             [10] = "cuir pourpre",
                         },
-                        ["ja"] = 
+                        ["ja"] =
                         {
                             [1] = "生皮",
                             [2] = "皮",
@@ -7723,7 +7723,7 @@ LibCraftTextVars =
                             [9] = "シャドウハイド",
                             [10] = "ルベドレザー",
                         },
-                        ["en"] = 
+                        ["en"] =
                         {
                             [1] = "rawhide",
                             [2] = "hide",
@@ -7736,7 +7736,7 @@ LibCraftTextVars =
                             [9] = "shadowhide",
                             [10] = "Rubedo Leather",
                         },
-                        ["de"] = 
+                        ["de"] =
                         {
                             [1] = "Rohleder",
                             [2] = "Halbleder",
@@ -7749,7 +7749,7 @@ LibCraftTextVars =
                             [9] = "Schattenleder",
                             [10] = "Rubedoleder",
                         },
-                        ["ru"] = 
+                        ["ru"] =
                         {
                             [1] = "rawhide",
                             [2] = "hide",
@@ -7763,9 +7763,9 @@ LibCraftTextVars =
                             [10] = "Rubedo Leather",
                         },
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
-                        ["es"] = 
+                        ["es"] =
                         {
                             [1] = "peltre",
                             [2] = "cobre",
@@ -7773,7 +7773,7 @@ LibCraftTextVars =
                             [4] = "electro",
                             [5] = "platino",
                         },
-                        ["fr"] = 
+                        ["fr"] =
                         {
                             [1] = "étain",
                             [2] = "cuivre",
@@ -7781,7 +7781,7 @@ LibCraftTextVars =
                             [4] = "électrum",
                             [5] = "platine",
                         },
-                        ["ja"] = 
+                        ["ja"] =
                         {
                             [1] = "ピューター",
                             [2] = "銅",
@@ -7789,7 +7789,7 @@ LibCraftTextVars =
                             [4] = "琥珀金",
                             [5] = "プラチナ",
                         },
-                        ["en"] = 
+                        ["en"] =
                         {
                             [1] = "pewter",
                             [2] = "copper",
@@ -7797,7 +7797,7 @@ LibCraftTextVars =
                             [4] = "electrum",
                             [5] = "platinum",
                         },
-                        ["de"] = 
+                        ["de"] =
                         {
                             [1] = "Zinn",
                             [2] = "Kupfer",
@@ -7805,7 +7805,7 @@ LibCraftTextVars =
                             [4] = "Elektrum",
                             [5] = "Platin",
                         },
-                        ["ru"] = 
+                        ["ru"] =
                         {
                             [1] = "pewter",
                             [2] = "copper",
@@ -7814,9 +7814,9 @@ LibCraftTextVars =
                             [5] = "platinum",
                         },
                     },
-                    ["lgt"] = 
+                    ["lgt"] =
                     {
-                        ["es"] = 
+                        ["es"] =
                         {
                             [1] = "tejido artesanal",
                             [2] = "lino",
@@ -7829,7 +7829,7 @@ LibCraftTextVars =
                             [9] = "tejido sombrío",
                             [10] = "seda ancestral",
                         },
-                        ["fr"] = 
+                        ["fr"] =
                         {
                             [1] = "artisanales",
                             [2] = "lin",
@@ -7842,7 +7842,7 @@ LibCraftTextVars =
                             [9] = "tissombre",
                             [10] = "soie ancestrales",
                         },
-                        ["ja"] = 
+                        ["ja"] =
                         {
                             [1] = "手織り布",
                             [2] = "リネン",
@@ -7855,7 +7855,7 @@ LibCraftTextVars =
                             [9] = "影の布",
                             [10] = "先人のシルク",
                         },
-                        ["en"] = 
+                        ["en"] =
                         {
                             [1] = "homespun",
                             [2] = "linen",
@@ -7868,7 +7868,7 @@ LibCraftTextVars =
                             [9] = "shadowspun",
                             [10] = "Ancestor Silk",
                         },
-                        ["de"] = 
+                        ["de"] =
                         {
                             [1] = "Jute",
                             [2] = "Flachs",
@@ -7881,7 +7881,7 @@ LibCraftTextVars =
                             [9] = "Leerenstoff",
                             [10] = "Ahnenseiden",
                         },
-                        ["ru"] = 
+                        ["ru"] =
                         {
                             [1] = "homespun",
                             [2] = "linen",
@@ -7895,9 +7895,9 @@ LibCraftTextVars =
                             [10] = "Ancestor Silk",
                         },
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
-                        ["es"] = 
+                        ["es"] =
                         {
                             [1] = "arce",
                             [2] = "roble",
@@ -7910,7 +7910,7 @@ LibCraftTextVars =
                             [9] = "nocteca",
                             [10] = "fresno rubí",
                         },
-                        ["fr"] = 
+                        ["fr"] =
                         {
                             [1] = "érable",
                             [2] = "chêne",
@@ -7923,7 +7923,7 @@ LibCraftTextVars =
                             [9] = "bois de nuit",
                             [10] = "frêne roux",
                         },
-                        ["ja"] = 
+                        ["ja"] =
                         {
                             [1] = "カエデ",
                             [2] = "カシ",
@@ -7936,7 +7936,7 @@ LibCraftTextVars =
                             [9] = "ナイトウッド",
                             [10] = "ルビーアッシュ",
                         },
-                        ["en"] = 
+                        ["en"] =
                         {
                             [1] = "maple",
                             [2] = "oak",
@@ -7949,7 +7949,7 @@ LibCraftTextVars =
                             [9] = "nightwood",
                             [10] = "Ruby Ash",
                         },
-                        ["de"] = 
+                        ["de"] =
                         {
                             [1] = "Ahorn",
                             [2] = "Eichen",
@@ -7962,7 +7962,7 @@ LibCraftTextVars =
                             [9] = "Nachtholz",
                             [10] = "Rubineschen",
                         },
-                        ["ru"] = 
+                        ["ru"] =
                         {
                             [1] = "maple",
                             [2] = "oak",
@@ -7977,9 +7977,9 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["traits"] = 
+                ["traits"] =
                 {
-                    [32] = 
+                    [32] =
                     {
                         ["es"] = "Protector",
                         ["it"] = "Protective",
@@ -7989,7 +7989,7 @@ LibCraftTextVars =
                         ["de"] = "Schützend",
                         ["ru"] = "Protective",
                     },
-                    [33] = 
+                    [33] =
                     {
                         ["es"] = "Imbuido",
                         ["it"] = "Infused",
@@ -7999,7 +7999,7 @@ LibCraftTextVars =
                         ["de"] = "Erfüllt",
                         ["ru"] = "Infused",
                     },
-                    [2] = 
+                    [2] =
                     {
                         ["es"] = "Cargado",
                         ["it"] = "Carico",
@@ -8009,7 +8009,7 @@ LibCraftTextVars =
                         ["de"] = "Geladen",
                         ["ru"] = "Charged",
                     },
-                    [3] = 
+                    [3] =
                     {
                         ["es"] = "Preciso",
                         ["it"] = "Preciso",
@@ -8019,7 +8019,7 @@ LibCraftTextVars =
                         ["de"] = "Präzise",
                         ["ru"] = "Precise",
                     },
-                    [4] = 
+                    [4] =
                     {
                         ["es"] = "Imbuido",
                         ["it"] = "Infuso",
@@ -8029,7 +8029,7 @@ LibCraftTextVars =
                         ["de"] = "Erfüllt",
                         ["ru"] = "Infused",
                     },
-                    [5] = 
+                    [5] =
                     {
                         ["es"] = "Defensivo",
                         ["it"] = "Difensivo",
@@ -8039,7 +8039,7 @@ LibCraftTextVars =
                         ["de"] = "Verteidigend",
                         ["ru"] = "Defending",
                     },
-                    [6] = 
+                    [6] =
                     {
                         ["es"] = "Entrenamiento",
                         ["it"] = "da Allenamento",
@@ -8049,7 +8049,7 @@ LibCraftTextVars =
                         ["de"] = "Lehrend",
                         ["ru"] = "Training",
                     },
-                    [7] = 
+                    [7] =
                     {
                         ["es"] = "Afilado",
                         ["it"] = "Affilato",
@@ -8059,7 +8059,7 @@ LibCraftTextVars =
                         ["de"] = "Geschärft",
                         ["ru"] = "Sharpened",
                     },
-                    [8] = 
+                    [8] =
                     {
                         ["es"] = "Decisivo",
                         ["it"] = "Decisivo",
@@ -8069,7 +8069,7 @@ LibCraftTextVars =
                         ["de"] = "Entschlossen",
                         ["ru"] = "Decisive",
                     },
-                    [11] = 
+                    [11] =
                     {
                         ["es"] = "Resistente",
                         ["it"] = "Robusto",
@@ -8079,7 +8079,7 @@ LibCraftTextVars =
                         ["de"] = "Robust",
                         ["ru"] = "Sturdy",
                     },
-                    [12] = 
+                    [12] =
                     {
                         ["es"] = "Impenetrable",
                         ["it"] = "Impenetrabile",
@@ -8089,7 +8089,7 @@ LibCraftTextVars =
                         ["de"] = "Undurchdringlich",
                         ["ru"] = "Impenetrable",
                     },
-                    [13] = 
+                    [13] =
                     {
                         ["es"] = "Reforzado",
                         ["it"] = "Rinforzato",
@@ -8099,7 +8099,7 @@ LibCraftTextVars =
                         ["de"] = "Verstärkt",
                         ["ru"] = "Reinforced",
                     },
-                    [14] = 
+                    [14] =
                     {
                         ["es"] = "Ajustado",
                         ["it"] = "Comodo",
@@ -8109,7 +8109,7 @@ LibCraftTextVars =
                         ["de"] = "Passgenau",
                         ["ru"] = "Well-fitted",
                     },
-                    [15] = 
+                    [15] =
                     {
                         ["es"] = "Adiestramiento",
                         ["it"] = "da Allenamento",
@@ -8119,7 +8119,7 @@ LibCraftTextVars =
                         ["de"] = "Lehrend",
                         ["ru"] = "Training",
                     },
-                    [16] = 
+                    [16] =
                     {
                         ["es"] = "Imbuido",
                         ["it"] = "Infuso",
@@ -8129,7 +8129,7 @@ LibCraftTextVars =
                         ["de"] = "Erfüllt",
                         ["ru"] = "Infused",
                     },
-                    [17] = 
+                    [17] =
                     {
                         ["es"] = "Vigorizante",
                         ["it"] = "Prospero",
@@ -8139,7 +8139,7 @@ LibCraftTextVars =
                         ["de"] = "Belebend",
                         ["ru"] = "Invigorating",
                     },
-                    [18] = 
+                    [18] =
                     {
                         ["es"] = "Divino",
                         ["it"] = "Divino",
@@ -8149,7 +8149,7 @@ LibCraftTextVars =
                         ["de"] = "Göttlich",
                         ["ru"] = "Divines",
                     },
-                    [21] = 
+                    [21] =
                     {
                         ["es"] = "Saludable",
                         ["it"] = "Salubre",
@@ -8159,7 +8159,7 @@ LibCraftTextVars =
                         ["de"] = "Kräftigend",
                         ["ru"] = "Healthy",
                     },
-                    [22] = 
+                    [22] =
                     {
                         ["es"] = "Arcano",
                         ["it"] = "Arcano",
@@ -8169,7 +8169,7 @@ LibCraftTextVars =
                         ["de"] = "Arkan",
                         ["ru"] = "Arcane",
                     },
-                    [23] = 
+                    [23] =
                     {
                         ["es"] = "Robusto",
                         ["it"] = "Robusto",
@@ -8179,7 +8179,7 @@ LibCraftTextVars =
                         ["de"] = "Robust",
                         ["ru"] = "Robust",
                     },
-                    [25] = 
+                    [25] =
                     {
                         ["es"] = "Temple de Nirn",
                         ["it"] = "Nirnhoned",
@@ -8189,7 +8189,7 @@ LibCraftTextVars =
                         ["de"] = "Nirngeschliffen",
                         ["ru"] = "Nirnhoned",
                     },
-                    [26] = 
+                    [26] =
                     {
                         ["es"] = "Temple de Nirn",
                         ["it"] = "Nirnhoned",
@@ -8199,7 +8199,7 @@ LibCraftTextVars =
                         ["de"] = "Nirngeschliffen",
                         ["ru"] = "Nirnhoned",
                     },
-                    [1] = 
+                    [1] =
                     {
                         ["es"] = "Potenciado",
                         ["it"] = "Potenziato",
@@ -8209,7 +8209,7 @@ LibCraftTextVars =
                         ["de"] = "Gestärkt",
                         ["ru"] = "Powered",
                     },
-                    [28] = 
+                    [28] =
                     {
                         ["es"] = "Ágil",
                         ["it"] = "Swift",
@@ -8219,7 +8219,7 @@ LibCraftTextVars =
                         ["de"] = "Flink",
                         ["ru"] = "Swift",
                     },
-                    [29] = 
+                    [29] =
                     {
                         ["es"] = "Armonioso",
                         ["it"] = "Harmony",
@@ -8229,7 +8229,7 @@ LibCraftTextVars =
                         ["de"] = "Harmonisch",
                         ["ru"] = "Harmony",
                     },
-                    [30] = 
+                    [30] =
                     {
                         ["es"] = "Trinitario",
                         ["it"] = "Triune",
@@ -8239,7 +8239,7 @@ LibCraftTextVars =
                         ["de"] = "Dreifaltig",
                         ["ru"] = "Triune",
                     },
-                    [31] = 
+                    [31] =
                     {
                         ["es"] = "Sanguinario",
                         ["it"] = "Bloodthirsty",
@@ -8250,11 +8250,11 @@ LibCraftTextVars =
                         ["ru"] = "Bloodthirsty",
                     },
                 },
-                ["items"] = 
+                ["items"] =
                 {
-                    ["bs"] = 
+                    ["bs"] =
                     {
-                        ["es"] = 
+                        ["es"] =
                         {
                             [1] = "Hacha",
                             [2] = "Maza",
@@ -8271,7 +8271,7 @@ LibCraftTextVars =
                             [13] = "Espaldarones",
                             [14] = "Faja",
                         },
-                        ["it"] = 
+                        ["it"] =
                         {
                             [1] = "Axe",
                             [2] = "Mace",
@@ -8288,7 +8288,7 @@ LibCraftTextVars =
                             [13] = "Spallaccio",
                             [14] = "Girdle",
                         },
-                        ["fr"] = 
+                        ["fr"] =
                         {
                             [1] = "hache",
                             [2] = "masse",
@@ -8305,7 +8305,7 @@ LibCraftTextVars =
                             [13] = "Spallière",
                             [14] = "gaine",
                         },
-                        ["ja"] = 
+                        ["ja"] =
                         {
                             [1] = "斧",
                             [2] = "メイス",
@@ -8322,7 +8322,7 @@ LibCraftTextVars =
                             [13] = "ポールドロン",
                             [14] = "ガードル",
                         },
-                        ["en"] = 
+                        ["en"] =
                         {
                             [1] = "Axe",
                             [2] = "Mace",
@@ -8339,7 +8339,7 @@ LibCraftTextVars =
                             [13] = "Pauldron",
                             [14] = "Girdle",
                         },
-                        ["de"] = 
+                        ["de"] =
                         {
                             [1] = "axt",
                             [2] = "keule",
@@ -8356,7 +8356,7 @@ LibCraftTextVars =
                             [13] = "schulterschutz",
                             [14] = "gürtel",
                         },
-                        ["ru"] = 
+                        ["ru"] =
                         {
                             [1] = "Axe",
                             [2] = "Mace",
@@ -8374,9 +8374,9 @@ LibCraftTextVars =
                             [14] = "Girdle",
                         },
                     },
-                    ["med"] = 
+                    ["med"] =
                     {
-                        ["es"] = 
+                        ["es"] =
                         {
                             [1] = "Pechera",
                             [2] = "Botas",
@@ -8386,7 +8386,7 @@ LibCraftTextVars =
                             [6] = "Hombreras",
                             [7] = "Cinturón",
                         },
-                        ["it"] = 
+                        ["it"] =
                         {
                             [1] = "Corpetto",
                             [2] = "Stivali",
@@ -8396,7 +8396,7 @@ LibCraftTextVars =
                             [6] = "Spalline",
                             [7] = "Cintura",
                         },
-                        ["fr"] = 
+                        ["fr"] =
                         {
                             [1] = "gilet",
                             [2] = "Bottes",
@@ -8406,7 +8406,7 @@ LibCraftTextVars =
                             [6] = "Coques d'épaules",
                             [7] = "ceinture",
                         },
-                        ["ja"] = 
+                        ["ja"] =
                         {
                             [1] = "胴当て",
                             [2] = "ブーツ",
@@ -8416,7 +8416,7 @@ LibCraftTextVars =
                             [6] = "アームカップ",
                             [7] = "ベルト",
                         },
-                        ["en"] = 
+                        ["en"] =
                         {
                             [1] = "Jack",
                             [2] = "Boots",
@@ -8426,7 +8426,7 @@ LibCraftTextVars =
                             [6] = "Arm Cops",
                             [7] = "Belt",
                         },
-                        ["de"] = 
+                        ["de"] =
                         {
                             [1] = "wams",
                             [2] = "stiefel",
@@ -8436,7 +8436,7 @@ LibCraftTextVars =
                             [6] = "schulterkappen",
                             [7] = "riemen",
                         },
-                        ["ru"] = 
+                        ["ru"] =
                         {
                             [1] = "Jack",
                             [2] = "Boots",
@@ -8447,47 +8447,47 @@ LibCraftTextVars =
                             [7] = "Belt",
                         },
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
-                        ["es"] = 
+                        ["es"] =
                         {
                             [2] = "Anillo",
                             [1] = "Collar",
                         },
-                        ["it"] = 
+                        ["it"] =
                         {
                             [2] = "Ring",
                             [1] = "Necklace",
                         },
-                        ["fr"] = 
+                        ["fr"] =
                         {
                             [2] = "Anneau",
                             [1] = "Collier",
                         },
-                        ["ja"] = 
+                        ["ja"] =
                         {
                             [2] = "指輪",
                             [1] = "ネックレス",
                         },
-                        ["en"] = 
+                        ["en"] =
                         {
                             [2] = "Ring",
                             [1] = "Necklace",
                         },
-                        ["de"] = 
+                        ["de"] =
                         {
                             [2] = "ring",
                             [1] = "kette",
                         },
-                        ["ru"] = 
+                        ["ru"] =
                         {
                             [2] = "Ring",
                             [1] = "Necklace",
                         },
                     },
-                    ["lgt"] = 
+                    ["lgt"] =
                     {
-                        ["es"] = 
+                        ["es"] =
                         {
                             [8] = "Banda",
                             [1] = "Túnica",
@@ -8498,7 +8498,7 @@ LibCraftTextVars =
                             [6] = "Calzones",
                             [7] = "Cubrehombros",
                         },
-                        ["it"] = 
+                        ["it"] =
                         {
                             [8] = "Fascia",
                             [1] = "Veste",
@@ -8509,7 +8509,7 @@ LibCraftTextVars =
                             [6] = "Calzoni",
                             [7] = "Coprispalle",
                         },
-                        ["fr"] = 
+                        ["fr"] =
                         {
                             [8] = "Baudrier",
                             [1] = "robe",
@@ -8520,7 +8520,7 @@ LibCraftTextVars =
                             [6] = "Braies",
                             [7] = "Épaulettes",
                         },
-                        ["ja"] = 
+                        ["ja"] =
                         {
                             [8] = "サッシュ",
                             [1] = "ローブ",
@@ -8531,7 +8531,7 @@ LibCraftTextVars =
                             [6] = "パンツ",
                             [7] = "肩当て",
                         },
-                        ["en"] = 
+                        ["en"] =
                         {
                             [8] = "Sash",
                             [1] = "Robe",
@@ -8542,7 +8542,7 @@ LibCraftTextVars =
                             [6] = "Breeches",
                             [7] = "Epaulets",
                         },
-                        ["de"] = 
+                        ["de"] =
                         {
                             [8] = "schärpe",
                             [1] = "robe",
@@ -8553,7 +8553,7 @@ LibCraftTextVars =
                             [6] = "beinkleider",
                             [7] = "schulterpolster",
                         },
-                        ["ru"] = 
+                        ["ru"] =
                         {
                             [8] = "Sash",
                             [1] = "Robe",
@@ -8565,9 +8565,9 @@ LibCraftTextVars =
                             [7] = "Epaulets",
                         },
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
-                        ["es"] = 
+                        ["es"] =
                         {
                             [1] = "Arco",
                             [2] = "Vara infernal",
@@ -8576,7 +8576,7 @@ LibCraftTextVars =
                             [5] = "Vara restauradora",
                             [6] = "Escudo",
                         },
-                        ["it"] = 
+                        ["it"] =
                         {
                             [1] = "Bow",
                             [2] = "Bastone del Fuoco",
@@ -8585,7 +8585,7 @@ LibCraftTextVars =
                             [5] = "Healing Staff",
                             [6] = "Scudo",
                         },
-                        ["fr"] = 
+                        ["fr"] =
                         {
                             [1] = "arc",
                             [2] = "bâton infernal",
@@ -8594,7 +8594,7 @@ LibCraftTextVars =
                             [5] = "Bâton de rétablissement",
                             [6] = "bouclier",
                         },
-                        ["ja"] = 
+                        ["ja"] =
                         {
                             [1] = "弓",
                             [2] = "業火の杖",
@@ -8603,7 +8603,7 @@ LibCraftTextVars =
                             [5] = "回復の杖",
                             [6] = "盾",
                         },
-                        ["en"] = 
+                        ["en"] =
                         {
                             [1] = "Bow",
                             [2] = "Inferno Staff",
@@ -8612,7 +8612,7 @@ LibCraftTextVars =
                             [5] = "Restoration Staff",
                             [6] = "Shield",
                         },
-                        ["de"] = 
+                        ["de"] =
                         {
                             [1] = "bogen",
                             [2] = "flammenstab",
@@ -8621,7 +8621,7 @@ LibCraftTextVars =
                             [5] = "heilungsstab",
                             [6] = "schild",
                         },
-                        ["ru"] = 
+                        ["ru"] =
                         {
                             [1] = "Bow",
                             [2] = "Inferno Staff",
@@ -8632,9 +8632,9 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["qualities"] = 
+                ["qualities"] =
                 {
-                    ["es"] = 
+                    ["es"] =
                     {
                         [1] = "Normal",
                         [2] = "Bueno",
@@ -8642,7 +8642,7 @@ LibCraftTextVars =
                         [4] = "Épico",
                         [5] = "Legendario",
                     },
-                    ["it"] = 
+                    ["it"] =
                     {
                         [1] = "Normale",
                         [2] = "Buono",
@@ -8650,7 +8650,7 @@ LibCraftTextVars =
                         [4] = "Epico",
                         [5] = "Leggendario",
                     },
-                    ["fr"] = 
+                    ["fr"] =
                     {
                         [1] = "Normal",
                         [2] = "Raffiné",
@@ -8658,7 +8658,7 @@ LibCraftTextVars =
                         [4] = "Épique",
                         [5] = "Légendaire",
                     },
-                    ["ja"] = 
+                    ["ja"] =
                     {
                         [1] = "Normal",
                         [2] = "Fine",
@@ -8666,7 +8666,7 @@ LibCraftTextVars =
                         [4] = "Epic",
                         [5] = "Legendary",
                     },
-                    ["en"] = 
+                    ["en"] =
                     {
                         [1] = "Normal",
                         [2] = "Fine",
@@ -8674,7 +8674,7 @@ LibCraftTextVars =
                         [4] = "Epic",
                         [5] = "Legendary",
                     },
-                    ["de"] = 
+                    ["de"] =
                     {
                         [1] = "Normal",
                         [2] = "Erlesen",
@@ -8682,7 +8682,7 @@ LibCraftTextVars =
                         [4] = "Episch",
                         [5] = "Legendär",
                     },
-                    ["ru"] = 
+                    ["ru"] =
                     {
                         [1] = "Обычное",
                         [2] = "Хорошее",
@@ -8691,9 +8691,9 @@ LibCraftTextVars =
                         [5] = "Легендарное",
                     },
                 },
-                ["motifs"] = 
+                ["motifs"] =
                 {
-                    [0] = 
+                    [0] =
                     {
                         ["es"] = "Consumir para iniciar la misión:\nFabricar: Hacha de rubedita; Calidad: Épico; Rasgo: Decisivo; Conjunto: Maestro armero; Estilo:",
                         ["it"] = "Consuma per iniziare la missione:\nCrea un Axe; Qualità: Epico; Tratti: Decisivo; Set: Armor Master; Stile:",
@@ -8703,7 +8703,7 @@ LibCraftTextVars =
                         ["de"] = "Verbrauchen, um eine Quest zu beginnen:\nStellt eine Rubeditaxt mit bestimmten Eigenschaften her.\n\nSet: Rüstungsmeister\nStil:\nEigenschaft: Entschlossen\nQualität: Episch",
                         ["ru"] = "Используйте, чтобы начать задание:\nСоздать предмет (Rubedite Axe); качество: Эпическое; особенность: Decisive; комплект: Armor Master; стиль:",
                     },
-                    [1] = 
+                    [1] =
                     {
                         ["es"] = "Bretón",
                         ["fr"] = "Bréton",
@@ -8712,7 +8712,7 @@ LibCraftTextVars =
                         ["de"] = "Bretonen",
                         ["ru"] = "бретонский",
                     },
-                    [2] = 
+                    [2] =
                     {
                         ["es"] = "Guardia rojo",
                         ["fr"] = "Rougegarde",
@@ -8721,7 +8721,7 @@ LibCraftTextVars =
                         ["de"] = "Rothwardonen",
                         ["ru"] = "редгардский",
                     },
-                    [3] = 
+                    [3] =
                     {
                         ["es"] = "Orco",
                         ["fr"] = "Orque",
@@ -8730,7 +8730,7 @@ LibCraftTextVars =
                         ["de"] = "Orks",
                         ["ru"] = "орочий",
                     },
-                    [4] = 
+                    [4] =
                     {
                         ["es"] = "Elfo oscuro",
                         ["fr"] = "Elfe noir",
@@ -8739,7 +8739,7 @@ LibCraftTextVars =
                         ["de"] = "Dunkelelfen",
                         ["ru"] = "данмерский",
                     },
-                    [5] = 
+                    [5] =
                     {
                         ["es"] = "Nórdico",
                         ["fr"] = "Nordique",
@@ -8748,7 +8748,7 @@ LibCraftTextVars =
                         ["de"] = "Nord",
                         ["ru"] = "нордский",
                     },
-                    [6] = 
+                    [6] =
                     {
                         ["es"] = "Argoniano",
                         ["fr"] = "Argonien",
@@ -8757,7 +8757,7 @@ LibCraftTextVars =
                         ["de"] = "Argonier",
                         ["ru"] = "аргонианский",
                     },
-                    [7] = 
+                    [7] =
                     {
                         ["es"] = "Alto elfo",
                         ["fr"] = "Haut-elfe",
@@ -8766,7 +8766,7 @@ LibCraftTextVars =
                         ["de"] = "Hochelfen",
                         ["ru"] = "альтмерский",
                     },
-                    [8] = 
+                    [8] =
                     {
                         ["es"] = "Elfo del bosque",
                         ["fr"] = "Elfe des bois",
@@ -8775,7 +8775,7 @@ LibCraftTextVars =
                         ["de"] = "Waldelfen",
                         ["ru"] = "босмерский",
                     },
-                    [9] = 
+                    [9] =
                     {
                         ["es"] = "Khajiit",
                         ["fr"] = "Khajiit",
@@ -8784,7 +8784,7 @@ LibCraftTextVars =
                         ["de"] = "Khajiit",
                         ["ru"] = "каджитский",
                     },
-                    [10] = 
+                    [10] =
                     {
                         ["es"] = "Unique",
                         ["fr"] = "Unique",
@@ -8793,7 +8793,7 @@ LibCraftTextVars =
                         ["de"] = "Einzigartig",
                         ["ru"] = "уникальный",
                     },
-                    [11] = 
+                    [11] =
                     {
                         ["es"] = "Gremio de Ladrones",
                         ["fr"] = "Guilde des voleurs",
@@ -8802,7 +8802,7 @@ LibCraftTextVars =
                         ["de"] = "Diebesgilde",
                         ["ru"] = "Гильдия воров",
                     },
-                    [12] = 
+                    [12] =
                     {
                         ["es"] = "Hermandad Oscura",
                         ["fr"] = "Confrérie noire",
@@ -8811,7 +8811,7 @@ LibCraftTextVars =
                         ["de"] = "Dunkle Bruderschaft",
                         ["ru"] = "Темное Братство",
                     },
-                    [13] = 
+                    [13] =
                     {
                         ["es"] = "Malacath",
                         ["fr"] = "Malacath",
@@ -8820,7 +8820,7 @@ LibCraftTextVars =
                         ["de"] = "Malacath",
                         ["ru"] = "Малакат",
                     },
-                    [14] = 
+                    [14] =
                     {
                         ["es"] = "Dwemer",
                         ["fr"] = "Dwemer",
@@ -8829,7 +8829,7 @@ LibCraftTextVars =
                         ["de"] = "Dwemer",
                         ["ru"] = "двемерский",
                     },
-                    [15] = 
+                    [15] =
                     {
                         ["es"] = "Elfo antiguo",
                         ["fr"] = "Elfe antique",
@@ -8838,7 +8838,7 @@ LibCraftTextVars =
                         ["de"] = "alte Elfen",
                         ["ru"] = "древнеэльфийский",
                     },
-                    [16] = 
+                    [16] =
                     {
                         ["es"] = "Orden de las Horas",
                         ["fr"] = "Ordre des Heures",
@@ -8847,7 +8847,7 @@ LibCraftTextVars =
                         ["de"] = "Orden der Stunde",
                         ["ru"] = "Часовой орден",
                     },
-                    [17] = 
+                    [17] =
                     {
                         ["es"] = "Bárbaro",
                         ["fr"] = "Barbare",
@@ -8856,7 +8856,7 @@ LibCraftTextVars =
                         ["de"] = "Barbaren",
                         ["ru"] = "варварский",
                     },
-                    [18] = 
+                    [18] =
                     {
                         ["es"] = "Bandit",
                         ["fr"] = "Bandit",
@@ -8865,7 +8865,7 @@ LibCraftTextVars =
                         ["de"] = "Bandit",
                         ["ru"] = "бандитский",
                     },
-                    [19] = 
+                    [19] =
                     {
                         ["es"] = "Primitivo",
                         ["fr"] = "Primitif",
@@ -8874,7 +8874,7 @@ LibCraftTextVars =
                         ["de"] = "Wilde",
                         ["ru"] = "первобытный",
                     },
-                    [20] = 
+                    [20] =
                     {
                         ["es"] = "Daédrico",
                         ["fr"] = "Daedrique",
@@ -8883,7 +8883,7 @@ LibCraftTextVars =
                         ["de"] = "Daedra",
                         ["ru"] = "даэдрический",
                     },
-                    [21] = 
+                    [21] =
                     {
                         ["es"] = "Trinimac",
                         ["fr"] = "Trinimac",
@@ -8892,7 +8892,7 @@ LibCraftTextVars =
                         ["de"] = "Trinimac",
                         ["ru"] = "Тринимак",
                     },
-                    [22] = 
+                    [22] =
                     {
                         ["es"] = "Orco antiguo",
                         ["fr"] = "Orque ancien",
@@ -8901,7 +8901,7 @@ LibCraftTextVars =
                         ["de"] = "Orkahnen",
                         ["ru"] = "древнеорочий",
                     },
-                    [23] = 
+                    [23] =
                     {
                         ["es"] = "Convenio de Daggerfall",
                         ["fr"] = "Alliance de Daguefilante",
@@ -8910,7 +8910,7 @@ LibCraftTextVars =
                         ["de"] = "Dolchsturz-Bündnis",
                         ["ru"] = "Даггерфольский Ковенант",
                     },
-                    [24] = 
+                    [24] =
                     {
                         ["es"] = "Pacto de Ebonheart",
                         ["fr"] = "Pacte de Cœurébène",
@@ -8919,7 +8919,7 @@ LibCraftTextVars =
                         ["de"] = "Ebenherz-Pakt",
                         ["ru"] = "Эбонхартский Пакт",
                     },
-                    [25] = 
+                    [25] =
                     {
                         ["es"] = "Dominio Aldmeri",
                         ["fr"] = "Domaine aldmeri",
@@ -8928,7 +8928,7 @@ LibCraftTextVars =
                         ["de"] = "Aldmeri-Dominion",
                         ["ru"] = "Альдмерский Доминион",
                     },
-                    [26] = 
+                    [26] =
                     {
                         ["es"] = "Mercenario",
                         ["fr"] = "Mercenaire",
@@ -8937,7 +8937,7 @@ LibCraftTextVars =
                         ["de"] = "Söldner",
                         ["ru"] = "наемнический",
                     },
-                    [27] = 
+                    [27] =
                     {
                         ["es"] = "Celestial",
                         ["fr"] = "Céleste",
@@ -8946,7 +8946,7 @@ LibCraftTextVars =
                         ["de"] = "Himmlische",
                         ["ru"] = "Небожители",
                     },
-                    [28] = 
+                    [28] =
                     {
                         ["es"] = "Cristal",
                         ["fr"] = "Verre",
@@ -8955,7 +8955,7 @@ LibCraftTextVars =
                         ["de"] = "Glasit",
                         ["ru"] = "стеклянный",
                     },
-                    [29] = 
+                    [29] =
                     {
                         ["es"] = "Xivkyn",
                         ["fr"] = "Xivkyn",
@@ -8964,7 +8964,7 @@ LibCraftTextVars =
                         ["de"] = "Xivkyn",
                         ["ru"] = "зивкинский",
                     },
-                    [30] = 
+                    [30] =
                     {
                         ["es"] = "Alma condenada",
                         ["fr"] = "Absous",
@@ -8973,7 +8973,7 @@ LibCraftTextVars =
                         ["de"] = "Seelenberaubte",
                         ["ru"] = "душелишенные",
                     },
-                    [31] = 
+                    [31] =
                     {
                         ["es"] = "Draugr",
                         ["fr"] = "Draugr",
@@ -8982,7 +8982,7 @@ LibCraftTextVars =
                         ["de"] = "Draugr",
                         ["ru"] = "драугрский",
                     },
-                    [32] = 
+                    [32] =
                     {
                         ["es"] = "Maormer",
                         ["fr"] = "Maormer",
@@ -8991,7 +8991,7 @@ LibCraftTextVars =
                         ["de"] = "Maormer",
                         ["ru"] = "маормерский",
                     },
-                    [33] = 
+                    [33] =
                     {
                         ["es"] = "Akaviri",
                         ["fr"] = "Akavirois",
@@ -9000,7 +9000,7 @@ LibCraftTextVars =
                         ["de"] = "Akaviri",
                         ["ru"] = "акавирский",
                     },
-                    [34] = 
+                    [34] =
                     {
                         ["es"] = "Imperial",
                         ["fr"] = "Impérial",
@@ -9009,7 +9009,7 @@ LibCraftTextVars =
                         ["de"] = "Kaiserliche",
                         ["ru"] = "имперский",
                     },
-                    [35] = 
+                    [35] =
                     {
                         ["es"] = "Yokudan",
                         ["fr"] = "Yokudan",
@@ -9018,7 +9018,7 @@ LibCraftTextVars =
                         ["de"] = "Yokudaner",
                         ["ru"] = "йокуданский",
                     },
-                    [36] = 
+                    [36] =
                     {
                         ["es"] = "Universal",
                         ["fr"] = "Universel",
@@ -9027,7 +9027,7 @@ LibCraftTextVars =
                         ["de"] = "universell",
                         ["ru"] = "универсальный",
                     },
-                    [37] = 
+                    [37] =
                     {
                         ["es"] = "Invierno de la Cuenca",
                         ["fr"] = "Hiver de la Crevasse",
@@ -9036,7 +9036,7 @@ LibCraftTextVars =
                         ["de"] = "Reikwinter",
                         ["ru"] = "зимний предельцев",
                     },
-                    [38] = 
+                    [38] =
                     {
                         ["es"] = "Tsaesci",
                         ["fr"] = "Tsaesci",
@@ -9045,7 +9045,7 @@ LibCraftTextVars =
                         ["de"] = "Tsaesci",
                         ["ru"] = "цаэски",
                     },
-                    [39] = 
+                    [39] =
                     {
                         ["es"] = "Minotauro",
                         ["fr"] = "Minotaure",
@@ -9054,7 +9054,7 @@ LibCraftTextVars =
                         ["de"] = "Minotauren",
                         ["ru"] = "минотаврский",
                     },
-                    [40] = 
+                    [40] =
                     {
                         ["es"] = "Ébano",
                         ["fr"] = "Ébonite",
@@ -9063,7 +9063,7 @@ LibCraftTextVars =
                         ["de"] = "Ebenerz",
                         ["ru"] = "эбонитовый",
                     },
-                    [41] = 
+                    [41] =
                     {
                         ["es"] = "Guardia de Abah",
                         ["fr"] = "Garde d'Abah",
@@ -9072,7 +9072,7 @@ LibCraftTextVars =
                         ["de"] = "Abahs Wacht",
                         ["ru"] = "стража Причала Абы",
                     },
-                    [42] = 
+                    [42] =
                     {
                         ["es"] = "Cambiapieles",
                         ["fr"] = "Changepeau",
@@ -9081,7 +9081,7 @@ LibCraftTextVars =
                         ["de"] = "Gestaltwandler",
                         ["ru"] = "оборотни",
                     },
-                    [43] = 
+                    [43] =
                     {
                         ["es"] = "Morag Tong",
                         ["fr"] = "Morag Tong",
@@ -9090,7 +9090,7 @@ LibCraftTextVars =
                         ["de"] = "Morag Tong",
                         ["ru"] = "Мораг Тонг",
                     },
-                    [44] = 
+                    [44] =
                     {
                         ["es"] = "Ra Gada",
                         ["fr"] = "Ra Gada",
@@ -9099,7 +9099,7 @@ LibCraftTextVars =
                         ["de"] = "Ro'Wada",
                         ["ru"] = "Ра Гада",
                     },
-                    [45] = 
+                    [45] =
                     {
                         ["es"] = "Dro-m'Athra",
                         ["fr"] = "Dro-m'Athra",
@@ -9108,7 +9108,7 @@ LibCraftTextVars =
                         ["de"] = "dro-m'Athra",
                         ["ru"] = "дро-м'Атра",
                     },
-                    [46] = 
+                    [46] =
                     {
                         ["es"] = "Liga de asesinos",
                         ["fr"] = "Ligue des assassins",
@@ -9117,7 +9117,7 @@ LibCraftTextVars =
                         ["de"] = "Assassinenbund",
                         ["ru"] = "Лига убийц",
                     },
-                    [47] = 
+                    [47] =
                     {
                         ["es"] = "Forajido",
                         ["fr"] = "Hors-la-loi",
@@ -9126,7 +9126,7 @@ LibCraftTextVars =
                         ["de"] = "Gesetzlose",
                         ["ru"] = "разбойничий",
                     },
-                    [48] = 
+                    [48] =
                     {
                         ["es"] = "Redoran",
                         ["fr"] = "Redoran",
@@ -9135,7 +9135,7 @@ LibCraftTextVars =
                         ["de"] = "Redoran",
                         ["ru"] = "редоранский",
                     },
-                    [49] = 
+                    [49] =
                     {
                         ["es"] = "Hlaalu",
                         ["fr"] = "Hlaalu",
@@ -9144,7 +9144,7 @@ LibCraftTextVars =
                         ["de"] = "Hlaalu",
                         ["ru"] = "Хлаалу",
                     },
-                    [50] = 
+                    [50] =
                     {
                         ["es"] = "Ordenante militante",
                         ["fr"] = "Ordonnateur militant",
@@ -9153,7 +9153,7 @@ LibCraftTextVars =
                         ["de"] = "kriegerische Ordinatoren",
                         ["ru"] = "боевые ординаторы",
                     },
-                    [51] = 
+                    [51] =
                     {
                         ["es"] = "Telvanni",
                         ["fr"] = "Telvanni",
@@ -9162,7 +9162,7 @@ LibCraftTextVars =
                         ["de"] = "Telvanni",
                         ["ru"] = "Телванни",
                     },
-                    [52] = 
+                    [52] =
                     {
                         ["es"] = "Armígero Jovial",
                         ["fr"] = "Exalté",
@@ -9171,7 +9171,7 @@ LibCraftTextVars =
                         ["de"] = "Kriegswappenträger",
                         ["ru"] = "Вечная стража",
                     },
-                    [53] = 
+                    [53] =
                     {
                         ["es"] = "Magoscarcha",
                         ["fr"] = "Lancegivre",
@@ -9180,7 +9180,7 @@ LibCraftTextVars =
                         ["de"] = "Frostwirker",
                         ["ru"] = "заклинатель мороза",
                     },
-                    [54] = 
+                    [54] =
                     {
                         ["es"] = "Cenicio",
                         ["fr"] = "Cendrais",
@@ -9189,7 +9189,7 @@ LibCraftTextVars =
                         ["de"] = "Aschländer",
                         ["ru"] = "эшлендеры",
                     },
-                    [55] = 
+                    [55] =
                     {
                         ["es"] = "Culto del Gusano",
                         ["fr"] = "Culte du Ver",
@@ -9198,7 +9198,7 @@ LibCraftTextVars =
                         ["de"] = "Wurmkult",
                         ["ru"] = "культ Червя",
                     },
-                    [56] = 
+                    [56] =
                     {
                         ["es"] = "Anillo de Seda",
                         ["fr"] = "Anneau de soie",
@@ -9207,7 +9207,7 @@ LibCraftTextVars =
                         ["de"] = "Seidenring",
                         ["ru"] = "Шелковое Кольцо",
                     },
-                    [57] = 
+                    [57] =
                     {
                         ["es"] = "Mazzatun",
                         ["fr"] = "Mazzatun",
@@ -9216,7 +9216,7 @@ LibCraftTextVars =
                         ["de"] = "Mazzatun",
                         ["ru"] = "Маззатун",
                     },
-                    [58] = 
+                    [58] =
                     {
                         ["es"] = "Arlequín siniestro",
                         ["fr"] = "Sinistre Arlequin",
@@ -9225,7 +9225,7 @@ LibCraftTextVars =
                         ["de"] = "grimmiger Harlekin",
                         ["ru"] = "мрачный арлекин",
                     },
-                    [59] = 
+                    [59] =
                     {
                         ["es"] = "Hollowjack",
                         ["fr"] = "Hallowjack",
@@ -9234,7 +9234,7 @@ LibCraftTextVars =
                         ["de"] = "Kürbisfratze",
                         ["ru"] = "Пустоголовый Джек",
                     },
-                    [60] = 
+                    [60] =
                     {
                         ["es"] = "Refabricado",
                         ["fr"] = "Refabriqué",
@@ -9243,7 +9243,7 @@ LibCraftTextVars =
                         ["de"] = "Rekonstruktion",
                         ["ru"] = "переработанный",
                     },
-                    [61] = 
+                    [61] =
                     {
                         ["es"] = "Forja de Sangre",
                         ["fr"] = "Forgesang",
@@ -9252,7 +9252,7 @@ LibCraftTextVars =
                         ["de"] = "Blutquellschmiede",
                         ["ru"] = "Кровавая кузница",
                     },
-                    [62] = 
+                    [62] =
                     {
                         ["es"] = "Cuenorror",
                         ["fr"] = "Corneffroi",
@@ -9261,7 +9261,7 @@ LibCraftTextVars =
                         ["de"] = "Grauenshorn",
                         ["ru"] = "Грозный Рог",
                     },
-                    [65] = 
+                    [65] =
                     {
                         ["es"] = "Apóstoles",
                         ["fr"] = "Apôtre",
@@ -9270,7 +9270,7 @@ LibCraftTextVars =
                         ["de"] = "Apostel",
                         ["ru"] = "апостолы",
                     },
-                    [66] = 
+                    [66] =
                     {
                         ["es"] = "Sombra de Ébano",
                         ["fr"] = "Ombrébène",
@@ -9279,7 +9279,7 @@ LibCraftTextVars =
                         ["de"] = "Ebenschatten",
                         ["ru"] = "эбонитовая тень",
                     },
-                    [67] = 
+                    [67] =
                     {
                         ["es"] = "Intrépidos",
                         ["fr"] = "Indomptables",
@@ -9288,7 +9288,7 @@ LibCraftTextVars =
                         ["de"] = "Unerschrockene",
                         ["ru"] = "Неустрашимые",
                     },
-                    [68] = 
+                    [68] =
                     {
                         ["es"] = "USE ME",
                         ["fr"] = "USE ME",
@@ -9297,7 +9297,7 @@ LibCraftTextVars =
                         ["de"] = "USE ME",
                         ["ru"] = "[EN]USE ME",
                     },
-                    [69] = 
+                    [69] =
                     {
                         ["es"] = "Guarida de los Colmillos",
                         ["fr"] = "Repaire du croc",
@@ -9306,7 +9306,7 @@ LibCraftTextVars =
                         ["de"] = "Krallenhort",
                         ["ru"] = "Логово Клыка",
                     },
-                    [70] = 
+                    [70] =
                     {
                         ["es"] = "Invocadora de Escamas",
                         ["fr"] = "Mandécailles",
@@ -9315,7 +9315,7 @@ LibCraftTextVars =
                         ["de"] = "Schuppenruferin",
                         ["ru"] = "Призывательница Чешуи",
                     },
-                    [71] = 
+                    [71] =
                     {
                         ["es"] = "Orden Psijic",
                         ["fr"] = "Ordre psijique",
@@ -9324,7 +9324,7 @@ LibCraftTextVars =
                         ["de"] = "Psijik-Orden",
                         ["ru"] = "орден Псиджиков",
                     },
-                    [72] = 
+                    [72] =
                     {
                         ["es"] = "Sapiarca",
                         ["fr"] = "Sapiarque",
@@ -9333,7 +9333,7 @@ LibCraftTextVars =
                         ["de"] = "Sapiarchen",
                         ["ru"] = "сапиархи",
                     },
-                    [73] = 
+                    [73] =
                     {
                         ["es"] = "Welkynar",
                         ["fr"] = "Welkynar",
@@ -9342,7 +9342,7 @@ LibCraftTextVars =
                         ["de"] = "Welkynare",
                         ["ru"] = "велкинары",
                     },
-                    [74] = 
+                    [74] =
                     {
                         ["es"] = "Dremora",
                         ["fr"] = "Drémora",
@@ -9351,7 +9351,7 @@ LibCraftTextVars =
                         ["de"] = "Dremora",
                         ["ru"] = "дремора",
                     },
-                    [75] = 
+                    [75] =
                     {
                         ["es"] = "Pyandoneano",
                         ["fr"] = "Pyandonéen",
@@ -9360,7 +9360,7 @@ LibCraftTextVars =
                         ["de"] = "Pyandonesier",
                         ["ru"] = "пиандонейский",
                     },
-                    [76] = 
+                    [76] =
                     {
                         ["es"] = "Divina Justicia",
                         ["fr"] = "Poursuite divine",
@@ -9369,7 +9369,7 @@ LibCraftTextVars =
                         ["de"] = "Göttliche Strafbehörde",
                         ["ru"] = "Божественное Обвинение",
                     },
-                    [77] = 
+                    [77] =
                     {
                         ["es"] = "Huntsman",
                         ["fr"] = "Chasseur",
@@ -9378,7 +9378,7 @@ LibCraftTextVars =
                         ["de"] = "Jäger",
                         ["ru"] = "Охотник",
                     },
-                    [78] = 
+                    [78] =
                     {
                         ["es"] = "Silver Dawn",
                         ["fr"] = "Aube d'argent",
@@ -9387,7 +9387,7 @@ LibCraftTextVars =
                         ["de"] = "Silbermorgen",
                         ["ru"] = "Серебряный Рассвет",
                     },
-                    [79] = 
+                    [79] =
                     {
                         ["fr"] = "Aiguemortes",
                         ["ja"] = "デッドウォーター",
@@ -9395,7 +9395,7 @@ LibCraftTextVars =
                         ["de"] = "Totwasser",
                         ["ru"] = "мертвая-вода",
                     },
-                    [80] = 
+                    [80] =
                     {
                         ["fr"] = "garde prétorienne",
                         ["ja"] = "儀仗兵",
@@ -9403,7 +9403,7 @@ LibCraftTextVars =
                         ["de"] = "Ehrengarde",
                         ["ru"] = "почетная стража",
                     },
-                    [81] = 
+                    [81] =
                     {
                         ["fr"] = "Aînés argoniens",
                         ["ja"] = "古代アルゴニアン",
@@ -9414,14 +9414,14 @@ LibCraftTextVars =
                 },
                 ["version"] = 1,
             },
-            ["ziggr-alt-two"] = 
+            ["ziggr-alt-two"] =
             {
                 ["alliance"] = "AD",
-                ["steps"] = 
+                ["steps"] =
                 {
-                    [1] = 
+                    [1] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de los militares, buscando mantener equipadas a las tropas en Cyrodiil. Me han encargado hacer varios mandobles, escarpes y guanteletes de acero para completar mi contrato.",
                             ["it"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Steel Greatswords, Sabatons, and Gauntlets to complete my contract.",
@@ -9432,9 +9432,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Steel Greatswords, Sabatons, and Gauntlets to complete my contract.",
                         },
                     },
-                    [2] = 
+                    [2] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de los militares, buscando mantener equipadas a las tropas en Cyrodiil. Me han encargado hacer varios zapatos, capuchas y bandas de lino para completar mi contrato.",
                             ["it"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Linen Shoes, Hats, and Sashes to complete my contract.",
@@ -9445,9 +9445,9 @@ LibCraftTextVars =
                             ["ru"] = "Этот заказ поступил от армии, желающей снарядить своих солдат в Сиродиле. Чтобы выполнить контракт, мне нужно создать несколько льняных башмаков, головных уборов и поясов.",
                         },
                     },
-                    [3] = 
+                    [3] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de los militares, buscando mantener equipadas a las tropas en Cyrodiil. Me han encargado hacer varias varas infernales, glaciares y eléctricas de roble para completar mi contrato.",
                             ["it"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Oak Inferno Staves, Ice Staves, and Lightning Staves to complete my contract.",
@@ -9458,9 +9458,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating several Oak Inferno Staves, Ice Staves, and Lightning Staves to complete my contract.",
                         },
                     },
-                    [4] = 
+                    [4] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de los militares, buscando mantener equipadas a las tropas en Cyrodiil. Me han encargado crear un glifo insignificante de vida y conseguir una runa de potencia Ode para completar mi contrato.",
                             ["it"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Petty Glyph of Health and acquiring an Ode Potency Rune to complete my contract.",
@@ -9471,9 +9471,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Petty Glyph of Health and acquiring an Ode Potency Rune to complete my contract.",
                         },
                     },
-                    [5] = 
+                    [5] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de la rama de reabastecimiento de los militares, un grupo encargado de mantener equipadas a las tropas en Cyrodiil. Me han encargado preparar zanahorias al ajo a la nibenesa y néctar de cebada para completar mi contrato. Los militares esperan la entrega en el Bosque de Graht.",
                             ["it"] = "This writ is from the resupply arm of the military, a group charged with keeping the troops in Cyrodiil outfitted. I've been tasked with creating Nibenese Garlic Carrots and Barley Nectar to complete my contract. The military expects delivery in Grahtwood.",
@@ -9484,9 +9484,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the resupply arm of the military, a group charged with keeping the troops in Cyrodiil outfitted. I've been tasked with creating нибенейская морковь с чесноком and ячменный нектар to complete my contract. The military expects delivery in Grahtwood.",
                         },
                     },
-                    [6] = 
+                    [6] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de la rama de reabastecimiento de los militares, un grupo encargado de mantener equipadas a las tropas en Cyrodiil. Me han encargado crear un trago de reducción de magia y conseguir algo de agua primigenia para completar mi contrato.",
                             ["it"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Dram of Ravage Magicka and acquiring some Pristine Water.",
@@ -9497,9 +9497,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating a Dram of Ravage Magicka and acquiring some Pristine Water.",
                         },
                     },
-                    [7] = 
+                    [7] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "This writ is from the military, seeking to keep the troops in Cyrodiil outfitted. I've been tasked with creating two Copper Necklaces to complete my contract.",
                             ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation de deux colliers de cuivre.",
@@ -9510,7 +9510,7 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["skill_rank"] = 
+                ["skill_rank"] =
                 {
                     [1] = 2,
                     [2] = 2,
@@ -9520,13 +9520,13 @@ LibCraftTextVars =
                     [6] = 2,
                     [7] = 2,
                 },
-                ["conditions"] = 
+                ["conditions"] =
                 {
-                    [1] = 
+                    [1] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [4] = 
+                            [4] =
                             {
                                 ["es"] = "Fabrica unos guanteletes de acero normales: 0/1",
                                 ["it"] = "Craft Steel Gauntlets: 0 / 1",
@@ -9536,7 +9536,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Stahlhentzen her: 0/1",
                                 ["ru"] = "Craft Normal Steel Gauntlets: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un mandoble de acero normal: 0/1",
                                 ["it"] = "Craft Steel Greatsword: 0 / 1",
@@ -9546,7 +9546,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Stahlbidenhänder her: 0/1",
                                 ["ru"] = "Craft Normal Steel Greatsword: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unos escarpes de acero normales: 0/1",
                                 ["it"] = "Craft Steel Sabatons: 0 / 1",
@@ -9558,11 +9558,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [2] = 
+                    [2] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [4] = 
+                            [4] =
                             {
                                 ["es"] = "Fabrica una banda de lino normal: 0/1",
                                 ["it"] = "Craft Linen Sash: 0 / 1",
@@ -9572,7 +9572,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Flachsschärpen her: 0/1",
                                 ["ru"] = "Craft Normal Linen Sash: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica unos zapatos de lino normales: 0/1",
                                 ["it"] = "Craft Linen Shoes: 0 / 1",
@@ -9582,7 +9582,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Flachsschuhe her: 0/1",
                                 ["ru"] = "Craft Normal Linen Shoes: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica una capucha de lino normal: 0/1",
                                 ["it"] = "Craft Linen Hat: 0 / 1",
@@ -9594,11 +9594,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [3] = 
+                    [3] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [4] = 
+                            [4] =
                             {
                                 ["es"] = "Fabrica una vara eléctrica de roble normal: 0/1",
                                 ["it"] = "Craft Oak Lightning Staff: 0 / 1",
@@ -9608,7 +9608,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Eichenblitzstäbe her: 0/1",
                                 ["ru"] = "Craft Normal Oak Lightning Staff: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica una vara infernal de roble normal: 0/1",
                                 ["it"] = "Craft Oak Inferno Staff: 0 / 1",
@@ -9618,7 +9618,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Eichenflammenstäbe her: 0/1",
                                 ["ru"] = "Craft Normal Oak Inferno Staff: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica una vara glaciar de roble normal: 0/1",
                                 ["it"] = "Craft Oak Ice Staff: 0 / 1",
@@ -9630,11 +9630,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [4] = 
+                    [4] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica un glifo insignificante de vida con Ta: 0/1",
                                 ["it"] = "Craft Petty Glyph of Health: 0 / 1",
@@ -9644,7 +9644,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt mit einer Ta-Rune eine winzige Glyphe des Lebens her: 0/1",
                                 ["ru"] = "Craft Petty Glyph of Health With Ta: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Adquiere una runa de potencia Ode: 1/1",
                                 ["it"] = "Acquire Ode Potency Rune: 1 / 1",
@@ -9656,11 +9656,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [5] = 
+                    [5] =
                     {
-                        [2] = 
+                        [2] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Los cerveceros y los cocineros pueden proporcionar recetas",
                                 ["it"] = "TRACKER GOAL TEXT",
@@ -9671,9 +9671,9 @@ LibCraftTextVars =
                                 ["ru"] = "Пивовары и повара могут снабдить вас рецептами",
                             },
                         },
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Preparæ zanahorias al ajo a la nibenesa: 0/1",
                                 ["it"] = "Craft Nibenese Garlic Carrots: 0 / 1",
@@ -9683,7 +9683,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt einige nibenesische Knoblauchkarotten her: 0/1",
                                 ["ru"] = "Создать — нибенейская морковь с чесноком: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Preparæ néctar de cebada: 0/1",
                                 ["it"] = "Craft Barley Nectar: 0 / 1",
@@ -9695,11 +9695,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [6] = 
+                    [6] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Prepara un trago de reducción de magia: 0/1",
                                 ["it"] = "Craft Dram of Ravage Magicka: 0 / 1",
@@ -9709,7 +9709,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt Schlücke der Magickaverwüstung her: 0/1",
                                 ["ru"] = "Craft Dram of Ravage Magicka: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Adquiere agua prístina: 3/3",
                                 ["it"] = "Acquire Pristine Water: 3 / 3",
@@ -9721,11 +9721,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    [7] = 
+                    [7] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica dos collares de cobre: 0/2",
                                 ["it"] = "TRACKER GOAL TEXT: 0 / 2",
@@ -9739,9 +9739,9 @@ LibCraftTextVars =
                     },
                 },
                 ["version"] = 1,
-                ["quests"] = 
+                ["quests"] =
                 {
-                    [1] = 
+                    [1] =
                     {
                         ["es"] = "Encargo de herrería",
                         ["it"] = "Blacksmith Writ",
@@ -9751,7 +9751,7 @@ LibCraftTextVars =
                         ["de"] = "Schmiedeschrieb",
                         ["ru"] = "Заказ кузнецу",
                     },
-                    [2] = 
+                    [2] =
                     {
                         ["es"] = "Encargo de sastrería",
                         ["it"] = "Clothier Writ",
@@ -9761,7 +9761,7 @@ LibCraftTextVars =
                         ["de"] = "Schneiderschrieb",
                         ["ru"] = "Заказ портному",
                     },
-                    [3] = 
+                    [3] =
                     {
                         ["es"] = "Encargo de carpintería",
                         ["it"] = "Woodworker Writ",
@@ -9771,7 +9771,7 @@ LibCraftTextVars =
                         ["de"] = "Schreinerschrieb",
                         ["ru"] = "Заказ столяру",
                     },
-                    [4] = 
+                    [4] =
                     {
                         ["es"] = "Encargo de encantamiento",
                         ["it"] = "Enchanter Writ",
@@ -9781,7 +9781,7 @@ LibCraftTextVars =
                         ["de"] = "Verzaubererschrieb",
                         ["ru"] = "Заказ зачарователю",
                     },
-                    [5] = 
+                    [5] =
                     {
                         ["es"] = "Encargo de provisiones",
                         ["it"] = "Provisioner Writ",
@@ -9791,7 +9791,7 @@ LibCraftTextVars =
                         ["de"] = "Versorgerschrieb",
                         ["ru"] = "Заказ снабженцу",
                     },
-                    [6] = 
+                    [6] =
                     {
                         ["es"] = "Encargo de alquimia",
                         ["it"] = "Alchemist Writ",
@@ -9801,7 +9801,7 @@ LibCraftTextVars =
                         ["de"] = "Alchemistenschrieb",
                         ["ru"] = "Заказ алхимику",
                     },
-                    [7] = 
+                    [7] =
                     {
                         ["es"] = "Encargo de artesanía de joyería",
                         ["it"] = "",
@@ -9813,14 +9813,14 @@ LibCraftTextVars =
                     },
                 },
             },
-            ["ziggr-alt-nine"] = 
+            ["ziggr-alt-nine"] =
             {
                 ["alliance"] = "EP",
-                ["steps"] = 
+                ["steps"] =
                 {
-                    ["al"] = 
+                    ["al"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es del Comité cívico de Venganza y Renovación de Orsinium, que necesita más suministros pero no quiere faltar el respeto a sus alquimistas. Me han encargado hacer un veneno de daño al aguante IX y conseguir algo de lagrimas de Lorkhan para completar mi contrato.",
                             ["fr"] = "Cette commande émane du Comité civique de Vengeance et du Renouveau d'Orsinium, qui a besoin de fournitures mais ne veut pas manquer de respect à ses cuisiniers. On m'a demandé de préparer un poison de dégâts de Vigueur IX et d'acquérir des œufs d'araignée pour remplir la commande.",
@@ -9830,9 +9830,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from the Orsinium Civic Renewal and Vengeance Committee, needing more supplies but wishing to not shame their alchemists. I've been tasked with creating a Damage Stamina Poison IX and acquiring Spider Eggs to complete my contract.",
                         },
                     },
-                    ["cl"] = 
+                    ["cl"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los encargados del suministro de Belkarth. Éste busca armaduras de tejido sombrío para los aventureros de vanguardia. Me han encargado hacer varios zapatos, capuchas y bandas para completar mi contrato.",
                             ["fr"] = "Cette commande émane d'un intendant de Belkarth. Il m'y demande des pièces d'armure en tissombre pour les aventuriers de l'avant-garde. On m'a commandé plusieurs chaussures, chapeaux et baudriers.",
@@ -9843,9 +9843,9 @@ LibCraftTextVars =
                             ["ru"] = "Этот заказ поступил от одного из ответственных за обеспечение в Белкарте. Ему нужны тенетканые доспехи для приключенцев на передовой. Чтобы выполнить контракт, мне нужно создать несколько башмаков, головных уборов и поясов.",
                         },
                     },
-                    ["bs"] = 
+                    ["bs"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los responsables del suministro de Belkarth. Ése busca armaduras de acero del vacío para los aventureros de vanguardia. Me han encargado hacer varios mandobles, escarpes y guanteletes para completar mi contrato.",
                             ["fr"] = "Cette commande émane d'un intendant de Belkarth. Il m'y demande des armes et armures en acier du néant pour les aventuriers de l'avant-garde. On m'a commandé plusieurs épées longues, solerets et gantelets.",
@@ -9856,9 +9856,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks Voidsteel armor for vanguard adventurers. I've been tasked with creating several Greatswords, Sabatons, and Gauntlets to complete my contract.",
                         },
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los responsables del suministro de Belkarth. Ése busca armas y armaduras para los aventureros de vanguardia. Me han encargado hacer varias varas infernales, glaciares y eléctricas de nocteca para completar mi contrato.",
                             ["fr"] = "Cette commande émane d'un intendant de Belkarth. Il m'y demande des armes et armures en acier du néant pour les aventuriers de l'avant-garde. On m'a commandé plusieurs bâtons infernaux, bâtons de glace et bâtons de foudre en bois de nuit.",
@@ -9869,9 +9869,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks arms and armor for vanguard adventurers. I've been tasked with creating several Nightwood Inferno Staves, Ice Staves, and Lightning Staves to complete my contract.",
                         },
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating two Platinum Necklaces to complete my contract.",
                             ["fr"] = "Cette commande émane d'un consortium commercial, des marchands transportant des denrées aux quatre coins de Nirn. On m'a confié la préparation de deux colliers de platine.",
@@ -9881,9 +9881,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from a group of \"independent merchants\", trading coin for supplies. I've been tasked with creating two Platinum Necklaces to complete my contract.",
                         },
                     },
-                    ["en"] = 
+                    ["en"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de uno de los encargados del suministro de Belkarth. Éste busca armas y armaduras para los aventureros de vanguardia. Me han encargado crear un glifo monumental de vida y conseguir una runa de potencia Rede para completar mi contrato.",
                             ["fr"] = "Cette commande émane d'un intendant de Belkarth. Il m'y demande des armes et armures de vide pour les aventuriers de l'avant-garde. On m'a commandé un glyphe de Santé monumental et une rune de puissance Rede.",
@@ -9894,9 +9894,9 @@ LibCraftTextVars =
                             ["ru"] = "This writ is from one of the Belkarth supply masters. This one seeks arms and armor for vanguard adventurers. I've been tasked with creating a Monumental Glyph of Health and acquiring a Rede Potency Rune to complete my contract.",
                         },
                     },
-                    ["pr"] = 
+                    ["pr"] =
                     {
-                        [1] = 
+                        [1] =
                         {
                             ["es"] = "Este encargo es de la rama de reabastecimiento de los militares, un grupo encargado de mantener equipadas a las tropas en Cyrodiil. Me han encargado preparar Crema de marisco con battaglir y Licor eltérico para completar mi contrato. Los militares esperan la entrega en Deshaan.",
                             ["fr"] = "Cette commande émane de l'office d'intendance militaire, qui se charge d'alimenter les troupes en Cyrodiil. On m'a demandé de préparer une bisque de battaglir et un tord-boyau Elthérique. L'armée attend cette livraison à Deshaan.",
@@ -9908,7 +9908,7 @@ LibCraftTextVars =
                         },
                     },
                 },
-                ["skill_rank"] = 
+                ["skill_rank"] =
                 {
                     [1] = 9,
                     [2] = 9,
@@ -9918,13 +9918,13 @@ LibCraftTextVars =
                     [6] = 9,
                     [7] = 5,
                 },
-                ["conditions"] = 
+                ["conditions"] =
                 {
-                    ["al"] = 
+                    ["al"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Adquiere huevo de araña: 3/3",
                                 ["fr"] = "Acquérez un œuf d'araignée : 3/3",
@@ -9933,7 +9933,7 @@ LibCraftTextVars =
                                 ["de"] = "Besorgt ein Spinnenei: 3/3",
                                 ["ru"] = "Раздобыть — Паучье яйцо: 3 / 3",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Prepara un veneno de daño al aguante IX: 0/1",
                                 ["fr"] = "Fabriquer un poison de Dégâts de Vigueur IX : 0/1",
@@ -9944,11 +9944,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["cl"] = 
+                    ["cl"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica unos zapatos de tejido sombrío normales: 0/1",
                                 ["fr"] = "Fabriquez des chaussures en tissombre normales : 0/1",
@@ -9958,7 +9958,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Leerenstoffschuhe her: 0/1",
                                 ["ru"] = "Craft Normal Shadowspun Shoes: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica una capucha de tejido sombrío normal: 0/1",
                                 ["fr"] = "Fabriquez un chapeau en tissombre normal : 0/1",
@@ -9968,7 +9968,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Leerenstoffhüte her: 0/1",
                                 ["ru"] = "Craft Normal Shadowspun Hat: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica una banda de tejido sombrío normal: 0/1",
                                 ["fr"] = "Fabriquez un baudrier en tissombre normal : 0/1",
@@ -9980,11 +9980,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["bs"] = 
+                    ["bs"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un mandoble de acero del vacío normal: 0/1",
                                 ["fr"] = "Fabriquez une épée longue en acier du néant normale : 0/1",
@@ -9994,7 +9994,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Leerenstahlbidenhänder her: 0/1",
                                 ["ru"] = "Craft Normal Voidsteel Greatsword: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica unos escarpes de acero del vacío normales: 0/1",
                                 ["fr"] = "Fabriquez des solerets en acier du néant normaux : 0/1",
@@ -10004,7 +10004,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Leerenstahlpanzerschuhe her: 0/1",
                                 ["ru"] = "Craft Normal Voidsteel Sabatons: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica unos guanteletes de acero del vacío normales: 0/1",
                                 ["fr"] = "Fabriquez des gantelets en acier du néant normaux : 0/1",
@@ -10016,11 +10016,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica una vara infernal de nocteca normal: 0/1",
                                 ["fr"] = "Fabriquez un bâton infernal en bois de nuit normal : 0/1",
@@ -10030,7 +10030,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Nachtholzflammenstäbe her: 0/1",
                                 ["ru"] = "Craft Normal Nightwood Inferno Staff: 0 / 1",
                             },
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Fabrica una vara glaciar de nocteca normal: 0/1",
                                 ["fr"] = "Fabriquez un bâton de glace en bois de nuit normal : 0/1",
@@ -10040,7 +10040,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt normale Nachtholzfroststäbe her: 0/1",
                                 ["ru"] = "Craft Normal Nightwood Ice Staff: 0 / 1",
                             },
-                            [3] = 
+                            [3] =
                             {
                                 ["es"] = "Fabrica una vara eléctrica de nocteca normal: 0/1",
                                 ["fr"] = "Fabriquez un bâton de foudre en bois de nuit normal : 0/1",
@@ -10052,15 +10052,15 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
-                            {
-                                ["it"] = "TRACKER GOAL TEXT: 3 / 3",
-                            },
-                            [1] = 
+                            -- [2] =
+                            -- {
+                            --     ["it"] = "TRACKER GOAL TEXT: 3 / 3",
+                            -- },
+                            [1] =
                             {
                                 ["es"] = "Fabrica dos colgantes de platino: 0/2",
                                 ["fr"] = "Fabriquez deux colliers en platine : 0/2",
@@ -10072,11 +10072,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["en"] = 
+                    ["en"] =
                     {
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Adquiere una runa de potencia Rede: 1/1",
                                 ["fr"] = "Acquérez une rune de puissance Rede : 1/1",
@@ -10086,7 +10086,7 @@ LibCraftTextVars =
                                 ["de"] = "Beschafft eine Rede-Machtrune: 1/1",
                                 ["ru"] = "Добыть руну силы Реде: 1 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Fabrica un glifo monumental de vida con Ta: 0/1",
                                 ["fr"] = "Fabriquez un glyphe monumental vital avec Ta : 0/1",
@@ -10098,11 +10098,11 @@ LibCraftTextVars =
                             },
                         },
                     },
-                    ["pr"] = 
+                    ["pr"] =
                     {
-                        [2] = 
+                        [2] =
                         {
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Los cerveceros y los cocineros pueden proporcionar recetas",
                                 ["fr"] = "Les brasseurs et cuisiniers peuvent fournir des recettes",
@@ -10113,9 +10113,9 @@ LibCraftTextVars =
                                 ["ru"] = "Пивовары и повара могут снабдить вас рецептами",
                             },
                         },
-                        [1] = 
+                        [1] =
                         {
-                            [2] = 
+                            [2] =
                             {
                                 ["es"] = "Preparæ Licor eltérico: 0/1",
                                 ["fr"] = "Préparez un tord-boyau Elthérique : 0/1",
@@ -10125,7 +10125,7 @@ LibCraftTextVars =
                                 ["de"] = "Stellt etwas eltherischen Fusel her: 0/1",
                                 ["ru"] = "Создать — самогон «Элтерический»: 0 / 1",
                             },
-                            [1] = 
+                            [1] =
                             {
                                 ["es"] = "Preparæ Crema de marisco con battaglir: 0/1",
                                 ["fr"] = "Préparez une bisque de battaglir : 0/1",
@@ -10139,9 +10139,9 @@ LibCraftTextVars =
                     },
                 },
                 ["version"] = 1,
-                ["quests"] = 
+                ["quests"] =
                 {
-                    ["al"] = 
+                    ["al"] =
                     {
                         ["es"] = "Encargo de alquimia",
                         ["fr"] = "Commande d'alchimie",
@@ -10150,7 +10150,7 @@ LibCraftTextVars =
                         ["de"] = "Alchemistenschrieb",
                         ["ru"] = "Заказ алхимику",
                     },
-                    ["cl"] = 
+                    ["cl"] =
                     {
                         ["es"] = "Encargo de sastrería",
                         ["fr"] = "Commande de tailleur",
@@ -10160,7 +10160,7 @@ LibCraftTextVars =
                         ["de"] = "Schneiderschrieb",
                         ["ru"] = "Заказ портному",
                     },
-                    ["bs"] = 
+                    ["bs"] =
                     {
                         ["es"] = "Encargo de herrería",
                         ["fr"] = "Commande de forge",
@@ -10170,7 +10170,7 @@ LibCraftTextVars =
                         ["de"] = "Schmiedeschrieb",
                         ["ru"] = "Заказ кузнецу",
                     },
-                    ["ww"] = 
+                    ["ww"] =
                     {
                         ["es"] = "Encargo de carpintería",
                         ["fr"] = "Commande de travail du bois",
@@ -10180,7 +10180,7 @@ LibCraftTextVars =
                         ["de"] = "Schreinerschrieb",
                         ["ru"] = "Заказ столяру",
                     },
-                    ["jw"] = 
+                    ["jw"] =
                     {
                         ["es"] = "Encargo de artesanía de joyería",
                         ["fr"] = "Commande de joaillerie",
@@ -10190,7 +10190,7 @@ LibCraftTextVars =
                         ["de"] = "Schmuckhandwerksschrieb",
                         ["ru"] = "Заказ ювелиру",
                     },
-                    ["en"] = 
+                    ["en"] =
                     {
                         ["es"] = "Encargo de encantamiento",
                         ["fr"] = "Commandes d'enchantement",
@@ -10200,7 +10200,7 @@ LibCraftTextVars =
                         ["de"] = "Verzaubererschrieb",
                         ["ru"] = "Заказ зачарователю",
                     },
-                    ["pr"] = 
+                    ["pr"] =
                     {
                         ["es"] = "Encargo de provisiones",
                         ["fr"] = "Commande de cuisine",

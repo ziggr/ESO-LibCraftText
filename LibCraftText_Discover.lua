@@ -182,6 +182,37 @@ function LibCraftText.ToQuestIndexOverride(quest_index)
     return qi
 end
 
+-- The above hack in LibCraftText.ToQuestIndexOverride() fixes some IT Italian
+-- problems, but does introduce this one strange second condition in Italian
+-- that none of the other languages have:
+--    ["jw"] =
+--    {
+--        [1] =
+--        {                                               <-- becomes $DAILY_COND_JW_05_08
+--            [2] =                                       <-- HERE
+--            {                                           <--
+--                ["it"] = "TRACKER GOAL TEXT: 3 / 3",    <--
+--            },                                          <--
+--            [1] =
+--            {
+--                ["es"] = "Fabrica dos colgantes de platino: 0/2",
+--                ["fr"] = "Fabriquez deux colliers en platine : 0/2",
+--                ["it"] = "TRACKER GOAL TEXT: 0 / 2",
+--                ["ja"] = "プラチナのネックレスを2個作る: 0 / 2",
+--                ["en"] = "Craft Two Platinum Necklaces: 0 / 2",
+--                ["de"] = "Stellt zwei Platinhalsketten her: 0/2",
+--                ["ru"] = "Craft two Platinum Necklaces: 0 / 2",
+--            },
+--        },
+--    },
+--
+-- Which in turn causes lang_gen.lua to stumble when it encounters a lang_table
+-- with no "en" value, thus unable render that key when generating en, de, or
+-- any language other than "it". So I'll hand-strip this lang_table from
+-- saved variables for now, but I suspect I'll need to be smarter in either
+-- LibCraftText.RecordConditionText() ("don't insert a non-EN language if
+-- there's not already EN english value"?) or lang_gen. Not sure yet.
+
 -- Quest Journal -------------------------------------------------------------
 function LibCraftText.ScanQuestJournal()
     local self         = LibCraftText
