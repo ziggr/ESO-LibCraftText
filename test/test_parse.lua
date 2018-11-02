@@ -1,5 +1,6 @@
 package.path = package.path..";test/?.lua;lang/?.lua"
 require("../LibCraftText")
+require("utils_test")
 luaunit = require("luaunit")
 
 -- Testing scaffolding
@@ -22,196 +23,16 @@ local jw = CRAFTING_TYPE_JEWELRYCRAFTING
 
 local LCT = LibCraftText
 
-local function Warn(msg)
-    print(msg)
-end
 
 -- Belonga LCT ---------------------------------------------------------------
 
--- Test Scaffolding to enable unit tests to force a specific language.
-function LibCraftText.ForceLang(lang)
-    LibCraftText.force_lang = lang
-end
 
--- Test Scaffolding to enable unit tests to force a specific language.
-function LibCraftText.CurrLang()
-    if LibCraftText.force_lang then
-        return LibCraftText.force_lang
-    elseif not GetCVar then
-        return "en" -- for running outside of ESO client.
-    end
-    return GetCVar("language.2")
-end
-
--- DAILY crafting conditions
-
-LibCraftText.RE_CONDITION_DAILY = {
-    ["en"] = { "Craft Normal (.*): "
-             , "Craft a (.*): "
-             }
-,   ["de"] = { "Stellt normale (.*) her: "
-             , "Stellt ein[en]* (.*) her: "
-             }
-,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norma[lesaux]* : "
-             , "Fabriquez un (.*) en (.*): "
-             }
-,   ["ru"] = { "Craft Normal (.*): "
-             , "Craft a (.*): "
-             }
-,   ["es"] = { "Fabrica [unaos]+ (.*) de (.*) normal[es]*: "
-             , "Fabrica un (.*) de (.*): "
-             }
-,   ["ja"] = { "(.*)の(.*)%(ノーマル%)を生産する: "
-             , "(.*)の(.*)を作る: "
-             }
-}
-
--- If the supplied condition requests that we craft a weapon, armor, or jewelry
--- item at a BS/CL/WW/JW station, return the requested item and material rows
--- from LibCraftText.ITEM and LibCraftText.MATERIAL.
---
--- If the supplied condition request something else, such as a consumable
--- glyph, potion, or food, or acquire an alchemy or enchanting material,
--- return nil.
---
-function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
-    local self      = LibCraftText
-    local lang      = self.CurrLang()
-    local re_list   = self.RE_CONDITION_DAILY[lang]
-
-                        -- Some languages put material (adjective) before
-                        -- item (noun). Others put the material after.
-                        --
-                        -- It is nigh impossible to use a regex to detect the
-                        -- boundary between "Rubedoleder" and "helme" in
-                        -- "Rubedolederhelme", especially for all combinations
-                        -- of material, item, and language. So instead, we loop
-                        -- through known materials and items looking for
-                        -- matches.
-                        --
-                        -- Smush g1 and g2 into a single string that we can
-                        -- search.
-    local matitem = nil
-    for _,re in ipairs(re_list) do
-        local _,_,g1,g2 = string.find(cond_text, re)
-        matitem = g1
-        if g2 then matitem = matitem .. "/" .. g2 end
-        if matitem then break end
-
-        -- print(string.format( "matitem:'%s' cond_text:'%s'  re:'%s'"
-        --                    , tostring(matitem)
-        --                    , tostring(cond_text)
-        --                    , tostring(re)
-        --                    ))
-    end
-    if not matitem then
-        -- print(string.format( "matitem:'%s' cond_text:'%s'"
-        --                    , tostring(matitem)
-        --                    , tostring(cond_text)))
-        return nil
-    end
-    matitem = matitem:lower()
-
-    local found    = {}
-    found.item     = self.LongestMatch(matitem, self.ITEM     , crafting_type
-                            , "name", "master_name", "name_plural")
-    found.material = self.LongestMatch(matitem, self.MATERIAL , crafting_type
-                            , "name")
-    if not (found.item or found.material) then return nil end
-    return found
-end
-
--- If the supplied condition requests that we craft a potion or poison at
--- an AL station, return the requested item and level.
---
--- If the supplied condition requests something else, such as gear,
--- or acquire some alchemy or enchanting material, return nil.
---
-function LibCraftText.ParseDailyConditionCraftAL(cond_text)
-    return "Essence of Stamina"
-end
-
-
-
-local DE_UMLAUT = { ["ä"] = "a"
-                  , ["ö"] = "o"
-                  , ["ü"] = "u"
-                  }
-function LibCraftText.DeUmlaut(t)
-    tt = t
-    for k,v in pairs(DE_UMLAUT) do
-        tt = tt:gsub(k,v)
-    end
-    return tt
-end
-                        -- Return the row with the longest matching field.
-function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ... )
-    local longest_match      = { name=nil, row=nil }
-    local find_me_lower      = find_me:lower()
-    local find_me_deumlauted = LibCraftText.DeUmlaut(find_me_lower)
-    for _,fieldname in pairs({ field_name, ... }) do
-        if not fieldname then break end
-        for _, row in pairs(rows) do
-            if row.crafting_type == crafting_type then
-                local name = row[fieldname]
-                if name and (  find_me_lower:find(name:lower())
-                             or find_me_deumlauted:find(LibCraftText.DeUmlaut(name)) ) then
-                    if (not longest_match.name) or (longest_match.name:len() < name:len()) then
-                        longest_match.name = name
-                        longest_match.row  = row
--- print(string.format("yep   find_me:'%s'  row:'%s'", find_me, name:lower()))
-                    end
--- else print(string.format("nope  find_me:'%s'  row:'%s'", find_me, name:lower()))
-                end
-            end
-        end
-    end
-    return longest_match.row
-end
 
 -- End Belonga LCT -----------------------------------------------------------
 
-                        -- The 6 supported languages. Italian is not yet
-                        -- supported because its translation is partial:
-                        -- instead of "Craft a Platinum Ring: 0 / 1", Italian
-                        -- displays information-free "TRACKER GOAL TEXT: 0 / 1"
-                        --
-LANG_ORDER = { "en", "de", "fr", "ru", "es", "ja" }
-
 TestDailyCondition = {}
-
--- Zig modified luaunit.lua to call this new function once outside of
--- any `--repeat N` iteration. This lets us reset the language cycle
--- back to "en" at the start of each individual .TestX() function's iteration.
-function TestDailyCondition:setUpOuter()
-    self.lang_index = nil
-end
-
--- Advance to next language. Allows us to run each .TestX() function
--- once for each supported language in LANG_ORDER.
---
--- luaunit calls .setUp() before each call to .TestX(). And if you pass
--- `--repeat N` on the commant line, luaunit will repeat the .setUp()/.TestX()
--- calls N times.
---
--- Yes, it is REALLY inefficient to swap languages before each .TestX() call,
--- would be better to run the entire test suite in a language, THEN swap
--- languages to run again in a different language. But that's just not how
--- luaunit is designed, and fighting or rewriting that tool is so far removed
--- from my primary work product (parser of crafting text) that it isn't worth
--- the time.
---
-function TestDailyCondition:setUp()
-    if not self.lang_index then self.lang_index = 0 end
-    self.lang_index = self.lang_index + 1
-    if #LANG_ORDER < self.lang_index then
-        self.lang_index = 1
-    end
-    local want_lang = LANG_ORDER[self.lang_index]
-    LibCraftText.ForceLang(want_lang)
-    dofile(string.format("lang/%s.lua",want_lang))
-    -- print(want_lang.."  "..LibCraftText.DAILY_QUEST_TITLES[1])
-end
+TestDailyCondition.setUpOuter =  Test.setUpOuter
+TestDailyCondition.setUp      =  Test.setUp
 
 function TestDailyCondition.TestAL()
     local fodder = {
