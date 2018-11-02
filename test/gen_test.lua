@@ -3,7 +3,7 @@ require("../LibCraftText")
 
 dofile("data/lang_db.lua")
 
-GENFILE = "test/test_gen.data.lua"
+GENFILE = "test/gen_test.data.lua"
 
 C = {
     cond_unique = {}
