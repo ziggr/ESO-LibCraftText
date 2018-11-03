@@ -240,6 +240,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Nightwood Ice Staff"                , expect={ item=LCT.ITEM.ICE_STAFF        , material=LCT.MATERIAL.NIGHTWOOD      } }
 , { input="Craft Normal Nightwood Inferno Staff"            , expect={ item=LCT.ITEM.INFERNO_STAFF    , material=LCT.MATERIAL.NIGHTWOOD      } }
 , { input="Craft Normal Nightwood Lightning Staff"          , expect={ item=LCT.ITEM.LIGHTNING_STAFF  , material=LCT.MATERIAL.NIGHTWOOD      } }
+, { input="Craft Normal Nightwood Restoration Staff"        , expect={}                                                 }
 , { input="Craft Normal Nightwood Shield"                   , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.NIGHTWOOD      } }
 , { input="Craft Normal Oak Bow"                            , expect={ item=LCT.ITEM.BOW              , material=LCT.MATERIAL.OAK            } }
 , { input="Craft Normal Oak Ice Staff"                      , expect={ item=LCT.ITEM.ICE_STAFF        , material=LCT.MATERIAL.OAK            } }
@@ -297,7 +298,10 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Shadowhide Arm Cops"                , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.SHADOWHIDE     } }
 , { input="Craft Normal Shadowhide Bracers"                 , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.SHADOWHIDE     } }
 , { input="Craft Normal Shadowhide Helmet"                  , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.SHADOWHIDE     } }
+, { input="Craft Normal Shadowspun Breeches"                , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.SHADOWSPUN     } }
+, { input="Craft Normal Shadowspun Epaulets"                , expect={ item=LCT.ITEM.EPAULETS         , material=LCT.MATERIAL.SHADOWSPUN     } }
 , { input="Craft Normal Shadowspun Hat"                     , expect={ item=LCT.ITEM.HAT              , material=LCT.MATERIAL.SHADOWSPUN     } }
+, { input="Craft Normal Shadowspun Robe"                    , expect={ item=LCT.ITEM.ROBE             , material=LCT.MATERIAL.SHADOWSPUN     } }
 , { input="Craft Normal Shadowspun Sash"                    , expect={ item=LCT.ITEM.SASH             , material=LCT.MATERIAL.SHADOWSPUN     } }
 , { input="Craft Normal Shadowspun Shoes"                   , expect={ item=LCT.ITEM.SHOES            , material=LCT.MATERIAL.SHADOWSPUN     } }
 , { input="Craft Normal Silverweave Breeches"               , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.SILVERWEAVE    } }

@@ -227,3 +227,8 @@ lct:  en de FR es ru it ja
 
 
 AHA figured out why some conditions are STILL squirreling around out from under keys. Even after canonicalizing the quest index, the step and condition indexes are still up to the ESO client. I now see the "Hat/Robe/Shoes" quest reordering the three items, which is causing the squirreling. I'll eventually have to hand-fix this if I want them all tested.
+
+
+alt-nine needs a reload:
+    CL 09   en de fr     breeches/robe/eps <== I need these in es it ru ja
+            es it ru ja  hat/shoes/sash <== did I forget to /lct forget?
