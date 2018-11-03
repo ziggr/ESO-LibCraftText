@@ -191,10 +191,10 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Rubedite Dagger"                    , expect={}                                                 }
 , { input="Craft Normal Rubedite Dagger: 0 / 1"          , expect={}                                                 }
 , { input="Craft Normal Rubedite Greaves"                   , expect={}                                                 }
-, { input="Craft Normal Rubedite Helm"                      , expect={ item=LCT.ITEM.HELM     , material=LCT.MATERIAL.RUBEDITE } }
-, { input="Craft Normal Rubedite Helm: 0 / 1"            , expect={    item=LCT.ITEM.HELM     , material=LCT.MATERIAL.RUBEDITE } }
-, { input="Craft Normal Rubedite Pauldron"                  , expect={ item=LCT.ITEM.PAULDRON , material=LCT.MATERIAL.RUBEDITE } }
-, { input="Craft Normal Rubedite Pauldron: 0 / 1"        , expect={    item=LCT.ITEM.PAULDRON , material=LCT.MATERIAL.RUBEDITE } }
+, { input="Craft Normal Rubedite Helm"                      , expect={ item=LCT.ITEM.HELM     , material=LCT.MATERIAL.RUBEDITE, crafting_type=bs } }
+, { input="Craft Normal Rubedite Helm: 0 / 1"            , expect={    item=LCT.ITEM.HELM     , material=LCT.MATERIAL.RUBEDITE, crafting_type=bs } }
+, { input="Craft Normal Rubedite Pauldron"                  , expect={ item=LCT.ITEM.PAULDRON , material=LCT.MATERIAL.RUBEDITE, crafting_type=bs } }
+, { input="Craft Normal Rubedite Pauldron: 0 / 1"        , expect={    item=LCT.ITEM.PAULDRON , material=LCT.MATERIAL.RUBEDITE, crafting_type=bs } }
 , { input="Craft Normal Rubedite Sword"                     , expect={}                                                 }
 , { input="Craft Normal Rubedo Leather Arm Cops"            , expect={}                                                 }
 , { input="Craft Normal Rubedo Leather Arm Cops: 0 / 1"  , expect={}                                                 }

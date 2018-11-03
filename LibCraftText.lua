@@ -106,23 +106,23 @@ end
 --
 
 LibCraftText.RE_CONDITION_DAILY = {
-    ["en"] = { "Craft Normal (.*): "
-             , "Craft a (.*): "
+    ["en"] = { "Craft Normal ([^:]*)"
+             , "Craft a ([^:]*)"
              }
-,   ["de"] = { "Stellt normale (.*) her: "
-             , "Stellt ein[en]* (.*) her: "
+,   ["de"] = { "Stellt normale (.*) her"
+             , "Stellt ein[en]* (.*) her"
              }
-,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norma[lesaux]* : "
-             , "Fabriquez un (.*) en (.*): "
+,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norm"
+             , "Fabriquez un (.*) en ([^:]*)"
              }
-,   ["ru"] = { "Craft Normal (.*): "
-             , "Craft a (.*): "
+,   ["ru"] = { "Craft Normal ([^:]*)"
+             , "Craft a ([^:]*)"
              }
-,   ["es"] = { "Fabrica [unaos]+ (.*) de (.*) normal[es]*: "
-             , "Fabrica un (.*) de (.*): "
+,   ["es"] = { "Fabrica [unaos]+ (.*) de (.*) norm"
+             , "Fabrica un (.*) de ([^:]*)"
              }
-,   ["ja"] = { "(.*)の(.*)%(ノーマル%)を生産する: "
-             , "(.*)の(.*)を作る: "
+,   ["ja"] = { "(.*)の(.*)%(ノーマル%)を生産する"
+             , "(.*)の(.*)を作る"
              }
 }
 

@@ -4,6 +4,26 @@ local function Warn(msg)
     print(msg)
 end
 
+-- Testing scaffolding
+CRAFTING_TYPE_BLACKSMITHING     = 1
+CRAFTING_TYPE_CLOTHIER          = 2
+CRAFTING_TYPE_ENCHANTING        = 3
+CRAFTING_TYPE_ALCHEMY           = 4
+CRAFTING_TYPE_PROVISIONING      = 5
+CRAFTING_TYPE_WOODWORKING       = 6
+CRAFTING_TYPE_JEWELRYCRAFTING   = 7
+
+-- for less typing
+bs = CRAFTING_TYPE_BLACKSMITHING
+cl = CRAFTING_TYPE_CLOTHIER
+en = CRAFTING_TYPE_ENCHANTING
+al = CRAFTING_TYPE_ALCHEMY
+pr = CRAFTING_TYPE_PROVISIONING
+ww = CRAFTING_TYPE_WOODWORKING
+jw = CRAFTING_TYPE_JEWELRYCRAFTING
+
+LCT = LibCraftText
+
 Test = {}
 
                         -- The 6 supported languages. Italian is not yet
