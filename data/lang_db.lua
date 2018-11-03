@@ -3439,6 +3439,16 @@ LANG_DB = {
           ,   ru  = "sash"
           ,   ja  = "サッシュ"
           }
+, [3810] = {
+              key = "$ITEM_CL_B08"
+          ,   en  = "sash"
+          ,   de  = "schärpe"
+          ,   fr  = "baudier"
+          ,   es  = "banda"
+          ,   it  = "fascia"
+          ,   ru  = "sash"
+          ,   ja  = "サッシュ"
+          }
 , [382] = {
               key = "$ITEM_CL_09"
           ,   en  = "jack"
@@ -4704,7 +4714,7 @@ LANG_DB = {
           ,   ja  = "先人のシルク"
           }
 , [5190] = {
-              key = "$MATERIAL_LGT_10_B"
+              key = "$MATERIAL_LGT_B10"
           ,   en  = "Ancestor Silk"
           ,   de  = "Ahnenseiden"
           ,   fr  = "soie ancestral"
