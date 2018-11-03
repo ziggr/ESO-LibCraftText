@@ -97,7 +97,7 @@ LibCraftText.ITEM = {
 , ["GLOVES"         ] = { name="handschuhe"           , master_name="handschuhe"                , pattern_index= 4, master_writ1=34, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "gloves"
 , ["HAT"            ] = { name="hut"                  , master_name="hut"                       , pattern_index= 5, master_writ1=26, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "hat"
 , ["BREECHES"       ] = { name="beinkleider"          , master_name="beinkleider"               , pattern_index= 6, master_writ1=31, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "breeches"
-, ["EPAULETS"       ] = { name="schulterpolster"      , master_name="schulterpolster"           , pattern_index= 7, master_writ1=29, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "epaulets"
+, ["EPAULETS"       ] = { name="schulterpolster"      , master_name="schulterpolster"           , pattern_index= 7, master_writ1=29, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr , name_2="schulterpolster"} -- "epaulets"
 , ["SASH"           ] = { name="schärpe"              , master_name="schärpe"                   , pattern_index= 8, master_writ1=30, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr , name_2="schärpe"   } -- "sash"
 , ["JACK"           ] = { name="wams"                 , master_name="wams"                      , pattern_index= 9, master_writ1=37, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "jack"
 , ["BOOTS"          ] = { name="stiefel"              , master_name="stiefel"                   , pattern_index=10, master_writ1=41, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "boots"
@@ -172,9 +172,9 @@ LibCraftText.MATERIAL = {
 , ["LEATHER"       ] = { name="Leder"             , level_index= 3, material_index=13, master_writ2=158, crafting_type=cl, mat_set_id=mat_med  } -- "leather"
 , ["FULL_LEATHER"  ] = { name="Hartleder"         , level_index= 4, material_index=18, master_writ2=162, crafting_type=cl, mat_set_id=mat_med  } -- "full-leather"
 , ["FELL"          ] = { name="Wildleder"         , level_index= 5, material_index=23, master_writ2=166, crafting_type=cl, mat_set_id=mat_med  } -- "fell"
-, ["BRIGANDINE"    ] = { name="Rauleder"          , level_index= 6, material_index=26, master_writ2=170, crafting_type=cl, mat_set_id=mat_med  } -- "brigandine"
+, ["BRIGANDINE"    ] = { name="Rauleder"          , level_index= 6, material_index=26, master_writ2=170, crafting_type=cl, mat_set_id=mat_med , name_2="Rauleder"        } -- "brigandine"
 , ["IRONHIDE"      ] = { name="Eisenleder"        , level_index= 7, material_index=29, master_writ2=174, crafting_type=cl, mat_set_id=mat_med  } -- "ironhide"
-, ["SUPERB"        ] = { name="prächtiges "       , level_index= 8, material_index=32, master_writ2=131, crafting_type=cl, mat_set_id=mat_med  } -- "superb"
+, ["SUPERB"        ] = { name="prächtiges "       , level_index= 8, material_index=32, master_writ2=131, crafting_type=cl, mat_set_id=mat_med , name_2="Prachtleder"     } -- "superb"
 , ["SHADOWHIDE"    ] = { name="Schattenleder"     , level_index= 9, material_index=34, master_writ2=132, crafting_type=cl, mat_set_id=mat_med  } -- "shadowhide"
 , ["RUBEDO_LEATHER"] = { name="Rubedoleder"       , level_index=10, material_index=40, master_writ2=190, crafting_type=cl, mat_set_id=mat_med  } -- "Rubedo Leather"
 
@@ -192,7 +192,7 @@ LibCraftText.MATERIAL = {
 , ["PEWTER"        ] = { name="Zinn"              , level_index= 1, material_index= 1, master_writ2=  6, crafting_type=jw, mat_set_id=mat_jewl  } -- "pewter"
 , ["COPPER"        ] = { name="Kupfer"            , level_index= 2, material_index=13, master_writ2= 56, crafting_type=jw, mat_set_id=mat_jewl  } -- "copper"
 , ["SILVER"        ] = { name="Silber"            , level_index= 3, material_index=26, master_writ2=137, crafting_type=jw, mat_set_id=mat_jewl  } -- "silver"
-, ["ELECTRUM"      ] = { name="Elektrum"          , level_index= 4, material_index=33, master_writ2=139, crafting_type=jw, mat_set_id=mat_jewl  } -- "electrum"
+, ["ELECTRUM"      ] = { name="Elektrum"          , level_index= 4, material_index=33, master_writ2=139, crafting_type=jw, mat_set_id=mat_jewl , name_2="Elektrum"       } -- "electrum"
 , ["PLATINUM"      ] = { name="Platin"            , level_index= 5, material_index=40, master_writ2=255, crafting_type=jw, mat_set_id=mat_jewl  } -- "platinum"
 }
 

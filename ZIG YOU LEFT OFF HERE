@@ -224,3 +224,6 @@ lct:  en de FR es ru it ja
     new saved_char.scanned_lang = { ["en"] = true } cleared on forget filled in on scan
 
 /lct forget should also abandon all daily crafting quests
+
+
+AHA figured out why some conditions are STILL squirreling around out from under keys. Even after canonicalizing the quest index, the step and condition indexes are still up to the ESO client. I now see the "Hat/Robe/Shoes" quest reordering the three items, which is causing the squirreling. I'll eventually have to hand-fix this if I want them all tested.

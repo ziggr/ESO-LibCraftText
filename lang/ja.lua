@@ -97,7 +97,7 @@ LibCraftText.ITEM = {
 , ["GLOVES"         ] = { name="手袋"                   , master_name="手袋"                        , pattern_index= 4, master_writ1=34, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "gloves"
 , ["HAT"            ] = { name="帽子"                   , master_name="帽子"                        , pattern_index= 5, master_writ1=26, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "hat"
 , ["BREECHES"       ] = { name="パンツ"                  , master_name="パンツ"                       , pattern_index= 6, master_writ1=31, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "breeches"
-, ["EPAULETS"       ] = { name="肩当て"                  , master_name="肩当て"                       , pattern_index= 7, master_writ1=29, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr } -- "epaulets"
+, ["EPAULETS"       ] = { name="肩当て"                  , master_name="肩当て"                       , pattern_index= 7, master_writ1=29, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr , name_2="肩当て"       } -- "epaulets"
 , ["SASH"           ] = { name="サッシュ"                 , master_name="サッシュ"                      , pattern_index= 8, master_writ1=30, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr , name_2="サッシュ"      } -- "sash"
 , ["JACK"           ] = { name="胴当て"                  , master_name="胴当て"                       , pattern_index= 9, master_writ1=37, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "jack"
 , ["BOOTS"          ] = { name="ブーツ"                  , master_name="ブーツ"                       , pattern_index=10, master_writ1=41, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "boots"
@@ -172,9 +172,9 @@ LibCraftText.MATERIAL = {
 , ["LEATHER"       ] = { name="革"                 , level_index= 3, material_index=13, master_writ2=158, crafting_type=cl, mat_set_id=mat_med  } -- "leather"
 , ["FULL_LEATHER"  ] = { name="フルレザー"             , level_index= 4, material_index=18, master_writ2=162, crafting_type=cl, mat_set_id=mat_med  } -- "full-leather"
 , ["FELL"          ] = { name="フェルハイド"            , level_index= 5, material_index=23, master_writ2=166, crafting_type=cl, mat_set_id=mat_med  } -- "fell"
-, ["BRIGANDINE"    ] = { name="ブリガンダイン"           , level_index= 6, material_index=26, master_writ2=170, crafting_type=cl, mat_set_id=mat_med  } -- "brigandine"
+, ["BRIGANDINE"    ] = { name="ブリガンダイン"           , level_index= 6, material_index=26, master_writ2=170, crafting_type=cl, mat_set_id=mat_med , name_2="ブリガンダイン"         } -- "brigandine"
 , ["IRONHIDE"      ] = { name="アイアンハイド"           , level_index= 7, material_index=29, master_writ2=174, crafting_type=cl, mat_set_id=mat_med  } -- "ironhide"
-, ["SUPERB"        ] = { name="最上"                , level_index= 8, material_index=32, master_writ2=131, crafting_type=cl, mat_set_id=mat_med  } -- "superb"
+, ["SUPERB"        ] = { name="最上"                , level_index= 8, material_index=32, master_writ2=131, crafting_type=cl, mat_set_id=mat_med , name_2="最上"              } -- "superb"
 , ["SHADOWHIDE"    ] = { name="シャドウハイド"           , level_index= 9, material_index=34, master_writ2=132, crafting_type=cl, mat_set_id=mat_med  } -- "shadowhide"
 , ["RUBEDO_LEATHER"] = { name="ルベドレザー"            , level_index=10, material_index=40, master_writ2=190, crafting_type=cl, mat_set_id=mat_med  } -- "Rubedo Leather"
 
@@ -192,7 +192,7 @@ LibCraftText.MATERIAL = {
 , ["PEWTER"        ] = { name="ピューター"             , level_index= 1, material_index= 1, master_writ2=  6, crafting_type=jw, mat_set_id=mat_jewl  } -- "pewter"
 , ["COPPER"        ] = { name="銅"                 , level_index= 2, material_index=13, master_writ2= 56, crafting_type=jw, mat_set_id=mat_jewl  } -- "copper"
 , ["SILVER"        ] = { name="銀"                 , level_index= 3, material_index=26, master_writ2=137, crafting_type=jw, mat_set_id=mat_jewl  } -- "silver"
-, ["ELECTRUM"      ] = { name="琥珀金"               , level_index= 4, material_index=33, master_writ2=139, crafting_type=jw, mat_set_id=mat_jewl  } -- "electrum"
+, ["ELECTRUM"      ] = { name="琥珀金"               , level_index= 4, material_index=33, master_writ2=139, crafting_type=jw, mat_set_id=mat_jewl , name_2="琥珀金"            } -- "electrum"
 , ["PLATINUM"      ] = { name="プラチナ"              , level_index= 5, material_index=40, master_writ2=255, crafting_type=jw, mat_set_id=mat_jewl  } -- "platinum"
 }
 

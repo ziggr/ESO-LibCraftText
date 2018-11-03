@@ -41,6 +41,9 @@ Takes about an hour to scan 10 alts x 7 languages:
 2018-11-03 09:20:17 -0700 alt-seven
 2018-11-03 09:23:37 -0700 alt-eight
 2018-11-03 09:29:42 -0700 alt-nine. Done. 50min/10alts = 5min/alt
+
+...
+2018-11-03 10:10:32 -0700 make gentest passes, lang_db.lua scrubbed. ~90min
 ```
 
 ## Alinor

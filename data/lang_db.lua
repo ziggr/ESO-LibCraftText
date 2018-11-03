@@ -2165,36 +2165,36 @@ LANG_DB = {
           ,   ru  = "Craft Normal Shadowspun Sash"
           ,   ja  = "影の布のサッシュ(ノーマル)を生産する"
           }
-, [228] = {
-              key = "$DAILY_COND_CL_09_07"
-          ,   en  = "Craft Normal Shadowspun Breeches"
-          ,   de  = "Stellt normale Leerenstoffbeinkleider her"
-          ,   fr  = "Fabriquez des braies en tissombre normales"
-          ,   es  = "Fabrica una capucha de tejido sombrío normal"
-          ,   it  = "Craft Shadowspun Hat"
-          ,   ru  = "Craft Normal Shadowspun Hat"
-          ,   ja  = "影の布の帽子(ノーマル)を生産する"
-          }
-, [229] = {
-              key = "$DAILY_COND_CL_09_08"
-          ,   en  = "Craft Normal Shadowspun Robe"
-          ,   de  = "Stellt normale Leerenstoffroben her"
-          ,   fr  = "Fabriquez une robe en tissombre normale"
-          ,   es  = "Fabrica unos zapatos de tejido sombrío normales"
-          ,   it  = "Craft Shadowspun Shoes"
-          ,   ru  = "Craft Normal Shadowspun Shoes"
-          ,   ja  = "影の布の靴(ノーマル)を生産する"
-          }
-, [230] = {
-              key = "$DAILY_COND_CL_09_09"
-          ,   en  = "Craft Normal Shadowspun Epaulets"
-          ,   de  = "Stellt normale Leerenstoffschulterpolster her"
-          ,   fr  = "Fabriquez des épaulettes en tissombre normales"
-          ,   es  = "Fabrica una banda de tejido sombrío normal"
-          ,   it  = "Craft Shadowspun Sash"
-          ,   ru  = "Craft Normal Shadowspun Sash"
-          ,   ja  = "影の布のサッシュ(ノーマル)を生産する"
-          }
+-- , [228] = {
+--               key = "$DAILY_COND_CL_09_07"
+--           ,   en  = "Craft Normal Shadowspun Breeches"
+--           ,   de  = "Stellt normale Leerenstoffbeinkleider her"
+--           ,   fr  = "Fabriquez des braies en tissombre normales"
+--           ,   es  = "Fabrica una capucha de tejido sombrío normal"
+--           ,   it  = "Craft Shadowspun Hat"
+--           ,   ru  = "Craft Normal Shadowspun Hat"
+--           ,   ja  = "影の布の帽子(ノーマル)を生産する"
+--           }
+-- , [229] = {
+--               key = "$DAILY_COND_CL_09_08"
+--           ,   en  = "Craft Normal Shadowspun Robe"
+--           ,   de  = "Stellt normale Leerenstoffroben her"
+--           ,   fr  = "Fabriquez une robe en tissombre normale"
+--           ,   es  = "Fabrica unos zapatos de tejido sombrío normales"
+--           ,   it  = "Craft Shadowspun Shoes"
+--           ,   ru  = "Craft Normal Shadowspun Shoes"
+--           ,   ja  = "影の布の靴(ノーマル)を生産する"
+--           }
+-- , [230] = {
+--               key = "$DAILY_COND_CL_09_09"
+--           ,   en  = "Craft Normal Shadowspun Epaulets"
+--           ,   de  = "Stellt normale Leerenstoffschulterpolster her"
+--           ,   fr  = "Fabriquez des épaulettes en tissombre normales"
+--           ,   es  = "Fabrica una banda de tejido sombrío normal"
+--           ,   it  = "Craft Shadowspun Sash"
+--           ,   ru  = "Craft Normal Shadowspun Sash"
+--           ,   ja  = "影の布のサッシュ(ノーマル)を生産する"
+--           }
 , [231] = {
               key = "$DAILY_COND_CL_10_01"
           ,   en  = "Craft Normal Rubedite Cuirass"
@@ -4373,16 +4373,16 @@ LANG_DB = {
 --           ,   ru  = "Craft Normal Nightwood Ice Staff"
 --           ,   ja  = "ナイトウッドの氷の杖(ノーマル)を生産する"
 --           }
-, [462] = {
-              key = "$DAILY_COND_WW_09_07"
-          ,   en  = "Craft Normal Nightwood Restoration Staff"
-          ,   de  = "Stellt normale Nachtholzheilungsstäbe her"
-          ,   fr  = "Fabriquez un bâton de rétablissement en bois de nuit normal"
-          ,   es  = "Fabrica una vara infernal de nocteca normal"
-          ,   it  = "Craft Nightwood Inferno Staff"
-          ,   ru  = "Craft Normal Nightwood Inferno Staff"
-          ,   ja  = "ナイトウッドの業火の杖(ノーマル)を生産する"
-          }
+-- , [462] = {
+--               key = "$DAILY_COND_WW_09_07"
+--           ,   en  = "Craft Normal Nightwood Restoration Staff"
+--           ,   de  = "Stellt normale Nachtholzheilungsstäbe her"
+--           ,   fr  = "Fabriquez un bâton de rétablissement en bois de nuit normal"
+--           ,   es  = "Fabrica una vara infernal de nocteca normal"
+--           ,   it  = "Craft Nightwood Inferno Staff"
+--           ,   ru  = "Craft Normal Nightwood Inferno Staff"
+--           ,   ja  = "ナイトウッドの業火の杖(ノーマル)を生産する"
+--           }
 , [463] = {
               key = "$DAILY_COND_WW_10_01"
           ,   en  = "Craft Normal Ruby Ash Shield"
@@ -4843,6 +4843,16 @@ LANG_DB = {
           ,   es  = "Cubrehombros"
           ,   it  = "coprispalle"
           ,   ru  = "epaulets"
+          ,   ja  = "肩当て"
+          }
+, [5230] = {
+              key = "$ITEM_CL_07B"
+          ,   en  = "epaulet"
+          ,   de  = "schulterpolster"
+          ,   fr  = "épaulettes"
+          ,   es  = "Cubrehombros"
+          ,   it  = "coprispalle"
+          ,   ru  = "epaulet"
           ,   ja  = "肩当て"
           }
 , [524] = {
@@ -6069,6 +6079,15 @@ LANG_DB = {
           ,   ru  = "electrum"
           ,   ja  = "琥珀金"
           }
+, [6560] = {
+              key = "$MATERIAL_JW_04B"
+          ,   en  = "electrum"
+          ,   de  = "Elektrum"
+          ,   fr  = "électrum"
+          ,   es  = "electrum"
+          ,   ru  = "electrum"
+          ,   ja  = "琥珀金"
+          }
 , [657] = {
               key = "$MATERIAL_JW_05"
           ,   en  = "platinum"
@@ -6240,6 +6259,15 @@ LANG_DB = {
           ,   ru  = "brigandine"
           ,   ja  = "ブリガンダイン"
           }
+, [6750] = {
+              key = "$MATERIAL_MED_06B"
+          ,   en  = "brigandine"
+          ,   de  = "Rauleder"
+          ,   fr  = "brigandine"
+          ,   es  = "brigantina"
+          ,   ru  = "brigandine"
+          ,   ja  = "ブリガンダイン"
+          }
 , [676] = {
               key = "$MATERIAL_MED_07"
           ,   en  = "ironhide"
@@ -6255,6 +6283,15 @@ LANG_DB = {
           ,   de  = "prächtiges "
           ,   fr  = "superbe"
           ,   es  = "soberbio"
+          ,   ru  = "superb"
+          ,   ja  = "最上"
+          }
+, [6770] = {
+              key = "$MATERIAL_MED_08B"
+          ,   en  = "superb"
+          ,   de  = "Prachtleder"
+          ,   fr  = "superbe"
+          ,   es  = "soberbia"
           ,   ru  = "superb"
           ,   ja  = "最上"
           }
