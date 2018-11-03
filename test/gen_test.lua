@@ -23,8 +23,11 @@ C = {
 ------------------------------------------------------------------------------
 
 function C.ReadGenData()
+                        -- Text processing (not lua interpreter)
+                        --
                         -- Read current list of condition text and
                         -- expected results.
+
     local FILE = io.open(GENFILE,"r")
     local re_input   = 'input="([^"]*)"'
     local re_expect  = 'expect=({.*}) *}$'

@@ -117,9 +117,13 @@ LibCraftText.RE_CONDITION_DAILY = {
              , "Stellt zwei (.*) her"
              }
 
+
 ,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norm"
              , "Fabriquez un (.*) en ([^:]*)"
              , "Fabriquez des (.*) en (.*) norm"
+             , "Fabriquez [uneds]+ (.*) norm" -- MUST be after all "X en Y"
+                                              -- regexes to keep preposition
+                                              -- "en" out of matitem.
              }
 ,   ["ru"] = { "Craft Normal ([^:]*)"
              , "Craft a ([^:]*)"

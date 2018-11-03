@@ -142,10 +142,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Ironthread Robe"                    , expect={ item=LCT.ITEM.ROBE             , material=LCT.MATERIAL.IRONTHREAD     } }
 , { input="Craft Normal Kresh Breeches"                     , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.KRESH          } }
 , { input="Craft Normal Kresh Epaulets"                     , expect={ item=LCT.ITEM.EPAULETS         , material=LCT.MATERIAL.KRESH          } }
-, { input="Craft Normal Kresh Hat"                          , expect={ item=LCT.ITEM.HAT              , material=LCT.MATERIAL.KRESH          } }
 , { input="Craft Normal Kresh Robe"                         , expect={ item=LCT.ITEM.ROBE             , material=LCT.MATERIAL.KRESH          } }
-, { input="Craft Normal Kresh Sash"                         , expect={ item=LCT.ITEM.SASH             , material=LCT.MATERIAL.KRESH          } }
-, { input="Craft Normal Kresh Shoes"                        , expect={ item=LCT.ITEM.SHOES            , material=LCT.MATERIAL.KRESH          } }
 , { input="Craft Normal Leather Arm Cops"                   , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.LEATHER        } }
 , { input="Craft Normal Leather Bracers"                    , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.LEATHER        } }
 , { input="Craft Normal Leather Helmet"                     , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.LEATHER        } }

@@ -1251,33 +1251,38 @@ LANG_DB = {
           ,   ru  = "Craft Normal Fell Bracers"
           ,   ja  = "フェルハイドの腕当て(ノーマル)を生産する"
           }
-, [135] = {
-              key = "$DAILY_COND_CL_06_01"
-          ,   en  = "Craft Normal Kresh Hat"
-          ,   de  = "Stellt normale Kreshhüte her"
-          ,   fr  = "Fabriquez un baudrier en soie d'araignée normal"
-          ,   es  = "Fabrica una banda de seda de araña normal"
-          ,   it  = "Craft Calcinium Sabatons"
-          ,   ja  = "クレッシュの帽子(ノーマル)を生産する"
-          }
-, [136] = {
-              key = "$DAILY_COND_CL_06_02"
-          ,   en  = "Craft Normal Kresh Shoes"
-          ,   de  = "Stellt normale Kreshschuhe her"
-          ,   fr  = "Fabriquez des chaussures en soie d'araignée normales"
-          ,   es  = "Fabrica unos zapatos de seda de araña normales"
-          ,   it  = "Craft Calcinium Greatsword"
-          ,   ja  = "クレッシュの靴(ノーマル)を生産する"
-          }
-, [137] = {
-              key = "$DAILY_COND_CL_06_03"
-          ,   en  = "Craft Normal Kresh Sash"
-          ,   de  = "Stellt normale Kreshschärpen her"
-          ,   fr  = "Fabriquez un baudrier en kresh normal"
-          ,   es  = "Fabrica una banda de kresh normal"
-          ,   it  = "Craft Calcinium Gauntlets"
-          ,   ja  = "クレッシュのサッシュ(ノーマル)を生産する"
-          }
+-- BROKEN, is Hat, Sash, and Shoes
+-- , [135] = {
+--               key = "$DAILY_COND_CL_06_01"
+--           ,   en  = "Craft Normal Kresh Hat"
+--           ,   de  = "Stellt normale Kreshhüte her"
+--           ,   fr  = "Fabriquez un baudrier en soie d'araignée normal"
+--           ,   es  = "Fabrica una banda de seda de araña normal"
+--           ,   it  = "Craft Calcinium Sabatons"
+--           ,   ja  = "クレッシュの帽子(ノーマル)を生産する"
+--           }
+
+-- BROKEN, is Kresh, Spidersilk
+-- , [136] = {
+--               key = "$DAILY_COND_CL_06_02"
+--           ,   en  = "Craft Normal Kresh Shoes"
+--           ,   de  = "Stellt normale Kreshschuhe her"
+--           ,   fr  = "Fabriquez des chaussures en soie d'araignée normales"
+--           ,   es  = "Fabrica unos zapatos de seda de araña normales"
+--           ,   it  = "Craft Calcinium Greatsword"
+--           ,   ja  = "クレッシュの靴(ノーマル)を生産する"
+--           }
+
+-- BROKEN is sash, gauntlets
+-- , [137] = {
+--               key = "$DAILY_COND_CL_06_03"
+--           ,   en  = "Craft Normal Kresh Sash"
+--           ,   de  = "Stellt normale Kreshschärpen her"
+--           ,   fr  = "Fabriquez un baudrier en kresh normal"
+--           ,   es  = "Fabrica una banda de kresh normal"
+--           ,   it  = "Craft Calcinium Gauntlets"
+--           ,   ja  = "クレッシュのサッシュ(ノーマル)を生産する"
+--           }
 , [138] = {
               key = "$DAILY_COND_CL_06_04"
           ,   en  = "Craft Normal Kresh Breeches"
@@ -3440,7 +3445,7 @@ LANG_DB = {
           ,   ja  = "サッシュ"
           }
 , [3810] = {
-              key = "$ITEM_CL_B08"
+              key = "$ITEM_CL_08B"
           ,   en  = "sash"
           ,   de  = "schärpe"
           ,   fr  = "baudier"
@@ -4524,6 +4529,15 @@ LANG_DB = {
           ,   ru  = "dwarven"
           ,   ja  = "ドワーフ"
           }
+, [4980] = {
+              key = "$MATERIAL_BS_04B"
+          ,   en  = "dwarven"
+          ,   de  = "Dwemer"
+          ,   fr  = "dwemer"
+          ,   es  = "acero enano"
+          ,   ru  = "dwarven"
+          ,   ja  = "ドワーフ"
+          }
 , [499] = {
               key = "$MATERIAL_BS_05"
           ,   en  = "ebon"
@@ -4714,7 +4728,7 @@ LANG_DB = {
           ,   ja  = "先人のシルク"
           }
 , [5190] = {
-              key = "$MATERIAL_LGT_B10"
+              key = "$MATERIAL_LGT_10B"
           ,   en  = "Ancestor Silk"
           ,   de  = "Ahnenseiden"
           ,   fr  = "soie ancestral"

@@ -20,6 +20,11 @@ for k,v in pairs(LANG_DB) do
     end
 end
 
+function TestGen:setUpOuter()
+    TestGen.test_ct = 0
+    Test:setUpOuter()
+end
+
 function table.shallow_copy(t)
     local r = {}
     for k,v in pairs(t) do

@@ -148,7 +148,7 @@ LibCraftText.MATERIAL = {
   ["IRON"          ] = { name="鉄"                 , level_index= 1, material_index= 1, master_writ2=  1, crafting_type=bs, mat_set_id=mat_hvy   } -- "iron"
 , ["STEEL"         ] = { name="鋼鉄"                , level_index= 2, material_index= 8, master_writ2=  9, crafting_type=bs, mat_set_id=mat_hvy   } -- "steel"
 , ["ORICHALC"      ] = { name="オリハルコン"            , level_index= 3, material_index=13, master_writ2=156, crafting_type=bs, mat_set_id=mat_hvy   } -- "orichalc"
-, ["DWARVEN"       ] = { name="ドワーフ"              , level_index= 4, material_index=18, master_writ2=160, crafting_type=bs, mat_set_id=mat_hvy   } -- "dwarven"
+, ["DWARVEN"       ] = { name="ドワーフ"              , level_index= 4, material_index=18, master_writ2=160, crafting_type=bs, mat_set_id=mat_hvy  , name_2="ドワーフ"           } -- "dwarven"
 , ["EBON"          ] = { name="黒檀"                , level_index= 5, material_index=23, master_writ2=164, crafting_type=bs, mat_set_id=mat_hvy   } -- "ebon"
 , ["CALCINIUM"     ] = { name="カルシニウム"            , level_index= 6, material_index=26, master_writ2=168, crafting_type=bs, mat_set_id=mat_hvy   } -- "calcinium"
 , ["GALATITE"      ] = { name="ガラタイト"             , level_index= 7, material_index=29, master_writ2=172, crafting_type=bs, mat_set_id=mat_hvy   } -- "galatite"
