@@ -105,6 +105,8 @@ end
 -- Turn condition text into "what do I need to make/acquire?" constants.
 --
 
+                        -- Regexes that can extract all gear crafting
+                        -- materials and items.
 LibCraftText.RE_CONDITION_DAILY = {
     ["en"] = { "Craft Normal ([^:]*)"
              , "Craft a ([^:]*)"
@@ -116,10 +118,6 @@ LibCraftText.RE_CONDITION_DAILY = {
              , "Stellt zwei (.*) her"
              , "Stellt drei (.*) her"
              }
-
--- Linen Hat is broken, the "peau" in "chapeau en lin" matches mat X and is longer than the "lin" for Linen.
--- Oak Shield is broken, "Fabriquez un bouclier normal" should include "en chêne" somewhere.
-
 ,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norm"
              , "Fabriquez un (.*) en ([^:]*)"
              , "Fabriquez des (.*) en (.*) norm"
@@ -149,6 +147,16 @@ LibCraftText.RE_CONDITION_DAILY = {
              }
 }
 
+                        -- The official FR French translation has a couple
+                        -- condition strings that completely omit the  material
+                        -- required (EN Oak FR chêne). Replace broken lines
+                        -- with ones that will actually work.
+LibCraftText.BUGFIX = {
+    ["fr"] = {
+                ["Fabriquez un bouclier normal"               ] = "Fabriquez un bouclier en chêne normal"
+             ,  ["Fabriquez un bâton de rétablissement normal"] = "Fabriquez un bâton de rétablissement en chêne normal"
+             }
+}
 -- If the supplied condition requests that we craft a weapon, armor, or jewelry
 -- item at a BS/CL/WW/JW station, return the requested item and material rows
 -- from LibCraftText.ITEM and LibCraftText.MATERIAL.
@@ -162,6 +170,11 @@ function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
     local lang      = self.CurrLang()
     local re_list   = self.RE_CONDITION_DAILY[lang]
 
+                        -- Rare special case: fix buggy FR translation.
+    local bugfix = self.BUGFIX[lang] and self.BUGFIX[lang][cond_text]
+    if bugfix then
+        cond_text = bugfix
+    end
                         -- Some languages put material (adjective) before
                         -- item (noun). Others put the material after.
                         --

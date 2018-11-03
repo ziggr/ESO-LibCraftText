@@ -240,14 +240,14 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Nightwood Ice Staff"                , expect={ item=LCT.ITEM.ICE_STAFF        , material=LCT.MATERIAL.NIGHTWOOD      } }
 , { input="Craft Normal Nightwood Inferno Staff"            , expect={ item=LCT.ITEM.INFERNO_STAFF    , material=LCT.MATERIAL.NIGHTWOOD      } }
 , { input="Craft Normal Nightwood Lightning Staff"          , expect={ item=LCT.ITEM.LIGHTNING_STAFF  , material=LCT.MATERIAL.NIGHTWOOD      } }
-, { input="Craft Normal Nightwood Restoration Staff"        , expect={}                                                 }
+, { input="Craft Normal Nightwood Restoration Staff"        , expect={ item=LCT.ITEM.RESTO_STAFF      , material=LCT.MATERIAL.NIGHTWOOD      } }
 , { input="Craft Normal Nightwood Shield"                   , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.NIGHTWOOD      } }
 , { input="Craft Normal Oak Bow"                            , expect={ item=LCT.ITEM.BOW              , material=LCT.MATERIAL.OAK            } }
 , { input="Craft Normal Oak Ice Staff"                      , expect={ item=LCT.ITEM.ICE_STAFF        , material=LCT.MATERIAL.OAK            } }
 , { input="Craft Normal Oak Inferno Staff"                  , expect={ item=LCT.ITEM.INFERNO_STAFF    , material=LCT.MATERIAL.OAK            } }
 , { input="Craft Normal Oak Lightning Staff"                , expect={ item=LCT.ITEM.LIGHTNING_STAFF  , material=LCT.MATERIAL.OAK            } }
-, { input="Craft Normal Oak Restoration Staff"              , expect={ XXXitem=LCT.ITEM.RESTO_STAFF      , XXXaterial=LCT.MATERIAL.OAK            } }
-, { input="Craft Normal Oak Shield"                         , expect={ XXXitem=LCT.ITEM.SHIELD           , XXXmaterial=LCT.MATERIAL.OAK            } }
+, { input="Craft Normal Oak Restoration Staff"              , expect={ item=LCT.ITEM.RESTO_STAFF      , material=LCT.MATERIAL.OAK            } }
+, { input="Craft Normal Oak Shield"                         , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.OAK            } }
 , { input="Craft Normal Orichalcum Cuirass"                 , expect={ item=LCT.ITEM.CUIRASS          , material=LCT.MATERIAL.ORICHALC       } }
 , { input="Craft Normal Orichalcum Dagger"                  , expect={ item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.ORICHALC       } }
 , { input="Craft Normal Orichalcum Gauntlets"               , expect={ item=LCT.ITEM.GAUNTLETS        , material=LCT.MATERIAL.ORICHALC       } }
