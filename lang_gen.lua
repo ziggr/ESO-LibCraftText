@@ -627,7 +627,7 @@ local function pad(want_len, str)
     return str .. pad
 end
 
--- Replace all $XXX with their
+-- Replace all $XXX with their language-specific string literal.
 function ReplaceKeys(template_line, lang)
     local pos_delim = template_line:find("%$")
     if not (pos_delim and pos_delim < template_line:len())
@@ -648,53 +648,25 @@ function ReplaceKeys(template_line, lang)
 -- .."  "..template_line)
 
     local out_line = template_line
-    for k, entry_hash in pairs(DB) do
 
-                        -- fallback to en if no translation yet
-        local val = entry_hash[lang] or entry_hash.en
-                                    -- The hack we use to shovel IT Italian
-                                    -- blank quest titles into Jewelry daily
-                                    -- causes some spurious DAILY_COND_JW_05_08
-                                    -- conditions with just a single italian
-                                    -- "TRACKER GOAL TEXT" value. Skip those.
-        if val then
-
-            val = escape_quote(val)
-            val = escape_re(val)    -- Some lang strings are REs with % escapes. Retain them.
-            local key = k
-            local key_padded = string.format("%-"..tostring(repl_len).."s", key)
-            local val_padded = pad(repl_len, '"'..val..'"')
-            out_line, ct = out_line:gsub(key_padded, val_padded)
-
-                            -- SURPRISE! Lua strings are BYTES not CHARS! This
-                            -- matters when val is a string with umlauts or other
-                            -- non-ASCII code points. The difference will cause all
-                            -- this careful alignment work to be off by the number
-                            -- of extra bytes of utf-8 wide chars. Oh well.
-                            --
-                            -- Lua 5.3 adds _some_ UTF-8 handling, but I don't care
-                            -- enough upgrade from 5.2 and recode to fix this
-                            -- today.
-
-            if (0 < ct) and (repl_len < (val:len() + 2)) then
-                Warn(string.format("Replacement exceeds space:%d < %d:\"%s\""
-                                  , repl_len
-                                  , val:len() + 2
-                                  , val))
-            end
+    local function lookup(key_padded)
+        local _,_,key,padding = key_padded:find("(%$[A-Z0-9_]+)(%s*)")
+        local repl_len = key:len()
+        if padding then
+            repl_len = repl_len + padding:len()
         end
--- if k == "$ROLIS_NAME" and template_line:find(k) then
--- print("k:'"..k.."'\n")
--- print("key_padded:'"..key_padded.."'\n")
--- print("val_padded:'"..val_padded.."'\n")
--- print("line:'"..out_line.."'\n")
--- print("pos_delim  :"..tostring(pos_delim))
--- print("pos_comment:"..tostring(pos_comment))
--- print("pos_end    :"..tostring(pos_end))
--- print("repl_len   :"..tostring(repl_len))
---end
 
+        local lang_table = DB[key]
+        if not lang_table then return key end
+        local val = lang_table[lang] or lang_table.en
+        val = escape_quote(val)
+        val = escape_re(val)    -- Some lang strings are REs with % escapes. Retain them.
+        local val_padded = pad(repl_len, '"'..val..'"')
+
+        return val_padded
     end
+
+    out_line = out_line:gsub("(%$[A-Z0-9_]+%s*)",lookup)
     return out_line
 end
 

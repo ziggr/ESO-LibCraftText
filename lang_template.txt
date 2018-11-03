@@ -71,7 +71,10 @@ local trait_jewl    = LibCraftText.TRAIT_SET_ID.JEWELRY
 --
 -- trait_set_id     Which set of traits apply to this item?
 --
--- name_2           FR French has a typo for Sash: "baudier" when it should be "baudrier"
+-- name_2           FR French has a typo for Sash: "baudier" when it should
+--                  be "baudrier". An extra name column helps match these
+--                  surprises.
+--
 LibCraftText.ITEM = {
   ["H1_AXE"         ] = { name=$ITEM_BS_01            , master_name=$MASTER_ITEM_53             , pattern_index= 1, master_writ1=53, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_weap } -- "axe"
 , ["H1_MACE"        ] = { name=$ITEM_BS_02            , master_name=$MASTER_ITEM_56             , pattern_index= 2, master_writ1=56, crafting_type=bs, mat_set_id=mat_hvy , trait_set_id=trait_weap } -- "mace"
