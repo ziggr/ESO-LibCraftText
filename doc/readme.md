@@ -1,0 +1,66 @@
+
+
+
+# Learnin' the Dailies
+
+Have 10 alts:
+
+- Each certfied to perform writs
+- One of each crafting rank
+- For Provisioning recipe writs, distribute alts across EP AD DC ranks 1-3
+  (Provisioning rank 4+ ignore alliance)
+
+Daily
+
+- For each alt:
+
+  - Log in
+  - **Abandon all daily crafting quests** from yesterday's cycle
+  - Acquire all daily crafting quests for today's cycle
+  - `/lct forget`
+  - For each language: ---
+    - `/lct scan`
+    - `/lct lang`
+  - Repeat `/lct` cycle until you loop back to EN English
+
+  - `/logout`
+
+- Repeat Login-Logout steps 2-9 for each alt
+
+- Occasionally check SavedVariables to see if you collected all 7 languages
+
+Takes about an hour to scan 10 alts x 7 languages:
+```
+2018-11-03 08:39:45 -0700 start
+2018-11-03 08:52:16 -0700 `/logout` alt-one 12min/2alts = 6min/alt
+2018-11-03 08:58:52 -0700 alt-two 18min/3alts = 6min/alt
+2018-11-03 09:03:52 -0700
+2018-11-03 09:10:20 -0700 alt-four 30min/5 alts = 6min/alt
+2018-11-03 09:14:23 -0700
+2018-11-03 09:17:30 -0700 alt-six
+2018-11-03 09:20:17 -0700 alt-seven
+2018-11-03 09:23:37 -0700 alt-eight
+2018-11-03 09:29:42 -0700 alt-nine. Done. 50min/10alts = 5min/alt
+```
+
+## Alinor
+
+The Alinor crafting area is perfect for this. Park your alts in the circle by the writ boards.
+
+# Absorb the scan
+
+- `make getpts` to copy the SavedVariables to `data/LibCraftText.lua`
+- `make lang` to merge SavedVariables and `data/lang_db.lua` into a new `data/lang_db.out.lua` as well as generate 7 new `lang/xx.lua` localization files.
+
+Compare `lang_db.out.lua` against `lang_db.out` to see if it picked up everything you expect, and didn't ruin any previous data or go haywire. When you're happy with the result, copy `lang_db.out.lua` over `lang_db.lua` to start using it for test generation.
+
+
+
+# `/script` Commands
+
+`/script SetCVar("language.2","en")` Change language to `en`. Official languages are `en de fr` , unofficial are `es ru it ja` but `it` is really incomplete. Also `/lct en` is an alias for SetCVar(en)
+
+
+
+
+
