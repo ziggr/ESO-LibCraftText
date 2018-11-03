@@ -1,5 +1,5 @@
 COND_TEXT_FODDER = {
-  { input="Acquire Alkahest"                                , expect={}                                                 }
+  { input="Acquire Alkahest"                                , expect={ material=LCT.MATERIAL.ALKAHEST  } }
 , { input="Acquire Blessed Thistle"                         , expect={}                                                 }
 , { input="Acquire Bugloss"                                 , expect={}                                                 }
 , { input="Acquire Corn Flower"                             , expect={}                                                 }

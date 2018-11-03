@@ -42,121 +42,11 @@ function LibCraftText.RolisDialogOptionToCraftingType(dialog_text)
 end
 
 
--- Internal stuff ------------------------------------------------------------
-
--- Build reverse lookup tables to accelerate lookups
-function LibCraftText.BuildReverseLookupTables()
-    if LibCraftText.reverse_tables_built then
-        return
-    end
-
-    for _,ctype in pairs(LibCraftText.CRAFTING_TYPES) do
-        local txt = LibCraftText.DAILY_QUEST_TITLES[ctype]
-        LibCraftText.DAILY_QUEST_TITLES[txt] = ctype
-
-        local tlist = LibCraftText.MASTER_QUEST_TITLES[ctype]
-        for _,txt in pairs(tlist) do
-            if not LibCraftText.MASTER_QUEST_TITLES[txt] then
-                LibCraftText.MASTER_QUEST_TITLES[txt] = {}
-            end
-            table.insert(LibCraftText.MASTER_QUEST_TITLES[txt], ctype)
-        end
-
-        local txt = LibCraftText.ROLIS_QUEST_TURN_IN[ctype]
-        LibCraftText.ROLIS_QUEST_TURN_IN[txt] = ctype
-    end
-
-    LibCraftText.reverse_tables_built = true
-end
-
-LibCraftText.CRAFTING_TYPES = {
-  CRAFTING_TYPE_BLACKSMITHING
-, CRAFTING_TYPE_CLOTHIER
-, CRAFTING_TYPE_ENCHANTING
-, CRAFTING_TYPE_ALCHEMY
-, CRAFTING_TYPE_PROVISIONING
-, CRAFTING_TYPE_WOODWORKING
-, CRAFTING_TYPE_JEWELRYCRAFTING
-}
-
-
--- Test Scaffolding ----------------------------------------------------------
---
--- To enable unit tests to force a specific language.
---
-
-function LibCraftText.ForceLang(lang)
-    LibCraftText.force_lang = lang
-end
-
--- Test Scaffolding to enable unit tests to force a specific language.
-function LibCraftText.CurrLang()
-    if LibCraftText.force_lang then
-        return LibCraftText.force_lang
-    elseif not GetCVar then
-        return "en" -- for running outside of ESO client.
-    end
-    return GetCVar("language.2")
-end
-
-
 -- Daily Crafting Conditions Parser ------------------------------------------
 --
 -- Turn condition text into "what do I need to make/acquire?" constants.
 --
 
-                        -- Regexes that can extract all gear crafting
-                        -- materials and items.
-LibCraftText.RE_CONDITION_DAILY = {
-    ["en"] = { "Craft Normal ([^:]*)"
-             , "Craft a ([^:]*)"
-             , "Craft Two ([^:]*)"
-             , "Craft Three ([^:]*)"
-             }
-,   ["de"] = { "Stellt normale (.*) her"
-             , "Stellt ein[en]* (.*) her"
-             , "Stellt zwei (.*) her"
-             , "Stellt drei (.*) her"
-             }
-,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norm"
-             , "Fabriquez un (.*) en ([^:]*)"
-             , "Fabriquez des (.*) en (.*) norm"
-             , "Fabriquez deux (.*) en ([^:]*)"
-             , "Fabriquez trois (.*) en ([^:]*)"
-             , "Fabriquez [uneds]+ (.*) norm" -- MUST be after all "X en Y"
-                                              -- regexes to keep preposition
-                                              -- "en" out of matitem.
-             , "Fabriquez un (.*) d'([^:]*)"
-             }
-,   ["ru"] = { "Craft Normal ([^:]*)"
-             , "Craft a ([^:]*)"
-             , "Craft two ([^:]*)"
-             , "Craft three ([^:]*)"
-             }
-,   ["es"] = { "Fabrica [unaos]+ (.*) norm"
-             , "Fabrica [unaos]+ (.*) de (.*) norm"
-             , "Fabrica un (.*) de ([^:]*)"
-             , "Fabrica dos (.*) de ([^:]*)"
-             , "Fabrica tres (.*) de ([^:]*)"
-             }
-,   ["ja"] = { "(.*)%(ノーマル%)を生産する"
-             , "(.*)の(.*)%(ノーマル%)を生産する"
-             , "(.*)の(.*)を作る"
-             , "(.*)を2個作る"
-             , "(.*)を3個作る"
-             }
-}
-
-                        -- The official FR French translation has a couple
-                        -- condition strings that completely omit the  material
-                        -- required (EN Oak FR chêne). Replace broken lines
-                        -- with ones that will actually work.
-LibCraftText.BUGFIX = {
-    ["fr"] = {
-                ["Fabriquez un bouclier normal"               ] = "Fabriquez un bouclier en chêne normal"
-             ,  ["Fabriquez un bâton de rétablissement normal"] = "Fabriquez un bâton de rétablissement en chêne normal"
-             }
-}
 -- If the supplied condition requests that we craft a weapon, armor, or jewelry
 -- item at a BS/CL/WW/JW station, return the requested item and material rows
 -- from LibCraftText.ITEM and LibCraftText.MATERIAL.
@@ -244,15 +134,91 @@ function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
     return found
 end
 
+                        -- Regexes that can extract all gear crafting
+                        -- materials and items.
+LibCraftText.RE_CONDITION_DAILY = {
+    ["en"] = { "Craft Normal ([^:]*)"
+             , "Craft a ([^:]*)"
+             , "Craft Two ([^:]*)"
+             , "Craft Three ([^:]*)"
+             }
+,   ["de"] = { "Stellt normale (.*) her"
+             , "Stellt ein[en]* (.*) her"
+             , "Stellt zwei (.*) her"
+             , "Stellt drei (.*) her"
+             }
+,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norm"
+             , "Fabriquez un (.*) en ([^:]*)"
+             , "Fabriquez des (.*) en (.*) norm"
+             , "Fabriquez deux (.*) en ([^:]*)"
+             , "Fabriquez trois (.*) en ([^:]*)"
+             , "Fabriquez [uneds]+ (.*) norm" -- MUST be after all "X en Y"
+                                              -- regexes to keep preposition
+                                              -- "en" out of matitem.
+             , "Fabriquez un (.*) d'([^:]*)"
+             }
+,   ["ru"] = { "Craft Normal ([^:]*)"
+             , "Craft a ([^:]*)"
+             , "Craft two ([^:]*)"
+             , "Craft three ([^:]*)"
+             }
+,   ["es"] = { "Fabrica [unaos]+ (.*) norm"
+             , "Fabrica [unaos]+ (.*) de (.*) norm"
+             , "Fabrica un (.*) de ([^:]*)"
+             , "Fabrica dos (.*) de ([^:]*)"
+             , "Fabrica tres (.*) de ([^:]*)"
+             }
+,   ["ja"] = { "(.*)%(ノーマル%)を生産する"
+             , "(.*)の(.*)%(ノーマル%)を生産する"
+             , "(.*)の(.*)を作る"
+             , "(.*)を2個作る"
+             , "(.*)を3個作る"
+             }
+}
+
+                        -- The official FR French translation has a couple
+                        -- condition strings that completely omit the  material
+                        -- required (EN Oak FR chêne). Replace broken lines
+                        -- with ones that will actually work.
+LibCraftText.BUGFIX = {
+    ["fr"] = {
+                ["Fabriquez un bouclier normal"               ] = "Fabriquez un bouclier en chêne normal"
+             ,  ["Fabriquez un bâton de rétablissement normal"] = "Fabriquez un bâton de rétablissement en chêne normal"
+             }
+}
+
 -- If the supplied condition requests that we craft a potion or poison at
 -- an AL station, return the requested item and level.
 --
 -- If the supplied condition requests something else, such as gear,
 -- or acquire some alchemy or enchanting material, return nil.
 --
-function LibCraftText.ParseDailyConditionCraftAL(cond_text)
-    return "Essence of Stamina"
+function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
+    return { material=LibCraftText.CONSUMABLE_MATERIAL.ALKAHEST }
 end
+
+-- Test Scaffolding ----------------------------------------------------------
+--
+-- To enable unit tests to force a specific language.
+--
+
+function LibCraftText.ForceLang(lang)
+    LibCraftText.force_lang = lang
+end
+
+-- Test Scaffolding to enable unit tests to force a specific language.
+function LibCraftText.CurrLang()
+    if LibCraftText.force_lang then
+        return LibCraftText.force_lang
+    elseif not GetCVar then
+        return "en" -- for running outside of ESO client.
+    end
+    return GetCVar("language.2")
+end
+
+
+-- Internal Utility ----------------------------------------------------------
+
 
 local DE_UMLAUT = { ["ä"] = "a"
                   , ["ö"] = "o"
@@ -310,3 +276,39 @@ function LibCraftText.ExactMatch(find_me, rows, crafting_type, field_name, ... )
     end
     return nil
 end
+
+-- Build reverse lookup tables to accelerate lookups
+function LibCraftText.BuildReverseLookupTables()
+    if LibCraftText.reverse_tables_built then
+        return
+    end
+
+    for _,ctype in pairs(LibCraftText.CRAFTING_TYPES) do
+        local txt = LibCraftText.DAILY_QUEST_TITLES[ctype]
+        LibCraftText.DAILY_QUEST_TITLES[txt] = ctype
+
+        local tlist = LibCraftText.MASTER_QUEST_TITLES[ctype]
+        for _,txt in pairs(tlist) do
+            if not LibCraftText.MASTER_QUEST_TITLES[txt] then
+                LibCraftText.MASTER_QUEST_TITLES[txt] = {}
+            end
+            table.insert(LibCraftText.MASTER_QUEST_TITLES[txt], ctype)
+        end
+
+        local txt = LibCraftText.ROLIS_QUEST_TURN_IN[ctype]
+        LibCraftText.ROLIS_QUEST_TURN_IN[txt] = ctype
+    end
+
+    LibCraftText.reverse_tables_built = true
+end
+
+LibCraftText.CRAFTING_TYPES = {
+  CRAFTING_TYPE_BLACKSMITHING
+, CRAFTING_TYPE_CLOTHIER
+, CRAFTING_TYPE_ENCHANTING
+, CRAFTING_TYPE_ALCHEMY
+, CRAFTING_TYPE_PROVISIONING
+, CRAFTING_TYPE_WOODWORKING
+, CRAFTING_TYPE_JEWELRYCRAFTING
+}
+

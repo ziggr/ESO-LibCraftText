@@ -208,7 +208,7 @@ LibCraftText.MATERIAL = {
 --
 -- item_id          ZOS itemId for use in itemLinks and other APInes.
 --
-LibCraftText.CONSUMABLE_MATERIALS = {
+LibCraftText.CONSUMABLE_MATERIAL = {
   ["BLESSED_THISTLE"         ] = { "благословенный чертополох"      , crafting_type=al, item_id= 30157 }
 , ["BLUE_ENTOLOMA"           ] = { "голубая энтолома"               , crafting_type=al, item_id= 30148 }
 , ["BUGLOSS"                 ] = { "воловик"                        , crafting_type=al, item_id= 30160 }

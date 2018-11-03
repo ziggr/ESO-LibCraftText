@@ -41,6 +41,15 @@ function TestGen.TestAll()
     end
 end
 
+local CRAFTING_TYPE_TO_PARSE_FUNC = {
+  [bs] = LibCraftText.ParseDailyConditionGear
+, [cl] = LibCraftText.ParseDailyConditionGear
+, [en] = LibCraftText.ParseDailyConditionConsumable
+, [al] = LibCraftText.ParseDailyConditionConsumable
+, [pr] = LibCraftText.ParseDailyConditionConsumable
+, [ww] = LibCraftText.ParseDailyConditionGear
+, [jw] = LibCraftText.ParseDailyConditionGear
+}
 function TestGen.OneTest(input_en, expect)
                         -- Skip lines I've not filled in yet.
                         -- We need that crafting_type.
@@ -62,8 +71,11 @@ function TestGen.OneTest(input_en, expect)
     luaunit.assertNotNil(lang_table,input_en)
     local input = lang_table[LibCraftText.CurrLang()] or input_en
 
-    local got = LibCraftText.ParseDailyConditionGear(crafting_type, input)
-    luaunit.assertEquals(got, real_expect, input_en.."/"..input)
+    local test_func = CRAFTING_TYPE_TO_PARSE_FUNC[crafting_type]
+    if test_func then
+        local got = test_func(crafting_type, input)
+        luaunit.assertEquals(got, real_expect, input_en.."/"..input)
+    end
 end
 
 os.exit( luaunit.LuaUnit.run() )
