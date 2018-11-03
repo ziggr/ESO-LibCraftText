@@ -240,10 +240,10 @@ end
 function ImportSavedCharQuestCondition(key_fodder, condition)
     local pree_key = PrexistingCondition(key_fodder, condition)
     if pree_key then
-        Warn(string.format( "Skipping previously known %s %s"
-                          , pree_key
-                          , tostring(condition and colon_strip(condition.en))
-                          ))
+        -- Warn(string.format( "Skipping previously known %s %s"
+        --                   , pree_key
+        --                   , tostring(condition and colon_strip(condition.en))
+        --                   ))
         return nil
     end
 
@@ -253,6 +253,12 @@ function ImportSavedCharQuestCondition(key_fodder, condition)
     for i,lang in ipairs(LANG_LIST) do
         entry[lang] = colon_strip(condition[lang])
     end
+
+    Warn(string.format( "Adding new %s %s"
+                      , key
+                      , tostring(condition and colon_strip(condition.en))
+                      ))
+
     DB[key] = entry
     return key
 end
