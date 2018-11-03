@@ -73,170 +73,170 @@ COND_TEXT_FODDER = {
 , { input="Craft Monumental Glyph of Stamina With Ta"       , expect={}                                                 }
 , { input="Craft Muthsera's Remorse"                        , expect={}                                                 }
 , { input="Craft Muthsera's Remorse: 0 / 1"              , expect={}                                                 }
-, { input="Craft Nibenese Garlic Carrots"                   , expect={}                                                 }
-, { input="Craft Normal Ancestor Silk Breeches"             , expect={}                                                 }
-, { input="Craft Normal Ancestor Silk Epaulets"             , expect={}                                                 }
-, { input="Craft Normal Ancestor Silk Robe"                 , expect={}                                                 }
-, { input="Craft Normal Ash Bow"                            , expect={}                                                 }
-, { input="Craft Normal Ash Restoration Staff"              , expect={}                                                 }
-, { input="Craft Normal Ash Shield"                         , expect={}                                                 }
-, { input="Craft Normal Beech Bow"                          , expect={}                                                 }
-, { input="Craft Normal Beech Ice Staff"                    , expect={}                                                 }
-, { input="Craft Normal Beech Inferno Staff"                , expect={}                                                 }
-, { input="Craft Normal Beech Lightning Staff"              , expect={}                                                 }
-, { input="Craft Normal Beech Shield"                       , expect={}                                                 }
-, { input="Craft Normal Birch Ice Staff"                    , expect={}                                                 }
-, { input="Craft Normal Birch Inferno Staff"                , expect={}                                                 }
-, { input="Craft Normal Birch Lightning Staff"              , expect={}                                                 }
-, { input="Craft Normal Birch Restoration Staff"            , expect={}                                                 }
-, { input="Craft Normal Birch Shield"                       , expect={}                                                 }
-, { input="Craft Normal Calcinium Cuirass"                  , expect={}                                                 }
-, { input="Craft Normal Calcinium Gauntlets"                , expect={}                                                 }
-, { input="Craft Normal Calcinium Greatsword"               , expect={}                                                 }
-, { input="Craft Normal Calcinium Greaves"                  , expect={}                                                 }
-, { input="Craft Normal Calcinium Sabatons"                 , expect={}                                                 }
-, { input="Craft Normal Calcinium Sword"                    , expect={}                                                 }
-, { input="Craft Normal Cotton Hat"                         , expect={}                                                 }
-, { input="Craft Normal Cotton Sash"                        , expect={}                                                 }
-, { input="Craft Normal Cotton Shoes"                       , expect={}                                                 }
-, { input="Craft Normal Dwarven Cuirass"                    , expect={}                                                 }
-, { input="Craft Normal Dwarven Greaves"                    , expect={}                                                 }
-, { input="Craft Normal Dwarven Sword"                      , expect={}                                                 }
-, { input="Craft Normal Ebonthread Breeches"                , expect={}                                                 }
-, { input="Craft Normal Ebonthread Epaulets"                , expect={}                                                 }
-, { input="Craft Normal Ebonthread Robe"                    , expect={}                                                 }
-, { input="Craft Normal Ebony Cuirass"                      , expect={}                                                 }
-, { input="Craft Normal Ebony Dagger"                       , expect={}                                                 }
-, { input="Craft Normal Ebony Greaves"                      , expect={}                                                 }
-, { input="Craft Normal Ebony Helm"                         , expect={}                                                 }
-, { input="Craft Normal Ebony Pauldron"                     , expect={}                                                 }
-, { input="Craft Normal Ebony Sword"                        , expect={}                                                 }
-, { input="Craft Normal Fell Arm Cops"                      , expect={}                                                 }
-, { input="Craft Normal Fell Bracers"                       , expect={}                                                 }
-, { input="Craft Normal Fell Helmet"                        , expect={}                                                 }
-, { input="Craft Normal Galatite Cuirass"                   , expect={}                                                 }
-, { input="Craft Normal Galatite Dagger"                    , expect={}                                                 }
-, { input="Craft Normal Galatite Greaves"                   , expect={}                                                 }
-, { input="Craft Normal Galatite Helm"                      , expect={}                                                 }
-, { input="Craft Normal Galatite Pauldron"                  , expect={}                                                 }
-, { input="Craft Normal Galatite Sword"                     , expect={}                                                 }
-, { input="Craft Normal Hickory Restoration Staff"          , expect={}                                                 }
-, { input="Craft Normal Hickory Shield"                     , expect={}                                                 }
-, { input="Craft Normal Hide Arm Cops"                      , expect={}                                                 }
-, { input="Craft Normal Hide Bracers"                       , expect={}                                                 }
-, { input="Craft Normal Hide Helmet"                        , expect={}                                                 }
-, { input="Craft Normal Homespun Hat"                       , expect={}                                                 }
-, { input="Craft Normal Homespun Sash"                      , expect={}                                                 }
-, { input="Craft Normal Homespun Shoes"                     , expect={}                                                 }
-, { input="Craft Normal Iron Dagger"                        , expect={}                                                 }
-, { input="Craft Normal Iron Gauntlets"                     , expect={}                                                 }
-, { input="Craft Normal Iron Greatsword"                    , expect={}                                                 }
-, { input="Craft Normal Iron Helm"                          , expect={}                                                 }
-, { input="Craft Normal Iron Pauldron"                      , expect={}                                                 }
-, { input="Craft Normal Iron Sabatons"                      , expect={}                                                 }
-, { input="Craft Normal Ironhide Arm Cops"                  , expect={}                                                 }
-, { input="Craft Normal Ironhide Bracers"                   , expect={}                                                 }
-, { input="Craft Normal Ironhide Helmet"                    , expect={}                                                 }
-, { input="Craft Normal Ironthread Breeches"                , expect={}                                                 }
-, { input="Craft Normal Ironthread Epaulets"                , expect={}                                                 }
-, { input="Craft Normal Ironthread Robe"                    , expect={}                                                 }
-, { input="Craft Normal Kresh Breeches"                     , expect={}                                                 }
-, { input="Craft Normal Kresh Epaulets"                     , expect={}                                                 }
-, { input="Craft Normal Kresh Hat"                          , expect={}                                                 }
-, { input="Craft Normal Kresh Robe"                         , expect={}                                                 }
-, { input="Craft Normal Kresh Sash"                         , expect={}                                                 }
-, { input="Craft Normal Kresh Shoes"                        , expect={}                                                 }
-, { input="Craft Normal Leather Arm Cops"                   , expect={}                                                 }
-, { input="Craft Normal Leather Bracers"                    , expect={}                                                 }
-, { input="Craft Normal Leather Helmet"                     , expect={}                                                 }
-, { input="Craft Normal Linen Hat"                          , expect={}                                                 }
-, { input="Craft Normal Linen Sash"                         , expect={}                                                 }
-, { input="Craft Normal Linen Shoes"                        , expect={}                                                 }
-, { input="Craft Normal Mahogany Ice Staff"                 , expect={}                                                 }
-, { input="Craft Normal Mahogany Inferno Staff"             , expect={}                                                 }
-, { input="Craft Normal Mahogany Lightning Staff"           , expect={}                                                 }
-, { input="Craft Normal Mahogany Restoration Staff"         , expect={}                                                 }
-, { input="Craft Normal Mahogany Shield"                    , expect={}                                                 }
-, { input="Craft Normal Maple Bow"                          , expect={}                                                 }
-, { input="Craft Normal Maple Ice Staff"                    , expect={}                                                 }
-, { input="Craft Normal Maple Inferno Staff"                , expect={}                                                 }
-, { input="Craft Normal Maple Lightning Staff"              , expect={}                                                 }
-, { input="Craft Normal Maple Shield"                       , expect={}                                                 }
-, { input="Craft Normal Nightwood Bow"                      , expect={}                                                 }
-, { input="Craft Normal Nightwood Ice Staff"                , expect={}                                                 }
-, { input="Craft Normal Nightwood Inferno Staff"            , expect={}                                                 }
-, { input="Craft Normal Nightwood Lightning Staff"          , expect={}                                                 }
-, { input="Craft Normal Nightwood Shield"                   , expect={}                                                 }
-, { input="Craft Normal Oak Bow"                            , expect={}                                                 }
-, { input="Craft Normal Oak Ice Staff"                      , expect={}                                                 }
-, { input="Craft Normal Oak Inferno Staff"                  , expect={}                                                 }
-, { input="Craft Normal Oak Lightning Staff"                , expect={}                                                 }
-, { input="Craft Normal Oak Shield"                         , expect={}                                                 }
-, { input="Craft Normal Orichalcum Dagger"                  , expect={}                                                 }
-, { input="Craft Normal Orichalcum Gauntlets"               , expect={}                                                 }
-, { input="Craft Normal Orichalcum Greatsword"              , expect={}                                                 }
-, { input="Craft Normal Orichalcum Helm"                    , expect={}                                                 }
-, { input="Craft Normal Orichalcum Pauldron"                , expect={}                                                 }
-, { input="Craft Normal Orichalcum Sabatons"                , expect={}                                                 }
-, { input="Craft Normal Quicksilver Cuirass"                , expect={}                                                 }
-, { input="Craft Normal Quicksilver Gauntlets"              , expect={}                                                 }
-, { input="Craft Normal Quicksilver Greatsword"             , expect={}                                                 }
-, { input="Craft Normal Quicksilver Greaves"                , expect={}                                                 }
-, { input="Craft Normal Quicksilver Sabatons"               , expect={}                                                 }
-, { input="Craft Normal Quicksilver Sword"                  , expect={}                                                 }
-, { input="Craft Normal Rawhide Arm Cops"                   , expect={}                                                 }
-, { input="Craft Normal Rawhide Bracers"                    , expect={}                                                 }
-, { input="Craft Normal Rawhide Helmet"                     , expect={}                                                 }
-, { input="Craft Normal Rubedite Cuirass"                   , expect={}                                                 }
-, { input="Craft Normal Rubedite Dagger"                    , expect={}                                                 }
-, { input="Craft Normal Rubedite Dagger: 0 / 1"          , expect={}                                                 }
-, { input="Craft Normal Rubedite Greaves"                   , expect={}                                                 }
-, { input="Craft Normal Rubedite Helm"                      , expect={ item=LCT.ITEM.HELM     , material=LCT.MATERIAL.RUBEDITE, crafting_type=bs } }
-, { input="Craft Normal Rubedite Helm: 0 / 1"            , expect={    item=LCT.ITEM.HELM     , material=LCT.MATERIAL.RUBEDITE, crafting_type=bs } }
-, { input="Craft Normal Rubedite Pauldron"                  , expect={ item=LCT.ITEM.PAULDRON , material=LCT.MATERIAL.RUBEDITE, crafting_type=bs } }
-, { input="Craft Normal Rubedite Pauldron: 0 / 1"        , expect={    item=LCT.ITEM.PAULDRON , material=LCT.MATERIAL.RUBEDITE, crafting_type=bs } }
-, { input="Craft Normal Rubedite Sword"                     , expect={}                                                 }
-, { input="Craft Normal Rubedo Leather Arm Cops"            , expect={}                                                 }
-, { input="Craft Normal Rubedo Leather Arm Cops: 0 / 1"  , expect={}                                                 }
-, { input="Craft Normal Rubedo Leather Bracers"             , expect={}                                                 }
-, { input="Craft Normal Rubedo Leather Bracers: 0 / 1"   , expect={}                                                 }
-, { input="Craft Normal Rubedo Leather Helmet"              , expect={}                                                 }
-, { input="Craft Normal Rubedo Leather Helmet: 0 / 1"    , expect={}                                                 }
-, { input="Craft Normal Ruby Ash Bow"                       , expect={}                                                 }
-, { input="Craft Normal Ruby Ash Bow: 0 / 2"             , expect={}                                                 }
-, { input="Craft Normal Ruby Ash Restoration Staff"         , expect={}                                                 }
-, { input="Craft Normal Ruby Ash Shield"                    , expect={}                                                 }
-, { input="Craft Normal Ruby Ash Shield: 0 / 1"          , expect={}                                                 }
-, { input="Craft Normal Shadowhide Arm Cops"                , expect={}                                                 }
-, { input="Craft Normal Shadowhide Bracers"                 , expect={}                                                 }
-, { input="Craft Normal Shadowhide Helmet"                  , expect={}                                                 }
-, { input="Craft Normal Shadowspun Hat"                     , expect={}                                                 }
-, { input="Craft Normal Shadowspun Sash"                    , expect={}                                                 }
-, { input="Craft Normal Shadowspun Shoes"                   , expect={}                                                 }
-, { input="Craft Normal Silverweave Breeches"               , expect={}                                                 }
-, { input="Craft Normal Silverweave Epaulets"               , expect={}                                                 }
-, { input="Craft Normal Silverweave Hat"                    , expect={}                                                 }
-, { input="Craft Normal Silverweave Robe"                   , expect={}                                                 }
-, { input="Craft Normal Silverweave Sash"                   , expect={}                                                 }
-, { input="Craft Normal Silverweave Shoes"                  , expect={}                                                 }
-, { input="Craft Normal Spidersilk Breeches"                , expect={}                                                 }
-, { input="Craft Normal Spidersilk Epaulets"                , expect={}                                                 }
-, { input="Craft Normal Spidersilk Robe"                    , expect={}                                                 }
-, { input="Craft Normal Steel Dagger"                       , expect={}                                                 }
-, { input="Craft Normal Steel Gauntlets"                    , expect={}                                                 }
-, { input="Craft Normal Steel Greatsword"                   , expect={}                                                 }
-, { input="Craft Normal Steel Helm"                         , expect={}                                                 }
-, { input="Craft Normal Steel Pauldron"                     , expect={}                                                 }
-, { input="Craft Normal Steel Sabatons"                     , expect={}                                                 }
-, { input="Craft Normal Voidsteel Dagger"                   , expect={}                                                 }
-, { input="Craft Normal Voidsteel Gauntlets"                , expect={}                                                 }
-, { input="Craft Normal Voidsteel Greatsword"               , expect={}                                                 }
-, { input="Craft Normal Voidsteel Helm"                     , expect={}                                                 }
-, { input="Craft Normal Voidsteel Pauldron"                 , expect={}                                                 }
-, { input="Craft Normal Voidsteel Sabatons"                 , expect={}                                                 }
-, { input="Craft Normal Yew Bow"                            , expect={}                                                 }
-, { input="Craft Normal Yew Restoration Staff"              , expect={}                                                 }
-, { input="Craft Normal Yew Shield"                         , expect={}                                                 }
+, { input="Craft Nibenese Garlic Carrots"                   , expect={}                                                  }
+, { input="Craft Normal Ancestor Silk Breeches"             , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.ANCESTOR_SILK  } }
+, { input="Craft Normal Ancestor Silk Epaulets"             , expect={ item=LCT.ITEM.EPAULETS         , material=LCT.MATERIAL.ANCESTOR_SILK  } }
+, { input="Craft Normal Ancestor Silk Robe"                 , expect={ item=LCT.ITEM.ROBE             , material=LCT.MATERIAL.ANCESTOR_SILK  } }
+, { input="Craft Normal Ash Bow"                            , expect={ item=LCT.ITEM.BOW              , material=LCT.MATERIAL.ASH            } }
+, { input="Craft Normal Ash Restoration Staff"              , expect={ item=LCT.ITEM.RESTO_STAFF      , material=LCT.MATERIAL.ASH            } }
+, { input="Craft Normal Ash Shield"                         , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.ASH            } }
+, { input="Craft Normal Beech Bow"                          , expect={ item=LCT.ITEM.BOW              , material=LCT.MATERIAL.BEECH          } }
+, { input="Craft Normal Beech Ice Staff"                    , expect={ item=LCT.ITEM.ICE_STAFF        , material=LCT.MATERIAL.BEECH          } }
+, { input="Craft Normal Beech Inferno Staff"                , expect={ item=LCT.ITEM.INFERNO_STAFF    , material=LCT.MATERIAL.BEECH          } }
+, { input="Craft Normal Beech Lightning Staff"              , expect={ item=LCT.ITEM.LIGHTNING_STAFF  , material=LCT.MATERIAL.BEECH          } }
+, { input="Craft Normal Beech Shield"                       , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.BEECH          } }
+, { input="Craft Normal Birch Ice Staff"                    , expect={ item=LCT.ITEM.ICE_STAFF        , material=LCT.MATERIAL.BIRCH          } }
+, { input="Craft Normal Birch Inferno Staff"                , expect={ item=LCT.ITEM.INFERNO_STAFF    , material=LCT.MATERIAL.BIRCH          } }
+, { input="Craft Normal Birch Lightning Staff"              , expect={ item=LCT.ITEM.LIGHTNING_STAFF  , material=LCT.MATERIAL.BIRCH          } }
+, { input="Craft Normal Birch Restoration Staff"            , expect={ item=LCT.ITEM.RESTO_STAFF      , material=LCT.MATERIAL.BIRCH          } }
+, { input="Craft Normal Birch Shield"                       , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.BIRCH          } }
+, { input="Craft Normal Calcinium Cuirass"                  , expect={ item=LCT.ITEM.CUIRASS          , material=LCT.MATERIAL.CALCINIUM      } }
+, { input="Craft Normal Calcinium Gauntlets"                , expect={ item=LCT.ITEM.GAUNTLETS        , material=LCT.MATERIAL.CALCINIUM      } }
+, { input="Craft Normal Calcinium Greatsword"               , expect={ item=LCT.ITEM.H2_GREATSWORD    , material=LCT.MATERIAL.CALCINIUM      } }
+, { input="Craft Normal Calcinium Greaves"                  , expect={ item=LCT.ITEM.GREAVES          , material=LCT.MATERIAL.CALCINIUM      } }
+, { input="Craft Normal Calcinium Sabatons"                 , expect={ item=LCT.ITEM.SABATONS         , material=LCT.MATERIAL.CALCINIUM      } }
+, { input="Craft Normal Calcinium Sword"                    , expect={ item=LCT.ITEM.H1_SWORD         , material=LCT.MATERIAL.CALCINIUM      } }
+, { input="Craft Normal Cotton Hat"                         , expect={ item=LCT.ITEM.HAT              , material=LCT.MATERIAL.COTTON         } }
+, { input="Craft Normal Cotton Sash"                        , expect={ item=LCT.ITEM.SASH             , material=LCT.MATERIAL.COTTON         } }
+, { input="Craft Normal Cotton Shoes"                       , expect={ item=LCT.ITEM.SHOES            , material=LCT.MATERIAL.COTTON         } }
+, { input="Craft Normal Dwarven Cuirass"                    , expect={ item=LCT.ITEM.CUIRASS          , material=LCT.MATERIAL.DWARVEN        } }
+, { input="Craft Normal Dwarven Greaves"                    , expect={ item=LCT.ITEM.GREAVES          , material=LCT.MATERIAL.DWARVEN        } }
+, { input="Craft Normal Dwarven Sword"                      , expect={ item=LCT.ITEM.H1_SWORD         , material=LCT.MATERIAL.DWARVEN        } }
+, { input="Craft Normal Ebonthread Breeches"                , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.EBONTHREAD     } }
+, { input="Craft Normal Ebonthread Epaulets"                , expect={ item=LCT.ITEM.EPAULETS         , material=LCT.MATERIAL.EBONTHREAD     } }
+, { input="Craft Normal Ebonthread Robe"                    , expect={ item=LCT.ITEM.ROBE             , material=LCT.MATERIAL.EBONTHREAD     } }
+, { input="Craft Normal Ebony Cuirass"                      , expect={ item=LCT.ITEM.CUIRASS          , material=LCT.MATERIAL.EBONY          } }
+, { input="Craft Normal Ebony Dagger"                       , expect={ item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.EBONY          } }
+, { input="Craft Normal Ebony Greaves"                      , expect={ item=LCT.ITEM.GREAVES          , material=LCT.MATERIAL.EBONY          } }
+, { input="Craft Normal Ebony Helm"                         , expect={ item=LCT.ITEM.HELM             , material=LCT.MATERIAL.EBONY          } }
+, { input="Craft Normal Ebony Pauldron"                     , expect={ item=LCT.ITEM.PAULDRON         , material=LCT.MATERIAL.EBONY          } }
+, { input="Craft Normal Ebony Sword"                        , expect={ item=LCT.ITEM.H1_SWORD         , material=LCT.MATERIAL.EBONY          } }
+, { input="Craft Normal Fell Arm Cops"                      , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.FELL_HIDE      } }
+, { input="Craft Normal Fell Bracers"                       , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.FELL_HIDE      } }
+, { input="Craft Normal Fell Helmet"                        , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.FELL_HIDE      } }
+, { input="Craft Normal Galatite Cuirass"                   , expect={ item=LCT.ITEM.CUIRASS          , material=LCT.MATERIAL.GALATITE       } }
+, { input="Craft Normal Galatite Dagger"                    , expect={ item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.GALATITE       } }
+, { input="Craft Normal Galatite Greaves"                   , expect={ item=LCT.ITEM.GREAVES          , material=LCT.MATERIAL.GALATITE       } }
+, { input="Craft Normal Galatite Helm"                      , expect={ item=LCT.ITEM.HELM             , material=LCT.MATERIAL.GALATITE       } }
+, { input="Craft Normal Galatite Pauldron"                  , expect={ item=LCT.ITEM.PAULDRON         , material=LCT.MATERIAL.GALATITE       } }
+, { input="Craft Normal Galatite Sword"                     , expect={ item=LCT.ITEM.H1_SWORD         , material=LCT.MATERIAL.GALATITE       } }
+, { input="Craft Normal Hickory Restoration Staff"          , expect={ item=LCT.ITEM.RESTO_STAFF      , material=LCT.MATERIAL.HICKORY        } }
+, { input="Craft Normal Hickory Shield"                     , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.HICKORY        } }
+, { input="Craft Normal Hide Arm Cops"                      , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.HIDE           } }
+, { input="Craft Normal Hide Bracers"                       , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.HIDE           } }
+, { input="Craft Normal Hide Helmet"                        , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.HIDE           } }
+, { input="Craft Normal Homespun Hat"                       , expect={ item=LCT.ITEM.HAT              , material=LCT.MATERIAL.JUTE           } }
+, { input="Craft Normal Homespun Sash"                      , expect={ item=LCT.ITEM.SASH             , material=LCT.MATERIAL.JUTE           } }
+, { input="Craft Normal Homespun Shoes"                     , expect={ item=LCT.ITEM.SHOES            , material=LCT.MATERIAL.JUTE           } }
+, { input="Craft Normal Iron Dagger"                        , expect={ item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.IRON           } }
+, { input="Craft Normal Iron Gauntlets"                     , expect={ item=LCT.ITEM.GAUNTLETS        , material=LCT.MATERIAL.IRON           } }
+, { input="Craft Normal Iron Greatsword"                    , expect={ item=LCT.ITEM.H2_GREATSWORD    , material=LCT.MATERIAL.IRON           } }
+, { input="Craft Normal Iron Helm"                          , expect={ item=LCT.ITEM.HELM             , material=LCT.MATERIAL.IRON           } }
+, { input="Craft Normal Iron Pauldron"                      , expect={ item=LCT.ITEM.PAULDRON         , material=LCT.MATERIAL.IRON           } }
+, { input="Craft Normal Iron Sabatons"                      , expect={ item=LCT.ITEM.SABATONS         , material=LCT.MATERIAL.IRON           } }
+, { input="Craft Normal Ironhide Arm Cops"                  , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.IRONHIDE       } }
+, { input="Craft Normal Ironhide Bracers"                   , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.IRONHIDE       } }
+, { input="Craft Normal Ironhide Helmet"                    , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.IRONHIDE       } }
+, { input="Craft Normal Ironthread Breeches"                , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.IRONTHREAD     } }
+, { input="Craft Normal Ironthread Epaulets"                , expect={ item=LCT.ITEM.EPAULETS         , material=LCT.MATERIAL.IRONTHREAD     } }
+, { input="Craft Normal Ironthread Robe"                    , expect={ item=LCT.ITEM.ROBE             , material=LCT.MATERIAL.IRONTHREAD     } }
+, { input="Craft Normal Kresh Breeches"                     , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.KRESH          } }
+, { input="Craft Normal Kresh Epaulets"                     , expect={ item=LCT.ITEM.EPAULETS         , material=LCT.MATERIAL.KRESH          } }
+, { input="Craft Normal Kresh Hat"                          , expect={ item=LCT.ITEM.HAT              , material=LCT.MATERIAL.KRESH          } }
+, { input="Craft Normal Kresh Robe"                         , expect={ item=LCT.ITEM.ROBE             , material=LCT.MATERIAL.KRESH          } }
+, { input="Craft Normal Kresh Sash"                         , expect={ item=LCT.ITEM.SASH             , material=LCT.MATERIAL.KRESH          } }
+, { input="Craft Normal Kresh Shoes"                        , expect={ item=LCT.ITEM.SHOES            , material=LCT.MATERIAL.KRESH          } }
+, { input="Craft Normal Leather Arm Cops"                   , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.LEATHER        } }
+, { input="Craft Normal Leather Bracers"                    , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.LEATHER        } }
+, { input="Craft Normal Leather Helmet"                     , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.LEATHER        } }
+, { input="Craft Normal Linen Hat"                          , expect={ item=LCT.ITEM.HAT              , material=LCT.MATERIAL.LINEN          } }
+, { input="Craft Normal Linen Sash"                         , expect={ item=LCT.ITEM.SASH             , material=LCT.MATERIAL.LINEN          } }
+, { input="Craft Normal Linen Shoes"                        , expect={ item=LCT.ITEM.SHOES            , material=LCT.MATERIAL.LINEN          } }
+, { input="Craft Normal Mahogany Ice Staff"                 , expect={ item=LCT.ITEM.ICE_STAFF        , material=LCT.MATERIAL.MAHOGANY       } }
+, { input="Craft Normal Mahogany Inferno Staff"             , expect={ item=LCT.ITEM.INFERNO_STAFF    , material=LCT.MATERIAL.MAHOGANY       } }
+, { input="Craft Normal Mahogany Lightning Staff"           , expect={ item=LCT.ITEM.LIGHTNING_STAFF  , material=LCT.MATERIAL.MAHOGANY       } }
+, { input="Craft Normal Mahogany Restoration Staff"         , expect={ item=LCT.ITEM.RESTO_STAFF      , material=LCT.MATERIAL.MAHOGANY       } }
+, { input="Craft Normal Mahogany Shield"                    , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.MAHOGANY       } }
+, { input="Craft Normal Maple Bow"                          , expect={ item=LCT.ITEM.BOW              , material=LCT.MATERIAL.MAPLE          } }
+, { input="Craft Normal Maple Ice Staff"                    , expect={ item=LCT.ITEM.ICE_STAFF        , material=LCT.MATERIAL.MAPLE          } }
+, { input="Craft Normal Maple Inferno Staff"                , expect={ item=LCT.ITEM.INFERNO_STAFF    , material=LCT.MATERIAL.MAPLE          } }
+, { input="Craft Normal Maple Lightning Staff"              , expect={ item=LCT.ITEM.LIGHTNING_STAFF  , material=LCT.MATERIAL.MAPLE          } }
+, { input="Craft Normal Maple Shield"                       , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.MAPLE          } }
+, { input="Craft Normal Nightwood Bow"                      , expect={ item=LCT.ITEM.BOW              , material=LCT.MATERIAL.NIGHTWOOD      } }
+, { input="Craft Normal Nightwood Ice Staff"                , expect={ item=LCT.ITEM.ICE_STAFF        , material=LCT.MATERIAL.NIGHTWOOD      } }
+, { input="Craft Normal Nightwood Inferno Staff"            , expect={ item=LCT.ITEM.INFERNO_STAFF    , material=LCT.MATERIAL.NIGHTWOOD      } }
+, { input="Craft Normal Nightwood Lightning Staff"          , expect={ item=LCT.ITEM.LIGHTNING_STAFF  , material=LCT.MATERIAL.NIGHTWOOD      } }
+, { input="Craft Normal Nightwood Shield"                   , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.NIGHTWOOD      } }
+, { input="Craft Normal Oak Bow"                            , expect={ item=LCT.ITEM.BOW              , material=LCT.MATERIAL.OAK            } }
+, { input="Craft Normal Oak Ice Staff"                      , expect={ item=LCT.ITEM.ICE_STAFF        , material=LCT.MATERIAL.OAK            } }
+, { input="Craft Normal Oak Inferno Staff"                  , expect={ item=LCT.ITEM.INFERNO_STAFF    , material=LCT.MATERIAL.OAK            } }
+, { input="Craft Normal Oak Lightning Staff"                , expect={ item=LCT.ITEM.LIGHTNING_STAFF  , material=LCT.MATERIAL.OAK            } }
+, { input="Craft Normal Oak Shield"                         , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.OAK            } }
+, { input="Craft Normal Orichalcum Dagger"                  , expect={ item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.ORICHALC       } }
+, { input="Craft Normal Orichalcum Gauntlets"               , expect={ item=LCT.ITEM.GAUNTLETS        , material=LCT.MATERIAL.ORICHALC       } }
+, { input="Craft Normal Orichalcum Greatsword"              , expect={ item=LCT.ITEM.H2_GREATSWORD    , material=LCT.MATERIAL.ORICHALC       } }
+, { input="Craft Normal Orichalcum Helm"                    , expect={ item=LCT.ITEM.HELM             , material=LCT.MATERIAL.ORICHALC       } }
+, { input="Craft Normal Orichalcum Pauldron"                , expect={ item=LCT.ITEM.PAULDRON         , material=LCT.MATERIAL.ORICHALC       } }
+, { input="Craft Normal Orichalcum Sabatons"                , expect={ item=LCT.ITEM.SABATONS         , material=LCT.MATERIAL.ORICHALC       } }
+, { input="Craft Normal Quicksilver Cuirass"                , expect={ item=LCT.ITEM.CUIRASS          , material=LCT.MATERIAL.QUICKSILVER    } }
+, { input="Craft Normal Quicksilver Gauntlets"              , expect={ item=LCT.ITEM.GAUNTLETS        , material=LCT.MATERIAL.QUICKSILVER    } }
+, { input="Craft Normal Quicksilver Greatsword"             , expect={ item=LCT.ITEM.H2_GREATSWORD    , material=LCT.MATERIAL.QUICKSILVER    } }
+, { input="Craft Normal Quicksilver Greaves"                , expect={ item=LCT.ITEM.GREAVES          , material=LCT.MATERIAL.QUICKSILVER    } }
+, { input="Craft Normal Quicksilver Sabatons"               , expect={ item=LCT.ITEM.SABATONS         , material=LCT.MATERIAL.QUICKSILVER    } }
+, { input="Craft Normal Quicksilver Sword"                  , expect={ item=LCT.ITEM.H1_SWORD         , material=LCT.MATERIAL.QUICKSILVER    } }
+, { input="Craft Normal Rawhide Arm Cops"                   , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.RAWHIDE        } }
+, { input="Craft Normal Rawhide Bracers"                    , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.RAWHIDE        } }
+, { input="Craft Normal Rawhide Helmet"                     , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.RAWHIDE        } }
+, { input="Craft Normal Rubedite Cuirass"                   , expect={ item=LCT.ITEM.CUIRASS          , material=LCT.MATERIAL.RUBEDITE       } }
+, { input="Craft Normal Rubedite Dagger"                    , expect={ item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.RUBEDITE       } }
+, { input="Craft Normal Rubedite Dagger: 0 / 1"          , expect={    item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.RUBEDITE       } }
+, { input="Craft Normal Rubedite Greaves"                   , expect={ item=LCT.ITEM.GREAVES          , material=LCT.MATERIAL.RUBEDITE       } }
+, { input="Craft Normal Rubedite Helm"                      , expect={ item=LCT.ITEM.HELM             , material=LCT.MATERIAL.RUBEDITE       } }
+, { input="Craft Normal Rubedite Helm: 0 / 1"            , expect={    item=LCT.ITEM.HELM             , material=LCT.MATERIAL.RUBEDITE       } }
+, { input="Craft Normal Rubedite Pauldron"                  , expect={ item=LCT.ITEM.PAULDRON         , material=LCT.MATERIAL.RUBEDITE       } }
+, { input="Craft Normal Rubedite Pauldron: 0 / 1"        , expect={    item=LCT.ITEM.PAULDRON         , material=LCT.MATERIAL.RUBEDITE       } }
+, { input="Craft Normal Rubedite Sword"                     , expect={ item=LCT.ITEM.H1_SWORD         , material=LCT.MATERIAL.RUBEDITE       } }
+, { input="Craft Normal Rubedo Leather Arm Cops"            , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.RUBEDO_LEATHER } }
+, { input="Craft Normal Rubedo Leather Arm Cops: 0 / 1"  , expect={    item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.RUBEDO_LEATHER } }
+, { input="Craft Normal Rubedo Leather Bracers"             , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.RUBEDO_LEATHER } }
+, { input="Craft Normal Rubedo Leather Bracers: 0 / 1"   , expect={    item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.RUBEDO_LEATHER } }
+, { input="Craft Normal Rubedo Leather Helmet"              , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.RUBEDO_LEATHER } }
+, { input="Craft Normal Rubedo Leather Helmet: 0 / 1"    , expect={    item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.RUBEDO_LEATHER } }
+, { input="Craft Normal Ruby Ash Bow"                       , expect={ item=LCT.ITEM.BOW              , material=LCT.MATERIAL.RUBY_ASH       } }
+, { input="Craft Normal Ruby Ash Bow: 0 / 2"             , expect={    item=LCT.ITEM.BOW              , material=LCT.MATERIAL.RUBY_ASH       } }
+, { input="Craft Normal Ruby Ash Restoration Staff"         , expect={ item=LCT.ITEM.RESTO_STAFF      , material=LCT.MATERIAL.RUBY_ASH       } }
+, { input="Craft Normal Ruby Ash Shield"                    , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.RUBY_ASH       } }
+, { input="Craft Normal Ruby Ash Shield: 0 / 1"          , expect={    item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.RUBY_ASH       } }
+, { input="Craft Normal Shadowhide Arm Cops"                , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.SHADOWHIDE     } }
+, { input="Craft Normal Shadowhide Bracers"                 , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.SHADOWHIDE     } }
+, { input="Craft Normal Shadowhide Helmet"                  , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.SHADOWHIDE     } }
+, { input="Craft Normal Shadowspun Hat"                     , expect={ item=LCT.ITEM.HAT              , material=LCT.MATERIAL.SHADOWSPUN     } }
+, { input="Craft Normal Shadowspun Sash"                    , expect={ item=LCT.ITEM.SASH             , material=LCT.MATERIAL.SHADOWSPUN     } }
+, { input="Craft Normal Shadowspun Shoes"                   , expect={ item=LCT.ITEM.SHOES            , material=LCT.MATERIAL.SHADOWSPUN     } }
+, { input="Craft Normal Silverweave Breeches"               , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.SILVERWEAVE    } }
+, { input="Craft Normal Silverweave Epaulets"               , expect={ item=LCT.ITEM.EPAULETS         , material=LCT.MATERIAL.SILVERWEAVE    } }
+, { input="Craft Normal Silverweave Hat"                    , expect={ item=LCT.ITEM.HAT              , material=LCT.MATERIAL.SILVERWEAVE    } }
+, { input="Craft Normal Silverweave Robe"                   , expect={ item=LCT.ITEM.ROBE             , material=LCT.MATERIAL.SILVERWEAVE    } }
+, { input="Craft Normal Silverweave Sash"                   , expect={ item=LCT.ITEM.SASH             , material=LCT.MATERIAL.SILVERWEAVE    } }
+, { input="Craft Normal Silverweave Shoes"                  , expect={ item=LCT.ITEM.SHOES            , material=LCT.MATERIAL.SILVERWEAVE    } }
+, { input="Craft Normal Spidersilk Breeches"                , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.SPIDERSILK     } }
+, { input="Craft Normal Spidersilk Epaulets"                , expect={ item=LCT.ITEM.EPAULETS         , material=LCT.MATERIAL.SPIDERSILK     } }
+, { input="Craft Normal Spidersilk Robe"                    , expect={ item=LCT.ITEM.ROBE             , material=LCT.MATERIAL.SPIDERSILK     } }
+, { input="Craft Normal Steel Dagger"                       , expect={ item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.STEEL          } }
+, { input="Craft Normal Steel Gauntlets"                    , expect={ item=LCT.ITEM.GAUNTLETS        , material=LCT.MATERIAL.STEEL          } }
+, { input="Craft Normal Steel Greatsword"                   , expect={ item=LCT.ITEM.H2_GREATSWORD    , material=LCT.MATERIAL.STEEL          } }
+, { input="Craft Normal Steel Helm"                         , expect={ item=LCT.ITEM.HELM             , material=LCT.MATERIAL.STEEL          } }
+, { input="Craft Normal Steel Pauldron"                     , expect={ item=LCT.ITEM.PAULDRON         , material=LCT.MATERIAL.STEEL          } }
+, { input="Craft Normal Steel Sabatons"                     , expect={ item=LCT.ITEM.SABATONS         , material=LCT.MATERIAL.STEEL          } }
+, { input="Craft Normal Voidsteel Dagger"                   , expect={ item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.VOID_STEEL     } }
+, { input="Craft Normal Voidsteel Gauntlets"                , expect={ item=LCT.ITEM.GAUNTLETS        , material=LCT.MATERIAL.VOID_STEEL     } }
+, { input="Craft Normal Voidsteel Greatsword"               , expect={ item=LCT.ITEM.H2_GREATSWORD    , material=LCT.MATERIAL.VOID_STEEL     } }
+, { input="Craft Normal Voidsteel Helm"                     , expect={ item=LCT.ITEM.HELM             , material=LCT.MATERIAL.VOID_STEEL     } }
+, { input="Craft Normal Voidsteel Pauldron"                 , expect={ item=LCT.ITEM.PAULDRON         , material=LCT.MATERIAL.VOID_STEEL     } }
+, { input="Craft Normal Voidsteel Sabatons"                 , expect={ item=LCT.ITEM.SABATONS         , material=LCT.MATERIAL.VOID_STEEL     } }
+, { input="Craft Normal Yew Bow"                            , expect={ item=LCT.ITEM.BOW              , material=LCT.MATERIAL.YEW            } }
+, { input="Craft Normal Yew Restoration Staff"              , expect={ item=LCT.ITEM.RESTO_STAFF      , material=LCT.MATERIAL.YEW            } }
+, { input="Craft Normal Yew Shield"                         , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.YEW            } }
 , { input="Craft Nut Brown Ale"                             , expect={}                                                 }
 , { input="Craft Orcrest Garlic Apple Jelly"                , expect={}                                                 }
 , { input="Craft Panacea of Health"                         , expect={}                                                 }
@@ -262,25 +262,25 @@ COND_TEXT_FODDER = {
 , { input="Craft Superb Glyph of Magicka With Ta"           , expect={}                                                 }
 , { input="Craft Superb Glyph of Stamina With Ta"           , expect={}                                                 }
 , { input="Craft Superb Glyph of Stamina With Ta: 0 / 1" , expect={}                                                 }
-, { input="Craft Three Electrum Rings"                      , expect={}                                                 }
-, { input="Craft Three Platinum Rings"                      , expect={}                                                 }
+, { input="Craft Three Electrum Rings"                      , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.ELECTRUM       } }
+, { input="Craft Three Platinum Rings"                      , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.ELECTRUM       } }
 , { input="Craft Treacleberry Tea"                          , expect={}                                                 }
 , { input="Craft Trifling Glyph of Health With Ta"          , expect={}                                                 }
 , { input="Craft Trifling Glyph of Stamina With Ta"         , expect={}                                                 }
-, { input="Craft Two Copper Necklaces"                      , expect={}                                                 }
-, { input="Craft Two Pewter Necklaces"                      , expect={}                                                 }
-, { input="Craft Two Platinum Necklaces"                    , expect={}                                                 }
-, { input="Craft Two Silver Necklaces"                      , expect={}                                                 }
+, { input="Craft Two Copper Necklaces"                      , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.COPPER         } }
+, { input="Craft Two Pewter Necklaces"                      , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.PEWTER         } }
+, { input="Craft Two Platinum Necklaces"                    , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.PLATINUM       } }
+, { input="Craft Two Silver Necklaces"                      , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.SILVER         } }
 , { input="Craft Two-Zephyr Tea"                            , expect={}                                                 }
-, { input="Craft a Copper Necklace"                         , expect={}                                                 }
-, { input="Craft a Copper Ring"                             , expect={}                                                 }
-, { input="Craft a Pewter Necklace"                         , expect={}                                                 }
-, { input="Craft a Pewter Ring"                             , expect={}                                                 }
-, { input="Craft a Platinum Necklace"                       , expect={}                                                 }
-, { input="Craft a Platinum Necklace: 0 / 1"             , expect={}                                                 }
-, { input="Craft a Platinum Ring"                           , expect={}                                                 }
-, { input="Craft a Platinum Ring: 0 / 1"                 , expect={}                                                 }
-, { input="Craft a Silver Necklace"                         , expect={}                                                 }
-, { input="Craft a Silver Ring"                             , expect={}                                                 }
+, { input="Craft a Copper Necklace"                         , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.COPPER         } }
+, { input="Craft a Copper Ring"                             , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.COPPER         } }
+, { input="Craft a Pewter Necklace"                         , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.PEWTER         } }
+, { input="Craft a Pewter Ring"                             , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.PEWTER         } }
+, { input="Craft a Platinum Necklace"                       , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.PLATINUM       } }
+, { input="Craft a Platinum Necklace: 0 / 1"             , expect={    item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.PLATINUM       } }
+, { input="Craft a Platinum Ring"                           , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.PLATINUM       } }
+, { input="Craft a Platinum Ring: 0 / 1"                 , expect={    item=LCT.ITEM.RING           , material=LCT.MATERIAL.PLATINUM       } }
+, { input="Craft a Silver Necklace"                         , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.SILVER         } }
+, { input="Craft a Silver Ring"                             , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.SILVER         } }
 , { input="Deliver Goods to Nearest Writ Quartermaster"     , expect={}                                                 }
 }

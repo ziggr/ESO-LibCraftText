@@ -6,6 +6,7 @@ luaunit = require("luaunit")
 TestGen            = {}
 TestGen.setUpOuter =  Test.setUpOuter
 TestGen.setUp      =  Test.setUp
+TestGen.test_ct    = 0
 
 LCT = LibCraftText
 
@@ -29,6 +30,8 @@ function TestGen.TestAll()
     for _,fodder in pairs(COND_TEXT_FODDER) do
         TestGen.OneTest(fodder.input, fodder.expect)
     end
+
+    print("TestGen ct:"..TestGen.test_ct)
 end
 
 function TestGen.OneTest(input, expect)
@@ -40,6 +43,10 @@ function TestGen.OneTest(input, expect)
                         -- things to do rather than fix ugliness in test
                         -- code.
     local crafting_type = expect.crafting_type
+    if expect.material then
+        crafting_type = crafting_type or expect.material.crafting_type
+    end
+
     if not crafting_type then return end
     local real_expect = table.shallow_copy(expect)
     real_expect.crafting_type = nil
@@ -47,7 +54,8 @@ function TestGen.OneTest(input, expect)
     local got = LibCraftText.ParseDailyConditionGear(crafting_type, input)
     luaunit.assertEquals(got, real_expect, input)
 
-    -- print(input)
+    TestGen.test_ct = TestGen.test_ct + 1
+    --print(input)
 end
 
 os.exit( luaunit.LuaUnit.run() )
