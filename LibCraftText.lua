@@ -180,7 +180,7 @@ function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
 
     local found    = {}
     found.item     = self.LongestMatch(matitem, self.ITEM     , crafting_type
-                            , "name", "master_name", "name_plural")
+                            , "name", "master_name", "name_plural", "name_2")
     found.material = self.LongestMatch(matitem, self.MATERIAL , crafting_type
                             , "name", "name_2")
     if not (found.item or found.material) then return nil end
