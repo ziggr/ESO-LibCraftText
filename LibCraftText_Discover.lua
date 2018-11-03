@@ -104,7 +104,8 @@ function LibCraftText.Scan()
 end
 
 function LibCraftText.Discover()
-    LibCraftText.DiscoverMaterials()
+    LibCraftText.DiscoverEquipmentMaterials()
+    LibCraftText.DiscoverConsumableMaterials()
     LibCraftText.DiscoverItems()
     LibCraftText.DiscoverQualities()
     LibCraftText.DiscoverTraits()
@@ -127,6 +128,7 @@ function LibCraftText.Forget()
                    , "items_from_stations"
                    , "skill_rank"
                    , "alliance"
+                   , "consumable_materials"
                    }
     for _,field in ipairs(fields) do
         -- LibCraftText.saved_var [field] = nil  Uncomment only when you really need to.
@@ -446,7 +448,7 @@ end
 -- If this can be gleaned at runtime, then there's no reason to include it
 -- in lang_template.lua files. But I'll include it for now.
 
-function LibCraftText.DiscoverMaterials()
+function LibCraftText.DiscoverEquipmentMaterials()
     local self = LibCraftText
     self.saved_var.materials = self.saved_var.materials or {}
     local materials = self.saved_var.materials
@@ -528,6 +530,144 @@ function LibCraftText.DiscoverMaterials()
             table.insert(materials[weight][lang], f or b)
         end
     end
+end
+
+-- Get names of all AL EN materials
+function LibCraftText.DiscoverConsumableMaterials()
+    local MAT_ROWS = {
+  { "Blessed Thistle"           ,  30157 , al, "|H0:item:30157:31:7:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Blue Entoloma"             ,  30148 , al, "|H0:item:30148:31:36:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Bugloss"                   ,  30160 , al, "|H0:item:30160:31:6:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Columbine"                 ,  30164 , al, "|H0:item:30164:31:13:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Corn Flower"               ,  30161 , al, "|H0:item:30161:31:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Dragonthorn"               ,  30162 , al, "|H0:item:30162:31:7:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Emetic Russula"            ,  30151 , al, "|H0:item:30151:31:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Imp Stool"                 ,  30156 , al, "|H0:item:30156:31:46:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Lady's Smock"              ,  30158 , al, "|H0:item:30158:31:6:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Luminous Russula"          ,  30155 , al, "|H0:item:30155:31:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Mountain flower"           ,  30163 , al, "|H0:item:30163:31:46:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Namira's Rot"              ,  30153 , al, "|H0:item:30153:31:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Nirnroot"                  ,  30165 , al, "|H0:item:30165:31:13:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Stinkhorn"                 ,  30149 , al, "|H0:item:30149:31:13:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Violet Coprinus"           ,  30152 , al, "|H0:item:30152:31:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Water Hyacinth"            ,  30166 , al, "|H0:item:30166:31:46:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "White Cap"                 ,  30154 , al, "|H0:item:30154:31:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Wormwood"                  ,  30159 , al, "|H0:item:30159:31:16:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Beetle Scuttle"            ,  77583 , al, "|H0:item:77583:31:3:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Butterfly Wing"            ,  77585 , al, "|H0:item:77585:31:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Fleshfly Larva"            ,  77587 , al, "|H0:item:77587:31:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Mudcrab Chitin"            ,  77591 , al, "|H0:item:77591:31:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Nightshade"                ,  77590 , al, "|H0:item:77590:31:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Scrib Jelly"               ,  77589 , al, "|H0:item:77589:31:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Spider Egg"                ,  77584 , al, "|H0:item:77584:31:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Torchbug Thorax"           ,  77581 , al, "|H0:item:77581:31:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Clam Gall"                 , 139020 , al, "|H0:item:139020:31:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Powdered Mother of Pearl"  , 139019 , al, "|H0:item:139019:31:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+
+, { "Natural Water"             ,    883 , al, "|H0:item:883:30:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Clear Water"               ,   1187 , al, "|H0:item:1187:30:17:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Pristine Water"            ,   4570 , al, "|H0:item:4570:30:24:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Cleansed Water"            ,  23265 , al, "|H0:item:23265:30:13:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Filtered Water"            ,  23266 , al, "|H0:item:23266:30:48:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Purified Water"            ,  23267 , al, "|H0:item:23267:125:16:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Cloud Mist"                ,  23268 , al, "|H0:item:23268:129:46:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Star Dew"                  ,  64500 , al, "|H0:item:64500:134:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Lorkhan's Tears"           ,  64501 , al, "|H0:item:64501:308:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+
+, { "Grease"                    ,  75357 , al, "|H0:item:75357:30:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Ichor"                     ,  75358 , al, "|H0:item:75358:30:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Slime"                     ,  75359 , al, "|H0:item:75359:30:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Gall"                      ,  75360 , al, "|H0:item:75360:30:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Terebinthine"              ,  75361 , al, "|H0:item:75361:30:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Pitch-Bile"                ,  75362 , al, "|H0:item:75362:125:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Tarblack"                  ,  75363 , al, "|H0:item:75363:129:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Night-Oil"                 ,  75364 , al, "|H0:item:75364:134:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Alkahest"                  ,  75365 , al, "|H0:item:75365:308:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+
+, { "Jora"                      ,  45855 , en, "|H0:item:45855:20:13:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Porade"                    ,  45856 , en, "|H0:item:45856:20:13:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Jera"                      ,  45857 , en, "|H0:item:45857:20:13:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Jejora"                    ,  45806 , en, "|H0:item:45806:20:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Odra"                      ,  45807 , en, "|H0:item:45807:20:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Pojora"                    ,  45808 , en, "|H0:item:45808:20:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Edora"                     ,  45809 , en, "|H0:item:45809:20:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Jaera"                     ,  45810 , en, "|H0:item:45810:20:26:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Pora"                      ,  45811 , en, "|H0:item:45811:20:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Denara"                    ,  45812 , en, "|H0:item:45812:125:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Rera"                      ,  45813 , en, "|H0:item:45813:127:13:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Derado"                    ,  45814 , en, "|H0:item:45814:129:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Rekura"                    ,  45815 , en, "|H0:item:45815:131:13:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Kura"                      ,  45816 , en, "|H0:item:45816:134:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Rejera"                    ,  64509 , en, "|H0:item:64509:308:39:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Repora"                    ,  68341 , en, "|H0:item:68341:366:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+
+, { "Jode"                      ,  45817 , en, "|H0:item:45817:20:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Notade"                    ,  45818 , en, "|H0:item:45818:20:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Ode"                       ,  45819 , en, "|H0:item:45819:20:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Tade"                      ,  45820 , en, "|H0:item:45820:20:19:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Jayde"                     ,  45821 , en, "|H0:item:45821:20:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Edode"                     ,  45822 , en, "|H0:item:45822:20:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Pojode"                    ,  45823 , en, "|H0:item:45823:20:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Rekude"                    ,  45824 , en, "|H0:item:45824:20:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Hade"                      ,  45825 , en, "|H0:item:45825:20:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Idode"                     ,  45826 , en, "|H0:item:45826:125:1:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Pode"                      ,  45827 , en, "|H0:item:45827:127:16:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Kedeko"                    ,  45828 , en, "|H0:item:45828:129:16:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Rede"                      ,  45829 , en, "|H0:item:45829:131:13:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Kude"                      ,  45830 , en, "|H0:item:45830:134:46:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Jehade"                    ,  64508 , en, "|H0:item:64508:308:6:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Itade"                     ,  68340 , en, "|H0:item:68340:366:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+
+, { "Dekeipa"                   ,  45839 , en, "|H0:item:45839:20:46:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Deni"                      ,  45833 , en, "|H0:item:45833:20:46:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Denima"                    ,  45836 , en, "|H0:item:45836:20:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Deteri"                    ,  45842 , en, "|H0:item:45842:20:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Haoko"                     ,  45841 , en, "|H0:item:45841:20:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Hakeijo"                   ,  68342 , en, "|H0:item:68342:20:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Kaderi"                    ,  45849 , en, "|H0:item:45849:20:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Kuoko"                     ,  45837 , en, "|H0:item:45837:20:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Makderi"                   ,  45848 , en, "|H0:item:45848:20:26:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Makko"                     ,  45832 , en, "|H0:item:45832:20:46:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Makkoma"                   ,  45835 , en, "|H0:item:45835:20:36:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Meip"                      ,  45840 , en, "|H0:item:45840:20:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Oko"                       ,  45831 , en, "|H0:item:45831:20:46:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Okoma"                     ,  45834 , en, "|H0:item:45834:20:46:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Okori"                     ,  45843 , en, "|H0:item:45843:20:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Oru"                       ,  45846 , en, "|H0:item:45846:20:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Rakeipa"                   ,  45838 , en, "|H0:item:45838:20:13:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Taderi"                    ,  45847 , en, "|H0:item:45847:20:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+
+, { "Ta"                        ,  45850 , en, "|H0:item:45850:20:13:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Jejota"                    ,  45851 , en, "|H0:item:45851:21:13:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Denata"                    ,  45852 , en, "|H0:item:45852:22:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Rekuta"                    ,  45853 , en, "|H0:item:45853:23:46:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+, { "Kuta"                      ,  45854 , en, "|H0:item:45854:24:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h" }
+}
+
+
+    local self = LibCraftText
+    self.saved_var.consumable_materials = self.saved_var.consumable_materials or {}
+    local materials = self.saved_var.consumable_materials -- for less typing
+    local lang      = self.CurrLang()
+    for _,row in ipairs(MAT_ROWS) do
+        local key               = row[1]
+        local item_id           = row[2]
+        local crafting_type     = row[3]
+        local item_link         = self.ItemIDToItemLink(item_id)
+        local item_name_carety  = GetItemLinkName(item_link)
+        local item_name         = Decaret(item_name_carety)
+        materials[crafting_type] = materials[crafting_type] or {}
+        materials[crafting_type][item_id] = materials[crafting_type][item_id] or {}
+        materials[crafting_type][item_id][lang] = item_name
+        -- break
+    end
+end
+
+function LibCraftText.ItemIDToItemLink(item_id)
+                        -- I have no idea what the non-zero numbers here
+                        -- mean, not sure they even matter.
+    local template = "|H0:item:%d:24:50:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h"
+    return string.format(template, item_id)
 end
 
 function LibCraftText.DiscoverItems()
