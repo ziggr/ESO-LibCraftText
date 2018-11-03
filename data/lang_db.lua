@@ -2675,16 +2675,16 @@ LANG_DB = {
           ,   it  = "Craft Grand Glyph of Magicka"
           ,   ja  = "ターの至高のグリフ(マジカ)を生産する"
           }
-, [282] = {
-              key = "$DAILY_COND_EN_07_02"
-          ,   en  = "Craft Three Platinum Rings"
-          ,   de  = "Stellt drei Platinringe her"
-          ,   fr  = "Fabriquez trois anneaux en platine"
-          ,   es  = "Fabrica tres anillos de platino"
-          ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft three Platinum Rings"
-          ,   ja  = "プラチナの指輪を3個作る"
-          }
+-- , [282] = {
+--               key = "$DAILY_COND_EN_07_02"
+--           ,   en  = "Craft Three Platinum Rings"
+--           ,   de  = "Stellt drei Platinringe her"
+--           ,   fr  = "Fabriquez trois anneaux en platine"
+--           ,   es  = "Fabrica tres anillos de platino"
+--           ,   it  = "TRACKER GOAL TEXT"
+--           ,   ru  = "Craft three Platinum Rings"
+--           ,   ja  = "プラチナの指輪を3個作る"
+--           }
 , [283] = {
               key = "$DAILY_COND_EN_07_03"
           ,   en  = "Acquire Oko Essence Rune"
@@ -2870,16 +2870,16 @@ LANG_DB = {
           ,   it  = "Craft Superb Glyph of Magicka"
           ,   ja  = "ターの最上のグリフ(マジカ)を生産する"
           }
-, [303] = {
-              key = "$DAILY_COND_EN_10_02"
-          ,   en  = "Craft Three Platinum Rings"
-          ,   de  = "Stellt drei Platinringe her"
-          ,   fr  = "Fabriquez trois anneaux en platine"
-          ,   es  = "Fabrica tres anillos de platino"
-          ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft three Platinum Rings"
-          ,   ja  = "プラチナの指輪を3個作る"
-          }
+-- , [303] = {
+--               key = "$DAILY_COND_EN_10_02"
+--           ,   en  = "Craft Three Platinum Rings"
+--           ,   de  = "Stellt drei Platinringe her"
+--           ,   fr  = "Fabriquez trois anneaux en platine"
+--           ,   es  = "Fabrica tres anillos de platino"
+--           ,   it  = "TRACKER GOAL TEXT"
+--           ,   ru  = "Craft three Platinum Rings"
+--           ,   ja  = "プラチナの指輪を3個作る"
+--           }
 , [304] = {
               key = "$DAILY_COND_EN_10_03"
           ,   en  = "Acquire Oko Essence Rune"
@@ -3161,16 +3161,16 @@ LANG_DB = {
               key = "$DAILY_COND_JW_05_08"
           ,   it  = "TRACKER GOAL TEXT"
           }
-, [334] = {
-              key = "$DAILY_COND_JW_05_09"
-          ,   en  = "Craft Three Platinum Rings"
-          ,   de  = "Stellt drei Platinringe her"
-          ,   fr  = "Fabriquez trois anneaux en platine"
-          ,   es  = "Fabrica dos colgantes de platino"
-          ,   it  = "TRACKER GOAL TEXT"
-          ,   ru  = "Craft two Platinum Necklaces"
-          ,   ja  = "プラチナのネックレスを2個作る"
-          }
+-- , [334] = {
+--               key = "$DAILY_COND_JW_05_09"
+--           ,   en  = "Craft Three Platinum Rings"
+--           ,   de  = "Stellt drei Platinringe her"
+--           ,   fr  = "Fabriquez trois anneaux en platine"
+--           ,   es  = "Fabrica dos colgantes de platino"
+--           ,   it  = "TRACKER GOAL TEXT"
+--           ,   ru  = "Craft two Platinum Necklaces"
+--           ,   ja  = "プラチナのネックレスを2個作る"
+--           }
 , [335] = {
               key = "$DAILY_COND_JW_A_5_1"
           ,   en  = "Craft a Platinum Ring: 0 / 1"
@@ -4363,16 +4363,16 @@ LANG_DB = {
           ,   ru  = "Craft Normal Nightwood Lightning Staff"
           ,   ja  = "ナイトウッドの稲妻の杖(ノーマル)を生産する"
           }
-, [461] = {
-              key = "$DAILY_COND_WW_09_06"
-          ,   en  = "Craft Normal Nightwood Shield"
-          ,   de  = "Stellt normale Nachtholzschilde her"
-          ,   fr  = "Fabriquez un bouclier en bois de nuit normal"
-          ,   es  = "Fabrica una vara glaciar de nocteca normal"
-          ,   it  = "Craft Nightwood Ice Staff"
-          ,   ru  = "Craft Normal Nightwood Ice Staff"
-          ,   ja  = "ナイトウッドの氷の杖(ノーマル)を生産する"
-          }
+-- , [461] = {
+--               key = "$DAILY_COND_WW_09_06"
+--           ,   en  = "Craft Normal Nightwood Shield"
+--           ,   de  = "Stellt normale Nachtholzschilde her"
+--           ,   fr  = "Fabriquez un bouclier en bois de nuit normal"
+--           ,   es  = "Fabrica una vara glaciar de nocteca normal"
+--           ,   it  = "Craft Nightwood Ice Staff"
+--           ,   ru  = "Craft Normal Nightwood Ice Staff"
+--           ,   ja  = "ナイトウッドの氷の杖(ノーマル)を生産する"
+--           }
 , [462] = {
               key = "$DAILY_COND_WW_09_07"
           ,   en  = "Craft Normal Nightwood Restoration Staff"

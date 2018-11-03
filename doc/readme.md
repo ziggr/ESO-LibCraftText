@@ -47,14 +47,24 @@ Takes about an hour to scan 10 alts x 7 languages:
 
 The Alinor crafting area is perfect for this. Park your alts in the circle by the writ boards.
 
-# Absorb the scan
+## Absorb the scan
 
-- `make getpts` to copy the SavedVariables to `data/LibCraftText.lua`
-- `make lang` to merge SavedVariables and `data/lang_db.lua` into a new `data/lang_db.out.lua` as well as generate 7 new `lang/xx.lua` localization files.
+### 1. `make getpts`
+to copy the SavedVariables to `data/LibCraftText.lua`
 
-Compare `lang_db.out.lua` against `lang_db.out` to see if it picked up everything you expect, and didn't ruin any previous data or go haywire. When you're happy with the result, copy `lang_db.out.lua` over `lang_db.lua` to start using it for test generation.
+### 2.`make lang`
+to merge SavedVariables and `data/lang_db.lua` into a new `data/lang_db_out.lua` as well as generate 7 new `lang/xx.lua` localization files.
 
+Compare `lang_db_out.lua` against `lang_db.out` to see if it picked up everything you expect, and didn't ruin any previous data or go haywire. When you're happy with the result, copy `lang_db_out.lua` over `lang_db.lua` to start using it for test generation.
 
+### 3. `make gentest`
+to copy newly acquired condition text into `test/gen_test.data.lua`
+
+#### 3.1 Repair Damaged lang_db.lua
+
+Once the new text is absorbed, there's a good chance that some of the old tests that _used_ to pass no longer do. This is because one or more of the new lang_tables in SavedVariables are BROKEN. I've seen "Craft a Nightwood Shield" lang_table polluted with "Craft a Nightwood Ice Staff" russian and other languages. Not sure how this still happens, but it does.
+
+Find and delete the offending `lang_db.lua` entries until `make gentest` passes again.
 
 # `/script` Commands
 
