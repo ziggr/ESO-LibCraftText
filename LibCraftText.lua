@@ -108,12 +108,18 @@ end
 LibCraftText.RE_CONDITION_DAILY = {
     ["en"] = { "Craft Normal ([^:]*)"
              , "Craft a ([^:]*)"
+             , "Craft Three ([^:]*)"
+             , "Craft Two ([^:]*)"
              }
 ,   ["de"] = { "Stellt normale (.*) her"
              , "Stellt ein[en]* (.*) her"
+             , "Stellt drei (.*) her"
+             , "Stellt zwei (.*) her"
              }
+
 ,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norm"
              , "Fabriquez un (.*) en ([^:]*)"
+             , "Fabriquez des (.*) en (.*) norm"
              }
 ,   ["ru"] = { "Craft Normal ([^:]*)"
              , "Craft a ([^:]*)"
@@ -176,7 +182,7 @@ function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
     found.item     = self.LongestMatch(matitem, self.ITEM     , crafting_type
                             , "name", "master_name", "name_plural")
     found.material = self.LongestMatch(matitem, self.MATERIAL , crafting_type
-                            , "name")
+                            , "name", "name_2")
     if not (found.item or found.material) then return nil end
     return found
 end

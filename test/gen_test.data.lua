@@ -73,7 +73,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Monumental Glyph of Stamina With Ta"       , expect={}                                                 }
 , { input="Craft Muthsera's Remorse"                        , expect={}                                                 }
 , { input="Craft Muthsera's Remorse: 0 / 1"              , expect={}                                                 }
-, { input="Craft Nibenese Garlic Carrots"                   , expect={}                                                  }
+, { input="Craft Nibenese Garlic Carrots"                   , expect={}                                                 }
 , { input="Craft Normal Ancestor Silk Breeches"             , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.ANCESTOR_SILK  } }
 , { input="Craft Normal Ancestor Silk Epaulets"             , expect={ item=LCT.ITEM.EPAULETS         , material=LCT.MATERIAL.ANCESTOR_SILK  } }
 , { input="Craft Normal Ancestor Silk Robe"                 , expect={ item=LCT.ITEM.ROBE             , material=LCT.MATERIAL.ANCESTOR_SILK  } }
@@ -263,7 +263,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Superb Glyph of Stamina With Ta"           , expect={}                                                 }
 , { input="Craft Superb Glyph of Stamina With Ta: 0 / 1" , expect={}                                                 }
 , { input="Craft Three Electrum Rings"                      , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.ELECTRUM       } }
-, { input="Craft Three Platinum Rings"                      , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.ELECTRUM       } }
+, { input="Craft Three Platinum Rings"                      , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.PLATINUM       } }
 , { input="Craft Treacleberry Tea"                          , expect={}                                                 }
 , { input="Craft Trifling Glyph of Health With Ta"          , expect={}                                                 }
 , { input="Craft Trifling Glyph of Stamina With Ta"         , expect={}                                                 }

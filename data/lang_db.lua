@@ -4703,6 +4703,15 @@ LANG_DB = {
           ,   ru  = "Ancestor Silk"
           ,   ja  = "先人のシルク"
           }
+, [5190] = {
+              key = "$MATERIAL_LGT_10_B"
+          ,   en  = "Ancestor Silk"
+          ,   de  = "Ahnenseiden"
+          ,   fr  = "soie ancestral"
+          ,   es  = "seda ancestral"
+          ,   ru  = "Ancestor Silk"
+          ,   ja  = "先人のシルク"
+          }
 , [520] = {
               key = "$MATERIAL_MED_01"
           ,   en  = "rawhide"

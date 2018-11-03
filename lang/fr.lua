@@ -134,6 +134,11 @@ LibCraftText.ITEM = {
 --
 -- mat_set_id       What set of crafting materials is this material in?
 --
+-- name_2           A second name to search for when parsing materials from
+--                  writ text. FR French uses "soie ancestrales" for the main
+--                  name of Ancestor Silk, but strips the plural "s" when
+--                  used as an adjective for a singular crafting item.
+--
 
 LibCraftText.MATERIAL = {
   ["IRON"          ] = { name="fer"               , level_index= 1, material_index= 1, master_writ2=  1, crafting_type=bs, mat_set_id=mat_hvy   } -- "iron"
@@ -156,7 +161,7 @@ LibCraftText.MATERIAL = {
 , ["IRONTHREAD"    ] = { name="fil de fer"        , level_index= 7, material_index=29, master_writ2=126, crafting_type=cl, mat_set_id=mat_lgt  } -- "ironthread"
 , ["SILVERWEAVE"   ] = { name="fil d'argent"      , level_index= 8, material_index=32, master_writ2=127, crafting_type=cl, mat_set_id=mat_lgt  } -- "silverweave"
 , ["SHADOWSPUN"    ] = { name="tissombre"         , level_index= 9, material_index=34, master_writ2=128, crafting_type=cl, mat_set_id=mat_lgt  } -- "shadowspun"
-, ["ANCESTOR_SILK" ] = { name="soie ancestrales"    , level_index=10, material_index=40, master_writ2=194, crafting_type=cl, mat_set_id=mat_lgt  } -- "Ancestor Silk"
+, ["ANCESTOR_SILK" ] = { name="soie ancestrales"    , level_index=10, material_index=40, master_writ2=194, crafting_type=cl, mat_set_id=mat_lgt , name_2="soie ancestral" } -- "Ancestor Silk"
 
 , ["RAWHIDE"       ] = { name="cuir brut"         , level_index= 1, material_index= 1, master_writ2=148, crafting_type=cl, mat_set_id=mat_med  } -- "rawhide"
 , ["HIDE"          ] = { name="peau"              , level_index= 2, material_index= 8, master_writ2=154, crafting_type=cl, mat_set_id=mat_med  } -- "hide"

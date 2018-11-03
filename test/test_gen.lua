@@ -10,6 +10,16 @@ TestGen.test_ct    = 0
 
 LCT = LibCraftText
 
+                        -- Load the lang_db so that we can roll through all
+                        -- supported languages
+dofile("data/lang_db.lua")
+INPUT_TO_LANG_TABLE = {}
+for k,v in pairs(LANG_DB) do
+    if v.en then
+        INPUT_TO_LANG_TABLE[v.en] = v
+    end
+end
+
 function table.shallow_copy(t)
     local r = {}
     for k,v in pairs(t) do
@@ -34,7 +44,7 @@ function TestGen.TestAll()
     print("TestGen ct:"..TestGen.test_ct)
 end
 
-function TestGen.OneTest(input, expect)
+function TestGen.OneTest(input_en, expect)
                         -- Skip lines I've not filled in yet.
                         -- We need that crafting_type.
                         --
@@ -51,11 +61,15 @@ function TestGen.OneTest(input, expect)
     local real_expect = table.shallow_copy(expect)
     real_expect.crafting_type = nil
 
+    local lang_table = INPUT_TO_LANG_TABLE[input_en]
+    luaunit.assertNotNil(lang_table,input_en)
+    local input = lang_table[LibCraftText.CurrLang()] or input_en
+
     local got = LibCraftText.ParseDailyConditionGear(crafting_type, input)
-    luaunit.assertEquals(got, real_expect, input)
+    luaunit.assertEquals(got, real_expect, input_en.."/"..input)
 
     TestGen.test_ct = TestGen.test_ct + 1
-    --print(input)
+    --print(input_en)
 end
 
 os.exit( luaunit.LuaUnit.run() )

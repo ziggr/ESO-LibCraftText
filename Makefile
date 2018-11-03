@@ -30,7 +30,7 @@ test:
 	lua test/test_parse.lua --repeat 7
 
 gentest: test/gen_test.data.lua
-	lua test/test_gen.lua
+	lua test/test_gen.lua --repeat 7
 
 
 test/gen_test.data.lua: test/gen_test.lua data/lang_db.lua
