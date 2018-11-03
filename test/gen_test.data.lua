@@ -168,7 +168,6 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Oak Ice Staff"                      , expect={ item=LCT.ITEM.ICE_STAFF        , material=LCT.MATERIAL.OAK            } }
 , { input="Craft Normal Oak Inferno Staff"                  , expect={ item=LCT.ITEM.INFERNO_STAFF    , material=LCT.MATERIAL.OAK            } }
 , { input="Craft Normal Oak Lightning Staff"                , expect={ item=LCT.ITEM.LIGHTNING_STAFF  , material=LCT.MATERIAL.OAK            } }
-, { input="Craft Normal Oak Shield"                         , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.OAK            } }
 , { input="Craft Normal Orichalcum Dagger"                  , expect={ item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.ORICHALC       } }
 , { input="Craft Normal Orichalcum Gauntlets"               , expect={ item=LCT.ITEM.GAUNTLETS        , material=LCT.MATERIAL.ORICHALC       } }
 , { input="Craft Normal Orichalcum Greatsword"              , expect={ item=LCT.ITEM.H2_GREATSWORD    , material=LCT.MATERIAL.ORICHALC       } }

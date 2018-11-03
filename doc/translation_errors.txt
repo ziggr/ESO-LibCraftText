@@ -1,0 +1,18 @@
+Typos in translations
+
+
+FR baudier should be baudrier
+              key = "$DAILY_COND_CL_03_06"
+          ,   en  = "Craft Normal Cotton Sash"
+          ,   de  = "Stellt normale Baumwollschärpen her"
+          ,   fr  = "Fabriquez un baudier en coton normal"
+          }
+
+
+FR Oak Shield is broken, lacks material mention
+-- Oak Shield is broken, "Fabriquez un bouclier normal" should include "en chêne" somewhere.
+              key = "$DAILY_COND_WW_02_02"
+          ,   en  = "Craft Normal Oak Shield"
+          ,   de  = "Stellt normale Eichenschilde her"
+          ,   fr  = "Fabriquez un bouclier normal"
+          }

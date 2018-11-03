@@ -108,22 +108,27 @@ end
 LibCraftText.RE_CONDITION_DAILY = {
     ["en"] = { "Craft Normal ([^:]*)"
              , "Craft a ([^:]*)"
-             , "Craft Three ([^:]*)"
              , "Craft Two ([^:]*)"
+             , "Craft Three ([^:]*)"
              }
 ,   ["de"] = { "Stellt normale (.*) her"
              , "Stellt ein[en]* (.*) her"
-             , "Stellt drei (.*) her"
              , "Stellt zwei (.*) her"
+             , "Stellt drei (.*) her"
              }
 
+-- Linen Hat is broken, the "peau" in "chapeau en lin" matches mat X and is longer than the "lin" for Linen.
+-- Oak Shield is broken, "Fabriquez un bouclier normal" should include "en chêne" somewhere.
 
 ,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norm"
              , "Fabriquez un (.*) en ([^:]*)"
              , "Fabriquez des (.*) en (.*) norm"
+             , "Fabriquez deux (.*) en ([^:]*)"
+             , "Fabriquez trois (.*) en ([^:]*)"
              , "Fabriquez [uneds]+ (.*) norm" -- MUST be after all "X en Y"
                                               -- regexes to keep preposition
                                               -- "en" out of matitem.
+             , "Fabriquez un (.*) d'([^:]*)"
              }
 ,   ["ru"] = { "Craft Normal ([^:]*)"
              , "Craft a ([^:]*)"
@@ -162,8 +167,9 @@ function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
                         -- Smush g1 and g2 into a single string that we can
                         -- search.
     local matitem = nil
+    local g1,g2
     for _,re in ipairs(re_list) do
-        local _,_,g1,g2 = string.find(cond_text, re)
+        _,_,g1,g2 = string.find(cond_text, re)
         matitem = g1
         if g2 then matitem = matitem .. "/" .. g2 end
         if matitem then break end
@@ -182,11 +188,42 @@ function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
     end
     matitem = matitem:lower()
 
+                        -- All the various lang fields that we search for
+                        -- item and material names
+    local item_fields = { "name", "master_name", "name_plural", "name_2" }
+    local mat_fields  = { "name",                               "name_2" }
+
+                        -- First, search for an exact match of the left(g1)
+                        -- and/or right(g2) substrings. This allows us to match
+                        -- short FR "lin" (a complete word for linen) instead
+                        -- of erroneously matching longer, but partial, "peau"
+                        -- (hide) from "chapeau"
+    local exact_item  = self.ExactMatch(g1, self.ITEM, crafting_type
+                            , unpack(item_fields))
+                      or self.ExactMatch(g2, self.ITEM, crafting_type
+                            , unpack(item_fields))
+
+    local exact_material = self.ExactMatch(g1, self.MATERIAL , crafting_type
+                            , unpack(mat_fields))
+                        or self.ExactMatch(g2, self.MATERIAL , crafting_type
+                            , unpack(mat_fields))
+
     local found    = {}
-    found.item     = self.LongestMatch(matitem, self.ITEM     , crafting_type
-                            , "name", "master_name", "name_plural", "name_2")
-    found.material = self.LongestMatch(matitem, self.MATERIAL , crafting_type
-                            , "name", "name_2")
+    found.item     = exact_item
+                   or self.LongestMatch(matitem, self.ITEM     , crafting_type
+                            , unpack(item_fields))
+    found.material = exact_material
+                   or self.LongestMatch(matitem, self.MATERIAL , crafting_type
+                            , unpack(mat_fields))
+-- print(string.format( "g1:%s g2:%s e_it:%s e_mat:%s f.it:%s f.mat:%s"
+--                    , tostring(g1)
+--                    , tostring(g2)
+--                    , tostring(exact_item     and exact_item.name    )
+--                    , tostring(exact_material and exact_material.name)
+--                    , tostring(found.item     and found.item.name    )
+--                    , tostring(found.material and found.material.name)
+--                    ))
+
     if not (found.item or found.material) then return nil end
     return found
 end
@@ -214,6 +251,7 @@ function LibCraftText.DeUmlaut(t)
 end
                         -- Return the row with the longest matching field.
 function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ... )
+    if not find_me then return nil end
     local longest_match      = { name=nil, row=nil }
     local find_me_lower      = find_me:lower()
     local find_me_deumlauted = LibCraftText.DeUmlaut(find_me_lower)
@@ -237,3 +275,22 @@ function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ...
     return longest_match.row
 end
 
+                        -- Return the first row with an EXACT match (lowercased)
+function LibCraftText.ExactMatch(find_me, rows, crafting_type, field_name, ... )
+    if not find_me then return nil end
+    local find_me_lower      = find_me:lower()
+    local find_me_deumlauted = LibCraftText.DeUmlaut(find_me_lower)
+    for _,fieldname in pairs({ field_name, ... }) do
+        if not fieldname then break end
+        for _, row in pairs(rows) do
+            if row.crafting_type == crafting_type then
+                local name = row[fieldname]
+                if name and (  find_me_lower == name:lower()
+                             or find_me_deumlauted == LibCraftText.DeUmlaut(name) ) then
+                    return row
+                end
+            end
+        end
+    end
+    return nil
+end

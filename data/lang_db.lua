@@ -2701,15 +2701,15 @@ LANG_DB = {
           ,   it  = "Craft Oak Bow"
           ,   ja  = "カシの弓(ノーマル)を生産する"
           }
-, [291] = {
-              key = "$DAILY_COND_WW_02_02"
-          ,   en  = "Craft Normal Oak Shield"
-          ,   de  = "Stellt normale Eichenschilde her"
-          ,   fr  = "Fabriquez un bouclier normal"
-          ,   es  = "Fabrica un escudo de roble normal"
-          ,   it  = "Craft Oak Shield"
-          ,   ja  = "カシの盾(ノーマル)を生産する"
-          }
+-- , [291] = {
+--               key = "$DAILY_COND_WW_02_02"
+--           ,   en  = "Craft Normal Oak Shield"
+--           ,   de  = "Stellt normale Eichenschilde her"
+--           ,   fr  = "Fabriquez un bouclier normal"
+--           ,   es  = "Fabrica un escudo de roble normal"
+--           ,   it  = "Craft Oak Shield"
+--           ,   ja  = "カシの盾(ノーマル)を生産する"
+--           }
 , [292] = {
               key = "$DAILY_COND_WW_02_03"
           ,   en  = "Craft Normal Oak Lightning Staff"
