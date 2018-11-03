@@ -196,7 +196,128 @@ LibCraftText.MATERIAL = {
 , ["PLATINUM"      ] = { name="プラチナ"              , level_index= 5, material_index=40, master_writ2=255, crafting_type=jw, mat_set_id=mat_jewl  } -- "platinum"
 }
 
+-- Alchemy and Enchanting Materials
+--
+-- For "Acquire Mudcrab Chitin"
+--
+--
+-- name             string that appears in material requested in daily
+--                  crafting quests and master writ conditions.
+--
+-- crafting_type    Blacksmithing, Clothier, Woodworking, or Jewelry Crafting?
+--
+-- item_id          ZOS itemId for use in itemLinks and other APInes.
+--
+LibCraftText.CONSUMABLE_MATERIALS = {
+  ["BLESSED_THISTLE"         ] = { "聖なるシッスル"                        , crafting_type=al, item_id= 30157 }
+, ["BLUE_ENTOLOMA"           ] = { "アオイッポンシメジ"                      , crafting_type=al, item_id= 30148 }
+, ["BUGLOSS"                 ] = { "ムラサキ草"                          , crafting_type=al, item_id= 30160 }
+, ["COLUMBINE"               ] = { "オダマキ"                           , crafting_type=al, item_id= 30164 }
+, ["CORN_FLOWER"             ] = { "コーンフラワー"                        , crafting_type=al, item_id= 30161 }
+, ["DRAGONTHORN"             ] = { "ドラゴンソーン"                        , crafting_type=al, item_id= 30162 }
+, ["EMETIC_RUSSULA"          ] = { "ドクベニタケ"                         , crafting_type=al, item_id= 30151 }
+, ["IMP_STOOL"               ] = { "木椅子キノコ"                         , crafting_type=al, item_id= 30156 }
+, ["LADYS_SMOCK"             ] = { "タネツケバナ"                         , crafting_type=al, item_id= 30158 }
+, ["LUMINOUS_RUSSULA"        ] = { "光ベニタケ"                          , crafting_type=al, item_id= 30155 }
+, ["MOUNTAIN_FLOWER"         ] = { "山の花"                            , crafting_type=al, item_id= 30163 }
+, ["NAMIRAS_ROT"             ] = { "ナミラキノコ"                         , crafting_type=al, item_id= 30153 }
+, ["NIRNROOT"                ] = { "ニルンルート"                         , crafting_type=al, item_id= 30165 }
+, ["STINKHORN"               ] = { "スッポンタケ"                         , crafting_type=al, item_id= 30149 }
+, ["VIOLET_COPRINUS"         ] = { "ムラサキヒトヨタケ"                      , crafting_type=al, item_id= 30152 }
+, ["WATER_HYACINTH"          ] = { "ホテイアオイ"                         , crafting_type=al, item_id= 30166 }
+, ["WHITE_CAP"               ] = { "白かさキノコ"                         , crafting_type=al, item_id= 30154 }
+, ["WORMWOOD"                ] = { "ニガヨモギ"                          , crafting_type=al, item_id= 30159 }
+, ["BEETLE_SCUTTLE"          ] = { "ビートルスカトル"                       , crafting_type=al, item_id= 77583 }
+, ["BUTTERFLY_WING"          ] = { "蝶の羽"                            , crafting_type=al, item_id= 77585 }
+, ["FLESHFLY_LARVA"          ] = { "ニクバエの幼虫"                        , crafting_type=al, item_id= 77587 }
+, ["MUDCRAB_CHITIN"          ] = { "マッドクラブキチン"                      , crafting_type=al, item_id= 77591 }
+, ["NIGHTSHADE"              ] = { "ベラドンナ"                          , crafting_type=al, item_id= 77590 }
+, ["SCRIB_JELLY"             ] = { "スクリブのゼリー"                       , crafting_type=al, item_id= 77589 }
+, ["SPIDER_EGG"              ] = { "蜘蛛の卵"                           , crafting_type=al, item_id= 77584 }
+, ["TORCHBUG_THORAX"         ] = { "ホタルの腹部"                         , crafting_type=al, item_id= 77581 }
+, ["CLAM_GALL"               ] = { "クラム・ゴル"                         , crafting_type=al, item_id=139020 }
+, ["POWDERED_MOTHER_OF_PEARL"] = { "真珠貝のパウダー"                       , crafting_type=al, item_id=139019 }
 
+, ["NATURAL_WATER"           ] = { "自然水"                            , crafting_type=al, item_id=   883 }
+, ["CLEAR_WATER"             ] = { "清水"                             , crafting_type=al, item_id=  1187 }
+, ["PRISTINE_WATER"          ] = { "清浄水"                            , crafting_type=al, item_id=  4570 }
+, ["CLEANSED_WATER"          ] = { "浄化水"                            , crafting_type=al, item_id= 23265 }
+, ["FILTERED_WATER"          ] = { "ろ過水"                            , crafting_type=al, item_id= 23266 }
+, ["PURIFIED_WATER"          ] = { "神聖水"                            , crafting_type=al, item_id= 23267 }
+, ["CLOUD_MIST"              ] = { "霧の雲"                            , crafting_type=al, item_id= 23268 }
+, ["STAR_DEW"                ] = { "星のしずく"                          , crafting_type=al, item_id= 64500 }
+, ["LORKHANS_TEARS"          ] = { "ロルカーンの涙"                        , crafting_type=al, item_id= 64501 }
+
+, ["GREASE"                  ] = { "獣油"                             , crafting_type=al, item_id= 75357 }
+, ["ICHOR"                   ] = { "イコル"                            , crafting_type=al, item_id= 75358 }
+, ["SLIME"                   ] = { "粘液"                             , crafting_type=al, item_id= 75359 }
+, ["GALL"                    ] = { "胆嚢"                             , crafting_type=al, item_id= 75360 }
+, ["TEREBINTHINE"            ] = { "テレピン"                           , crafting_type=al, item_id= 75361 }
+, ["PITCH_BILE"              ] = { "黒の胆汁"                           , crafting_type=al, item_id= 75362 }
+, ["TARBLACK"                ] = { "ターブラック"                         , crafting_type=al, item_id= 75363 }
+, ["NIGHT_OIL"               ] = { "夜の油"                            , crafting_type=al, item_id= 75364 }
+, ["ALKAHEST"                ] = { "アルカヘスト"                         , crafting_type=al, item_id= 75365 }
+
+, ["JORA"                    ] = { "ジョラ"                            , crafting_type=en, item_id= 45855 }
+, ["PORADE"                  ] = { "ポラデ"                            , crafting_type=en, item_id= 45856 }
+, ["JERA"                    ] = { "ジェラ"                            , crafting_type=en, item_id= 45857 }
+, ["JEJORA"                  ] = { "ジェジョラ"                          , crafting_type=en, item_id= 45806 }
+, ["ODRA"                    ] = { "オドラ"                            , crafting_type=en, item_id= 45807 }
+, ["POJORA"                  ] = { "ポジョラ"                           , crafting_type=en, item_id= 45808 }
+, ["EDORA"                   ] = { "エドラ"                            , crafting_type=en, item_id= 45809 }
+, ["JAERA"                   ] = { "ジャエラ"                           , crafting_type=en, item_id= 45810 }
+, ["PORA"                    ] = { "ポラ"                             , crafting_type=en, item_id= 45811 }
+, ["DENARA"                  ] = { "デナラ"                            , crafting_type=en, item_id= 45812 }
+, ["RERA"                    ] = { "レラ"                             , crafting_type=en, item_id= 45813 }
+, ["DERADO"                  ] = { "デラド"                            , crafting_type=en, item_id= 45814 }
+, ["REKURA"                  ] = { "レクラ"                            , crafting_type=en, item_id= 45815 }
+, ["KURA"                    ] = { "クラ"                             , crafting_type=en, item_id= 45816 }
+, ["REJERA"                  ] = { "レジェラ"                           , crafting_type=en, item_id= 64509 }
+, ["REPORA"                  ] = { "レポラ"                            , crafting_type=en, item_id= 68341 }
+
+, ["JODE"                    ] = { "ジョーデ"                           , crafting_type=en, item_id= 45817 }
+, ["NOTADE"                  ] = { "ノタデ"                            , crafting_type=en, item_id= 45818 }
+, ["ODE"                     ] = { "オデ"                             , crafting_type=en, item_id= 45819 }
+, ["TADE"                    ] = { "タデ"                             , crafting_type=en, item_id= 45820 }
+, ["JAYDE"                   ] = { "ジェイデ"                           , crafting_type=en, item_id= 45821 }
+, ["EDODE"                   ] = { "エドデ"                            , crafting_type=en, item_id= 45822 }
+, ["POJODE"                  ] = { "ポジョデ"                           , crafting_type=en, item_id= 45823 }
+, ["REKUDE"                  ] = { "レクデ"                            , crafting_type=en, item_id= 45824 }
+, ["HADE"                    ] = { "ハデ"                             , crafting_type=en, item_id= 45825 }
+, ["IDODE"                   ] = { "イドデ"                            , crafting_type=en, item_id= 45826 }
+, ["PODE"                    ] = { "ポデ"                             , crafting_type=en, item_id= 45827 }
+, ["KEDEKO"                  ] = { "ケデコ"                            , crafting_type=en, item_id= 45828 }
+, ["REDE"                    ] = { "レデ"                             , crafting_type=en, item_id= 45829 }
+, ["KUDE"                    ] = { "クデ"                             , crafting_type=en, item_id= 45830 }
+, ["JEHADE"                  ] = { "ジェハデ"                           , crafting_type=en, item_id= 64508 }
+, ["ITADE"                   ] = { "イタデ"                            , crafting_type=en, item_id= 68340 }
+
+, ["DEKEIPA"                 ] = { "デケイパ"                           , crafting_type=en, item_id= 45839 }
+, ["DENI"                    ] = { "デニ"                             , crafting_type=en, item_id= 45833 }
+, ["DENIMA"                  ] = { "デニマ"                            , crafting_type=en, item_id= 45836 }
+, ["DETERI"                  ] = { "デテリ"                            , crafting_type=en, item_id= 45842 }
+, ["HAOKO"                   ] = { "ハオコ"                            , crafting_type=en, item_id= 45841 }
+, ["HAKEIJO"                 ] = { "ハケイジョ"                          , crafting_type=en, item_id= 68342 }
+, ["KADERI"                  ] = { "カデリ"                            , crafting_type=en, item_id= 45849 }
+, ["KUOKO"                   ] = { "クオコ"                            , crafting_type=en, item_id= 45837 }
+, ["MAKDERI"                 ] = { "マクデリ"                           , crafting_type=en, item_id= 45848 }
+, ["MAKKO"                   ] = { "マッコ"                            , crafting_type=en, item_id= 45832 }
+, ["MAKKOMA"                 ] = { "マッコマ"                           , crafting_type=en, item_id= 45835 }
+, ["MEIP"                    ] = { "メイプ"                            , crafting_type=en, item_id= 45840 }
+, ["OKO"                     ] = { "オコ"                             , crafting_type=en, item_id= 45831 }
+, ["OKOMA"                   ] = { "オコマ"                            , crafting_type=en, item_id= 45834 }
+, ["OKORI"                   ] = { "オコリ"                            , crafting_type=en, item_id= 45843 }
+, ["ORU"                     ] = { "オル"                             , crafting_type=en, item_id= 45846 }
+, ["RAKEIPA"                 ] = { "ラケイパ"                           , crafting_type=en, item_id= 45838 }
+, ["TADERI"                  ] = { "タデリ"                            , crafting_type=en, item_id= 45847 }
+
+, ["TA"                      ] = { "ター"                             , crafting_type=en, item_id= 45850 }
+, ["JEJOTA"                  ] = { "ジェジョタ"                          , crafting_type=en, item_id= 45851 }
+, ["DENATA"                  ] = { "デナタ"                            , crafting_type=en, item_id= 45852 }
+, ["REKUTA"                  ] = { "レクタ"                            , crafting_type=en, item_id= 45853 }
+, ["KUTA"                    ] = { "クター"                            , crafting_type=en, item_id= 45854 }
+
+}
 -- Quest Titles --------------------------------------------------------------
 
 LibCraftText.DAILY_QUEST_TITLES = {

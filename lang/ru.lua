@@ -196,7 +196,128 @@ LibCraftText.MATERIAL = {
 , ["PLATINUM"      ] = { name="platinum"          , level_index= 5, material_index=40, master_writ2=255, crafting_type=jw, mat_set_id=mat_jewl  } -- "platinum"
 }
 
+-- Alchemy and Enchanting Materials
+--
+-- For "Acquire Mudcrab Chitin"
+--
+--
+-- name             string that appears in material requested in daily
+--                  crafting quests and master writ conditions.
+--
+-- crafting_type    Blacksmithing, Clothier, Woodworking, or Jewelry Crafting?
+--
+-- item_id          ZOS itemId for use in itemLinks and other APInes.
+--
+LibCraftText.CONSUMABLE_MATERIALS = {
+  ["BLESSED_THISTLE"         ] = { "благословенный чертополох"      , crafting_type=al, item_id= 30157 }
+, ["BLUE_ENTOLOMA"           ] = { "голубая энтолома"               , crafting_type=al, item_id= 30148 }
+, ["BUGLOSS"                 ] = { "воловик"                        , crafting_type=al, item_id= 30160 }
+, ["COLUMBINE"               ] = { "водосбор"                       , crafting_type=al, item_id= 30164 }
+, ["CORN_FLOWER"             ] = { "василек"                        , crafting_type=al, item_id= 30161 }
+, ["DRAGONTHORN"             ] = { "драконий шип"                   , crafting_type=al, item_id= 30162 }
+, ["EMETIC_RUSSULA"          ] = { "жгучеедкая сыроежка"            , crafting_type=al, item_id= 30151 }
+, ["IMP_STOOL"               ] = { "бесовский гриб"                 , crafting_type=al, item_id= 30156 }
+, ["LADYS_SMOCK"             ] = { "луговой сердечник"              , crafting_type=al, item_id= 30158 }
+, ["LUMINOUS_RUSSULA"        ] = { "светящаяся сыроежка"            , crafting_type=al, item_id= 30155 }
+, ["MOUNTAIN_FLOWER"         ] = { "горноцвет"                      , crafting_type=al, item_id= 30163 }
+, ["NAMIRAS_ROT"             ] = { "гниль Намиры"                   , crafting_type=al, item_id= 30153 }
+, ["NIRNROOT"                ] = { "корень Нирна"                   , crafting_type=al, item_id= 30165 }
+, ["STINKHORN"               ] = { "цветохвостник веретеновидный"   , crafting_type=al, item_id= 30149 }
+, ["VIOLET_COPRINUS"         ] = { "лиловый копринус"               , crafting_type=al, item_id= 30152 }
+, ["WATER_HYACINTH"          ] = { "водный гиацинт"                 , crafting_type=al, item_id= 30166 }
+, ["WHITE_CAP"               ] = { "белянка"                        , crafting_type=al, item_id= 30154 }
+, ["WORMWOOD"                ] = { "полынь"                         , crafting_type=al, item_id= 30159 }
+, ["BEETLE_SCUTTLE"          ] = { "Жучиный скатл"                  , crafting_type=al, item_id= 77583 }
+, ["BUTTERFLY_WING"          ] = { "Крыло бабочки"                  , crafting_type=al, item_id= 77585 }
+, ["FLESHFLY_LARVA"          ] = { "Личинка мясной мухи"            , crafting_type=al, item_id= 77587 }
+, ["MUDCRAB_CHITIN"          ] = { "Хитин грязевого краба"          , crafting_type=al, item_id= 77591 }
+, ["NIGHTSHADE"              ] = { "Паслен"                         , crafting_type=al, item_id= 77590 }
+, ["SCRIB_JELLY"             ] = { "Скрибовое желе"                 , crafting_type=al, item_id= 77589 }
+, ["SPIDER_EGG"              ] = { "Паучье яйцо"                    , crafting_type=al, item_id= 77584 }
+, ["TORCHBUG_THORAX"         ] = { "Торакс светлячка"               , crafting_type=al, item_id= 77581 }
+, ["CLAM_GALL"               ] = { "желчь моллюска"                 , crafting_type=al, item_id=139020 }
+, ["POWDERED_MOTHER_OF_PEARL"] = { "измельченный перламутр"         , crafting_type=al, item_id=139019 }
 
+, ["NATURAL_WATER"           ] = { "природная вода"                 , crafting_type=al, item_id=   883 }
+, ["CLEAR_WATER"             ] = { "чистая вода"                    , crafting_type=al, item_id=  1187 }
+, ["PRISTINE_WATER"          ] = { "нетронутая вода"                , crafting_type=al, item_id=  4570 }
+, ["CLEANSED_WATER"          ] = { "очищенная вода"                 , crafting_type=al, item_id= 23265 }
+, ["FILTERED_WATER"          ] = { "фильтрованная вода"             , crafting_type=al, item_id= 23266 }
+, ["PURIFIED_WATER"          ] = { "дистиллированная вода"          , crafting_type=al, item_id= 23267 }
+, ["CLOUD_MIST"              ] = { "облачный пар"                   , crafting_type=al, item_id= 23268 }
+, ["STAR_DEW"                ] = { "звездная роса"                  , crafting_type=al, item_id= 64500 }
+, ["LORKHANS_TEARS"          ] = { "Слезы Лорхана"                  , crafting_type=al, item_id= 64501 }
+
+, ["GREASE"                  ] = { "Топленое сало"                  , crafting_type=al, item_id= 75357 }
+, ["ICHOR"                   ] = { "Сукровица"                      , crafting_type=al, item_id= 75358 }
+, ["SLIME"                   ] = { "Слизь"                          , crafting_type=al, item_id= 75359 }
+, ["GALL"                    ] = { "Желчь"                          , crafting_type=al, item_id= 75360 }
+, ["TEREBINTHINE"            ] = { "Терпентинное масло"             , crafting_type=al, item_id= 75361 }
+, ["PITCH_BILE"              ] = { "Смоляная желчь"                 , crafting_type=al, item_id= 75362 }
+, ["TARBLACK"                ] = { "Дегтярное масло"                , crafting_type=al, item_id= 75363 }
+, ["NIGHT_OIL"               ] = { "Ночное масло"                   , crafting_type=al, item_id= 75364 }
+, ["ALKAHEST"                ] = { "Алкагест"                       , crafting_type=al, item_id= 75365 }
+
+, ["JORA"                    ] = { "Джора"                          , crafting_type=en, item_id= 45855 }
+, ["PORADE"                  ] = { "Пораде"                         , crafting_type=en, item_id= 45856 }
+, ["JERA"                    ] = { "Джера"                          , crafting_type=en, item_id= 45857 }
+, ["JEJORA"                  ] = { "Джеджора"                       , crafting_type=en, item_id= 45806 }
+, ["ODRA"                    ] = { "Одра"                           , crafting_type=en, item_id= 45807 }
+, ["POJORA"                  ] = { "Поджора"                        , crafting_type=en, item_id= 45808 }
+, ["EDORA"                   ] = { "Эдора"                          , crafting_type=en, item_id= 45809 }
+, ["JAERA"                   ] = { "Джейра"                         , crafting_type=en, item_id= 45810 }
+, ["PORA"                    ] = { "Пора"                           , crafting_type=en, item_id= 45811 }
+, ["DENARA"                  ] = { "Денара"                         , crafting_type=en, item_id= 45812 }
+, ["RERA"                    ] = { "Рера"                           , crafting_type=en, item_id= 45813 }
+, ["DERADO"                  ] = { "Дерадо"                         , crafting_type=en, item_id= 45814 }
+, ["REKURA"                  ] = { "Рекура"                         , crafting_type=en, item_id= 45815 }
+, ["KURA"                    ] = { "Кура"                           , crafting_type=en, item_id= 45816 }
+, ["REJERA"                  ] = { "Реджера"                        , crafting_type=en, item_id= 64509 }
+, ["REPORA"                  ] = { "Репора"                         , crafting_type=en, item_id= 68341 }
+
+, ["JODE"                    ] = { "Джоде"                          , crafting_type=en, item_id= 45817 }
+, ["NOTADE"                  ] = { "Нотаде"                         , crafting_type=en, item_id= 45818 }
+, ["ODE"                     ] = { "Оде"                            , crafting_type=en, item_id= 45819 }
+, ["TADE"                    ] = { "Таде"                           , crafting_type=en, item_id= 45820 }
+, ["JAYDE"                   ] = { "Джайде"                         , crafting_type=en, item_id= 45821 }
+, ["EDODE"                   ] = { "Эдоде"                          , crafting_type=en, item_id= 45822 }
+, ["POJODE"                  ] = { "Поджоде"                        , crafting_type=en, item_id= 45823 }
+, ["REKUDE"                  ] = { "Рекуде"                         , crafting_type=en, item_id= 45824 }
+, ["HADE"                    ] = { "Хаде"                           , crafting_type=en, item_id= 45825 }
+, ["IDODE"                   ] = { "Идоде"                          , crafting_type=en, item_id= 45826 }
+, ["PODE"                    ] = { "Поде"                           , crafting_type=en, item_id= 45827 }
+, ["KEDEKO"                  ] = { "Кедеко"                         , crafting_type=en, item_id= 45828 }
+, ["REDE"                    ] = { "Реде"                           , crafting_type=en, item_id= 45829 }
+, ["KUDE"                    ] = { "Куде"                           , crafting_type=en, item_id= 45830 }
+, ["JEHADE"                  ] = { "Джехаде"                        , crafting_type=en, item_id= 64508 }
+, ["ITADE"                   ] = { "Итаде"                          , crafting_type=en, item_id= 68340 }
+
+, ["DEKEIPA"                 ] = { "Декейпа"                        , crafting_type=en, item_id= 45839 }
+, ["DENI"                    ] = { "Дени"                           , crafting_type=en, item_id= 45833 }
+, ["DENIMA"                  ] = { "Денима"                         , crafting_type=en, item_id= 45836 }
+, ["DETERI"                  ] = { "Детери"                         , crafting_type=en, item_id= 45842 }
+, ["HAOKO"                   ] = { "Хаоко"                          , crafting_type=en, item_id= 45841 }
+, ["HAKEIJO"                 ] = { "Хакейджо"                       , crafting_type=en, item_id= 68342 }
+, ["KADERI"                  ] = { "Кадери"                         , crafting_type=en, item_id= 45849 }
+, ["KUOKO"                   ] = { "Куоко"                          , crafting_type=en, item_id= 45837 }
+, ["MAKDERI"                 ] = { "Макдери"                        , crafting_type=en, item_id= 45848 }
+, ["MAKKO"                   ] = { "Макко"                          , crafting_type=en, item_id= 45832 }
+, ["MAKKOMA"                 ] = { "Маккома"                        , crafting_type=en, item_id= 45835 }
+, ["MEIP"                    ] = { "Мейп"                           , crafting_type=en, item_id= 45840 }
+, ["OKO"                     ] = { "Око"                            , crafting_type=en, item_id= 45831 }
+, ["OKOMA"                   ] = { "Окома"                          , crafting_type=en, item_id= 45834 }
+, ["OKORI"                   ] = { "Окори"                          , crafting_type=en, item_id= 45843 }
+, ["ORU"                     ] = { "Ору"                            , crafting_type=en, item_id= 45846 }
+, ["RAKEIPA"                 ] = { "Ракейпа"                        , crafting_type=en, item_id= 45838 }
+, ["TADERI"                  ] = { "Тадери"                         , crafting_type=en, item_id= 45847 }
+
+, ["TA"                      ] = { "Та"                             , crafting_type=en, item_id= 45850 }
+, ["JEJOTA"                  ] = { "Джеджота"                       , crafting_type=en, item_id= 45851 }
+, ["DENATA"                  ] = { "Дената"                         , crafting_type=en, item_id= 45852 }
+, ["REKUTA"                  ] = { "Рекута"                         , crafting_type=en, item_id= 45853 }
+, ["KUTA"                    ] = { "Кута"                           , crafting_type=en, item_id= 45854 }
+
+}
 -- Quest Titles --------------------------------------------------------------
 
 LibCraftText.DAILY_QUEST_TITLES = {

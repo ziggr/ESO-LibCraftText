@@ -501,6 +501,24 @@ function ImportSavedVars()
             end
         end
     end
+
+    local mats = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].consumable_materials
+    if mats then
+        for crafting_type, item_list in pairs(mats) do
+            for item_id, lang_table in pairs(item_list) do
+                local key = string.format( "$MATERIAL_%s_%06d"
+                                         , CRAFTING_TYPE_ABBREV[crafting_type]
+                                         , item_id
+                                         )
+                DB[key] = DB[key] or {}
+                local entry = DB[key]
+                entry.key = key
+                for lang,text in pairs(lang_table) do
+                    entry[lang] = Decaret(text)
+                end
+            end
+        end
+    end
 end
 
 -- From http://lua-users.org/wiki/SplitJoin

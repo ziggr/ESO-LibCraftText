@@ -196,7 +196,128 @@ LibCraftText.MATERIAL = {
 , ["PLATINUM"      ] = { name="Platin"            , level_index= 5, material_index=40, master_writ2=255, crafting_type=jw, mat_set_id=mat_jewl  } -- "platinum"
 }
 
+-- Alchemy and Enchanting Materials
+--
+-- For "Acquire Mudcrab Chitin"
+--
+--
+-- name             string that appears in material requested in daily
+--                  crafting quests and master writ conditions.
+--
+-- crafting_type    Blacksmithing, Clothier, Woodworking, or Jewelry Crafting?
+--
+-- item_id          ZOS itemId for use in itemLinks and other APInes.
+--
+LibCraftText.CONSUMABLE_MATERIALS = {
+  ["BLESSED_THISTLE"         ] = { "Benediktenkraut"                , crafting_type=al, item_id= 30157 }
+, ["BLUE_ENTOLOMA"           ] = { "blauer Glöckling"               , crafting_type=al, item_id= 30148 }
+, ["BUGLOSS"                 ] = { "Wolfsauge"                      , crafting_type=al, item_id= 30160 }
+, ["COLUMBINE"               ] = { "Akelei"                         , crafting_type=al, item_id= 30164 }
+, ["CORN_FLOWER"             ] = { "Kornblume"                      , crafting_type=al, item_id= 30161 }
+, ["DRAGONTHORN"             ] = { "Drachendorn"                    , crafting_type=al, item_id= 30162 }
+, ["EMETIC_RUSSULA"          ] = { "Brechtäubling"                  , crafting_type=al, item_id= 30151 }
+, ["IMP_STOOL"               ] = { "Koboldschemel"                  , crafting_type=al, item_id= 30156 }
+, ["LADYS_SMOCK"             ] = { "Wiesenschaumkraut"              , crafting_type=al, item_id= 30158 }
+, ["LUMINOUS_RUSSULA"        ] = { "Leuchttäubling"                 , crafting_type=al, item_id= 30155 }
+, ["MOUNTAIN_FLOWER"         ] = { "Bergblume"                      , crafting_type=al, item_id= 30163 }
+, ["NAMIRAS_ROT"             ] = { "Namiras Fäulnis"                , crafting_type=al, item_id= 30153 }
+, ["NIRNROOT"                ] = { "Nirnwurz"                       , crafting_type=al, item_id= 30165 }
+, ["STINKHORN"               ] = { "Stinkmorchel"                   , crafting_type=al, item_id= 30149 }
+, ["VIOLET_COPRINUS"         ] = { "violetter Tintling"             , crafting_type=al, item_id= 30152 }
+, ["WATER_HYACINTH"          ] = { "Wasserhyazinthe"                , crafting_type=al, item_id= 30166 }
+, ["WHITE_CAP"               ] = { "Weißkappe"                      , crafting_type=al, item_id= 30154 }
+, ["WORMWOOD"                ] = { "Wermut"                         , crafting_type=al, item_id= 30159 }
+, ["BEETLE_SCUTTLE"          ] = { "Käferbeine"                     , crafting_type=al, item_id= 77583 }
+, ["BUTTERFLY_WING"          ] = { "Schmetterlingsflügel"           , crafting_type=al, item_id= 77585 }
+, ["FLESHFLY_LARVA"          ] = { "Fleischfliegenlarve"            , crafting_type=al, item_id= 77587 }
+, ["MUDCRAB_CHITIN"          ] = { "Schlammkrabbenchitin"           , crafting_type=al, item_id= 77591 }
+, ["NIGHTSHADE"              ] = { "Nachtschatten"                  , crafting_type=al, item_id= 77590 }
+, ["SCRIB_JELLY"             ] = { "Skribgelee"                     , crafting_type=al, item_id= 77589 }
+, ["SPIDER_EGG"              ] = { "Spinnenei"                      , crafting_type=al, item_id= 77584 }
+, ["TORCHBUG_THORAX"         ] = { "Fackelkäferpanzer"              , crafting_type=al, item_id= 77581 }
+, ["CLAM_GALL"               ] = { "Muschelgalle"                   , crafting_type=al, item_id=139020 }
+, ["POWDERED_MOTHER_OF_PEARL"] = { "pulverisiertes Perlmutt"        , crafting_type=al, item_id=139019 }
 
+, ["NATURAL_WATER"           ] = { "natürliches Wasser"             , crafting_type=al, item_id=   883 }
+, ["CLEAR_WATER"             ] = { "klares Wasser"                  , crafting_type=al, item_id=  1187 }
+, ["PRISTINE_WATER"          ] = { "unberührtes Wasser"             , crafting_type=al, item_id=  4570 }
+, ["CLEANSED_WATER"          ] = { "gesäubertes Wasser"             , crafting_type=al, item_id= 23265 }
+, ["FILTERED_WATER"          ] = { "gefiltertes Wasser"             , crafting_type=al, item_id= 23266 }
+, ["PURIFIED_WATER"          ] = { "gereinigtes Wasser"             , crafting_type=al, item_id= 23267 }
+, ["CLOUD_MIST"              ] = { "Wolkennebel"                    , crafting_type=al, item_id= 23268 }
+, ["STAR_DEW"                ] = { "Sternentau"                     , crafting_type=al, item_id= 64500 }
+, ["LORKHANS_TEARS"          ] = { "Lorkhans Tränen"                , crafting_type=al, item_id= 64501 }
+
+, ["GREASE"                  ] = { "Fett"                           , crafting_type=al, item_id= 75357 }
+, ["ICHOR"                   ] = { "Eiter"                          , crafting_type=al, item_id= 75358 }
+, ["SLIME"                   ] = { "Schleim"                        , crafting_type=al, item_id= 75359 }
+, ["GALL"                    ] = { "Galle"                          , crafting_type=al, item_id= 75360 }
+, ["TEREBINTHINE"            ] = { "Terebinthe"                     , crafting_type=al, item_id= 75361 }
+, ["PITCH_BILE"              ] = { "Schwarzgalle"                   , crafting_type=al, item_id= 75362 }
+, ["TARBLACK"                ] = { "Teerschwarz"                    , crafting_type=al, item_id= 75363 }
+, ["NIGHT_OIL"               ] = { "Nachtöl"                        , crafting_type=al, item_id= 75364 }
+, ["ALKAHEST"                ] = { "Alkahest"                       , crafting_type=al, item_id= 75365 }
+
+, ["JORA"                    ] = { "Jora"                           , crafting_type=en, item_id= 45855 }
+, ["PORADE"                  ] = { "Porade"                         , crafting_type=en, item_id= 45856 }
+, ["JERA"                    ] = { "Jera"                           , crafting_type=en, item_id= 45857 }
+, ["JEJORA"                  ] = { "Jejora"                         , crafting_type=en, item_id= 45806 }
+, ["ODRA"                    ] = { "Odra"                           , crafting_type=en, item_id= 45807 }
+, ["POJORA"                  ] = { "Pojora"                         , crafting_type=en, item_id= 45808 }
+, ["EDORA"                   ] = { "Edora"                          , crafting_type=en, item_id= 45809 }
+, ["JAERA"                   ] = { "Jaera"                          , crafting_type=en, item_id= 45810 }
+, ["PORA"                    ] = { "Pora"                           , crafting_type=en, item_id= 45811 }
+, ["DENARA"                  ] = { "Denara"                         , crafting_type=en, item_id= 45812 }
+, ["RERA"                    ] = { "Rera"                           , crafting_type=en, item_id= 45813 }
+, ["DERADO"                  ] = { "Derado"                         , crafting_type=en, item_id= 45814 }
+, ["REKURA"                  ] = { "Rekura"                         , crafting_type=en, item_id= 45815 }
+, ["KURA"                    ] = { "Kura"                           , crafting_type=en, item_id= 45816 }
+, ["REJERA"                  ] = { "Rejera"                         , crafting_type=en, item_id= 64509 }
+, ["REPORA"                  ] = { "Repora"                         , crafting_type=en, item_id= 68341 }
+
+, ["JODE"                    ] = { "Jode"                           , crafting_type=en, item_id= 45817 }
+, ["NOTADE"                  ] = { "Notade"                         , crafting_type=en, item_id= 45818 }
+, ["ODE"                     ] = { "Ode"                            , crafting_type=en, item_id= 45819 }
+, ["TADE"                    ] = { "Tade"                           , crafting_type=en, item_id= 45820 }
+, ["JAYDE"                   ] = { "Jayde"                          , crafting_type=en, item_id= 45821 }
+, ["EDODE"                   ] = { "Edode"                          , crafting_type=en, item_id= 45822 }
+, ["POJODE"                  ] = { "Pojode"                         , crafting_type=en, item_id= 45823 }
+, ["REKUDE"                  ] = { "Rekude"                         , crafting_type=en, item_id= 45824 }
+, ["HADE"                    ] = { "Hade"                           , crafting_type=en, item_id= 45825 }
+, ["IDODE"                   ] = { "Idode"                          , crafting_type=en, item_id= 45826 }
+, ["PODE"                    ] = { "Pode"                           , crafting_type=en, item_id= 45827 }
+, ["KEDEKO"                  ] = { "Kedeko"                         , crafting_type=en, item_id= 45828 }
+, ["REDE"                    ] = { "Rede"                           , crafting_type=en, item_id= 45829 }
+, ["KUDE"                    ] = { "Kude"                           , crafting_type=en, item_id= 45830 }
+, ["JEHADE"                  ] = { "Jehade"                         , crafting_type=en, item_id= 64508 }
+, ["ITADE"                   ] = { "Itade"                          , crafting_type=en, item_id= 68340 }
+
+, ["DEKEIPA"                 ] = { "Dakeipa"                        , crafting_type=en, item_id= 45839 }
+, ["DENI"                    ] = { "Deni"                           , crafting_type=en, item_id= 45833 }
+, ["DENIMA"                  ] = { "Denima"                         , crafting_type=en, item_id= 45836 }
+, ["DETERI"                  ] = { "Deteri"                         , crafting_type=en, item_id= 45842 }
+, ["HAOKO"                   ] = { "Haoko"                          , crafting_type=en, item_id= 45841 }
+, ["HAKEIJO"                 ] = { "Hakeijo"                        , crafting_type=en, item_id= 68342 }
+, ["KADERI"                  ] = { "Kaderi"                         , crafting_type=en, item_id= 45849 }
+, ["KUOKO"                   ] = { "Kuoko"                          , crafting_type=en, item_id= 45837 }
+, ["MAKDERI"                 ] = { "Makderi"                        , crafting_type=en, item_id= 45848 }
+, ["MAKKO"                   ] = { "Makko"                          , crafting_type=en, item_id= 45832 }
+, ["MAKKOMA"                 ] = { "Makkoma"                        , crafting_type=en, item_id= 45835 }
+, ["MEIP"                    ] = { "Meip"                           , crafting_type=en, item_id= 45840 }
+, ["OKO"                     ] = { "Oko"                            , crafting_type=en, item_id= 45831 }
+, ["OKOMA"                   ] = { "Okoma"                          , crafting_type=en, item_id= 45834 }
+, ["OKORI"                   ] = { "Okori"                          , crafting_type=en, item_id= 45843 }
+, ["ORU"                     ] = { "Oru"                            , crafting_type=en, item_id= 45846 }
+, ["RAKEIPA"                 ] = { "Rakeipa"                        , crafting_type=en, item_id= 45838 }
+, ["TADERI"                  ] = { "Taderi"                         , crafting_type=en, item_id= 45847 }
+
+, ["TA"                      ] = { "Ta"                             , crafting_type=en, item_id= 45850 }
+, ["JEJOTA"                  ] = { "Jejota"                         , crafting_type=en, item_id= 45851 }
+, ["DENATA"                  ] = { "Denata"                         , crafting_type=en, item_id= 45852 }
+, ["REKUTA"                  ] = { "Rekuta"                         , crafting_type=en, item_id= 45853 }
+, ["KUTA"                    ] = { "Kuta"                           , crafting_type=en, item_id= 45854 }
+
+}
 -- Quest Titles --------------------------------------------------------------
 
 LibCraftText.DAILY_QUEST_TITLES = {
