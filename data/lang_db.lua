@@ -3484,12 +3484,32 @@ LANG_DB = {
           ,   ru  = "bracers"
           ,   ja  = "腕当て"
           }
+, [3840] = {
+              key = "$ITEM_CL_11B"
+          ,   en  = "bracers"
+          ,   de  = "armschienen"
+          ,   fr  = "brassards"
+          ,   es  = "brazaletes"
+          ,   it  = "bracciali"
+          ,   ru  = "bracers"
+          ,   ja  = "腕当て"
+          }
 , [385] = {
               key = "$ITEM_CL_12"
           ,   en  = "helmet"
           ,   de  = "helm"
           ,   fr  = "casque"
           ,   es  = "Casco"
+          ,   it  = "elmetto"
+          ,   ru  = "helmet"
+          ,   ja  = "兜"
+          }
+, [3850] = {
+              key = "$ITEM_CL_12B"
+          ,   en  = "helmet"
+          ,   de  = "helm"
+          ,   fr  = "casque"
+          ,   es  = "yelmo"
           ,   it  = "elmetto"
           ,   ru  = "helmet"
           ,   ja  = "兜"
@@ -3540,6 +3560,16 @@ LANG_DB = {
           ,   de  = "halskette"
           ,   fr  = "collier"
           ,   es  = "collar"
+          ,   it  = "collana"
+          ,   ru  = "necklace"
+          ,   ja  = "ネックレス"
+          }
+, [3900] = {
+              key = "$ITEM_JW_02B"
+          ,   en  = "necklace"
+          ,   de  = "halskette"
+          ,   fr  = "collier"
+          ,   es  = "colgantes"
           ,   it  = "collana"
           ,   ru  = "necklace"
           ,   ja  = "ネックレス"
@@ -4697,6 +4727,15 @@ LANG_DB = {
           ,   de  = "Eisenstoff"
           ,   fr  = "fil de fer"
           ,   es  = "hilo de hierro"
+          ,   ru  = "ironthread"
+          ,   ja  = "アイアンスレッド"
+          }
+, [5160] = {
+              key = "$MATERIAL_LGT_07B"
+          ,   en  = "ironthread"
+          ,   de  = "Eisenstoff"
+          ,   fr  = "fil de fer"
+          ,   es  = "hilo férreo"
           ,   ru  = "ironthread"
           ,   ja  = "アイアンスレッド"
           }

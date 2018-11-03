@@ -101,8 +101,8 @@ LibCraftText.ITEM = {
 , ["SASH"           ] = { name=$ITEM_CL_08            , master_name=$MASTER_ITEM_30             , pattern_index= 8, master_writ1=30, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr , name_2=$ITEM_CL_08B} -- "sash"
 , ["JACK"           ] = { name=$ITEM_CL_09            , master_name=$MASTER_ITEM_37             , pattern_index= 9, master_writ1=37, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "jack"
 , ["BOOTS"          ] = { name=$ITEM_CL_10            , master_name=$MASTER_ITEM_41             , pattern_index=10, master_writ1=41, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "boots"
-, ["BRACERS"        ] = { name=$ITEM_CL_11            , master_name=$MASTER_ITEM_43             , pattern_index=11, master_writ1=43, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "bracers"
-, ["HELMET"         ] = { name=$ITEM_CL_12            , master_name=$MASTER_ITEM_35             , pattern_index=12, master_writ1=35, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "helmet"
+, ["BRACERS"        ] = { name=$ITEM_CL_11            , master_name=$MASTER_ITEM_43             , pattern_index=11, master_writ1=43, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr , name_2=$ITEM_CL_11B} -- "bracers"
+, ["HELMET"         ] = { name=$ITEM_CL_12            , master_name=$MASTER_ITEM_35             , pattern_index=12, master_writ1=35, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr , name_2=$ITEM_CL_12B} -- "helmet"
 , ["GUARDS"         ] = { name=$ITEM_CL_13            , master_name=$MASTER_ITEM_40             , pattern_index=13, master_writ1=40, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "guards"
 , ["ARM_COPS"       ] = { name=$ITEM_CL_14            , master_name=$MASTER_ITEM_38             , pattern_index=14, master_writ1=38, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "arm cops"
 , ["BELT"           ] = { name=$ITEM_CL_15            , master_name=$MASTER_ITEM_39             , pattern_index=15, master_writ1=39, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "belt"
@@ -114,7 +114,7 @@ LibCraftText.ITEM = {
 , ["RESTO_STAFF"    ] = { name=$ITEM_WW_06            , master_name=$MASTER_ITEM_71             , pattern_index= 6, master_writ1=71, crafting_type=ww, mat_set_id=mat_wood, trait_set_id=trait_weap } -- "restoration staff"
 , ["SHIELD"         ] = { name=$ITEM_WW_02            , master_name=$MASTER_ITEM_65             , pattern_index= 2, master_writ1=65, crafting_type=ww, mat_set_id=mat_wood, trait_set_id=trait_armr } -- "shield"
 
-, ["NECKLACE"       ] = { name=$ITEM_JW_02            , master_name=$MASTER_ITEM_18             , pattern_index= 2, master_writ1=18, crafting_type=jw, mat_set_id=mat_jewl, trait_set_id=trait_jewl } -- "necklace"
+, ["NECKLACE"       ] = { name=$ITEM_JW_02            , master_name=$MASTER_ITEM_18             , pattern_index= 2, master_writ1=18, crafting_type=jw, mat_set_id=mat_jewl, trait_set_id=trait_jewl , name_2=$ITEM_JW_02B} -- "necklace"
 , ["RING"           ] = { name=$ITEM_JW_01            , master_name=$MASTER_ITEM_24             , pattern_index= 1, master_writ1=24, crafting_type=jw, mat_set_id=mat_jewl, trait_set_id=trait_jewl } -- "ring"
 }
 
@@ -162,7 +162,7 @@ LibCraftText.MATERIAL = {
 , ["SPIDERSILK"    ] = { name=$MATERIAL_LGT_04    , level_index= 4, material_index=18, master_writ2= 49, crafting_type=cl, mat_set_id=mat_lgt  } -- "spidersilk"
 , ["EBONTHREAD"    ] = { name=$MATERIAL_LGT_05    , level_index= 5, material_index=23, master_writ2= 51, crafting_type=cl, mat_set_id=mat_lgt  } -- "ebonthread"
 , ["KRESH"         ] = { name=$MATERIAL_LGT_06    , level_index= 6, material_index=26, master_writ2=125, crafting_type=cl, mat_set_id=mat_lgt  } -- "kresh"
-, ["IRONTHREAD"    ] = { name=$MATERIAL_LGT_07    , level_index= 7, material_index=29, master_writ2=126, crafting_type=cl, mat_set_id=mat_lgt  } -- "ironthread"
+, ["IRONTHREAD"    ] = { name=$MATERIAL_LGT_07    , level_index= 7, material_index=29, master_writ2=126, crafting_type=cl, mat_set_id=mat_lgt , name_2=$MATERIAL_LGT_07B } -- "ironthread"
 , ["SILVERWEAVE"   ] = { name=$MATERIAL_LGT_08    , level_index= 8, material_index=32, master_writ2=127, crafting_type=cl, mat_set_id=mat_lgt  } -- "silverweave"
 , ["SHADOWSPUN"    ] = { name=$MATERIAL_LGT_09    , level_index= 9, material_index=34, master_writ2=128, crafting_type=cl, mat_set_id=mat_lgt  } -- "shadowspun"
 , ["ANCESTOR_SILK" ] = { name=$MATERIAL_LGT_10    , level_index=10, material_index=40, master_writ2=194, crafting_type=cl, mat_set_id=mat_lgt , name_2=$MATERIAL_LGT_10B } -- "Ancestor Silk"

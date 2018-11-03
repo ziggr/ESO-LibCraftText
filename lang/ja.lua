@@ -101,8 +101,8 @@ LibCraftText.ITEM = {
 , ["SASH"           ] = { name="サッシュ"                 , master_name="サッシュ"                      , pattern_index= 8, master_writ1=30, crafting_type=cl, mat_set_id=mat_lgt , trait_set_id=trait_armr , name_2="サッシュ"      } -- "sash"
 , ["JACK"           ] = { name="胴当て"                  , master_name="胴当て"                       , pattern_index= 9, master_writ1=37, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "jack"
 , ["BOOTS"          ] = { name="ブーツ"                  , master_name="ブーツ"                       , pattern_index=10, master_writ1=41, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "boots"
-, ["BRACERS"        ] = { name="腕当て"                  , master_name="腕当て"                       , pattern_index=11, master_writ1=43, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "bracers"
-, ["HELMET"         ] = { name="兜"                    , master_name="兜"                         , pattern_index=12, master_writ1=35, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "helmet"
+, ["BRACERS"        ] = { name="腕当て"                  , master_name="腕当て"                       , pattern_index=11, master_writ1=43, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr , name_2="腕当て"       } -- "bracers"
+, ["HELMET"         ] = { name="兜"                    , master_name="兜"                         , pattern_index=12, master_writ1=35, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr , name_2="兜"         } -- "helmet"
 , ["GUARDS"         ] = { name="すね当て"                 , master_name="すね当て"                      , pattern_index=13, master_writ1=40, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "guards"
 , ["ARM_COPS"       ] = { name="アームカップ"               , master_name="アームカップ"                    , pattern_index=14, master_writ1=38, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "arm cops"
 , ["BELT"           ] = { name="ベルト"                  , master_name="ベルト"                       , pattern_index=15, master_writ1=39, crafting_type=cl, mat_set_id=mat_med , trait_set_id=trait_armr } -- "belt"
@@ -114,7 +114,7 @@ LibCraftText.ITEM = {
 , ["RESTO_STAFF"    ] = { name="回復の杖"                 , master_name="回復の杖"                      , pattern_index= 6, master_writ1=71, crafting_type=ww, mat_set_id=mat_wood, trait_set_id=trait_weap } -- "restoration staff"
 , ["SHIELD"         ] = { name="盾"                    , master_name="盾"                         , pattern_index= 2, master_writ1=65, crafting_type=ww, mat_set_id=mat_wood, trait_set_id=trait_armr } -- "shield"
 
-, ["NECKLACE"       ] = { name="ネックレス"                , master_name="ネックレス"                     , pattern_index= 2, master_writ1=18, crafting_type=jw, mat_set_id=mat_jewl, trait_set_id=trait_jewl } -- "necklace"
+, ["NECKLACE"       ] = { name="ネックレス"                , master_name="ネックレス"                     , pattern_index= 2, master_writ1=18, crafting_type=jw, mat_set_id=mat_jewl, trait_set_id=trait_jewl , name_2="ネックレス"     } -- "necklace"
 , ["RING"           ] = { name="リング"                  , master_name="指輪"                        , pattern_index= 1, master_writ1=24, crafting_type=jw, mat_set_id=mat_jewl, trait_set_id=trait_jewl } -- "ring"
 }
 
@@ -162,7 +162,7 @@ LibCraftText.MATERIAL = {
 , ["SPIDERSILK"    ] = { name="スパイダーシルク"          , level_index= 4, material_index=18, master_writ2= 49, crafting_type=cl, mat_set_id=mat_lgt  } -- "spidersilk"
 , ["EBONTHREAD"    ] = { name="エボンスレッド"           , level_index= 5, material_index=23, master_writ2= 51, crafting_type=cl, mat_set_id=mat_lgt  } -- "ebonthread"
 , ["KRESH"         ] = { name="クレッシュ"             , level_index= 6, material_index=26, master_writ2=125, crafting_type=cl, mat_set_id=mat_lgt  } -- "kresh"
-, ["IRONTHREAD"    ] = { name="アイアンスレッド"          , level_index= 7, material_index=29, master_writ2=126, crafting_type=cl, mat_set_id=mat_lgt  } -- "ironthread"
+, ["IRONTHREAD"    ] = { name="アイアンスレッド"          , level_index= 7, material_index=29, master_writ2=126, crafting_type=cl, mat_set_id=mat_lgt , name_2="アイアンスレッド"        } -- "ironthread"
 , ["SILVERWEAVE"   ] = { name="シルバーウィーブ"          , level_index= 8, material_index=32, master_writ2=127, crafting_type=cl, mat_set_id=mat_lgt  } -- "silverweave"
 , ["SHADOWSPUN"    ] = { name="影の布"               , level_index= 9, material_index=34, master_writ2=128, crafting_type=cl, mat_set_id=mat_lgt  } -- "shadowspun"
 , ["ANCESTOR_SILK" ] = { name="先人のシルク"            , level_index=10, material_index=40, master_writ2=194, crafting_type=cl, mat_set_id=mat_lgt , name_2="先人のシルク"          } -- "Ancestor Silk"

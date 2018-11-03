@@ -6,7 +6,6 @@ luaunit = require("luaunit")
 TestGen            = {}
 TestGen.setUpOuter =  Test.setUpOuter
 TestGen.setUp      =  Test.setUp
-TestGen.test_ct    = 0
 
 LCT = LibCraftText
 
@@ -18,11 +17,6 @@ for k,v in pairs(LANG_DB) do
     if v.en then
         INPUT_TO_LANG_TABLE[v.en] = v
     end
-end
-
-function TestGen:setUpOuter()
-    TestGen.test_ct = 0
-    Test:setUpOuter()
 end
 
 function table.shallow_copy(t)
@@ -45,8 +39,6 @@ function TestGen.TestAll()
     for _,fodder in pairs(COND_TEXT_FODDER) do
         TestGen.OneTest(fodder.input, fodder.expect)
     end
-
-    print("TestGen ct:"..TestGen.test_ct)
 end
 
 function TestGen.OneTest(input_en, expect)
@@ -72,9 +64,6 @@ function TestGen.OneTest(input_en, expect)
 
     local got = LibCraftText.ParseDailyConditionGear(crafting_type, input)
     luaunit.assertEquals(got, real_expect, input_en.."/"..input)
-
-    TestGen.test_ct = TestGen.test_ct + 1
-    --print(input_en)
 end
 
 os.exit( luaunit.LuaUnit.run() )

@@ -132,12 +132,20 @@ LibCraftText.RE_CONDITION_DAILY = {
              }
 ,   ["ru"] = { "Craft Normal ([^:]*)"
              , "Craft a ([^:]*)"
+             , "Craft two ([^:]*)"
+             , "Craft three ([^:]*)"
              }
-,   ["es"] = { "Fabrica [unaos]+ (.*) de (.*) norm"
+,   ["es"] = { "Fabrica [unaos]+ (.*) norm"
+             , "Fabrica [unaos]+ (.*) de (.*) norm"
              , "Fabrica un (.*) de ([^:]*)"
+             , "Fabrica dos (.*) de ([^:]*)"
+             , "Fabrica tres (.*) de ([^:]*)"
              }
-,   ["ja"] = { "(.*)の(.*)%(ノーマル%)を生産する"
+,   ["ja"] = { "(.*)%(ノーマル%)を生産する"
+             , "(.*)の(.*)%(ノーマル%)を生産する"
              , "(.*)の(.*)を作る"
+             , "(.*)を2個作る"
+             , "(.*)を3個作る"
              }
 }
 
@@ -173,12 +181,6 @@ function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
         matitem = g1
         if g2 then matitem = matitem .. "/" .. g2 end
         if matitem then break end
-
-        -- print(string.format( "matitem:'%s' cond_text:'%s'  re:'%s'"
-        --                    , tostring(matitem)
-        --                    , tostring(cond_text)
-        --                    , tostring(re)
-        --                    ))
     end
     if not matitem then
         -- print(string.format( "matitem:'%s' cond_text:'%s'"
@@ -215,6 +217,7 @@ function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
     found.material = exact_material
                    or self.LongestMatch(matitem, self.MATERIAL , crafting_type
                             , unpack(mat_fields))
+-- VERY helpful when testing 'make gentest' for showing what matched what.
 -- print(string.format( "g1:%s g2:%s e_it:%s e_mat:%s f.it:%s f.mat:%s"
 --                    , tostring(g1)
 --                    , tostring(g2)
