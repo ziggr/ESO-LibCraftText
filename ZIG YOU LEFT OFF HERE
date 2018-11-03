@@ -194,16 +194,16 @@ AUTOSCAN? The 7-language loop of
 ---
 PTS 2018-11 Characters
 
-DC  1   ziggr-alt-one       1A=2018-11-01 B=02
-AD  2   ziggr-alt-two       2A=2018-11-01 B=02
-EP  3   ziggr-alt-three     3A=2018-11-01 B=02
-DC  4   ziggr-alt-four      4A=2018-11-01 B=02
-AD  5   ziggr-alt-five      5A=2018-11-01 B=02
-EP  6 1 ziggr-alt-six       6A=2018-11-01 B=02
-DC  7 2 ziggr-alt-seven     7A=2018-11-01 B=02
-AD  8 1 ziggr-alt-eight     8A=2018-11-01 B=02
-EP  9 2 ziggr-alt-nine      9A=2018-11-01 B=02
-EP 10 6 hammer-meets-thumb 10A=2018-11-02      C=01
+DC  1   ziggr-alt-one       1A=2018-11-01 B=02 C=03
+AD  2   ziggr-alt-two       2A=2018-11-01 B=02 C=03
+EP  3   ziggr-alt-three     3A=2018-11-01 B=02 C=03
+DC  4   ziggr-alt-four      4A=2018-11-01 B=02 C=03
+AD  5   ziggr-alt-five      5A=2018-11-01 B=02 C=03
+EP  6 1 ziggr-alt-six       6A=2018-11-01 B=02 C=03
+DC  7 2 ziggr-alt-seven     7A=2018-11-01 B=02 C=03
+AD  8 1 ziggr-alt-eight     8A=2018-11-01 B=02 C=03
+EP  9 2 ziggr-alt-nine      9A=2018-11-01 B=02 C=03
+EP 10 6 hammer-meets-thumb 10A=2018-11-02 B=03 C=01
 
 Faction PR Recipes
 DC 12.4..
@@ -212,3 +212,15 @@ EP 123..6
 
 Summerset home is near crafting stations, Jewelry (Felarian) and Consumables (Danel) writ certifier. Bought.
 Equipment (Millenith) certifier is near Summerset wayshrine.
+
+
+/lct scan should report which languages you have/haven't yet scanned since /lct forget:
+
+lct:  en de FR es ru it ja
+    ALL CAPS, GREEN for the current language FR
+    lowercase, very dim green, for languages before current language that are scanned
+    lowercase, grey, for languages after current language that are not yet scanned
+    lowercase, RED, for languages before current language scanned
+    new saved_char.scanned_lang = { ["en"] = true } cleared on forget filled in on scan
+
+/lct forget should also abandon all daily crafting quests
