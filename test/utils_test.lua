@@ -67,3 +67,4 @@ function Test:setUp()
     dofile(string.format("lang/%s.lua",want_lang))
     -- print(want_lang.."  "..LibCraftText.DAILY_QUEST_TITLES[1])
 end
+

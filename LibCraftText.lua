@@ -187,6 +187,24 @@ LibCraftText.BUGFIX = {
              }
 }
 
+LibCraftText.RE_CONDITION_ACQUIRE = {
+    ["en"] = { "Acquire ([^:]*)"
+             }
+,   ["de"] = { "Besorgt ([^:]*)"
+             , "Beschafft ([^:]*)"
+             }
+,   ["fr"] = { "Acquérez ([^:]*)"
+             , "Acquérir ([^:]*)"
+             }
+,   ["ru"] = { "Раздобыть — ([^:]*)"
+             , "Добыть ([^:]*)"
+             , "Достать ([^:]*)"
+             }
+,   ["es"] = { "Adquiere ([^:]*)"
+             }
+,   ["ja"] = { "(.*)を手に入れる" }
+}
+
 -- If the supplied condition requests that we craft a potion or poison at
 -- an AL station, return the requested item and level.
 --
@@ -194,7 +212,36 @@ LibCraftText.BUGFIX = {
 -- or acquire some alchemy or enchanting material, return nil.
 --
 function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
-    return { material=LibCraftText.CONSUMABLE_MATERIAL.ALKAHEST }
+    local self          = LibCraftText
+    local lang          = self.CurrLang()
+    local re_ac_list    = self.RE_CONDITION_ACQUIRE[lang]
+
+    local mat_text = nil
+    for _,re in ipairs(re_ac_list) do
+        _,_,g1 = string.find(cond_text, re)
+        if g1 then
+            mat_text = g1
+            break
+        end
+    end
+
+    local mat_fields  = { "name", "name_2" }
+    if mat_text then
+        mat_text = mat_text:lower()
+        local exact_material = self.ExactMatch(mat_text, self.CONSUMABLE_MATERIAL , crafting_type
+                                , unpack(mat_fields))
+        local found    = {}
+        found.material = exact_material
+                       or self.LongestMatch(mat_text, self.CONSUMABLE_MATERIAL , crafting_type
+                                , unpack(mat_fields))
+        if found.material then
+            return found
+        end
+    end
+
+    return nil
+
+    -- ### craft potion poison rune recipe
 end
 
 -- Test Scaffolding ----------------------------------------------------------
@@ -234,22 +281,25 @@ end
                         -- Return the row with the longest matching field.
 function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ... )
     if not find_me then return nil end
+    local self               = LibCraftText
     local longest_match      = { name=nil, row=nil }
     local find_me_lower      = find_me:lower()
-    local find_me_deumlauted = LibCraftText.DeUmlaut(find_me_lower)
+    local find_me_deumlauted = self.DeUmlaut(find_me_lower)
     for _,fieldname in pairs({ field_name, ... }) do
         if not fieldname then break end
         for _, row in pairs(rows) do
             if row.crafting_type == crafting_type then
                 local name = row[fieldname]
-                if name and (  find_me_lower:find(name:lower())
-                             or find_me_deumlauted:find(LibCraftText.DeUmlaut(name)) ) then
-                    if (not longest_match.name) or (longest_match.name:len() < name:len()) then
-                        longest_match.name = name
-                        longest_match.row  = row
+                if name then
+                    name = self.escape_re(name:lower())
+                    if name and (  find_me_lower:find(name)
+                                 or find_me_deumlauted:find(self.DeUmlaut(name)) ) then
+                        if (not longest_match.name) or (longest_match.name:len() < name:len()) then
+                            longest_match.name = name
+                            longest_match.row  = row
 -- print(string.format("yep   find_me:'%s'  row:'%s'", find_me, name:lower()))
+                        end
                     end
--- else print(string.format("nope  find_me:'%s'  row:'%s'", find_me, name:lower()))
                 end
             end
         end
@@ -312,3 +362,23 @@ LibCraftText.CRAFTING_TYPES = {
 , CRAFTING_TYPE_JEWELRYCRAFTING
 }
 
+
+                        -- Convert hyphen-carrying FR French "épine-de-dragon"
+                        -- into something that can we can successfully pass
+                        -- as a search expression to string.find().
+function LibCraftText.escape_re(t)
+    local r = t:gsub("%%","%%%%")
+    r       = r:gsub("-" ,"%%-" )
+    return r
+end
+
+
+-- To help see surprise unicode chars like non-breaking-space.
+local function hex_dump(buf)
+  for i=1,math.ceil(#buf/16) * 16 do
+     if (i-1) % 16 == 0 then io.write(string.format('%08X  ', i-1)) end
+     io.write( i > #buf and '   ' or string.format('%02X ', buf:byte(i)) )
+     if i %  8 == 0 then io.write(' ') end
+     if i % 16 == 0 then io.write( buf:sub(i-16+1, i):gsub('%c','.'), '\n' ) end
+  end
+end

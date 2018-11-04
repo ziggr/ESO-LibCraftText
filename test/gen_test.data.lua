@@ -1,39 +1,39 @@
 COND_TEXT_FODDER = {
-  { input="Acquire Alkahest"                                , expect={ material=LCT.MATERIAL.ALKAHEST  } }
-, { input="Acquire Blessed Thistle"                         , expect={}                                                 }
-, { input="Acquire Bugloss"                                 , expect={}                                                 }
-, { input="Acquire Corn Flower"                             , expect={}                                                 }
-, { input="Acquire Deni Essence Rune"                       , expect={}                                                 }
-, { input="Acquire Denima Essence Rune"                     , expect={}                                                 }
-, { input="Acquire Dragonthorn"                             , expect={}                                                 }
-, { input="Acquire Hade Potency Rune"                       , expect={}                                                 }
-, { input="Acquire Idode Potency Rune"                      , expect={}                                                 }
-, { input="Acquire Imp Stool"                               , expect={}                                                 }
-, { input="Acquire Jayde Potency Rune"                      , expect={}                                                 }
-, { input="Acquire Jehade Potency Rune"                     , expect={}                                                 }
-, { input="Acquire Jode Potency Rune"                       , expect={}                                                 }
-, { input="Acquire Kedeko Potency Rune"                     , expect={}                                                 }
-, { input="Acquire Lady's Smock"                            , expect={}                                                 }
-, { input="Acquire Lorkhan's Tears"                         , expect={}                                                 }
-, { input="Acquire Makko Essence Rune"                      , expect={}                                                 }
-, { input="Acquire Makkoma Essence Rune"                    , expect={}                                                 }
-, { input="Acquire Mountain Flower"                         , expect={}                                                 }
-, { input="Acquire Mudcrab Chitin"                          , expect={}                                                 }
-, { input="Acquire Mudcrab Chitin: 3 / 3"                , expect={}                                                 }
-, { input="Acquire Nirnroot"                                , expect={}                                                 }
-, { input="Acquire Ode Potency Rune"                        , expect={}                                                 }
-, { input="Acquire Oko Essence Rune"                        , expect={}                                                 }
-, { input="Acquire Pode Potency Rune"                       , expect={}                                                 }
-, { input="Acquire Pojode Potency Rune"                     , expect={}                                                 }
-, { input="Acquire Pristine Water"                          , expect={}                                                 }
-, { input="Acquire Purified Water"                          , expect={}                                                 }
-, { input="Acquire Rede Potency Rune"                       , expect={}                                                 }
-, { input="Acquire Spider Egg"                              , expect={}                                                 }
-, { input="Acquire Ta Aspect Rune"                          , expect={}                                                 }
-, { input="Acquire Ta Aspect Rune: 1 / 1"                , expect={}                                                 }
-, { input="Acquire Violet Coprinus"                         , expect={}                                                 }
-, { input="Acquire Water Hyacinth"                          , expect={}                                                 }
-, { input="Acquire Wormwood"                                , expect={}                                                 }
+  { input="Acquire Alkahest"                                , expect={ material=LCT.CONSUMABLE_MATERIAL.ALKAHEST        } }
+, { input="Acquire Blessed Thistle"                         , expect={ material=LCT.CONSUMABLE_MATERIAL.BLESSED_THISTLE } }
+, { input="Acquire Bugloss"                                 , expect={ material=LCT.CONSUMABLE_MATERIAL.BUGLOSS         } }
+, { input="Acquire Corn Flower"                             , expect={ material=LCT.CONSUMABLE_MATERIAL.CORN_FLOWER     } }
+, { input="Acquire Deni Essence Rune"                       , expect={ material=LCT.CONSUMABLE_MATERIAL.DENI            } }
+, { input="Acquire Denima Essence Rune"                     , expect={ material=LCT.CONSUMABLE_MATERIAL.DENIMA          } }
+, { input="Acquire Dragonthorn"                             , expect={ material=LCT.CONSUMABLE_MATERIAL.DRAGONTHORN     } }
+, { input="Acquire Hade Potency Rune"                       , expect={ material=LCT.CONSUMABLE_MATERIAL.HADE            } }
+, { input="Acquire Idode Potency Rune"                      , expect={ material=LCT.CONSUMABLE_MATERIAL.IDODE           } }
+, { input="Acquire Imp Stool"                               , expect={ material=LCT.CONSUMABLE_MATERIAL.IMP_STOOL       } }
+, { input="Acquire Jayde Potency Rune"                      , expect={ material=LCT.CONSUMABLE_MATERIAL.JAYDE           } }
+, { input="Acquire Jehade Potency Rune"                     , expect={ material=LCT.CONSUMABLE_MATERIAL.JEHADE          } }
+, { input="Acquire Jode Potency Rune"                       , expect={ material=LCT.CONSUMABLE_MATERIAL.JODE            } }
+, { input="Acquire Kedeko Potency Rune"                     , expect={ material=LCT.CONSUMABLE_MATERIAL.KEDEKO          } }
+, { input="Acquire Lady's Smock"                            , expect={ material=LCT.CONSUMABLE_MATERIAL.LADYS_SMOCK     } }
+, { input="Acquire Lorkhan's Tears"                         , expect={ material=LCT.CONSUMABLE_MATERIAL.LORKHANS_TEARS  } }
+, { input="Acquire Makko Essence Rune"                      , expect={ material=LCT.CONSUMABLE_MATERIAL.MAKKO           } }
+, { input="Acquire Makkoma Essence Rune"                    , expect={ material=LCT.CONSUMABLE_MATERIAL.MAKKOMA         } }
+, { input="Acquire Mountain Flower"                         , expect={ material=LCT.CONSUMABLE_MATERIAL.MOUNTAIN_FLOWER } }
+, { input="Acquire Mudcrab Chitin"                          , expect={ material=LCT.CONSUMABLE_MATERIAL.MUDCRAB_CHITIN  } }
+, { input="Acquire Mudcrab Chitin: 3 / 3"                , expect={    material=LCT.CONSUMABLE_MATERIAL.MUDCRAB_CHITIN  } }
+, { input="Acquire Nirnroot"                                , expect={ material=LCT.CONSUMABLE_MATERIAL.NIRNROOT        } }
+, { input="Acquire Ode Potency Rune"                        , expect={ material=LCT.CONSUMABLE_MATERIAL.ODE             } }
+, { input="Acquire Oko Essence Rune"                        , expect={ material=LCT.CONSUMABLE_MATERIAL.OKO             } }
+, { input="Acquire Pode Potency Rune"                       , expect={ material=LCT.CONSUMABLE_MATERIAL.PODE            } }
+, { input="Acquire Pojode Potency Rune"                     , expect={ material=LCT.CONSUMABLE_MATERIAL.POJODE          } }
+, { input="Acquire Pristine Water"                          , expect={ material=LCT.CONSUMABLE_MATERIAL.PRISTINE_WATER  } }
+, { input="Acquire Purified Water"                          , expect={ material=LCT.CONSUMABLE_MATERIAL.PURIFIED_WATER  } }
+, { input="Acquire Rede Potency Rune"                       , expect={ material=LCT.CONSUMABLE_MATERIAL.REDE            } }
+, { input="Acquire Spider Egg"                              , expect={ material=LCT.CONSUMABLE_MATERIAL.SPIDER_EGG      } }
+, { input="Acquire Ta Aspect Rune"                          , expect={ material=LCT.CONSUMABLE_MATERIAL.TA              } }
+, { input="Acquire Ta Aspect Rune: 1 / 1"                , expect={    material=LCT.CONSUMABLE_MATERIAL.TA              } }
+, { input="Acquire Violet Coprinus"                         , expect={ material=LCT.CONSUMABLE_MATERIAL.VIOLET_COPRINUS } }
+, { input="Acquire Water Hyacinth"                          , expect={ material=LCT.CONSUMABLE_MATERIAL.WATER_HYACINTH  } }
+, { input="Acquire Wormwood"                                , expect={ material=LCT.CONSUMABLE_MATERIAL.WORMWOOD        } }
 , { input="Brewers and Cooks Can Provide Recipes"           , expect={}                                                 }
 , { input="Craft Aetherial Tea"                             , expect={}                                                 }
 , { input="Craft Alik'r Beets with Goat Cheese"             , expect={}                                                 }
