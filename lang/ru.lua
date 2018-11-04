@@ -242,10 +242,10 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["CLAM_GALL"               ] = { name="желчь моллюска"                 , crafting_type=al, item_id=139020 }
 , ["POWDERED_MOTHER_OF_PEARL"] = { name="измельченный перламутр"         , crafting_type=al, item_id=139019 }
 
-, ["NATURAL_WATER"           ] = { name="природная вода"                 , crafting_type=al, item_id=   883 }
+, ["NATURAL_WATER"           ] = { name="природная вода"                 , crafting_type=al, item_id=   883 , name_2="природную воду"     }
 , ["CLEAR_WATER"             ] = { name="чистая вода"                    , crafting_type=al, item_id=  1187 }
 , ["PRISTINE_WATER"          ] = { name="нетронутая вода"                , crafting_type=al, item_id=  4570 , name_2="нетронутую воду"    }
-, ["CLEANSED_WATER"          ] = { name="очищенная вода"                 , crafting_type=al, item_id= 23265 }
+, ["CLEANSED_WATER"          ] = { name="очищенная вода"                 , crafting_type=al, item_id= 23265 , name_2="очищенную воду"     }
 , ["FILTERED_WATER"          ] = { name="фильтрованная вода"             , crafting_type=al, item_id= 23266 }
 , ["PURIFIED_WATER"          ] = { name="дистиллированная вода"          , crafting_type=al, item_id= 23267 , name_2="дистиллированную воду"}
 , ["CLOUD_MIST"              ] = { name="облачный пар"                   , crafting_type=al, item_id= 23268 }

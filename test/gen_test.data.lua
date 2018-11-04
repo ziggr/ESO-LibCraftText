@@ -2,6 +2,8 @@ COND_TEXT_FODDER = {
   { input="Acquire Alkahest"                                , expect={ material=LCT.CONSUMABLE_MATERIAL.ALKAHEST        } }
 , { input="Acquire Blessed Thistle"                         , expect={ material=LCT.CONSUMABLE_MATERIAL.BLESSED_THISTLE } }
 , { input="Acquire Bugloss"                                 , expect={ material=LCT.CONSUMABLE_MATERIAL.BUGLOSS         } }
+, { input="Acquire Cleansed Water"                          , expect={ material=LCT.CONSUMABLE_MATERIAL.CLEANSED_WATER  } }
+, { input="Acquire Cloud Mist"                              , expect={ material=LCT.CONSUMABLE_MATERIAL.CLOUD_MIST      } }
 , { input="Acquire Corn Flower"                             , expect={ material=LCT.CONSUMABLE_MATERIAL.CORN_FLOWER     } }
 , { input="Acquire Deni Essence Rune"                       , expect={ material=LCT.CONSUMABLE_MATERIAL.DENI            } }
 , { input="Acquire Denima Essence Rune"                     , expect={ material=LCT.CONSUMABLE_MATERIAL.DENIMA          } }
@@ -20,6 +22,8 @@ COND_TEXT_FODDER = {
 , { input="Acquire Mountain Flower"                         , expect={ material=LCT.CONSUMABLE_MATERIAL.MOUNTAIN_FLOWER } }
 , { input="Acquire Mudcrab Chitin"                          , expect={ material=LCT.CONSUMABLE_MATERIAL.MUDCRAB_CHITIN  } }
 , { input="Acquire Mudcrab Chitin: 3 / 3"                , expect={    material=LCT.CONSUMABLE_MATERIAL.MUDCRAB_CHITIN  } }
+, { input="Acquire Natural Water"                           , expect={ material=LCT.CONSUMABLE_MATERIAL.NATURAL_WATER   } }
+, { input="Acquire Nightshade"                              , expect={ material=LCT.CONSUMABLE_MATERIAL.NIGHTSHADE      } }
 , { input="Acquire Nirnroot"                                , expect={ material=LCT.CONSUMABLE_MATERIAL.NIRNROOT        } }
 , { input="Acquire Ode Potency Rune"                        , expect={ material=LCT.CONSUMABLE_MATERIAL.ODE             } }
 , { input="Acquire Oko Essence Rune"                        , expect={ material=LCT.CONSUMABLE_MATERIAL.OKO             } }
@@ -50,16 +54,20 @@ COND_TEXT_FODDER = {
 , { input="Craft Clarified Syrah Wine"                      , expect={}                                                 }
 , { input="Craft Comely Wench Whiskey"                      , expect={}                                                 }
 , { input="Craft Cyrodilic Cornbread"                       , expect={}                                                 }
+, { input="Craft Damage Health Poison IX"                   , expect={}                                                 }
 , { input="Craft Damage Magicka Poison IX"                  , expect={}                                                 }
 , { input="Craft Damage Stamina Poison IX"                  , expect={}                                                 }
 , { input="Craft Drain Health Poison IX"                    , expect={}                                                 }
 , { input="Craft Dram of Health"                            , expect={}                                                 }
+, { input="Craft Dram of Magicka"                           , expect={}                                                 }
 , { input="Craft Dram of Ravage Magicka"                    , expect={}                                                 }
 , { input="Craft Dram of Stamina"                           , expect={}                                                 }
 , { input="Craft Elixir of Health"                          , expect={}                                                 }
+, { input="Craft Elixir of Magicka"                         , expect={}                                                 }
 , { input="Craft Elixir of Ravage Magicka"                  , expect={}                                                 }
 , { input="Craft Elixir of Stamina"                         , expect={}                                                 }
 , { input="Craft Eltheric Hooch"                            , expect={}                                                 }
+, { input="Craft Essence of Health"                         , expect={}                                                 }
 , { input="Craft Essence of Magicka"                        , expect={}                                                 }
 , { input="Craft Essence of Ravage Health"                  , expect={}                                                 }
 , { input="Craft Essence of Stamina"                        , expect={}                                                 }
@@ -214,7 +222,10 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Ironthread Shoes"                   , expect={ item=LCT.ITEM.SHOES            , material=LCT.MATERIAL.IRONTHREAD     } }
 , { input="Craft Normal Kresh Breeches"                     , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.KRESH          } }
 , { input="Craft Normal Kresh Epaulets"                     , expect={ item=LCT.ITEM.EPAULETS         , material=LCT.MATERIAL.KRESH          } }
+, { input="Craft Normal Kresh Hat"                          , expect={}                                                 }
 , { input="Craft Normal Kresh Robe"                         , expect={ item=LCT.ITEM.ROBE             , material=LCT.MATERIAL.KRESH          } }
+, { input="Craft Normal Kresh Sash"                         , expect={}                                                 }
+, { input="Craft Normal Kresh Shoes"                        , expect={}                                                 }
 , { input="Craft Normal Leather Arm Cops"                   , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.LEATHER        } }
 , { input="Craft Normal Leather Bracers"                    , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.LEATHER        } }
 , { input="Craft Normal Leather Helmet"                     , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.LEATHER        } }
@@ -347,6 +358,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Orcrest Garlic Apple Jelly"                , expect={}                                                 }
 , { input="Craft Panacea of Health"                         , expect={}                                                 }
 , { input="Craft Panacea of Magicka"                        , expect={}                                                 }
+, { input="Craft Panacea of Ravage Health"                  , expect={}                                                 }
 , { input="Craft Panacea of Stamina"                        , expect={}                                                 }
 , { input="Craft Pellitine Tomato Rice"                     , expect={}                                                 }
 , { input="Craft Petty Glyph of Health With Ta"             , expect={}                                                 }
@@ -354,6 +366,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Petty Glyph of Stamina With Ta"            , expect={}                                                 }
 , { input="Craft Potion of Health"                          , expect={}                                                 }
 , { input="Craft Potion of Magicka"                         , expect={}                                                 }
+, { input="Craft Potion of Ravage Health"                   , expect={}                                                 }
 , { input="Craft Potion of Stamina"                         , expect={}                                                 }
 , { input="Craft Red Rye Beer"                              , expect={}                                                 }
 , { input="Craft Redoran Peppered Melon"                    , expect={}                                                 }
@@ -362,8 +375,10 @@ COND_TEXT_FODDER = {
 , { input="Craft Seaflower Tea"                             , expect={}                                                 }
 , { input="Craft Sip of Health"                             , expect={}                                                 }
 , { input="Craft Sip of Magicka"                            , expect={}                                                 }
+, { input="Craft Sip of Ravage Stamina"                     , expect={}                                                 }
 , { input="Craft Sip of Stamina"                            , expect={}                                                 }
 , { input="Craft Solution of Health"                        , expect={}                                                 }
+, { input="Craft Solution of Magicka"                       , expect={}                                                 }
 , { input="Craft Solution of Stamina"                       , expect={}                                                 }
 , { input="Craft Sour Mash"                                 , expect={}                                                 }
 , { input="Craft Splendid Glyph of Health With Ta"          , expect={}                                                 }

@@ -242,10 +242,10 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["CLAM_GALL"               ] = { name=$MATERIAL_AL_139020              , crafting_type=al, item_id=139020 }
 , ["POWDERED_MOTHER_OF_PEARL"] = { name=$MATERIAL_AL_139019              , crafting_type=al, item_id=139019 }
 
-, ["NATURAL_WATER"           ] = { name=$MATERIAL_AL_000883              , crafting_type=al, item_id=   883 }
+, ["NATURAL_WATER"           ] = { name=$MATERIAL_AL_000883              , crafting_type=al, item_id=   883 , name_2=$MATERIAL_AL_000883B }
 , ["CLEAR_WATER"             ] = { name=$MATERIAL_AL_001187              , crafting_type=al, item_id=  1187 }
 , ["PRISTINE_WATER"          ] = { name=$MATERIAL_AL_004570              , crafting_type=al, item_id=  4570 , name_2=$MATERIAL_AL_004570B }
-, ["CLEANSED_WATER"          ] = { name=$MATERIAL_AL_023265              , crafting_type=al, item_id= 23265 }
+, ["CLEANSED_WATER"          ] = { name=$MATERIAL_AL_023265              , crafting_type=al, item_id= 23265 , name_2=$MATERIAL_AL_023265B }
 , ["FILTERED_WATER"          ] = { name=$MATERIAL_AL_023266              , crafting_type=al, item_id= 23266 }
 , ["PURIFIED_WATER"          ] = { name=$MATERIAL_AL_023267              , crafting_type=al, item_id= 23267 , name_2=$MATERIAL_AL_023267B }
 , ["CLOUD_MIST"              ] = { name=$MATERIAL_AL_023268              , crafting_type=al, item_id= 23268 }

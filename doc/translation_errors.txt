@@ -16,3 +16,44 @@ FR Oak Shield is broken, lacks material mention
           ,   de  = "Stellt normale Eichenschilde her"
           ,   fr  = "Fabriquez un bouclier normal"
           }
+
+
+CL Rank 6 daily  for Kresh Shoes/Hat/Sash
+- asks for Spider Silk shoes, should ask for Kresh
+- asks for Spider Silk sash,  should ask for Kresh Hat
+- asks for Kresh Sash, correct.
+
+"Fabriquez un baudrier en soie d'araignee normal" is FR "make a spider silk sash" but that particular condition is actually "Craft a Normal Kresh Hat"
+
+ES Spanish has the same bug.
+
+, [223] = {
+              key = "$DAILY_COND_CL_06_07"
+          ,   en  = "Craft Normal Kresh Hat"
+          ,   de  = "Stellt normale Kreshhüte her"
+          ,   fr  = "Fabriquez un baudrier en soie d'araignée normal"
+          ,   es  = "Fabrica una banda de seda de araña normal"
+          ,   it  = "Craft Kresh Hat"
+          ,   ru  = "Craft Normal Kresh Hat"
+          ,   ja  = "クレッシュの帽子(ノーマル)を生産する"
+          }
+, [224] = {
+              key = "$DAILY_COND_CL_06_08"
+          ,   en  = "Craft Normal Kresh Shoes"
+          ,   de  = "Stellt normale Kreshschuhe her"
+          ,   fr  = "Fabriquez des chaussures en soie d'araignée normales"
+          ,   es  = "Fabrica unos zapatos de seda de araña normales"
+          ,   it  = "Craft Kresh Shoes"
+          ,   ru  = "Craft Normal Kresh Shoes"
+          ,   ja  = "クレッシュの靴(ノーマル)を生産する"
+          }
+, [225] = {
+              key = "$DAILY_COND_CL_06_09"
+          ,   en  = "Craft Normal Kresh Sash"
+          ,   de  = "Stellt normale Kreshschärpen her"
+          ,   fr  = "Fabriquez un baudrier en kresh normal"
+          ,   es  = "Fabrica una banda de kresh normal"
+          ,   it  = "Craft Kresh Sash"
+          ,   ru  = "Craft Normal Kresh Sash"
+          ,   ja  = "クレッシュのサッシュ(ノーマル)を生産する"
+          }

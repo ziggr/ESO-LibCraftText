@@ -242,10 +242,10 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["CLAM_GALL"               ] = { name="hiel de almeja"                 , crafting_type=al, item_id=139020 }
 , ["POWDERED_MOTHER_OF_PEARL"] = { name="polvo de nácar"                 , crafting_type=al, item_id=139019 }
 
-, ["NATURAL_WATER"           ] = { name="agua natural"                   , crafting_type=al, item_id=   883 }
+, ["NATURAL_WATER"           ] = { name="agua natural"                   , crafting_type=al, item_id=   883 , name_2="agua natural"       }
 , ["CLEAR_WATER"             ] = { name="agua limpia"                    , crafting_type=al, item_id=  1187 }
 , ["PRISTINE_WATER"          ] = { name="agua prístina"                  , crafting_type=al, item_id=  4570 , name_2="agua prístina"      }
-, ["CLEANSED_WATER"          ] = { name="agua depurada"                  , crafting_type=al, item_id= 23265 }
+, ["CLEANSED_WATER"          ] = { name="agua depurada"                  , crafting_type=al, item_id= 23265 , name_2="agua depurada"      }
 , ["FILTERED_WATER"          ] = { name="agua filtrada"                  , crafting_type=al, item_id= 23266 }
 , ["PURIFIED_WATER"          ] = { name="agua purificada"                , crafting_type=al, item_id= 23267 , name_2="agua purificada"    }
 , ["CLOUD_MIST"              ] = { name="Bruma"                          , crafting_type=al, item_id= 23268 }

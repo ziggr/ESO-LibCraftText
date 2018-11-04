@@ -210,6 +210,31 @@ DC 12.4..
 AD 12..5.
 EP 123..6
 
+--
+Day D: nothing but AL quests.
+    -- those CL quests are the CL Rank 6 Shoes/Hat/Sash buggy FR translation. DO NOT USE THEIR FR TEXT. But leave them in the Lang DB
+
+Adding new $DAILY_COND_AL_01_07 Craft Sip of Ravage Stamina
+Adding new $DAILY_COND_AL_01_08 Acquire Natural Water
+Adding new $DAILY_COND_AL_03_07 Acquire Cleansed Water
+Adding new $DAILY_COND_AL_03_08 Craft Potion of Ravage Health
+Adding new $DAILY_COND_AL_05_07 Craft Elixir of Magicka
+Adding new $DAILY_COND_AL_08_19 Acquire Nightshade
+Adding new $DAILY_COND_AL_08_20 Craft Damage Health Poison IX
+Adding new $DAILY_COND_AL_04_05 Craft Solution of Magicka
+Adding new $DAILY_COND_AL_08_21 Acquire Nirnroot
+Adding new $DAILY_COND_AL_08_22 Craft Essence of Health
+Adding new $DAILY_COND_AL_07_07 Acquire Cloud Mist
+Adding new $DAILY_COND_AL_07_08 Craft Panacea of Ravage Health
+Adding new $DAILY_COND_CL_06_07 Craft Normal Kresh Hat
+Adding new $DAILY_COND_CL_06_08 Craft Normal Kresh Shoes
+Adding new $DAILY_COND_CL_06_09 Craft Normal Kresh Sash
+Adding new $DAILY_COND_AL_06_06 Acquire Cloud Mist
+Adding new $DAILY_COND_AL_06_07 Craft Panacea of Ravage Health
+Adding new $DAILY_COND_AL_02_07 Craft Dram of Magicka
+Adding new $DAILY_COND_AL_02_08 Acquire Blessed Thistle
+--
+
 Summerset home is near crafting stations, Jewelry (Felarian) and Consumables (Danel) writ certifier. Bought.
 Equipment (Millenith) certifier is near Summerset wayshrine.
 

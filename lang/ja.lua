@@ -242,10 +242,10 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["CLAM_GALL"               ] = { name="クラム・ゴル"                         , crafting_type=al, item_id=139020 }
 , ["POWDERED_MOTHER_OF_PEARL"] = { name="真珠貝のパウダー"                       , crafting_type=al, item_id=139019 }
 
-, ["NATURAL_WATER"           ] = { name="自然水"                            , crafting_type=al, item_id=   883 }
+, ["NATURAL_WATER"           ] = { name="自然水"                            , crafting_type=al, item_id=   883 , name_2="自然水"                }
 , ["CLEAR_WATER"             ] = { name="清水"                             , crafting_type=al, item_id=  1187 }
 , ["PRISTINE_WATER"          ] = { name="清浄水"                            , crafting_type=al, item_id=  4570 , name_2="清浄水"                }
-, ["CLEANSED_WATER"          ] = { name="浄化水"                            , crafting_type=al, item_id= 23265 }
+, ["CLEANSED_WATER"          ] = { name="浄化水"                            , crafting_type=al, item_id= 23265 , name_2="浄化水"                }
 , ["FILTERED_WATER"          ] = { name="ろ過水"                            , crafting_type=al, item_id= 23266 }
 , ["PURIFIED_WATER"          ] = { name="神聖水"                            , crafting_type=al, item_id= 23267 , name_2="神聖水"                }
 , ["CLOUD_MIST"              ] = { name="霧の雲"                            , crafting_type=al, item_id= 23268 }

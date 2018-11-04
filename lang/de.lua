@@ -242,10 +242,10 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["CLAM_GALL"               ] = { name="Muschelgalle"                   , crafting_type=al, item_id=139020 }
 , ["POWDERED_MOTHER_OF_PEARL"] = { name="pulverisiertes Perlmutt"        , crafting_type=al, item_id=139019 }
 
-, ["NATURAL_WATER"           ] = { name="natürliches Wasser"             , crafting_type=al, item_id=   883 }
+, ["NATURAL_WATER"           ] = { name="natürliches Wasser"             , crafting_type=al, item_id=   883 , name_2="natürliches Wasser" }
 , ["CLEAR_WATER"             ] = { name="klares Wasser"                  , crafting_type=al, item_id=  1187 }
 , ["PRISTINE_WATER"          ] = { name="unberührtes Wasser"             , crafting_type=al, item_id=  4570 , name_2="unberührtes Wasser" }
-, ["CLEANSED_WATER"          ] = { name="gesäubertes Wasser"             , crafting_type=al, item_id= 23265 }
+, ["CLEANSED_WATER"          ] = { name="gesäubertes Wasser"             , crafting_type=al, item_id= 23265 , name_2="gesäubertes Wasser" }
 , ["FILTERED_WATER"          ] = { name="gefiltertes Wasser"             , crafting_type=al, item_id= 23266 }
 , ["PURIFIED_WATER"          ] = { name="gereinigtes Wasser"             , crafting_type=al, item_id= 23267 , name_2="gereinigtes Wasser" }
 , ["CLOUD_MIST"              ] = { name="Wolkennebel"                    , crafting_type=al, item_id= 23268 }
