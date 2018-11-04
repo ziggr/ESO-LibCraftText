@@ -65,6 +65,7 @@ function LibCraftText.RegisterSlashCommands()
                    , { "lang"       , "Switch to 'next' language"                  }
                    , { "en"         , "Switch to English language"                 }
                    , { "discover"   , "Extract material and item names"            }
+                   , { "abandon"    , "Abandon all daily crafting quests"          }
                    }
         for _,c in ipairs(cc) do
             local sub = cmd:RegisterSubCommand()
@@ -88,6 +89,10 @@ function LibCraftText.SlashCommand(args)
     elseif args:lower() == "forget" then
         LibCraftText.Forget()
         Info("Forgotten.")
+    elseif args:lower() == "abandon" then
+        LibCraftText.Abandon()
+        LibCraftText.Forget()
+        Info("Abandoned and forgotten.")
     elseif args:sub(1,4):lower() == "lang" then
         local want_lang = args:sub(6,7):lower()
         LibCraftText.NextLang(want_lang)
@@ -134,6 +139,37 @@ function LibCraftText.Forget()
         -- LibCraftText.saved_var [field] = nil  Uncomment only when you really need to.
         LibCraftText.saved_char[field] = nil
     end
+end
+
+function LibCraftText.Abandon()
+    LibCraftText.AbandonSomeDailies()
+end
+
+                        -- Abandon all the daily crafting quests we can find.
+                        -- Return the count of quests that we abandoned.
+function LibCraftText.AbandonSomeDailies()
+    local self = LibCraftText
+                        -- Iterate backwards to avoid problems with quest
+                        -- indexes changing each time we delete a quest.
+    local abandon_ct = 0
+    for quest_index = MAX_JOURNAL_QUESTS,1,-1  do
+        local jqi = { GetJournalQuestInfo(quest_index) }
+        local repeat_type = GetJournalQuestRepeatType(quest_index)
+-- Info(string.format("qi:%d  qtype:%d ?= %d  rtype:%d ?= %d   name:%s"
+        , quest_index
+        , jqi[self.JQI.quest_type]  , QUEST_TYPE_CRAFTING
+        , repeat_type               , QUEST_REPEAT_DAILY
+        , jqi[self.JQI.quest_name]
+        ))
+        if jqi[self.JQI.quest_type] == QUEST_TYPE_CRAFTING
+            and repeat_type == QUEST_REPEAT_DAILY then
+            local name = jqi[self.JQI.quest_name]
+            Info(string.format("abandoned %d:%s", quest_index, tostring(name)))
+            AbandonQuest(quest_index)
+            abandon_ct = abandon_ct + 1
+        end
+    end
+    return abandon_ct
 end
 
 local function find_i(want, list)
