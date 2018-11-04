@@ -55,10 +55,10 @@ end
 -- glyph, potion, or food, or acquire an alchemy or enchanting material,
 -- return nil.
 --
-function LibCraftText.ParseDailyConditionGear(crafting_type, cond_text)
+function LibCraftText.ParseDailyConditionEquipment(crafting_type, cond_text)
     local self      = LibCraftText
     local lang      = self.CurrLang()
-    local re_list   = self.RE_CONDITION_DAILY[lang]
+    local re_list   = self.RE_CONDITION_DAILY_EQUIPMENT[lang]
 
                         -- Rare special case: fix buggy FR translation.
     local bugfix = self.BUGFIX[lang] and self.BUGFIX[lang][cond_text]
@@ -136,7 +136,7 @@ end
 
                         -- Regexes that can extract all gear crafting
                         -- materials and items.
-LibCraftText.RE_CONDITION_DAILY = {
+LibCraftText.RE_CONDITION_DAILY_EQUIPMENT = {
     ["en"] = { "Craft Normal ([^:]*)"
              , "Craft a ([^:]*)"
              , "Craft Two ([^:]*)"
@@ -219,41 +219,94 @@ function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
     if acquire_mat then return acquire_mat end
 
                         -- Provisioning Recpies
-
                         -- Enchanting Glyphs
-
                         -- Alchemy Potions/Poisons
+    local craft_item = self.ParseConsumableItem(crafting_type, cond_text)
+    if craft_item then return craft_item end
+
     return nil
 end
 
 function LibCraftText.ParseConsumableAcquireMat(crafting_type, cond_text)
     local self          = LibCraftText
     local lang          = self.CurrLang()
-    local re_ac_list    = self.RE_CONDITION_ACQUIRE[lang]
-    local mat_text      = nil
-    for _,re in ipairs(re_ac_list) do
-        _,_,g1 = string.find(cond_text, re)
-        if g1 then
-            mat_text = g1
-            break
-        end
-    end
-
-    local mat_fields  = { "name", "name_2" }
-    if mat_text then
-        mat_text = mat_text:lower()
-        local exact_material = self.ExactMatch(mat_text, self.CONSUMABLE_MATERIAL , crafting_type
-                                , unpack(mat_fields))
-        local found    = {}
-        found.material = exact_material
-                       or self.LongestMatch(mat_text, self.CONSUMABLE_MATERIAL , crafting_type
-                                , unpack(mat_fields))
-        if found.material then
-            return found
-        end
+    local found_mat     = self.ParseRegexable(
+                                   crafting_type
+                                 , cond_text
+                                 , self.RE_CONDITION_ACQUIRE[lang]
+                                 , self.CONSUMABLE_MATERIAL
+                                 , { "name", "name_2" }
+                                 )
+    if found_mat then
+        return { material = found_mat }
     end
     return nil
 end
+
+LibCraftText.RE_CONDITION_CONSUMABLE_ITEM = {
+    ["en"] = { "Craft ([^:]*)"
+             }
+,   ["de"] = { "Besorgt ([^:]*)"
+             , "Beschafft ([^:]*)"
+             }
+,   ["fr"] = { "Acquérez ([^:]*)"
+             , "Acquérir ([^:]*)"
+             }
+,   ["ru"] = { "Раздобыть — ([^:]*)"
+             , "Добыть ([^:]*)"
+             , "Достать ([^:]*)"
+             }
+,   ["es"] = { "Adquiere ([^:]*)"
+             }
+,   ["ja"] = { "(.*)を手に入れる" }
+}
+
+function LibCraftText.ParseConsumableItem(crafting_type, cond_text)
+    local self          = LibCraftText
+    local lang          = self.CurrLang()
+    local found_item    = self.ParseRegexable(
+                                   crafting_type
+                                 , cond_text
+                                 , self.RE_CONDITION_CONSUMABLE_ITEM[lang]
+                                 , self.ITEM
+                                 , { "name", "name_2" }
+                                 )
+    if found_item then
+        return { item = found_item }
+    end
+    return nil
+end
+
+function LibCraftText.ParseRegexable( crafting_type
+                                    , cond_text
+                                    , re_list_list
+                                    , result_list
+                                    , result_name_field_list
+                                    )
+    local self          = LibCraftText
+    local lang          = self.CurrLang()
+    local cond_sub_str  = nil
+    for _,re in ipairs(re_list_list) do
+        _,_,g1 = string.find(cond_text, re)
+        if g1 then
+            cond_sub_str = g1
+            break
+        end
+    end
+    if not cond_sub_str then return nil end
+
+    cond_sub_str = cond_sub_str:lower()
+    local exact_match = self.ExactMatch(cond_sub_str, result_list , crafting_type
+                            , unpack(result_name_field_list))
+    if exact_match then return exact_match end
+
+    local longest_match = self.LongestMatch(cond_sub_str, result_list , crafting_type
+                            , unpack(result_name_field_list))
+    if longest_match then return longest_match end
+
+    return nil
+end
+
 
 -- Test Scaffolding ----------------------------------------------------------
 --
@@ -330,6 +383,7 @@ function LibCraftText.ExactMatch(find_me, rows, crafting_type, field_name, ... )
                 local name = row[fieldname]
                 if name and (  find_me_lower == name:lower()
                              or find_me_deumlauted == LibCraftText.DeUmlaut(name) ) then
+
                     return row
                 end
             end

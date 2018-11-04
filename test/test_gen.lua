@@ -42,13 +42,13 @@ function TestGen.TestAll()
 end
 
 local CRAFTING_TYPE_TO_PARSE_FUNC = {
-  [bs] = LibCraftText.ParseDailyConditionGear
-, [cl] = LibCraftText.ParseDailyConditionGear
+  [bs] = LibCraftText.ParseDailyConditionEquipment
+, [cl] = LibCraftText.ParseDailyConditionEquipment
 , [en] = LibCraftText.ParseDailyConditionConsumable
 , [al] = LibCraftText.ParseDailyConditionConsumable
 , [pr] = LibCraftText.ParseDailyConditionConsumable
-, [ww] = LibCraftText.ParseDailyConditionGear
-, [jw] = LibCraftText.ParseDailyConditionGear
+, [ww] = LibCraftText.ParseDailyConditionEquipment
+, [jw] = LibCraftText.ParseDailyConditionEquipment
 }
 function TestGen.OneTest(input_en, expect)
                         -- Skip lines I've not filled in yet.
@@ -59,11 +59,15 @@ function TestGen.OneTest(input_en, expect)
                         -- things to do rather than fix ugliness in test
                         -- code.
     local crafting_type = expect.crafting_type
-    if expect.material then
-        crafting_type = crafting_type or expect.material.crafting_type
+    local crafting_type_carriers = { "material", "item" }
+    for _,field_name in ipairs(crafting_type_carriers) do
+        if expect[field_name] then
+            crafting_type = crafting_type or expect[field_name].crafting_type
+            if crafting_type then break end
+        end
     end
-
     if not crafting_type then return end
+
     local real_expect = table.shallow_copy(expect)
     real_expect.crafting_type = nil
 

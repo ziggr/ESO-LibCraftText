@@ -35,7 +35,7 @@ COND_TEXT_FODDER = {
 , { input="Acquire Water Hyacinth"                          , expect={ material=LCT.CONSUMABLE_MATERIAL.WATER_HYACINTH  } }
 , { input="Acquire Wormwood"                                , expect={ material=LCT.CONSUMABLE_MATERIAL.WORMWOOD        } }
 , { input="Brewers and Cooks Can Provide Recipes"           , expect={}                                                 }
-, { input="Craft Aetherial Tea"                             , expect={ recipe=LCT.RECIPE.AETHERIAL_TEA }                                                 }
+, { input="Craft Aetherial Tea"                             , expect={ item=LCT.ITEM.AETHERIAL_TEA_NOTYET                      } }
 , { input="Craft Alik'r Beets with Goat Cheese"             , expect={}                                                 }
 , { input="Craft Baked Apples"                              , expect={}                                                 }
 , { input="Craft Baked Potato"                              , expect={}                                                 }
@@ -328,15 +328,15 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Superb Arm Cops"                    , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.SUPERB         } }
 , { input="Craft Normal Superb Bracers"                     , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.SUPERB         } }
 , { input="Craft Normal Superb Helmet"                      , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.SUPERB         } }
-, { input="Craft Normal Voidsteel Cuirass"                  , expect={ item=LCT.ITEM.CUIRASS          , material=LCT.MATERIAL.VOID_STEEL     } }
-, { input="Craft Normal Voidsteel Dagger"                   , expect={ item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.VOID_STEEL     } }
-, { input="Craft Normal Voidsteel Gauntlets"                , expect={ item=LCT.ITEM.GAUNTLETS        , material=LCT.MATERIAL.VOID_STEEL     } }
-, { input="Craft Normal Voidsteel Greatsword"               , expect={ item=LCT.ITEM.H2_GREATSWORD    , material=LCT.MATERIAL.VOID_STEEL     } }
-, { input="Craft Normal Voidsteel Greaves"                  , expect={ item=LCT.ITEM.GREAVES          , material=LCT.MATERIAL.VOID_STEEL     } }
-, { input="Craft Normal Voidsteel Helm"                     , expect={ item=LCT.ITEM.HELM             , material=LCT.MATERIAL.VOID_STEEL     } }
-, { input="Craft Normal Voidsteel Pauldron"                 , expect={ item=LCT.ITEM.PAULDRON         , material=LCT.MATERIAL.VOID_STEEL     } }
-, { input="Craft Normal Voidsteel Sabatons"                 , expect={ item=LCT.ITEM.SABATONS         , material=LCT.MATERIAL.VOID_STEEL     } }
-, { input="Craft Normal Voidsteel Sword"                    , expect={ item=LCT.ITEM.H1_SWORD         , material=LCT.MATERIAL.VOID_STEEL     } }
+, { input="Craft Normal Voidsteel Cuirass"                  , expect={ item=LCT.ITEM.CUIRASS          , material=LCT.MATERIAL.VOIDSTEEL      } }
+, { input="Craft Normal Voidsteel Dagger"                   , expect={ item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.VOIDSTEEL      } }
+, { input="Craft Normal Voidsteel Gauntlets"                , expect={ item=LCT.ITEM.GAUNTLETS        , material=LCT.MATERIAL.VOIDSTEEL      } }
+, { input="Craft Normal Voidsteel Greatsword"               , expect={ item=LCT.ITEM.H2_GREATSWORD    , material=LCT.MATERIAL.VOIDSTEEL      } }
+, { input="Craft Normal Voidsteel Greaves"                  , expect={ item=LCT.ITEM.GREAVES          , material=LCT.MATERIAL.VOIDSTEEL      } }
+, { input="Craft Normal Voidsteel Helm"                     , expect={ item=LCT.ITEM.HELM             , material=LCT.MATERIAL.VOIDSTEEL      } }
+, { input="Craft Normal Voidsteel Pauldron"                 , expect={ item=LCT.ITEM.PAULDRON         , material=LCT.MATERIAL.VOIDSTEEL      } }
+, { input="Craft Normal Voidsteel Sabatons"                 , expect={ item=LCT.ITEM.SABATONS         , material=LCT.MATERIAL.VOIDSTEEL      } }
+, { input="Craft Normal Voidsteel Sword"                    , expect={ item=LCT.ITEM.H1_SWORD         , material=LCT.MATERIAL.VOIDSTEEL      } }
 , { input="Craft Normal Yew Bow"                            , expect={ item=LCT.ITEM.BOW              , material=LCT.MATERIAL.YEW            } }
 , { input="Craft Normal Yew Ice Staff"                      , expect={ item=LCT.ITEM.ICE_STAFF        , material=LCT.MATERIAL.YEW            } }
 , { input="Craft Normal Yew Inferno Staff"                  , expect={ item=LCT.ITEM.INFERNO_STAFF    , material=LCT.MATERIAL.YEW            } }
