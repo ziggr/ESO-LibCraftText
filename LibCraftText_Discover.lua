@@ -1122,14 +1122,10 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
         ,   [10] = m.REJERA  -- , m.JEHADE      CP150   superb      EN_10
             --   , m.REPORA  -- , m.ITADE       CP160   truly superb
         }
-    local essence_list = { m.DENI
-                         , m.MAKKO
-                         , m.OKO
-                         }
     local aspect_list  = { m.TA }
 
 
-                        -- For extracting "Major" fro "Major Glyph of Health"
+                        -- For extracting "Major" from "Major Glyph of Health"
     local RE_POTENCY = {
         en = { "(.*) glyph of"}
     ,   de = { "(.*) glyphe des"}
@@ -1138,7 +1134,8 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
     ,   es = { "glifo (.*) de vida"}
     ,   it = { "(.*) glyph of"}  -- "glifo of health" for all 10 potencies. Broken.
     ,   ru = { "(.*) glyph of"}
-    ,   ja = { "(.*)[のな]グリフ"}
+    ,   ja = { "(.*)のグリフ"
+             , "(.*)なグリフ"}
     }
                         -- Roll through all 10 Enchanting rank potencies
                         -- that daily crafting writs ask for.
@@ -1146,33 +1143,14 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
     local essence_mat_bag = self.ToMatBag(essence)
     for _,aspect in ipairs(aspect_list) do
         local aspect_mat_bag  = self.ToMatBag(aspect)
-        for en_rank,potency in pairs(potency_list) do
-            local potency_mat_bag = self.ToMatBag(potency)
-            if not (essence_mat_bag and aspect_mat_bag and potency_mat_bag) then
+        for _,potency in pairs(potency_list) do
+            local potency_name = nil
+            local en_info      = self.GetEnchantingInfo(potency, essence, aspect)
+            if not en_info then
                 Error("Giving up.")
                 return
             end
-            local args = { potency_mat_bag.bag_id
-                         , potency_mat_bag.slot_id
-                         , essence_mat_bag.bag_id
-                         , essence_mat_bag.slot_id
-                         , aspect_mat_bag.bag_id
-                         , aspect_mat_bag.slot_id
-                     }
-            local name = GetEnchantingResultingItemInfo(unpack(args))
-            local link = GetEnchantingResultingItemLink(unpack(args))
-            local item_id = self.ItemLinkToItemID(link)
-            if name == "" then
-                Error("Enchanting: character lacks rune knowlege."
-                      .." Go make some glyphs then try again.")
-                return
-            end
-
--- d(string.format("GetEnchantingResultingItemLink(%d, %d, %d, %d, %d, %d)"
---  ,  unpack(args)))
--- Info(string.format("rank:%d %s", en_rank, link))
-
-            local potency_name = nil
+            local name         = en_info.name
             for _,re in ipairs(RE_POTENCY[lang]) do
                 local _,_,f = string.find(name:lower(), re)
                 if f then
@@ -1184,13 +1162,113 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
                 potency_name = name:lower()
             end
 
+            local i = potency.item_id
             self.saved_var.potencies = self.saved_var.potencies or {}
-            self.saved_var.potencies[en_rank] = self.saved_var.potencies[en_rank] or {}
-            self.saved_var.potencies[en_rank][lang] = potency_name
-            Info(string.format("potency %2d: %s", en_rank, potency_name))
+            self.saved_var.potencies[i] = self.saved_var.potencies[i] or {}
+            self.saved_var.potencies[i][lang] = potency_name
+            Info(string.format("potency %2d: %s", i, potency_name))
         end
     end
+
+    local essence_list = { m.DEKEIPA
+                         , m.DENI
+                         , m.DENIMA
+                         , m.DETERI
+                         , m.HAOKO
+                         , m.HAKEIJO
+                         , m.KADERI
+                         , m.KUOKO
+                         , m.MAKDERI
+                         , m.MAKKO
+                         , m.MAKKOMA
+                         , m.MEIP
+                         , m.OKO
+                         , m.OKOMA
+                         , m.OKORI
+                         , m.ORU
+                         , m.RAKEIPA
+                         , m.TADERI
+                         }
+                        -- For extracting "Health" from "Trifling Glyph of Health"
+    local RE_ESSENCE = {
+        en = { "glyph of (.*)"}
+    ,   de = { "glyphe de[sr] (.*)"}
+    ,   fr = { "glyphe insignifiant (.*)"}
+    ,   es = { "glifo mediocre de (.*)"
+             ,  "glifo mediocre (.*)" } -- must come AFTER " de " line
+    ,   it = { "glifo of (.*)"
+             , "glyph of (.*)" }
+    ,   ru = { "glyph of (.*)"}
+    ,   ja = { "グリフ %((.*)%)"}
+    }
+    local potency = m.JORA
+    local aspect  = m.TA
+    for _,essence in ipairs(essence_list) do
+        local essence_name = nil
+        local en_info      = self.GetEnchantingInfo(potency, essence, aspect)
+        if not en_info then
+            Error("Giving up.")
+            return
+        end
+        local name         = en_info.name
+        for _,re in ipairs(RE_ESSENCE[lang]) do
+            local _,_,f = string.find(name:lower(), re)
+            if f then
+                essence_name = f
+                break
+            end
+        end
+        if not essence_name then
+            essence_name = name:lower()
+        end
+        essence_name = Decaret(essence_name)
+
+        local i = essence.item_id
+        self.saved_var.essences = self.saved_var.essences or {}
+        self.saved_var.essences[i] = self.saved_var.essences[i] or {}
+        self.saved_var.essences[i][lang] = essence_name
+        Info(string.format("essence %2d: %s", i, essence_name))
+    end
 end
+
+function LibCraftText.GetEnchantingInfo(mat_potency, mat_essence, mat_aspect)
+    local self = LibCraftText
+    local essence_mat_bag = self.ToMatBag(mat_essence)
+    local aspect_mat_bag  = self.ToMatBag(mat_aspect)
+    local potency_mat_bag = self.ToMatBag(mat_potency)
+
+                        -- Must actually have items in inventory
+    if not (essence_mat_bag and aspect_mat_bag and potency_mat_bag) then
+        Error("Giving up.")
+        return
+    end
+                        -- Get Glyph Link, Name
+    local args = { potency_mat_bag.bag_id
+                 , potency_mat_bag.slot_id
+                 , essence_mat_bag.bag_id
+                 , essence_mat_bag.slot_id
+                 , aspect_mat_bag.bag_id
+                 , aspect_mat_bag.slot_id
+             }
+    local name = GetEnchantingResultingItemInfo(unpack(args))
+    local link = GetEnchantingResultingItemLink(unpack(args))
+    if name == "" then
+        Error(string.format(
+              "Enchanting: character lacks rune knowlege."
+              .." Go make some glyphs then try again. %s %s %s"
+              , tostring(mat_potency.name)
+              , tostring(mat_essence.name)
+              , tostring(mat_aspect.name)
+              ))
+        return nil
+    end
+    local item_id = self.ItemLinkToItemID(link)
+    return { ["item_link"] = link
+           , ["name"     ] = name
+           , ["item_id"  ] = item_id
+           }
+end
+
 
 function LibCraftText.ToMatBag(mat_row)
     local item_id = mat_row.item_id
