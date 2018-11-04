@@ -63,6 +63,7 @@ function LibCraftText.RegisterSlashCommands()
         local cc = { { "scan"       , "Scan quest journal for crafting quest text" }
                    , { "forget"     , "Forget all discovered data"                 }
                    , { "lang"       , "Switch to 'next' language"                  }
+                   , { "scanlang"   , "Scan, then switch languages"                }
                    , { "en"         , "Switch to English language. (other lang codes work, too)"}
                    , { "discover"   , "Extract material and item names"            }
                    , { "abandon"    , "Abandon all daily crafting quests"          }
@@ -93,9 +94,11 @@ function LibCraftText.SlashCommand(args)
         LibCraftText.Abandon()
         LibCraftText.Forget()
         Info("Abandoned and forgotten.")
-    elseif args:sub(1,4):lower() == "lang" then
-        local want_lang = args:sub(6,7):lower()
-        LibCraftText.NextLang(want_lang)
+    elseif args:lower() == "lang" then
+        LibCraftText.NextLang()
+    elseif args:lower() == "scanlang" then
+        LibCraftText.Scan()
+        LibCraftText.NextLang()
     elseif args:lower() == "en" then
         SetCVar("language.2", "en")
     elseif LibCraftText.IsLang(args) then
