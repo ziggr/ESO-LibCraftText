@@ -262,21 +262,21 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["NIGHT_OIL"               ] = { name="aceite noctívago"               , crafting_type=al, item_id= 75364 }
 , ["ALKAHEST"                ] = { name="alkahest"                       , crafting_type=al, item_id= 75365 }
 
-, ["JORA"                    ] = { name="Jora"                           , crafting_type=en, item_id= 45855 }
+, ["JORA"                    ] = { name="Jora"                           , crafting_type=en, item_id= 45855 , name_2="mediocre"      }
 , ["PORADE"                  ] = { name="Porade"                         , crafting_type=en, item_id= 45856 }
-, ["JERA"                    ] = { name="Jera"                           , crafting_type=en, item_id= 45857 }
+, ["JERA"                    ] = { name="Jera"                           , crafting_type=en, item_id= 45857 , name_2="insignificante"}
 , ["JEJORA"                  ] = { name="Jejora"                         , crafting_type=en, item_id= 45806 }
-, ["ODRA"                    ] = { name="Odra"                           , crafting_type=en, item_id= 45807 }
+, ["ODRA"                    ] = { name="Odra"                           , crafting_type=en, item_id= 45807 , name_2="menor"         }
 , ["POJORA"                  ] = { name="Pojora"                         , crafting_type=en, item_id= 45808 }
-, ["EDORA"                   ] = { name="Edora"                          , crafting_type=en, item_id= 45809 }
+, ["EDORA"                   ] = { name="Edora"                          , crafting_type=en, item_id= 45809 , name_2="moderado"      }
 , ["JAERA"                   ] = { name="Jaera"                          , crafting_type=en, item_id= 45810 }
-, ["PORA"                    ] = { name="Pora"                           , crafting_type=en, item_id= 45811 }
+, ["PORA"                    ] = { name="Pora"                           , crafting_type=en, item_id= 45811 , name_2="fuerte"        }
 , ["DENARA"                  ] = { name="Denara"                         , crafting_type=en, item_id= 45812 }
-, ["RERA"                    ] = { name="Rera"                           , crafting_type=en, item_id= 45813 }
-, ["DERADO"                  ] = { name="Derado"                         , crafting_type=en, item_id= 45814 }
-, ["REKURA"                  ] = { name="Rekura"                         , crafting_type=en, item_id= 45815 }
-, ["KURA"                    ] = { name="Kura"                           , crafting_type=en, item_id= 45816 }
-, ["REJERA"                  ] = { name="Rejera"                         , crafting_type=en, item_id= 64509 }
+, ["RERA"                    ] = { name="Rera"                           , crafting_type=en, item_id= 45813 , name_2="superior"      }
+, ["DERADO"                  ] = { name="Derado"                         , crafting_type=en, item_id= 45814 , name_2="grande"        }
+, ["REKURA"                  ] = { name="Rekura"                         , crafting_type=en, item_id= 45815 , name_2="espléndido"    }
+, ["KURA"                    ] = { name="Kura"                           , crafting_type=en, item_id= 45816 , name_2="monumental"    }
+, ["REJERA"                  ] = { name="Rejera"                         , crafting_type=en, item_id= 64509 , name_2="soberbio"      }
 , ["REPORA"                  ] = { name="Repora"                         , crafting_type=en, item_id= 68341 }
 
 , ["JODE"                    ] = { name="Jode"                           , crafting_type=en, item_id= 45817 }
@@ -296,30 +296,30 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["JEHADE"                  ] = { name="Jehade"                         , crafting_type=en, item_id= 64508 }
 , ["ITADE"                   ] = { name="Itade"                          , crafting_type=en, item_id= 68340 }
 
-, ["DEKEIPA"                 ] = { name="Dekeipa"                        , crafting_type=en, item_id= 45839 }
-, ["DENI"                    ] = { name="Deni"                           , crafting_type=en, item_id= 45833 }
-, ["DENIMA"                  ] = { name="Denima"                         , crafting_type=en, item_id= 45836 }
-, ["DETERI"                  ] = { name="Deteri"                         , crafting_type=en, item_id= 45842 }
-, ["HAOKO"                   ] = { name="Haoko"                          , crafting_type=en, item_id= 45841 }
-, ["HAKEIJO"                 ] = { name="Hakeijo"                        , crafting_type=en, item_id= 68342 }
-, ["KADERI"                  ] = { name="Kaderi"                         , crafting_type=en, item_id= 45849 }
-, ["KUOKO"                   ] = { name="Kuoko"                          , crafting_type=en, item_id= 45837 }
-, ["MAKDERI"                 ] = { name="Makderi"                        , crafting_type=en, item_id= 45848 }
-, ["MAKKO"                   ] = { name="Makko"                          , crafting_type=en, item_id= 45832 }
-, ["MAKKOMA"                 ] = { name="Makkoma"                        , crafting_type=en, item_id= 45835 }
-, ["MEIP"                    ] = { name="Meip"                           , crafting_type=en, item_id= 45840 }
-, ["OKO"                     ] = { name="Oko"                            , crafting_type=en, item_id= 45831 }
-, ["OKOMA"                   ] = { name="Okoma"                          , crafting_type=en, item_id= 45834 }
-, ["OKORI"                   ] = { name="Okori"                          , crafting_type=en, item_id= 45843 }
-, ["ORU"                     ] = { name="Oru"                            , crafting_type=en, item_id= 45846 }
-, ["RAKEIPA"                 ] = { name="Rakeipa"                        , crafting_type=en, item_id= 45838 }
-, ["TADERI"                  ] = { name="Taderi"                         , crafting_type=en, item_id= 45847 }
+, ["DEKEIPA"                 ] = { name="Dekeipa"                        , crafting_type=en, item_id= 45839 , name_2="hielo"         }
+, ["DENI"                    ] = { name="Deni"                           , crafting_type=en, item_id= 45833 , name_2="aguante"       }
+, ["DENIMA"                  ] = { name="Denima"                         , crafting_type=en, item_id= 45836 , name_2="regeneración de aguante"}
+, ["DETERI"                  ] = { name="Deteri"                         , crafting_type=en, item_id= 45842 , name_2="robustez"      }
+, ["HAOKO"                   ] = { name="Haoko"                          , crafting_type=en, item_id= 45841 , name_2="podredumbre"   }
+, ["HAKEIJO"                 ] = { name="Hakeijo"                        , crafting_type=en, item_id= 68342 , name_2="defensa prismática"}
+, ["KADERI"                  ] = { name="Kaderi"                         , crafting_type=en, item_id= 45849 , name_2="percutante"    }
+, ["KUOKO"                   ] = { name="Kuoko"                          , crafting_type=en, item_id= 45837 , name_2="veneno"        }
+, ["MAKDERI"                 ] = { name="Makderi"                        , crafting_type=en, item_id= 45848 , name_2="aumento de daño mágico"}
+, ["MAKKO"                   ] = { name="Makko"                          , crafting_type=en, item_id= 45832 , name_2="magia"         }
+, ["MAKKOMA"                 ] = { name="Makkoma"                        , crafting_type=en, item_id= 45835 , name_2="regeneración de magia"}
+, ["MEIP"                    ] = { name="Meip"                           , crafting_type=en, item_id= 45840 , name_2="descarga"      }
+, ["OKO"                     ] = { name="Oko"                            , crafting_type=en, item_id= 45831 , name_2="vida"          }
+, ["OKOMA"                   ] = { name="Okoma"                          , crafting_type=en, item_id= 45834 , name_2="regeneración de salud"}
+, ["OKORI"                   ] = { name="Okori"                          , crafting_type=en, item_id= 45843 , name_2="daño físico"   }
+, ["ORU"                     ] = { name="Oru"                            , crafting_type=en, item_id= 45846 , name_2="del alquimista"}
+, ["RAKEIPA"                 ] = { name="Rakeipa"                        , crafting_type=en, item_id= 45838 , name_2="fuego"         }
+, ["TADERI"                  ] = { name="Taderi"                         , crafting_type=en, item_id= 45847 , name_2="aumento de daño físico"}
 
-, ["TA"                      ] = { name="Ta"                             , crafting_type=en, item_id= 45850 }
-, ["JEJOTA"                  ] = { name="Jejota"                         , crafting_type=en, item_id= 45851 }
-, ["DENATA"                  ] = { name="Denata"                         , crafting_type=en, item_id= 45852 }
-, ["REKUTA"                  ] = { name="Rekuta"                         , crafting_type=en, item_id= 45853 }
-, ["KUTA"                    ] = { name="Kuta"                           , crafting_type=en, item_id= 45854 }
+, ["TA"                      ] = { name="Ta"                             , crafting_type=en, item_id= 45850 , name_2="Normal"   }
+, ["JEJOTA"                  ] = { name="Jejota"                         , crafting_type=en, item_id= 45851 , name_2="Bueno"    }
+, ["DENATA"                  ] = { name="Denata"                         , crafting_type=en, item_id= 45852 , name_2="Superior" }
+, ["REKUTA"                  ] = { name="Rekuta"                         , crafting_type=en, item_id= 45853 , name_2="Épico"    }
+, ["KUTA"                    ] = { name="Kuta"                           , crafting_type=en, item_id= 45854 , name_2="Legendario"}
 }
 
 -- Quest Titles --------------------------------------------------------------

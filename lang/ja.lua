@@ -262,21 +262,21 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["NIGHT_OIL"               ] = { name="夜の油"                            , crafting_type=al, item_id= 75364 }
 , ["ALKAHEST"                ] = { name="アルカヘスト"                         , crafting_type=al, item_id= 75365 }
 
-, ["JORA"                    ] = { name="ジョラ"                            , crafting_type=en, item_id= 45855 }
+, ["JORA"                    ] = { name="ジョラ"                            , crafting_type=en, item_id= 45855 , name_2="初歩"            }
 , ["PORADE"                  ] = { name="ポラデ"                            , crafting_type=en, item_id= 45856 }
-, ["JERA"                    ] = { name="ジェラ"                            , crafting_type=en, item_id= 45857 }
+, ["JERA"                    ] = { name="ジェラ"                            , crafting_type=en, item_id= 45857 , name_2="不出来"           }
 , ["JEJORA"                  ] = { name="ジェジョラ"                          , crafting_type=en, item_id= 45806 }
-, ["ODRA"                    ] = { name="オドラ"                            , crafting_type=en, item_id= 45807 }
+, ["ODRA"                    ] = { name="オドラ"                            , crafting_type=en, item_id= 45807 , name_2="一般的"           }
 , ["POJORA"                  ] = { name="ポジョラ"                           , crafting_type=en, item_id= 45808 }
-, ["EDORA"                   ] = { name="エドラ"                            , crafting_type=en, item_id= 45809 }
+, ["EDORA"                   ] = { name="エドラ"                            , crafting_type=en, item_id= 45809 , name_2="中堅"            }
 , ["JAERA"                   ] = { name="ジャエラ"                           , crafting_type=en, item_id= 45810 }
-, ["PORA"                    ] = { name="ポラ"                             , crafting_type=en, item_id= 45811 }
+, ["PORA"                    ] = { name="ポラ"                             , crafting_type=en, item_id= 45811 , name_2="強力"            }
 , ["DENARA"                  ] = { name="デナラ"                            , crafting_type=en, item_id= 45812 }
-, ["RERA"                    ] = { name="レラ"                             , crafting_type=en, item_id= 45813 }
-, ["DERADO"                  ] = { name="デラド"                            , crafting_type=en, item_id= 45814 }
-, ["REKURA"                  ] = { name="レクラ"                            , crafting_type=en, item_id= 45815 }
-, ["KURA"                    ] = { name="クラ"                             , crafting_type=en, item_id= 45816 }
-, ["REJERA"                  ] = { name="レジェラ"                           , crafting_type=en, item_id= 64509 }
+, ["RERA"                    ] = { name="レラ"                             , crafting_type=en, item_id= 45813 , name_2="希少"            }
+, ["DERADO"                  ] = { name="デラド"                            , crafting_type=en, item_id= 45814 , name_2="至高"            }
+, ["REKURA"                  ] = { name="レクラ"                            , crafting_type=en, item_id= 45815 , name_2="究極"            }
+, ["KURA"                    ] = { name="クラ"                             , crafting_type=en, item_id= 45816 , name_2="伝説"            }
+, ["REJERA"                  ] = { name="レジェラ"                           , crafting_type=en, item_id= 64509 , name_2="最上"            }
 , ["REPORA"                  ] = { name="レポラ"                            , crafting_type=en, item_id= 68341 }
 
 , ["JODE"                    ] = { name="ジョーデ"                           , crafting_type=en, item_id= 45817 }
@@ -296,30 +296,30 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["JEHADE"                  ] = { name="ジェハデ"                           , crafting_type=en, item_id= 64508 }
 , ["ITADE"                   ] = { name="イタデ"                            , crafting_type=en, item_id= 68340 }
 
-, ["DEKEIPA"                 ] = { name="デケイパ"                           , crafting_type=en, item_id= 45839 }
-, ["DENI"                    ] = { name="デニ"                             , crafting_type=en, item_id= 45833 }
-, ["DENIMA"                  ] = { name="デニマ"                            , crafting_type=en, item_id= 45836 }
-, ["DETERI"                  ] = { name="デテリ"                            , crafting_type=en, item_id= 45842 }
-, ["HAOKO"                   ] = { name="ハオコ"                            , crafting_type=en, item_id= 45841 }
-, ["HAKEIJO"                 ] = { name="ハケイジョ"                          , crafting_type=en, item_id= 68342 }
-, ["KADERI"                  ] = { name="カデリ"                            , crafting_type=en, item_id= 45849 }
-, ["KUOKO"                   ] = { name="クオコ"                            , crafting_type=en, item_id= 45837 }
-, ["MAKDERI"                 ] = { name="マクデリ"                           , crafting_type=en, item_id= 45848 }
-, ["MAKKO"                   ] = { name="マッコ"                            , crafting_type=en, item_id= 45832 }
-, ["MAKKOMA"                 ] = { name="マッコマ"                           , crafting_type=en, item_id= 45835 }
-, ["MEIP"                    ] = { name="メイプ"                            , crafting_type=en, item_id= 45840 }
-, ["OKO"                     ] = { name="オコ"                             , crafting_type=en, item_id= 45831 }
-, ["OKOMA"                   ] = { name="オコマ"                            , crafting_type=en, item_id= 45834 }
-, ["OKORI"                   ] = { name="オコリ"                            , crafting_type=en, item_id= 45843 }
-, ["ORU"                     ] = { name="オル"                             , crafting_type=en, item_id= 45846 }
-, ["RAKEIPA"                 ] = { name="ラケイパ"                           , crafting_type=en, item_id= 45838 }
-, ["TADERI"                  ] = { name="タデリ"                            , crafting_type=en, item_id= 45847 }
+, ["DEKEIPA"                 ] = { name="デケイパ"                           , crafting_type=en, item_id= 45839 , name_2="氷結"            }
+, ["DENI"                    ] = { name="デニ"                             , crafting_type=en, item_id= 45833 , name_2="スタミナ"          }
+, ["DENIMA"                  ] = { name="デニマ"                            , crafting_type=en, item_id= 45836 , name_2="スタミナ再生"        }
+, ["DETERI"                  ] = { name="デテリ"                            , crafting_type=en, item_id= 45842 , name_2="硬化"            }
+, ["HAOKO"                   ] = { name="ハオコ"                            , crafting_type=en, item_id= 45841 , name_2="不浄"            }
+, ["HAKEIJO"                 ] = { name="ハケイジョ"                          , crafting_type=en, item_id= 68342 , name_2="分光防御"          }
+, ["KADERI"                  ] = { name="カデリ"                            , crafting_type=en, item_id= 45849 , name_2="強撃"            }
+, ["KUOKO"                   ] = { name="クオコ"                            , crafting_type=en, item_id= 45837 , name_2="毒"             }
+, ["MAKDERI"                 ] = { name="マクデリ"                           , crafting_type=en, item_id= 45848 , name_2="魔法攻撃強化"        }
+, ["MAKKO"                   ] = { name="マッコ"                            , crafting_type=en, item_id= 45832 , name_2="マジカ"           }
+, ["MAKKOMA"                 ] = { name="マッコマ"                           , crafting_type=en, item_id= 45835 , name_2="マジカ再生"         }
+, ["MEIP"                    ] = { name="メイプ"                            , crafting_type=en, item_id= 45840 , name_2="雷撃"            }
+, ["OKO"                     ] = { name="オコ"                             , crafting_type=en, item_id= 45831 , name_2="体力"            }
+, ["OKOMA"                   ] = { name="オコマ"                            , crafting_type=en, item_id= 45834 , name_2="体力再生"          }
+, ["OKORI"                   ] = { name="オコリ"                            , crafting_type=en, item_id= 45843 , name_2="武器強化"          }
+, ["ORU"                     ] = { name="オル"                             , crafting_type=en, item_id= 45846 , name_2="薬品強化"          }
+, ["RAKEIPA"                 ] = { name="ラケイパ"                           , crafting_type=en, item_id= 45838 , name_2="炎"             }
+, ["TADERI"                  ] = { name="タデリ"                            , crafting_type=en, item_id= 45847 , name_2="物理攻撃強化"        }
 
-, ["TA"                      ] = { name="ター"                             , crafting_type=en, item_id= 45850 }
-, ["JEJOTA"                  ] = { name="ジェジョタ"                          , crafting_type=en, item_id= 45851 }
-, ["DENATA"                  ] = { name="デナタ"                            , crafting_type=en, item_id= 45852 }
-, ["REKUTA"                  ] = { name="レクタ"                            , crafting_type=en, item_id= 45853 }
-, ["KUTA"                    ] = { name="クター"                            , crafting_type=en, item_id= 45854 }
+, ["TA"                      ] = { name="ター"                             , crafting_type=en, item_id= 45850 , name_2="Normal"   }
+, ["JEJOTA"                  ] = { name="ジェジョタ"                          , crafting_type=en, item_id= 45851 , name_2="Fine"     }
+, ["DENATA"                  ] = { name="デナタ"                            , crafting_type=en, item_id= 45852 , name_2="Superior" }
+, ["REKUTA"                  ] = { name="レクタ"                            , crafting_type=en, item_id= 45853 , name_2="Epic"     }
+, ["KUTA"                    ] = { name="クター"                            , crafting_type=en, item_id= 45854 , name_2="Legendary"}
 }
 
 -- Quest Titles --------------------------------------------------------------

@@ -519,6 +519,27 @@ function ImportSavedVars()
             end
         end
     end
+
+            -- Enchanting potency and essence names
+    local table_names = { ["potencies"] = "$POTENCY_%06d"
+                        , ["essences" ] = "$ESSENCE_%06d"
+                        }
+    for table_name, key_pattern in pairs(table_names) do
+        local table = LibCraftTextVars.Default["@ziggr"]["$AccountWide"][table_name]
+        if table then
+            for item_id, lang_table in pairs(table) do
+                local key = string.format(key_pattern, item_id)
+                DB[key] = DB[key] or {}
+                local entry = DB[key]
+                entry.key = key
+                for lang,text in pairs(lang_table) do
+                    entry[lang] = Decaret(text)
+                end
+            end
+        end
+    end
+
+
 end
 
 -- From http://lua-users.org/wiki/SplitJoin
