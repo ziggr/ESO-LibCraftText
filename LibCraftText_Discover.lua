@@ -1100,7 +1100,7 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
     local lang = self.CurrLang()
                         -- Scan bags EVERY time we interact, just in case
                         -- inventory changed between interactions.
-    self.ScanBagsForMats()
+    self.IndexBags()
 
     local m = self.CONSUMABLE_MATERIAL -- for less typing
     local potency_list = {
@@ -1131,13 +1131,14 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
 
                         -- For extracting "Major" fro "Major Glyph of Health"
     local RE_POTENCY = {
-        en = { "(.*) Glyph of"}
-    ,   de = { "(.*) Glyph of"}
-    ,   fr = { "(.*) Glyph of"}
-    ,   es = { "(.*) Glyph of"}
-    ,   it = { "(.*) Glyph of"}
-    ,   ru = { "(.*) Glyph of"}
-    ,   ja = { "(.*) Glyph of"}
+        en = { "(.*) glyph of"}
+    ,   de = { "(.*) glyphe des"}
+    ,   fr = { "glyphe (.*) vital"
+             , "(petit) glyphe "}
+    ,   es = { "glifo (.*) de vida"}
+    ,   it = { "(.*) glyph of"}  -- "glifo of health" for all 10 potencies. Broken.
+    ,   ru = { "(.*) glyph of"}
+    ,   ja = { "(.*)[のな]グリフ"}
     }
                         -- Roll through all 10 Enchanting rank potencies
                         -- that daily crafting writs ask for.
@@ -1152,15 +1153,24 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
                 return
             end
             local args = { potency_mat_bag.bag_id
-                         , potency_mat_bag.slot_index
+                         , potency_mat_bag.slot_id
                          , essence_mat_bag.bag_id
-                         , essence_mat_bag.slot_index
+                         , essence_mat_bag.slot_id
                          , aspect_mat_bag.bag_id
-                         , aspect_mat_bag.slot_index
+                         , aspect_mat_bag.slot_id
                      }
             local name = GetEnchantingResultingItemInfo(unpack(args))
-            -- local link = GetEnchantingResultingItemLink(unpack(args))
-            -- local item_id = self.ItemLinkToItemID(link)
+            local link = GetEnchantingResultingItemLink(unpack(args))
+            local item_id = self.ItemLinkToItemID(link)
+            if name == "" then
+                Error("Enchanting: character lacks rune knowlege."
+                      .." Go make some glyphs then try again.")
+                return
+            end
+
+-- d(string.format("GetEnchantingResultingItemLink(%d, %d, %d, %d, %d, %d)"
+--  ,  unpack(args)))
+-- Info(string.format("rank:%d %s", en_rank, link))
 
             local potency_name = nil
             for _,re in ipairs(RE_POTENCY[lang]) do
@@ -1176,7 +1186,7 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
 
             self.saved_var.potencies = self.saved_var.potencies or {}
             self.saved_var.potencies[en_rank] = self.saved_var.potencies[en_rank] or {}
-            self.saved_var.potency_mat_bag[en_rank][lang] = potency_name
+            self.saved_var.potencies[en_rank][lang] = potency_name
             Info(string.format("potency %2d: %s", en_rank, potency_name))
         end
     end
@@ -1185,37 +1195,41 @@ end
 function LibCraftText.ToMatBag(mat_row)
     local item_id = mat_row.item_id
     local mat_bag = LibCraftText.item_id_to_mat_bag[item_id]
-    if not (essence_mat_bag and aspect_mat_bag and potency_mat_bag) then
-        Error("Inventory missing:"..tostring(mat_row.name))
+    if not mat_bag then
+        Error("Inventory missing:"..tostring(mat_row.name).."   item_id:"..tostring(mat_row.item_id))
         return nil
+    -- else
+    --     Info(string.format( "bag_id:%d slot_id:%d item_id:%d %s"
+    --                       , mat_bag.bag_id
+    --                       , mat_bag.slot_id
+    --                       , mat_row.item_id
+    --                       , mat_row.name
+    --                       ))
     end
     return mat_bag
 end
 
-function LibCraftText.ScanBagsForMats()
+function LibCraftText.IndexBags()
     local self = LibCraftText
-                        -- Build a hash of materials that we seek.
-    local item_id_to_mat_bag = {}
-    for _,material in ipairs(self.MATERIAL) do
-        if material.item_id then
-            item_id_to_mat_bag[material.item_id] = { ["material"] = material }
-        end
-    end
-
-                        -- Scan bags for materials.
     local bag_id_list = { BAG_BACKPACK
                         , BAG_BANK
                         , BAG_SUBSCRIBER_BANK
                         , BAG_VIRTUAL
                         }
+    local item_id_to_mat_bag = {}
     for _,bag_id in ipairs(bag_id_list) do
-        local slot_ct = GetBagSize(bag_id)
-        for slot_index = 0, slot_ct do
-            local item_id = GetItemId(bag_id, slot_index, LINK_STYLE_DEFAULT)
-            if item_id_to_mat_bag[item_id] then
+    -- for bag_id = BAG_MIN_VALUE,BAG_MAX_VALUE do
+        local slot_id = ZO_GetNextBagSlotIndex(bag_id, nil)
+        while slot_id do
+            local item_id = GetItemId(bag_id, slot_id, LINK_STYLE_DEFAULT)
+            if item_id and 0 < item_id then
+                -- local name = GetItemName(bag_id, slot_id)
+                -- Info(string.format("%d %d %d %s", bag_id, slot_id, item_id, name))
+                item_id_to_mat_bag[item_id] = item_id_to_mat_bag[item_id] or {}
                 item_id_to_mat_bag[item_id].bag_id     = bag_id
-                item_id_to_mat_bag[item_id].slot_index = slot_index
+                item_id_to_mat_bag[item_id].slot_id = slot_id
             end
+            slot_id = ZO_GetNextBagSlotIndex(bag_id, slot_id)
         end
     end
 
