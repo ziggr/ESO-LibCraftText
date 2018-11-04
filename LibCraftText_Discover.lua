@@ -63,7 +63,7 @@ function LibCraftText.RegisterSlashCommands()
         local cc = { { "scan"       , "Scan quest journal for crafting quest text" }
                    , { "forget"     , "Forget all discovered data"                 }
                    , { "lang"       , "Switch to 'next' language"                  }
-                   , { "en"         , "Switch to English language"                 }
+                   , { "en"         , "Switch to English language. (other lang codes work, too)"}
                    , { "discover"   , "Extract material and item names"            }
                    , { "abandon"    , "Abandon all daily crafting quests"          }
                    }
@@ -98,6 +98,9 @@ function LibCraftText.SlashCommand(args)
         LibCraftText.NextLang(want_lang)
     elseif args:lower() == "en" then
         SetCVar("language.2", "en")
+    elseif LibCraftText.IsLang(args) then
+        local lang = LibCraftText.IsLang(args)
+        SetCVar("language.2", lang)
     else
         Info("Unknown command: '"..tostring(args).."'")
     end
@@ -106,6 +109,7 @@ end
 function LibCraftText.Scan()
     LibCraftText.ScanQuestJournal()
     LibCraftText.ScanSkillRanks()
+    LibCraftText.ReportScannedLang()
 end
 
 function LibCraftText.Discover()
@@ -134,6 +138,7 @@ function LibCraftText.Forget()
                    , "skill_rank"
                    , "alliance"
                    , "consumable_materials"
+                   , "scanned_lang"
                    }
     for _,field in ipairs(fields) do
         -- LibCraftText.saved_var [field] = nil  Uncomment only when you really need to.
@@ -156,11 +161,11 @@ function LibCraftText.AbandonSomeDailies()
         local jqi = { GetJournalQuestInfo(quest_index) }
         local repeat_type = GetJournalQuestRepeatType(quest_index)
 -- Info(string.format("qi:%d  qtype:%d ?= %d  rtype:%d ?= %d   name:%s"
-        , quest_index
-        , jqi[self.JQI.quest_type]  , QUEST_TYPE_CRAFTING
-        , repeat_type               , QUEST_REPEAT_DAILY
-        , jqi[self.JQI.quest_name]
-        ))
+--     , quest_index
+--     , jqi[self.JQI.quest_type]  , QUEST_TYPE_CRAFTING
+--     , repeat_type               , QUEST_REPEAT_DAILY
+--     , jqi[self.JQI.quest_name]
+--     ))
         if jqi[self.JQI.quest_type] == QUEST_TYPE_CRAFTING
             and repeat_type == QUEST_REPEAT_DAILY then
             local name = jqi[self.JQI.quest_name]
@@ -172,6 +177,50 @@ function LibCraftText.AbandonSomeDailies()
     return abandon_ct
 end
 
+LibCraftText.LANG_LIST = { "en", "de", "fr", "ru", "es", "it", "ja" }
+
+function LibCraftText.IsLang(text)
+    if not text then return nil end
+    for _,lang in ipairs(LibCraftText.LANG_LIST) do
+        if lang == text:lower() then
+            return lang
+        end
+    end
+    return nil
+end
+
+function LibCraftText.ReportScannedLang()
+    local self      = LibCraftText
+    local curr_lang = self.CurrLang()
+    self.saved_char.scanned_lang = self.saved_char.scanned_lang or {}
+    self.saved_char.scanned_lang[curr_lang] = true
+
+                        -- Are we in a language that comes "before" the
+                        -- current language in LANG_LIST? If so, and if
+                        -- you forgot to scan it, then light it up red.
+    local in_before = true
+    local report_table = {}
+    for _,lang in ipairs(self.LANG_LIST) do
+        local color = "|c666666"
+        if self.saved_char.scanned_lang[lang] then
+            color = "|c669966"  -- Done. All is good.
+        elseif in_before then
+            color = "|cFF6666"  -- You missed one! Turn back! Turn back!
+        else
+            color = "|c666666"  -- Todo, dim grey.
+        end
+
+        if lang == curr_lang then
+            in_before = false
+            lang      = lang:upper()  -- Show current lang in uppercase.
+        end
+
+        local msg = color..lang.."|r"
+        table.insert(report_table, msg)
+    end
+    Info("Scanned: "..table.concat(report_table, " "))
+end
+
 local function find_i(want, list)
     for i,l in ipairs(list) do
         if want == l then return i end
@@ -180,7 +229,7 @@ local function find_i(want, list)
 end
 
 function LibCraftText.NextLang(want_lang)
-    local lang_list = { "en", "de", "fr", "ru", "es", "it", "ja" }
+    local lang_list = LibCraftText.LANG_LIST
     local curr_lang = LibCraftText.CurrLang()
     local curr_i    = find_i(curr_lang, lang_list)
     local want_i    = find_i(want_lang, lang_list)
