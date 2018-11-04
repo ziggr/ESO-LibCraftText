@@ -663,6 +663,12 @@ function LibCraftText.DiscoverConsumableMaterials()
     end
 end
 
+-- copied from Dolgubon's LibLazyCrafting functions.lua.
+-- Isn't there an official ZOS copy of this now?
+function LibCraftText.ItemLinkToItemID(itemLink)
+    return tonumber(string.match(itemLink,"|H%d:item:(%d+)"))
+end
+
 function LibCraftText.ItemIDToItemLink(item_id)
                         -- I have no idea what the non-zero numbers here
                         -- mean, not sure they even matter.
@@ -904,24 +910,32 @@ function Decaret(str)
     return zo_strformat("<<1>>", str)
 end
 
--- GetSmithingPatternResultLink(11, 1, 5, 1) ==> "Heaume en Fer"
-
+LibCraftText.OCSI_Func = {
+    [bs] = LibCraftText.DiscoverCraftingStationGear
+,   [cl] = LibCraftText.DiscoverCraftingStationGear
+,   [ww] = LibCraftText.DiscoverCraftingStationGear
+,   [jw] = LibCraftText.DiscoverCraftingStationGear
+,   [en] = LibCraftText.DiscoverCraftingStationEnchanting
+}
+function LibCraftText.OnCraftingStationInteract(event_code, crafting_type, same_station)
+    local self = LibCraftText
+    local func = LibCraftText.OCSI_Func[crafting_type]
+    if func then
+        func(crafting_type)
+    end
+end
 
                         -- material count for a level 1 version of each of the
                         -- 14 or so patterns at each equipment crafting
                         -- station.
 LibCraftText.STATION_API_INPUT = {
-    [bs] = { 3, 3, 3, 5, 5, 5, 2,   7, 5, 5, 5, 6, 5, 5 }
+    [bs] = { 3, 3, 3, 5, 5, 5, 2,      7, 5, 5, 5, 6, 5, 5 }
 ,   [cl] = { 7, 7, 5, 5, 5, 6, 5, 5,   7, 5, 5, 5, 6, 5, 5 }
 ,   [ww] = { 3, 6, 3, 3, 3, 3 }
 ,   [jw] = { 2, 3 }
 }
-function LibCraftText.OnCraftingStationInteract(event_code, crafting_type, same_station)
-    local self = LibCraftText
-    d("ec:"..tostring(event_code)
-        .." ct:"..tostring(crafting_type)
-        .." ss:"..tostring(same_station)
-        )
+function LibCraftText.DiscoverCraftingStationGear(crafting_type)
+
     local mat_ct_list = self.STATION_API_INPUT[crafting_type]
     if not mat_ct_list then return end
 
@@ -990,14 +1004,100 @@ end
     end
 end
 
+function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
+    local self = LibCraftText
+                        -- Scan bags EVERY time we interact, just in case
+                        -- inventory changed between interactions.
+    self.ScanBagsForMats()
+
+    local m = self.CONSUMABLE_MATERIALS -- for less typing
+                        -- add            subtract      level   adjecctive
+    local potency_list = { m.JORA    -- , m.JODE            1   trifling
+                         , m.PORADE  -- , m.NOTADE          5   inferior
+                         , m.JERA    -- , m.ODE            10   petty
+                         , m.JEJORA  -- , m.TADE           15   slight
+                         , m.ODRA    -- , m.JAYDE          20   minor
+                         , m.POJORA  -- , m.EDODE          25   lesser
+                         , m.EDORA   -- , m.POJODE         30   moderate
+                         , m.JAERA   -- , m.REKUDE         35   average
+                         , m.PORA    -- , m.HADE           40   strong
+                         , m.DENARA  -- , m.IDODE        CP10   major
+                         , m.RERA    -- , m.PODE         CP30   greater
+                         , m.DERADO  -- , m.KEDEKO       CP50   grand
+                         , m.REKURA  -- , m.REDE         CP70   splendid
+                         , m.KURA    -- , m.KUDE        CP100   monumental
+                         , m.REJERA  -- , m.JEHADE      CP150   superb
+                         , m.REPORA  -- , m.ITADE       CP160   truly superb
+                         }
+    local essence_list = { m.DENI
+                         , m.MAKKO
+                         , m.OKO
+                         }
+    local aspect_list  = { m.TA }
+
+    for _,aspect in ipairs(aspect_list) do
+        local aspect_mat_bag = self.ToMatBag(aspect)
+        for _,essence in ipairs(essence_list) do
+            local essence_mat_bag = self.ToMatBag(essence)
+            for _,potency in ipairs(potency_list) do
+                local potency_mat_bag = self.ToMatBag(potency)
+                local args = { potency_mat_bag.bag_id
+                             , potency_mat_bag.slot_index
+                             , essence_mat_bag.bag_id
+                             , essence_mat_bag.slot_index
+                             , aspect_mat_bag.bag_id
+                             , aspect_mat_bag.slot_index
+                         }
+                local name = GetEnchantingResultingItemInfo(unpack(args))
+                local link = GetEnchantingResultingItemLink(unpack(args))
+                local item_id = self.ItemLinkToItemID(link)
+            end
+        end
+    end
+end
+
+function LibCraftText.ToMatBag(mat_row)
+    local item_id = mat_row.item_id
+    local mat_bag = LibCraftText.item_id_to_mat_bag[item_id]
+    return mat_bag
+end
+
+function LibCraftText.ScanBagsForMats()
+    local self = LibCraftText
+                        -- Build a hash of materials that we seek.
+    local item_id_to_mat_bag = {}
+    for _,material in ipairs(self.MATERIAL) do
+        if material.item_id then
+            item_id_to_mat_bag[material.item_id] = { ["material"] = material }
+        end
+    end
+
+                        -- Scan bags for materials.
+    local bag_id_list = { BAG_BACKPACK
+                        , BAG_BANK
+                        , BAG_SUBSCRIBER_BANK
+                        , BAG_VIRTUAL
+                        }
+    for _,bag_id in ipairs(bag_id_list) do
+        local slot_ct = GetBagSize(bag_id)
+        for slot_index = 0, slot_ct do
+            local item_id = GetItemId(bag_id, slot_index, LINK_STYLE_DEFAULT)
+            if item_id_to_mat_bag[item_id] then
+                item_id_to_mat_bag[item_id].bag_id     = bag_id
+                item_id_to_mat_bag[item_id].slot_index = slot_index
+            end
+        end
+    end
+
+    self.item_id_to_mat_bag = item_id_to_mat_bag
+end
+
 
 -- Util ----------------------------------------------------------------------
 
 function LibCraftText.CurrLang()
     return GetCVar("language.2")
 end
-
-
 
 
 -- bs  |H1:item:119563:6:1:0:0:0:69:188:4:74:8:35:0:0:0:0:0:0:0:0:66000|h|h
