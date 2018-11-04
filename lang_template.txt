@@ -318,6 +318,12 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["DENATA"                  ] = { name=$MATERIAL_EN_045852              , crafting_type=en, item_id= 45852 }
 , ["REKUTA"                  ] = { name=$MATERIAL_EN_045853              , crafting_type=en, item_id= 45853 }
 , ["KUTA"                    ] = { name=$MATERIAL_EN_045854              , crafting_type=en, item_id= 45854 }
+}
+
+-- Provisioning Recipes
+--
+LibCraftText.RECIPE = {
+  ["AETHERIAL_TEA"] = { name="Aetherial Tea" }
 
 }
 -- Quest Titles --------------------------------------------------------------

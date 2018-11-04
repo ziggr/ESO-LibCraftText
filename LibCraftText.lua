@@ -213,10 +213,24 @@ LibCraftText.RE_CONDITION_ACQUIRE = {
 --
 function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
     local self          = LibCraftText
+
+                        -- Alchemy and Enchanting materials
+    local acquire_mat = self.ParseConsumableAcquireMat(crafting_type, cond_text)
+    if acquire_mat then return acquire_mat end
+
+                        -- Provisioning Recpies
+
+                        -- Enchanting Glyphs
+
+                        -- Alchemy Potions/Poisons
+    return nil
+end
+
+function LibCraftText.ParseConsumableAcquireMat(crafting_type, cond_text)
+    local self          = LibCraftText
     local lang          = self.CurrLang()
     local re_ac_list    = self.RE_CONDITION_ACQUIRE[lang]
-
-    local mat_text = nil
+    local mat_text      = nil
     for _,re in ipairs(re_ac_list) do
         _,_,g1 = string.find(cond_text, re)
         if g1 then
@@ -238,10 +252,7 @@ function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
             return found
         end
     end
-
     return nil
-
-    -- ### craft potion poison rune recipe
 end
 
 -- Test Scaffolding ----------------------------------------------------------
