@@ -22,11 +22,11 @@ local ww = CRAFTING_TYPE_WOODWORKING     -- 6
 local jw = CRAFTING_TYPE_JEWELRYCRAFTING -- 7
 
 local function Info(msg)
-    d("|c999999LCT: "..msg)
+    d("|c999999LibCraftText: "..msg)
 end
 
 local function Error(msg)
-    d("|cFF6666LCT: "..msg)
+    d("|cFF6666LibCraftText: "..msg)
 end
 
 function LibCraftText.OnAddOnLoaded(event, addonName)
@@ -86,7 +86,7 @@ function LibCraftText.SlashCommand(args)
     elseif args:lower() == "discover" then
         Info("Discovering...")
         LibCraftText.Discover()
-        Info("Ready for you to interact with 4 equipment crafting stations.")
+        Info("Ready for you to interact with 5 equipment crafting stations.")
     elseif args:lower() == "forget" then
         LibCraftText.Forget()
         Info("Forgotten.")
@@ -116,13 +116,13 @@ function LibCraftText.Scan()
 end
 
 function LibCraftText.Discover()
-    LibCraftText.DiscoverEquipmentMaterials()
-    LibCraftText.DiscoverConsumableMaterials()
-    LibCraftText.DiscoverItems()
-    LibCraftText.DiscoverQualities()
-    LibCraftText.DiscoverTraits()
-    LibCraftText.DiscoverSets()
-    LibCraftText.DiscoverMotifs()
+    -- LibCraftText.DiscoverEquipmentMaterials()
+    -- LibCraftText.DiscoverConsumableMaterials()
+    -- LibCraftText.DiscoverItems()
+    -- LibCraftText.DiscoverQualities()
+    -- LibCraftText.DiscoverTraits()
+    -- LibCraftText.DiscoverSets()
+    -- LibCraftText.DiscoverMotifs()
     LibCraftText.RegisterCraftingStationListener()
 end
 
@@ -993,24 +993,27 @@ function LibCraftText.RegisterCraftingStationListener()
             , LibCraftText.OnCraftingStationInteract
             )
 end
+                        -- This table must come AFTER any function it lists.
+function LibCraftText.OnCraftingStationInteract(event_code, crafting_type, same_station)
+    local self = LibCraftText
+
+    local OCSI_Func = {
+        [bs] = LibCraftText.DiscoverCraftingStationGear
+    ,   [cl] = LibCraftText.DiscoverCraftingStationGear
+    ,   [en] = LibCraftText.DiscoverCraftingStationEnchanting
+    ,   [ww] = LibCraftText.DiscoverCraftingStationGear
+    ,   [jw] = LibCraftText.DiscoverCraftingStationGear
+    }
+
+    local func = OCSI_Func[crafting_type]
+    if func then
+        func(crafting_type)
+
+    end
+end
 
 function Decaret(str)
     return zo_strformat("<<1>>", str)
-end
-
-LibCraftText.OCSI_Func = {
-    [bs] = LibCraftText.DiscoverCraftingStationGear
-,   [cl] = LibCraftText.DiscoverCraftingStationGear
-,   [ww] = LibCraftText.DiscoverCraftingStationGear
-,   [jw] = LibCraftText.DiscoverCraftingStationGear
-,   [en] = LibCraftText.DiscoverCraftingStationEnchanting
-}
-function LibCraftText.OnCraftingStationInteract(event_code, crafting_type, same_station)
-    local self = LibCraftText
-    local func = LibCraftText.OCSI_Func[crafting_type]
-    if func then
-        func(crafting_type)
-    end
 end
 
                         -- material count for a level 1 version of each of the
@@ -1023,7 +1026,7 @@ LibCraftText.STATION_API_INPUT = {
 ,   [jw] = { 2, 3 }
 }
 function LibCraftText.DiscoverCraftingStationGear(crafting_type)
-
+    local self = LibCraftText
     local mat_ct_list = self.STATION_API_INPUT[crafting_type]
     if not mat_ct_list then return end
 
@@ -1094,52 +1097,87 @@ end
 
 function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
     local self = LibCraftText
+    local lang = self.CurrLang()
                         -- Scan bags EVERY time we interact, just in case
                         -- inventory changed between interactions.
     self.ScanBagsForMats()
 
-    local m = self.CONSUMABLE_MATERIALS -- for less typing
-                        -- add            subtract      level   adjecctive
-    local potency_list = { m.JORA    -- , m.JODE            1   trifling
-                         , m.PORADE  -- , m.NOTADE          5   inferior
-                         , m.JERA    -- , m.ODE            10   petty
-                         , m.JEJORA  -- , m.TADE           15   slight
-                         , m.ODRA    -- , m.JAYDE          20   minor
-                         , m.POJORA  -- , m.EDODE          25   lesser
-                         , m.EDORA   -- , m.POJODE         30   moderate
-                         , m.JAERA   -- , m.REKUDE         35   average
-                         , m.PORA    -- , m.HADE           40   strong
-                         , m.DENARA  -- , m.IDODE        CP10   major
-                         , m.RERA    -- , m.PODE         CP30   greater
-                         , m.DERADO  -- , m.KEDEKO       CP50   grand
-                         , m.REKURA  -- , m.REDE         CP70   splendid
-                         , m.KURA    -- , m.KUDE        CP100   monumental
-                         , m.REJERA  -- , m.JEHADE      CP150   superb
-                         , m.REPORA  -- , m.ITADE       CP160   truly superb
-                         }
+    local m = self.CONSUMABLE_MATERIAL -- for less typing
+    local potency_list = {
+        --  rank   add            subtract      level   adjective   writ
+            [ 1] = m.JORA    -- , m.JODE            1   trifling    EN_01
+            --   , m.PORADE  -- , m.NOTADE          5   inferior
+        ,   [ 2] = m.JERA    -- , m.ODE            10   petty       EN_02
+            --   , m.JEJORA  -- , m.TADE           15   slight
+        ,   [ 3] = m.ODRA    -- , m.JAYDE          20   minor       EN_03
+            --   , m.POJORA  -- , m.EDODE          25   lesser
+        ,   [ 4] = m.EDORA   -- , m.POJODE         30   moderate    EN_04
+            --   , m.JAERA   -- , m.REKUDE         35   average
+        ,   [ 5] = m.PORA    -- , m.HADE           40   strong      EN_05
+            --   , m.DENARA  -- , m.IDODE        CP10   major
+        ,   [ 6] = m.RERA    -- , m.PODE         CP30   greater     EN_06
+        ,   [ 7] = m.DERADO  -- , m.KEDEKO       CP50   grand       EN_07
+        ,   [ 8] = m.REKURA  -- , m.REDE         CP70   splendid    EN_08
+        ,   [ 9] = m.KURA    -- , m.KUDE        CP100   monumental  EN_09
+        ,   [10] = m.REJERA  -- , m.JEHADE      CP150   superb      EN_10
+            --   , m.REPORA  -- , m.ITADE       CP160   truly superb
+        }
     local essence_list = { m.DENI
                          , m.MAKKO
                          , m.OKO
                          }
     local aspect_list  = { m.TA }
 
+
+                        -- For extracting "Major" fro "Major Glyph of Health"
+    local RE_POTENCY = {
+        en = { "(.*) Glyph of"}
+    ,   de = { "(.*) Glyph of"}
+    ,   fr = { "(.*) Glyph of"}
+    ,   es = { "(.*) Glyph of"}
+    ,   it = { "(.*) Glyph of"}
+    ,   ru = { "(.*) Glyph of"}
+    ,   ja = { "(.*) Glyph of"}
+    }
+                        -- Roll through all 10 Enchanting rank potencies
+                        -- that daily crafting writs ask for.
+    local essence         = m.OKO
+    local essence_mat_bag = self.ToMatBag(essence)
     for _,aspect in ipairs(aspect_list) do
-        local aspect_mat_bag = self.ToMatBag(aspect)
-        for _,essence in ipairs(essence_list) do
-            local essence_mat_bag = self.ToMatBag(essence)
-            for _,potency in ipairs(potency_list) do
-                local potency_mat_bag = self.ToMatBag(potency)
-                local args = { potency_mat_bag.bag_id
-                             , potency_mat_bag.slot_index
-                             , essence_mat_bag.bag_id
-                             , essence_mat_bag.slot_index
-                             , aspect_mat_bag.bag_id
-                             , aspect_mat_bag.slot_index
-                         }
-                local name = GetEnchantingResultingItemInfo(unpack(args))
-                local link = GetEnchantingResultingItemLink(unpack(args))
-                local item_id = self.ItemLinkToItemID(link)
+        local aspect_mat_bag  = self.ToMatBag(aspect)
+        for en_rank,potency in pairs(potency_list) do
+            local potency_mat_bag = self.ToMatBag(potency)
+            if not (essence_mat_bag and aspect_mat_bag and potency_mat_bag) then
+                Error("Giving up.")
+                return
             end
+            local args = { potency_mat_bag.bag_id
+                         , potency_mat_bag.slot_index
+                         , essence_mat_bag.bag_id
+                         , essence_mat_bag.slot_index
+                         , aspect_mat_bag.bag_id
+                         , aspect_mat_bag.slot_index
+                     }
+            local name = GetEnchantingResultingItemInfo(unpack(args))
+            -- local link = GetEnchantingResultingItemLink(unpack(args))
+            -- local item_id = self.ItemLinkToItemID(link)
+
+            local potency_name = nil
+            for _,re in ipairs(RE_POTENCY[lang]) do
+                local _,_,f = string.find(name:lower(), re)
+                if f then
+                    potency_name = f
+                    break
+                end
+            end
+            if not potency_name then
+                potency_name = name:lower()
+            end
+
+            self.saved_var.potencies = self.saved_var.potencies or {}
+            self.saved_var.potencies[en_rank] = self.saved_var.potencies[en_rank] or {}
+            self.saved_var.potency_mat_bag[en_rank][lang] = potency_name
+            Info(string.format("potency %2d: %s", en_rank, potency_name))
         end
     end
 end
@@ -1147,6 +1185,10 @@ end
 function LibCraftText.ToMatBag(mat_row)
     local item_id = mat_row.item_id
     local mat_bag = LibCraftText.item_id_to_mat_bag[item_id]
+    if not (essence_mat_bag and aspect_mat_bag and potency_mat_bag) then
+        Error("Inventory missing:"..tostring(mat_row.name))
+        return nil
+    end
     return mat_bag
 end
 

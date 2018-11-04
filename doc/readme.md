@@ -15,12 +15,11 @@ Daily
 - For each alt:
 
   - Log in
-  - **Abandon all daily crafting quests** from yesterday's cycle
+  - `/lct abandon` to **Abandon all daily crafting quests** from yesterday's cycle, then forget all previously recorded daily quest text.
   - Acquire all daily crafting quests for today's cycle
-  - `/lct forget`
   - For each language: ---
-    - `/lct scan`
-    - `/lct lang`
+    - `/lct scanlang` to record current language, then switch to next. 
+      Or use `/lct scan` and `/lct lang` separately if you want to take twice as long.
   - Repeat `/lct` cycle until you loop back to EN English
 
   - `/logout`
@@ -29,7 +28,7 @@ Daily
 
 - Occasionally check SavedVariables to see if you collected all 7 languages
 
-Takes about an hour to scan 10 alts x 7 languages:
+Takes about an hour to scan 10 alts x 7 languages using `/lct scan` + `/lct lang` separately:
 ```
 2018-11-03 08:39:45 -0700 start
 2018-11-03 08:52:16 -0700 `/logout` alt-one 12min/2alts = 6min/alt
@@ -40,7 +39,7 @@ Takes about an hour to scan 10 alts x 7 languages:
 2018-11-03 09:17:30 -0700 alt-six
 2018-11-03 09:20:17 -0700 alt-seven
 2018-11-03 09:23:37 -0700 alt-eight
-2018-11-03 09:29:42 -0700 alt-nine. Done. 50min/10alts = 5min/alt
+2018-11-03 09:29:42 -0700 alt-nine. Done. 50min/10alts = 5min/altmak 
 
 ...
 2018-11-03 10:10:32 -0700 make gentest passes, lang_db.lua scrubbed. ~90min
