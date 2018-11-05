@@ -40,21 +40,21 @@ COND_TEXT_FODDER = {
 , { input="Acquire Wormwood"                                , expect={ material=LCT.CONSUMABLE_MATERIAL.WORMWOOD        } }
 , { input="Brewers and Cooks Can Provide Recipes"           , expect={}                                                 }
 , { input="Craft Aetherial Tea"                             , expect={ item=LCT.RECIPE.AETHERIAL_TEA                    } }
-, { input="Craft Alik'r Beets with Goat Cheese"             , expect={}                                                 }
-, { input="Craft Baked Apples"                              , expect={}                                                 }
-, { input="Craft Baked Potato"                              , expect={}                                                 }
-, { input="Craft Banana Surprise"                           , expect={}                                                 }
-, { input="Craft Barley Nectar"                             , expect={}                                                 }
-, { input="Craft Battaglir Chowder"                         , expect={}                                                 }
-, { input="Craft Bitterlemon Tea"                           , expect={}                                                 }
+, { input="Craft Alik'r Beets with Goat Cheese"             , expect={ item=LCT.RECIPE.ALIKR_BEETS_WITH_GOAT_CHEESE     } }
+, { input="Craft Baked Apples"                              , expect={ item=LCT.RECIPE.BAKED_APPLES                     } }
+, { input="Craft Baked Potato"                              , expect={ item=LCT.RECIPE.BAKED_POTATO                     } }
+, { input="Craft Banana Surprise"                           , expect={ item=LCT.RECIPE.BANANA_SURPRISE                  } }
+, { input="Craft Barley Nectar"                             , expect={ item=LCT.RECIPE.BARLEY_NECTAR                    } }
+, { input="Craft Battaglir Chowder"                         , expect={ item=LCT.RECIPE.BATTAGLIR_CHOWDER                } }
+, { input="Craft Bitterlemon Tea"                           , expect={ item=LCT.RECIPE.BITTERLEMON_TEA                  } }
 , { input="Craft Blue Road Marathon"                        , expect={}                                                 }
-, { input="Craft Bog-Iron Ale"                              , expect={}                                                 }
-, { input="Craft Breton Pork Sausage"                       , expect={}                                                 }
-, { input="Craft Carrot Soup"                               , expect={}                                                 }
-, { input="Craft Chicken Breast"                            , expect={}                                                 }
-, { input="Craft Clarified Syrah Wine"                      , expect={}                                                 }
-, { input="Craft Comely Wench Whiskey"                      , expect={}                                                 }
-, { input="Craft Cyrodilic Cornbread"                       , expect={}                                                 }
+, { input="Craft Bog-Iron Ale"                              , expect={ item=LCT.RECIPE.BOG_IRON_ALE                     } }
+, { input="Craft Breton Pork Sausage"                       , expect={ item=LCT.RECIPE.BRETON_PORK_SAUSAGE              } }
+, { input="Craft Carrot Soup"                               , expect={ item=LCT.RECIPE.CARROT_SOUP                      } }
+, { input="Craft Chicken Breast"                            , expect={ item=LCT.RECIPE.CHICKEN_BREAST                   } }
+, { input="Craft Clarified Syrah Wine"                      , expect={ item=LCT.RECIPE.CLARIFIED_SYRAH_WINE             } }
+, { input="Craft Comely Wench Whiskey"                      , expect={ item=LCT.RECIPE.COMELY_WENCH_WHISKEY             } }
+, { input="Craft Cyrodilic Cornbread"                       , expect={ item=LCT.RECIPE.CYRODILIC_CORNBREAD              } }
 , { input="Craft Damage Health Poison IX"                   , expect={}                                                 }
 , { input="Craft Damage Magicka Poison IX"                  , expect={}                                                 }
 , { input="Craft Damage Stamina Poison IX"                  , expect={}                                                 }
@@ -67,42 +67,42 @@ COND_TEXT_FODDER = {
 , { input="Craft Elixir of Magicka"                         , expect={}                                                 }
 , { input="Craft Elixir of Ravage Magicka"                  , expect={}                                                 }
 , { input="Craft Elixir of Stamina"                         , expect={}                                                 }
-, { input="Craft Eltheric Hooch"                            , expect={}                                                 }
+, { input="Craft Eltheric Hooch"                            , expect={ item=LCT.RECIPE.ELTHERIC_HOOCH                   } }
 , { input="Craft Essence of Health"                         , expect={}                                                 }
 , { input="Craft Essence of Magicka"                        , expect={}                                                 }
 , { input="Craft Essence of Ravage Health"                  , expect={}                                                 }
 , { input="Craft Essence of Stamina"                        , expect={}                                                 }
 , { input="Craft Essence of Stamina: 0 / 1"              , expect={}                                                 }
-, { input="Craft Firsthold Fruit and Cheese Plate"          , expect={}                                                 }
-, { input="Craft Firsthold Fruit and Cheese Plate: 0 / 1", expect={}                                                 }
-, { input="Craft Fishy Stick"                               , expect={}                                                 }
-, { input="Craft Four-Eye Grog"                             , expect={}                                                 }
-, { input="Craft Garlic Pumpkin Seeds"                      , expect={}                                                 }
-, { input="Craft Ginger Wheat Beer"                         , expect={}                                                 }
-, { input="Craft Gods-Blind-Me"                             , expect={}                                                 }
-, { input="Craft Golden Lager"                              , expect={}                                                 }
-, { input="Craft Gossamer Mazte"                            , expect={}                                                 }
+, { input="Craft Firsthold Fruit and Cheese Plate"          , expect={ item=LCT.RECIPE.FIRSHOLD_FRUIT_AND_CHEESE_PLATE  } }
+, { input="Craft Firsthold Fruit and Cheese Plate: 0 / 1", expect={    item=LCT.RECIPE.FIRSHOLD_FRUIT_AND_CHEESE_PLATE  } }
+, { input="Craft Fishy Stick"                               , expect={ item=LCT.RECIPE.FISHY_STICK                      } }
+, { input="Craft Four-Eye Grog"                             , expect={ item=LCT.RECIPE.FOUR_EYE_GROG                    } }
+, { input="Craft Garlic Pumpkin Seeds"                      , expect={ item=LCT.RECIPE.GARLIC_PUMPKIN_SEEDS             } }
+, { input="Craft Ginger Wheat Beer"                         , expect={ item=LCT.RECIPE.GINGER_WHEAT_BEER                } }
+, { input="Craft Gods-Blind-Me"                             , expect={ item=LCT.RECIPE.GODS_BLIND_ME                    } }
+, { input="Craft Golden Lager"                              , expect={ item=LCT.RECIPE.GOLDEN_LAGER                     } }
+, { input="Craft Gossamer Mazte"                            , expect={ item=LCT.RECIPE.GOSSAMER_MAZTE                   } }
 , { input="Craft Grand Glyph of Health With Ta"             , expect={ potency=LCT.CONSUMABLE_MATERIAL.DERADO, essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Grand Glyph of Magicka With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.DERADO, essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Grand Glyph of Stamina With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.DERADO, essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
-, { input="Craft Grandpa's Bedtime Tonic"                   , expect={}                                                 }
-, { input="Craft Grape Preserves"                           , expect={}                                                 }
+, { input="Craft Grandpa's Bedtime Tonic"                   , expect={ item=LCT.RECIPE.GRANDPAS_BEDTIME_TONIC           } }
+, { input="Craft Grape Preserves"                           , expect={ item=LCT.RECIPE.GRAPE_PRESERVES                  } }
 , { input="Craft Greater Glyph of Health With Ta"           , expect={ potency=LCT.CONSUMABLE_MATERIAL.RERA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Greater Glyph of Magicka With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.RERA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA , bug={"es"}} }
 , { input="Craft Greater Glyph of Stamina With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.RERA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
-, { input="Craft Hagraven's Tonic"                          , expect={}                                                 }
-, { input="Craft Hare in Garlic Sauce"                      , expect={}                                                 }
-, { input="Craft Hearty Garlic Corn Chowder"                , expect={}                                                 }
-, { input="Craft Honey Rye"                                 , expect={}                                                 }
-, { input="Craft Jerall View Inn Carrot Cake"               , expect={}                                                 }
-, { input="Craft Lemon Flower Mazte"                        , expect={}                                                 }
-, { input="Craft Lilmoth Garlic Hagfish"                    , expect={}                                                 }
-, { input="Craft Mammoth Snout Pie"                         , expect={}                                                 }
-, { input="Craft Maormer Tea"                               , expect={}                                                 }
-, { input="Craft Markarth Mead"                             , expect={}                                                 }
-, { input="Craft Mazte"                                     , expect={}                                                 }
-, { input="Craft Mermaid Whiskey"                           , expect={}                                                 }
-, { input="Craft Millet-Stuffed Pork Loin"                  , expect={}                                                 }
+, { input="Craft Hagraven's Tonic"                          , expect={ item=LCT.RECIPE.HAGRAVENS_TONIC                  } }
+, { input="Craft Hare in Garlic Sauce"                      , expect={ item=LCT.RECIPE.HARE_IN_GARLIC_SAUCE             } }
+, { input="Craft Hearty Garlic Corn Chowder"                , expect={ item=LCT.RECIPE.HEARTY_GARLIC_CORN_CHOWDER       } }
+, { input="Craft Honey Rye"                                 , expect={ item=LCT.RECIPE.HONEY_RYE                        } }
+, { input="Craft Jerall View Inn Carrot Cake"               , expect={ item=LCT.RECIPE.JERALL_VIEW_INN_CARROT_CAKE      } }
+, { input="Craft Lemon Flower Mazte"                        , expect={ item=LCT.RECIPE.LEMON_FLOWER_MAZTE               } }
+, { input="Craft Lilmoth Garlic Hagfish"                    , expect={ item=LCT.RECIPE.LILMOTH_GARLIC_HAGFISH           } }
+, { input="Craft Mammoth Snout Pie"                         , expect={ item=LCT.RECIPE.MAMMOTH_SNOUT_PIE                } }
+, { input="Craft Maormer Tea"                               , expect={ item=LCT.RECIPE.MAOMER_TEA                       } }
+, { input="Craft Markarth Mead"                             , expect={ item=LCT.RECIPE.MARKARTH_MEAD                    } }
+, { input="Craft Mazte"                                     , expect={ item=LCT.RECIPE.MAZTE                            } }
+, { input="Craft Mermaid Whiskey"                           , expect={ item=LCT.RECIPE.MERMAID_WHISKEY                  } }
+, { input="Craft Millet-Stuffed Pork Loin"                  , expect={ item=LCT.RECIPE.MILLET_STUFFED_PORK_LOIN         } }
 , { input="Craft Minor Glyph of Health With Ta"             , expect={ potency=LCT.CONSUMABLE_MATERIAL.ODRA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Minor Glyph of Magicka With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.ODRA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Minor Glyph of Stamina With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.ODRA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
@@ -112,9 +112,9 @@ COND_TEXT_FODDER = {
 , { input="Craft Monumental Glyph of Health With Ta"        , expect={ potency=LCT.CONSUMABLE_MATERIAL.KURA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Monumental Glyph of Magicka With Ta"       , expect={ potency=LCT.CONSUMABLE_MATERIAL.KURA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Monumental Glyph of Stamina With Ta"       , expect={ potency=LCT.CONSUMABLE_MATERIAL.KURA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
-, { input="Craft Muthsera's Remorse"                        , expect={}                                                 }
-, { input="Craft Muthsera's Remorse: 0 / 1"              , expect={}                                                 }
-, { input="Craft Nibenese Garlic Carrots"                   , expect={}                                                 }
+, { input="Craft Muthsera's Remorse"                        , expect={ item=LCT.RECIPE.MUTHSERAS_REMORSE                } }
+, { input="Craft Muthsera's Remorse: 0 / 1"              , expect={    item=LCT.RECIPE.MUTHSERAS_REMORSE                } }
+, { input="Craft Nibenese Garlic Carrots"                   , expect={ item=LCT.RECIPE.NIBENESE_GARLIC_CARROTS          } }
 , { input="Craft Normal Ancestor Silk Breeches"             , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.ANCESTOR_SILK  } }
 , { input="Craft Normal Ancestor Silk Epaulets"             , expect={ item=LCT.ITEM.EPAULETS         , material=LCT.MATERIAL.ANCESTOR_SILK  } }
 , { input="Craft Normal Ancestor Silk Hat"                  , expect={ item=LCT.ITEM.HAT              , material=LCT.MATERIAL.ANCESTOR_SILK  } }
@@ -363,13 +363,13 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Yew Lightning Staff"                , expect={ item=LCT.ITEM.LIGHTNING_STAFF  , material=LCT.MATERIAL.YEW            } }
 , { input="Craft Normal Yew Restoration Staff"              , expect={ item=LCT.ITEM.RESTO_STAFF      , material=LCT.MATERIAL.YEW            } }
 , { input="Craft Normal Yew Shield"                         , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.YEW            } }
-, { input="Craft Nut Brown Ale"                             , expect={}                                                 }
-, { input="Craft Orcrest Garlic Apple Jelly"                , expect={}                                                 }
+, { input="Craft Nut Brown Ale"                             , expect={ item=LCT.RECIPE.NUT_BROWN_ALE                    } }
+, { input="Craft Orcrest Garlic Apple Jelly"                , expect={ item=LCT.RECIPE.ORCREST_GARLIC_APPLE_JELLY       } }
 , { input="Craft Panacea of Health"                         , expect={}                                                 }
 , { input="Craft Panacea of Magicka"                        , expect={}                                                 }
 , { input="Craft Panacea of Ravage Health"                  , expect={}                                                 }
 , { input="Craft Panacea of Stamina"                        , expect={}                                                 }
-, { input="Craft Pellitine Tomato Rice"                     , expect={}                                                 }
+, { input="Craft Pellitine Tomato Rice"                     , expect={ item=LCT.RECIPE.PELLETINE_TOMATO_RICE            } }
 , { input="Craft Petty Glyph of Health With Ta"             , expect={ potency=LCT.CONSUMABLE_MATERIAL.JERA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Petty Glyph of Magicka With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.JERA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Petty Glyph of Stamina With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.JERA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
@@ -377,11 +377,11 @@ COND_TEXT_FODDER = {
 , { input="Craft Potion of Magicka"                         , expect={}                                                 }
 , { input="Craft Potion of Ravage Health"                   , expect={}                                                 }
 , { input="Craft Potion of Stamina"                         , expect={}                                                 }
-, { input="Craft Red Rye Beer"                              , expect={}                                                 }
-, { input="Craft Redoran Peppered Melon"                    , expect={}                                                 }
-, { input="Craft Roast Corn"                                , expect={}                                                 }
-, { input="Craft Rye-in-Your-Eye"                           , expect={}                                                 }
-, { input="Craft Seaflower Tea"                             , expect={}                                                 }
+, { input="Craft Red Rye Beer"                              , expect={ item=LCT.RECIPE.RED_RYE_BEER                     } }
+, { input="Craft Redoran Peppered Melon"                    , expect={ item=LCT.RECIPE.REDORAN_PEPPERED_MELON           } }
+, { input="Craft Roast Corn"                                , expect={ item=LCT.RECIPE.ROAST_CORN                       } }
+, { input="Craft Rye-in-Your-Eye"                           , expect={ item=LCT.RECIPE.RYE_IN_YOUR_EYE                  } }
+, { input="Craft Seaflower Tea"                             , expect={ item=LCT.RECIPE.SEAFLOWER_TEA                    } }
 , { input="Craft Sip of Health"                             , expect={}                                                 }
 , { input="Craft Sip of Magicka"                            , expect={}                                                 }
 , { input="Craft Sip of Ravage Stamina"                     , expect={}                                                 }
@@ -390,11 +390,11 @@ COND_TEXT_FODDER = {
 , { input="Craft Solution of Health"                        , expect={}                                                 }
 , { input="Craft Solution of Magicka"                       , expect={}                                                 }
 , { input="Craft Solution of Stamina"                       , expect={}                                                 }
-, { input="Craft Sour Mash"                                 , expect={}                                                 }
+, { input="Craft Sour Mash"                                 , expect={ item=LCT.RECIPE.SOUR_MASH                        } }
 , { input="Craft Splendid Glyph of Health With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.REKURA, essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Splendid Glyph of Magicka With Ta"         , expect={ potency=LCT.CONSUMABLE_MATERIAL.REKURA, essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Splendid Glyph of Stamina With Ta"         , expect={ potency=LCT.CONSUMABLE_MATERIAL.REKURA, essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
-, { input="Craft Stormhold Baked Bananas"                   , expect={}                                                 }
+, { input="Craft Stormhold Baked Bananas"                   , expect={ item=LCT.RECIPE.STORMHOLD_BAKED_BANANAS          } }
 , { input="Craft Strong Glyph of Health With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.PORA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Strong Glyph of Magicka With Ta"           , expect={ potency=LCT.CONSUMABLE_MATERIAL.PORA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Strong Glyph of Stamina With Ta"           , expect={ potency=LCT.CONSUMABLE_MATERIAL.PORA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
@@ -402,13 +402,13 @@ COND_TEXT_FODDER = {
 , { input="Craft Superb Glyph of Magicka With Ta"           , expect={ potency=LCT.CONSUMABLE_MATERIAL.REJERA, essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Superb Glyph of Stamina With Ta"           , expect={ potency=LCT.CONSUMABLE_MATERIAL.REJERA, essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Superb Glyph of Stamina With Ta: 0 / 1" , expect={    potency=LCT.CONSUMABLE_MATERIAL.REJERA, essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
-, { input="Craft Surilie Syrah Wine"                        , expect={}                                                 }
+, { input="Craft Surilie Syrah Wine"                        , expect={ item=LCT.RECIPE.SURILIE_SYRAH_WINE               } }
 , { input="Craft Three Copper Rings"                        , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.COPPER         } }
 , { input="Craft Three Electrum Rings"                      , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.ELECTRUM       } }
 , { input="Craft Three Pewter Rings"                        , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.PEWTER         } }
 , { input="Craft Three Platinum Rings"                      , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.PLATINUM       } }
 , { input="Craft Three Silver Rings"                        , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.SILVER         } }
-, { input="Craft Treacleberry Tea"                          , expect={}                                                 }
+, { input="Craft Treacleberry Tea"                          , expect={ item=LCT.RECIPE.TREACLEBERRY_TEA                 } }
 , { input="Craft Trifling Glyph of Health With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.JORA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Trifling Glyph of Magicka With Ta"         , expect={ potency=LCT.CONSUMABLE_MATERIAL.JORA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Trifling Glyph of Stamina With Ta"         , expect={ potency=LCT.CONSUMABLE_MATERIAL.JORA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
@@ -417,10 +417,10 @@ COND_TEXT_FODDER = {
 , { input="Craft Two Pewter Necklaces"                      , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.PEWTER         } }
 , { input="Craft Two Platinum Necklaces"                    , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.PLATINUM       } }
 , { input="Craft Two Silver Necklaces"                      , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.SILVER         } }
-, { input="Craft Two-Zephyr Tea"                            , expect={}                                                 }
-, { input="Craft Venison Pasty"                             , expect={}                                                 }
-, { input="Craft West Weald Corn Chowder"                   , expect={}                                                 }
-, { input="Craft Whiterun Cheese-Baked Trout"               , expect={}                                                 }
+, { input="Craft Two-Zephyr Tea"                            , expect={ item=LCT.RECIPE.TWO_ZEPHYR_TEA                   } }
+, { input="Craft Venison Pasty"                             , expect={ item=LCT.RECIPE.VENISON_PASTY                    } }
+, { input="Craft West Weald Corn Chowder"                   , expect={ item=LCT.RECIPE.WEST_WEALD_CORN_CHOWDER          } }
+, { input="Craft Whiterun Cheese-Baked Trout"               , expect={ item=LCT.RECIPE.WHITERUN_CHEESE_BAKED_TROUT      } }
 , { input="Craft a Copper Necklace"                         , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.COPPER         } }
 , { input="Craft a Copper Ring"                             , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.COPPER         } }
 , { input="Craft a Pewter Necklace"                         , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.PEWTER         } }

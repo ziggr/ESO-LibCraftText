@@ -141,22 +141,22 @@ LibCraftText.RECIPE = {
 , ["BRETON_PORK_SAUSAGE"             ] = { name="bretonische Fleischwurst"              , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="Karottensuppe"                         , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="Hühnerbrust"                           , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
-, ["CLARIFIED_SYRAH_WINE"            ] = { name="klarer Syrahwein"                      , food_item_id=028409, recipe_list_index=  8, recipe_index=  7}
+, ["CLARIFIED_SYRAH_WINE"            ] = { name="klarer Syrahwein"                      , food_item_id=028409, recipe_list_index=  8, recipe_index=  7, name_2="klaren Syrahwein"}
 , ["COMELY_WENCH_WHISKEY"            ] = { name="Hübschmaidwhiskey"                     , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
 , ["CYRODILIC_CORNBREAD"             ] = { name="cyrodiilisches Maisbrot"               , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
-, ["ELTHERIC_HOOCH"                  ] = { name="eltherischer Fusel"                    , food_item_id=028417, recipe_list_index=  8, recipe_index= 13}
+, ["ELTHERIC_HOOCH"                  ] = { name="eltherischer Fusel"                    , food_item_id=028417, recipe_list_index=  8, recipe_index= 13, name_2="eltherischen Fusel"}
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="Ersthalt-Käseplatte mit Früchten"      , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="Fischstäbchen"                         , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
 , ["FOUR_EYE_GROG"                   ] = { name="Vieraugengrog"                         , food_item_id=033612, recipe_list_index=  8, recipe_index=  8}
 , ["GARLIC_PUMPKIN_SEEDS"            ] = { name="Kürbissamen mit Knoblauch"             , food_item_id=033490, recipe_list_index=  2, recipe_index= 14}
 , ["GINGER_WHEAT_BEER"               ] = { name="Ingwerbier"                            , food_item_id=033963, recipe_list_index=  8, recipe_index= 18}
-, ["GODS_BLIND_ME"                   ] = { name="Heiliger Strohsack"                    , food_item_id=028433, recipe_list_index=  8, recipe_index= 25}
+, ["GODS_BLIND_ME"                   ] = { name="Heiliger Strohsack"                    , food_item_id=028433, recipe_list_index=  8, recipe_index= 25, name_2="Heiligen Strohsack"}
 , ["GOLDEN_LAGER"                    ] = { name="Goldlager"                             , food_item_id=033933, recipe_list_index=  8, recipe_index=  3}
 , ["GOSSAMER_MAZTE"                  ] = { name="Gespinstmazte"                         , food_item_id=033957, recipe_list_index=  8, recipe_index= 15}
 , ["GRANDPAS_BEDTIME_TONIC"          ] = { name="Großvaters Nachttonikum"               , food_item_id=028444, recipe_list_index= 10, recipe_index= 31}
 , ["GRAPE_PRESERVES"                 ] = { name="Traubeneingemachtes"                   , food_item_id=033825, recipe_list_index=  2, recipe_index=  3}
 , ["HAGRAVENS_TONIC"                 ] = { name="Rabenvetteltonikum"                    , food_item_id=068263, recipe_list_index= 10, recipe_index= 42}
-, ["HARE_IN_GARLIC_SAUCE"            ] = { name="Hase in Knoblauchsoße"                 , food_item_id=033581, recipe_list_index=  1, recipe_index= 21}
+, ["HARE_IN_GARLIC_SAUCE"            ] = { name="Hase in Knoblauchsoße"                 , food_item_id=033581, recipe_list_index=  1, recipe_index= 21, name_2="Hasen in Knoblauchsoße"}
 , ["HEARTY_GARLIC_CORN_CHOWDER"      ] = { name="herzhafte Maissuppe mit Knoblauch"     , food_item_id=068239, recipe_list_index=  3, recipe_index= 40}
 , ["HONEY_RYE"                       ] = { name="Honigwhiskey"                          , food_item_id=028421, recipe_list_index=  8, recipe_index= 16}
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="Jerallblick-Karottenkuchen"            , food_item_id=033575, recipe_list_index=  3, recipe_index= 21}
@@ -165,7 +165,7 @@ LibCraftText.RECIPE = {
 , ["MAMMOTH_SNOUT_PIE"               ] = { name="Mammutrüsselpastete"                   , food_item_id=033903, recipe_list_index=  1, recipe_index= 25}
 , ["MAORMER_TEA"                     ] = { name="Maormertee"                            , food_item_id=028465, recipe_list_index=  9, recipe_index= 19}
 , ["MARKARTH_MEAD"                   ] = { name="Markarth-Met"                          , food_item_id=068257, recipe_list_index=  8, recipe_index= 42}
-, ["MAZTE"                           ] = { name="Mazte^msx"                             , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
+, ["MAZTE"                           ] = { name="Mazte"                                 , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
 , ["MERMAID_WHISKEY"                 ] = { name="Wassernixenwhiskey"                    , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
 , ["MILLET_STUFFED_PORK_LOIN"        ] = { name="gefüllte Schweinelende mit Hirse"      , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
 , ["MUTHSERAS_REMORSE"               ] = { name="Muthseras Reue"                        , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}

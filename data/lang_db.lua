@@ -5015,6 +5015,15 @@ LANG_DB = {
           ,   recipe_list_index = 8
           ,   recipe_index = 7
           }
+, [56900] = {
+              key = "$FOOD_028409B"
+          ,   en  = "Clarified Syrah Wine"
+          ,   de  = "klaren Syrahwein"
+          ,   fr  = "clairet de Syrah"
+          ,   es  = "vino aclarado de syrah"
+          ,   ru  = "очищенное вино сорта шираз"
+          ,   ja  = "シラーワインの蒸留酒"
+          }
 , [570] = {
               key = "$FOOD_028417"
           ,   en  = "Eltheric Hooch"
@@ -5025,6 +5034,15 @@ LANG_DB = {
           ,   ja  = "エルセリックの安酒"
           ,   recipe_list_index = 8
           ,   recipe_index = 13
+          }
+, [57000] = {
+              key = "$FOOD_028417B"
+          ,   en  = "Eltheric Hooch"
+          ,   de  = "eltherischen Fusel"
+          ,   fr  = "tord-boyau Elthérique"
+          ,   es  = "Licor eltérico"
+          ,   ru  = "самогон «Элтерический»"
+          ,   ja  = "エルセリックの安酒"
           }
 , [571] = {
               key = "$FOOD_028421"
@@ -5063,6 +5081,17 @@ LANG_DB = {
               key = "$FOOD_028433"
           ,   en  = "Gods-Blind-Me"
           ,   de  = "Heiliger Strohsack"
+          ,   fr  = "Les-Dieux-M'aveuglent"
+          ,   es  = "Vino Cegado-Por-Dioses"
+          ,   ru  = "«Боги, ослепите меня»"
+          ,   ja  = "ゴッズ・ブラインド・ミー"
+          ,   recipe_list_index = 8
+          ,   recipe_index = 25
+          }
+, [57400] = {
+              key = "$FOOD_028433B"
+          ,   en  = "Gods-Blind-Me"
+          ,   de  = "Heiligen Strohsack"
           ,   fr  = "Les-Dieux-M'aveuglent"
           ,   es  = "Vino Cegado-Por-Dioses"
           ,   ru  = "«Боги, ослепите меня»"
@@ -5202,6 +5231,17 @@ LANG_DB = {
           ,   recipe_list_index = 1
           ,   recipe_index = 21
           }
+, [58600] = {
+              key = "$FOOD_033581B"
+          ,   en  = "Hare in Garlic Sauce"
+          ,   de  = "Hasen in Knoblauchsoße"
+          ,   fr  = "lièvre à l'ail"
+          ,   es  = "Liebre en salsa de ajo"
+          ,   ru  = "заяц в чесночном соусе"
+          ,   ja  = "野兎のガーリックソース添え"
+          ,   recipe_list_index = 1
+          ,   recipe_index = 21
+          }
 , [587] = {
               key = "$FOOD_033587"
           ,   en  = "Stormhold Baked Bananas"
@@ -5249,7 +5289,7 @@ LANG_DB = {
 , [590] = {
               key = "$FOOD_033606"
           ,   en  = "Mazte"
-          ,   de  = "Mazte^msx"
+          ,   de  = "Mazte"
           ,   fr  = "mazté"
           ,   es  = "mazte"
           ,   ru  = "мацт"

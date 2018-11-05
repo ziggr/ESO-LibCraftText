@@ -141,22 +141,22 @@ LibCraftText.RECIPE = {
 , ["BRETON_PORK_SAUSAGE"             ] = { name=$FOOD_028342                            , food_item_id=028342, recipe_list_index=$FOOD_028342_RLI, recipe_index=$FOOD_028342_RI }
 , ["CARROT_SOUP"                     ] = { name=$FOOD_028321                            , food_item_id=028321, recipe_list_index=$FOOD_028321_RLI, recipe_index=$FOOD_028321_RI }
 , ["CHICKEN_BREAST"                  ] = { name=$FOOD_033819                            , food_item_id=033819, recipe_list_index=$FOOD_033819_RLI, recipe_index=$FOOD_033819_RI }
-, ["CLARIFIED_SYRAH_WINE"            ] = { name=$FOOD_028409                            , food_item_id=028409, recipe_list_index=$FOOD_028409_RLI, recipe_index=$FOOD_028409_RI }
+, ["CLARIFIED_SYRAH_WINE"            ] = { name=$FOOD_028409                            , food_item_id=028409, recipe_list_index=$FOOD_028409_RLI, recipe_index=$FOOD_028409_RI , name_2=$FOOD_028409B }
 , ["COMELY_WENCH_WHISKEY"            ] = { name=$FOOD_028402                            , food_item_id=028402, recipe_list_index=$FOOD_028402_RLI, recipe_index=$FOOD_028402_RI }
 , ["CYRODILIC_CORNBREAD"             ] = { name=$FOOD_033897                            , food_item_id=033897, recipe_list_index=$FOOD_033897_RLI, recipe_index=$FOOD_033897_RI }
-, ["ELTHERIC_HOOCH"                  ] = { name=$FOOD_028417                            , food_item_id=028417, recipe_list_index=$FOOD_028417_RLI, recipe_index=$FOOD_028417_RI }
+, ["ELTHERIC_HOOCH"                  ] = { name=$FOOD_028417                            , food_item_id=028417, recipe_list_index=$FOOD_028417_RLI, recipe_index=$FOOD_028417_RI , name_2=$FOOD_028417B }
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name=$FOOD_068236                            , food_item_id=068236, recipe_list_index=$FOOD_068236_RLI, recipe_index=$FOOD_068236_RI }
 , ["FISHY_STICK"                     ] = { name=$FOOD_033526                            , food_item_id=033526, recipe_list_index=$FOOD_033526_RLI, recipe_index=$FOOD_033526_RI }
 , ["FOUR_EYE_GROG"                   ] = { name=$FOOD_033612                            , food_item_id=033612, recipe_list_index=$FOOD_033612_RLI, recipe_index=$FOOD_033612_RI }
 , ["GARLIC_PUMPKIN_SEEDS"            ] = { name=$FOOD_033490                            , food_item_id=033490, recipe_list_index=$FOOD_033490_RLI, recipe_index=$FOOD_033490_RI }
 , ["GINGER_WHEAT_BEER"               ] = { name=$FOOD_033963                            , food_item_id=033963, recipe_list_index=$FOOD_033963_RLI, recipe_index=$FOOD_033963_RI }
-, ["GODS_BLIND_ME"                   ] = { name=$FOOD_028433                            , food_item_id=028433, recipe_list_index=$FOOD_028433_RLI, recipe_index=$FOOD_028433_RI }
+, ["GODS_BLIND_ME"                   ] = { name=$FOOD_028433                            , food_item_id=028433, recipe_list_index=$FOOD_028433_RLI, recipe_index=$FOOD_028433_RI , name_2=$FOOD_028433B }
 , ["GOLDEN_LAGER"                    ] = { name=$FOOD_033933                            , food_item_id=033933, recipe_list_index=$FOOD_033933_RLI, recipe_index=$FOOD_033933_RI }
 , ["GOSSAMER_MAZTE"                  ] = { name=$FOOD_033957                            , food_item_id=033957, recipe_list_index=$FOOD_033957_RLI, recipe_index=$FOOD_033957_RI }
 , ["GRANDPAS_BEDTIME_TONIC"          ] = { name=$FOOD_028444                            , food_item_id=028444, recipe_list_index=$FOOD_028444_RLI, recipe_index=$FOOD_028444_RI }
 , ["GRAPE_PRESERVES"                 ] = { name=$FOOD_033825                            , food_item_id=033825, recipe_list_index=$FOOD_033825_RLI, recipe_index=$FOOD_033825_RI }
 , ["HAGRAVENS_TONIC"                 ] = { name=$FOOD_068263                            , food_item_id=068263, recipe_list_index=$FOOD_068263_RLI, recipe_index=$FOOD_068263_RI }
-, ["HARE_IN_GARLIC_SAUCE"            ] = { name=$FOOD_033581                            , food_item_id=033581, recipe_list_index=$FOOD_033581_RLI, recipe_index=$FOOD_033581_RI }
+, ["HARE_IN_GARLIC_SAUCE"            ] = { name=$FOOD_033581                            , food_item_id=033581, recipe_list_index=$FOOD_033581_RLI, recipe_index=$FOOD_033581_RI , name_2=$FOOD_033581B }
 , ["HEARTY_GARLIC_CORN_CHOWDER"      ] = { name=$FOOD_068239                            , food_item_id=068239, recipe_list_index=$FOOD_068239_RLI, recipe_index=$FOOD_068239_RI }
 , ["HONEY_RYE"                       ] = { name=$FOOD_028421                            , food_item_id=028421, recipe_list_index=$FOOD_028421_RLI, recipe_index=$FOOD_028421_RI }
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name=$FOOD_033575                            , food_item_id=033575, recipe_list_index=$FOOD_033575_RLI, recipe_index=$FOOD_033575_RI }

@@ -141,22 +141,22 @@ LibCraftText.RECIPE = {
 , ["BRETON_PORK_SAUSAGE"             ] = { name="Breton Pork Sausage"                   , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="Carrot Soup"                           , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="Chicken Breast"                        , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
-, ["CLARIFIED_SYRAH_WINE"            ] = { name="Clarified Syrah Wine"                  , food_item_id=028409, recipe_list_index=  8, recipe_index=  7}
+, ["CLARIFIED_SYRAH_WINE"            ] = { name="Clarified Syrah Wine"                  , food_item_id=028409, recipe_list_index=  8, recipe_index=  7, name_2="Clarified Syrah Wine"}
 , ["COMELY_WENCH_WHISKEY"            ] = { name="Comely Wench Whiskey"                  , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
 , ["CYRODILIC_CORNBREAD"             ] = { name="Cyrodilic Cornbread"                   , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
-, ["ELTHERIC_HOOCH"                  ] = { name="Eltheric Hooch"                        , food_item_id=028417, recipe_list_index=  8, recipe_index= 13}
+, ["ELTHERIC_HOOCH"                  ] = { name="Eltheric Hooch"                        , food_item_id=028417, recipe_list_index=  8, recipe_index= 13, name_2="Eltheric Hooch"}
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="Firsthold Fruit and Cheese Plate"      , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="Fishy Stick"                           , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
 , ["FOUR_EYE_GROG"                   ] = { name="Four-Eye Grog"                         , food_item_id=033612, recipe_list_index=  8, recipe_index=  8}
 , ["GARLIC_PUMPKIN_SEEDS"            ] = { name="Garlic Pumpkin Seeds"                  , food_item_id=033490, recipe_list_index=  2, recipe_index= 14}
 , ["GINGER_WHEAT_BEER"               ] = { name="Ginger Wheat Beer"                     , food_item_id=033963, recipe_list_index=  8, recipe_index= 18}
-, ["GODS_BLIND_ME"                   ] = { name="Gods-Blind-Me"                         , food_item_id=028433, recipe_list_index=  8, recipe_index= 25}
+, ["GODS_BLIND_ME"                   ] = { name="Gods-Blind-Me"                         , food_item_id=028433, recipe_list_index=  8, recipe_index= 25, name_2="Gods-Blind-Me"}
 , ["GOLDEN_LAGER"                    ] = { name="Golden Lager"                          , food_item_id=033933, recipe_list_index=  8, recipe_index=  3}
 , ["GOSSAMER_MAZTE"                  ] = { name="Gossamer Mazte"                        , food_item_id=033957, recipe_list_index=  8, recipe_index= 15}
 , ["GRANDPAS_BEDTIME_TONIC"          ] = { name="Grandpa's Bedtime Tonic"               , food_item_id=028444, recipe_list_index= 10, recipe_index= 31}
 , ["GRAPE_PRESERVES"                 ] = { name="Grape Preserves"                       , food_item_id=033825, recipe_list_index=  2, recipe_index=  3}
 , ["HAGRAVENS_TONIC"                 ] = { name="Hagraven's Tonic"                      , food_item_id=068263, recipe_list_index= 10, recipe_index= 42}
-, ["HARE_IN_GARLIC_SAUCE"            ] = { name="Hare in Garlic Sauce"                  , food_item_id=033581, recipe_list_index=  1, recipe_index= 21}
+, ["HARE_IN_GARLIC_SAUCE"            ] = { name="Hare in Garlic Sauce"                  , food_item_id=033581, recipe_list_index=  1, recipe_index= 21, name_2="Hare in Garlic Sauce"}
 , ["HEARTY_GARLIC_CORN_CHOWDER"      ] = { name="Hearty Garlic Corn Chowder"            , food_item_id=068239, recipe_list_index=  3, recipe_index= 40}
 , ["HONEY_RYE"                       ] = { name="Honey Rye"                             , food_item_id=028421, recipe_list_index=  8, recipe_index= 16}
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="Jerall View Inn Carrot Cake"           , food_item_id=033575, recipe_list_index=  3, recipe_index= 21}

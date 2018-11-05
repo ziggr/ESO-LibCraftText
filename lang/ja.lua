@@ -141,22 +141,22 @@ LibCraftText.RECIPE = {
 , ["BRETON_PORK_SAUSAGE"             ] = { name="ブレトンのポークソーセージ"                         , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="ニンジンスープ"                               , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="鶏の胸肉"                                  , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
-, ["CLARIFIED_SYRAH_WINE"            ] = { name="シラーワインの蒸留酒"                            , food_item_id=028409, recipe_list_index=  8, recipe_index=  7}
+, ["CLARIFIED_SYRAH_WINE"            ] = { name="シラーワインの蒸留酒"                            , food_item_id=028409, recipe_list_index=  8, recipe_index=  7, name_2="シラーワインの蒸留酒"  }
 , ["COMELY_WENCH_WHISKEY"            ] = { name="カムリーウェンチ・ウイスキー"                        , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
 , ["CYRODILIC_CORNBREAD"             ] = { name="シロディールのコーンブレッド"                        , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
-, ["ELTHERIC_HOOCH"                  ] = { name="エルセリックの安酒"                             , food_item_id=028417, recipe_list_index=  8, recipe_index= 13}
+, ["ELTHERIC_HOOCH"                  ] = { name="エルセリックの安酒"                             , food_item_id=028417, recipe_list_index=  8, recipe_index= 13, name_2="エルセリックの安酒"   }
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="ファーストホールドの果実とチーズのプレート"                 , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="魚のフライ"                                 , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
 , ["FOUR_EYE_GROG"                   ] = { name="4つ目のグロッグ"                              , food_item_id=033612, recipe_list_index=  8, recipe_index=  8}
 , ["GARLIC_PUMPKIN_SEEDS"            ] = { name="カボチャの種のニンニク炒め"                         , food_item_id=033490, recipe_list_index=  2, recipe_index= 14}
 , ["GINGER_WHEAT_BEER"               ] = { name="ジンジャービール"                              , food_item_id=033963, recipe_list_index=  8, recipe_index= 18}
-, ["GODS_BLIND_ME"                   ] = { name="ゴッズ・ブラインド・ミー"                          , food_item_id=028433, recipe_list_index=  8, recipe_index= 25}
+, ["GODS_BLIND_ME"                   ] = { name="ゴッズ・ブラインド・ミー"                          , food_item_id=028433, recipe_list_index=  8, recipe_index= 25, name_2="ゴッズ・ブラインド・ミー"}
 , ["GOLDEN_LAGER"                    ] = { name="ゴールデンラガー"                              , food_item_id=033933, recipe_list_index=  8, recipe_index=  3}
 , ["GOSSAMER_MAZTE"                  ] = { name="手の込んだマッツェ"                             , food_item_id=033957, recipe_list_index=  8, recipe_index= 15}
 , ["GRANDPAS_BEDTIME_TONIC"          ] = { name="グランパのベッドタイム・トニック"                      , food_item_id=028444, recipe_list_index= 10, recipe_index= 31}
 , ["GRAPE_PRESERVES"                 ] = { name="ブドウのジャム"                               , food_item_id=033825, recipe_list_index=  2, recipe_index=  3}
 , ["HAGRAVENS_TONIC"                 ] = { name="ハグレイヴンのトニック"                           , food_item_id=068263, recipe_list_index= 10, recipe_index= 42}
-, ["HARE_IN_GARLIC_SAUCE"            ] = { name="野兎のガーリックソース添え"                         , food_item_id=033581, recipe_list_index=  1, recipe_index= 21}
+, ["HARE_IN_GARLIC_SAUCE"            ] = { name="野兎のガーリックソース添え"                         , food_item_id=033581, recipe_list_index=  1, recipe_index= 21, name_2="野兎のガーリックソース添え"}
 , ["HEARTY_GARLIC_CORN_CHOWDER"      ] = { name="ヘルシーなガーリックとコーンのチャウダー"                  , food_item_id=068239, recipe_list_index=  3, recipe_index= 40}
 , ["HONEY_RYE"                       ] = { name="ハニーライ・ウイスキー"                           , food_item_id=028421, recipe_list_index=  8, recipe_index= 16}
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="宿屋〈ジェラールビュー〉のニンジンケーキ"                  , food_item_id=033575, recipe_list_index=  3, recipe_index= 21}

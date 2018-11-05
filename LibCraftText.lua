@@ -298,12 +298,12 @@ end
 LibCraftText.RE_CONDITION_DAILY_RECIPE = {
     ["en"] = { "Craft ([^:]*)"
              }
-,   ["de"] = { "Stellt etwas (.*) her"
+,   ["de"] = { "Stellt [etwaseinige]+ (.*) her"
+             , "Stellt (.*) her"
              }
-,   ["fr"] = { "Préparez un (.*)"
+,   ["fr"] = { "Préparez [uneds]+ (.*)"
              --    "Fabriquez [uneds]+ (.*) en (.*) norm"
              -- , "Fabriquez un (.*) en ([^:]*)"
-             -- , "Fabriquez des (.*) en (.*) norm"
              -- , "Fabriquez deux (.*) en ([^:]*)"
              -- , "Fabriquez trois (.*) en ([^:]*)"
              -- , "Fabriquez [uneds]+ (.*) norm" -- MUST be after all "X en Y"
@@ -343,6 +343,17 @@ function LibCraftText.ParseDailyConditionProvisioning(cond_text)
                                  , self.RECIPE
                                  , { "name", "name_2" }
                                  )
+if not found_item then
+    ZZDEBUG=ZZDEBUG_ON
+    local found_item    = self.ParseRegexable(
+                                   nil
+                                 , cond_text
+                                 , self.RE_CONDITION_DAILY_RECIPE[lang]
+                                 , self.RECIPE
+                                 , { "name", "name_2" }
+                                 )
+    ZZDEBUG=ZZDEBUG_OFF
+end
     if found_item then
         return { item = found_item }
     end
@@ -446,8 +457,8 @@ function LibCraftText.ParseRegexableOneRE( crafting_type
     local _,_,g1 = string.find(cond_text, re)
     if not g1 then return nil end
     local cond_sub_str = g1
-ZZDEBUG(string.format("cond_sub_str:'%s'", cond_sub_str))
     cond_sub_str = cond_sub_str:lower()
+ZZDEBUG(string.format("cond_sub_str:'%s'", cond_sub_str))
     local exact_match = self.ExactMatch(cond_sub_str, result_list , crafting_type
                             , unpack(result_name_field_list))
     if exact_match then return exact_match end
@@ -503,7 +514,7 @@ function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ...
     for _,fieldname in pairs({ field_name, ... }) do
         if not fieldname then break end
         for _, row in pairs(rows) do
-            if crafting_type and (row.crafting_type == crafting_type) then
+            if row.crafting_type == crafting_type then
                 local name = row[fieldname]
                 if name then
                     name = self.escape_re(name:lower())
@@ -515,6 +526,12 @@ function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ...
 -- print(string.format("yep   find_me:'%s'  row:'%s'", find_me, name:lower()))
                         end
                     end
+-- if ZZDEBUG==ZZDEBUG_ON and not longest_match.row then
+-- print("want:"..find_me_lower.. " found:"..tostring(longest_match and longest_match.name))
+-- LibCraftText.hex_dump(find_me_lower)
+-- print("row:")
+-- LibCraftText.hex_dump(name:lower() or "")
+-- end
                 end
             end
         end
