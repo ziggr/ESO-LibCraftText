@@ -593,6 +593,7 @@ function ExportDB()
     for k,v in pairs(DB) do table.insert(keys,k) end
     table.sort(keys)
 
+
     local lang_db = {}
     for key_i, key in ipairs(keys) do
         local entry_hash = DB[key]
@@ -603,6 +604,14 @@ function ExportDB()
                 table.insert(entry_list, { lang, entry_hash[lang] })
             end
         end
+                        -- Include numeric recipe indexes after all the text.
+        local field_list = { "recipe_list_index", "recipe_index" }
+        for k,v in ipairs(field_list) do
+            if entry_hash[v] then
+                table.insert(entry_list, { v, entry_hash[v] })
+            end
+        end
+
         table.insert(lang_db, entry_list)
     end
     LANG_DB = lang_db
@@ -626,11 +635,19 @@ function WriteDB()
     for i,entry_list in ipairs(LANG_DB) do
         FILE:write(string.format("%s [%3d] = {\n", comma(i), i))
         for lang_i, kv in ipairs(entry_list) do
+                        -- Most values are strings, but we do have numeric
+                        -- values for recipe indexes because Zig really
+                        -- does not want to maitain all those numbers by hand.
+            local value = '"'..escape_quote(kv[2])..'"'
+            if type(kv[2]) == "number" then
+                value = tostring(kv[2])
+            end
+
             local key = '"'..kv[1]..'"'
-            FILE:write(string.format('          %s   %-3s = "%s"\n'
+            FILE:write(string.format('          %s   %-3s = %s\n'
                                     , comma(lang_i)
                                     , kv[1]
-                                    , escape_quote(kv[2])
+                                    , value
                                     ))
         end
         FILE:write("          }\n")
@@ -684,10 +701,26 @@ function ReplaceKeys(template_line, lang)
     local out_line = template_line
 
     local function lookup(key_padded)
-        local _,_,key,padding = key_padded:find("(%$[A-Z0-9_]+)(%s*)")
+        local _,_,key,padding = key_padded:find("(%$[A-Z0-9_%.]+)(%s*)")
         local repl_len = key:len()
         if padding then
             repl_len = repl_len + padding:len()
+        end
+
+                        -- Programmatic keys for numeric recipe indexes.
+                        -- Yeah, cramming recipe numbers into a text-processor
+                        -- lang_db is a gross hack. Blech.
+        local programmatic = { {"_RLI", "recipe_list_index"}
+                             , { "_RI", "recipe_index"     }
+                             }
+        for _,p in ipairs(programmatic) do
+            if key:find(p[1].."$") then
+                key = key:sub(1,key:len()-p[1]:len())
+                local lang_table = DB[key]
+                if not lang_table then return key end
+                local value = lang_table[p[2]]
+                return string.format("%3d",value)
+            end
         end
 
         local lang_table = DB[key]
