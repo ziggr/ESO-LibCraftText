@@ -87,7 +87,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Grandpa's Bedtime Tonic"                   , expect={}                                                 }
 , { input="Craft Grape Preserves"                           , expect={}                                                 }
 , { input="Craft Greater Glyph of Health With Ta"           , expect={ potency=LCT.CONSUMABLE_MATERIAL.RERA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
-, { input="Craft Greater Glyph of Magicka With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.RERA_BUG_ES  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO_BUG_ES, aspect=LCT.CONSUMABLE_MATERIAL.TA_BUG_ES } }
+, { input="Craft Greater Glyph of Magicka With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.RERA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA , bug={"es"}} }
 , { input="Craft Greater Glyph of Stamina With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.RERA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Hagraven's Tonic"                          , expect={}                                                 }
 , { input="Craft Hare in Garlic Sauce"                      , expect={}                                                 }

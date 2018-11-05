@@ -51,6 +51,18 @@ local CRAFTING_TYPE_TO_PARSE_FUNC = {
 , [jw] = LibCraftText.ParseDailyConditionEquipment
 }
 function TestGen.OneTest(input_en, expect)
+                        -- Skip lines with bugs in the current language
+    if expect.bug then
+        local lang = LibCraftText.CurrLang()
+        for _,bug_lang in ipairs(expect.bug) do
+            if bug_lang == lang then return end
+        end
+                        -- help assertEquals ignore our "bug" field.
+        local expect2 = table.shallow_copy(expect)
+        expect2.bug = nil
+        expect = expect2
+    end
+
                         -- Skip lines I've not filled in yet.
                         -- We need that crafting_type.
                         --
