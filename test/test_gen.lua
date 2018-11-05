@@ -84,7 +84,7 @@ function TestGen.OneTest(input_en, expect)
     if expect.solvent then
         crafting_type = al
     end
-    if expect.recipe then
+    if expect.item and expect.item.food_item_id then
         crafting_type = pr
     end
     if not crafting_type then return end

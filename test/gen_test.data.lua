@@ -39,7 +39,7 @@ COND_TEXT_FODDER = {
 , { input="Acquire Water Hyacinth"                          , expect={ material=LCT.CONSUMABLE_MATERIAL.WATER_HYACINTH  } }
 , { input="Acquire Wormwood"                                , expect={ material=LCT.CONSUMABLE_MATERIAL.WORMWOOD        } }
 , { input="Brewers and Cooks Can Provide Recipes"           , expect={}                                                 }
-, { input="Craft Aetherial Tea"                             , expect={ item=LCT.ITEM.AETHERIAL_TEA_NOTYET                      } }
+, { input="Craft Aetherial Tea"                             , expect={ item=LCT.RECIPE.AETHERIAL_TEA                    } }
 , { input="Craft Alik'r Beets with Goat Cheese"             , expect={}                                                 }
 , { input="Craft Baked Apples"                              , expect={}                                                 }
 , { input="Craft Baked Potato"                              , expect={}                                                 }

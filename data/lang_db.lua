@@ -5235,6 +5235,17 @@ LANG_DB = {
           ,   recipe_list_index = 9
           ,   recipe_index = 31
           }
+, [58900] = {
+              key = "$FOOD_033602B"
+          ,   en  = "Aetherial Tea"
+          ,   de  = "Ätherischen Tee"
+          ,   fr  = "thé éthérien"
+          ,   es  = "té aeterio"
+          ,   ru  = "этерический чай"
+          ,   ja  = "エセリアルティー"
+          ,   recipe_list_index = 9
+          ,   recipe_index = 31
+          }
 , [590] = {
               key = "$FOOD_033606"
           ,   en  = "Mazte"

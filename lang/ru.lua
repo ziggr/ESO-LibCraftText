@@ -129,7 +129,7 @@ LibCraftText.ITEM = {
 -- recipe_index     API value for GetRecipeResultItemInfo() and others
 --
 LibCraftText.RECIPE = {
-  ["AETHERIAL_TEA"                   ] = { name="этерический чай"                       , food_item_id=033602, recipe_list_index=  9, recipe_index= 31}
+  ["AETHERIAL_TEA"                   ] = { name="этерический чай"                       , food_item_id=033602, recipe_list_index=  9, recipe_index= 31, name_2="этерический чай"}
 , ["ALIKR_BEETS_WITH_GOAT_CHEESE"    ] = { name="алик'рская свекла с козьим сыром"      , food_item_id=028338, recipe_list_index=  3, recipe_index= 13}
 , ["BAKED_APPLES"                    ] = { name="печеные яблоки"                        , food_item_id=033837, recipe_list_index=  2, recipe_index=  1}
 , ["BAKED_POTATO"                    ] = { name="печеный картофель"                     , food_item_id=028354, recipe_list_index=  3, recipe_index=  2}

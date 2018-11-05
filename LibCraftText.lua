@@ -227,9 +227,13 @@ function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
         return self.ParseDailyConditionGlyph(cond_text)
     end
                         -- Provisioning Recpies
+    if crafting_type == pr then
+        return self.ParseDailyConditionProvisioning(cond_text)
+    end
+
                         -- Alchemy Potions/Poisons
-    local craft_item = self.ParseConsumableItem(crafting_type, cond_text)
-    if craft_item then return craft_item end
+    -- local craft_item = self.ParseConsumableItem(crafting_type, cond_text)
+    -- if craft_item then return craft_item end
 
     return nil
 end
@@ -256,32 +260,87 @@ function LibCraftText.ParseConsumableAcquireMat(crafting_type, cond_text)
     return nil
 end
 
-LibCraftText.RE_CONDITION_CONSUMABLE_ITEM = {
+
+-- LibCraftText.RE_CONDITION_CONSUMABLE_ITEM = {
+--     ["en"] = { "Craft ([^:]*)"
+--              }
+-- ,   ["de"] = { "Besorgt ([^:]*)"
+--              , "Beschafft ([^:]*)"
+--              }
+-- ,   ["fr"] = { "Acquérez ([^:]*)"
+--              , "Acquérir ([^:]*)"
+--              }
+-- ,   ["ru"] = { "Раздобыть — ([^:]*)"
+--              , "Добыть ([^:]*)"
+--              , "Достать ([^:]*)"
+--              }
+-- ,   ["es"] = { "Adquiere ([^:]*)"
+--              }
+-- ,   ["ja"] = { "(.*)を手に入れる" }
+-- }
+
+-- function LibCraftText.ParseConsumableItem(crafting_type, cond_text)
+--     local self          = LibCraftText
+--     local lang          = self.CurrLang()
+--     local found_item    = self.ParseRegexable(
+--                                    crafting_type
+--                                  , cond_text
+--                                  , self.RE_CONDITION_CONSUMABLE_ITEM[lang]
+--                                  , self.ITEM
+--                                  , { "name", "name_2" }
+--                                  )
+--     if found_item then
+--         return { item = found_item }
+--     end
+--     return nil
+-- end
+
+LibCraftText.RE_CONDITION_DAILY_RECIPE = {
     ["en"] = { "Craft ([^:]*)"
              }
-,   ["de"] = { "Besorgt ([^:]*)"
-             , "Beschafft ([^:]*)"
+,   ["de"] = { "Stellt etwas (.*) her"
              }
-,   ["fr"] = { "Acquérez ([^:]*)"
-             , "Acquérir ([^:]*)"
+,   ["fr"] = { "Préparez un (.*)"
+             --    "Fabriquez [uneds]+ (.*) en (.*) norm"
+             -- , "Fabriquez un (.*) en ([^:]*)"
+             -- , "Fabriquez des (.*) en (.*) norm"
+             -- , "Fabriquez deux (.*) en ([^:]*)"
+             -- , "Fabriquez trois (.*) en ([^:]*)"
+             -- , "Fabriquez [uneds]+ (.*) norm" -- MUST be after all "X en Y"
+             --                                  -- regexes to keep preposition
+             --                                  -- "en" out of matitem.
+             -- , "Fabriquez un (.*) d'([^:]*)"
              }
-,   ["ru"] = { "Раздобыть — ([^:]*)"
-             , "Добыть ([^:]*)"
-             , "Достать ([^:]*)"
+,   ["ru"] = { "Создать — (.*)"
+             --    "Craft Normal ([^:]*)"
+             -- , "Craft a ([^:]*)"
+             -- , "Craft two ([^:]*)"
+             -- , "Craft three ([^:]*)"
              }
-,   ["es"] = { "Adquiere ([^:]*)"
+,   ["es"] = { "Preparæ (.*)"
+             --    "Fabrica [unaos]+ (.*) norm"
+             -- , "Fabrica [unaos]+ (.*) de (.*) norm"
+             -- , "Fabrica un (.*) de ([^:]*)"
+             -- , "Fabrica dos (.*) de ([^:]*)"
+             -- , "Fabrica tres (.*) de ([^:]*)"
              }
-,   ["ja"] = { "(.*)を手に入れる" }
+,   ["ja"] = { "(.*)を生産する"
+             --    "(.*)%(ノーマル%)を生産する"
+             -- , "(.*)の(.*)%(ノーマル%)を生産する"
+             -- , "(.*)の(.*)を作る"
+             -- , "(.*)を2個作る"
+             -- , "(.*)を3個作る"
+             }
 }
 
-function LibCraftText.ParseConsumableItem(crafting_type, cond_text)
+function LibCraftText.ParseDailyConditionProvisioning(cond_text)
     local self          = LibCraftText
     local lang          = self.CurrLang()
     local found_item    = self.ParseRegexable(
-                                   crafting_type
+                                   nil
                                  , cond_text
-                                 , self.RE_CONDITION_CONSUMABLE_ITEM[lang]
-                                 , self.ITEM
+                                 , self.RE_CONDITION_DAILY_RECIPE[lang]
+                                 , self.RECIPE
                                  , { "name", "name_2" }
                                  )
     if found_item then
@@ -289,6 +348,7 @@ function LibCraftText.ParseConsumableItem(crafting_type, cond_text)
     end
     return nil
 end
+
 
 LibCraftText.RE_POTENCY = {
     en = { "Craft (.*) Glyph of" }
@@ -443,7 +503,7 @@ function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ...
     for _,fieldname in pairs({ field_name, ... }) do
         if not fieldname then break end
         for _, row in pairs(rows) do
-            if row.crafting_type == crafting_type then
+            if crafting_type and (row.crafting_type == crafting_type) then
                 local name = row[fieldname]
                 if name then
                     name = self.escape_re(name:lower())
