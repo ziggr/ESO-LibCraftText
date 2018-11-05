@@ -297,7 +297,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["ITADE"                   ] = { name="Itade"                          , crafting_type=en, item_id= 68340 }
 
 , ["DEKEIPA"                 ] = { name="Dekeïpa"                        , crafting_type=en, item_id= 45839 , name_2="givré"         }
-, ["DENI"                    ] = { name="Deni"                           , crafting_type=en, item_id= 45833 , name_2="vigoureux"     }
+, ["DENI"                    ] = { name="Deni"                           , crafting_type=en, item_id= 45833 , name_2="vigoureux"    , name_3="Vigueur"        }
 , ["DENIMA"                  ] = { name="Denima"                         , crafting_type=en, item_id= 45836 , name_2="revigorant"    }
 , ["DETERI"                  ] = { name="Deteri"                         , crafting_type=en, item_id= 45842 , name_2="robuste"       }
 , ["HAOKO"                   ] = { name="Haoko"                          , crafting_type=en, item_id= 45841 , name_2="odieux"        }
@@ -308,7 +308,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["MAKKO"                   ] = { name="Makko"                          , crafting_type=en, item_id= 45832 , name_2="magique"      , name_3="magie"          }
 , ["MAKKOMA"                 ] = { name="Makkoma"                        , crafting_type=en, item_id= 45835 , name_2="régénérant"    }
 , ["MEIP"                    ] = { name="Méip"                           , crafting_type=en, item_id= 45840 , name_2="étourdissant"  }
-, ["OKO"                     ] = { name="Oko"                            , crafting_type=en, item_id= 45831 , name_2="vital"         }
+, ["OKO"                     ] = { name="Oko"                            , crafting_type=en, item_id= 45831 , name_2="vital"        , name_3="Santé"          }
 , ["OKOMA"                   ] = { name="Okoma"                          , crafting_type=en, item_id= 45834 , name_2="revivifiant"   }
 , ["OKORI"                   ] = { name="Okori"                          , crafting_type=en, item_id= 45843 , name_2="de dégâts d'arme"}
 , ["ORU"                     ] = { name="Oru"                            , crafting_type=en, item_id= 45846 , name_2="de l'alchimiste"}

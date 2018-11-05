@@ -86,9 +86,9 @@ COND_TEXT_FODDER = {
 , { input="Craft Grand Glyph of Stamina With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.DERADO, essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Grandpa's Bedtime Tonic"                   , expect={}                                                 }
 , { input="Craft Grape Preserves"                           , expect={}                                                 }
-, { input="Craft Greater Glyph of Health With Ta"           , expect={}                                                 }
-, { input="Craft Greater Glyph of Magicka With Ta"          , expect={}                                                 }
-, { input="Craft Greater Glyph of Stamina With Ta"          , expect={}                                                 }
+, { input="Craft Greater Glyph of Health With Ta"           , expect={ potency=LCT.CONSUMABLE_MATERIAL.RERA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Greater Glyph of Magicka With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.RERA_BUG_ES  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO_BUG_ES, aspect=LCT.CONSUMABLE_MATERIAL.TA_BUG_ES } }
+, { input="Craft Greater Glyph of Stamina With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.RERA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Hagraven's Tonic"                          , expect={}                                                 }
 , { input="Craft Hare in Garlic Sauce"                      , expect={}                                                 }
 , { input="Craft Hearty Garlic Corn Chowder"                , expect={}                                                 }
@@ -102,14 +102,14 @@ COND_TEXT_FODDER = {
 , { input="Craft Mazte"                                     , expect={}                                                 }
 , { input="Craft Mermaid Whiskey"                           , expect={}                                                 }
 , { input="Craft Millet-Stuffed Pork Loin"                  , expect={}                                                 }
-, { input="Craft Minor Glyph of Health With Ta"             , expect={}                                                 }
-, { input="Craft Minor Glyph of Magicka With Ta"            , expect={}                                                 }
-, { input="Craft Minor Glyph of Stamina With Ta"            , expect={}                                                 }
-, { input="Craft Moderate Glyph of Health With Ta"          , expect={}                                                 }
-, { input="Craft Moderate Glyph of Magicka With Ta"         , expect={}                                                 }
-, { input="Craft Monumental Glyph of Health With Ta"        , expect={}                                                 }
-, { input="Craft Monumental Glyph of Magicka With Ta"       , expect={}                                                 }
-, { input="Craft Monumental Glyph of Stamina With Ta"       , expect={}                                                 }
+, { input="Craft Minor Glyph of Health With Ta"             , expect={ potency=LCT.CONSUMABLE_MATERIAL.ODRA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Minor Glyph of Magicka With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.ODRA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Minor Glyph of Stamina With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.ODRA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Moderate Glyph of Health With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.EDORA , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Moderate Glyph of Magicka With Ta"         , expect={ potency=LCT.CONSUMABLE_MATERIAL.EDORA , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Monumental Glyph of Health With Ta"        , expect={ potency=LCT.CONSUMABLE_MATERIAL.KURA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Monumental Glyph of Magicka With Ta"       , expect={ potency=LCT.CONSUMABLE_MATERIAL.KURA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Monumental Glyph of Stamina With Ta"       , expect={ potency=LCT.CONSUMABLE_MATERIAL.KURA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Muthsera's Remorse"                        , expect={}                                                 }
 , { input="Craft Muthsera's Remorse: 0 / 1"              , expect={}                                                 }
 , { input="Craft Nibenese Garlic Carrots"                   , expect={}                                                 }
@@ -361,9 +361,9 @@ COND_TEXT_FODDER = {
 , { input="Craft Panacea of Ravage Health"                  , expect={}                                                 }
 , { input="Craft Panacea of Stamina"                        , expect={}                                                 }
 , { input="Craft Pellitine Tomato Rice"                     , expect={}                                                 }
-, { input="Craft Petty Glyph of Health With Ta"             , expect={}                                                 }
-, { input="Craft Petty Glyph of Magicka With Ta"            , expect={}                                                 }
-, { input="Craft Petty Glyph of Stamina With Ta"            , expect={}                                                 }
+, { input="Craft Petty Glyph of Health With Ta"             , expect={ potency=LCT.CONSUMABLE_MATERIAL.JERA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Petty Glyph of Magicka With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.JERA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Petty Glyph of Stamina With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.JERA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Potion of Health"                          , expect={}                                                 }
 , { input="Craft Potion of Magicka"                         , expect={}                                                 }
 , { input="Craft Potion of Ravage Health"                   , expect={}                                                 }
@@ -381,17 +381,17 @@ COND_TEXT_FODDER = {
 , { input="Craft Solution of Magicka"                       , expect={}                                                 }
 , { input="Craft Solution of Stamina"                       , expect={}                                                 }
 , { input="Craft Sour Mash"                                 , expect={}                                                 }
-, { input="Craft Splendid Glyph of Health With Ta"          , expect={}                                                 }
-, { input="Craft Splendid Glyph of Magicka With Ta"         , expect={}                                                 }
-, { input="Craft Splendid Glyph of Stamina With Ta"         , expect={}                                                 }
+, { input="Craft Splendid Glyph of Health With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.REKURA, essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Splendid Glyph of Magicka With Ta"         , expect={ potency=LCT.CONSUMABLE_MATERIAL.REKURA, essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Splendid Glyph of Stamina With Ta"         , expect={ potency=LCT.CONSUMABLE_MATERIAL.REKURA, essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Stormhold Baked Bananas"                   , expect={}                                                 }
-, { input="Craft Strong Glyph of Health With Ta"            , expect={}                                                 }
-, { input="Craft Strong Glyph of Magicka With Ta"           , expect={}                                                 }
-, { input="Craft Strong Glyph of Stamina With Ta"           , expect={}                                                 }
-, { input="Craft Superb Glyph of Health With Ta"            , expect={}                                                 }
-, { input="Craft Superb Glyph of Magicka With Ta"           , expect={}                                                 }
-, { input="Craft Superb Glyph of Stamina With Ta"           , expect={}                                                 }
-, { input="Craft Superb Glyph of Stamina With Ta: 0 / 1" , expect={}                                                 }
+, { input="Craft Strong Glyph of Health With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.PORA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Strong Glyph of Magicka With Ta"           , expect={ potency=LCT.CONSUMABLE_MATERIAL.PORA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Strong Glyph of Stamina With Ta"           , expect={ potency=LCT.CONSUMABLE_MATERIAL.PORA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Superb Glyph of Health With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.REJERA, essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Superb Glyph of Magicka With Ta"           , expect={ potency=LCT.CONSUMABLE_MATERIAL.REJERA, essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Superb Glyph of Stamina With Ta"           , expect={ potency=LCT.CONSUMABLE_MATERIAL.REJERA, essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Superb Glyph of Stamina With Ta: 0 / 1" , expect={    potency=LCT.CONSUMABLE_MATERIAL.REJERA, essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Surilie Syrah Wine"                        , expect={}                                                 }
 , { input="Craft Three Copper Rings"                        , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.COPPER         } }
 , { input="Craft Three Electrum Rings"                      , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.ELECTRUM       } }
@@ -399,9 +399,9 @@ COND_TEXT_FODDER = {
 , { input="Craft Three Platinum Rings"                      , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.PLATINUM       } }
 , { input="Craft Three Silver Rings"                        , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.SILVER         } }
 , { input="Craft Treacleberry Tea"                          , expect={}                                                 }
-, { input="Craft Trifling Glyph of Health With Ta"          , expect={}                                                 }
-, { input="Craft Trifling Glyph of Magicka With Ta"         , expect={}                                                 }
-, { input="Craft Trifling Glyph of Stamina With Ta"         , expect={}                                                 }
+, { input="Craft Trifling Glyph of Health With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.JORA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Trifling Glyph of Magicka With Ta"         , expect={ potency=LCT.CONSUMABLE_MATERIAL.JORA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Trifling Glyph of Stamina With Ta"         , expect={ potency=LCT.CONSUMABLE_MATERIAL.JORA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Two Copper Necklaces"                      , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.COPPER         } }
 , { input="Craft Two Electrum Necklaces"                    , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.ELECTRUM       } }
 , { input="Craft Two Pewter Necklaces"                      , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.PEWTER         } }

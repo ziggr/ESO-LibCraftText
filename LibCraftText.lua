@@ -1,5 +1,9 @@
 LibCraftText = {}
 
+local function ZZDEBUG_ON(msg) print(msg) end
+local function ZZDEBUG_OFF(msg) end
+local ZZDEBUG = ZZDEBUG_OFF
+
 -- Daily Crafting Writ Quests ------------------------------------------------
 
 -- Return CRAFTING_TYPE_BLACKSMITHING for "Blacksmithing Writ" and so on.
@@ -310,8 +314,6 @@ LibCraftText.RE_ESSENCE = {
 ,   ja = { "グリフ ?%((.*)%)"}
 }
 
---ターの至高のグリフ(体力)を生産する
-
 function LibCraftText.ParseDailyConditionGlyph(cond_text)
     local self = LibCraftText
     local m    = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
@@ -348,16 +350,6 @@ function LibCraftText.ParseDailyConditionGlyph(cond_text)
     if not (potency or essence) then
         return nil
     end
--- if not (potency and essence) then
--- print("cond_text:")
--- self.hex_dump(cond_text)
--- for _,re in pairs(self.RE_ESSENCE[lang]) do
---     print("re")
---     self.hex_dump(re)
--- end
--- print("gurifu?")
--- print(cond_text:find("グリフ"))
--- end
     return { ["potency"] = potency
            , ["essence"] = essence
            , ["aspect" ] = m.TA
@@ -366,22 +358,35 @@ end
 
 function LibCraftText.ParseRegexable( crafting_type
                                     , cond_text
-                                    , re_list_list
+                                    , re_list
                                     , result_list
                                     , result_name_field_list
                                     )
     if not cond_text then return nil end
     local self              = LibCraftText
-    local cond_sub_str      = nil
-    for _,re in ipairs(re_list_list) do
-        _,_,g1 = string.find(cond_text, re)
-        if g1 then
-            cond_sub_str = g1
-            break
-        end
+    for _,re in ipairs(re_list) do
+        local match = self.ParseRegexableOneRE( crafting_type
+                                         , cond_text
+                                         , re
+                                         , result_list
+                                         , result_name_field_list
+                                         )
+        if match then return match end
     end
-    if not cond_sub_str then return nil end
+    return nil
+end
 
+function LibCraftText.ParseRegexableOneRE( crafting_type
+                                         , cond_text
+                                         , re
+                                         , result_list
+                                         , result_name_field_list
+                                         )
+    local self   = LibCraftText
+    local _,_,g1 = string.find(cond_text, re)
+    if not g1 then return nil end
+    local cond_sub_str = g1
+ZZDEBUG(string.format("cond_sub_str:'%s'", cond_sub_str))
     cond_sub_str = cond_sub_str:lower()
     local exact_match = self.ExactMatch(cond_sub_str, result_list , crafting_type
                             , unpack(result_name_field_list))
@@ -416,7 +421,6 @@ end
 
 
 -- Internal Utility ----------------------------------------------------------
-
 
 local DE_UMLAUT = { ["ä"] = "a"
                   , ["ö"] = "o"
@@ -514,7 +518,6 @@ LibCraftText.CRAFTING_TYPES = {
 , CRAFTING_TYPE_JEWELRYCRAFTING
 }
 
-
                         -- Convert hyphen-carrying FR French "épine-de-dragon"
                         -- into something that can we can successfully pass
                         -- as a search expression to string.find().
@@ -523,7 +526,6 @@ function LibCraftText.escape_re(t)
     r       = r:gsub("-" ,"%%-" )
     return r
 end
-
 
 -- To help see surprise unicode chars like non-breaking-space.
 -- Copied from http://lua-users.org/wiki/HexDump

@@ -297,7 +297,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["ITADE"                   ] = { name="Itade"                          , crafting_type=en, item_id= 68340 }
 
 , ["DEKEIPA"                 ] = { name="Dekeipa"                        , crafting_type=en, item_id= 45839 , name_2="frost"         }
-, ["DENI"                    ] = { name="Deni"                           , crafting_type=en, item_id= 45833 , name_2="stamina"       }
+, ["DENI"                    ] = { name="Deni"                           , crafting_type=en, item_id= 45833 , name_2="stamina"      , name_3="stamina"        }
 , ["DENIMA"                  ] = { name="Denima"                         , crafting_type=en, item_id= 45836 , name_2="stamina recovery"}
 , ["DETERI"                  ] = { name="Deteri"                         , crafting_type=en, item_id= 45842 , name_2="hardening"     }
 , ["HAOKO"                   ] = { name="Haoko"                          , crafting_type=en, item_id= 45841 , name_2="foulness"      }
@@ -308,7 +308,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["MAKKO"                   ] = { name="Makko"                          , crafting_type=en, item_id= 45832 , name_2="magicka"      , name_3="magicka"        }
 , ["MAKKOMA"                 ] = { name="Makkoma"                        , crafting_type=en, item_id= 45835 , name_2="magicka recovery"}
 , ["MEIP"                    ] = { name="Meip"                           , crafting_type=en, item_id= 45840 , name_2="shock"         }
-, ["OKO"                     ] = { name="Oko"                            , crafting_type=en, item_id= 45831 , name_2="health"        }
+, ["OKO"                     ] = { name="Oko"                            , crafting_type=en, item_id= 45831 , name_2="health"       , name_3="health"         }
 , ["OKOMA"                   ] = { name="Okoma"                          , crafting_type=en, item_id= 45834 , name_2="health recovery"}
 , ["OKORI"                   ] = { name="Okori"                          , crafting_type=en, item_id= 45843 , name_2="weapon damage" }
 , ["ORU"                     ] = { name="Oru"                            , crafting_type=en, item_id= 45846 , name_2="potion boost"  }

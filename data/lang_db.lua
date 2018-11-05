@@ -4606,6 +4606,16 @@ LANG_DB = {
           ,   ru  = "health"
           ,   ja  = "体力"
           }
+, [5180] = {
+              key = "$ESSENCE_045831B"
+          ,   en  = "health"
+          ,   de  = "lebens"
+          ,   fr  = "Santé"
+          ,   es  = "vida"
+          ,   it  = "health"
+          ,   ru  = "health"
+          ,   ja  = "体力"
+          }
 , [519] = {
               key = "$ESSENCE_045832"
           ,   en  = "magicka"
@@ -4629,6 +4639,16 @@ LANG_DB = {
           ,   en  = "stamina"
           ,   de  = "ausdauer"
           ,   fr  = "vigoureux"
+          ,   es  = "aguante"
+          ,   it  = "stamina"
+          ,   ru  = "stamina"
+          ,   ja  = "スタミナ"
+          }
+, [5210] = {
+              key = "$ESSENCE_045833B"
+          ,   en  = "stamina"
+          ,   de  = "ausdauer"
+          ,   fr  = "Vigueur"
           ,   es  = "aguante"
           ,   it  = "stamina"
           ,   ru  = "stamina"

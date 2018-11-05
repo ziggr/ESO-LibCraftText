@@ -57,3 +57,47 @@ ES Spanish has the same bug.
           ,   ru  = "Craft Normal Kresh Sash"
           ,   ja  = "クレッシュのサッシュ(ノーマル)を生産する"
           }
+
+
+ES enchanting rank 6 uses RERA (EN:Greater, ES:superior), but asks for DERADO (EN:grand ES:grande)
+ES enchanting rank 7 has no translation. falls back to EN English.
+, [300] = {
+              key = "$DAILY_COND_EN_06_04"
+          ,   en  = "Craft Greater Glyph of Magicka With Ta"
+          ,   de  = "Stellt mit einer Ta-Rune eine hervorragende Glyphe der Magicka her"
+          ,   fr  = "Fabriquez un glyphe majeur magique avec Ta"
+          ,   es  = "Fabrica un glifo grande de magia con Ta"
+          ,   ja  = "ターの希少なグリフ(マジカ)を生産する"
+          }
+, [303] = {
+              key = "$DAILY_COND_EN_07_01"
+          ,   en  = "Craft Grand Glyph of Magicka With Ta"
+          ,   de  = "Stellt mit einer Ta-Rune eine gewaltige Glyphe der Magicka her"
+          ,   fr  = "Fabriquez un glyphe de Magie grandiose avec Ta"
+          ,   it  = "Craft Grand Glyph of Magicka"
+          ,   ja  = "ターの至高のグリフ(マジカ)を生産する"
+          }
+
+, [925] = {
+              key = "$POTENCY_045813"
+          ,   en  = "greater"
+          ,   de  = "hervorragende"
+          ,   fr  = "majeur"
+          ,   es  = "superior"
+          ,   it  = "glifo of health"
+          ,   ru  = "greater"
+          ,   ja  = "希少"
+          }
+, [926] = {
+              key = "$POTENCY_045814"
+          ,   en  = "grand"
+          ,   de  = "gewaltige"
+          ,   fr  = "grandiose"
+          ,   es  = "grande"
+          ,   it  = "glifo of health"
+          ,   ru  = "grand"
+          ,   ja  = "至高"
+          }
+
+ES enchanting rank
+Craft Greater Glyph of Magicka With Ta/Fabrica un glifo grande de magia con Ta

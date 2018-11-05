@@ -297,7 +297,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["ITADE"                   ] = { name="イタデ"                            , crafting_type=en, item_id= 68340 }
 
 , ["DEKEIPA"                 ] = { name="デケイパ"                           , crafting_type=en, item_id= 45839 , name_2="氷結"            }
-, ["DENI"                    ] = { name="デニ"                             , crafting_type=en, item_id= 45833 , name_2="スタミナ"          }
+, ["DENI"                    ] = { name="デニ"                             , crafting_type=en, item_id= 45833 , name_2="スタミナ"         , name_3="スタミナ"           }
 , ["DENIMA"                  ] = { name="デニマ"                            , crafting_type=en, item_id= 45836 , name_2="スタミナ再生"        }
 , ["DETERI"                  ] = { name="デテリ"                            , crafting_type=en, item_id= 45842 , name_2="硬化"            }
 , ["HAOKO"                   ] = { name="ハオコ"                            , crafting_type=en, item_id= 45841 , name_2="不浄"            }
@@ -308,7 +308,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["MAKKO"                   ] = { name="マッコ"                            , crafting_type=en, item_id= 45832 , name_2="マジカ"          , name_3="マジカ"            }
 , ["MAKKOMA"                 ] = { name="マッコマ"                           , crafting_type=en, item_id= 45835 , name_2="マジカ再生"         }
 , ["MEIP"                    ] = { name="メイプ"                            , crafting_type=en, item_id= 45840 , name_2="雷撃"            }
-, ["OKO"                     ] = { name="オコ"                             , crafting_type=en, item_id= 45831 , name_2="体力"            }
+, ["OKO"                     ] = { name="オコ"                             , crafting_type=en, item_id= 45831 , name_2="体力"           , name_3="体力"             }
 , ["OKOMA"                   ] = { name="オコマ"                            , crafting_type=en, item_id= 45834 , name_2="体力再生"          }
 , ["OKORI"                   ] = { name="オコリ"                            , crafting_type=en, item_id= 45843 , name_2="武器強化"          }
 , ["ORU"                     ] = { name="オル"                             , crafting_type=en, item_id= 45846 , name_2="薬品強化"          }
