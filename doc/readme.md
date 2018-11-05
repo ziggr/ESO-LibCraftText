@@ -29,7 +29,7 @@ Daily
 - Occasionally check SavedVariables to see if you collected all 7 languages
 
 Takes about an hour to scan 10 alts x 7 languages using `/lct scan` + `/lct lang` separately:
-```
+```text
 2018-11-03 08:39:45 -0700 start
 2018-11-03 08:52:16 -0700 `/logout` alt-one 12min/2alts = 6min/alt
 2018-11-03 08:58:52 -0700 alt-two 18min/3alts = 6min/alt
@@ -44,6 +44,31 @@ Takes about an hour to scan 10 alts x 7 languages using `/lct scan` + `/lct lang
 ...
 2018-11-03 10:10:32 -0700 make gentest passes, lang_db.lua scrubbed. ~90min
 ```
+
+
+
+How long with just `/lct abandon`, `/lct scanlang` ? Copy `lct scanlang` to clipboard, type `/` then CTRL+V Enter.
+
+```text
+2018-11-05 06:58:58 -0800 start
+2018-11-05 07:01:25 -0800 /logout hammer-meets-thumb
+2018-11-05 07:04:31 -0800 /logout alt-one
+2018-11-05 07:06:56 -0800 /logout alt-two 7min/3alts=2-3min/alt
+2018-11-05 07:09:26 -0800
+2018-11-05 07:11:47 -0800 /logout alt-four
+2018-11-05 07:14:09 -0800
+2018-11-05 07:16:31 -0800 /logout alt-six
+2018-11-05 07:18:49 -0800 
+2018-11-05 07:21:05 -0800 /logout alt-eight
+2018-11-05 07:23:21 -0800 /logout alt-nine. Done.
+
+2018-11-05 07:24:15 -0800 make getpts
+2018-11-05 07:25:01 -0800 make lang test gentest passes
+
+So about 30 minutes now that I'm practiced and more smoothly automated.
+```
+
+
 
 ## Alinor
 

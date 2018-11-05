@@ -47,6 +47,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Barley Nectar"                             , expect={}                                                 }
 , { input="Craft Battaglir Chowder"                         , expect={}                                                 }
 , { input="Craft Bitterlemon Tea"                           , expect={}                                                 }
+, { input="Craft Blue Road Marathon"                        , expect={}                                                 }
 , { input="Craft Bog-Iron Ale"                              , expect={}                                                 }
 , { input="Craft Breton Pork Sausage"                       , expect={}                                                 }
 , { input="Craft Carrot Soup"                               , expect={}                                                 }
@@ -107,6 +108,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Minor Glyph of Stamina With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.ODRA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Moderate Glyph of Health With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.EDORA , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Moderate Glyph of Magicka With Ta"         , expect={ potency=LCT.CONSUMABLE_MATERIAL.EDORA , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Moderate Glyph of Stamina With Ta"         , expect={}                                                 }
 , { input="Craft Monumental Glyph of Health With Ta"        , expect={ potency=LCT.CONSUMABLE_MATERIAL.KURA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Monumental Glyph of Magicka With Ta"       , expect={ potency=LCT.CONSUMABLE_MATERIAL.KURA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Monumental Glyph of Stamina With Ta"       , expect={ potency=LCT.CONSUMABLE_MATERIAL.KURA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
@@ -156,9 +158,12 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Cotton Sash"                        , expect={ item=LCT.ITEM.SASH             , material=LCT.MATERIAL.COTTON         } }
 , { input="Craft Normal Cotton Shoes"                       , expect={ item=LCT.ITEM.SHOES            , material=LCT.MATERIAL.COTTON         } }
 , { input="Craft Normal Dwarven Cuirass"                    , expect={ item=LCT.ITEM.CUIRASS          , material=LCT.MATERIAL.DWARVEN        } }
+, { input="Craft Normal Dwarven Dagger"                     , expect={}                                                 }
 , { input="Craft Normal Dwarven Gauntlets"                  , expect={ item=LCT.ITEM.GAUNTLETS        , material=LCT.MATERIAL.DWARVEN        } }
 , { input="Craft Normal Dwarven Greatsword"                 , expect={ item=LCT.ITEM.H2_GREATSWORD    , material=LCT.MATERIAL.DWARVEN        } }
 , { input="Craft Normal Dwarven Greaves"                    , expect={ item=LCT.ITEM.GREAVES          , material=LCT.MATERIAL.DWARVEN        } }
+, { input="Craft Normal Dwarven Helm"                       , expect={}                                                 }
+, { input="Craft Normal Dwarven Pauldrons"                  , expect={}                                                 }
 , { input="Craft Normal Dwarven Sabatons"                   , expect={ item=LCT.ITEM.SABATONS         , material=LCT.MATERIAL.DWARVEN        } }
 , { input="Craft Normal Dwarven Sword"                      , expect={ item=LCT.ITEM.H1_SWORD         , material=LCT.MATERIAL.DWARVEN        } }
 , { input="Craft Normal Ebonthread Breeches"                , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.EBONTHREAD     } }
@@ -179,6 +184,9 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Fell Arm Cops"                      , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.FELL_HIDE      } }
 , { input="Craft Normal Fell Bracers"                       , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.FELL_HIDE      } }
 , { input="Craft Normal Fell Helmet"                        , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.FELL_HIDE      } }
+, { input="Craft Normal Full-Leather Arm Cops"              , expect={}                                                 }
+, { input="Craft Normal Full-Leather Bracers"               , expect={}                                                 }
+, { input="Craft Normal Full-Leather Helmet"                , expect={}                                                 }
 , { input="Craft Normal Galatite Cuirass"                   , expect={ item=LCT.ITEM.CUIRASS          , material=LCT.MATERIAL.GALATITE       } }
 , { input="Craft Normal Galatite Dagger"                    , expect={ item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.GALATITE       } }
 , { input="Craft Normal Galatite Gauntlets"                 , expect={ item=LCT.ITEM.GAUNTLETS        , material=LCT.MATERIAL.GALATITE       } }
@@ -188,6 +196,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Galatite Pauldron"                  , expect={ item=LCT.ITEM.PAULDRON         , material=LCT.MATERIAL.GALATITE       } }
 , { input="Craft Normal Galatite Sabatons"                  , expect={ item=LCT.ITEM.SABATONS         , material=LCT.MATERIAL.GALATITE       } }
 , { input="Craft Normal Galatite Sword"                     , expect={ item=LCT.ITEM.H1_SWORD         , material=LCT.MATERIAL.GALATITE       } }
+, { input="Craft Normal Hickory Bow"                        , expect={}                                                 }
 , { input="Craft Normal Hickory Ice Staff"                  , expect={ item=LCT.ITEM.ICE_STAFF        , material=LCT.MATERIAL.HICKORY        } }
 , { input="Craft Normal Hickory Inferno Staff"              , expect={ item=LCT.ITEM.INFERNO_STAFF    , material=LCT.MATERIAL.HICKORY        } }
 , { input="Craft Normal Hickory Lightning Staff"            , expect={ item=LCT.ITEM.LIGHTNING_STAFF  , material=LCT.MATERIAL.HICKORY        } }
@@ -377,6 +386,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Sip of Magicka"                            , expect={}                                                 }
 , { input="Craft Sip of Ravage Stamina"                     , expect={}                                                 }
 , { input="Craft Sip of Stamina"                            , expect={}                                                 }
+, { input="Craft Skyrim Jazbay Crostata"                    , expect={}                                                 }
 , { input="Craft Solution of Health"                        , expect={}                                                 }
 , { input="Craft Solution of Magicka"                       , expect={}                                                 }
 , { input="Craft Solution of Stamina"                       , expect={}                                                 }
@@ -421,5 +431,7 @@ COND_TEXT_FODDER = {
 , { input="Craft a Platinum Ring: 0 / 1"                 , expect={    item=LCT.ITEM.RING           , material=LCT.MATERIAL.PLATINUM       } }
 , { input="Craft a Silver Necklace"                         , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.SILVER         } }
 , { input="Craft a Silver Ring"                             , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.SILVER         } }
+, { input="Craft an Electrum Necklace"                      , expect={}                                                 }
+, { input="Craft an Electrum Ring"                          , expect={}                                                 }
 , { input="Deliver Goods to Nearest Writ Quartermaster"     , expect={}                                                 }
 }

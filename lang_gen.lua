@@ -529,12 +529,13 @@ function ImportSavedVars()
         if table then
             for item_id, lang_table in pairs(table) do
                 local key = string.format(key_pattern, item_id)
-                DB[key] = DB[key] or {}
-                local entry = DB[key]
-                entry.key = key
-                for lang,text in pairs(lang_table) do
-                    entry[lang] = Decaret(text)
-                end
+                ImportSavedVarLangTable(entry, key)
+                -- DB[key] = DB[key] or {}
+                -- local entry = DB[key]
+                -- entry.key = key
+                -- for lang,text in pairs(lang_table) do
+                --     entry[lang] = Decaret(text)
+                -- end
             end
         end
     end
@@ -555,10 +556,10 @@ function split(str,sep)
     return ret
 end
 
-function ImportSavedVarLangTable(lang_table)
-    if not lang_table and lang_table.en then return end
+function ImportSavedVarLangTable(lang_table, key_override)
+    if not (lang_table and lang_table.en) then return end
 
-    local key = lang_table.key or EN_KEYS[lang_table.en]
+    local key = key_override or lang_table.key or EN_KEYS[lang_table.en]
     if not key then
         Warn("SavedVars: unknown string '"..tostring(lang_table.en).."'")
         return
