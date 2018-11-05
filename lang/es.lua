@@ -129,63 +129,63 @@ LibCraftText.ITEM = {
 -- recipe_index     API value for GetRecipeResultItemInfo() and others
 --
 LibCraftText.RECIPE = {
-  ["AETHERIAL_TEA"                   ] = { name="té aeterio^m"                          , food_item_id=033602, recipe_list_index=  9, recipe_index= 31}
-, ["ALIKR_BEETS_WITH_GOAT_CHEESE"    ] = { name="remolachas de Alik'r con queso de cabra^pf", food_item_id=028338, recipe_list_index=  3, recipe_index= 13}
-, ["BAKED_APPLES"                    ] = { name="manzanas asadas^pf"                    , food_item_id=033837, recipe_list_index=  2, recipe_index=  1}
-, ["BAKED_POTATO"                    ] = { name="patata asada^f"                        , food_item_id=028354, recipe_list_index=  3, recipe_index=  2}
-, ["BANANA_SURPRISE"                 ] = { name="plátano sorpresa^m"                    , food_item_id=028281, recipe_list_index=  2, recipe_index=  2}
-, ["BARLEY_NECTAR"                   ] = { name="néctar de cebada^m"                    , food_item_id=033624, recipe_list_index=  8, recipe_index= 14}
+  ["AETHERIAL_TEA"                   ] = { name="té aeterio"                            , food_item_id=033602, recipe_list_index=  9, recipe_index= 31}
+, ["ALIKR_BEETS_WITH_GOAT_CHEESE"    ] = { name="remolachas de Alik'r con queso de cabra", food_item_id=028338, recipe_list_index=  3, recipe_index= 13}
+, ["BAKED_APPLES"                    ] = { name="manzanas asadas"                       , food_item_id=033837, recipe_list_index=  2, recipe_index=  1}
+, ["BAKED_POTATO"                    ] = { name="patata asada"                          , food_item_id=028354, recipe_list_index=  3, recipe_index=  2}
+, ["BANANA_SURPRISE"                 ] = { name="plátano sorpresa"                      , food_item_id=028281, recipe_list_index=  2, recipe_index=  2}
+, ["BARLEY_NECTAR"                   ] = { name="néctar de cebada"                      , food_item_id=033624, recipe_list_index=  8, recipe_index= 14}
 , ["BATTAGLIR_CHOWDER"               ] = { name="Crema de marisco con battaglir"        , food_item_id=028394, recipe_list_index=  3, recipe_index= 15}
 , ["BITTERLEMON_TEA"                 ] = { name="Té de limón amargo"                    , food_item_id=028457, recipe_list_index=  9, recipe_index= 13}
 , ["BOG_IRON_ALE"                    ] = { name="cerveza del Pantano de Hierro"         , food_item_id=028405, recipe_list_index=  8, recipe_index=  4}
 , ["BRETON_PORK_SAUSAGE"             ] = { name="Salchicha de cerdo bretona"            , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="Sopa de zanahoria"                     , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
-, ["CHICKEN_BREAST"                  ] = { name="pechuga de pollo^f"                    , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
-, ["CLARIFIED_SYRAH_WINE"            ] = { name="vino aclarado de syrah^m"              , food_item_id=028409, recipe_list_index=  8, recipe_index=  7}
-, ["COMELY_WENCH_WHISKEY"            ] = { name="whisky de la doncella encantadora^m"   , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
-, ["CYRODILIC_CORNBREAD"             ] = { name="pan de maíz cyrodílico^m"              , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
+, ["CHICKEN_BREAST"                  ] = { name="pechuga de pollo"                      , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
+, ["CLARIFIED_SYRAH_WINE"            ] = { name="vino aclarado de syrah"                , food_item_id=028409, recipe_list_index=  8, recipe_index=  7}
+, ["COMELY_WENCH_WHISKEY"            ] = { name="whisky de la doncella encantadora"     , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
+, ["CYRODILIC_CORNBREAD"             ] = { name="pan de maíz cyrodílico"                , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
 , ["ELTHERIC_HOOCH"                  ] = { name="Licor eltérico"                        , food_item_id=028417, recipe_list_index=  8, recipe_index= 13}
-, ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="plato de frutas y queso de Primada^m"  , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
+, ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="plato de frutas y queso de Primada"    , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="Palitos de pescado"                    , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
-, ["FOUR_EYE_GROG"                   ] = { name="grog cuatro-ojos^m"                    , food_item_id=033612, recipe_list_index=  8, recipe_index=  8}
-, ["GARLIC_PUMPKIN_SEEDS"            ] = { name="semillas de calabaza con ajo^pf"       , food_item_id=033490, recipe_list_index=  2, recipe_index= 14}
+, ["FOUR_EYE_GROG"                   ] = { name="grog cuatro-ojos"                      , food_item_id=033612, recipe_list_index=  8, recipe_index=  8}
+, ["GARLIC_PUMPKIN_SEEDS"            ] = { name="semillas de calabaza con ajo"          , food_item_id=033490, recipe_list_index=  2, recipe_index= 14}
 , ["GINGER_WHEAT_BEER"               ] = { name="Cerveza de trigo y jengibre"           , food_item_id=033963, recipe_list_index=  8, recipe_index= 18}
 , ["GODS_BLIND_ME"                   ] = { name="Vino Cegado-Por-Dioses"                , food_item_id=028433, recipe_list_index=  8, recipe_index= 25}
 , ["GOLDEN_LAGER"                    ] = { name="Cerveza rubia dorada"                  , food_item_id=033933, recipe_list_index=  8, recipe_index=  3}
 , ["GOSSAMER_MAZTE"                  ] = { name="Mazte sedoso"                          , food_item_id=033957, recipe_list_index=  8, recipe_index= 15}
-, ["GRANDPAS_BEDTIME_TONIC"          ] = { name="tónico de dormir del abuelo^m"         , food_item_id=028444, recipe_list_index= 10, recipe_index= 31}
-, ["GRAPE_PRESERVES"                 ] = { name="conserva de uvas^f"                    , food_item_id=033825, recipe_list_index=  2, recipe_index=  3}
-, ["HAGRAVENS_TONIC"                 ] = { name="tónico de bruja cuervo^m"              , food_item_id=068263, recipe_list_index= 10, recipe_index= 42}
+, ["GRANDPAS_BEDTIME_TONIC"          ] = { name="tónico de dormir del abuelo"           , food_item_id=028444, recipe_list_index= 10, recipe_index= 31}
+, ["GRAPE_PRESERVES"                 ] = { name="conserva de uvas"                      , food_item_id=033825, recipe_list_index=  2, recipe_index=  3}
+, ["HAGRAVENS_TONIC"                 ] = { name="tónico de bruja cuervo"                , food_item_id=068263, recipe_list_index= 10, recipe_index= 42}
 , ["HARE_IN_GARLIC_SAUCE"            ] = { name="Liebre en salsa de ajo"                , food_item_id=033581, recipe_list_index=  1, recipe_index= 21}
-, ["HEARTY_GARLIC_CORN_CHOWDER"      ] = { name="caldo espeso de maíz y ajo^m"          , food_item_id=068239, recipe_list_index=  3, recipe_index= 40}
-, ["HONEY_RYE"                       ] = { name="centeno meloso^m"                      , food_item_id=028421, recipe_list_index=  8, recipe_index= 16}
+, ["HEARTY_GARLIC_CORN_CHOWDER"      ] = { name="caldo espeso de maíz y ajo"            , food_item_id=068239, recipe_list_index=  3, recipe_index= 40}
+, ["HONEY_RYE"                       ] = { name="centeno meloso"                        , food_item_id=028421, recipe_list_index=  8, recipe_index= 16}
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="Pastel de zanahoria \"El Paisaje de Jerall\"", food_item_id=033575, recipe_list_index=  3, recipe_index= 21}
 , ["LEMON_FLOWER_MAZTE"              ] = { name="Mazte de azahar"                       , food_item_id=033945, recipe_list_index=  8, recipe_index=  9}
-, ["LILMOTH_GARLIC_HAGFISH"          ] = { name="pez bruja al ajo de Lilmoth^m"         , food_item_id=068235, recipe_list_index=  1, recipe_index= 42}
-, ["MAMMOTH_SNOUT_PIE"               ] = { name="pastel de trompa de mamut^m"           , food_item_id=033903, recipe_list_index=  1, recipe_index= 25}
+, ["LILMOTH_GARLIC_HAGFISH"          ] = { name="pez bruja al ajo de Lilmoth"           , food_item_id=068235, recipe_list_index=  1, recipe_index= 42}
+, ["MAMMOTH_SNOUT_PIE"               ] = { name="pastel de trompa de mamut"             , food_item_id=033903, recipe_list_index=  1, recipe_index= 25}
 , ["MAORMER_TEA"                     ] = { name="Té maormer"                            , food_item_id=028465, recipe_list_index=  9, recipe_index= 19}
-, ["MARKARTH_MEAD"                   ] = { name="aguamiel de Markarth^f"                , food_item_id=068257, recipe_list_index=  8, recipe_index= 42}
-, ["MAZTE"                           ] = { name="mazte^m"                               , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
-, ["MERMAID_WHISKEY"                 ] = { name="whisky de sirena^m"                    , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
-, ["MILLET_STUFFED_PORK_LOIN"        ] = { name="lomo de cerdo relleno de mijo^m"       , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
-, ["MUTHSERAS_REMORSE"               ] = { name="remordimiento de muthsera^m"           , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}
-, ["NIBENESE_GARLIC_CARROTS"         ] = { name="zanahorias al ajo a la nibenesa^pf"    , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
-, ["NUT_BROWN_ALE"                   ] = { name="cerveza negra con avellanas^f"         , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
-, ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="jalea de manzana y ajo de Orcelia^f"   , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
+, ["MARKARTH_MEAD"                   ] = { name="aguamiel de Markarth"                  , food_item_id=068257, recipe_list_index=  8, recipe_index= 42}
+, ["MAZTE"                           ] = { name="mazte"                                 , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
+, ["MERMAID_WHISKEY"                 ] = { name="whisky de sirena"                      , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
+, ["MILLET_STUFFED_PORK_LOIN"        ] = { name="lomo de cerdo relleno de mijo"         , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
+, ["MUTHSERAS_REMORSE"               ] = { name="remordimiento de muthsera"             , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}
+, ["NIBENESE_GARLIC_CARROTS"         ] = { name="zanahorias al ajo a la nibenesa"       , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
+, ["NUT_BROWN_ALE"                   ] = { name="cerveza negra con avellanas"           , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
+, ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="jalea de manzana y ajo de Orcelia"     , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
 , ["PELLITINE_TOMATO_RICE"           ] = { name="Arroz con tomate Pellitine"            , food_item_id=042814, recipe_list_index=  2, recipe_index= 13}
-, ["RED_RYE_BEER"                    ] = { name="cerveza roja de centeno^f"             , food_item_id=033600, recipe_list_index=  8, recipe_index=  2}
+, ["RED_RYE_BEER"                    ] = { name="cerveza roja de centeno"               , food_item_id=033600, recipe_list_index=  8, recipe_index=  2}
 , ["REDORAN_PEPPERED_MELON"          ] = { name="Melón a la pimienta Redoran"           , food_item_id=033552, recipe_list_index=  2, recipe_index= 15}
 , ["ROAST_CORN"                      ] = { name="maíz tostado"                          , food_item_id=033813, recipe_list_index=  3, recipe_index=  3}
-, ["RYE_IN_YOUR_EYE"                 ] = { name="cente-no en la cara^m"                 , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
+, ["RYE_IN_YOUR_EYE"                 ] = { name="cente-no en la cara"                   , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="Té de flor marina"                     , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SOUR_MASH"                       ] = { name="Malta agria"                           , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
-, ["STORMHOLD_BAKED_BANANAS"         ] = { name="plátanos asados de Fuertormenta^pm"    , food_item_id=033587, recipe_list_index=  2, recipe_index= 21}
-, ["SURILIE_SYRAH_WINE"              ] = { name="vino de syrah de los Surilie^m"        , food_item_id=033939, recipe_list_index=  8, recipe_index=  6}
-, ["TREACLEBERRY_TEA"                ] = { name="té de bayamelaza^m"                    , food_item_id=033672, recipe_list_index=  9, recipe_index= 14}
-, ["TWO_ZEPHYR_TEA"                  ] = { name="té de Dos-Céfiros^m"                   , food_item_id=028473, recipe_list_index=  9, recipe_index= 25}
+, ["STORMHOLD_BAKED_BANANAS"         ] = { name="plátanos asados de Fuertormenta"       , food_item_id=033587, recipe_list_index=  2, recipe_index= 21}
+, ["SURILIE_SYRAH_WINE"              ] = { name="vino de syrah de los Surilie"          , food_item_id=033939, recipe_list_index=  8, recipe_index=  6}
+, ["TREACLEBERRY_TEA"                ] = { name="té de bayamelaza"                      , food_item_id=033672, recipe_list_index=  9, recipe_index= 14}
+, ["TWO_ZEPHYR_TEA"                  ] = { name="té de Dos-Céfiros"                     , food_item_id=028473, recipe_list_index=  9, recipe_index= 25}
 , ["VENISON_PASTY"                   ] = { name="Empanada de venado"                    , food_item_id=028398, recipe_list_index=  1, recipe_index= 15}
-, ["WEST_WEALD_CORN_CHOWDER"         ] = { name="caldo de maíz del Bosque Occidental^m" , food_item_id=032160, recipe_list_index=  3, recipe_index= 31}
-, ["WHITERUN_CHEESE_BAKED_TROUT"     ] = { name="trucha gratinada de Carrera Blanca^f"  , food_item_id=033484, recipe_list_index=  1, recipe_index= 14}
+, ["WEST_WEALD_CORN_CHOWDER"         ] = { name="caldo de maíz del Bosque Occidental"   , food_item_id=032160, recipe_list_index=  3, recipe_index= 31}
+, ["WHITERUN_CHEESE_BAKED_TROUT"     ] = { name="trucha gratinada de Carrera Blanca"    , food_item_id=033484, recipe_list_index=  1, recipe_index= 14}
 }
 
 

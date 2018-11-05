@@ -1085,7 +1085,7 @@ function LibCraftText.DiscoverRecipes()
             local recipe_ct = rl_info[2]
             for recipe_i = 1,recipe_ct do
                 local food_info = {GetRecipeResultItemInfo(rl_index, recipe_i)}
-                local food_name = food_info[1]
+                local food_name = Decaret(food_info[1])
                 if food_name then
                     seen_recipe_ct = seen_recipe_ct + 1
                 end
@@ -1119,7 +1119,6 @@ function LibCraftText.DiscoverRecipes()
             end
         end
     end
-
                         -- For ALL languages, collect food names.
                         -- Assumes that you
     local recorded_ct = 0
@@ -1129,14 +1128,13 @@ function LibCraftText.DiscoverRecipes()
                                                   , recipe.recipe_index
                                                   )}
         local food_name     = food_info[1]
-        recipe.name[lang]   = food_name
+        recipe.name[lang]   = Decaret(food_name)
         recorded_ct         = recorded_ct + 1
     end
     if recorded_ct <= 0 then
         Error("Cannot scan recipes. Start in EN English.")
     end
 end
-
 
 function LibCraftText.RegisterCraftingStationListener()
     EVENT_MANAGER:RegisterForEvent(
