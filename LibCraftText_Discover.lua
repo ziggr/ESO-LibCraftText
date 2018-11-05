@@ -123,6 +123,7 @@ function LibCraftText.Discover()
     -- LibCraftText.DiscoverTraits()
     -- LibCraftText.DiscoverSets()
     -- LibCraftText.DiscoverMotifs()
+    LibCraftText.DiscoverRecipes()
     LibCraftText.RegisterCraftingStationListener()
 end
 
@@ -142,6 +143,7 @@ function LibCraftText.Forget()
                    , "alliance"
                    , "consumable_materials"
                    , "scanned_lang"
+                   , "recipes"
                    }
     for _,field in ipairs(fields) do
         -- LibCraftText.saved_var [field] = nil  Uncomment only when you really need to.
@@ -983,8 +985,158 @@ function LibCraftText.DiscoverMotifs()
             motifs[0][lang] = b
         end
     end
-
 end
+
+                        -- I don't want to store 2339 (!) recipe names, in 7
+                        -- different languagess. That will make SavedVariables
+                        -- huge, probably megabytes huge. Just store the few
+                        -- dozen recipe names that we actually want.
+
+local RECIPE_NAMES_EN = {
+  "Aetherial Tea"                   -- 9 31
+, "Alik'r Beets with Goat Cheese"   -- 3 13
+, "Baked Apples"
+, "Baked Potato"
+, "Banana Surprise"
+, "Barley Nectar"
+, "Battaglir Chowder"
+, "Bitterlemon Tea"
+, "Bog-Iron Ale"
+, "Breton Pork Sausage"
+, "Carrot Soup"
+, "Chicken Breast"
+, "Clarified Syrah Wine"
+, "Comely Wench Whiskey"
+, "Cyrodilic Cornbread"
+, "Eltheric Hooch"
+, "Firsthold Fruit and Cheese Plate"
+, "Fishy Stick"
+, "Four-Eye Grog"
+, "Garlic Pumpkin Seeds"
+, "Ginger Wheat Beer"
+, "Gods-Blind-Me"
+, "Golden Lager"
+, "Gossamer Mazte"
+, "Grandpa's Bedtime Tonic"
+, "Grape Preserves"
+, "Hagraven's Tonic"
+, "Hare in Garlic Sauce"
+, "Hearty Garlic Corn Chowder"
+, "Honey Rye"
+, "Jerall View Inn Carrot Cake"
+, "Lemon Flower Mazte"
+, "Lilmoth Garlic Hagfish"
+, "Mammoth Snout Pie"
+, "Maormer Tea"
+, "Markarth Mead"
+, "Mazte"
+, "Mermaid Whiskey"
+, "Millet-Stuffed Pork Loin"
+, "Muthsera's Remorse"
+, "Nibenese Garlic Carrots"
+, "Nut Brown Ale"
+, "Orcrest Garlic Apple Jelly"
+, "Pellitine Tomato Rice"
+, "Red Rye Beer"
+, "Redoran Peppered Melon"
+, "Roast Corn"
+, "Rye-in-Your-Eye"
+, "Seaflower Tea"
+, "Sour Mash"
+, "Stormhold Baked Bananas"
+, "Surilie Syrah Wine"
+, "Treacleberry Tea"
+, "Two-Zephyr Tea"
+, "Venison Pasty"
+, "West Weald Corn Chowder"
+, "Whiterun Cheese-Baked Trout"
+}
+function LibCraftText.DiscoverRecipes()
+    local self   = LibCraftText
+    local lang   = self.CurrLang()
+
+    self.saved_var.recipes = self.saved_var.recipes or {}
+    local recipes = self.saved_var.recipes
+
+                        -- Running in EN English?  Now would be the time to
+                        -- take that long list of EN English food names and
+                        -- look up their recipe and food item_id, record to
+                        -- SavedVariables so that other languages can use those
+                        -- indexes.
+    if lang == "en" then
+        -- self.saved_var.recipes = {}
+        -- recipes = self.saved_var.recipes
+                        -- Build an index of EN names for fast lookup
+        local name_to_recipe = {}
+        local want_recipe_ct = 0
+        for _,name in ipairs(RECIPE_NAMES_EN) do
+            name_to_recipe[name:lower()] = {}
+            want_recipe_ct = want_recipe_ct + 1
+        end
+
+                        -- Scan every single recipe from every single
+                        -- recipe book. This goes surprisingly fast.
+        local found_recipe_ct = 0
+        local seen_recipe_ct  = 0
+        local recipe_list_ct = GetNumRecipeLists()
+        for rl_index = 1,recipe_list_ct do
+            local rl_info   = {GetRecipeListInfo(rl_index)}
+            local rl_name   = rl_info[1]
+            local recipe_ct = rl_info[2]
+            for recipe_i = 1,recipe_ct do
+                local food_info = {GetRecipeResultItemInfo(rl_index, recipe_i)}
+                local food_name = food_info[1]
+                if food_name then
+                    seen_recipe_ct = seen_recipe_ct + 1
+                end
+                local r         = name_to_recipe[food_name:lower()]
+                if r then
+                    r.recipe_list_index = rl_index
+                    r.recipe_index      = recipe_i
+                    r.name              = r.name or {}
+                    r.name.en           = food_name
+
+                    local link          = GetRecipeResultItemLink(rl_index, recipe_i )
+                    local item_id       = self.ItemLinkToItemID(link)
+                    recipes[item_id]    = r
+                    found_recipe_ct     = found_recipe_ct + 1
+                end
+            end
+        end
+
+        Info(string.format( "EN recipes  want:%d  found:%d  seen:%d"
+                          , want_recipe_ct
+                          , found_recipe_ct
+                          , seen_recipe_ct
+                          ))
+        if found_recipe_ct < want_recipe_ct then
+            Error("Missing some recipes!")
+            for _,name in ipairs(RECIPE_NAMES_EN) do
+                local r = name_to_recipe[name]
+                if not (r and r.name) then
+                    Error(name)
+                end
+            end
+        end
+    end
+
+                        -- For ALL languages, collect food names.
+                        -- Assumes that you
+    local recorded_ct = 0
+    self.saved_var.recipes = self.saved_var.recipes or {}
+    for food_item_id,recipe in pairs(self.saved_var.recipes) do
+        local food_info = {GetRecipeResultItemInfo( recipe.recipe_list_index
+                                                  , recipe.recipe_index
+                                                  )}
+        local food_name     = food_info[1]
+        recipe.name[lang]   = food_name
+        recorded_ct         = recorded_ct + 1
+    end
+    if recorded_ct <= 0 then
+        Error("Cannot scan recipes. Start in EN English.")
+    end
+end
+
 
 function LibCraftText.RegisterCraftingStationListener()
     EVENT_MANAGER:RegisterForEvent(
