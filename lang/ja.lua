@@ -273,7 +273,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["PORA"                    ] = { name="ポラ"                             , crafting_type=en, item_id= 45811 , name_2="強力"            }
 , ["DENARA"                  ] = { name="デナラ"                            , crafting_type=en, item_id= 45812 }
 , ["RERA"                    ] = { name="レラ"                             , crafting_type=en, item_id= 45813 , name_2="希少"            }
-, ["DERADO"                  ] = { name="デラド"                            , crafting_type=en, item_id= 45814 , name_2="至高"            }
+, ["DERADO"                  ] = { name="デラド"                            , crafting_type=en, item_id= 45814 , name_2="至高"           , name_3="至高"             }
 , ["REKURA"                  ] = { name="レクラ"                            , crafting_type=en, item_id= 45815 , name_2="究極"            }
 , ["KURA"                    ] = { name="クラ"                             , crafting_type=en, item_id= 45816 , name_2="伝説"            }
 , ["REJERA"                  ] = { name="レジェラ"                           , crafting_type=en, item_id= 64509 , name_2="最上"            }
@@ -305,7 +305,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["KADERI"                  ] = { name="カデリ"                            , crafting_type=en, item_id= 45849 , name_2="強撃"            }
 , ["KUOKO"                   ] = { name="クオコ"                            , crafting_type=en, item_id= 45837 , name_2="毒"             }
 , ["MAKDERI"                 ] = { name="マクデリ"                           , crafting_type=en, item_id= 45848 , name_2="魔法攻撃強化"        }
-, ["MAKKO"                   ] = { name="マッコ"                            , crafting_type=en, item_id= 45832 , name_2="マジカ"           }
+, ["MAKKO"                   ] = { name="マッコ"                            , crafting_type=en, item_id= 45832 , name_2="マジカ"          , name_3="マジカ"            }
 , ["MAKKOMA"                 ] = { name="マッコマ"                           , crafting_type=en, item_id= 45835 , name_2="マジカ再生"         }
 , ["MEIP"                    ] = { name="メイプ"                            , crafting_type=en, item_id= 45840 , name_2="雷撃"            }
 , ["OKO"                     ] = { name="オコ"                             , crafting_type=en, item_id= 45831 , name_2="体力"            }

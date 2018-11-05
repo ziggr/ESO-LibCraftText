@@ -273,7 +273,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["PORA"                    ] = { name="Pora"                           , crafting_type=en, item_id= 45811 , name_2="fort"          }
 , ["DENARA"                  ] = { name="Dénara"                         , crafting_type=en, item_id= 45812 }
 , ["RERA"                    ] = { name="Réra"                           , crafting_type=en, item_id= 45813 , name_2="majeur"        }
-, ["DERADO"                  ] = { name="Dérado"                         , crafting_type=en, item_id= 45814 , name_2="grandiose"     }
+, ["DERADO"                  ] = { name="Dérado"                         , crafting_type=en, item_id= 45814 , name_2="grandiose"    , name_3="grandiose"      }
 , ["REKURA"                  ] = { name="Rekura"                         , crafting_type=en, item_id= 45815 , name_2="splendide"     }
 , ["KURA"                    ] = { name="Kura"                           , crafting_type=en, item_id= 45816 , name_2="monumental"    }
 , ["REJERA"                  ] = { name="Rejera"                         , crafting_type=en, item_id= 64509 , name_2="superbe"       }
@@ -305,7 +305,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["KADERI"                  ] = { name="Kadéri"                         , crafting_type=en, item_id= 45849 , name_2="percutant"     }
 , ["KUOKO"                   ] = { name="Kuoko"                          , crafting_type=en, item_id= 45837 , name_2="empoisonné"    }
 , ["MAKDERI"                 ] = { name="Makdéri"                        , crafting_type=en, item_id= 45848 , name_2="de puissance magique"}
-, ["MAKKO"                   ] = { name="Makko"                          , crafting_type=en, item_id= 45832 , name_2="magique"       }
+, ["MAKKO"                   ] = { name="Makko"                          , crafting_type=en, item_id= 45832 , name_2="magique"      , name_3="magie"          }
 , ["MAKKOMA"                 ] = { name="Makkoma"                        , crafting_type=en, item_id= 45835 , name_2="régénérant"    }
 , ["MEIP"                    ] = { name="Méip"                           , crafting_type=en, item_id= 45840 , name_2="étourdissant"  }
 , ["OKO"                     ] = { name="Oko"                            , crafting_type=en, item_id= 45831 , name_2="vital"         }

@@ -273,7 +273,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["PORA"                    ] = { name=$MATERIAL_EN_045811              , crafting_type=en, item_id= 45811 , name_2=$POTENCY_045811 }
 , ["DENARA"                  ] = { name=$MATERIAL_EN_045812              , crafting_type=en, item_id= 45812 }
 , ["RERA"                    ] = { name=$MATERIAL_EN_045813              , crafting_type=en, item_id= 45813 , name_2=$POTENCY_045813 }
-, ["DERADO"                  ] = { name=$MATERIAL_EN_045814              , crafting_type=en, item_id= 45814 , name_2=$POTENCY_045814 }
+, ["DERADO"                  ] = { name=$MATERIAL_EN_045814              , crafting_type=en, item_id= 45814 , name_2=$POTENCY_045814, name_3=$POTENCY_045814B }
 , ["REKURA"                  ] = { name=$MATERIAL_EN_045815              , crafting_type=en, item_id= 45815 , name_2=$POTENCY_045815 }
 , ["KURA"                    ] = { name=$MATERIAL_EN_045816              , crafting_type=en, item_id= 45816 , name_2=$POTENCY_045816 }
 , ["REJERA"                  ] = { name=$MATERIAL_EN_064509              , crafting_type=en, item_id= 64509 , name_2=$POTENCY_064509 }
@@ -305,7 +305,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["KADERI"                  ] = { name=$MATERIAL_EN_045849              , crafting_type=en, item_id= 45849 , name_2=$ESSENCE_045849 }
 , ["KUOKO"                   ] = { name=$MATERIAL_EN_045837              , crafting_type=en, item_id= 45837 , name_2=$ESSENCE_045837 }
 , ["MAKDERI"                 ] = { name=$MATERIAL_EN_045848              , crafting_type=en, item_id= 45848 , name_2=$ESSENCE_045848 }
-, ["MAKKO"                   ] = { name=$MATERIAL_EN_045832              , crafting_type=en, item_id= 45832 , name_2=$ESSENCE_045832 }
+, ["MAKKO"                   ] = { name=$MATERIAL_EN_045832              , crafting_type=en, item_id= 45832 , name_2=$ESSENCE_045832, name_3=$ESSENCE_045832B }
 , ["MAKKOMA"                 ] = { name=$MATERIAL_EN_045835              , crafting_type=en, item_id= 45835 , name_2=$ESSENCE_045835 }
 , ["MEIP"                    ] = { name=$MATERIAL_EN_045840              , crafting_type=en, item_id= 45840 , name_2=$ESSENCE_045840 }
 , ["OKO"                     ] = { name=$MATERIAL_EN_045831              , crafting_type=en, item_id= 45831 , name_2=$ESSENCE_045831 }

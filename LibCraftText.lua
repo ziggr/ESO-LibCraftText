@@ -287,38 +287,42 @@ function LibCraftText.ParseConsumableItem(crafting_type, cond_text)
 end
 
 LibCraftText.RE_POTENCY = {
-    en = { "(.*) Glyph of"}
-,   de = { "(.*) glyphe des"}
-,   fr = { "glyphe (.*) vital"
+    en = { "Craft (.*) Glyph of" }
+,   de = { "eine (.*) Glyphe de[sr]"}
+,   fr = { "glyphe (.*)"
          , "(petit) glyphe "}
-,   es = { "glifo (.*) de vida"}
-,   it = { "(.*) glyph of"}  -- "glifo of health" for all 10 potencies. Broken.
-,   ru = { "(.*) glyph of"}
+,   es = { "glifo (.*) de"
+         , "Craft (.*) Glyph of" }  -- Ayep, there are still untranslated lines in ES Spanish
+,   it = { "(.*) glyph of"}         -- "glifo of health" for all 10 potencies. Broken.
+,   ru = { "(.*) Glyph of"}
 ,   ja = { "(.*)のグリフ"
          , "(.*)なグリフ"}
 }
 LibCraftText.RE_ESSENCE = {
-    en = { "Glyph of (.*)"}
-,   de = { "glyphe de[sr] (.*)"}
-,   fr = { "glyphe insignifiant (.*)"}
-,   es = { "glifo mediocre de (.*)"
-         ,  "glifo mediocre (.*)" } -- must come AFTER " de " line
+    en = { "Glyph of (.*)" }
+,   de = { "Glyphe de[sr] (.*)"}
+,   fr = { "glyphe (.*) avec"}
+,   es = { "glifo (.*) con Ta"
+         , "Glyph of (.*)" }        -- Untranslated lines in ES Spanish
 ,   it = { "glifo of (.*)"
          , "glyph of (.*)" }
-,   ru = { "glyph of (.*)"}
-,   ja = { "グリフ %((.*)%)"}
+,   ru = { "Glyph of (.*)"}
+,   ja = { "グリフ ?%((.*)%)"}
 }
+
+--ターの至高のグリフ(体力)を生産する
+
 function LibCraftText.ParseDailyConditionGlyph(cond_text)
     local self = LibCraftText
     local m    = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
     local POTENCY_LIST = {
                            m.JORA    -- trifling
-                         , m.JERA    -- petty"
-                         , m.ODRA    -- minor"
+                         , m.JERA    -- petty
+                         , m.ODRA    -- minor
                          , m.EDORA   -- moderate
                          , m.PORA    -- strong
                          , m.RERA    -- greater
-                         , m.DERADO  -- grand"
+                         , m.DERADO  -- grand
                          , m.REKURA  -- splendid
                          , m.KURA    -- monumental
                          , m.REJERA  -- superb
@@ -333,17 +337,27 @@ function LibCraftText.ParseDailyConditionGlyph(cond_text)
                                        , cond_text
                                        , self.RE_POTENCY[lang]
                                        , POTENCY_LIST
-                                       , { "name_2" }
+                                       , { "name_2", "name_3" }
                                        )
     local essence = self.ParseRegexable( en
                                        , cond_text
                                        , self.RE_ESSENCE[lang]
                                        , ESSENCE_LIST
-                                       , { "name_2" }
+                                       , { "name_2", "name_3" }
                                        )
     if not (potency or essence) then
         return nil
     end
+-- if not (potency and essence) then
+-- print("cond_text:")
+-- self.hex_dump(cond_text)
+-- for _,re in pairs(self.RE_ESSENCE[lang]) do
+--     print("re")
+--     self.hex_dump(re)
+-- end
+-- print("gurifu?")
+-- print(cond_text:find("グリフ"))
+-- end
     return { ["potency"] = potency
            , ["essence"] = essence
            , ["aspect" ] = m.TA
@@ -512,7 +526,8 @@ end
 
 
 -- To help see surprise unicode chars like non-breaking-space.
-local function hex_dump(buf)
+-- Copied from http://lua-users.org/wiki/HexDump
+function LibCraftText.hex_dump(buf)
   for i=1,math.ceil(#buf/16) * 16 do
      if (i-1) % 16 == 0 then io.write(string.format('%08X  ', i-1)) end
      io.write( i > #buf and '   ' or string.format('%02X ', buf:byte(i)) )
