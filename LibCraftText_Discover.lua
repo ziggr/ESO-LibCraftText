@@ -1153,6 +1153,7 @@ function LibCraftText.OnCraftingStationInteract(event_code, crafting_type, same_
     ,   [en] = LibCraftText.DiscoverCraftingStationEnchanting
     ,   [ww] = LibCraftText.DiscoverCraftingStationGear
     ,   [jw] = LibCraftText.DiscoverCraftingStationGear
+    ,   [al] = LibCraftText.DiscoverCraftingStationAlchemy
     }
 
     local func = OCSI_Func[crafting_type]
@@ -1243,6 +1244,42 @@ else
 end
 
     end
+end
+
+
+
+function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
+
+    local cm = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
+
+    local ALCHEMY_SOLVENTS = {
+      { potion=cm.NATURAL_WATER  , potion_name="Sip"        , poison=cm.GREASE       , poison_name="Poison I"   }  -- 3
+    , { potion=cm.CLEAR_WATER    , potion_name="Tincture"   , poison=cm.ICHOR        , poison_name="Poison II"  }  -- 10
+    , { potion=cm.PRISTINE_WATER , potion_name="Dram"       , poison=cm.SLIME        , poison_name="Poison III" }  -- 20
+    , { potion=cm.CLEANSED_WATER , potion_name="Potion"     , poison=cm.GALL         , poison_name="Poison IV"  }  -- 30
+    , { potion=cm.FILTERED_WATER , potion_name="Solution"   , poison=cm.TEREBINTHINE , poison_name="Poison V"   }  -- 40
+    , { potion=cm.PURIFIED_WATER , potion_name="Elixir"     , poison=cm.PITCH_BILE   , poison_name="Poison VI"  }  -- CP10
+    , { potion=cm.CLOUD_MIST     , potion_name="Panacea"    , poison=cm.TARBLACK     , poison_name="Poison VII" }  -- CP50
+    , { potion=cm.STAR_DEW       , potion_name="Distillate" , poison=cm.NIGHT_OIL    , poison_name="Poison VIII"}  -- CP100
+    , { potion=cm.LORKHANS_TEARS , potion_name="Essence"    , poison=cm.ALKAHEST     , poison_name="Poison IX"  }  -- CP150
+    }
+
+    local ALCHEMY_DRINKS = {
+
+, { , solvent=cm.ALKAHEST       }-- Damage Health Poison IX
+, { , solvent=cm.ALKAHEST       }-- Damage Magicka Poison IX
+, { , solvent=cm.ALKAHEST       }-- Damage Stamina Poison IX
+, { , solvent=cm.ALKAHEST       }-- Drain Health Poison IX
+, { , solvent=cm.LORKHANS_TEARS }-- Health
+, { , solvent=cm.LORKHANS_TEARS }-- Magicka
+, { , solvent=cm.LORKHANS_TEARS }-- Ravage Magicka
+, { , solvent=cm.LORKHANS_TEARS }-- Stamina
+, { , solvent=cm.LORKHANS_TEARS }-- Ravage Stamina
+
+}
+
+
+
 end
 
 function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
