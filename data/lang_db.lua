@@ -86,7 +86,6 @@ LANG_DB = {
           ,   de  = "Stellt Schlückchen der Ausdauerverwüstung her"
           ,   fr  = "Fabriquez une gorgée de ravage de Vigueur"
           ,   es  = "Prepara un sorbo de reducción de aguante"
-          ,   it  = "Craft Sip of Ravage Stamina"
           ,   ja  = "スタミナ減少の雫を生産する"
           }
 , [ 11] = {
@@ -95,7 +94,6 @@ LANG_DB = {
           ,   de  = "Beschafft natürliches Wasser"
           ,   fr  = "Acquérez de l'eau naturelle"
           ,   es  = "Adquiere agua natural"
-          ,   it  = "Acquire Natural Water"
           ,   ru  = "Добыть природную воду"
           ,   ja  = "自然水を手に入れる"
           }
@@ -158,7 +156,6 @@ LANG_DB = {
           ,   de  = "Stellt Schlücke der Magicka her"
           ,   fr  = "Préparez une goutte de Magie"
           ,   es  = "Prepara un trago de magia"
-          ,   it  = "Craft Dram of Magicka"
           ,   ja  = "マジカの飲み薬を生産する"
           }
 , [ 19] = {
@@ -229,7 +226,6 @@ LANG_DB = {
           ,   de  = "Beschafft gesäubertes Wasser"
           ,   fr  = "Acquérez de l'eau assainie"
           ,   es  = "Adquiere agua depurada"
-          ,   it  = "Acquire Cleansed Water"
           ,   ru  = "Добыть очищенную воду"
           ,   ja  = "浄化水を手に入れる"
           }
@@ -239,7 +235,6 @@ LANG_DB = {
           ,   de  = "Stellt Tränke der Lebensverwüstung her"
           ,   fr  = "Préparez une potion de ravage de Santé"
           ,   es  = "Prepara una poción reducción de salud"
-          ,   it  = "Craft Potion of Ravage Health"
           ,   ja  = "体力減少の薬を生産する"
           }
 , [ 28] = {
@@ -284,7 +279,6 @@ LANG_DB = {
           ,   de  = "Stellt Lösungen der Magicka her"
           ,   fr  = "Préparez une solution de Magie"
           ,   es  = "Prepara una solución de magia"
-          ,   it  = "Craft Solution of Magicka"
           ,   ja  = "マジカの液体薬を生産する"
           }
 , [ 33] = {
@@ -398,7 +392,6 @@ LANG_DB = {
           ,   de  = "Beschafft Wolkennebel"
           ,   fr  = "Acquérez de la brume"
           ,   es  = "Adquiere bruma"
-          ,   it  = "Acquire Cloud Mist"
           ,   ru  = "Добыть облачный пар"
           ,   ja  = "霧の雲を手に入れる"
           }
@@ -408,7 +401,6 @@ LANG_DB = {
           ,   de  = "Stellt Panazeen der Lebensverwüstung her"
           ,   fr  = "Préparez une panacée de ravage de Santé"
           ,   es  = "Prepara una panacea de reducción de salud"
-          ,   it  = "Craft Panacea of Ravage Health"
           ,   ja  = "体力減少の万能薬を生産する"
           }
 , [ 47] = {
@@ -469,7 +461,6 @@ LANG_DB = {
           ,   de  = "Beschafft Wolkennebel"
           ,   fr  = "Acquérez de la brume"
           ,   es  = "Adquiere bruma"
-          ,   it  = "Acquire Cloud Mist"
           ,   ru  = "Добыть облачный пар"
           ,   ja  = "霧の雲を手に入れる"
           }
@@ -479,7 +470,6 @@ LANG_DB = {
           ,   de  = "Stellt Panazeen der Lebensverwüstung her"
           ,   fr  = "Préparez une panacée de ravage de Santé"
           ,   es  = "Prepara una panacea de reducción de salud"
-          ,   it  = "Craft Panacea of Ravage Health"
           ,   ja  = "体力減少の万能薬を生産する"
           }
 , [ 55] = {
@@ -2672,7 +2662,6 @@ LANG_DB = {
           ,   de  = "Beschafft eine Ta-Aspektrune"
           ,   fr  = "Acquérez une rune d'aspect Ta"
           ,   es  = "Adquiere una runa de aspecto Ta"
-          ,   it  = "Acquire Ta Aspect Rune"
           ,   ru  = "Добыть руну аспекта Та"
           ,   ja  = "ターの品質ルーンを手に入れる"
           }
@@ -3857,7 +3846,6 @@ LANG_DB = {
           ,   de  = "Stellt einen Himmelsrand-Jazbuchtcrostata her"
           ,   fr  = "Préparez un croustillant au jazbay de Bordeciel"
           ,   es  = "Preparæ crostata de jazbay de Skyrim"
-          ,   it  = "Craft Skyrim Jazbay Crostata"
           ,   ru  = "Создать — песочная полоска с желе из винограда джазби"
           ,   ja  = "スカイリムのジャズベイ・クロスタータを生産する"
           }
@@ -3867,7 +3855,6 @@ LANG_DB = {
           ,   de  = "Stellt etwas Blauweg-Marathon her"
           ,   fr  = "Préparez un marathon de Sente-azur"
           ,   es  = "Preparæ maratón de Blue Road"
-          ,   it  = "Craft Blue Road Marathon"
           ,   ru  = "Создать — «Марафон по Синей дороге»"
           ,   ja  = "ブルーロード・マラソンを生産する"
           }
@@ -4720,7 +4707,6 @@ LANG_DB = {
           ,   de  = "lebens"
           ,   fr  = "vital"
           ,   es  = "vida"
-          ,   it  = "health"
           ,   ja  = "体力"
           }
 , [532] = {
@@ -4729,23 +4715,19 @@ LANG_DB = {
           ,   de  = "lebens"
           ,   fr  = "Santé"
           ,   es  = "vida"
-          ,   it  = "health"
           ,   ja  = "体力"
           }
 , [533] = {
               key = "$ESSENCE_045832"
           ,   en  = "magicka"
-          ,   de  = "magicka"
           ,   fr  = "magique"
           ,   es  = "magia"
-          ,   it  = "magicka"
           ,   ja  = "マジカ"
           }
 , [534] = {
               key = "$ESSENCE_045832B"
           ,   en  = "magicka"
           ,   fr  = "magie"
-          ,   it  = "magicka"
           ,   ja  = "マジカ"
           }
 , [535] = {
@@ -4754,7 +4736,6 @@ LANG_DB = {
           ,   de  = "ausdauer"
           ,   fr  = "vigoureux"
           ,   es  = "aguante"
-          ,   it  = "stamina"
           ,   ja  = "スタミナ"
           }
 , [536] = {
@@ -4763,7 +4744,6 @@ LANG_DB = {
           ,   de  = "ausdauer"
           ,   fr  = "Vigueur"
           ,   es  = "aguante"
-          ,   it  = "stamina"
           ,   ja  = "スタミナ"
           }
 , [537] = {
@@ -4772,7 +4752,6 @@ LANG_DB = {
           ,   de  = "lebensregeneration"
           ,   fr  = "revivifiant"
           ,   es  = "regeneración de salud"
-          ,   it  = "health recovery"
           ,   ja  = "体力再生"
           }
 , [538] = {
@@ -4781,7 +4760,6 @@ LANG_DB = {
           ,   de  = "magickaregeneration"
           ,   fr  = "régénérant"
           ,   es  = "regeneración de magia"
-          ,   it  = "magicka recovery"
           ,   ja  = "マジカ再生"
           }
 , [539] = {
@@ -4790,7 +4768,6 @@ LANG_DB = {
           ,   de  = "ausdauerregeneration"
           ,   fr  = "revigorant"
           ,   es  = "regeneración de aguante"
-          ,   it  = "stamina recovery"
           ,   ja  = "スタミナ再生"
           }
 , [540] = {
@@ -4799,7 +4776,6 @@ LANG_DB = {
           ,   de  = "gifts"
           ,   fr  = "empoisonné"
           ,   es  = "veneno"
-          ,   it  = "poison"
           ,   ja  = "毒"
           }
 , [541] = {
@@ -4808,7 +4784,6 @@ LANG_DB = {
           ,   de  = "flamme"
           ,   fr  = "ardent"
           ,   es  = "fuego"
-          ,   it  = "flame"
           ,   ja  = "炎"
           }
 , [542] = {
@@ -4817,7 +4792,6 @@ LANG_DB = {
           ,   de  = "frosts"
           ,   fr  = "givré"
           ,   es  = "hielo"
-          ,   it  = "frost"
           ,   ja  = "氷結"
           }
 , [543] = {
@@ -4826,7 +4800,6 @@ LANG_DB = {
           ,   de  = "schocks"
           ,   fr  = "étourdissant"
           ,   es  = "descarga"
-          ,   it  = "shock"
           ,   ja  = "雷撃"
           }
 , [544] = {
@@ -4835,7 +4808,6 @@ LANG_DB = {
           ,   de  = "fäulnis"
           ,   fr  = "odieux"
           ,   es  = "podredumbre"
-          ,   it  = "foulness"
           ,   ja  = "不浄"
           }
 , [545] = {
@@ -4844,7 +4816,6 @@ LANG_DB = {
           ,   de  = "abhärtung"
           ,   fr  = "robuste"
           ,   es  = "robustez"
-          ,   it  = "hardening"
           ,   ja  = "硬化"
           }
 , [546] = {
@@ -4853,7 +4824,6 @@ LANG_DB = {
           ,   de  = "waffenkraft"
           ,   fr  = "de dégâts d'arme"
           ,   es  = "daño físico"
-          ,   it  = "weapon damage"
           ,   ja  = "武器強化"
           }
 , [547] = {
@@ -4862,7 +4832,6 @@ LANG_DB = {
           ,   de  = "trankverbesserung"
           ,   fr  = "de l'alchimiste"
           ,   es  = "del alquimista"
-          ,   it  = "potion boost"
           ,   ja  = "薬品強化"
           }
 , [548] = {
@@ -4871,7 +4840,6 @@ LANG_DB = {
           ,   de  = "erhöhten physischen schadens"
           ,   fr  = "de puissance physique"
           ,   es  = "aumento de daño físico"
-          ,   it  = "increase physical harm"
           ,   ja  = "物理攻撃強化"
           }
 , [549] = {
@@ -4880,7 +4848,6 @@ LANG_DB = {
           ,   de  = "erhöhten magischen schadens"
           ,   fr  = "de puissance magique"
           ,   es  = "aumento de daño mágico"
-          ,   it  = "increase magical harm"
           ,   ja  = "魔法攻撃強化"
           }
 , [550] = {
@@ -4889,7 +4856,6 @@ LANG_DB = {
           ,   de  = "einschlagens"
           ,   fr  = "percutant"
           ,   es  = "percutante"
-          ,   it  = "bashing"
           ,   ja  = "強撃"
           }
 , [551] = {
@@ -4898,7 +4864,6 @@ LANG_DB = {
           ,   de  = "prismatischen verteidigung"
           ,   fr  = "de défense prismatique"
           ,   es  = "defensa prismática"
-          ,   it  = "prismatic defense"
           ,   ja  = "分光防御"
           }
 , [552] = {
@@ -4930,6 +4895,519 @@ LANG_DB = {
           ,   en  = "I've finished the Woodworking job."
           }
 , [559] = {
+              key = "$FOOD_028281"
+          ,   en  = "Banana Surprise"
+          ,   de  = "Bananenüberraschung^f"
+          ,   fr  = "banane surprise^f"
+          ,   es  = "plátano sorpresa^m"
+          ,   ru  = "банановый сюрприз"
+          ,   ja  = "びっくりバナナ"
+          }
+, [560] = {
+              key = "$FOOD_028321"
+          ,   en  = "Carrot Soup"
+          ,   de  = "Karottensuppe^fs"
+          ,   fr  = "soupe de carottes^f"
+          ,   es  = "Sopa de zanahoria"
+          ,   ru  = "морковный суп"
+          ,   ja  = "ニンジンスープ"
+          }
+, [561] = {
+              key = "$FOOD_028338"
+          ,   en  = "Alik'r Beets with Goat Cheese"
+          ,   de  = "Alik'r-Gemüse mit Ziegenkäse^ns"
+          ,   fr  = "betteraves d'Alik'r au chèvre^pf"
+          ,   es  = "remolachas de Alik'r con queso de cabra^pf"
+          ,   ru  = "алик'рская свекла с козьим сыром"
+          ,   ja  = "アリクルのビートの山羊乳チーズ添え"
+          }
+, [562] = {
+              key = "$FOOD_028342"
+          ,   en  = "Breton Pork Sausage"
+          ,   de  = "bretonische Fleischwurst^f"
+          ,   fr  = "saucisse de porc brétonne^f"
+          ,   es  = "Salchicha de cerdo bretona"
+          ,   ru  = "бретонская свиная колбаса"
+          ,   ja  = "ブレトンのポークソーセージ"
+          }
+, [563] = {
+              key = "$FOOD_028354"
+          ,   en  = "Baked Potato"
+          ,   de  = "Ofenkartoffel^f"
+          ,   fr  = "pomme de terre au four^f"
+          ,   es  = "patata asada^f"
+          ,   ru  = "печеный картофель"
+          ,   ja  = "ベイクドポテト"
+          }
+, [564] = {
+              key = "$FOOD_028394"
+          ,   en  = "Battaglir Chowder"
+          ,   de  = "Battaglirsuppe^fs"
+          ,   fr  = "bisque de battaglir^f"
+          ,   es  = "Crema de marisco con battaglir"
+          ,   ru  = "чаудер из баттаглира"
+          ,   ja  = "バタグリアのチャウダー"
+          }
+, [565] = {
+              key = "$FOOD_028398"
+          ,   en  = "Venison Pasty"
+          ,   de  = "Wildfleischpastete^f"
+          ,   fr  = "friand de gibier^m"
+          ,   es  = "Empanada de venado"
+          ,   ru  = "корзиночка с олениной"
+          ,   ja  = "鹿肉のパスティ"
+          }
+, [566] = {
+              key = "$FOOD_028401"
+          ,   en  = "Nut Brown Ale"
+          ,   de  = "Nussbraunale^ns"
+          ,   fr  = "bière brune à la noisette^f"
+          ,   es  = "cerveza negra con avellanas^f"
+          ,   ru  = "темный ореховый эль"
+          ,   ja  = "ナット・ブラウンエール"
+          }
+, [567] = {
+              key = "$FOOD_028402"
+          ,   en  = "Comely Wench Whiskey"
+          ,   de  = "Hübschmaidwhiskey^ms"
+          ,   fr  = "whiskey de l'accorte hôtesse^m"
+          ,   es  = "whisky de la doncella encantadora^m"
+          ,   ru  = "виски «Смазливая девка»"
+          ,   ja  = "カムリーウェンチ・ウイスキー"
+          }
+, [568] = {
+              key = "$FOOD_028405"
+          ,   en  = "Bog-Iron Ale"
+          ,   de  = "Sumpfeisen-Ale^ns"
+          ,   fr  = "bière de Tourbefer^f"
+          ,   es  = "cerveza del Pantano de Hierro"
+          ,   ru  = "болотнорудный эль"
+          ,   ja  = "泥鉄鉱のエール"
+          }
+, [569] = {
+              key = "$FOOD_028409"
+          ,   en  = "Clarified Syrah Wine"
+          ,   de  = "klarer Syrahwein^ms"
+          ,   fr  = "clairet de Syrah^m"
+          ,   es  = "vino aclarado de syrah^m"
+          ,   ru  = "очищенное вино сорта шираз"
+          ,   ja  = "シラーワインの蒸留酒"
+          }
+, [570] = {
+              key = "$FOOD_028417"
+          ,   en  = "Eltheric Hooch"
+          ,   de  = "eltherischer Fusel^ms"
+          ,   fr  = "tord-boyau Elthérique^m"
+          ,   es  = "Licor eltérico"
+          ,   ru  = "самогон «Элтерический»"
+          ,   ja  = "エルセリックの安酒"
+          }
+, [571] = {
+              key = "$FOOD_028421"
+          ,   en  = "Honey Rye"
+          ,   de  = "Honigwhiskey^ms"
+          ,   fr  = "scotch au miel^m"
+          ,   es  = "centeno meloso^m"
+          ,   ru  = "медово-ржаной виски"
+          ,   ja  = "ハニーライ・ウイスキー"
+          }
+, [572] = {
+              key = "$FOOD_028425"
+          ,   en  = "Sour Mash"
+          ,   de  = "Sauermaische^fs"
+          ,   fr  = "moût aigre^m"
+          ,   es  = "Malta agria"
+          ,   ru  = "кислый затор"
+          ,   ja  = "すっぱい麦芽汁"
+          }
+, [573] = {
+              key = "$FOOD_028429"
+          ,   en  = "Rye-in-your-Eye"
+          ,   de  = "Durchschlagwhiskey^ms"
+          ,   fr  = "scotch-dans-ta-face^m"
+          ,   es  = "cente-no en la cara^m"
+          ,   ru  = "«Рожь-в-глазах»"
+          ,   ja  = "瞳に映るライ・ウイスキー"
+          }
+, [574] = {
+              key = "$FOOD_028433"
+          ,   en  = "Gods-Blind-Me"
+          ,   de  = "heiliger Strohsack^msc"
+          ,   fr  = "Les-Dieux-M'aveuglent^m"
+          ,   es  = "Vino Cegado-Por-Dioses"
+          ,   ru  = "«Боги, ослепите меня»"
+          ,   ja  = "ゴッズ・ブラインド・ミー"
+          }
+, [575] = {
+              key = "$FOOD_028444"
+          ,   en  = "Grandpa's Bedtime Tonic"
+          ,   de  = "Großvaters Nachttonikum^Ng"
+          ,   fr  = "tonique du papi au lit^m"
+          ,   es  = "tónico de dormir del abuelo^m"
+          ,   ru  = "тоник «Дедушкин сонный час»"
+          ,   ja  = "グランパのベッドタイム・トニック"
+          }
+, [576] = {
+              key = "$FOOD_028457"
+          ,   en  = "Bitterlemon Tea"
+          ,   de  = "Bitterzitrustee^ms"
+          ,   fr  = "infusion de citron amer^m"
+          ,   es  = "Té de limón amargo"
+          ,   ru  = "горький чай с лимоном"
+          ,   ja  = "ビターレモンティー"
+          }
+, [577] = {
+              key = "$FOOD_028465"
+          ,   en  = "Maormer Tea"
+          ,   de  = "Maormertee^ms"
+          ,   fr  = "thé maormer^m"
+          ,   es  = "Té maormer"
+          ,   ru  = "маормерский чай"
+          ,   ja  = "マオマーティー"
+          }
+, [578] = {
+              key = "$FOOD_028473"
+          ,   en  = "Two-Zephyr Tea"
+          ,   de  = "Doppelsturmtee^ms"
+          ,   fr  = "thé des deux zéphyrs^m"
+          ,   es  = "té de Dos-Céfiros^m"
+          ,   ru  = "чай «Два зефира»"
+          ,   ja  = "トゥーゼファーティー"
+          }
+, [579] = {
+              key = "$FOOD_032160"
+          ,   en  = "West Weald Corn Chowder"
+          ,   de  = "Westauen-Maissuppe^fs"
+          ,   fr  = "bisque au maïs occidental froide^f"
+          ,   es  = "caldo de maíz del Bosque Occidental^m"
+          ,   ru  = "зерновой чаудер Западного Вельда"
+          ,   ja  = "ウェストウィールドのコーンチャウダー"
+          }
+, [580] = {
+              key = "$FOOD_033478"
+          ,   en  = "Nibenese Garlic Carrots"
+          ,   de  = "nibenesische Knoblauchkarotten^p"
+          ,   fr  = "carottes à l'ail nibenaises^pf"
+          ,   es  = "zanahorias al ajo a la nibenesa^pf"
+          ,   ru  = "нибенейская морковь с чесноком"
+          ,   ja  = "ニベン人のニンジンのニンニク炒め"
+          }
+, [581] = {
+              key = "$FOOD_033484"
+          ,   en  = "Whiterun Cheese-Baked Trout"
+          ,   de  = "Weißlauf-Käseforelle^f"
+          ,   fr  = "truite gratinée de Blancherive^f"
+          ,   es  = "trucha gratinada de Carrera Blanca^f"
+          ,   ru  = "запеченная с сыром вайтранская форель"
+          ,   ja  = "ホワイトランのマスのチーズ焼き"
+          }
+, [582] = {
+              key = "$FOOD_033490"
+          ,   en  = "Garlic Pumpkin Seeds"
+          ,   de  = "Kürbissamen mit Knoblauch^p"
+          ,   fr  = "graines de citrouille à l'ail^pf"
+          ,   es  = "semillas de calabaza con ajo^pf"
+          ,   ru  = "тыквенные семена с чесноком"
+          ,   ja  = "カボチャの種のニンニク炒め"
+          }
+, [583] = {
+              key = "$FOOD_033526"
+          ,   en  = "Fishy Stick"
+          ,   de  = "Fischstäbchen^n"
+          ,   fr  = "bâtonnet de poisson^m"
+          ,   es  = "Palitos de pescado"
+          ,   ru  = "рыбные палочки"
+          ,   ja  = "魚のフライ"
+          }
+, [584] = {
+              key = "$FOOD_033552"
+          ,   en  = "Redoran Peppered Melon"
+          ,   de  = "Redoran-Pfeffermelone^f"
+          ,   fr  = "melon poivré de Rédoran^m"
+          ,   es  = "Melón a la pimienta Redoran"
+          ,   ru  = "редоранская перченая дыня"
+          ,   ja  = "レドランのペッパードメロン"
+          }
+, [585] = {
+              key = "$FOOD_033575"
+          ,   en  = "Jerall View Inn Carrot Cake"
+          ,   de  = "Jerallblick-Karottenkuchen^m"
+          ,   fr  = "gâteau de carotte de l'auberge de la vue de Jerall^m"
+          ,   es  = "Pastel de zanahoria \"El Paisaje de Jerall\""
+          ,   ru  = "морковный торт таверны «Радушие Джерола»"
+          ,   ja  = "宿屋〈ジェラールビュー〉のニンジンケーキ"
+          }
+, [586] = {
+              key = "$FOOD_033581"
+          ,   en  = "Hare in Garlic Sauce"
+          ,   de  = "Hase in Knoblauchsoße^ms"
+          ,   fr  = "lièvre à l'ail^m"
+          ,   es  = "Liebre en salsa de ajo"
+          ,   ru  = "заяц в чесночном соусе"
+          ,   ja  = "野兎のガーリックソース添え"
+          }
+, [587] = {
+              key = "$FOOD_033587"
+          ,   en  = "Stormhold Baked Bananas"
+          ,   de  = "Sturmfeste-Backbananen^p"
+          ,   fr  = "bananes cuites de⸗Fort-tempête^pf"
+          ,   es  = "plátanos asados de Fuertormenta^pm"
+          ,   ru  = "печеные бананы по-стормхолдски"
+          ,   ja  = "ストームホールドの焼きバナナ"
+          }
+, [588] = {
+              key = "$FOOD_033600"
+          ,   en  = "Red Rye Beer"
+          ,   de  = "Rotweizenbier^ns"
+          ,   fr  = "bière de seigle rousse^f"
+          ,   es  = "cerveza roja de centeno^f"
+          ,   ru  = "красное ржаное пиво"
+          ,   ja  = "赤いライ麦ビール"
+          }
+, [589] = {
+              key = "$FOOD_033602"
+          ,   en  = "Aetherial Tea"
+          ,   de  = "ätherischer Tee^msc"
+          ,   fr  = "thé éthérien^m"
+          ,   es  = "té aeterio^m"
+          ,   ru  = "этерический чай"
+          ,   ja  = "エセリアルティー"
+          }
+, [590] = {
+              key = "$FOOD_033606"
+          ,   en  = "Mazte"
+          ,   de  = "Mazte^msx"
+          ,   fr  = "mazté^m"
+          ,   es  = "mazte^m"
+          ,   ru  = "мацт"
+          ,   ja  = "マッツェ"
+          }
+, [591] = {
+              key = "$FOOD_033612"
+          ,   en  = "Four-Eye Grog"
+          ,   de  = "Vieraugengrog^ms"
+          ,   fr  = "grog quilouche^m"
+          ,   es  = "grog cuatro-ojos^m"
+          ,   ru  = "грог «Четыре глаза»"
+          ,   ja  = "4つ目のグロッグ"
+          }
+, [592] = {
+              key = "$FOOD_033624"
+          ,   en  = "Barley Nectar"
+          ,   de  = "Gerstennektar^ms"
+          ,   fr  = "nectar d'orge^m"
+          ,   es  = "néctar de cebada^m"
+          ,   ru  = "ячменный нектар"
+          ,   ja  = "大麦のビール"
+          }
+, [593] = {
+              key = "$FOOD_033630"
+          ,   en  = "Mermaid Whiskey"
+          ,   de  = "Wassernixenwhiskey^ms"
+          ,   fr  = "whisky des sirènes^m"
+          ,   es  = "whisky de sirena^m"
+          ,   ru  = "виски «Русалка»"
+          ,   ja  = "マーメイド・ウイスキー"
+          }
+, [594] = {
+              key = "$FOOD_033672"
+          ,   en  = "Treacleberry Tea"
+          ,   de  = "Sirupbeerentee^ms"
+          ,   fr  = "thé de mélassine^m"
+          ,   es  = "té de bayamelaza^m"
+          ,   ru  = "ягодный чай с патокой"
+          ,   ja  = "トリークルベリーティー"
+          }
+, [595] = {
+              key = "$FOOD_033813"
+          ,   en  = "Roast Corn"
+          ,   de  = "Grillmais^ms"
+          ,   fr  = "maïs rôti^m"
+          ,   es  = "maíz tostado"
+          ,   ru  = "жареная кукуруза"
+          ,   ja  = "焼きトウモロコシ"
+          }
+, [596] = {
+              key = "$FOOD_033819"
+          ,   en  = "Chicken Breast"
+          ,   de  = "Hühnerbrust^f"
+          ,   fr  = "blanc de poulet^m"
+          ,   es  = "pechuga de pollo^f"
+          ,   ru  = "куриная грудка"
+          ,   ja  = "鶏の胸肉"
+          }
+, [597] = {
+              key = "$FOOD_033825"
+          ,   en  = "Grape Preserves"
+          ,   de  = "Traubeneingemachtes^ns"
+          ,   fr  = "confiture de raisin^f"
+          ,   es  = "conserva de uvas^f"
+          ,   ru  = "виноградное варенье"
+          ,   ja  = "ブドウのジャム"
+          }
+, [598] = {
+              key = "$FOOD_033837"
+          ,   en  = "Baked Apples"
+          ,   de  = "Bratäpfel^p"
+          ,   fr  = "pommes cuites^pf"
+          ,   es  = "manzanas asadas^pf"
+          ,   ru  = "печеные яблоки"
+          ,   ja  = "焼きリンゴ"
+          }
+, [599] = {
+              key = "$FOOD_033897"
+          ,   en  = "Cyrodilic Cornbread"
+          ,   de  = "cyrodiilisches Maisbrot^n"
+          ,   fr  = "pain de maïs cyrodiiléen^m"
+          ,   es  = "pan de maíz cyrodílico^m"
+          ,   ru  = "сиродильский кукурузный хлеб"
+          ,   ja  = "シロディールのコーンブレッド"
+          }
+, [600] = {
+              key = "$FOOD_033903"
+          ,   en  = "Mammoth Snout Pie"
+          ,   de  = "Mammutrüsselpastete^f"
+          ,   fr  = "tourte au groin de mammouth^f"
+          ,   es  = "pastel de trompa de mamut^m"
+          ,   ru  = "пирог с хоботом мамонта"
+          ,   ja  = "マンモスの鼻のパイ"
+          }
+, [601] = {
+              key = "$FOOD_033933"
+          ,   en  = "Golden Lager"
+          ,   de  = "Goldlager^ns"
+          ,   fr  = "cervoise dorée^f"
+          ,   es  = "Cerveza rubia dorada"
+          ,   ru  = "золотой лагер"
+          ,   ja  = "ゴールデンラガー"
+          }
+, [602] = {
+              key = "$FOOD_033939"
+          ,   en  = "Surilie Syrah Wine"
+          ,   de  = "Surilie-Syrahwein^ms"
+          ,   fr  = "vin de syrah de Surilie^m"
+          ,   es  = "vino de syrah de los Surilie^m"
+          ,   ru  = "вино Сурили сорта шираз"
+          ,   ja  = "スリリーのシラーワイン"
+          }
+, [603] = {
+              key = "$FOOD_033945"
+          ,   en  = "Lemon Flower Mazte"
+          ,   de  = "Zitrusblütenmazte^msx"
+          ,   fr  = "mazté à la fleur de citronnier^m"
+          ,   es  = "Mazte de azahar"
+          ,   ru  = "лимонный мацт"
+          ,   ja  = "レモンフラワーのマッツェ"
+          }
+, [604] = {
+              key = "$FOOD_033957"
+          ,   en  = "Gossamer Mazte"
+          ,   de  = "Gespinstmazte^msx"
+          ,   fr  = "mazté soyeux^m"
+          ,   es  = "Mazte sedoso"
+          ,   ru  = "мацт «Паутинка»"
+          ,   ja  = "手の込んだマッツェ"
+          }
+, [605] = {
+              key = "$FOOD_033963"
+          ,   en  = "Ginger Wheat Beer"
+          ,   de  = "Ingwerbier^ns"
+          ,   fr  = "bière de froment au gingembre^f"
+          ,   es  = "Cerveza de trigo y jengibre"
+          ,   ru  = "пшенично-имбирное пиво"
+          ,   ja  = "ジンジャービール"
+          }
+, [606] = {
+              key = "$FOOD_034005"
+          ,   en  = "Seaflower Tea"
+          ,   de  = "Seeblumentee^ms"
+          ,   fr  = "thé à l'anémone^m"
+          ,   es  = "Té de flor marina"
+          ,   ru  = "чай «Морской цветок»"
+          ,   ja  = "海花茶"
+          }
+, [607] = {
+              key = "$FOOD_042814"
+          ,   en  = "Pellitine Tomato Rice"
+          ,   de  = "Pellitine-Tomatenreis^ms"
+          ,   fr  = "riz à la tomate de Pellitine^m"
+          ,   es  = "Arroz con tomate Pellitine"
+          ,   ru  = "пеллитинский рис с томатом"
+          ,   ja  = "ペレタインのトマトライス"
+          }
+, [608] = {
+              key = "$FOOD_043088"
+          ,   en  = "Millet-Stuffed Pork Loin"
+          ,   de  = "gefüllte Schweinelende mit Hirse^f"
+          ,   fr  = "filet-mignon de porc farci au millet^m"
+          ,   es  = "lomo de cerdo relleno de mijo^m"
+          ,   ru  = "свиная вырезка с начинкой из пшена"
+          ,   ja  = "雑穀の豚腰肉包み焼き"
+          }
+, [609] = {
+              key = "$FOOD_043094"
+          ,   en  = "Orcrest Garlic Apple Jelly"
+          ,   de  = "Orkruh-Apfelgelee mit Knoblauch^ns"
+          ,   fr  = "gelée de pommes à l'ail d'Orcrête^f"
+          ,   es  = "jalea de manzana y ajo de Orcelia^f"
+          ,   ru  = "чесночно-яблочное желе из Оркреста"
+          ,   ja  = "オークレストのニンニクとリンゴのゼリー"
+          }
+, [610] = {
+              key = "$FOOD_068235"
+          ,   en  = "Lilmoth Garlic Hagfish"
+          ,   de  = "Lilmoth-Vettelfisch mit Knoblauch^ms"
+          ,   fr  = "anguille des harfreuses à l'ail de Lilmoth^f"
+          ,   es  = "pez bruja al ajo de Lilmoth^m"
+          ,   ru  = "пиявкорот с чесноком по-лилмотски"
+          ,   ja  = "リルモスのニンニクのヌタウナギ焼き"
+          }
+, [611] = {
+              key = "$FOOD_068236"
+          ,   en  = "Firsthold Fruit and Cheese Plate"
+          ,   de  = "Ersthalt-Käseplatte mit Früchten^f"
+          ,   fr  = "plateau de fruits et de fromage de Prime-Tenure^m"
+          ,   es  = "plato de frutas y queso de Primada^m"
+          ,   ru  = "сырная тарелка с фруктами по-фестхолдски"
+          ,   ja  = "ファーストホールドの果実とチーズのプレート"
+          }
+, [612] = {
+              key = "$FOOD_068239"
+          ,   en  = "Hearty Garlic Corn Chowder"
+          ,   de  = "herzhafte Maissuppe mit Knoblauch^fs"
+          ,   fr  = "soupe de maïs épaisse à l'ail^f"
+          ,   es  = "caldo espeso de maíz y ajo^m"
+          ,   ru  = "наваристый зерновой чаудер с чесноком"
+          ,   ja  = "ヘルシーなガーリックとコーンのチャウダー"
+          }
+, [613] = {
+              key = "$FOOD_068257"
+          ,   en  = "Markarth Mead"
+          ,   de  = "Markarth-Met^ms"
+          ,   fr  = "hydromel de Markarth^m"
+          ,   es  = "aguamiel de Markarth^f"
+          ,   ru  = "маркартский мед"
+          ,   ja  = "マルカルスのハチミツ酒"
+          }
+, [614] = {
+              key = "$FOOD_068260"
+          ,   en  = "Muthsera's Remorse"
+          ,   de  = "Muthseras Reue^Fg"
+          ,   fr  = "remords de Muthséra^m"
+          ,   es  = "remordimiento de muthsera^m"
+          ,   ru  = "«Раскаяние мутсэры»"
+          ,   ja  = "ムスセラの良心の呵責"
+          }
+, [615] = {
+              key = "$FOOD_068263"
+          ,   en  = "Hagraven's Tonic"
+          ,   de  = "Rabenvetteltonikum^ns"
+          ,   fr  = "tonique de harfreuse^m"
+          ,   es  = "tónico de bruja cuervo^m"
+          ,   ru  = "тоник ворожеи"
+          ,   ja  = "ハグレイヴンのトニック"
+          }
+, [616] = {
               key = "$ITEM_BS_01"
           ,   en  = "axe"
           ,   de  = "axt"
@@ -4939,7 +5417,7 @@ LANG_DB = {
           ,   ru  = "axe"
           ,   ja  = "斧"
           }
-, [560] = {
+, [617] = {
               key = "$ITEM_BS_02"
           ,   en  = "mace"
           ,   de  = "keule"
@@ -4949,7 +5427,7 @@ LANG_DB = {
           ,   ru  = "mace"
           ,   ja  = "メイス"
           }
-, [561] = {
+, [618] = {
               key = "$ITEM_BS_03"
           ,   en  = "sword"
           ,   de  = "schwert"
@@ -4959,7 +5437,7 @@ LANG_DB = {
           ,   ru  = "sword"
           ,   ja  = "剣"
           }
-, [562] = {
+, [619] = {
               key = "$ITEM_BS_04"
           ,   en  = "battle axe"
           ,   de  = "streitaxt"
@@ -4969,7 +5447,7 @@ LANG_DB = {
           ,   ru  = "battle axe"
           ,   ja  = "両手斧"
           }
-, [563] = {
+, [620] = {
               key = "$ITEM_BS_05"
           ,   en  = "maul"
           ,   de  = "streitkolben"
@@ -4979,7 +5457,7 @@ LANG_DB = {
           ,   ru  = "maul"
           ,   ja  = "大槌"
           }
-, [564] = {
+, [621] = {
               key = "$ITEM_BS_06"
           ,   en  = "greatsword"
           ,   de  = "bidenhänder"
@@ -4989,7 +5467,7 @@ LANG_DB = {
           ,   ru  = "greatsword"
           ,   ja  = "大剣"
           }
-, [565] = {
+, [622] = {
               key = "$ITEM_BS_07"
           ,   en  = "dagger"
           ,   de  = "dolch"
@@ -4999,7 +5477,7 @@ LANG_DB = {
           ,   ru  = "dagger"
           ,   ja  = "短剣"
           }
-, [566] = {
+, [623] = {
               key = "$ITEM_BS_08"
           ,   en  = "cuirass"
           ,   de  = "kürass"
@@ -5009,7 +5487,7 @@ LANG_DB = {
           ,   ru  = "cuirass"
           ,   ja  = "胸当て"
           }
-, [567] = {
+, [624] = {
               key = "$ITEM_BS_09"
           ,   en  = "sabatons"
           ,   de  = "panzerschuhe"
@@ -5019,7 +5497,7 @@ LANG_DB = {
           ,   ru  = "sabatons"
           ,   ja  = "サバトン"
           }
-, [568] = {
+, [625] = {
               key = "$ITEM_BS_10"
           ,   en  = "gauntlets"
           ,   de  = "hentzen"
@@ -5029,7 +5507,7 @@ LANG_DB = {
           ,   ru  = "gauntlets"
           ,   ja  = "篭手"
           }
-, [569] = {
+, [626] = {
               key = "$ITEM_BS_11"
           ,   en  = "helm"
           ,   de  = "haube"
@@ -5039,7 +5517,7 @@ LANG_DB = {
           ,   ru  = "helm"
           ,   ja  = "兜"
           }
-, [570] = {
+, [627] = {
               key = "$ITEM_BS_12"
           ,   en  = "greaves"
           ,   de  = "beinschienen"
@@ -5049,7 +5527,7 @@ LANG_DB = {
           ,   ru  = "greaves"
           ,   ja  = "グリーヴ"
           }
-, [571] = {
+, [628] = {
               key = "$ITEM_BS_13"
           ,   en  = "pauldron"
           ,   de  = "schulterschutz"
@@ -5059,7 +5537,7 @@ LANG_DB = {
           ,   ru  = "pauldron"
           ,   ja  = "ポールドロン"
           }
-, [572] = {
+, [629] = {
               key = "$ITEM_BS_14"
           ,   en  = "girdle"
           ,   de  = "gürtel"
@@ -5069,17 +5547,15 @@ LANG_DB = {
           ,   ru  = "girdle"
           ,   ja  = "ガードル"
           }
-, [573] = {
+, [630] = {
               key = "$ITEM_CL_01"
           ,   en  = "robe"
-          ,   de  = "robe"
-          ,   fr  = "robe"
           ,   es  = "Túnica"
           ,   it  = "veste"
           ,   ru  = "robe"
           ,   ja  = "ローブ"
           }
-, [574] = {
+, [631] = {
               key = "$ITEM_CL_02"
           ,   en  = "jerkin"
           ,   de  = "jacke"
@@ -5089,7 +5565,7 @@ LANG_DB = {
           ,   ru  = "jerkin"
           ,   ja  = "ジャーキン"
           }
-, [575] = {
+, [632] = {
               key = "$ITEM_CL_03"
           ,   en  = "shoes"
           ,   de  = "schuhe"
@@ -5099,7 +5575,7 @@ LANG_DB = {
           ,   ru  = "shoes"
           ,   ja  = "靴"
           }
-, [576] = {
+, [633] = {
               key = "$ITEM_CL_04"
           ,   en  = "gloves"
           ,   de  = "handschuhe"
@@ -5109,7 +5585,7 @@ LANG_DB = {
           ,   ru  = "gloves"
           ,   ja  = "手袋"
           }
-, [577] = {
+, [634] = {
               key = "$ITEM_CL_05"
           ,   en  = "hat"
           ,   de  = "hut"
@@ -5119,7 +5595,7 @@ LANG_DB = {
           ,   ru  = "hat"
           ,   ja  = "帽子"
           }
-, [578] = {
+, [635] = {
               key = "$ITEM_CL_06"
           ,   en  = "breeches"
           ,   de  = "beinkleider"
@@ -5129,7 +5605,7 @@ LANG_DB = {
           ,   ru  = "breeches"
           ,   ja  = "パンツ"
           }
-, [579] = {
+, [636] = {
               key = "$ITEM_CL_07"
           ,   en  = "epaulets"
           ,   de  = "schulterpolster"
@@ -5139,7 +5615,7 @@ LANG_DB = {
           ,   ru  = "epaulets"
           ,   ja  = "肩当て"
           }
-, [580] = {
+, [637] = {
               key = "$ITEM_CL_07B"
           ,   en  = "epaulet"
           ,   de  = "schulterpolster"
@@ -5148,7 +5624,7 @@ LANG_DB = {
           ,   it  = "coprispalle"
           ,   ja  = "肩当て"
           }
-, [581] = {
+, [638] = {
               key = "$ITEM_CL_08"
           ,   en  = "sash"
           ,   de  = "schärpe"
@@ -5158,7 +5634,7 @@ LANG_DB = {
           ,   ru  = "sash"
           ,   ja  = "サッシュ"
           }
-, [582] = {
+, [639] = {
               key = "$ITEM_CL_08B"
           ,   en  = "sash"
           ,   de  = "schärpe"
@@ -5167,7 +5643,7 @@ LANG_DB = {
           ,   it  = "fascia"
           ,   ja  = "サッシュ"
           }
-, [583] = {
+, [640] = {
               key = "$ITEM_CL_09"
           ,   en  = "jack"
           ,   de  = "wams"
@@ -5177,7 +5653,7 @@ LANG_DB = {
           ,   ru  = "jack"
           ,   ja  = "胴当て"
           }
-, [584] = {
+, [641] = {
               key = "$ITEM_CL_10"
           ,   en  = "boots"
           ,   de  = "stiefel"
@@ -5187,7 +5663,7 @@ LANG_DB = {
           ,   ru  = "boots"
           ,   ja  = "ブーツ"
           }
-, [585] = {
+, [642] = {
               key = "$ITEM_CL_11"
           ,   en  = "bracers"
           ,   de  = "armschienen"
@@ -5197,7 +5673,7 @@ LANG_DB = {
           ,   ru  = "bracers"
           ,   ja  = "腕当て"
           }
-, [586] = {
+, [643] = {
               key = "$ITEM_CL_11B"
           ,   en  = "bracers"
           ,   de  = "armschienen"
@@ -5206,7 +5682,7 @@ LANG_DB = {
           ,   it  = "bracciali"
           ,   ja  = "腕当て"
           }
-, [587] = {
+, [644] = {
               key = "$ITEM_CL_12"
           ,   en  = "helmet"
           ,   de  = "helm"
@@ -5216,7 +5692,7 @@ LANG_DB = {
           ,   ru  = "helmet"
           ,   ja  = "兜"
           }
-, [588] = {
+, [645] = {
               key = "$ITEM_CL_12B"
           ,   en  = "helmet"
           ,   de  = "helm"
@@ -5225,7 +5701,7 @@ LANG_DB = {
           ,   it  = "elmetto"
           ,   ja  = "兜"
           }
-, [589] = {
+, [646] = {
               key = "$ITEM_CL_13"
           ,   en  = "guards"
           ,   de  = "schoner"
@@ -5235,7 +5711,7 @@ LANG_DB = {
           ,   ru  = "guards"
           ,   ja  = "すね当て"
           }
-, [590] = {
+, [647] = {
               key = "$ITEM_CL_14"
           ,   en  = "arm cops"
           ,   de  = "schulterkappen"
@@ -5245,7 +5721,7 @@ LANG_DB = {
           ,   ru  = "arm cops"
           ,   ja  = "アームカップ"
           }
-, [591] = {
+, [648] = {
               key = "$ITEM_CL_15"
           ,   en  = "belt"
           ,   de  = "riemen"
@@ -5255,17 +5731,16 @@ LANG_DB = {
           ,   ru  = "belt"
           ,   ja  = "ベルト"
           }
-, [592] = {
+, [649] = {
               key = "$ITEM_JW_01"
           ,   en  = "ring"
-          ,   de  = "ring"
           ,   fr  = "anneau"
           ,   es  = "anillo"
           ,   it  = "anello"
           ,   ru  = "ring"
           ,   ja  = "リング"
           }
-, [593] = {
+, [650] = {
               key = "$ITEM_JW_02"
           ,   en  = "necklace"
           ,   de  = "halskette"
@@ -5275,7 +5750,7 @@ LANG_DB = {
           ,   ru  = "necklace"
           ,   ja  = "ネックレス"
           }
-, [594] = {
+, [651] = {
               key = "$ITEM_JW_02B"
           ,   en  = "necklace"
           ,   de  = "halskette"
@@ -5284,7 +5759,7 @@ LANG_DB = {
           ,   it  = "collana"
           ,   ja  = "ネックレス"
           }
-, [595] = {
+, [652] = {
               key = "$ITEM_WW_01"
           ,   en  = "bow"
           ,   de  = "bogen"
@@ -5294,7 +5769,7 @@ LANG_DB = {
           ,   ru  = "bow"
           ,   ja  = "弓"
           }
-, [596] = {
+, [653] = {
               key = "$ITEM_WW_02"
           ,   en  = "shield"
           ,   de  = "schild"
@@ -5304,7 +5779,7 @@ LANG_DB = {
           ,   ru  = "shield"
           ,   ja  = "盾"
           }
-, [597] = {
+, [654] = {
               key = "$ITEM_WW_03"
           ,   en  = "inferno staff"
           ,   de  = "flammenstab"
@@ -5314,7 +5789,7 @@ LANG_DB = {
           ,   ru  = "inferno staff"
           ,   ja  = "業火の杖"
           }
-, [598] = {
+, [655] = {
               key = "$ITEM_WW_04"
           ,   en  = "ice staff"
           ,   de  = "froststab"
@@ -5324,7 +5799,7 @@ LANG_DB = {
           ,   ru  = "ice staff"
           ,   ja  = "氷の杖"
           }
-, [599] = {
+, [656] = {
               key = "$ITEM_WW_05"
           ,   en  = "lightning staff"
           ,   de  = "blitzstab"
@@ -5334,7 +5809,7 @@ LANG_DB = {
           ,   ru  = "lightning staff"
           ,   ja  = "稲妻の杖"
           }
-, [600] = {
+, [657] = {
               key = "$ITEM_WW_06"
           ,   en  = "restoration staff"
           ,   de  = "heilungsstab"
@@ -5344,7 +5819,7 @@ LANG_DB = {
           ,   ru  = "restoration staff"
           ,   ja  = "回復の杖"
           }
-, [601] = {
+, [658] = {
               key = "$MASTER_CONCOCT"
           ,   en  = "A Masterful Concoction"
           ,   de  = "Ein meisterhaftes Gebräu"
@@ -5353,7 +5828,7 @@ LANG_DB = {
           ,   ru  = "Искусное варево"
           ,   ja  = "優れた調合薬"
           }
-, [602] = {
+, [659] = {
               key = "$MASTER_COND_AL_1"
           ,   en  = "Craft an Essence of Ravage Health with the following Traits:\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progress: 0 / 20"
           ,   de  = "Stellt eine Essenz der Lebensverwüstung mit bestimmten Eigenschaften her.\n\n• Bruch\n• Erhöht Magiekraft\n• Lebensverwüstung\n• Fortschritt: 0/20"
@@ -5363,7 +5838,7 @@ LANG_DB = {
           ,   ru  = "Создать предмет (Essence of Ravage Health) со следующими эффектами:\n• Разрыв\n• Увеличение силы заклинаний\n• Опустошение здоровья\n• Прогресс: 0 / 20"
           ,   ja  = "Craft a 体力減少 のエキス with the following Traits:\n• 侵害\n• 呪文攻撃力上昇\n• 体力減少\n• Progress: 0 / 20"
           }
-, [603] = {
+, [660] = {
               key = "$MASTER_COND_BS_1"
           ,   en  = "Craft a Rubedite Cuirass with the following Properties:\n• Quality: Epic\n• Trait: Sturdy\n• Set: Varen's Legacy\n• Style: Wood Elf\n• Progress: 0 / 1"
           ,   de  = "Stellt einen Rubeditkürass mit bestimmten Eigenschaften her.\n• Set: Varens Erbe\n• Stil: Waldelfen\n• Eigenschaft: Robust\n• Qualität: Episch\n• Fortschritt: 0/1"
@@ -5373,7 +5848,7 @@ LANG_DB = {
           ,   ru  = "Создать предмет (Rubedite Cuirass) со следующими характеристиками:\n• Качество: Эпическое\n• Особенность: Sturdy\n• Комплект: Varen's Legacy\n• Стиль: босмерский\n• Прогресс: 0 / 1"
           ,   ja  = "Craft a ルベダイトの胸当て with the following Properties:\n• Quality: Epic\n• Trait: Sturdy\n• Set: ヴァレンレガシー\n• Style: ウッドエルフ\n• Progress: 0 / 1"
           }
-, [604] = {
+, [661] = {
               key = "$MASTER_COND_BS_2"
           ,   en  = "Craft a Rubedite Helm with the following Properties:\n• Quality: Epic\n• Trait: Divines\n• Set: Whitestrake's Retribution\n• Style: Imperial\n• Progress: 0 / 1"
           ,   de  = "Stellt eine Rubedithaube mit bestimmten Eigenschaften her.\n• Set: Weißplankes Vergeltung\n• Stil: Kaiserliche\n• Eigenschaft: Göttlich\n• Qualität: Episch\n• Fortschritt: 0/1"
@@ -5383,7 +5858,7 @@ LANG_DB = {
           ,   ru  = "Создать предмет (Rubedite Helm) со следующими характеристиками:\n• Качество: Эпическое\n• Особенность: Divines\n• Комплект: Whitestrake's Retribution\n• Стиль: имперский\n• Прогресс: 0 / 1"
           ,   ja  = "Craft a ルベダイトの兜 with the following Properties:\n• Quality: Epic\n• Trait: Divines\n• Set: ホワイトストレークの報復\n• Style: 帝国\n• Progress: 0 / 1"
           }
-, [605] = {
+, [662] = {
               key = "$MASTER_COND_CL_1"
           ,   en  = "Craft an Ancestor Silk Sash with the following Properties:\n• Quality: Epic\n• Trait: Reinforced\n• Set: Varen's Legacy\n• Style: Worm Cult\n• Progress: 0 / 1"
           ,   de  = "Stellt eine Ahnenseidenschärpe mit bestimmten Eigenschaften her.\n• Set: Varens Erbe\n• Stil: Wurmkult\n• Eigenschaft: Verstärkt\n• Qualität: Episch\n• Fortschritt: 0/1"
@@ -5393,7 +5868,7 @@ LANG_DB = {
           ,   ru  = "Создать предмет (Ancestor Silk Sash) со следующими характеристиками:\n• Качество: Эпическое\n• Особенность: Reinforced\n• Комплект: Varen's Legacy\n• Стиль: культ Червя\n• Прогресс: 0 / 1"
           ,   ja  = "Craft a 先人のシルクのサッシュ with the following Properties:\n• Quality: Epic\n• Trait: Reinforced\n• Set: ヴァレンレガシー\n• Style: 虫の教団\n• Progress: 0 / 1"
           }
-, [606] = {
+, [663] = {
               key = "$MASTER_COND_EN_1"
           ,   en  = "Craft a Superb Glyph of Reduce Spell Cost\n• Quality: Epic\n• Progress: 0 / 1"
           ,   de  = "Stellt eine prächtige Glyphe der Zauberkostenminderung her \n• Qualität: Episch\n• Fortschritt: 0/1"
@@ -5403,7 +5878,7 @@ LANG_DB = {
           ,   ru  = "Создать предмет:\nSuperb Glyph of Reduce Spell Cost\n• Качество: Эпическое\n• Прогресс: 0 / 1"
           ,   ja  = "Craft a 最上のグリフ (呪文消費減少)\n• Quality: Epic\n• Progress: 0 / 1"
           }
-, [607] = {
+, [664] = {
               key = "$MASTER_COND_JW_1"
           ,   en  = "Craft a Platinum Ring with the following Properties:\n• Quality: Legendary\n• Trait: Protective\n• Set: Armor Master\n• Progress: 0 / 1"
           ,   de  = "Stellt einen Platinring mit bestimmten Eigenschaften her.\n• Set: Rüstungsmeister\n• Eigenschaft: Schützend\n• Qualität: Legendär\n• Fortschritt: 0/1"
@@ -5413,7 +5888,7 @@ LANG_DB = {
           ,   ru  = "Создать предмет (platinum Ring) со следующими характеристиками:\n• Качество: Легендарное\n• Особенность: Protective\n• Комплект: Armor Master\n• Прогресс: 0 / 1"
           ,   ja  = "Craft a プラチナの指輪 with the following Properties:\n• Quality: Legendary\n• Trait: Protective\n• Set: 鎧匠\n• Progress: 0 / 1"
           }
-, [608] = {
+, [665] = {
               key = "$MASTER_COND_PR_1"
           ,   en  = "Craft a Lusty Argonian Maid Mazte\n• Progress: 0 / 8"
           ,   de  = "Stellt etwas Mazte der munteren argonischen Maid her\n• Fortschritt: 0/8"
@@ -5423,28 +5898,28 @@ LANG_DB = {
           ,   ru  = "Создать предмет:\nмацт «Похотливая аргонианская дев\n• Прогресс: 0 / 8"
           ,   ja  = "Craft a 好色なアルゴニアンの侍女のマッツェ\n• Progress: 0 / 8"
           }
-, [609] = {
+, [666] = {
               key = "$MASTER_COND_SUB_ALCH_EFFECT_BREACH"
           ,   en  = "• Breach"
           ,   fr  = "• Brèche"
           ,   ru  = "• Разрыв"
           ,   ja  = "• 侵害"
           }
-, [610] = {
+, [667] = {
               key = "$MASTER_COND_SUB_ALCH_EFFECT_RAVAGE_HEALTH"
           ,   en  = "• Ravage Health"
           ,   fr  = "• Réduit la Santé"
           ,   ru  = "• Опустошение здоровья"
           ,   ja  = "• 体力減少"
           }
-, [611] = {
+, [668] = {
               key = "$MASTER_COND_SUB_ALCH_EFFECT_SPELL_POWER"
           ,   en  = "• Increase Spell Power"
           ,   fr  = "• Augmente la puissance des sorts"
           ,   ru  = "• Увеличение силы заклинаний"
           ,   ja  = "• 呪文攻撃力上昇"
           }
-, [612] = {
+, [669] = {
               key = "$MASTER_COND_SUB_AL_1"
           ,   en  = "Craft an Essence of Ravage Health with the following Traits:"
           ,   fr  = "Fabriquez une essence de ravage de Santé avec les traits suivants : "
@@ -5452,7 +5927,7 @@ LANG_DB = {
           ,   ru  = "Создать предмет (Essence of Ravage Health) со следующими эффектами:"
           ,   ja  = "Craft a 体力減少 のエキス with the following Traits:"
           }
-, [613] = {
+, [670] = {
               key = "$MASTER_COND_SUB_BS_1"
           ,   en  = "Craft a Rubedite Cuirass with the following Properties:"
           ,   de  = "Stellt einen Rubeditkürass mit bestimmten Eigenschaften her."
@@ -5462,7 +5937,7 @@ LANG_DB = {
           ,   ru  = "Создать предмет (Rubedite Cuirass) со следующими характеристиками:"
           ,   ja  = "Craft a ルベダイトの胸当て with the following Properties:"
           }
-, [614] = {
+, [671] = {
               key = "$MASTER_COND_SUB_BS_2"
           ,   en  = "Craft a Rubedite Helm with the following Properties:"
           ,   de  = "Stellt eine Rubedithaube mit bestimmten Eigenschaften her."
@@ -5472,7 +5947,7 @@ LANG_DB = {
           ,   ru  = "Создать предмет (Rubedite Helm) со следующими характеристиками:"
           ,   ja  = "Craft a ルベダイトの兜 with the following Properties:"
           }
-, [615] = {
+, [672] = {
               key = "$MASTER_COND_SUB_CL_1"
           ,   en  = "Craft an Ancestor Silk Sash with the following Properties:"
           ,   de  = "Stellt eine Ahnenseidenschärpe mit bestimmten Eigenschaften her."
@@ -5482,7 +5957,7 @@ LANG_DB = {
           ,   ru  = "Создать предмет (Ancestor Silk Sash) со следующими характеристиками:"
           ,   ja  = "Craft a 先人のシルクのサッシュ with the following Properties:"
           }
-, [616] = {
+, [673] = {
               key = "$MASTER_COND_SUB_EN_1"
           ,   en  = "Craft a Superb Glyph of Reduce Spell Cost"
           ,   de  = "Stellt eine prächtige Glyphe der Zauberkostenminderung her "
@@ -5490,7 +5965,7 @@ LANG_DB = {
           ,   it  = "Crea un Glifo of Reduce Spell Cost"
           ,   ja  = "Craft a 最上のグリフ (呪文消費減少)"
           }
-, [617] = {
+, [674] = {
               key = "$MASTER_COND_SUB_JW_1"
           ,   en  = "Craft a Platinum Ring with the following Properties:"
           ,   de  = "Stellt einen Platinring mit bestimmten Eigenschaften her."
@@ -5499,7 +5974,7 @@ LANG_DB = {
           ,   ru  = "Создать предмет (platinum Ring) со следующими характеристиками:"
           ,   ja  = "Craft a プラチナの指輪 with the following Properties:"
           }
-, [618] = {
+, [675] = {
               key = "$MASTER_COND_SUB_MOTIF_IMPERIAL"
           ,   en  = "• Style: Imperial"
           ,   de  = "• Qualität: Episch"
@@ -5509,7 +5984,7 @@ LANG_DB = {
           ,   ru  = "• Стиль: имперский"
           ,   ja  = "• Style: 帝国"
           }
-, [619] = {
+, [676] = {
               key = "$MASTER_COND_SUB_MOTIF_PSIJIC_ORDER"
           ,   en  = "• Style: Psijic Order"
           ,   de  = "• Qualität: Episch"
@@ -5519,7 +5994,7 @@ LANG_DB = {
           ,   ru  = "• Стиль: орден Псиджиков"
           ,   ja  = "• Style: サイジック"
           }
-, [620] = {
+, [677] = {
               key = "$MASTER_COND_SUB_MOTIF_WOOD_ELF"
           ,   en  = "• Style: Wood Elf"
           ,   de  = "• Qualität: Episch"
@@ -5529,7 +6004,7 @@ LANG_DB = {
           ,   ru  = "• Стиль: босмерский"
           ,   ja  = "• Style: ウッドエルフ"
           }
-, [621] = {
+, [678] = {
               key = "$MASTER_COND_SUB_MOTIF_WORM_CULT"
           ,   en  = "• Style: Worm Cult"
           ,   de  = "• Qualität: Episch"
@@ -5539,7 +6014,7 @@ LANG_DB = {
           ,   ru  = "• Стиль: культ Червя"
           ,   ja  = "• Style: 虫の教団"
           }
-, [622] = {
+, [679] = {
               key = "$MASTER_COND_SUB_PROGRESS_0_01"
           ,   en  = "• Progress: 0 / 1"
           ,   de  = "• Fortschritt: 0/1"
@@ -5548,7 +6023,7 @@ LANG_DB = {
           ,   it  = "• Progresso: 0 / 1"
           ,   ru  = "• Прогресс: 0 / 1"
           }
-, [623] = {
+, [680] = {
               key = "$MASTER_COND_SUB_PROGRESS_0_08"
           ,   en  = "• Progress: 0 / 8"
           ,   de  = "• Fortschritt: 0/8"
@@ -5556,14 +6031,14 @@ LANG_DB = {
           ,   es  = "• Progreso: 0/8"
           ,   it  = "• Progresso: 0 / 8"
           }
-, [624] = {
+, [681] = {
               key = "$MASTER_COND_SUB_PROGRESS_0_20"
           ,   en  = "• Progress: 0 / 20"
           ,   fr  = "• Progression : 0/20"
           ,   it  = "• Progresso: 0 / 20"
           ,   ru  = "• Прогресс: 0 / 20"
           }
-, [625] = {
+, [682] = {
               key = "$MASTER_COND_SUB_PR_1"
           ,   en  = "Craft a Lusty Argonian Maid Mazte"
           ,   de  = "Stellt etwas Mazte der munteren argonischen Maid her"
@@ -5572,7 +6047,7 @@ LANG_DB = {
           ,   it  = "Crea un Lusty Argonian Maid Mazte"
           ,   ja  = "Craft a 好色なアルゴニアンの侍女のマッツェ"
           }
-, [626] = {
+, [683] = {
               key = "$MASTER_COND_SUB_QUAL_4"
           ,   en  = "• Quality: Epic"
           ,   de  = "• Set: Varens Erbe"
@@ -5581,7 +6056,7 @@ LANG_DB = {
           ,   it  = "• Qualità: Epico"
           ,   ru  = "• Качество: Эпическое"
           }
-, [627] = {
+, [684] = {
               key = "$MASTER_COND_SUB_QUAL_5"
           ,   en  = "• Quality: Legendary"
           ,   de  = "• Set: Rüstungsmeister"
@@ -5589,7 +6064,7 @@ LANG_DB = {
           ,   it  = "• Qualità: Leggendario"
           ,   ru  = "• Качество: Легендарное"
           }
-, [628] = {
+, [685] = {
               key = "$MASTER_COND_SUB_SET_ARMOR_MASTER"
           ,   en  = "• Set: Armor Master"
           ,   de  = "• Qualität: Legendär"
@@ -5597,7 +6072,7 @@ LANG_DB = {
           ,   ru  = "• Комплект: Armor Master"
           ,   ja  = "• Set: 鎧匠"
           }
-, [629] = {
+, [686] = {
               key = "$MASTER_COND_SUB_SET_ORGNUMS_SCALES"
           ,   en  = "• Set: Orgnum's Scales"
           ,   de  = "• Eigenschaft: Belebend"
@@ -5606,7 +6081,7 @@ LANG_DB = {
           ,   ru  = "• Комплект: Orgnum's Scales"
           ,   ja  = "• Set: オルグヌム鱗"
           }
-, [630] = {
+, [687] = {
               key = "$MASTER_COND_SUB_SET_VARENS_LEGACY"
           ,   en  = "• Set: Varen's Legacy"
           ,   de  = "• Eigenschaft: Verstärkt"
@@ -5615,7 +6090,7 @@ LANG_DB = {
           ,   ru  = "• Комплект: Varen's Legacy"
           ,   ja  = "• Set: ヴァレンレガシー"
           }
-, [631] = {
+, [688] = {
               key = "$MASTER_COND_SUB_SET_WHITESTRAKES"
           ,   en  = "• Set: Whitestrake's Retribution"
           ,   de  = "• Eigenschaft: Göttlich"
@@ -5624,7 +6099,7 @@ LANG_DB = {
           ,   ru  = "• Комплект: Whitestrake's Retribution"
           ,   ja  = "• Set: ホワイトストレークの報復"
           }
-, [632] = {
+, [689] = {
               key = "$MASTER_COND_SUB_TRAIT_DIVINES"
           ,   en  = "• Trait: Divines"
           ,   de  = "• Stil: Kaiserliche"
@@ -5633,7 +6108,7 @@ LANG_DB = {
           ,   it  = "• Tratti: Divino"
           ,   ru  = "• Особенность: Divines"
           }
-, [633] = {
+, [690] = {
               key = "$MASTER_COND_SUB_TRAIT_INVIGORATING"
           ,   en  = "• Trait: Invigorating"
           ,   de  = "• Stil: Psijik-Orden"
@@ -5642,7 +6117,7 @@ LANG_DB = {
           ,   it  = "• Tratti: Prospero"
           ,   ru  = "• Особенность: Invigorating"
           }
-, [634] = {
+, [691] = {
               key = "$MASTER_COND_SUB_TRAIT_PROTECTIVE"
           ,   en  = "• Trait: Protective"
           ,   de  = "• Eigenschaft: Schützend"
@@ -5650,7 +6125,7 @@ LANG_DB = {
           ,   it  = "• Tratti: Protective"
           ,   ru  = "• Особенность: Protective"
           }
-, [635] = {
+, [692] = {
               key = "$MASTER_COND_SUB_TRAIT_REINFORCED"
           ,   en  = "• Trait: Reinforced"
           ,   de  = "• Stil: Wurmkult"
@@ -5659,7 +6134,7 @@ LANG_DB = {
           ,   it  = "• Tratti: Rinforzato"
           ,   ru  = "• Особенность: Reinforced"
           }
-, [636] = {
+, [693] = {
               key = "$MASTER_COND_SUB_TRAIT_STURDY"
           ,   en  = "• Trait: Sturdy"
           ,   de  = "• Stil: Waldelfen"
@@ -5668,7 +6143,7 @@ LANG_DB = {
           ,   it  = "• Tratti: Robusto"
           ,   ru  = "• Особенность: Sturdy"
           }
-, [637] = {
+, [694] = {
               key = "$MASTER_COND_SUB_WW_1"
           ,   en  = "Craft a Ruby Ash Shield with the following Properties:"
           ,   de  = "Stellt einen Rubineschenschild mit bestimmten Eigenschaften her."
@@ -5678,7 +6153,7 @@ LANG_DB = {
           ,   ru  = "Создать предмет (Ruby Ash Shield) со следующими характеристиками:"
           ,   ja  = "Craft a ルビーアッシュの盾 with the following Properties:"
           }
-, [638] = {
+, [695] = {
               key = "$MASTER_COND_TRAVEL_AD"
           ,   en  = "Travel to Elden Root to Meet Your Contact"
           ,   de  = "Reist nach Eldenwurz, um Euren Kontakt zu treffen"
@@ -5688,7 +6163,7 @@ LANG_DB = {
           ,   ru  = "Отправиться в Элден-Рут, чтобы встретиться с работодателем"
           ,   ja  = "エルデンルートへ行って代理人と会う"
           }
-, [639] = {
+, [696] = {
               key = "$MASTER_COND_TRAVEL_DC"
           ,   en  = "Travel to Wayrest to Meet Your Contact"
           ,   de  = "Reist nach Wegesruh, um Euren Kontakt zu treffen"
@@ -5698,7 +6173,7 @@ LANG_DB = {
           ,   ru  = "Отправиться в Вэйрест, чтобы встретиться с работодателем"
           ,   ja  = "ウェイレストへ行って代理人と会う"
           }
-, [640] = {
+, [697] = {
               key = "$MASTER_COND_TRAVEL_EP"
           ,   en  = "Travel to Mournhold to Meet Your Contact"
           ,   de  = "Reist nach Gramfeste, um Euren Kontakt zu treffen"
@@ -5708,7 +6183,7 @@ LANG_DB = {
           ,   ru  = "Отправиться в Морнхолд, чтобы встретиться с работодателем"
           ,   ja  = "モーンホールドへ行って代理人と会う"
           }
-, [641] = {
+, [698] = {
               key = "$MASTER_COND_WW_1"
           ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Invigorating\n• Set: Orgnum's Scales\n• Style: Psijic Order\n• Progress: 0 / 1"
           ,   de  = "Stellt einen Rubineschenschild mit bestimmten Eigenschaften her.\n• Set: Orgnums Schuppen\n• Stil: Psijik-Orden\n• Eigenschaft: Belebend\n• Qualität: Episch\n• Fortschritt: 0/1"
@@ -5718,11 +6193,11 @@ LANG_DB = {
           ,   ru  = "Создать предмет (Ruby Ash Shield) со следующими характеристиками:\n• Качество: Эпическое\n• Особенность: Invigorating\n• Комплект: Orgnum's Scales\n• Стиль: орден Псиджиков\n• Прогресс: 0 / 1"
           ,   ja  = "Craft a ルビーアッシュの盾 with the following Properties:\n• Quality: Epic\n• Trait: Invigorating\n• Set: オルグヌム鱗\n• Style: サイジック\n• Progress: 0 / 1"
           }
-, [642] = {
+, [699] = {
               key = "$MASTER_CRAFT_ITEM_RE"
           ,   en  = "Craft an? (.*);"
           }
-, [643] = {
+, [700] = {
               key = "$MASTER_FEAST"
           ,   en  = "A Masterful Feast"
           ,   de  = "Ein meisterhaftes Mahl"
@@ -5731,7 +6206,7 @@ LANG_DB = {
           ,   ru  = "Искусный пир"
           ,   ja  = "優れた料理"
           }
-, [644] = {
+, [701] = {
               key = "$MASTER_GLYPH"
           ,   en  = "A Masterful Glyph"
           ,   de  = "Eine meisterhafte Glyphe"
@@ -5740,7 +6215,7 @@ LANG_DB = {
           ,   ru  = "Искусный глиф"
           ,   ja  = "優れたグリフ"
           }
-, [645] = {
+, [702] = {
               key = "$MASTER_ITEM_18"
           ,   en  = "Necklace"
           ,   de  = "kette"
@@ -5750,7 +6225,7 @@ LANG_DB = {
           ,   ru  = "Necklace"
           ,   ja  = "ネックレス"
           }
-, [646] = {
+, [703] = {
               key = "$MASTER_ITEM_24"
           ,   en  = "Ring"
           ,   de  = "ring"
@@ -5760,7 +6235,7 @@ LANG_DB = {
           ,   ru  = "Ring"
           ,   ja  = "指輪"
           }
-, [647] = {
+, [704] = {
               key = "$MASTER_ITEM_26"
           ,   en  = "Hat"
           ,   de  = "hut"
@@ -5770,7 +6245,7 @@ LANG_DB = {
           ,   ru  = "Hat"
           ,   ja  = "帽子"
           }
-, [648] = {
+, [705] = {
               key = "$MASTER_ITEM_28"
           ,   en  = "Robe"
           ,   de  = "robe"
@@ -5780,7 +6255,7 @@ LANG_DB = {
           ,   ru  = "Robe"
           ,   ja  = "ローブ"
           }
-, [649] = {
+, [706] = {
               key = "$MASTER_ITEM_29"
           ,   en  = "Epaulets"
           ,   de  = "schulterpolster"
@@ -5790,7 +6265,7 @@ LANG_DB = {
           ,   ru  = "Epaulets"
           ,   ja  = "肩当て"
           }
-, [650] = {
+, [707] = {
               key = "$MASTER_ITEM_30"
           ,   en  = "Sash"
           ,   de  = "schärpe"
@@ -5800,7 +6275,7 @@ LANG_DB = {
           ,   ru  = "Sash"
           ,   ja  = "サッシュ"
           }
-, [651] = {
+, [708] = {
               key = "$MASTER_ITEM_31"
           ,   en  = "Breeches"
           ,   de  = "beinkleider"
@@ -5810,7 +6285,7 @@ LANG_DB = {
           ,   ru  = "Breeches"
           ,   ja  = "パンツ"
           }
-, [652] = {
+, [709] = {
               key = "$MASTER_ITEM_32"
           ,   en  = "Shoes"
           ,   de  = "schuhe"
@@ -5820,7 +6295,7 @@ LANG_DB = {
           ,   ru  = "Shoes"
           ,   ja  = "靴"
           }
-, [653] = {
+, [710] = {
               key = "$MASTER_ITEM_34"
           ,   en  = "Gloves"
           ,   de  = "handschuhe"
@@ -5830,7 +6305,7 @@ LANG_DB = {
           ,   ru  = "Gloves"
           ,   ja  = "手袋"
           }
-, [654] = {
+, [711] = {
               key = "$MASTER_ITEM_35"
           ,   en  = "Helmet"
           ,   de  = "helm"
@@ -5840,7 +6315,7 @@ LANG_DB = {
           ,   ru  = "Helmet"
           ,   ja  = "兜"
           }
-, [655] = {
+, [712] = {
               key = "$MASTER_ITEM_37"
           ,   en  = "Jack"
           ,   de  = "wams"
@@ -5850,7 +6325,7 @@ LANG_DB = {
           ,   ru  = "Jack"
           ,   ja  = "胴当て"
           }
-, [656] = {
+, [713] = {
               key = "$MASTER_ITEM_38"
           ,   en  = "Arm Cops"
           ,   de  = "schulterkappen"
@@ -5860,7 +6335,7 @@ LANG_DB = {
           ,   ru  = "Arm Cops"
           ,   ja  = "アームカップ"
           }
-, [657] = {
+, [714] = {
               key = "$MASTER_ITEM_39"
           ,   en  = "Belt"
           ,   de  = "riemen"
@@ -5870,7 +6345,7 @@ LANG_DB = {
           ,   ru  = "Belt"
           ,   ja  = "ベルト"
           }
-, [658] = {
+, [715] = {
               key = "$MASTER_ITEM_40"
           ,   en  = "Guards"
           ,   de  = "schoner"
@@ -5880,7 +6355,7 @@ LANG_DB = {
           ,   ru  = "Guards"
           ,   ja  = "すね当て"
           }
-, [659] = {
+, [716] = {
               key = "$MASTER_ITEM_41"
           ,   en  = "Boots"
           ,   de  = "stiefel"
@@ -5890,7 +6365,7 @@ LANG_DB = {
           ,   ru  = "Boots"
           ,   ja  = "ブーツ"
           }
-, [660] = {
+, [717] = {
               key = "$MASTER_ITEM_43"
           ,   en  = "Bracers"
           ,   de  = "armschienen"
@@ -5900,7 +6375,7 @@ LANG_DB = {
           ,   ru  = "Bracers"
           ,   ja  = "腕当て"
           }
-, [661] = {
+, [718] = {
               key = "$MASTER_ITEM_44"
           ,   en  = "Helm"
           ,   de  = "haube"
@@ -5910,7 +6385,7 @@ LANG_DB = {
           ,   ru  = "Helm"
           ,   ja  = "兜"
           }
-, [662] = {
+, [719] = {
               key = "$MASTER_ITEM_46"
           ,   en  = "Cuirass"
           ,   de  = "kürass"
@@ -5920,7 +6395,7 @@ LANG_DB = {
           ,   ru  = "Cuirass"
           ,   ja  = "胸当て"
           }
-, [663] = {
+, [720] = {
               key = "$MASTER_ITEM_47"
           ,   en  = "Pauldron"
           ,   de  = "schulterschutz"
@@ -5930,7 +6405,7 @@ LANG_DB = {
           ,   ru  = "Pauldron"
           ,   ja  = "ポールドロン"
           }
-, [664] = {
+, [721] = {
               key = "$MASTER_ITEM_48"
           ,   en  = "Girdle"
           ,   de  = "gürtel"
@@ -5940,7 +6415,7 @@ LANG_DB = {
           ,   ru  = "Girdle"
           ,   ja  = "ガードル"
           }
-, [665] = {
+, [722] = {
               key = "$MASTER_ITEM_49"
           ,   en  = "Greaves"
           ,   de  = "beinschienen"
@@ -5950,7 +6425,7 @@ LANG_DB = {
           ,   ru  = "Greaves"
           ,   ja  = "グリーヴ"
           }
-, [666] = {
+, [723] = {
               key = "$MASTER_ITEM_50"
           ,   en  = "Sabatons"
           ,   de  = "panzerschuhe"
@@ -5960,7 +6435,7 @@ LANG_DB = {
           ,   ru  = "Sabatons"
           ,   ja  = "サバトン"
           }
-, [667] = {
+, [724] = {
               key = "$MASTER_ITEM_52"
           ,   en  = "Gauntlets"
           ,   de  = "hentzen"
@@ -5970,7 +6445,7 @@ LANG_DB = {
           ,   ru  = "Gauntlets"
           ,   ja  = "篭手"
           }
-, [668] = {
+, [725] = {
               key = "$MASTER_ITEM_53"
           ,   en  = "Axe"
           ,   de  = "axt"
@@ -5980,7 +6455,7 @@ LANG_DB = {
           ,   ru  = "Axe"
           ,   ja  = "斧"
           }
-, [669] = {
+, [726] = {
               key = "$MASTER_ITEM_56"
           ,   en  = "Mace"
           ,   de  = "keule"
@@ -5990,7 +6465,7 @@ LANG_DB = {
           ,   ru  = "Mace"
           ,   ja  = "メイス"
           }
-, [670] = {
+, [727] = {
               key = "$MASTER_ITEM_59"
           ,   en  = "Sword"
           ,   de  = "schwert"
@@ -6000,7 +6475,7 @@ LANG_DB = {
           ,   ru  = "Sword"
           ,   ja  = "剣"
           }
-, [671] = {
+, [728] = {
               key = "$MASTER_ITEM_62"
           ,   en  = "Dagger"
           ,   de  = "dolch"
@@ -6010,7 +6485,7 @@ LANG_DB = {
           ,   ru  = "Dagger"
           ,   ja  = "短剣"
           }
-, [672] = {
+, [729] = {
               key = "$MASTER_ITEM_65"
           ,   en  = "Shield"
           ,   de  = "schild"
@@ -6020,7 +6495,7 @@ LANG_DB = {
           ,   ru  = "Shield"
           ,   ja  = "盾"
           }
-, [673] = {
+, [730] = {
               key = "$MASTER_ITEM_67"
           ,   en  = "Greatsword"
           ,   de  = "bidenhänder"
@@ -6030,7 +6505,7 @@ LANG_DB = {
           ,   ru  = "Greatsword"
           ,   ja  = "大剣"
           }
-, [674] = {
+, [731] = {
               key = "$MASTER_ITEM_68"
           ,   en  = "Battle Axe"
           ,   de  = "streitaxt"
@@ -6040,7 +6515,7 @@ LANG_DB = {
           ,   ru  = "Battle Axe"
           ,   ja  = "両手斧"
           }
-, [675] = {
+, [732] = {
               key = "$MASTER_ITEM_69"
           ,   en  = "Maul"
           ,   de  = "streitkolben"
@@ -6050,7 +6525,7 @@ LANG_DB = {
           ,   ru  = "Maul"
           ,   ja  = "大槌"
           }
-, [676] = {
+, [733] = {
               key = "$MASTER_ITEM_70"
           ,   en  = "Bow"
           ,   de  = "bogen"
@@ -6060,7 +6535,7 @@ LANG_DB = {
           ,   ru  = "Bow"
           ,   ja  = "弓"
           }
-, [677] = {
+, [734] = {
               key = "$MASTER_ITEM_71"
           ,   en  = "Restoration Staff"
           ,   de  = "heilungsstab"
@@ -6070,7 +6545,7 @@ LANG_DB = {
           ,   ru  = "Restoration Staff"
           ,   ja  = "回復の杖"
           }
-, [678] = {
+, [735] = {
               key = "$MASTER_ITEM_72"
           ,   en  = "Inferno Staff"
           ,   de  = "flammenstab"
@@ -6080,7 +6555,7 @@ LANG_DB = {
           ,   ru  = "Inferno Staff"
           ,   ja  = "業火の杖"
           }
-, [679] = {
+, [736] = {
               key = "$MASTER_ITEM_73"
           ,   en  = "Ice Staff"
           ,   de  = "froststab"
@@ -6090,7 +6565,7 @@ LANG_DB = {
           ,   ru  = "Ice Staff"
           ,   ja  = "氷の杖"
           }
-, [680] = {
+, [737] = {
               key = "$MASTER_ITEM_74"
           ,   en  = "Lightning Staff"
           ,   de  = "blitzstab"
@@ -6100,7 +6575,7 @@ LANG_DB = {
           ,   ru  = "Lightning Staff"
           ,   ja  = "稲妻の杖"
           }
-, [681] = {
+, [738] = {
               key = "$MASTER_ITEM_75"
           ,   en  = "Jerkin"
           ,   de  = "jacke"
@@ -6110,7 +6585,7 @@ LANG_DB = {
           ,   ru  = "Jerkin"
           ,   ja  = "ジャーキン"
           }
-, [682] = {
+, [739] = {
               key = "$MASTER_JEWELRY"
           ,   en  = "Masterful Jewelry"
           ,   de  = "Ein meisterhaftes Schmuckstück"
@@ -6119,7 +6594,7 @@ LANG_DB = {
           ,   ru  = "Искусные ювелирные изделия"
           ,   ja  = "優れた宝飾"
           }
-, [683] = {
+, [740] = {
               key = "$MASTER_LABEL_QUALITY"
           ,   en  = "Quality"
           ,   de  = "Qualität"
@@ -6128,13 +6603,13 @@ LANG_DB = {
           ,   it  = "Qualità"
           ,   ru  = "Качество"
           }
-, [684] = {
+, [741] = {
               key = "$MASTER_LABEL_SET"
           ,   en  = "Set"
           ,   fr  = "Ensemble"
           ,   ru  = "Комплект"
           }
-, [685] = {
+, [742] = {
               key = "$MASTER_LABEL_STYLE"
           ,   en  = "Style"
           ,   de  = "Stil"
@@ -6142,7 +6617,7 @@ LANG_DB = {
           ,   it  = "Stile"
           ,   ru  = "Стиль"
           }
-, [686] = {
+, [743] = {
               key = "$MASTER_LABEL_TRAIT"
           ,   en  = "Trait"
           ,   de  = "Eigenschaft"
@@ -6150,7 +6625,7 @@ LANG_DB = {
           ,   it  = "Tratti"
           ,   ru  = "Особенность"
           }
-, [687] = {
+, [744] = {
               key = "$MASTER_LEATHER"
           ,   en  = "Masterful Leatherwear"
           ,   de  = "Meisterhafte Lederwaren"
@@ -6159,7 +6634,7 @@ LANG_DB = {
           ,   ru  = "Искусные кожаные доспехи"
           ,   ja  = "優れた革装備"
           }
-, [688] = {
+, [745] = {
               key = "$MASTER_PLATE"
           ,   en  = "A Masterful Plate"
           ,   de  = "Eine meisterhafte Rüstung"
@@ -6168,7 +6643,7 @@ LANG_DB = {
           ,   ru  = "Искусные латы"
           ,   ja  = "優れた防具"
           }
-, [689] = {
+, [746] = {
               key = "$MASTER_SHIELD"
           ,   en  = "A Masterful Shield"
           ,   de  = "Ein meisterhafter Schild"
@@ -6177,7 +6652,7 @@ LANG_DB = {
           ,   ru  = "Искусный щит"
           ,   ja  = "優れた盾"
           }
-, [690] = {
+, [747] = {
               key = "$MASTER_STEP_1"
           ,   en  = "I need to create the item specified by my contract."
           ,   de  = "Ich muss den Gegenstand aus meinem Vertrag herstellen."
@@ -6186,7 +6661,7 @@ LANG_DB = {
           ,   ru  = "Мне нужно создать предмет, указанный в моем контракте."
           ,   ja  = "契約で指定されたアイテムを作成する"
           }
-, [691] = {
+, [748] = {
               key = "$MASTER_STEP_N"
           ,   en  = "I need to create the items specified by my contract."
           ,   de  = "Ich muss die Gegenstände aus meinem Vertrag herstellen."
@@ -6195,7 +6670,7 @@ LANG_DB = {
           ,   ru  = "Мне нужно создать предметы, указанные в моем контракте."
           ,   ja  = "契約で指定されたアイテムを作成する"
           }
-, [692] = {
+, [749] = {
               key = "$MASTER_TAILOR"
           ,   en  = "Masterful Tailoring"
           ,   de  = "Ein meisterhaftes Gewand"
@@ -6204,7 +6679,7 @@ LANG_DB = {
           ,   ru  = "Искусные тканевые доспехи"
           ,   ja  = "優れた服"
           }
-, [693] = {
+, [750] = {
               key = "$MASTER_WEAPON"
           ,   en  = "A Masterful Weapon"
           ,   de  = "Eine meisterhafte Waffe"
@@ -6213,67 +6688,63 @@ LANG_DB = {
           ,   ru  = "Искусное оружие"
           ,   ja  = "優れた武器"
           }
-, [694] = {
+, [751] = {
               key = "$MASTER_WRIT_BASE_TEXT_RE_ITEM"
           ,   en  = "Craft an? ([^;]*);"
           }
-, [695] = {
+, [752] = {
               key = "$MASTER_WRIT_BASE_TEXT_RE_QUALITY"
           ,   en  = "Quality: ([^;]*)"
           }
-, [696] = {
+, [753] = {
               key = "$MASTER_WRIT_BASE_TEXT_RE_SET"
           ,   en  = "Set: (.*)"
           }
-, [697] = {
+, [754] = {
               key = "$MASTER_WRIT_BASE_TEXT_RE_STYLE"
           ,   en  = "Style: ([^;]*)"
           }
-, [698] = {
+, [755] = {
               key = "$MASTER_WRIT_BASE_TEXT_RE_TRAIT"
           ,   en  = "Trait: ([^;]*)"
           }
-, [699] = {
+, [756] = {
               key = "$MATERIAL_AL_000883"
           ,   en  = "natural water"
           ,   de  = "natürliches Wasser"
           ,   fr  = "eau naturelle"
           ,   es  = "agua natural"
-          ,   it  = "natural water"
           ,   ru  = "природная вода"
           ,   ja  = "自然水"
           }
-, [700] = {
+, [757] = {
               key = "$MATERIAL_AL_000883B"
           ,   en  = "natural water"
           ,   de  = "natürliches Wasser"
           ,   fr  = "eau naturelle"
           ,   es  = "agua natural"
-          ,   it  = "natural water"
           ,   ru  = "природную воду"
           ,   ja  = "自然水"
           }
-, [701] = {
+, [758] = {
               key = "$MATERIAL_AL_001187"
           ,   en  = "clear water"
           ,   de  = "klares Wasser"
           ,   fr  = "eau claire"
           ,   es  = "agua limpia"
-          ,   it  = "clear water"
           ,   ru  = "чистая вода"
           ,   ja  = "清水"
           }
-, [702] = {
+, [759] = {
               key = "$MATERIAL_AL_004570"
           ,   en  = "pristine water"
           ,   de  = "unberührtes Wasser"
           ,   fr  = "eau limpide"
           ,   es  = "agua prístina"
-          ,   it  = "pristine water"
           ,   ru  = "нетронутая вода"
           ,   ja  = "清浄水"
           }
-, [703] = {
+, [760] = {
               key = "$MATERIAL_AL_004570B"
           ,   en  = "pristine water"
           ,   de  = "unberührtes Wasser"
@@ -6282,47 +6753,43 @@ LANG_DB = {
           ,   ru  = "нетронутую воду"
           ,   ja  = "清浄水"
           }
-, [704] = {
+, [761] = {
               key = "$MATERIAL_AL_023265"
           ,   en  = "cleansed water"
           ,   de  = "gesäubertes Wasser"
           ,   fr  = "eau assainie"
           ,   es  = "agua depurada"
-          ,   it  = "cleansed water"
           ,   ru  = "очищенная вода"
           ,   ja  = "浄化水"
           }
-, [705] = {
+, [762] = {
               key = "$MATERIAL_AL_023265B"
           ,   en  = "cleansed water"
           ,   de  = "gesäubertes Wasser"
           ,   fr  = "eau assainie"
           ,   es  = "agua depurada"
-          ,   it  = "cleansed water"
           ,   ru  = "очищенную воду"
           ,   ja  = "浄化水"
           }
-, [706] = {
+, [763] = {
               key = "$MATERIAL_AL_023266"
           ,   en  = "filtered water"
           ,   de  = "gefiltertes Wasser"
           ,   fr  = "eau filtrée"
           ,   es  = "agua filtrada"
-          ,   it  = "filtered water"
           ,   ru  = "фильтрованная вода"
           ,   ja  = "ろ過水"
           }
-, [707] = {
+, [764] = {
               key = "$MATERIAL_AL_023267"
           ,   en  = "purified water"
           ,   de  = "gereinigtes Wasser"
           ,   fr  = "eau purifiée"
           ,   es  = "agua purificada"
-          ,   it  = "purified water"
           ,   ru  = "дистиллированная вода"
           ,   ja  = "神聖水"
           }
-, [708] = {
+, [765] = {
               key = "$MATERIAL_AL_023267B"
           ,   en  = "purified water"
           ,   de  = "gereinigtes Wasser"
@@ -6331,57 +6798,52 @@ LANG_DB = {
           ,   ru  = "дистиллированную воду"
           ,   ja  = "神聖水"
           }
-, [709] = {
+, [766] = {
               key = "$MATERIAL_AL_023268"
           ,   en  = "cloud mist"
           ,   de  = "Wolkennebel"
           ,   fr  = "brume"
           ,   es  = "Bruma"
-          ,   it  = "cloud mist"
           ,   ru  = "облачный пар"
           ,   ja  = "霧の雲"
           }
-, [710] = {
+, [767] = {
               key = "$MATERIAL_AL_030148"
           ,   en  = "blue entoloma"
           ,   de  = "blauer Glöckling"
           ,   fr  = "entoloma bleue"
           ,   es  = "entoloma azul"
-          ,   it  = "blue entoloma"
           ,   ru  = "голубая энтолома"
           ,   ja  = "アオイッポンシメジ"
           }
-, [711] = {
+, [768] = {
               key = "$MATERIAL_AL_030149"
           ,   en  = "stinkhorn"
           ,   de  = "Stinkmorchel"
           ,   fr  = "mutinus elegans"
           ,   es  = "falacea"
-          ,   it  = "stinkhorn"
           ,   ru  = "цветохвостник веретеновидный"
           ,   ja  = "スッポンタケ"
           }
-, [712] = {
+, [769] = {
               key = "$MATERIAL_AL_030151"
           ,   en  = "emetic russula"
           ,   de  = "Brechtäubling"
           ,   fr  = "russule émétique"
           ,   es  = "rúsula emética"
-          ,   it  = "emetic russula"
           ,   ru  = "жгучеедкая сыроежка"
           ,   ja  = "ドクベニタケ"
           }
-, [713] = {
+, [770] = {
               key = "$MATERIAL_AL_030152"
           ,   en  = "violet coprinus"
           ,   de  = "violetter Tintling"
           ,   fr  = "coprin violet"
           ,   es  = "coprinus violeta"
-          ,   it  = "violet coprinus"
           ,   ru  = "лиловый копринус"
           ,   ja  = "ムラサキヒトヨタケ"
           }
-, [714] = {
+, [771] = {
               key = "$MATERIAL_AL_030152B"
           ,   en  = "violet coprinus"
           ,   de  = "violetten Tintling"
@@ -6390,337 +6852,303 @@ LANG_DB = {
           ,   ru  = "лиловый копринус"
           ,   ja  = "ムラサキヒトヨタケ"
           }
-, [715] = {
+, [772] = {
               key = "$MATERIAL_AL_030153"
           ,   en  = "namira's rot"
           ,   de  = "Namiras Fäulnis"
           ,   fr  = "truffe de Namira"
           ,   es  = "seta de Namira"
-          ,   it  = "namira's rot"
           ,   ru  = "гниль Намиры"
           ,   ja  = "ナミラキノコ"
           }
-, [716] = {
+, [773] = {
               key = "$MATERIAL_AL_030154"
           ,   en  = "white cap"
           ,   de  = "Weißkappe"
           ,   fr  = "Chapeau blanc"
           ,   es  = "hongo blanco"
-          ,   it  = "white cap"
           ,   ru  = "белянка"
           ,   ja  = "白かさキノコ"
           }
-, [717] = {
+, [774] = {
               key = "$MATERIAL_AL_030155"
           ,   en  = "luminous russula"
           ,   de  = "Leuchttäubling"
           ,   fr  = "russule phosphorescente"
           ,   es  = "rúsula luminosa"
-          ,   it  = "luminous russula"
           ,   ru  = "светящаяся сыроежка"
           ,   ja  = "光ベニタケ"
           }
-, [718] = {
+, [775] = {
               key = "$MATERIAL_AL_030156"
           ,   en  = "imp stool"
           ,   de  = "Koboldschemel"
           ,   fr  = "pied-de-lutin"
           ,   es  = "seta de diablillo"
-          ,   it  = "imp stool"
           ,   ru  = "бесовский гриб"
           ,   ja  = "木椅子キノコ"
           }
-, [719] = {
+, [776] = {
               key = "$MATERIAL_AL_030157"
           ,   en  = "blessed thistle"
           ,   de  = "Benediktenkraut"
           ,   fr  = "chardon béni"
           ,   es  = "cardo bendito"
-          ,   it  = "blessed thistle"
           ,   ru  = "благословенный чертополох"
           ,   ja  = "聖なるシッスル"
           }
-, [720] = {
+, [777] = {
               key = "$MATERIAL_AL_030158"
           ,   en  = "lady's smock"
           ,   de  = "Wiesenschaumkraut"
           ,   fr  = "cardamine des prés"
           ,   es  = "cardamina"
-          ,   it  = "lady's smock"
           ,   ru  = "луговой сердечник"
           ,   ja  = "タネツケバナ"
           }
-, [721] = {
+, [778] = {
               key = "$MATERIAL_AL_030159"
           ,   en  = "wormwood"
           ,   de  = "Wermut"
           ,   fr  = "absinthe"
           ,   es  = "artemisia"
-          ,   it  = "wormwood"
           ,   ru  = "полынь"
           ,   ja  = "ニガヨモギ"
           }
-, [722] = {
+, [779] = {
               key = "$MATERIAL_AL_030160"
           ,   en  = "bugloss"
           ,   de  = "Wolfsauge"
           ,   fr  = "noctuelle"
           ,   es  = "lengua de buey"
-          ,   it  = "bugloss"
           ,   ru  = "воловик"
           ,   ja  = "ムラサキ草"
           }
-, [723] = {
+, [780] = {
               key = "$MATERIAL_AL_030161"
           ,   en  = "corn flower"
           ,   de  = "Kornblume"
           ,   fr  = "bleuet"
           ,   es  = "aciano"
-          ,   it  = "corn flower"
           ,   ru  = "василек"
           ,   ja  = "コーンフラワー"
           }
-, [724] = {
+, [781] = {
               key = "$MATERIAL_AL_030162"
           ,   en  = "dragonthorn"
           ,   de  = "Drachendorn"
           ,   fr  = "épine-de-dragon"
           ,   es  = "espina de dragón"
-          ,   it  = "dragonthorn"
           ,   ru  = "драконий шип"
           ,   ja  = "ドラゴンソーン"
           }
-, [725] = {
+, [782] = {
               key = "$MATERIAL_AL_030163"
           ,   en  = "mountain flower"
           ,   de  = "Bergblume"
           ,   fr  = "lys des cimes"
           ,   es  = "flor de montaña"
-          ,   it  = "mountain flower"
           ,   ru  = "горноцвет"
           ,   ja  = "山の花"
           }
-, [726] = {
+, [783] = {
               key = "$MATERIAL_AL_030164"
           ,   en  = "columbine"
           ,   de  = "Akelei"
           ,   fr  = "ancolie"
           ,   es  = "aguilegia"
-          ,   it  = "columbine"
           ,   ru  = "водосбор"
           ,   ja  = "オダマキ"
           }
-, [727] = {
+, [784] = {
               key = "$MATERIAL_AL_030165"
           ,   en  = "nirnroot"
           ,   de  = "Nirnwurz"
           ,   fr  = "nirnrave"
           ,   es  = "raíz de nirn"
-          ,   it  = "nirnroot"
           ,   ru  = "корень Нирна"
           ,   ja  = "ニルンルート"
           }
-, [728] = {
+, [785] = {
               key = "$MATERIAL_AL_030166"
           ,   en  = "water hyacinth"
           ,   de  = "Wasserhyazinthe"
           ,   fr  = "jacinthe d'eau"
           ,   es  = "jacinto de agua"
-          ,   it  = "water hyacinth"
           ,   ru  = "водный гиацинт"
           ,   ja  = "ホテイアオイ"
           }
-, [729] = {
+, [786] = {
               key = "$MATERIAL_AL_064500"
           ,   en  = "Star Dew"
           ,   de  = "Sternentau"
           ,   fr  = "rosée stellaire"
           ,   es  = "rocío estelar"
-          ,   it  = "Star Dew"
           ,   ru  = "звездная роса"
           ,   ja  = "星のしずく"
           }
-, [730] = {
+, [787] = {
               key = "$MATERIAL_AL_064501"
           ,   en  = "Lorkhan's Tears"
           ,   de  = "Lorkhans Tränen"
           ,   fr  = "larmes de Lorkhan"
           ,   es  = "Lágrimas de Lorkhan"
-          ,   it  = "Lorkhan's Tears"
           ,   ru  = "Слезы Лорхана"
           ,   ja  = "ロルカーンの涙"
           }
-, [731] = {
+, [788] = {
               key = "$MATERIAL_AL_075357"
           ,   en  = "Grease"
           ,   de  = "Fett"
           ,   fr  = "graisse"
           ,   es  = "Grasa"
-          ,   it  = "Grease"
           ,   ru  = "Топленое сало"
           ,   ja  = "獣油"
           }
-, [732] = {
+, [789] = {
               key = "$MATERIAL_AL_075358"
           ,   en  = "Ichor"
           ,   de  = "Eiter"
           ,   fr  = "sanie"
           ,   es  = "icor"
-          ,   it  = "Ichor"
           ,   ru  = "Сукровица"
           ,   ja  = "イコル"
           }
-, [733] = {
+, [790] = {
               key = "$MATERIAL_AL_075359"
           ,   en  = "Slime"
           ,   de  = "Schleim"
           ,   fr  = "fluide visqueux"
           ,   es  = "limo"
-          ,   it  = "Slime"
           ,   ru  = "Слизь"
           ,   ja  = "粘液"
           }
-, [734] = {
+, [791] = {
               key = "$MATERIAL_AL_075360"
           ,   en  = "Gall"
           ,   de  = "Galle"
           ,   fr  = "bile"
           ,   es  = "bilis"
-          ,   it  = "Gall"
           ,   ru  = "Желчь"
           ,   ja  = "胆嚢"
           }
-, [735] = {
+, [792] = {
               key = "$MATERIAL_AL_075361"
           ,   en  = "Terebinthine"
           ,   de  = "Terebinthe"
           ,   fr  = "térébenthine"
           ,   es  = "trementina"
-          ,   it  = "Terebinthine"
           ,   ru  = "Терпентинное масло"
           ,   ja  = "テレピン"
           }
-, [736] = {
+, [793] = {
               key = "$MATERIAL_AL_075362"
           ,   en  = "Pitch-Bile"
           ,   de  = "Schwarzgalle"
           ,   fr  = "bile-poix"
           ,   es  = "bilis ácido"
-          ,   it  = "Pitch-Bile"
           ,   ru  = "Смоляная желчь"
           ,   ja  = "黒の胆汁"
           }
-, [737] = {
+, [794] = {
               key = "$MATERIAL_AL_075363"
           ,   en  = "Tarblack"
           ,   de  = "Teerschwarz"
           ,   fr  = "goudron"
           ,   es  = "betún negro"
-          ,   it  = "Tarblack"
           ,   ru  = "Дегтярное масло"
           ,   ja  = "ターブラック"
           }
-, [738] = {
+, [795] = {
               key = "$MATERIAL_AL_075364"
           ,   en  = "Night-Oil"
           ,   de  = "Nachtöl"
           ,   fr  = "nocthuile"
           ,   es  = "aceite noctívago"
-          ,   it  = "Night-Oil"
           ,   ru  = "Ночное масло"
           ,   ja  = "夜の油"
           }
-, [739] = {
+, [796] = {
               key = "$MATERIAL_AL_075365"
           ,   en  = "Alkahest"
-          ,   de  = "Alkahest"
           ,   fr  = "alcaleste"
           ,   es  = "alkahest"
-          ,   it  = "Alkahest"
           ,   ru  = "Алкагест"
           ,   ja  = "アルカヘスト"
           }
-, [740] = {
+, [797] = {
               key = "$MATERIAL_AL_077581"
           ,   en  = "Torchbug Thorax"
           ,   de  = "Fackelkäferpanzer"
           ,   fr  = "thorax de flammouche"
           ,   es  = "tórax de luciérnaga"
-          ,   it  = "Torchbug Thorax"
           ,   ru  = "Торакс светлячка"
           ,   ja  = "ホタルの腹部"
           }
-, [741] = {
+, [798] = {
               key = "$MATERIAL_AL_077583"
           ,   en  = "Beetle Scuttle"
           ,   de  = "Käferbeine"
           ,   fr  = "cloaque de scarabée"
           ,   es  = "baba de escarabajo"
-          ,   it  = "Beetle Scuttle"
           ,   ru  = "Жучиный скатл"
           ,   ja  = "ビートルスカトル"
           }
-, [742] = {
+, [799] = {
               key = "$MATERIAL_AL_077584"
           ,   en  = "Spider Egg"
           ,   de  = "Spinnenei"
           ,   fr  = "œuf d'araignée"
           ,   es  = "huevo de araña"
-          ,   it  = "Spider Egg"
           ,   ru  = "Паучье яйцо"
           ,   ja  = "蜘蛛の卵"
           }
-, [743] = {
+, [800] = {
               key = "$MATERIAL_AL_077585"
           ,   en  = "Butterfly Wing"
           ,   de  = "Schmetterlingsflügel"
           ,   fr  = "aile de papillon"
           ,   es  = "ala de mariposa"
-          ,   it  = "Butterfly Wing"
           ,   ru  = "Крыло бабочки"
           ,   ja  = "蝶の羽"
           }
-, [744] = {
+, [801] = {
               key = "$MATERIAL_AL_077587"
           ,   en  = "Fleshfly Larva"
           ,   de  = "Fleischfliegenlarve"
           ,   fr  = "larve de mouche à viande"
           ,   es  = "larva de mosca de la carne"
-          ,   it  = "Fleshfly Larva"
           ,   ru  = "Личинка мясной мухи"
           ,   ja  = "ニクバエの幼虫"
           }
-, [745] = {
+, [802] = {
               key = "$MATERIAL_AL_077589"
           ,   en  = "Scrib Jelly"
           ,   de  = "Skribgelee"
           ,   fr  = "gelée de scrib"
           ,   es  = "jalea de scrib"
-          ,   it  = "Scrib Jelly"
           ,   ru  = "Скрибовое желе"
           ,   ja  = "スクリブのゼリー"
           }
-, [746] = {
+, [803] = {
               key = "$MATERIAL_AL_077590"
           ,   en  = "Nightshade"
           ,   de  = "Nachtschatten"
           ,   fr  = "Belladone"
           ,   es  = "belladona"
-          ,   it  = "Nightshade"
           ,   ru  = "Паслен"
           ,   ja  = "ベラドンナ"
           }
-, [747] = {
+, [804] = {
               key = "$MATERIAL_AL_077591"
           ,   en  = "Mudcrab Chitin"
           ,   de  = "Schlammkrabbenchitin"
           ,   fr  = "chitine de vasard"
           ,   es  = "quitina de cangrejo del barro"
-          ,   it  = "Mudcrab Chitin"
           ,   ru  = "Хитин грязевого краба"
           ,   ja  = "マッドクラブキチン"
           }
-, [748] = {
+, [805] = {
               key = "$MATERIAL_AL_139019"
           ,   en  = "Powdered Mother of Pearl"
           ,   de  = "pulverisiertes Perlmutt"
@@ -6730,7 +7158,7 @@ LANG_DB = {
           ,   ru  = "измельченный перламутр"
           ,   ja  = "真珠貝のパウダー"
           }
-, [749] = {
+, [806] = {
               key = "$MATERIAL_AL_139020"
           ,   en  = "Clam Gall"
           ,   de  = "Muschelgalle"
@@ -6740,7 +7168,7 @@ LANG_DB = {
           ,   ru  = "желчь моллюска"
           ,   ja  = "クラム・ゴル"
           }
-, [750] = {
+, [807] = {
               key = "$MATERIAL_BS_01"
           ,   en  = "iron"
           ,   de  = "Eisen"
@@ -6749,7 +7177,7 @@ LANG_DB = {
           ,   ru  = "iron"
           ,   ja  = "鉄"
           }
-, [751] = {
+, [808] = {
               key = "$MATERIAL_BS_02"
           ,   en  = "steel"
           ,   de  = "Stahl"
@@ -6758,7 +7186,7 @@ LANG_DB = {
           ,   ru  = "steel"
           ,   ja  = "鋼鉄"
           }
-, [752] = {
+, [809] = {
               key = "$MATERIAL_BS_03"
           ,   en  = "orichalc"
           ,   de  = "Oreichalkos"
@@ -6767,7 +7195,7 @@ LANG_DB = {
           ,   ru  = "orichalc"
           ,   ja  = "オリハルコン"
           }
-, [753] = {
+, [810] = {
               key = "$MATERIAL_BS_04"
           ,   en  = "dwarven"
           ,   de  = "Dwemer"
@@ -6776,7 +7204,7 @@ LANG_DB = {
           ,   ru  = "dwarven"
           ,   ja  = "ドワーフ"
           }
-, [754] = {
+, [811] = {
               key = "$MATERIAL_BS_04B"
           ,   en  = "dwarven"
           ,   de  = "Dwemer"
@@ -6784,7 +7212,7 @@ LANG_DB = {
           ,   es  = "acero enano"
           ,   ja  = "ドワーフ"
           }
-, [755] = {
+, [812] = {
               key = "$MATERIAL_BS_05"
           ,   en  = "ebon"
           ,   de  = "Ebenerz"
@@ -6793,7 +7221,7 @@ LANG_DB = {
           ,   ru  = "ebon"
           ,   ja  = "黒檀"
           }
-, [756] = {
+, [813] = {
               key = "$MATERIAL_BS_05B"
           ,   en  = "ebony"
           ,   de  = "Ebenerz"
@@ -6802,7 +7230,7 @@ LANG_DB = {
           ,   ru  = "ebon"
           ,   ja  = "黒檀"
           }
-, [757] = {
+, [814] = {
               key = "$MATERIAL_BS_06"
           ,   en  = "calcinium"
           ,   de  = "Kalzinium"
@@ -6811,7 +7239,7 @@ LANG_DB = {
           ,   ru  = "calcinium"
           ,   ja  = "カルシニウム"
           }
-, [758] = {
+, [815] = {
               key = "$MATERIAL_BS_07"
           ,   en  = "galatite"
           ,   de  = "Galatit"
@@ -6820,7 +7248,7 @@ LANG_DB = {
           ,   ru  = "galatite"
           ,   ja  = "ガラタイト"
           }
-, [759] = {
+, [816] = {
               key = "$MATERIAL_BS_08"
           ,   en  = "quicksilver"
           ,   de  = "Flinksilber"
@@ -6829,7 +7257,7 @@ LANG_DB = {
           ,   ru  = "quicksilver"
           ,   ja  = "水銀"
           }
-, [760] = {
+, [817] = {
               key = "$MATERIAL_BS_09"
           ,   en  = "voidsteel"
           ,   de  = "Leerenstahl"
@@ -6838,7 +7266,7 @@ LANG_DB = {
           ,   ru  = "voidsteel"
           ,   ja  = "虚無の鉄"
           }
-, [761] = {
+, [818] = {
               key = "$MATERIAL_BS_10"
           ,   en  = "Rubedite"
           ,   de  = "Rubedit"
@@ -6847,557 +7275,352 @@ LANG_DB = {
           ,   ru  = "Rubedite"
           ,   ja  = "ルベダイト"
           }
-, [762] = {
+, [819] = {
               key = "$MATERIAL_EN_045806"
           ,   en  = "Jejora"
-          ,   de  = "Jejora"
           ,   fr  = "Jéjora"
-          ,   es  = "Jejora"
-          ,   it  = "Jejora"
           ,   ru  = "Джеджора"
           ,   ja  = "ジェジョラ"
           }
-, [763] = {
+, [820] = {
               key = "$MATERIAL_EN_045807"
           ,   en  = "Odra"
-          ,   de  = "Odra"
-          ,   fr  = "Odra"
-          ,   es  = "Odra"
-          ,   it  = "Odra"
           ,   ru  = "Одра"
           ,   ja  = "オドラ"
           }
-, [764] = {
+, [821] = {
               key = "$MATERIAL_EN_045808"
           ,   en  = "Pojora"
-          ,   de  = "Pojora"
-          ,   fr  = "Pojora"
-          ,   es  = "Pojora"
-          ,   it  = "Pojora"
           ,   ru  = "Поджора"
           ,   ja  = "ポジョラ"
           }
-, [765] = {
+, [822] = {
               key = "$MATERIAL_EN_045809"
           ,   en  = "Edora"
-          ,   de  = "Edora"
-          ,   fr  = "Edora"
-          ,   es  = "Edora"
-          ,   it  = "Edora"
           ,   ru  = "Эдора"
           ,   ja  = "エドラ"
           }
-, [766] = {
+, [823] = {
               key = "$MATERIAL_EN_045810"
           ,   en  = "Jaera"
-          ,   de  = "Jaera"
-          ,   fr  = "Jaera"
-          ,   es  = "Jaera"
-          ,   it  = "Jaera"
           ,   ru  = "Джейра"
           ,   ja  = "ジャエラ"
           }
-, [767] = {
+, [824] = {
               key = "$MATERIAL_EN_045811"
           ,   en  = "Pora"
-          ,   de  = "Pora"
-          ,   fr  = "Pora"
-          ,   es  = "Pora"
-          ,   it  = "Pora"
           ,   ru  = "Пора"
           ,   ja  = "ポラ"
           }
-, [768] = {
+, [825] = {
               key = "$MATERIAL_EN_045812"
           ,   en  = "Denara"
-          ,   de  = "Denara"
           ,   fr  = "Dénara"
-          ,   es  = "Denara"
-          ,   it  = "Denara"
           ,   ru  = "Денара"
           ,   ja  = "デナラ"
           }
-, [769] = {
+, [826] = {
               key = "$MATERIAL_EN_045813"
           ,   en  = "Rera"
-          ,   de  = "Rera"
           ,   fr  = "Réra"
-          ,   es  = "Rera"
-          ,   it  = "Rera"
           ,   ru  = "Рера"
           ,   ja  = "レラ"
           }
-, [770] = {
+, [827] = {
               key = "$MATERIAL_EN_045814"
           ,   en  = "Derado"
-          ,   de  = "Derado"
           ,   fr  = "Dérado"
-          ,   es  = "Derado"
-          ,   it  = "Derado"
           ,   ru  = "Дерадо"
           ,   ja  = "デラド"
           }
-, [771] = {
+, [828] = {
               key = "$MATERIAL_EN_045815"
           ,   en  = "Rekura"
-          ,   de  = "Rekura"
-          ,   fr  = "Rekura"
-          ,   es  = "Rekura"
-          ,   it  = "Rekura"
           ,   ru  = "Рекура"
           ,   ja  = "レクラ"
           }
-, [772] = {
+, [829] = {
               key = "$MATERIAL_EN_045816"
           ,   en  = "Kura"
-          ,   de  = "Kura"
-          ,   fr  = "Kura"
-          ,   es  = "Kura"
-          ,   it  = "Kura"
           ,   ru  = "Кура"
           ,   ja  = "クラ"
           }
-, [773] = {
+, [830] = {
               key = "$MATERIAL_EN_045817"
           ,   en  = "Jode"
-          ,   de  = "Jode"
-          ,   fr  = "Jode"
-          ,   es  = "Jode"
-          ,   it  = "Jode"
           ,   ru  = "Джоде"
           ,   ja  = "ジョーデ"
           }
-, [774] = {
+, [831] = {
               key = "$MATERIAL_EN_045818"
           ,   en  = "Notade"
-          ,   de  = "Notade"
-          ,   fr  = "Notade"
-          ,   es  = "Notade"
-          ,   it  = "Notade"
           ,   ru  = "Нотаде"
           ,   ja  = "ノタデ"
           }
-, [775] = {
+, [832] = {
               key = "$MATERIAL_EN_045819"
           ,   en  = "Ode"
-          ,   de  = "Ode"
-          ,   fr  = "Ode"
-          ,   es  = "Ode"
-          ,   it  = "Ode"
           ,   ru  = "Оде"
           ,   ja  = "オデ"
           }
-, [776] = {
+, [833] = {
               key = "$MATERIAL_EN_045820"
           ,   en  = "Tade"
-          ,   de  = "Tade"
-          ,   fr  = "Tade"
-          ,   es  = "Tade"
-          ,   it  = "Tade"
           ,   ru  = "Таде"
           ,   ja  = "タデ"
           }
-, [777] = {
+, [834] = {
               key = "$MATERIAL_EN_045821"
           ,   en  = "Jayde"
-          ,   de  = "Jayde"
-          ,   fr  = "Jayde"
-          ,   es  = "Jayde"
-          ,   it  = "Jayde"
           ,   ru  = "Джайде"
           ,   ja  = "ジェイデ"
           }
-, [778] = {
+, [835] = {
               key = "$MATERIAL_EN_045822"
           ,   en  = "Edode"
-          ,   de  = "Edode"
-          ,   fr  = "Edode"
-          ,   es  = "Edode"
-          ,   it  = "Edode"
           ,   ru  = "Эдоде"
           ,   ja  = "エドデ"
           }
-, [779] = {
+, [836] = {
               key = "$MATERIAL_EN_045823"
           ,   en  = "Pojode"
-          ,   de  = "Pojode"
-          ,   fr  = "Pojode"
-          ,   es  = "Pojode"
-          ,   it  = "Pojode"
           ,   ru  = "Поджоде"
           ,   ja  = "ポジョデ"
           }
-, [780] = {
+, [837] = {
               key = "$MATERIAL_EN_045824"
           ,   en  = "Rekude"
-          ,   de  = "Rekude"
           ,   fr  = "Rekudé"
-          ,   es  = "Rekude"
-          ,   it  = "Rekude"
           ,   ru  = "Рекуде"
           ,   ja  = "レクデ"
           }
-, [781] = {
+, [838] = {
               key = "$MATERIAL_EN_045825"
           ,   en  = "Hade"
-          ,   de  = "Hade"
-          ,   fr  = "Hade"
-          ,   es  = "Hade"
-          ,   it  = "Hade"
           ,   ru  = "Хаде"
           ,   ja  = "ハデ"
           }
-, [782] = {
+, [839] = {
               key = "$MATERIAL_EN_045826"
           ,   en  = "Idode"
-          ,   de  = "Idode"
-          ,   fr  = "Idode"
-          ,   es  = "Idode"
-          ,   it  = "Idode"
           ,   ru  = "Идоде"
           ,   ja  = "イドデ"
           }
-, [783] = {
+, [840] = {
               key = "$MATERIAL_EN_045827"
           ,   en  = "Pode"
-          ,   de  = "Pode"
-          ,   fr  = "Pode"
-          ,   es  = "Pode"
-          ,   it  = "Pode"
           ,   ru  = "Поде"
           ,   ja  = "ポデ"
           }
-, [784] = {
+, [841] = {
               key = "$MATERIAL_EN_045828"
           ,   en  = "Kedeko"
-          ,   de  = "Kedeko"
           ,   fr  = "Kédéko"
-          ,   es  = "Kedeko"
-          ,   it  = "Kedeko"
           ,   ru  = "Кедеко"
           ,   ja  = "ケデコ"
           }
-, [785] = {
+, [842] = {
               key = "$MATERIAL_EN_045829"
           ,   en  = "Rede"
-          ,   de  = "Rede"
-          ,   fr  = "Rede"
-          ,   es  = "Rede"
-          ,   it  = "Rede"
           ,   ru  = "Реде"
           ,   ja  = "レデ"
           }
-, [786] = {
+, [843] = {
               key = "$MATERIAL_EN_045830"
           ,   en  = "Kude"
-          ,   de  = "Kude"
           ,   fr  = "Kudé"
-          ,   es  = "Kude"
-          ,   it  = "Kude"
           ,   ru  = "Куде"
           ,   ja  = "クデ"
           }
-, [787] = {
+, [844] = {
               key = "$MATERIAL_EN_045831"
           ,   en  = "Oko"
-          ,   de  = "Oko"
-          ,   fr  = "Oko"
-          ,   es  = "Oko"
-          ,   it  = "Oko"
           ,   ru  = "Око"
           ,   ja  = "オコ"
           }
-, [788] = {
+, [845] = {
               key = "$MATERIAL_EN_045832"
           ,   en  = "Makko"
-          ,   de  = "Makko"
-          ,   fr  = "Makko"
-          ,   es  = "Makko"
-          ,   it  = "Makko"
           ,   ru  = "Макко"
           ,   ja  = "マッコ"
           }
-, [789] = {
+, [846] = {
               key = "$MATERIAL_EN_045833"
           ,   en  = "Deni"
-          ,   de  = "Deni"
-          ,   fr  = "Deni"
-          ,   es  = "Deni"
-          ,   it  = "Deni"
           ,   ru  = "Дени"
           ,   ja  = "デニ"
           }
-, [790] = {
+, [847] = {
               key = "$MATERIAL_EN_045834"
           ,   en  = "Okoma"
-          ,   de  = "Okoma"
-          ,   fr  = "Okoma"
-          ,   es  = "Okoma"
-          ,   it  = "Okoma"
           ,   ru  = "Окома"
           ,   ja  = "オコマ"
           }
-, [791] = {
+, [848] = {
               key = "$MATERIAL_EN_045835"
           ,   en  = "Makkoma"
-          ,   de  = "Makkoma"
-          ,   fr  = "Makkoma"
-          ,   es  = "Makkoma"
-          ,   it  = "Makkoma"
           ,   ru  = "Маккома"
           ,   ja  = "マッコマ"
           }
-, [792] = {
+, [849] = {
               key = "$MATERIAL_EN_045836"
           ,   en  = "Denima"
-          ,   de  = "Denima"
-          ,   fr  = "Denima"
-          ,   es  = "Denima"
-          ,   it  = "Denima"
           ,   ru  = "Денима"
           ,   ja  = "デニマ"
           }
-, [793] = {
+, [850] = {
               key = "$MATERIAL_EN_045837"
           ,   en  = "Kuoko"
-          ,   de  = "Kuoko"
-          ,   fr  = "Kuoko"
-          ,   es  = "Kuoko"
-          ,   it  = "Kuoko"
           ,   ru  = "Куоко"
           ,   ja  = "クオコ"
           }
-, [794] = {
+, [851] = {
               key = "$MATERIAL_EN_045838"
           ,   en  = "Rakeipa"
-          ,   de  = "Rakeipa"
           ,   fr  = "Rakeïpa"
-          ,   es  = "Rakeipa"
-          ,   it  = "Rakeipa"
           ,   ru  = "Ракейпа"
           ,   ja  = "ラケイパ"
           }
-, [795] = {
+, [852] = {
               key = "$MATERIAL_EN_045839"
           ,   en  = "Dekeipa"
           ,   de  = "Dakeipa"
           ,   fr  = "Dekeïpa"
-          ,   es  = "Dekeipa"
-          ,   it  = "Dekeipa"
           ,   ru  = "Декейпа"
           ,   ja  = "デケイパ"
           }
-, [796] = {
+, [853] = {
               key = "$MATERIAL_EN_045840"
           ,   en  = "Meip"
-          ,   de  = "Meip"
           ,   fr  = "Méip"
-          ,   es  = "Meip"
-          ,   it  = "Meip"
           ,   ru  = "Мейп"
           ,   ja  = "メイプ"
           }
-, [797] = {
+, [854] = {
               key = "$MATERIAL_EN_045841"
           ,   en  = "Haoko"
-          ,   de  = "Haoko"
-          ,   fr  = "Haoko"
-          ,   es  = "Haoko"
-          ,   it  = "Haoko"
           ,   ru  = "Хаоко"
           ,   ja  = "ハオコ"
           }
-, [798] = {
+, [855] = {
               key = "$MATERIAL_EN_045842"
           ,   en  = "Deteri"
-          ,   de  = "Deteri"
-          ,   fr  = "Deteri"
-          ,   es  = "Deteri"
-          ,   it  = "Deteri"
           ,   ru  = "Детери"
           ,   ja  = "デテリ"
           }
-, [799] = {
+, [856] = {
               key = "$MATERIAL_EN_045843"
           ,   en  = "Okori"
-          ,   de  = "Okori"
-          ,   fr  = "Okori"
-          ,   es  = "Okori"
-          ,   it  = "Okori"
           ,   ru  = "Окори"
           ,   ja  = "オコリ"
           }
-, [800] = {
+, [857] = {
               key = "$MATERIAL_EN_045846"
           ,   en  = "Oru"
-          ,   de  = "Oru"
-          ,   fr  = "Oru"
-          ,   es  = "Oru"
-          ,   it  = "Oru"
           ,   ru  = "Ору"
           ,   ja  = "オル"
           }
-, [801] = {
+, [858] = {
               key = "$MATERIAL_EN_045847"
           ,   en  = "Taderi"
-          ,   de  = "Taderi"
-          ,   fr  = "Taderi"
-          ,   es  = "Taderi"
-          ,   it  = "Taderi"
           ,   ru  = "Тадери"
           ,   ja  = "タデリ"
           }
-, [802] = {
+, [859] = {
               key = "$MATERIAL_EN_045848"
           ,   en  = "Makderi"
-          ,   de  = "Makderi"
           ,   fr  = "Makdéri"
-          ,   es  = "Makderi"
-          ,   it  = "Makderi"
           ,   ru  = "Макдери"
           ,   ja  = "マクデリ"
           }
-, [803] = {
+, [860] = {
               key = "$MATERIAL_EN_045849"
           ,   en  = "Kaderi"
-          ,   de  = "Kaderi"
           ,   fr  = "Kadéri"
-          ,   es  = "Kaderi"
-          ,   it  = "Kaderi"
           ,   ru  = "Кадери"
           ,   ja  = "カデリ"
           }
-, [804] = {
+, [861] = {
               key = "$MATERIAL_EN_045850"
           ,   en  = "Ta"
-          ,   de  = "Ta"
-          ,   fr  = "Ta"
-          ,   es  = "Ta"
-          ,   it  = "Ta"
           ,   ru  = "Та"
           ,   ja  = "ター"
           }
-, [805] = {
+, [862] = {
               key = "$MATERIAL_EN_045851"
           ,   en  = "Jejota"
-          ,   de  = "Jejota"
           ,   fr  = "Jéjota"
-          ,   es  = "Jejota"
-          ,   it  = "Jejota"
           ,   ru  = "Джеджота"
           ,   ja  = "ジェジョタ"
           }
-, [806] = {
+, [863] = {
               key = "$MATERIAL_EN_045852"
           ,   en  = "Denata"
-          ,   de  = "Denata"
-          ,   fr  = "Denata"
-          ,   es  = "Denata"
-          ,   it  = "Denata"
           ,   ru  = "Дената"
           ,   ja  = "デナタ"
           }
-, [807] = {
+, [864] = {
               key = "$MATERIAL_EN_045853"
           ,   en  = "Rekuta"
-          ,   de  = "Rekuta"
-          ,   fr  = "Rekuta"
-          ,   es  = "Rekuta"
-          ,   it  = "Rekuta"
           ,   ru  = "Рекута"
           ,   ja  = "レクタ"
           }
-, [808] = {
+, [865] = {
               key = "$MATERIAL_EN_045854"
           ,   en  = "Kuta"
-          ,   de  = "Kuta"
-          ,   fr  = "Kuta"
-          ,   es  = "Kuta"
-          ,   it  = "Kuta"
           ,   ru  = "Кута"
           ,   ja  = "クター"
           }
-, [809] = {
+, [866] = {
               key = "$MATERIAL_EN_045855"
           ,   en  = "Jora"
-          ,   de  = "Jora"
-          ,   fr  = "Jora"
-          ,   es  = "Jora"
-          ,   it  = "Jora"
           ,   ru  = "Джора"
           ,   ja  = "ジョラ"
           }
-, [810] = {
+, [867] = {
               key = "$MATERIAL_EN_045856"
           ,   en  = "Porade"
-          ,   de  = "Porade"
-          ,   fr  = "Porade"
-          ,   es  = "Porade"
-          ,   it  = "Porade"
           ,   ru  = "Пораде"
           ,   ja  = "ポラデ"
           }
-, [811] = {
+, [868] = {
               key = "$MATERIAL_EN_045857"
           ,   en  = "Jera"
-          ,   de  = "Jera"
           ,   fr  = "Jéra"
-          ,   es  = "Jera"
-          ,   it  = "Jera"
           ,   ru  = "Джера"
           ,   ja  = "ジェラ"
           }
-, [812] = {
+, [869] = {
               key = "$MATERIAL_EN_064508"
           ,   en  = "Jehade"
-          ,   de  = "Jehade"
-          ,   fr  = "Jehade"
-          ,   es  = "Jehade"
-          ,   it  = "Jehade"
           ,   ru  = "Джехаде"
           ,   ja  = "ジェハデ"
           }
-, [813] = {
+, [870] = {
               key = "$MATERIAL_EN_064509"
           ,   en  = "Rejera"
-          ,   de  = "Rejera"
-          ,   fr  = "Rejera"
-          ,   es  = "Rejera"
-          ,   it  = "Rejera"
           ,   ru  = "Реджера"
           ,   ja  = "レジェラ"
           }
-, [814] = {
+, [871] = {
               key = "$MATERIAL_EN_068340"
           ,   en  = "Itade"
-          ,   de  = "Itade"
-          ,   fr  = "Itade"
-          ,   es  = "Itade"
-          ,   it  = "Itade"
           ,   ru  = "Итаде"
           ,   ja  = "イタデ"
           }
-, [815] = {
+, [872] = {
               key = "$MATERIAL_EN_068341"
           ,   en  = "Repora"
-          ,   de  = "Repora"
-          ,   fr  = "Repora"
-          ,   es  = "Repora"
-          ,   it  = "Repora"
           ,   ru  = "Репора"
           ,   ja  = "レポラ"
           }
-, [816] = {
+, [873] = {
               key = "$MATERIAL_EN_068342"
           ,   en  = "Hakeijo"
-          ,   de  = "Hakeijo"
-          ,   fr  = "Hakeijo"
-          ,   es  = "Hakeijo"
-          ,   it  = "Hakeijo"
           ,   ru  = "Хакейджо"
           ,   ja  = "ハケイジョ"
           }
-, [817] = {
+, [874] = {
               key = "$MATERIAL_JW_01"
           ,   en  = "pewter"
           ,   de  = "Zinn"
@@ -7406,7 +7629,7 @@ LANG_DB = {
           ,   ru  = "pewter"
           ,   ja  = "ピューター"
           }
-, [818] = {
+, [875] = {
               key = "$MATERIAL_JW_02"
           ,   en  = "copper"
           ,   de  = "Kupfer"
@@ -7415,7 +7638,7 @@ LANG_DB = {
           ,   ru  = "copper"
           ,   ja  = "銅"
           }
-, [819] = {
+, [876] = {
               key = "$MATERIAL_JW_03"
           ,   en  = "silver"
           ,   de  = "Silber"
@@ -7424,7 +7647,7 @@ LANG_DB = {
           ,   ru  = "silver"
           ,   ja  = "銀"
           }
-, [820] = {
+, [877] = {
               key = "$MATERIAL_JW_04"
           ,   en  = "electrum"
           ,   de  = "Elektrum"
@@ -7433,14 +7656,14 @@ LANG_DB = {
           ,   ru  = "electrum"
           ,   ja  = "琥珀金"
           }
-, [821] = {
+, [878] = {
               key = "$MATERIAL_JW_04B"
           ,   en  = "electrum"
           ,   de  = "Elektrum"
           ,   fr  = "électrum"
           ,   ja  = "琥珀金"
           }
-, [822] = {
+, [879] = {
               key = "$MATERIAL_JW_05"
           ,   en  = "platinum"
           ,   de  = "Platin"
@@ -7449,7 +7672,7 @@ LANG_DB = {
           ,   ru  = "platinum"
           ,   ja  = "プラチナ"
           }
-, [823] = {
+, [880] = {
               key = "$MATERIAL_LGT_01"
           ,   en  = "homespun"
           ,   de  = "Jute"
@@ -7458,7 +7681,7 @@ LANG_DB = {
           ,   ru  = "homespun"
           ,   ja  = "手織り布"
           }
-, [824] = {
+, [881] = {
               key = "$MATERIAL_LGT_01B"
           ,   en  = "homespun"
           ,   de  = "Jute"
@@ -7466,7 +7689,7 @@ LANG_DB = {
           ,   es  = "tejido artesanal"
           ,   ja  = "手織り布"
           }
-, [825] = {
+, [882] = {
               key = "$MATERIAL_LGT_02"
           ,   en  = "linen"
           ,   de  = "Flachs"
@@ -7475,7 +7698,7 @@ LANG_DB = {
           ,   ru  = "linen"
           ,   ja  = "リネン"
           }
-, [826] = {
+, [883] = {
               key = "$MATERIAL_LGT_03"
           ,   en  = "cotton"
           ,   de  = "Baumwoll"
@@ -7484,7 +7707,7 @@ LANG_DB = {
           ,   ru  = "cotton"
           ,   ja  = "コットン"
           }
-, [827] = {
+, [884] = {
               key = "$MATERIAL_LGT_04"
           ,   en  = "spidersilk"
           ,   de  = "Spinnenseiden"
@@ -7493,7 +7716,7 @@ LANG_DB = {
           ,   ru  = "spidersilk"
           ,   ja  = "スパイダーシルク"
           }
-, [828] = {
+, [885] = {
               key = "$MATERIAL_LGT_05"
           ,   en  = "ebonthread"
           ,   de  = "Ebengarn"
@@ -7502,7 +7725,7 @@ LANG_DB = {
           ,   ru  = "ebonthread"
           ,   ja  = "エボンスレッド"
           }
-, [829] = {
+, [886] = {
               key = "$MATERIAL_LGT_06"
           ,   en  = "kresh"
           ,   de  = "Kresh"
@@ -7511,7 +7734,7 @@ LANG_DB = {
           ,   ru  = "kresh"
           ,   ja  = "クレッシュ"
           }
-, [830] = {
+, [887] = {
               key = "$MATERIAL_LGT_07"
           ,   en  = "ironthread"
           ,   de  = "Eisenstoff"
@@ -7520,7 +7743,7 @@ LANG_DB = {
           ,   ru  = "ironthread"
           ,   ja  = "アイアンスレッド"
           }
-, [831] = {
+, [888] = {
               key = "$MATERIAL_LGT_07B"
           ,   en  = "ironthread"
           ,   de  = "Eisenstoff"
@@ -7528,7 +7751,7 @@ LANG_DB = {
           ,   es  = "hilo férreo"
           ,   ja  = "アイアンスレッド"
           }
-, [832] = {
+, [889] = {
               key = "$MATERIAL_LGT_08"
           ,   en  = "silverweave"
           ,   de  = "Silberstoff"
@@ -7537,7 +7760,7 @@ LANG_DB = {
           ,   ru  = "silverweave"
           ,   ja  = "シルバーウィーブ"
           }
-, [833] = {
+, [890] = {
               key = "$MATERIAL_LGT_09"
           ,   en  = "shadowspun"
           ,   de  = "Leerenstoff"
@@ -7546,7 +7769,7 @@ LANG_DB = {
           ,   ru  = "shadowspun"
           ,   ja  = "影の布"
           }
-, [834] = {
+, [891] = {
               key = "$MATERIAL_LGT_10"
           ,   en  = "Ancestor Silk"
           ,   de  = "Ahnenseiden"
@@ -7555,7 +7778,7 @@ LANG_DB = {
           ,   ru  = "Ancestor Silk"
           ,   ja  = "先人のシルク"
           }
-, [835] = {
+, [892] = {
               key = "$MATERIAL_LGT_10B"
           ,   en  = "Ancestor Silk"
           ,   de  = "Ahnenseiden"
@@ -7563,7 +7786,7 @@ LANG_DB = {
           ,   es  = "seda ancestral"
           ,   ja  = "先人のシルク"
           }
-, [836] = {
+, [893] = {
               key = "$MATERIAL_MED_01"
           ,   en  = "rawhide"
           ,   de  = "Rohleder"
@@ -7572,7 +7795,7 @@ LANG_DB = {
           ,   ru  = "rawhide"
           ,   ja  = "生皮"
           }
-, [837] = {
+, [894] = {
               key = "$MATERIAL_MED_02"
           ,   en  = "hide"
           ,   de  = "Halbleder"
@@ -7581,7 +7804,7 @@ LANG_DB = {
           ,   ru  = "hide"
           ,   ja  = "皮"
           }
-, [838] = {
+, [895] = {
               key = "$MATERIAL_MED_03"
           ,   en  = "leather"
           ,   de  = "Leder"
@@ -7590,7 +7813,7 @@ LANG_DB = {
           ,   ru  = "leather"
           ,   ja  = "革"
           }
-, [839] = {
+, [896] = {
               key = "$MATERIAL_MED_04"
           ,   en  = "full-leather"
           ,   de  = "Hartleder"
@@ -7599,7 +7822,7 @@ LANG_DB = {
           ,   ru  = "full-leather"
           ,   ja  = "フルレザー"
           }
-, [840] = {
+, [897] = {
               key = "$MATERIAL_MED_05"
           ,   en  = "fell"
           ,   de  = "Wildleder"
@@ -7608,7 +7831,7 @@ LANG_DB = {
           ,   ru  = "fell"
           ,   ja  = "フェルハイド"
           }
-, [841] = {
+, [898] = {
               key = "$MATERIAL_MED_06"
           ,   en  = "brigandine"
           ,   de  = "Rauleder"
@@ -7617,14 +7840,14 @@ LANG_DB = {
           ,   ru  = "brigandine"
           ,   ja  = "ブリガンダイン"
           }
-, [842] = {
+, [899] = {
               key = "$MATERIAL_MED_06B"
           ,   en  = "brigandine"
           ,   de  = "Rauleder"
           ,   es  = "brigantina"
           ,   ja  = "ブリガンダイン"
           }
-, [843] = {
+, [900] = {
               key = "$MATERIAL_MED_07"
           ,   en  = "ironhide"
           ,   de  = "Eisenleder"
@@ -7633,7 +7856,7 @@ LANG_DB = {
           ,   ru  = "ironhide"
           ,   ja  = "アイアンハイド"
           }
-, [844] = {
+, [901] = {
               key = "$MATERIAL_MED_08"
           ,   en  = "superb"
           ,   de  = "prächtiges "
@@ -7642,7 +7865,7 @@ LANG_DB = {
           ,   ru  = "superb"
           ,   ja  = "最上"
           }
-, [845] = {
+, [902] = {
               key = "$MATERIAL_MED_08B"
           ,   en  = "superb"
           ,   de  = "Prachtleder"
@@ -7650,7 +7873,7 @@ LANG_DB = {
           ,   es  = "soberbia"
           ,   ja  = "最上"
           }
-, [846] = {
+, [903] = {
               key = "$MATERIAL_MED_09"
           ,   en  = "shadowhide"
           ,   de  = "Schattenleder"
@@ -7659,7 +7882,7 @@ LANG_DB = {
           ,   ru  = "shadowhide"
           ,   ja  = "シャドウハイド"
           }
-, [847] = {
+, [904] = {
               key = "$MATERIAL_MED_10"
           ,   en  = "Rubedo Leather"
           ,   de  = "Rubedoleder"
@@ -7668,7 +7891,7 @@ LANG_DB = {
           ,   ru  = "Rubedo Leather"
           ,   ja  = "ルベドレザー"
           }
-, [848] = {
+, [905] = {
               key = "$MATERIAL_WW_01"
           ,   en  = "maple"
           ,   de  = "Ahorn"
@@ -7677,7 +7900,7 @@ LANG_DB = {
           ,   ru  = "maple"
           ,   ja  = "カエデ"
           }
-, [849] = {
+, [906] = {
               key = "$MATERIAL_WW_02"
           ,   en  = "oak"
           ,   de  = "Eichen"
@@ -7686,7 +7909,7 @@ LANG_DB = {
           ,   ru  = "oak"
           ,   ja  = "カシ"
           }
-, [850] = {
+, [907] = {
               key = "$MATERIAL_WW_03"
           ,   en  = "beech"
           ,   de  = "Buchen"
@@ -7695,7 +7918,7 @@ LANG_DB = {
           ,   ru  = "beech"
           ,   ja  = "ブナノキ"
           }
-, [851] = {
+, [908] = {
               key = "$MATERIAL_WW_04"
           ,   en  = "hickory"
           ,   de  = "Hickory"
@@ -7704,7 +7927,7 @@ LANG_DB = {
           ,   ru  = "hickory"
           ,   ja  = "ヒッコリー"
           }
-, [852] = {
+, [909] = {
               key = "$MATERIAL_WW_05"
           ,   en  = "yew"
           ,   de  = "Eiben"
@@ -7713,7 +7936,7 @@ LANG_DB = {
           ,   ru  = "yew"
           ,   ja  = "イチイ"
           }
-, [853] = {
+, [910] = {
               key = "$MATERIAL_WW_06"
           ,   en  = "birch"
           ,   de  = "Birken"
@@ -7722,7 +7945,7 @@ LANG_DB = {
           ,   ru  = "birch"
           ,   ja  = "カバノキ"
           }
-, [854] = {
+, [911] = {
               key = "$MATERIAL_WW_07"
           ,   en  = "ash"
           ,   de  = "Eschen"
@@ -7731,7 +7954,7 @@ LANG_DB = {
           ,   ru  = "ash"
           ,   ja  = "アッシュ"
           }
-, [855] = {
+, [912] = {
               key = "$MATERIAL_WW_08"
           ,   en  = "mahogany"
           ,   de  = "Mahagoni"
@@ -7740,7 +7963,7 @@ LANG_DB = {
           ,   ru  = "mahogany"
           ,   ja  = "マホガニー"
           }
-, [856] = {
+, [913] = {
               key = "$MATERIAL_WW_09"
           ,   en  = "nightwood"
           ,   de  = "Nachtholz"
@@ -7749,7 +7972,7 @@ LANG_DB = {
           ,   ru  = "nightwood"
           ,   ja  = "ナイトウッド"
           }
-, [857] = {
+, [914] = {
               key = "$MATERIAL_WW_10"
           ,   en  = "Ruby Ash"
           ,   de  = "Rubineschen"
@@ -7758,7 +7981,7 @@ LANG_DB = {
           ,   ru  = "Ruby Ash"
           ,   ja  = "ルビーアッシュ"
           }
-, [858] = {
+, [915] = {
               key = "$MOTIF_001"
           ,   en  = "Breton"
           ,   de  = "Bretonen"
@@ -7767,7 +7990,7 @@ LANG_DB = {
           ,   ru  = "бретонский"
           ,   ja  = "ブレトン"
           }
-, [859] = {
+, [916] = {
               key = "$MOTIF_002"
           ,   en  = "Redguard"
           ,   de  = "Rothwardonen"
@@ -7776,7 +7999,7 @@ LANG_DB = {
           ,   ru  = "редгардский"
           ,   ja  = "レッドガード"
           }
-, [860] = {
+, [917] = {
               key = "$MOTIF_003"
           ,   en  = "Orc"
           ,   de  = "Orks"
@@ -7785,7 +8008,7 @@ LANG_DB = {
           ,   ru  = "орочий"
           ,   ja  = "オーク"
           }
-, [861] = {
+, [918] = {
               key = "$MOTIF_004"
           ,   en  = "Dark Elf"
           ,   de  = "Dunkelelfen"
@@ -7794,16 +8017,15 @@ LANG_DB = {
           ,   ru  = "данмерский"
           ,   ja  = "ダークエルフ"
           }
-, [862] = {
+, [919] = {
               key = "$MOTIF_005"
           ,   en  = "Nord"
-          ,   de  = "Nord"
           ,   fr  = "Nordique"
           ,   es  = "Nórdico"
           ,   ru  = "нордский"
           ,   ja  = "ノルド"
           }
-, [863] = {
+, [920] = {
               key = "$MOTIF_006"
           ,   en  = "Argonian"
           ,   de  = "Argonier"
@@ -7812,7 +8034,7 @@ LANG_DB = {
           ,   ru  = "аргонианский"
           ,   ja  = "アルゴニアン"
           }
-, [864] = {
+, [921] = {
               key = "$MOTIF_007"
           ,   en  = "High Elf"
           ,   de  = "Hochelfen"
@@ -7821,7 +8043,7 @@ LANG_DB = {
           ,   ru  = "альтмерский"
           ,   ja  = "ハイエルフ"
           }
-, [865] = {
+, [922] = {
               key = "$MOTIF_008"
           ,   en  = "Wood Elf"
           ,   de  = "Waldelfen"
@@ -7830,25 +8052,20 @@ LANG_DB = {
           ,   ru  = "босмерский"
           ,   ja  = "ウッドエルフ"
           }
-, [866] = {
+, [923] = {
               key = "$MOTIF_009"
           ,   en  = "Khajiit"
-          ,   de  = "Khajiit"
-          ,   fr  = "Khajiit"
-          ,   es  = "Khajiit"
           ,   ru  = "каджитский"
           ,   ja  = "カジート"
           }
-, [867] = {
+, [924] = {
               key = "$MOTIF_010"
           ,   en  = "Unique"
           ,   de  = "Einzigartig"
-          ,   fr  = "Unique"
-          ,   es  = "Unique"
           ,   ru  = "уникальный"
           ,   ja  = "ユニーク"
           }
-, [868] = {
+, [925] = {
               key = "$MOTIF_011"
           ,   en  = "Thieves Guild"
           ,   de  = "Diebesgilde"
@@ -7857,7 +8074,7 @@ LANG_DB = {
           ,   ru  = "Гильдия воров"
           ,   ja  = "盗賊ギルド"
           }
-, [869] = {
+, [926] = {
               key = "$MOTIF_012"
           ,   en  = "Dark Brotherhood"
           ,   de  = "Dunkle Bruderschaft"
@@ -7866,25 +8083,19 @@ LANG_DB = {
           ,   ru  = "Темное Братство"
           ,   ja  = "闇の一党"
           }
-, [870] = {
+, [927] = {
               key = "$MOTIF_013"
           ,   en  = "Malacath"
-          ,   de  = "Malacath"
-          ,   fr  = "Malacath"
-          ,   es  = "Malacath"
           ,   ru  = "Малакат"
           ,   ja  = "マラキャス"
           }
-, [871] = {
+, [928] = {
               key = "$MOTIF_014"
           ,   en  = "Dwemer"
-          ,   de  = "Dwemer"
-          ,   fr  = "Dwemer"
-          ,   es  = "Dwemer"
           ,   ru  = "двемерский"
           ,   ja  = "ドゥエマー"
           }
-, [872] = {
+, [929] = {
               key = "$MOTIF_015"
           ,   en  = "Ancient Elf"
           ,   de  = "alte Elfen"
@@ -7893,7 +8104,7 @@ LANG_DB = {
           ,   ru  = "древнеэльфийский"
           ,   ja  = "古代エルフ"
           }
-, [873] = {
+, [930] = {
               key = "$MOTIF_016"
           ,   en  = "Order of the Hour"
           ,   de  = "Orden der Stunde"
@@ -7902,7 +8113,7 @@ LANG_DB = {
           ,   ru  = "Часовой орден"
           ,   ja  = "時の騎士団"
           }
-, [874] = {
+, [931] = {
               key = "$MOTIF_017"
           ,   en  = "Barbaric"
           ,   de  = "Barbaren"
@@ -7911,16 +8122,12 @@ LANG_DB = {
           ,   ru  = "варварский"
           ,   ja  = "蛮族"
           }
-, [875] = {
+, [932] = {
               key = "$MOTIF_018"
           ,   en  = "Bandit"
-          ,   de  = "Bandit"
-          ,   fr  = "Bandit"
-          ,   es  = "Bandit"
           ,   ru  = "бандитский"
-          ,   ja  = "Bandit"
           }
-, [876] = {
+, [933] = {
               key = "$MOTIF_019"
           ,   en  = "Primal"
           ,   de  = "Wilde"
@@ -7929,7 +8136,7 @@ LANG_DB = {
           ,   ru  = "первобытный"
           ,   ja  = "野性"
           }
-, [877] = {
+, [934] = {
               key = "$MOTIF_020"
           ,   en  = "Daedric"
           ,   de  = "Daedra"
@@ -7938,16 +8145,13 @@ LANG_DB = {
           ,   ru  = "даэдрический"
           ,   ja  = "デイドラ"
           }
-, [878] = {
+, [935] = {
               key = "$MOTIF_021"
           ,   en  = "Trinimac"
-          ,   de  = "Trinimac"
-          ,   fr  = "Trinimac"
-          ,   es  = "Trinimac"
           ,   ru  = "Тринимак"
           ,   ja  = "トリニマク"
           }
-, [879] = {
+, [936] = {
               key = "$MOTIF_022"
           ,   en  = "Ancient Orc"
           ,   de  = "Orkahnen"
@@ -7956,7 +8160,7 @@ LANG_DB = {
           ,   ru  = "древнеорочий"
           ,   ja  = "古代オーク"
           }
-, [880] = {
+, [937] = {
               key = "$MOTIF_023"
           ,   en  = "Daggerfall Covenant"
           ,   de  = "Dolchsturz-Bündnis"
@@ -7965,7 +8169,7 @@ LANG_DB = {
           ,   ru  = "Даггерфольский Ковенант"
           ,   ja  = "ダガーフォール・カバナント"
           }
-, [881] = {
+, [938] = {
               key = "$MOTIF_024"
           ,   en  = "Ebonheart Pact"
           ,   de  = "Ebenherz-Pakt"
@@ -7974,7 +8178,7 @@ LANG_DB = {
           ,   ru  = "Эбонхартский Пакт"
           ,   ja  = "エボンハート・パクト"
           }
-, [882] = {
+, [939] = {
               key = "$MOTIF_025"
           ,   en  = "Aldmeri Dominion"
           ,   de  = "Aldmeri-Dominion"
@@ -7983,7 +8187,7 @@ LANG_DB = {
           ,   ru  = "Альдмерский Доминион"
           ,   ja  = "アルドメリ・ドミニオン"
           }
-, [883] = {
+, [940] = {
               key = "$MOTIF_026"
           ,   en  = "Mercenary"
           ,   de  = "Söldner"
@@ -7992,16 +8196,15 @@ LANG_DB = {
           ,   ru  = "наемнический"
           ,   ja  = "傭兵"
           }
-, [884] = {
+, [941] = {
               key = "$MOTIF_027"
           ,   en  = "Celestial"
           ,   de  = "Himmlische"
           ,   fr  = "Céleste"
-          ,   es  = "Celestial"
           ,   ru  = "Небожители"
           ,   ja  = "セレスティアル"
           }
-, [885] = {
+, [942] = {
               key = "$MOTIF_028"
           ,   en  = "Glass"
           ,   de  = "Glasit"
@@ -8010,16 +8213,13 @@ LANG_DB = {
           ,   ru  = "стеклянный"
           ,   ja  = "碧水晶"
           }
-, [886] = {
+, [943] = {
               key = "$MOTIF_029"
           ,   en  = "Xivkyn"
-          ,   de  = "Xivkyn"
-          ,   fr  = "Xivkyn"
-          ,   es  = "Xivkyn"
           ,   ru  = "зивкинский"
           ,   ja  = "シヴキン"
           }
-, [887] = {
+, [944] = {
               key = "$MOTIF_030"
           ,   en  = "Soul Shriven"
           ,   de  = "Seelenberaubte"
@@ -8028,61 +8228,49 @@ LANG_DB = {
           ,   ru  = "душелишенные"
           ,   ja  = "魂なき者"
           }
-, [888] = {
+, [945] = {
               key = "$MOTIF_031"
           ,   en  = "Draugr"
-          ,   de  = "Draugr"
-          ,   fr  = "Draugr"
-          ,   es  = "Draugr"
           ,   ru  = "драугрский"
           ,   ja  = "ドラウグル"
           }
-, [889] = {
+, [946] = {
               key = "$MOTIF_032"
           ,   en  = "Maormer"
-          ,   de  = "Maormer"
-          ,   fr  = "Maormer"
-          ,   es  = "Maormer"
           ,   ru  = "маормерский"
           ,   ja  = "マオマー"
           }
-, [890] = {
+, [947] = {
               key = "$MOTIF_033"
           ,   en  = "Akaviri"
-          ,   de  = "Akaviri"
           ,   fr  = "Akavirois"
-          ,   es  = "Akaviri"
           ,   ru  = "акавирский"
           ,   ja  = "アカヴィリ"
           }
-, [891] = {
+, [948] = {
               key = "$MOTIF_034"
           ,   en  = "Imperial"
           ,   de  = "Kaiserliche"
           ,   fr  = "Impérial"
-          ,   es  = "Imperial"
           ,   ru  = "имперский"
           ,   ja  = "帝国"
           }
-, [892] = {
+, [949] = {
               key = "$MOTIF_035"
           ,   en  = "Yokudan"
           ,   de  = "Yokudaner"
-          ,   fr  = "Yokudan"
-          ,   es  = "Yokudan"
           ,   ru  = "йокуданский"
           ,   ja  = "ヨクダ"
           }
-, [893] = {
+, [950] = {
               key = "$MOTIF_036"
           ,   en  = "Universal"
           ,   de  = "universell"
           ,   fr  = "Universel"
-          ,   es  = "Universal"
           ,   ru  = "универсальный"
           ,   ja  = "ユニバーサル"
           }
-, [894] = {
+, [951] = {
               key = "$MOTIF_037"
           ,   en  = "Reach Winter"
           ,   de  = "Reikwinter"
@@ -8091,16 +8279,13 @@ LANG_DB = {
           ,   ru  = "зимний предельцев"
           ,   ja  = "リーチ・ウィンター"
           }
-, [895] = {
+, [952] = {
               key = "$MOTIF_038"
           ,   en  = "Tsaesci"
-          ,   de  = "Tsaesci"
-          ,   fr  = "Tsaesci"
-          ,   es  = "Tsaesci"
           ,   ru  = "цаэски"
           ,   ja  = "ツァエシ"
           }
-, [896] = {
+, [953] = {
               key = "$MOTIF_039"
           ,   en  = "Minotaur"
           ,   de  = "Minotauren"
@@ -8109,7 +8294,7 @@ LANG_DB = {
           ,   ru  = "минотаврский"
           ,   ja  = "ミノタウロス"
           }
-, [897] = {
+, [954] = {
               key = "$MOTIF_040"
           ,   en  = "Ebony"
           ,   de  = "Ebenerz"
@@ -8118,7 +8303,7 @@ LANG_DB = {
           ,   ru  = "эбонитовый"
           ,   ja  = "黒檀"
           }
-, [898] = {
+, [955] = {
               key = "$MOTIF_041"
           ,   en  = "Abah's Watch"
           ,   de  = "Abahs Wacht"
@@ -8127,7 +8312,7 @@ LANG_DB = {
           ,   ru  = "стража Причала Абы"
           ,   ja  = "アバーズ・ウォッチ"
           }
-, [899] = {
+, [956] = {
               key = "$MOTIF_042"
           ,   en  = "Skinchanger"
           ,   de  = "Gestaltwandler"
@@ -8136,34 +8321,27 @@ LANG_DB = {
           ,   ru  = "оборотни"
           ,   ja  = "スキンチェンジャー"
           }
-, [900] = {
+, [957] = {
               key = "$MOTIF_043"
           ,   en  = "Morag Tong"
-          ,   de  = "Morag Tong"
-          ,   fr  = "Morag Tong"
-          ,   es  = "Morag Tong"
           ,   ru  = "Мораг Тонг"
           ,   ja  = "モラグ・トング"
           }
-, [901] = {
+, [958] = {
               key = "$MOTIF_044"
           ,   en  = "Ra Gada"
           ,   de  = "Ro'Wada"
-          ,   fr  = "Ra Gada"
-          ,   es  = "Ra Gada"
           ,   ru  = "Ра Гада"
           ,   ja  = "ラ・ガーダ"
           }
-, [902] = {
+, [959] = {
               key = "$MOTIF_045"
           ,   en  = "Dro-m'Athra"
           ,   de  = "dro-m'Athra"
-          ,   fr  = "Dro-m'Athra"
-          ,   es  = "Dro-m'Athra"
           ,   ru  = "дро-м'Атра"
           ,   ja  = "ドロ・マスラ"
           }
-, [903] = {
+, [960] = {
               key = "$MOTIF_046"
           ,   en  = "Assassins League"
           ,   de  = "Assassinenbund"
@@ -8172,7 +8350,7 @@ LANG_DB = {
           ,   ru  = "Лига убийц"
           ,   ja  = "アサシン同盟"
           }
-, [904] = {
+, [961] = {
               key = "$MOTIF_047"
           ,   en  = "Outlaw"
           ,   de  = "Gesetzlose"
@@ -8181,25 +8359,19 @@ LANG_DB = {
           ,   ru  = "разбойничий"
           ,   ja  = "無法者"
           }
-, [905] = {
+, [962] = {
               key = "$MOTIF_048"
           ,   en  = "Redoran"
-          ,   de  = "Redoran"
-          ,   fr  = "Redoran"
-          ,   es  = "Redoran"
           ,   ru  = "редоранский"
           ,   ja  = "レドラン"
           }
-, [906] = {
+, [963] = {
               key = "$MOTIF_049"
           ,   en  = "Hlaalu"
-          ,   de  = "Hlaalu"
-          ,   fr  = "Hlaalu"
-          ,   es  = "Hlaalu"
           ,   ru  = "Хлаалу"
           ,   ja  = "フラール"
           }
-, [907] = {
+, [964] = {
               key = "$MOTIF_050"
           ,   en  = "Militant Ordinator"
           ,   de  = "kriegerische Ordinatoren"
@@ -8208,16 +8380,13 @@ LANG_DB = {
           ,   ru  = "боевые ординаторы"
           ,   ja  = "ミリタント・オーディネーター"
           }
-, [908] = {
+, [965] = {
               key = "$MOTIF_051"
           ,   en  = "Telvanni"
-          ,   de  = "Telvanni"
-          ,   fr  = "Telvanni"
-          ,   es  = "Telvanni"
           ,   ru  = "Телванни"
           ,   ja  = "テルヴァンニ"
           }
-, [909] = {
+, [966] = {
               key = "$MOTIF_052"
           ,   en  = "Buoyant Armiger"
           ,   de  = "Kriegswappenträger"
@@ -8226,7 +8395,7 @@ LANG_DB = {
           ,   ru  = "Вечная стража"
           ,   ja  = "ボイアント・アーミガー"
           }
-, [910] = {
+, [967] = {
               key = "$MOTIF_053"
           ,   en  = "Frostcaster"
           ,   de  = "Frostwirker"
@@ -8235,7 +8404,7 @@ LANG_DB = {
           ,   ru  = "заклинатель мороза"
           ,   ja  = "フロストキャスター"
           }
-, [911] = {
+, [968] = {
               key = "$MOTIF_054"
           ,   en  = "Ashlander"
           ,   de  = "Aschländer"
@@ -8244,7 +8413,7 @@ LANG_DB = {
           ,   ru  = "эшлендеры"
           ,   ja  = "アッシュランダー"
           }
-, [912] = {
+, [969] = {
               key = "$MOTIF_055"
           ,   en  = "Worm Cult"
           ,   de  = "Wurmkult"
@@ -8253,7 +8422,7 @@ LANG_DB = {
           ,   ru  = "культ Червя"
           ,   ja  = "虫の教団"
           }
-, [913] = {
+, [970] = {
               key = "$MOTIF_056"
           ,   en  = "Silken Ring"
           ,   de  = "Seidenring"
@@ -8262,16 +8431,13 @@ LANG_DB = {
           ,   ru  = "Шелковое Кольцо"
           ,   ja  = "シルケンリング"
           }
-, [914] = {
+, [971] = {
               key = "$MOTIF_057"
           ,   en  = "Mazzatun"
-          ,   de  = "Mazzatun"
-          ,   fr  = "Mazzatun"
-          ,   es  = "Mazzatun"
           ,   ru  = "Маззатун"
           ,   ja  = "マザッタン"
           }
-, [915] = {
+, [972] = {
               key = "$MOTIF_058"
           ,   en  = "Grim Harlequin"
           ,   de  = "grimmiger Harlekin"
@@ -8280,16 +8446,15 @@ LANG_DB = {
           ,   ru  = "мрачный арлекин"
           ,   ja  = "グリム・ハーレクイン"
           }
-, [916] = {
+, [973] = {
               key = "$MOTIF_059"
           ,   en  = "Hollowjack"
           ,   de  = "Kürbisfratze"
           ,   fr  = "Hallowjack"
-          ,   es  = "Hollowjack"
           ,   ru  = "Пустоголовый Джек"
           ,   ja  = "ホロウジャック"
           }
-, [917] = {
+, [974] = {
               key = "$MOTIF_060"
           ,   en  = "Refabricated"
           ,   de  = "Rekonstruktion"
@@ -8298,7 +8463,7 @@ LANG_DB = {
           ,   ru  = "переработанный"
           ,   ja  = "リファブリケイト"
           }
-, [918] = {
+, [975] = {
               key = "$MOTIF_061"
           ,   en  = "Bloodforge"
           ,   de  = "Blutquellschmiede"
@@ -8307,7 +8472,7 @@ LANG_DB = {
           ,   ru  = "Кровавая кузница"
           ,   ja  = "ブラッドフォージ"
           }
-, [919] = {
+, [976] = {
               key = "$MOTIF_062"
           ,   en  = "Dreadhorn"
           ,   de  = "Grauenshorn"
@@ -8316,7 +8481,7 @@ LANG_DB = {
           ,   ru  = "Грозный Рог"
           ,   ja  = "ドレッドホーン"
           }
-, [920] = {
+, [977] = {
               key = "$MOTIF_065"
           ,   en  = "Apostle"
           ,   de  = "Apostel"
@@ -8325,7 +8490,7 @@ LANG_DB = {
           ,   ru  = "апостолы"
           ,   ja  = "使徒"
           }
-, [921] = {
+, [978] = {
               key = "$MOTIF_066"
           ,   en  = "Ebonshadow"
           ,   de  = "Ebenschatten"
@@ -8334,7 +8499,7 @@ LANG_DB = {
           ,   ru  = "эбонитовая тень"
           ,   ja  = "エボンシャドウ"
           }
-, [922] = {
+, [979] = {
               key = "$MOTIF_067"
           ,   en  = "Undaunted"
           ,   de  = "Unerschrockene"
@@ -8343,16 +8508,12 @@ LANG_DB = {
           ,   ru  = "Неустрашимые"
           ,   ja  = "アンドーンテッド"
           }
-, [923] = {
+, [980] = {
               key = "$MOTIF_068"
           ,   en  = "USE ME"
-          ,   de  = "USE ME"
-          ,   fr  = "USE ME"
-          ,   es  = "USE ME"
           ,   ru  = "[EN]USE ME"
-          ,   ja  = "USE ME"
           }
-, [924] = {
+, [981] = {
               key = "$MOTIF_069"
           ,   en  = "Fang Lair"
           ,   de  = "Krallenhort"
@@ -8361,7 +8522,7 @@ LANG_DB = {
           ,   ru  = "Логово Клыка"
           ,   ja  = "牙の巣"
           }
-, [925] = {
+, [982] = {
               key = "$MOTIF_070"
           ,   en  = "Scalecaller"
           ,   de  = "Schuppenruferin"
@@ -8370,7 +8531,7 @@ LANG_DB = {
           ,   ru  = "Призывательница Чешуи"
           ,   ja  = "スケイルコーラー"
           }
-, [926] = {
+, [983] = {
               key = "$MOTIF_071"
           ,   en  = "Psijic Order"
           ,   de  = "Psijik-Orden"
@@ -8379,7 +8540,7 @@ LANG_DB = {
           ,   ru  = "орден Псиджиков"
           ,   ja  = "サイジック"
           }
-, [927] = {
+, [984] = {
               key = "$MOTIF_072"
           ,   en  = "Sapiarch"
           ,   de  = "Sapiarchen"
@@ -8388,25 +8549,21 @@ LANG_DB = {
           ,   ru  = "сапиархи"
           ,   ja  = "サピアルチ"
           }
-, [928] = {
+, [985] = {
               key = "$MOTIF_073"
           ,   en  = "Welkynar"
           ,   de  = "Welkynare"
-          ,   fr  = "Welkynar"
-          ,   es  = "Welkynar"
           ,   ru  = "велкинары"
           ,   ja  = "ウェルキナー"
           }
-, [929] = {
+, [986] = {
               key = "$MOTIF_074"
           ,   en  = "Dremora"
-          ,   de  = "Dremora"
           ,   fr  = "Drémora"
-          ,   es  = "Dremora"
           ,   ru  = "дремора"
           ,   ja  = "ドレモラ"
           }
-, [930] = {
+, [987] = {
               key = "$MOTIF_075"
           ,   en  = "Pyandonean"
           ,   de  = "Pyandonesier"
@@ -8415,7 +8572,7 @@ LANG_DB = {
           ,   ru  = "пиандонейский"
           ,   ja  = "ピャンドニア"
           }
-, [931] = {
+, [988] = {
               key = "$MOTIF_076"
           ,   en  = "Divine Prosecution"
           ,   de  = "Göttliche Strafbehörde"
@@ -8424,25 +8581,23 @@ LANG_DB = {
           ,   ru  = "Божественное Обвинение"
           ,   ja  = "神聖執行局"
           }
-, [932] = {
+, [989] = {
               key = "$MOTIF_077"
           ,   en  = "Huntsman"
           ,   de  = "Jäger"
           ,   fr  = "Chasseur"
-          ,   es  = "Huntsman"
           ,   ru  = "Охотник"
           ,   ja  = "ハンツマン"
           }
-, [933] = {
+, [990] = {
               key = "$MOTIF_078"
           ,   en  = "Silver Dawn"
           ,   de  = "Silbermorgen"
           ,   fr  = "Aube d'argent"
-          ,   es  = "Silver Dawn"
           ,   ru  = "Серебряный Рассвет"
           ,   ja  = "銀なる暁"
           }
-, [934] = {
+, [991] = {
               key = "$MOTIF_079"
           ,   en  = "Dead-Water"
           ,   de  = "Totwasser"
@@ -8450,7 +8605,7 @@ LANG_DB = {
           ,   ru  = "мертвая-вода"
           ,   ja  = "デッドウォーター"
           }
-, [935] = {
+, [992] = {
               key = "$MOTIF_080"
           ,   en  = "Honor Guard"
           ,   de  = "Ehrengarde"
@@ -8458,7 +8613,7 @@ LANG_DB = {
           ,   ru  = "почетная стража"
           ,   ja  = "儀仗兵"
           }
-, [936] = {
+, [993] = {
               key = "$MOTIF_081"
           ,   en  = "Elder Argonian"
           ,   de  = "alte Argonier"
@@ -8466,7 +8621,7 @@ LANG_DB = {
           ,   ru  = "древние аргониане"
           ,   ja  = "古代アルゴニアン"
           }
-, [937] = {
+, [994] = {
               key = "$POTENCY_045807"
           ,   en  = "minor"
           ,   de  = "niedere"
@@ -8475,16 +8630,15 @@ LANG_DB = {
           ,   it  = "glifo of health"
           ,   ja  = "一般的"
           }
-, [938] = {
+, [995] = {
               key = "$POTENCY_045809"
           ,   en  = "moderate"
-          ,   de  = "moderate"
           ,   fr  = "modéré"
           ,   es  = "moderado"
           ,   it  = "glifo of health"
           ,   ja  = "中堅"
           }
-, [939] = {
+, [996] = {
               key = "$POTENCY_045811"
           ,   en  = "strong"
           ,   de  = "starke"
@@ -8493,7 +8647,7 @@ LANG_DB = {
           ,   it  = "glifo of health"
           ,   ja  = "強力"
           }
-, [940] = {
+, [997] = {
               key = "$POTENCY_045813"
           ,   en  = "greater"
           ,   de  = "hervorragende"
@@ -8502,7 +8656,7 @@ LANG_DB = {
           ,   it  = "glifo of health"
           ,   ja  = "希少"
           }
-, [941] = {
+, [998] = {
               key = "$POTENCY_045814"
           ,   en  = "grand"
           ,   de  = "gewaltige"
@@ -8511,7 +8665,7 @@ LANG_DB = {
           ,   it  = "glifo of health"
           ,   ja  = "至高"
           }
-, [942] = {
+, [999] = {
               key = "$POTENCY_045814B"
           ,   en  = "grand"
           ,   de  = "gewaltige"
@@ -8519,7 +8673,7 @@ LANG_DB = {
           ,   it  = "glifo of health"
           ,   ja  = "至高"
           }
-, [943] = {
+, [1000] = {
               key = "$POTENCY_045815"
           ,   en  = "splendid"
           ,   de  = "vortreffliche"
@@ -8528,14 +8682,14 @@ LANG_DB = {
           ,   it  = "glifo of health"
           ,   ja  = "究極"
           }
-, [944] = {
+, [1001] = {
               key = "$POTENCY_045816"
           ,   en  = "monumental"
           ,   de  = "monumentale"
           ,   it  = "glifo of health"
           ,   ja  = "伝説"
           }
-, [945] = {
+, [1002] = {
               key = "$POTENCY_045855"
           ,   en  = "trifling"
           ,   de  = "unbedeutende"
@@ -8544,7 +8698,7 @@ LANG_DB = {
           ,   it  = "glifo of health"
           ,   ja  = "初歩"
           }
-, [946] = {
+, [1003] = {
               key = "$POTENCY_045857"
           ,   en  = "petty"
           ,   de  = "winzige"
@@ -8553,7 +8707,7 @@ LANG_DB = {
           ,   it  = "glifo of health"
           ,   ja  = "不出来"
           }
-, [947] = {
+, [1004] = {
               key = "$POTENCY_064509"
           ,   en  = "superb"
           ,   de  = "prächtige"
@@ -8562,7 +8716,7 @@ LANG_DB = {
           ,   it  = "glifo of health"
           ,   ja  = "最上"
           }
-, [948] = {
+, [1005] = {
               key = "$QUALITY_1"
           ,   en  = "Normal"
           ,   de  = "Normal"
@@ -8572,7 +8726,7 @@ LANG_DB = {
           ,   ru  = "Обычное"
           ,   ja  = "Normal"
           }
-, [949] = {
+, [1006] = {
               key = "$QUALITY_2"
           ,   en  = "Fine"
           ,   de  = "Erlesen"
@@ -8582,7 +8736,7 @@ LANG_DB = {
           ,   ru  = "Хорошее"
           ,   ja  = "Fine"
           }
-, [950] = {
+, [1007] = {
               key = "$QUALITY_3"
           ,   en  = "Superior"
           ,   de  = "Überlegen"
@@ -8592,7 +8746,7 @@ LANG_DB = {
           ,   ru  = "Превосходное"
           ,   ja  = "Superior"
           }
-, [951] = {
+, [1008] = {
               key = "$QUALITY_4"
           ,   en  = "Epic"
           ,   de  = "Episch"
@@ -8602,7 +8756,7 @@ LANG_DB = {
           ,   ru  = "Эпическое"
           ,   ja  = "Epic"
           }
-, [952] = {
+, [1009] = {
               key = "$QUALITY_5"
           ,   en  = "Legendary"
           ,   de  = "Legendär"
@@ -8612,29 +8766,29 @@ LANG_DB = {
           ,   ru  = "Легендарное"
           ,   ja  = "Legendary"
           }
-, [953] = {
+, [1010] = {
               key = "$ROLIS_ACCEPT_CONTRACT"
           ,   en  = "<Accept the contract.>"
           ,   de  = "<Nehmt den Auftrag an.>"
           ,   fr  = "<Accepter le contrat>"
           }
-, [954] = {
+, [1011] = {
               key = "$ROLIS_DELIVER_SUBSTR"
           ,   en  = "Deliver"
           ,   de  = "Beliefert"
           ,   fr  = "Livrez"
           }
-, [955] = {
+, [1012] = {
               key = "$ROLIS_FINISH_JOB"
           ,   en  = "<Finish the job.>"
           ,   de  = "<Auftrag abschließen.>"
           ,   fr  = "<Finir le travail.>"
           }
-, [956] = {
+, [1013] = {
               key = "$ROLIS_NAME"
           ,   en  = "Rolis Hlaalu"
           }
-, [957] = {
+, [1014] = {
               key = "$SET_019"
           ,   en  = "Vestments of the Warlock"
           ,   de  = "Gewänder des Hexers"
@@ -8644,117 +8798,106 @@ LANG_DB = {
           ,   ru  = "Vestments of the Warlock"
           ,   ja  = "妖術師の法衣"
           }
-, [958] = {
+, [1015] = {
               key = "$SET_020"
           ,   en  = "Witchman Armor"
           ,   de  = "Hexenwerk"
           ,   fr  = "Armure d'homme-médecine"
           ,   es  = "Armadura del brujo"
-          ,   it  = "Witchman Armor"
           ,   ru  = "Witchman Armor"
           ,   ja  = "魔法使いの鎧"
           }
-, [959] = {
+, [1016] = {
               key = "$SET_021"
           ,   en  = "Akaviri Dragonguard"
           ,   de  = "akavirische Drachengarde"
           ,   fr  = "la Garde-dragon akaviroise"
           ,   es  = "Guardia Dragón Akaviri"
-          ,   it  = "Akaviri Dragonguard"
           ,   ru  = "Akaviri Dragonguard"
           ,   ja  = "アカヴィリのドラゴンガード"
           }
-, [960] = {
+, [1017] = {
               key = "$SET_022"
           ,   en  = "Dreamer's Mantle"
           ,   de  = "Mantel des Träumers"
           ,   fr  = "Manteau du rêveur"
           ,   es  = "Manto de soñador"
-          ,   it  = "Dreamer's Mantle"
           ,   ru  = "Dreamer's Mantle"
           ,   ja  = "夢見人のマント"
           }
-, [961] = {
+, [1018] = {
               key = "$SET_023"
           ,   en  = "Archer's Mind"
           ,   de  = "Schützensinn"
           ,   fr  = "l’Esprit de l'archer"
           ,   es  = "Espíritu del arquero"
-          ,   it  = "Archer's Mind"
           ,   ru  = "Archer's Mind"
           ,   ja  = "射手の精神"
           }
-, [962] = {
+, [1019] = {
               key = "$SET_024"
           ,   en  = "Footman's Fortune"
           ,   de  = "Geschick des Fußsoldaten"
           ,   fr  = "la Chance du valet"
           ,   es  = "Fortuna del lacayo"
-          ,   it  = "Footman's Fortune"
           ,   ru  = "Footman's Fortune"
           ,   ja  = "歩兵の幸運"
           }
-, [963] = {
+, [1020] = {
               key = "$SET_025"
           ,   en  = "Desert Rose"
           ,   de  = "Wüstenrose"
           ,   fr  = "la Rose du désert"
           ,   es  = "Rosa del Desierto"
-          ,   it  = "Desert Rose"
           ,   ru  = "Desert Rose"
           ,   ja  = "砂漠バラ"
           }
-, [964] = {
+, [1021] = {
               key = "$SET_026"
           ,   en  = "Prisoner's Rags"
           ,   de  = "Lumpen des Gefangenen"
           ,   fr  = "les Haillons de prisonnier"
           ,   es  = "Harapos de prisionero"
-          ,   it  = "Prisoner's Rags"
           ,   ru  = "Prisoner's Rags"
           ,   ja  = "囚人のぼろ服"
           }
-, [965] = {
+, [1022] = {
               key = "$SET_027"
           ,   en  = "Fiord's Legacy"
           ,   de  = "Fiords Erbe"
           ,   fr  = "l’Héritage de Fiord"
           ,   es  = "Legado de Fiord"
-          ,   it  = "Fiord's Legacy"
           ,   ru  = "Fiord's Legacy"
           ,   ja  = "フィヨルドの遺産"
           }
-, [966] = {
+, [1023] = {
               key = "$SET_028"
           ,   en  = "Barkskin"
           ,   de  = "Borkenhaut"
           ,   fr  = "la Peau d'écorce"
           ,   es  = "Piel de corteza"
-          ,   it  = "Barkskin"
           ,   ru  = "Barkskin"
           ,   ja  = "バークスキン"
           }
-, [967] = {
+, [1024] = {
               key = "$SET_029"
           ,   en  = "Sergeant's Mail"
           ,   de  = "Rüstung des Feldwebels"
           ,   fr  = "la Cotte de mailles du sergent"
           ,   es  = "Malla de sargento"
-          ,   it  = "Sergeant's Mail"
           ,   ru  = "Sergeant's Mail"
           ,   ja  = "軍曹の鎧"
           }
-, [968] = {
+, [1025] = {
               key = "$SET_030"
           ,   en  = "Thunderbug's Carapace"
           ,   de  = "Donnerkäferpanzer"
           ,   fr  = "Carapace de foudroptère"
           ,   es  = "Caparazón de bichotrueno"
-          ,   it  = "Thunderbug's Carapace"
           ,   ru  = "Thunderbug's Carapace"
           ,   ja  = "サンダーバグの甲殻"
           }
-, [969] = {
+, [1026] = {
               key = "$SET_031"
           ,   en  = "Silks of the Sun"
           ,   de  = "Sonnenseide"
@@ -8764,107 +8907,97 @@ LANG_DB = {
           ,   ru  = "Silks of the Sun"
           ,   ja  = "太陽の絹服"
           }
-, [970] = {
+, [1027] = {
               key = "$SET_032"
           ,   en  = "Healer's Habit"
           ,   de  = "Bräuche des Heilers"
           ,   fr  = "le Froc du guérisseur"
           ,   es  = "Hábito del Curandero"
-          ,   it  = "Healer's Habit"
           ,   ru  = "Healer's Habit"
           ,   ja  = "治癒師の衣服"
           }
-, [971] = {
+, [1028] = {
               key = "$SET_033"
           ,   en  = "Viper's Sting"
           ,   de  = "Vipernbiss"
           ,   fr  = "la Morsure de la vipère"
           ,   es  = "Picadura de la víbora"
-          ,   it  = "Viper's Sting"
           ,   ru  = "Viper's Sting"
           ,   ja  = "毒蛇の針"
           }
-, [972] = {
+, [1029] = {
               key = "$SET_034"
           ,   en  = "Night Mother's Embrace"
           ,   de  = "Umarmung der Mutter der Nacht"
           ,   fr  = "Étreinte de la Mère de la nuit"
           ,   es  = "Abrazo de la Madre Noche"
-          ,   it  = "Night Mother's Embrace"
           ,   ru  = "Night Mother's Embrace"
           ,   ja  = "夜母の抱擁"
           }
-, [973] = {
+, [1030] = {
               key = "$SET_035"
           ,   en  = "Knightmare"
           ,   de  = "Albtraumritter"
           ,   fr  = "le Chevalier-cauchemar"
           ,   es  = "Jinete Ilusorio"
-          ,   it  = "Knightmare"
           ,   ru  = "Knightmare"
           ,   ja  = "ナイト・メア"
           }
-, [974] = {
+, [1031] = {
               key = "$SET_036"
           ,   en  = "Armor of the Veiled Heritance"
           ,   de  = "Rüstung des Schleiererbes"
           ,   fr  = "Armure de l'Héritage voilé"
           ,   es  = "Armadura de la Herencia Velada"
-          ,   it  = "Armor of the Veiled Heritance"
           ,   ru  = "Armor of the Veiled Heritance"
           ,   ja  = "ベールの継承者の鎧"
           }
-, [975] = {
+, [1032] = {
               key = "$SET_037"
           ,   en  = "Death's Wind"
           ,   de  = "Todeswind"
           ,   fr  = "le Vent mortel"
           ,   es  = "Viento Efímero"
-          ,   it  = "Death's Wind"
           ,   ru  = "Death's Wind"
           ,   ja  = "死を招く風"
           }
-, [976] = {
+, [1033] = {
               key = "$SET_038"
           ,   en  = "Twilight's Embrace"
           ,   de  = "Zwielichtkuss"
           ,   fr  = "l’Étreinte du crépuscule"
           ,   es  = "Abrazo del Crepúsculo"
-          ,   it  = "Twilight's Embrace"
           ,   ru  = "Twilight's Embrace"
           ,   ja  = "黄昏の抱擁"
           }
-, [977] = {
+, [1034] = {
               key = "$SET_039"
           ,   en  = "Alessian Order"
           ,   de  = "alessianischer Orden"
           ,   fr  = "l’Ordre d'Alessia"
           ,   es  = "Orden de Alessia"
-          ,   it  = "Alessian Order"
           ,   ru  = "Alessian Order"
           ,   ja  = "アレッシア教団"
           }
-, [978] = {
+, [1035] = {
               key = "$SET_040"
           ,   en  = "Night's Silence"
           ,   de  = "Stille der Nacht"
           ,   fr  = "le Silence de la nuit"
           ,   es  = "Silencio Noctívago"
-          ,   it  = "Night's Silence"
           ,   ru  = "Night's Silence"
           ,   ja  = "寂夜"
           }
-, [979] = {
+, [1036] = {
               key = "$SET_041"
           ,   en  = "Whitestrake's Retribution"
           ,   de  = "Weißplankes Vergeltung"
           ,   fr  = "la Rétribution de Blancserpent"
           ,   es  = "Castigo de Descarga Blanca"
-          ,   it  = "Whitestrake's Retribution"
           ,   ru  = "Whitestrake's Retribution"
           ,   ja  = "ホワイトストレークの報復"
           }
-, [980] = {
+, [1037] = {
               key = "$SET_043"
           ,   en  = "Armor of the Seducer"
           ,   de  = "Rüstung der Verführung"
@@ -8874,27 +9007,25 @@ LANG_DB = {
           ,   ru  = "Armor of the Seducer"
           ,   ja  = "誘惑者の武具"
           }
-, [981] = {
+, [1038] = {
               key = "$SET_044"
           ,   en  = "Vampire's Kiss"
           ,   de  = "Kuss des Vampirs"
           ,   fr  = "le Baiser du vampire"
           ,   es  = "Beso del Vampiro"
-          ,   it  = "Vampire's Kiss"
           ,   ru  = "Vampire's Kiss"
           ,   ja  = "吸血鬼の口づけ"
           }
-, [982] = {
+, [1039] = {
               key = "$SET_046"
           ,   en  = "Noble Duelist's Silks"
           ,   de  = "Seide des edlen Duellanten"
           ,   fr  = "Atours du noble duelliste"
           ,   es  = "Sedas del noble duelista"
-          ,   it  = "Noble Duelist's Silks"
           ,   ru  = "Noble Duelist's Silks"
           ,   ja  = "高貴なる決闘者の衣装"
           }
-, [983] = {
+, [1040] = {
               key = "$SET_047"
           ,   en  = "Robes of the Withered Hand"
           ,   de  = "Roben der Verdorrten Hand"
@@ -8904,17 +9035,16 @@ LANG_DB = {
           ,   ru  = "Robes of the Withered Hand"
           ,   ja  = "ウィサード・ハンドのローブ"
           }
-, [984] = {
+, [1041] = {
               key = "$SET_048"
           ,   en  = "Magnus' Gift"
           ,   de  = "Magnus' Gabe"
           ,   fr  = "le Présent de Magnus"
           ,   es  = "Regalo de Magnus"
-          ,   it  = "Magnus' Gift"
           ,   ru  = "Magnus' Gift"
           ,   ja  = "マグナスの贈物"
           }
-, [985] = {
+, [1042] = {
               key = "$SET_049"
           ,   en  = "Shadow of the Red Mountain"
           ,   de  = "Schatten des Roten Berges"
@@ -8924,227 +9054,205 @@ LANG_DB = {
           ,   ru  = "Shadow of the Red Mountain"
           ,   ja  = "レッドマウンテンの影"
           }
-, [986] = {
+, [1043] = {
               key = "$SET_050"
           ,   en  = "The Morag Tong"
           ,   de  = "Morag Tong"
           ,   fr  = "la Morag Tong"
           ,   es  = "El Morag Tong"
-          ,   it  = "The Morag Tong"
           ,   ru  = "The Morag Tong"
           ,   ja  = "モラグ・トング"
           }
-, [987] = {
+, [1044] = {
               key = "$SET_051"
           ,   en  = "Night Mother's Gaze"
           ,   de  = "Blick der Mutter der Nacht"
           ,   fr  = "le Regard de la Mère de la nuit"
           ,   es  = "Mirada de la Madre Noche"
-          ,   it  = "Night Mother's Gaze"
           ,   ru  = "Night Mother's Gaze"
           ,   ja  = "夜母の注視"
           }
-, [988] = {
+, [1045] = {
               key = "$SET_052"
           ,   en  = "Beckoning Steel"
           ,   de  = "klingender Stahl"
           ,   fr  = "l’Appel de l'acier"
           ,   es  = "Grito de acero"
-          ,   it  = "Beckoning Steel"
           ,   ru  = "Beckoning Steel"
           ,   ja  = "誘引の鋼"
           }
-, [989] = {
+, [1046] = {
               key = "$SET_053"
           ,   en  = "The Ice Furnace"
           ,   de  = "Eisschmiede"
           ,   fr  = "le Fourneau de glace"
           ,   es  = "Fragua gélida"
-          ,   it  = "The Ice Furnace"
           ,   ru  = "The Ice Furnace"
           ,   ja  = "氷炉"
           }
-, [990] = {
+, [1047] = {
               key = "$SET_054"
           ,   en  = "Ashen Grip"
           ,   de  = "Aschengriff"
           ,   fr  = "la Poigne de cendres"
           ,   es  = "Control de cenizas"
-          ,   it  = "Ashen Grip"
           ,   ru  = "Ashen Grip"
           ,   ja  = "青白い柄"
           }
-, [991] = {
+, [1048] = {
               key = "$SET_055"
           ,   en  = "Prayer Shawl"
           ,   de  = "Gebetstuch"
           ,   fr  = "Châle de prière"
           ,   es  = "Velo de orador"
-          ,   it  = "Prayer Shawl"
           ,   ru  = "Prayer Shawl"
           ,   ja  = "祈りのショール"
           }
-, [992] = {
+, [1049] = {
               key = "$SET_056"
           ,   en  = "Stendarr's Embrace"
           ,   de  = "Stendarrs Umarmung"
           ,   fr  = "l’Étreinte de Stendarr"
           ,   es  = "Abrazo de Stendarr"
-          ,   it  = "Stendarr's Embrace"
           ,   ru  = "Stendarr's Embrace"
           ,   ja  = "ステンダールの抱擁"
           }
-, [993] = {
+, [1050] = {
               key = "$SET_057"
           ,   en  = "Syrabane's Grip"
           ,   de  = "Syrabanns Griff"
           ,   fr  = "l’Emprise de Syrabane"
           ,   es  = "Bondad de Syrabane"
-          ,   it  = "Syrabane's Grip"
           ,   ru  = "Syrabane's Grip"
           ,   ja  = "シラベインの捕縛"
           }
-, [994] = {
+, [1051] = {
               key = "$SET_058"
           ,   en  = "Hide of the Werewolf"
           ,   de  = "Fell des Werwolfs"
           ,   fr  = "la Peau de loup-garou"
           ,   es  = "Piel del hombre lobo"
-          ,   it  = "Hide of the Werewolf"
           ,   ru  = "Hide of the Werewolf"
           ,   ja  = "ウェアウルフの皮"
           }
-, [995] = {
+, [1052] = {
               key = "$SET_059"
           ,   en  = "Kyne's Kiss"
           ,   de  = "Kynes Kuss"
           ,   fr  = "le Baiser de Kyne"
           ,   es  = "Beso de Kyne"
-          ,   it  = "Kyne's Kiss"
           ,   ru  = "Kyne's Kiss"
           ,   ja  = "カイネの口づけ"
           }
-, [996] = {
+, [1053] = {
               key = "$SET_060"
           ,   en  = "Darkstride"
           ,   de  = "Dunkelschritt"
           ,   fr  = "le Sentier obscur"
           ,   es  = "Rastroscuro"
-          ,   it  = "Darkstride"
           ,   ru  = "Darkstride"
           ,   ja  = "闇歩み"
           }
-, [997] = {
+, [1054] = {
               key = "$SET_061"
           ,   en  = "Dreugh King Slayer"
           ,   de  = "Dreughkönigsschlächter"
           ,   fr  = "le Tueur du roi dreugh"
           ,   es  = "Asesino del rey dreugh"
-          ,   it  = "Dreugh King Slayer"
           ,   ru  = "Dreugh King Slayer"
           ,   ja  = "ドゥルー王殺し"
           }
-, [998] = {
+, [1055] = {
               key = "$SET_062"
           ,   en  = "Hatchling's Shell"
           ,   de  = "Schlüpflingspanzer"
           ,   fr  = "Coquille du rejeton"
           ,   es  = "caparazón del retoño"
-          ,   it  = "Hatchling's Shell"
           ,   ru  = "Hatchling's Shell"
           ,   ja  = "幼虫の殻"
           }
-, [999] = {
+, [1056] = {
               key = "$SET_063"
           ,   en  = "The Juggernaut"
           ,   de  = "Koloss"
           ,   fr  = "le Mastodonte"
           ,   es  = "El mastodonte"
-          ,   it  = "The Juggernaut"
           ,   ru  = "The Juggernaut"
           ,   ja  = "ジャガーノート"
           }
-, [1000] = {
+, [1057] = {
               key = "$SET_064"
           ,   en  = "Shadow Dancer's Raiment"
           ,   de  = "Kleidung des Schattentänzers"
           ,   fr  = "la Parure du bateleur d'ombre"
           ,   es  = "Ropajes del funambulista sombrío"
-          ,   it  = "Shadow Dancer's Raiment"
           ,   ru  = "Shadow Dancer's Raiment"
           ,   ja  = "シャドウダンサーの衣服"
           }
-, [1001] = {
+, [1058] = {
               key = "$SET_065"
           ,   en  = "Bloodthorn's Touch"
           ,   de  = "Spur eines Blutdorns"
           ,   fr  = "Toucher de Sangrépine"
           ,   es  = "Toque de la Espina Sangrienta"
-          ,   it  = "Bloodthorn's Touch"
           ,   ru  = "Bloodthorn's Touch"
           ,   ja  = "ブラッドソーンの接触"
           }
-, [1002] = {
+, [1059] = {
               key = "$SET_066"
           ,   en  = "Robes of the Hist"
           ,   de  = "Roben des Hist"
           ,   fr  = "Robes de l'Hist"
           ,   es  = "Vestiduras del Hist"
-          ,   it  = "Robes of the Hist"
           ,   ru  = "Robes of the Hist"
           ,   ja  = "ヒストのローブ"
           }
-, [1003] = {
+, [1060] = {
               key = "$SET_067"
           ,   en  = "Shadow Walker"
           ,   de  = "Schattengänger"
           ,   fr  = "la Marcheuse d'ombres"
           ,   es  = "Caminante sombría"
-          ,   it  = "Shadow Walker"
           ,   ru  = "Shadow Walker"
           ,   ja  = "影の歩き手"
           }
-, [1004] = {
+, [1061] = {
               key = "$SET_068"
           ,   en  = "Stygian"
           ,   de  = "Stygier"
           ,   fr  = "le Stygien"
           ,   es  = "Estigio"
-          ,   it  = "Stygian"
           ,   ru  = "Stygian"
           ,   ja  = "ステュクス"
           }
-, [1005] = {
+, [1062] = {
               key = "$SET_069"
           ,   en  = "Ranger's Gait"
           ,   de  = "Laufstil des Waldläufers"
           ,   fr  = "la Parure de l'éclaireur"
           ,   es  = "Andares del guardabosques"
-          ,   it  = "Ranger's Gait"
           ,   ru  = "Ranger's Gait"
           ,   ja  = "レンジャーの足どり"
           }
-, [1006] = {
+, [1063] = {
               key = "$SET_070"
           ,   en  = "Seventh Legion Brute"
           ,   de  = "Rohling der siebten Legion"
           ,   fr  = "Brute de la septième Légion"
           ,   es  = "Despiadada de la Séptima Legión"
-          ,   it  = "Seventh Legion Brute"
           ,   ru  = "Seventh Legion Brute"
           ,   ja  = "第七軍団のブルート"
           }
-, [1007] = {
+, [1064] = {
               key = "$SET_071"
           ,   en  = "Durok's Bane"
           ,   de  = "Duroks Fluch"
           ,   fr  = "le Fléau de Durok"
           ,   es  = "Perdición de Durok"
-          ,   it  = "Durok's Bane"
           ,   ru  = "Durok's Bane"
           ,   ja  = "デュロクの破滅"
           }
-, [1008] = {
+, [1065] = {
               key = "$SET_072"
           ,   en  = "Nikulas' Heavy Armor"
           ,   de  = "Nikulas' schwere Rüstung"
@@ -9154,2137 +9262,1883 @@ LANG_DB = {
           ,   ru  = "Nikulas' Heavy Armor"
           ,   ja  = "ニクラスの重装鎧"
           }
-, [1009] = {
+, [1066] = {
               key = "$SET_073"
           ,   en  = "Oblivion's Foe"
           ,   de  = "Erinnerung"
           ,   fr  = "l’Adversaire d'Oblivion"
           ,   es  = "Enemigo de Oblivion"
-          ,   it  = "Oblivion's Foe"
           ,   ru  = "Oblivion's Foe"
           ,   ja  = "反オブリビオン"
           }
-, [1010] = {
+, [1067] = {
               key = "$SET_074"
           ,   en  = "Spectre's Eye"
           ,   de  = "Schemenauge"
           ,   fr  = "l’Œil du spectre"
           ,   es  = "Ojo del Espectro"
-          ,   it  = "Spectre's Eye"
           ,   ru  = "Spectre's Eye"
           ,   ja  = "霊なる瞳"
           }
-, [1011] = {
+, [1068] = {
               key = "$SET_075"
           ,   en  = "Torug's Pact"
           ,   de  = "Torugs Pakt"
           ,   fr  = "le Pacte de Torug"
           ,   es  = "Pacto de Torug"
-          ,   it  = "Torug's Pact"
           ,   ru  = "Torug's Pact"
           ,   ja  = "トラグパクト"
           }
-, [1012] = {
+, [1069] = {
               key = "$SET_076"
           ,   en  = "Robes of Alteration Mastery"
           ,   de  = "Roben der Veränderungsbeherrschung"
           ,   fr  = "les Robes de maîtrise de transformation"
           ,   es  = "Vestimenta de alteración maestra"
-          ,   it  = "Robes of Alteration Mastery"
           ,   ru  = "Robes of Alteration Mastery"
           ,   ja  = "変性術師の衣服"
           }
-, [1013] = {
+, [1070] = {
               key = "$SET_077"
           ,   en  = "Crusader"
           ,   de  = "Glaubenskrieger"
           ,   fr  = "le Croisé"
           ,   es  = "Cruzado"
-          ,   it  = "Crusader"
           ,   ru  = "Crusader"
           ,   ja  = "聖戦士"
           }
-, [1014] = {
+, [1071] = {
               key = "$SET_078"
           ,   en  = "Hist Bark"
           ,   de  = "Histrinde"
           ,   fr  = "l’Écorce d'Hist"
           ,   es  = "Corteza de Hist"
-          ,   it  = "Hist Bark"
           ,   ru  = "Hist Bark"
           ,   ja  = "ヒスト樹皮"
           }
-, [1015] = {
+, [1072] = {
               key = "$SET_079"
           ,   en  = "Willow's Path"
           ,   de  = "Weidenpfad"
           ,   fr  = "le Sentier des saules"
           ,   es  = "Sendero del Sauce"
-          ,   it  = "Willow's Path"
           ,   ru  = "Willow's Path"
           ,   ja  = "ウィロー路"
           }
-, [1016] = {
+, [1073] = {
               key = "$SET_080"
           ,   en  = "Hunding's Rage"
           ,   de  = "Hundings Zorn"
           ,   fr  = "la Rage de Hunding"
           ,   es  = "Rabia de Hunding"
-          ,   it  = "Hunding's Rage"
           ,   ru  = "Hunding's Rage"
           ,   ja  = "怒れるフンディング"
           }
-, [1017] = {
+, [1074] = {
               key = "$SET_081"
           ,   en  = "Song of Lamae"
           ,   de  = "Lied der Lamien"
           ,   fr  = "le Chant de Lamae"
           ,   es  = "Canción de Lamae"
-          ,   it  = "Song of Lamae"
           ,   ru  = "Song of Lamae"
           ,   ja  = "ラマエ歌"
           }
-, [1018] = {
+, [1075] = {
               key = "$SET_082"
           ,   en  = "Alessia's Bulwark"
           ,   de  = "Alessias Bollwerk"
           ,   fr  = "le Rempart d'Alessia"
           ,   es  = "Baluarte de Alessia"
-          ,   it  = "Alessia's Bulwark"
           ,   ru  = "Alessia's Bulwark"
           ,   ja  = "アレッシア守護"
           }
-, [1019] = {
+, [1076] = {
               key = "$SET_083"
           ,   en  = "Elf Bane"
           ,   de  = "Elfenfluch"
           ,   fr  = "le Fléau des Elfes"
           ,   es  = "Azote de elfos"
-          ,   it  = "Elf Bane"
           ,   ru  = "Elf Bane"
           ,   ja  = "エルフ殺し"
           }
-, [1020] = {
+, [1077] = {
               key = "$SET_084"
           ,   en  = "Orgnum's Scales"
           ,   de  = "Orgnums Schuppen"
           ,   fr  = "les Écailles d'Orgnum"
           ,   es  = "Escamas de Orgnum"
-          ,   it  = "Orgnum's Scales"
           ,   ru  = "Orgnum's Scales"
           ,   ja  = "オルグヌム鱗"
           }
-, [1021] = {
+, [1078] = {
               key = "$SET_085"
           ,   en  = "Almalexia's Mercy"
           ,   de  = "Almalexias Gnade"
           ,   fr  = "la Clémence d'Almalexia"
           ,   es  = "Piedad de Almalexia"
-          ,   it  = "Almalexia's Mercy"
           ,   ru  = "Almalexia's Mercy"
           ,   ja  = "アルマレクシアの慈愛"
           }
-, [1022] = {
+, [1079] = {
               key = "$SET_086"
           ,   en  = "Queen's Elegance"
           ,   de  = "Eleganz der Königin"
           ,   fr  = "Élégance de la reine"
           ,   es  = "Elegancia de la reina"
-          ,   it  = "Queen's Elegance"
           ,   ru  = "Queen's Elegance"
           ,   ja  = "女王の雅"
           }
-, [1023] = {
+, [1080] = {
               key = "$SET_087"
           ,   en  = "Eyes of Mara"
           ,   de  = "Augen von Mara"
           ,   fr  = "les Yeux de Mara"
           ,   es  = "Ojos de Mara"
-          ,   it  = "Eyes of Mara"
           ,   ru  = "Eyes of Mara"
           ,   ja  = "マーラの目"
           }
-, [1024] = {
+, [1081] = {
               key = "$SET_088"
           ,   en  = "Robes of Destruction Mastery"
           ,   de  = "Roben der Zerstörungsbeherrschung"
           ,   fr  = "les Robes de maîtrise de la destruction"
           ,   es  = "Vestimenta de maestría destructora"
-          ,   it  = "Robes of Destruction Mastery"
           ,   ru  = "Robes of Destruction Mastery"
           ,   ja  = "熟練なる破壊術のローブ"
           }
-, [1025] = {
+, [1082] = {
               key = "$SET_089"
           ,   en  = "Sentry"
           ,   de  = "Wachposten"
           ,   fr  = "la Sentinelle"
           ,   es  = "Centinela"
-          ,   it  = "Sentry"
           ,   ru  = "Sentry"
           ,   ja  = "哨戒兵"
           }
-, [1026] = {
+, [1083] = {
               key = "$SET_090"
           ,   en  = "Senche's Bite"
           ,   de  = "Biss des Senche"
           ,   fr  = "Morsure de senche"
           ,   es  = "Mordisco de senche"
-          ,   it  = "Senche's Bite"
           ,   ru  = "Senche's Bite"
           ,   ja  = "センチの牙"
           }
-, [1027] = {
+, [1084] = {
               key = "$SET_091"
           ,   en  = "Oblivion's Edge"
           ,   de  = "Vorteil des Vergessens"
           ,   fr  = "le Tranchant d'Oblivion"
           ,   es  = "Linde de Oblivion"
-          ,   it  = "Oblivion's Edge"
           ,   ru  = "Oblivion's Edge"
           ,   ja  = "オブリビオンの刃"
           }
-, [1028] = {
+, [1085] = {
               key = "$SET_092"
           ,   en  = "Kagrenac's Hope"
           ,   de  = "Kagrenacs Hoffnung"
           ,   fr  = "l’Espoir de Kagrenac"
           ,   es  = "Esperanza de Kagrenac"
-          ,   it  = "Kagrenac's Hope"
           ,   ru  = "Kagrenac's Hope"
           ,   ja  = "カグレナクの希望"
           }
-, [1029] = {
+, [1086] = {
               key = "$SET_093"
           ,   en  = "Storm Knight's Plate"
           ,   de  = "Wut des Sturmritters"
           ,   fr  = "l’Armure de plate du chevalier-tempête"
           ,   es  = "Armadura de caballero de la tormenta"
-          ,   it  = "Storm Knight's Plate"
           ,   ru  = "Storm Knight's Plate"
           ,   ja  = "ストームナイトの防具"
           }
-, [1030] = {
+, [1087] = {
               key = "$SET_094"
           ,   en  = "Meridia's Blessed Armor"
           ,   de  = "Meridias gesegnete Rüstung"
           ,   fr  = "Armure bénie de Méridia"
           ,   es  = "Armadura Bendita de Meridia"
-          ,   it  = "Meridia's Blessed Armor"
           ,   ru  = "Meridia's Blessed Armor"
           ,   ja  = "メリディアの祝福の武具"
           }
-, [1031] = {
+, [1088] = {
               key = "$SET_095"
           ,   en  = "Shalidor's Curse"
           ,   de  = "Shalidors Fluch"
           ,   fr  = "la Malédiction de Shalidor"
           ,   es  = "Maldición de Shalidor"
-          ,   it  = "Shalidor's Curse"
           ,   ru  = "Shalidor's Curse"
           ,   ja  = "呪えしシャリドール"
           }
-, [1032] = {
+, [1089] = {
               key = "$SET_096"
           ,   en  = "Armor of Truth"
           ,   de  = "Rüstung der Wahrheit"
           ,   fr  = "l’Armure de vérité"
           ,   es  = "Armadura de la sinceridad"
-          ,   it  = "Armor of Truth"
           ,   ru  = "Armor of Truth"
           ,   ja  = "真実の鎧"
           }
-, [1033] = {
+, [1090] = {
               key = "$SET_097"
           ,   en  = "The Arch-Mage"
           ,   de  = "Erzmagier"
           ,   fr  = "l’Archimage"
           ,   es  = "El Archimago"
-          ,   it  = "The Arch-Mage"
           ,   ru  = "The Arch-Mage"
           ,   ja  = "アークメイジ"
           }
-, [1034] = {
+, [1091] = {
               key = "$SET_098"
           ,   en  = "Necropotence"
           ,   de  = "Nekropotenz"
           ,   fr  = "Nécropotence"
           ,   es  = "Necropotencia"
-          ,   it  = "Necropotence"
           ,   ru  = "Necropotence"
           ,   ja  = "ネクロポーテンス"
           }
-, [1035] = {
+, [1092] = {
               key = "$SET_099"
           ,   en  = "Salvation"
           ,   de  = "Erlösung"
           ,   fr  = "le Salut"
           ,   es  = "Salvación"
-          ,   it  = "Salvation"
           ,   ru  = "Salvation"
           ,   ja  = "救済"
           }
-, [1036] = {
+, [1093] = {
               key = "$SET_100"
           ,   en  = "Hawk's Eye"
           ,   de  = "Falkenauge"
           ,   fr  = "l’Œil de faucon"
           ,   es  = "Ojo de halcón"
-          ,   it  = "Hawk's Eye"
           ,   ru  = "Hawk's Eye"
           ,   ja  = "ホークアイ"
           }
-, [1037] = {
+, [1094] = {
               key = "$SET_101"
           ,   en  = "Affliction"
           ,   de  = "Elend"
-          ,   fr  = "Affliction"
           ,   es  = "Aflicción"
-          ,   it  = "Affliction"
           ,   ru  = "Affliction"
           ,   ja  = "感染者"
           }
-, [1038] = {
+, [1095] = {
               key = "$SET_102"
           ,   en  = "Duneripper's Scales"
           ,   de  = "Schuppen des Dünenbrechers"
           ,   fr  = "Écailles de l'éventreur des dunes"
           ,   es  = "Escamas de Destripadunas"
-          ,   it  = "Duneripper's Scales"
           ,   ru  = "Duneripper's Scales"
           ,   ja  = "デューンリッパーの鱗"
           }
-, [1039] = {
+, [1096] = {
               key = "$SET_103"
           ,   en  = "Magicka Furnace"
           ,   de  = "Magickaschmiede"
           ,   fr  = "le Fourneau de magie"
           ,   es  = "Fragua mágica"
-          ,   it  = "Magicka Furnace"
           ,   ru  = "Magicka Furnace"
           ,   ja  = "マジカ炉"
           }
-, [1040] = {
+, [1097] = {
               key = "$SET_104"
           ,   en  = "Curse Eater"
           ,   de  = "Fluchfresser"
           ,   fr  = "le Mangeur de malédiction"
           ,   es  = "Comemaldiciones"
-          ,   it  = "Curse Eater"
           ,   ru  = "Curse Eater"
           ,   ja  = "呪いを喰らう者"
           }
-, [1041] = {
+, [1098] = {
               key = "$SET_105"
           ,   en  = "Twin Sisters"
           ,   de  = "Zwillingsschwestern"
           ,   fr  = "les Sœurs jumelles"
           ,   es  = "Gemelas"
-          ,   it  = "Twin Sisters"
           ,   ru  = "Twin Sisters"
           ,   ja  = "双子姉妹"
           }
-, [1042] = {
+, [1099] = {
               key = "$SET_106"
           ,   en  = "Wilderqueen's Arch"
           ,   de  = "Bogen der Wildkönigin"
           ,   fr  = "Arche de la Reine-nature"
           ,   es  = "Arco de la reina Silvestre"
-          ,   it  = "Wilderqueen's Arch"
           ,   ru  = "Wilderqueen's Arch"
           ,   ja  = "さまよえる女王のアーチ"
           }
-, [1043] = {
+, [1100] = {
               key = "$SET_107"
           ,   en  = "Wyrd Tree's Blessing"
           ,   de  = "Segen des Wyrdbaums"
           ,   fr  = "Bénédiction du Wyrd"
           ,   es  = "Bendición del árbol del Wyrd"
-          ,   it  = "Wyrd Tree's Blessing"
           ,   ru  = "Wyrd Tree's Blessing"
           ,   ja  = "ウィルドの樹の祝福"
           }
-, [1044] = {
+, [1101] = {
               key = "$SET_108"
           ,   en  = "Ravager"
           ,   de  = "Verwüster"
           ,   fr  = "l’Ensemble du ravageur"
           ,   es  = "Saqueador"
-          ,   it  = "Ravager"
           ,   ru  = "Ravager"
           ,   ja  = "破壊者"
           }
-, [1045] = {
+, [1102] = {
               key = "$SET_109"
           ,   en  = "Light of Cyrodiil"
           ,   de  = "Licht von Cyrodiil"
           ,   fr  = "la Lumière de Cyrodiil"
           ,   es  = "Luz de Cyrodiil"
-          ,   it  = "Light of Cyrodiil"
           ,   ru  = "Light of Cyrodiil"
           ,   ja  = "シロディールの光"
           }
-, [1046] = {
+, [1103] = {
               key = "$SET_110"
           ,   en  = "Sanctuary"
           ,   de  = "Heiligtum"
           ,   fr  = "le Sanctuaire"
           ,   es  = "Santuario"
-          ,   it  = "Sanctuary"
           ,   ru  = "Sanctuary"
           ,   ja  = "聖域"
           }
-, [1047] = {
+, [1104] = {
               key = "$SET_111"
           ,   en  = "Ward of Cyrodiil"
           ,   de  = "Schutz von Cyrodiil"
           ,   fr  = "la Défense de Cyrodiil"
           ,   es  = "Guarda de Cyrodiil"
-          ,   it  = "Ward of Cyrodiil"
           ,   ru  = "Ward of Cyrodiil"
           ,   ja  = "シロディールの結界"
           }
-, [1048] = {
+, [1105] = {
               key = "$SET_112"
           ,   en  = "Night Terror"
           ,   de  = "Nachtschrecken"
           ,   fr  = "Terreur nocturne"
           ,   es  = "Terror nocturno"
-          ,   it  = "Night Terror"
           ,   ru  = "Night Terror"
           ,   ja  = "夜の恐怖"
           }
-, [1049] = {
+, [1106] = {
               key = "$SET_113"
           ,   en  = "Crest of Cyrodiil"
           ,   de  = "Wappen von Cyrodiil"
           ,   fr  = "les Armoiries de Cyrodiil"
           ,   es  = "Cimera de Cyrodiil"
-          ,   it  = "Crest of Cyrodiil"
           ,   ru  = "Crest of Cyrodiil"
           ,   ja  = "シロディールの頂飾"
           }
-, [1050] = {
+, [1107] = {
               key = "$SET_114"
           ,   en  = "Soulshine"
           ,   de  = "Seelenschein"
           ,   fr  = "l’Âme lumineuse"
           ,   es  = "Alma luminosa"
-          ,   it  = "Soulshine"
           ,   ru  = "Soulshine"
           ,   ja  = "魂の輝き"
           }
-, [1051] = {
+, [1108] = {
               key = "$SET_116"
           ,   en  = "The Destruction Suite"
           ,   de  = "Garnitur der Zerstörung"
           ,   fr  = "la suite de destruction"
           ,   es  = "Séquito de destrucción"
-          ,   it  = "The Destruction Suite"
           ,   ru  = "The Destruction Suite"
           ,   ja  = "破壊の一組"
           }
-, [1052] = {
+, [1109] = {
               key = "$SET_117"
           ,   en  = "Relics of the Physician, Ansur"
           ,   de  = "Relikte des Mediziners Ansur"
           ,   fr  = "les reliques du docteur Ansur"
           ,   es  = "Reliquias del físico Ansur"
-          ,   it  = "Relics of the Physician, Ansur"
           ,   ru  = "Relics of the Physician, Ansur"
           ,   ja  = "医薬師アンスールの遺物"
           }
-, [1053] = {
+, [1110] = {
               key = "$SET_118"
           ,   en  = "Treasures of the Earthforge"
           ,   de  = "Schätze der Erdenschmiede"
           ,   fr  = "les Trésors de la Forgeterre"
           ,   es  = "Tesoros de Forjatierra"
-          ,   it  = "Treasures of the Earthforge"
           ,   ru  = "Treasures of the Earthforge"
           ,   ja  = "アースフォージの宝物"
           }
-, [1054] = {
+, [1111] = {
               key = "$SET_119"
           ,   en  = "Relics of the Rebellion"
           ,   de  = "Relikte der Rebellion"
           ,   fr  = "les Reliques de la rébellion"
           ,   es  = "Reliquias de la rebelión"
-          ,   it  = "Relics of the Rebellion"
           ,   ru  = "Relics of the Rebellion"
           ,   ja  = "反乱の遺物"
           }
-, [1055] = {
+, [1112] = {
               key = "$SET_120"
           ,   en  = "Arms of Infernace"
           ,   de  = "Waffen Infernals"
           ,   fr  = "les Armes d'Infernace"
           ,   es  = "Armas de Infernace"
-          ,   it  = "Arms of Infernace"
           ,   ru  = "Arms of Infernace"
           ,   ja  = "インファーナンスの武具"
           }
-, [1056] = {
+, [1113] = {
               key = "$SET_121"
           ,   en  = "Arms of the Ancestors"
           ,   de  = "Waffen der Ahnen"
           ,   fr  = "les Armes des ancêtres"
           ,   es  = "Armas de los ancestros"
-          ,   it  = "Arms of the Ancestors"
           ,   ru  = "Arms of the Ancestors"
           ,   ja  = "先人の武器"
           }
-, [1057] = {
+, [1114] = {
               key = "$SET_122"
           ,   en  = "Ebon Armory"
           ,   de  = "Ebenerzarsenal"
           ,   fr  = "l’Armure d'ébène"
           ,   es  = "Armadura de ébano"
-          ,   it  = "Ebon Armory"
           ,   ru  = "Ebon Armory"
           ,   ja  = "黒檀の武具"
           }
-, [1058] = {
+, [1115] = {
               key = "$SET_123"
           ,   en  = "Hircine's Veneer"
           ,   de  = "Hircines Schein"
           ,   fr  = "la Meute d'Hircine"
           ,   es  = "Manto de Hircine"
-          ,   it  = "Hircine's Veneer"
           ,   ru  = "Hircine's Veneer"
           ,   ja  = "ハーシーンの虚飾"
           }
-, [1059] = {
+, [1116] = {
               key = "$SET_124"
           ,   en  = "The Worm's Raiment"
           ,   de  = "Garderobe des Wurms"
           ,   fr  = "la Tenue du Ver"
           ,   es  = "Vestimenta del Gusano"
-          ,   it  = "The Worm's Raiment"
           ,   ru  = "The Worm's Raiment"
           ,   ja  = "虫の教団装備"
           }
-, [1060] = {
+, [1117] = {
               key = "$SET_125"
           ,   en  = "Wrath of the Imperium"
           ,   de  = "Zorn des Kaiserreichs"
           ,   fr  = "la Fureur de l'Empire"
           ,   es  = "Cólera del Imperio"
-          ,   it  = "Wrath of the Imperium"
           ,   ru  = "Wrath of the Imperium"
           ,   ja  = "帝国の憤怒"
           }
-, [1061] = {
+, [1118] = {
               key = "$SET_126"
           ,   en  = "Grace of the Ancients"
           ,   de  = "Anmut der Uralten"
           ,   fr  = "la Grâce des anciens"
           ,   es  = "Gracia de los Ancestros"
-          ,   it  = "Grace of the Ancients"
           ,   ru  = "Grace of the Ancients"
           ,   ja  = "古代の恩寵"
           }
-, [1062] = {
+, [1119] = {
               key = "$SET_127"
           ,   en  = "Deadly Strike"
           ,   de  = "tödlicher Stoß"
           ,   fr  = "la Frappe mortelle"
           ,   es  = "Golpe mortal"
-          ,   it  = "Deadly Strike"
           ,   ru  = "Deadly Strike"
           ,   ja  = "致死の一撃"
           }
-, [1063] = {
+, [1120] = {
               key = "$SET_128"
           ,   en  = "Blessing of the Potentates"
           ,   de  = "Segen des Potentaten"
           ,   fr  = "la Bénédiction des monarques"
           ,   es  = "Bendición de los Potentados"
-          ,   it  = "Blessing of the Potentates"
           ,   ru  = "Blessing of the Potentates"
           ,   ja  = "最高顧問の加護"
           }
-, [1064] = {
+, [1121] = {
               key = "$SET_129"
           ,   en  = "Vengeance Leech"
           ,   de  = "saugende Vergeltung"
           ,   fr  = "Rétribution"
           ,   es  = "Retribución"
-          ,   it  = "Vengeance Leech"
           ,   ru  = "Vengeance Leech"
           ,   ja  = "復讐の吸血"
           }
-, [1065] = {
+, [1122] = {
               key = "$SET_130"
           ,   en  = "Eagle Eye"
           ,   de  = "Adlerauge"
           ,   fr  = "l’Œil d'aigle"
           ,   es  = "Ojo de Águila"
-          ,   it  = "Eagle Eye"
           ,   ru  = "Eagle Eye"
           ,   ja  = "鷲の目"
           }
-, [1066] = {
+, [1123] = {
               key = "$SET_131"
           ,   en  = "Bastion of the Heartland"
           ,   de  = "Bastion des Herzlandes"
           ,   fr  = "le Bastion du continent"
           ,   es  = "Bastión de las tierras centrales"
-          ,   it  = "Bastion of the Heartland"
           ,   ru  = "Bastion of the Heartland"
           ,   ja  = "防衛のハートランド"
           }
-, [1067] = {
+, [1124] = {
               key = "$SET_132"
           ,   en  = "Shield of the Valiant"
           ,   de  = "Schild des Tapferen"
           ,   fr  = "le Bouclier du vaillant"
           ,   es  = "Escudo del Bravo"
-          ,   it  = "Shield of the Valiant"
           ,   ru  = "Shield of the Valiant"
           ,   ja  = "守護のバリアント"
           }
-, [1068] = {
+, [1125] = {
               key = "$SET_133"
           ,   en  = "Buffer of the Swift"
           ,   de  = "Dämpfer des Geschwinden"
           ,   fr  = "le Boutoir de rapidité"
           ,   es  = "Parapeto del vertiginoso"
-          ,   it  = "Buffer of the Swift"
           ,   ru  = "Buffer of the Swift"
           ,   ja  = "防護のスイフト"
           }
-, [1069] = {
+, [1126] = {
               key = "$SET_134"
           ,   en  = "Shroud of the Lich"
           ,   de  = "Tuch des Lich"
           ,   fr  = "le Suaire de la liche"
           ,   es  = "Sudario del Liche"
-          ,   it  = "Shroud of the Lich"
           ,   ru  = "Shroud of the Lich"
           ,   ja  = "リッチの覆い"
           }
-, [1070] = {
+, [1127] = {
               key = "$SET_135"
           ,   en  = "Draugr's Heritage"
           ,   de  = "Erbe des Draugrs"
           ,   fr  = "l’Héritage du Draugr"
           ,   es  = "Legado del Draugr"
-          ,   it  = "Draugr's Heritage"
           ,   ru  = "Draugr's Heritage"
           ,   ja  = "ドラウグルの遺産"
           }
-, [1071] = {
+, [1128] = {
               key = "$SET_136"
           ,   en  = "Immortal Warrior"
           ,   de  = "unsterblicher Krieger"
           ,   fr  = "le Guerrier immortel"
           ,   es  = "Guerrero inmortal"
-          ,   it  = "Immortal Warrior"
           ,   ru  = "Immortal Warrior"
           ,   ja  = "不死身の戦士"
           }
-, [1072] = {
+, [1129] = {
               key = "$SET_137"
           ,   en  = "Berserking Warrior"
           ,   de  = "tobender Krieger"
           ,   fr  = "le Guerrier furieux"
           ,   es  = "Guerrero frenético"
-          ,   it  = "Berserking Warrior"
           ,   ru  = "Berserking Warrior"
           ,   ja  = "凶暴な戦士"
           }
-, [1073] = {
+, [1130] = {
               key = "$SET_138"
           ,   en  = "Defending Warrior"
           ,   de  = "verteidigender Krieger"
           ,   fr  = "le Guerrier défenseur"
           ,   es  = "Guerrero defensor"
-          ,   it  = "Defending Warrior"
           ,   ru  = "Defending Warrior"
           ,   ja  = "守護の戦士"
           }
-, [1074] = {
+, [1131] = {
               key = "$SET_139"
           ,   en  = "Wise Mage"
           ,   de  = "weiser Magier"
           ,   fr  = "le Mage avisé"
           ,   es  = "Mago sabio"
-          ,   it  = "Wise Mage"
           ,   ru  = "Wise Mage"
           ,   ja  = "博学の魔術師"
           }
-, [1075] = {
+, [1132] = {
               key = "$SET_140"
           ,   en  = "Destructive Mage"
           ,   de  = "zerstörerischer Magier"
           ,   fr  = "le Mage destructeur"
           ,   es  = "Mago destructor"
-          ,   it  = "Destructive Mage"
           ,   ru  = "Destructive Mage"
           ,   ja  = "破壊の魔術師"
           }
-, [1076] = {
+, [1133] = {
               key = "$SET_141"
           ,   en  = "Healing Mage"
           ,   de  = "heilender Magier"
           ,   fr  = "le Mage guérisseur"
           ,   es  = "Mago sanador"
-          ,   it  = "Healing Mage"
           ,   ru  = "Healing Mage"
           ,   ja  = "治癒の魔術師"
           }
-, [1077] = {
+, [1134] = {
               key = "$SET_142"
           ,   en  = "Quick Serpent"
           ,   de  = "flinke Schlange"
           ,   fr  = "le Serpent rapide"
           ,   es  = "Serpiente veloz"
-          ,   it  = "Quick Serpent"
           ,   ru  = "Quick Serpent"
           ,   ja  = "素早さの大蛇"
           }
-, [1078] = {
+, [1135] = {
               key = "$SET_143"
           ,   en  = "Poisonous Serpent"
           ,   de  = "Giftschlange"
           ,   fr  = "le Serpent venimeux"
           ,   es  = "Serpiente venenosa"
-          ,   it  = "Poisonous Serpent"
           ,   ru  = "Poisonous Serpent"
           ,   ja  = "毒の大蛇"
           }
-, [1079] = {
+, [1136] = {
               key = "$SET_144"
           ,   en  = "Twice-Fanged Serpent"
           ,   de  = "doppelzüngige Schlange"
           ,   fr  = "le Serpent à deux crocs"
           ,   es  = "Serpiente doblecolmillo"
-          ,   it  = "Twice-Fanged Serpent"
           ,   ru  = "Twice-Fanged Serpent"
           ,   ja  = "双牙蛇"
           }
-, [1080] = {
+, [1137] = {
               key = "$SET_145"
           ,   en  = "Way of Fire"
           ,   de  = "Weg des Feuers"
           ,   fr  = "la Voie du feu"
           ,   es  = "Camino del Fuego"
-          ,   it  = "Way of Fire"
           ,   ru  = "Way of Fire"
           ,   ja  = "炎の流儀"
           }
-, [1081] = {
+, [1138] = {
               key = "$SET_146"
           ,   en  = "Way of Air"
           ,   de  = "Weg der Luft"
           ,   fr  = "la Voie de l'air"
           ,   es  = "Camino del Aire"
-          ,   it  = "Way of Air"
           ,   ru  = "Way of Air"
           ,   ja  = "大気の流儀"
           }
-, [1082] = {
+, [1139] = {
               key = "$SET_147"
           ,   en  = "Way of Martial Knowledge"
           ,   de  = "Weg der Kampfkunst"
           ,   fr  = "la Voie de la connaissance martiale"
           ,   es  = "Camino del conocimiento marcial"
-          ,   it  = "Way of Martial Knowledge"
           ,   ru  = "Way of Martial Knowledge"
           ,   ja  = "武術知識の道"
           }
-, [1083] = {
+, [1140] = {
               key = "$SET_148"
           ,   en  = "Way of the Arena"
           ,   de  = "Weg der Arena"
           ,   fr  = "la Voie de l'arène"
           ,   es  = "Senda de la Arena"
-          ,   it  = "Way of the Arena"
           ,   ru  = "Way of the Arena"
           ,   ja  = "アリーナの流儀"
           }
-, [1084] = {
+, [1141] = {
               key = "$SET_155"
           ,   en  = "Undaunted Bastion"
           ,   de  = "Unerschrockenen-Bastion"
           ,   fr  = "Bastion indomptable"
           ,   es  = "Baluarte intrépido"
-          ,   it  = "Undaunted Bastion"
           ,   ru  = "Undaunted Bastion"
           ,   ja  = "アンドーンテッド砦"
           }
-, [1085] = {
+, [1142] = {
               key = "$SET_156"
           ,   en  = "Undaunted Infiltrator"
           ,   de  = "Unerschrockener Infiltrator"
           ,   fr  = "Infiltrateur indoptable"
           ,   es  = "Infiltrado Intrépido"
-          ,   it  = "Undaunted Infiltrator"
           ,   ru  = "Undaunted Infiltrator"
           ,   ja  = "アンドーンテッドの潜入者"
           }
-, [1086] = {
+, [1143] = {
               key = "$SET_157"
           ,   en  = "Undaunted Unweaver"
           ,   de  = "Unerschrockener Entflechter"
           ,   fr  = "Détrameur indomptable"
           ,   es  = "Desenmarañador Intrépido"
-          ,   it  = "Undaunted Unweaver"
           ,   ru  = "Undaunted Unweaver"
           ,   ja  = "アンドーンテッドのほころびた装備"
           }
-, [1087] = {
+, [1144] = {
               key = "$SET_158"
           ,   en  = "Embershield"
           ,   de  = "Glutschild"
           ,   fr  = "Bouclier de braise"
           ,   es  = "Ascuas protectoras"
-          ,   it  = "Embershield"
           ,   ru  = "Embershield"
           ,   ja  = "エンバーシールド"
           }
-, [1088] = {
+, [1145] = {
               key = "$SET_159"
           ,   en  = "Sunderflame"
           ,   de  = "Trennflamme"
           ,   fr  = "Scindeflamme"
           ,   es  = "Llama divisora"
-          ,   it  = "Sunderflame"
           ,   ru  = "Sunderflame"
           ,   ja  = "サンダーフレイム"
           }
-, [1089] = {
+, [1146] = {
               key = "$SET_160"
           ,   en  = "Burning Spellweave"
           ,   de  = "Branntzauberweber"
           ,   fr  = "le Tramesort ardent"
           ,   es  = "Conjurador abrasador"
-          ,   it  = "Burning Spellweave"
           ,   ru  = "Burning Spellweave"
           ,   ja  = "炎上するスペルウィーブ"
           }
-, [1090] = {
+, [1147] = {
               key = "$SET_161"
           ,   en  = "Twice-Born Star"
           ,   de  = "Doppelstern"
           ,   fr  = "Étoile gémellaire"
           ,   es  = "Estrella renacida"
-          ,   it  = "Twice-Born Star"
           ,   ru  = "Twice-Born Star"
           ,   ja  = "双子星"
           }
-, [1091] = {
+, [1148] = {
               key = "$SET_162"
           ,   en  = "Spawn of Mephala"
           ,   de  = "Mephalas Brut"
           ,   fr  = "l’Engeance de Méphala"
           ,   es  = "Engendro de Mephala"
-          ,   it  = "Spawn of Mephala"
           ,   ru  = "Spawn of Mephala"
           ,   ja  = "メファーラの落とし子"
           }
-, [1092] = {
+, [1149] = {
               key = "$SET_163"
           ,   en  = "Blood Spawn"
           ,   de  = "Blutbrut"
           ,   fr  = "l’Engeance de sang"
           ,   es  = "Engendro de sangre"
-          ,   it  = "Blood Spawn"
           ,   ru  = "Blood Spawn"
           ,   ja  = "ブラッドスポーン"
           }
-, [1093] = {
+, [1150] = {
               key = "$SET_164"
           ,   en  = "Lord Warden"
           ,   de  = "Hochwärter"
           ,   fr  = "le Seigneur gardien"
           ,   es  = "lord guardián"
-          ,   it  = "Lord Warden"
           ,   ru  = "Lord Warden"
           ,   ja  = "看守長"
           }
-, [1094] = {
+, [1151] = {
               key = "$SET_165"
           ,   en  = "Scourge Harvester"
           ,   de  = "Geißelernter"
           ,   fr  = "Moissonneur calamiteux"
           ,   es  = "Azote Segador"
-          ,   it  = "Scourge Harvester"
           ,   ru  = "Scourge Harvester"
           ,   ja  = "スカージの収穫者"
           }
-, [1095] = {
+, [1152] = {
               key = "$SET_166"
           ,   en  = "Engine Guardian"
           ,   de  = "Maschinenwächter"
           ,   fr  = "le Gardien du moteur"
           ,   es  = "guardián del Motor"
-          ,   it  = "Engine Guardian"
           ,   ru  = "Engine Guardian"
           ,   ja  = "エンジンのガーディアン"
           }
-, [1096] = {
+, [1153] = {
               key = "$SET_167"
           ,   en  = "Nightflame"
           ,   de  = "Nachtflamme"
           ,   fr  = "la Nocteflamme"
           ,   es  = "Llama Nocturna"
-          ,   it  = "Nightflame"
           ,   ru  = "Nightflame"
           ,   ja  = "夜の炎"
           }
-, [1097] = {
+, [1154] = {
               key = "$SET_168"
           ,   en  = "Nerien'eth"
-          ,   de  = "Nerien'eth"
           ,   fr  = "Nérien'eth"
-          ,   es  = "Nerien'eth"
-          ,   it  = "Nerien'eth"
           ,   ru  = "Nerien'eth"
           ,   ja  = "ネリエンエス"
           }
-, [1098] = {
+, [1155] = {
               key = "$SET_169"
           ,   en  = "Valkyn Skoria"
-          ,   de  = "Valkyn Skoria"
-          ,   fr  = "Valkyn Skoria"
           ,   es  = "valkyn Skoria"
-          ,   it  = "Valkyn Skoria"
           ,   ru  = "Valkyn Skoria"
           ,   ja  = "ヴァルキン・スコリア"
           }
-, [1099] = {
+, [1156] = {
               key = "$SET_170"
           ,   en  = "Maw of the Infernal"
           ,   de  = "Schlund des Infernalen"
           ,   fr  = "Gueule de l'Infernal"
           ,   es  = "Fauces del Infierno"
-          ,   it  = "Maw of the Infernal"
           ,   ru  = "Maw of the Infernal"
           ,   ja  = "業火のモー"
           }
-, [1100] = {
+, [1157] = {
               key = "$SET_171"
           ,   en  = "Eternal Warrior"
           ,   de  = "ewiger Krieger"
           ,   fr  = "l’Éternel Guerrier"
           ,   es  = "Guerrero eterno"
-          ,   it  = "Eternal Warrior"
           ,   ru  = "Eternal Warrior"
           ,   ja  = "不滅の戦士"
           }
-, [1101] = {
+, [1158] = {
               key = "$SET_172"
           ,   en  = "Infallible Mage"
           ,   de  = "unfehlbare Magierin"
           ,   fr  = "l’Infaillible Mage"
           ,   es  = "Mago infalible"
-          ,   it  = "Infallible Mage"
           ,   ru  = "Infallible Mage"
           ,   ja  = "完全なる魔術師"
           }
-, [1102] = {
+, [1159] = {
               key = "$SET_173"
           ,   en  = "Vicious Serpent"
           ,   de  = "boshafte Schlange"
           ,   fr  = "le Cruel Serpent"
           ,   es  = "Serpiente despiadada"
-          ,   it  = "Vicious Serpent"
           ,   ru  = "Vicious Serpent"
           ,   ja  = "残忍な大蛇"
           }
-, [1103] = {
+, [1160] = {
               key = "$SET_176"
           ,   en  = "Noble's Conquest"
           ,   de  = "Adelssieg"
           ,   fr  = "le Butin du noble"
           ,   es  = "Conquista del Noble"
-          ,   it  = "Noble's Conquest"
           ,   ru  = "Noble's Conquest"
           ,   ja  = "大親征"
           }
-, [1104] = {
+, [1161] = {
               key = "$SET_177"
           ,   en  = "Redistributor"
           ,   de  = "Umverteilung"
           ,   fr  = "Redistributeur"
           ,   es  = "Redistribuidor"
-          ,   it  = "Redistributor"
           ,   ru  = "Redistributor"
           ,   ja  = "再分配"
           }
-, [1105] = {
+, [1162] = {
               key = "$SET_178"
           ,   en  = "Armor Master"
           ,   de  = "Rüstungsmeister"
           ,   fr  = "Maître armurier"
           ,   es  = "Maestro armero"
-          ,   it  = "Armor Master"
           ,   ru  = "Armor Master"
           ,   ja  = "鎧匠"
           }
-, [1106] = {
+, [1163] = {
               key = "$SET_179"
           ,   en  = "Black Rose"
           ,   de  = "schwarze Rose"
           ,   fr  = "la Rose noire"
           ,   es  = "Rosa negra"
-          ,   it  = "Black Rose"
           ,   ru  = "Black Rose"
           ,   ja  = "ブラックローズ"
           }
-, [1107] = {
+, [1164] = {
               key = "$SET_180"
           ,   en  = "Powerful Assault"
           ,   de  = "kraftvoller Ansturm"
           ,   fr  = "l’Assaut puissant"
           ,   es  = "Asalto Poderoso"
-          ,   it  = "Powerful Assault"
           ,   ru  = "Powerful Assault"
           ,   ja  = "強襲者"
           }
-, [1108] = {
+, [1165] = {
               key = "$SET_181"
           ,   en  = "Meritorious Service"
           ,   de  = "meritorischer Dienst"
           ,   fr  = "Service émérite"
           ,   es  = "Servicio Meritorio"
-          ,   it  = "Meritorious Service"
           ,   ru  = "Meritorious Service"
           ,   ja  = "勲功"
           }
-, [1109] = {
+, [1166] = {
               key = "$SET_183"
           ,   en  = "Molag Kena"
-          ,   de  = "Molag Kena"
-          ,   fr  = "Molag Kena"
-          ,   es  = "Molag Kena"
-          ,   it  = "Molag Kena"
           ,   ru  = "Molag Kena"
           ,   ja  = "モラグ・キーナ"
           }
-, [1110] = {
+, [1167] = {
               key = "$SET_184"
           ,   en  = "Brands of Imperium"
           ,   de  = "Male des Kaiserreichs"
           ,   fr  = "Fers d'Imperium"
           ,   es  = "Marca de Imperium"
-          ,   it  = "Brands of Imperium"
           ,   ru  = "Brands of Imperium"
           ,   ja  = "帝国の印"
           }
-, [1111] = {
+, [1168] = {
               key = "$SET_185"
           ,   en  = "Spell Power Cure"
           ,   de  = "Magiekraftheilung"
           ,   fr  = "Puissance curative"
           ,   es  = "Poder Curativo"
-          ,   it  = "Spell Power Cure"
           ,   ru  = "Spell Power Cure"
           ,   ja  = "呪文攻撃治癒"
           }
-, [1112] = {
+, [1169] = {
               key = "$SET_186"
           ,   en  = "Jolting Arms"
           ,   de  = "rüttelnde Rüstung"
           ,   fr  = "Armes de la décharge"
           ,   es  = "Armas de la descarga"
-          ,   it  = "Jolting Arms"
           ,   ru  = "Jolting Arms"
           ,   ja  = "大揺れの武具"
           }
-, [1113] = {
+, [1170] = {
               key = "$SET_187"
           ,   en  = "Swamp Raider"
           ,   de  = "Sumpfräuber"
           ,   fr  = "Pilleur du marais"
           ,   es  = "Pirata de pantanos"
-          ,   it  = "Swamp Raider"
           ,   ru  = "Swamp Raider"
           ,   ja  = "沼の襲撃者"
           }
-, [1114] = {
+, [1171] = {
               key = "$SET_188"
           ,   en  = "Storm Master"
           ,   de  = "Sturmmeister"
           ,   fr  = "la Maîtrise de la tempête"
           ,   es  = "Maestro de la Tormenta"
-          ,   it  = "Storm Master"
           ,   ru  = "Storm Master"
           ,   ja  = "嵐マスター"
           }
-, [1115] = {
+, [1172] = {
               key = "$SET_190"
           ,   en  = "Scathing Mage"
           ,   de  = "verletzender Magier"
           ,   fr  = "Mage brûlant"
           ,   es  = "Mago satírico"
-          ,   it  = "Scathing Mage"
           ,   ru  = "Scathing Mage"
           ,   ja  = "辛辣な魔術師"
           }
-, [1116] = {
+, [1173] = {
               key = "$SET_193"
           ,   en  = "Overwhelming Surge"
           ,   de  = "überwältigende Woge"
           ,   fr  = "Élan de Suprématie"
           ,   es  = "Impulso abrumador"
-          ,   it  = "Overwhelming Surge"
           ,   ru  = "Overwhelming Surge"
           ,   ja  = "圧倒するサージ"
           }
-, [1117] = {
+, [1174] = {
               key = "$SET_194"
           ,   en  = "Combat Physician"
           ,   de  = "Feldarzt"
           ,   fr  = "Médecin de terrain"
           ,   es  = "Médico de Combate"
-          ,   it  = "Combat Physician"
           ,   ru  = "Combat Physician"
           ,   ja  = "戦闘医薬師"
           }
-, [1118] = {
+, [1175] = {
               key = "$SET_195"
           ,   en  = "Sheer Venom"
           ,   de  = "Reingift"
           ,   fr  = "Venin absolu"
           ,   es  = "Veneno Purificado"
-          ,   it  = "Sheer Venom"
           ,   ru  = "Sheer Venom"
           ,   ja  = "純粋な毒"
           }
-, [1119] = {
+, [1176] = {
               key = "$SET_196"
           ,   en  = "Leeching Plate"
           ,   de  = "auslaugende Rüstung"
           ,   fr  = "Plaque sangsue"
           ,   es  = "Placa Absorbente"
-          ,   it  = "Leeching Plate"
           ,   ru  = "Leeching Plate"
           ,   ja  = "吸血プレート"
           }
-, [1120] = {
+, [1177] = {
               key = "$SET_197"
           ,   en  = "Tormentor"
           ,   de  = "Quälender"
           ,   fr  = "Tortionnaire"
           ,   es  = "Atormentador"
-          ,   it  = "Tormentor"
           ,   ru  = "Tormentor"
           ,   ja  = "拷問者"
           }
-, [1121] = {
+, [1178] = {
               key = "$SET_198"
           ,   en  = "Essence Thief"
           ,   de  = "Essenzdieb"
           ,   fr  = "Voleur d'essence"
           ,   es  = "Ladrón de Esencias"
-          ,   it  = "Essence Thief"
           ,   ru  = "Essence Thief"
           ,   ja  = "エキス盗賊"
           }
-, [1122] = {
+, [1179] = {
               key = "$SET_199"
           ,   en  = "Shield Breaker"
           ,   de  = "Schildbrecher"
           ,   fr  = "Brise-bouclier"
           ,   es  = "Rompescudos"
-          ,   it  = "Shield Breaker"
           ,   ru  = "Shield Breaker"
           ,   ja  = "シールドブレイカー"
           }
-, [1123] = {
+, [1180] = {
               key = "$SET_200"
           ,   en  = "Phoenix"
           ,   de  = "Phönix"
           ,   fr  = "Phénix"
           ,   es  = "Fénix"
-          ,   it  = "Phoenix"
           ,   ru  = "Phoenix"
           ,   ja  = "不死鳥"
           }
-, [1124] = {
+, [1181] = {
               key = "$SET_201"
           ,   en  = "Reactive Armor"
           ,   de  = "reaktive Rüstung"
           ,   fr  = "Armure réactive"
           ,   es  = "Armadura Reactiva"
-          ,   it  = "Reactive Armor"
           ,   ru  = "Reactive Armor"
           ,   ja  = "反応型鎧"
           }
-, [1125] = {
+, [1182] = {
               key = "$SET_204"
           ,   en  = "Endurance"
           ,   de  = "Beständigkeit"
-          ,   fr  = "Endurance"
-          ,   es  = "Endurance"
-          ,   it  = "Endurance"
           ,   ru  = "Endurance"
           ,   ja  = "持久力"
           }
-, [1126] = {
+, [1183] = {
               key = "$SET_205"
           ,   en  = "Willpower"
           ,   de  = "Willenskraft"
           ,   fr  = "Volonté"
           ,   es  = "Voluntad"
-          ,   it  = "Willpower"
           ,   ru  = "Willpower"
           ,   ja  = "意志"
           }
-, [1127] = {
+, [1184] = {
               key = "$SET_206"
           ,   en  = "Agility"
           ,   de  = "Agilität"
           ,   fr  = "Agilité"
           ,   es  = "Agilidad"
-          ,   it  = "Agility"
           ,   ru  = "Agility"
           ,   ja  = "俊敏"
           }
-, [1128] = {
+, [1185] = {
               key = "$SET_207"
           ,   en  = "Law of Julianos"
           ,   de  = "Gesetz von Julianos"
           ,   fr  = "Loi de Julianos"
           ,   es  = "Ley de Julianos"
-          ,   it  = "Law of Julianos"
           ,   ru  = "Law of Julianos"
           ,   ja  = "ジュリアノスの掟"
           }
-, [1129] = {
+, [1186] = {
               key = "$SET_208"
           ,   en  = "Trial by Fire"
           ,   de  = "Feuertaufe"
           ,   fr  = "Épreuve du feu"
           ,   es  = "Prueba de fuego"
-          ,   it  = "Trial by Fire"
           ,   ru  = "Trial by Fire"
           ,   ja  = "炎の試練"
           }
-, [1130] = {
+, [1187] = {
               key = "$SET_209"
           ,   en  = "Armor of the Code"
-          ,   de  = "Armor of the Code"
-          ,   fr  = "Armor of the Code"
-          ,   es  = "Armor of the Code"
-          ,   it  = "Armor of the Code"
           ,   ru  = "Armor of the Code"
           ,   ja  = "Armor of the Code"
           }
-, [1131] = {
+, [1188] = {
               key = "$SET_210"
           ,   en  = "Mark of the Pariah"
           ,   de  = "Zeichen des Ausgestoßenen"
           ,   fr  = "la Marque du Paria"
           ,   es  = "Marca del Paria"
-          ,   it  = "Mark of the Pariah"
           ,   ru  = "Mark of the Pariah"
           ,   ja  = "追放者の印"
           }
-, [1132] = {
+, [1189] = {
               key = "$SET_211"
           ,   en  = "Permafrost"
-          ,   de  = "Permafrost"
           ,   fr  = "le Permafrost"
           ,   es  = "Permagel"
-          ,   it  = "Permafrost"
           ,   ru  = "Permafrost"
           ,   ja  = "永久凍土層"
           }
-, [1133] = {
+, [1190] = {
               key = "$SET_212"
           ,   en  = "Briarheart"
           ,   de  = "Dornenherz"
           ,   fr  = "Roncecœur"
           ,   es  = "corazón de espino"
-          ,   it  = "Briarheart"
           ,   ru  = "Briarheart"
           ,   ja  = "ブライア・ハート"
           }
-, [1134] = {
+, [1191] = {
               key = "$SET_213"
           ,   en  = "Glorious Defender"
           ,   de  = "ruhmreicher Verteidiger"
           ,   fr  = "Défense glorieuse"
           ,   es  = "Protector Glorioso"
-          ,   it  = "Glorious Defender"
           ,   ru  = "Glorious Defender"
           ,   ja  = "栄光の守り手"
           }
-, [1135] = {
+, [1192] = {
               key = "$SET_214"
           ,   en  = "Para Bellum"
-          ,   de  = "Para Bellum"
-          ,   fr  = "Para Bellum"
-          ,   es  = "Para Bellum"
-          ,   it  = "Para Bellum"
           ,   ru  = "Para Bellum"
           ,   ja  = "パラベルム"
           }
-, [1136] = {
+, [1193] = {
               key = "$SET_215"
           ,   en  = "Elemental Succession"
           ,   de  = "Elementarfolge"
           ,   fr  = "Successsion élémentaire"
           ,   es  = "Sucesión Elemental"
-          ,   it  = "Elemental Succession"
           ,   ru  = "Elemental Succession"
           ,   ja  = "継承の属性"
           }
-, [1137] = {
+, [1194] = {
               key = "$SET_216"
           ,   en  = "Hunt Leader"
           ,   de  = "Jagdleiter"
           ,   fr  = "le Chef de la Chasse"
           ,   es  = "Líder de la caza"
-          ,   it  = "Hunt Leader"
           ,   ru  = "Hunt Leader"
           ,   ja  = "狩猟の先導者"
           }
-, [1138] = {
+, [1195] = {
               key = "$SET_217"
           ,   en  = "Winterborn"
           ,   de  = "Winterkind"
           ,   fr  = "Nédhiver"
           ,   es  = "Sangrinvernal"
-          ,   it  = "Winterborn"
           ,   ru  = "Winterborn"
           ,   ja  = "ウィンターボーン"
           }
-, [1139] = {
+, [1196] = {
               key = "$SET_218"
           ,   en  = "Trinimac's Valor"
           ,   de  = "Trinimacs Heldenmut"
           ,   fr  = "la Valeur de Trinimac"
           ,   es  = "Valor de Trinimac"
-          ,   it  = "Trinimac's Valor"
           ,   ru  = "Trinimac's Valor"
           ,   ja  = "トリニマクの武勇"
           }
-, [1140] = {
+, [1197] = {
               key = "$SET_219"
           ,   en  = "Morkuldin"
-          ,   de  = "Morkuldin"
-          ,   fr  = "Morkuldin"
-          ,   es  = "Morkuldin"
-          ,   it  = "Morkuldin"
           ,   ru  = "Morkuldin"
           ,   ja  = "モークルディン"
           }
-, [1141] = {
+, [1198] = {
               key = "$SET_224"
           ,   en  = "Tava's Favor"
           ,   de  = "Tavas Gunst"
           ,   fr  = "Faveur de Tava"
           ,   es  = "Favor de Tava"
-          ,   it  = "Tava's Favor"
           ,   ru  = "Tava's Favor"
           ,   ja  = "ターヴァの寵"
           }
-, [1142] = {
+, [1199] = {
               key = "$SET_225"
           ,   en  = "Clever Alchemist"
           ,   de  = "schlauer Alchemist"
           ,   fr  = "Alchimiste astucieux"
           ,   es  = "Alquimista astuto"
-          ,   it  = "Clever Alchemist"
           ,   ru  = "Clever Alchemist"
           ,   ja  = "賢明な錬金術師"
           }
-, [1143] = {
+, [1200] = {
               key = "$SET_226"
           ,   en  = "Eternal Hunt"
           ,   de  = "ewige Jagd"
           ,   fr  = "Chasse éternelle"
           ,   es  = "Caza Eterna"
-          ,   it  = "Eternal Hunt"
           ,   ru  = "Eternal Hunt"
           ,   ja  = "エターナルハント"
           }
-, [1144] = {
+, [1201] = {
               key = "$SET_227"
           ,   en  = "Bahraha's Curse"
           ,   de  = "Bahrahas Fluch"
           ,   fr  = "Malédiction de Bahraha"
           ,   es  = "Maldición de Bahraha"
-          ,   it  = "Bahraha's Curse"
           ,   ru  = "Bahraha's Curse"
           ,   ja  = "バーラハの呪い"
           }
-, [1145] = {
+, [1202] = {
               key = "$SET_228"
           ,   en  = "Syvarra's Scales"
           ,   de  = "Syvarras Schuppen"
           ,   fr  = "les Écailles de Syvarra"
           ,   es  = "Escamas de Syvarra"
-          ,   it  = "Syvarra's Scales"
           ,   ru  = "Syvarra's Scales"
           ,   ja  = "シヴァラの鱗"
           }
-, [1146] = {
+, [1203] = {
               key = "$SET_229"
           ,   en  = "Twilight Remedy"
           ,   de  = "Zwielichtgenesung"
           ,   fr  = "le Remède du crépuscule"
           ,   es  = "Remedio crepuscular"
-          ,   it  = "Twilight Remedy"
           ,   ru  = "Twilight Remedy"
           ,   ja  = "黄昏なる救済"
           }
-, [1147] = {
+, [1204] = {
               key = "$SET_230"
           ,   en  = "Moondancer"
           ,   de  = "Mondtänzer"
           ,   fr  = "Danselune"
           ,   es  = "Danzalunas"
-          ,   it  = "Moondancer"
           ,   ru  = "Moondancer"
           ,   ja  = "ムーンダンサー"
           }
-, [1148] = {
+, [1205] = {
               key = "$SET_231"
           ,   en  = "Lunar Bastion"
           ,   de  = "Mondbastion"
           ,   fr  = "Bastion lunaire"
           ,   es  = "Bastión Lunar"
-          ,   it  = "Lunar Bastion"
           ,   ru  = "Lunar Bastion"
           ,   ja  = "月の砦"
           }
-, [1149] = {
+, [1206] = {
               key = "$SET_232"
           ,   en  = "Roar of Alkosh"
           ,   de  = "Brüllen von Alkosh"
           ,   fr  = "le Rugissement d'Alkosh"
           ,   es  = "Rugido de Alkosh"
-          ,   it  = "Roar of Alkosh"
           ,   ru  = "Roar of Alkosh"
           ,   ja  = "アルコシュの咆哮"
           }
-, [1150] = {
+, [1207] = {
               key = "$SET_234"
           ,   en  = "Marksman's Crest"
           ,   de  = "Wappen des Meisterschützen"
           ,   fr  = "Emblème du tireur d'élite"
           ,   es  = "Emblema del tirador"
-          ,   it  = "Marksman's Crest"
           ,   ru  = "Marksman's Crest"
           ,   ja  = "射手の頂飾"
           }
-, [1151] = {
+, [1208] = {
               key = "$SET_235"
           ,   en  = "Robes of Transmutation"
           ,   de  = "Roben der Transmutation"
           ,   fr  = "Robes de transmutation"
           ,   es  = "Ropajes de transmutación"
-          ,   it  = "Robes of Transmutation"
           ,   ru  = "Robes of Transmutation"
           ,   ja  = "変化の武具"
           }
-, [1152] = {
+, [1209] = {
               key = "$SET_236"
           ,   en  = "Vicious Death"
           ,   de  = "grausamer Tod"
           ,   fr  = "Mort cruelle"
           ,   es  = "Muerte cruel"
-          ,   it  = "Vicious Death"
           ,   ru  = "Vicious Death"
           ,   ja  = "残忍な死"
           }
-, [1153] = {
+, [1210] = {
               key = "$SET_237"
           ,   en  = "Leki's Focus"
           ,   de  = "Lekis Fokus"
           ,   fr  = "Focalisation de Léki"
           ,   es  = "Enfoque de Leki"
-          ,   it  = "Leki's Focus"
           ,   ru  = "Leki's Focus"
           ,   ja  = "レキのフォーカス"
           }
-, [1154] = {
+, [1211] = {
               key = "$SET_238"
           ,   en  = "Fasalla's Guile"
           ,   de  = "Fasallas List"
           ,   fr  = "Perfidie de Fasalla"
           ,   es  = "Astucia de Fasalla"
-          ,   it  = "Fasalla's Guile"
           ,   ru  = "Fasalla's Guile"
           ,   ja  = "ファサラの策謀"
           }
-, [1155] = {
+, [1212] = {
               key = "$SET_239"
           ,   en  = "Warrior's Fury"
           ,   de  = "Raserei des Kriegers"
           ,   fr  = "furie du Guerrier"
           ,   es  = "Furia del guerrero"
-          ,   it  = "Warrior's Fury"
           ,   ru  = "Warrior's Fury"
           ,   ja  = "戦士の激昂"
           }
-, [1156] = {
+, [1213] = {
               key = "$SET_240"
           ,   en  = "Kvatch Gladiator"
           ,   de  = "Gladiator von Kvatch"
           ,   fr  = "le gladiateur de Kvatch"
           ,   es  = "Gladiador de Kvatch"
-          ,   it  = "Kvatch Gladiator"
           ,   ru  = "Kvatch Gladiator"
           ,   ja  = "クヴァッチ剣闘士"
           }
-, [1157] = {
+, [1214] = {
               key = "$SET_241"
           ,   en  = "Varen's Legacy"
           ,   de  = "Varens Erbe"
           ,   fr  = "l’Héritage de Varen"
           ,   es  = "Legado de Varen"
-          ,   it  = "Varen's Legacy"
           ,   ru  = "Varen's Legacy"
           ,   ja  = "ヴァレンレガシー"
           }
-, [1158] = {
+, [1215] = {
               key = "$SET_242"
           ,   en  = "Pelinal's Aptitude"
           ,   de  = "Pelinals Talent"
           ,   fr  = "l’Aptitude de Pélinal"
           ,   es  = "Aptitud de Pelinal"
-          ,   it  = "Pelinal's Aptitude"
           ,   ru  = "Pelinal's Aptitude"
           ,   ja  = "ペリナルの適性"
           }
-, [1159] = {
+, [1216] = {
               key = "$SET_243"
           ,   en  = "Hide of Morihaus"
           ,   de  = "Haut von Morihaus"
           ,   fr  = "la Peau de Morihaus"
           ,   es  = "Piel de Morihaus"
-          ,   it  = "Hide of Morihaus"
           ,   ru  = "Hide of Morihaus"
           ,   ja  = "モリハウスの皮"
           }
-, [1160] = {
+, [1217] = {
               key = "$SET_244"
           ,   en  = "Flanking Strategist"
           ,   de  = "flankierender Stratege"
           ,   fr  = "le Stratège du débordement"
           ,   es  = "Estrategia de flanqueo"
-          ,   it  = "Flanking Strategist"
           ,   ru  = "Flanking Strategist"
           ,   ja  = "奇襲攻撃の戦略家"
           }
-, [1161] = {
+, [1218] = {
               key = "$SET_245"
           ,   en  = "Sithis' Touch"
           ,   de  = "Sithis' Berührung"
           ,   fr  = "la Caresse de Sithis"
           ,   es  = "Toque de Sithis"
-          ,   it  = "Sithis' Touch"
           ,   ru  = "Sithis' Touch"
           ,   ja  = "シシスの接触"
           }
-, [1162] = {
+, [1219] = {
               key = "$SET_246"
           ,   en  = "Galerion's Revenge"
           ,   de  = "Galerions Revanche"
           ,   fr  = "la vengeance de Galérion"
           ,   es  = "Venganza de Galerion"
-          ,   it  = "Galerion's Revenge"
           ,   ru  = "Galerion's Revenge"
           ,   ja  = "ガレリオンの復讐"
           }
-, [1163] = {
+, [1220] = {
               key = "$SET_247"
           ,   en  = "Vicecanon of Venom"
           ,   de  = "Vizekanoniker des Gifts"
           ,   fr  = "le vice-chanoine du venin"
           ,   es  = "canónigo del veneno"
-          ,   it  = "Vicecanon of Venom"
           ,   ru  = "Vicecanon of Venom"
           ,   ja  = "バイスカノンの毒"
           }
-, [1164] = {
+, [1221] = {
               key = "$SET_248"
           ,   en  = "Thews of the Harbinger"
           ,   de  = "Muskeln des Vorboten"
           ,   fr  = "les muscles du héraut"
           ,   es  = "Músculos del precursor"
-          ,   it  = "Thews of the Harbinger"
           ,   ru  = "Thews of the Harbinger"
           ,   ja  = "導き手の力"
           }
-, [1165] = {
+, [1222] = {
               key = "$SET_253"
           ,   en  = "Imperial Physique"
           ,   de  = "kaiserliche Physis"
           ,   fr  = "le physique impérial"
           ,   es  = "Constitución imperial"
-          ,   it  = "Imperial Physique"
           ,   ru  = "Imperial Physique"
           ,   ja  = "インペリアルフィジカル"
           }
-, [1166] = {
+, [1223] = {
               key = "$SET_256"
           ,   en  = "Mighty Chudan"
           ,   de  = "mächtiger Chudan"
           ,   fr  = "Gros Chudan"
           ,   es  = "Chudan la Imponente"
-          ,   it  = "Mighty Chudan"
           ,   ru  = "Mighty Chudan"
           ,   ja  = "強きチュダン"
           }
-, [1167] = {
+, [1224] = {
               key = "$SET_257"
           ,   en  = "Velidreth"
-          ,   de  = "Velidreth"
-          ,   fr  = "Velidreth"
-          ,   es  = "Velidreth"
-          ,   it  = "Velidreth"
           ,   ru  = "Velidreth"
           ,   ja  = "ヴェリドレス"
           }
-, [1168] = {
+, [1225] = {
               key = "$SET_258"
           ,   en  = "Amber Plasm"
           ,   de  = "Bernsteinplasma"
           ,   fr  = "Plasme ambré"
           ,   es  = "Plasma ámbar"
-          ,   it  = "Amber Plasm"
           ,   ru  = "Amber Plasm"
           ,   ja  = "琥珀のプラズム"
           }
-, [1169] = {
+, [1226] = {
               key = "$SET_259"
           ,   en  = "Heem-Jas' Retribution"
           ,   de  = "Heem-Jas' Vergeltung"
           ,   fr  = "Châtiment d'Heem-Jas"
           ,   es  = "Castigo de Heem-Jas"
-          ,   it  = "Heem-Jas' Retribution"
           ,   ru  = "Heem-Jas' Retribution"
           ,   ja  = "ヘーム・ジャスの報復"
           }
-, [1170] = {
+, [1227] = {
               key = "$SET_260"
           ,   en  = "Aspect of Mazzatun"
           ,   de  = "Aspekt von Mazzatun"
           ,   fr  = "Aspect de Mazzatun"
           ,   es  = "Aspecto de Mazzatun"
-          ,   it  = "Aspect of Mazzatun"
           ,   ru  = "Aspect of Mazzatun"
           ,   ja  = "マザッタンの姿"
           }
-, [1171] = {
+, [1228] = {
               key = "$SET_261"
           ,   en  = "Gossamer"
           ,   de  = "Gespinst"
           ,   fr  = "Diaphane"
           ,   es  = "Hilos de seda"
-          ,   it  = "Gossamer"
           ,   ru  = "Gossamer"
           ,   ja  = "流れ糸"
           }
-, [1172] = {
+, [1229] = {
               key = "$SET_262"
           ,   en  = "Widowmaker"
           ,   de  = "Witwenmacher"
           ,   fr  = "Deuil"
           ,   es  = "Creaviudas"
-          ,   it  = "Widowmaker"
           ,   ru  = "Widowmaker"
           ,   ja  = "ウィドウメーカー"
           }
-, [1173] = {
+, [1230] = {
               key = "$SET_263"
           ,   en  = "Hand of Mephala"
           ,   de  = "Hand von Mephala"
           ,   fr  = "Main de Méphala"
           ,   es  = "Mano de Mephala"
-          ,   it  = "Hand of Mephala"
           ,   ru  = "Hand of Mephala"
           ,   ja  = "メファーラの手"
           }
-, [1174] = {
+, [1231] = {
               key = "$SET_264"
           ,   en  = "Giant Spider"
           ,   de  = "Riesenspinne"
           ,   fr  = "araignée géante"
           ,   es  = "Araña gigante"
-          ,   it  = "Giant Spider"
           ,   ru  = "Giant Spider"
           ,   ja  = "ジャイアントスパイダー"
           }
-, [1175] = {
+, [1232] = {
               key = "$SET_265"
           ,   en  = "Shadowrend"
           ,   de  = "Schattenriss"
           ,   fr  = "Taillombre"
           ,   es  = "Desgarrasombras"
-          ,   it  = "Shadowrend"
           ,   ru  = "Shadowrend"
           ,   ja  = "シャドウレンド"
           }
-, [1176] = {
+, [1233] = {
               key = "$SET_266"
           ,   en  = "Kra'gh"
-          ,   de  = "Kra'gh"
-          ,   fr  = "Kra'gh"
-          ,   es  = "Kra'gh"
-          ,   it  = "Kra'gh"
           ,   ru  = "Kra'gh"
           ,   ja  = "クラグ"
           }
-, [1177] = {
+, [1234] = {
               key = "$SET_267"
           ,   en  = "Swarm Mother"
           ,   de  = "Schwarmmutter"
           ,   fr  = "la Mère de la nuée"
           ,   es  = "Madre del ejambre"
-          ,   it  = "Swarm Mother"
           ,   ru  = "Swarm Mother"
           ,   ja  = "スワームマザー"
           }
-, [1178] = {
+, [1235] = {
               key = "$SET_268"
           ,   en  = "Sentinel of Rkugamz"
           ,   de  = "Wachposten von Rkugamz"
           ,   fr  = "la sentinelle de Rkugamz"
           ,   es  = "Centinela de Rkugamz"
-          ,   it  = "Sentinel of Rkugamz"
           ,   ru  = "Sentinel of Rkugamz"
           ,   ja  = "ルクガムズの守衛"
           }
-, [1179] = {
+, [1236] = {
               key = "$SET_269"
           ,   en  = "Chokethorn"
           ,   de  = "Würgedorn"
           ,   fr  = "la Ronce étouffeuse"
           ,   es  = "Zarzahogadora"
-          ,   it  = "Chokethorn"
           ,   ru  = "Chokethorn"
           ,   ja  = "チョークソーン"
           }
-, [1180] = {
+, [1237] = {
               key = "$SET_270"
           ,   en  = "Slimecraw"
           ,   de  = "Schleimkropf"
           ,   fr  = "Rampefange"
           ,   es  = "Zarpaembarrada"
-          ,   it  = "Slimecraw"
           ,   ru  = "Slimecraw"
           ,   ja  = "スライムクロー"
           }
-, [1181] = {
+, [1238] = {
               key = "$SET_271"
           ,   en  = "Sellistrix"
-          ,   de  = "Sellistrix"
-          ,   fr  = "Sellistrix"
-          ,   es  = "Sellistrix"
-          ,   it  = "Sellistrix"
           ,   ru  = "Sellistrix"
           ,   ja  = "セリストリクス"
           }
-, [1182] = {
+, [1239] = {
               key = "$SET_272"
           ,   en  = "Infernal Guardian"
           ,   de  = "infernaler Wächter"
           ,   fr  = "gardien infernal"
           ,   es  = "guardián infernal"
-          ,   it  = "Infernal Guardian"
           ,   ru  = "Infernal Guardian"
           ,   ja  = "業火のガーディアン"
           }
-, [1183] = {
+, [1240] = {
               key = "$SET_273"
           ,   en  = "Ilambris"
-          ,   de  = "Ilambris"
-          ,   fr  = "Ilambris"
           ,   es  = "llambris"
-          ,   it  = "Ilambris"
           ,   ru  = "Ilambris"
           ,   ja  = "イランブリス"
           }
-, [1184] = {
+, [1241] = {
               key = "$SET_274"
           ,   en  = "Iceheart"
           ,   de  = "Eisherz"
           ,   fr  = "Cœur-de-glace"
           ,   es  = "Corazón Helado"
-          ,   it  = "Iceheart"
           ,   ru  = "Iceheart"
           ,   ja  = "アイスハート"
           }
-, [1185] = {
+, [1242] = {
               key = "$SET_275"
           ,   en  = "Stormfist"
           ,   de  = "Sturmfaust"
           ,   fr  = "Poigne-tempête"
           ,   es  = "Puñotormenta"
-          ,   it  = "Stormfist"
           ,   ru  = "Stormfist"
           ,   ja  = "ストームフィスト"
           }
-, [1186] = {
+, [1243] = {
               key = "$SET_276"
           ,   en  = "Tremorscale"
           ,   de  = "Bebenschuppe"
           ,   fr  = "Tremblécaille"
           ,   es  = "Escamatrémula"
-          ,   it  = "Tremorscale"
           ,   ru  = "Tremorscale"
           ,   ja  = "トレモルスケール"
           }
-, [1187] = {
+, [1244] = {
               key = "$SET_277"
           ,   en  = "Pirate Skeleton"
           ,   de  = "Piratenskelett"
           ,   fr  = "Pirate squelettique"
           ,   es  = "esqueleto pirata"
-          ,   it  = "Pirate Skeleton"
           ,   ru  = "Pirate Skeleton"
           ,   ja  = "海賊スケルトン"
           }
-, [1188] = {
+, [1245] = {
               key = "$SET_278"
           ,   en  = "The Troll King"
           ,   de  = "Trollkönig"
           ,   fr  = "le roi des Trolls"
           ,   es  = "rey trol"
-          ,   it  = "The Troll King"
           ,   ru  = "The Troll King"
           ,   ja  = "トロールキング"
           }
-, [1189] = {
+, [1246] = {
               key = "$SET_279"
           ,   en  = "Selene"
-          ,   de  = "Selene"
           ,   fr  = "Sélène"
-          ,   es  = "Selene"
-          ,   it  = "Selene"
           ,   ru  = "Selene"
           ,   ja  = "セレーン"
           }
-, [1190] = {
+, [1247] = {
               key = "$SET_280"
           ,   en  = "Grothdarr"
-          ,   de  = "Grothdarr"
-          ,   fr  = "Grothdarr"
-          ,   es  = "Grothdarr"
-          ,   it  = "Grothdarr"
           ,   ru  = "Grothdarr"
           ,   ja  = "グロスダール"
           }
-, [1191] = {
+, [1248] = {
               key = "$SET_281"
           ,   en  = "Armor of the Trainee"
           ,   de  = "Rüstung des Auszubildenden"
           ,   fr  = "Armure du débutant"
           ,   es  = "Armadura del aprendiz"
-          ,   it  = "Armor of the Trainee"
           ,   ru  = "Armor of the Trainee"
           ,   ja  = "訓練生の鎧"
           }
-, [1192] = {
+, [1249] = {
               key = "$SET_282"
           ,   en  = "Vampire Cloak"
           ,   de  = "Vampirumhang"
           ,   fr  = "Cape du vampire"
           ,   es  = "Capa del vampiro"
-          ,   it  = "Vampire Cloak"
           ,   ru  = "Vampire Cloak"
           ,   ja  = "吸血鬼のクローク"
           }
-, [1193] = {
+, [1250] = {
               key = "$SET_283"
           ,   en  = "Sword-Singer"
           ,   de  = "Schwertsänger"
           ,   fr  = "Chante-épée"
           ,   es  = "Cantor de espada"
-          ,   it  = "Sword-Singer"
           ,   ru  = "Sword-Singer"
           ,   ja  = "ソードシンガー"
           }
-, [1194] = {
+, [1251] = {
               key = "$SET_284"
           ,   en  = "Order of Diagna"
           ,   de  = "Orden von Diagna"
           ,   fr  = "Ordre de Diagna"
           ,   es  = "Orden de Diagna"
-          ,   it  = "Order of Diagna"
           ,   ru  = "Order of Diagna"
           ,   ja  = "ダイアグナ騎士団"
           }
-, [1195] = {
+, [1252] = {
               key = "$SET_285"
           ,   en  = "Vampire Lord"
           ,   de  = "Vampirfürst"
           ,   fr  = "Seigneur vampire"
           ,   es  = "Lord vampiro"
-          ,   it  = "Vampire Lord"
           ,   ru  = "Vampire Lord"
           ,   ja  = "吸血鬼の王"
           }
-, [1196] = {
+, [1253] = {
               key = "$SET_286"
           ,   en  = "Spriggan's Thorns"
           ,   de  = "Dornen des Zweiglings"
           ,   fr  = "Ronces du spriggan"
           ,   es  = "Espinas de spriggan"
-          ,   it  = "Spriggan's Thorns"
           ,   ru  = "Spriggan's Thorns"
           ,   ja  = "スプリガンのいばら"
           }
-, [1197] = {
+, [1254] = {
               key = "$SET_287"
           ,   en  = "Green Pact"
           ,   de  = "der Grüne Pakt"
           ,   fr  = "le Pacte Vert"
           ,   es  = "Pacto verde"
-          ,   it  = "Green Pact"
           ,   ru  = "Green Pact"
           ,   ja  = "グリーンパクト"
           }
-, [1198] = {
+, [1255] = {
               key = "$SET_288"
           ,   en  = "Beekeeper's Gear"
           ,   de  = "Werkzeug des Bienenhüters"
           ,   fr  = "Harnachement de l'apiculteur"
           ,   es  = "Equipo de apicultor"
-          ,   it  = "Beekeeper's Gear"
           ,   ru  = "Beekeeper's Gear"
           ,   ja  = "養蜂家の装備"
           }
-, [1199] = {
+, [1256] = {
               key = "$SET_289"
           ,   en  = "Spinner's Garments"
           ,   de  = "Gewänder des Webers"
           ,   fr  = "Tenue du trameur"
           ,   es  = "Vestiduras del hilandero"
-          ,   it  = "Spinner's Garments"
           ,   ru  = "Spinner's Garments"
           ,   ja  = "紡ぎ手の衣服"
           }
-, [1200] = {
+, [1257] = {
               key = "$SET_290"
           ,   en  = "Skooma Smuggler"
           ,   de  = "Skoomaschmuggler"
           ,   fr  = "Traficant de skouma"
           ,   es  = "Traficante de skooma"
-          ,   it  = "Skooma Smuggler"
           ,   ru  = "Skooma Smuggler"
           ,   ja  = "スクゥーマ密売人"
           }
-, [1201] = {
+, [1258] = {
               key = "$SET_291"
           ,   en  = "Shalk Exoskeleton"
           ,   de  = "Schröterpanzer"
           ,   fr  = "Exosquelette de shalk"
           ,   es  = "Exoesqueleto de shalk"
-          ,   it  = "Shalk Exoskeleton"
           ,   ru  = "Shalk Exoskeleton"
           ,   ja  = "ショークの外骨格"
           }
-, [1202] = {
+, [1259] = {
               key = "$SET_292"
           ,   en  = "Mother's Sorrow"
           ,   de  = "Muttertränen"
           ,   fr  = "Chagrin maternel"
           ,   es  = "Pesar de madre"
-          ,   it  = "Mother's Sorrow"
           ,   ru  = "Mother's Sorrow"
           ,   ja  = "母の悲しみ"
           }
-, [1203] = {
+, [1260] = {
               key = "$SET_293"
           ,   en  = "Plague Doctor"
           ,   de  = "Seuchendoktor"
           ,   fr  = "Médecin de la peste"
           ,   es  = "Doctor de la plaga"
-          ,   it  = "Plague Doctor"
           ,   ru  = "Plague Doctor"
           ,   ja  = "疫病医"
           }
-, [1204] = {
+, [1261] = {
               key = "$SET_294"
           ,   en  = "Ysgramor's Birthright"
           ,   de  = "Ysgramors Geburtsrecht"
           ,   fr  = "Héritage d'Ysgramor"
           ,   es  = "Patrimonio de Ysgramor"
-          ,   it  = "Ysgramor's Birthright"
           ,   ru  = "Ysgramor's Birthright"
           ,   ja  = "イスグラモルの生得権"
           }
-, [1205] = {
+, [1262] = {
               key = "$SET_295"
           ,   en  = "Jailbreaker"
           ,   de  = "Ausbrecher"
           ,   fr  = "l’Évasion"
           ,   es  = "Prófugo"
-          ,   it  = "Jailbreaker"
           ,   ru  = "Jailbreaker"
           ,   ja  = "牢破り"
           }
-, [1206] = {
+, [1263] = {
               key = "$SET_296"
           ,   en  = "Spelunker"
           ,   de  = "Höhlenforscher"
           ,   fr  = "Spéléologue"
           ,   es  = "Espeleólogo"
-          ,   it  = "Spelunker"
           ,   ru  = "Spelunker"
           ,   ja  = "スペランカー"
           }
-, [1207] = {
+, [1264] = {
               key = "$SET_297"
           ,   en  = "Spider Cultist Cowl"
           ,   de  = "Spinnenkultistenkutte"
           ,   fr  = "capuchon de l'adepte de l'Araignée"
           ,   es  = "Hábito de Sectario de la Araña"
-          ,   it  = "Spider Cultist Cowl"
           ,   ru  = "Spider Cultist Cowl"
           ,   ja  = "クモの教団信者の頭巾"
           }
-, [1208] = {
+, [1265] = {
               key = "$SET_298"
           ,   en  = "Light Speaker"
           ,   de  = "Lichtsprecher"
           ,   fr  = "Orateur lumineux"
           ,   es  = "Orador luminoso"
-          ,   it  = "Light Speaker"
           ,   ru  = "Light Speaker"
           ,   ja  = "光の代弁者"
           }
-, [1209] = {
+, [1266] = {
               key = "$SET_299"
           ,   en  = "Toothrow"
           ,   de  = "Zahnreihe"
           ,   fr  = "la Rangée de dents"
           ,   es  = "Hiladientes"
-          ,   it  = "Toothrow"
           ,   ru  = "Toothrow"
           ,   ja  = "トゥースロウ"
           }
-, [1210] = {
+, [1267] = {
               key = "$SET_300"
           ,   en  = "Netch's Touch"
           ,   de  = "Berührung des Netch"
           ,   fr  = "Toucher du netch"
           ,   es  = "Toque de netch"
-          ,   it  = "Netch's Touch"
           ,   ru  = "Netch's Touch"
           ,   ja  = "ネッチの接触"
           }
-, [1211] = {
+, [1268] = {
               key = "$SET_301"
           ,   en  = "Strength of the Automaton"
           ,   de  = "Stärke des Automaten"
           ,   fr  = "Force de l'automate"
           ,   es  = "Fuerza del autómata"
-          ,   it  = "Strength of the Automaton"
           ,   ru  = "Strength of the Automaton"
           ,   ja  = "オートマトンの力"
           }
-, [1212] = {
+, [1269] = {
               key = "$SET_302"
           ,   en  = "Leviathan"
-          ,   de  = "Leviathan"
           ,   fr  = "le Léviathan"
           ,   es  = "Leviatán"
-          ,   it  = "Leviathan"
           ,   ru  = "Leviathan"
           ,   ja  = "リヴァイアサン"
           }
-, [1213] = {
+, [1270] = {
               key = "$SET_303"
           ,   en  = "Lamia's Song"
           ,   de  = "Lied der Lamie"
           ,   fr  = "Chant de la Lamie"
           ,   es  = "Canto de lamia"
-          ,   it  = "Lamia's Song"
           ,   ru  = "Lamia's Song"
           ,   ja  = "ラミアの歌"
           }
-, [1214] = {
+, [1271] = {
               key = "$SET_304"
           ,   en  = "Medusa"
           ,   de  = "versteinernder Blick"
           ,   fr  = "la Méduse"
-          ,   es  = "Medusa"
-          ,   it  = "Medusa"
           ,   ru  = "Medusa"
           ,   ja  = "メドゥーサ"
           }
-, [1215] = {
+, [1272] = {
               key = "$SET_305"
           ,   en  = "Treasure Hunter"
           ,   de  = "Schatzjäger"
           ,   fr  = "le chasseur de trésors"
           ,   es  = "Buscador de tesoros"
-          ,   it  = "Treasure Hunter"
           ,   ru  = "Treasure Hunter"
           ,   ja  = "トレジャーハンター"
           }
-, [1216] = {
+, [1273] = {
               key = "$SET_307"
           ,   en  = "Draugr Hulk"
           ,   de  = "schwerfälliger Draugr"
           ,   fr  = "le Draugr colossal"
           ,   es  = "Draugr Colosal"
-          ,   it  = "Draugr Hulk"
           ,   ru  = "Draugr Hulk"
           ,   ja  = "ドラウグル・ハルキング"
           }
-, [1217] = {
+, [1274] = {
               key = "$SET_308"
           ,   en  = "Bone Pirate's Tatters"
           ,   de  = "Lumpen des Knochenpiraten"
           ,   fr  = "Haillons du pirate squelettique"
           ,   es  = "Harapos del pirata de hueso"
-          ,   it  = "Bone Pirate's Tatters"
           ,   ru  = "Bone Pirate's Tatters"
           ,   ja  = "骨の海賊のボロ"
           }
-, [1218] = {
+, [1275] = {
               key = "$SET_309"
           ,   en  = "Knight-errant's Mail"
           ,   de  = "Platten des Wanderritters"
           ,   fr  = "Maille du Chevalier errant"
           ,   es  = "Malla del caballero errante"
-          ,   it  = "Knight-errant's Mail"
           ,   ru  = "Knight-errant's Mail"
           ,   ja  = "遍歴の騎士の鎧"
           }
-, [1219] = {
+, [1276] = {
               key = "$SET_310"
           ,   en  = "Sword Dancer"
           ,   de  = "Schwerttänzer"
           ,   fr  = "la Danse des épées"
           ,   es  = "Danzador de espadas"
-          ,   it  = "Sword Dancer"
           ,   ru  = "Sword Dancer"
           ,   ja  = "ソードダンサー"
           }
-, [1220] = {
+, [1277] = {
               key = "$SET_311"
           ,   en  = "Rattlecage"
           ,   de  = "Klapperkäfig"
           ,   fr  = "le Provocateur"
           ,   es  = "Desafiador"
-          ,   it  = "Rattlecage"
           ,   ru  = "Rattlecage"
           ,   ja  = "ラトルケージ"
           }
-, [1221] = {
+, [1278] = {
               key = "$SET_312"
           ,   en  = "Tremorscale"
-          ,   de  = "Tremorscale"
-          ,   fr  = "Tremorscale"
-          ,   es  = "Tremorscale"
-          ,   it  = "Tremorscale"
           ,   ru  = "Tremorscale"
           ,   ja  = "Tremorscale"
           }
-, [1222] = {
+, [1279] = {
               key = "$SET_313"
           ,   en  = "Titanic Cleave"
           ,   de  = "titanisches Trennen"
@@ -11294,7 +11148,7 @@ LANG_DB = {
           ,   ru  = "Titanic Cleave"
           ,   ja  = "大切断"
           }
-, [1223] = {
+, [1280] = {
               key = "$SET_314"
           ,   en  = "Puncturing Remedy"
           ,   de  = "durchschlagende Genesung"
@@ -11304,7 +11158,7 @@ LANG_DB = {
           ,   ru  = "Puncturing Remedy"
           ,   ja  = "穿刺回復"
           }
-, [1224] = {
+, [1281] = {
               key = "$SET_315"
           ,   en  = "Stinging Slashes"
           ,   de  = "stechende Schnitte"
@@ -11314,7 +11168,7 @@ LANG_DB = {
           ,   ru  = "Stinging Slashes"
           ,   ja  = "ひりつく斬撃"
           }
-, [1225] = {
+, [1282] = {
               key = "$SET_316"
           ,   en  = "Caustic Arrow"
           ,   de  = "beißender Pfeil"
@@ -11324,7 +11178,7 @@ LANG_DB = {
           ,   ru  = "Caustic Arrow"
           ,   ja  = "腐食の矢"
           }
-, [1226] = {
+, [1283] = {
               key = "$SET_317"
           ,   en  = "Destructive Impact"
           ,   de  = "zerstörerischer Einschlag"
@@ -11334,7 +11188,7 @@ LANG_DB = {
           ,   ru  = "Destructive Impact"
           ,   ja  = "破壊の衝撃"
           }
-, [1227] = {
+, [1284] = {
               key = "$SET_318"
           ,   en  = "Grand Rejuvenation"
           ,   de  = "große Verjüngung"
@@ -11344,157 +11198,142 @@ LANG_DB = {
           ,   ru  = "Grand Rejuvenation"
           ,   ja  = "大いなる再生"
           }
-, [1228] = {
+, [1285] = {
               key = "$SET_320"
           ,   en  = "War Maiden"
           ,   de  = "Kriegsjungfer"
           ,   fr  = "la Vierge guerrière"
           ,   es  = "Doncella guerrera"
-          ,   it  = "War Maiden"
           ,   ru  = "War Maiden"
           ,   ja  = "戦乙女"
           }
-, [1229] = {
+, [1286] = {
               key = "$SET_321"
           ,   en  = "Defiler"
           ,   de  = "Schänder"
           ,   fr  = "Profanateur"
           ,   es  = "Profanador"
-          ,   it  = "Defiler"
           ,   ru  = "Defiler"
           ,   ja  = "冒涜者"
           }
-, [1230] = {
+, [1287] = {
               key = "$SET_322"
           ,   en  = "Warrior-Poet"
           ,   de  = "Kriegerpoet"
           ,   fr  = "le Guerrier-Poète"
           ,   es  = "Poeta guerrero"
-          ,   it  = "Warrior-Poet"
           ,   ru  = "Warrior-Poet"
           ,   ja  = "戦詩人"
           }
-, [1231] = {
+, [1288] = {
               key = "$SET_323"
           ,   en  = "Assassin's Guile"
           ,   de  = "Assassinenlist"
           ,   fr  = "la Duplicité de l'assassin"
           ,   es  = "Astucia de asesino"
-          ,   it  = "Assassin's Guile"
           ,   ru  = "Assassin's Guile"
           ,   ja  = "アサシンの幻惑"
           }
-, [1232] = {
+, [1289] = {
               key = "$SET_324"
           ,   en  = "Daedric Trickery"
           ,   de  = "daedrische Gaunerei"
           ,   fr  = "la Tromperie daedrique"
           ,   es  = "Engaño daédrico"
-          ,   it  = "Daedric Trickery"
           ,   ru  = "Daedric Trickery"
           ,   ja  = "デイドラの策略"
           }
-, [1233] = {
+, [1290] = {
               key = "$SET_325"
           ,   en  = "Shacklebreaker"
           ,   de  = "Kettensprenger"
           ,   fr  = "le Brise-entraves"
           ,   es  = "Rompecadenas"
-          ,   it  = "Shacklebreaker"
           ,   ru  = "Shacklebreaker"
           ,   ja  = "シャックルブレイカー"
           }
-, [1234] = {
+, [1291] = {
               key = "$SET_326"
           ,   en  = "Vanguard's Challenge"
           ,   de  = "Vorhutdisput"
           ,   fr  = "défi de l'avant-garde"
           ,   es  = "Desafío de la vanguardia"
-          ,   it  = "Vanguard's Challenge"
           ,   ru  = "Vanguard's Challenge"
           ,   ja  = "挑む先遣隊"
           }
-, [1235] = {
+, [1292] = {
               key = "$SET_327"
           ,   en  = "Coward's Gear"
           ,   de  = "Feiglingstracht"
           ,   fr  = "barda du couard"
           ,   es  = "Equipo del cobarde"
-          ,   it  = "Coward's Gear"
           ,   ru  = "Coward's Gear"
           ,   ja  = "臆病な歯車"
           }
-, [1236] = {
+, [1293] = {
               key = "$SET_328"
           ,   en  = "Knight Slayer"
           ,   de  = "Ritterschlächter"
           ,   fr  = "tueur de chevalier"
           ,   es  = "Asesino de caballeros"
-          ,   it  = "Knight Slayer"
           ,   ru  = "Knight Slayer"
           ,   ja  = "騎士殺し"
           }
-, [1237] = {
+, [1294] = {
               key = "$SET_329"
           ,   en  = "Wizard's Riposte"
           ,   de  = "Zaubererreplik"
           ,   fr  = "riposte du sorcier"
           ,   es  = "Sentencia del mago"
-          ,   it  = "Wizard's Riposte"
           ,   ru  = "Wizard's Riposte"
           ,   ja  = "魔術師カウンター"
           }
-, [1238] = {
+, [1295] = {
               key = "$SET_330"
           ,   en  = "Automated Defense"
           ,   de  = "automatisierte Verteidigung"
           ,   fr  = "la Défense automatique"
           ,   es  = "Defensa automática"
-          ,   it  = "Automated Defense"
           ,   ru  = "Automated Defense"
           ,   ja  = "自律防御"
           }
-, [1239] = {
+, [1296] = {
               key = "$SET_331"
           ,   en  = "War Machine"
           ,   de  = "Kriegsmaschine"
           ,   fr  = "la machine de guerre"
           ,   es  = "Máquina de guerra"
-          ,   it  = "War Machine"
           ,   ru  = "War Machine"
           ,   ja  = "ウォーマシン"
           }
-, [1240] = {
+, [1297] = {
               key = "$SET_332"
           ,   en  = "Master Architect"
           ,   de  = "Meisterarchitekt"
           ,   fr  = "le maître architecte"
           ,   es  = "maestro arquitecto"
-          ,   it  = "Master Architect"
           ,   ru  = "Master Architect"
           ,   ja  = "匠の技"
           }
-, [1241] = {
+, [1298] = {
               key = "$SET_333"
           ,   en  = "Inventor's Guard"
           ,   de  = "Erfindergarde"
           ,   fr  = "la Garde de l'inventeur"
           ,   es  = "Guardia del inventor"
-          ,   it  = "Inventor's Guard"
           ,   ru  = "Inventor's Guard"
           ,   ja  = "発明家の守り"
           }
-, [1242] = {
+, [1299] = {
               key = "$SET_334"
           ,   en  = "Impregnable Armor"
           ,   de  = "unüberwindliche Rüstung"
           ,   fr  = "armure imprenable"
           ,   es  = "Armadura inexpugnable"
-          ,   it  = "Impregnable Armor"
           ,   ru  = "Impregnable Armor"
           ,   ja  = "非貫通アーマー"
           }
-, [1243] = {
+, [1300] = {
               key = "$SET_335"
           ,   en  = "Draugr's Rest"
           ,   de  = "Draugrruhe"
@@ -11503,7 +11342,7 @@ LANG_DB = {
           ,   ru  = "Draugr's Rest"
           ,   ja  = "ドラウグルズレスト"
           }
-, [1244] = {
+, [1301] = {
               key = "$SET_336"
           ,   en  = "Pillar of Nirn"
           ,   de  = "Säulen von Nirn"
@@ -11512,7 +11351,7 @@ LANG_DB = {
           ,   ru  = "Pillar of Nirn"
           ,   ja  = "ニルンの柱"
           }
-, [1245] = {
+, [1302] = {
               key = "$SET_337"
           ,   en  = "Ironblood"
           ,   de  = "Eisenblut"
@@ -11521,7 +11360,7 @@ LANG_DB = {
           ,   ru  = "Ironblood"
           ,   ja  = "アイアンブラッド"
           }
-, [1246] = {
+, [1303] = {
               key = "$SET_338"
           ,   en  = "Flame Blossom"
           ,   de  = "Flammenblüte"
@@ -11530,7 +11369,7 @@ LANG_DB = {
           ,   ru  = "Flame Blossom"
           ,   ja  = "炎の花"
           }
-, [1247] = {
+, [1304] = {
               key = "$SET_339"
           ,   en  = "Blooddrinker"
           ,   de  = "Bluttrinker"
@@ -11539,7 +11378,7 @@ LANG_DB = {
           ,   ru  = "Blooddrinker"
           ,   ja  = "ブラッドドリンカー"
           }
-, [1248] = {
+, [1305] = {
               key = "$SET_340"
           ,   en  = "Hagraven's Garden"
           ,   de  = "Vettelgarten"
@@ -11548,7 +11387,7 @@ LANG_DB = {
           ,   ru  = "Hagraven's Garden"
           ,   ja  = "ハグレイヴン庭園"
           }
-, [1249] = {
+, [1306] = {
               key = "$SET_341"
           ,   en  = "Earthgore"
           ,   de  = "Erdbluter"
@@ -11557,16 +11396,13 @@ LANG_DB = {
           ,   ru  = "Earthgore"
           ,   ja  = "アースゴア"
           }
-, [1250] = {
+, [1307] = {
               key = "$SET_342"
           ,   en  = "Domihaus"
-          ,   de  = "Domihaus"
-          ,   fr  = "Domihaus"
-          ,   es  = "Domihaus"
           ,   ru  = "Domihaus"
           ,   ja  = "ドミーハウス"
           }
-, [1251] = {
+, [1308] = {
               key = "$SET_343"
           ,   en  = "Caluurion's Legacy"
           ,   de  = "Caluurions Erbe"
@@ -11575,7 +11411,7 @@ LANG_DB = {
           ,   ru  = "Caluurion's Legacy"
           ,   ja  = "カルウリオンの遺産"
           }
-, [1252] = {
+, [1309] = {
               key = "$SET_344"
           ,   en  = "Trappings of Invigoration"
           ,   de  = "Stärkungsprunk"
@@ -11584,7 +11420,7 @@ LANG_DB = {
           ,   ru  = "Trappings of Invigoration"
           ,   ja  = "活力の証"
           }
-, [1253] = {
+, [1310] = {
               key = "$SET_345"
           ,   en  = "Ulfnor's Favor"
           ,   de  = "Ulfnors Gunst"
@@ -11593,7 +11429,7 @@ LANG_DB = {
           ,   ru  = "Ulfnor's Favor"
           ,   ja  = "ウルフノールの加護"
           }
-, [1254] = {
+, [1311] = {
               key = "$SET_346"
           ,   en  = "Jorvuld's Guidance"
           ,   de  = "Jorvulds Führung"
@@ -11602,7 +11438,7 @@ LANG_DB = {
           ,   ru  = "Jorvuld's Guidance"
           ,   ja  = "ジョルバルドの導き"
           }
-, [1255] = {
+, [1312] = {
               key = "$SET_347"
           ,   en  = "Plague Slinger"
           ,   de  = "Seuchenschleuder"
@@ -11611,7 +11447,7 @@ LANG_DB = {
           ,   ru  = "Plague Slinger"
           ,   ja  = "疫病の運び手"
           }
-, [1256] = {
+, [1313] = {
               key = "$SET_348"
           ,   en  = "Curse of Doylemish"
           ,   de  = "Fluch von Doylemish"
@@ -11620,25 +11456,19 @@ LANG_DB = {
           ,   ru  = "Curse of Doylemish"
           ,   ja  = "ドイルミッシュの呪い"
           }
-, [1257] = {
+, [1314] = {
               key = "$SET_349"
           ,   en  = "Thurvokun"
-          ,   de  = "Thurvokun"
-          ,   fr  = "Thurvokun"
-          ,   es  = "Thurvokun"
           ,   ru  = "Thurvokun"
           ,   ja  = "サーヴォクン"
           }
-, [1258] = {
+, [1315] = {
               key = "$SET_350"
           ,   en  = "Zaan"
-          ,   de  = "Zaan"
-          ,   fr  = "Zaan"
-          ,   es  = "Zaan"
           ,   ru  = "Zaan"
           ,   ja  = "ザーン"
           }
-, [1259] = {
+, [1316] = {
               key = "$SET_351"
           ,   en  = "Innate Axiom"
           ,   de  = "Kernaxiom"
@@ -11647,7 +11477,7 @@ LANG_DB = {
           ,   ru  = "Innate Axiom"
           ,   ja  = "内在公理"
           }
-, [1260] = {
+, [1317] = {
               key = "$SET_352"
           ,   en  = "Fortified Brass"
           ,   de  = "Messingpanzer"
@@ -11656,7 +11486,7 @@ LANG_DB = {
           ,   ru  = "Fortified Brass"
           ,   ja  = "強化真鍮"
           }
-, [1261] = {
+, [1318] = {
               key = "$SET_353"
           ,   en  = "Mechanical Acuity"
           ,   de  = "Mechanikblick"
@@ -11665,7 +11495,7 @@ LANG_DB = {
           ,   ru  = "Mechanical Acuity"
           ,   ja  = "機械的精度"
           }
-, [1262] = {
+, [1319] = {
               key = "$SET_354"
           ,   en  = "Mad Tinkerer"
           ,   de  = "Wahntüftler"
@@ -11674,7 +11504,7 @@ LANG_DB = {
           ,   ru  = "Mad Tinkerer"
           ,   ja  = "狂気の鋳掛屋"
           }
-, [1263] = {
+, [1320] = {
               key = "$SET_355"
           ,   en  = "Unfathomable Darkness"
           ,   de  = "unermessliche Dunkelheit"
@@ -11683,7 +11513,7 @@ LANG_DB = {
           ,   ru  = "Unfathomable Darkness"
           ,   ja  = "深淵の暗黒"
           }
-, [1264] = {
+, [1321] = {
               key = "$SET_356"
           ,   en  = "Livewire"
           ,   de  = "Stromschlag"
@@ -11692,7 +11522,7 @@ LANG_DB = {
           ,   ru  = "Livewire"
           ,   ja  = "ライブワイヤー"
           }
-, [1265] = {
+, [1322] = {
               key = "$SET_357"
           ,   en  = "Disciplined Slash (Perfected)"
           ,   de  = "disziplinierter Schnitt (vollendet)"
@@ -11701,7 +11531,7 @@ LANG_DB = {
           ,   ru  = "Disciplined Slash (Perfected)"
           ,   ja  = "熟練したスラッシュ(完全)"
           }
-, [1266] = {
+, [1323] = {
               key = "$SET_358"
           ,   en  = "Defensive Position (Perfected)"
           ,   de  = "defensive Position (vollendet)"
@@ -11710,7 +11540,7 @@ LANG_DB = {
           ,   ru  = "Defensive Position (Perfected)"
           ,   ja  = "防御姿勢(完全)"
           }
-, [1267] = {
+, [1324] = {
               key = "$SET_359"
           ,   en  = "Chaotic Whirlwind (Perfected)"
           ,   de  = "chaotischer Wirbelwind (vollendet)"
@@ -11719,7 +11549,7 @@ LANG_DB = {
           ,   ru  = "Chaotic Whirlwind (Perfected)"
           ,   ja  = "混沌の旋風(完全)"
           }
-, [1268] = {
+, [1325] = {
               key = "$SET_360"
           ,   en  = "Piercing Spray (Perfected)"
           ,   de  = "durchdringende Salve (vollendet)"
@@ -11728,7 +11558,7 @@ LANG_DB = {
           ,   ru  = "Piercing Spray (Perfected)"
           ,   ja  = "貫通散布(完全)"
           }
-, [1269] = {
+, [1326] = {
               key = "$SET_361"
           ,   en  = "Concentrated Force (Perfected)"
           ,   de  = "konzentrierte Kraft (vollendet)"
@@ -11737,7 +11567,7 @@ LANG_DB = {
           ,   ru  = "Concentrated Force (Perfected)"
           ,   ja  = "集中フォース(完全)"
           }
-, [1270] = {
+, [1327] = {
               key = "$SET_362"
           ,   en  = "Timeless Blessing (Perfected)"
           ,   de  = "zeitloser Segen (vollendet)"
@@ -11746,7 +11576,7 @@ LANG_DB = {
           ,   ru  = "Timeless Blessing (Perfected)"
           ,   ja  = "朽ちぬ祝福(完全)"
           }
-, [1271] = {
+, [1328] = {
               key = "$SET_363"
           ,   en  = "Disciplined Slash"
           ,   de  = "disziplinierter Schnitt"
@@ -11755,7 +11585,7 @@ LANG_DB = {
           ,   ru  = "Disciplined Slash"
           ,   ja  = "熟練したスラッシュ"
           }
-, [1272] = {
+, [1329] = {
               key = "$SET_364"
           ,   en  = "Defensive Position"
           ,   de  = "defensive Position"
@@ -11764,7 +11594,7 @@ LANG_DB = {
           ,   ru  = "Defensive Position"
           ,   ja  = "防御姿勢"
           }
-, [1273] = {
+, [1330] = {
               key = "$SET_365"
           ,   en  = "Chaotic Whirlwind"
           ,   de  = "chaotischer Wirbelwind"
@@ -11773,7 +11603,7 @@ LANG_DB = {
           ,   ru  = "Chaotic Whirlwind"
           ,   ja  = "混沌の旋風"
           }
-, [1274] = {
+, [1331] = {
               key = "$SET_366"
           ,   en  = "Piercing Spray"
           ,   de  = "durchdringende Salve"
@@ -11782,7 +11612,7 @@ LANG_DB = {
           ,   ru  = "Piercing Spray"
           ,   ja  = "貫通散布"
           }
-, [1275] = {
+, [1332] = {
               key = "$SET_367"
           ,   en  = "Concentrated Force"
           ,   de  = "konzentrierte Kraft"
@@ -11791,7 +11621,7 @@ LANG_DB = {
           ,   ru  = "Concentrated Force"
           ,   ja  = "集中フォース"
           }
-, [1276] = {
+, [1333] = {
               key = "$SET_368"
           ,   en  = "Timeless Blessing"
           ,   de  = "zeitloser Segen"
@@ -11800,7 +11630,7 @@ LANG_DB = {
           ,   ru  = "Timeless Blessing"
           ,   ja  = "朽ちぬ祝福"
           }
-, [1277] = {
+, [1334] = {
               key = "$SET_369"
           ,   en  = "Merciless Charge"
           ,   de  = "gnadenloser Ansturm"
@@ -11809,7 +11639,7 @@ LANG_DB = {
           ,   ru  = "Merciless Charge"
           ,   ja  = "無慈悲なチャージ"
           }
-, [1278] = {
+, [1335] = {
               key = "$SET_370"
           ,   en  = "Rampaging Slash"
           ,   de  = "tobender Schnitt"
@@ -11818,7 +11648,7 @@ LANG_DB = {
           ,   ru  = "Rampaging Slash"
           ,   ja  = "ランペイジスラッシュ"
           }
-, [1279] = {
+, [1336] = {
               key = "$SET_371"
           ,   en  = "Cruel Flurry"
           ,   de  = "grausamer Schlaghagel"
@@ -11827,7 +11657,7 @@ LANG_DB = {
           ,   ru  = "Cruel Flurry"
           ,   ja  = "冷酷な猛攻"
           }
-, [1280] = {
+, [1337] = {
               key = "$SET_372"
           ,   en  = "Thunderous Volley"
           ,   de  = "donnernde Salve"
@@ -11836,7 +11666,7 @@ LANG_DB = {
           ,   ru  = "Thunderous Volley"
           ,   ja  = "斉射(雷)"
           }
-, [1281] = {
+, [1338] = {
               key = "$SET_373"
           ,   en  = "Crushing Wall"
           ,   de  = "zermalmende Mauer"
@@ -11845,7 +11675,7 @@ LANG_DB = {
           ,   ru  = "Crushing Wall"
           ,   ja  = "壁破壊"
           }
-, [1282] = {
+, [1339] = {
               key = "$SET_374"
           ,   en  = "Precise Regeneration"
           ,   de  = "präzise Regeneration"
@@ -11854,7 +11684,7 @@ LANG_DB = {
           ,   ru  = "Precise Regeneration"
           ,   ja  = "精密再生"
           }
-, [1283] = {
+, [1340] = {
               key = "$SET_380"
           ,   en  = "Prophet's"
           ,   de  = "Prophet"
@@ -11863,7 +11693,7 @@ LANG_DB = {
           ,   ru  = "Prophet's"
           ,   ja  = "預言者"
           }
-, [1284] = {
+, [1341] = {
               key = "$SET_381"
           ,   en  = "Broken Soul"
           ,   de  = "zerbrochene Seele"
@@ -11872,7 +11702,7 @@ LANG_DB = {
           ,   ru  = "Broken Soul"
           ,   ja  = "壊れた魂"
           }
-, [1285] = {
+, [1342] = {
               key = "$SET_382"
           ,   en  = "Grace of Gloom"
           ,   de  = "Anmut der Gräue"
@@ -11881,7 +11711,7 @@ LANG_DB = {
           ,   ru  = "Grace of Gloom"
           ,   ja  = "闇の気品"
           }
-, [1286] = {
+, [1343] = {
               key = "$SET_383"
           ,   en  = "Gryphon's Ferocity"
           ,   de  = "Wildheit des Greifen"
@@ -11890,7 +11720,7 @@ LANG_DB = {
           ,   ru  = "Gryphon's Ferocity"
           ,   ja  = "グリフォンの獰猛"
           }
-, [1287] = {
+, [1344] = {
               key = "$SET_384"
           ,   en  = "Wisdom of Vanus"
           ,   de  = "Weisheit von Vanus"
@@ -11899,7 +11729,7 @@ LANG_DB = {
           ,   ru  = "Wisdom of Vanus"
           ,   ja  = "ヴァヌスの叡智"
           }
-, [1288] = {
+, [1345] = {
               key = "$SET_385"
           ,   en  = "Adept Rider"
           ,   de  = "versierter Reiter"
@@ -11908,7 +11738,7 @@ LANG_DB = {
           ,   ru  = "Adept Rider"
           ,   ja  = "熟練騎手"
           }
-, [1289] = {
+, [1346] = {
               key = "$SET_386"
           ,   en  = "Sload's Semblance"
           ,   de  = "Kreckenantlitz"
@@ -11917,7 +11747,7 @@ LANG_DB = {
           ,   ru  = "Sload's Semblance"
           ,   ja  = "スロードの装い"
           }
-, [1290] = {
+, [1347] = {
               key = "$SET_387"
           ,   en  = "Nocturnal's Favor"
           ,   de  = "Nocturnals Gunst"
@@ -11926,7 +11756,7 @@ LANG_DB = {
           ,   ru  = "Nocturnal's Favor"
           ,   ja  = "ノクターナルの寵愛"
           }
-, [1291] = {
+, [1348] = {
               key = "$SET_388"
           ,   en  = "Aegis of Galenwe"
           ,   de  = "Ägis von Galenwe"
@@ -11935,7 +11765,7 @@ LANG_DB = {
           ,   ru  = "Aegis of Galenwe"
           ,   ja  = "ガレンウェの盾"
           }
-, [1292] = {
+, [1349] = {
               key = "$SET_389"
           ,   en  = "Arms of Relequen"
           ,   de  = "Waffen von Relequen"
@@ -11944,7 +11774,7 @@ LANG_DB = {
           ,   ru  = "Arms of Relequen"
           ,   ja  = "レレクエンの腕"
           }
-, [1293] = {
+, [1350] = {
               key = "$SET_390"
           ,   en  = "Mantle of Siroria"
           ,   de  = "Mantel von Siroria"
@@ -11953,7 +11783,7 @@ LANG_DB = {
           ,   ru  = "Mantle of Siroria"
           ,   ja  = "シロリアのマント"
           }
-, [1294] = {
+, [1351] = {
               key = "$SET_391"
           ,   en  = "Vestment of Olorime"
           ,   de  = "Gewandung von Olorime"
@@ -11962,7 +11792,7 @@ LANG_DB = {
           ,   ru  = "Vestment of Olorime"
           ,   ja  = "オロライムのベスト"
           }
-, [1295] = {
+, [1352] = {
               key = "$SET_392"
           ,   en  = "Perfect Aegis of Galenwe"
           ,   de  = "perfekte Ägis von Galenwe"
@@ -11971,7 +11801,7 @@ LANG_DB = {
           ,   ru  = "Perfect Aegis of Galenwe"
           ,   ja  = "ガレンウェの完璧な盾"
           }
-, [1296] = {
+, [1353] = {
               key = "$SET_393"
           ,   en  = "Perfect Arms of Relequen"
           ,   de  = "perfekte Waffen von Relequen"
@@ -11980,7 +11810,7 @@ LANG_DB = {
           ,   ru  = "Perfect Arms of Relequen"
           ,   ja  = "レレクエンの完璧な武器"
           }
-, [1297] = {
+, [1354] = {
               key = "$SET_394"
           ,   en  = "Perfect Mantle of Siroria"
           ,   de  = "perfekter Mantel von Siroria"
@@ -11989,7 +11819,7 @@ LANG_DB = {
           ,   ru  = "Perfect Mantle of Siroria"
           ,   ja  = "シロリアの完璧なマント"
           }
-, [1298] = {
+, [1355] = {
               key = "$SET_395"
           ,   en  = "Perfect Vestment of Olorime"
           ,   de  = "perfekte Gewandung von Olorime"
@@ -11998,25 +11828,19 @@ LANG_DB = {
           ,   ru  = "Perfect Vestment of Olorime"
           ,   ja  = "オロライムの完璧なベスト"
           }
-, [1299] = {
+, [1356] = {
               key = "$SET_397"
           ,   en  = "Balorgh"
-          ,   de  = "Balorgh"
-          ,   fr  = "Balorgh"
-          ,   es  = "Balorgh"
           ,   ru  = "Balorgh"
           ,   ja  = "バローグ"
           }
-, [1300] = {
+, [1357] = {
               key = "$SET_398"
           ,   en  = "Vykosa"
-          ,   de  = "Vykosa"
-          ,   fr  = "Vykosa"
-          ,   es  = "Vykosa"
           ,   ru  = "Vykosa"
           ,   ja  = "ヴィコサ"
           }
-, [1301] = {
+, [1358] = {
               key = "$SET_399"
           ,   en  = "Hanu's Compassion"
           ,   de  = "Hanus Mitgefühl"
@@ -12025,7 +11849,7 @@ LANG_DB = {
           ,   ru  = "Hanu's Compassion"
           ,   ja  = "ハヌの慈悲"
           }
-, [1302] = {
+, [1359] = {
               key = "$SET_400"
           ,   en  = "Blood Moon"
           ,   de  = "Blutmond"
@@ -12034,7 +11858,7 @@ LANG_DB = {
           ,   ru  = "Blood Moon"
           ,   ja  = "血の月"
           }
-, [1303] = {
+, [1360] = {
               key = "$SET_401"
           ,   en  = "Haven of Ursus"
           ,   de  = "Zuflucht von Ursus"
@@ -12043,7 +11867,7 @@ LANG_DB = {
           ,   ru  = "Haven of Ursus"
           ,   ja  = "ウルサスの避難所"
           }
-, [1304] = {
+, [1361] = {
               key = "$SET_402"
           ,   en  = "Moon Hunter"
           ,   de  = "Mondjäger"
@@ -12052,7 +11876,7 @@ LANG_DB = {
           ,   ru  = "Moon Hunter"
           ,   ja  = "月狩人"
           }
-, [1305] = {
+, [1362] = {
               key = "$SET_403"
           ,   en  = "Savage Werewolf"
           ,   de  = "wilder Werwolf"
@@ -12061,7 +11885,7 @@ LANG_DB = {
           ,   ru  = "Savage Werewolf"
           ,   ja  = "獰猛なウェアウルフ"
           }
-, [1306] = {
+, [1363] = {
               key = "$SET_404"
           ,   en  = "Jailer's Tenacity"
           ,   de  = "Tenazität des Kerkermeisters"
@@ -12070,7 +11894,7 @@ LANG_DB = {
           ,   ru  = "Jailer's Tenacity"
           ,   ja  = "看守の執念"
           }
-, [1307] = {
+, [1364] = {
               key = "$SET_405"
           ,   en  = "Bright-Throat's Boast"
           ,   de  = "Hellhalsstolz"
@@ -12078,7 +11902,7 @@ LANG_DB = {
           ,   ru  = "Bright-Throat's Boast"
           ,   ja  = "ブライトスロートの自慢"
           }
-, [1308] = {
+, [1365] = {
               key = "$SET_406"
           ,   en  = "Dead-Water's Guile"
           ,   de  = "Totwassertücke"
@@ -12086,7 +11910,7 @@ LANG_DB = {
           ,   ru  = "Dead-Water's Guile"
           ,   ja  = "デッドウォーターの奸智"
           }
-, [1309] = {
+, [1366] = {
               key = "$SET_407"
           ,   en  = "Champion of the Hist"
           ,   de  = "Histchampion"
@@ -12094,7 +11918,7 @@ LANG_DB = {
           ,   ru  = "Champion of the Hist"
           ,   ja  = "ヒストの勇者"
           }
-, [1310] = {
+, [1367] = {
               key = "$SET_408"
           ,   en  = "Grave-Stake Collector"
           ,   de  = "Grabpflocksammler"
@@ -12102,7 +11926,7 @@ LANG_DB = {
           ,   ru  = "Grave-Stake Collector"
           ,   ja  = "墓標コレクター"
           }
-, [1311] = {
+, [1368] = {
               key = "$SET_409"
           ,   en  = "Naga Shaman"
           ,   de  = "Nagaschamane"
@@ -12110,7 +11934,7 @@ LANG_DB = {
           ,   ru  = "Naga Shaman"
           ,   ja  = "ナガ呪術師"
           }
-, [1312] = {
+, [1369] = {
               key = "$SET_410"
           ,   en  = "Might of the Lost Legion"
           ,   de  = "Macht der Verlorenen Legion"
@@ -12118,7 +11942,7 @@ LANG_DB = {
           ,   ru  = "Might of the Lost Legion"
           ,   ja  = "失われた軍団の力"
           }
-, [1313] = {
+, [1370] = {
               key = "$SET_411"
           ,   en  = "Gallant Charge"
           ,   de  = "galanter Ansturm"
@@ -12126,7 +11950,7 @@ LANG_DB = {
           ,   ru  = "Gallant Charge"
           ,   ja  = "勇士の突撃"
           }
-, [1314] = {
+, [1371] = {
               key = "$SET_412"
           ,   en  = "Radial Uppercut"
           ,   de  = "Rundum-Aufwärtsschnitt"
@@ -12134,7 +11958,7 @@ LANG_DB = {
           ,   ru  = "Radial Uppercut"
           ,   ja  = "放射アッパーカット"
           }
-, [1315] = {
+, [1372] = {
               key = "$SET_413"
           ,   en  = "Spectral Cloak"
           ,   de  = "spektraler Mantel"
@@ -12142,7 +11966,7 @@ LANG_DB = {
           ,   ru  = "Spectral Cloak"
           ,   ja  = "形なきクローク"
           }
-, [1316] = {
+, [1373] = {
               key = "$SET_414"
           ,   en  = "Virulent Shot"
           ,   de  = "virulenter Schuss"
@@ -12150,7 +11974,7 @@ LANG_DB = {
           ,   ru  = "Virulent Shot"
           ,   ja  = "有毒ショット"
           }
-, [1317] = {
+, [1374] = {
               key = "$SET_415"
           ,   en  = "Wild Impulse"
           ,   de  = "wilder Impuls"
@@ -12158,7 +11982,7 @@ LANG_DB = {
           ,   ru  = "Wild Impulse"
           ,   ja  = "激しい衝撃"
           }
-, [1318] = {
+, [1375] = {
               key = "$SET_416"
           ,   en  = "Mender's Ward"
           ,   de  = "Schutz des Pflegers"
@@ -12166,7 +11990,7 @@ LANG_DB = {
           ,   ru  = "Mender's Ward"
           ,   ja  = "癒し手の結界"
           }
-, [1319] = {
+, [1376] = {
               key = "$SET_417"
           ,   en  = "Indomitable Fury"
           ,   de  = "unbeugsamer Zorn"
@@ -12174,7 +11998,7 @@ LANG_DB = {
           ,   ru  = "Indomitable Fury"
           ,   ja  = "不屈の激昂"
           }
-, [1320] = {
+, [1377] = {
               key = "$SET_418"
           ,   en  = "Spell Strategist"
           ,   de  = "Zauberstratege"
@@ -12182,7 +12006,7 @@ LANG_DB = {
           ,   ru  = "Spell Strategist"
           ,   ja  = "魔法戦略家"
           }
-, [1321] = {
+, [1378] = {
               key = "$SET_419"
           ,   en  = "Battlefield Acrobat"
           ,   de  = "Schlachtfeldakrobat"
@@ -12190,7 +12014,7 @@ LANG_DB = {
           ,   ru  = "Battlefield Acrobat"
           ,   ja  = "戦場アクロバット"
           }
-, [1322] = {
+, [1379] = {
               key = "$SET_420"
           ,   en  = "Soldier of Anguish"
           ,   de  = "Soldat der Pein"
@@ -12198,7 +12022,7 @@ LANG_DB = {
           ,   ru  = "Soldier of Anguish"
           ,   ja  = "苦痛の戦士"
           }
-, [1323] = {
+, [1380] = {
               key = "$SET_421"
           ,   en  = "Steadfast Hero"
           ,   de  = "standhafter Held"
@@ -12206,7 +12030,7 @@ LANG_DB = {
           ,   ru  = "Steadfast Hero"
           ,   ja  = "頑強な英雄"
           }
-, [1324] = {
+, [1381] = {
               key = "$SET_422"
           ,   en  = "Battalion Defender"
           ,   de  = "Bataillonsverteidiger"
@@ -12214,7 +12038,7 @@ LANG_DB = {
           ,   ru  = "Battalion Defender"
           ,   ja  = "大隊の守り手"
           }
-, [1325] = {
+, [1382] = {
               key = "$SET_423"
           ,   en  = "Perfect Gallant Charge"
           ,   de  = "perfekter galanter Ansturm"
@@ -12222,7 +12046,7 @@ LANG_DB = {
           ,   ru  = "Perfect Gallant Charge"
           ,   ja  = "完全な勇士の突撃"
           }
-, [1326] = {
+, [1383] = {
               key = "$SET_424"
           ,   en  = "Perfect Radial Uppercut"
           ,   de  = "perfekter Rundum-Aufwärtsschnitt"
@@ -12230,7 +12054,7 @@ LANG_DB = {
           ,   ru  = "Perfect Radial Uppercut"
           ,   ja  = "完全な放射アッパーカット"
           }
-, [1327] = {
+, [1384] = {
               key = "$SET_425"
           ,   en  = "Perfect Spectral Cloak"
           ,   de  = "perfekter spektraler Mantel"
@@ -12238,7 +12062,7 @@ LANG_DB = {
           ,   ru  = "Perfect Spectral Cloak"
           ,   ja  = "完全な形なきクローク"
           }
-, [1328] = {
+, [1385] = {
               key = "$SET_426"
           ,   en  = "Perfect Virulent Shot"
           ,   de  = "perfekter virulenter Schuss"
@@ -12246,7 +12070,7 @@ LANG_DB = {
           ,   ru  = "Perfect Virulent Shot"
           ,   ja  = "完全な有毒ショット"
           }
-, [1329] = {
+, [1386] = {
               key = "$SET_427"
           ,   en  = "Perfect Wild Impulse"
           ,   de  = "perfekter wilder Impuls"
@@ -12254,7 +12078,7 @@ LANG_DB = {
           ,   ru  = "Perfect Wild Impulse"
           ,   ja  = "完全な衝撃"
           }
-, [1330] = {
+, [1387] = {
               key = "$SET_428"
           ,   en  = "Perfect Mender's Ward"
           ,   de  = "perfekter Schutz des Pflegers"
@@ -12262,7 +12086,7 @@ LANG_DB = {
           ,   ru  = "Perfect Mender's Ward"
           ,   ja  = "完全な癒し手の結界"
           }
-, [1331] = {
+, [1388] = {
               key = "$TRAIT_ARMOR_DIVINES"
           ,   en  = "Divines"
           ,   de  = "Göttlich"
@@ -12272,17 +12096,16 @@ LANG_DB = {
           ,   ru  = "Divines"
           ,   ja  = "Divines"
           }
-, [1332] = {
+, [1389] = {
               key = "$TRAIT_ARMOR_IMPENETRABLE"
           ,   en  = "Impenetrable"
           ,   de  = "Undurchdringlich"
           ,   fr  = "Impénétrable"
-          ,   es  = "Impenetrable"
           ,   it  = "Impenetrabile"
           ,   ru  = "Impenetrable"
           ,   ja  = "Impenetrable"
           }
-, [1333] = {
+, [1390] = {
               key = "$TRAIT_ARMOR_INFUSED"
           ,   en  = "Infused"
           ,   de  = "Erfüllt"
@@ -12292,17 +12115,16 @@ LANG_DB = {
           ,   ru  = "Infused"
           ,   ja  = "Infused"
           }
-, [1334] = {
+, [1391] = {
               key = "$TRAIT_ARMOR_NIRNHONED"
           ,   en  = "Nirnhoned"
           ,   de  = "Nirngeschliffen"
           ,   fr  = "Trempe de Nirn"
           ,   es  = "Temple de Nirn"
-          ,   it  = "Nirnhoned"
           ,   ru  = "Nirnhoned"
           ,   ja  = "Nirnhoned"
           }
-, [1335] = {
+, [1392] = {
               key = "$TRAIT_ARMOR_PROSPEROUS"
           ,   en  = "Invigorating"
           ,   de  = "Belebend"
@@ -12312,7 +12134,7 @@ LANG_DB = {
           ,   ru  = "Invigorating"
           ,   ja  = "Invigorating"
           }
-, [1336] = {
+, [1393] = {
               key = "$TRAIT_ARMOR_REINFORCED"
           ,   en  = "Reinforced"
           ,   de  = "Verstärkt"
@@ -12322,7 +12144,7 @@ LANG_DB = {
           ,   ru  = "Reinforced"
           ,   ja  = "Reinforced"
           }
-, [1337] = {
+, [1394] = {
               key = "$TRAIT_ARMOR_STURDY"
           ,   en  = "Sturdy"
           ,   de  = "Robust"
@@ -12332,7 +12154,7 @@ LANG_DB = {
           ,   ru  = "Sturdy"
           ,   ja  = "Sturdy"
           }
-, [1338] = {
+, [1395] = {
               key = "$TRAIT_ARMOR_TRAINING"
           ,   en  = "Training"
           ,   de  = "Lehrend"
@@ -12342,7 +12164,7 @@ LANG_DB = {
           ,   ru  = "Training"
           ,   ja  = "Training"
           }
-, [1339] = {
+, [1396] = {
               key = "$TRAIT_ARMOR_WELL_FITTED"
           ,   en  = "Well-fitted"
           ,   de  = "Passgenau"
@@ -12352,37 +12174,34 @@ LANG_DB = {
           ,   ru  = "Well-fitted"
           ,   ja  = "Well-fitted"
           }
-, [1340] = {
+, [1397] = {
               key = "$TRAIT_JEWELRY_ARCANE"
           ,   en  = "Arcane"
           ,   de  = "Arkan"
-          ,   fr  = "Arcane"
           ,   es  = "Arcano"
           ,   it  = "Arcano"
           ,   ru  = "Arcane"
           ,   ja  = "Arcane"
           }
-, [1341] = {
+, [1398] = {
               key = "$TRAIT_JEWELRY_BLOODTHIRSTY"
           ,   en  = "Bloodthirsty"
           ,   de  = "Blutdürstig"
           ,   fr  = "Assoiffé de sang"
           ,   es  = "Sanguinario"
-          ,   it  = "Bloodthirsty"
           ,   ru  = "Bloodthirsty"
           ,   ja  = "Bloodthirsty"
           }
-, [1342] = {
+, [1399] = {
               key = "$TRAIT_JEWELRY_HARMONY"
           ,   en  = "Harmony"
           ,   de  = "Harmonisch"
           ,   fr  = "Harmonieux"
           ,   es  = "Armonioso"
-          ,   it  = "Harmony"
           ,   ru  = "Harmony"
           ,   ja  = "Harmony"
           }
-, [1343] = {
+, [1400] = {
               key = "$TRAIT_JEWELRY_HEALTHY"
           ,   en  = "Healthy"
           ,   de  = "Kräftigend"
@@ -12392,57 +12211,52 @@ LANG_DB = {
           ,   ru  = "Healthy"
           ,   ja  = "Healthy"
           }
-, [1344] = {
+, [1401] = {
               key = "$TRAIT_JEWELRY_INFUSED"
           ,   en  = "Infused"
           ,   de  = "Erfüllt"
           ,   fr  = "Infusé"
           ,   es  = "Imbuido"
-          ,   it  = "Infused"
           ,   ru  = "Infused"
           ,   ja  = "Infused"
           }
-, [1345] = {
+, [1402] = {
               key = "$TRAIT_JEWELRY_PROTECTIVE"
           ,   en  = "Protective"
           ,   de  = "Schützend"
           ,   fr  = "Protecteur"
           ,   es  = "Protector"
-          ,   it  = "Protective"
           ,   ru  = "Protective"
           ,   ja  = "Protective"
           }
-, [1346] = {
+, [1403] = {
               key = "$TRAIT_JEWELRY_ROBUST"
           ,   en  = "Robust"
-          ,   de  = "Robust"
           ,   fr  = "Robuste"
           ,   es  = "Robusto"
           ,   it  = "Robusto"
           ,   ru  = "Robust"
           ,   ja  = "Robust"
           }
-, [1347] = {
+, [1404] = {
               key = "$TRAIT_JEWELRY_SWIFT"
           ,   en  = "Swift"
           ,   de  = "Flink"
           ,   fr  = "Vif"
           ,   es  = "Ágil"
-          ,   it  = "Swift"
           ,   ru  = "Swift"
           ,   ja  = "Swift"
           }
-, [1348] = {
+, [1405] = {
               key = "$TRAIT_JEWELRY_TRIUNE"
           ,   en  = "Triune"
           ,   de  = "Dreifaltig"
           ,   fr  = "Triun"
           ,   es  = "Trinitario"
-          ,   it  = "Triune"
           ,   ru  = "Triune"
           ,   ja  = "Triune"
           }
-, [1349] = {
+, [1406] = {
               key = "$TRAIT_WEAPON_CHARGED"
           ,   en  = "Charged"
           ,   de  = "Geladen"
@@ -12452,7 +12266,7 @@ LANG_DB = {
           ,   ru  = "Charged"
           ,   ja  = "Charged"
           }
-, [1350] = {
+, [1407] = {
               key = "$TRAIT_WEAPON_DECISIVE"
           ,   en  = "Decisive"
           ,   de  = "Entschlossen"
@@ -12462,7 +12276,7 @@ LANG_DB = {
           ,   ru  = "Decisive"
           ,   ja  = "Decisive"
           }
-, [1351] = {
+, [1408] = {
               key = "$TRAIT_WEAPON_DEFENDING"
           ,   en  = "Defending"
           ,   de  = "Verteidigend"
@@ -12472,7 +12286,7 @@ LANG_DB = {
           ,   ru  = "Defending"
           ,   ja  = "Defending"
           }
-, [1352] = {
+, [1409] = {
               key = "$TRAIT_WEAPON_INFUSED"
           ,   en  = "Infused"
           ,   de  = "Erfüllt"
@@ -12482,17 +12296,16 @@ LANG_DB = {
           ,   ru  = "Infused"
           ,   ja  = "Infused"
           }
-, [1353] = {
+, [1410] = {
               key = "$TRAIT_WEAPON_NIRNHONED"
           ,   en  = "Nirnhoned"
           ,   de  = "Nirngeschliffen"
           ,   fr  = "Trempe de Nirn"
           ,   es  = "Temple de Nirn"
-          ,   it  = "Nirnhoned"
           ,   ru  = "Nirnhoned"
           ,   ja  = "Nirnhoned"
           }
-, [1354] = {
+, [1411] = {
               key = "$TRAIT_WEAPON_POWERED"
           ,   en  = "Powered"
           ,   de  = "Gestärkt"
@@ -12502,7 +12315,7 @@ LANG_DB = {
           ,   ru  = "Powered"
           ,   ja  = "Powered"
           }
-, [1355] = {
+, [1412] = {
               key = "$TRAIT_WEAPON_PRECISE"
           ,   en  = "Precise"
           ,   de  = "Präzise"
@@ -12512,7 +12325,7 @@ LANG_DB = {
           ,   ru  = "Precise"
           ,   ja  = "Precise"
           }
-, [1356] = {
+, [1413] = {
               key = "$TRAIT_WEAPON_SHARPENED"
           ,   en  = "Sharpened"
           ,   de  = "Geschärft"
@@ -12522,7 +12335,7 @@ LANG_DB = {
           ,   ru  = "Sharpened"
           ,   ja  = "Sharpened"
           }
-, [1357] = {
+, [1414] = {
               key = "$TRAIT_WEAPON_TRAINING"
           ,   en  = "Training"
           ,   de  = "Lehrend"

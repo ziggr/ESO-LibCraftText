@@ -449,12 +449,7 @@ function ImportSavedVars()
     for trait_num, lang_table in pairs(traits) do
         if 0 ~= trait_num then
             local key = trait_keys[trait_num]
-            DB[key] = DB[key] or {}
-            local entry = DB[key]
-            entry.key = key
-            for lang,text in pairs(lang_table) do
-                entry[lang] = text
-            end
+            ImportSavedVarLangTable(lang_table, key)
         end
     end
 
@@ -462,12 +457,7 @@ function ImportSavedVars()
     for set_num, lang_table in pairs(sets) do
         if 0 ~= set_num then
             local key = string.format("$SET_%03d", set_num)
-            DB[key] = DB[key] or {}
-            local entry = DB[key]
-            entry.key = key
-            for lang,text in pairs(lang_table) do
-                entry[lang] = text
-            end
+            ImportSavedVarLangTable(lang_table, key)
         end
     end
 
@@ -475,12 +465,7 @@ function ImportSavedVars()
     for motif_num, lang_table in pairs(motifs) do
         if 0 ~= motif_num then
             local key = string.format("$MOTIF_%03d", motif_num)
-            DB[key] = DB[key] or {}
-            local entry = DB[key]
-            entry.key = key
-            for lang,text in pairs(lang_table) do
-                entry[lang] = text
-            end
+            ImportSavedVarLangTable(lang_table, key)
         end
     end
 
@@ -492,12 +477,7 @@ function ImportSavedVars()
                                          , CRAFTING_TYPE_ABBREV[crafting_type]
                                          , pattern_index
                                          )
-                DB[key] = DB[key] or {}
-                local entry = DB[key]
-                entry.key = key
-                for lang,text in pairs(lang_table) do
-                    entry[lang] = Decaret(text)
-                end
+                ImportSavedVarLangTable(lang_table, key)
             end
         end
     end
@@ -510,17 +490,12 @@ function ImportSavedVars()
                                          , CRAFTING_TYPE_ABBREV[crafting_type]
                                          , item_id
                                          )
-                DB[key] = DB[key] or {}
-                local entry = DB[key]
-                entry.key = key
-                for lang,text in pairs(lang_table) do
-                    entry[lang] = Decaret(text)
-                end
+                ImportSavedVarLangTable(lang_table, key)
             end
         end
     end
 
-            -- Enchanting potency and essence names
+                        -- Enchanting potency and essence names
     local table_names = { ["potencies"] = "$POTENCY_%06d"
                         , ["essences" ] = "$ESSENCE_%06d"
                         }
@@ -529,17 +504,24 @@ function ImportSavedVars()
         if table then
             for item_id, lang_table in pairs(table) do
                 local key = string.format(key_pattern, item_id)
-                ImportSavedVarLangTable(entry, key)
-                -- DB[key] = DB[key] or {}
-                -- local entry = DB[key]
-                -- entry.key = key
-                -- for lang,text in pairs(lang_table) do
-                --     entry[lang] = Decaret(text)
-                -- end
+                ImportSavedVarLangTable(lang_table, key)
             end
         end
     end
 
+                        -- Recipes. Include recipe index numbers, as numbers.
+    local recipes = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].recipes
+    if recipes then
+        for food_item_id, recipe in pairs(recipes) do
+            local key = string.format( "$FOOD_%06d"
+                                     , food_item_id
+                                     )
+            local lang_table          = recipe.name
+            ImportSavedVarLangTable(lang_table, key)
+            DB[key].recipe_list_index = recipe.recipe_list_index
+            DB[key].recipe_index      = recipe.recipe_index
+        end
+    end
 
 end
 
@@ -565,13 +547,19 @@ function ImportSavedVarLangTable(lang_table, key_override)
         return
     end
 
+    DB[key] = DB[key] or {}
     local entry = DB[key]
+                        -- Copy EN now, so that we don't have to worry about in
+                        -- the "skip NOP translations that match en" if-
+                        -- statement later.
+    entry.en = lang_table.en
     for lang, value in pairs(lang_table) do
-            -- Skip NOP translations
+                        -- Skip NOP translations
         if value ~= "" and not (key ~= "en" and value == lang_table.en) then
             entry[lang] = value
         end
     end
+
 
                         -- Attempt to extract substrings.
     local delim = "\n"
