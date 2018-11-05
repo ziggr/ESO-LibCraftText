@@ -218,8 +218,11 @@ function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
     local acquire_mat = self.ParseConsumableAcquireMat(crafting_type, cond_text)
     if acquire_mat then return acquire_mat end
 
-                        -- Provisioning Recpies
                         -- Enchanting Glyphs
+    if crafting_type == en then
+        return self.ParseDailyConditionGlyph(cond_text)
+    end
+                        -- Provisioning Recpies
                         -- Alchemy Potions/Poisons
     local craft_item = self.ParseConsumableItem(crafting_type, cond_text)
     if craft_item then return craft_item end
@@ -228,6 +231,12 @@ function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
 end
 
 function LibCraftText.ParseConsumableAcquireMat(crafting_type, cond_text)
+                        -- Only Enchanting and Alchemy have "Acquire Ta" and
+                        -- "Acquire Nirnroot" conditions.
+    if not (crafting_type == en or crafting_type == al) then
+        return nil
+    end
+
     local self          = LibCraftText
     local lang          = self.CurrLang()
     local found_mat     = self.ParseRegexable(
@@ -277,15 +286,79 @@ function LibCraftText.ParseConsumableItem(crafting_type, cond_text)
     return nil
 end
 
+LibCraftText.RE_POTENCY = {
+    en = { "(.*) Glyph of"}
+,   de = { "(.*) glyphe des"}
+,   fr = { "glyphe (.*) vital"
+         , "(petit) glyphe "}
+,   es = { "glifo (.*) de vida"}
+,   it = { "(.*) glyph of"}  -- "glifo of health" for all 10 potencies. Broken.
+,   ru = { "(.*) glyph of"}
+,   ja = { "(.*)のグリフ"
+         , "(.*)なグリフ"}
+}
+LibCraftText.RE_ESSENCE = {
+    en = { "Glyph of (.*)"}
+,   de = { "glyphe de[sr] (.*)"}
+,   fr = { "glyphe insignifiant (.*)"}
+,   es = { "glifo mediocre de (.*)"
+         ,  "glifo mediocre (.*)" } -- must come AFTER " de " line
+,   it = { "glifo of (.*)"
+         , "glyph of (.*)" }
+,   ru = { "glyph of (.*)"}
+,   ja = { "グリフ %((.*)%)"}
+}
+function LibCraftText.ParseDailyConditionGlyph(cond_text)
+    local self = LibCraftText
+    local m    = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
+    local POTENCY_LIST = {
+                           m.JORA    -- trifling
+                         , m.JERA    -- petty"
+                         , m.ODRA    -- minor"
+                         , m.EDORA   -- moderate
+                         , m.PORA    -- strong
+                         , m.RERA    -- greater
+                         , m.DERADO  -- grand"
+                         , m.REKURA  -- splendid
+                         , m.KURA    -- monumental
+                         , m.REJERA  -- superb
+                         }
+    local ESSENCE_LIST = {
+                           m.DENI    -- stamina
+                         , m.MAKKO   -- magicka
+                         , m.OKO     -- health
+                         }
+    local lang    = self.CurrLang()
+    local potency = self.ParseRegexable( en
+                                       , cond_text
+                                       , self.RE_POTENCY[lang]
+                                       , POTENCY_LIST
+                                       , { "name_2" }
+                                       )
+    local essence = self.ParseRegexable( en
+                                       , cond_text
+                                       , self.RE_ESSENCE[lang]
+                                       , ESSENCE_LIST
+                                       , { "name_2" }
+                                       )
+    if not (potency or essence) then
+        return nil
+    end
+    return { ["potency"] = potency
+           , ["essence"] = essence
+           , ["aspect" ] = m.TA
+           }
+end
+
 function LibCraftText.ParseRegexable( crafting_type
                                     , cond_text
                                     , re_list_list
                                     , result_list
                                     , result_name_field_list
                                     )
-    local self          = LibCraftText
-    local lang          = self.CurrLang()
-    local cond_sub_str  = nil
+    if not cond_text then return nil end
+    local self              = LibCraftText
+    local cond_sub_str      = nil
     for _,re in ipairs(re_list_list) do
         _,_,g1 = string.find(cond_text, re)
         if g1 then

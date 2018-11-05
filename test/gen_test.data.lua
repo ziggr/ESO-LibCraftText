@@ -81,9 +81,9 @@ COND_TEXT_FODDER = {
 , { input="Craft Gods-Blind-Me"                             , expect={}                                                 }
 , { input="Craft Golden Lager"                              , expect={}                                                 }
 , { input="Craft Gossamer Mazte"                            , expect={}                                                 }
-, { input="Craft Grand Glyph of Health With Ta"             , expect={}                                                 }
-, { input="Craft Grand Glyph of Magicka With Ta"            , expect={}                                                 }
-, { input="Craft Grand Glyph of Stamina With Ta"            , expect={}                                                 }
+, { input="Craft Grand Glyph of Health With Ta"             , expect={ potency=LCT.CONSUMABLE_MATERIAL.DERADO, essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Grand Glyph of Magicka With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.DERADO, essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
+, { input="Craft Grand Glyph of Stamina With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.DERADO, essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Grandpa's Bedtime Tonic"                   , expect={}                                                 }
 , { input="Craft Grape Preserves"                           , expect={}                                                 }
 , { input="Craft Greater Glyph of Health With Ta"           , expect={}                                                 }

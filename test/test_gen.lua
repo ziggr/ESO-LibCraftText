@@ -66,6 +66,15 @@ function TestGen.OneTest(input_en, expect)
             if crafting_type then break end
         end
     end
+    if expect.potency then
+        crafting_type = en
+    end
+    if expect.solvent then
+        crafting_type = al
+    end
+    if expect.recipe then
+        crafting_type = pr
+    end
     if not crafting_type then return end
 
     local real_expect = table.shallow_copy(expect)
