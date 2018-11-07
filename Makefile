@@ -3,6 +3,9 @@
 put:
 	rsync -vrt --delete --exclude=.git --exclude=l10n-unofficial --exclude=published . /Volumes/Elder\ Scrolls\ Online/live/AddOns/LibCraftText
 
+
+# get/getpts copies SavedVariables/LibCraftText.lua from gaming PC to
+# linux laptop's data/LibCraftText.lua
 get:
 	cp -f /Volumes/Elder\ Scrolls\ Online/live/SavedVariables/LibCraftText.lua data/
 
@@ -20,10 +23,17 @@ zip:
 
 	rm -rf published/LibCraftText
 
+# lang merges saved variables data/LibCraftText.lua + previous data/lang_db.lua
+# to generate a new data/lang_db_out.lua , along with 7 lang/xx.lua files.
+#
+# Be careful with dependencies here: lang_db_out is derived from lang_db, but
+# the cp step then replaces lang_db with the results, which makes a cycle.
 lang:
 	lua lang_gen.lua
 	lua lang/en.lua
 	lua lang/*.lua
+	cp  data/lang_db_out.lua data/lang_db.out
+
 
 # --repeat 6 to loop through all 6 supported languages. Skipping Italian.
 test:
