@@ -32,7 +32,7 @@ lang:
 	lua lang_gen.lua
 	lua lang/en.lua
 	lua lang/*.lua
-	cp  data/lang_db_out.lua data/lang_db.out
+	cp  data/lang_db_out.lua data/lang_db.lua
 
 
 # --repeat 6 to loop through all 6 supported languages. Skipping Italian.

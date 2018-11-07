@@ -210,6 +210,11 @@ DC 12.4..
 AD 12..5.
 EP 123..6
 
+And now that I have all the PR rank 1 and 2 requests, time to advance DC and AD to rank 3
+DC  1 3 ziggr-alt-one       1A=2018-11-01 B=02 C=03
+AD  2 3 ziggr-alt-two       2A=2018-11-01 B=02 C=03
+
+
 --
 Day D: nothing but AL quests.
     -- those CL quests are the CL Rank 6 Shoes/Hat/Sash buggy FR translation. DO NOT USE THEIR FR TEXT. But leave them in the Lang DB

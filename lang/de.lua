@@ -141,9 +141,11 @@ LibCraftText.RECIPE = {
 , ["BRETON_PORK_SAUSAGE"             ] = { name="bretonische Fleischwurst"              , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="Karottensuppe"                         , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="Hühnerbrust"                           , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
+, ["CINNAMON_GRAPE_JELLY"            ] = { name="Zimttraubengelee"                      , food_item_id=042790, recipe_list_index=  2, recipe_index= 19}
 , ["CLARIFIED_SYRAH_WINE"            ] = { name="klarer Syrahwein"                      , food_item_id=028409, recipe_list_index=  8, recipe_index=  7, name_2="klaren Syrahwein"}
 , ["COMELY_WENCH_WHISKEY"            ] = { name="Hübschmaidwhiskey"                     , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
 , ["CYRODILIC_CORNBREAD"             ] = { name="cyrodiilisches Maisbrot"               , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
+, ["CYRODILIC_PUMPKIN_FRITTERS"      ] = { name="cyrodiilisches Kürbisfrittiertes"      , food_item_id=033789, recipe_list_index=  2, recipe_index= 20}
 , ["ELTHERIC_HOOCH"                  ] = { name="eltherischer Fusel"                    , food_item_id=028417, recipe_list_index=  8, recipe_index= 13, name_2="eltherischen Fusel"}
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="Ersthalt-Käseplatte mit Früchten"      , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="Fischstäbchen"                         , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
@@ -179,8 +181,10 @@ LibCraftText.RECIPE = {
 , ["RYE_IN_YOUR_EYE"                 ] = { name="Durchschlagwhiskey"                    , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="Seeblumentee"                          , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SOUR_MASH"                       ] = { name="Sauermaische"                          , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
+, ["SPICEBERRY_CHAI"                 ] = { name="Würzbeerenchai"                        , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
 , ["STORMHOLD_BAKED_BANANAS"         ] = { name="Sturmfeste-Backbananen"                , food_item_id=033587, recipe_list_index=  2, recipe_index= 21}
 , ["SURILIE_SYRAH_WINE"              ] = { name="Surilie-Syrahwein"                     , food_item_id=033939, recipe_list_index=  8, recipe_index=  6}
+, ["TORVAL_MINT_TEA"                 ] = { name="Torval-Minztee"                        , food_item_id=034017, recipe_list_index=  9, recipe_index= 21}
 , ["TREACLEBERRY_TEA"                ] = { name="Sirupbeerentee"                        , food_item_id=033672, recipe_list_index=  9, recipe_index= 14}
 , ["TWO_ZEPHYR_TEA"                  ] = { name="Doppelsturmtee"                        , food_item_id=028473, recipe_list_index=  9, recipe_index= 25}
 , ["VENISON_PASTY"                   ] = { name="Wildfleischpastete"                    , food_item_id=028398, recipe_list_index=  1, recipe_index= 15}

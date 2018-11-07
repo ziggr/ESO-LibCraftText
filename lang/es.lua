@@ -141,9 +141,11 @@ LibCraftText.RECIPE = {
 , ["BRETON_PORK_SAUSAGE"             ] = { name="Salchicha de cerdo bretona"            , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="Sopa de zanahoria"                     , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="pechuga de pollo"                      , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
+, ["CINNAMON_GRAPE_JELLY"            ] = { name="Jalea de uva con canela"               , food_item_id=042790, recipe_list_index=  2, recipe_index= 19}
 , ["CLARIFIED_SYRAH_WINE"            ] = { name="vino aclarado de syrah"                , food_item_id=028409, recipe_list_index=  8, recipe_index=  7, name_2="vino aclarado de syrah"}
 , ["COMELY_WENCH_WHISKEY"            ] = { name="whisky de la doncella encantadora"     , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
 , ["CYRODILIC_CORNBREAD"             ] = { name="pan de maíz cyrodílico"                , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
+, ["CYRODILIC_PUMPKIN_FRITTERS"      ] = { name="buñuelos de calabaza de Cyrodill"      , food_item_id=033789, recipe_list_index=  2, recipe_index= 20}
 , ["ELTHERIC_HOOCH"                  ] = { name="Licor eltérico"                        , food_item_id=028417, recipe_list_index=  8, recipe_index= 13, name_2="Licor eltérico"}
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="plato de frutas y queso de Primada"    , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="Palitos de pescado"                    , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
@@ -179,8 +181,10 @@ LibCraftText.RECIPE = {
 , ["RYE_IN_YOUR_EYE"                 ] = { name="cente-no en la cara"                   , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="Té de flor marina"                     , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SOUR_MASH"                       ] = { name="Malta agria"                           , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
+, ["SPICEBERRY_CHAI"                 ] = { name="té chai de bayacida"                   , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
 , ["STORMHOLD_BAKED_BANANAS"         ] = { name="plátanos asados de Fuertormenta"       , food_item_id=033587, recipe_list_index=  2, recipe_index= 21}
 , ["SURILIE_SYRAH_WINE"              ] = { name="vino de syrah de los Surilie"          , food_item_id=033939, recipe_list_index=  8, recipe_index=  6}
+, ["TORVAL_MINT_TEA"                 ] = { name="Té de menta de Torval"                 , food_item_id=034017, recipe_list_index=  9, recipe_index= 21}
 , ["TREACLEBERRY_TEA"                ] = { name="té de bayamelaza"                      , food_item_id=033672, recipe_list_index=  9, recipe_index= 14}
 , ["TWO_ZEPHYR_TEA"                  ] = { name="té de Dos-Céfiros"                     , food_item_id=028473, recipe_list_index=  9, recipe_index= 25}
 , ["VENISON_PASTY"                   ] = { name="Empanada de venado"                    , food_item_id=028398, recipe_list_index=  1, recipe_index= 15}

@@ -141,9 +141,11 @@ LibCraftText.RECIPE = {
 , ["BRETON_PORK_SAUSAGE"             ] = { name=$FOOD_028342                            , food_item_id=028342, recipe_list_index=$FOOD_028342_RLI, recipe_index=$FOOD_028342_RI }
 , ["CARROT_SOUP"                     ] = { name=$FOOD_028321                            , food_item_id=028321, recipe_list_index=$FOOD_028321_RLI, recipe_index=$FOOD_028321_RI }
 , ["CHICKEN_BREAST"                  ] = { name=$FOOD_033819                            , food_item_id=033819, recipe_list_index=$FOOD_033819_RLI, recipe_index=$FOOD_033819_RI }
+, ["CINNAMON_GRAPE_JELLY"            ] = { name=$FOOD_042790                            , food_item_id=042790, recipe_list_index=$FOOD_042790_RLI, recipe_index=$FOOD_042790_RI }
 , ["CLARIFIED_SYRAH_WINE"            ] = { name=$FOOD_028409                            , food_item_id=028409, recipe_list_index=$FOOD_028409_RLI, recipe_index=$FOOD_028409_RI , name_2=$FOOD_028409B }
 , ["COMELY_WENCH_WHISKEY"            ] = { name=$FOOD_028402                            , food_item_id=028402, recipe_list_index=$FOOD_028402_RLI, recipe_index=$FOOD_028402_RI }
 , ["CYRODILIC_CORNBREAD"             ] = { name=$FOOD_033897                            , food_item_id=033897, recipe_list_index=$FOOD_033897_RLI, recipe_index=$FOOD_033897_RI }
+, ["CYRODILIC_PUMPKIN_FRITTERS"      ] = { name=$FOOD_033789                            , food_item_id=033789, recipe_list_index=$FOOD_033789_RLI, recipe_index=$FOOD_033789_RI }
 , ["ELTHERIC_HOOCH"                  ] = { name=$FOOD_028417                            , food_item_id=028417, recipe_list_index=$FOOD_028417_RLI, recipe_index=$FOOD_028417_RI , name_2=$FOOD_028417B }
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name=$FOOD_068236                            , food_item_id=068236, recipe_list_index=$FOOD_068236_RLI, recipe_index=$FOOD_068236_RI }
 , ["FISHY_STICK"                     ] = { name=$FOOD_033526                            , food_item_id=033526, recipe_list_index=$FOOD_033526_RLI, recipe_index=$FOOD_033526_RI }
@@ -179,8 +181,10 @@ LibCraftText.RECIPE = {
 , ["RYE_IN_YOUR_EYE"                 ] = { name=$FOOD_028429                            , food_item_id=028429, recipe_list_index=$FOOD_028429_RLI, recipe_index=$FOOD_028429_RI }
 , ["SEAFLOWER_TEA"                   ] = { name=$FOOD_034005                            , food_item_id=034005, recipe_list_index=$FOOD_034005_RLI, recipe_index=$FOOD_034005_RI }
 , ["SOUR_MASH"                       ] = { name=$FOOD_028425                            , food_item_id=028425, recipe_list_index=$FOOD_028425_RLI, recipe_index=$FOOD_028425_RI }
+, ["SPICEBERRY_CHAI"                 ] = { name=$FOOD_033684                            , food_item_id=033684, recipe_list_index=$FOOD_033684_RLI, recipe_index=$FOOD_033684_RI }
 , ["STORMHOLD_BAKED_BANANAS"         ] = { name=$FOOD_033587                            , food_item_id=033587, recipe_list_index=$FOOD_033587_RLI, recipe_index=$FOOD_033587_RI }
 , ["SURILIE_SYRAH_WINE"              ] = { name=$FOOD_033939                            , food_item_id=033939, recipe_list_index=$FOOD_033939_RLI, recipe_index=$FOOD_033939_RI }
+, ["TORVAL_MINT_TEA"                 ] = { name=$FOOD_034017                            , food_item_id=034017, recipe_list_index=$FOOD_034017_RLI, recipe_index=$FOOD_034017_RI }
 , ["TREACLEBERRY_TEA"                ] = { name=$FOOD_033672                            , food_item_id=033672, recipe_list_index=$FOOD_033672_RLI, recipe_index=$FOOD_033672_RI }
 , ["TWO_ZEPHYR_TEA"                  ] = { name=$FOOD_028473                            , food_item_id=028473, recipe_list_index=$FOOD_028473_RLI, recipe_index=$FOOD_028473_RI }
 , ["VENISON_PASTY"                   ] = { name=$FOOD_028398                            , food_item_id=028398, recipe_list_index=$FOOD_028398_RLI, recipe_index=$FOOD_028398_RI }

@@ -53,9 +53,11 @@ COND_TEXT_FODDER = {
 , { input="Craft Breton Pork Sausage"                       , expect={ item=LCT.RECIPE.BRETON_PORK_SAUSAGE              } }
 , { input="Craft Carrot Soup"                               , expect={ item=LCT.RECIPE.CARROT_SOUP                      } }
 , { input="Craft Chicken Breast"                            , expect={ item=LCT.RECIPE.CHICKEN_BREAST                   } }
+, { input="Craft Cinnamon Grape Jelly"                      , expect={ item=LCT.RECIPE.CINNAMON_GRAPE_JELLY             } }
 , { input="Craft Clarified Syrah Wine"                      , expect={ item=LCT.RECIPE.CLARIFIED_SYRAH_WINE             } }
 , { input="Craft Comely Wench Whiskey"                      , expect={ item=LCT.RECIPE.COMELY_WENCH_WHISKEY             } }
 , { input="Craft Cyrodilic Cornbread"                       , expect={ item=LCT.RECIPE.CYRODILIC_CORNBREAD              } }
+, { input="Craft Cyrodilic Pumpkin Fritters"                , expect={ item=LCT.RECIPE.CYRODILIC_PUMPKIN_FRITTERS       } }
 , { input="Craft Damage Health Poison IX"                   , expect={}                                                 }
 , { input="Craft Damage Magicka Poison IX"                  , expect={}                                                 }
 , { input="Craft Damage Stamina Poison IX"                  , expect={}                                                 }
@@ -393,6 +395,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Solution of Ravage Stamina"                , expect={}                                                 }
 , { input="Craft Solution of Stamina"                       , expect={}                                                 }
 , { input="Craft Sour Mash"                                 , expect={ item=LCT.RECIPE.SOUR_MASH                        } }
+, { input="Craft Spiceberry Chai"                           , expect={ item=LCT.RECIPE.SPICEBERRY_CHAI                  } }
 , { input="Craft Splendid Glyph of Health With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.REKURA, essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Splendid Glyph of Magicka With Ta"         , expect={ potency=LCT.CONSUMABLE_MATERIAL.REKURA, essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Splendid Glyph of Stamina With Ta"         , expect={ potency=LCT.CONSUMABLE_MATERIAL.REKURA, essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
@@ -410,6 +413,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Three Pewter Rings"                        , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.PEWTER         } }
 , { input="Craft Three Platinum Rings"                      , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.PLATINUM       } }
 , { input="Craft Three Silver Rings"                        , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.SILVER         } }
+, { input="Craft Torval Mint Tea"                           , expect={ item=LCT.RECIPE.TORVAL_MINT_TEA                  } }
 , { input="Craft Treacleberry Tea"                          , expect={ item=LCT.RECIPE.TREACLEBERRY_TEA                 } }
 , { input="Craft Trifling Glyph of Health With Ta"          , expect={ potency=LCT.CONSUMABLE_MATERIAL.JORA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Trifling Glyph of Magicka With Ta"         , expect={ potency=LCT.CONSUMABLE_MATERIAL.JORA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }

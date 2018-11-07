@@ -141,9 +141,11 @@ LibCraftText.RECIPE = {
 , ["BRETON_PORK_SAUSAGE"             ] = { name="Breton Pork Sausage"                   , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="Carrot Soup"                           , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="Chicken Breast"                        , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
+, ["CINNAMON_GRAPE_JELLY"            ] = { name="Cinnamon Grape Jelly"                  , food_item_id=042790, recipe_list_index=  2, recipe_index= 19}
 , ["CLARIFIED_SYRAH_WINE"            ] = { name="Clarified Syrah Wine"                  , food_item_id=028409, recipe_list_index=  8, recipe_index=  7, name_2="Clarified Syrah Wine"}
 , ["COMELY_WENCH_WHISKEY"            ] = { name="Comely Wench Whiskey"                  , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
 , ["CYRODILIC_CORNBREAD"             ] = { name="Cyrodilic Cornbread"                   , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
+, ["CYRODILIC_PUMPKIN_FRITTERS"      ] = { name="Cyrodilic Pumpkin Fritters"            , food_item_id=033789, recipe_list_index=  2, recipe_index= 20}
 , ["ELTHERIC_HOOCH"                  ] = { name="Eltheric Hooch"                        , food_item_id=028417, recipe_list_index=  8, recipe_index= 13, name_2="Eltheric Hooch"}
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="Firsthold Fruit and Cheese Plate"      , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="Fishy Stick"                           , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
@@ -179,8 +181,10 @@ LibCraftText.RECIPE = {
 , ["RYE_IN_YOUR_EYE"                 ] = { name="Rye-in-your-Eye"                       , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="Seaflower Tea"                         , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SOUR_MASH"                       ] = { name="Sour Mash"                             , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
+, ["SPICEBERRY_CHAI"                 ] = { name="Spiceberry Chai"                       , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
 , ["STORMHOLD_BAKED_BANANAS"         ] = { name="Stormhold Baked Bananas"               , food_item_id=033587, recipe_list_index=  2, recipe_index= 21}
 , ["SURILIE_SYRAH_WINE"              ] = { name="Surilie Syrah Wine"                    , food_item_id=033939, recipe_list_index=  8, recipe_index=  6}
+, ["TORVAL_MINT_TEA"                 ] = { name="Torval Mint Tea"                       , food_item_id=034017, recipe_list_index=  9, recipe_index= 21}
 , ["TREACLEBERRY_TEA"                ] = { name="Treacleberry Tea"                      , food_item_id=033672, recipe_list_index=  9, recipe_index= 14}
 , ["TWO_ZEPHYR_TEA"                  ] = { name="Two-Zephyr Tea"                        , food_item_id=028473, recipe_list_index=  9, recipe_index= 25}
 , ["VENISON_PASTY"                   ] = { name="Venison Pasty"                         , food_item_id=028398, recipe_list_index=  1, recipe_index= 15}
