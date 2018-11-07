@@ -142,7 +142,7 @@ end
                         -- materials and items.
 LibCraftText.RE_CONDITION_DAILY_EQUIPMENT = {
     ["en"] = { "Craft Normal ([^:]*)"
-             , "Craft a ([^:]*)"
+             , "Craft an? ([^:]*)"
              , "Craft Two ([^:]*)"
              , "Craft Three ([^:]*)"
              }
@@ -162,7 +162,7 @@ LibCraftText.RE_CONDITION_DAILY_EQUIPMENT = {
              , "Fabriquez un (.*) d'([^:]*)"
              }
 ,   ["ru"] = { "Craft Normal ([^:]*)"
-             , "Craft a ([^:]*)"
+             , "Craft an? ([^:]*)"
              , "Craft two ([^:]*)"
              , "Craft three ([^:]*)"
              }

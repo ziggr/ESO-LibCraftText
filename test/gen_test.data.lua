@@ -164,7 +164,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Dwarven Greatsword"                 , expect={ item=LCT.ITEM.H2_GREATSWORD    , material=LCT.MATERIAL.DWARVEN        } }
 , { input="Craft Normal Dwarven Greaves"                    , expect={ item=LCT.ITEM.GREAVES          , material=LCT.MATERIAL.DWARVEN        } }
 , { input="Craft Normal Dwarven Helm"                       , expect={ item=LCT.ITEM.HELM             , material=LCT.MATERIAL.DWARVEN        } }
-, { input="Craft Normal Dwarven Pauldrons"                  , expect={ item=LCT.ITEM.PAULDRONS        , material=LCT.MATERIAL.DWARVEN        } }
+, { input="Craft Normal Dwarven Pauldrons"                  , expect={ item=LCT.ITEM.PAULDRON         , material=LCT.MATERIAL.DWARVEN        } }
 , { input="Craft Normal Dwarven Sabatons"                   , expect={ item=LCT.ITEM.SABATONS         , material=LCT.MATERIAL.DWARVEN        } }
 , { input="Craft Normal Dwarven Sword"                      , expect={ item=LCT.ITEM.H1_SWORD         , material=LCT.MATERIAL.DWARVEN        } }
 , { input="Craft Normal Ebonthread Breeches"                , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.EBONTHREAD     } }
@@ -185,9 +185,9 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Fell Arm Cops"                      , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.FELL_HIDE      } }
 , { input="Craft Normal Fell Bracers"                       , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.FELL_HIDE      } }
 , { input="Craft Normal Fell Helmet"                        , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.FELL_HIDE      } }
-, { input="Craft Normal Full-Leather Arm Cops"              , expect={ item=LCT.ITEM.FULL_LEATHER     , material=LCT.MATERIAL.FELL_HIDE      } }
-, { input="Craft Normal Full-Leather Bracers"               , expect={ item=LCT.ITEM.FULL_LEATHER     , material=LCT.MATERIAL.FELL_HIDE      } }
-, { input="Craft Normal Full-Leather Helmet"                , expect={ item=LCT.ITEM.FULL_LEATHER     , material=LCT.MATERIAL.FELL_HIDE      } }
+, { input="Craft Normal Full-Leather Arm Cops"              , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.FULL_LEATHER   } }
+, { input="Craft Normal Full-Leather Bracers"               , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.FULL_LEATHER   } }
+, { input="Craft Normal Full-Leather Helmet"                , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.FULL_LEATHER   } }
 , { input="Craft Normal Galatite Cuirass"                   , expect={ item=LCT.ITEM.CUIRASS          , material=LCT.MATERIAL.GALATITE       } }
 , { input="Craft Normal Galatite Dagger"                    , expect={ item=LCT.ITEM.DAGGER           , material=LCT.MATERIAL.GALATITE       } }
 , { input="Craft Normal Galatite Gauntlets"                 , expect={ item=LCT.ITEM.GAUNTLETS        , material=LCT.MATERIAL.GALATITE       } }
@@ -232,10 +232,10 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Ironthread Shoes"                   , expect={ item=LCT.ITEM.SHOES            , material=LCT.MATERIAL.IRONTHREAD     } }
 , { input="Craft Normal Kresh Breeches"                     , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.KRESH          } }
 , { input="Craft Normal Kresh Epaulets"                     , expect={ item=LCT.ITEM.EPAULETS         , material=LCT.MATERIAL.KRESH          } }
-, { input="Craft Normal Kresh Hat"                          , expect={ item=LCT.ITEM.HAT              , material=LCT.MATERIAL.KRESH          } }
+, { input="Craft Normal Kresh Hat"                          , expect={ item=LCT.ITEM.HAT              , material=LCT.MATERIAL.KRESH          , bug={"fr","es"}} }
 , { input="Craft Normal Kresh Robe"                         , expect={ item=LCT.ITEM.ROBE             , material=LCT.MATERIAL.KRESH          } }
 , { input="Craft Normal Kresh Sash"                         , expect={ item=LCT.ITEM.SASH             , material=LCT.MATERIAL.KRESH          } }
-, { input="Craft Normal Kresh Shoes"                        , expect={ item=LCT.ITEM.SHOES            , material=LCT.MATERIAL.KRESH          } }
+, { input="Craft Normal Kresh Shoes"                        , expect={ item=LCT.ITEM.SHOES            , material=LCT.MATERIAL.KRESH          , bug={"fr","es"}} }
 , { input="Craft Normal Leather Arm Cops"                   , expect={ item=LCT.ITEM.ARM_COPS         , material=LCT.MATERIAL.LEATHER        } }
 , { input="Craft Normal Leather Bracers"                    , expect={ item=LCT.ITEM.BRACERS          , material=LCT.MATERIAL.LEATHER        } }
 , { input="Craft Normal Leather Helmet"                     , expect={ item=LCT.ITEM.HELMET           , material=LCT.MATERIAL.LEATHER        } }

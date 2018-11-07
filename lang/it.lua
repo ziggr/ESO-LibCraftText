@@ -314,7 +314,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["CLEAR_WATER"             ] = { name="clear water"                    , crafting_type=al, item_id=  1187 }
 , ["PRISTINE_WATER"          ] = { name="pristine water"                 , crafting_type=al, item_id=  4570 , name_2="pristine water"     }
 , ["CLEANSED_WATER"          ] = { name="cleansed water"                 , crafting_type=al, item_id= 23265 , name_2="cleansed water"     }
-, ["FILTERED_WATER"          ] = { name="filtered water"                 , crafting_type=al, item_id= 23266 }
+, ["FILTERED_WATER"          ] = { name="filtered water"                 , crafting_type=al, item_id= 23266 , name_2="filtered water"     }
 , ["PURIFIED_WATER"          ] = { name="purified water"                 , crafting_type=al, item_id= 23267 , name_2="purified water"     }
 , ["CLOUD_MIST"              ] = { name="cloud mist"                     , crafting_type=al, item_id= 23268 }
 , ["STAR_DEW"                ] = { name="Star Dew"                       , crafting_type=al, item_id= 64500 }

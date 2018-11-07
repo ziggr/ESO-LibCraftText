@@ -314,7 +314,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["CLEAR_WATER"             ] = { name="清水"                             , crafting_type=al, item_id=  1187 }
 , ["PRISTINE_WATER"          ] = { name="清浄水"                            , crafting_type=al, item_id=  4570 , name_2="清浄水"                }
 , ["CLEANSED_WATER"          ] = { name="浄化水"                            , crafting_type=al, item_id= 23265 , name_2="浄化水"                }
-, ["FILTERED_WATER"          ] = { name="ろ過水"                            , crafting_type=al, item_id= 23266 }
+, ["FILTERED_WATER"          ] = { name="ろ過水"                            , crafting_type=al, item_id= 23266 , name_2="ろ過水"                }
 , ["PURIFIED_WATER"          ] = { name="神聖水"                            , crafting_type=al, item_id= 23267 , name_2="神聖水"                }
 , ["CLOUD_MIST"              ] = { name="霧の雲"                            , crafting_type=al, item_id= 23268 }
 , ["STAR_DEW"                ] = { name="星のしずく"                          , crafting_type=al, item_id= 64500 }
