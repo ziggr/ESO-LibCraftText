@@ -1266,15 +1266,15 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
 
     local ALCHEMY_DRINKS = {
 
-, { , solvent=cm.ALKAHEST       }-- Damage Health Poison IX
-, { , solvent=cm.ALKAHEST       }-- Damage Magicka Poison IX
-, { , solvent=cm.ALKAHEST       }-- Damage Stamina Poison IX
-, { , solvent=cm.ALKAHEST       }-- Drain Health Poison IX
-, { , solvent=cm.LORKHANS_TEARS }-- Health
-, { , solvent=cm.LORKHANS_TEARS }-- Magicka
-, { , solvent=cm.LORKHANS_TEARS }-- Ravage Magicka
-, { , solvent=cm.LORKHANS_TEARS }-- Stamina
-, { , solvent=cm.LORKHANS_TEARS }-- Ravage Stamina
+-- , { , solvent=cm.ALKAHEST       }-- Damage Health Poison IX
+-- , { , solvent=cm.ALKAHEST       }-- Damage Magicka Poison IX
+-- , { , solvent=cm.ALKAHEST       }-- Damage Stamina Poison IX
+-- , { , solvent=cm.ALKAHEST       }-- Drain Health Poison IX
+-- , { , solvent=cm.LORKHANS_TEARS }-- Health
+-- , { , solvent=cm.LORKHANS_TEARS }-- Magicka
+-- , { , solvent=cm.LORKHANS_TEARS }-- Ravage Magicka
+-- , { , solvent=cm.LORKHANS_TEARS }-- Stamina
+-- , { , solvent=cm.LORKHANS_TEARS }-- Ravage Stamina
 
 }
 
