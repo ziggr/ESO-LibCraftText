@@ -141,6 +141,7 @@ LibCraftText.RECIPE = {
 , ["BRETON_PORK_SAUSAGE"             ] = { name="бретонская свиная колбаса"             , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="морковный суп"                         , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="куриная грудка"                        , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
+, ["CHORROL_CORN_ON_THE_COB"         ] = { name="корролский початок кукурузы"           , food_item_id=033514, recipe_list_index=  3, recipe_index= 20}
 , ["CINNAMON_GRAPE_JELLY"            ] = { name="виноградное желе с корицей"            , food_item_id=042790, recipe_list_index=  2, recipe_index= 19}
 , ["CLARIFIED_SYRAH_WINE"            ] = { name="очищенное вино сорта шираз"            , food_item_id=028409, recipe_list_index=  8, recipe_index=  7, name_2="очищенное вино сорта шираз"}
 , ["COMELY_WENCH_WHISKEY"            ] = { name="виски «Смазливая девка»"               , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
@@ -150,6 +151,7 @@ LibCraftText.RECIPE = {
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="сырная тарелка с фруктами по-фестхолдски", food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="рыбные палочки"                        , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
 , ["FOUR_EYE_GROG"                   ] = { name="грог «Четыре глаза»"                   , food_item_id=033612, recipe_list_index=  8, recipe_index=  8}
+, ["GARLIC_MASHED_POTATOES"          ] = { name="картофельное пюре с чесноком"          , food_item_id=028346, recipe_list_index=  3, recipe_index= 19}
 , ["GARLIC_PUMPKIN_SEEDS"            ] = { name="тыквенные семена с чесноком"           , food_item_id=033490, recipe_list_index=  2, recipe_index= 14}
 , ["GINGER_WHEAT_BEER"               ] = { name="пшенично-имбирное пиво"                , food_item_id=033963, recipe_list_index=  8, recipe_index= 18}
 , ["GODS_BLIND_ME"                   ] = { name="«Боги, ослепите меня»"                 , food_item_id=028433, recipe_list_index=  8, recipe_index= 25, name_2="«Боги, ослепите меня»"}
@@ -170,6 +172,7 @@ LibCraftText.RECIPE = {
 , ["MAZTE"                           ] = { name="мацт"                                  , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
 , ["MERMAID_WHISKEY"                 ] = { name="виски «Русалка»"                       , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
 , ["MILLET_STUFFED_PORK_LOIN"        ] = { name="свиная вырезка с начинкой из пшена"    , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
+, ["MULLED_WINE"               ] = { name="пряное вино"                                 , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
 , ["MUTHSERAS_REMORSE"               ] = { name="«Раскаяние мутсэры»"                   , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="нибенейская морковь с чесноком"        , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
 , ["NUT_BROWN_ALE"                   ] = { name="темный ореховый эль"                   , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
@@ -182,6 +185,7 @@ LibCraftText.RECIPE = {
 , ["SEAFLOWER_TEA"                   ] = { name="чай «Морской цветок»"                  , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SOUR_MASH"                       ] = { name="кислый затор"                          , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
 , ["SPICEBERRY_CHAI"                 ] = { name="пряный ягодный чай"                    , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
+, ["SPICED_MAZTE"                    ] = { name="пряный мацт"                           , food_item_id=033636, recipe_list_index=  8, recipe_index= 20}
 , ["STORMHOLD_BAKED_BANANAS"         ] = { name="печеные бананы по-стормхолдски"        , food_item_id=033587, recipe_list_index=  2, recipe_index= 21}
 , ["SURILIE_SYRAH_WINE"              ] = { name="вино Сурили сорта шираз"               , food_item_id=033939, recipe_list_index=  8, recipe_index=  6}
 , ["TORVAL_MINT_TEA"                 ] = { name="торвальский мятный чай"                , food_item_id=034017, recipe_list_index=  9, recipe_index= 21}

@@ -141,6 +141,7 @@ LibCraftText.RECIPE = {
 , ["BRETON_PORK_SAUSAGE"             ] = { name="ブレトンのポークソーセージ"                         , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="ニンジンスープ"                               , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="鶏の胸肉"                                  , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
+, ["CHORROL_CORN_ON_THE_COB"         ] = { name="コロールの軸付きトウモロコシ"                        , food_item_id=033514, recipe_list_index=  3, recipe_index= 20}
 , ["CINNAMON_GRAPE_JELLY"            ] = { name="グレープシナモンゼリー"                           , food_item_id=042790, recipe_list_index=  2, recipe_index= 19}
 , ["CLARIFIED_SYRAH_WINE"            ] = { name="シラーワインの蒸留酒"                            , food_item_id=028409, recipe_list_index=  8, recipe_index=  7, name_2="シラーワインの蒸留酒"  }
 , ["COMELY_WENCH_WHISKEY"            ] = { name="カムリーウェンチ・ウイスキー"                        , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
@@ -150,6 +151,7 @@ LibCraftText.RECIPE = {
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="ファーストホールドの果実とチーズのプレート"                 , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="魚のフライ"                                 , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
 , ["FOUR_EYE_GROG"                   ] = { name="4つ目のグロッグ"                              , food_item_id=033612, recipe_list_index=  8, recipe_index=  8}
+, ["GARLIC_MASHED_POTATOES"          ] = { name="ガーリックマッシュポテト"                          , food_item_id=028346, recipe_list_index=  3, recipe_index= 19}
 , ["GARLIC_PUMPKIN_SEEDS"            ] = { name="カボチャの種のニンニク炒め"                         , food_item_id=033490, recipe_list_index=  2, recipe_index= 14}
 , ["GINGER_WHEAT_BEER"               ] = { name="ジンジャービール"                              , food_item_id=033963, recipe_list_index=  8, recipe_index= 18}
 , ["GODS_BLIND_ME"                   ] = { name="ゴッズ・ブラインド・ミー"                          , food_item_id=028433, recipe_list_index=  8, recipe_index= 25, name_2="ゴッズ・ブラインド・ミー"}
@@ -170,6 +172,7 @@ LibCraftText.RECIPE = {
 , ["MAZTE"                           ] = { name="マッツェ"                                  , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
 , ["MERMAID_WHISKEY"                 ] = { name="マーメイド・ウイスキー"                           , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
 , ["MILLET_STUFFED_PORK_LOIN"        ] = { name="雑穀の豚腰肉包み焼き"                            , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
+, ["MULLED_WINE"               ] = { name="ホットワイン"                                      , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
 , ["MUTHSERAS_REMORSE"               ] = { name="ムスセラの良心の呵責"                            , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="ニベン人のニンジンのニンニク炒め"                      , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
 , ["NUT_BROWN_ALE"                   ] = { name="ナット・ブラウンエール"                           , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
@@ -182,6 +185,7 @@ LibCraftText.RECIPE = {
 , ["SEAFLOWER_TEA"                   ] = { name="海花茶"                                   , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SOUR_MASH"                       ] = { name="すっぱい麦芽汁"                               , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
 , ["SPICEBERRY_CHAI"                 ] = { name="スパイスベリーのチャイ"                           , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
+, ["SPICED_MAZTE"                    ] = { name="香辛料入りマッツェ"                             , food_item_id=033636, recipe_list_index=  8, recipe_index= 20}
 , ["STORMHOLD_BAKED_BANANAS"         ] = { name="ストームホールドの焼きバナナ"                        , food_item_id=033587, recipe_list_index=  2, recipe_index= 21}
 , ["SURILIE_SYRAH_WINE"              ] = { name="スリリーのシラーワイン"                           , food_item_id=033939, recipe_list_index=  8, recipe_index=  6}
 , ["TORVAL_MINT_TEA"                 ] = { name="トルヴァルミントティー"                           , food_item_id=034017, recipe_list_index=  9, recipe_index= 21}

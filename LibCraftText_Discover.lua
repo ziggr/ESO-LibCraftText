@@ -1005,6 +1005,7 @@ local RECIPE_NAMES_EN = {
 , "Breton Pork Sausage"
 , "Carrot Soup"
 , "Chicken Breast"
+, "Chorrol Corn on the Cob"
 , "Cinnamon Grape Jelly"
 , "Clarified Syrah Wine"
 , "Comely Wench Whiskey"
@@ -1014,6 +1015,7 @@ local RECIPE_NAMES_EN = {
 , "Firsthold Fruit and Cheese Plate"
 , "Fishy Stick"
 , "Four-Eye Grog"
+, "Garlic Mashed Potatoes"
 , "Garlic Pumpkin Seeds"
 , "Ginger Wheat Beer"
 , "Gods-Blind-Me"
@@ -1034,6 +1036,7 @@ local RECIPE_NAMES_EN = {
 , "Mazte"
 , "Mermaid Whiskey"
 , "Millet-Stuffed Pork Loin"
+, "Mulled Wine"
 , "Muthsera's Remorse"
 , "Nibenese Garlic Carrots"
 , "Nut Brown Ale"
@@ -1046,6 +1049,7 @@ local RECIPE_NAMES_EN = {
 , "Seaflower Tea"
 , "Sour Mash"
 , "Spiceberry Chai"
+, "Spiced Mazte"
 , "Stormhold Baked Bananas"
 , "Surilie Syrah Wine"
 , "Torval Mint Tea"
@@ -1054,6 +1058,7 @@ local RECIPE_NAMES_EN = {
 , "Venison Pasty"
 , "West Weald Corn Chowder"
 , "Whiterun Cheese-Baked Trout"
+
 }
 function LibCraftText.DiscoverRecipes()
     local self   = LibCraftText

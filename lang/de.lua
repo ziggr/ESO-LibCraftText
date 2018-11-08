@@ -141,6 +141,7 @@ LibCraftText.RECIPE = {
 , ["BRETON_PORK_SAUSAGE"             ] = { name="bretonische Fleischwurst"              , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="Karottensuppe"                         , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="Hühnerbrust"                           , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
+, ["CHORROL_CORN_ON_THE_COB"         ] = { name="Chorrol-Maiskolben am Stück"           , food_item_id=033514, recipe_list_index=  3, recipe_index= 20}
 , ["CINNAMON_GRAPE_JELLY"            ] = { name="Zimttraubengelee"                      , food_item_id=042790, recipe_list_index=  2, recipe_index= 19}
 , ["CLARIFIED_SYRAH_WINE"            ] = { name="klarer Syrahwein"                      , food_item_id=028409, recipe_list_index=  8, recipe_index=  7, name_2="klaren Syrahwein"}
 , ["COMELY_WENCH_WHISKEY"            ] = { name="Hübschmaidwhiskey"                     , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
@@ -150,6 +151,7 @@ LibCraftText.RECIPE = {
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="Ersthalt-Käseplatte mit Früchten"      , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="Fischstäbchen"                         , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
 , ["FOUR_EYE_GROG"                   ] = { name="Vieraugengrog"                         , food_item_id=033612, recipe_list_index=  8, recipe_index=  8}
+, ["GARLIC_MASHED_POTATOES"          ] = { name="Kartoffelpüree mit Knoblauch"          , food_item_id=028346, recipe_list_index=  3, recipe_index= 19}
 , ["GARLIC_PUMPKIN_SEEDS"            ] = { name="Kürbissamen mit Knoblauch"             , food_item_id=033490, recipe_list_index=  2, recipe_index= 14}
 , ["GINGER_WHEAT_BEER"               ] = { name="Ingwerbier"                            , food_item_id=033963, recipe_list_index=  8, recipe_index= 18}
 , ["GODS_BLIND_ME"                   ] = { name="Heiliger Strohsack"                    , food_item_id=028433, recipe_list_index=  8, recipe_index= 25, name_2="Heiligen Strohsack"}
@@ -170,6 +172,7 @@ LibCraftText.RECIPE = {
 , ["MAZTE"                           ] = { name="Mazte"                                 , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
 , ["MERMAID_WHISKEY"                 ] = { name="Wassernixenwhiskey"                    , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
 , ["MILLET_STUFFED_PORK_LOIN"        ] = { name="gefüllte Schweinelende mit Hirse"      , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
+, ["MULLED_WINE"               ] = { name="Glühwein"                                    , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
 , ["MUTHSERAS_REMORSE"               ] = { name="Muthseras Reue"                        , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="nibenesische Knoblauchkarotten"        , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
 , ["NUT_BROWN_ALE"                   ] = { name="Nussbraunale"                          , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
@@ -182,6 +185,7 @@ LibCraftText.RECIPE = {
 , ["SEAFLOWER_TEA"                   ] = { name="Seeblumentee"                          , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SOUR_MASH"                       ] = { name="Sauermaische"                          , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
 , ["SPICEBERRY_CHAI"                 ] = { name="Würzbeerenchai"                        , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
+, ["SPICED_MAZTE"                    ] = { name="Würzmazte"                             , food_item_id=033636, recipe_list_index=  8, recipe_index= 20}
 , ["STORMHOLD_BAKED_BANANAS"         ] = { name="Sturmfeste-Backbananen"                , food_item_id=033587, recipe_list_index=  2, recipe_index= 21}
 , ["SURILIE_SYRAH_WINE"              ] = { name="Surilie-Syrahwein"                     , food_item_id=033939, recipe_list_index=  8, recipe_index=  6}
 , ["TORVAL_MINT_TEA"                 ] = { name="Torval-Minztee"                        , food_item_id=034017, recipe_list_index=  9, recipe_index= 21}
