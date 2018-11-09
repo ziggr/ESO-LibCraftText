@@ -147,6 +147,7 @@ LibCraftText.RECIPE = {
 , ["COMELY_WENCH_WHISKEY"            ] = { name="виски «Смазливая девка»"               , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
 , ["CYRODILIC_CORNBREAD"             ] = { name="сиродильский кукурузный хлеб"          , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
 , ["CYRODILIC_PUMPKIN_FRITTERS"      ] = { name="тыква во фритюре по-сиродильски"       , food_item_id=033789, recipe_list_index=  2, recipe_index= 20}
+, ["ELENHIR_ROAST_ANTELOPE"          ] = { name="жареная оленина по-элинирски"          , food_item_id=033520, recipe_list_index=  1, recipe_index= 20}
 , ["ELTHERIC_HOOCH"                  ] = { name="самогон «Элтерический»"                , food_item_id=028417, recipe_list_index=  8, recipe_index= 13, name_2="самогон «Элтерический»"}
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="сырная тарелка с фруктами по-фестхолдски", food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="рыбные палочки"                        , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
@@ -172,8 +173,9 @@ LibCraftText.RECIPE = {
 , ["MAZTE"                           ] = { name="мацт"                                  , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
 , ["MERMAID_WHISKEY"                 ] = { name="виски «Русалка»"                       , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
 , ["MILLET_STUFFED_PORK_LOIN"        ] = { name="свиная вырезка с начинкой из пшена"    , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
-, ["MULLED_WINE"               ] = { name="пряное вино"                                 , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
+, ["MULLED_WINE"                     ] = { name="пряное вино"                                 , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
 , ["MUTHSERAS_REMORSE"               ] = { name="«Раскаяние мутсэры»"                   , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}
+, ["NEREID_WINE"                     ] = { name="вино нереиды"                          , food_item_id=033975, recipe_list_index=  8, recipe_index= 24}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="нибенейская морковь с чесноком"        , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
 , ["NUT_BROWN_ALE"                   ] = { name="темный ореховый эль"                   , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="чесночно-яблочное желе из Оркреста"    , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
@@ -183,6 +185,8 @@ LibCraftText.RECIPE = {
 , ["ROAST_CORN"                      ] = { name="жареная кукуруза"                      , food_item_id=033813, recipe_list_index=  3, recipe_index=  3}
 , ["RYE_IN_YOUR_EYE"                 ] = { name="«Рожь-в-глазах»"                       , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="чай «Морской цветок»"                  , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
+, ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name="сенчальское рыбное карри с рисом"      , food_item_id=028350, recipe_list_index=  1, recipe_index= 19}
+, ["SORRY_HONEY_LAGER"               ] = { name="лагер «Извини, дорогая»"               , food_item_id=033642, recipe_list_index=  8, recipe_index= 23}
 , ["SOUR_MASH"                       ] = { name="кислый затор"                          , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
 , ["SPICEBERRY_CHAI"                 ] = { name="пряный ягодный чай"                    , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
 , ["SPICED_MAZTE"                    ] = { name="пряный мацт"                           , food_item_id=033636, recipe_list_index=  8, recipe_index= 20}

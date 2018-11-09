@@ -147,6 +147,7 @@ LibCraftText.RECIPE = {
 , ["COMELY_WENCH_WHISKEY"            ] = { name=$FOOD_028402                            , food_item_id=028402, recipe_list_index=$FOOD_028402_RLI, recipe_index=$FOOD_028402_RI }
 , ["CYRODILIC_CORNBREAD"             ] = { name=$FOOD_033897                            , food_item_id=033897, recipe_list_index=$FOOD_033897_RLI, recipe_index=$FOOD_033897_RI }
 , ["CYRODILIC_PUMPKIN_FRITTERS"      ] = { name=$FOOD_033789                            , food_item_id=033789, recipe_list_index=$FOOD_033789_RLI, recipe_index=$FOOD_033789_RI }
+, ["ELENHIR_ROAST_ANTELOPE"          ] = { name=$FOOD_033520                            , food_item_id=033520, recipe_list_index=$FOOD_033520_RLI, recipe_index=$FOOD_033520_RI }
 , ["ELTHERIC_HOOCH"                  ] = { name=$FOOD_028417                            , food_item_id=028417, recipe_list_index=$FOOD_028417_RLI, recipe_index=$FOOD_028417_RI , name_2=$FOOD_028417B }
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name=$FOOD_068236                            , food_item_id=068236, recipe_list_index=$FOOD_068236_RLI, recipe_index=$FOOD_068236_RI }
 , ["FISHY_STICK"                     ] = { name=$FOOD_033526                            , food_item_id=033526, recipe_list_index=$FOOD_033526_RLI, recipe_index=$FOOD_033526_RI }
@@ -172,8 +173,9 @@ LibCraftText.RECIPE = {
 , ["MAZTE"                           ] = { name=$FOOD_033606                            , food_item_id=033606, recipe_list_index=$FOOD_033606_RLI, recipe_index=$FOOD_033606_RI }
 , ["MERMAID_WHISKEY"                 ] = { name=$FOOD_033630                            , food_item_id=033630, recipe_list_index=$FOOD_033630_RLI, recipe_index=$FOOD_033630_RI }
 , ["MILLET_STUFFED_PORK_LOIN"        ] = { name=$FOOD_043088                            , food_item_id=043088, recipe_list_index=$FOOD_043088_RLI, recipe_index=$FOOD_043088_RI }
-, ["MULLED_WINE"               ] = { name=$FOOD_033969                                  , food_item_id=033969, recipe_list_index=$FOOD_033969_RLI, recipe_index=$FOOD_033969_RI }
+, ["MULLED_WINE"                     ] = { name=$FOOD_033969                                  , food_item_id=033969, recipe_list_index=$FOOD_033969_RLI, recipe_index=$FOOD_033969_RI }
 , ["MUTHSERAS_REMORSE"               ] = { name=$FOOD_068260                            , food_item_id=068260, recipe_list_index=$FOOD_068260_RLI, recipe_index=$FOOD_068260_RI }
+, ["NEREID_WINE"                     ] = { name=$FOOD_033975                            , food_item_id=033975, recipe_list_index=$FOOD_033975_RLI, recipe_index=$FOOD_033975_RI }
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name=$FOOD_033478                            , food_item_id=033478, recipe_list_index=$FOOD_033478_RLI, recipe_index=$FOOD_033478_RI }
 , ["NUT_BROWN_ALE"                   ] = { name=$FOOD_028401                            , food_item_id=028401, recipe_list_index=$FOOD_028401_RLI, recipe_index=$FOOD_028401_RI }
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name=$FOOD_043094                            , food_item_id=043094, recipe_list_index=$FOOD_043094_RLI, recipe_index=$FOOD_043094_RI }
@@ -183,6 +185,8 @@ LibCraftText.RECIPE = {
 , ["ROAST_CORN"                      ] = { name=$FOOD_033813                            , food_item_id=033813, recipe_list_index=$FOOD_033813_RLI, recipe_index=$FOOD_033813_RI }
 , ["RYE_IN_YOUR_EYE"                 ] = { name=$FOOD_028429                            , food_item_id=028429, recipe_list_index=$FOOD_028429_RLI, recipe_index=$FOOD_028429_RI }
 , ["SEAFLOWER_TEA"                   ] = { name=$FOOD_034005                            , food_item_id=034005, recipe_list_index=$FOOD_034005_RLI, recipe_index=$FOOD_034005_RI }
+, ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name=$FOOD_028350                            , food_item_id=028350, recipe_list_index=$FOOD_028350_RLI, recipe_index=$FOOD_028350_RI }
+, ["SORRY_HONEY_LAGER"               ] = { name=$FOOD_033642                            , food_item_id=033642, recipe_list_index=$FOOD_033642_RLI, recipe_index=$FOOD_033642_RI }
 , ["SOUR_MASH"                       ] = { name=$FOOD_028425                            , food_item_id=028425, recipe_list_index=$FOOD_028425_RLI, recipe_index=$FOOD_028425_RI }
 , ["SPICEBERRY_CHAI"                 ] = { name=$FOOD_033684                            , food_item_id=033684, recipe_list_index=$FOOD_033684_RLI, recipe_index=$FOOD_033684_RI }
 , ["SPICED_MAZTE"                    ] = { name=$FOOD_033636                            , food_item_id=033636, recipe_list_index=$FOOD_033636_RLI, recipe_index=$FOOD_033636_RI }

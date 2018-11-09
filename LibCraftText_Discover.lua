@@ -1011,6 +1011,7 @@ local RECIPE_NAMES_EN = {
 , "Comely Wench Whiskey"
 , "Cyrodilic Cornbread"
 , "Cyrodilic Pumpkin Fritters"
+, "Elinhir Roast Antelope"
 , "Eltheric Hooch"
 , "Firsthold Fruit and Cheese Plate"
 , "Fishy Stick"
@@ -1038,6 +1039,7 @@ local RECIPE_NAMES_EN = {
 , "Millet-Stuffed Pork Loin"
 , "Mulled Wine"
 , "Muthsera's Remorse"
+, "Nereid Wine"
 , "Nibenese Garlic Carrots"
 , "Nut Brown Ale"
 , "Orcrest Garlic Apple Jelly"
@@ -1047,6 +1049,8 @@ local RECIPE_NAMES_EN = {
 , "Roast Corn"
 , "Rye-in-Your-Eye"
 , "Seaflower Tea"
+, "Senchal Curry Fish and Rice"
+, "Sorry, Honey Lager"
 , "Sour Mash"
 , "Spiceberry Chai"
 , "Spiced Mazte"
@@ -1058,6 +1062,7 @@ local RECIPE_NAMES_EN = {
 , "Venison Pasty"
 , "West Weald Corn Chowder"
 , "Whiterun Cheese-Baked Trout"
+
 
 }
 function LibCraftText.DiscoverRecipes()

@@ -147,6 +147,7 @@ LibCraftText.RECIPE = {
 , ["COMELY_WENCH_WHISKEY"            ] = { name="カムリーウェンチ・ウイスキー"                        , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
 , ["CYRODILIC_CORNBREAD"             ] = { name="シロディールのコーンブレッド"                        , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
 , ["CYRODILIC_PUMPKIN_FRITTERS"      ] = { name="シロディールのカボチャのフリッター"                     , food_item_id=033789, recipe_list_index=  2, recipe_index= 20}
+, ["ELENHIR_ROAST_ANTELOPE"          ] = { name="エリンヒルの羚羊の肉のロースト"                       , food_item_id=033520, recipe_list_index=  1, recipe_index= 20}
 , ["ELTHERIC_HOOCH"                  ] = { name="エルセリックの安酒"                             , food_item_id=028417, recipe_list_index=  8, recipe_index= 13, name_2="エルセリックの安酒"   }
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="ファーストホールドの果実とチーズのプレート"                 , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="魚のフライ"                                 , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
@@ -172,8 +173,9 @@ LibCraftText.RECIPE = {
 , ["MAZTE"                           ] = { name="マッツェ"                                  , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
 , ["MERMAID_WHISKEY"                 ] = { name="マーメイド・ウイスキー"                           , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
 , ["MILLET_STUFFED_PORK_LOIN"        ] = { name="雑穀の豚腰肉包み焼き"                            , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
-, ["MULLED_WINE"               ] = { name="ホットワイン"                                      , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
+, ["MULLED_WINE"                     ] = { name="ホットワイン"                                      , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
 , ["MUTHSERAS_REMORSE"               ] = { name="ムスセラの良心の呵責"                            , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}
+, ["NEREID_WINE"                     ] = { name="ネレイドワイン"                               , food_item_id=033975, recipe_list_index=  8, recipe_index= 24}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="ニベン人のニンジンのニンニク炒め"                      , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
 , ["NUT_BROWN_ALE"                   ] = { name="ナット・ブラウンエール"                           , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="オークレストのニンニクとリンゴのゼリー"                   , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
@@ -183,6 +185,8 @@ LibCraftText.RECIPE = {
 , ["ROAST_CORN"                      ] = { name="焼きトウモロコシ"                              , food_item_id=033813, recipe_list_index=  3, recipe_index=  3}
 , ["RYE_IN_YOUR_EYE"                 ] = { name="瞳に映るライ・ウイスキー"                          , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="海花茶"                                   , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
+, ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name="センシャルのシーフードカレー"                        , food_item_id=028350, recipe_list_index=  1, recipe_index= 19}
+, ["SORRY_HONEY_LAGER"               ] = { name="ソーリー、ハニーラガー"                           , food_item_id=033642, recipe_list_index=  8, recipe_index= 23}
 , ["SOUR_MASH"                       ] = { name="すっぱい麦芽汁"                               , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
 , ["SPICEBERRY_CHAI"                 ] = { name="スパイスベリーのチャイ"                           , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
 , ["SPICED_MAZTE"                    ] = { name="香辛料入りマッツェ"                             , food_item_id=033636, recipe_list_index=  8, recipe_index= 20}

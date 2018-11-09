@@ -67,6 +67,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Dram of Magicka"                           , expect={}                                                 }
 , { input="Craft Dram of Ravage Magicka"                    , expect={}                                                 }
 , { input="Craft Dram of Stamina"                           , expect={}                                                 }
+, { input="Craft Elinhir Roast Antelope"                    , expect={ item=LCT.RECIPE.ELENHIR_ROAST_ANTELOPE           } }
 , { input="Craft Elixir of Health"                          , expect={}                                                 }
 , { input="Craft Elixir of Magicka"                         , expect={}                                                 }
 , { input="Craft Elixir of Ravage Magicka"                  , expect={}                                                 }
@@ -120,6 +121,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Mulled Wine"                               , expect={ item=LCT.RECIPE.MULLED_WINE                      } }
 , { input="Craft Muthsera's Remorse"                        , expect={ item=LCT.RECIPE.MUTHSERAS_REMORSE                } }
 , { input="Craft Muthsera's Remorse: 0 / 1"              , expect={    item=LCT.RECIPE.MUTHSERAS_REMORSE                } }
+, { input="Craft Nereid Wine"                               , expect={ item=LCT.RECIPE.NEREID_WINE                      } }
 , { input="Craft Nibenese Garlic Carrots"                   , expect={ item=LCT.RECIPE.NIBENESE_GARLIC_CARROTS          } }
 , { input="Craft Normal Ancestor Silk Breeches"             , expect={ item=LCT.ITEM.BREECHES         , material=LCT.MATERIAL.ANCESTOR_SILK  } }
 , { input="Craft Normal Ancestor Silk Epaulets"             , expect={ item=LCT.ITEM.EPAULETS         , material=LCT.MATERIAL.ANCESTOR_SILK  } }
@@ -388,6 +390,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Roast Corn"                                , expect={ item=LCT.RECIPE.ROAST_CORN                       } }
 , { input="Craft Rye-in-Your-Eye"                           , expect={ item=LCT.RECIPE.RYE_IN_YOUR_EYE                  } }
 , { input="Craft Seaflower Tea"                             , expect={ item=LCT.RECIPE.SEAFLOWER_TEA                    } }
+, { input="Craft Senchal Curry Fish and Rice"               , expect={ item=LCT.RECIPE.SENCHAL_CURRY_FISH_AND_RICE      } }
 , { input="Craft Sip of Health"                             , expect={}                                                 }
 , { input="Craft Sip of Magicka"                            , expect={}                                                 }
 , { input="Craft Sip of Ravage Stamina"                     , expect={}                                                 }
@@ -397,6 +400,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Solution of Magicka"                       , expect={}                                                 }
 , { input="Craft Solution of Ravage Stamina"                , expect={}                                                 }
 , { input="Craft Solution of Stamina"                       , expect={}                                                 }
+, { input="Craft Sorry, Honey Lager"                        , expect={ item=LCT.RECIPE.SORRY_HONEY_LAGER                } }
 , { input="Craft Sour Mash"                                 , expect={ item=LCT.RECIPE.SOUR_MASH                        } }
 , { input="Craft Spiceberry Chai"                           , expect={ item=LCT.RECIPE.SPICEBERRY_CHAI                  } }
 , { input="Craft Spiced Mazte"                              , expect={ item=LCT.RECIPE.SPICED_MAZTE                     } }

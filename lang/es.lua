@@ -147,6 +147,7 @@ LibCraftText.RECIPE = {
 , ["COMELY_WENCH_WHISKEY"            ] = { name="whisky de la doncella encantadora"     , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
 , ["CYRODILIC_CORNBREAD"             ] = { name="pan de maíz cyrodílico"                , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
 , ["CYRODILIC_PUMPKIN_FRITTERS"      ] = { name="buñuelos de calabaza de Cyrodill"      , food_item_id=033789, recipe_list_index=  2, recipe_index= 20}
+, ["ELENHIR_ROAST_ANTELOPE"          ] = { name="antílope asado de Elinhir"             , food_item_id=033520, recipe_list_index=  1, recipe_index= 20}
 , ["ELTHERIC_HOOCH"                  ] = { name="Licor eltérico"                        , food_item_id=028417, recipe_list_index=  8, recipe_index= 13, name_2="Licor eltérico"}
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="plato de frutas y queso de Primada"    , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="Palitos de pescado"                    , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
@@ -172,8 +173,9 @@ LibCraftText.RECIPE = {
 , ["MAZTE"                           ] = { name="mazte"                                 , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
 , ["MERMAID_WHISKEY"                 ] = { name="whisky de sirena"                      , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
 , ["MILLET_STUFFED_PORK_LOIN"        ] = { name="lomo de cerdo relleno de mijo"         , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
-, ["MULLED_WINE"               ] = { name="Vino caliente"                               , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
+, ["MULLED_WINE"                     ] = { name="Vino caliente"                               , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
 , ["MUTHSERAS_REMORSE"               ] = { name="remordimiento de muthsera"             , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}
+, ["NEREID_WINE"                     ] = { name="Vino de nereida"                       , food_item_id=033975, recipe_list_index=  8, recipe_index= 24}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="zanahorias al ajo a la nibenesa"       , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
 , ["NUT_BROWN_ALE"                   ] = { name="cerveza negra con avellanas"           , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="jalea de manzana y ajo de Orcelia"     , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
@@ -183,6 +185,8 @@ LibCraftText.RECIPE = {
 , ["ROAST_CORN"                      ] = { name="maíz tostado"                          , food_item_id=033813, recipe_list_index=  3, recipe_index=  3}
 , ["RYE_IN_YOUR_EYE"                 ] = { name="cente-no en la cara"                   , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="Té de flor marina"                     , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
+, ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name="Curry de pescado y arroz de Senchal"   , food_item_id=028350, recipe_list_index=  1, recipe_index= 19}
+, ["SORRY_HONEY_LAGER"               ] = { name="cerveza \"Lo siento, cariño\""         , food_item_id=033642, recipe_list_index=  8, recipe_index= 23}
 , ["SOUR_MASH"                       ] = { name="Malta agria"                           , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
 , ["SPICEBERRY_CHAI"                 ] = { name="té chai de bayacida"                   , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
 , ["SPICED_MAZTE"                    ] = { name="mazte especiado"                       , food_item_id=033636, recipe_list_index=  8, recipe_index= 20}

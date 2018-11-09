@@ -147,6 +147,7 @@ LibCraftText.RECIPE = {
 , ["COMELY_WENCH_WHISKEY"            ] = { name="Hübschmaidwhiskey"                     , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
 , ["CYRODILIC_CORNBREAD"             ] = { name="cyrodiilisches Maisbrot"               , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
 , ["CYRODILIC_PUMPKIN_FRITTERS"      ] = { name="cyrodiilisches Kürbisfrittiertes"      , food_item_id=033789, recipe_list_index=  2, recipe_index= 20}
+, ["ELENHIR_ROAST_ANTELOPE"          ] = { name="Elinhir-Grillantilope"                 , food_item_id=033520, recipe_list_index=  1, recipe_index= 20}
 , ["ELTHERIC_HOOCH"                  ] = { name="eltherischer Fusel"                    , food_item_id=028417, recipe_list_index=  8, recipe_index= 13, name_2="eltherischen Fusel"}
 , ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="Ersthalt-Käseplatte mit Früchten"      , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
 , ["FISHY_STICK"                     ] = { name="Fischstäbchen"                         , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
@@ -172,8 +173,9 @@ LibCraftText.RECIPE = {
 , ["MAZTE"                           ] = { name="Mazte"                                 , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
 , ["MERMAID_WHISKEY"                 ] = { name="Wassernixenwhiskey"                    , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
 , ["MILLET_STUFFED_PORK_LOIN"        ] = { name="gefüllte Schweinelende mit Hirse"      , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
-, ["MULLED_WINE"               ] = { name="Glühwein"                                    , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
+, ["MULLED_WINE"                     ] = { name="Glühwein"                                    , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
 , ["MUTHSERAS_REMORSE"               ] = { name="Muthseras Reue"                        , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}
+, ["NEREID_WINE"                     ] = { name="Nereïdenwein"                          , food_item_id=033975, recipe_list_index=  8, recipe_index= 24}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="nibenesische Knoblauchkarotten"        , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
 , ["NUT_BROWN_ALE"                   ] = { name="Nussbraunale"                          , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="Orkruh-Apfelgelee mit Knoblauch"       , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
@@ -183,6 +185,8 @@ LibCraftText.RECIPE = {
 , ["ROAST_CORN"                      ] = { name="Grillmais"                             , food_item_id=033813, recipe_list_index=  3, recipe_index=  3}
 , ["RYE_IN_YOUR_EYE"                 ] = { name="Durchschlagwhiskey"                    , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="Seeblumentee"                          , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
+, ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name="Senchal-Curryfisch mit Reis"           , food_item_id=028350, recipe_list_index=  1, recipe_index= 19}
+, ["SORRY_HONEY_LAGER"               ] = { name="Tutmirleidlager"                       , food_item_id=033642, recipe_list_index=  8, recipe_index= 23}
 , ["SOUR_MASH"                       ] = { name="Sauermaische"                          , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
 , ["SPICEBERRY_CHAI"                 ] = { name="Würzbeerenchai"                        , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
 , ["SPICED_MAZTE"                    ] = { name="Würzmazte"                             , food_item_id=033636, recipe_list_index=  8, recipe_index= 20}
