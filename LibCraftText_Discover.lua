@@ -67,6 +67,7 @@ function LibCraftText.RegisterSlashCommands()
                    , { "en"         , "Switch to English language. (other lang codes work, too)"}
                    , { "discover"   , "Extract material and item names"            }
                    , { "abandon"    , "Abandon all daily crafting quests"          }
+                   , { "alchemist"  , "Craft 26 potions to learn all traits"       }
                    }
         for _,c in ipairs(cc) do
             local sub = cmd:RegisterSubCommand()
@@ -104,6 +105,8 @@ function LibCraftText.SlashCommand(args)
     elseif LibCraftText.IsLang(args) then
         local lang = LibCraftText.IsLang(args)
         SetCVar("language.2", lang)
+    elseif args:lower() == "alchemist" then
+        LibCraftText.LearnAllAlchemy()
     else
         Info("Unknown command: '"..tostring(args).."'")
     end
@@ -1278,6 +1281,27 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
     , { potion=cm.LORKHANS_TEARS , potion_name="Essence"    , poison=cm.ALKAHEST     , poison_name="Poison IX"  }  -- CP150
     }
 
+-- ZYLOH: after you teach an alt all traits, come back and fill in
+-- this table with reagent pairs that will produce these 9 potions/poisons
+-- requested by daily crafting writs.
+--
+-- Then use GetAlchemyResultingItemInfo(bag numbas) to get potion/poison names
+--
+-- For each potion/poison by reagent
+--  extract its full name "Drain Health Poison IX" then regex it down to
+--      "Drain Health", for each lang
+--  extract its item_id, too. Use that as a saved_var key
+-- For each potion/poison by solvent rank,
+--  extract its full name "Drain Health Poison IX" then regex it down to
+--      "Poison IX", for each lang
+--
+-- saved_var.alchemy.solvent_potion[rank][lang] = "Essence"
+-- saved_var.alchemy.solvent_poison[rank][lang] = "Poison IX"
+-- saved_var.alchemy.crafted_item[item_id][lang] = "Drain Health"
+
+-- GetAlchemyResultingItemInfo(number Bag solventBagId, number solventSlotIndex, number Bag reagent1BagId, number reagent1SlotIndex, number Bag reagent2BagId, number reagent2SlotIndex, number:nilable Bag reagent3BagId, number:nilable reagent3SlotIndex)
+-- Returns: string name, textureName icon, number stack, number sellPrice, boolean meetsUsageRequirement, number EquipType equipType, number itemStyleId, number ItemQuality quality, number ProspectiveAlchemyResult prospectiveAlchemyResult
+
     local ALCHEMY_DRINKS = {
 
 -- , { , solvent=cm.ALKAHEST       }-- Damage Health Poison IX
@@ -1472,6 +1496,7 @@ end
 
 
 function LibCraftText.ToMatBag(mat_row)
+    if not mat_row then return nil end
     local item_id = mat_row.item_id
     local mat_bag = LibCraftText.item_id_to_mat_bag[item_id]
     if not mat_bag then
@@ -1513,6 +1538,87 @@ function LibCraftText.IndexBags()
     end
 
     self.item_id_to_mat_bag = item_id_to_mat_bag
+end
+
+local m = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
+LibCraftText.LEARN_ALCHEMY = {
+  { m.BEETLE_SCUTTLE  , m.CORN_FLOWER     , m.LADYS_SMOCK              }
+, { m.BEETLE_SCUTTLE  , m.BUTTERFLY_WING  , m.POWDERED_MOTHER_OF_PEARL }
+, { m.BEETLE_SCUTTLE  , m.IMP_STOOL       , m.LUMINOUS_RUSSULA         }
+, { m.BLESSED_THISTLE , m.DRAGONTHORN     , m.STINKHORN                }
+, { m.BLESSED_THISTLE , m.COLUMBINE       , m.NAMIRAS_ROT              }
+, { m.BLUE_ENTOLOMA   , m.BUGLOSS         , m.WHITE_CAP                }
+, { m.BLUE_ENTOLOMA   , m.CLAM_GALL       , m.SPIDER_EGG               }
+, { m.BUGLOSS         , m.COLUMBINE       , m.MOUNTAIN_FLOWER          }
+, { m.BLUE_ENTOLOMA   , m.BUTTERFLY_WING  , m.SCRIB_JELLY              }
+, { m.BUTTERFLY_WING  , m.NIRNROOT        , m.TORCHBUG_THORAX          }
+, { m.CLAM_GALL       , m.MOUNTAIN_FLOWER , m.MUDCRAB_CHITIN           }
+, { m.CLAM_GALL       , m.EMETIC_RUSSULA  , m.FLESHFLY_LARVA           }
+, { m.CORN_FLOWER     , m.MUDCRAB_CHITIN  , m.NIGHTSHADE               }
+, { m.CORN_FLOWER     , m.TORCHBUG_THORAX , m.VIOLET_COPRINUS          }
+, { m.COLUMBINE       , m.DRAGONTHORN     , m.WATER_HYACINTH           }
+, { m.EMETIC_RUSSULA  , m.NAMIRAS_ROT     , m.NIRNROOT                 }
+, { m.EMETIC_RUSSULA  , m.VIOLET_COPRINUS , m.WATER_HYACINTH           }
+, { m.FLESHFLY_LARVA  , m.NIGHTSHADE      , m.STINKHORN                }
+, { m.FLESHFLY_LARVA  , m.SCRIB_JELLY     , m.POWDERED_MOTHER_OF_PEARL }
+, { m.IMP_STOOL       , m.MOUNTAIN_FLOWER , m.NIRNROOT                 }
+, { m.LADYS_SMOCK     , m.NAMIRAS_ROT     , m.VIOLET_COPRINUS          }
+, { m.COLUMBINE       , m.WORMWOOD        , m.LUMINOUS_RUSSULA         }
+, { m.CLAM_GALL       , m.SCRIB_JELLY     , m.SPIDER_EGG               }
+, { m.DRAGONTHORN     , m.TORCHBUG_THORAX , m.WHITE_CAP                }
+, { m.LADYS_SMOCK     , m.WATER_HYACINTH  , m.WORMWOOD                 }
+, { m.EMETIC_RUSSULA  , m.WHITE_CAP       , m.WORMWOOD                 }
+}
+m = nil
+
+                        -- Mix 26 potions to learn all 30 traits across 28
+                        -- reagents. You only need to do this once after
+                        -- a PTS reset.
+                        --
+                        -- I assume you already have Alchemy skill
+                        -- "Laboratory Use" to permit 3-reagent potions.
+                        -- Unknown results if not.
+function LibCraftText.LearnAllAlchemy()
+    local self = LibCraftText
+    if GetCraftingInteractionType() ~= CRAFTING_TYPE_ALCHEMY then
+        Error("Learn alchemy while interacting at an alchemy station.")
+        return
+    end
+    self.IndexBags()
+                        -- Crafting 26 potions in a tight loop with no time
+                        -- for the UI to breathe does not work. Second-and-
+                        -- later crafting attempts do nothing. So turn this
+                        -- for-loop into a zo_callLater() chain.
+    LibCraftText.oneFunc = function(index, func)
+                if #LibCraftText.LEARN_ALCHEMY < index then
+                    Info("Done.")
+                    return
+                end
+                Info(string.format( "Learning %2d/%2d"
+                                  , index
+                                  , #LibCraftText.LEARN_ALCHEMY
+                                  ))
+                local reagent_list = LibCraftText.LEARN_ALCHEMY[index]
+                if not reagent_list then return false end
+                LibCraftText.LearnOneAlchemy(reagent_list)
+                zo_callLater(function() LibCraftText.oneFunc(index + 1, func) end, 1500)
+                return true
+            end
+    LibCraftText.oneFunc(1, oneFunc)
+end
+
+function LibCraftText.LearnOneAlchemy(reagent_list)
+    local self = LibCraftText
+    local sol_mat_bag = self.ToMatBag(self.CONSUMABLE_MATERIAL.NATURAL_WATER)
+    local r1_mat_bag = self.ToMatBag(reagent_list[1])
+    local r2_mat_bag = self.ToMatBag(reagent_list[2])
+    local r3_mat_bag = self.ToMatBag(reagent_list[3]) or {}
+    local args = { sol_mat_bag.bag_id, sol_mat_bag.slot_id
+                 , r1_mat_bag.bag_id , r1_mat_bag.slot_id
+                 , r2_mat_bag.bag_id , r2_mat_bag.slot_id
+                 , r3_mat_bag.bag_id , r3_mat_bag.slot_id
+                 }
+    CraftAlchemyItem(unpack(args))
 end
 
 
