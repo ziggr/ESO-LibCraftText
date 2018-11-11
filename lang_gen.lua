@@ -523,6 +523,31 @@ function ImportSavedVars()
         end
     end
 
+                        -- Alchemy potion rank adjectives: "Essence", "IX"
+    local alchemy = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].alchemy
+    local solvent = alchemy.solvent
+    for rank = 1,9 do
+        local solvent_potion_key = string.format("$ALCHEMY_SOLVENT_POTION_%d", rank)
+        local solvent_poison_key = string.format("$ALCHEMY_SOLVENT_POISON_%d", rank)
+        ImportSavedVarLangTable(solvent.potion[rank], solvent_potion_key)
+        ImportSavedVarLangTable(solvent.poison[rank], solvent_poison_key)
+    end
+                        -- Alchemy potion names: "Health", "Drain Magicka"
+    local potion_names = {
+                           ["HEALTH"           ] = "Health"
+                         , ["MAGICKA"          ] = "Magicka"
+                         , ["STAMINA"          ] = "Stamina"
+                         , ["RAVAGE_HEALTH"    ] = "Ravage Health"
+                         , ["RAVAGE_MAGICKA"   ] = "Ravage Magicka"
+                         , ["RAVAGE_STAMINA"   ] = "Ravage Stamina"
+                         }
+    for key_part, saved_var_name in pairs(potion_names) do
+        local solvent_potion_key = string.format("$ALCHEMY_POTION_%s", key_part)
+        local solvent_poison_key = string.format("$ALCHEMY_POISON_%s", key_part)
+        ImportSavedVarLangTable(alchemy.potion[saved_var_name], solvent_potion_key)
+        ImportSavedVarLangTable(alchemy.poison[saved_var_name], solvent_poison_key)
+    end
+
 end
 
 -- From http://lua-users.org/wiki/SplitJoin
