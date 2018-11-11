@@ -1408,6 +1408,68 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
             self.saved_var.alchemy.solvent[key][i][lang] = name
         end
     end
+
+                        -- Discover trait names.
+    local TRAITS = {
+              [ 1] = { index= 1, reagent_list={cm.WATER_HYACINTH    , cm.BLUE_ENTOLOMA                          }} -- Restore Health
+            , [ 2] = { index= 2, reagent_list={cm.VIOLET_COPRINUS   , cm.NIRNROOT                               }} -- Ravage Health
+            , [ 3] = { index= 3, reagent_list={cm.LADYS_SMOCK       , cm.BUGLOSS                                }} -- Restore Magicka
+            , [ 4] = { index= 4, reagent_list={cm.VIOLET_COPRINUS   , cm.WHITE_CAP                              }} -- Ravage Magicka
+            , [ 5] = { index= 5, reagent_list={cm.DRAGONTHORN       , cm.MOUNTAIN_FLOWER                        }} -- Restore Stamina
+            , [ 6] = { index= 6, reagent_list={cm.FLESHFLY_LARVA    , cm.IMP_STOOL                              }} -- Ravage Stamina
+            , [ 7] = { index= 7, reagent_list={cm.WHITE_CAP         , cm.CLAM_GALL                              }} -- Spell Resistance
+            , [ 8] = { index= 8, reagent_list={cm.BEETLE_SCUTTLE    , cm.VIOLET_COPRINUS                        }} -- Breach
+            , [ 9] = { index= 9, reagent_list={cm.MUDCRAB_CHITIN    , cm.IMP_STOOL                              }} -- Increase Armor
+            , [10] = { index=10, reagent_list={cm.TORCHBUG_THORAX   , cm.DRAGONTHORN                            }} -- Fracture
+            , [11] = { index=11, reagent_list={cm.VIOLET_COPRINUS   , cm.LADYS_SMOCK        , cm.MUDCRAB_CHITIN }} -- Increase Spell Power
+            , [12] = { index=12, reagent_list={cm.BLUE_ENTOLOMA     , cm.BLESSED_THISTLE    , cm.BUGLOSS        }} -- Cowardice
+            , [13] = { index=13, reagent_list={cm.DRAGONTHORN       , cm.STINKHORN          , cm.BEETLE_SCUTTLE }} -- Increase Weapon Power
+            , [14] = { index=14, reagent_list={cm.MOUNTAIN_FLOWER   , cm.LUMINOUS_RUSSULA   , cm.NIRNROOT       }} -- Maim
+            , [15] = { index=15, reagent_list={cm.NAMIRAS_ROT       , cm.WATER_HYACINTH                         }} -- Spell Critical
+            , [16] = { index=16, reagent_list={cm.BUTTERFLY_WING    , cm.NIRNROOT                               }} -- Uncertainty
+            , [17] = { index=17, reagent_list={cm.DRAGONTHORN       , cm.WATER_HYACINTH                         }} -- Weapon Critical
+            , [18] = { index=18, reagent_list={cm.IMP_STOOL         , cm.NIRNROOT                               }} -- Enervation
+            , [19] = { index=19, reagent_list={cm.NAMIRAS_ROT       , cm.COLUMBINE                              }} -- Unstoppable
+            , [20] = { index=20, reagent_list={cm.EMETIC_RUSSULA    , cm.WATER_HYACINTH                         }} -- Entrapment
+            , [21] = { index=21, reagent_list={cm.CORN_FLOWER       , cm.WHITE_CAP                              }} -- Detection
+            , [22] = { index=22, reagent_list={cm.BLUE_ENTOLOMA     , cm.NIRNROOT                               }} -- Invisible
+            , [23] = { index=23, reagent_list={cm.BLESSED_THISTLE   , cm.NAMIRAS_ROT                            }} -- Speed
+            , [24] = { index=24, reagent_list={cm.CLAM_GALL         , cm.LUMINOUS_RUSSULA                       }} -- Hindrance
+            , [25] = { index=25, reagent_list={cm.NIGHTSHADE        , cm.BEETLE_SCUTTLE                         }} -- Protection
+            , [26] = { index=26, reagent_list={cm.SCRIB_JELLY       , cm.FLESHFLY_LARVA                         }} -- Vulnerability
+            , [27] = { index=27, reagent_list={cm.BUTTERFLY_WING    , cm.SPIDER_EGG                             }} -- Lingering Health
+            , [28] = { index=28, reagent_list={cm.NIGHTSHADE        , cm.FLESHFLY_LARVA                         }} -- Gradual Ravage Health
+            , [29] = { index=29, reagent_list={cm.BUTTERFLY_WING    , cm.TORCHBUG_THORAX                        }} -- Vitality
+            , [30] = { index=30, reagent_list={cm.CLAM_GALL         , cm.NIGHTSHADE                             }} -- Defile
+            }
+    local potion_mat_bag = self.ToMatBag(cm.NATURAL_WATER)
+    local poison_mat_bag = self.ToMatBag(cm.GREASE       )
+
+    self.saved_var.alchemy.link = self.saved_var.alchemy.link or {}
+    self.saved_var.alchemy.link.potion = self.saved_var.alchemy.link.potion or {}
+    self.saved_var.alchemy.link.poison = self.saved_var.alchemy.link.poison or {}
+    for i,trait in ipairs(TRAITS) do
+        local r1_mat_bag = self.ToMatBag(trait.reagent_list[1])
+        local r2_mat_bag = self.ToMatBag(trait.reagent_list[2])
+        local r3_mat_bag = self.ToMatBag(trait.reagent_list[3]) or {}
+        local args = { potion_mat_bag.bag_id, potion_mat_bag.slot_id
+                     , r1_mat_bag.bag_id    , r1_mat_bag.slot_id
+                     , r2_mat_bag.bag_id    , r2_mat_bag.slot_id
+                     , r3_mat_bag.bag_id    , r3_mat_bag.slot_id
+                     }
+        local potion_link = GetAlchemyResultingItemLink(unpack(args))
+
+        args       = { poison_mat_bag.bag_id, poison_mat_bag.slot_id
+                     , r1_mat_bag.bag_id    , r1_mat_bag.slot_id
+                     , r2_mat_bag.bag_id    , r2_mat_bag.slot_id
+                     , r3_mat_bag.bag_id    , r3_mat_bag.slot_id
+                     }
+        local poison_link = GetAlchemyResultingItemLink(unpack(args))
+
+        self.saved_var.alchemy.link.potion[i] = potion_link
+        self.saved_var.alchemy.link.poison[i] = poison_link
+    end
+
 end
 
 function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
