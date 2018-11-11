@@ -87,7 +87,7 @@ function LibCraftText.SlashCommand(args)
     elseif args:lower() == "discover" then
         Info("Discovering...")
         LibCraftText.Discover()
-        Info("Ready for you to interact with 5 equipment crafting stations.")
+        Info("Ready for you to interact with 6 equipment crafting stations.")
     elseif args:lower() == "forget" then
         LibCraftText.Forget()
         Info("Forgotten.")
@@ -147,6 +147,7 @@ function LibCraftText.Forget()
                    , "consumable_materials"
                    , "scanned_lang"
                    , "recipes"
+                   , "alchemy"
                    }
     for _,field in ipairs(fields) do
         -- LibCraftText.saved_var [field] = nil  Uncomment only when you really need to.
@@ -1266,58 +1267,147 @@ end
 
 
 function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
-
+    local self = LibCraftText
     local cm = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
 
-    local ALCHEMY_SOLVENTS = {
-      { potion=cm.NATURAL_WATER  , potion_name="Sip"        , poison=cm.GREASE       , poison_name="Poison I"   }  -- 3
-    , { potion=cm.CLEAR_WATER    , potion_name="Tincture"   , poison=cm.ICHOR        , poison_name="Poison II"  }  -- 10
-    , { potion=cm.PRISTINE_WATER , potion_name="Dram"       , poison=cm.SLIME        , poison_name="Poison III" }  -- 20
-    , { potion=cm.CLEANSED_WATER , potion_name="Potion"     , poison=cm.GALL         , poison_name="Poison IV"  }  -- 30
-    , { potion=cm.FILTERED_WATER , potion_name="Solution"   , poison=cm.TEREBINTHINE , poison_name="Poison V"   }  -- 40
-    , { potion=cm.PURIFIED_WATER , potion_name="Elixir"     , poison=cm.PITCH_BILE   , poison_name="Poison VI"  }  -- CP10
-    , { potion=cm.CLOUD_MIST     , potion_name="Panacea"    , poison=cm.TARBLACK     , poison_name="Poison VII" }  -- CP50
-    , { potion=cm.STAR_DEW       , potion_name="Distillate" , poison=cm.NIGHT_OIL    , poison_name="Poison VIII"}  -- CP100
-    , { potion=cm.LORKHANS_TEARS , potion_name="Essence"    , poison=cm.ALKAHEST     , poison_name="Poison IX"  }  -- CP150
-    }
+    local POISON = "poison"
+    local POTION = "potion"
 
--- ZYLOH: after you teach an alt all traits, come back and fill in
--- this table with reagent pairs that will produce these 9 potions/poisons
--- requested by daily crafting writs.
---
--- Then use GetAlchemyResultingItemInfo(bag numbas) to get potion/poison names
---
--- For each potion/poison by reagent
---  extract its full name "Drain Health Poison IX" then regex it down to
---      "Drain Health", for each lang
---  extract its item_id, too. Use that as a saved_var key
--- For each potion/poison by solvent rank,
---  extract its full name "Drain Health Poison IX" then regex it down to
---      "Poison IX", for each lang
---
--- saved_var.alchemy.solvent_potion[rank][lang] = "Essence"
--- saved_var.alchemy.solvent_poison[rank][lang] = "Poison IX"
--- saved_var.alchemy.crafted_item[item_id][lang] = "Drain Health"
+    local SOLVENT = {
+                      [POTION] = cm.NATURAL_WATER
+                    , [POISON] = cm.GREASE
+                    }
+    local REAGENT = {
+          ["Health"        ] = { cm.BLUE_ENTOLOMA    , cm.BUTTERFLY_WING }
+        , ["Magicka"       ] = { cm.BUGLOSS          , cm.CORN_FLOWER    }
+        , ["Stamina"       ] = { cm.BLESSED_THISTLE  , cm.COLUMBINE      }
+        , ["Ravage Health" ] = { cm.BLESSED_THISTLE  , cm.CORN_FLOWER    }
+        , ["Ravage Magicka"] = { cm.BLUE_ENTOLOMA    , cm.SCRIB_JELLY    }
+        , ["Ravage Stamina"] = { cm.EMETIC_RUSSULA   , cm.FLESHFLY_LARVA }
+        }
+    local lang = self.CurrLang()
+    self.IndexBags()
+    self.saved_var.alchemy = self.saved_var.alchemy or {}
+    for solvent_key,solvent in pairs(SOLVENT) do
+        self.saved_var.alchemy[solvent_key] = self.saved_var.alchemy[solvent_key] or {}
+        local sol_mat_bag = self.ToMatBag(solvent)
+        for reagent_key, reagent_list in pairs(REAGENT) do
+            local r1_mat_bag = self.ToMatBag(reagent_list[1])
+            local r2_mat_bag = self.ToMatBag(reagent_list[2])
+            local args = { sol_mat_bag.bag_id, sol_mat_bag.slot_id
+                         , r1_mat_bag.bag_id , r1_mat_bag.slot_id
+                         , r2_mat_bag.bag_id , r2_mat_bag.slot_id
+                         }
+            local potion_name = GetAlchemyResultingItemInfo(unpack(args))
+            potion_name = Decaret(potion_name)
 
--- GetAlchemyResultingItemInfo(number Bag solventBagId, number solventSlotIndex, number Bag reagent1BagId, number reagent1SlotIndex, number Bag reagent2BagId, number reagent2SlotIndex, number:nilable Bag reagent3BagId, number:nilable reagent3SlotIndex)
--- Returns: string name, textureName icon, number stack, number sellPrice, boolean meetsUsageRequirement, number EquipType equipType, number itemStyleId, number ItemQuality quality, number ProspectiveAlchemyResult prospectiveAlchemyResult
+                        -- Potion/Poison name
+            local RE_POTION  = {
+                                   en = { "sip of (.*)"
+                                        , "(.*) poison i" }
+                               ,   de = { "schlückchen [ders]+ (.*)"
+                                        , "gift [ders]+ (.*) i" }
+                               ,   fr = { "gorgée de (.*)"
+                                        , "poison de (.*) i" }
+                               ,   es = { "sorbo de (.*)"
+                                        , "veneno de (.*) i" }
+                               ,   it = { "(.*)"
+                                        , "(.*) poison" }
+                               ,   ru = { "sip of (.*)"
+                                        , "(.*) poison i" }
+                               ,   ja = { "(.*) の雫"
+                                        , "(.*)の毒 1" }
+                               }
 
-    local ALCHEMY_DRINKS = {
 
--- , { , solvent=cm.ALKAHEST       }-- Damage Health Poison IX
--- , { , solvent=cm.ALKAHEST       }-- Damage Magicka Poison IX
--- , { , solvent=cm.ALKAHEST       }-- Damage Stamina Poison IX
--- , { , solvent=cm.ALKAHEST       }-- Drain Health Poison IX
--- , { , solvent=cm.LORKHANS_TEARS }-- Health
--- , { , solvent=cm.LORKHANS_TEARS }-- Magicka
--- , { , solvent=cm.LORKHANS_TEARS }-- Ravage Magicka
--- , { , solvent=cm.LORKHANS_TEARS }-- Stamina
--- , { , solvent=cm.LORKHANS_TEARS }-- Ravage Stamina
+            local name = potion_name
+            local found = nil
+            for _,re in ipairs(RE_POTION[lang]) do
+                local _,_,f = string.find(potion_name:lower(), re)
+                if f then
+                    found = f
+                end
+            end
+            if found then
+                name = found
+            else
+                Error(string.format("potion name '%s'",name))
+            end
+            self.saved_var.alchemy[solvent_key][reagent_key]
+                = self.saved_var.alchemy[solvent_key][reagent_key] or {}
+            self.saved_var.alchemy[solvent_key][reagent_key][lang] = name
+        end
+    end
 
-}
+        -- local solvent_name = nil
+    local RANK_SOLVENT = {
+                           { cm.NATURAL_WATER  , cm.GREASE        }
+                         , { cm.CLEAR_WATER    , cm.ICHOR         }
+                         , { cm.PRISTINE_WATER , cm.SLIME         }
+                         , { cm.CLEANSED_WATER , cm.GALL          }
+                         , { cm.FILTERED_WATER , cm.TEREBINTHINE  }
+                         , { cm.PURIFIED_WATER , cm.PITCH_BILE    }
+                         , { cm.CLOUD_MIST     , cm.TARBLACK      }
+                         , { cm.STAR_DEW       , cm.NIGHT_OIL     }
+                         , { cm.LORKHANS_TEARS , cm.ALKAHEST      }
+                         }
+    local key_sol = {"potion", "poison"}
+    local r1_mat_bag = self.ToMatBag(cm.BLUE_ENTOLOMA)
+    local r2_mat_bag = self.ToMatBag(cm.BUTTERFLY_WING)
+    for i,sol_pair in pairs(RANK_SOLVENT) do
+        for potion_poison_i, solvent in ipairs(sol_pair) do
+            key = key_sol[potion_poison_i]
+            sol_mat_bag = self.ToMatBag(solvent)
 
+            local args = { sol_mat_bag.bag_id, sol_mat_bag.slot_id
+                         , r1_mat_bag.bag_id , r1_mat_bag.slot_id
+                         , r2_mat_bag.bag_id , r2_mat_bag.slot_id
+                         }
+            local potion_name = GetAlchemyResultingItemInfo(unpack(args))
+            potion_name = Decaret(potion_name)
 
+                        -- Essence/Poison IX
+            local RE_SOLVENT = {
+                                   en = { "(.*) of health"
+                                        , "drain health poison (.*)" }
+                               ,   de = { "(.*) des lebens"
+                                        , "gift des lebensentzugs (.*)" }
+                               ,   fr = { "(.*) de santé"
+                                        , "poison de drain de santé (.*)" }
+                               ,   es = { "(.*) de salud"
+                                        , "veneno de absorción de vida (.*)" }
+                                        -- Italian lacks "Essence" or "IX" rank
+                                        -- words. Potion name is just "Health".
+                               ,   it = { "(.*) of health"
+                                        , "drain health poison (.*)" }
+                               ,   ru = { "(.*) of health"
+                                        , "drain health poison (.*)" }
+                               ,   ja = { "体力 の(.*)"
+                                        , "(.*):体力"
+                                        , "体力吸収の毒 (.*)" }
+                               }
 
+            local name = potion_name
+            local found = nil
+            for _,re in ipairs(RE_SOLVENT[lang]) do
+                local _,_,f = string.find(potion_name:lower(), re)
+                if f then
+                    found = f
+                end
+            end
+            if found then
+                name = found
+            else
+                Error(string.format("solvent name '%s'",name))
+            end
+            self.saved_var.alchemy.solvent = self.saved_var.alchemy.solvent or {}
+            self.saved_var.alchemy.solvent[key]
+                = self.saved_var.alchemy.solvent[key] or {}
+            self.saved_var.alchemy.solvent[key][i]
+                = self.saved_var.alchemy.solvent[key][i] or {}
+            self.saved_var.alchemy.solvent[key][i][lang] = name
+        end
+    end
 end
 
 function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
