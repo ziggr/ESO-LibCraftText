@@ -1502,8 +1502,15 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
         self.saved_var.alchemy.trait[i][lang] = name
     end
 
-    --[[
-                        -- Discover trait names.
+                        -- Discover item names and links for single-trait potions and poisons.
+                        -- Their item NAMES will match master writ "Damage Health Poison IX"
+                        --
+                        -- So this same iteration might be useful
+
+    -- potion: "|H0:item:54339:30:3:0:0:0:0:0:0:0:0:0:0:0:0:36:0:0:0:0:65536|h|h",
+    -- poison: "|H0:item:76826:30:3:0:0:0:0:0:0:0:0:0:0:0:0:36:0:0:0:0:65536|h|h",
+    --                    ^ varies by effect                           ^ identifies potion traits
+    --
     local TRAITS = {
               [ 1] = { index= 1, reagent_list={cm.WATER_HYACINTH    , cm.BLUE_ENTOLOMA                          }} -- Restore Health
             , [ 2] = { index= 2, reagent_list={cm.VIOLET_COPRINUS   , cm.NIRNROOT                               }} -- Ravage Health
@@ -1536,12 +1543,15 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
             , [29] = { index=29, reagent_list={cm.BUTTERFLY_WING    , cm.TORCHBUG_THORAX                        }} -- Vitality
             , [30] = { index=30, reagent_list={cm.CLAM_GALL         , cm.NIGHTSHADE                             }} -- Defile
             }
-    local potion_mat_bag = self.ToMatBag(cm.NATURAL_WATER)
-    local poison_mat_bag = self.ToMatBag(cm.GREASE       )
+    local potion_mat_bag = self.ToMatBag(cm.LORKHANS_TEARS)
+    local poison_mat_bag = self.ToMatBag(cm.ALKAHEST      )
 
-    self.saved_var.alchemy.link = self.saved_var.alchemy.link or {}
-    self.saved_var.alchemy.link.potion = self.saved_var.alchemy.link.potion or {}
-    self.saved_var.alchemy.link.poison = self.saved_var.alchemy.link.poison or {}
+    self.saved_var.alchemy.link  = self.saved_var.alchemy.link or {}
+    local saved_var_link         = self.saved_var.alchemy.link -- for less typing
+    saved_var_link.potion        = saved_var_link.potion or {}
+    saved_var_link.poison        = saved_var_link.poison or {}
+    saved_var_link.master_potion = saved_var_link.master_potion or {}
+    saved_var_link.master_poison = saved_var_link.master_poison or {}
     for i,trait in ipairs(TRAITS) do
         local r1_mat_bag = self.ToMatBag(trait.reagent_list[1])
         local r2_mat_bag = self.ToMatBag(trait.reagent_list[2])
@@ -1552,6 +1562,7 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
                      , r3_mat_bag.bag_id    , r3_mat_bag.slot_id
                      }
         local potion_link = GetAlchemyResultingItemLink(unpack(args))
+        local potion_name = GetAlchemyResultingItemInfo(unpack(args))
 
         args       = { poison_mat_bag.bag_id, poison_mat_bag.slot_id
                      , r1_mat_bag.bag_id    , r1_mat_bag.slot_id
@@ -1559,11 +1570,15 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
                      , r3_mat_bag.bag_id    , r3_mat_bag.slot_id
                      }
         local poison_link = GetAlchemyResultingItemLink(unpack(args))
+        local poison_name = GetAlchemyResultingItemInfo(unpack(args))
+        saved_var_link.master_potion[i] = saved_var_link.master_potion[i] or {}
+        saved_var_link.master_poison[i] = saved_var_link.master_poison[i] or {}
+        saved_var_link.master_potion[i][lang] = potion_name
+        saved_var_link.master_poison[i][lang] = poison_name
+        saved_var_link.potion[i] = potion_link
+        saved_var_link.poison[i] = poison_link
 
-        self.saved_var.alchemy.link.potion[i] = potion_link
-        self.saved_var.alchemy.link.poison[i] = poison_link
     end
-    ]]
 end
 
 function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
