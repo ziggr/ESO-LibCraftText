@@ -116,6 +116,9 @@ function TestGen.OneTest(input_en, expect)
     if test_func then
         local got = test_func(crafting_type, input)
         luaunit.assertEquals(got, real_expect, input_en.."/"..input)
+
+        got = LibCraftText.ParseDailyCondition(crafting_type, input)
+        luaunit.assertEquals(got, real_expect, input_en.."/"..input)
     end
 end
 

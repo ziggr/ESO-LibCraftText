@@ -4,6 +4,15 @@ local function ZZDEBUG_ON(msg) print(msg) end
 local function ZZDEBUG_OFF(msg) end
 local ZZDEBUG = ZZDEBUG_OFF
 
+                        -- So that this file can run outside of ESO.
+local CRAFTING_TYPE_BLACKSMITHING   = CRAFTING_TYPE_BLACKSMITHING   or 1
+local CRAFTING_TYPE_CLOTHIER        = CRAFTING_TYPE_CLOTHIER        or 2
+local CRAFTING_TYPE_ENCHANTING      = CRAFTING_TYPE_ENCHANTING      or 3
+local CRAFTING_TYPE_ALCHEMY         = CRAFTING_TYPE_ALCHEMY         or 4
+local CRAFTING_TYPE_PROVISIONING    = CRAFTING_TYPE_PROVISIONING    or 5
+local CRAFTING_TYPE_WOODWORKING     = CRAFTING_TYPE_WOODWORKING     or 6
+local CRAFTING_TYPE_JEWELRYCRAFTING = CRAFTING_TYPE_JEWELRYCRAFTING or 7
+
 -- Daily Crafting Writ Quests ------------------------------------------------
 
 -- Return CRAFTING_TYPE_BLACKSMITHING for "Blacksmithing Writ" and so on.
@@ -19,6 +28,56 @@ function LibCraftText.DailyQuestNameToCraftingType(quest_name)
     return LibCraftText.DAILY_QUEST_TITLES[quest_name]
 end
 
+-- Return a table that describes what this quest condtion requires.
+--
+-- Table fields vary depending on crafting type and condition, but field
+-- values will be rows from lang/xx.lua tables.
+--
+--              BS/CL/WW/JW         "Craft Normal Rubedite Sword"
+-- item         ITEM                H1_SWORD
+-- material     MATERIAL            RUBEDITE
+--
+--              Enchanting          "Craft Grand Glyph of Health With Ta"
+-- potency      CONSUMABLE_MATERIAL DERADO
+-- essence      "                   OKO
+-- aspect       "                   TA
+--
+--              Alchemy             "Craft Essence of Ravage Health"
+-- trait        ALCHEMY_TRAIT       RAVAGE_HEALTH
+-- solvent      CONSUMABLE_MATERIAL LORKHANS_TEARS
+--
+--              Provisioning        "Craft Baked Potato"
+-- item         RECIPE              BAKED_POTATO
+--
+--              Enchanting, Alchemy "Acquire Ta Aspect Rune"
+-- material     CONSUMABLE_MATERIAL TA
+--
+--              Miscellaneous       "Deliver Goods to Nearest Writ Quartermaster"
+-- misc         DAILY_COND          DELIVER_NEAREST_QUARTERMASTER
+--
+function LibCraftText.ParseDailyCondition(crafting_type, cond_text)
+
+    if not LibCraftText.CRAFTING_TYPE_TO_DAILY_PARSER then
+        LibCraftText.CRAFTING_TYPE_TO_DAILY_PARSER = {
+            [CRAFTING_TYPE_BLACKSMITHING  ] = LibCraftText.ParseDailyConditionEquipment
+        ,   [CRAFTING_TYPE_CLOTHIER       ] = LibCraftText.ParseDailyConditionEquipment
+        ,   [CRAFTING_TYPE_ENCHANTING     ] = LibCraftText.ParseDailyConditionConsumable
+        ,   [CRAFTING_TYPE_ALCHEMY        ] = LibCraftText.ParseDailyConditionConsumable
+        ,   [CRAFTING_TYPE_PROVISIONING   ] = LibCraftText.ParseDailyConditionConsumable
+        ,   [CRAFTING_TYPE_WOODWORKING    ] = LibCraftText.ParseDailyConditionEquipment
+        ,   [CRAFTING_TYPE_JEWELRYCRAFTING] = LibCraftText.ParseDailyConditionEquipment
+        }
+    end
+
+    local func = nil
+    if crafting_type then
+        func = LibCraftText.CRAFTING_TYPE_TO_DAILY_PARSER[crafting_type]
+    end
+    if not func then
+        func = LibCraftText.ParseDailyConditionMisc
+    end
+    return func(crafting_type, cond_text)
+end
 
 -- Master Crafting Writ Quests -----------------------------------------------
 
@@ -672,3 +731,7 @@ function LibCraftText.hex_dump(buf)
      if i % 16 == 0 then io.write( buf:sub(i-16+1, i):gsub('%c','.'), '\n' ) end
   end
 end
+
+
+
+
