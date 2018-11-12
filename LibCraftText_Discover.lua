@@ -1556,6 +1556,7 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
         local r1_mat_bag = self.ToMatBag(trait.reagent_list[1])
         local r2_mat_bag = self.ToMatBag(trait.reagent_list[2])
         local r3_mat_bag = self.ToMatBag(trait.reagent_list[3]) or {}
+
         local args = { potion_mat_bag.bag_id, potion_mat_bag.slot_id
                      , r1_mat_bag.bag_id    , r1_mat_bag.slot_id
                      , r2_mat_bag.bag_id    , r2_mat_bag.slot_id
@@ -1563,6 +1564,7 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
                      }
         local potion_link = GetAlchemyResultingItemLink(unpack(args))
         local potion_name = GetAlchemyResultingItemInfo(unpack(args))
+        potion_name = Decaret(potion_name)
 
         args       = { poison_mat_bag.bag_id, poison_mat_bag.slot_id
                      , r1_mat_bag.bag_id    , r1_mat_bag.slot_id
@@ -1571,6 +1573,8 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
                      }
         local poison_link = GetAlchemyResultingItemLink(unpack(args))
         local poison_name = GetAlchemyResultingItemInfo(unpack(args))
+        poison_name = Decaret(poison_name)
+
         saved_var_link.master_potion[i] = saved_var_link.master_potion[i] or {}
         saved_var_link.master_poison[i] = saved_var_link.master_poison[i] or {}
         saved_var_link.master_potion[i][lang] = potion_name
