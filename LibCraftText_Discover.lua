@@ -1409,6 +1409,100 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
         end
     end
 
+                        -- Dump all 4 traits of all 28 reagents.
+                        -- Not used for lang_db, but helpful to know when
+                        -- adding new traits or reagents to the db.
+                        --
+                        -- Useful only in english, so not bothering to
+                        -- break out into [lang] sub tables.
+    local ALL_REAGENTS = {
+                 cm.BLESSED_THISTLE
+               , cm.BLUE_ENTOLOMA
+               , cm.BUGLOSS
+               , cm.COLUMBINE
+               , cm.CORN_FLOWER
+               , cm.DRAGONTHORN
+               , cm.EMETIC_RUSSULA
+               , cm.IMP_STOOL
+               , cm.LADYS_SMOCK
+               , cm.LUMINOUS_RUSSULA
+               , cm.MOUNTAIN_FLOWER
+               , cm.NAMIRAS_ROT
+               , cm.NIRNROOT
+               , cm.STINKHORN
+               , cm.VIOLET_COPRINUS
+               , cm.WATER_HYACINTH
+               , cm.WHITE_CAP
+               , cm.WORMWOOD
+               , cm.BEETLE_SCUTTLE
+               , cm.BUTTERFLY_WING
+               , cm.FLESHFLY_LARVA
+               , cm.MUDCRAB_CHITIN
+               , cm.NIGHTSHADE
+               , cm.SCRIB_JELLY
+               , cm.SPIDER_EGG
+               , cm.TORCHBUG_THORAX
+               , cm.CLAM_GALL
+               , cm.POWDERED_MOTHER_OF_PEARL
+               }
+    self.saved_var.alchemy.reagent_traits = self.saved_var.alchemy.reagent_traits or {}
+    local template = "|H1:item:%d:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h"
+    for i,t in ipairs(ALL_REAGENTS) do
+        self.saved_var.alchemy.reagent_traits[i] = self.saved_var.alchemy.reagent_traits[i] or {}
+        self.saved_var.alchemy.reagent_traits[i].name = t.name
+        for ti = 1,4 do
+            local link = template:format(t.item_id)
+            _,name = GetItemLinkReagentTraitInfo(link, ti)
+            self.saved_var.alchemy.reagent_traits[i][ti] = name
+        end
+    end
+
+                        -- Discover trait names in all languages.
+                        --
+                        -- I assume/hope that traits don't move around within
+                        -- their 4 slots of a reagent.
+    local TRAITS_K = {
+              [ 1] = { index= 1, reagent=cm.BLUE_ENTOLOMA    , trait_index=3 } -- Restore Health
+            , [ 2] = { index= 2, reagent=cm.BLESSED_THISTLE  , trait_index=3 } -- Ravage Health
+            , [ 3] = { index= 3, reagent=cm.BUGLOSS          , trait_index=4 } -- Restore Magicka
+            , [ 4] = { index= 4, reagent=cm.BLUE_ENTOLOMA    , trait_index=1 } -- Ravage Magicka
+            , [ 5] = { index= 5, reagent=cm.BLESSED_THISTLE  , trait_index=1 } -- Restore Stamina
+            , [ 6] = { index= 6, reagent=cm.EMETIC_RUSSULA   , trait_index=3 } -- Ravage Stamina
+            , [ 7] = { index= 7, reagent=cm.BUGLOSS          , trait_index=1 } -- Increase Spell Resist
+            , [ 8] = { index= 8, reagent=cm.LADYS_SMOCK      , trait_index=3 } -- Breach
+            , [ 9] = { index= 9, reagent=cm.IMP_STOOL        , trait_index=3 } -- Increase Armor
+            , [10] = { index=10, reagent=cm.DRAGONTHORN      , trait_index=3 } -- Fracture
+            , [11] = { index=11, reagent=cm.CORN_FLOWER      , trait_index=2 } -- Increase Spell Power
+            , [12] = { index=12, reagent=cm.BLUE_ENTOLOMA    , trait_index=2 } -- Cowardice
+            , [13] = { index=13, reagent=cm.BLESSED_THISTLE  , trait_index=2 } -- Increase Weapon Power
+            , [14] = { index=14, reagent=cm.IMP_STOOL        , trait_index=1 } -- Maim
+            , [15] = { index=15, reagent=cm.LADYS_SMOCK      , trait_index=4 } -- Spell Critical
+            , [16] = { index=16, reagent=cm.NIRNROOT         , trait_index=2 } -- Uncertainty
+            , [17] = { index=17, reagent=cm.DRAGONTHORN      , trait_index=4 } -- Weapon Critical
+            , [18] = { index=18, reagent=cm.IMP_STOOL        , trait_index=4 } -- Enervation
+            , [19] = { index=19, reagent=cm.COLUMBINE        , trait_index=4 } -- Unstoppable
+            , [20] = { index=20, reagent=cm.EMETIC_RUSSULA   , trait_index=4 } -- Entrapment
+            , [21] = { index=21, reagent=cm.CORN_FLOWER      , trait_index=4 } -- Detection
+            , [22] = { index=22, reagent=cm.BLUE_ENTOLOMA    , trait_index=4 } -- Invisible
+            , [23] = { index=23, reagent=cm.BLESSED_THISTLE  , trait_index=4 } -- Speed
+            , [24] = { index=24, reagent=cm.LUMINOUS_RUSSULA , trait_index=4 } -- Hindrance
+            , [25] = { index=25, reagent=cm.BEETLE_SCUTTLE   , trait_index=3 } -- Protection
+            , [26] = { index=26, reagent=cm.FLESHFLY_LARVA   , trait_index=2 } -- Vulnerability
+            , [27] = { index=27, reagent=cm.BUTTERFLY_WING   , trait_index=3 } -- Lingering Health
+            , [28] = { index=28, reagent=cm.FLESHFLY_LARVA   , trait_index=3 } -- Gradual Ravage Health
+            , [29] = { index=29, reagent=cm.BEETLE_SCUTTLE   , trait_index=4 } -- Vitality
+            , [30] = { index=30, reagent=cm.NIGHTSHADE       , trait_index=4 } -- Defile
+            }
+    self.saved_var.alchemy.trait = self.saved_var.alchemy.trait or {}
+    local template = "|H1:item:%d:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0:0|h|h"
+    for i,t in ipairs(TRAITS_K) do
+        local link = template:format(t.reagent.item_id)
+        _,name = GetItemLinkReagentTraitInfo(link, t.trait_index)
+        self.saved_var.alchemy.trait[i] = self.saved_var.alchemy.trait[i] or {}
+        self.saved_var.alchemy.trait[i][lang] = name
+    end
+
+    --[[
                         -- Discover trait names.
     local TRAITS = {
               [ 1] = { index= 1, reagent_list={cm.WATER_HYACINTH    , cm.BLUE_ENTOLOMA                          }} -- Restore Health
@@ -1469,7 +1563,7 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
         self.saved_var.alchemy.link.potion[i] = potion_link
         self.saved_var.alchemy.link.poison[i] = poison_link
     end
-
+    ]]
 end
 
 function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
