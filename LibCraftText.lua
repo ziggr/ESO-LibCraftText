@@ -343,17 +343,6 @@ function LibCraftText.ParseDailyConditionProvisioning(cond_text)
                                  , self.RECIPE
                                  , { "name", "name_2" }
                                  )
-if not found_item then
-    ZZDEBUG=ZZDEBUG_ON
-    local found_item    = self.ParseRegexable(
-                                   nil
-                                 , cond_text
-                                 , self.RE_CONDITION_DAILY_RECIPE[lang]
-                                 , self.RECIPE
-                                 , { "name", "name_2" }
-                                 )
-    ZZDEBUG=ZZDEBUG_OFF
-end
     if found_item then
         return { item = found_item }
     end
@@ -435,7 +424,9 @@ LibCraftText.RE_ALCHEMY_TRAIT = {
 ,   fr = { "Fabriquer un poison de (.*) [IVX]+"
          , "Préparez une goutte de (.*)"}
 ,   es = { "Prepara un veneno de (.*) [IVX]+"
+         , "Prepara veneno de (.*) [IVX]+"
          , "Prepara un trago de (.*)" }   -- Must come after veneno re.
+         -- Prepara veneno de absorción de vida IX
 ,   it = { "(.*) glyph of"}         -- "health" for all 9 ranks.
 ,   ru = { "Craft .* of (.*)"
          , "Craft (.*) Poison" }
@@ -447,7 +438,7 @@ LibCraftText.RE_ALCHEMY_SOLVENT = {
 ,   de = { "Stellt etwas Gift [ders]+ .* ([IVX]+) her"
          , "Stellt (.*) [ders]+ .* her" }   -- Must come after Gift re.
 ,   fr = { "([IVX]+)$"
-         , "Préparez une? (.*) de Santé"  }
+         , "Préparez une? (.*) de (.*)"  }
 ,   es = { "([IVX]+)$"
          , "Prepara un (.*) de .*" }
 ,   it = { "(.*) glyph of"}         -- "health" for all 9 ranks.
@@ -455,7 +446,6 @@ LibCraftText.RE_ALCHEMY_SOLVENT = {
          , "Craft (.*) of " }
 ,   ja = { "毒(.*)を生産する"
          , ".*の(.*)を生産する"}
-    -- 体力の飲み薬を生産する
 }
 
 function LibCraftText.ParseDailyConditionAlchemy(cond_text)
@@ -471,6 +461,7 @@ function LibCraftText.ParseDailyConditionAlchemy(cond_text)
                         )
 if not trait then
     ZZDEBUG=ZZDEBUG_ON
+    ZZDEBUG(string.format("### cond_text:'%s'", cond_text))
     local trait = self.ParseRegexable(
                           nil
                         , cond_text
@@ -479,6 +470,7 @@ if not trait then
                         , { "daily_potion_name"
                           , "daily_poison_name", "daily_poison_name2" }
                         )
+    ZZDEBUG(string.format("### debug off"))
     ZZDEBUG=ZZDEBUG_OFF
 end
     local solvent = self.ParseRegexable(
@@ -523,10 +515,13 @@ function LibCraftText.ParseRegexableOneRE( crafting_type
                                          )
     local self   = LibCraftText
     local _,_,g1 = string.find(cond_text, re)
-    if not g1 then return nil end
+    if not g1 then
+        ZZDEBUG(string.format("### ParseRegexableOneRE() no match cond_text:'%s'  re:'%s'", cond_text, re))
+        return nil
+    end
     local cond_sub_str = g1
+    ZZDEBUG(string.format("### cond_sub_str:'%s'", cond_sub_str))
     cond_sub_str = cond_sub_str:lower()
-ZZDEBUG(string.format("cond_sub_str:'%s'", cond_sub_str))
     local exact_match = self.ExactMatch(cond_sub_str, result_list , crafting_type
                             , unpack(result_name_field_list))
     if exact_match then return exact_match end

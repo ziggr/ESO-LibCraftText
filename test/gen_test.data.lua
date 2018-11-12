@@ -59,14 +59,14 @@ COND_TEXT_FODDER = {
 , { input="Craft Comely Wench Whiskey"                      , expect={ item=LCT.RECIPE.COMELY_WENCH_WHISKEY             } }
 , { input="Craft Cyrodilic Cornbread"                       , expect={ item=LCT.RECIPE.CYRODILIC_CORNBREAD              } }
 , { input="Craft Cyrodilic Pumpkin Fritters"                , expect={ item=LCT.RECIPE.CYRODILIC_PUMPKIN_FRITTERS       } }
-, { input="Craft Damage Health Poison IX"                   , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH, solvent=LCT.CONSUMABLE_MATERIAL.ALKAHEST } }
-, { input="Craft Damage Magicka Poison IX"                  , expect={}                                                 }
-, { input="Craft Damage Stamina Poison IX"                  , expect={}                                                 }
-, { input="Craft Drain Health Poison IX"                    , expect={}                                                 }
-, { input="Craft Dram of Health"                            , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_HEALTH, solvent=LCT.CONSUMABLE_MATERIAL.PRISTINE_WATER } }
-, { input="Craft Dram of Magicka"                           , expect={}                                                 }
-, { input="Craft Dram of Ravage Magicka"                    , expect={}                                                 }
-, { input="Craft Dram of Stamina"                           , expect={}                                                 }
+, { input="Craft Damage Health Poison IX"                   , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH  , solvent=LCT.CONSUMABLE_MATERIAL.ALKAHEST } }
+, { input="Craft Damage Magicka Poison IX"                  , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_MAGICKA , solvent=LCT.CONSUMABLE_MATERIAL.ALKAHEST } }
+, { input="Craft Damage Stamina Poison IX"                  , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_STAMINA , solvent=LCT.CONSUMABLE_MATERIAL.ALKAHEST } }
+, { input="Craft Drain Health Poison IX"                    , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_HEALTH , solvent=LCT.CONSUMABLE_MATERIAL.ALKAHEST } }
+, { input="Craft Dram of Health"                            , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_HEALTH , solvent=LCT.CONSUMABLE_MATERIAL.PRISTINE_WATER } }
+, { input="Craft Dram of Magicka"                           , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_MAGICKA, solvent=LCT.CONSUMABLE_MATERIAL.PRISTINE_WATER } }
+, { input="Craft Dram of Ravage Magicka"                    , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_MAGICKA , solvent=LCT.CONSUMABLE_MATERIAL.PRISTINE_WATER } }
+, { input="Craft Dram of Stamina"                           , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_STAMINA, solvent=LCT.CONSUMABLE_MATERIAL.PRISTINE_WATER } }
 , { input="Craft Elinhir Roast Antelope"                    , expect={ item=LCT.RECIPE.ELENHIR_ROAST_ANTELOPE           } }
 , { input="Craft Elixir of Health"                          , expect={}                                                 }
 , { input="Craft Elixir of Magicka"                         , expect={}                                                 }
