@@ -63,7 +63,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Damage Magicka Poison IX"                  , expect={}                                                 }
 , { input="Craft Damage Stamina Poison IX"                  , expect={}                                                 }
 , { input="Craft Drain Health Poison IX"                    , expect={}                                                 }
-, { input="Craft Dram of Health"                            , expect={}                                                 }
+, { input="Craft Dram of Health"                            , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_HEALTH, solvent=LCT.CONSUMABLE_MATERIAL.PRISTINE_WATER } }
 , { input="Craft Dram of Magicka"                           , expect={}                                                 }
 , { input="Craft Dram of Ravage Magicka"                    , expect={}                                                 }
 , { input="Craft Dram of Stamina"                           , expect={}                                                 }

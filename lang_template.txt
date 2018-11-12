@@ -324,7 +324,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 
 , ["NATURAL_WATER"           ] = { name=$MATERIAL_AL_000883              , crafting_type=al, item_id=   883 , name_2=$MATERIAL_AL_000883B , rank=1, potion_name=$ALCHEMY_SOLVENT_POTION_1 }
 , ["CLEAR_WATER"             ] = { name=$MATERIAL_AL_001187              , crafting_type=al, item_id=  1187                               , rank=2, potion_name=$ALCHEMY_SOLVENT_POTION_2 }
-, ["PRISTINE_WATER"          ] = { name=$MATERIAL_AL_004570              , crafting_type=al, item_id=  4570 , name_2=$MATERIAL_AL_004570B , rank=3, potion_name=$ALCHEMY_SOLVENT_POTION_3 }
+, ["PRISTINE_WATER"          ] = { name=$MATERIAL_AL_004570              , crafting_type=al, item_id=  4570 , name_2=$MATERIAL_AL_004570B , rank=3, potion_name=$ALCHEMY_SOLVENT_POTION_3 , potion_name2=$ALCHEMY_SOLVENT_POTION_3B }
 , ["CLEANSED_WATER"          ] = { name=$MATERIAL_AL_023265              , crafting_type=al, item_id= 23265 , name_2=$MATERIAL_AL_023265B , rank=4, potion_name=$ALCHEMY_SOLVENT_POTION_4 }
 , ["FILTERED_WATER"          ] = { name=$MATERIAL_AL_023266              , crafting_type=al, item_id= 23266 , name_2=$MATERIAL_AL_023266B , rank=5, potion_name=$ALCHEMY_SOLVENT_POTION_5 }
 , ["PURIFIED_WATER"          ] = { name=$MATERIAL_AL_023267              , crafting_type=al, item_id= 23267 , name_2=$MATERIAL_AL_023267B , rank=6, potion_name=$ALCHEMY_SOLVENT_POTION_6 }
@@ -420,36 +420,36 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 --                  of master writ requests.
 --
 LibCraftText.ALCHEMY_TRAIT = {
-    ["RESTORE_HEALTH"         ] = { trait_index=01, name=$ALCHEMY_TRAIT_01      , master_potion=$ALCHEMY_MASTER_POTION_01           , master_poison=$ALCHEMY_MASTER_POISON_01           , daily_potion_name=$ALCHEMY_POTION_HEALTH         , daily_poison_name=$ALCHEMY_POISON_HEALTH         }
-,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name=$ALCHEMY_TRAIT_02      , master_potion=$ALCHEMY_MASTER_POTION_02           , master_poison=$ALCHEMY_MASTER_POISON_02           , daily_potion_name=$ALCHEMY_POTION_RAVAGE_HEALTH  , daily_poison_name=$ALCHEMY_POISON_RAVAGE_HEALTH  }
-,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name=$ALCHEMY_TRAIT_03      , master_potion=$ALCHEMY_MASTER_POTION_03           , master_poison=$ALCHEMY_MASTER_POISON_03           , daily_potion_name=$ALCHEMY_POTION_MAGICKA        , daily_poison_name=$ALCHEMY_POISON_MAGICKA        }
-,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name=$ALCHEMY_TRAIT_04      , master_potion=$ALCHEMY_MASTER_POTION_04           , master_poison=$ALCHEMY_MASTER_POISON_04           , daily_potion_name=$ALCHEMY_POTION_RAVAGE_MAGICKA , daily_poison_name=$ALCHEMY_POISON_RAVAGE_MAGICKA }
-,   ["RESTORE_STAMINA"        ] = { trait_index=05, name=$ALCHEMY_TRAIT_05      , master_potion=$ALCHEMY_MASTER_POTION_05           , master_poison=$ALCHEMY_MASTER_POISON_05           , daily_potion_name=$ALCHEMY_POTION_STAMINA        , daily_poison_name=$ALCHEMY_POISON_STAMINA        }
-,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name=$ALCHEMY_TRAIT_06      , master_potion=$ALCHEMY_MASTER_POTION_06           , master_poison=$ALCHEMY_MASTER_POISON_06           , daily_potion_name=$ALCHEMY_POTION_RAVAGE_STAMINA , daily_poison_name=$ALCHEMY_POISON_RAVAGE_STAMINA }
-,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name=$ALCHEMY_TRAIT_07      , master_potion=$ALCHEMY_MASTER_POTION_07           , master_poison=$ALCHEMY_MASTER_POISON_07           }
-,   ["BREACH"                 ] = { trait_index=08, name=$ALCHEMY_TRAIT_08      , master_potion=$ALCHEMY_MASTER_POTION_08           , master_poison=$ALCHEMY_MASTER_POISON_08           }
-,   ["INCREASE_ARMOR"         ] = { trait_index=09, name=$ALCHEMY_TRAIT_09      , master_potion=$ALCHEMY_MASTER_POTION_09           , master_poison=$ALCHEMY_MASTER_POISON_09           }
-,   ["FRACTURE"               ] = { trait_index=10, name=$ALCHEMY_TRAIT_10      , master_potion=$ALCHEMY_MASTER_POTION_10           , master_poison=$ALCHEMY_MASTER_POISON_10           }
-,   ["INCREASE_SPELL_POWER"   ] = { trait_index=11, name=$ALCHEMY_TRAIT_11      , master_potion=$ALCHEMY_MASTER_POTION_11           , master_poison=$ALCHEMY_MASTER_POISON_11           }
-,   ["COWARDICE"              ] = { trait_index=12, name=$ALCHEMY_TRAIT_12      , master_potion=$ALCHEMY_MASTER_POTION_12           , master_poison=$ALCHEMY_MASTER_POISON_12           }
-,   ["INCREASE_WEAPON_POWER"  ] = { trait_index=13, name=$ALCHEMY_TRAIT_13      , master_potion=$ALCHEMY_MASTER_POTION_13           , master_poison=$ALCHEMY_MASTER_POISON_13           }
-,   ["MAIM"                   ] = { trait_index=14, name=$ALCHEMY_TRAIT_14      , master_potion=$ALCHEMY_MASTER_POTION_14           , master_poison=$ALCHEMY_MASTER_POISON_14           }
-,   ["SPELL_CRITICAL"         ] = { trait_index=15, name=$ALCHEMY_TRAIT_15      , master_potion=$ALCHEMY_MASTER_POTION_15           , master_poison=$ALCHEMY_MASTER_POISON_15           }
-,   ["UNCERTAINTY"            ] = { trait_index=16, name=$ALCHEMY_TRAIT_16      , master_potion=$ALCHEMY_MASTER_POTION_16           , master_poison=$ALCHEMY_MASTER_POISON_16           }
-,   ["WEAPON_CRITICAL"        ] = { trait_index=17, name=$ALCHEMY_TRAIT_17      , master_potion=$ALCHEMY_MASTER_POTION_17           , master_poison=$ALCHEMY_MASTER_POISON_17           }
-,   ["ENERVATION"             ] = { trait_index=18, name=$ALCHEMY_TRAIT_18      , master_potion=$ALCHEMY_MASTER_POTION_18           , master_poison=$ALCHEMY_MASTER_POISON_18           }
-,   ["UNSTOPPABLE"            ] = { trait_index=19, name=$ALCHEMY_TRAIT_19      , master_potion=$ALCHEMY_MASTER_POTION_19           , master_poison=$ALCHEMY_MASTER_POISON_19           }
-,   ["ENTRAPMENT"             ] = { trait_index=20, name=$ALCHEMY_TRAIT_20      , master_potion=$ALCHEMY_MASTER_POTION_20           , master_poison=$ALCHEMY_MASTER_POISON_20           }
-,   ["DETECTION"              ] = { trait_index=21, name=$ALCHEMY_TRAIT_21      , master_potion=$ALCHEMY_MASTER_POTION_21           , master_poison=$ALCHEMY_MASTER_POISON_21           }
-,   ["INVISIBLE"              ] = { trait_index=22, name=$ALCHEMY_TRAIT_22      , master_potion=$ALCHEMY_MASTER_POTION_22           , master_poison=$ALCHEMY_MASTER_POISON_22           }
-,   ["SPEED"                  ] = { trait_index=23, name=$ALCHEMY_TRAIT_23      , master_potion=$ALCHEMY_MASTER_POTION_23           , master_poison=$ALCHEMY_MASTER_POISON_23           }
-,   ["HINDRANCE"              ] = { trait_index=24, name=$ALCHEMY_TRAIT_24      , master_potion=$ALCHEMY_MASTER_POTION_24           , master_poison=$ALCHEMY_MASTER_POISON_24           }
-,   ["PROTECTION"             ] = { trait_index=25, name=$ALCHEMY_TRAIT_25      , master_potion=$ALCHEMY_MASTER_POTION_25           , master_poison=$ALCHEMY_MASTER_POISON_25           }
-,   ["VULNERABILITY"          ] = { trait_index=26, name=$ALCHEMY_TRAIT_26      , master_potion=$ALCHEMY_MASTER_POTION_26           , master_poison=$ALCHEMY_MASTER_POISON_26           }
-,   ["LINGERING_HEALTH"       ] = { trait_index=27, name=$ALCHEMY_TRAIT_27      , master_potion=$ALCHEMY_MASTER_POTION_27           , master_poison=$ALCHEMY_MASTER_POISON_27           }
-,   ["GRADUAL_RAVAGE_HEALTH"  ] = { trait_index=28, name=$ALCHEMY_TRAIT_28      , master_potion=$ALCHEMY_MASTER_POTION_28           , master_poison=$ALCHEMY_MASTER_POISON_28           }
-,   ["VITALITY"               ] = { trait_index=29, name=$ALCHEMY_TRAIT_29      , master_potion=$ALCHEMY_MASTER_POTION_29           , master_poison=$ALCHEMY_MASTER_POISON_29           }
-,   ["DEFILE"                 ] = { trait_index=30, name=$ALCHEMY_TRAIT_30      , master_potion=$ALCHEMY_MASTER_POTION_30           , master_poison=$ALCHEMY_MASTER_POISON_30           }
+    ["RESTORE_HEALTH"         ] = { trait_index=01, name=$ALCHEMY_TRAIT_01          , master_potion=$ALCHEMY_MASTER_POTION_01           , master_poison=$ALCHEMY_MASTER_POISON_01           , daily_potion_name=$ALCHEMY_POTION_HEALTH         , daily_poison_name=$ALCHEMY_POISON_HEALTH         }
+,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name=$ALCHEMY_TRAIT_02          , master_potion=$ALCHEMY_MASTER_POTION_02           , master_poison=$ALCHEMY_MASTER_POISON_02           , daily_potion_name=$ALCHEMY_POTION_RAVAGE_HEALTH  , daily_poison_name=$ALCHEMY_POISON_RAVAGE_HEALTH  }
+,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name=$ALCHEMY_TRAIT_03          , master_potion=$ALCHEMY_MASTER_POTION_03           , master_poison=$ALCHEMY_MASTER_POISON_03           , daily_potion_name=$ALCHEMY_POTION_MAGICKA        , daily_poison_name=$ALCHEMY_POISON_MAGICKA        }
+,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name=$ALCHEMY_TRAIT_04          , master_potion=$ALCHEMY_MASTER_POTION_04           , master_poison=$ALCHEMY_MASTER_POISON_04           , daily_potion_name=$ALCHEMY_POTION_RAVAGE_MAGICKA , daily_poison_name=$ALCHEMY_POISON_RAVAGE_MAGICKA }
+,   ["RESTORE_STAMINA"        ] = { trait_index=05, name=$ALCHEMY_TRAIT_05          , master_potion=$ALCHEMY_MASTER_POTION_05           , master_poison=$ALCHEMY_MASTER_POISON_05           , daily_potion_name=$ALCHEMY_POTION_STAMINA        , daily_poison_name=$ALCHEMY_POISON_STAMINA        }
+,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name=$ALCHEMY_TRAIT_06          , master_potion=$ALCHEMY_MASTER_POTION_06           , master_poison=$ALCHEMY_MASTER_POISON_06           , daily_potion_name=$ALCHEMY_POTION_RAVAGE_STAMINA , daily_poison_name=$ALCHEMY_POISON_RAVAGE_STAMINA }
+,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name=$ALCHEMY_TRAIT_07          , master_potion=$ALCHEMY_MASTER_POTION_07           , master_poison=$ALCHEMY_MASTER_POISON_07           }
+,   ["BREACH"                 ] = { trait_index=08, name=$ALCHEMY_TRAIT_08          , master_potion=$ALCHEMY_MASTER_POTION_08           , master_poison=$ALCHEMY_MASTER_POISON_08           }
+,   ["INCREASE_ARMOR"         ] = { trait_index=09, name=$ALCHEMY_TRAIT_09          , master_potion=$ALCHEMY_MASTER_POTION_09           , master_poison=$ALCHEMY_MASTER_POISON_09           }
+,   ["FRACTURE"               ] = { trait_index=10, name=$ALCHEMY_TRAIT_10          , master_potion=$ALCHEMY_MASTER_POTION_10           , master_poison=$ALCHEMY_MASTER_POISON_10           }
+,   ["INCREASE_SPELL_POWER"   ] = { trait_index=11, name=$ALCHEMY_TRAIT_11          , master_potion=$ALCHEMY_MASTER_POTION_11           , master_poison=$ALCHEMY_MASTER_POISON_11           }
+,   ["COWARDICE"              ] = { trait_index=12, name=$ALCHEMY_TRAIT_12          , master_potion=$ALCHEMY_MASTER_POTION_12           , master_poison=$ALCHEMY_MASTER_POISON_12           }
+,   ["INCREASE_WEAPON_POWER"  ] = { trait_index=13, name=$ALCHEMY_TRAIT_13          , master_potion=$ALCHEMY_MASTER_POTION_13           , master_poison=$ALCHEMY_MASTER_POISON_13           }
+,   ["MAIM"                   ] = { trait_index=14, name=$ALCHEMY_TRAIT_14          , master_potion=$ALCHEMY_MASTER_POTION_14           , master_poison=$ALCHEMY_MASTER_POISON_14           }
+,   ["SPELL_CRITICAL"         ] = { trait_index=15, name=$ALCHEMY_TRAIT_15          , master_potion=$ALCHEMY_MASTER_POTION_15           , master_poison=$ALCHEMY_MASTER_POISON_15           }
+,   ["UNCERTAINTY"            ] = { trait_index=16, name=$ALCHEMY_TRAIT_16          , master_potion=$ALCHEMY_MASTER_POTION_16           , master_poison=$ALCHEMY_MASTER_POISON_16           }
+,   ["WEAPON_CRITICAL"        ] = { trait_index=17, name=$ALCHEMY_TRAIT_17          , master_potion=$ALCHEMY_MASTER_POTION_17           , master_poison=$ALCHEMY_MASTER_POISON_17           }
+,   ["ENERVATION"             ] = { trait_index=18, name=$ALCHEMY_TRAIT_18          , master_potion=$ALCHEMY_MASTER_POTION_18           , master_poison=$ALCHEMY_MASTER_POISON_18           }
+,   ["UNSTOPPABLE"            ] = { trait_index=19, name=$ALCHEMY_TRAIT_19          , master_potion=$ALCHEMY_MASTER_POTION_19           , master_poison=$ALCHEMY_MASTER_POISON_19           }
+,   ["ENTRAPMENT"             ] = { trait_index=20, name=$ALCHEMY_TRAIT_20          , master_potion=$ALCHEMY_MASTER_POTION_20           , master_poison=$ALCHEMY_MASTER_POISON_20           }
+,   ["DETECTION"              ] = { trait_index=21, name=$ALCHEMY_TRAIT_21          , master_potion=$ALCHEMY_MASTER_POTION_21           , master_poison=$ALCHEMY_MASTER_POISON_21           }
+,   ["INVISIBLE"              ] = { trait_index=22, name=$ALCHEMY_TRAIT_22          , master_potion=$ALCHEMY_MASTER_POTION_22           , master_poison=$ALCHEMY_MASTER_POISON_22           }
+,   ["SPEED"                  ] = { trait_index=23, name=$ALCHEMY_TRAIT_23          , master_potion=$ALCHEMY_MASTER_POTION_23           , master_poison=$ALCHEMY_MASTER_POISON_23           }
+,   ["HINDRANCE"              ] = { trait_index=24, name=$ALCHEMY_TRAIT_24          , master_potion=$ALCHEMY_MASTER_POTION_24           , master_poison=$ALCHEMY_MASTER_POISON_24           }
+,   ["PROTECTION"             ] = { trait_index=25, name=$ALCHEMY_TRAIT_25          , master_potion=$ALCHEMY_MASTER_POTION_25           , master_poison=$ALCHEMY_MASTER_POISON_25           }
+,   ["VULNERABILITY"          ] = { trait_index=26, name=$ALCHEMY_TRAIT_26          , master_potion=$ALCHEMY_MASTER_POTION_26           , master_poison=$ALCHEMY_MASTER_POISON_26           }
+,   ["LINGERING_HEALTH"       ] = { trait_index=27, name=$ALCHEMY_TRAIT_27          , master_potion=$ALCHEMY_MASTER_POTION_27           , master_poison=$ALCHEMY_MASTER_POISON_27           }
+,   ["GRADUAL_RAVAGE_HEALTH"  ] = { trait_index=28, name=$ALCHEMY_TRAIT_28          , master_potion=$ALCHEMY_MASTER_POTION_28           , master_poison=$ALCHEMY_MASTER_POISON_28           }
+,   ["VITALITY"               ] = { trait_index=29, name=$ALCHEMY_TRAIT_29          , master_potion=$ALCHEMY_MASTER_POTION_29           , master_poison=$ALCHEMY_MASTER_POISON_29           }
+,   ["DEFILE"                 ] = { trait_index=30, name=$ALCHEMY_TRAIT_30          , master_potion=$ALCHEMY_MASTER_POTION_30           , master_poison=$ALCHEMY_MASTER_POISON_30           }
 }
 
 

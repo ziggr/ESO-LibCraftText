@@ -324,7 +324,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 
 , ["NATURAL_WATER"           ] = { name="natural water"                  , crafting_type=al, item_id=   883 , name_2="natural water"      , rank=1, potion_name="sip"                     }
 , ["CLEAR_WATER"             ] = { name="clear water"                    , crafting_type=al, item_id=  1187                               , rank=2, potion_name="tincture"                }
-, ["PRISTINE_WATER"          ] = { name="pristine water"                 , crafting_type=al, item_id=  4570 , name_2="pristine water"     , rank=3, potion_name="dram"                    }
+, ["PRISTINE_WATER"          ] = { name="pristine water"                 , crafting_type=al, item_id=  4570 , name_2="pristine water"     , rank=3, potion_name="dram"                    , potion_name2="dram"                     }
 , ["CLEANSED_WATER"          ] = { name="cleansed water"                 , crafting_type=al, item_id= 23265 , name_2="cleansed water"     , rank=4, potion_name="potion"                  }
 , ["FILTERED_WATER"          ] = { name="filtered water"                 , crafting_type=al, item_id= 23266 , name_2="filtered water"     , rank=5, potion_name="solution"                }
 , ["PURIFIED_WATER"          ] = { name="purified water"                 , crafting_type=al, item_id= 23267 , name_2="purified water"     , rank=6, potion_name="elixir"                  }
@@ -420,36 +420,36 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 --                  of master writ requests.
 --
 LibCraftText.ALCHEMY_TRAIT = {
-    ["RESTORE_HEALTH"         ] = { trait_index=01, name="Restore Health"       , master_potion="Essence of health"                 , master_poison="Drain Health Poison IX"            , daily_potion_name="health"                       , daily_poison_name="drain health"                 }
-,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="Ravage Health"        , master_potion="Essence of Ravage Health"          , master_poison="Damage Health Poison IX"           , daily_potion_name="ravage health"                , daily_poison_name="damage health"                }
-,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="Restore Magicka"      , master_potion="Essence of Magicka"                , master_poison="Drain Magicka Poison IX"           , daily_potion_name="magicka"                      , daily_poison_name="drain magicka"                }
-,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="Ravage Magicka"       , master_potion="Essence of Ravage Magicka"         , master_poison="Damage Magicka Poison IX"          , daily_potion_name="ravage magicka"               , daily_poison_name="damage magicka"               }
-,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="Restore Stamina"      , master_potion="Essence of stamina"                , master_poison="Drain Stamina Poison IX"           , daily_potion_name="stamina"                      , daily_poison_name="drain stamina"                }
-,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="Ravage Stamina"       , master_potion="Essence of Ravage Stamina"         , master_poison="Damage Stamina Poison IX"          , daily_potion_name="ravage stamina"               , daily_poison_name="damage stamina"               }
-,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name="Increase Spell Resist", master_potion="Essence of Spell Protection"       , master_poison="Ward-Draining Poison IX"           }
-,   ["BREACH"                 ] = { trait_index=08, name="Breach"               , master_potion="Essence of Ravage Spell Protection", master_poison="Breaching Poison IX"               }
-,   ["INCREASE_ARMOR"         ] = { trait_index=09, name="Increase Armor"       , master_potion="Essence of Armor"                  , master_poison="Resolve-Draining Poison IX"        }
-,   ["FRACTURE"               ] = { trait_index=10, name="Fracture"             , master_potion="Essence of Ravage Armor"           , master_poison="Fracturing Poison IX"              }
-,   ["INCREASE_SPELL_POWER"   ] = { trait_index=11, name="Increase Spell Power" , master_potion="Essence of Spell Power"            , master_poison="Sorcery-Draining Poison IX"        }
-,   ["COWARDICE"              ] = { trait_index=12, name="Cowardice"            , master_potion="Essence of Cowardice"              , master_poison="Cowardice Poison IX"               }
-,   ["INCREASE_WEAPON_POWER"  ] = { trait_index=13, name="Increase Weapon Power", master_potion="Essence of Weapon Power"           , master_poison="Brutality-Draining Poison IX"      }
-,   ["MAIM"                   ] = { trait_index=14, name="Maim"                 , master_potion="Essence of Maim"                   , master_poison="Maiming Poison IX"                 }
-,   ["SPELL_CRITICAL"         ] = { trait_index=15, name="Spell Critical"       , master_potion="Essence of Spell Critical"         , master_poison="Prophecy-Draining Poison IX"       }
-,   ["UNCERTAINTY"            ] = { trait_index=16, name="Uncertainty"          , master_potion="Essence of Uncertainty"            , master_poison="Uncertainty Poison IX"             }
-,   ["WEAPON_CRITICAL"        ] = { trait_index=17, name="Weapon Critical"      , master_potion="Essence of Weapon Crit"            , master_poison="Savagery-Draining Poison IX"       }
-,   ["ENERVATION"             ] = { trait_index=18, name="Enervation"           , master_potion="Essence of Enervation"             , master_poison="Enervating Poison IX"              }
-,   ["UNSTOPPABLE"            ] = { trait_index=19, name="Unstoppable"          , master_potion="Essence of Immovability"           , master_poison="Escapist's Poison IX"              }
-,   ["ENTRAPMENT"             ] = { trait_index=20, name="Entrapment"           , master_potion="Essence of Entrapment"             , master_poison="Entrapping Poison IX"              }
-,   ["DETECTION"              ] = { trait_index=21, name="Detection"            , master_potion="Essence of Detection"              , master_poison="Stealth-Draining Poison IX"        }
-,   ["INVISIBLE"              ] = { trait_index=22, name="Invisible"            , master_potion="Essence of Invisibility"           , master_poison="Conspicuous Poison IX"             }
-,   ["SPEED"                  ] = { trait_index=23, name="Speed"                , master_potion="Essence of Speed"                  , master_poison="Speed-Draining Poison IX"          }
-,   ["HINDRANCE"              ] = { trait_index=24, name="Hindrance"            , master_potion="Essence of Hindering"              , master_poison="Hindering Poison IX"               }
-,   ["PROTECTION"             ] = { trait_index=25, name="Protection"           , master_potion="Essence of Protection"             , master_poison="Protection-Reversing Poison IX"    }
-,   ["VULNERABILITY"          ] = { trait_index=26, name="Vulnerability"        , master_potion="Essence of Vulnerability"          , master_poison="Vulnerability Poison IX"           }
-,   ["LINGERING_HEALTH"       ] = { trait_index=27, name="Lingering Health"     , master_potion="Essence of Lingering Health"       , master_poison="Gradual Health Drain Poison IX"    }
-,   ["GRADUAL_RAVAGE_HEALTH"  ] = { trait_index=28, name="Gradual Ravage Health", master_potion="Essence of Creeping Ravage Health" , master_poison="Gradual Ravage Health Poison IX"   }
-,   ["VITALITY"               ] = { trait_index=29, name="Vitality"             , master_potion="Essence of Vitality"               , master_poison="Vitality-Draining Poison IX"       }
-,   ["DEFILE"                 ] = { trait_index=30, name="Defile"               , master_potion="Essence of Defile"                 , master_poison="Defiling Poison IX"                }
+    ["RESTORE_HEALTH"         ] = { trait_index=01, name="Restore Health"           , master_potion="Essence of health"                 , master_poison="Drain Health Poison IX"            , daily_potion_name="health"                       , daily_poison_name="drain health"                 }
+,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="Ravage Health"            , master_potion="Essence of Ravage Health"          , master_poison="Damage Health Poison IX"           , daily_potion_name="ravage health"                , daily_poison_name="damage health"                }
+,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="Restore Magicka"          , master_potion="Essence of Magicka"                , master_poison="Drain Magicka Poison IX"           , daily_potion_name="magicka"                      , daily_poison_name="drain magicka"                }
+,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="Ravage Magicka"           , master_potion="Essence of Ravage Magicka"         , master_poison="Damage Magicka Poison IX"          , daily_potion_name="ravage magicka"               , daily_poison_name="damage magicka"               }
+,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="Restore Stamina"          , master_potion="Essence of stamina"                , master_poison="Drain Stamina Poison IX"           , daily_potion_name="stamina"                      , daily_poison_name="drain stamina"                }
+,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="Ravage Stamina"           , master_potion="Essence of Ravage Stamina"         , master_poison="Damage Stamina Poison IX"          , daily_potion_name="ravage stamina"               , daily_poison_name="damage stamina"               }
+,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name="Increase Spell Resist"    , master_potion="Essence of Spell Protection"       , master_poison="Ward-Draining Poison IX"           }
+,   ["BREACH"                 ] = { trait_index=08, name="Breach"                   , master_potion="Essence of Ravage Spell Protection", master_poison="Breaching Poison IX"               }
+,   ["INCREASE_ARMOR"         ] = { trait_index=09, name="Increase Armor"           , master_potion="Essence of Armor"                  , master_poison="Resolve-Draining Poison IX"        }
+,   ["FRACTURE"               ] = { trait_index=10, name="Fracture"                 , master_potion="Essence of Ravage Armor"           , master_poison="Fracturing Poison IX"              }
+,   ["INCREASE_SPELL_POWER"   ] = { trait_index=11, name="Increase Spell Power"     , master_potion="Essence of Spell Power"            , master_poison="Sorcery-Draining Poison IX"        }
+,   ["COWARDICE"              ] = { trait_index=12, name="Cowardice"                , master_potion="Essence of Cowardice"              , master_poison="Cowardice Poison IX"               }
+,   ["INCREASE_WEAPON_POWER"  ] = { trait_index=13, name="Increase Weapon Power"    , master_potion="Essence of Weapon Power"           , master_poison="Brutality-Draining Poison IX"      }
+,   ["MAIM"                   ] = { trait_index=14, name="Maim"                     , master_potion="Essence of Maim"                   , master_poison="Maiming Poison IX"                 }
+,   ["SPELL_CRITICAL"         ] = { trait_index=15, name="Spell Critical"           , master_potion="Essence of Spell Critical"         , master_poison="Prophecy-Draining Poison IX"       }
+,   ["UNCERTAINTY"            ] = { trait_index=16, name="Uncertainty"              , master_potion="Essence of Uncertainty"            , master_poison="Uncertainty Poison IX"             }
+,   ["WEAPON_CRITICAL"        ] = { trait_index=17, name="Weapon Critical"          , master_potion="Essence of Weapon Crit"            , master_poison="Savagery-Draining Poison IX"       }
+,   ["ENERVATION"             ] = { trait_index=18, name="Enervation"               , master_potion="Essence of Enervation"             , master_poison="Enervating Poison IX"              }
+,   ["UNSTOPPABLE"            ] = { trait_index=19, name="Unstoppable"              , master_potion="Essence of Immovability"           , master_poison="Escapist's Poison IX"              }
+,   ["ENTRAPMENT"             ] = { trait_index=20, name="Entrapment"               , master_potion="Essence of Entrapment"             , master_poison="Entrapping Poison IX"              }
+,   ["DETECTION"              ] = { trait_index=21, name="Detection"                , master_potion="Essence of Detection"              , master_poison="Stealth-Draining Poison IX"        }
+,   ["INVISIBLE"              ] = { trait_index=22, name="Invisible"                , master_potion="Essence of Invisibility"           , master_poison="Conspicuous Poison IX"             }
+,   ["SPEED"                  ] = { trait_index=23, name="Speed"                    , master_potion="Essence of Speed"                  , master_poison="Speed-Draining Poison IX"          }
+,   ["HINDRANCE"              ] = { trait_index=24, name="Hindrance"                , master_potion="Essence of Hindering"              , master_poison="Hindering Poison IX"               }
+,   ["PROTECTION"             ] = { trait_index=25, name="Protection"               , master_potion="Essence of Protection"             , master_poison="Protection-Reversing Poison IX"    }
+,   ["VULNERABILITY"          ] = { trait_index=26, name="Vulnerability"            , master_potion="Essence of Vulnerability"          , master_poison="Vulnerability Poison IX"           }
+,   ["LINGERING_HEALTH"       ] = { trait_index=27, name="Lingering Health"         , master_potion="Essence of Lingering Health"       , master_poison="Gradual Health Drain Poison IX"    }
+,   ["GRADUAL_RAVAGE_HEALTH"  ] = { trait_index=28, name="Gradual Ravage Health"    , master_potion="Essence of Creeping Ravage Health" , master_poison="Gradual Ravage Health Poison IX"   }
+,   ["VITALITY"               ] = { trait_index=29, name="Vitality"                 , master_potion="Essence of Vitality"               , master_poison="Vitality-Draining Poison IX"       }
+,   ["DEFILE"                 ] = { trait_index=30, name="Defile"                   , master_potion="Essence of Defile"                 , master_poison="Defiling Poison IX"                }
 }
 
 

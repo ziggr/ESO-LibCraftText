@@ -324,7 +324,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 
 , ["NATURAL_WATER"           ] = { name="自然水"                            , crafting_type=al, item_id=   883 , name_2="自然水"                , rank=1, potion_name="雫"                       }
 , ["CLEAR_WATER"             ] = { name="清水"                             , crafting_type=al, item_id=  1187                               , rank=2, potion_name="生薬"                      }
-, ["PRISTINE_WATER"          ] = { name="清浄水"                            , crafting_type=al, item_id=  4570 , name_2="清浄水"                , rank=3, potion_name="飲み薬"                     }
+, ["PRISTINE_WATER"          ] = { name="清浄水"                            , crafting_type=al, item_id=  4570 , name_2="清浄水"                , rank=3, potion_name="飲み薬"                     , potion_name2="飲み薬"                      }
 , ["CLEANSED_WATER"          ] = { name="浄化水"                            , crafting_type=al, item_id= 23265 , name_2="浄化水"                , rank=4, potion_name="薬"                       }
 , ["FILTERED_WATER"          ] = { name="ろ過水"                            , crafting_type=al, item_id= 23266 , name_2="ろ過水"                , rank=5, potion_name="液体薬"                     }
 , ["PURIFIED_WATER"          ] = { name="神聖水"                            , crafting_type=al, item_id= 23267 , name_2="神聖水"                , rank=6, potion_name="霊薬"                      }
@@ -420,36 +420,36 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 --                  of master writ requests.
 --
 LibCraftText.ALCHEMY_TRAIT = {
-    ["RESTORE_HEALTH"         ] = { trait_index=01, name="体力回復"                 , master_potion="体力 のエキス"                           , master_poison="体力吸収の毒 9"                          , daily_potion_name="体力"                           , daily_poison_name="体力吸収"                         }
-,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="体力減少"                 , master_potion="体力減少 のエキス"                         , master_poison="体力減少の毒 9"                          , daily_potion_name="体力減少"                         , daily_poison_name="体力減少"                         }
-,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="マジカ回復"                , master_potion="マジカ のエキス"                          , master_poison="マジカ吸収の毒 9"                         , daily_potion_name="マジカ"                          , daily_poison_name="マジカ吸収"                        }
-,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="マジカ減少"                , master_potion="マジカ減少 のエキス"                        , master_poison="マジカ減少の毒 9"                         , daily_potion_name="マジカ減少"                        , daily_poison_name="マジカ減少"                        }
-,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="スタミナ回復"               , master_potion="スタミナ のエキス"                         , master_poison="スタミナ吸収の毒 9"                        , daily_potion_name="スタミナ"                         , daily_poison_name="スタミナ吸収"                       }
-,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="スタミナ減少"               , master_potion="スタミナ減少 のエキス"                       , master_poison="スタミナ減少の毒 9"                        , daily_potion_name="スタミナ減少"                       , daily_poison_name="スタミナ減少"                       }
-,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name="呪文耐性増大"               , master_potion="呪文防御 のエキス"                         , master_poison="結界吸収の毒 9"                          }
-,   ["BREACH"                 ] = { trait_index=08, name="侵害"                   , master_potion="呪文防御減少 のエキス"                       , master_poison="侵害の毒 9"                            }
-,   ["INCREASE_ARMOR"         ] = { trait_index=09, name="防御力増大"                , master_potion="防具 のエキス"                           , master_poison="強固吸収の毒 9"                          }
-,   ["FRACTURE"               ] = { trait_index=10, name="破砕"                   , master_potion="鎧破損度 のエキス"                         , master_poison="破砕の毒 9"                            }
-,   ["INCREASE_SPELL_POWER"   ] = { trait_index=11, name="呪文攻撃力上昇"              , master_potion="呪文攻撃力 のエキス"                        , master_poison="魔術吸収の毒 9"                          }
-,   ["COWARDICE"              ] = { trait_index=12, name="臆病"                   , master_potion="臆病 のエキス"                           , master_poison="臆病の毒 9"                            }
-,   ["INCREASE_WEAPON_POWER"  ] = { trait_index=13, name="武器攻撃力上昇"              , master_potion="武器攻撃力 のエキス"                        , master_poison="残忍吸収の毒 9"                          }
-,   ["MAIM"                   ] = { trait_index=14, name="不自由"                  , master_potion="不自由 のエキス"                          , master_poison="不自由の毒 9"                           }
-,   ["SPELL_CRITICAL"         ] = { trait_index=15, name="呪文クリティカル"             , master_potion="呪文クリティカル のエキス"                     , master_poison="予言吸収の毒 9"                          }
-,   ["UNCERTAINTY"            ] = { trait_index=16, name="不信"                   , master_potion="不信 のエキス"                           , master_poison="不信の毒 9"                            }
-,   ["WEAPON_CRITICAL"        ] = { trait_index=17, name="武器クリティカル"             , master_potion="武器クリティカル のエキス"                     , master_poison="獰猛吸収の毒 9"                          }
-,   ["ENERVATION"             ] = { trait_index=18, name="弱体化"                  , master_potion="弱体化 のエキス"                          , master_poison="弱体化の毒 9"                           }
-,   ["UNSTOPPABLE"            ] = { trait_index=19, name="猪突猛進"                 , master_potion="不動性 のエキス"                          , master_poison="逃避者の毒 9"                           }
-,   ["ENTRAPMENT"             ] = { trait_index=20, name="罠"                    , master_potion="罠 のエキス"                            , master_poison="罠の毒 9"                             }
-,   ["DETECTION"              ] = { trait_index=21, name="探知"                   , master_potion="探知 のエキス"                           , master_poison="ステルス吸収の毒 9"                        }
-,   ["INVISIBLE"              ] = { trait_index=22, name="透明化"                  , master_potion="透明化 のエキス"                          , master_poison="露見の毒 9"                            }
-,   ["SPEED"                  ] = { trait_index=23, name="加速"                   , master_potion="加速 のエキス"                           , master_poison="速度吸収の毒 9"                          }
-,   ["HINDRANCE"              ] = { trait_index=24, name="妨害"                   , master_potion="妨害 のエキス"                           , master_poison="妨害の毒 9"                            }
-,   ["PROTECTION"             ] = { trait_index=25, name="防護"                   , master_potion="防御 のエキス"                           , master_poison="防御逆転の毒 9"                          }
-,   ["VULNERABILITY"          ] = { trait_index=26, name="脆弱"                   , master_potion="脆弱 のエキス"                           , master_poison="脆弱の毒 9"                            }
-,   ["LINGERING_HEALTH"       ] = { trait_index=27, name="体力継続"                 , master_potion="体力継続 のエキス"                         , master_poison="体力吸収継続の毒 9"                        }
-,   ["GRADUAL_RAVAGE_HEALTH"  ] = { trait_index=28, name="体力漸減"                 , master_potion="体力減少継続 のエキス"                       , master_poison="体力減少継続の毒 9"                        }
-,   ["VITALITY"               ] = { trait_index=29, name="生命力"                  , master_potion="生命力 のエキス"                          , master_poison="生命力吸収の毒 9"                         }
-,   ["DEFILE"                 ] = { trait_index=30, name="汚染"                   , master_potion="汚染 のエキス"                           , master_poison="汚染の毒 9"                            }
+    ["RESTORE_HEALTH"         ] = { trait_index=01, name="体力回復"                     , master_potion="体力 のエキス"                           , master_poison="体力吸収の毒 9"                          , daily_potion_name="体力"                           , daily_poison_name="体力吸収"                         }
+,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="体力減少"                     , master_potion="体力減少 のエキス"                         , master_poison="体力減少の毒 9"                          , daily_potion_name="体力減少"                         , daily_poison_name="体力減少"                         }
+,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="マジカ回復"                    , master_potion="マジカ のエキス"                          , master_poison="マジカ吸収の毒 9"                         , daily_potion_name="マジカ"                          , daily_poison_name="マジカ吸収"                        }
+,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="マジカ減少"                    , master_potion="マジカ減少 のエキス"                        , master_poison="マジカ減少の毒 9"                         , daily_potion_name="マジカ減少"                        , daily_poison_name="マジカ減少"                        }
+,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="スタミナ回復"                   , master_potion="スタミナ のエキス"                         , master_poison="スタミナ吸収の毒 9"                        , daily_potion_name="スタミナ"                         , daily_poison_name="スタミナ吸収"                       }
+,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="スタミナ減少"                   , master_potion="スタミナ減少 のエキス"                       , master_poison="スタミナ減少の毒 9"                        , daily_potion_name="スタミナ減少"                       , daily_poison_name="スタミナ減少"                       }
+,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name="呪文耐性増大"                   , master_potion="呪文防御 のエキス"                         , master_poison="結界吸収の毒 9"                          }
+,   ["BREACH"                 ] = { trait_index=08, name="侵害"                       , master_potion="呪文防御減少 のエキス"                       , master_poison="侵害の毒 9"                            }
+,   ["INCREASE_ARMOR"         ] = { trait_index=09, name="防御力増大"                    , master_potion="防具 のエキス"                           , master_poison="強固吸収の毒 9"                          }
+,   ["FRACTURE"               ] = { trait_index=10, name="破砕"                       , master_potion="鎧破損度 のエキス"                         , master_poison="破砕の毒 9"                            }
+,   ["INCREASE_SPELL_POWER"   ] = { trait_index=11, name="呪文攻撃力上昇"                  , master_potion="呪文攻撃力 のエキス"                        , master_poison="魔術吸収の毒 9"                          }
+,   ["COWARDICE"              ] = { trait_index=12, name="臆病"                       , master_potion="臆病 のエキス"                           , master_poison="臆病の毒 9"                            }
+,   ["INCREASE_WEAPON_POWER"  ] = { trait_index=13, name="武器攻撃力上昇"                  , master_potion="武器攻撃力 のエキス"                        , master_poison="残忍吸収の毒 9"                          }
+,   ["MAIM"                   ] = { trait_index=14, name="不自由"                      , master_potion="不自由 のエキス"                          , master_poison="不自由の毒 9"                           }
+,   ["SPELL_CRITICAL"         ] = { trait_index=15, name="呪文クリティカル"                 , master_potion="呪文クリティカル のエキス"                     , master_poison="予言吸収の毒 9"                          }
+,   ["UNCERTAINTY"            ] = { trait_index=16, name="不信"                       , master_potion="不信 のエキス"                           , master_poison="不信の毒 9"                            }
+,   ["WEAPON_CRITICAL"        ] = { trait_index=17, name="武器クリティカル"                 , master_potion="武器クリティカル のエキス"                     , master_poison="獰猛吸収の毒 9"                          }
+,   ["ENERVATION"             ] = { trait_index=18, name="弱体化"                      , master_potion="弱体化 のエキス"                          , master_poison="弱体化の毒 9"                           }
+,   ["UNSTOPPABLE"            ] = { trait_index=19, name="猪突猛進"                     , master_potion="不動性 のエキス"                          , master_poison="逃避者の毒 9"                           }
+,   ["ENTRAPMENT"             ] = { trait_index=20, name="罠"                        , master_potion="罠 のエキス"                            , master_poison="罠の毒 9"                             }
+,   ["DETECTION"              ] = { trait_index=21, name="探知"                       , master_potion="探知 のエキス"                           , master_poison="ステルス吸収の毒 9"                        }
+,   ["INVISIBLE"              ] = { trait_index=22, name="透明化"                      , master_potion="透明化 のエキス"                          , master_poison="露見の毒 9"                            }
+,   ["SPEED"                  ] = { trait_index=23, name="加速"                       , master_potion="加速 のエキス"                           , master_poison="速度吸収の毒 9"                          }
+,   ["HINDRANCE"              ] = { trait_index=24, name="妨害"                       , master_potion="妨害 のエキス"                           , master_poison="妨害の毒 9"                            }
+,   ["PROTECTION"             ] = { trait_index=25, name="防護"                       , master_potion="防御 のエキス"                           , master_poison="防御逆転の毒 9"                          }
+,   ["VULNERABILITY"          ] = { trait_index=26, name="脆弱"                       , master_potion="脆弱 のエキス"                           , master_poison="脆弱の毒 9"                            }
+,   ["LINGERING_HEALTH"       ] = { trait_index=27, name="体力継続"                     , master_potion="体力継続 のエキス"                         , master_poison="体力吸収継続の毒 9"                        }
+,   ["GRADUAL_RAVAGE_HEALTH"  ] = { trait_index=28, name="体力漸減"                     , master_potion="体力減少継続 のエキス"                       , master_poison="体力減少継続の毒 9"                        }
+,   ["VITALITY"               ] = { trait_index=29, name="生命力"                      , master_potion="生命力 のエキス"                          , master_poison="生命力吸収の毒 9"                         }
+,   ["DEFILE"                 ] = { trait_index=30, name="汚染"                       , master_potion="汚染 のエキス"                           , master_poison="汚染の毒 9"                            }
 }
 
 

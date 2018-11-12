@@ -430,7 +430,8 @@ end
 LibCraftText.RE_ALCHEMY_TRAIT = {
     en = { "Craft .* of (.*)"
          , "Craft (.*) Poison" }
-,   de = { "eine (.*) Glyphe de[sr]"}
+,   de = { "Stellt etwas Gift [ders]+ (.*) [IVX]+ her"  -- NBSP before [IVX] !
+         , "Stellt .* [ders]+ (.*) her" }               -- Must come after Gift re.
 ,   fr = { "glyphe (.*)"
          , "(petit) glyphe "}
 ,   es = { "glifo (.*) de"
@@ -443,7 +444,9 @@ LibCraftText.RE_ALCHEMY_TRAIT = {
 LibCraftText.RE_ALCHEMY_SOLVENT = {
     en = { "Craft (.*) of "
          , "Craft .* Poison (.*)" }
-,   de = { "eine (.*) Glyphe de[sr]"}
+,   de = { "Stellt etwas Gift [ders]+ .* ([IVX]+) her"
+         , "Stellt (.*) [ders]+ .* her"     -- Must come after Gift re.
+          }
 ,   fr = { "glyphe (.*)"
          , "(petit) glyphe "}
 ,   es = { "glifo (.*) de"
@@ -469,8 +472,20 @@ function LibCraftText.ParseDailyConditionAlchemy(cond_text)
                         , cond_text
                         , self.RE_ALCHEMY_SOLVENT[lang]
                         , self.CONSUMABLE_MATERIAL
+                        , { "potion_name"--, "potion_name2"
+                          , "poison_name" }
+                        )
+if not solvent then
+    ZZDEBUG=ZZDEBUG_ON
+    local solvent = self.ParseRegexable(
+                          al
+                        , cond_text
+                        , self.RE_ALCHEMY_SOLVENT[lang]
+                        , self.CONSUMABLE_MATERIAL
                         , { "potion_name", "poison_name" }
-   )
+                        )
+    ZZDEBUG=ZZDEBUG_OFF
+end
     if not (trait or solvent) then return nil end
     return { trait   = trait
            , solvent = solvent

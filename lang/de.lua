@@ -324,7 +324,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 
 , ["NATURAL_WATER"           ] = { name="natürliches Wasser"             , crafting_type=al, item_id=   883 , name_2="natürliches Wasser" , rank=1, potion_name="schlückchen"             }
 , ["CLEAR_WATER"             ] = { name="klares Wasser"                  , crafting_type=al, item_id=  1187                               , rank=2, potion_name="tinktur"                 }
-, ["PRISTINE_WATER"          ] = { name="unberührtes Wasser"             , crafting_type=al, item_id=  4570 , name_2="unberührtes Wasser" , rank=3, potion_name="schluck"                 }
+, ["PRISTINE_WATER"          ] = { name="unberührtes Wasser"             , crafting_type=al, item_id=  4570 , name_2="unberührtes Wasser" , rank=3, potion_name="schluck"                 , potion_name2="Schlücke"                 }
 , ["CLEANSED_WATER"          ] = { name="gesäubertes Wasser"             , crafting_type=al, item_id= 23265 , name_2="gesäubertes Wasser" , rank=4, potion_name="trank"                   }
 , ["FILTERED_WATER"          ] = { name="gefiltertes Wasser"             , crafting_type=al, item_id= 23266 , name_2="gefiltertes Wasser" , rank=5, potion_name="lösung"                  }
 , ["PURIFIED_WATER"          ] = { name="gereinigtes Wasser"             , crafting_type=al, item_id= 23267 , name_2="gereinigtes Wasser" , rank=6, potion_name="elixier"                 }
@@ -420,36 +420,36 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 --                  of master writ requests.
 --
 LibCraftText.ALCHEMY_TRAIT = {
-    ["RESTORE_HEALTH"         ] = { trait_index=01, name="Leben wiederherstellen", master_potion="Essenz des Lebens^f"               , master_poison="Gift des Lebensentzugs IX^n"       , daily_potion_name="lebens"                       , daily_poison_name="lebensentzugs"                }
-,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="Lebensverwüstung"     , master_potion="Essenz der Lebensverwüstung^f"     , master_poison="Gift der Lebensschändung IX^n"     , daily_potion_name="lebensverwüstung"             , daily_poison_name="lebensschändung"              }
-,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="Magicka wiederherstellen", master_potion="Essenz der Magicka^f"              , master_poison="Gift des Magickaentzugs IX^n"      , daily_potion_name="magicka"                      , daily_poison_name="magickaentzugs"               }
-,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="Magickaverwüstung"    , master_potion="Essenz der Magickaverwüstung^f"    , master_poison="Gift der Magickaschändung IX^n"    , daily_potion_name="magickaverwüstung"            , daily_poison_name="magickaschändung"             }
-,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="Ausdauer wiederherstellen", master_potion="Essenz der Ausdauer^f"             , master_poison="Gift des Ausdauerentzugs IX^n"     , daily_potion_name="ausdauer"                     , daily_poison_name="ausdauerentzugs"              }
-,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="Ausdauerverwüstung"   , master_potion="Essenz der Ausdauerverwüstung^f"   , master_poison="Gift der Ausdauerschändung IX^n"   , daily_potion_name="ausdauerverwüstung"           , daily_poison_name="ausdauerschändung"            }
-,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name="Erhöht Magieresistenz", master_potion="Essenz des Zauberschutzes^f"       , master_poison="Gift des Schutzentzugs IX^n"       }
-,   ["BREACH"                 ] = { trait_index=08, name="Bruch"                , master_potion="Essenz der Zauberschutzverwüstung^f", master_poison="Gift des Durchdringens IX^n"       }
-,   ["INCREASE_ARMOR"         ] = { trait_index=09, name="Erhöht Rüstung"       , master_potion="Essenz der Rüstung^f"              , master_poison="Gift des Entschlossenheitsentzugs IX^n"}
-,   ["FRACTURE"               ] = { trait_index=10, name="Fraktur"              , master_potion="Essenz der Rüstungsverwüstung^f"   , master_poison="Gift des Zertrümmerns IX^n"        }
-,   ["INCREASE_SPELL_POWER"   ] = { trait_index=11, name="Erhöht Magiekraft"    , master_potion="Essenz der Magiekraft^f"           , master_poison="Gift des Zaubereientzugs IX^n"     }
-,   ["COWARDICE"              ] = { trait_index=12, name="Feigheit"             , master_potion="Essenz der Feigheit^f"             , master_poison="Gift der Feigheit IX^n"            }
-,   ["INCREASE_WEAPON_POWER"  ] = { trait_index=13, name="Erhöht Waffenkraft"   , master_potion="Essenz der Waffenkraft^f"          , master_poison="Gift des Brutalitätsentzugs IX^n"  }
-,   ["MAIM"                   ] = { trait_index=14, name="Verkrüppeln"          , master_potion="Essenz des Verkrüppelns^f"         , master_poison="Gift der Verstümmelung IX^n"       }
-,   ["SPELL_CRITICAL"         ] = { trait_index=15, name="Kritische Magietreffer", master_potion="Essenz der kritischen Magietreffer^f", master_poison="Gift des Prophetieentzugs IX^n"    }
-,   ["UNCERTAINTY"            ] = { trait_index=16, name="Ungewissheit"         , master_potion="Essenz der Ungewissheit^f"         , master_poison="Gift der Ungewissheit IX^n"        }
-,   ["WEAPON_CRITICAL"        ] = { trait_index=17, name="Kritische Waffentreffer", master_potion="Essenz der kritischen Waffentreffer^f", master_poison="Gift des Wildheitentzugs IX^n"     }
-,   ["ENERVATION"             ] = { trait_index=18, name="Schwäche"             , master_potion="Essenz der Schwäche^f"             , master_poison="Gift der Enervierung IX^n"         }
-,   ["UNSTOPPABLE"            ] = { trait_index=19, name="Sicherer Stand"       , master_potion="Essenz der Unbeweglichkeit^f"      , master_poison="Gift des Fliehenden IX^n"          }
-,   ["ENTRAPMENT"             ] = { trait_index=20, name="Einfangen"            , master_potion="Essenz des Einfangens^f"           , master_poison="Gift des Festsetzens IX^n"         }
-,   ["DETECTION"              ] = { trait_index=21, name="Detektion"            , master_potion="Essenz der Detektion^f"            , master_poison="Gift des Schleichentzugs IX^n"     }
-,   ["INVISIBLE"              ] = { trait_index=22, name="Unsichtbarkeit"       , master_potion="Essenz der Unsichtbarkeit^f"       , master_poison="Gift des Auffallens IX^n"          }
-,   ["SPEED"                  ] = { trait_index=23, name="Tempo"                , master_potion="Essenz des Tempos^f"               , master_poison="Gift des Tempoentzugs IX^n"        }
-,   ["HINDRANCE"              ] = { trait_index=24, name="Einschränken"         , master_potion="Essenz des Einschränkens^f"        , master_poison="Gift der Hinderung IX^n"           }
-,   ["PROTECTION"             ] = { trait_index=25, name="Schutz"               , master_potion="Essenz des Schutzes^f"             , master_poison="Gift der Schutzumkehrung IX^n"     }
-,   ["VULNERABILITY"          ] = { trait_index=26, name="Verwundbarkeit"       , master_potion="Essenz der Verwundbarkeit^f"       , master_poison="Gift der Verwundbarkeit IX^n"      }
-,   ["LINGERING_HEALTH"       ] = { trait_index=27, name="Beständige Heilung"   , master_potion="Essenz des beständigen Lebens^f"   , master_poison="langsam wirkendes Gift des Lebensentzugs IX^n"}
-,   ["GRADUAL_RAVAGE_HEALTH"  ] = { trait_index=28, name="Langsame Lebensverwüstung", master_potion="Essenz der schleichenden Lebensverwüstung^f", master_poison="langsam wirkendes Gift der Lebensverwüstung IX^n"}
-,   ["VITALITY"               ] = { trait_index=29, name="Vitalität"            , master_potion="Essenz der Vitalität^f"            , master_poison="Gift des Vitalitätsentzugs IX^n"   }
-,   ["DEFILE"                 ] = { trait_index=30, name="Schänden"             , master_potion="Essenz der Schändung^f"            , master_poison="Gift der Schändung IX^n"           }
+    ["RESTORE_HEALTH"         ] = { trait_index=01, name="Leben wiederherstellen"   , master_potion="Essenz des Lebens"                 , master_poison="Gift des Lebensentzugs IX"         , daily_potion_name="lebens"                       , daily_poison_name="lebensentzugs"                }
+,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="Lebensverwüstung"         , master_potion="Essenz der Lebensverwüstung"       , master_poison="Gift der Lebensschändung IX"       , daily_potion_name="lebensverwüstung"             , daily_poison_name="lebensschändung"              }
+,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="Magicka wiederherstellen" , master_potion="Essenz der Magicka"                , master_poison="Gift des Magickaentzugs IX"        , daily_potion_name="magicka"                      , daily_poison_name="magickaentzugs"               }
+,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="Magickaverwüstung"        , master_potion="Essenz der Magickaverwüstung"      , master_poison="Gift der Magickaschändung IX"      , daily_potion_name="magickaverwüstung"            , daily_poison_name="magickaschändung"             }
+,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="Ausdauer wiederherstellen", master_potion="Essenz der Ausdauer"               , master_poison="Gift des Ausdauerentzugs IX"       , daily_potion_name="ausdauer"                     , daily_poison_name="ausdauerentzugs"              }
+,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="Ausdauerverwüstung"       , master_potion="Essenz der Ausdauerverwüstung"     , master_poison="Gift der Ausdauerschändung IX"     , daily_potion_name="ausdauerverwüstung"           , daily_poison_name="ausdauerschändung"            }
+,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name="Erhöht Magieresistenz"    , master_potion="Essenz des Zauberschutzes"         , master_poison="Gift des Schutzentzugs IX"         }
+,   ["BREACH"                 ] = { trait_index=08, name="Bruch"                    , master_potion="Essenz der Zauberschutzverwüstung" , master_poison="Gift des Durchdringens IX"         }
+,   ["INCREASE_ARMOR"         ] = { trait_index=09, name="Erhöht Rüstung"           , master_potion="Essenz der Rüstung"                , master_poison="Gift des Entschlossenheitsentzugs IX"}
+,   ["FRACTURE"               ] = { trait_index=10, name="Fraktur"                  , master_potion="Essenz der Rüstungsverwüstung"     , master_poison="Gift des Zertrümmerns IX"          }
+,   ["INCREASE_SPELL_POWER"   ] = { trait_index=11, name="Erhöht Magiekraft"        , master_potion="Essenz der Magiekraft"             , master_poison="Gift des Zaubereientzugs IX"       }
+,   ["COWARDICE"              ] = { trait_index=12, name="Feigheit"                 , master_potion="Essenz der Feigheit"               , master_poison="Gift der Feigheit IX"              }
+,   ["INCREASE_WEAPON_POWER"  ] = { trait_index=13, name="Erhöht Waffenkraft"       , master_potion="Essenz der Waffenkraft"            , master_poison="Gift des Brutalitätsentzugs IX"    }
+,   ["MAIM"                   ] = { trait_index=14, name="Verkrüppeln"              , master_potion="Essenz des Verkrüppelns"           , master_poison="Gift der Verstümmelung IX"         }
+,   ["SPELL_CRITICAL"         ] = { trait_index=15, name="Kritische Magietreffer"   , master_potion="Essenz der kritischen Magietreffer", master_poison="Gift des Prophetieentzugs IX"      }
+,   ["UNCERTAINTY"            ] = { trait_index=16, name="Ungewissheit"             , master_potion="Essenz der Ungewissheit"           , master_poison="Gift der Ungewissheit IX"          }
+,   ["WEAPON_CRITICAL"        ] = { trait_index=17, name="Kritische Waffentreffer"  , master_potion="Essenz der kritischen Waffentreffer", master_poison="Gift des Wildheitentzugs IX"       }
+,   ["ENERVATION"             ] = { trait_index=18, name="Schwäche"                 , master_potion="Essenz der Schwäche"               , master_poison="Gift der Enervierung IX"           }
+,   ["UNSTOPPABLE"            ] = { trait_index=19, name="Sicherer Stand"           , master_potion="Essenz der Unbeweglichkeit"        , master_poison="Gift des Fliehenden IX"            }
+,   ["ENTRAPMENT"             ] = { trait_index=20, name="Einfangen"                , master_potion="Essenz des Einfangens"             , master_poison="Gift des Festsetzens IX"           }
+,   ["DETECTION"              ] = { trait_index=21, name="Detektion"                , master_potion="Essenz der Detektion"              , master_poison="Gift des Schleichentzugs IX"       }
+,   ["INVISIBLE"              ] = { trait_index=22, name="Unsichtbarkeit"           , master_potion="Essenz der Unsichtbarkeit"         , master_poison="Gift des Auffallens IX"            }
+,   ["SPEED"                  ] = { trait_index=23, name="Tempo"                    , master_potion="Essenz des Tempos"                 , master_poison="Gift des Tempoentzugs IX"          }
+,   ["HINDRANCE"              ] = { trait_index=24, name="Einschränken"             , master_potion="Essenz des Einschränkens"          , master_poison="Gift der Hinderung IX"             }
+,   ["PROTECTION"             ] = { trait_index=25, name="Schutz"                   , master_potion="Essenz des Schutzes"               , master_poison="Gift der Schutzumkehrung IX"       }
+,   ["VULNERABILITY"          ] = { trait_index=26, name="Verwundbarkeit"           , master_potion="Essenz der Verwundbarkeit"         , master_poison="Gift der Verwundbarkeit IX"        }
+,   ["LINGERING_HEALTH"       ] = { trait_index=27, name="Beständige Heilung"       , master_potion="Essenz des beständigen Lebens"     , master_poison="langsam wirkendes Gift des Lebensentzugs IX"}
+,   ["GRADUAL_RAVAGE_HEALTH"  ] = { trait_index=28, name="Langsame Lebensverwüstung", master_potion="Essenz der schleichenden Lebensverwüstung", master_poison="langsam wirkendes Gift der Lebensverwüstung IX"}
+,   ["VITALITY"               ] = { trait_index=29, name="Vitalität"                , master_potion="Essenz der Vitalität"              , master_poison="Gift des Vitalitätsentzugs IX"     }
+,   ["DEFILE"                 ] = { trait_index=30, name="Schänden"                 , master_potion="Essenz der Schändung"              , master_poison="Gift der Schändung IX"             }
 }
 
 
