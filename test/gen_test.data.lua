@@ -373,33 +373,33 @@ COND_TEXT_FODDER = {
 , { input="Craft Normal Yew Shield"                         , expect={ item=LCT.ITEM.SHIELD           , material=LCT.MATERIAL.YEW            } }
 , { input="Craft Nut Brown Ale"                             , expect={ item=LCT.RECIPE.NUT_BROWN_ALE                    } }
 , { input="Craft Orcrest Garlic Apple Jelly"                , expect={ item=LCT.RECIPE.ORCREST_GARLIC_APPLE_JELLY       } }
-, { input="Craft Panacea of Health"                         , expect={}                                                 }
-, { input="Craft Panacea of Magicka"                        , expect={}                                                 }
-, { input="Craft Panacea of Ravage Health"                  , expect={}                                                 }
-, { input="Craft Panacea of Stamina"                        , expect={}                                                 }
+, { input="Craft Panacea of Health"                         , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_HEALTH , solvent=LCT.CONSUMABLE_MATERIAL.CLOUD_MIST } }
+, { input="Craft Panacea of Magicka"                        , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_MAGICKA, solvent=LCT.CONSUMABLE_MATERIAL.CLOUD_MIST } }
+, { input="Craft Panacea of Ravage Health"                  , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH  , solvent=LCT.CONSUMABLE_MATERIAL.CLOUD_MIST } }
+, { input="Craft Panacea of Stamina"                        , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_STAMINA, solvent=LCT.CONSUMABLE_MATERIAL.CLOUD_MIST } }
 , { input="Craft Pellitine Tomato Rice"                     , expect={ item=LCT.RECIPE.PELLETINE_TOMATO_RICE            } }
 , { input="Craft Petty Glyph of Health With Ta"             , expect={ potency=LCT.CONSUMABLE_MATERIAL.JERA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Petty Glyph of Magicka With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.JERA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Petty Glyph of Stamina With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.JERA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
-, { input="Craft Potion of Health"                          , expect={}                                                 }
-, { input="Craft Potion of Magicka"                         , expect={}                                                 }
-, { input="Craft Potion of Ravage Health"                   , expect={}                                                 }
-, { input="Craft Potion of Stamina"                         , expect={}                                                 }
+, { input="Craft Potion of Health"                          , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_HEALTH , solvent=LCT.CONSUMABLE_MATERIAL.CLEANSED_WATER } }
+, { input="Craft Potion of Magicka"                         , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_MAGICKA, solvent=LCT.CONSUMABLE_MATERIAL.CLEANSED_WATER } }
+, { input="Craft Potion of Ravage Health"                   , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH  , solvent=LCT.CONSUMABLE_MATERIAL.CLEANSED_WATER } }
+, { input="Craft Potion of Stamina"                         , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_STAMINA, solvent=LCT.CONSUMABLE_MATERIAL.CLEANSED_WATER } }
 , { input="Craft Red Rye Beer"                              , expect={ item=LCT.RECIPE.RED_RYE_BEER                     } }
 , { input="Craft Redoran Peppered Melon"                    , expect={ item=LCT.RECIPE.REDORAN_PEPPERED_MELON           } }
 , { input="Craft Roast Corn"                                , expect={ item=LCT.RECIPE.ROAST_CORN                       } }
 , { input="Craft Rye-in-Your-Eye"                           , expect={ item=LCT.RECIPE.RYE_IN_YOUR_EYE                  } }
 , { input="Craft Seaflower Tea"                             , expect={ item=LCT.RECIPE.SEAFLOWER_TEA                    } }
 , { input="Craft Senchal Curry Fish and Rice"               , expect={ item=LCT.RECIPE.SENCHAL_CURRY_FISH_AND_RICE      } }
-, { input="Craft Sip of Health"                             , expect={}                                                 }
-, { input="Craft Sip of Magicka"                            , expect={}                                                 }
-, { input="Craft Sip of Ravage Stamina"                     , expect={}                                                 }
-, { input="Craft Sip of Stamina"                            , expect={}                                                 }
+, { input="Craft Sip of Health"                             , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_HEALTH , solvent=LCT.CONSUMABLE_MATERIAL.NATURAL_WATER } }
+, { input="Craft Sip of Magicka"                            , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_MAGICKA, solvent=LCT.CONSUMABLE_MATERIAL.NATURAL_WATER } }
+, { input="Craft Sip of Ravage Stamina"                     , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_STAMINA , solvent=LCT.CONSUMABLE_MATERIAL.NATURAL_WATER } }
+, { input="Craft Sip of Stamina"                            , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_STAMINA, solvent=LCT.CONSUMABLE_MATERIAL.NATURAL_WATER } }
 , { input="Craft Skyrim Jazbay Crostata"                    , expect={ item=LCT.RECIPE.SKYRIM_JAZBAY_CROSTATA           } }
-, { input="Craft Solution of Health"                        , expect={}                                                 }
-, { input="Craft Solution of Magicka"                       , expect={}                                                 }
-, { input="Craft Solution of Ravage Stamina"                , expect={}                                                 }
-, { input="Craft Solution of Stamina"                       , expect={}                                                 }
+, { input="Craft Solution of Health"                        , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_HEALTH , solvent=LCT.CONSUMABLE_MATERIAL.FILTERED_WATER } }
+, { input="Craft Solution of Magicka"                       , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_MAGICKA, solvent=LCT.CONSUMABLE_MATERIAL.FILTERED_WATER } }
+, { input="Craft Solution of Ravage Stamina"                , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_STAMINA , solvent=LCT.CONSUMABLE_MATERIAL.FILTERED_WATER } }
+, { input="Craft Solution of Stamina"                       , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_STAMINA, solvent=LCT.CONSUMABLE_MATERIAL.FILTERED_WATER } }
 , { input="Craft Sorry, Honey Lager"                        , expect={ item=LCT.RECIPE.SORRY_HONEY_LAGER                } }
 , { input="Craft Sour Mash"                                 , expect={ item=LCT.RECIPE.SOUR_MASH                        } }
 , { input="Craft Spiceberry Chai"                           , expect={ item=LCT.RECIPE.SPICEBERRY_CHAI                  } }

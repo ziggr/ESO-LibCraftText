@@ -432,12 +432,13 @@ LibCraftText.RE_ALCHEMY_TRAIT = {
 ,   es = { "Prepara un veneno de (.*) [IVX]+"
          , "Prepara veneno de (.*) [IVX]+"
          , "Prepara un[ea]? [^ ]+ (.*)"
-         , "Crea un [^ ]+ de (.*)"
+         , "Crea un[ea]? [^ ]+ de (.*)"
          }
          -- Prepara veneno de absorción de vida IX
 ,   it = { "(.*) glyph of"}         -- "health" for all 9 ranks.
 ,   ru = { "Craft .* of (.*)"
-         , "Craft (.*) Poison" }
+         , "Craft (.*) Poison"
+         , "[^ ]+ of (.*)" }
 ,   ja = { "(.*)の.*を" }
 }
 LibCraftText.RE_ALCHEMY_SOLVENT = {
@@ -450,11 +451,12 @@ LibCraftText.RE_ALCHEMY_SOLVENT = {
          , "Fabriquez une? ([^ ]+) de .*" }
 ,   es = { "([IVX]+)$"
          , "Prepara un[ea]? (.*) de .*"
-         , "Crea un (.*) de .*"
+         , "Crea un[ea]? (.*) de .*"
          }
 ,   it = { "(.*) glyph of"}         -- "health" for all 9 ranks.
 ,   ru = { "([IVX]+)$"
-         , "Craft (.*) of " }
+         , "Craft (.*) of "
+         , "([^ ]+) of " }
 ,   ja = { "毒(.*)を生産する"
          , ".*の(.*)を"}
 }
@@ -462,36 +464,38 @@ LibCraftText.RE_ALCHEMY_SOLVENT = {
 function LibCraftText.ParseDailyConditionAlchemy(cond_text)
     local self  = LibCraftText
     local lang  = self.CurrLang()
-    local trait = self.ParseRegexable(
-                          nil
-                        , cond_text
-                        , self.RE_ALCHEMY_TRAIT[lang]
-                        , self.ALCHEMY_TRAIT
-                        , { "daily_potion_name"
-                          , "daily_poison_name", "daily_poison_name2" }
-                        )
-if not trait then
-    ZZDEBUG=ZZDEBUG_ON
-    ZZDEBUG(string.format("### cond_text:'%s'", cond_text))
-    local trait = self.ParseRegexable(
-                          nil
-                        , cond_text
-                        , self.RE_ALCHEMY_TRAIT[lang]
-                        , self.ALCHEMY_TRAIT
-                        , { "daily_potion_name"
-                          , "daily_poison_name", "daily_poison_name2" }
-                        )
-    ZZDEBUG(string.format("### debug off"))
-    ZZDEBUG=ZZDEBUG_OFF
-end
-    local solvent = self.ParseRegexable(
-                          al
-                        , cond_text
-                        , self.RE_ALCHEMY_SOLVENT[lang]
-                        , self.CONSUMABLE_MATERIAL
-                        , { "potion_name"--, "potion_name2"
-                          , "poison_name" }
-                        )
+    local args  =   {
+                      nil
+                    , cond_text
+                    , self.RE_ALCHEMY_TRAIT[lang]
+                    , self.ALCHEMY_TRAIT
+                    , { "daily_potion_name"
+                      , "daily_poison_name", "daily_poison_name2" }
+                    }
+    local trait = self.ParseRegexable(unpack(args))
+    if not trait then
+        ZZDEBUG=ZZDEBUG_ON
+        ZZDEBUG(string.format("### cond_text:'%s'", cond_text))
+        self.ParseRegexable(unpack(args))
+        ZZDEBUG=ZZDEBUG_OFF
+    end
+    args =  {
+              al
+            , cond_text
+            , self.RE_ALCHEMY_SOLVENT[lang]
+            , self.CONSUMABLE_MATERIAL
+            , { "potion_name"--, "potion_name2"
+              , "poison_name" }
+            }
+
+    local solvent = self.ParseRegexable(unpack(args))
+    if not solvent then
+        ZZDEBUG=ZZDEBUG_ON
+        ZZDEBUG(string.format("### cond_text:'%s'", cond_text))
+        self.ParseRegexable(unpack(args))
+        ZZDEBUG=ZZDEBUG_OFF
+    end
+
     if not (trait or solvent) then return nil end
     return { trait   = trait
            , solvent = solvent
