@@ -68,16 +68,16 @@ COND_TEXT_FODDER = {
 , { input="Craft Dram of Ravage Magicka"                    , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_MAGICKA , solvent=LCT.CONSUMABLE_MATERIAL.PRISTINE_WATER } }
 , { input="Craft Dram of Stamina"                           , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_STAMINA, solvent=LCT.CONSUMABLE_MATERIAL.PRISTINE_WATER } }
 , { input="Craft Elinhir Roast Antelope"                    , expect={ item=LCT.RECIPE.ELENHIR_ROAST_ANTELOPE           } }
-, { input="Craft Elixir of Health"                          , expect={}                                                 }
-, { input="Craft Elixir of Magicka"                         , expect={}                                                 }
-, { input="Craft Elixir of Ravage Magicka"                  , expect={}                                                 }
-, { input="Craft Elixir of Stamina"                         , expect={}                                                 }
+, { input="Craft Elixir of Health"                          , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_HEALTH , solvent=LCT.CONSUMABLE_MATERIAL.PURIFIED_WATER } }
+, { input="Craft Elixir of Magicka"                         , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_MAGICKA, solvent=LCT.CONSUMABLE_MATERIAL.PURIFIED_WATER } }
+, { input="Craft Elixir of Ravage Magicka"                  , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_MAGICKA , solvent=LCT.CONSUMABLE_MATERIAL.PURIFIED_WATER } }
+, { input="Craft Elixir of Stamina"                         , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_STAMINA, solvent=LCT.CONSUMABLE_MATERIAL.PURIFIED_WATER } }
 , { input="Craft Eltheric Hooch"                            , expect={ item=LCT.RECIPE.ELTHERIC_HOOCH                   } }
-, { input="Craft Essence of Health"                         , expect={}                                                 }
-, { input="Craft Essence of Magicka"                        , expect={}                                                 }
-, { input="Craft Essence of Ravage Health"                  , expect={}                                                 }
-, { input="Craft Essence of Stamina"                        , expect={}                                                 }
-, { input="Craft Essence of Stamina: 0 / 1"              , expect={}                                                 }
+, { input="Craft Essence of Health"                         , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_HEALTH , solvent=LCT.CONSUMABLE_MATERIAL.LORKHANS_TEARS } }
+, { input="Craft Essence of Magicka"                        , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_MAGICKA, solvent=LCT.CONSUMABLE_MATERIAL.LORKHANS_TEARS } }
+, { input="Craft Essence of Ravage Health"                  , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH  , solvent=LCT.CONSUMABLE_MATERIAL.LORKHANS_TEARS } }
+, { input="Craft Essence of Stamina"                        , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_STAMINA, solvent=LCT.CONSUMABLE_MATERIAL.LORKHANS_TEARS } }
+, { input="Craft Essence of Stamina: 0 / 1"              , expect={    trait=LCT.ALCHEMY_TRAIT.RESTORE_STAMINA, solvent=LCT.CONSUMABLE_MATERIAL.LORKHANS_TEARS } }
 , { input="Craft Firsthold Fruit and Cheese Plate"          , expect={ item=LCT.RECIPE.FIRSHOLD_FRUIT_AND_CHEESE_PLATE  } }
 , { input="Craft Firsthold Fruit and Cheese Plate: 0 / 1", expect={    item=LCT.RECIPE.FIRSHOLD_FRUIT_AND_CHEESE_PLATE  } }
 , { input="Craft Fishy Stick"                               , expect={ item=LCT.RECIPE.FISHY_STICK                      } }

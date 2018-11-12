@@ -416,21 +416,29 @@ function LibCraftText.ParseDailyConditionGlyph(cond_text)
            }
 end
 
+                        -- REs should go from specific to general. That
+                        -- increases the chance of matching just the right
+                        -- parts instead of most of the string. Match too wide
+                        -- a substring and you'll erroneously find a potion or
+                        -- trait within that unwanted text.
 LibCraftText.RE_ALCHEMY_TRAIT = {
     en = { "Craft .* of (.*)"
          , "Craft (.*) Poison" }
 ,   de = { "Stellt etwas Gift [ders]+ (.*) [IVX]+ her"  -- NBSP before [IVX] !
          , "Stellt .* [ders]+ (.*) her" }               -- Must come after Gift re.
 ,   fr = { "Fabriquer un poison de (.*) [IVX]+"
-         , "Préparez une goutte de (.*)"}
+         , "Préparez une? [^ ]+ de (.*)"
+         , "Fabriquez une? [^ ]+ de (.*)"}
 ,   es = { "Prepara un veneno de (.*) [IVX]+"
          , "Prepara veneno de (.*) [IVX]+"
-         , "Prepara un trago de (.*)" }   -- Must come after veneno re.
+         , "Prepara un[ea]? [^ ]+ (.*)"
+         , "Crea un [^ ]+ de (.*)"
+         }
          -- Prepara veneno de absorción de vida IX
 ,   it = { "(.*) glyph of"}         -- "health" for all 9 ranks.
 ,   ru = { "Craft .* of (.*)"
          , "Craft (.*) Poison" }
-,   ja = { "(.*)の.*を生産する" }
+,   ja = { "(.*)の.*を" }
 }
 LibCraftText.RE_ALCHEMY_SOLVENT = {
     en = { "([IVX]+)$"          -- [IVX]+ re must occur before any other
@@ -438,14 +446,17 @@ LibCraftText.RE_ALCHEMY_SOLVENT = {
 ,   de = { "Stellt etwas Gift [ders]+ .* ([IVX]+) her"
          , "Stellt (.*) [ders]+ .* her" }   -- Must come after Gift re.
 ,   fr = { "([IVX]+)$"
-         , "Préparez une? (.*) de (.*)"  }
+         , "Préparez une? (.*) de (.*)"
+         , "Fabriquez une? ([^ ]+) de .*" }
 ,   es = { "([IVX]+)$"
-         , "Prepara un (.*) de .*" }
+         , "Prepara un[ea]? (.*) de .*"
+         , "Crea un (.*) de .*"
+         }
 ,   it = { "(.*) glyph of"}         -- "health" for all 9 ranks.
 ,   ru = { "([IVX]+)$"
          , "Craft (.*) of " }
 ,   ja = { "毒(.*)を生産する"
-         , ".*の(.*)を生産する"}
+         , ".*の(.*)を"}
 }
 
 function LibCraftText.ParseDailyConditionAlchemy(cond_text)
