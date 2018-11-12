@@ -59,7 +59,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Comely Wench Whiskey"                      , expect={ item=LCT.RECIPE.COMELY_WENCH_WHISKEY             } }
 , { input="Craft Cyrodilic Cornbread"                       , expect={ item=LCT.RECIPE.CYRODILIC_CORNBREAD              } }
 , { input="Craft Cyrodilic Pumpkin Fritters"                , expect={ item=LCT.RECIPE.CYRODILIC_PUMPKIN_FRITTERS       } }
-, { input="Craft Damage Health Poison IX"                   , expect={}                                                 }
+, { input="Craft Damage Health Poison IX"                   , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH, solvent=LCT.CONSUMABLE_MATERIAL.ALKAHEST } }
 , { input="Craft Damage Magicka Poison IX"                  , expect={}                                                 }
 , { input="Craft Damage Stamina Poison IX"                  , expect={}                                                 }
 , { input="Craft Drain Health Poison IX"                    , expect={}                                                 }

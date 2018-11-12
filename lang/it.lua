@@ -419,7 +419,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 -- master_poison    name of a rank 9 poison with this trait. Appears as part
 --                  of master writ requests.
 --
-LibCraftText.ALCHEMY_TRAITS = {
+LibCraftText.ALCHEMY_TRAIT = {
     ["RESTORE_HEALTH"         ] = { trait_index=01, name="Restore Health"       , master_potion="health"                            , master_poison="Drain Health Poison"               }
 ,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="Ravage Health"        , master_potion="Ravage Health"                     , master_poison="Damage Health Poison"              }
 ,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="Restore Magicka"      , master_potion="Magicka"                           , master_poison="Drain Magicka Poison"              }
@@ -458,8 +458,8 @@ LibCraftText.ALCHEMY_TRAITS = {
 -- potion_name  Appears in potion name such a "Elixir of Health"
 -- poison name  Appears in poison name such as "Drain Health Poison III"
 --
-local at = LibCraftText.ALCHEMY_TRAITS -- for less typing
-LibCraftText.ALCHEMY_ITEMS = {
+local at = LibCraftText.ALCHEMY_TRAIT -- for less typing
+LibCraftText.ALCHEMY_ITEM = {
   ["HEALTH"           ] = { trait=at.RESTORE_HEALTH , potion_name="health"                       , poison_name="drain health"                 }
 , ["MAGICKA"          ] = { trait=at.RESTORE_MAGICKA, potion_name="magicka"                      , poison_name="drain magicka"                }
 , ["STAMINA"          ] = { trait=at.RESTORE_STAMINA, potion_name="stamina"                      , poison_name="drain stamina"                }
@@ -482,16 +482,26 @@ at = nil
 -- poison_mat          "                       poison  "
 --
 local cm = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
-LibCraftText.ALCHEMY_SOLVENTS = {
-  { rank=1, potion_name="health"                 , poison_name="Drain Health Poison"    , potion_mat=cm.NATURAL_WATER  , poison_mat=cm.GREASE       }
-, { rank=2, potion_name="health"                 , poison_name="Drain Health Poison"    , potion_mat=cm.CLEAR_WATER    , poison_mat=cm.ICHOR        }
-, { rank=3, potion_name="health"                 , poison_name="Drain Health Poison"    , potion_mat=cm.PRISTINE_WATER , poison_mat=cm.SLIME        }
-, { rank=4, potion_name="health"                 , poison_name="Drain Health Poison"    , potion_mat=cm.CLEANSED_WATER , poison_mat=cm.GALL         }
-, { rank=5, potion_name="health"                 , poison_name="Drain Health Poison"    , potion_mat=cm.FILTERED_WATER , poison_mat=cm.TEREBINTHINE }
-, { rank=6, potion_name="health"                 , poison_name="Drain Health Poison"    , potion_mat=cm.PURIFIED_WATER , poison_mat=cm.PITCH_BILE   }
-, { rank=7, potion_name="health"                 , poison_name="Drain Health Poison"    , potion_mat=cm.CLOUD_MIST     , poison_mat=cm.TARBLACK     }
-, { rank=8, potion_name="health"                 , poison_name="Drain Health Poison"    , potion_mat=cm.STAR_DEW       , poison_mat=cm.NIGHT_OIL    }
-, { rank=9, potion_name="health"                 , poison_name="Drain Health Poison"    , potion_mat=cm.LORKHANS_TEARS , poison_mat=cm.ALKAHEST     }
+LibCraftText.ALCHEMY_SOLVENT = {
+  { rank=1, name="health"                 , mat=cm.NATURAL_WATER  }
+, { rank=2, name="health"                 , mat=cm.CLEAR_WATER    }
+, { rank=3, name="health"                 , mat=cm.PRISTINE_WATER }
+, { rank=4, name="health"                 , mat=cm.CLEANSED_WATER }
+, { rank=5, name="health"                 , mat=cm.FILTERED_WATER }
+, { rank=6, name="health"                 , mat=cm.PURIFIED_WATER }
+, { rank=7, name="health"                 , mat=cm.CLOUD_MIST     }
+, { rank=8, name="health"                 , mat=cm.STAR_DEW       }
+, { rank=9, name="health"                 , mat=cm.LORKHANS_TEARS }
+
+, { rank=1, name="Drain Health Poison"    , mat=cm.GREASE         }
+, { rank=2, name="Drain Health Poison"    , mat=cm.ICHOR          }
+, { rank=3, name="Drain Health Poison"    , mat=cm.SLIME          }
+, { rank=4, name="Drain Health Poison"    , mat=cm.GALL           }
+, { rank=5, name="Drain Health Poison"    , mat=cm.TEREBINTHINE   }
+, { rank=6, name="Drain Health Poison"    , mat=cm.PITCH_BILE     }
+, { rank=7, name="Drain Health Poison"    , mat=cm.TARBLACK       }
+, { rank=8, name="Drain Health Poison"    , mat=cm.NIGHT_OIL      }
+, { rank=9, name="Drain Health Poison"    , mat=cm.ALKAHEST       }
 }
 cm = nil
 

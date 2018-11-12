@@ -230,10 +230,10 @@ function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
     if crafting_type == pr then
         return self.ParseDailyConditionProvisioning(cond_text)
     end
-
                         -- Alchemy Potions/Poisons
-    -- local craft_item = self.ParseConsumableItem(crafting_type, cond_text)
-    -- if craft_item then return craft_item end
+    if crafting_type == al then
+        return self.ParseDailyConditionAlchemy(cond_text)
+    end
 
     return nil
 end
@@ -427,6 +427,70 @@ function LibCraftText.ParseDailyConditionGlyph(cond_text)
            }
 end
 
+LibCraftText.RE_ALCHEMY_TRAIT = {
+    en = { "Craft .* of (.*)"
+         , "Craft (.*) Poison" }
+,   de = { "eine (.*) Glyphe de[sr]"}
+,   fr = { "glyphe (.*)"
+         , "(petit) glyphe "}
+,   es = { "glifo (.*) de"
+         , "Craft (.*) Glyph of" }  -- Ayep, there are still untranslated lines in ES Spanish
+,   it = { "(.*) glyph of"}         -- "health" for all 9 ranks.
+,   ru = { "(.*) Glyph of"}
+,   ja = { "(.*)のグリフ"
+         , "(.*)なグリフ"}
+}
+LibCraftText.RE_ALCHEMY_SOLVENT = {
+    en = { "Craft (.*) of "
+         , "Craft .* Poison (.*)" }
+,   de = { "eine (.*) Glyphe de[sr]"}
+,   fr = { "glyphe (.*)"
+         , "(petit) glyphe "}
+,   es = { "glifo (.*) de"
+         , "Craft (.*) Glyph of" }  -- Ayep, there are still untranslated lines in ES Spanish
+,   it = { "(.*) glyph of"}         -- "health" for all 9 ranks.
+,   ru = { "(.*) Glyph of"}
+,   ja = { "(.*)のグリフ"
+         , "(.*)なグリフ"}
+}
+
+function LibCraftText.ParseDailyConditionAlchemy(cond_text)
+    local self  = LibCraftText
+    local lang  = self.CurrLang()
+    local found = self.ParseRegexable( nil
+                                     , cond_text
+                                     , self.RE_ALCHEMY_TRAIT[lang]
+                                     , self.ALCHEMY_ITEM
+                                     , { "potion_name", "poison_name" }
+                                     )
+    local trait = found and found.trait
+
+    found = self.ParseRegexable( nil
+                                     , cond_text
+                                     , self.RE_ALCHEMY_SOLVENT[lang]
+                                     , self.ALCHEMY_SOLVENT
+                                     , { "name" }
+                                     )
+print("found:"..tostring(found))
+print("found.mat:"..tostring(found and found.mat))
+    local solvent = found and found.mat
+if found then print(string.format("solvent found, mat:%s", tostring(found.mat))) end
+if not solvent then
+ZZDEBUG=ZZDEBUG_ON
+    local found = self.ParseRegexable( nil
+                                     , cond_text
+                                     , self.RE_ALCHEMY_SOLVENT[lang]
+                                     , self.ALCHEMY_SOLVENT
+                                     , { "name" }
+                                     )
+ZZDEBUG=ZZDEBUG_OFF
+end
+    if not (trait or mat) then return nil end
+    return { trait   = trait
+           , solvent = solvent
+           }
+end
+
 function LibCraftText.ParseRegexable( crafting_type
                                     , cond_text
                                     , re_list
@@ -552,7 +616,10 @@ function LibCraftText.ExactMatch(find_me, rows, crafting_type, field_name, ... )
                 if name and (  find_me_lower == name:lower()
                              or find_me_deumlauted == LibCraftText.DeUmlaut(name) ) then
 
+                    ZZDEBUG(string.format("    exact: '%s'", tostring(name)))
                     return row
+                else
+                    ZZDEBUG(string.format("not exact: '%s' != '%s'", tostring(name), find_me_lower))
                 end
             end
         end

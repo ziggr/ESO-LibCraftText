@@ -419,7 +419,7 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 -- master_poison    name of a rank 9 poison with this trait. Appears as part
 --                  of master writ requests.
 --
-LibCraftText.ALCHEMY_TRAITS = {
+LibCraftText.ALCHEMY_TRAIT = {
     ["RESTORE_HEALTH"         ] = { trait_index=01, name="Rend de la Santé"     , master_potion="essence de Santé^f"                , master_poison="Poison de drain de Santé IX^m"     }
 ,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="Réduit la Santé"      , master_potion="essence de ravage de Santé^f"      , master_poison="Poison de ravage de Santé IX^m"    }
 ,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="Rend de la Magie"     , master_potion="essence de Magie^f"                , master_poison="Poison de drain de Magie IX^m"     }
@@ -458,8 +458,8 @@ LibCraftText.ALCHEMY_TRAITS = {
 -- potion_name  Appears in potion name such a "Elixir of Health"
 -- poison name  Appears in poison name such as "Drain Health Poison III"
 --
-local at = LibCraftText.ALCHEMY_TRAITS -- for less typing
-LibCraftText.ALCHEMY_ITEMS = {
+local at = LibCraftText.ALCHEMY_TRAIT -- for less typing
+LibCraftText.ALCHEMY_ITEM = {
   ["HEALTH"           ] = { trait=at.RESTORE_HEALTH , potion_name="santé"                        , poison_name="drain de santé"               }
 , ["MAGICKA"          ] = { trait=at.RESTORE_MAGICKA, potion_name="magie"                        , poison_name="drain de magie"               }
 , ["STAMINA"          ] = { trait=at.RESTORE_STAMINA, potion_name="vigueur"                      , poison_name="drain de vigueur"             }
@@ -482,16 +482,26 @@ at = nil
 -- poison_mat          "                       poison  "
 --
 local cm = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
-LibCraftText.ALCHEMY_SOLVENTS = {
-  { rank=1, potion_name="gorgée"                 , poison_name="i"                      , potion_mat=cm.NATURAL_WATER  , poison_mat=cm.GREASE       }
-, { rank=2, potion_name="teinture"               , poison_name="ii"                     , potion_mat=cm.CLEAR_WATER    , poison_mat=cm.ICHOR        }
-, { rank=3, potion_name="goutte"                 , poison_name="iii"                    , potion_mat=cm.PRISTINE_WATER , poison_mat=cm.SLIME        }
-, { rank=4, potion_name="potion"                 , poison_name="iv"                     , potion_mat=cm.CLEANSED_WATER , poison_mat=cm.GALL         }
-, { rank=5, potion_name="solution"               , poison_name="v"                      , potion_mat=cm.FILTERED_WATER , poison_mat=cm.TEREBINTHINE }
-, { rank=6, potion_name="élixir"                 , poison_name="vi"                     , potion_mat=cm.PURIFIED_WATER , poison_mat=cm.PITCH_BILE   }
-, { rank=7, potion_name="panacée"                , poison_name="vii"                    , potion_mat=cm.CLOUD_MIST     , poison_mat=cm.TARBLACK     }
-, { rank=8, potion_name="distillat"              , poison_name="viii"                   , potion_mat=cm.STAR_DEW       , poison_mat=cm.NIGHT_OIL    }
-, { rank=9, potion_name="essence"                , poison_name="ix"                     , potion_mat=cm.LORKHANS_TEARS , poison_mat=cm.ALKAHEST     }
+LibCraftText.ALCHEMY_SOLVENT = {
+  { rank=1, name="gorgée"                 , mat=cm.NATURAL_WATER  }
+, { rank=2, name="teinture"               , mat=cm.CLEAR_WATER    }
+, { rank=3, name="goutte"                 , mat=cm.PRISTINE_WATER }
+, { rank=4, name="potion"                 , mat=cm.CLEANSED_WATER }
+, { rank=5, name="solution"               , mat=cm.FILTERED_WATER }
+, { rank=6, name="élixir"                 , mat=cm.PURIFIED_WATER }
+, { rank=7, name="panacée"                , mat=cm.CLOUD_MIST     }
+, { rank=8, name="distillat"              , mat=cm.STAR_DEW       }
+, { rank=9, name="essence"                , mat=cm.LORKHANS_TEARS }
+
+, { rank=1, name="i"                      , mat=cm.GREASE         }
+, { rank=2, name="ii"                     , mat=cm.ICHOR          }
+, { rank=3, name="iii"                    , mat=cm.SLIME          }
+, { rank=4, name="iv"                     , mat=cm.GALL           }
+, { rank=5, name="v"                      , mat=cm.TEREBINTHINE   }
+, { rank=6, name="vi"                     , mat=cm.PITCH_BILE     }
+, { rank=7, name="vii"                    , mat=cm.TARBLACK       }
+, { rank=8, name="viii"                   , mat=cm.NIGHT_OIL      }
+, { rank=9, name="ix"                     , mat=cm.ALKAHEST       }
 }
 cm = nil
 
