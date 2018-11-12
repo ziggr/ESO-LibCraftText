@@ -322,25 +322,25 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["CLAM_GALL"               ] = { name=$MATERIAL_AL_139020              , crafting_type=al, item_id=139020 }
 , ["POWDERED_MOTHER_OF_PEARL"] = { name=$MATERIAL_AL_139019              , crafting_type=al, item_id=139019 }
 
-, ["NATURAL_WATER"           ] = { name=$MATERIAL_AL_000883              , crafting_type=al, item_id=   883 , name_2=$MATERIAL_AL_000883B }
-, ["CLEAR_WATER"             ] = { name=$MATERIAL_AL_001187              , crafting_type=al, item_id=  1187 }
-, ["PRISTINE_WATER"          ] = { name=$MATERIAL_AL_004570              , crafting_type=al, item_id=  4570 , name_2=$MATERIAL_AL_004570B }
-, ["CLEANSED_WATER"          ] = { name=$MATERIAL_AL_023265              , crafting_type=al, item_id= 23265 , name_2=$MATERIAL_AL_023265B }
-, ["FILTERED_WATER"          ] = { name=$MATERIAL_AL_023266              , crafting_type=al, item_id= 23266 , name_2=$MATERIAL_AL_023266B }
-, ["PURIFIED_WATER"          ] = { name=$MATERIAL_AL_023267              , crafting_type=al, item_id= 23267 , name_2=$MATERIAL_AL_023267B }
-, ["CLOUD_MIST"              ] = { name=$MATERIAL_AL_023268              , crafting_type=al, item_id= 23268 }
-, ["STAR_DEW"                ] = { name=$MATERIAL_AL_064500              , crafting_type=al, item_id= 64500 }
-, ["LORKHANS_TEARS"          ] = { name=$MATERIAL_AL_064501              , crafting_type=al, item_id= 64501 }
+, ["NATURAL_WATER"           ] = { name=$MATERIAL_AL_000883              , crafting_type=al, item_id=   883 , name_2=$MATERIAL_AL_000883B , rank=1, potion_name=$ALCHEMY_SOLVENT_POTION_1 }
+, ["CLEAR_WATER"             ] = { name=$MATERIAL_AL_001187              , crafting_type=al, item_id=  1187                               , rank=2, potion_name=$ALCHEMY_SOLVENT_POTION_2 }
+, ["PRISTINE_WATER"          ] = { name=$MATERIAL_AL_004570              , crafting_type=al, item_id=  4570 , name_2=$MATERIAL_AL_004570B , rank=3, potion_name=$ALCHEMY_SOLVENT_POTION_3 }
+, ["CLEANSED_WATER"          ] = { name=$MATERIAL_AL_023265              , crafting_type=al, item_id= 23265 , name_2=$MATERIAL_AL_023265B , rank=4, potion_name=$ALCHEMY_SOLVENT_POTION_4 }
+, ["FILTERED_WATER"          ] = { name=$MATERIAL_AL_023266              , crafting_type=al, item_id= 23266 , name_2=$MATERIAL_AL_023266B , rank=5, potion_name=$ALCHEMY_SOLVENT_POTION_5 }
+, ["PURIFIED_WATER"          ] = { name=$MATERIAL_AL_023267              , crafting_type=al, item_id= 23267 , name_2=$MATERIAL_AL_023267B , rank=6, potion_name=$ALCHEMY_SOLVENT_POTION_6 }
+, ["CLOUD_MIST"              ] = { name=$MATERIAL_AL_023268              , crafting_type=al, item_id= 23268                               , rank=7, potion_name=$ALCHEMY_SOLVENT_POTION_7 }
+, ["STAR_DEW"                ] = { name=$MATERIAL_AL_064500              , crafting_type=al, item_id= 64500                               , rank=8, potion_name=$ALCHEMY_SOLVENT_POTION_8 }
+, ["LORKHANS_TEARS"          ] = { name=$MATERIAL_AL_064501              , crafting_type=al, item_id= 64501                               , rank=9, potion_name=$ALCHEMY_SOLVENT_POTION_9 }
 
-, ["GREASE"                  ] = { name=$MATERIAL_AL_075357              , crafting_type=al, item_id= 75357 }
-, ["ICHOR"                   ] = { name=$MATERIAL_AL_075358              , crafting_type=al, item_id= 75358 }
-, ["SLIME"                   ] = { name=$MATERIAL_AL_075359              , crafting_type=al, item_id= 75359 }
-, ["GALL"                    ] = { name=$MATERIAL_AL_075360              , crafting_type=al, item_id= 75360 }
-, ["TEREBINTHINE"            ] = { name=$MATERIAL_AL_075361              , crafting_type=al, item_id= 75361 }
-, ["PITCH_BILE"              ] = { name=$MATERIAL_AL_075362              , crafting_type=al, item_id= 75362 }
-, ["TARBLACK"                ] = { name=$MATERIAL_AL_075363              , crafting_type=al, item_id= 75363 }
-, ["NIGHT_OIL"               ] = { name=$MATERIAL_AL_075364              , crafting_type=al, item_id= 75364 }
-, ["ALKAHEST"                ] = { name=$MATERIAL_AL_075365              , crafting_type=al, item_id= 75365 }
+, ["GREASE"                  ] = { name=$MATERIAL_AL_075357              , crafting_type=al, item_id= 75357                               , rank=1, poison_name=$ALCHEMY_SOLVENT_POISON_1 }
+, ["ICHOR"                   ] = { name=$MATERIAL_AL_075358              , crafting_type=al, item_id= 75358                               , rank=2, poison_name=$ALCHEMY_SOLVENT_POISON_2 }
+, ["SLIME"                   ] = { name=$MATERIAL_AL_075359              , crafting_type=al, item_id= 75359                               , rank=3, poison_name=$ALCHEMY_SOLVENT_POISON_3 }
+, ["GALL"                    ] = { name=$MATERIAL_AL_075360              , crafting_type=al, item_id= 75360                               , rank=4, poison_name=$ALCHEMY_SOLVENT_POISON_4 }
+, ["TEREBINTHINE"            ] = { name=$MATERIAL_AL_075361              , crafting_type=al, item_id= 75361                               , rank=5, poison_name=$ALCHEMY_SOLVENT_POISON_5 }
+, ["PITCH_BILE"              ] = { name=$MATERIAL_AL_075362              , crafting_type=al, item_id= 75362                               , rank=6, poison_name=$ALCHEMY_SOLVENT_POISON_6 }
+, ["TARBLACK"                ] = { name=$MATERIAL_AL_075363              , crafting_type=al, item_id= 75363                               , rank=7, poison_name=$ALCHEMY_SOLVENT_POISON_7 }
+, ["NIGHT_OIL"               ] = { name=$MATERIAL_AL_075364              , crafting_type=al, item_id= 75364                               , rank=8, poison_name=$ALCHEMY_SOLVENT_POISON_8 }
+, ["ALKAHEST"                ] = { name=$MATERIAL_AL_075365              , crafting_type=al, item_id= 75365                               , rank=9, poison_name=$ALCHEMY_SOLVENT_POISON_9 }
 
 , ["JORA"                    ] = { name=$MATERIAL_EN_045855              , crafting_type=en, item_id= 45855 , name_2=$POTENCY_045855 }
 , ["PORADE"                  ] = { name=$MATERIAL_EN_045856              , crafting_type=en, item_id= 45856 }
@@ -468,42 +468,6 @@ LibCraftText.ALCHEMY_ITEM = {
 , ["RAVAGE_STAMINA"   ] = { trait=at.RAVAGE_STAMINA , potion_name=$ALCHEMY_POTION_RAVAGE_STAMINA , poison_name=$ALCHEMY_POISON_RAVAGE_STAMINA }
 }
 at = nil
-
--- Potion/Poison leveled names
---
--- "Dram of Health" vs. "Potion of Health" vs. "Essence of Health"
---
--- Poison levels are just the numeric suffix "III" or "IX" or whatever.
---
--- rank             alchemy rank 1..9
--- potion_name      string that appears in names of potions at this rank
--- poison_name         "                            poisons  "
--- potion_mat       material to use to craft a potion of this rank
--- poison_mat          "                       poison  "
---
-local cm = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
-LibCraftText.ALCHEMY_SOLVENT = {
-  { rank=1, name=$ALCHEMY_SOLVENT_POTION_1, mat=cm.NATURAL_WATER  }
-, { rank=2, name=$ALCHEMY_SOLVENT_POTION_2, mat=cm.CLEAR_WATER    }
-, { rank=3, name=$ALCHEMY_SOLVENT_POTION_3, mat=cm.PRISTINE_WATER }
-, { rank=4, name=$ALCHEMY_SOLVENT_POTION_4, mat=cm.CLEANSED_WATER }
-, { rank=5, name=$ALCHEMY_SOLVENT_POTION_5, mat=cm.FILTERED_WATER }
-, { rank=6, name=$ALCHEMY_SOLVENT_POTION_6, mat=cm.PURIFIED_WATER }
-, { rank=7, name=$ALCHEMY_SOLVENT_POTION_7, mat=cm.CLOUD_MIST     }
-, { rank=8, name=$ALCHEMY_SOLVENT_POTION_8, mat=cm.STAR_DEW       }
-, { rank=9, name=$ALCHEMY_SOLVENT_POTION_9, mat=cm.LORKHANS_TEARS }
-
-, { rank=1, name=$ALCHEMY_SOLVENT_POISON_1, mat=cm.GREASE         }
-, { rank=2, name=$ALCHEMY_SOLVENT_POISON_2, mat=cm.ICHOR          }
-, { rank=3, name=$ALCHEMY_SOLVENT_POISON_3, mat=cm.SLIME          }
-, { rank=4, name=$ALCHEMY_SOLVENT_POISON_4, mat=cm.GALL           }
-, { rank=5, name=$ALCHEMY_SOLVENT_POISON_5, mat=cm.TEREBINTHINE   }
-, { rank=6, name=$ALCHEMY_SOLVENT_POISON_6, mat=cm.PITCH_BILE     }
-, { rank=7, name=$ALCHEMY_SOLVENT_POISON_7, mat=cm.TARBLACK       }
-, { rank=8, name=$ALCHEMY_SOLVENT_POISON_8, mat=cm.NIGHT_OIL      }
-, { rank=9, name=$ALCHEMY_SOLVENT_POISON_9, mat=cm.ALKAHEST       }
-}
-cm = nil
 
 -- Quest Titles --------------------------------------------------------------
 

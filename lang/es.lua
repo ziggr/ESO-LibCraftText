@@ -322,25 +322,25 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["CLAM_GALL"               ] = { name="hiel de almeja"                 , crafting_type=al, item_id=139020 }
 , ["POWDERED_MOTHER_OF_PEARL"] = { name="polvo de nácar"                 , crafting_type=al, item_id=139019 }
 
-, ["NATURAL_WATER"           ] = { name="agua natural"                   , crafting_type=al, item_id=   883 , name_2="agua natural"       }
-, ["CLEAR_WATER"             ] = { name="agua limpia"                    , crafting_type=al, item_id=  1187 }
-, ["PRISTINE_WATER"          ] = { name="agua prístina"                  , crafting_type=al, item_id=  4570 , name_2="agua prístina"      }
-, ["CLEANSED_WATER"          ] = { name="agua depurada"                  , crafting_type=al, item_id= 23265 , name_2="agua depurada"      }
-, ["FILTERED_WATER"          ] = { name="agua filtrada"                  , crafting_type=al, item_id= 23266 , name_2="agua filtrada"      }
-, ["PURIFIED_WATER"          ] = { name="agua purificada"                , crafting_type=al, item_id= 23267 , name_2="agua purificada"    }
-, ["CLOUD_MIST"              ] = { name="Bruma"                          , crafting_type=al, item_id= 23268 }
-, ["STAR_DEW"                ] = { name="rocío estelar"                  , crafting_type=al, item_id= 64500 }
-, ["LORKHANS_TEARS"          ] = { name="Lágrimas de Lorkhan"            , crafting_type=al, item_id= 64501 }
+, ["NATURAL_WATER"           ] = { name="agua natural"                   , crafting_type=al, item_id=   883 , name_2="agua natural"       , rank=1, potion_name="sorbo"                   }
+, ["CLEAR_WATER"             ] = { name="agua limpia"                    , crafting_type=al, item_id=  1187                               , rank=2, potion_name="tintura"                 }
+, ["PRISTINE_WATER"          ] = { name="agua prístina"                  , crafting_type=al, item_id=  4570 , name_2="agua prístina"      , rank=3, potion_name="trago"                   }
+, ["CLEANSED_WATER"          ] = { name="agua depurada"                  , crafting_type=al, item_id= 23265 , name_2="agua depurada"      , rank=4, potion_name="poción"                  }
+, ["FILTERED_WATER"          ] = { name="agua filtrada"                  , crafting_type=al, item_id= 23266 , name_2="agua filtrada"      , rank=5, potion_name="solución"                }
+, ["PURIFIED_WATER"          ] = { name="agua purificada"                , crafting_type=al, item_id= 23267 , name_2="agua purificada"    , rank=6, potion_name="elixir"                  }
+, ["CLOUD_MIST"              ] = { name="Bruma"                          , crafting_type=al, item_id= 23268                               , rank=7, potion_name="panacea"                 }
+, ["STAR_DEW"                ] = { name="rocío estelar"                  , crafting_type=al, item_id= 64500                               , rank=8, potion_name="destilado"               }
+, ["LORKHANS_TEARS"          ] = { name="Lágrimas de Lorkhan"            , crafting_type=al, item_id= 64501                               , rank=9, potion_name="esencia"                 }
 
-, ["GREASE"                  ] = { name="Grasa"                          , crafting_type=al, item_id= 75357 }
-, ["ICHOR"                   ] = { name="icor"                           , crafting_type=al, item_id= 75358 }
-, ["SLIME"                   ] = { name="limo"                           , crafting_type=al, item_id= 75359 }
-, ["GALL"                    ] = { name="bilis"                          , crafting_type=al, item_id= 75360 }
-, ["TEREBINTHINE"            ] = { name="trementina"                     , crafting_type=al, item_id= 75361 }
-, ["PITCH_BILE"              ] = { name="bilis ácido"                    , crafting_type=al, item_id= 75362 }
-, ["TARBLACK"                ] = { name="betún negro"                    , crafting_type=al, item_id= 75363 }
-, ["NIGHT_OIL"               ] = { name="aceite noctívago"               , crafting_type=al, item_id= 75364 }
-, ["ALKAHEST"                ] = { name="alkahest"                       , crafting_type=al, item_id= 75365 }
+, ["GREASE"                  ] = { name="Grasa"                          , crafting_type=al, item_id= 75357                               , rank=1, poison_name="i"                       }
+, ["ICHOR"                   ] = { name="icor"                           , crafting_type=al, item_id= 75358                               , rank=2, poison_name="ii"                      }
+, ["SLIME"                   ] = { name="limo"                           , crafting_type=al, item_id= 75359                               , rank=3, poison_name="iii"                     }
+, ["GALL"                    ] = { name="bilis"                          , crafting_type=al, item_id= 75360                               , rank=4, poison_name="iv"                      }
+, ["TEREBINTHINE"            ] = { name="trementina"                     , crafting_type=al, item_id= 75361                               , rank=5, poison_name="v"                       }
+, ["PITCH_BILE"              ] = { name="bilis ácido"                    , crafting_type=al, item_id= 75362                               , rank=6, poison_name="vi"                      }
+, ["TARBLACK"                ] = { name="betún negro"                    , crafting_type=al, item_id= 75363                               , rank=7, poison_name="vii"                     }
+, ["NIGHT_OIL"               ] = { name="aceite noctívago"               , crafting_type=al, item_id= 75364                               , rank=8, poison_name="viii"                    }
+, ["ALKAHEST"                ] = { name="alkahest"                       , crafting_type=al, item_id= 75365                               , rank=9, poison_name="ix"                      }
 
 , ["JORA"                    ] = { name="Jora"                           , crafting_type=en, item_id= 45855 , name_2="mediocre"      }
 , ["PORADE"                  ] = { name="Porade"                         , crafting_type=en, item_id= 45856 }
@@ -468,42 +468,6 @@ LibCraftText.ALCHEMY_ITEM = {
 , ["RAVAGE_STAMINA"   ] = { trait=at.RAVAGE_STAMINA , potion_name="reducción de aguante"         , poison_name="daño al aguante"              }
 }
 at = nil
-
--- Potion/Poison leveled names
---
--- "Dram of Health" vs. "Potion of Health" vs. "Essence of Health"
---
--- Poison levels are just the numeric suffix "III" or "IX" or whatever.
---
--- rank             alchemy rank 1..9
--- potion_name      string that appears in names of potions at this rank
--- poison_name         "                            poisons  "
--- potion_mat       material to use to craft a potion of this rank
--- poison_mat          "                       poison  "
---
-local cm = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
-LibCraftText.ALCHEMY_SOLVENT = {
-  { rank=1, name="sorbo"                  , mat=cm.NATURAL_WATER  }
-, { rank=2, name="tintura"                , mat=cm.CLEAR_WATER    }
-, { rank=3, name="trago"                  , mat=cm.PRISTINE_WATER }
-, { rank=4, name="poción"                 , mat=cm.CLEANSED_WATER }
-, { rank=5, name="solución"               , mat=cm.FILTERED_WATER }
-, { rank=6, name="elixir"                 , mat=cm.PURIFIED_WATER }
-, { rank=7, name="panacea"                , mat=cm.CLOUD_MIST     }
-, { rank=8, name="destilado"              , mat=cm.STAR_DEW       }
-, { rank=9, name="esencia"                , mat=cm.LORKHANS_TEARS }
-
-, { rank=1, name="i"                      , mat=cm.GREASE         }
-, { rank=2, name="ii"                     , mat=cm.ICHOR          }
-, { rank=3, name="iii"                    , mat=cm.SLIME          }
-, { rank=4, name="iv"                     , mat=cm.GALL           }
-, { rank=5, name="v"                      , mat=cm.TEREBINTHINE   }
-, { rank=6, name="vi"                     , mat=cm.PITCH_BILE     }
-, { rank=7, name="vii"                    , mat=cm.TARBLACK       }
-, { rank=8, name="viii"                   , mat=cm.NIGHT_OIL      }
-, { rank=9, name="ix"                     , mat=cm.ALKAHEST       }
-}
-cm = nil
 
 -- Quest Titles --------------------------------------------------------------
 

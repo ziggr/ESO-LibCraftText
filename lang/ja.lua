@@ -322,25 +322,25 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["CLAM_GALL"               ] = { name="クラム・ゴル"                         , crafting_type=al, item_id=139020 }
 , ["POWDERED_MOTHER_OF_PEARL"] = { name="真珠貝のパウダー"                       , crafting_type=al, item_id=139019 }
 
-, ["NATURAL_WATER"           ] = { name="自然水"                            , crafting_type=al, item_id=   883 , name_2="自然水"                }
-, ["CLEAR_WATER"             ] = { name="清水"                             , crafting_type=al, item_id=  1187 }
-, ["PRISTINE_WATER"          ] = { name="清浄水"                            , crafting_type=al, item_id=  4570 , name_2="清浄水"                }
-, ["CLEANSED_WATER"          ] = { name="浄化水"                            , crafting_type=al, item_id= 23265 , name_2="浄化水"                }
-, ["FILTERED_WATER"          ] = { name="ろ過水"                            , crafting_type=al, item_id= 23266 , name_2="ろ過水"                }
-, ["PURIFIED_WATER"          ] = { name="神聖水"                            , crafting_type=al, item_id= 23267 , name_2="神聖水"                }
-, ["CLOUD_MIST"              ] = { name="霧の雲"                            , crafting_type=al, item_id= 23268 }
-, ["STAR_DEW"                ] = { name="星のしずく"                          , crafting_type=al, item_id= 64500 }
-, ["LORKHANS_TEARS"          ] = { name="ロルカーンの涙"                        , crafting_type=al, item_id= 64501 }
+, ["NATURAL_WATER"           ] = { name="自然水"                            , crafting_type=al, item_id=   883 , name_2="自然水"                , rank=1, potion_name="雫"                       }
+, ["CLEAR_WATER"             ] = { name="清水"                             , crafting_type=al, item_id=  1187                               , rank=2, potion_name="生薬"                      }
+, ["PRISTINE_WATER"          ] = { name="清浄水"                            , crafting_type=al, item_id=  4570 , name_2="清浄水"                , rank=3, potion_name="飲み薬"                     }
+, ["CLEANSED_WATER"          ] = { name="浄化水"                            , crafting_type=al, item_id= 23265 , name_2="浄化水"                , rank=4, potion_name="薬"                       }
+, ["FILTERED_WATER"          ] = { name="ろ過水"                            , crafting_type=al, item_id= 23266 , name_2="ろ過水"                , rank=5, potion_name="液体薬"                     }
+, ["PURIFIED_WATER"          ] = { name="神聖水"                            , crafting_type=al, item_id= 23267 , name_2="神聖水"                , rank=6, potion_name="霊薬"                      }
+, ["CLOUD_MIST"              ] = { name="霧の雲"                            , crafting_type=al, item_id= 23268                               , rank=7, potion_name="万能薬"                     }
+, ["STAR_DEW"                ] = { name="星のしずく"                          , crafting_type=al, item_id= 64500                               , rank=8, potion_name="蒸留"                      }
+, ["LORKHANS_TEARS"          ] = { name="ロルカーンの涙"                        , crafting_type=al, item_id= 64501                               , rank=9, potion_name="エキス"                     }
 
-, ["GREASE"                  ] = { name="獣油"                             , crafting_type=al, item_id= 75357 }
-, ["ICHOR"                   ] = { name="イコル"                            , crafting_type=al, item_id= 75358 }
-, ["SLIME"                   ] = { name="粘液"                             , crafting_type=al, item_id= 75359 }
-, ["GALL"                    ] = { name="胆嚢"                             , crafting_type=al, item_id= 75360 }
-, ["TEREBINTHINE"            ] = { name="テレピン"                           , crafting_type=al, item_id= 75361 }
-, ["PITCH_BILE"              ] = { name="黒の胆汁"                           , crafting_type=al, item_id= 75362 }
-, ["TARBLACK"                ] = { name="ターブラック"                         , crafting_type=al, item_id= 75363 }
-, ["NIGHT_OIL"               ] = { name="夜の油"                            , crafting_type=al, item_id= 75364 }
-, ["ALKAHEST"                ] = { name="アルカヘスト"                         , crafting_type=al, item_id= 75365 }
+, ["GREASE"                  ] = { name="獣油"                             , crafting_type=al, item_id= 75357                               , rank=1, poison_name="1"                       }
+, ["ICHOR"                   ] = { name="イコル"                            , crafting_type=al, item_id= 75358                               , rank=2, poison_name="2"                       }
+, ["SLIME"                   ] = { name="粘液"                             , crafting_type=al, item_id= 75359                               , rank=3, poison_name="3"                       }
+, ["GALL"                    ] = { name="胆嚢"                             , crafting_type=al, item_id= 75360                               , rank=4, poison_name="4"                       }
+, ["TEREBINTHINE"            ] = { name="テレピン"                           , crafting_type=al, item_id= 75361                               , rank=5, poison_name="5"                       }
+, ["PITCH_BILE"              ] = { name="黒の胆汁"                           , crafting_type=al, item_id= 75362                               , rank=6, poison_name="6"                       }
+, ["TARBLACK"                ] = { name="ターブラック"                         , crafting_type=al, item_id= 75363                               , rank=7, poison_name="7"                       }
+, ["NIGHT_OIL"               ] = { name="夜の油"                            , crafting_type=al, item_id= 75364                               , rank=8, poison_name="8"                       }
+, ["ALKAHEST"                ] = { name="アルカヘスト"                         , crafting_type=al, item_id= 75365                               , rank=9, poison_name="9"                       }
 
 , ["JORA"                    ] = { name="ジョラ"                            , crafting_type=en, item_id= 45855 , name_2="初歩"            }
 , ["PORADE"                  ] = { name="ポラデ"                            , crafting_type=en, item_id= 45856 }
@@ -468,42 +468,6 @@ LibCraftText.ALCHEMY_ITEM = {
 , ["RAVAGE_STAMINA"   ] = { trait=at.RAVAGE_STAMINA , potion_name="スタミナ減少"                       , poison_name="スタミナ減少"                       }
 }
 at = nil
-
--- Potion/Poison leveled names
---
--- "Dram of Health" vs. "Potion of Health" vs. "Essence of Health"
---
--- Poison levels are just the numeric suffix "III" or "IX" or whatever.
---
--- rank             alchemy rank 1..9
--- potion_name      string that appears in names of potions at this rank
--- poison_name         "                            poisons  "
--- potion_mat       material to use to craft a potion of this rank
--- poison_mat          "                       poison  "
---
-local cm = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
-LibCraftText.ALCHEMY_SOLVENT = {
-  { rank=1, name="雫"                      , mat=cm.NATURAL_WATER  }
-, { rank=2, name="生薬"                     , mat=cm.CLEAR_WATER    }
-, { rank=3, name="飲み薬"                    , mat=cm.PRISTINE_WATER }
-, { rank=4, name="薬"                      , mat=cm.CLEANSED_WATER }
-, { rank=5, name="液体薬"                    , mat=cm.FILTERED_WATER }
-, { rank=6, name="霊薬"                     , mat=cm.PURIFIED_WATER }
-, { rank=7, name="万能薬"                    , mat=cm.CLOUD_MIST     }
-, { rank=8, name="蒸留"                     , mat=cm.STAR_DEW       }
-, { rank=9, name="エキス"                    , mat=cm.LORKHANS_TEARS }
-
-, { rank=1, name="1"                      , mat=cm.GREASE         }
-, { rank=2, name="2"                      , mat=cm.ICHOR          }
-, { rank=3, name="3"                      , mat=cm.SLIME          }
-, { rank=4, name="4"                      , mat=cm.GALL           }
-, { rank=5, name="5"                      , mat=cm.TEREBINTHINE   }
-, { rank=6, name="6"                      , mat=cm.PITCH_BILE     }
-, { rank=7, name="7"                      , mat=cm.TARBLACK       }
-, { rank=8, name="8"                      , mat=cm.NIGHT_OIL      }
-, { rank=9, name="9"                      , mat=cm.ALKAHEST       }
-}
-cm = nil
 
 -- Quest Titles --------------------------------------------------------------
 

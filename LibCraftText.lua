@@ -465,27 +465,14 @@ function LibCraftText.ParseDailyConditionAlchemy(cond_text)
                                      )
     local trait = found and found.trait
 
-    found = self.ParseRegexable( nil
-                                     , cond_text
-                                     , self.RE_ALCHEMY_SOLVENT[lang]
-                                     , self.ALCHEMY_SOLVENT
-                                     , { "name" }
-                                     )
-print("found:"..tostring(found))
-print("found.mat:"..tostring(found and found.mat))
-    local solvent = found and found.mat
-if found then print(string.format("solvent found, mat:%s", tostring(found.mat))) end
-if not solvent then
-ZZDEBUG=ZZDEBUG_ON
-    local found = self.ParseRegexable( nil
-                                     , cond_text
-                                     , self.RE_ALCHEMY_SOLVENT[lang]
-                                     , self.ALCHEMY_SOLVENT
-                                     , { "name" }
-                                     )
-ZZDEBUG=ZZDEBUG_OFF
-end
-    if not (trait or mat) then return nil end
+    found = self.ParseRegexable( al
+                               , cond_text
+                               , self.RE_ALCHEMY_SOLVENT[lang]
+                               , self.CONSUMABLE_MATERIAL
+                               , { "potion_name", "poison_name" }
+                               )
+    local solvent = found
+    if not (trait or solvent) then return nil end
     return { trait   = trait
            , solvent = solvent
            }
