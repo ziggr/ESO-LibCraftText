@@ -38,19 +38,19 @@ end
 -- material     MATERIAL            RUBEDITE
 --
 --              Enchanting          "Craft Grand Glyph of Health With Ta"
--- potency      CONSUMABLE_MATERIAL DERADO
+-- potency      MATERIAL            DERADO
 -- essence      "                   OKO
 -- aspect       "                   TA
 --
 --              Alchemy             "Craft Essence of Ravage Health"
 -- trait        ALCHEMY_TRAIT       RAVAGE_HEALTH
--- solvent      CONSUMABLE_MATERIAL LORKHANS_TEARS
+-- solvent      MATERIAL            LORKHANS_TEARS
 --
 --              Provisioning        "Craft Baked Potato"
 -- item         RECIPE              BAKED_POTATO
 --
 --              Enchanting, Alchemy "Acquire Ta Aspect Rune"
--- material     CONSUMABLE_MATERIAL TA
+-- material     MATERIAL            TA
 --
 --              Miscellaneous       "Deliver Goods to Nearest Writ Quartermaster"
 -- misc         DAILY_COND          DELIVER_NEAREST_QUARTERMASTER
@@ -310,7 +310,7 @@ function LibCraftText.ParseConsumableAcquireMat(crafting_type, cond_text)
                                    crafting_type
                                  , cond_text
                                  , self.RE_CONDITION_ACQUIRE[lang]
-                                 , self.CONSUMABLE_MATERIAL
+                                 , self.MATERIAL
                                  , { "name", "name_2" }
                                  )
     if found_mat then
@@ -401,7 +401,7 @@ LibCraftText.RE_ESSENCE = {
 
 function LibCraftText.ParseDailyConditionGlyph(cond_text)
     local self = LibCraftText
-    local m    = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
+    local m    = LibCraftText.MATERIAL -- for less typing
     local POTENCY_LIST = {
                            m.JORA    -- trifling
                          , m.JERA    -- petty
@@ -508,7 +508,7 @@ function LibCraftText.ParseDailyConditionAlchemy(cond_text)
               al
             , cond_text
             , self.RE_ALCHEMY_SOLVENT[lang]
-            , self.CONSUMABLE_MATERIAL
+            , self.MATERIAL
             , { "potion_name"--, "potion_name2"
               , "poison_name" }
             }
