@@ -173,7 +173,7 @@ LibCraftText.RECIPE = {
 , ["MAZTE"                           ] = { name=$FOOD_033606                            , food_item_id=033606, recipe_list_index=$FOOD_033606_RLI, recipe_index=$FOOD_033606_RI }
 , ["MERMAID_WHISKEY"                 ] = { name=$FOOD_033630                            , food_item_id=033630, recipe_list_index=$FOOD_033630_RLI, recipe_index=$FOOD_033630_RI }
 , ["MILLET_STUFFED_PORK_LOIN"        ] = { name=$FOOD_043088                            , food_item_id=043088, recipe_list_index=$FOOD_043088_RLI, recipe_index=$FOOD_043088_RI }
-, ["MULLED_WINE"                     ] = { name=$FOOD_033969                                  , food_item_id=033969, recipe_list_index=$FOOD_033969_RLI, recipe_index=$FOOD_033969_RI }
+, ["MULLED_WINE"                     ] = { name=$FOOD_033969                            , food_item_id=033969, recipe_list_index=$FOOD_033969_RLI, recipe_index=$FOOD_033969_RI }
 , ["MUTHSERAS_REMORSE"               ] = { name=$FOOD_068260                            , food_item_id=068260, recipe_list_index=$FOOD_068260_RLI, recipe_index=$FOOD_068260_RI }
 , ["NEREID_WINE"                     ] = { name=$FOOD_033975                            , food_item_id=033975, recipe_list_index=$FOOD_033975_RLI, recipe_index=$FOOD_033975_RI }
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name=$FOOD_033478                            , food_item_id=033478, recipe_list_index=$FOOD_033478_RLI, recipe_index=$FOOD_033478_RI }
@@ -401,6 +401,99 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["REKUTA"                  ] = { name=$MATERIAL_EN_045853              , crafting_type=en, item_id= 45853 , name_2=$QUALITY_4 }
 , ["KUTA"                    ] = { name=$MATERIAL_EN_045854              , crafting_type=en, item_id= 45854 , name_2=$QUALITY_5 }
 }
+
+
+-- Alchemy Traits ------------------------------------------------------------
+
+-- Answering "which trait?" for "Craft a potion/poison with the following traits".
+--
+-- trait_index      integer 1 through 30. Appears in one of the 4 bytes of
+--                  itemLink for potions/poisons with this trait.
+--
+-- name             user-visible name of this trait. Often appears as part of
+--                  potion name. Sometimes appears as part of poison name.
+--
+-- master_potion    name of a rank 9 potion with this trait. Appears as part
+--                  of master writ requests.
+--
+-- master_poison    name of a rank 9 poison with this trait. Appears as part
+--                  of master writ requests.
+--
+LibCraftText.ALCHEMY_TRAITS = {
+    ["RESTORE_HEALTH"         ] = { trait_index=01, name=$ALCHEMY_TRAIT_01      , master_potion=$ALCHEMY_MASTER_POTION_01           , master_poison=$ALCHEMY_MASTER_POISON_01           }
+,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name=$ALCHEMY_TRAIT_02      , master_potion=$ALCHEMY_MASTER_POTION_02           , master_poison=$ALCHEMY_MASTER_POISON_02           }
+,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name=$ALCHEMY_TRAIT_03      , master_potion=$ALCHEMY_MASTER_POTION_03           , master_poison=$ALCHEMY_MASTER_POISON_03           }
+,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name=$ALCHEMY_TRAIT_04      , master_potion=$ALCHEMY_MASTER_POTION_04           , master_poison=$ALCHEMY_MASTER_POISON_04           }
+,   ["RESTORE_STAMINA"        ] = { trait_index=05, name=$ALCHEMY_TRAIT_05      , master_potion=$ALCHEMY_MASTER_POTION_05           , master_poison=$ALCHEMY_MASTER_POISON_05           }
+,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name=$ALCHEMY_TRAIT_06      , master_potion=$ALCHEMY_MASTER_POTION_06           , master_poison=$ALCHEMY_MASTER_POISON_06           }
+,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name=$ALCHEMY_TRAIT_07      , master_potion=$ALCHEMY_MASTER_POTION_07           , master_poison=$ALCHEMY_MASTER_POISON_07           }
+,   ["BREACH"                 ] = { trait_index=08, name=$ALCHEMY_TRAIT_08      , master_potion=$ALCHEMY_MASTER_POTION_08           , master_poison=$ALCHEMY_MASTER_POISON_08           }
+,   ["INCREASE_ARMOR"         ] = { trait_index=09, name=$ALCHEMY_TRAIT_09      , master_potion=$ALCHEMY_MASTER_POTION_09           , master_poison=$ALCHEMY_MASTER_POISON_09           }
+,   ["FRACTURE"               ] = { trait_index=10, name=$ALCHEMY_TRAIT_10      , master_potion=$ALCHEMY_MASTER_POTION_10           , master_poison=$ALCHEMY_MASTER_POISON_10           }
+,   ["INCREASE_SPELL_POWER"   ] = { trait_index=11, name=$ALCHEMY_TRAIT_11      , master_potion=$ALCHEMY_MASTER_POTION_11           , master_poison=$ALCHEMY_MASTER_POISON_11           }
+,   ["COWARDICE"              ] = { trait_index=12, name=$ALCHEMY_TRAIT_12      , master_potion=$ALCHEMY_MASTER_POTION_12           , master_poison=$ALCHEMY_MASTER_POISON_12           }
+,   ["INCREASE_WEAPON_POWER"  ] = { trait_index=13, name=$ALCHEMY_TRAIT_13      , master_potion=$ALCHEMY_MASTER_POTION_13           , master_poison=$ALCHEMY_MASTER_POISON_13           }
+,   ["MAIM"                   ] = { trait_index=14, name=$ALCHEMY_TRAIT_14      , master_potion=$ALCHEMY_MASTER_POTION_14           , master_poison=$ALCHEMY_MASTER_POISON_14           }
+,   ["SPELL_CRITICAL"         ] = { trait_index=15, name=$ALCHEMY_TRAIT_15      , master_potion=$ALCHEMY_MASTER_POTION_15           , master_poison=$ALCHEMY_MASTER_POISON_15           }
+,   ["UNCERTAINTY"            ] = { trait_index=16, name=$ALCHEMY_TRAIT_16      , master_potion=$ALCHEMY_MASTER_POTION_16           , master_poison=$ALCHEMY_MASTER_POISON_16           }
+,   ["WEAPON_CRITICAL"        ] = { trait_index=17, name=$ALCHEMY_TRAIT_17      , master_potion=$ALCHEMY_MASTER_POTION_17           , master_poison=$ALCHEMY_MASTER_POISON_17           }
+,   ["ENERVATION"             ] = { trait_index=18, name=$ALCHEMY_TRAIT_18      , master_potion=$ALCHEMY_MASTER_POTION_18           , master_poison=$ALCHEMY_MASTER_POISON_18           }
+,   ["UNSTOPPABLE"            ] = { trait_index=19, name=$ALCHEMY_TRAIT_19      , master_potion=$ALCHEMY_MASTER_POTION_19           , master_poison=$ALCHEMY_MASTER_POISON_19           }
+,   ["ENTRAPMENT"             ] = { trait_index=20, name=$ALCHEMY_TRAIT_20      , master_potion=$ALCHEMY_MASTER_POTION_20           , master_poison=$ALCHEMY_MASTER_POISON_20           }
+,   ["DETECTION"              ] = { trait_index=21, name=$ALCHEMY_TRAIT_21      , master_potion=$ALCHEMY_MASTER_POTION_21           , master_poison=$ALCHEMY_MASTER_POISON_21           }
+,   ["INVISIBLE"              ] = { trait_index=22, name=$ALCHEMY_TRAIT_22      , master_potion=$ALCHEMY_MASTER_POTION_22           , master_poison=$ALCHEMY_MASTER_POISON_22           }
+,   ["SPEED"                  ] = { trait_index=23, name=$ALCHEMY_TRAIT_23      , master_potion=$ALCHEMY_MASTER_POTION_23           , master_poison=$ALCHEMY_MASTER_POISON_23           }
+,   ["HINDRANCE"              ] = { trait_index=24, name=$ALCHEMY_TRAIT_24      , master_potion=$ALCHEMY_MASTER_POTION_24           , master_poison=$ALCHEMY_MASTER_POISON_24           }
+,   ["PROTECTION"             ] = { trait_index=25, name=$ALCHEMY_TRAIT_25      , master_potion=$ALCHEMY_MASTER_POTION_25           , master_poison=$ALCHEMY_MASTER_POISON_25           }
+,   ["VULNERABILITY"          ] = { trait_index=26, name=$ALCHEMY_TRAIT_26      , master_potion=$ALCHEMY_MASTER_POTION_26           , master_poison=$ALCHEMY_MASTER_POISON_26           }
+,   ["LINGERING_HEALTH"       ] = { trait_index=27, name=$ALCHEMY_TRAIT_27      , master_potion=$ALCHEMY_MASTER_POTION_27           , master_poison=$ALCHEMY_MASTER_POISON_27           }
+,   ["GRADUAL_RAVAGE_HEALTH"  ] = { trait_index=28, name=$ALCHEMY_TRAIT_28      , master_potion=$ALCHEMY_MASTER_POTION_28           , master_poison=$ALCHEMY_MASTER_POISON_28           }
+,   ["VITALITY"               ] = { trait_index=29, name=$ALCHEMY_TRAIT_29      , master_potion=$ALCHEMY_MASTER_POTION_29           , master_poison=$ALCHEMY_MASTER_POISON_29           }
+,   ["DEFILE"                 ] = { trait_index=30, name=$ALCHEMY_TRAIT_30      , master_potion=$ALCHEMY_MASTER_POTION_30           , master_poison=$ALCHEMY_MASTER_POISON_30           }
+}
+
+-- The 6 possible potions and poisons that a daily crafting writ can request.
+--
+-- trait        reference into ALCHEMY_TRAITS so you know which potion/poison to make
+-- potion_name  Appears in potion name such a "Elixir of Health"
+-- poison name  Appears in poison name such as "Drain Health Poison III"
+--
+local at = LibCraftText.ALCHEMY_TRAITS -- for less typing
+LibCraftText.ALCHEMY_ITEMS = {
+  ["HEALTH"           ] = { trait=at.RESTORE_HEALTH , potion_name=$ALCHEMY_POTION_HEALTH         , poison_name=$ALCHEMY_POISON_HEALTH         }
+, ["MAGICKA"          ] = { trait=at.RESTORE_MAGICKA, potion_name=$ALCHEMY_POTION_MAGICKA        , poison_name=$ALCHEMY_POISON_MAGICKA        }
+, ["STAMINA"          ] = { trait=at.RESTORE_STAMINA, potion_name=$ALCHEMY_POTION_STAMINA        , poison_name=$ALCHEMY_POISON_STAMINA        }
+, ["RAVAGE_HEALTH"    ] = { trait=at.RAVAGE_HEALTH  , potion_name=$ALCHEMY_POTION_RAVAGE_HEALTH  , poison_name=$ALCHEMY_POISON_RAVAGE_HEALTH  }
+, ["RAVAGE_MAGICKA"   ] = { trait=at.RAVAGE_MAGICKA , potion_name=$ALCHEMY_POTION_RAVAGE_MAGICKA , poison_name=$ALCHEMY_POISON_RAVAGE_MAGICKA }
+, ["RAVAGE_STAMINA"   ] = { trait=at.RAVAGE_STAMINA , potion_name=$ALCHEMY_POTION_RAVAGE_STAMINA , poison_name=$ALCHEMY_POISON_RAVAGE_STAMINA }
+}
+at = nil
+
+-- Potion/Poison leveled names
+--
+-- "Dram of Health" vs. "Potion of Health" vs. "Essence of Health"
+--
+-- Poison levels are just the numeric suffix "III" or "IX" or whatever.
+--
+-- rank             alchemy rank 1..9
+-- potion_name      string that appears in names of potions at this rank
+-- poison_name         "                            poisons  "
+-- potion_mat       material to use to craft a potion of this rank
+-- poison_mat          "                       poison  "
+--
+local cm = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
+LibCraftText.ALCHEMY_SOLVENTS = {
+  { rank=1, potion_name=$ALCHEMY_SOLVENT_POTION_1, poison_name=$ALCHEMY_SOLVENT_POISON_1, potion_mat=cm.NATURAL_WATER  , poison_mat=cm.GREASE       }
+, { rank=2, potion_name=$ALCHEMY_SOLVENT_POTION_2, poison_name=$ALCHEMY_SOLVENT_POISON_2, potion_mat=cm.CLEAR_WATER    , poison_mat=cm.ICHOR        }
+, { rank=3, potion_name=$ALCHEMY_SOLVENT_POTION_3, poison_name=$ALCHEMY_SOLVENT_POISON_3, potion_mat=cm.PRISTINE_WATER , poison_mat=cm.SLIME        }
+, { rank=4, potion_name=$ALCHEMY_SOLVENT_POTION_4, poison_name=$ALCHEMY_SOLVENT_POISON_4, potion_mat=cm.CLEANSED_WATER , poison_mat=cm.GALL         }
+, { rank=5, potion_name=$ALCHEMY_SOLVENT_POTION_5, poison_name=$ALCHEMY_SOLVENT_POISON_5, potion_mat=cm.FILTERED_WATER , poison_mat=cm.TEREBINTHINE }
+, { rank=6, potion_name=$ALCHEMY_SOLVENT_POTION_6, poison_name=$ALCHEMY_SOLVENT_POISON_6, potion_mat=cm.PURIFIED_WATER , poison_mat=cm.PITCH_BILE   }
+, { rank=7, potion_name=$ALCHEMY_SOLVENT_POTION_7, poison_name=$ALCHEMY_SOLVENT_POISON_7, potion_mat=cm.CLOUD_MIST     , poison_mat=cm.TARBLACK     }
+, { rank=8, potion_name=$ALCHEMY_SOLVENT_POTION_8, poison_name=$ALCHEMY_SOLVENT_POISON_8, potion_mat=cm.STAR_DEW       , poison_mat=cm.NIGHT_OIL    }
+, { rank=9, potion_name=$ALCHEMY_SOLVENT_POTION_9, poison_name=$ALCHEMY_SOLVENT_POISON_9, potion_mat=cm.LORKHANS_TEARS , poison_mat=cm.ALKAHEST     }
+}
+cm = nil
 
 -- Quest Titles --------------------------------------------------------------
 

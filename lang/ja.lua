@@ -173,7 +173,7 @@ LibCraftText.RECIPE = {
 , ["MAZTE"                           ] = { name="マッツェ"                                  , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
 , ["MERMAID_WHISKEY"                 ] = { name="マーメイド・ウイスキー"                           , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
 , ["MILLET_STUFFED_PORK_LOIN"        ] = { name="雑穀の豚腰肉包み焼き"                            , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
-, ["MULLED_WINE"                     ] = { name="ホットワイン"                                      , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
+, ["MULLED_WINE"                     ] = { name="ホットワイン"                                , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
 , ["MUTHSERAS_REMORSE"               ] = { name="ムスセラの良心の呵責"                            , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}
 , ["NEREID_WINE"                     ] = { name="ネレイドワイン"                               , food_item_id=033975, recipe_list_index=  8, recipe_index= 24}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="ニベン人のニンジンのニンニク炒め"                      , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
@@ -401,6 +401,99 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["REKUTA"                  ] = { name="レクタ"                            , crafting_type=en, item_id= 45853 , name_2="Epic"     }
 , ["KUTA"                    ] = { name="クター"                            , crafting_type=en, item_id= 45854 , name_2="Legendary"}
 }
+
+
+-- Alchemy Traits ------------------------------------------------------------
+
+-- Answering "which trait?" for "Craft a potion/poison with the following traits".
+--
+-- trait_index      integer 1 through 30. Appears in one of the 4 bytes of
+--                  itemLink for potions/poisons with this trait.
+--
+-- name             user-visible name of this trait. Often appears as part of
+--                  potion name. Sometimes appears as part of poison name.
+--
+-- master_potion    name of a rank 9 potion with this trait. Appears as part
+--                  of master writ requests.
+--
+-- master_poison    name of a rank 9 poison with this trait. Appears as part
+--                  of master writ requests.
+--
+LibCraftText.ALCHEMY_TRAITS = {
+    ["RESTORE_HEALTH"         ] = { trait_index=01, name="体力回復"                 , master_potion="体力 のエキス"                           , master_poison="体力吸収の毒 9"                          }
+,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="体力減少"                 , master_potion="体力減少 のエキス"                         , master_poison="体力減少の毒 9"                          }
+,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="マジカ回復"                , master_potion="マジカ のエキス"                          , master_poison="マジカ吸収の毒 9"                         }
+,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="マジカ減少"                , master_potion="マジカ減少 のエキス"                        , master_poison="マジカ減少の毒 9"                         }
+,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="スタミナ回復"               , master_potion="スタミナ のエキス"                         , master_poison="スタミナ吸収の毒 9"                        }
+,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="スタミナ減少"               , master_potion="スタミナ減少 のエキス"                       , master_poison="スタミナ減少の毒 9"                        }
+,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name="呪文耐性増大"               , master_potion="呪文防御 のエキス"                         , master_poison="結界吸収の毒 9"                          }
+,   ["BREACH"                 ] = { trait_index=08, name="侵害"                   , master_potion="呪文防御減少 のエキス"                       , master_poison="侵害の毒 9"                            }
+,   ["INCREASE_ARMOR"         ] = { trait_index=09, name="防御力増大"                , master_potion="防具 のエキス"                           , master_poison="強固吸収の毒 9"                          }
+,   ["FRACTURE"               ] = { trait_index=10, name="破砕"                   , master_potion="鎧破損度 のエキス"                         , master_poison="破砕の毒 9"                            }
+,   ["INCREASE_SPELL_POWER"   ] = { trait_index=11, name="呪文攻撃力上昇"              , master_potion="呪文攻撃力 のエキス"                        , master_poison="魔術吸収の毒 9"                          }
+,   ["COWARDICE"              ] = { trait_index=12, name="臆病"                   , master_potion="臆病 のエキス"                           , master_poison="臆病の毒 9"                            }
+,   ["INCREASE_WEAPON_POWER"  ] = { trait_index=13, name="武器攻撃力上昇"              , master_potion="武器攻撃力 のエキス"                        , master_poison="残忍吸収の毒 9"                          }
+,   ["MAIM"                   ] = { trait_index=14, name="不自由"                  , master_potion="不自由 のエキス"                          , master_poison="不自由の毒 9"                           }
+,   ["SPELL_CRITICAL"         ] = { trait_index=15, name="呪文クリティカル"             , master_potion="呪文クリティカル のエキス"                     , master_poison="予言吸収の毒 9"                          }
+,   ["UNCERTAINTY"            ] = { trait_index=16, name="不信"                   , master_potion="不信 のエキス"                           , master_poison="不信の毒 9"                            }
+,   ["WEAPON_CRITICAL"        ] = { trait_index=17, name="武器クリティカル"             , master_potion="武器クリティカル のエキス"                     , master_poison="獰猛吸収の毒 9"                          }
+,   ["ENERVATION"             ] = { trait_index=18, name="弱体化"                  , master_potion="弱体化 のエキス"                          , master_poison="弱体化の毒 9"                           }
+,   ["UNSTOPPABLE"            ] = { trait_index=19, name="猪突猛進"                 , master_potion="不動性 のエキス"                          , master_poison="逃避者の毒 9"                           }
+,   ["ENTRAPMENT"             ] = { trait_index=20, name="罠"                    , master_potion="罠 のエキス"                            , master_poison="罠の毒 9"                             }
+,   ["DETECTION"              ] = { trait_index=21, name="探知"                   , master_potion="探知 のエキス"                           , master_poison="ステルス吸収の毒 9"                        }
+,   ["INVISIBLE"              ] = { trait_index=22, name="透明化"                  , master_potion="透明化 のエキス"                          , master_poison="露見の毒 9"                            }
+,   ["SPEED"                  ] = { trait_index=23, name="加速"                   , master_potion="加速 のエキス"                           , master_poison="速度吸収の毒 9"                          }
+,   ["HINDRANCE"              ] = { trait_index=24, name="妨害"                   , master_potion="妨害 のエキス"                           , master_poison="妨害の毒 9"                            }
+,   ["PROTECTION"             ] = { trait_index=25, name="防護"                   , master_potion="防御 のエキス"                           , master_poison="防御逆転の毒 9"                          }
+,   ["VULNERABILITY"          ] = { trait_index=26, name="脆弱"                   , master_potion="脆弱 のエキス"                           , master_poison="脆弱の毒 9"                            }
+,   ["LINGERING_HEALTH"       ] = { trait_index=27, name="体力継続"                 , master_potion="体力継続 のエキス"                         , master_poison="体力吸収継続の毒 9"                        }
+,   ["GRADUAL_RAVAGE_HEALTH"  ] = { trait_index=28, name="体力漸減"                 , master_potion="体力減少継続 のエキス"                       , master_poison="体力減少継続の毒 9"                        }
+,   ["VITALITY"               ] = { trait_index=29, name="生命力"                  , master_potion="生命力 のエキス"                          , master_poison="生命力吸収の毒 9"                         }
+,   ["DEFILE"                 ] = { trait_index=30, name="汚染"                   , master_potion="汚染 のエキス"                           , master_poison="汚染の毒 9"                            }
+}
+
+-- The 6 possible potions and poisons that a daily crafting writ can request.
+--
+-- trait        reference into ALCHEMY_TRAITS so you know which potion/poison to make
+-- potion_name  Appears in potion name such a "Elixir of Health"
+-- poison name  Appears in poison name such as "Drain Health Poison III"
+--
+local at = LibCraftText.ALCHEMY_TRAITS -- for less typing
+LibCraftText.ALCHEMY_ITEMS = {
+  ["HEALTH"           ] = { trait=at.RESTORE_HEALTH , potion_name="体力"                           , poison_name="体力吸収"                         }
+, ["MAGICKA"          ] = { trait=at.RESTORE_MAGICKA, potion_name="マジカ"                          , poison_name="マジカ吸収"                        }
+, ["STAMINA"          ] = { trait=at.RESTORE_STAMINA, potion_name="スタミナ"                         , poison_name="スタミナ吸収"                       }
+, ["RAVAGE_HEALTH"    ] = { trait=at.RAVAGE_HEALTH  , potion_name="体力減少"                         , poison_name="体力減少"                         }
+, ["RAVAGE_MAGICKA"   ] = { trait=at.RAVAGE_MAGICKA , potion_name="マジカ減少"                        , poison_name="マジカ減少"                        }
+, ["RAVAGE_STAMINA"   ] = { trait=at.RAVAGE_STAMINA , potion_name="スタミナ減少"                       , poison_name="スタミナ減少"                       }
+}
+at = nil
+
+-- Potion/Poison leveled names
+--
+-- "Dram of Health" vs. "Potion of Health" vs. "Essence of Health"
+--
+-- Poison levels are just the numeric suffix "III" or "IX" or whatever.
+--
+-- rank             alchemy rank 1..9
+-- potion_name      string that appears in names of potions at this rank
+-- poison_name         "                            poisons  "
+-- potion_mat       material to use to craft a potion of this rank
+-- poison_mat          "                       poison  "
+--
+local cm = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
+LibCraftText.ALCHEMY_SOLVENTS = {
+  { rank=1, potion_name="雫"                      , poison_name="1"                      , potion_mat=cm.NATURAL_WATER  , poison_mat=cm.GREASE       }
+, { rank=2, potion_name="生薬"                     , poison_name="2"                      , potion_mat=cm.CLEAR_WATER    , poison_mat=cm.ICHOR        }
+, { rank=3, potion_name="飲み薬"                    , poison_name="3"                      , potion_mat=cm.PRISTINE_WATER , poison_mat=cm.SLIME        }
+, { rank=4, potion_name="薬"                      , poison_name="4"                      , potion_mat=cm.CLEANSED_WATER , poison_mat=cm.GALL         }
+, { rank=5, potion_name="液体薬"                    , poison_name="5"                      , potion_mat=cm.FILTERED_WATER , poison_mat=cm.TEREBINTHINE }
+, { rank=6, potion_name="霊薬"                     , poison_name="6"                      , potion_mat=cm.PURIFIED_WATER , poison_mat=cm.PITCH_BILE   }
+, { rank=7, potion_name="万能薬"                    , poison_name="7"                      , potion_mat=cm.CLOUD_MIST     , poison_mat=cm.TARBLACK     }
+, { rank=8, potion_name="蒸留"                     , poison_name="8"                      , potion_mat=cm.STAR_DEW       , poison_mat=cm.NIGHT_OIL    }
+, { rank=9, potion_name="エキス"                    , poison_name="9"                      , potion_mat=cm.LORKHANS_TEARS , poison_mat=cm.ALKAHEST     }
+}
+cm = nil
 
 -- Quest Titles --------------------------------------------------------------
 

@@ -173,7 +173,7 @@ LibCraftText.RECIPE = {
 , ["MAZTE"                           ] = { name="Mazte"                                 , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
 , ["MERMAID_WHISKEY"                 ] = { name="Mermaid Whiskey"                       , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
 , ["MILLET_STUFFED_PORK_LOIN"        ] = { name="Millet-Stuffed Pork Loin"              , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
-, ["MULLED_WINE"                     ] = { name="Mulled Wine"                                 , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
+, ["MULLED_WINE"                     ] = { name="Mulled Wine"                           , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
 , ["MUTHSERAS_REMORSE"               ] = { name="Muthsera's Remorse"                    , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}
 , ["NEREID_WINE"                     ] = { name="Nereid Wine"                           , food_item_id=033975, recipe_list_index=  8, recipe_index= 24}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="Nibenese Garlic Carrots"               , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
@@ -401,6 +401,99 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 , ["REKUTA"                  ] = { name="Rekuta"                         , crafting_type=en, item_id= 45853 , name_2="Epic"     }
 , ["KUTA"                    ] = { name="Kuta"                           , crafting_type=en, item_id= 45854 , name_2="Legendary"}
 }
+
+
+-- Alchemy Traits ------------------------------------------------------------
+
+-- Answering "which trait?" for "Craft a potion/poison with the following traits".
+--
+-- trait_index      integer 1 through 30. Appears in one of the 4 bytes of
+--                  itemLink for potions/poisons with this trait.
+--
+-- name             user-visible name of this trait. Often appears as part of
+--                  potion name. Sometimes appears as part of poison name.
+--
+-- master_potion    name of a rank 9 potion with this trait. Appears as part
+--                  of master writ requests.
+--
+-- master_poison    name of a rank 9 poison with this trait. Appears as part
+--                  of master writ requests.
+--
+LibCraftText.ALCHEMY_TRAITS = {
+    ["RESTORE_HEALTH"         ] = { trait_index=01, name="Restore Health"       , master_potion="Essence of health"                 , master_poison="Drain Health Poison IX"            }
+,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="Ravage Health"        , master_potion="Essence of Ravage Health"          , master_poison="Damage Health Poison IX"           }
+,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="Restore Magicka"      , master_potion="Essence of Magicka"                , master_poison="Drain Magicka Poison IX"           }
+,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="Ravage Magicka"       , master_potion="Essence of Ravage Magicka"         , master_poison="Damage Magicka Poison IX"          }
+,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="Restore Stamina"      , master_potion="Essence of stamina"                , master_poison="Drain Stamina Poison IX"           }
+,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="Ravage Stamina"       , master_potion="Essence of Ravage Stamina"         , master_poison="Damage Stamina Poison IX"          }
+,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name="Increase Spell Resist", master_potion="Essence of Spell Protection"       , master_poison="Ward-Draining Poison IX"           }
+,   ["BREACH"                 ] = { trait_index=08, name="Breach"               , master_potion="Essence of Ravage Spell Protection", master_poison="Breaching Poison IX"               }
+,   ["INCREASE_ARMOR"         ] = { trait_index=09, name="Increase Armor"       , master_potion="Essence of Armor"                  , master_poison="Resolve-Draining Poison IX"        }
+,   ["FRACTURE"               ] = { trait_index=10, name="Fracture"             , master_potion="Essence of Ravage Armor"           , master_poison="Fracturing Poison IX"              }
+,   ["INCREASE_SPELL_POWER"   ] = { trait_index=11, name="Increase Spell Power" , master_potion="Essence of Spell Power"            , master_poison="Sorcery-Draining Poison IX"        }
+,   ["COWARDICE"              ] = { trait_index=12, name="Cowardice"            , master_potion="Essence of Cowardice"              , master_poison="Cowardice Poison IX"               }
+,   ["INCREASE_WEAPON_POWER"  ] = { trait_index=13, name="Increase Weapon Power", master_potion="Essence of Weapon Power"           , master_poison="Brutality-Draining Poison IX"      }
+,   ["MAIM"                   ] = { trait_index=14, name="Maim"                 , master_potion="Essence of Maim"                   , master_poison="Maiming Poison IX"                 }
+,   ["SPELL_CRITICAL"         ] = { trait_index=15, name="Spell Critical"       , master_potion="Essence of Spell Critical"         , master_poison="Prophecy-Draining Poison IX"       }
+,   ["UNCERTAINTY"            ] = { trait_index=16, name="Uncertainty"          , master_potion="Essence of Uncertainty"            , master_poison="Uncertainty Poison IX"             }
+,   ["WEAPON_CRITICAL"        ] = { trait_index=17, name="Weapon Critical"      , master_potion="Essence of Weapon Crit"            , master_poison="Savagery-Draining Poison IX"       }
+,   ["ENERVATION"             ] = { trait_index=18, name="Enervation"           , master_potion="Essence of Enervation"             , master_poison="Enervating Poison IX"              }
+,   ["UNSTOPPABLE"            ] = { trait_index=19, name="Unstoppable"          , master_potion="Essence of Immovability"           , master_poison="Escapist's Poison IX"              }
+,   ["ENTRAPMENT"             ] = { trait_index=20, name="Entrapment"           , master_potion="Essence of Entrapment"             , master_poison="Entrapping Poison IX"              }
+,   ["DETECTION"              ] = { trait_index=21, name="Detection"            , master_potion="Essence of Detection"              , master_poison="Stealth-Draining Poison IX"        }
+,   ["INVISIBLE"              ] = { trait_index=22, name="Invisible"            , master_potion="Essence of Invisibility"           , master_poison="Conspicuous Poison IX"             }
+,   ["SPEED"                  ] = { trait_index=23, name="Speed"                , master_potion="Essence of Speed"                  , master_poison="Speed-Draining Poison IX"          }
+,   ["HINDRANCE"              ] = { trait_index=24, name="Hindrance"            , master_potion="Essence of Hindering"              , master_poison="Hindering Poison IX"               }
+,   ["PROTECTION"             ] = { trait_index=25, name="Protection"           , master_potion="Essence of Protection"             , master_poison="Protection-Reversing Poison IX"    }
+,   ["VULNERABILITY"          ] = { trait_index=26, name="Vulnerability"        , master_potion="Essence of Vulnerability"          , master_poison="Vulnerability Poison IX"           }
+,   ["LINGERING_HEALTH"       ] = { trait_index=27, name="Lingering Health"     , master_potion="Essence of Lingering Health"       , master_poison="Gradual Health Drain Poison IX"    }
+,   ["GRADUAL_RAVAGE_HEALTH"  ] = { trait_index=28, name="Gradual Ravage Health", master_potion="Essence of Creeping Ravage Health" , master_poison="Gradual Ravage Health Poison IX"   }
+,   ["VITALITY"               ] = { trait_index=29, name="Vitality"             , master_potion="Essence of Vitality"               , master_poison="Vitality-Draining Poison IX"       }
+,   ["DEFILE"                 ] = { trait_index=30, name="Defile"               , master_potion="Essence of Defile"                 , master_poison="Defiling Poison IX"                }
+}
+
+-- The 6 possible potions and poisons that a daily crafting writ can request.
+--
+-- trait        reference into ALCHEMY_TRAITS so you know which potion/poison to make
+-- potion_name  Appears in potion name such a "Elixir of Health"
+-- poison name  Appears in poison name such as "Drain Health Poison III"
+--
+local at = LibCraftText.ALCHEMY_TRAITS -- for less typing
+LibCraftText.ALCHEMY_ITEMS = {
+  ["HEALTH"           ] = { trait=at.RESTORE_HEALTH , potion_name="health"                       , poison_name="drain health"                 }
+, ["MAGICKA"          ] = { trait=at.RESTORE_MAGICKA, potion_name="magicka"                      , poison_name="drain magicka"                }
+, ["STAMINA"          ] = { trait=at.RESTORE_STAMINA, potion_name="stamina"                      , poison_name="drain stamina"                }
+, ["RAVAGE_HEALTH"    ] = { trait=at.RAVAGE_HEALTH  , potion_name="ravage health"                , poison_name="damage health"                }
+, ["RAVAGE_MAGICKA"   ] = { trait=at.RAVAGE_MAGICKA , potion_name="ravage magicka"               , poison_name="damage magicka"               }
+, ["RAVAGE_STAMINA"   ] = { trait=at.RAVAGE_STAMINA , potion_name="ravage stamina"               , poison_name="damage stamina"               }
+}
+at = nil
+
+-- Potion/Poison leveled names
+--
+-- "Dram of Health" vs. "Potion of Health" vs. "Essence of Health"
+--
+-- Poison levels are just the numeric suffix "III" or "IX" or whatever.
+--
+-- rank             alchemy rank 1..9
+-- potion_name      string that appears in names of potions at this rank
+-- poison_name         "                            poisons  "
+-- potion_mat       material to use to craft a potion of this rank
+-- poison_mat          "                       poison  "
+--
+local cm = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
+LibCraftText.ALCHEMY_SOLVENTS = {
+  { rank=1, potion_name="sip"                    , poison_name="i"                      , potion_mat=cm.NATURAL_WATER  , poison_mat=cm.GREASE       }
+, { rank=2, potion_name="tincture"               , poison_name="ii"                     , potion_mat=cm.CLEAR_WATER    , poison_mat=cm.ICHOR        }
+, { rank=3, potion_name="dram"                   , poison_name="iii"                    , potion_mat=cm.PRISTINE_WATER , poison_mat=cm.SLIME        }
+, { rank=4, potion_name="potion"                 , poison_name="iv"                     , potion_mat=cm.CLEANSED_WATER , poison_mat=cm.GALL         }
+, { rank=5, potion_name="solution"               , poison_name="v"                      , potion_mat=cm.FILTERED_WATER , poison_mat=cm.TEREBINTHINE }
+, { rank=6, potion_name="elixir"                 , poison_name="vi"                     , potion_mat=cm.PURIFIED_WATER , poison_mat=cm.PITCH_BILE   }
+, { rank=7, potion_name="panacea"                , poison_name="vii"                    , potion_mat=cm.CLOUD_MIST     , poison_mat=cm.TARBLACK     }
+, { rank=8, potion_name="distillate"             , poison_name="viii"                   , potion_mat=cm.STAR_DEW       , poison_mat=cm.NIGHT_OIL    }
+, { rank=9, potion_name="essence"                , poison_name="ix"                     , potion_mat=cm.LORKHANS_TEARS , poison_mat=cm.ALKAHEST     }
+}
+cm = nil
 
 -- Quest Titles --------------------------------------------------------------
 

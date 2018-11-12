@@ -548,6 +548,20 @@ function ImportSavedVars()
         ImportSavedVarLangTable(alchemy.poison[saved_var_name], solvent_poison_key)
     end
 
+                        -- Alchemy traits, and master potions/poisons that
+                        -- reference that trait in the potion/poison item name.
+    for i,lang_table in ipairs(alchemy.trait) do
+        local key = string.format("$ALCHEMY_TRAIT_%02d",i)
+        ImportSavedVarLangTable(lang_table, key)
+    end
+    for i,lang_table in ipairs(alchemy.link.master_poison) do
+        local key = string.format("$ALCHEMY_MASTER_POISON_%02d",i)
+        ImportSavedVarLangTable(lang_table, key)
+    end
+    for i,lang_table in ipairs(alchemy.link.master_potion) do
+        local key = string.format("$ALCHEMY_MASTER_POTION_%02d",i)
+        ImportSavedVarLangTable(lang_table, key)
+    end
 end
 
 -- From http://lua-users.org/wiki/SplitJoin
