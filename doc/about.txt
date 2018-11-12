@@ -1,48 +1,65 @@
 Are you an add-on developer who compares quest names against a list of strings to figure out which quest is a daily crafting writ? Master writ?
 
-This is a tiny library of localized strings for crafting quest recognition.
+This is a library of localized strings for crafting quest recognition, and parser code that uses those strings to convert "Craft Normal Ancestor Silk Shoes" into { item=SHOES, material=ANCESTOR_SILK }
+
+Example dump of tables from parsing some daily crafting writ quests, in EN English, DE German, and JA Japanese:
+[img]https://i.imgur.com/XnVKBTV.jpg[/img]
+
+[highlight="Lua"]
+
+LibCraftText.DailyQuestNameToCraftingType("Enchanter Writ")
+---> returns CRAFTING_TYPE_ENCHANTING
+
+LibCraftText.ParseDailyCondition(CRAFTING_TYPE_ENCHANTING
+            , "Craft Superb Glyph of Health with Ta: 0/1")
+---> returns table:
+{
+    essence = { name="Oko",    item_id=45831, ... }
+    potency = { name="Rejera", item_id=64509, ... }
+    aspect  = { name="Ta",     item_id=45850, ... }
+}
+
+LibCraftText.ParseDailyCondition(CRAFTING_TYPE_CLOTHIER
+            , "Craft Normal Ancestor Silk Shoes: 0/1")
+---> returns table:
+{
+    item     = { name="shoes",         mat_set_id=mat_lgt, pattern_index=3, ... }
+    material = { name="Ancestor Silk", mat_set_id=mat_lgt, level_index=10, ... }
+}
+
+LibCraftText.ParseDailyCondition(CRAFTING_TYPE_ALCHEMY
+            , "Acquire Mudcrab Chitin: 3/3")
+---> returns table:
+{
+    item    = { name = "Mudcrab Chitin", item_id=77591, ... }
+}
+
+-- and if your ESO UI is set to DE German or some other supported
+-- language, then the name strings change, but the numbers don't:
+
+LibCraftText.ParseDailyCondition(CRAFTING_TYPE_ALCHEMY
+            , "Besorgt etwas Schlammkrabbenchitin: 3/3")
+---> returns table:
+{
+    item    = { name = "Schlammkrabbenchitin", item_id=77591, ... }
+}
+
+
+[/highlight]
 
 GitHub repo at [URL="https://github.com/ziggr/ESO-LibCraftText"]https://github.com/ziggr/ESO-LibCraftText[/URL].
 
-[highlight="Lua"]
-LibCraftText.DAILY_QUEST_TITLES = {
-    [bs] = "Blacksmith Writ"
-,   [cl] = "Clothier Writ"
-,   [en] = "Enchanter Writ"
-,   [al] = "Alchemist Writ"
-,   [pr] = "Provisioner Writ"
-,   [ww] = "Woodworker Writ"
-,   [jw] = "Jewelry Crafting Writ"
-}
-...
-LibCraftText.ROLIS_QUEST_TURN_IN = {
-
-    ["accept"]         = "<Accept the contract."
-,   ["finish"]         = "<Finish the job.>"
-,   ["deliver_substr"] = "Deliver"
-
-,   [bs] = "I've finished the Blacksmithing job."
-,   [cl] = "I've finished the Clothier job."
-,   [en] = "I've finished the Enchanting job."
-,   [al] = "I've finished the Alchemy job."
-,   [pr] = "I've finished the Provisioning job."
-,   [ww] = "I've finished the Woodworking job."
-,   [jw] = "I've finished the Jewelry job."
-}
-
-... and a few more
-[/highlight]
-
-
 [B]Languages Supported[/B]
 [list]
-[*] EN English - done
-[*] FR French - daily, master done. Rolis todo
-[*] DE German - daily, master done. Rolis todo
-[*] RU Russian - daily, master done. Rolis todo - [URL="https://www.esoui.com/downloads/info1347-RuESO.html"]RuESO[/URL]
-[*] ES Spanish - daily, master done. Rolis todo - [URL="https://www.esoui.com/downloads/info838-ESOSpanishTranslationWIP-74.26.html"]ESO Spanish Translation[/URL]
-[*] IT Italian - todo - [URL="https://www.esoui.com/downloads/info1067-ESOItalianTranslationWIP.html"]ESO Italian Translation[/URL] has not yet gotten to crafting writs. Placeholder file.
-[*] JA Japanese - daily, master done. Rolis todo - [URL="https://www.esoui.com/downloads/info2154-ESO-JapaneseLocalization.html"]ESO Japanese Translation[/URL]
+[*] EN English
+[*] FR French
+[*] DE German
+[*] RU Russian [URL="https://www.esoui.com/downloads/info1347-RuESO.html"]RuESO[/URL]
+[*] ES Spanish [URL="https://www.esoui.com/downloads/info838-ESOSpanishTranslationWIP-74.26.html"]ESO Spanish Translation[/URL]
+[*] IT Italian [URL="https://www.esoui.com/downloads/info1067-ESOItalianTranslationWIP.html"]ESO Italian Translation[/URL] has not yet gotten to crafting writs. Placeholder file.
+[*] JA Japanese [URL="https://www.esoui.com/downloads/info2154-ESO-JapaneseLocalization.html"]ESO Japanese Translation[/URL]
 [/LIST]
 
-[I]Master writs/Rolis:[/I] I'm waiting until ZOS fixes the October 2018 "cannot interact with any crafting stations in player housing" bug that is really making life difficult for guild hall users on both PTS and Live servers.
+[B]Master writs/Rolis:[/B] As of 2018-11-12, I'm still waiting until ZOS fixes the October 2018 "cannot interact with any crafting stations in player housing" bug that is really making life difficult for guild hall users on both PTS and Live servers.
+
+
