@@ -420,12 +420,12 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 --                  of master writ requests.
 --
 LibCraftText.ALCHEMY_TRAIT = {
-    ["RESTORE_HEALTH"         ] = { trait_index=01, name="Восстановление здоровья", master_potion="Essence of health"                 , master_poison="Drain Health Poison IX"            }
-,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="Опустошение здоровья" , master_potion="Essence of Ravage Health"          , master_poison="Damage Health Poison IX"           }
-,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="Восстановление магии" , master_potion="Essence of Magicka"                , master_poison="Drain Magicka Poison IX"           }
-,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="Опустошение магии"    , master_potion="Essence of Ravage Magicka"         , master_poison="Damage Magicka Poison IX"          }
-,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="Восстановление запаса сил", master_potion="Essence of stamina"                , master_poison="Drain Stamina Poison IX"           }
-,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="Опустошение запаса сил", master_potion="Essence of Ravage Stamina"         , master_poison="Damage Stamina Poison IX"          }
+    ["RESTORE_HEALTH"         ] = { trait_index=01, name="Восстановление здоровья", master_potion="Essence of health"                 , master_poison="Drain Health Poison IX"            , daily_potion_name="health"                       , daily_poison_name="drain health"                 }
+,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="Опустошение здоровья" , master_potion="Essence of Ravage Health"          , master_poison="Damage Health Poison IX"           , daily_potion_name="ravage health"                , daily_poison_name="damage health"                }
+,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="Восстановление магии" , master_potion="Essence of Magicka"                , master_poison="Drain Magicka Poison IX"           , daily_potion_name="magicka"                      , daily_poison_name="drain magicka"                }
+,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="Опустошение магии"    , master_potion="Essence of Ravage Magicka"         , master_poison="Damage Magicka Poison IX"          , daily_potion_name="ravage magicka"               , daily_poison_name="damage magicka"               }
+,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="Восстановление запаса сил", master_potion="Essence of stamina"                , master_poison="Drain Stamina Poison IX"           , daily_potion_name="stamina"                      , daily_poison_name="drain stamina"                }
+,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="Опустошение запаса сил", master_potion="Essence of Ravage Stamina"         , master_poison="Damage Stamina Poison IX"          , daily_potion_name="ravage stamina"               , daily_poison_name="damage stamina"               }
 ,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name="Увеличение защиты от магии", master_potion="Essence of Spell Protection"       , master_poison="Яд ослабления защиты IX"           }
 ,   ["BREACH"                 ] = { trait_index=08, name="Разрыв"               , master_potion="Essence of Ravage Spell Protection", master_poison="Breaching Poison IX"               }
 ,   ["INCREASE_ARMOR"         ] = { trait_index=09, name="Увеличение брони"     , master_potion="Essence of Armor"                  , master_poison="Resolve-Draining Poison IX"        }
@@ -452,22 +452,6 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name="Осквернение"          , master_potion="Essence of Defile"                 , master_poison="Defiling Poison IX"                }
 }
 
--- The 6 possible potions and poisons that a daily crafting writ can request.
---
--- trait        reference into ALCHEMY_TRAITS so you know which potion/poison to make
--- potion_name  Appears in potion name such a "Elixir of Health"
--- poison name  Appears in poison name such as "Drain Health Poison III"
---
-local at = LibCraftText.ALCHEMY_TRAIT -- for less typing
-LibCraftText.ALCHEMY_ITEM = {
-  ["HEALTH"           ] = { trait=at.RESTORE_HEALTH , potion_name="health"                       , poison_name="drain health"                 }
-, ["MAGICKA"          ] = { trait=at.RESTORE_MAGICKA, potion_name="magicka"                      , poison_name="drain magicka"                }
-, ["STAMINA"          ] = { trait=at.RESTORE_STAMINA, potion_name="stamina"                      , poison_name="drain stamina"                }
-, ["RAVAGE_HEALTH"    ] = { trait=at.RAVAGE_HEALTH  , potion_name="ravage health"                , poison_name="damage health"                }
-, ["RAVAGE_MAGICKA"   ] = { trait=at.RAVAGE_MAGICKA , potion_name="ravage magicka"               , poison_name="damage magicka"               }
-, ["RAVAGE_STAMINA"   ] = { trait=at.RAVAGE_STAMINA , potion_name="ravage stamina"               , poison_name="damage stamina"               }
-}
-at = nil
 
 -- Quest Titles --------------------------------------------------------------
 

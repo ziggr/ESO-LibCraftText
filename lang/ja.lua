@@ -420,12 +420,12 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 --                  of master writ requests.
 --
 LibCraftText.ALCHEMY_TRAIT = {
-    ["RESTORE_HEALTH"         ] = { trait_index=01, name="体力回復"                 , master_potion="体力 のエキス"                           , master_poison="体力吸収の毒 9"                          }
-,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="体力減少"                 , master_potion="体力減少 のエキス"                         , master_poison="体力減少の毒 9"                          }
-,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="マジカ回復"                , master_potion="マジカ のエキス"                          , master_poison="マジカ吸収の毒 9"                         }
-,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="マジカ減少"                , master_potion="マジカ減少 のエキス"                        , master_poison="マジカ減少の毒 9"                         }
-,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="スタミナ回復"               , master_potion="スタミナ のエキス"                         , master_poison="スタミナ吸収の毒 9"                        }
-,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="スタミナ減少"               , master_potion="スタミナ減少 のエキス"                       , master_poison="スタミナ減少の毒 9"                        }
+    ["RESTORE_HEALTH"         ] = { trait_index=01, name="体力回復"                 , master_potion="体力 のエキス"                           , master_poison="体力吸収の毒 9"                          , daily_potion_name="体力"                           , daily_poison_name="体力吸収"                         }
+,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="体力減少"                 , master_potion="体力減少 のエキス"                         , master_poison="体力減少の毒 9"                          , daily_potion_name="体力減少"                         , daily_poison_name="体力減少"                         }
+,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="マジカ回復"                , master_potion="マジカ のエキス"                          , master_poison="マジカ吸収の毒 9"                         , daily_potion_name="マジカ"                          , daily_poison_name="マジカ吸収"                        }
+,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="マジカ減少"                , master_potion="マジカ減少 のエキス"                        , master_poison="マジカ減少の毒 9"                         , daily_potion_name="マジカ減少"                        , daily_poison_name="マジカ減少"                        }
+,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="スタミナ回復"               , master_potion="スタミナ のエキス"                         , master_poison="スタミナ吸収の毒 9"                        , daily_potion_name="スタミナ"                         , daily_poison_name="スタミナ吸収"                       }
+,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="スタミナ減少"               , master_potion="スタミナ減少 のエキス"                       , master_poison="スタミナ減少の毒 9"                        , daily_potion_name="スタミナ減少"                       , daily_poison_name="スタミナ減少"                       }
 ,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name="呪文耐性増大"               , master_potion="呪文防御 のエキス"                         , master_poison="結界吸収の毒 9"                          }
 ,   ["BREACH"                 ] = { trait_index=08, name="侵害"                   , master_potion="呪文防御減少 のエキス"                       , master_poison="侵害の毒 9"                            }
 ,   ["INCREASE_ARMOR"         ] = { trait_index=09, name="防御力増大"                , master_potion="防具 のエキス"                           , master_poison="強固吸収の毒 9"                          }
@@ -452,22 +452,6 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name="汚染"                   , master_potion="汚染 のエキス"                           , master_poison="汚染の毒 9"                            }
 }
 
--- The 6 possible potions and poisons that a daily crafting writ can request.
---
--- trait        reference into ALCHEMY_TRAITS so you know which potion/poison to make
--- potion_name  Appears in potion name such a "Elixir of Health"
--- poison name  Appears in poison name such as "Drain Health Poison III"
---
-local at = LibCraftText.ALCHEMY_TRAIT -- for less typing
-LibCraftText.ALCHEMY_ITEM = {
-  ["HEALTH"           ] = { trait=at.RESTORE_HEALTH , potion_name="体力"                           , poison_name="体力吸収"                         }
-, ["MAGICKA"          ] = { trait=at.RESTORE_MAGICKA, potion_name="マジカ"                          , poison_name="マジカ吸収"                        }
-, ["STAMINA"          ] = { trait=at.RESTORE_STAMINA, potion_name="スタミナ"                         , poison_name="スタミナ吸収"                       }
-, ["RAVAGE_HEALTH"    ] = { trait=at.RAVAGE_HEALTH  , potion_name="体力減少"                         , poison_name="体力減少"                         }
-, ["RAVAGE_MAGICKA"   ] = { trait=at.RAVAGE_MAGICKA , potion_name="マジカ減少"                        , poison_name="マジカ減少"                        }
-, ["RAVAGE_STAMINA"   ] = { trait=at.RAVAGE_STAMINA , potion_name="スタミナ減少"                       , poison_name="スタミナ減少"                       }
-}
-at = nil
 
 -- Quest Titles --------------------------------------------------------------
 

@@ -420,12 +420,12 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 --                  of master writ requests.
 --
 LibCraftText.ALCHEMY_TRAIT = {
-    ["RESTORE_HEALTH"         ] = { trait_index=01, name="Restauración de salud", master_potion="esencia de salud^f"                , master_poison="veneno de absorción de vida IX^m"  }
-,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="Reducción de salud"   , master_potion="esencia de reducción de salud^f"   , master_poison="Veneno de daño a la salud IX^m"    }
-,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="Restauración de magia", master_potion="esencia de magia^f"                , master_poison="Veneno de absorción de magia IX"   }
-,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="Reducción de magia"   , master_potion="esencia de reducción de magia^f"   , master_poison="Veneno de daño a la magia IX"      }
-,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="Restauración de aguante", master_potion="esencia de aguante^f"              , master_poison="Veneno de absorción de aguante IX" }
-,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="Reducción de aguante" , master_potion="esencia de reducción de aguante^f" , master_poison="Veneno de daño al aguante IX"      }
+    ["RESTORE_HEALTH"         ] = { trait_index=01, name="Restauración de salud", master_potion="esencia de salud^f"                , master_poison="veneno de absorción de vida IX^m"  , daily_potion_name="salud"                        , daily_poison_name="absorción de vida"            }
+,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="Reducción de salud"   , master_potion="esencia de reducción de salud^f"   , master_poison="Veneno de daño a la salud IX^m"    , daily_potion_name="reducción de salud"           , daily_poison_name="daño a la salud"              }
+,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="Restauración de magia", master_potion="esencia de magia^f"                , master_poison="Veneno de absorción de magia IX"   , daily_potion_name="magia"                        , daily_poison_name="absorción de magia"           }
+,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="Reducción de magia"   , master_potion="esencia de reducción de magia^f"   , master_poison="Veneno de daño a la magia IX"      , daily_potion_name="reducción de magia"           , daily_poison_name="daño a la magia"              }
+,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="Restauración de aguante", master_potion="esencia de aguante^f"              , master_poison="Veneno de absorción de aguante IX" , daily_potion_name="aguante"                      , daily_poison_name="absorción de aguante"         }
+,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="Reducción de aguante" , master_potion="esencia de reducción de aguante^f" , master_poison="Veneno de daño al aguante IX"      , daily_potion_name="reducción de aguante"         , daily_poison_name="daño al aguante"              }
 ,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name="Aumento de resistencia mágica", master_potion="esencia de's protección mágica^F"  , master_poison="Veneno de absorción del custodio IX"}
 ,   ["BREACH"                 ] = { trait_index=08, name="La Grieta"            , master_potion="Estrago de protección mágica esencia de^f", master_poison="Veneno perforador IX"              }
 ,   ["INCREASE_ARMOR"         ] = { trait_index=09, name="Aumento de armadura"  , master_potion="esencia de's armadura^F"           , master_poison="Veneno de absorción resolutorio IX"}
@@ -452,22 +452,6 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name="Profanación"          , master_potion="esencia de Profanación^f"          , master_poison="Veneno marchitador IX"             }
 }
 
--- The 6 possible potions and poisons that a daily crafting writ can request.
---
--- trait        reference into ALCHEMY_TRAITS so you know which potion/poison to make
--- potion_name  Appears in potion name such a "Elixir of Health"
--- poison name  Appears in poison name such as "Drain Health Poison III"
---
-local at = LibCraftText.ALCHEMY_TRAIT -- for less typing
-LibCraftText.ALCHEMY_ITEM = {
-  ["HEALTH"           ] = { trait=at.RESTORE_HEALTH , potion_name="salud"                        , poison_name="absorción de vida"            }
-, ["MAGICKA"          ] = { trait=at.RESTORE_MAGICKA, potion_name="magia"                        , poison_name="absorción de magia"           }
-, ["STAMINA"          ] = { trait=at.RESTORE_STAMINA, potion_name="aguante"                      , poison_name="absorción de aguante"         }
-, ["RAVAGE_HEALTH"    ] = { trait=at.RAVAGE_HEALTH  , potion_name="reducción de salud"           , poison_name="daño a la salud"              }
-, ["RAVAGE_MAGICKA"   ] = { trait=at.RAVAGE_MAGICKA , potion_name="reducción de magia"           , poison_name="daño a la magia"              }
-, ["RAVAGE_STAMINA"   ] = { trait=at.RAVAGE_STAMINA , potion_name="reducción de aguante"         , poison_name="daño al aguante"              }
-}
-at = nil
 
 -- Quest Titles --------------------------------------------------------------
 

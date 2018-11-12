@@ -420,12 +420,12 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 --                  of master writ requests.
 --
 LibCraftText.ALCHEMY_TRAIT = {
-    ["RESTORE_HEALTH"         ] = { trait_index=01, name="Leben wiederherstellen", master_potion="Essenz des Lebens^f"               , master_poison="Gift des Lebensentzugs IX^n"       }
-,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="Lebensverwüstung"     , master_potion="Essenz der Lebensverwüstung^f"     , master_poison="Gift der Lebensschändung IX^n"     }
-,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="Magicka wiederherstellen", master_potion="Essenz der Magicka^f"              , master_poison="Gift des Magickaentzugs IX^n"      }
-,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="Magickaverwüstung"    , master_potion="Essenz der Magickaverwüstung^f"    , master_poison="Gift der Magickaschändung IX^n"    }
-,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="Ausdauer wiederherstellen", master_potion="Essenz der Ausdauer^f"             , master_poison="Gift des Ausdauerentzugs IX^n"     }
-,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="Ausdauerverwüstung"   , master_potion="Essenz der Ausdauerverwüstung^f"   , master_poison="Gift der Ausdauerschändung IX^n"   }
+    ["RESTORE_HEALTH"         ] = { trait_index=01, name="Leben wiederherstellen", master_potion="Essenz des Lebens^f"               , master_poison="Gift des Lebensentzugs IX^n"       , daily_potion_name="lebens"                       , daily_poison_name="lebensentzugs"                }
+,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name="Lebensverwüstung"     , master_potion="Essenz der Lebensverwüstung^f"     , master_poison="Gift der Lebensschändung IX^n"     , daily_potion_name="lebensverwüstung"             , daily_poison_name="lebensschändung"              }
+,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name="Magicka wiederherstellen", master_potion="Essenz der Magicka^f"              , master_poison="Gift des Magickaentzugs IX^n"      , daily_potion_name="magicka"                      , daily_poison_name="magickaentzugs"               }
+,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name="Magickaverwüstung"    , master_potion="Essenz der Magickaverwüstung^f"    , master_poison="Gift der Magickaschändung IX^n"    , daily_potion_name="magickaverwüstung"            , daily_poison_name="magickaschändung"             }
+,   ["RESTORE_STAMINA"        ] = { trait_index=05, name="Ausdauer wiederherstellen", master_potion="Essenz der Ausdauer^f"             , master_poison="Gift des Ausdauerentzugs IX^n"     , daily_potion_name="ausdauer"                     , daily_poison_name="ausdauerentzugs"              }
+,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name="Ausdauerverwüstung"   , master_potion="Essenz der Ausdauerverwüstung^f"   , master_poison="Gift der Ausdauerschändung IX^n"   , daily_potion_name="ausdauerverwüstung"           , daily_poison_name="ausdauerschändung"            }
 ,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name="Erhöht Magieresistenz", master_potion="Essenz des Zauberschutzes^f"       , master_poison="Gift des Schutzentzugs IX^n"       }
 ,   ["BREACH"                 ] = { trait_index=08, name="Bruch"                , master_potion="Essenz der Zauberschutzverwüstung^f", master_poison="Gift des Durchdringens IX^n"       }
 ,   ["INCREASE_ARMOR"         ] = { trait_index=09, name="Erhöht Rüstung"       , master_potion="Essenz der Rüstung^f"              , master_poison="Gift des Entschlossenheitsentzugs IX^n"}
@@ -452,22 +452,6 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name="Schänden"             , master_potion="Essenz der Schändung^f"            , master_poison="Gift der Schändung IX^n"           }
 }
 
--- The 6 possible potions and poisons that a daily crafting writ can request.
---
--- trait        reference into ALCHEMY_TRAITS so you know which potion/poison to make
--- potion_name  Appears in potion name such a "Elixir of Health"
--- poison name  Appears in poison name such as "Drain Health Poison III"
---
-local at = LibCraftText.ALCHEMY_TRAIT -- for less typing
-LibCraftText.ALCHEMY_ITEM = {
-  ["HEALTH"           ] = { trait=at.RESTORE_HEALTH , potion_name="lebens"                       , poison_name="lebensentzugs"                }
-, ["MAGICKA"          ] = { trait=at.RESTORE_MAGICKA, potion_name="magicka"                      , poison_name="magickaentzugs"               }
-, ["STAMINA"          ] = { trait=at.RESTORE_STAMINA, potion_name="ausdauer"                     , poison_name="ausdauerentzugs"              }
-, ["RAVAGE_HEALTH"    ] = { trait=at.RAVAGE_HEALTH  , potion_name="lebensverwüstung"             , poison_name="lebensschändung"              }
-, ["RAVAGE_MAGICKA"   ] = { trait=at.RAVAGE_MAGICKA , potion_name="magickaverwüstung"            , poison_name="magickaschändung"             }
-, ["RAVAGE_STAMINA"   ] = { trait=at.RAVAGE_STAMINA , potion_name="ausdauerverwüstung"           , poison_name="ausdauerschändung"            }
-}
-at = nil
 
 -- Quest Titles --------------------------------------------------------------
 

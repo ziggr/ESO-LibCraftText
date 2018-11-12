@@ -457,21 +457,20 @@ LibCraftText.RE_ALCHEMY_SOLVENT = {
 function LibCraftText.ParseDailyConditionAlchemy(cond_text)
     local self  = LibCraftText
     local lang  = self.CurrLang()
-    local found = self.ParseRegexable( nil
-                                     , cond_text
-                                     , self.RE_ALCHEMY_TRAIT[lang]
-                                     , self.ALCHEMY_ITEM
-                                     , { "potion_name", "poison_name" }
-                                     )
-    local trait = found and found.trait
-
-    found = self.ParseRegexable( al
-                               , cond_text
-                               , self.RE_ALCHEMY_SOLVENT[lang]
-                               , self.CONSUMABLE_MATERIAL
-                               , { "potion_name", "poison_name" }
-                               )
-    local solvent = found
+    local trait = self.ParseRegexable(
+                          nil
+                        , cond_text
+                        , self.RE_ALCHEMY_TRAIT[lang]
+                        , self.ALCHEMY_TRAIT
+                        , { "daily_potion_name", "daily_poison_name" }
+                        )
+    local solvent = self.ParseRegexable(
+                          al
+                        , cond_text
+                        , self.RE_ALCHEMY_SOLVENT[lang]
+                        , self.CONSUMABLE_MATERIAL
+                        , { "potion_name", "poison_name" }
+   )
     if not (trait or solvent) then return nil end
     return { trait   = trait
            , solvent = solvent

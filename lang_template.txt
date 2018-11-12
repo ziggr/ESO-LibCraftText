@@ -420,12 +420,12 @@ LibCraftText.CONSUMABLE_MATERIAL = {
 --                  of master writ requests.
 --
 LibCraftText.ALCHEMY_TRAIT = {
-    ["RESTORE_HEALTH"         ] = { trait_index=01, name=$ALCHEMY_TRAIT_01      , master_potion=$ALCHEMY_MASTER_POTION_01           , master_poison=$ALCHEMY_MASTER_POISON_01           }
-,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name=$ALCHEMY_TRAIT_02      , master_potion=$ALCHEMY_MASTER_POTION_02           , master_poison=$ALCHEMY_MASTER_POISON_02           }
-,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name=$ALCHEMY_TRAIT_03      , master_potion=$ALCHEMY_MASTER_POTION_03           , master_poison=$ALCHEMY_MASTER_POISON_03           }
-,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name=$ALCHEMY_TRAIT_04      , master_potion=$ALCHEMY_MASTER_POTION_04           , master_poison=$ALCHEMY_MASTER_POISON_04           }
-,   ["RESTORE_STAMINA"        ] = { trait_index=05, name=$ALCHEMY_TRAIT_05      , master_potion=$ALCHEMY_MASTER_POTION_05           , master_poison=$ALCHEMY_MASTER_POISON_05           }
-,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name=$ALCHEMY_TRAIT_06      , master_potion=$ALCHEMY_MASTER_POTION_06           , master_poison=$ALCHEMY_MASTER_POISON_06           }
+    ["RESTORE_HEALTH"         ] = { trait_index=01, name=$ALCHEMY_TRAIT_01      , master_potion=$ALCHEMY_MASTER_POTION_01           , master_poison=$ALCHEMY_MASTER_POISON_01           , daily_potion_name=$ALCHEMY_POTION_HEALTH         , daily_poison_name=$ALCHEMY_POISON_HEALTH         }
+,   ["RAVAGE_HEALTH"          ] = { trait_index=02, name=$ALCHEMY_TRAIT_02      , master_potion=$ALCHEMY_MASTER_POTION_02           , master_poison=$ALCHEMY_MASTER_POISON_02           , daily_potion_name=$ALCHEMY_POTION_RAVAGE_HEALTH  , daily_poison_name=$ALCHEMY_POISON_RAVAGE_HEALTH  }
+,   ["RESTORE_MAGICKA"        ] = { trait_index=03, name=$ALCHEMY_TRAIT_03      , master_potion=$ALCHEMY_MASTER_POTION_03           , master_poison=$ALCHEMY_MASTER_POISON_03           , daily_potion_name=$ALCHEMY_POTION_MAGICKA        , daily_poison_name=$ALCHEMY_POISON_MAGICKA        }
+,   ["RAVAGE_MAGICKA"         ] = { trait_index=04, name=$ALCHEMY_TRAIT_04      , master_potion=$ALCHEMY_MASTER_POTION_04           , master_poison=$ALCHEMY_MASTER_POISON_04           , daily_potion_name=$ALCHEMY_POTION_RAVAGE_MAGICKA , daily_poison_name=$ALCHEMY_POISON_RAVAGE_MAGICKA }
+,   ["RESTORE_STAMINA"        ] = { trait_index=05, name=$ALCHEMY_TRAIT_05      , master_potion=$ALCHEMY_MASTER_POTION_05           , master_poison=$ALCHEMY_MASTER_POISON_05           , daily_potion_name=$ALCHEMY_POTION_STAMINA        , daily_poison_name=$ALCHEMY_POISON_STAMINA        }
+,   ["RAVAGE_STAMINA"         ] = { trait_index=06, name=$ALCHEMY_TRAIT_06      , master_potion=$ALCHEMY_MASTER_POTION_06           , master_poison=$ALCHEMY_MASTER_POISON_06           , daily_potion_name=$ALCHEMY_POTION_RAVAGE_STAMINA , daily_poison_name=$ALCHEMY_POISON_RAVAGE_STAMINA }
 ,   ["SPELL_RESISTANCE"       ] = { trait_index=07, name=$ALCHEMY_TRAIT_07      , master_potion=$ALCHEMY_MASTER_POTION_07           , master_poison=$ALCHEMY_MASTER_POISON_07           }
 ,   ["BREACH"                 ] = { trait_index=08, name=$ALCHEMY_TRAIT_08      , master_potion=$ALCHEMY_MASTER_POTION_08           , master_poison=$ALCHEMY_MASTER_POISON_08           }
 ,   ["INCREASE_ARMOR"         ] = { trait_index=09, name=$ALCHEMY_TRAIT_09      , master_potion=$ALCHEMY_MASTER_POTION_09           , master_poison=$ALCHEMY_MASTER_POISON_09           }
@@ -452,22 +452,6 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name=$ALCHEMY_TRAIT_30      , master_potion=$ALCHEMY_MASTER_POTION_30           , master_poison=$ALCHEMY_MASTER_POISON_30           }
 }
 
--- The 6 possible potions and poisons that a daily crafting writ can request.
---
--- trait        reference into ALCHEMY_TRAITS so you know which potion/poison to make
--- potion_name  Appears in potion name such a "Elixir of Health"
--- poison name  Appears in poison name such as "Drain Health Poison III"
---
-local at = LibCraftText.ALCHEMY_TRAIT -- for less typing
-LibCraftText.ALCHEMY_ITEM = {
-  ["HEALTH"           ] = { trait=at.RESTORE_HEALTH , potion_name=$ALCHEMY_POTION_HEALTH         , poison_name=$ALCHEMY_POISON_HEALTH         }
-, ["MAGICKA"          ] = { trait=at.RESTORE_MAGICKA, potion_name=$ALCHEMY_POTION_MAGICKA        , poison_name=$ALCHEMY_POISON_MAGICKA        }
-, ["STAMINA"          ] = { trait=at.RESTORE_STAMINA, potion_name=$ALCHEMY_POTION_STAMINA        , poison_name=$ALCHEMY_POISON_STAMINA        }
-, ["RAVAGE_HEALTH"    ] = { trait=at.RAVAGE_HEALTH  , potion_name=$ALCHEMY_POTION_RAVAGE_HEALTH  , poison_name=$ALCHEMY_POISON_RAVAGE_HEALTH  }
-, ["RAVAGE_MAGICKA"   ] = { trait=at.RAVAGE_MAGICKA , potion_name=$ALCHEMY_POTION_RAVAGE_MAGICKA , poison_name=$ALCHEMY_POISON_RAVAGE_MAGICKA }
-, ["RAVAGE_STAMINA"   ] = { trait=at.RAVAGE_STAMINA , potion_name=$ALCHEMY_POTION_RAVAGE_STAMINA , poison_name=$ALCHEMY_POISON_RAVAGE_STAMINA }
-}
-at = nil
 
 -- Quest Titles --------------------------------------------------------------
 
