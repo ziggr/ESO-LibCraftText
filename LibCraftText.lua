@@ -1,4 +1,4 @@
-LibCraftText = {}
+LibCraftText = LibCraftText or {}
 
 local function ZZDEBUG_ON(msg) print(msg) end
 local function ZZDEBUG_OFF(msg) end
@@ -279,18 +279,20 @@ function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
 
                         -- Alchemy and Enchanting materials
     local acquire_mat = self.ParseConsumableAcquireMat(crafting_type, cond_text)
-    if acquire_mat then return acquire_mat end
+    if acquire_mat then
+        return acquire_mat
+    end
 
                         -- Enchanting Glyphs
-    if crafting_type == en then
+    if crafting_type == CRAFTING_TYPE_ENCHANTING then
         return self.ParseDailyConditionGlyph(cond_text)
     end
                         -- Provisioning Recpies
-    if crafting_type == pr then
+    if crafting_type == CRAFTING_TYPE_PROVISIONING then
         return self.ParseDailyConditionProvisioning(cond_text)
     end
                         -- Alchemy Potions/Poisons
-    if crafting_type == al then
+    if crafting_type == CRAFTING_TYPE_ALCHEMY then
         return self.ParseDailyConditionAlchemy(cond_text)
     end
 
@@ -300,7 +302,8 @@ end
 function LibCraftText.ParseConsumableAcquireMat(crafting_type, cond_text)
                         -- Only Enchanting and Alchemy have "Acquire Ta" and
                         -- "Acquire Nirnroot" conditions.
-    if not (crafting_type == en or crafting_type == al) then
+    if not (crafting_type == CRAFTING_TYPE_ENCHANTING
+         or crafting_type == CRAFTING_TYPE_ALCHEMY) then
         return nil
     end
 
@@ -420,13 +423,13 @@ function LibCraftText.ParseDailyConditionGlyph(cond_text)
                          , m.OKO     -- health
                          }
     local lang    = self.CurrLang()
-    local potency = self.ParseRegexable( en
+    local potency = self.ParseRegexable( CRAFTING_TYPE_ENCHANTING
                                        , cond_text
                                        , self.RE_POTENCY[lang]
                                        , POTENCY_LIST
                                        , { "name_2", "name_3" }
                                        )
-    local essence = self.ParseRegexable( en
+    local essence = self.ParseRegexable( CRAFTING_TYPE_ENCHANTING
                                        , cond_text
                                        , self.RE_ESSENCE[lang]
                                        , ESSENCE_LIST
@@ -505,7 +508,7 @@ function LibCraftText.ParseDailyConditionAlchemy(cond_text)
         ZZDEBUG=ZZDEBUG_OFF
     end
     args =  {
-              al
+              CRAFTING_TYPE_ALCHEMY
             , cond_text
             , self.RE_ALCHEMY_SOLVENT[lang]
             , self.MATERIAL
