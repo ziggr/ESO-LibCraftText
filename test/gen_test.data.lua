@@ -39,7 +39,7 @@ COND_TEXT_FODDER = {
 , { input="Acquire Violet Coprinus"                         , expect={ material=LCT.CONSUMABLE_MATERIAL.VIOLET_COPRINUS } }
 , { input="Acquire Water Hyacinth"                          , expect={ material=LCT.CONSUMABLE_MATERIAL.WATER_HYACINTH  } }
 , { input="Acquire Wormwood"                                , expect={ material=LCT.CONSUMABLE_MATERIAL.WORMWOOD        } }
-, { input="Brewers and Cooks Can Provide Recipes"           , expect={}                                                 }
+, { input="Brewers and Cooks Can Provide Recipes"           , expect={ misc=LCT.DAILY_COND.HINT_PR_BREWERS_COOKS_RECIPES } }
 , { input="Craft Aetherial Tea"                             , expect={ item=LCT.RECIPE.AETHERIAL_TEA                    } }
 , { input="Craft Alik'r Beets with Goat Cheese"             , expect={ item=LCT.RECIPE.ALIKR_BEETS_WITH_GOAT_CHEESE     } }
 , { input="Craft Baked Apples"                              , expect={ item=LCT.RECIPE.BAKED_APPLES                     } }
@@ -78,8 +78,8 @@ COND_TEXT_FODDER = {
 , { input="Craft Essence of Ravage Health"                  , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH  , solvent=LCT.CONSUMABLE_MATERIAL.LORKHANS_TEARS } }
 , { input="Craft Essence of Stamina"                        , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_STAMINA, solvent=LCT.CONSUMABLE_MATERIAL.LORKHANS_TEARS } }
 , { input="Craft Essence of Stamina: 0 / 1"              , expect={    trait=LCT.ALCHEMY_TRAIT.RESTORE_STAMINA, solvent=LCT.CONSUMABLE_MATERIAL.LORKHANS_TEARS } }
-, { input="Craft Firsthold Fruit and Cheese Plate"          , expect={ item=LCT.RECIPE.FIRSHOLD_FRUIT_AND_CHEESE_PLATE  } }
-, { input="Craft Firsthold Fruit and Cheese Plate: 0 / 1", expect={    item=LCT.RECIPE.FIRSHOLD_FRUIT_AND_CHEESE_PLATE  } }
+, { input="Craft Firsthold Fruit and Cheese Plate"          , expect={ item=LCT.RECIPE.FIRSTHOLD_FRUIT_AND_CHEESE_PLATE } }
+, { input="Craft Firsthold Fruit and Cheese Plate: 0 / 1", expect={    item=LCT.RECIPE.FIRSTHOLD_FRUIT_AND_CHEESE_PLATE } }
 , { input="Craft Fishy Stick"                               , expect={ item=LCT.RECIPE.FISHY_STICK                      } }
 , { input="Craft Four-Eye Grog"                             , expect={ item=LCT.RECIPE.FOUR_EYE_GROG                    } }
 , { input="Craft Garlic Mashed Potatoes"                    , expect={ item=LCT.RECIPE.GARLIC_MASHED_POTATOES           } }
@@ -104,7 +104,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Lemon Flower Mazte"                        , expect={ item=LCT.RECIPE.LEMON_FLOWER_MAZTE               } }
 , { input="Craft Lilmoth Garlic Hagfish"                    , expect={ item=LCT.RECIPE.LILMOTH_GARLIC_HAGFISH           } }
 , { input="Craft Mammoth Snout Pie"                         , expect={ item=LCT.RECIPE.MAMMOTH_SNOUT_PIE                } }
-, { input="Craft Maormer Tea"                               , expect={ item=LCT.RECIPE.MAOMER_TEA                       } }
+, { input="Craft Maormer Tea"                               , expect={ item=LCT.RECIPE.MAORMER_TEA                      } }
 , { input="Craft Markarth Mead"                             , expect={ item=LCT.RECIPE.MARKARTH_MEAD                    } }
 , { input="Craft Mazte"                                     , expect={ item=LCT.RECIPE.MAZTE                            } }
 , { input="Craft Mermaid Whiskey"                           , expect={ item=LCT.RECIPE.MERMAID_WHISKEY                  } }
@@ -377,7 +377,7 @@ COND_TEXT_FODDER = {
 , { input="Craft Panacea of Magicka"                        , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_MAGICKA, solvent=LCT.CONSUMABLE_MATERIAL.CLOUD_MIST } }
 , { input="Craft Panacea of Ravage Health"                  , expect={ trait=LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH  , solvent=LCT.CONSUMABLE_MATERIAL.CLOUD_MIST } }
 , { input="Craft Panacea of Stamina"                        , expect={ trait=LCT.ALCHEMY_TRAIT.RESTORE_STAMINA, solvent=LCT.CONSUMABLE_MATERIAL.CLOUD_MIST } }
-, { input="Craft Pellitine Tomato Rice"                     , expect={ item=LCT.RECIPE.PELLETINE_TOMATO_RICE            } }
+, { input="Craft Pellitine Tomato Rice"                     , expect={ item=LCT.RECIPE.PELLITINE_TOMATO_RICE            } }
 , { input="Craft Petty Glyph of Health With Ta"             , expect={ potency=LCT.CONSUMABLE_MATERIAL.JERA  , essence=LCT.CONSUMABLE_MATERIAL.OKO  , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Petty Glyph of Magicka With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.JERA  , essence=LCT.CONSUMABLE_MATERIAL.MAKKO, aspect=LCT.CONSUMABLE_MATERIAL.TA } }
 , { input="Craft Petty Glyph of Stamina With Ta"            , expect={ potency=LCT.CONSUMABLE_MATERIAL.JERA  , essence=LCT.CONSUMABLE_MATERIAL.DENI , aspect=LCT.CONSUMABLE_MATERIAL.TA } }
@@ -447,5 +447,5 @@ COND_TEXT_FODDER = {
 , { input="Craft a Silver Ring"                             , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.SILVER         } }
 , { input="Craft an Electrum Necklace"                      , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.ELECTRUM       } }
 , { input="Craft an Electrum Ring"                          , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.ELECTRUM       } }
-, { input="Deliver Goods to Nearest Writ Quartermaster"     , expect={}                                                 }
+, { input="Deliver Goods to Nearest Writ Quartermaster"     , expect={ misc=LCT.DAILY_COND.DELIVER_NEAREST_QUARTERMASTER    } }
 }

@@ -138,6 +138,7 @@ LibCraftText.RECIPE = {
 , ["BATTAGLIR_CHOWDER"               ] = { name="Crema de marisco con battaglir"        , food_item_id=028394, recipe_list_index=  3, recipe_index= 15}
 , ["BITTERLEMON_TEA"                 ] = { name="Té de limón amargo"                    , food_item_id=028457, recipe_list_index=  9, recipe_index= 13}
 , ["BOG_IRON_ALE"                    ] = { name="cerveza del Pantano de Hierro"         , food_item_id=028405, recipe_list_index=  8, recipe_index=  4}
+, ["BLUE_ROAD_MARATHON"              ] = { name="maratón de Blue Road"                  , food_item_id=028513, recipe_list_index= 10, recipe_index= 25}
 , ["BRETON_PORK_SAUSAGE"             ] = { name="Salchicha de cerdo bretona"            , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="Sopa de zanahoria"                     , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="pechuga de pollo"                      , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
@@ -186,6 +187,7 @@ LibCraftText.RECIPE = {
 , ["RYE_IN_YOUR_EYE"                 ] = { name="cente-no en la cara"                   , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="Té de flor marina"                     , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name="Curry de pescado y arroz de Senchal"   , food_item_id=028350, recipe_list_index=  1, recipe_index= 19}
+, ["SKYRIM_JAZBAY_CROSTATA"          ] = { name="crostata de jazbay de Skyrim"          , food_item_id=033909, recipe_list_index=  2, recipe_index= 25}
 , ["SORRY_HONEY_LAGER"               ] = { name="cerveza \"Lo siento, cariño\""         , food_item_id=033642, recipe_list_index=  8, recipe_index= 23}
 , ["SOUR_MASH"                       ] = { name="Malta agria"                           , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
 , ["SPICEBERRY_CHAI"                 ] = { name="té chai de bayacida"                   , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
@@ -452,6 +454,12 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name="Profanación"              , master_potion="esencia de Profanación"            , master_poison="Veneno marchitador IX"             }
 }
 
+-- Miscellaneousl conditions -------------------------------------------------
+
+LibCraftText.DAILY_COND = {
+    HINT_PR_BREWERS_COOKS_RECIPES = "Los cerveceros y los cocineros pueden proporcionar recetas"
+,   DELIVER_NEAREST_QUARTERMASTER = "Entrega la mercancía al intendente más cercano"
+}
 
 -- Quest Titles --------------------------------------------------------------
 

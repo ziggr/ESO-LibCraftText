@@ -49,6 +49,7 @@ local CRAFTING_TYPE_TO_PARSE_FUNC = {
 , [pr] = LibCraftText.ParseDailyConditionConsumable
 , [ww] = LibCraftText.ParseDailyConditionEquipment
 , [jw] = LibCraftText.ParseDailyConditionEquipment
+, [0 ] = LibCraftText.ParseDailyConditionMisc
 }
 function TestGen.OneTest(input_en, expect)
                         -- Skip lines with bugs in the current language
@@ -87,16 +88,31 @@ function TestGen.OneTest(input_en, expect)
     if expect.item and expect.item.food_item_id then
         crafting_type = pr
     end
-    if not crafting_type then return end
+    if not crafting_type then
+        crafting_type = 0   -- Misc.
+    end
 
     local real_expect = table.shallow_copy(expect)
     real_expect.crafting_type = nil
+
+                        -- Catch any broken test fodder with nil expect fields
+                        -- due to typos.
+    local ct = 0
+    for k,v in pairs(real_expect) do
+        ct = ct + 1
+        break
+    end
+    if 0 == ct then
+        print("### Empty expect{}: "..input_en)
+    end
+    luaunit.assertEquals(ct,1,"Empty expect{}: "..input_en)
 
     local lang_table = INPUT_TO_LANG_TABLE[input_en]
     luaunit.assertNotNil(lang_table,input_en)
     local input = lang_table[LibCraftText.CurrLang()] or input_en
 
     local test_func = CRAFTING_TYPE_TO_PARSE_FUNC[crafting_type]
+    luaunit.assertNotNil(test_func, "No test_func for "..input_en)
     if test_func then
         local got = test_func(crafting_type, input)
         luaunit.assertEquals(got, real_expect, input_en.."/"..input)

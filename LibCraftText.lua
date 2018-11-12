@@ -261,40 +261,6 @@ function LibCraftText.ParseConsumableAcquireMat(crafting_type, cond_text)
 end
 
 
--- LibCraftText.RE_CONDITION_CONSUMABLE_ITEM = {
---     ["en"] = { "Craft ([^:]*)"
---              }
--- ,   ["de"] = { "Besorgt ([^:]*)"
---              , "Beschafft ([^:]*)"
---              }
--- ,   ["fr"] = { "Acquérez ([^:]*)"
---              , "Acquérir ([^:]*)"
---              }
--- ,   ["ru"] = { "Раздобыть — ([^:]*)"
---              , "Добыть ([^:]*)"
---              , "Достать ([^:]*)"
---              }
--- ,   ["es"] = { "Adquiere ([^:]*)"
---              }
--- ,   ["ja"] = { "(.*)を手に入れる" }
--- }
-
--- function LibCraftText.ParseConsumableItem(crafting_type, cond_text)
---     local self          = LibCraftText
---     local lang          = self.CurrLang()
---     local found_item    = self.ParseRegexable(
---                                    crafting_type
---                                  , cond_text
---                                  , self.RE_CONDITION_CONSUMABLE_ITEM[lang]
---                                  , self.ITEM
---                                  , { "name", "name_2" }
---                                  )
---     if found_item then
---         return { item = found_item }
---     end
---     return nil
--- end
-
 LibCraftText.RE_CONDITION_DAILY_RECIPE = {
     ["en"] = { "Craft ([^:]*)"
              }
@@ -501,6 +467,17 @@ function LibCraftText.ParseDailyConditionAlchemy(cond_text)
            , solvent = solvent
            }
 end
+
+function LibCraftText.ParseDailyConditionMisc(crafting_type, cond_text)
+    for k,v in pairs(LibCraftText.DAILY_COND) do
+        if cond_text == v then return
+            { misc=LibCraftText.DAILY_COND[k] }
+        end
+    end
+    return nil
+end
+
+-- Parse Util ----------------------------------------------------------------
 
 function LibCraftText.ParseRegexable( crafting_type
                                     , cond_text

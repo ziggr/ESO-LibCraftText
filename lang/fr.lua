@@ -138,6 +138,7 @@ LibCraftText.RECIPE = {
 , ["BATTAGLIR_CHOWDER"               ] = { name="bisque de battaglir"                   , food_item_id=028394, recipe_list_index=  3, recipe_index= 15}
 , ["BITTERLEMON_TEA"                 ] = { name="infusion de citron amer"               , food_item_id=028457, recipe_list_index=  9, recipe_index= 13}
 , ["BOG_IRON_ALE"                    ] = { name="bière de Tourbefer"                    , food_item_id=028405, recipe_list_index=  8, recipe_index=  4}
+, ["BLUE_ROAD_MARATHON"              ] = { name="marathon de Sente-azur"                , food_item_id=028513, recipe_list_index= 10, recipe_index= 25}
 , ["BRETON_PORK_SAUSAGE"             ] = { name="saucisse de porc brétonne"             , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="soupe de carottes"                     , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="blanc de poulet"                       , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
@@ -186,6 +187,7 @@ LibCraftText.RECIPE = {
 , ["RYE_IN_YOUR_EYE"                 ] = { name="scotch-dans-ta-face"                   , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="thé à l'anémone"                       , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name="curry de poisson de Senchal"           , food_item_id=028350, recipe_list_index=  1, recipe_index= 19}
+, ["SKYRIM_JAZBAY_CROSTATA"          ] = { name="croustillant au jazbay de Bordeciel"   , food_item_id=033909, recipe_list_index=  2, recipe_index= 25}
 , ["SORRY_HONEY_LAGER"               ] = { name="cervoise « Désolé, chérie »"           , food_item_id=033642, recipe_list_index=  8, recipe_index= 23}
 , ["SOUR_MASH"                       ] = { name="moût aigre"                            , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
 , ["SPICEBERRY_CHAI"                 ] = { name="thé d'épiceline"                       , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
@@ -452,6 +454,12 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name="Profanation"              , master_potion="essence d’Avilissement"            , master_poison="Poison profanateur IX"             }
 }
 
+-- Miscellaneousl conditions -------------------------------------------------
+
+LibCraftText.DAILY_COND = {
+    HINT_PR_BREWERS_COOKS_RECIPES = "Les brasseurs et cuisiniers peuvent fournir des recettes"
+,   DELIVER_NEAREST_QUARTERMASTER = "Livrez les marchandises au quartier-maître le plus proche"
+}
 
 -- Quest Titles --------------------------------------------------------------
 

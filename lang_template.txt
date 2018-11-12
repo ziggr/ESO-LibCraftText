@@ -138,6 +138,7 @@ LibCraftText.RECIPE = {
 , ["BATTAGLIR_CHOWDER"               ] = { name=$FOOD_028394                            , food_item_id=028394, recipe_list_index=$FOOD_028394_RLI, recipe_index=$FOOD_028394_RI }
 , ["BITTERLEMON_TEA"                 ] = { name=$FOOD_028457                            , food_item_id=028457, recipe_list_index=$FOOD_028457_RLI, recipe_index=$FOOD_028457_RI }
 , ["BOG_IRON_ALE"                    ] = { name=$FOOD_028405                            , food_item_id=028405, recipe_list_index=$FOOD_028405_RLI, recipe_index=$FOOD_028405_RI }
+, ["BLUE_ROAD_MARATHON"              ] = { name=$FOOD_028513                            , food_item_id=028513, recipe_list_index=$FOOD_028513_RLI, recipe_index=$FOOD_028513_RI }
 , ["BRETON_PORK_SAUSAGE"             ] = { name=$FOOD_028342                            , food_item_id=028342, recipe_list_index=$FOOD_028342_RLI, recipe_index=$FOOD_028342_RI }
 , ["CARROT_SOUP"                     ] = { name=$FOOD_028321                            , food_item_id=028321, recipe_list_index=$FOOD_028321_RLI, recipe_index=$FOOD_028321_RI }
 , ["CHICKEN_BREAST"                  ] = { name=$FOOD_033819                            , food_item_id=033819, recipe_list_index=$FOOD_033819_RLI, recipe_index=$FOOD_033819_RI }
@@ -186,6 +187,7 @@ LibCraftText.RECIPE = {
 , ["RYE_IN_YOUR_EYE"                 ] = { name=$FOOD_028429                            , food_item_id=028429, recipe_list_index=$FOOD_028429_RLI, recipe_index=$FOOD_028429_RI }
 , ["SEAFLOWER_TEA"                   ] = { name=$FOOD_034005                            , food_item_id=034005, recipe_list_index=$FOOD_034005_RLI, recipe_index=$FOOD_034005_RI }
 , ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name=$FOOD_028350                            , food_item_id=028350, recipe_list_index=$FOOD_028350_RLI, recipe_index=$FOOD_028350_RI }
+, ["SKYRIM_JAZBAY_CROSTATA"          ] = { name=$FOOD_033909                            , food_item_id=033909, recipe_list_index=$FOOD_033909_RLI, recipe_index=$FOOD_033909_RI }
 , ["SORRY_HONEY_LAGER"               ] = { name=$FOOD_033642                            , food_item_id=033642, recipe_list_index=$FOOD_033642_RLI, recipe_index=$FOOD_033642_RI }
 , ["SOUR_MASH"                       ] = { name=$FOOD_028425                            , food_item_id=028425, recipe_list_index=$FOOD_028425_RLI, recipe_index=$FOOD_028425_RI }
 , ["SPICEBERRY_CHAI"                 ] = { name=$FOOD_033684                            , food_item_id=033684, recipe_list_index=$FOOD_033684_RLI, recipe_index=$FOOD_033684_RI }
@@ -452,6 +454,12 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name=$ALCHEMY_TRAIT_30          , master_potion=$ALCHEMY_MASTER_POTION_30           , master_poison=$ALCHEMY_MASTER_POISON_30           }
 }
 
+-- Miscellaneousl conditions -------------------------------------------------
+
+LibCraftText.DAILY_COND = {
+    HINT_PR_BREWERS_COOKS_RECIPES = $HINT_PR_BREWERS_COOKS_RECIPES
+,   DELIVER_NEAREST_QUARTERMASTER = $DELIVER_NEAREST_QUARTERMASTER
+}
 
 -- Quest Titles --------------------------------------------------------------
 

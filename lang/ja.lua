@@ -138,6 +138,7 @@ LibCraftText.RECIPE = {
 , ["BATTAGLIR_CHOWDER"               ] = { name="バタグリアのチャウダー"                           , food_item_id=028394, recipe_list_index=  3, recipe_index= 15}
 , ["BITTERLEMON_TEA"                 ] = { name="ビターレモンティー"                             , food_item_id=028457, recipe_list_index=  9, recipe_index= 13}
 , ["BOG_IRON_ALE"                    ] = { name="泥鉄鉱のエール"                               , food_item_id=028405, recipe_list_index=  8, recipe_index=  4}
+, ["BLUE_ROAD_MARATHON"              ] = { name="ブルーロード・マラソン"                           , food_item_id=028513, recipe_list_index= 10, recipe_index= 25}
 , ["BRETON_PORK_SAUSAGE"             ] = { name="ブレトンのポークソーセージ"                         , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="ニンジンスープ"                               , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="鶏の胸肉"                                  , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
@@ -186,6 +187,7 @@ LibCraftText.RECIPE = {
 , ["RYE_IN_YOUR_EYE"                 ] = { name="瞳に映るライ・ウイスキー"                          , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="海花茶"                                   , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name="センシャルのシーフードカレー"                        , food_item_id=028350, recipe_list_index=  1, recipe_index= 19}
+, ["SKYRIM_JAZBAY_CROSTATA"          ] = { name="スカイリムのジャズベイ・クロスタータ"                    , food_item_id=033909, recipe_list_index=  2, recipe_index= 25}
 , ["SORRY_HONEY_LAGER"               ] = { name="ソーリー、ハニーラガー"                           , food_item_id=033642, recipe_list_index=  8, recipe_index= 23}
 , ["SOUR_MASH"                       ] = { name="すっぱい麦芽汁"                               , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
 , ["SPICEBERRY_CHAI"                 ] = { name="スパイスベリーのチャイ"                           , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
@@ -452,6 +454,12 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name="汚染"                       , master_potion="汚染 のエキス"                           , master_poison="汚染の毒 9"                            }
 }
 
+-- Miscellaneousl conditions -------------------------------------------------
+
+LibCraftText.DAILY_COND = {
+    HINT_PR_BREWERS_COOKS_RECIPES = "醸造家と料理人はレシピを提供できる"           
+,   DELIVER_NEAREST_QUARTERMASTER = "品物を、一番近い依頼を出す補給係に届ける"        
+}
 
 -- Quest Titles --------------------------------------------------------------
 

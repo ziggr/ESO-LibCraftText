@@ -138,6 +138,7 @@ LibCraftText.RECIPE = {
 , ["BATTAGLIR_CHOWDER"               ] = { name="чаудер из баттаглира"                  , food_item_id=028394, recipe_list_index=  3, recipe_index= 15}
 , ["BITTERLEMON_TEA"                 ] = { name="горький чай с лимоном"                 , food_item_id=028457, recipe_list_index=  9, recipe_index= 13}
 , ["BOG_IRON_ALE"                    ] = { name="болотнорудный эль"                     , food_item_id=028405, recipe_list_index=  8, recipe_index=  4}
+, ["BLUE_ROAD_MARATHON"              ] = { name="«Марафон по Синей дороге»"             , food_item_id=028513, recipe_list_index= 10, recipe_index= 25}
 , ["BRETON_PORK_SAUSAGE"             ] = { name="бретонская свиная колбаса"             , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="морковный суп"                         , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="куриная грудка"                        , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
@@ -186,6 +187,7 @@ LibCraftText.RECIPE = {
 , ["RYE_IN_YOUR_EYE"                 ] = { name="«Рожь-в-глазах»"                       , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="чай «Морской цветок»"                  , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name="сенчальское рыбное карри с рисом"      , food_item_id=028350, recipe_list_index=  1, recipe_index= 19}
+, ["SKYRIM_JAZBAY_CROSTATA"          ] = { name="песочная полоска с желе из винограда джазби", food_item_id=033909, recipe_list_index=  2, recipe_index= 25}
 , ["SORRY_HONEY_LAGER"               ] = { name="лагер «Извини, дорогая»"               , food_item_id=033642, recipe_list_index=  8, recipe_index= 23}
 , ["SOUR_MASH"                       ] = { name="кислый затор"                          , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
 , ["SPICEBERRY_CHAI"                 ] = { name="пряный ягодный чай"                    , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
@@ -452,6 +454,12 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name="Осквернение"              , master_potion="Essence of Defile"                 , master_poison="Defiling Poison IX"                }
 }
 
+-- Miscellaneousl conditions -------------------------------------------------
+
+LibCraftText.DAILY_COND = {
+    HINT_PR_BREWERS_COOKS_RECIPES = "Пивовары и повара могут снабдить вас рецептами"
+,   DELIVER_NEAREST_QUARTERMASTER = "Доставить товары ближайшему интенданту заказов"
+}
 
 -- Quest Titles --------------------------------------------------------------
 
