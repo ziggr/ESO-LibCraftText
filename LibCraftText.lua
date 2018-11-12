@@ -432,29 +432,30 @@ LibCraftText.RE_ALCHEMY_TRAIT = {
          , "Craft (.*) Poison" }
 ,   de = { "Stellt etwas Gift [ders]+ (.*) [IVX]+ her"  -- NBSP before [IVX] !
          , "Stellt .* [ders]+ (.*) her" }               -- Must come after Gift re.
-,   fr = { "glyphe (.*)"
-         , "(petit) glyphe "}
-,   es = { "glifo (.*) de"
-         , "Craft (.*) Glyph of" }  -- Ayep, there are still untranslated lines in ES Spanish
+,   fr = { "Fabriquer un poison de (.*) [IVX]+"
+         , "Préparez une goutte de (.*)"}
+,   es = { "Prepara un veneno de (.*) [IVX]+"
+         , "Prepara un trago de (.*)" }   -- Must come after veneno re.
 ,   it = { "(.*) glyph of"}         -- "health" for all 9 ranks.
-,   ru = { "(.*) Glyph of"}
-,   ja = { "(.*)のグリフ"
-         , "(.*)なグリフ"}
+,   ru = { "Craft .* of (.*)"
+         , "Craft (.*) Poison" }
+,   ja = { "(.*)の.*を生産する" }
 }
 LibCraftText.RE_ALCHEMY_SOLVENT = {
-    en = { "Craft (.*) of "
-         , "Craft .* Poison (.*)" }
+    en = { "([IVX]+)$"          -- [IVX]+ re must occur before any other
+         , "Craft (.*) of " }   -- re that might carry an i, v, or x.
 ,   de = { "Stellt etwas Gift [ders]+ .* ([IVX]+) her"
-         , "Stellt (.*) [ders]+ .* her"     -- Must come after Gift re.
-          }
-,   fr = { "glyphe (.*)"
-         , "(petit) glyphe "}
-,   es = { "glifo (.*) de"
-         , "Craft (.*) Glyph of" }  -- Ayep, there are still untranslated lines in ES Spanish
+         , "Stellt (.*) [ders]+ .* her" }   -- Must come after Gift re.
+,   fr = { "([IVX]+)$"
+         , "Préparez une? (.*) de Santé"  }
+,   es = { "([IVX]+)$"
+         , "Prepara un (.*) de .*" }
 ,   it = { "(.*) glyph of"}         -- "health" for all 9 ranks.
-,   ru = { "(.*) Glyph of"}
-,   ja = { "(.*)のグリフ"
-         , "(.*)なグリフ"}
+,   ru = { "([IVX]+)$"
+         , "Craft (.*) of " }
+,   ja = { "毒(.*)を生産する"
+         , ".*の(.*)を生産する"}
+    -- 体力の飲み薬を生産する
 }
 
 function LibCraftText.ParseDailyConditionAlchemy(cond_text)
@@ -465,8 +466,21 @@ function LibCraftText.ParseDailyConditionAlchemy(cond_text)
                         , cond_text
                         , self.RE_ALCHEMY_TRAIT[lang]
                         , self.ALCHEMY_TRAIT
-                        , { "daily_potion_name", "daily_poison_name" }
+                        , { "daily_potion_name"
+                          , "daily_poison_name", "daily_poison_name2" }
                         )
+if not trait then
+    ZZDEBUG=ZZDEBUG_ON
+    local trait = self.ParseRegexable(
+                          nil
+                        , cond_text
+                        , self.RE_ALCHEMY_TRAIT[lang]
+                        , self.ALCHEMY_TRAIT
+                        , { "daily_potion_name"
+                          , "daily_poison_name", "daily_poison_name2" }
+                        )
+    ZZDEBUG=ZZDEBUG_OFF
+end
     local solvent = self.ParseRegexable(
                           al
                         , cond_text
@@ -475,17 +489,6 @@ function LibCraftText.ParseDailyConditionAlchemy(cond_text)
                         , { "potion_name"--, "potion_name2"
                           , "poison_name" }
                         )
-if not solvent then
-    ZZDEBUG=ZZDEBUG_ON
-    local solvent = self.ParseRegexable(
-                          al
-                        , cond_text
-                        , self.RE_ALCHEMY_SOLVENT[lang]
-                        , self.CONSUMABLE_MATERIAL
-                        , { "potion_name", "poison_name" }
-                        )
-    ZZDEBUG=ZZDEBUG_OFF
-end
     if not (trait or solvent) then return nil end
     return { trait   = trait
            , solvent = solvent
