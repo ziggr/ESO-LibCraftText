@@ -1,0 +1,28 @@
+
+Combination  1:	beetle scuttle	corn flower	lady smock
+Combination  2:	beetle scuttle	butterfly wing 	powdered mother of pearl
+Combination  3:	beetle scuttle	imp stool	luminous russula
+Combination  4:	blessed thistle	dragonthorn 	stinkhorn
+Combination  5:	blessed thistle	columbine	namira's rot
+Combination  6:	blue entoloma	bugloss 	white cap
+Combination  7:	blue entoloma	clam gall 	spiders egg
+Combination  8:	bugloss 	columbine 	mountain flower
+Combination  9:	blue entoloma	butterfly wing	scrib jelly
+Combination 10:	butterfly wing	nirnroot 	torchbug thorax
+Combination 11:	clam gall	mountain flower	mudcrab chitin
+Combination 12:	clam gall	emetic russula 	fleshfly larva
+Combination 13:	corn flower	mudcrab chitin 	night shade
+Combination 14:	corn flower	torchbug thorax	violet coprinus
+Combination 15:	columbine	dragonthorn	water hyacinth
+Combination 16:	emetic russula	namira's rot	nirnroot
+Combination 17:	emetic russula	violet coprinus	water hyacinth
+Combination 18:	fleshfly larva	night shade	stinkhorn
+Combination 19:	fleshfly larva	scrib jelly	powdered mother of pearl
+Combination 20:	imp stool	mountain flower	nirnroot
+Combination 21:	lady smock	namira's rot	violet coprinus
+Combination 22:	columbine	wormwood	luminous russula
+Combination 23:	clam gall	scrib jelly	spiders egg
+Combination 24:	dragonthorn	torchbug thorax	white cap
+Combination 25:	lady smock	water hyacinth 	wormwood
+Combination 26:	emetic russula	white cap	wormwood
+

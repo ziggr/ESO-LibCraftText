@@ -1,0 +1,99 @@
+30 traits
+28 reagents
+
+There are 28x27x27=20,412 possible combinations of reagents, including ones that produce no traits, or which waste one reagent that does not contribute. Although apparently there are only 3276 UNIQUE possible combinations (28 choose 3), ignoring the insertion of a nil option for that 3rd choice. Heck, including nil in all 3 options is only 3654 (29 choose 3).
+
+What is 3,654 pick 30 ? 10^66
+
+Yeah, I'm not processing 10^66 different combinations of potions to find the best most optimal mix. That would run until the sun went nova.
+
+
+# Stupid Idea #1: One Potion Per Trait
+
+So if you have 30 traits, each with a list of possible reagents,
+then for each trait, at least ONE combination of { trait's reagent list, trait's reagent list, null + ALL_REAGENTS } must be present in the final pick list. It's okay (and desirable!) if this combination matches one from another trait.
+
+So a 2-reagent trait how many combinations?
+
+a.    2 =  2        reagents with that trait, times
+b. x  1 = (2-1)     reagents with that trait, not including the one from line a.
+c. x 27 = (28-2+1)  reagents from all reagents, not including the two from
+-------             lines a+b, but also including the possibility of not
+     54             including a 3rd reagent at all.
+
+We have 28 traits, each with 2-7 reagents:
+
+trait   regnt   comb
+ct      ct      ct
+------  ------  ------
+ 3      2         54
+11      3        162
+11      4        324
+ 3      5        540
+ 0      6        810
+ 3      7       1134
+
+54^3 * 162^11 * 324^11 * 540^3 * 1134^3 = 3 x 10^71
+
+That's 7 orders of magnitude WORSE than (29 choose 3) choose 26:
+      29 choose  3 = 3654
+    3654 choose 26 = 10^66
+
+So "pick one for each trait" is longer.
+
+Oh. And it's not _correct_. For traits that have 3+ reagents, we need to
+learn that trait on all 3+ reagents, so just picking ONE combination is
+insufficient.
+
+So we're back to 3654 choose 26 and hoping that we hit
+a "know all 30 reagents * 4 traits" threshhold after a while.
+
+I do not have 10^66 bits in my computer to hold all the combinations.
+Nor do I have 10^66 nanoseconds to process all of them.
+
+# Smart Idea #2: Bitwise Math
+
+Reduction: most of those 10^66 combinations are invalid:
+    - at least one of the reagents has zero intersect with other two.
+
+Okay, we need a FAST way to check if a+b+c produces anything interesting:
+    -- 28 traits = fits in a Uint32.
+    -- Bitwise math! Woo.
+
+type TraitWord Uint32
+
+a+b   is bitwise (a and b)
+a+b+c is bitwise (a and b) or (b and c) or (a and c)
+
+So with this we can reduce any 2- or 3-reagent mix down to a single 32-bit word.
+
+Does a contribute?
+    result = a+b+c (a and b) or (b and c) or (a and c)
+    w/o a  =   b+c              (b and c)
+    if a+b+c == b+c then a contributes nothing (but might still learn something!)
+
+    !!! Cannot use this to filter out potential mixes unless A already knows all 4 traits.
+
+What about learning, knowing?
+    use a TraitWord for "unknown" traits, and that against a+b+c,
+    and if there are any bits left on, HEY! You learned something!
+    Do this for each reagent to get learned_ct
+
+Need a fast count of 1 bits. Either shift and add, or iterate masks and add.
+Surely shift-and-add will be faster, right?
+
+... one coding session later ...
+
+IT WORKS!
+
+## Surprise: learning extra traits due to negates
+
+Two negates, followed by a positive, or two positives, followed by a
+negate, sometimes learn the "followed by a ___" reagent trait. Surprised me a
+couple times while testing this 26-potion sequence on PTS.
+
+But I don't think I'm going to reprogram my loop to take advantage of this, since I don't fully understand it, nor do I want to spend an hour on PTS exploring it, possibly burning through alts.
+
+Just take this 26-potion sequence and be happy.
+
+Optional: write `/lct alchemy` to programmatically mix these 26 potions.

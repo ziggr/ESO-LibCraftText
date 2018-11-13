@@ -1,4 +1,4 @@
-.PHONY: put zip lang test gentest
+.PHONY: put zip lang test gentest alch
 
 put:
 	rsync -vrt --delete --exclude=.git --exclude=l10n-unofficial --exclude=published . /Volumes/Elder\ Scrolls\ Online/live/AddOns/LibCraftText
@@ -47,3 +47,13 @@ gentest: test/gen_test.data.lua
 
 test/gen_test.data.lua: test/gen_test.lua data/lang_db.lua
 	lua test/gen_test.lua
+
+
+alch: alch/alch.out
+
+alch/alch: alch/alch.go
+	cd alch; go build alch.go
+
+alch/alch.out: alch/alch
+	cd alch; ./alch 2>&1 > alch.out
+
