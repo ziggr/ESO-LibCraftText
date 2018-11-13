@@ -119,6 +119,11 @@ function LibCraftText.Scan()
 end
 
 function LibCraftText.Discover()
+                        -- Leave most of these steps commented out. Once you've
+                        -- collected 300 set bonus names, you really don't need
+                        -- to collect them *again*. Uncomment the steps you
+                        -- need to (re)run then re-comment them out.
+
     -- LibCraftText.DiscoverEquipmentMaterials()
     -- LibCraftText.DiscoverConsumableMaterials()
     -- LibCraftText.DiscoverItems()

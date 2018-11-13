@@ -40,6 +40,7 @@ lang:
 test:
 	lua test/test_parse.lua --repeat 7
 
+# Also re-generates gen_test.data.lua, thanks to its dependency rule.
 gentest: test/gen_test.data.lua
 	lua test/test_gen.lua --repeat 7
 
