@@ -93,6 +93,30 @@ function LibCraftText.MasterQuestNameToCraftingTypeList(quest_name)
     return LibCraftText.MASTER_QUEST_TITLES[quest_name]
 end
 
+function LibCraftText.ParseMasterCondition(crafting_type, cond_text)
+    if not LibCraftText.CRAFTING_TYPE_TO_MASTER_PARSER then
+        LibCraftText.CRAFTING_TYPE_TO_MASTER_PARSER = {
+            [CRAFTING_TYPE_BLACKSMITHING  ] = LibCraftText.ParseMasterConditionEquipment
+        ,   [CRAFTING_TYPE_CLOTHIER       ] = LibCraftText.ParseMasterConditionEquipment
+        ,   [CRAFTING_TYPE_ENCHANTING     ] = LibCraftText.ParseMasterConditionConsumable
+        ,   [CRAFTING_TYPE_ALCHEMY        ] = LibCraftText.ParseMasterConditionAlchemy
+        ,   [CRAFTING_TYPE_PROVISIONING   ] = LibCraftText.ParseMasterConditionConsumable
+        ,   [CRAFTING_TYPE_WOODWORKING    ] = LibCraftText.ParseMasterConditionEquipment
+        ,   [CRAFTING_TYPE_JEWELRYCRAFTING] = LibCraftText.ParseMasterConditionEquipment
+        }
+    end
+
+    local func = nil
+    if crafting_type then
+        func = LibCraftText.CRAFTING_TYPE_TO_MASTER_PARSER[crafting_type]
+    end
+    if not func then
+        func = LibCraftText.ParseMasterConditionMisc
+return nil
+    end
+    return func(crafting_type, cond_text)
+end
+
 -- Turning in Master Writs to Rolis Hlaalu -----------------------------------
 
 -- Return the crafting type that matches the given dialog option text.
@@ -537,6 +561,18 @@ function LibCraftText.ParseDailyConditionMisc(crafting_type, cond_text)
         end
     end
     return nil
+end
+
+-- Parse Master Writ Conditions ----------------------------------------------
+function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
+    local self = LibCraftText
+    return { solvent    =   self.MATERIAL.LORKHANS_TEARS
+           , name_trait =   self.ALCHEMY_TRAIT.RAVAGE_HEALTH
+           , trait_list = { self.ALCHEMY_TRAIT.BREACH
+                          , self.ALCHEMY_TRAIT.INCREASE_SPELL_POWER
+                          , self.ALCHEMY_TRAIT.RAVAGE_HEALTH
+                          }
+            }
 end
 
 -- Parse Util ----------------------------------------------------------------

@@ -326,5 +326,58 @@ function TestDailyCondition.OneLangDBCondition(lang_table)
     -- end
 end
 
+--[[
+    key = "$MASTER_COND_AL_1"
+,   en  = "Craft an Essence of Ravage Health with the following Traits:\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progress: 0 / 20"
+,   de  = "Stellt eine Essenz der Lebensverwüstung mit bestimmten Eigenschaften her.\n\n• Bruch\n• Erhöht Magiekraft\n• Lebensverwüstung\n• Fortschritt: 0/20"
+,   fr  = "Fabriquez une essence de ravage de Santé avec les traits suivants : \n• Brèche\n• Augmente la puissance des sorts\n• Réduit la Santé\n• Progression : 0/20"
+,   es  = "Fabricæ una esencia de reducción de salud con las siguientes propiedades:• La Grieta• Aumento de poder mágico• Reducción de salud\n• Progreso: 0/20"
+,   it  = "Crea un Ravage Health con i seguenti tratti:\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progresso: 0 / 20"
+,   ru  = "Создать предмет (Essence of Ravage Health) со следующими эффектами:\n• Разрыв\n• Увеличение силы заклинаний\n• Опустошение здоровья\n• Прогресс: 0 / 20"
+,   ja  = "Craft a 体力減少 のエキス with the following Traits:\n• 侵害\n• 呪文攻撃力上昇\n• 体力減少\n• Progress: 0 / 20"
+
+    key = "$MASTER_COND_BS_1"
+,   en  = "Craft a Rubedite Cuirass with the following Properties:\n• Quality: Epic\n• Trait: Sturdy\n• Set: Varen's Legacy\n• Style: Wood Elf\n• Progress: 0 / 1"
+,   de  = "Stellt einen Rubeditkürass mit bestimmten Eigenschaften her.\n• Set: Varens Erbe\n• Stil: Waldelfen\n• Eigenschaft: Robust\n• Qualität: Episch\n• Fortschritt: 0/1"
+,   fr  = "Fabriquez une cuirasse en cuprite avec les caractéristiques suivantes : \n• Qualité : Épique\n• Trait : Solide\n• Ensemble : l’Héritage de Varen\n• Style : Elfe des bois\n• Progression : 0/1"
+,   es  = "Fabricar: Coraza de rubedita con los siguientes rasgos: \n• Calidad: Épico\n• Rasgo: Resistente\n• Conjunto: Legado de Varen\n• Estilo: Elfo del bosque\n• Progreso: 0/1"
+,   it  = "Crea un Corazza con le seguenti proprietà:\n• Qualità: Epico\n• Tratti: Robusto\n• Set: Varen's Legacy\n• Stile:\n• Progresso: 0 / 1"
+,   ru  = "Создать предмет (Rubedite Cuirass) со следующими характеристиками:\n• Качество: Эпическое\n• Особенность: Sturdy\n• Комплект: Varen's Legacy\n• Стиль: босмерский\n• Прогресс: 0 / 1"
+,   ja  = "Craft a ルベダイトの胸当て with the following Properties:\n• Quality: Epic\n• Trait: Sturdy\n• Set: ヴァレンレガシー\n• Style: ウッドエルフ\n• Progress: 0 / 1"
+
+--[[]]
+function TestDailyCondition.TestMasterAl()
+    local fodder = {
+        input = {
+            key = "$MASTER_COND_AL_1"
+        ,   en  = "Craft an Essence of Ravage Health with the following Traits:\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progress: 0 / 20"
+        ,   de  = "Stellt eine Essenz der Lebensverwüstung mit bestimmten Eigenschaften her.\n\n• Bruch\n• Erhöht Magiekraft\n• Lebensverwüstung\n• Fortschritt: 0/20"
+        ,   fr  = "Fabriquez une essence de ravage de Santé avec les traits suivants : \n• Brèche\n• Augmente la puissance des sorts\n• Réduit la Santé\n• Progression : 0/20"
+        ,   es  = "Fabricæ una esencia de reducción de salud con las siguientes propiedades:• La Grieta• Aumento de poder mágico• Reducción de salud\n• Progreso: 0/20"
+        ,   it  = "Crea un Ravage Health con i seguenti tratti:\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progresso: 0 / 20"
+        ,   ru  = "Создать предмет (Essence of Ravage Health) со следующими эффектами:\n• Разрыв\n• Увеличение силы заклинаний\n• Опустошение здоровья\n• Прогресс: 0 / 20"
+        ,   ja  = "Craft a 体力減少 のエキス with the following Traits:\n• 侵害\n• 呪文攻撃力上昇\n• 体力減少\n• Progress: 0 / 20"
+        }
+    ,   expect = {
+            solvent     =   LCT.MATERIAL.LORKHANS_TEARS
+        ,   name_trait  =   LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH
+        ,   trait_list  = { LCT.ALCHEMY_TRAIT.BREACH
+                          , LCT.ALCHEMY_TRAIT.INCREASE_SPELL_POWER
+                          , LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH
+                          }
+         }
+    }
+
+    TestDailyCondition.OneMaster(al, fodder.input, fodder.expect)
+end
+
+function TestDailyCondition.OneMaster(crafting_type, lang_table, expect)
+    local cond_text = lang_table[LibCraftText.CurrLang()]
+    if not cond_text then return end
+    local got = LibCraftText.ParseMasterConditionAlchemy(crafting_text, cond_text)
+    luaunit.assertEquals(got, expect)
+end
+
+
 
 os.exit( luaunit.LuaUnit.run() )
