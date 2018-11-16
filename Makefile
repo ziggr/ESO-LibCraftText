@@ -1,7 +1,14 @@
 .PHONY: put zip lang test gentest alch
 
 put:
-	rsync -vrt --delete --exclude=.git --exclude=l10n-unofficial --exclude=published . /Volumes/Elder\ Scrolls\ Online/live/AddOns/LibCraftText
+	rsync -vrt --delete --exclude=.git \
+		--exclude=l10n-unofficial \
+		--exclude=published \
+		--exclude=alch \
+		--exclude=doc \
+		--exclude=data \
+		--exclude=test \
+		. /Volumes/Elder\ Scrolls\ Online/live/AddOns/LibCraftText
 
 
 # get/getpts copies SavedVariables/LibCraftText.lua from gaming PC to

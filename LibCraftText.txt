@@ -7,7 +7,7 @@
 LibCraftText.lua
                         # Sample code, uncomment this line, then run
                         #   /example1
-# LibCraftText_Example.lua
+LibCraftText_Example.lua
 
                         # Separate each language to its own Lua file,
                         # preferably in a directory.
@@ -30,5 +30,5 @@ lang/$(language).lua
 # Normally leave these two lines commented out: LibCraftText does not
 # require saved variables, nor do most users ever want to run "/lct discover"
 #
-# ## SavedVariables: LibCraftTextVars
-# LibCraftText_Discover.lua
+## SavedVariables: LibCraftTextVars
+LibCraftText_Discover.lua

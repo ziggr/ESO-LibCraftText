@@ -124,13 +124,13 @@ function LibCraftText.Discover()
                         -- to collect them *again*. Uncomment the steps you
                         -- need to (re)run then re-comment them out.
 
-    -- LibCraftText.DiscoverEquipmentMaterials()
-    -- LibCraftText.DiscoverConsumableMaterials()
-    -- LibCraftText.DiscoverItems()
-    -- LibCraftText.DiscoverQualities()
-    -- LibCraftText.DiscoverTraits()
-    -- LibCraftText.DiscoverSets()
-    -- LibCraftText.DiscoverMotifs()
+    LibCraftText.DiscoverEquipmentMaterials()
+    LibCraftText.DiscoverConsumableMaterials()
+    LibCraftText.DiscoverItems()
+    LibCraftText.DiscoverQualities()
+    LibCraftText.DiscoverTraits()
+    LibCraftText.DiscoverSets()
+    LibCraftText.DiscoverMotifs()
     LibCraftText.DiscoverRecipes()
     LibCraftText.RegisterCraftingStationListener()
 end
@@ -1275,7 +1275,7 @@ end
 
 function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
     local self = LibCraftText
-    local cm = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
+    local cm = LibCraftText.MATERIAL -- for less typing
 
     local POISON = "poison"
     local POTION = "potion"
@@ -1599,7 +1599,7 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
                         -- inventory changed between interactions.
     self.IndexBags()
 
-    local m = self.CONSUMABLE_MATERIAL -- for less typing
+    local m = self.MATERIAL -- for less typing
     local potency_list = {
         --  rank   add            subtract      level   adjective   writ
             [ 1] = m.JORA    -- , m.JODE            1   trifling    EN_01
@@ -1812,7 +1812,7 @@ function LibCraftText.IndexBags()
     self.item_id_to_mat_bag = item_id_to_mat_bag
 end
 
-local m = LibCraftText.CONSUMABLE_MATERIAL -- for less typing
+local m = LibCraftText.MATERIAL -- for less typing
 LibCraftText.LEARN_ALCHEMY = {
   { m.BEETLE_SCUTTLE  , m.CORN_FLOWER     , m.LADYS_SMOCK              }
 , { m.BEETLE_SCUTTLE  , m.BUTTERFLY_WING  , m.POWDERED_MOTHER_OF_PEARL }
@@ -1881,7 +1881,7 @@ end
 
 function LibCraftText.LearnOneAlchemy(reagent_list)
     local self = LibCraftText
-    local sol_mat_bag = self.ToMatBag(self.CONSUMABLE_MATERIAL.NATURAL_WATER)
+    local sol_mat_bag = self.ToMatBag(self.MATERIAL.NATURAL_WATER)
     local r1_mat_bag = self.ToMatBag(reagent_list[1])
     local r2_mat_bag = self.ToMatBag(reagent_list[2])
     local r3_mat_bag = self.ToMatBag(reagent_list[3]) or {}

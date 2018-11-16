@@ -119,6 +119,16 @@ function LibCraftTextExample.Example1_OneQuest(quest_index)
     end
     return true
 end
+
+                        -- To provide more stable output.
+function LibCraftText.SortedKeys(t)
+    local r = {}
+    for k,_ in pairs(t) do
+        table.insert(r,k)
+    end
+    table.sort(r)
+    return r
+end
                         -- A recursive table dumper that does a marginally better
                         -- job of indenting than d()
 function LibCraftTextExample.DumpTable(t,indent_ct)
@@ -134,14 +144,18 @@ function LibCraftTextExample.DumpTable(t,indent_ct)
     end
     if not has_sub_tables then
         local line = ""
-        for k,v in pairs(t) do
+        local sorted = LibCraftText.SortedKeys(t)
+        for _,k in ipairs(sorted) do
+            local v = t[k]
             line = line .. string.format(grey.."%s:"..white.."%s  ",tostring(k),tostring(v))
         end
         d(indent..line)
     else
                         -- Gonna have to recurse, so print each key/value pair
                         -- on its own line.
-        for k,v in pairs(t) do
+        local sorted = LibCraftText.SortedKeys(t)
+        for _,k in ipairs(sorted) do
+            local v = t[k]
             local vv = tostring(v)
             if type(v) == "table" then vv = "table" end -- Omit useless hex addresses.
             d(string.format(grey..indent.."%-4s: "..white.."%s", tostring(k), vv))
@@ -151,3 +165,4 @@ function LibCraftTextExample.DumpTable(t,indent_ct)
         end
     end
 end
+
