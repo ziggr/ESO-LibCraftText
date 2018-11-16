@@ -580,6 +580,40 @@ LibCraftText.RE_MASTER_ALCHEMY_NAME_TRAIT = {
 ,   ja = { "Craft a (.*) with the following Traits:"
          }
 }
+LibCraftText.RE_MASTER_ALCHEMY_TRAIT = {
+    en = { "• (.*)" }
+,   de = { "• (.*)" }
+,   fr = { "• (.*)" }
+,   es = { "• (.*)" }
+,   it = { "• (.*)" }
+,   ru = { "• (.*)" }
+,   ja = { "• (.*)" }
+}
+
+-- Break a multi-line condition into its bullet-prefixed substrings. Omits the
+-- first big paragraph "Craft an Essence of Ravage Health with the following
+-- traits:"
+function LibCraftText.MasterConditionSplit(cond_text)
+    local self = LibCraftText
+    local lang = self.CurrLang()
+                        -- All languages except ES Spanish use newlines
+                        -- to break up their alchemy traits.
+                        -- ES Spanish just continues the same line
+                        -- without newline, so you have to break on bullet.
+    local BULLET    = "•"   -- UTF-8 E2 80 A2 = U2022 "bullet"
+    local lines = self.split_plain(cond_text, BULLET.." ")
+    table.remove(lines,1)
+    return lines
+end
+
+        -- ,   en  = "Craft an Essence of Ravage Health with the following Traits:\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progress: 0 / 20"
+        -- ,   de  = "Stellt eine Essenz der Lebensverwüstung mit bestimmten Eigenschaften her.\n\n• Bruch\n• Erhöht Magiekraft\n• Lebensverwüstung\n• Fortschritt: 0/20"
+        -- ,   fr  = "Fabriquez une essence de ravage de Santé avec les traits suivants : \n• Brèche\n• Augmente la puissance des sorts\n• Réduit la Santé\n• Progression : 0/20"
+        -- ,   es  = "Fabricæ una esencia de reducción de salud con las siguientes propiedades:• La Grieta• Aumento de poder mágico• Reducción de salud\n• Progreso: 0/20"
+        -- ,   it  = "Crea un Ravage Health con i seguenti tratti:\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progresso: 0 / 20"
+        -- ,   ru  = "Создать предмет (Essence of Ravage Health) со следующими эффектами:\n• Разрыв\n• Увеличение силы заклинаний\n• Опустошение здоровья\n• Прогресс: 0 / 20"
+        -- ,   ja  = "Craft a 体力減少 のエキス with the following Traits:\n• 侵害\n• 呪文攻撃力上昇\n• 体力減少\n• Progress: 0 / 20"
+
 function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
     local self = LibCraftText
     local lang = self.CurrLang()
@@ -596,13 +630,48 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
         self.ParseRegexable(unpack(args))
         ZZDEBUG=ZZDEBUG_OFF
     end
-    return { solvent    =   self.MATERIAL.LORKHANS_TEARS
-           , name_trait =   name_trait
-           , trait_list = { self.ALCHEMY_TRAIT.BREACH
-                          , self.ALCHEMY_TRAIT.INCREASE_SPELL_POWER
-                          , self.ALCHEMY_TRAIT.RAVAGE_HEALTH
-                          }
-            }
+
+    local solvent = nil
+    if name_trait and cond_text then
+        if cond_text:find(name_trait.master_poison) then
+            solvent = self.MATERIAL.ALKAHEST
+        elseif cond_text:find(name_trait.master_potion) then
+            solvent = self.MATERIAL.LORKHANS_TEARS
+        end
+    end
+
+    local lines = self.MasterConditionSplit(cond_text)
+    local trait_list = {}
+    args = { nil
+           , "<line goes here>"
+           , { "(.*)" }
+           , self.ALCHEMY_TRAIT
+           , { "name" }
+           }
+    for _,line in ipairs(lines) do
+        args[2] = line
+        local trait = self.ParseRegexable(unpack(args))
+        if trait then
+            table.insert(trait_list, trait)
+        end
+    end
+
+    if #trait_list ~= 3 then
+        ZZDEBUG=ZZDEBUG_ON
+print("Not 3. line_ct:"..tostring(#lines))
+        for i,line in ipairs(lines) do
+            args[2] = line
+            ZZDEBUG(string.format("### cond_text[%d]:'%s'", i, line))
+            local trait = self.ParseRegexable(unpack(args))
+            self.ParseRegexable(unpack(args))
+        end
+        ZZDEBUG=ZZDEBUG_OFF
+    end
+
+    return { solvent    = solvent
+           , name_trait = name_trait
+           , trait_list = trait_list
+           }
 end
 
 -- Parse Util ----------------------------------------------------------------
@@ -801,6 +870,42 @@ function LibCraftText.hex_dump(buf)
      if i % 16 == 0 then io.write( buf:sub(i-16+1, i):gsub('%c','.'), '\n' ) end
   end
 end
+
+-- From http://lua-users.org/wiki/SplitJoin
+--
+-- A split that accepts regexes as delimiters, but which returns incorrect
+-- results for UTF-8 delimiters such as E2 *0 A2 = U2022 "Bullet".
+function LibCraftText.split(str,sep)
+    local ret={}
+    local n=1
+    for w in str:gmatch("([^"..sep.."]*)") do
+        ret[n] = ret[n] or w -- only set once (so the blank after a string is ignored)
+        if w=="" then
+            n = n + 1
+        end -- step forwards on a blank but not a string
+    end
+    return ret
+end
+
+
+-- A split which works for string constant delimiters such as bullet.
+function LibCraftText.split_plain(str,sep)
+    local ret={}
+    local n=1
+    local offset = 1
+                        -- "true" here is arg "plain", which turns off
+                        -- pattern expressions and uses just boring old
+                        -- byte matching.
+    local delim_begin, delim_end = str:find(sep, offset, true)
+    while delim_begin do
+        local sub = str:sub(offset, delim_begin - 1)
+        table.insert(ret, sub)
+        offset = delim_end + 1
+        delim_begin, delim_end = str:find(sep, offset, true)
+    end
+    return ret
+end
+
 
 
 
