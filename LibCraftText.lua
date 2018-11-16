@@ -564,10 +564,40 @@ function LibCraftText.ParseDailyConditionMisc(crafting_type, cond_text)
 end
 
 -- Parse Master Writ Conditions ----------------------------------------------
+LibCraftText.RE_MASTER_ALCHEMY_NAME_TRAIT = {
+    en = { "Craft an (.*) with the following Traits"
+         }
+,   de = { "Stellt eine (.*) mit bestimmten Eigenschaften her."
+         }
+,   fr = { "Fabriquez une (.*) avec les traits suivants."
+         }
+,   es = { "Fabricæ una (.*) con las siguientes propiedades:"
+         }
+,   it = { "Crea un (.*) con i seguenti tratti:"
+         }
+,   ru = { "Создать предмет %((.*)%) со следующими эффектами:"
+         }
+,   ja = { "Craft a (.*) with the following Traits:"
+         }
+}
 function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
     local self = LibCraftText
+    local lang = self.CurrLang()
+    local args = { nil
+                 , cond_text
+                 , self.RE_MASTER_ALCHEMY_NAME_TRAIT[lang]
+                 , self.ALCHEMY_TRAIT
+                 , { "master_potion", "master_poison" }
+             }
+    local name_trait    = self.ParseRegexable(unpack(args))
+    if not name_trait then
+        ZZDEBUG=ZZDEBUG_ON
+        ZZDEBUG(string.format("### cond_text:'%s'", cond_text))
+        self.ParseRegexable(unpack(args))
+        ZZDEBUG=ZZDEBUG_OFF
+    end
     return { solvent    =   self.MATERIAL.LORKHANS_TEARS
-           , name_trait =   self.ALCHEMY_TRAIT.RAVAGE_HEALTH
+           , name_trait =   name_trait
            , trait_list = { self.ALCHEMY_TRAIT.BREACH
                           , self.ALCHEMY_TRAIT.INCREASE_SPELL_POWER
                           , self.ALCHEMY_TRAIT.RAVAGE_HEALTH
@@ -698,6 +728,7 @@ function LibCraftText.ExactMatch(find_me, rows, crafting_type, field_name, ... )
     local find_me_lower      = find_me:lower()
     local find_me_deumlauted = LibCraftText.DeUmlaut(find_me_lower)
     for _,fieldname in pairs({ field_name, ... }) do
+ZZDEBUG("ExactMatch() fieldname:"..tostring(fieldname))
         if not fieldname then break end
         for _, row in pairs(rows) do
             if row.crafting_type == crafting_type then
