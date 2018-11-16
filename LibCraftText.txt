@@ -7,7 +7,7 @@
 LibCraftText.lua
                         # Sample code, uncomment this line, then run
                         #   /example1
-LibCraftText_Example.lua
+# LibCraftText_Example.lua
 
                         # Separate each language to its own Lua file,
                         # preferably in a directory.
