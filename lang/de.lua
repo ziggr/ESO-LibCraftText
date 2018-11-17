@@ -374,24 +374,24 @@ LibCraftText.MATERIAL = {
 , ["JEHADE"                  ] = { name="Jehade"                         , crafting_type=en, item_id= 64508 }
 , ["ITADE"                   ] = { name="Itade"                          , crafting_type=en, item_id= 68340 }
 
-, ["DEKEIPA"                 ] = { name="Dakeipa"                        , crafting_type=en, item_id= 45839 , name_2="frosts"        }
-, ["DENI"                    ] = { name="Deni"                           , crafting_type=en, item_id= 45833 , name_2="ausdauer"     , name_3="ausdauer"       }
-, ["DENIMA"                  ] = { name="Denima"                         , crafting_type=en, item_id= 45836 , name_2="ausdauerregeneration"}
-, ["DETERI"                  ] = { name="Deteri"                         , crafting_type=en, item_id= 45842 , name_2="abhärtung"     }
-, ["HAOKO"                   ] = { name="Haoko"                          , crafting_type=en, item_id= 45841 , name_2="fäulnis"       }
-, ["HAKEIJO"                 ] = { name="Hakeijo"                        , crafting_type=en, item_id= 68342 , name_2="prismatischen verteidigung"}
-, ["KADERI"                  ] = { name="Kaderi"                         , crafting_type=en, item_id= 45849 , name_2="einschlagens"  }
-, ["KUOKO"                   ] = { name="Kuoko"                          , crafting_type=en, item_id= 45837 , name_2="gifts"         }
-, ["MAKDERI"                 ] = { name="Makderi"                        , crafting_type=en, item_id= 45848 , name_2="erhöhten magischen schadens"}
-, ["MAKKO"                   ] = { name="Makko"                          , crafting_type=en, item_id= 45832 , name_2="magicka"      , name_3="magicka"        }
-, ["MAKKOMA"                 ] = { name="Makkoma"                        , crafting_type=en, item_id= 45835 , name_2="magickaregeneration"}
-, ["MEIP"                    ] = { name="Meip"                           , crafting_type=en, item_id= 45840 , name_2="schocks"       }
-, ["OKO"                     ] = { name="Oko"                            , crafting_type=en, item_id= 45831 , name_2="lebens"       , name_3="lebens"         }
-, ["OKOMA"                   ] = { name="Okoma"                          , crafting_type=en, item_id= 45834 , name_2="lebensregeneration"}
-, ["OKORI"                   ] = { name="Okori"                          , crafting_type=en, item_id= 45843 , name_2="waffenkraft"   }
-, ["ORU"                     ] = { name="Oru"                            , crafting_type=en, item_id= 45846 , name_2="trankverbesserung"}
-, ["RAKEIPA"                 ] = { name="Rakeipa"                        , crafting_type=en, item_id= 45838 , name_2="flamme"        }
-, ["TADERI"                  ] = { name="Taderi"                         , crafting_type=en, item_id= 45847 , name_2="erhöhten physischen schadens"}
+, ["DEKEIPA"                 ] = { name="Dakeipa"                        , crafting_type=en, item_id= 45839 , add="frosts"            }
+, ["DENI"                    ] = { name="Deni"                           , crafting_type=en, item_id= 45833 , add="ausdauer"         , add_2="ausdauer"            }
+, ["DENIMA"                  ] = { name="Denima"                         , crafting_type=en, item_id= 45836 , add="ausdauerregeneration"}
+, ["DETERI"                  ] = { name="Deteri"                         , crafting_type=en, item_id= 45842 , add="abhärtung"         }
+, ["HAOKO"                   ] = { name="Haoko"                          , crafting_type=en, item_id= 45841 , add="fäulnis"           }
+, ["HAKEIJO"                 ] = { name="Hakeijo"                        , crafting_type=en, item_id= 68342 , add="prismatischen verteidigung"}
+, ["KADERI"                  ] = { name="Kaderi"                         , crafting_type=en, item_id= 45849 , add="einschlagens"      }
+, ["KUOKO"                   ] = { name="Kuoko"                          , crafting_type=en, item_id= 45837 , add="gifts"             }
+, ["MAKDERI"                 ] = { name="Makderi"                        , crafting_type=en, item_id= 45848 , add="erhöhten magischen schadens"}
+, ["MAKKO"                   ] = { name="Makko"                          , crafting_type=en, item_id= 45832 , add="magicka"          , add_2="magicka"             }
+, ["MAKKOMA"                 ] = { name="Makkoma"                        , crafting_type=en, item_id= 45835 , add="magickaregeneration"}
+, ["MEIP"                    ] = { name="Meip"                           , crafting_type=en, item_id= 45840 , add="schocks"           }
+, ["OKO"                     ] = { name="Oko"                            , crafting_type=en, item_id= 45831 , add="lebens"           , add_2="lebens"              }
+, ["OKOMA"                   ] = { name="Okoma"                          , crafting_type=en, item_id= 45834 , add="lebensregeneration"}
+, ["OKORI"                   ] = { name="Okori"                          , crafting_type=en, item_id= 45843 , add="waffenkraft"       }
+, ["ORU"                     ] = { name="Oru"                            , crafting_type=en, item_id= 45846 , add="trankverbesserung" }
+, ["RAKEIPA"                 ] = { name="Rakeipa"                        , crafting_type=en, item_id= 45838 , add="flamme"            }
+, ["TADERI"                  ] = { name="Taderi"                         , crafting_type=en, item_id= 45847 , add="erhöhten physischen schadens"}
 
 , ["TA"                      ] = { name="Ta"                             , crafting_type=en, item_id= 45850 , name_2="Normal"   }
 , ["JEJOTA"                  ] = { name="Jejota"                         , crafting_type=en, item_id= 45851 , name_2="Erlesen"  }
