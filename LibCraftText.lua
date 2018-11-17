@@ -457,7 +457,7 @@ function LibCraftText.ParseDailyConditionGlyph(cond_text)
                                        , cond_text
                                        , self.RE_ESSENCE[lang]
                                        , ESSENCE_LIST
-                                       , { "name_2", "name_3" }
+                                       , { "add", "add_2" }
                                        )
     if not (potency or essence) then
         return nil

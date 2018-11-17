@@ -22,6 +22,10 @@ MASTER_FODDER = {
                              }
              }
   }
+-- , { input = "Craft a Superb Glyph of Reduce Spell Cost\n• Quality: Epic\n• Progress: 0 / 1"
+-- , { input = "Craft a Superb Glyph of Stamina Recovery\n• Quality: Epic\n• Progress: 0 / 1"
+-- , { input = "Craft a Superb Glyph of Reduce Feat Cost\n• Quality: Epic\n• Progress: 0 / 1"
+
 -- , { input = "Craft a Lusty Argonian Maid Mazte\n• Progress: 0 / 8"
 -- , { input = "Craft an Orcrest Agony Pale Ale\n• Progress: 0 / 8"
 -- , { input = "Craft a Velothi View Vintage Malbec\n• Progress: 0 / 8"
@@ -33,10 +37,6 @@ MASTER_FODDER = {
 
 -- , { input = "Craft an Ancestor Silk Sash with the following Properties:\n• Quality: Epic\n• Trait: Reinforced\n• Set: Varen's Legacy\n• Style: Worm Cult\n• Progress: 0 / 1"
 -- , { input = "Craft a Rubedo Leather Helmet with the following Properties:\n• Quality: Epic\n• Trait: Well-Fitted\n• Set: Kagrenac's Hope\n• Style: Abah's Watch\n• Progress: 0 / 1"
-
--- , { input = "Craft a Superb Glyph of Reduce Spell Cost\n• Quality: Epic\n• Progress: 0 / 1"
--- , { input = "Craft a Superb Glyph of Stamina Recovery\n• Quality: Epic\n• Progress: 0 / 1"
--- , { input = "Craft a Superb Glyph of Reduce Feat Cost\n• Quality: Epic\n• Progress: 0 / 1"
 
 -- , { input = "Craft a Platinum Ring with the following Properties:\n• Quality: Legendary\n• Trait: Protective\n• Set: Armor Master\n• Progress: 0 / 1"
 

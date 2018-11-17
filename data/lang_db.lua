@@ -5882,16 +5882,8 @@ LANG_DB = {
           ,   ru  = "Доставить товары ближайшему интенданту заказов"
           ,   ja  = "品物を、一番近い依頼を出す補給係に届ける"
           }
-, [669] = {
-              key = "$ESSENCE_045831"
-          ,   en  = "health"
-          ,   de  = "lebens"
-          ,   fr  = "vital"
-          ,   es  = "vida"
-          ,   ja  = "体力"
-          }
 , [670] = {
-              key = "$ESSENCE_045831B"
+              key = "$ESSENCE_045831_ADD_B"
           ,   en  = "health"
           ,   de  = "lebens"
           ,   fr  = "Santé"
@@ -5914,15 +5906,8 @@ LANG_DB = {
           ,   es  = "absorción de vida"
           ,   ja  = "体力吸収"
           }
-, [673] = {
-              key = "$ESSENCE_045832"
-          ,   en  = "magicka"
-          ,   fr  = "magique"
-          ,   es  = "magia"
-          ,   ja  = "マジカ"
-          }
 , [674] = {
-              key = "$ESSENCE_045832B"
+              key = "$ESSENCE_045832_ADD_B"
           ,   en  = "magicka"
           ,   fr  = "magie"
           ,   ja  = "マジカ"
@@ -5942,16 +5927,8 @@ LANG_DB = {
           ,   es  = "absorción de magia"
           ,   ja  = "マジカ吸収"
           }
-, [677] = {
-              key = "$ESSENCE_045833"
-          ,   en  = "stamina"
-          ,   de  = "ausdauer"
-          ,   fr  = "vigoureux"
-          ,   es  = "aguante"
-          ,   ja  = "スタミナ"
-          }
 , [678] = {
-              key = "$ESSENCE_045833B"
+              key = "$ESSENCE_045833_ADD_B"
           ,   en  = "stamina"
           ,   de  = "ausdauer"
           ,   fr  = "Vigueur"
@@ -5974,14 +5951,6 @@ LANG_DB = {
           ,   es  = "absorción de aguante"
           ,   ja  = "スタミナ吸収"
           }
-, [681] = {
-              key = "$ESSENCE_045834"
-          ,   en  = "health recovery"
-          ,   de  = "lebensregeneration"
-          ,   fr  = "revivifiant"
-          ,   es  = "regeneración de salud"
-          ,   ja  = "体力再生"
-          }
 , [682] = {
               key = "$ESSENCE_045834_ADD"
           ,   en  = "health recovery"
@@ -5997,14 +5966,6 @@ LANG_DB = {
           ,   fr  = "de santé déclinante"
           ,   es  = "disminución de vida"
           ,   ja  = "体力減少"
-          }
-, [684] = {
-              key = "$ESSENCE_045835"
-          ,   en  = "magicka recovery"
-          ,   de  = "magickaregeneration"
-          ,   fr  = "régénérant"
-          ,   es  = "regeneración de magia"
-          ,   ja  = "マジカ再生"
           }
 , [685] = {
               key = "$ESSENCE_045835_ADD"
@@ -6022,14 +5983,6 @@ LANG_DB = {
           ,   es  = "brujería"
           ,   ja  = "呪文消費減少"
           }
-, [687] = {
-              key = "$ESSENCE_045836"
-          ,   en  = "stamina recovery"
-          ,   de  = "ausdauerregeneration"
-          ,   fr  = "revigorant"
-          ,   es  = "regeneración de aguante"
-          ,   ja  = "スタミナ再生"
-          }
 , [688] = {
               key = "$ESSENCE_045836_ADD"
           ,   en  = "stamina recovery"
@@ -6045,14 +5998,6 @@ LANG_DB = {
           ,   fr  = "du virtuose"
           ,   es  = "virtuosidad"
           ,   ja  = "技能消費減少"
-          }
-, [690] = {
-              key = "$ESSENCE_045837"
-          ,   en  = "poison"
-          ,   de  = "gifts"
-          ,   fr  = "empoisonné"
-          ,   es  = "veneno"
-          ,   ja  = "毒"
           }
 , [691] = {
               key = "$ESSENCE_045837_ADD"
@@ -6070,14 +6015,6 @@ LANG_DB = {
           ,   es  = "resistencia al veneno"
           ,   ja  = "毒耐性"
           }
-, [693] = {
-              key = "$ESSENCE_045838"
-          ,   en  = "flame"
-          ,   de  = "flamme"
-          ,   fr  = "ardent"
-          ,   es  = "fuego"
-          ,   ja  = "炎"
-          }
 , [694] = {
               key = "$ESSENCE_045838_ADD"
           ,   en  = "flame"
@@ -6093,14 +6030,6 @@ LANG_DB = {
           ,   fr  = "ignifugé"
           ,   es  = "resistencia al fuego"
           ,   ja  = "炎耐性"
-          }
-, [696] = {
-              key = "$ESSENCE_045839"
-          ,   en  = "frost"
-          ,   de  = "frosts"
-          ,   fr  = "givré"
-          ,   es  = "hielo"
-          ,   ja  = "氷結"
           }
 , [697] = {
               key = "$ESSENCE_045839_ADD"
@@ -6118,14 +6047,6 @@ LANG_DB = {
           ,   es  = "resistencia al frío"
           ,   ja  = "氷結耐性"
           }
-, [699] = {
-              key = "$ESSENCE_045840"
-          ,   en  = "shock"
-          ,   de  = "schocks"
-          ,   fr  = "étourdissant"
-          ,   es  = "descarga"
-          ,   ja  = "雷撃"
-          }
 , [700] = {
               key = "$ESSENCE_045840_ADD"
           ,   en  = "shock"
@@ -6141,14 +6062,6 @@ LANG_DB = {
           ,   fr  = "isolé"
           ,   es  = "resistencia a electricidad"
           ,   ja  = "雷撃耐性"
-          }
-, [702] = {
-              key = "$ESSENCE_045841"
-          ,   en  = "foulness"
-          ,   de  = "fäulnis"
-          ,   fr  = "odieux"
-          ,   es  = "podredumbre"
-          ,   ja  = "不浄"
           }
 , [703] = {
               key = "$ESSENCE_045841_ADD"
@@ -6166,14 +6079,6 @@ LANG_DB = {
           ,   es  = "resistencia a la enfermedad"
           ,   ja  = "病気耐性"
           }
-, [705] = {
-              key = "$ESSENCE_045842"
-          ,   en  = "hardening"
-          ,   de  = "abhärtung"
-          ,   fr  = "robuste"
-          ,   es  = "robustez"
-          ,   ja  = "硬化"
-          }
 , [706] = {
               key = "$ESSENCE_045842_ADD"
           ,   en  = "hardening"
@@ -6189,14 +6094,6 @@ LANG_DB = {
           ,   fr  = "contondant"
           ,   es  = "aplastamiento"
           ,   ja  = "粉砕"
-          }
-, [708] = {
-              key = "$ESSENCE_045843"
-          ,   en  = "weapon damage"
-          ,   de  = "waffenkraft"
-          ,   fr  = "de dégâts d'arme"
-          ,   es  = "daño físico"
-          ,   ja  = "武器強化"
           }
 , [709] = {
               key = "$ESSENCE_045843_ADD"
@@ -6214,14 +6111,6 @@ LANG_DB = {
           ,   es  = "debilidad"
           ,   ja  = "衰弱"
           }
-, [711] = {
-              key = "$ESSENCE_045846"
-          ,   en  = "potion boost"
-          ,   de  = "trankverbesserung"
-          ,   fr  = "de l'alchimiste"
-          ,   es  = "del alquimista"
-          ,   ja  = "薬品強化"
-          }
 , [712] = {
               key = "$ESSENCE_045846_ADD"
           ,   en  = "potion boost"
@@ -6237,14 +6126,6 @@ LANG_DB = {
           ,   fr  = "d'accélération des potions"
           ,   es  = "aceleración de pociones"
           ,   ja  = "薬品速度上昇"
-          }
-, [714] = {
-              key = "$ESSENCE_045847"
-          ,   en  = "increase physical harm"
-          ,   de  = "erhöhten physischen schadens"
-          ,   fr  = "de puissance physique"
-          ,   es  = "aumento de daño físico"
-          ,   ja  = "物理攻撃強化"
           }
 , [715] = {
               key = "$ESSENCE_045847_ADD"
@@ -6262,14 +6143,6 @@ LANG_DB = {
           ,   es  = "resistencia al daño físico"
           ,   ja  = "物理耐性"
           }
-, [717] = {
-              key = "$ESSENCE_045848"
-          ,   en  = "increase magical harm"
-          ,   de  = "erhöhten magischen schadens"
-          ,   fr  = "de puissance magique"
-          ,   es  = "aumento de daño mágico"
-          ,   ja  = "魔法攻撃強化"
-          }
 , [718] = {
               key = "$ESSENCE_045848_ADD"
           ,   en  = "increase magical harm"
@@ -6286,14 +6159,6 @@ LANG_DB = {
           ,   es  = "resistencia al daño mágico"
           ,   ja  = "呪文耐性"
           }
-, [720] = {
-              key = "$ESSENCE_045849"
-          ,   en  = "bashing"
-          ,   de  = "einschlagens"
-          ,   fr  = "percutant"
-          ,   es  = "percutante"
-          ,   ja  = "強撃"
-          }
 , [721] = {
               key = "$ESSENCE_045849_ADD"
           ,   en  = "bashing"
@@ -6309,14 +6174,6 @@ LANG_DB = {
           ,   fr  = "blindé"
           ,   es  = "protección"
           ,   ja  = "盾"
-          }
-, [723] = {
-              key = "$ESSENCE_068342"
-          ,   en  = "prismatic defense"
-          ,   de  = "prismatischen verteidigung"
-          ,   fr  = "de défense prismatique"
-          ,   es  = "defensa prismática"
-          ,   ja  = "分光防御"
           }
 , [724] = {
               key = "$ESSENCE_068342_ADD"
