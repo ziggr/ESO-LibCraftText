@@ -524,6 +524,148 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name="Schänden"                 , master_potion="Essenz der Schändung"              , master_poison="Gift der Schändung IX"             }
 }
 
+
+-- Craftable Sets ------------------------------------------------------------
+--
+-- set_id       writ4 field for master writs
+--
+LibCraftText.SET = {
+    ["ADEPT_RIDER"              ] = { name="versierter Reiter"          , set_id=385 }
+,   ["ALESSIAS_BULWARK"         ] = { name="Alessias Bollwerk"          , set_id= 82 }
+,   ["ARMOR_MASTER"             ] = { name="Rüstungsmeister"            , set_id=178 }
+,   ["ARMOR_OF_THE_SEDUCER"     ] = { name="Rüstung der Verführung"     , set_id= 43 }
+,   ["ASHEN_GRIP"               ] = { name="Aschengriff"                , set_id= 54 }
+,   ["ASSASSINS_GUILE"          ] = { name="Assassinenlist"             , set_id=323 }
+,   ["CLEVER_ALCHEMIST"         ] = { name="schlauer Alchemist"         , set_id=225 }
+,   ["DAEDRIC_TRICKERY"         ] = { name="daedrische Gaunerei"        , set_id=324 }
+,   ["DEATHS_WIND"              ] = { name="Todeswind"                  , set_id= 37 }
+,   ["ETERNAL_HUNT"             ] = { name="ewige Jagd"                 , set_id=226 }
+,   ["EYES_OF_MARA"             ] = { name="Augen von Mara"             , set_id= 87 }
+,   ["FORTIFIED_BRASS"          ] = { name="Messingpanzer"              , set_id=352 }
+,   ["GRAVE_STAKE_COLLECTOR"    ] = { name="Grabpflocksammler"          , set_id=408 }
+,   ["HIST_BARK"                ] = { name="Histrinde"                  , set_id= 78 }
+,   ["HUNDINGS_RAGE"            ] = { name="Hundings Zorn"              , set_id= 80 }
+,   ["INNATE_AXIOM"             ] = { name="Kernaxiom"                  , set_id=351 }
+,   ["KAGRENACS_HOPE"           ] = { name="Kagrenacs Hoffnung"         , set_id= 92 }
+,   ["KVATCH_GLADIATOR"         ] = { name="Gladiator von Kvatch"       , set_id=240 }
+,   ["LAW_OF_JULIANOS"          ] = { name="Gesetz von Julianos"        , set_id=207 }
+,   ["MAGNUS_GIFT"              ] = { name="Magnus' Gabe"               , set_id= 48 }
+,   ["MECHANICAL_ACUITY"        ] = { name="Mechanikblick"              , set_id=353 }
+,   ["MIGHT_OF_THE_LOST_LEGION" ] = { name="Macht der Verlorenen Legion", set_id=410 }
+,   ["MORKULDIN"                ] = { name="Morkuldin"                  , set_id=219 }
+,   ["NAGA_SHAMAN"              ] = { name="Nagaschamane"               , set_id=409 }
+,   ["NIGHT_MOTHERS_GAZE"       ] = { name="Blick der Mutter der Nacht" , set_id= 51 }
+,   ["NIGHTS_SILENCE"           ] = { name="Stille der Nacht"           , set_id= 40 }
+,   ["NOBLES_CONQUEST"          ] = { name="Adelssieg"                  , set_id=176 }
+,   ["NOCTURNALS_FAVOR"         ] = { name="Nocturnals Gunst"           , set_id=387 }
+,   ["OBLIVIONS_FOE"            ] = { name="Erinnerung"                 , set_id= 73 }
+,   ["ORGNUMS_SCALES"           ] = { name="Orgnums Schuppen"           , set_id= 84 }
+,   ["PELINALS_APTITUDE"        ] = { name="Pelinals Talent"            , set_id=242 }
+,   ["REDISTRIBUTOR"            ] = { name="Umverteilung"               , set_id=177 }
+,   ["SHACKLEBREAKER"           ] = { name="Kettensprenger"             , set_id=325 }
+,   ["SHALIDORS_CURSE"          ] = { name="Shalidors Fluch"            , set_id= 95 }
+,   ["SLOADS_SEMBLANCE"         ] = { name="Kreckenantlitz"             , set_id=386 }
+,   ["SONG_OF_LAMAE"            ] = { name="Lied der Lamien"            , set_id= 81 }
+,   ["SPECTRES_EYE"             ] = { name="Schemenauge"                , set_id= 74 }
+,   ["TAVAS_FAVOR"              ] = { name="Tavas Gunst"                , set_id=224 }
+,   ["TORUGS_PACT"              ] = { name="Torugs Pakt"                , set_id= 75 }
+,   ["TRIAL_BY_FIRE"            ] = { name="Feuertaufe"                 , set_id=208 }
+,   ["TWICE_BORN_STAR"          ] = { name="Doppelstern"                , set_id=161 }
+,   ["TWILIGHTS_EMBRACE"        ] = { name="Zwielichtkuss"              , set_id= 38 }
+,   ["VAMPIRES_KISS"            ] = { name="Kuss des Vampirs"           , set_id= 44 }
+,   ["VARENS_LEGACY"            ] = { name="Varens Erbe"                , set_id=241 }
+,   ["WAY_OF_THE_ARENA"         ] = { name="Weg der Arena"              , set_id=148 }
+,   ["WHITESTRAKES_RETRIBUTION" ] = { name="Weißplankes Vergeltung"     , set_id= 41 }
+,   ["WILLOWS_PATH"             ] = { name="Weidenpfad"                 , set_id= 79 }
+}
+
+-- Craftable Motifs ----------------------------------------------------------
+--
+-- writ6 field for master writs
+--
+LibCraftText.MOTIF = {
+    ["BRETON"             ] = { name="Bretonen"             , motif_id=  1 }
+,   ["REDGUARD"           ] = { name="Rothwardonen"         , motif_id=  2 }
+,   ["ORC"                ] = { name="Orks"                 , motif_id=  3 }
+,   ["DARK_ELF"           ] = { name="Dunkelelfen"          , motif_id=  4 }
+,   ["NORD"               ] = { name="Nord"                 , motif_id=  5 }
+,   ["ARGONIAN"           ] = { name="Argonier"             , motif_id=  6 }
+,   ["HIGH_ELF"           ] = { name="Hochelfen"            , motif_id=  7 }
+,   ["WOOD_ELF"           ] = { name="Waldelfen"            , motif_id=  8 }
+,   ["KHAJIIT"            ] = { name="Khajiit"              , motif_id=  9 }
+,   ["UNIQUE"             ] = { name="Einzigartig"          , motif_id= 10 }
+,   ["THIEVES_GUILD"      ] = { name="Diebesgilde"          , motif_id= 11 }
+,   ["DARK_BROTHERHOOD"   ] = { name="Dunkle Bruderschaft"  , motif_id= 12 }
+,   ["MALACATH"           ] = { name="Malacath"             , motif_id= 13 }
+,   ["DWEMER"             ] = { name="Dwemer"               , motif_id= 14 }
+,   ["ANCIENT_ELF"        ] = { name="alte Elfen"           , motif_id= 15 }
+,   ["ORDER_OF_THE_HOUR"  ] = { name="Orden der Stunde"     , motif_id= 16 }
+,   ["BARBARIC"           ] = { name="Barbaren"             , motif_id= 17 }
+,   ["BANDIT"             ] = { name="Bandit"               , motif_id= 18 }
+,   ["PRIMAL"             ] = { name="Wilde"                , motif_id= 19 }
+,   ["DAEDRIC"            ] = { name="Daedra"               , motif_id= 20 }
+,   ["TRINIMAC"           ] = { name="Trinimac"             , motif_id= 21 }
+,   ["ANCIENT_ORC"        ] = { name="Orkahnen"             , motif_id= 22 }
+,   ["DAGGERFALL_COVENANT"] = { name="Dolchsturz-Bündnis"   , motif_id= 23 }
+,   ["EBONHEART_PACT"     ] = { name="Ebenherz-Pakt"        , motif_id= 24 }
+,   ["ALDMERI_DOMINION"   ] = { name="Aldmeri-Dominion"     , motif_id= 25 }
+,   ["MERCENARY"          ] = { name="Söldner"              , motif_id= 26 }
+,   ["CELESTIAL"          ] = { name="Himmlische"           , motif_id= 27 }
+,   ["GLASS"              ] = { name="Glasit"               , motif_id= 28 }
+,   ["XIVKYN"             ] = { name="Xivkyn"               , motif_id= 29 }
+,   ["SOUL_SHRIVEN"       ] = { name="Seelenberaubte"       , motif_id= 30 }
+,   ["DRAUGR"             ] = { name="Draugr"               , motif_id= 31 }
+,   ["MAORMER"            ] = { name="Maormer"              , motif_id= 32 }
+,   ["AKAVIRI"            ] = { name="Akaviri"              , motif_id= 33 }
+,   ["IMPERIAL"           ] = { name="Kaiserliche"          , motif_id= 34 }
+,   ["YOKUDAN"            ] = { name="Yokudaner"            , motif_id= 35 }
+,   ["UNIVERSAL"          ] = { name="universell"           , motif_id= 36 }
+,   ["REACH_WINTER"       ] = { name="Reikwinter"           , motif_id= 37 }
+,   ["TSAESCI"            ] = { name="Tsaesci"              , motif_id= 38 }
+,   ["MINOTAUR"           ] = { name="Minotauren"           , motif_id= 39 }
+,   ["EBONY"              ] = { name="Ebenerz"              , motif_id= 40 }
+,   ["ABAHS_WATCH"        ] = { name="Abahs Wacht"          , motif_id= 41 }
+,   ["SKINCHANGER"        ] = { name="Gestaltwandler"       , motif_id= 42 }
+,   ["MORAG_TONG"         ] = { name="Morag Tong"           , motif_id= 43 }
+,   ["RA_GADA"            ] = { name="Ro'Wada"              , motif_id= 44 }
+,   ["DRO_MATHRA"         ] = { name="dro-m'Athra"          , motif_id= 45 }
+,   ["ASSASSINS_LEAGUE"   ] = { name="Assassinenbund"       , motif_id= 46 }
+,   ["OUTLAW"             ] = { name="Gesetzlose"           , motif_id= 47 }
+,   ["REDORAN"            ] = { name="Redoran"              , motif_id= 48 }
+,   ["HLAALU"             ] = { name="Hlaalu"               , motif_id= 49 }
+,   ["MILITANT_ORDINATOR" ] = { name="kriegerische Ordinatoren", motif_id= 50 }
+,   ["TELVANNI"           ] = { name="Telvanni"             , motif_id= 51 }
+,   ["BUOYANT_ARMIGER"    ] = { name="Kriegswappenträger"   , motif_id= 52 }
+,   ["FROSTCASTER"        ] = { name="Frostwirker"          , motif_id= 53 }
+,   ["ASHLANDER"          ] = { name="Aschländer"           , motif_id= 54 }
+,   ["WORM_CULT"          ] = { name="Wurmkult"             , motif_id= 55 }
+,   ["SILKEN_RING"        ] = { name="Seidenring"           , motif_id= 56 }
+,   ["MAZZATUN"           ] = { name="Mazzatun"             , motif_id= 57 }
+,   ["GRIM_HARLEQUIN"     ] = { name="grimmiger Harlekin"   , motif_id= 58 }
+,   ["HOLLOWJACK"         ] = { name="Kürbisfratze"         , motif_id= 59 }
+,   ["REFABRICATED"       ] = { name="Rekonstruktion"       , motif_id= 60 }
+,   ["BLOODFORGE"         ] = { name="Blutquellschmiede"    , motif_id= 61 }
+,   ["DREADHORN"          ] = { name="Grauenshorn"          , motif_id= 62 }
+,   ["APOSTLE"            ] = { name="Apostel"              , motif_id= 65 }
+,   ["EBONSHADOW"         ] = { name="Ebenschatten"         , motif_id= 66 }
+,   ["UNDAUNTED"          ] = { name="Unerschrockene"       , motif_id= 67 }
+,   ["USE_ME"             ] = { name="USE ME"               , motif_id= 68 }
+,   ["FANG_LAIR"          ] = { name="Krallenhort"          , motif_id= 69 }
+,   ["SCALECALLER"        ] = { name="Schuppenruferin"      , motif_id= 70 }
+,   ["PSIJIC_ORDER"       ] = { name="Psijik-Orden"         , motif_id= 71 }
+,   ["SAPIARCH"           ] = { name="Sapiarchen"           , motif_id= 72 }
+,   ["WELKYNAR"           ] = { name="Welkynare"            , motif_id= 73 }
+,   ["DREMORA"            ] = { name="Dremora"              , motif_id= 74 }
+,   ["PYANDONEAN"         ] = { name="Pyandonesier"         , motif_id= 75 }
+,   ["DIVINE_PROSECUTION" ] = { name="Göttliche Strafbehörde", motif_id= 76 }
+,   ["HUNTSMAN"           ] = { name="Jäger"                , motif_id= 77 }
+,   ["SILVER_DAWN"        ] = { name="Silbermorgen"         , motif_id= 78 }
+,   ["DEAD_WATER"         ] = { name="Totwasser"            , motif_id= 79 }
+,   ["HONOR_GUARD"        ] = { name="Ehrengarde"           , motif_id= 80 }
+,   ["ELDER_ARGONIAN"     ] = { name="alte Argonier"        , motif_id= 81 }
+}
+
+
 -- Miscellaneous conditions --------------------------------------------------
 
 LibCraftText.DAILY_COND = {

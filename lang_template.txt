@@ -524,6 +524,148 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name=$ALCHEMY_TRAIT_30          , master_potion=$ALCHEMY_MASTER_POTION_30           , master_poison=$ALCHEMY_MASTER_POISON_30           }
 }
 
+
+-- Craftable Sets ------------------------------------------------------------
+--
+-- set_id       writ4 field for master writs
+--
+LibCraftText.SET = {
+    ["ADEPT_RIDER"              ] = { name=$SET_385                     , set_id=385 }
+,   ["ALESSIAS_BULWARK"         ] = { name=$SET_082                     , set_id= 82 }
+,   ["ARMOR_MASTER"             ] = { name=$SET_178                     , set_id=178 }
+,   ["ARMOR_OF_THE_SEDUCER"     ] = { name=$SET_043                     , set_id= 43 }
+,   ["ASHEN_GRIP"               ] = { name=$SET_054                     , set_id= 54 }
+,   ["ASSASSINS_GUILE"          ] = { name=$SET_323                     , set_id=323 }
+,   ["CLEVER_ALCHEMIST"         ] = { name=$SET_225                     , set_id=225 }
+,   ["DAEDRIC_TRICKERY"         ] = { name=$SET_324                     , set_id=324 }
+,   ["DEATHS_WIND"              ] = { name=$SET_037                     , set_id= 37 }
+,   ["ETERNAL_HUNT"             ] = { name=$SET_226                     , set_id=226 }
+,   ["EYES_OF_MARA"             ] = { name=$SET_087                     , set_id= 87 }
+,   ["FORTIFIED_BRASS"          ] = { name=$SET_352                     , set_id=352 }
+,   ["GRAVE_STAKE_COLLECTOR"    ] = { name=$SET_408                     , set_id=408 }
+,   ["HIST_BARK"                ] = { name=$SET_078                     , set_id= 78 }
+,   ["HUNDINGS_RAGE"            ] = { name=$SET_080                     , set_id= 80 }
+,   ["INNATE_AXIOM"             ] = { name=$SET_351                     , set_id=351 }
+,   ["KAGRENACS_HOPE"           ] = { name=$SET_092                     , set_id= 92 }
+,   ["KVATCH_GLADIATOR"         ] = { name=$SET_240                     , set_id=240 }
+,   ["LAW_OF_JULIANOS"          ] = { name=$SET_207                     , set_id=207 }
+,   ["MAGNUS_GIFT"              ] = { name=$SET_048                     , set_id= 48 }
+,   ["MECHANICAL_ACUITY"        ] = { name=$SET_353                     , set_id=353 }
+,   ["MIGHT_OF_THE_LOST_LEGION" ] = { name=$SET_410                     , set_id=410 }
+,   ["MORKULDIN"                ] = { name=$SET_219                     , set_id=219 }
+,   ["NAGA_SHAMAN"              ] = { name=$SET_409                     , set_id=409 }
+,   ["NIGHT_MOTHERS_GAZE"       ] = { name=$SET_051                     , set_id= 51 }
+,   ["NIGHTS_SILENCE"           ] = { name=$SET_040                     , set_id= 40 }
+,   ["NOBLES_CONQUEST"          ] = { name=$SET_176                     , set_id=176 }
+,   ["NOCTURNALS_FAVOR"         ] = { name=$SET_387                     , set_id=387 }
+,   ["OBLIVIONS_FOE"            ] = { name=$SET_073                     , set_id= 73 }
+,   ["ORGNUMS_SCALES"           ] = { name=$SET_084                     , set_id= 84 }
+,   ["PELINALS_APTITUDE"        ] = { name=$SET_242                     , set_id=242 }
+,   ["REDISTRIBUTOR"            ] = { name=$SET_177                     , set_id=177 }
+,   ["SHACKLEBREAKER"           ] = { name=$SET_325                     , set_id=325 }
+,   ["SHALIDORS_CURSE"          ] = { name=$SET_095                     , set_id= 95 }
+,   ["SLOADS_SEMBLANCE"         ] = { name=$SET_386                     , set_id=386 }
+,   ["SONG_OF_LAMAE"            ] = { name=$SET_081                     , set_id= 81 }
+,   ["SPECTRES_EYE"             ] = { name=$SET_074                     , set_id= 74 }
+,   ["TAVAS_FAVOR"              ] = { name=$SET_224                     , set_id=224 }
+,   ["TORUGS_PACT"              ] = { name=$SET_075                     , set_id= 75 }
+,   ["TRIAL_BY_FIRE"            ] = { name=$SET_208                     , set_id=208 }
+,   ["TWICE_BORN_STAR"          ] = { name=$SET_161                     , set_id=161 }
+,   ["TWILIGHTS_EMBRACE"        ] = { name=$SET_038                     , set_id= 38 }
+,   ["VAMPIRES_KISS"            ] = { name=$SET_044                     , set_id= 44 }
+,   ["VARENS_LEGACY"            ] = { name=$SET_241                     , set_id=241 }
+,   ["WAY_OF_THE_ARENA"         ] = { name=$SET_148                     , set_id=148 }
+,   ["WHITESTRAKES_RETRIBUTION" ] = { name=$SET_041                     , set_id= 41 }
+,   ["WILLOWS_PATH"             ] = { name=$SET_079                     , set_id= 79 }
+}
+
+-- Craftable Motifs ----------------------------------------------------------
+--
+-- writ6 field for master writs
+--
+LibCraftText.MOTIF = {
+    ["BRETON"             ] = { name=$MOTIF_001             , motif_id=  1 }
+,   ["REDGUARD"           ] = { name=$MOTIF_002             , motif_id=  2 }
+,   ["ORC"                ] = { name=$MOTIF_003             , motif_id=  3 }
+,   ["DARK_ELF"           ] = { name=$MOTIF_004             , motif_id=  4 }
+,   ["NORD"               ] = { name=$MOTIF_005             , motif_id=  5 }
+,   ["ARGONIAN"           ] = { name=$MOTIF_006             , motif_id=  6 }
+,   ["HIGH_ELF"           ] = { name=$MOTIF_007             , motif_id=  7 }
+,   ["WOOD_ELF"           ] = { name=$MOTIF_008             , motif_id=  8 }
+,   ["KHAJIIT"            ] = { name=$MOTIF_009             , motif_id=  9 }
+,   ["UNIQUE"             ] = { name=$MOTIF_010             , motif_id= 10 }
+,   ["THIEVES_GUILD"      ] = { name=$MOTIF_011             , motif_id= 11 }
+,   ["DARK_BROTHERHOOD"   ] = { name=$MOTIF_012             , motif_id= 12 }
+,   ["MALACATH"           ] = { name=$MOTIF_013             , motif_id= 13 }
+,   ["DWEMER"             ] = { name=$MOTIF_014             , motif_id= 14 }
+,   ["ANCIENT_ELF"        ] = { name=$MOTIF_015             , motif_id= 15 }
+,   ["ORDER_OF_THE_HOUR"  ] = { name=$MOTIF_016             , motif_id= 16 }
+,   ["BARBARIC"           ] = { name=$MOTIF_017             , motif_id= 17 }
+,   ["BANDIT"             ] = { name=$MOTIF_018             , motif_id= 18 }
+,   ["PRIMAL"             ] = { name=$MOTIF_019             , motif_id= 19 }
+,   ["DAEDRIC"            ] = { name=$MOTIF_020             , motif_id= 20 }
+,   ["TRINIMAC"           ] = { name=$MOTIF_021             , motif_id= 21 }
+,   ["ANCIENT_ORC"        ] = { name=$MOTIF_022             , motif_id= 22 }
+,   ["DAGGERFALL_COVENANT"] = { name=$MOTIF_023             , motif_id= 23 }
+,   ["EBONHEART_PACT"     ] = { name=$MOTIF_024             , motif_id= 24 }
+,   ["ALDMERI_DOMINION"   ] = { name=$MOTIF_025             , motif_id= 25 }
+,   ["MERCENARY"          ] = { name=$MOTIF_026             , motif_id= 26 }
+,   ["CELESTIAL"          ] = { name=$MOTIF_027             , motif_id= 27 }
+,   ["GLASS"              ] = { name=$MOTIF_028             , motif_id= 28 }
+,   ["XIVKYN"             ] = { name=$MOTIF_029             , motif_id= 29 }
+,   ["SOUL_SHRIVEN"       ] = { name=$MOTIF_030             , motif_id= 30 }
+,   ["DRAUGR"             ] = { name=$MOTIF_031             , motif_id= 31 }
+,   ["MAORMER"            ] = { name=$MOTIF_032             , motif_id= 32 }
+,   ["AKAVIRI"            ] = { name=$MOTIF_033             , motif_id= 33 }
+,   ["IMPERIAL"           ] = { name=$MOTIF_034             , motif_id= 34 }
+,   ["YOKUDAN"            ] = { name=$MOTIF_035             , motif_id= 35 }
+,   ["UNIVERSAL"          ] = { name=$MOTIF_036             , motif_id= 36 }
+,   ["REACH_WINTER"       ] = { name=$MOTIF_037             , motif_id= 37 }
+,   ["TSAESCI"            ] = { name=$MOTIF_038             , motif_id= 38 }
+,   ["MINOTAUR"           ] = { name=$MOTIF_039             , motif_id= 39 }
+,   ["EBONY"              ] = { name=$MOTIF_040             , motif_id= 40 }
+,   ["ABAHS_WATCH"        ] = { name=$MOTIF_041             , motif_id= 41 }
+,   ["SKINCHANGER"        ] = { name=$MOTIF_042             , motif_id= 42 }
+,   ["MORAG_TONG"         ] = { name=$MOTIF_043             , motif_id= 43 }
+,   ["RA_GADA"            ] = { name=$MOTIF_044             , motif_id= 44 }
+,   ["DRO_MATHRA"         ] = { name=$MOTIF_045             , motif_id= 45 }
+,   ["ASSASSINS_LEAGUE"   ] = { name=$MOTIF_046             , motif_id= 46 }
+,   ["OUTLAW"             ] = { name=$MOTIF_047             , motif_id= 47 }
+,   ["REDORAN"            ] = { name=$MOTIF_048             , motif_id= 48 }
+,   ["HLAALU"             ] = { name=$MOTIF_049             , motif_id= 49 }
+,   ["MILITANT_ORDINATOR" ] = { name=$MOTIF_050             , motif_id= 50 }
+,   ["TELVANNI"           ] = { name=$MOTIF_051             , motif_id= 51 }
+,   ["BUOYANT_ARMIGER"    ] = { name=$MOTIF_052             , motif_id= 52 }
+,   ["FROSTCASTER"        ] = { name=$MOTIF_053             , motif_id= 53 }
+,   ["ASHLANDER"          ] = { name=$MOTIF_054             , motif_id= 54 }
+,   ["WORM_CULT"          ] = { name=$MOTIF_055             , motif_id= 55 }
+,   ["SILKEN_RING"        ] = { name=$MOTIF_056             , motif_id= 56 }
+,   ["MAZZATUN"           ] = { name=$MOTIF_057             , motif_id= 57 }
+,   ["GRIM_HARLEQUIN"     ] = { name=$MOTIF_058             , motif_id= 58 }
+,   ["HOLLOWJACK"         ] = { name=$MOTIF_059             , motif_id= 59 }
+,   ["REFABRICATED"       ] = { name=$MOTIF_060             , motif_id= 60 }
+,   ["BLOODFORGE"         ] = { name=$MOTIF_061             , motif_id= 61 }
+,   ["DREADHORN"          ] = { name=$MOTIF_062             , motif_id= 62 }
+,   ["APOSTLE"            ] = { name=$MOTIF_065             , motif_id= 65 }
+,   ["EBONSHADOW"         ] = { name=$MOTIF_066             , motif_id= 66 }
+,   ["UNDAUNTED"          ] = { name=$MOTIF_067             , motif_id= 67 }
+,   ["USE_ME"             ] = { name=$MOTIF_068             , motif_id= 68 }
+,   ["FANG_LAIR"          ] = { name=$MOTIF_069             , motif_id= 69 }
+,   ["SCALECALLER"        ] = { name=$MOTIF_070             , motif_id= 70 }
+,   ["PSIJIC_ORDER"       ] = { name=$MOTIF_071             , motif_id= 71 }
+,   ["SAPIARCH"           ] = { name=$MOTIF_072             , motif_id= 72 }
+,   ["WELKYNAR"           ] = { name=$MOTIF_073             , motif_id= 73 }
+,   ["DREMORA"            ] = { name=$MOTIF_074             , motif_id= 74 }
+,   ["PYANDONEAN"         ] = { name=$MOTIF_075             , motif_id= 75 }
+,   ["DIVINE_PROSECUTION" ] = { name=$MOTIF_076             , motif_id= 76 }
+,   ["HUNTSMAN"           ] = { name=$MOTIF_077             , motif_id= 77 }
+,   ["SILVER_DAWN"        ] = { name=$MOTIF_078             , motif_id= 78 }
+,   ["DEAD_WATER"         ] = { name=$MOTIF_079             , motif_id= 79 }
+,   ["HONOR_GUARD"        ] = { name=$MOTIF_080             , motif_id= 80 }
+,   ["ELDER_ARGONIAN"     ] = { name=$MOTIF_081             , motif_id= 81 }
+}
+
+
 -- Miscellaneous conditions --------------------------------------------------
 
 LibCraftText.DAILY_COND = {

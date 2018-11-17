@@ -524,6 +524,148 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name="汚染"                       , master_potion="汚染 のエキス"                           , master_poison="汚染の毒 9"                            }
 }
 
+
+-- Craftable Sets ------------------------------------------------------------
+--
+-- set_id       writ4 field for master writs
+--
+LibCraftText.SET = {
+    ["ADEPT_RIDER"              ] = { name="熟練騎手"                       , set_id=385 }
+,   ["ALESSIAS_BULWARK"         ] = { name="アレッシア守護"                    , set_id= 82 }
+,   ["ARMOR_MASTER"             ] = { name="鎧匠"                         , set_id=178 }
+,   ["ARMOR_OF_THE_SEDUCER"     ] = { name="誘惑者の武具"                     , set_id= 43 }
+,   ["ASHEN_GRIP"               ] = { name="青白い柄"                       , set_id= 54 }
+,   ["ASSASSINS_GUILE"          ] = { name="アサシンの幻惑"                    , set_id=323 }
+,   ["CLEVER_ALCHEMIST"         ] = { name="賢明な錬金術師"                    , set_id=225 }
+,   ["DAEDRIC_TRICKERY"         ] = { name="デイドラの策略"                    , set_id=324 }
+,   ["DEATHS_WIND"              ] = { name="死を招く風"                      , set_id= 37 }
+,   ["ETERNAL_HUNT"             ] = { name="エターナルハント"                   , set_id=226 }
+,   ["EYES_OF_MARA"             ] = { name="マーラの目"                      , set_id= 87 }
+,   ["FORTIFIED_BRASS"          ] = { name="強化真鍮"                       , set_id=352 }
+,   ["GRAVE_STAKE_COLLECTOR"    ] = { name="墓標コレクター"                    , set_id=408 }
+,   ["HIST_BARK"                ] = { name="ヒスト樹皮"                      , set_id= 78 }
+,   ["HUNDINGS_RAGE"            ] = { name="怒れるフンディング"                  , set_id= 80 }
+,   ["INNATE_AXIOM"             ] = { name="内在公理"                       , set_id=351 }
+,   ["KAGRENACS_HOPE"           ] = { name="カグレナクの希望"                   , set_id= 92 }
+,   ["KVATCH_GLADIATOR"         ] = { name="クヴァッチ剣闘士"                   , set_id=240 }
+,   ["LAW_OF_JULIANOS"          ] = { name="ジュリアノスの掟"                   , set_id=207 }
+,   ["MAGNUS_GIFT"              ] = { name="マグナスの贈物"                    , set_id= 48 }
+,   ["MECHANICAL_ACUITY"        ] = { name="機械的精度"                      , set_id=353 }
+,   ["MIGHT_OF_THE_LOST_LEGION" ] = { name="失われた軍団の力"                   , set_id=410 }
+,   ["MORKULDIN"                ] = { name="モークルディン"                    , set_id=219 }
+,   ["NAGA_SHAMAN"              ] = { name="ナガ呪術師"                      , set_id=409 }
+,   ["NIGHT_MOTHERS_GAZE"       ] = { name="夜母の注視"                      , set_id= 51 }
+,   ["NIGHTS_SILENCE"           ] = { name="寂夜"                         , set_id= 40 }
+,   ["NOBLES_CONQUEST"          ] = { name="大親征"                        , set_id=176 }
+,   ["NOCTURNALS_FAVOR"         ] = { name="ノクターナルの寵愛"                  , set_id=387 }
+,   ["OBLIVIONS_FOE"            ] = { name="反オブリビオン"                    , set_id= 73 }
+,   ["ORGNUMS_SCALES"           ] = { name="オルグヌム鱗"                     , set_id= 84 }
+,   ["PELINALS_APTITUDE"        ] = { name="ペリナルの適性"                    , set_id=242 }
+,   ["REDISTRIBUTOR"            ] = { name="再分配"                        , set_id=177 }
+,   ["SHACKLEBREAKER"           ] = { name="シャックルブレイカー"                 , set_id=325 }
+,   ["SHALIDORS_CURSE"          ] = { name="呪えしシャリドール"                  , set_id= 95 }
+,   ["SLOADS_SEMBLANCE"         ] = { name="スロードの装い"                    , set_id=386 }
+,   ["SONG_OF_LAMAE"            ] = { name="ラマエ歌"                       , set_id= 81 }
+,   ["SPECTRES_EYE"             ] = { name="霊なる瞳"                       , set_id= 74 }
+,   ["TAVAS_FAVOR"              ] = { name="ターヴァの寵"                     , set_id=224 }
+,   ["TORUGS_PACT"              ] = { name="トラグパクト"                     , set_id= 75 }
+,   ["TRIAL_BY_FIRE"            ] = { name="炎の試練"                       , set_id=208 }
+,   ["TWICE_BORN_STAR"          ] = { name="双子星"                        , set_id=161 }
+,   ["TWILIGHTS_EMBRACE"        ] = { name="黄昏の抱擁"                      , set_id= 38 }
+,   ["VAMPIRES_KISS"            ] = { name="吸血鬼の口づけ"                    , set_id= 44 }
+,   ["VARENS_LEGACY"            ] = { name="ヴァレンレガシー"                   , set_id=241 }
+,   ["WAY_OF_THE_ARENA"         ] = { name="アリーナの流儀"                    , set_id=148 }
+,   ["WHITESTRAKES_RETRIBUTION" ] = { name="ホワイトストレークの報復"               , set_id= 41 }
+,   ["WILLOWS_PATH"             ] = { name="ウィロー路"                      , set_id= 79 }
+}
+
+-- Craftable Motifs ----------------------------------------------------------
+--
+-- writ6 field for master writs
+--
+LibCraftText.MOTIF = {
+    ["BRETON"             ] = { name="ブレトン"                 , motif_id=  1 }
+,   ["REDGUARD"           ] = { name="レッドガード"               , motif_id=  2 }
+,   ["ORC"                ] = { name="オーク"                  , motif_id=  3 }
+,   ["DARK_ELF"           ] = { name="ダークエルフ"               , motif_id=  4 }
+,   ["NORD"               ] = { name="ノルド"                  , motif_id=  5 }
+,   ["ARGONIAN"           ] = { name="アルゴニアン"               , motif_id=  6 }
+,   ["HIGH_ELF"           ] = { name="ハイエルフ"                , motif_id=  7 }
+,   ["WOOD_ELF"           ] = { name="ウッドエルフ"               , motif_id=  8 }
+,   ["KHAJIIT"            ] = { name="カジート"                 , motif_id=  9 }
+,   ["UNIQUE"             ] = { name="ユニーク"                 , motif_id= 10 }
+,   ["THIEVES_GUILD"      ] = { name="盗賊ギルド"                , motif_id= 11 }
+,   ["DARK_BROTHERHOOD"   ] = { name="闇の一党"                 , motif_id= 12 }
+,   ["MALACATH"           ] = { name="マラキャス"                , motif_id= 13 }
+,   ["DWEMER"             ] = { name="ドゥエマー"                , motif_id= 14 }
+,   ["ANCIENT_ELF"        ] = { name="古代エルフ"                , motif_id= 15 }
+,   ["ORDER_OF_THE_HOUR"  ] = { name="時の騎士団"                , motif_id= 16 }
+,   ["BARBARIC"           ] = { name="蛮族"                   , motif_id= 17 }
+,   ["BANDIT"             ] = { name="Bandit"               , motif_id= 18 }
+,   ["PRIMAL"             ] = { name="野性"                   , motif_id= 19 }
+,   ["DAEDRIC"            ] = { name="デイドラ"                 , motif_id= 20 }
+,   ["TRINIMAC"           ] = { name="トリニマク"                , motif_id= 21 }
+,   ["ANCIENT_ORC"        ] = { name="古代オーク"                , motif_id= 22 }
+,   ["DAGGERFALL_COVENANT"] = { name="ダガーフォール・カバナント"        , motif_id= 23 }
+,   ["EBONHEART_PACT"     ] = { name="エボンハート・パクト"           , motif_id= 24 }
+,   ["ALDMERI_DOMINION"   ] = { name="アルドメリ・ドミニオン"          , motif_id= 25 }
+,   ["MERCENARY"          ] = { name="傭兵"                   , motif_id= 26 }
+,   ["CELESTIAL"          ] = { name="セレスティアル"              , motif_id= 27 }
+,   ["GLASS"              ] = { name="碧水晶"                  , motif_id= 28 }
+,   ["XIVKYN"             ] = { name="シヴキン"                 , motif_id= 29 }
+,   ["SOUL_SHRIVEN"       ] = { name="魂なき者"                 , motif_id= 30 }
+,   ["DRAUGR"             ] = { name="ドラウグル"                , motif_id= 31 }
+,   ["MAORMER"            ] = { name="マオマー"                 , motif_id= 32 }
+,   ["AKAVIRI"            ] = { name="アカヴィリ"                , motif_id= 33 }
+,   ["IMPERIAL"           ] = { name="帝国"                   , motif_id= 34 }
+,   ["YOKUDAN"            ] = { name="ヨクダ"                  , motif_id= 35 }
+,   ["UNIVERSAL"          ] = { name="ユニバーサル"               , motif_id= 36 }
+,   ["REACH_WINTER"       ] = { name="リーチ・ウィンター"            , motif_id= 37 }
+,   ["TSAESCI"            ] = { name="ツァエシ"                 , motif_id= 38 }
+,   ["MINOTAUR"           ] = { name="ミノタウロス"               , motif_id= 39 }
+,   ["EBONY"              ] = { name="黒檀"                   , motif_id= 40 }
+,   ["ABAHS_WATCH"        ] = { name="アバーズ・ウォッチ"            , motif_id= 41 }
+,   ["SKINCHANGER"        ] = { name="スキンチェンジャー"            , motif_id= 42 }
+,   ["MORAG_TONG"         ] = { name="モラグ・トング"              , motif_id= 43 }
+,   ["RA_GADA"            ] = { name="ラ・ガーダ"                , motif_id= 44 }
+,   ["DRO_MATHRA"         ] = { name="ドロ・マスラ"               , motif_id= 45 }
+,   ["ASSASSINS_LEAGUE"   ] = { name="アサシン同盟"               , motif_id= 46 }
+,   ["OUTLAW"             ] = { name="無法者"                  , motif_id= 47 }
+,   ["REDORAN"            ] = { name="レドラン"                 , motif_id= 48 }
+,   ["HLAALU"             ] = { name="フラール"                 , motif_id= 49 }
+,   ["MILITANT_ORDINATOR" ] = { name="ミリタント・オーディネーター"       , motif_id= 50 }
+,   ["TELVANNI"           ] = { name="テルヴァンニ"               , motif_id= 51 }
+,   ["BUOYANT_ARMIGER"    ] = { name="ボイアント・アーミガー"          , motif_id= 52 }
+,   ["FROSTCASTER"        ] = { name="フロストキャスター"            , motif_id= 53 }
+,   ["ASHLANDER"          ] = { name="アッシュランダー"             , motif_id= 54 }
+,   ["WORM_CULT"          ] = { name="虫の教団"                 , motif_id= 55 }
+,   ["SILKEN_RING"        ] = { name="シルケンリング"              , motif_id= 56 }
+,   ["MAZZATUN"           ] = { name="マザッタン"                , motif_id= 57 }
+,   ["GRIM_HARLEQUIN"     ] = { name="グリム・ハーレクイン"           , motif_id= 58 }
+,   ["HOLLOWJACK"         ] = { name="ホロウジャック"              , motif_id= 59 }
+,   ["REFABRICATED"       ] = { name="リファブリケイト"             , motif_id= 60 }
+,   ["BLOODFORGE"         ] = { name="ブラッドフォージ"             , motif_id= 61 }
+,   ["DREADHORN"          ] = { name="ドレッドホーン"              , motif_id= 62 }
+,   ["APOSTLE"            ] = { name="使徒"                   , motif_id= 65 }
+,   ["EBONSHADOW"         ] = { name="エボンシャドウ"              , motif_id= 66 }
+,   ["UNDAUNTED"          ] = { name="アンドーンテッド"             , motif_id= 67 }
+,   ["USE_ME"             ] = { name="USE ME"               , motif_id= 68 }
+,   ["FANG_LAIR"          ] = { name="牙の巣"                  , motif_id= 69 }
+,   ["SCALECALLER"        ] = { name="スケイルコーラー"             , motif_id= 70 }
+,   ["PSIJIC_ORDER"       ] = { name="サイジック"                , motif_id= 71 }
+,   ["SAPIARCH"           ] = { name="サピアルチ"                , motif_id= 72 }
+,   ["WELKYNAR"           ] = { name="ウェルキナー"               , motif_id= 73 }
+,   ["DREMORA"            ] = { name="ドレモラ"                 , motif_id= 74 }
+,   ["PYANDONEAN"         ] = { name="ピャンドニア"               , motif_id= 75 }
+,   ["DIVINE_PROSECUTION" ] = { name="神聖執行局"                , motif_id= 76 }
+,   ["HUNTSMAN"           ] = { name="ハンツマン"                , motif_id= 77 }
+,   ["SILVER_DAWN"        ] = { name="銀なる暁"                 , motif_id= 78 }
+,   ["DEAD_WATER"         ] = { name="デッドウォーター"             , motif_id= 79 }
+,   ["HONOR_GUARD"        ] = { name="儀仗兵"                  , motif_id= 80 }
+,   ["ELDER_ARGONIAN"     ] = { name="古代アルゴニアン"             , motif_id= 81 }
+}
+
+
 -- Miscellaneous conditions --------------------------------------------------
 
 LibCraftText.DAILY_COND = {

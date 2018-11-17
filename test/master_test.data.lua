@@ -70,8 +70,8 @@ MASTER_FODDER = {
              , material = LCT.MATERIAL.RUBEDITE
              , quality  = LCT.QUALITY.EPIC
              , trait    = LCT.TRAIT.ARMOR_STURDY
-             , set      = nil
-             , motif    = nil
+             , set      = LCT.SET.VARENS_LEGACY
+             , motif    = LCT.MOTIF.WOOD_ELF
              }
   }
 -- , { input = "Craft a Rubedite Helm with the following Properties:\n• Quality: Epic\n• Trait: Divines\n• Set: Whitestrake's Retribution\n• Style: Imperial\n• Progress: 0 / 1"
