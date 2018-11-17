@@ -161,16 +161,113 @@ function ImportSavedChar(char_name, saved_chars)
     end
 end
 
+                        -- Skip all the "Travel to X to meed your contact"
+                        -- steps that appear 3 times in each master writ quest.
+function IsInterestingMasterStep(saved_chars, quest_index, step_i)
+    local cond_text_1 = saved_chars
+            and saved_chars.conditions
+            and saved_chars.conditions[quest_index]
+            and saved_chars.conditions[quest_index][step_i]
+            and saved_chars.conditions[quest_index][step_i][1]
+            and saved_chars.conditions[quest_index][step_i][1].en
+    if not cond_text_1 then return false end
+    return not cond_text_1:find("Travel to ")
+end
+
+function InterestingMasterConditions(saved_chars, quest_index)
+    local step_cond_lang_table = {}
+    local conditions     = saved_chars.conditions[quest_index]
+    for step_i, step_t in pairs(conditions) do
+        for cond_i, lang_table in pairs(step_t) do
+            -- if not lang_table.en:find("Travel to") then
+                local s_c_lt = { step_i, cond_i, lang_table }
+                table.insert(step_cond_lang_table, s_c_lt)
+            -- end
+        end
+    end
+    -- table.sort(step_cond_lang_table, function(a,b) return a.en < b.en end)
+    local i = 0
+    function iter()
+        i = i + 1
+        if i <= #step_cond_lang_table then
+            return unpack(step_cond_lang_table[i])
+        end
+        return nil
+    end
+    return iter
+end
+
+
+function MasterQuestCondKey(i)
+    return string.format("$MASTER_COND_%04d",i)
+end
+
+MASTER_COND_MAX_CT = 9999
+KNOWN_MASTER_QUEST_COND = nil
+function MasterQuestCondAlreadyKnown(lang_table)
+    if not KNOWN_MASTER_QUEST_COND then
+        KNOWN_MASTER_QUEST_COND = {}
+        for i=1,MASTER_COND_MAX_CT do
+            local key = MasterQuestCondKey(i)
+            if DB[key] then
+                KNOWN_MASTER_QUEST_COND[ DB[key].en ] = i
+            end
+        end
+    end
+    return KNOWN_MASTER_QUEST_COND[lang_table.en]
+end
+
+function ImportMasterQuestCondMaybe(lang_table)
+                        -- Already imported? Nothing more to do.
+    if MasterQuestCondAlreadyKnown(lang_table) then
+        return
+    end
+                        -- Find an unused keyslot and put this there.
+    for i=1,MASTER_COND_MAX_CT do
+        local key = MasterQuestCondKey(i)
+        if not DB[key] then
+            lang_table.key = key
+            DB[key] = lang_table
+                        -- And remember this lang_table in case it
+                        -- recurs within this lang_gen run.
+                        -- (The "Travel to X" conditions recur. A lot.)
+            KNOWN_MASTER_QUEST_COND[ DB[key].en ] = i
+            return
+        end
+    end
+end
+
+local MASTER_QUEST_TITLE_TO_CRAFTING_TYPE_LIST =
+{
+  ["A Masterful Concoction"] = { al }
+, ["A Masterful Feast"     ] = { pr }
+, ["A Masterful Glyph"     ] = { en }
+, ["A Masterful Plate"     ] = { bs }
+, ["A Masterful Shield"    ] = { ww }
+, ["A Masterful Weapon"    ] = { bs, ww }
+, ["Masterful Jewelry"     ] = { jw }
+, ["Masterful Leatherwear" ] = { cl }
+}
+
+function ImportSavedCharMasterQuestConditions(char_name, saved_chars, quest_index)
+    local quest_title = saved_chars.quests[quest_index]
+    local crafting_type_list = MASTER_QUEST_TITLE_TO_CRAFTING_TYPE_LIST[quest_title.en]
+    if not crafting_type_list then
+        print("### Unknown quest title. Skipping. "..quest_title.en)
+        return
+    end
+
+    for _,_,lang_table in InterestingMasterConditions(saved_chars, quest_index) do
+        ImportMasterQuestCondMaybe(lang_table)
+    end
+end
+
+
 function ImportSavedCharQuestConditions(char_name, saved_chars, quest_index)
     local quest_title = saved_chars.quests[quest_index]
     local crafting_type = DAILY_QUEST_TITLE_TO_CRAFTING_TYPE[quest_title.en]
     if not crafting_type then
-        -- Warn(string.format("char:%20s  skipping quest:%d %s %s. Non-daily. ## WRITE ME."
-        -- , char_name
-        -- , quest_index
-        -- , quest_title.en
-        -- , CRAFTING_TYPE_ABBREV[crafting_type]
-        -- ))
+        ImportSavedCharMasterQuestConditions(char_name, saved_chars, quest_index)
         return
     end
 
