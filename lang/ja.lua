@@ -374,24 +374,24 @@ LibCraftText.MATERIAL = {
 , ["JEHADE"                  ] = { name="ジェハデ"                           , crafting_type=en, item_id= 64508 }
 , ["ITADE"                   ] = { name="イタデ"                            , crafting_type=en, item_id= 68340 }
 
-, ["DEKEIPA"                 ] = { name="デケイパ"                           , crafting_type=en, item_id= 45839 , add="氷結"                }
-, ["DENI"                    ] = { name="デニ"                             , crafting_type=en, item_id= 45833 , add="スタミナ"             , add_2="スタミナ"                }
-, ["DENIMA"                  ] = { name="デニマ"                            , crafting_type=en, item_id= 45836 , add="スタミナ再生"            }
-, ["DETERI"                  ] = { name="デテリ"                            , crafting_type=en, item_id= 45842 , add="硬化"                }
-, ["HAOKO"                   ] = { name="ハオコ"                            , crafting_type=en, item_id= 45841 , add="不浄"                }
-, ["HAKEIJO"                 ] = { name="ハケイジョ"                          , crafting_type=en, item_id= 68342 , add="分光防御"              }
-, ["KADERI"                  ] = { name="カデリ"                            , crafting_type=en, item_id= 45849 , add="強撃"                }
-, ["KUOKO"                   ] = { name="クオコ"                            , crafting_type=en, item_id= 45837 , add="毒"                 }
-, ["MAKDERI"                 ] = { name="マクデリ"                           , crafting_type=en, item_id= 45848 , add="魔法攻撃強化"            }
-, ["MAKKO"                   ] = { name="マッコ"                            , crafting_type=en, item_id= 45832 , add="マジカ"              , add_2="マジカ"                 }
-, ["MAKKOMA"                 ] = { name="マッコマ"                           , crafting_type=en, item_id= 45835 , add="マジカ再生"             }
-, ["MEIP"                    ] = { name="メイプ"                            , crafting_type=en, item_id= 45840 , add="雷撃"                }
-, ["OKO"                     ] = { name="オコ"                             , crafting_type=en, item_id= 45831 , add="体力"               , add_2="体力"                  }
-, ["OKOMA"                   ] = { name="オコマ"                            , crafting_type=en, item_id= 45834 , add="体力再生"              }
-, ["OKORI"                   ] = { name="オコリ"                            , crafting_type=en, item_id= 45843 , add="武器強化"              }
-, ["ORU"                     ] = { name="オル"                             , crafting_type=en, item_id= 45846 , add="薬品強化"              }
-, ["RAKEIPA"                 ] = { name="ラケイパ"                           , crafting_type=en, item_id= 45838 , add="炎"                 }
-, ["TADERI"                  ] = { name="タデリ"                            , crafting_type=en, item_id= 45847 , add="物理攻撃強化"            }
+, ["DEKEIPA"                 ] = { name="デケイパ"                           , crafting_type=en, item_id= 45839 , add="氷結"               , sub="氷結耐性"              }
+, ["DENI"                    ] = { name="デニ"                             , crafting_type=en, item_id= 45833 , add="スタミナ"             , sub="スタミナ吸収"           , add_2="スタミナ"                }
+, ["DENIMA"                  ] = { name="デニマ"                            , crafting_type=en, item_id= 45836 , add="スタミナ再生"           , sub="技能消費減少"            }
+, ["DETERI"                  ] = { name="デテリ"                            , crafting_type=en, item_id= 45842 , add="硬化"               , sub="粉砕"                }
+, ["HAOKO"                   ] = { name="ハオコ"                            , crafting_type=en, item_id= 45841 , add="不浄"               , sub="病気耐性"              }
+, ["HAKEIJO"                 ] = { name="ハケイジョ"                          , crafting_type=en, item_id= 68342 , add="分光防御"             , sub="分光猛襲"              }
+, ["KADERI"                  ] = { name="カデリ"                            , crafting_type=en, item_id= 45849 , add="強撃"               , sub="盾"                 }
+, ["KUOKO"                   ] = { name="クオコ"                            , crafting_type=en, item_id= 45837 , add="毒"                , sub="毒耐性"               }
+, ["MAKDERI"                 ] = { name="マクデリ"                           , crafting_type=en, item_id= 45848 , add="魔法攻撃強化"           , sub="呪文耐性"              }
+, ["MAKKO"                   ] = { name="マッコ"                            , crafting_type=en, item_id= 45832 , add="マジカ"              , sub="マジカ吸収"            , add_2="マジカ"                 }
+, ["MAKKOMA"                 ] = { name="マッコマ"                           , crafting_type=en, item_id= 45835 , add="マジカ再生"            , sub="呪文消費減少"            }
+, ["MEIP"                    ] = { name="メイプ"                            , crafting_type=en, item_id= 45840 , add="雷撃"               , sub="雷撃耐性"              }
+, ["OKO"                     ] = { name="オコ"                             , crafting_type=en, item_id= 45831 , add="体力"               , sub="体力吸収"             , add_2="体力"                  }
+, ["OKOMA"                   ] = { name="オコマ"                            , crafting_type=en, item_id= 45834 , add="体力再生"             , sub="体力減少"              }
+, ["OKORI"                   ] = { name="オコリ"                            , crafting_type=en, item_id= 45843 , add="武器強化"             , sub="衰弱"                }
+, ["ORU"                     ] = { name="オル"                             , crafting_type=en, item_id= 45846 , add="薬品強化"             , sub="薬品速度上昇"            }
+, ["RAKEIPA"                 ] = { name="ラケイパ"                           , crafting_type=en, item_id= 45838 , add="炎"                , sub="炎耐性"               }
+, ["TADERI"                  ] = { name="タデリ"                            , crafting_type=en, item_id= 45847 , add="物理攻撃強化"           , sub="物理耐性"              }
 
 , ["TA"                      ] = { name="ター"                             , crafting_type=en, item_id= 45850 , name_2="Normal"   }
 , ["JEJOTA"                  ] = { name="ジェジョタ"                          , crafting_type=en, item_id= 45851 , name_2="Fine"     }

@@ -374,24 +374,24 @@ LibCraftText.MATERIAL = {
 , ["JEHADE"                  ] = { name="Jehade"                         , crafting_type=en, item_id= 64508 }
 , ["ITADE"                   ] = { name="Itade"                          , crafting_type=en, item_id= 68340 }
 
-, ["DEKEIPA"                 ] = { name="Dekeipa"                        , crafting_type=en, item_id= 45839 , add="frost"             }
-, ["DENI"                    ] = { name="Deni"                           , crafting_type=en, item_id= 45833 , add="stamina"          , add_2="stamina"             }
-, ["DENIMA"                  ] = { name="Denima"                         , crafting_type=en, item_id= 45836 , add="stamina recovery"  }
-, ["DETERI"                  ] = { name="Deteri"                         , crafting_type=en, item_id= 45842 , add="hardening"         }
-, ["HAOKO"                   ] = { name="Haoko"                          , crafting_type=en, item_id= 45841 , add="foulness"          }
-, ["HAKEIJO"                 ] = { name="Hakeijo"                        , crafting_type=en, item_id= 68342 , add="prismatic defense" }
-, ["KADERI"                  ] = { name="Kaderi"                         , crafting_type=en, item_id= 45849 , add="bashing"           }
-, ["KUOKO"                   ] = { name="Kuoko"                          , crafting_type=en, item_id= 45837 , add="poison"            }
-, ["MAKDERI"                 ] = { name="Makderi"                        , crafting_type=en, item_id= 45848 , add="increase magical harm"}
-, ["MAKKO"                   ] = { name="Makko"                          , crafting_type=en, item_id= 45832 , add="magicka"          , add_2="magicka"             }
-, ["MAKKOMA"                 ] = { name="Makkoma"                        , crafting_type=en, item_id= 45835 , add="magicka recovery"  }
-, ["MEIP"                    ] = { name="Meip"                           , crafting_type=en, item_id= 45840 , add="shock"             }
-, ["OKO"                     ] = { name="Oko"                            , crafting_type=en, item_id= 45831 , add="health"           , add_2="health"              }
-, ["OKOMA"                   ] = { name="Okoma"                          , crafting_type=en, item_id= 45834 , add="health recovery"   }
-, ["OKORI"                   ] = { name="Okori"                          , crafting_type=en, item_id= 45843 , add="weapon damage"     }
-, ["ORU"                     ] = { name="Oru"                            , crafting_type=en, item_id= 45846 , add="potion boost"      }
-, ["RAKEIPA"                 ] = { name="Rakeipa"                        , crafting_type=en, item_id= 45838 , add="flame"             }
-, ["TADERI"                  ] = { name="Taderi"                         , crafting_type=en, item_id= 45847 , add="increase physical harm"}
+, ["DEKEIPA"                 ] = { name="Dekeipa"                        , crafting_type=en, item_id= 45839 , add="frost"            , sub="frost resist"      }
+, ["DENI"                    ] = { name="Deni"                           , crafting_type=en, item_id= 45833 , add="stamina"          , sub="absorb stamina"   , add_2="stamina"             }
+, ["DENIMA"                  ] = { name="Denima"                         , crafting_type=en, item_id= 45836 , add="stamina recovery" , sub="reduce feat cost"  }
+, ["DETERI"                  ] = { name="Deteri"                         , crafting_type=en, item_id= 45842 , add="hardening"        , sub="crushing"          }
+, ["HAOKO"                   ] = { name="Haoko"                          , crafting_type=en, item_id= 45841 , add="foulness"         , sub="disease resist"    }
+, ["HAKEIJO"                 ] = { name="Hakeijo"                        , crafting_type=en, item_id= 68342 , add="prismatic defense", sub="prismatic onslaught"}
+, ["KADERI"                  ] = { name="Kaderi"                         , crafting_type=en, item_id= 45849 , add="bashing"          , sub="shielding"         }
+, ["KUOKO"                   ] = { name="Kuoko"                          , crafting_type=en, item_id= 45837 , add="poison"           , sub="poison resist"     }
+, ["MAKDERI"                 ] = { name="Makderi"                        , crafting_type=en, item_id= 45848 , add="increase magical harm", sub="decrease spell harm"}
+, ["MAKKO"                   ] = { name="Makko"                          , crafting_type=en, item_id= 45832 , add="magicka"          , sub="absorb magicka"   , add_2="magicka"             }
+, ["MAKKOMA"                 ] = { name="Makkoma"                        , crafting_type=en, item_id= 45835 , add="magicka recovery" , sub="reduce spell cost" }
+, ["MEIP"                    ] = { name="Meip"                           , crafting_type=en, item_id= 45840 , add="shock"            , sub="shock resist"      }
+, ["OKO"                     ] = { name="Oko"                            , crafting_type=en, item_id= 45831 , add="health"           , sub="absorb health"    , add_2="health"              }
+, ["OKOMA"                   ] = { name="Okoma"                          , crafting_type=en, item_id= 45834 , add="health recovery"  , sub="decrease health"   }
+, ["OKORI"                   ] = { name="Okori"                          , crafting_type=en, item_id= 45843 , add="weapon damage"    , sub="weakening"         }
+, ["ORU"                     ] = { name="Oru"                            , crafting_type=en, item_id= 45846 , add="potion boost"     , sub="potion speed"      }
+, ["RAKEIPA"                 ] = { name="Rakeipa"                        , crafting_type=en, item_id= 45838 , add="flame"            , sub="flame resist"      }
+, ["TADERI"                  ] = { name="Taderi"                         , crafting_type=en, item_id= 45847 , add="increase physical harm", sub="decrease physical harm"}
 
 , ["TA"                      ] = { name="Ta"                             , crafting_type=en, item_id= 45850 , name_2="Normal"   }
 , ["JEJOTA"                  ] = { name="Jejota"                         , crafting_type=en, item_id= 45851 , name_2="Fine"     }
