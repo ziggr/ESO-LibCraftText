@@ -580,15 +580,6 @@ LibCraftText.RE_MASTER_ALCHEMY_NAME_TRAIT = {
 ,   ja = { "Craft a (.*) with the following Traits:"
          }
 }
-LibCraftText.RE_MASTER_ALCHEMY_TRAIT = {
-    en = { "• (.*)" }
-,   de = { "• (.*)" }
-,   fr = { "• (.*)" }
-,   es = { "• (.*)" }
-,   it = { "• (.*)" }
-,   ru = { "• (.*)" }
-,   ja = { "• (.*)" }
-}
 
 -- Break a multi-line condition into its bullet-prefixed substrings. Omits the
 -- first big paragraph "Craft an Essence of Ravage Health with the following
@@ -606,14 +597,17 @@ function LibCraftText.MasterConditionSplit(cond_text)
     return lines
 end
 
-        -- ,   en  = "Craft an Essence of Ravage Health with the following Traits:\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progress: 0 / 20"
-        -- ,   de  = "Stellt eine Essenz der Lebensverwüstung mit bestimmten Eigenschaften her.\n\n• Bruch\n• Erhöht Magiekraft\n• Lebensverwüstung\n• Fortschritt: 0/20"
-        -- ,   fr  = "Fabriquez une essence de ravage de Santé avec les traits suivants : \n• Brèche\n• Augmente la puissance des sorts\n• Réduit la Santé\n• Progression : 0/20"
-        -- ,   es  = "Fabricæ una esencia de reducción de salud con las siguientes propiedades:• La Grieta• Aumento de poder mágico• Reducción de salud\n• Progreso: 0/20"
-        -- ,   it  = "Crea un Ravage Health con i seguenti tratti:\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progresso: 0 / 20"
-        -- ,   ru  = "Создать предмет (Essence of Ravage Health) со следующими эффектами:\n• Разрыв\n• Увеличение силы заклинаний\n• Опустошение здоровья\n• Прогресс: 0 / 20"
-        -- ,   ja  = "Craft a 体力減少 のエキス with the following Traits:\n• 侵害\n• 呪文攻撃力上昇\n• 体力減少\n• Progress: 0 / 20"
-
+-- Parse the condition text from an alchemy master writ quest.
+--
+-- solvent      MATERIAL            LORKHANS_TEARS or AKLAHEST
+--
+-- name_trait   ALCHEMY_TRAITS      RAVAGE_HEALTH
+--                                  The trait that gives this potion/poison
+--                                  its name. This same trait also appears
+--                                  as one of the three elements of trait_list.
+--
+-- trait_list   MATERIAL            3 traits required for this potion/poison
+--
 function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
     local self = LibCraftText
     local lang = self.CurrLang()
@@ -630,7 +624,6 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
         self.ParseRegexable(unpack(args))
         ZZDEBUG=ZZDEBUG_OFF
     end
-
     local solvent = nil
     if name_trait and cond_text then
         if cond_text:find(name_trait.master_poison) then
@@ -658,7 +651,7 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
 
     if #trait_list ~= 3 then
         ZZDEBUG=ZZDEBUG_ON
-print("Not 3. line_ct:"..tostring(#lines))
+        ZZDEBUG("AL trait_list.ct not 3. line_ct:"..tostring(#lines))
         for i,line in ipairs(lines) do
             args[2] = line
             ZZDEBUG(string.format("### cond_text[%d]:'%s'", i, line))

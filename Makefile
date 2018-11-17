@@ -1,4 +1,4 @@
-.PHONY: put zip lang test gentest alch
+.PHONY: put zip lang test gentest mastest alch
 
 put:
 	rsync -vrt --delete --exclude=.git \
@@ -51,6 +51,8 @@ test:
 gentest: test/gen_test.data.lua
 	lua test/test_gen.lua --repeat 7
 
+mastest:
+	lua test/test_master.lua --repeat 7
 
 test/gen_test.data.lua: test/gen_test.lua data/lang_db.lua
 	lua test/gen_test.lua
