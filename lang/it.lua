@@ -167,6 +167,7 @@ LibCraftText.RECIPE = {
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="Jerall View Inn Carrot Cake"           , food_item_id=033575, recipe_list_index=  3, recipe_index= 21}
 , ["LEMON_FLOWER_MAZTE"              ] = { name="Lemon Flower Mazte"                    , food_item_id=033945, recipe_list_index=  8, recipe_index=  9}
 , ["LILMOTH_GARLIC_HAGFISH"          ] = { name="Lilmoth Garlic Hagfish"                , food_item_id=068235, recipe_list_index=  1, recipe_index= 42}
+, ["LUSTY_ARGONIAN_MAID_MAZTE"       ] = { name="Lusty Argonian Maid Mazte"             , food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="Lusty Argonian Maid Mazte"}
 , ["MAMMOTH_SNOUT_PIE"               ] = { name="Mammoth Snout Pie"                     , food_item_id=033903, recipe_list_index=  1, recipe_index= 25}
 , ["MAORMER_TEA"                     ] = { name="Maormer Tea"                           , food_item_id=028465, recipe_list_index=  9, recipe_index= 19}
 , ["MARKARTH_MEAD"                   ] = { name="Markarth Mead"                         , food_item_id=068257, recipe_list_index=  8, recipe_index= 42}
@@ -178,6 +179,7 @@ LibCraftText.RECIPE = {
 , ["NEREID_WINE"                     ] = { name="Nereid Wine"                           , food_item_id=033975, recipe_list_index=  8, recipe_index= 24}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="Nibenese Garlic Carrots"               , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
 , ["NUT_BROWN_ALE"                   ] = { name="Nut Brown Ale"                         , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
+, ["ORCREST_AGONY_PALE_ALE"          ] = { name="Orcrest Agony Pale Ale"                , food_item_id=068275, recipe_list_index= 14, recipe_index= 30}
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="Orcrest Garlic Apple Jelly"            , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
 , ["PELLITINE_TOMATO_RICE"           ] = { name="Pellitine Tomato Rice"                 , food_item_id=042814, recipe_list_index=  2, recipe_index= 13}
 , ["RED_RYE_BEER"                    ] = { name="Red Rye Beer"                          , food_item_id=033600, recipe_list_index=  8, recipe_index=  2}
@@ -196,9 +198,11 @@ LibCraftText.RECIPE = {
 , ["TORVAL_MINT_TEA"                 ] = { name="Torval Mint Tea"                       , food_item_id=034017, recipe_list_index=  9, recipe_index= 21}
 , ["TREACLEBERRY_TEA"                ] = { name="Treacleberry Tea"                      , food_item_id=033672, recipe_list_index=  9, recipe_index= 14}
 , ["TWO_ZEPHYR_TEA"                  ] = { name="Two-Zephyr Tea"                        , food_item_id=028473, recipe_list_index=  9, recipe_index= 25}
+, ["VELOTHI_VIEW_VINTAGE_MALBEC"     ] = { name="Velothi View Vintage Malbec"           , food_item_id=068274, recipe_list_index= 14, recipe_index= 29, name_2="Velothi View Vintage Malbec"}
 , ["VENISON_PASTY"                   ] = { name="Venison Pasty"                         , food_item_id=028398, recipe_list_index=  1, recipe_index= 15}
 , ["WEST_WEALD_CORN_CHOWDER"         ] = { name="West Weald Corn Chowder"               , food_item_id=032160, recipe_list_index=  3, recipe_index= 31}
 , ["WHITERUN_CHEESE_BAKED_TROUT"     ] = { name="Whiterun Cheese-Baked Trout"           , food_item_id=033484, recipe_list_index=  1, recipe_index= 14}
+
 }
 
 

@@ -100,7 +100,7 @@ function LibCraftText.ParseMasterCondition(crafting_type, cond_text)
         ,   [CRAFTING_TYPE_CLOTHIER       ] = LibCraftText.ParseMasterConditionEquipment
         ,   [CRAFTING_TYPE_ENCHANTING     ] = LibCraftText.ParseMasterConditionEnchanting
         ,   [CRAFTING_TYPE_ALCHEMY        ] = LibCraftText.ParseMasterConditionAlchemy
-        ,   [CRAFTING_TYPE_PROVISIONING   ] = LibCraftText.ParseMasterConditionConsumable
+        ,   [CRAFTING_TYPE_PROVISIONING   ] = LibCraftText.ParseMasterConditionProvisioning
         ,   [CRAFTING_TYPE_WOODWORKING    ] = LibCraftText.ParseMasterConditionEquipment
         ,   [CRAFTING_TYPE_JEWELRYCRAFTING] = LibCraftText.ParseMasterConditionEquipment
         }
@@ -353,52 +353,36 @@ LibCraftText.RE_CONDITION_DAILY_RECIPE = {
 ,   ["de"] = { "Stellt [etwaseinige]+ (.*) her"
              , "Stellt (.*) her"
              }
-,   ["fr"] = { "Préparez [uneds]+ (.*)"
-             --    "Fabriquez [uneds]+ (.*) en (.*) norm"
-             -- , "Fabriquez un (.*) en ([^:]*)"
-             -- , "Fabriquez deux (.*) en ([^:]*)"
-             -- , "Fabriquez trois (.*) en ([^:]*)"
-             -- , "Fabriquez [uneds]+ (.*) norm" -- MUST be after all "X en Y"
-             --                                  -- regexes to keep preposition
-             --                                  -- "en" out of matitem.
-             -- , "Fabriquez un (.*) d'([^:]*)"
+,   ["fr"] = { "Préparez [uneds]+ ([^\n]*)"
+             , "Fabriquez [uneds]+ ([^\n]*)"
              }
-,   ["ru"] = { "Создать — (.*)"
-             --    "Craft Normal ([^:]*)"
-             -- , "Craft a ([^:]*)"
-             -- , "Craft two ([^:]*)"
-             -- , "Craft three ([^:]*)"
+,   ["ru"] = { "Создать — ([^\n]*)"
+             , "Создать предмет:\n([^\n]*)"
              }
-,   ["es"] = { "Preparæ (.*)"
-             --    "Fabrica [unaos]+ (.*) norm"
-             -- , "Fabrica [unaos]+ (.*) de (.*) norm"
-             -- , "Fabrica un (.*) de ([^:]*)"
-             -- , "Fabrica dos (.*) de ([^:]*)"
-             -- , "Fabrica tres (.*) de ([^:]*)"
+,   ["es"] = { "Preparæ ([^\n]*)"
              }
 ,   ["ja"] = { "(.*)を生産する"
-             --    "(.*)%(ノーマル%)を生産する"
-             -- , "(.*)の(.*)%(ノーマル%)を生産する"
-             -- , "(.*)の(.*)を作る"
-             -- , "(.*)を2個作る"
-             -- , "(.*)を3個作る"
+             , "Craft a ([^\n]*)"
              }
 }
 
 function LibCraftText.ParseDailyConditionProvisioning(cond_text)
     local self          = LibCraftText
     local lang          = self.CurrLang()
-    local found_item    = self.ParseRegexable(
-                                   nil
-                                 , cond_text
-                                 , self.RE_CONDITION_DAILY_RECIPE[lang]
-                                 , self.RECIPE
-                                 , { "name", "name_2" }
-                                 )
-    if found_item then
-        return { item = found_item }
+    local args          = { nil
+                          , cond_text
+                          , self.RE_CONDITION_DAILY_RECIPE[lang]
+                          , self.RECIPE
+                          , { "name", "name_2" }
+                          }
+    local found_item    = self.ParseRegexable(unpack(args))
+    if not found_item then
+        ZZDEBUG=ZZDEBUG_ON
+        self.ParseRegexable(unpack(args))
+        ZZDEBUG=ZZDEBUG_OFF
+        return nil
     end
-    return nil
+    return { item = found_item }
 end
 
 
@@ -760,6 +744,9 @@ function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
            }
 end
 
+function LibCraftText.ParseMasterConditionProvisioning(crafting_type, cond_text)
+    return LibCraftText.ParseDailyConditionProvisioning(cond_text)
+end
 
 -- Parse Util ----------------------------------------------------------------
 

@@ -167,6 +167,7 @@ LibCraftText.RECIPE = {
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name=$FOOD_033575                            , food_item_id=033575, recipe_list_index=$FOOD_033575_RLI, recipe_index=$FOOD_033575_RI }
 , ["LEMON_FLOWER_MAZTE"              ] = { name=$FOOD_033945                            , food_item_id=033945, recipe_list_index=$FOOD_033945_RLI, recipe_index=$FOOD_033945_RI }
 , ["LILMOTH_GARLIC_HAGFISH"          ] = { name=$FOOD_068235                            , food_item_id=068235, recipe_list_index=$FOOD_068235_RLI, recipe_index=$FOOD_068235_RI }
+, ["LUSTY_ARGONIAN_MAID_MAZTE"       ] = { name=$FOOD_068276                            , food_item_id=068276, recipe_list_index=$FOOD_068276_RLI, recipe_index=$FOOD_068276_RI , name_2=$FOOD_068276B }
 , ["MAMMOTH_SNOUT_PIE"               ] = { name=$FOOD_033903                            , food_item_id=033903, recipe_list_index=$FOOD_033903_RLI, recipe_index=$FOOD_033903_RI }
 , ["MAORMER_TEA"                     ] = { name=$FOOD_028465                            , food_item_id=028465, recipe_list_index=$FOOD_028465_RLI, recipe_index=$FOOD_028465_RI }
 , ["MARKARTH_MEAD"                   ] = { name=$FOOD_068257                            , food_item_id=068257, recipe_list_index=$FOOD_068257_RLI, recipe_index=$FOOD_068257_RI }
@@ -178,6 +179,7 @@ LibCraftText.RECIPE = {
 , ["NEREID_WINE"                     ] = { name=$FOOD_033975                            , food_item_id=033975, recipe_list_index=$FOOD_033975_RLI, recipe_index=$FOOD_033975_RI }
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name=$FOOD_033478                            , food_item_id=033478, recipe_list_index=$FOOD_033478_RLI, recipe_index=$FOOD_033478_RI }
 , ["NUT_BROWN_ALE"                   ] = { name=$FOOD_028401                            , food_item_id=028401, recipe_list_index=$FOOD_028401_RLI, recipe_index=$FOOD_028401_RI }
+, ["ORCREST_AGONY_PALE_ALE"          ] = { name=$FOOD_068275                            , food_item_id=068275, recipe_list_index=$FOOD_068275_RLI, recipe_index=$FOOD_068275_RI }
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name=$FOOD_043094                            , food_item_id=043094, recipe_list_index=$FOOD_043094_RLI, recipe_index=$FOOD_043094_RI }
 , ["PELLITINE_TOMATO_RICE"           ] = { name=$FOOD_042814                            , food_item_id=042814, recipe_list_index=$FOOD_042814_RLI, recipe_index=$FOOD_042814_RI }
 , ["RED_RYE_BEER"                    ] = { name=$FOOD_033600                            , food_item_id=033600, recipe_list_index=$FOOD_033600_RLI, recipe_index=$FOOD_033600_RI }
@@ -196,9 +198,11 @@ LibCraftText.RECIPE = {
 , ["TORVAL_MINT_TEA"                 ] = { name=$FOOD_034017                            , food_item_id=034017, recipe_list_index=$FOOD_034017_RLI, recipe_index=$FOOD_034017_RI }
 , ["TREACLEBERRY_TEA"                ] = { name=$FOOD_033672                            , food_item_id=033672, recipe_list_index=$FOOD_033672_RLI, recipe_index=$FOOD_033672_RI }
 , ["TWO_ZEPHYR_TEA"                  ] = { name=$FOOD_028473                            , food_item_id=028473, recipe_list_index=$FOOD_028473_RLI, recipe_index=$FOOD_028473_RI }
+, ["VELOTHI_VIEW_VINTAGE_MALBEC"     ] = { name=$FOOD_068274                            , food_item_id=068274, recipe_list_index=$FOOD_068274_RLI, recipe_index=$FOOD_068274_RI , name_2=$FOOD_068274B }
 , ["VENISON_PASTY"                   ] = { name=$FOOD_028398                            , food_item_id=028398, recipe_list_index=$FOOD_028398_RLI, recipe_index=$FOOD_028398_RI }
 , ["WEST_WEALD_CORN_CHOWDER"         ] = { name=$FOOD_032160                            , food_item_id=032160, recipe_list_index=$FOOD_032160_RLI, recipe_index=$FOOD_032160_RI }
 , ["WHITERUN_CHEESE_BAKED_TROUT"     ] = { name=$FOOD_033484                            , food_item_id=033484, recipe_list_index=$FOOD_033484_RLI, recipe_index=$FOOD_033484_RI }
+
 }
 
 

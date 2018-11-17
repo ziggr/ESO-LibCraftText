@@ -47,9 +47,18 @@ MASTER_FODDER = {
              }
   }
 
--- , { input = "Craft a Lusty Argonian Maid Mazte\n• Progress: 0 / 8"
--- , { input = "Craft an Orcrest Agony Pale Ale\n• Progress: 0 / 8"
--- , { input = "Craft a Velothi View Vintage Malbec\n• Progress: 0 / 8"
+, { input = "Craft a Lusty Argonian Maid Mazte"
+            .."\n• Progress: 0 / 8"
+  , expect = { item=LCT.RECIPE.LUSTY_ARGONIAN_MAID_MAZTE }
+  }
+, { input = "Craft an Orcrest Agony Pale Ale"
+            .."\n• Progress: 0 / 8"
+  , expect = { item=LCT.RECIPE.ORCREST_AGONY_PALE_ALE }
+  }
+, { input = "Craft a Velothi View Vintage Malbec"
+            .."\n• Progress: 0 / 8"
+  , expect = { item=LCT.RECIPE.VELOTHI_VIEW_VINTAGE_MALBEC }
+  }
 
 -- , { input = "Craft a Rubedite Cuirass with the following Properties:\n• Quality: Epic\n• Trait: Sturdy\n• Set: Varen's Legacy\n• Style: Wood Elf\n• Progress: 0 / 1"
 -- , { input = "Craft a Rubedite Helm with the following Properties:\n• Quality: Epic\n• Trait: Divines\n• Set: Whitestrake's Retribution\n• Style: Imperial\n• Progress: 0 / 1"

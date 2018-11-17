@@ -167,6 +167,7 @@ LibCraftText.RECIPE = {
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="морковный торт таверны «Радушие Джерола»", food_item_id=033575, recipe_list_index=  3, recipe_index= 21}
 , ["LEMON_FLOWER_MAZTE"              ] = { name="лимонный мацт"                         , food_item_id=033945, recipe_list_index=  8, recipe_index=  9}
 , ["LILMOTH_GARLIC_HAGFISH"          ] = { name="пиявкорот с чесноком по-лилмотски"     , food_item_id=068235, recipe_list_index=  1, recipe_index= 42}
+, ["LUSTY_ARGONIAN_MAID_MAZTE"       ] = { name="мацт «Похотливая аргонианская дева»"   , food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="мацт «Похотливая аргонианская дев"}
 , ["MAMMOTH_SNOUT_PIE"               ] = { name="пирог с хоботом мамонта"               , food_item_id=033903, recipe_list_index=  1, recipe_index= 25}
 , ["MAORMER_TEA"                     ] = { name="маормерский чай"                       , food_item_id=028465, recipe_list_index=  9, recipe_index= 19}
 , ["MARKARTH_MEAD"                   ] = { name="маркартский мед"                       , food_item_id=068257, recipe_list_index=  8, recipe_index= 42}
@@ -178,6 +179,7 @@ LibCraftText.RECIPE = {
 , ["NEREID_WINE"                     ] = { name="вино нереиды"                          , food_item_id=033975, recipe_list_index=  8, recipe_index= 24}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="нибенейская морковь с чесноком"        , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
 , ["NUT_BROWN_ALE"                   ] = { name="темный ореховый эль"                   , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
+, ["ORCREST_AGONY_PALE_ALE"          ] = { name="светлый эль «Агония Оркреста»"         , food_item_id=068275, recipe_list_index= 14, recipe_index= 30}
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="чесночно-яблочное желе из Оркреста"    , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
 , ["PELLITINE_TOMATO_RICE"           ] = { name="пеллитинский рис с томатом"            , food_item_id=042814, recipe_list_index=  2, recipe_index= 13}
 , ["RED_RYE_BEER"                    ] = { name="красное ржаное пиво"                   , food_item_id=033600, recipe_list_index=  8, recipe_index=  2}
@@ -196,9 +198,11 @@ LibCraftText.RECIPE = {
 , ["TORVAL_MINT_TEA"                 ] = { name="торвальский мятный чай"                , food_item_id=034017, recipe_list_index=  9, recipe_index= 21}
 , ["TREACLEBERRY_TEA"                ] = { name="ягодный чай с патокой"                 , food_item_id=033672, recipe_list_index=  9, recipe_index= 14}
 , ["TWO_ZEPHYR_TEA"                  ] = { name="чай «Два зефира»"                      , food_item_id=028473, recipe_list_index=  9, recipe_index= 25}
+, ["VELOTHI_VIEW_VINTAGE_MALBEC"     ] = { name="выдержанный мальбек «Велотийский вид»" , food_item_id=068274, recipe_list_index= 14, recipe_index= 29, name_2="выдержанный мальбек «Велотийский"}
 , ["VENISON_PASTY"                   ] = { name="корзиночка с олениной"                 , food_item_id=028398, recipe_list_index=  1, recipe_index= 15}
 , ["WEST_WEALD_CORN_CHOWDER"         ] = { name="зерновой чаудер Западного Вельда"      , food_item_id=032160, recipe_list_index=  3, recipe_index= 31}
 , ["WHITERUN_CHEESE_BAKED_TROUT"     ] = { name="запеченная с сыром вайтранская форель" , food_item_id=033484, recipe_list_index=  1, recipe_index= 14}
+
 }
 
 

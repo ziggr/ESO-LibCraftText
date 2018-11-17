@@ -167,6 +167,7 @@ LibCraftText.RECIPE = {
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="Pastel de zanahoria \"El Paisaje de Jerall\"", food_item_id=033575, recipe_list_index=  3, recipe_index= 21}
 , ["LEMON_FLOWER_MAZTE"              ] = { name="Mazte de azahar"                       , food_item_id=033945, recipe_list_index=  8, recipe_index=  9}
 , ["LILMOTH_GARLIC_HAGFISH"          ] = { name="pez bruja al ajo de Lilmoth"           , food_item_id=068235, recipe_list_index=  1, recipe_index= 42}
+, ["LUSTY_ARGONIAN_MAID_MAZTE"       ] = { name="Mazte de la sensual doncella argoniana", food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="Mazte de la sensual doncella argoniana"}
 , ["MAMMOTH_SNOUT_PIE"               ] = { name="pastel de trompa de mamut"             , food_item_id=033903, recipe_list_index=  1, recipe_index= 25}
 , ["MAORMER_TEA"                     ] = { name="Té maormer"                            , food_item_id=028465, recipe_list_index=  9, recipe_index= 19}
 , ["MARKARTH_MEAD"                   ] = { name="aguamiel de Markarth"                  , food_item_id=068257, recipe_list_index=  8, recipe_index= 42}
@@ -178,6 +179,7 @@ LibCraftText.RECIPE = {
 , ["NEREID_WINE"                     ] = { name="Vino de nereida"                       , food_item_id=033975, recipe_list_index=  8, recipe_index= 24}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="zanahorias al ajo a la nibenesa"       , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
 , ["NUT_BROWN_ALE"                   ] = { name="cerveza negra con avellanas"           , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
+, ["ORCREST_AGONY_PALE_ALE"          ] = { name="cerveza pálida de la agonía de Orcelia", food_item_id=068275, recipe_list_index= 14, recipe_index= 30}
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="jalea de manzana y ajo de Orcelia"     , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
 , ["PELLITINE_TOMATO_RICE"           ] = { name="Arroz con tomate Pellitine"            , food_item_id=042814, recipe_list_index=  2, recipe_index= 13}
 , ["RED_RYE_BEER"                    ] = { name="cerveza roja de centeno"               , food_item_id=033600, recipe_list_index=  8, recipe_index=  2}
@@ -196,9 +198,11 @@ LibCraftText.RECIPE = {
 , ["TORVAL_MINT_TEA"                 ] = { name="Té de menta de Torval"                 , food_item_id=034017, recipe_list_index=  9, recipe_index= 21}
 , ["TREACLEBERRY_TEA"                ] = { name="té de bayamelaza"                      , food_item_id=033672, recipe_list_index=  9, recipe_index= 14}
 , ["TWO_ZEPHYR_TEA"                  ] = { name="té de Dos-Céfiros"                     , food_item_id=028473, recipe_list_index=  9, recipe_index= 25}
+, ["VELOTHI_VIEW_VINTAGE_MALBEC"     ] = { name="Velothi View Vintage Malbec"           , food_item_id=068274, recipe_list_index= 14, recipe_index= 29, name_2="Velothi View Vintage Malbec"}
 , ["VENISON_PASTY"                   ] = { name="Empanada de venado"                    , food_item_id=028398, recipe_list_index=  1, recipe_index= 15}
 , ["WEST_WEALD_CORN_CHOWDER"         ] = { name="caldo de maíz del Bosque Occidental"   , food_item_id=032160, recipe_list_index=  3, recipe_index= 31}
 , ["WHITERUN_CHEESE_BAKED_TROUT"     ] = { name="trucha gratinada de Carrera Blanca"    , food_item_id=033484, recipe_list_index=  1, recipe_index= 14}
+
 }
 
 
