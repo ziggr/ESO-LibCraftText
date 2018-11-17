@@ -564,22 +564,6 @@ function LibCraftText.ParseDailyConditionMisc(crafting_type, cond_text)
 end
 
 -- Parse Master Writ Conditions ----------------------------------------------
-LibCraftText.RE_MASTER_ALCHEMY_NAME_TRAIT = {
-    en = { "Craft an (.*) with the following Traits"
-         }
-,   de = { "Stellt eine (.*) mit bestimmten Eigenschaften her."
-         }
-,   fr = { "Fabriquez une (.*) avec les traits suivants."
-         }
-,   es = { "Fabricæ una (.*) con las siguientes propiedades:"
-         }
-,   it = { "Crea un (.*) con i seguenti tratti:"
-         }
-,   ru = { "Создать предмет %((.*)%) со следующими эффектами:"
-         }
-,   ja = { "Craft a (.*) with the following Traits:"
-         }
-}
 
 -- Break a multi-line condition into its bullet-prefixed substrings. Omits the
 -- first big paragraph "Craft an Essence of Ravage Health with the following
@@ -596,6 +580,23 @@ function LibCraftText.MasterConditionSplit(cond_text)
     table.remove(lines,1)
     return lines
 end
+
+LibCraftText.RE_MASTER_ALCHEMY_NAME_TRAIT = {
+    en = { "Craft an? (.*) with the following Traits"
+         }
+,   de = { "Stellt eine? (.*) mit bestimmten Eigenschaften her"
+         }
+,   fr = { "Fabriquez une? (.*) avec les traits suivants"
+         }
+,   es = { "Fabricæ una? (.*) con las siguientes propiedades:"
+         }
+,   it = { "Crea un (.*) con i seguenti tratti:"
+         }
+,   ru = { "Создать предмет %((.*)%) со следующими эффектами:"
+         }
+,   ja = { "Craft a (.*) with the following Traits:"
+         }
+}
 
 -- Parse the condition text from an alchemy master writ quest.
 --
@@ -626,7 +627,7 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
     end
     local solvent = nil
     if name_trait and cond_text then
-        if cond_text:find(name_trait.master_poison) then
+        if cond_text:lower():find(name_trait.master_poison:lower()) then
             solvent = self.MATERIAL.ALKAHEST
         elseif cond_text:find(name_trait.master_potion) then
             solvent = self.MATERIAL.LORKHANS_TEARS
