@@ -565,9 +565,7 @@ end
 
 -- Parse Master Writ Conditions ----------------------------------------------
 
--- Break a multi-line condition into its bullet-prefixed substrings. Omits the
--- first big paragraph "Craft an Essence of Ravage Health with the following
--- traits:"
+-- Break a multi-line condition into its bullet-prefixed substrings.
 function LibCraftText.MasterConditionSplit(cond_text)
     local self = LibCraftText
     local lang = self.CurrLang()
@@ -577,7 +575,7 @@ function LibCraftText.MasterConditionSplit(cond_text)
                         -- without newline, so you have to break on bullet.
     local BULLET    = "•"   -- UTF-8 E2 80 A2 = U2022 "bullet"
     local lines = self.split_plain(cond_text, BULLET.." ")
-    table.remove(lines,1)
+    -- table.remove(lines,1)
     return lines
 end
 
@@ -635,6 +633,7 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
     end
 
     local lines = self.MasterConditionSplit(cond_text)
+    table.remove(lines,1)   -- Skip the "Craft a xxx" line. We just need the traits.
     local trait_list = {}
     args = { nil
            , "<line goes here>"
@@ -667,6 +666,91 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
            , trait_list = trait_list
            }
 end
+
+LibCraftText.RE_MASTER_ENCHANTING_GLYPH = {
+   -- , { input = "Craft a Superb Glyph of Reduce Spell Cost\n• Quality: Epic\n• Progress: 0 / 1"
+    en = { "Craft an? (.*)\n"
+         }
+,   de = { "Stellt eine? (.*) mit bestimmten Eigenschaften her"
+         }
+,   fr = { "Fabriquez une? (.*) avec les traits suivants"
+         }
+,   es = { "Fabricæ una? (.*) con las siguientes propiedades:"
+         }
+,   it = { "Crea un (.*) con i seguenti tratti:"
+         }
+,   ru = { "Создать предмет %((.*)%) со следующими эффектами:"
+         }
+,   ja = { "Craft a (.*) with the following Traits:"
+         }
+}
+
+
+-- DEAD. Need DIscover "Superb Glyph of Reduce Spell Cost"
+--     for each add, subtract, at CP150 potency
+
+function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
+    local self = LibCraftText
+    local lang = self.CurrLang()
+
+    local lines = self.MasterConditionSplit(cond_text)
+
+    local args = { nil
+                 , lines[1]
+                 , self.RE_MASTER_ENCHANTING_GLYPH[lang]
+                 , self.ALCHEMY_TRAIT
+                 , { "master_potion", "master_poison" }
+             }
+    local name_trait    = self.ParseRegexable(unpack(args))
+    if not name_trait then
+        ZZDEBUG=ZZDEBUG_ON
+        ZZDEBUG(string.format("### cond_text:'%s'", cond_text))
+        self.ParseRegexable(unpack(args))
+        ZZDEBUG=ZZDEBUG_OFF
+    end
+    local solvent = nil
+    if name_trait and cond_text then
+        if cond_text:lower():find(name_trait.master_poison:lower()) then
+            solvent = self.MATERIAL.ALKAHEST
+        elseif cond_text:find(name_trait.master_potion) then
+            solvent = self.MATERIAL.LORKHANS_TEARS
+        end
+    end
+
+    local lines = self.MasterConditionSplit(cond_text)
+    local trait_list = {}
+    args = { nil
+           , "<line goes here>"
+           , { "(.*)" }
+           , self.ALCHEMY_TRAIT
+           , { "name" }
+           }
+    for _,line in ipairs(lines) do
+        args[2] = line
+        local trait = self.ParseRegexable(unpack(args))
+        if trait then
+            table.insert(trait_list, trait)
+        end
+    end
+
+    if #trait_list ~= 3 then
+        ZZDEBUG=ZZDEBUG_ON
+        ZZDEBUG("AL trait_list.ct not 3. line_ct:"..tostring(#lines))
+        for i,line in ipairs(lines) do
+            args[2] = line
+            ZZDEBUG(string.format("### cond_text[%d]:'%s'", i, line))
+            local trait = self.ParseRegexable(unpack(args))
+            self.ParseRegexable(unpack(args))
+        end
+        ZZDEBUG=ZZDEBUG_OFF
+    end
+
+    return { solvent    = solvent
+           , name_trait = name_trait
+           , trait_list = trait_list
+           }
+end
+
 
 -- Parse Util ----------------------------------------------------------------
 

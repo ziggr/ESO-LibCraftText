@@ -1041,6 +1041,7 @@ local RECIPE_NAMES_EN = {
 , "Jerall View Inn Carrot Cake"
 , "Lemon Flower Mazte"
 , "Lilmoth Garlic Hagfish"
+, "Lusty Argonian Maid Mazte"
 , "Mammoth Snout Pie"
 , "Maormer Tea"
 , "Markarth Mead"
@@ -1052,6 +1053,7 @@ local RECIPE_NAMES_EN = {
 , "Nereid Wine"
 , "Nibenese Garlic Carrots"
 , "Nut Brown Ale"
+, "Orcrest Agony Pale Ale"
 , "Orcrest Garlic Apple Jelly"
 , "Pellitine Tomato Rice"
 , "Red Rye Beer"
@@ -1070,10 +1072,10 @@ local RECIPE_NAMES_EN = {
 , "Torval Mint Tea"
 , "Treacleberry Tea"
 , "Two-Zephyr Tea"
+, "Velothi View Vintage Malbec"
 , "Venison Pasty"
 , "West Weald Corn Chowder"
 , "Whiterun Cheese-Baked Trout"
-
 
 }
 function LibCraftText.DiscoverRecipes()
@@ -1698,14 +1700,9 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
     ,   ru = { "glyph of (.*)"}
     ,   ja = { "グリフ %((.*)%)"}
     }
-    local potency = m.JORA
-    local aspect  = m.TA
-    for _,essence in ipairs(essence_list) do
-        local essence_name = nil
-        local en_info      = self.GetEnchantingInfo(potency, essence, aspect)
+    local function EssenceName(en_info)
         if not en_info then
-            Error("Giving up.")
-            return
+            return nil
         end
         local name         = en_info.name
         for _,re in ipairs(RE_ESSENCE[lang]) do
@@ -1719,13 +1716,41 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
             essence_name = name:lower()
         end
         essence_name = Decaret(essence_name)
+        return essence_name
+    end
+
+    local potency_add = m.JORA
+    local potency_sub = m.JODE
+    local aspect  = m.TA
+    for _,essence in ipairs(essence_list) do
+        local essence_name = nil
+        local en_info_add      = self.GetEnchantingInfo(potency_add, essence, aspect)
+        local en_info_sub      = self.GetEnchantingInfo(potency_sub, essence, aspect)
+        if not en_info_add and en_info_sub then
+            Error("Giving up.")
+            return
+        end
+        local essence_name_add  = EssenceName(en_info_add)
+        local essence_name_sub  = EssenceName(en_info_sub)
 
         local i = essence.item_id
         self.saved_var.essences = self.saved_var.essences or {}
         self.saved_var.essences[i] = self.saved_var.essences[i] or {}
-        self.saved_var.essences[i][lang] = essence_name
-        Info(string.format("essence %2d: %s", i, essence_name))
+        self.saved_var.essences[i].add = self.saved_var.essences[i].add or {}
+        self.saved_var.essences[i].sub = self.saved_var.essences[i].sub or {}
+        self.saved_var.essences[i].add[lang] = essence_name_add
+        self.saved_var.essences[i].sub[lang] = essence_name_sub
+        Info(string.format( "essence %2d: %s/%s"
+                          , i
+                          , tostring(essence_name_add)
+                          , tostring(essence_name_sub)))
     end
+
+                        -- Gather add and subtract names because master writs require subtractive glyphs often.
+                        -- COULD merge this in with the above
+                        -- loop for daily crafting writs, but I'd rather have 36 exact match strings than
+                        -- have to write even more regexes to get the "Super"
+
 end
 
 function LibCraftText.GetEnchantingInfo(mat_potency, mat_essence, mat_aspect)

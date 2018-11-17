@@ -592,9 +592,8 @@ function ImportSavedVars()
         end
     end
 
-                        -- Enchanting potency and essence names
+                        -- Enchanting potency names
     local table_names = { ["potencies"] = "$POTENCY_%06d"
-                        , ["essences" ] = "$ESSENCE_%06d"
                         }
     for table_name, key_pattern in pairs(table_names) do
         local table = LibCraftTextVars.Default["@ziggr"]["$AccountWide"][table_name]
@@ -604,6 +603,16 @@ function ImportSavedVars()
                 ImportSavedVarLangTable(lang_table, key)
             end
         end
+    end
+                        -- Enchanting essence names
+    local key_pattern_add = "$ESSENCE_%06d_ADD"
+    local key_pattern_sub = "$ESSENCE_%06d_SUB"
+    local essences = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].essences
+    for item_id, add_sub in pairs(essences) do
+        local key_add = string.format(key_pattern_add, item_id)
+        local key_sub = string.format(key_pattern_sub, item_id)
+        ImportSavedVarLangTable(add_sub.add, key_add)
+        ImportSavedVarLangTable(add_sub.sub, key_sub)
     end
 
                         -- Recipes. Include recipe index numbers, as numbers.
