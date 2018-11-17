@@ -129,6 +129,7 @@ function LibCraftText.Discover()
     LibCraftText.DiscoverItems()
     LibCraftText.DiscoverQualities()
     LibCraftText.DiscoverTraits()
+    LibCraftText.DiscoverTraitMaterials()
     LibCraftText.DiscoverSets()
     LibCraftText.DiscoverMotifs()
     LibCraftText.DiscoverRecipes()
@@ -153,6 +154,7 @@ function LibCraftText.Forget()
                    , "scanned_lang"
                    , "recipes"
                    , "alchemy"
+                   , "trait_materials"
                    }
     for _,field in ipairs(fields) do
         -- LibCraftText.saved_var [field] = nil  Uncomment only when you really need to.
@@ -761,6 +763,52 @@ function LibCraftText.DiscoverConsumableMaterials()
         -- break
     end
 end
+
+-- Get names of all AL EN materials
+function LibCraftText.DiscoverTraitMaterials()
+    local MAT_ROWS = {
+                         4456 -- "quartz"
+                     ,  23219 -- "diamond"
+                     ,  30221 -- "sardonyx"
+                     ,  23221 -- "almandine"
+                     ,   4442 -- "emerald"
+                     ,  30219 -- "bloodstone"
+                     ,  23171 -- "garnet"
+                     ,  23173 -- "sapphire"
+                     ,  56862 -- "fortified nirncrux"
+                     ,  23203 -- "chysolite"
+                     ,  23204 -- "amethyst"
+                     ,   4486 -- "ruby"
+                     ,    810 -- "jade"
+                     ,    813 -- "turquoise"
+                     ,  23165 -- "carnelian"
+                     ,  23149 -- "fire opal"
+                     ,  16291 -- "citrine"
+                     ,  56863 -- "potent nirncrux"
+                     , 135155 -- "Cobalt"
+                     , 135156 -- "Antimony"
+                     , 135157 -- "Zinc"
+                     , 139409 -- "Dawn-Prism"
+                     , 139413 -- "Dibellium"
+                     , 139412 -- "Gilding Wax"
+                     , 139411 -- "Aurbic Amber"
+                     , 139410 -- "Titanium"
+                     , 139414 -- "Slaughterstone"
+                     }
+
+    local self = LibCraftText
+    self.saved_var.trait_materials = self.saved_var.trait_materials or {}
+    local materials = self.saved_var.trait_materials -- for less typing
+    local lang      = self.CurrLang()
+    for _,item_id in ipairs(MAT_ROWS) do
+        local item_link         = self.ItemIDToItemLink(item_id)
+        local item_name_carety  = GetItemLinkName(item_link)
+        local item_name         = Decaret(item_name_carety)
+        materials[item_id]       = materials[item_id] or {}
+        materials[item_id][lang] = item_name
+    end
+end
+
 
 -- copied from Dolgubon's LibLazyCrafting functions.lua.
 -- Isn't there an official ZOS copy of this now?

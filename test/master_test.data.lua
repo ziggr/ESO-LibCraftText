@@ -60,7 +60,20 @@ MASTER_FODDER = {
   , expect = { item=LCT.RECIPE.VELOTHI_VIEW_VINTAGE_MALBEC }
   }
 
--- , { input = "Craft a Rubedite Cuirass with the following Properties:\n• Quality: Epic\n• Trait: Sturdy\n• Set: Varen's Legacy\n• Style: Wood Elf\n• Progress: 0 / 1"
+, { input = "Craft a Rubedite Cuirass with the following Properties:"
+            .."\n• Quality: Epic"
+            .."\n• Trait: Sturdy"
+            .."\n• Set: Varen's Legacy"
+            .."\n• Style: Wood Elf"
+            .."\n• Progress: 0 / 1"
+  , expect = { item     = LCT.ITEM.HELM
+             , material = LCT.MATERIAL.RUBEDITE
+             , quality  = LCT.QUALITY.EPIC
+             , trait    = LCT.TRAIT.ARMOR_STURDY
+             , set      = nil
+             , motif    = nil
+             }
+  }
 -- , { input = "Craft a Rubedite Helm with the following Properties:\n• Quality: Epic\n• Trait: Divines\n• Set: Whitestrake's Retribution\n• Style: Imperial\n• Progress: 0 / 1"
 -- , { input = "Craft a Rubedite Maul with the following Properties:\n• Quality: Epic\n• Trait: Defending\n• Set: Daedric Trickery\n• Style: Argonian\n• Progress: 0 / 1"
 -- , { input = "Craft a Rubedite Pauldron with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Eternal Hunt\n• Style: Wood Elf\n• Progress: 0 / 1"

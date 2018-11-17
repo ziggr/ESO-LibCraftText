@@ -504,6 +504,12 @@ function ImportSavedVars()
         end
     end
 
+    local trait_materials = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].trait_materials
+    for item_id, lang_table in pairs(trait_materials) do
+        local key = string.format("$TRAIT_MATERIAL_%06d", item_id)
+        ImportSavedVarLangTable(lang_table, key)
+    end
+
     local qualities = LibCraftTextVars.Default["@ziggr"]["$AccountWide"].qualities
     for lang, qual_list in pairs(qualities) do
         for i, text in pairs(qual_list) do

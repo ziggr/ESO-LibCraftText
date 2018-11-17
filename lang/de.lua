@@ -40,7 +40,6 @@ local trait_weap    = LibCraftText.TRAIT_SET_ID.WEAPON
 local trait_armr    = LibCraftText.TRAIT_SET_ID.ARMOR
 local trait_jewl    = LibCraftText.TRAIT_SET_ID.JEWELRY
 
-
 -- Craftable Equipment -------------------------------------------------------
 --
 -- Answer the question "what gear item does this crafting quest require?"
@@ -402,7 +401,78 @@ LibCraftText.MATERIAL = {
 , ["DENATA"                  ] = { name="Denata"                         , crafting_type=en, item_id= 45852 , name_2="Überlegen"}
 , ["REKUTA"                  ] = { name="Rekuta"                         , crafting_type=en, item_id= 45853 , name_2="Episch"   }
 , ["KUTA"                    ] = { name="Kuta"                           , crafting_type=en, item_id= 45854 , name_2="Legendär" }
+
+, ["QUARTZ"                  ] = { name="Quarz"                          ,                   item_id=  4456 }
+, ["DIAMOND"                 ] = { name="Diamant"                        ,                   item_id= 23219 }
+, ["SARDONYX"                ] = { name="Sardonyx"                       ,                   item_id= 30221 }
+, ["ALMANDINE"               ] = { name="Almandin"                       ,                   item_id= 23221 }
+, ["EMERALD"                 ] = { name="Smaragd"                        ,                   item_id=  4442 }
+, ["BLOODSTONE"              ] = { name="Blutstein"                      ,                   item_id= 30219 }
+, ["GARNET"                  ] = { name="Granat"                         ,                   item_id= 23171 }
+, ["SAPPHIRE"                ] = { name="Saphir"                         ,                   item_id= 23173 }
+, ["FORTIFIED_NIRNCRUX"      ] = { name="festes Nirnkrux"                ,                   item_id= 56862 }
+, ["CHYSOLITE"               ] = { name="Chrysolith"                     ,                   item_id= 23203 }
+, ["AMETHYST"                ] = { name="Amethyst"                       ,                   item_id= 23204 }
+, ["RUBY"                    ] = { name="Rubin"                          ,                   item_id=  4486 }
+, ["JADE"                    ] = { name="Jade"                           ,                   item_id=   810 }
+, ["TURQUOISE"               ] = { name="Türkis"                         ,                   item_id=   813 }
+, ["CARNELIAN"               ] = { name="Karneol"                        ,                   item_id= 23165 }
+, ["FIRE_OPAL"               ] = { name="Feueropal"                      ,                   item_id= 23149 }
+, ["CITRINE"                 ] = { name="Zitrin"                         ,                   item_id= 16291 }
+, ["POTENT_NIRNCRUX"         ] = { name="starres Nirnkrux"               ,                   item_id= 56863 }
+, ["COBALT"                  ] = { name="Kobalt"                         ,                   item_id=135155 }
+, ["ANTIMONY"                ] = { name="Antimon"                        ,                   item_id=135156 }
+, ["ZINC"                    ] = { name="Zink"                           ,                   item_id=135157 }
+, ["DAWN_PRISM"              ] = { name="Dämmerprisma"                   ,                   item_id=139409 }
+, ["DIBELLIUM"               ] = { name="Dibellium"                      ,                   item_id=139413 }
+, ["GILDING_WAX"             ] = { name="Goldwachs"                      ,                   item_id=139412 }
+, ["AURBIC_AMBER"            ] = { name="aurbischer Bernstein"           ,                   item_id=139411 }
+, ["TITANIUM"                ] = { name="Titanium"                       ,                   item_id=139410 }
+, ["SLAUGHTERSTONE"          ] = { name="Schlachterstein"                ,                   item_id=139414 }
+
 }
+
+
+-- Equipment Traits ----------------------------------------------------------
+
+-- For master writ quests that require Nirnhoned or whatever.
+
+local ts=LibCraftText.TRAIT_SET_ID -- for less typing
+local m =LibCraftText.MATERIAL
+LibCraftText.TRAIT = {
+    ["WEAPON_POWERED"      ] = { name="Gestärkt"                    , trait_set_id=ts.WEAPON  , trait_index=1 , trait_type_id=ITEM_TRAIT_TYPE_WEAPON_POWERED          or  1 , material=m.CHYSOLITE          }
+,   ["WEAPON_CHARGED"      ] = { name="Geladen"                     , trait_set_id=ts.WEAPON  , trait_index=2 , trait_type_id=ITEM_TRAIT_TYPE_WEAPON_CHARGED          or  2 , material=m.AMETHYST           }
+,   ["WEAPON_PRECISE"      ] = { name="Präzise"                     , trait_set_id=ts.WEAPON  , trait_index=3 , trait_type_id=ITEM_TRAIT_TYPE_WEAPON_PRECISE          or  3 , material=m.RUBY               }
+,   ["WEAPON_INFUSED"      ] = { name="Erfüllt"                     , trait_set_id=ts.WEAPON  , trait_index=4 , trait_type_id=ITEM_TRAIT_TYPE_WEAPON_INFUSED          or  4 , material=m.JADE               }
+,   ["WEAPON_DEFENDING"    ] = { name="Verteidigend"                , trait_set_id=ts.WEAPON  , trait_index=5 , trait_type_id=ITEM_TRAIT_TYPE_WEAPON_DEFENDING        or  5 , material=m.TURQUOISE          }
+,   ["WEAPON_TRAINING"     ] = { name="Lehrend"                     , trait_set_id=ts.WEAPON  , trait_index=6 , trait_type_id=ITEM_TRAIT_TYPE_WEAPON_TRAINING         or  6 , material=m.CARNELIAN          }
+,   ["WEAPON_SHARPENED"    ] = { name="Geschärft"                   , trait_set_id=ts.WEAPON  , trait_index=7 , trait_type_id=ITEM_TRAIT_TYPE_WEAPON_SHARPENED        or  7 , material=m.FIRE_OPAL          }
+,   ["WEAPON_DECISIVE"     ] = { name="Entschlossen"                , trait_set_id=ts.WEAPON  , trait_index=8 , trait_type_id=ITEM_TRAIT_TYPE_WEAPON_DECISIVE         or  8 , material=m.CITRINE            }
+,   ["WEAPON_NIRNHONED"    ] = { name="Nirngeschliffen"             , trait_set_id=ts.WEAPON  , trait_index=9 , trait_type_id=ITEM_TRAIT_TYPE_WEAPON_NIRNHONED        or 26 , material=m.POTENT_NIRNCRUX    }
+
+,   ["ARMOR_STURDY"        ] = { name="Robust"                      , trait_set_id=ts.ARMOR   , trait_index=1 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_STURDY            or 11 , material=m.QUARTZ             }
+,   ["ARMOR_IMPENETRABLE"  ] = { name="Undurchdringlich"            , trait_set_id=ts.ARMOR   , trait_index=2 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_IMPENETRABLE      or 12 , material=m.DIAMOND            }
+,   ["ARMOR_REINFORCED"    ] = { name="Verstärkt"                   , trait_set_id=ts.ARMOR   , trait_index=3 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_REINFORCED        or 13 , material=m.SARDONYX           }
+,   ["ARMOR_WELL_FITTED"   ] = { name="Passgenau"                   , trait_set_id=ts.ARMOR   , trait_index=4 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_WELL_FITTED       or 14 , material=m.ALMANDINE          }
+,   ["ARMOR_TRAINING"      ] = { name="Lehrend"                     , trait_set_id=ts.ARMOR   , trait_index=5 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_TRAINING          or 15 , material=m.EMERALD            }
+,   ["ARMOR_INFUSED"       ] = { name="Erfüllt"                     , trait_set_id=ts.ARMOR   , trait_index=6 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_INFUSED           or 16 , material=m.BLOODSTONE         }
+,   ["ARMOR_PROSPEROUS"    ] = { name="Belebend"                    , trait_set_id=ts.ARMOR   , trait_index=7 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_PROSPEROUS        or 17 , material=m.GARNET             }
+,   ["ARMOR_DIVINES"       ] = { name="Göttlich"                    , trait_set_id=ts.ARMOR   , trait_index=8 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_DIVINES           or 18 , material=m.SAPPHIRE           }
+,   ["ARMOR_NIRNHONED"     ] = { name="Nirngeschliffen"             , trait_set_id=ts.ARMOR   , trait_index=9 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_NIRNHONED         or 25 , material=m.FORTIFIED_NIRNCRUX }
+
+,   ["JEWELRY_ARCANE"      ] = { name="Arkan"                       , trait_set_id=ts.JEWELRY , trait_index=1 , trait_type_id=ITEM_TRAIT_TYPE_JEWELRY_ARCANE          or 22 , material=m.COBALT             }
+,   ["JEWELRY_HEALTHY"     ] = { name="Kräftigend"                  , trait_set_id=ts.JEWELRY , trait_index=2 , trait_type_id=ITEM_TRAIT_TYPE_JEWELRY_HEALTHY         or 21 , material=m.ANTIMONY           }
+,   ["JEWELRY_ROBUST"      ] = { name="Robust"                      , trait_set_id=ts.JEWELRY , trait_index=3 , trait_type_id=ITEM_TRAIT_TYPE_JEWELRY_ROBUST          or 23 , material=m.ZINC               }
+,   ["JEWELRY_TRIUNE"      ] = { name="Dreifaltig"                  , trait_set_id=ts.JEWELRY , trait_index=4 , trait_type_id=ITEM_TRAIT_TYPE_JEWELRY_TRIUNE          or 30 , material=m.DAWN_PRISM         }
+,   ["JEWELRY_INFUSED"     ] = { name="Erfüllt"                     , trait_set_id=ts.JEWELRY , trait_index=5 , trait_type_id=ITEM_TRAIT_TYPE_JEWELRY_INFUSED         or 33 , material=m.AURBIC_AMBER       }
+,   ["JEWELRY_PROTECTIVE"  ] = { name="Schützend"                   , trait_set_id=ts.JEWELRY , trait_index=6 , trait_type_id=ITEM_TRAIT_TYPE_JEWELRY_PROTECTIVE      or 32 , material=m.TITANIUM           }
+,   ["JEWELRY_SWIFT"       ] = { name="Flink"                       , trait_set_id=ts.JEWELRY , trait_index=7 , trait_type_id=ITEM_TRAIT_TYPE_JEWELRY_SWIFT           or 28 , material=m.GILDING_WAX        }
+,   ["JEWELRY_HARMONY"     ] = { name="Harmonisch"                  , trait_set_id=ts.JEWELRY , trait_index=8 , trait_type_id=ITEM_TRAIT_TYPE_JEWELRY_HARMONY         or 29 , material=m.DIBELLIUM          }
+,   ["JEWELRY_BLOODTHIRSTY"] = { name="Blutdürstig"                 , trait_set_id=ts.JEWELRY , trait_index=9 , trait_type_id=ITEM_TRAIT_TYPE_JEWELRY_BLOODTHIRSTY    or 31 , material=m.SLAUGHTERSTONE     }
+
+}
+m  = nil
+ts = nil
 
 
 -- Alchemy Traits ------------------------------------------------------------
@@ -454,7 +524,7 @@ LibCraftText.ALCHEMY_TRAIT = {
 ,   ["DEFILE"                 ] = { trait_index=30, name="Schänden"                 , master_potion="Essenz der Schändung"              , master_poison="Gift der Schändung IX"             }
 }
 
--- Miscellaneousl conditions -------------------------------------------------
+-- Miscellaneous conditions --------------------------------------------------
 
 LibCraftText.DAILY_COND = {
     HINT_PR_BREWERS_COOKS_RECIPES = "Brauer und Köche verkaufen Rezepte"
@@ -520,11 +590,17 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 ,   [jw] = "I've finished the Jewelry job."          -- "I've finished the Jewelry job."
 }
 
-LibCraftText.QUALITIES = {
+LibCraftText.QUALITY = {
     [1] = "Normal"                   -- "Normal"
 ,   [2] = "Erlesen"                  -- "Fine"
 ,   [3] = "Überlegen"                -- "Superior"
 ,   [4] = "Episch"                   -- "Epic"
 ,   [5] = "Legendär"                 -- "Legendary"
+
+,   ["NORMAL"   ] = "Normal"  
+,   ["FINE"     ] = "Erlesen" 
+,   ["SUPERIOR" ] = "Überlegen"
+,   ["EPIC"     ] = "Episch"  
+,   ["LEGENDARY"] = "Legendär"
 }
 

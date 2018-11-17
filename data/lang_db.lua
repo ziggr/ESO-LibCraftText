@@ -13662,6 +13662,241 @@ LANG_DB = {
           ,   es  = "Trinitario"
           }
 , [1602] = {
+              key = "$TRAIT_MATERIAL_000810"
+          ,   en  = "Jade"
+          ,   fr  = "jade"
+          ,   ru  = "нефрит"
+          ,   ja  = "ヒスイ"
+          }
+, [1603] = {
+              key = "$TRAIT_MATERIAL_000813"
+          ,   en  = "Turquoise"
+          ,   de  = "Türkis"
+          ,   fr  = "turquoise"
+          ,   es  = "turquesa"
+          ,   ru  = "бирюза"
+          ,   ja  = "ターコイズ"
+          }
+, [1604] = {
+              key = "$TRAIT_MATERIAL_004442"
+          ,   en  = "Emerald"
+          ,   de  = "Smaragd"
+          ,   fr  = "émeraude"
+          ,   es  = "Esmeralda"
+          ,   ru  = "изумруд"
+          ,   ja  = "エメラルド"
+          }
+, [1605] = {
+              key = "$TRAIT_MATERIAL_004456"
+          ,   en  = "Quartz"
+          ,   de  = "Quarz"
+          ,   fr  = "quartz"
+          ,   es  = "Cuarzo"
+          ,   ru  = "кварц"
+          ,   ja  = "クウォーツ"
+          }
+, [1606] = {
+              key = "$TRAIT_MATERIAL_004486"
+          ,   en  = "Ruby"
+          ,   de  = "Rubin"
+          ,   fr  = "rubis"
+          ,   es  = "rubí"
+          ,   ru  = "рубин"
+          ,   ja  = "ルビー"
+          }
+, [1607] = {
+              key = "$TRAIT_MATERIAL_016291"
+          ,   en  = "Citrine"
+          ,   de  = "Zitrin"
+          ,   fr  = "citrine"
+          ,   es  = "Citrino"
+          ,   ru  = "цитрин"
+          ,   ja  = "シトリン"
+          }
+, [1608] = {
+              key = "$TRAIT_MATERIAL_023149"
+          ,   en  = "Fire Opal"
+          ,   de  = "Feueropal"
+          ,   fr  = "opale de feu"
+          ,   es  = "Ópalo de fuego"
+          ,   ru  = "огненный опал"
+          ,   ja  = "炎のオパール"
+          }
+, [1609] = {
+              key = "$TRAIT_MATERIAL_023165"
+          ,   en  = "Carnelian"
+          ,   de  = "Karneol"
+          ,   fr  = "cornaline"
+          ,   es  = "Cornalina"
+          ,   ru  = "сердолик"
+          ,   ja  = "カーネリアン"
+          }
+, [1610] = {
+              key = "$TRAIT_MATERIAL_023171"
+          ,   en  = "Garnet"
+          ,   de  = "Granat"
+          ,   fr  = "grenat"
+          ,   es  = "Granate"
+          ,   ru  = "гранат"
+          ,   ja  = "ガーネット"
+          }
+, [1611] = {
+              key = "$TRAIT_MATERIAL_023173"
+          ,   en  = "Sapphire"
+          ,   de  = "Saphir"
+          ,   fr  = "saphir"
+          ,   es  = "Zafiro"
+          ,   ru  = "сапфир"
+          ,   ja  = "サファイア"
+          }
+, [1612] = {
+              key = "$TRAIT_MATERIAL_023203"
+          ,   en  = "Chysolite"
+          ,   de  = "Chrysolith"
+          ,   fr  = "chrysolite"
+          ,   es  = "Crisolita"
+          ,   ru  = "хризолит"
+          ,   ja  = "ペリドット"
+          }
+, [1613] = {
+              key = "$TRAIT_MATERIAL_023204"
+          ,   en  = "Amethyst"
+          ,   fr  = "améthyste"
+          ,   es  = "Amatista"
+          ,   ru  = "аметист"
+          ,   ja  = "アメジスト"
+          }
+, [1614] = {
+              key = "$TRAIT_MATERIAL_023219"
+          ,   en  = "Diamond"
+          ,   de  = "Diamant"
+          ,   fr  = "diamant"
+          ,   es  = "Diamante"
+          ,   ru  = "алмаз"
+          ,   ja  = "ダイヤモンド"
+          }
+, [1615] = {
+              key = "$TRAIT_MATERIAL_023221"
+          ,   en  = "Almandine"
+          ,   de  = "Almandin"
+          ,   fr  = "almandine"
+          ,   es  = "Almandino"
+          ,   ru  = "альмандин"
+          ,   ja  = "アルマンダイン"
+          }
+, [1616] = {
+              key = "$TRAIT_MATERIAL_030219"
+          ,   en  = "Bloodstone"
+          ,   de  = "Blutstein"
+          ,   fr  = "pierre de sang"
+          ,   es  = "Piedra de sangre"
+          ,   ru  = "кровавик"
+          ,   ja  = "ブラッドストーン"
+          }
+, [1617] = {
+              key = "$TRAIT_MATERIAL_030221"
+          ,   en  = "Sardonyx"
+          ,   fr  = "sardonyx"
+          ,   es  = "sardónice"
+          ,   ru  = "сардоникс"
+          ,   ja  = "サードニックス"
+          }
+, [1618] = {
+              key = "$TRAIT_MATERIAL_056862"
+          ,   en  = "Fortified Nirncrux"
+          ,   de  = "festes Nirnkrux"
+          ,   fr  = "nirncrux fortifié"
+          ,   es  = "Nirncrux fortificado"
+          ,   ru  = "укрепленный нирнкрукс"
+          ,   ja  = "強化ニルンクラッツ"
+          }
+, [1619] = {
+              key = "$TRAIT_MATERIAL_056863"
+          ,   en  = "Potent Nirncrux"
+          ,   de  = "starres Nirnkrux"
+          ,   fr  = "nirncrux puissant"
+          ,   es  = "Nirncrux potente"
+          ,   ru  = "мощный нирнкрукс"
+          ,   ja  = "ニルンクラッツ(強力)"
+          }
+, [1620] = {
+              key = "$TRAIT_MATERIAL_135155"
+          ,   en  = "cobalt"
+          ,   de  = "Kobalt"
+          ,   es  = "cobalto"
+          ,   ru  = "кобальт"
+          ,   ja  = "コバルト"
+          }
+, [1621] = {
+              key = "$TRAIT_MATERIAL_135156"
+          ,   en  = "antimony"
+          ,   de  = "Antimon"
+          ,   fr  = "antimoine"
+          ,   es  = "antimonio"
+          ,   ru  = "сурьма"
+          ,   ja  = "アンチモン"
+          }
+, [1622] = {
+              key = "$TRAIT_MATERIAL_135157"
+          ,   en  = "zinc"
+          ,   de  = "Zink"
+          ,   es  = "cinc"
+          ,   ru  = "цинк"
+          ,   ja  = "亜鉛"
+          }
+, [1623] = {
+              key = "$TRAIT_MATERIAL_139409"
+          ,   en  = "Dawn-Prism"
+          ,   de  = "Dämmerprisma"
+          ,   fr  = "prisme d'aube"
+          ,   es  = "prisma del alba"
+          ,   ru  = "призма рассвета"
+          ,   ja  = "ドーンプリズム"
+          }
+, [1624] = {
+              key = "$TRAIT_MATERIAL_139410"
+          ,   en  = "Titanium"
+          ,   fr  = "titane"
+          ,   es  = "titanio"
+          ,   ru  = "титан"
+          ,   ja  = "チタニウム"
+          }
+, [1625] = {
+              key = "$TRAIT_MATERIAL_139411"
+          ,   en  = "Aurbic Amber"
+          ,   de  = "aurbischer Bernstein"
+          ,   fr  = "ambre aurbique"
+          ,   es  = "ámbar aúrbico"
+          ,   ru  = "аурбический янтарь"
+          ,   ja  = "アウルビクアンバー"
+          }
+, [1626] = {
+              key = "$TRAIT_MATERIAL_139412"
+          ,   en  = "Gilding Wax"
+          ,   de  = "Goldwachs"
+          ,   fr  = "cire dorée"
+          ,   es  = "cera dorada"
+          ,   ru  = "воск для золочения"
+          ,   ja  = "金箔ワックス"
+          }
+, [1627] = {
+              key = "$TRAIT_MATERIAL_139413"
+          ,   en  = "Dibellium"
+          ,   fr  = "dibellium"
+          ,   es  = "dibelio"
+          ,   ru  = "дибеллий"
+          ,   ja  = "ディベリウム"
+          }
+, [1628] = {
+              key = "$TRAIT_MATERIAL_139414"
+          ,   en  = "Slaughterstone"
+          ,   de  = "Schlachterstein"
+          ,   fr  = "pierre de massacre"
+          ,   es  = "piedra masacre"
+          ,   ru  = "убийственный камень"
+          ,   ja  = "スローターストーン"
+          }
+, [1629] = {
               key = "$TRAIT_WEAPON_CHARGED"
           ,   en  = "Charged"
           ,   de  = "Geladen"
@@ -13669,7 +13904,7 @@ LANG_DB = {
           ,   es  = "Cargado"
           ,   it  = "Carico"
           }
-, [1603] = {
+, [1630] = {
               key = "$TRAIT_WEAPON_DECISIVE"
           ,   en  = "Decisive"
           ,   de  = "Entschlossen"
@@ -13677,7 +13912,7 @@ LANG_DB = {
           ,   es  = "Decisivo"
           ,   it  = "Decisivo"
           }
-, [1604] = {
+, [1631] = {
               key = "$TRAIT_WEAPON_DEFENDING"
           ,   en  = "Defending"
           ,   de  = "Verteidigend"
@@ -13685,7 +13920,7 @@ LANG_DB = {
           ,   es  = "Defensivo"
           ,   it  = "Difensivo"
           }
-, [1605] = {
+, [1632] = {
               key = "$TRAIT_WEAPON_INFUSED"
           ,   en  = "Infused"
           ,   de  = "Erfüllt"
@@ -13693,14 +13928,14 @@ LANG_DB = {
           ,   es  = "Imbuido"
           ,   it  = "Infuso"
           }
-, [1606] = {
+, [1633] = {
               key = "$TRAIT_WEAPON_NIRNHONED"
           ,   en  = "Nirnhoned"
           ,   de  = "Nirngeschliffen"
           ,   fr  = "Trempe de Nirn"
           ,   es  = "Temple de Nirn"
           }
-, [1607] = {
+, [1634] = {
               key = "$TRAIT_WEAPON_POWERED"
           ,   en  = "Powered"
           ,   de  = "Gestärkt"
@@ -13708,7 +13943,7 @@ LANG_DB = {
           ,   es  = "Potenciado"
           ,   it  = "Potenziato"
           }
-, [1608] = {
+, [1635] = {
               key = "$TRAIT_WEAPON_PRECISE"
           ,   en  = "Precise"
           ,   de  = "Präzise"
@@ -13716,7 +13951,7 @@ LANG_DB = {
           ,   es  = "Preciso"
           ,   it  = "Preciso"
           }
-, [1609] = {
+, [1636] = {
               key = "$TRAIT_WEAPON_SHARPENED"
           ,   en  = "Sharpened"
           ,   de  = "Geschärft"
@@ -13724,7 +13959,7 @@ LANG_DB = {
           ,   es  = "Afilado"
           ,   it  = "Affilato"
           }
-, [1610] = {
+, [1637] = {
               key = "$TRAIT_WEAPON_TRAINING"
           ,   en  = "Training"
           ,   de  = "Lehrend"
