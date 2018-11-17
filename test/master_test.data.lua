@@ -2,6 +2,7 @@ local LCT = LCT or LibCraftText
 
 MASTER_FODDER = {
 
+-- Alchemy -------------------------------------------------------------------
   { input  = "Craft an Essence of Ravage Health with the following Traits:"
              .."\n• Breach\n• Increase Spell Power\n• Ravage Health\n• Progress: 0 / 20"
   , expect = { solvent     =   LCT.MATERIAL.LORKHANS_TEARS
@@ -22,9 +23,29 @@ MASTER_FODDER = {
                              }
              }
   }
--- , { input = "Craft a Superb Glyph of Reduce Spell Cost\n• Quality: Epic\n• Progress: 0 / 1"
--- , { input = "Craft a Superb Glyph of Stamina Recovery\n• Quality: Epic\n• Progress: 0 / 1"
--- , { input = "Craft a Superb Glyph of Reduce Feat Cost\n• Quality: Epic\n• Progress: 0 / 1"
+
+-- Enchanting ----------------------------------------------------------------
+, { input = "Craft a Superb Glyph of Reduce Spell Cost"
+            .."\n• Quality: Epic\n• Progress: 0 / 1"
+  , expect = { potency = LCT.MATERIAL.JEHADE
+             , essence = LCT.MATERIAL.MAKKOMA
+             , aspect  = LCT.MATERIAL.REKUTA
+             }
+  }
+, { input = "Craft a Superb Glyph of Stamina Recovery"
+            .."\n• Quality: Epic\n• Progress: 0 / 1"
+  , expect = { potency = LCT.MATERIAL.REJERA
+             , essence = LCT.MATERIAL.DENIMA
+             , aspect  = LCT.MATERIAL.REKUTA
+             }
+  }
+, { input = "Craft a Superb Glyph of Reduce Feat Cost"
+            .."\n• Quality: Epic\n• Progress: 0 / 1"
+  , expect = { potency = LCT.MATERIAL.JEHADE
+             , essence = LCT.MATERIAL.DENIMA
+             , aspect  = LCT.MATERIAL.REKUTA
+             }
+  }
 
 -- , { input = "Craft a Lusty Argonian Maid Mazte\n• Progress: 0 / 8"
 -- , { input = "Craft an Orcrest Agony Pale Ale\n• Progress: 0 / 8"

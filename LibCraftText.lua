@@ -98,7 +98,7 @@ function LibCraftText.ParseMasterCondition(crafting_type, cond_text)
         LibCraftText.CRAFTING_TYPE_TO_MASTER_PARSER = {
             [CRAFTING_TYPE_BLACKSMITHING  ] = LibCraftText.ParseMasterConditionEquipment
         ,   [CRAFTING_TYPE_CLOTHIER       ] = LibCraftText.ParseMasterConditionEquipment
-        ,   [CRAFTING_TYPE_ENCHANTING     ] = LibCraftText.ParseMasterConditionConsumable
+        ,   [CRAFTING_TYPE_ENCHANTING     ] = LibCraftText.ParseMasterConditionEnchanting
         ,   [CRAFTING_TYPE_ALCHEMY        ] = LibCraftText.ParseMasterConditionAlchemy
         ,   [CRAFTING_TYPE_PROVISIONING   ] = LibCraftText.ParseMasterConditionConsumable
         ,   [CRAFTING_TYPE_WOODWORKING    ] = LibCraftText.ParseMasterConditionEquipment
@@ -415,14 +415,16 @@ LibCraftText.RE_POTENCY = {
          , "(.*)なグリフ"}
 }
 LibCraftText.RE_ESSENCE = {
-    en = { "Glyph of (.*)" }
-,   de = { "Glyphe de[sr] (.*)"}
-,   fr = { "glyphe (.*) avec"}
+    en = { "Glyph of ([^\n]*)" }
+,   de = { "Glyphe de[sr] (.*) her"}
+,   fr = { "glyphe (.*) avec"
+         , "glyphe ([^\n]*)"}
 ,   es = { "glifo (.*) con Ta"
-         , "Glyph of (.*)" }        -- Untranslated lines in ES Spanish
-,   it = { "glifo of (.*)"
-         , "glyph of (.*)" }
-,   ru = { "Glyph of (.*)"}
+         , "glifo ([^\n]*)"
+         , "Glyph of ([^\n]*)" }    -- Untranslated lines in ES Spanish
+,   it = { "glifo of ([^\n]*)"
+         , "glyph of ([^\n]*)" }
+,   ru = { "Glyph of ([^\n]*)"}
 ,   ja = { "グリフ ?%((.*)%)"}
 }
 
@@ -667,87 +669,94 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
            }
 end
 
-LibCraftText.RE_MASTER_ENCHANTING_GLYPH = {
-   -- , { input = "Craft a Superb Glyph of Reduce Spell Cost\n• Quality: Epic\n• Progress: 0 / 1"
-    en = { "Craft an? (.*)\n"
-         }
-,   de = { "Stellt eine? (.*) mit bestimmten Eigenschaften her"
-         }
-,   fr = { "Fabriquez une? (.*) avec les traits suivants"
-         }
-,   es = { "Fabricæ una? (.*) con las siguientes propiedades:"
-         }
-,   it = { "Crea un (.*) con i seguenti tratti:"
-         }
-,   ru = { "Создать предмет %((.*)%) со следующими эффектами:"
-         }
-,   ja = { "Craft a (.*) with the following Traits:"
-         }
+LibCraftText.RE_MASTER_QUALITY = {
+    en  = { "Quality: ([^%\n]*)" }
+,   de  = { "Qualität: ([^\n]*)" }
+,   fr  = { "Qualité : ([^\n]*)" }
+,   es  = { "Calidad: ([^\n]*)" }
+,   it  = { "Qualità: ([^\n]*)" }
+,   ru  = { "Качество: ([^\n]*)" }
+,   ja  = { "Quality: ([^\n]*)" }
 }
-
-
--- DEAD. Need DIscover "Superb Glyph of Reduce Spell Cost"
---     for each add, subtract, at CP150 potency
-
 function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
     local self = LibCraftText
     local lang = self.CurrLang()
 
     local lines = self.MasterConditionSplit(cond_text)
 
+                        -- Master writs always call for CP150 potencies.
+                        -- Whether add or subtract depends on which field of
+                        -- the essence rune matched.
+    local POTENCY_ADD  = self.MATERIAL.REJERA
+    local POTENCY_SUB  = self.MATERIAL.JEHADE
+
+    local ESSENCE_LIST = { self.MATERIAL.DEKEIPA
+                         , self.MATERIAL.DENI
+                         , self.MATERIAL.DENIMA
+                         , self.MATERIAL.DETERI
+                         , self.MATERIAL.HAOKO
+                         , self.MATERIAL.HAKEIJO
+                         , self.MATERIAL.KADERI
+                         , self.MATERIAL.KUOKO
+                         , self.MATERIAL.MAKDERI
+                         , self.MATERIAL.MAKKO
+                         , self.MATERIAL.MAKKOMA
+                         , self.MATERIAL.MEIP
+                         , self.MATERIAL.OKO
+                         , self.MATERIAL.OKOMA
+                         , self.MATERIAL.OKORI
+                         , self.MATERIAL.ORU
+                         , self.MATERIAL.RAKEIPA
+                         , self.MATERIAL.TADERI
+                         }
+
+    local ASPECT_LIST  = { self.MATERIAL.REKUTA
+                         , self.MATERIAL.KUTA
+                         }
+
+
     local args = { nil
                  , lines[1]
-                 , self.RE_MASTER_ENCHANTING_GLYPH[lang]
-                 , self.ALCHEMY_TRAIT
-                 , { "master_potion", "master_poison" }
+                 , self.RE_ESSENCE[lang]
+                 , ESSENCE_LIST
+                 , { "add", "add_2", "sub" }
              }
-    local name_trait    = self.ParseRegexable(unpack(args))
-    if not name_trait then
+    local essence    = self.ParseRegexable(unpack(args))
+    if not essence then
         ZZDEBUG=ZZDEBUG_ON
-        ZZDEBUG(string.format("### cond_text:'%s'", cond_text))
+        ZZDEBUG(string.format("### essence cond_text:'%s'", lines[1]))
         self.ParseRegexable(unpack(args))
         ZZDEBUG=ZZDEBUG_OFF
     end
-    local solvent = nil
-    if name_trait and cond_text then
-        if cond_text:lower():find(name_trait.master_poison:lower()) then
-            solvent = self.MATERIAL.ALKAHEST
-        elseif cond_text:find(name_trait.master_potion) then
-            solvent = self.MATERIAL.LORKHANS_TEARS
+
+    local potency = POTENCY_ADD
+    local find_me = self.DeUmlaut(lines[1]:lower())
+    for _,field_name in ipairs({"sub"}) do
+        if essence and essence[field_name] then
+            local val = self.DeUmlaut(essence[field_name]:lower())
+            if find_me:find(val) then
+                potency = POTENCY_SUB
+                break
+            end
         end
     end
 
-    local lines = self.MasterConditionSplit(cond_text)
-    local trait_list = {}
-    args = { nil
-           , "<line goes here>"
-           , { "(.*)" }
-           , self.ALCHEMY_TRAIT
-           , { "name" }
-           }
-    for _,line in ipairs(lines) do
-        args[2] = line
-        local trait = self.ParseRegexable(unpack(args))
-        if trait then
-            table.insert(trait_list, trait)
-        end
-    end
-
-    if #trait_list ~= 3 then
+    local args = { nil
+                 , lines[2]
+                 , self.RE_MASTER_QUALITY[lang]
+                 , ASPECT_LIST
+                 , { "name_2" }
+             }
+    local aspect    = self.ParseRegexable(unpack(args))
+    if not aspect then
         ZZDEBUG=ZZDEBUG_ON
-        ZZDEBUG("AL trait_list.ct not 3. line_ct:"..tostring(#lines))
-        for i,line in ipairs(lines) do
-            args[2] = line
-            ZZDEBUG(string.format("### cond_text[%d]:'%s'", i, line))
-            local trait = self.ParseRegexable(unpack(args))
-            self.ParseRegexable(unpack(args))
-        end
+        ZZDEBUG(string.format("### aspect cond_text:'%s'", lines[2]))
+        self.ParseRegexable(unpack(args))
         ZZDEBUG=ZZDEBUG_OFF
     end
-
-    return { solvent    = solvent
-           , name_trait = name_trait
-           , trait_list = trait_list
+    return { potency = potency
+           , essence = essence
+           , aspect  = aspect
            }
 end
 
@@ -844,7 +853,7 @@ function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ...
     for _,fieldname in pairs({ field_name, ... }) do
         if not fieldname then break end
         for _, row in pairs(rows) do
-            if row.crafting_type == crafting_type then
+            if (not crafting_type) or row.crafting_type == crafting_type then
                 local name = row[fieldname]
                 if name then
                     name = self.escape_re(name:lower())
@@ -875,11 +884,12 @@ function LibCraftText.ExactMatch(find_me, rows, crafting_type, field_name, ... )
     local find_me_lower      = find_me:lower()
     local find_me_deumlauted = LibCraftText.DeUmlaut(find_me_lower)
     for _,fieldname in pairs({ field_name, ... }) do
-ZZDEBUG("ExactMatch() fieldname:"..tostring(fieldname))
         if not fieldname then break end
         for _, row in pairs(rows) do
-            if row.crafting_type == crafting_type then
+            if (not crafting_type) or row.crafting_type == crafting_type then
                 local name = row[fieldname]
+-- ZZDEBUG(string.format("ExactMatch() fieldname:%s '%s' ?= '%s'"
+--     , tostring(fieldname), tostring(name), find_me_lower ))
                 if name and (  find_me_lower == name:lower()
                              or find_me_deumlauted == LibCraftText.DeUmlaut(name) ) then
 
