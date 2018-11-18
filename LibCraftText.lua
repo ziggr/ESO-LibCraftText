@@ -206,21 +206,9 @@ function LibCraftText.ParseDailyConditionEquipment(crafting_type, cond_text)
     found.material = exact_material
                    or self.LongestMatch(matitem, self.MATERIAL , crafting_type
                             , unpack(mat_fields))
--- VERY helpful when testing 'make gentest' for showing what matched what.
--- print(string.format( "g1:%s g2:%s e_it:%s e_mat:%s f.it:%s f.mat:%s"
---                    , tostring(g1)
---                    , tostring(g2)
---                    , tostring(exact_item     and exact_item.name    )
---                    , tostring(exact_material and exact_material.name)
---                    , tostring(found.item     and found.item.name    )
---                    , tostring(found.material and found.material.name)
---                    ))
-
     if not (found.item or found.material) then return nil end
     return found
 end
-
-
                         -- Regexes that can extract all gear crafting
                         -- materials and items.
 LibCraftText.RE_CONDITION_DAILY_EQUIPMENT = {
@@ -230,7 +218,7 @@ LibCraftText.RE_CONDITION_DAILY_EQUIPMENT = {
              , "Craft Three ([^:]*)"
              }
 ,   ["de"] = { "Stellt normale (.*) her"
-             , "Stellt ein[en]* (.*) her"
+             , "Stellt ein[enig]* (.*) her"
              , "Stellt zwei (.*) her"
              , "Stellt drei (.*) her"
              }

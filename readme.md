@@ -157,6 +157,16 @@ Usually these are daily crafting records, not used in `lang_template.txt`. If so
 
 If they are something more permanent, with a key that appears in `lang_template.txt`, you might need to hand-repair them, or delete, regenerate, and inspect.
 
+# TO DO
+
+- [ ] More master writ test fodder
+- [ ] Find all master writ recipes
+- [ ] harvest Rolis dialog text
+- [ ] watch quest status changes as we craft things for a currently active master writ quest (Hey, can Dolgubon's Writ Crafter do this for active quests? That'd be helpful while testing. Don't make me write something...)
+- [ ] Use LibCraftText in ZZDailyWrits and WritWorthy_AutoQuest.
+- [ ] performance pass: all those ZZDEBUG string.format() calls are gonna hurt. At least re-express them as variadic ... arg lists
+- [ ] DRY collapse of all that copypasta
+
 # `/script` commands
 
 ## `/script SetCVar("language.2", "en")` switch language
