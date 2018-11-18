@@ -1,5 +1,6 @@
 package.path = package.path..";test/?.lua;lang/?.lua"
 require("../LibCraftText")
+require("../LibCraftText_Internal")
 require("utils_test")
 luaunit = require("luaunit")
 
