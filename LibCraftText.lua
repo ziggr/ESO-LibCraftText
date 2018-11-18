@@ -619,9 +619,14 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
     end
     local solvent = nil
     if name_trait and cond_text then
-        if cond_text:lower():find(name_trait.master_poison:lower()) then
+                        -- The 1,true args to string.find() here are
+                        -- "plain=true" string matches: aka "ignore any special
+                        -- chars in the potion/poison name." Necessary to avoid
+                        -- hyphens in "Stealth-Draining Poison" from failing to
+                        -- match anything.
+        if cond_text:lower():find(name_trait.master_poison:lower(),1,true) then
             solvent = self.MATERIAL.ALKAHEST
-        elseif cond_text:find(name_trait.master_potion) then
+        elseif cond_text:find(name_trait.master_potion,1,true) then
             solvent = self.MATERIAL.LORKHANS_TEARS
         end
     end

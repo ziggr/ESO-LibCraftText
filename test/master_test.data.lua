@@ -23,12 +23,66 @@ MASTER_FODDER = {
                              }
              }
   }
--- ,   en  = "Craft a Damage Health Poison IX with the following Traits:\n• Gradual Ravage Health\n• Ravage Health\n• Ravage Stamina\n• Progress: 0 / 20"
--- ,   en  = "Craft a Damage Health Poison IX with the following Traits:\n• Ravage Health\n• Ravage Magicka\n• Ravage Stamina\n• Progress: 0 / 20"
--- ,   en  = "Craft a Sorcery-Draining Poison IX with the following Traits:\n• Breach\n• Increase Spell Power\n• Spell Critical\n• Progress: 0 / 20"
--- ,   en  = "Craft a Stealth-Draining Poison IX with the following Traits:\n• Restore Magicka\n• Increase Spell Power\n• Detection\n• Progress: 0 / 20"
--- ,   en  = "Craft an Escapist's Poison IX with the following Traits:\n• Unstoppable\n• Restore Magicka\n• Spell Critical\n• Progress: 0 / 20"
--- ,   en  = "Craft an Essence of Ravage Health with the following Traits:\n• Enervation\n• Fracture\n• Ravage Health\n• Progress: 0 / 20"
+, { input = "Craft a Damage Health Poison IX with the following Traits:"
+               .."\n• Gradual Ravage Health\n• Ravage Health\n• Ravage Stamina\n• Progress: 0 / 20"
+  , expect = { solvent     =   LCT.MATERIAL.ALKAHEST
+             , name_trait  =   LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH
+             , trait_list  = { LCT.ALCHEMY_TRAIT.GRADUAL_RAVAGE_HEALTH
+                             , LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH
+                             , LCT.ALCHEMY_TRAIT.RAVAGE_STAMINA
+                             }
+             }
+  }
+, { input = "Craft a Damage Health Poison IX with the following Traits:"
+               .."\n• Ravage Health\n• Ravage Magicka\n• Ravage Stamina\n• Progress: 0 / 20"
+  , expect = { solvent     =   LCT.MATERIAL.ALKAHEST
+             , name_trait  =   LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH
+             , trait_list  = { LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH
+                             , LCT.ALCHEMY_TRAIT.RAVAGE_MAGICKA
+                             , LCT.ALCHEMY_TRAIT.RAVAGE_STAMINA
+                             }
+             }
+  }
+, { input = "Craft a Sorcery-Draining Poison IX with the following Traits:"
+               .."\n• Breach\n• Increase Spell Power\n• Spell Critical\n• Progress: 0 / 20"
+  , expect = { solvent     =   LCT.MATERIAL.ALKAHEST
+             , name_trait  =   LCT.ALCHEMY_TRAIT.INCREASE_SPELL_POWER
+             , trait_list  = { LCT.ALCHEMY_TRAIT.BREACH
+                             , LCT.ALCHEMY_TRAIT.INCREASE_SPELL_POWER
+                             , LCT.ALCHEMY_TRAIT.SPELL_CRITICAL
+                             }
+             }
+  }
+, { input = "Craft a Stealth-Draining Poison IX with the following Traits:"
+               .."\n• Restore Magicka\n• Increase Spell Power\n• Detection\n• Progress: 0 / 20"
+  , expect = { solvent     =   LCT.MATERIAL.ALKAHEST
+             , name_trait  =   LCT.ALCHEMY_TRAIT.DETECTION
+             , trait_list  = { LCT.ALCHEMY_TRAIT.RESTORE_MAGICKA
+                             , LCT.ALCHEMY_TRAIT.INCREASE_SPELL_POWER
+                             , LCT.ALCHEMY_TRAIT.DETECTION
+                             }
+             }
+  }
+, { input = "Craft an Escapist's Poison IX with the following Traits:"
+               .."\n• Unstoppable\n• Restore Magicka\n• Spell Critical\n• Progress: 0 / 20"
+  , expect = { solvent     =   LCT.MATERIAL.ALKAHEST
+             , name_trait  =   LCT.ALCHEMY_TRAIT.UNSTOPPABLE
+             , trait_list  = { LCT.ALCHEMY_TRAIT.UNSTOPPABLE
+                             , LCT.ALCHEMY_TRAIT.RESTORE_MAGICKA
+                             , LCT.ALCHEMY_TRAIT.SPELL_CRITICAL
+                             }
+             }
+  }
+, { input = "Craft an Essence of Ravage Health with the following Traits:"
+               .."\n• Enervation\n• Fracture\n• Ravage Health\n• Progress: 0 / 20"
+  , expect = { solvent     =   LCT.MATERIAL.LORKHANS_TEARS
+             , name_trait  =   LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH
+             , trait_list  = { LCT.ALCHEMY_TRAIT.ENERVATION
+                             , LCT.ALCHEMY_TRAIT.FRACTURE
+                             , LCT.ALCHEMY_TRAIT.RAVAGE_HEALTH
+                             }
+             }
+  }
 
 -- Enchanting ----------------------------------------------------------------
 , { input = "Craft a Superb Glyph of Reduce Spell Cost"
