@@ -40,14 +40,14 @@ function TestGen.TestAll()
 end
 
 local CRAFTING_TYPE_TO_PARSE_FUNC = {
-  [bs] = LibCraftText.ParseMasterConditionEquipment
-, [cl] = LibCraftText.ParseMasterConditionEquipment
-, [en] = LibCraftText.ParseMasterConditionEnchanting
-, [al] = LibCraftText.ParseMasterConditionAlchemy
-, [pr] = LibCraftText.ParseMasterConditionProvisioning
-, [ww] = LibCraftText.ParseMasterConditionEquipment
-, [jw] = LibCraftText.ParseMasterConditionEquipment
-, [0 ] = LibCraftText.ParseMasterConditionMisc
+  [bs] = LibCraftText.Master.ParseConditionEquipment
+, [cl] = LibCraftText.Master.ParseConditionEquipment
+, [en] = LibCraftText.Master.ParseConditionEnchanting
+, [al] = LibCraftText.Master.ParseConditionAlchemy
+, [pr] = LibCraftText.Master.ParseConditionProvisioning
+, [ww] = LibCraftText.Master.ParseConditionEquipment
+, [jw] = LibCraftText.Master.ParseConditionEquipment
+, [0 ] = LibCraftText.Master.ParseConditionMisc
 }
 function TestGen.OneTest(input_en, expect)
                         -- Skip lines with bugs in the current language

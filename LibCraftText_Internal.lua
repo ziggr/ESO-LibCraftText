@@ -1,6 +1,8 @@
-LibCraftText = LibCraftText or {}
-local Daily = {}
-LibCraftText.Daily = Daily
+LibCraftText        = LibCraftText or {}
+local Daily         = {}
+local Master        = {}
+LibCraftText.Daily  = Daily
+LibCraftText.Master = Master
 
 local function ZZDEBUG_ON(msg, ...) print(string.format(msg, ...)) end
 local function ZZDEBUG_OFF(msg, ...) end
@@ -189,7 +191,7 @@ function Daily.ParseConditionConsumable(crafting_type, cond_text)
     local self          = LibCraftText
 
                         -- Alchemy and Enchanting materials
-    local acquire_mat = Daily.ParseConsumableAcquireMat(crafting_type, cond_text)
+    local acquire_mat = Daily.ParseConsumableAcquireMaterial(crafting_type, cond_text)
     if acquire_mat then
         return acquire_mat
     end
@@ -228,7 +230,7 @@ Daily.RE_CONDITION_ACQUIRE_MATERIAL = {
 ,   ["ja"] = { "(.*)を手に入れる" }
 }
 
-function Daily.ParseConsumableAcquireMat(crafting_type, cond_text)
+function Daily.ParseConsumableAcquireMaterial(crafting_type, cond_text)
                         -- Only Enchanting and Alchemy have "Acquire Ta" and
                         -- "Acquire Nirnroot" conditions.
     if not (crafting_type == CRAFTING_TYPE_ENCHANTING
@@ -453,16 +455,16 @@ end
 
 -- Parse Master Writ Conditions ----------------------------------------------
 
-function LibCraftText.ParseMasterConditionInternal(crafting_type, cond_text)
+function Master.ParseConditionInternal(crafting_type, cond_text)
     if not LibCraftText.CRAFTING_TYPE_TO_MASTER_PARSER then
         LibCraftText.CRAFTING_TYPE_TO_MASTER_PARSER = {
-            [CRAFTING_TYPE_BLACKSMITHING  ] = LibCraftText.ParseMasterConditionEquipment
-        ,   [CRAFTING_TYPE_CLOTHIER       ] = LibCraftText.ParseMasterConditionEquipment
-        ,   [CRAFTING_TYPE_ENCHANTING     ] = LibCraftText.ParseMasterConditionEnchanting
-        ,   [CRAFTING_TYPE_ALCHEMY        ] = LibCraftText.ParseMasterConditionAlchemy
-        ,   [CRAFTING_TYPE_PROVISIONING   ] = LibCraftText.ParseMasterConditionProvisioning
-        ,   [CRAFTING_TYPE_WOODWORKING    ] = LibCraftText.ParseMasterConditionEquipment
-        ,   [CRAFTING_TYPE_JEWELRYCRAFTING] = LibCraftText.ParseMasterConditionEquipment
+            [CRAFTING_TYPE_BLACKSMITHING  ] = Master.ParseConditionEquipment
+        ,   [CRAFTING_TYPE_CLOTHIER       ] = Master.ParseConditionEquipment
+        ,   [CRAFTING_TYPE_ENCHANTING     ] = Master.ParseConditionEnchanting
+        ,   [CRAFTING_TYPE_ALCHEMY        ] = Master.ParseConditionAlchemy
+        ,   [CRAFTING_TYPE_PROVISIONING   ] = Master.ParseConditionProvisioning
+        ,   [CRAFTING_TYPE_WOODWORKING    ] = Master.ParseConditionEquipment
+        ,   [CRAFTING_TYPE_JEWELRYCRAFTING] = Master.ParseConditionEquipment
         }
     end
 
@@ -471,14 +473,14 @@ function LibCraftText.ParseMasterConditionInternal(crafting_type, cond_text)
         func = LibCraftText.CRAFTING_TYPE_TO_MASTER_PARSER[crafting_type]
     end
     if not func then
-        func = LibCraftText.ParseMasterConditionMisc
+        func = Master.ParseConditionMisc
     end
     return func(crafting_type, cond_text)
 end
 
                         -- Break a multi-line condition into its bullet-
                         -- prefixed substrings.
-function LibCraftText.MasterConditionSplit(cond_text)
+function Master.SplitCondition(cond_text)
     local self = LibCraftText
     local lang = self.CurrLang()
                         -- All languages except ES Spanish use newlines
@@ -492,7 +494,7 @@ function LibCraftText.MasterConditionSplit(cond_text)
     return lines
 end
 
-LibCraftText.RE_MASTER_ALCHEMY_NAME_TRAIT = {
+Master.RE_ALCHEMY_NAME_TRAIT = {
     en = { "Craft an? (.*) with the following Traits" }
 ,   de = { "Stellt eine? (.*) mit bestimmten Eigenschaften her" }
 ,   fr = { "Fabriquez une? (.*) avec les traits suivants" }
@@ -513,12 +515,12 @@ LibCraftText.RE_MASTER_ALCHEMY_NAME_TRAIT = {
 --
 -- trait_list   MATERIAL            3 traits required for this potion/poison
 --
-function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
+function Master.ParseConditionAlchemy(crafting_type, cond_text)
     local self = LibCraftText
     local lang = self.CurrLang()
     local args = { nil
                  , cond_text
-                 , self.RE_MASTER_ALCHEMY_NAME_TRAIT[lang]
+                 , Master.RE_ALCHEMY_NAME_TRAIT[lang]
                  , self.ALCHEMY_TRAIT
                  , { "master_potion", "master_poison" }
              }
@@ -537,7 +539,7 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
         end
     end
 
-    local lines = self.MasterConditionSplit(cond_text)
+    local lines = Master.SplitCondition(cond_text)
     table.remove(lines,1)   -- Skip the "Craft a xxx" line. We just need the traits.
     local trait_list = {}
     args = { nil
@@ -559,7 +561,7 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
                         -- traits. Dump the parse failure if we didn't get that
                         -- many.
         ZZDEBUG=ZZDEBUG_ON
-        ZZDEBUG("### ParseMasterConditionAlchemy() trait_list.ct not 3. line_ct:%d"
+        ZZDEBUG("### Master.ParserConditionAlchemy() trait_list.ct not 3. line_ct:%d"
                , #lines)
         for i,line in ipairs(lines) do
             args[2] = line
@@ -575,11 +577,11 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
            }
 end
 
-function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
+function Master.ParseConditionEnchanting(crafting_type, cond_text)
     local self = LibCraftText
     local lang = self.CurrLang()
 
-    local lines = self.MasterConditionSplit(cond_text)
+    local lines = Master.SplitCondition(cond_text)
 
                         -- Master writs call for CP150 or CP160 potencies.
                         -- Find out which using additive potencies. They have
@@ -639,7 +641,7 @@ function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
         end
     end
 
-    local quality = self.ParseMasterQuality(lines[2])
+    local quality = Master.ParseQuality(lines[2])
     local aspect = nil
     if quality then
         aspect = ASPECT_LIST[quality.index]
@@ -651,13 +653,13 @@ function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
            }
 end
 
-function LibCraftText.ParseMasterConditionProvisioning(crafting_type, cond_text)
+function Master.ParseConditionProvisioning(crafting_type, cond_text)
     return Daily.ParseConditionProvisioning(cond_text)
 end
 
-function LibCraftText.ParseMasterConditionEquipment(crafting_type, cond_text)
+function Master.ParseConditionEquipment(crafting_type, cond_text)
     local self     = LibCraftText
-    local lines    = self.MasterConditionSplit(cond_text)
+    local lines    = Master.SplitCondition(cond_text)
     local result   = Daily.ParseConditionEquipment(crafting_type, lines[1])
     if not result then return nil end
 
@@ -683,14 +685,14 @@ function LibCraftText.ParseMasterConditionEquipment(crafting_type, cond_text)
         end
     end
 
-    result.quality = self.ParseMasterQuality(lines[line.quality])
-    result.trait   = self.ParseMasterTrait(lines[line.trait], result.item.trait_set_id)
-    result.set     = self.ParseMasterSet(lines[line.set])
-    result.motif   = self.ParseMasterMotif(lines[line.motif])
+    result.quality = Master.ParseQuality(lines[line.quality])
+    result.trait   = Master.ParseTrait(lines[line.trait], result.item.trait_set_id)
+    result.set     = Master.ParseSet(lines[line.set])
+    result.motif   = Master.ParseMotif(lines[line.motif])
     return result
 end
 
-LibCraftText.RE_MASTER_QUALITY = {
+Master.RE_QUALITY = {
     en  = { "Quality: ([^%\n]*)" }
 ,   de  = { "Qualität: ([^\n]*)" }
 ,   fr  = { "Qualité : ([^\n]*)" }
@@ -699,12 +701,13 @@ LibCraftText.RE_MASTER_QUALITY = {
 ,   ru  = { "Качество: ([^\n]*)" }
 ,   ja  = { "Quality: ([^\n]*)" }
 }
-function LibCraftText.ParseMasterQuality(cond_line)
-    local self = LibCraftText
-    return self.ParseMasterLine(cond_line, self.RE_MASTER_QUALITY, self.QUALITY)
+function Master.ParseQuality(cond_line)
+    return Master.ParseBulletLine( cond_line
+                                 , Master.RE_QUALITY
+                                 , LibCraftText.QUALITY )
 end
 
-LibCraftText.RE_MASTER_TRAIT = {
+Master.RE_TRAIT = {
     en  = { "Trait: ([^\n]*)" }
 ,   de  = { "Eigenschaft: ([^\n]*)" }
 ,   fr  = { "Trait : ([^\n]*)" }
@@ -713,25 +716,23 @@ LibCraftText.RE_MASTER_TRAIT = {
 ,   ru  = { "Особенность: ([^\n]*)" }
 ,   ja  = { "Trait: ([^\n]*)" }
 }
-function LibCraftText.ParseMasterTrait(cond_line, trait_set_id)
-    local self = LibCraftText
-
+function Master.ParseTrait(cond_line, trait_set_id)
                         -- Limit the trait scan to just the nine traits
                         -- appropriate for this trait_set_id. Otherwise we end
                         -- up with "Robust" erroneously matching ARMOR_ROBUST
                         -- for rings. Training,  Ninrhoned, others also suffer
                         -- similar mismatches.
     local trait_set = {}
-    for _,trait in pairs(self.TRAIT) do
+    for _,trait in pairs(LibCraftText.TRAIT) do
         if trait_set_id == trait.trait_set_id then
             table.insert(trait_set, trait)
         end
     end
 
-    return self.ParseMasterLine(cond_line, self.RE_MASTER_TRAIT, trait_set)
+    return Master.ParseBulletLine(cond_line, Master.RE_TRAIT, trait_set)
 end
 
-LibCraftText.RE_MASTER_SET = {
+Master.RE_SET = {
     en  = { "Set: ([^\n]*)" }
 ,   de  = { "Set: ([^\n]*)" }
 ,   fr  = { "Ensemble : ([^\n]*)" }
@@ -740,12 +741,12 @@ LibCraftText.RE_MASTER_SET = {
 ,   ru  = { "Комплект: ([^\n]*)" }
 ,   ja  = { "Set: ([^\n]*)" }
 }
-function LibCraftText.ParseMasterSet(cond_line)
+function Master.ParseSet(cond_line)
     local self = LibCraftText
-    return self.ParseMasterLine(cond_line, self.RE_MASTER_SET, self.SET)
+    return Master.ParseBulletLine(cond_line, Master.RE_SET, self.SET)
 end
 
-LibCraftText.RE_MASTER_MOTIF = {
+Master.RE_MOTIF = {
     en  = { "Style: ([^\n]*)" }
 ,   de  = { "Stil: ([^\n]*)" }
 ,   fr  = { "Style : ([^\n]*)" }
@@ -754,12 +755,15 @@ LibCraftText.RE_MASTER_MOTIF = {
 ,   ru  = { "Стиль: ([^\n]*)" }
 ,   ja  = { "Style: ([^\n]*)" }
 }
-function LibCraftText.ParseMasterMotif(cond_line)
+function Master.ParseMotif(cond_line)
     local self = LibCraftText
-    return self.ParseMasterLine(cond_line, self.RE_MASTER_MOTIF, self.MOTIF)
+    return Master.ParseBulletLine(cond_line, Master.RE_MOTIF, self.MOTIF)
 end
 
-function LibCraftText.ParseMasterLine(cond_line, re_set, row_table)
+                        -- Parse one line from the bullet list of properties
+                        -- at the end of most master equipment writs.
+                        -- "Quality: Epic" or "Set: Ashen Grip" and so on.
+function Master.ParseBulletLine(cond_line, re_set, row_table)
     local self = LibCraftText
     local lang = self.CurrLang()
     local args = { nil
@@ -771,7 +775,7 @@ function LibCraftText.ParseMasterLine(cond_line, re_set, row_table)
     return self.ParseRegexable(unpack(args))
 end
 
-function LibCraftText.ParseMasterConditionMisc(crafting_type, cond_text)
+function Master.ParseConditionMisc(crafting_type, cond_text)
     for k,v in pairs(LibCraftText.MASTER_COND) do
         if cond_text == v then
             return { misc=LibCraftText.MASTER_COND[k] }
@@ -923,20 +927,18 @@ end
 
 -- Test Scaffolding ----------------------------------------------------------
 --
--- To enable unit tests to force a specific language.
+-- To allow this code to run outside of ESO client, and to allow unit tests to
+-- force a specific language.
 --
-
 function LibCraftText.ForceLang(lang)
     LibCraftText.force_lang = lang
 end
 
-                        -- Test Scaffolding to enable unit tests to force a
-                        -- specific language.
 function LibCraftText.CurrLang()
     if LibCraftText.force_lang then
         return LibCraftText.force_lang
     elseif not GetCVar then
-        return "en"     -- for running outside of ESO client.
+        return "en"
     end
     return GetCVar("language.2")
 end
@@ -993,7 +995,8 @@ end
 
                         -- Convert hyphen-carrying FR French "épine-de-dragon"
                         -- into something that can we can successfully pass
-                        -- as a search expression to string.find().
+                        -- as a search expression to string.find() without
+                        -- turning on string.find()'s plain=true option.
 function LibCraftText.escape_re(t)
     local r = t:gsub("%%","%%%%")
     r       = r:gsub("-" ,"%%-" )

@@ -275,44 +275,46 @@ function LibCraftText.RolisDialogOptionToCraftingType(dialog_text)
 function LibCraftText.ParseDailyCondition(crafting_type, cond_text)
 function LibCraftText.ParseMasterCondition(crafting_type, cond_text)
 
-LCT.Daily.ParseInternal
-          ParseEquipment
+function Daily .ParseConditionInternal(crafting_type, cond_text)
+function Master.ParseConditionInternal(crafting_type, cond_text)
+function Daily .ParseConditionEquipment(crafting_type, cond_text)
+function Master.ParseConditionEquipment(crafting_type, cond_text)
+function Daily .ParseConditionConsumable(crafting_type, cond_text)
+function Daily .ParseConsumableAcquireMaterial(crafting_type, cond_text)
+function Daily .ParseConditionProvisioning(cond_text)
+function Master.ParseConditionProvisioning(crafting_type, cond_text)
+function Daily .ParseConditionGlyph(cond_text)
+function Master.ParseConditionEnchanting(crafting_type, cond_text)
+function Daily .ParseConditionAlchemy(cond_text)
+function Master.ParseConditionAlchemy(crafting_type, cond_text)
+function Daily .ParseConditionMisc(crafting_type, cond_text)
+function Master.ParseConditionMisc(crafting_type, cond_text)
 
-function LibCraftText.ParseDailyConditionInternal(crafting_type, cond_text)
-function LibCraftText.ParseDailyConditionEquipment(crafting_type, cond_text)
-function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
-function LibCraftText.ParseConsumableAcquireMat(crafting_type, cond_text)
-function LibCraftText.ParseDailyConditionProvisioning(cond_text)
 function LibCraftText.ParseEnchantingPotency(cond_text)
-function LibCraftText.ParseDailyConditionGlyph(cond_text)
-function LibCraftText.ParseDailyConditionAlchemy(cond_text)
-function LibCraftText.ParseDailyConditionMisc(crafting_type, cond_text)
-function LibCraftText.ParseMasterConditionInternal(crafting_type, cond_text)
-function LibCraftText.MasterConditionSplit(cond_text)
-function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
-function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
-function LibCraftText.ParseMasterConditionProvisioning(crafting_type, cond_text)
-function LibCraftText.ParseMasterConditionEquipment(crafting_type, cond_text)
-function LibCraftText.ParseMasterQuality(cond_line)
-function LibCraftText.ParseMasterTrait(cond_line, trait_set_id)
-function LibCraftText.ParseMasterSet(cond_line)
-function LibCraftText.ParseMasterMotif(cond_line)
-function LibCraftText.ParseMasterLine(cond_line, re_set, row_table)
-function LibCraftText.ParseMasterConditionMisc(crafting_type, cond_text)
 
-LibCraftText.RE_CONDITION_DAILY_EQUIPMENT = {
+function Master.SplitCondition(cond_text)
+function Master.ParseQuality(cond_line)
+function Master.ParseTrait(cond_line, trait_set_id)
+function Master.ParseSet(cond_line)
+function Master.ParseMotif(cond_line)
+function Master.ParseBulletLine(cond_line, re_set, row_table)
+
+
+Daily.RE_CONDITION_EQUIPMENT = {
+Daily.RE_CONDITION_ACQUIRE_MATERIAL = {
+Daily.RE_CONDITION_RECIPE = {
+Daily.RE_ALCHEMY_TRAIT = {
+Daily.RE_ALCHEMY_SOLVENT = {
+
+Master.RE_ALCHEMY_NAME_TRAIT = {
+Master.RE_QUALITY = {
+Master.RE_TRAIT = {
+Master.RE_SET = {
+Master.RE_MOTIF = {
+
 LibCraftText.BUGFIX = {
-LibCraftText.RE_CONDITION_ACQUIRE = {
-LibCraftText.RE_CONDITION_DAILY_RECIPE = {
 LibCraftText.RE_POTENCY = {
 LibCraftText.RE_ESSENCE = {
-LibCraftText.RE_ALCHEMY_TRAIT = {
-LibCraftText.RE_ALCHEMY_SOLVENT = {
-LibCraftText.RE_MASTER_ALCHEMY_NAME_TRAIT = {
-LibCraftText.RE_MASTER_QUALITY = {
-LibCraftText.RE_MASTER_TRAIT = {
-LibCraftText.RE_MASTER_SET = {
-LibCraftText.RE_MASTER_MOTIF = {
 
 function LibCraftText.ParseRegexable(...)
 function LibCraftText.ParseRegexableOptional( crafting_type

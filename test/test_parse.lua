@@ -375,7 +375,7 @@ end
 function TestDailyCondition.OneMaster(crafting_type, lang_table, expect)
     local cond_text = lang_table[LibCraftText.CurrLang()]
     if not cond_text then return end
-    local got = LibCraftText.ParseMasterConditionAlchemy(crafting_text, cond_text)
+    local got = LibCraftText.Master.ParseConditionAlchemy(crafting_text, cond_text)
     luaunit.assertEquals(got, expect)
 end
 

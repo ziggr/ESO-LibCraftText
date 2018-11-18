@@ -72,7 +72,7 @@ function LibCraftText.ParseDailyCondition(crafting_type, cond_text)
 end
 
 function LibCraftText.ParseMasterCondition(crafting_type, cond_text)
-    return LibCraftText.ParseMasterConditionInternal(crafting_type, cond_text)
+    return LibCraftText.Master.ParseConditionInternal(crafting_type, cond_text)
 end
 
 
