@@ -365,7 +365,7 @@ LibCraftText.MATERIAL = {
 , ["REKURA"                  ] = { name="レクラ"                            , crafting_type=en, item_id= 45815 , name_2="究極"            }
 , ["KURA"                    ] = { name="クラ"                             , crafting_type=en, item_id= 45816 , name_2="伝説"            }
 , ["REJERA"                  ] = { name="レジェラ"                           , crafting_type=en, item_id= 64509 , name_2="最上"            }
-, ["REPORA"                  ] = { name="レポラ"                            , crafting_type=en, item_id= 68341 }
+, ["REPORA"                  ] = { name="レポラ"                            , crafting_type=en, item_id= 68341 , name_2="真に最上"          }
 
 , ["JODE"                    ] = { name="ジョーデ"                           , crafting_type=en, item_id= 45817 }
 , ["NOTADE"                  ] = { name="ノタデ"                            , crafting_type=en, item_id= 45818 }

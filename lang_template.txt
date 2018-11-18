@@ -365,7 +365,7 @@ LibCraftText.MATERIAL = {
 , ["REKURA"                  ] = { name=$MATERIAL_EN_045815              , crafting_type=en, item_id= 45815 , name_2=$POTENCY_045815 }
 , ["KURA"                    ] = { name=$MATERIAL_EN_045816              , crafting_type=en, item_id= 45816 , name_2=$POTENCY_045816 }
 , ["REJERA"                  ] = { name=$MATERIAL_EN_064509              , crafting_type=en, item_id= 64509 , name_2=$POTENCY_064509 }
-, ["REPORA"                  ] = { name=$MATERIAL_EN_068341              , crafting_type=en, item_id= 68341 }
+, ["REPORA"                  ] = { name=$MATERIAL_EN_068341              , crafting_type=en, item_id= 68341 , name_2=$POTENCY_068341 }
 
 , ["JODE"                    ] = { name=$MATERIAL_EN_045817              , crafting_type=en, item_id= 45817 }
 , ["NOTADE"                  ] = { name=$MATERIAL_EN_045818              , crafting_type=en, item_id= 45818 }

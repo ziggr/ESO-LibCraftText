@@ -365,7 +365,7 @@ LibCraftText.MATERIAL = {
 , ["REKURA"                  ] = { name="Rekura"                         , crafting_type=en, item_id= 45815 , name_2="splendid"      }
 , ["KURA"                    ] = { name="Kura"                           , crafting_type=en, item_id= 45816 , name_2="monumental"    }
 , ["REJERA"                  ] = { name="Rejera"                         , crafting_type=en, item_id= 64509 , name_2="superb"        }
-, ["REPORA"                  ] = { name="Repora"                         , crafting_type=en, item_id= 68341 }
+, ["REPORA"                  ] = { name="Repora"                         , crafting_type=en, item_id= 68341 , name_2="truly superb"  }
 
 , ["JODE"                    ] = { name="Jode"                           , crafting_type=en, item_id= 45817 }
 , ["NOTADE"                  ] = { name="Notade"                         , crafting_type=en, item_id= 45818 }

@@ -1673,8 +1673,8 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
         ,   [ 7] = m.DERADO  -- , m.KEDEKO       CP50   grand       EN_07
         ,   [ 8] = m.REKURA  -- , m.REDE         CP70   splendid    EN_08
         ,   [ 9] = m.KURA    -- , m.KUDE        CP100   monumental  EN_09
-        ,   [10] = m.REJERA  -- , m.JEHADE      CP150   superb      EN_10
-            --   , m.REPORA  -- , m.ITADE       CP160   truly superb
+        ,   [10] = m.REJERA  -- , m.JEHADE      CP150   superb      EN_10 master
+        ,   [11] = m.REPORA  -- , m.ITADE       CP160   truly superb      master
         }
     local aspect_list  = { m.TA }
 

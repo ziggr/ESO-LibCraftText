@@ -430,6 +430,10 @@ function LibCraftText.ParseDailyConditionGlyph(cond_text)
                          , m.REKURA  -- splendid
                          , m.KURA    -- monumental
                          , m.REJERA  -- superb
+                         , m.REPORA  -- truly superb  not used in daily, but
+                                     -- master writ parser calls this function
+                                     -- to handle potency. So leave repora in
+                                     -- this list.
                          }
     local ESSENCE_LIST = {
                            m.DENI    -- stamina
@@ -663,11 +667,13 @@ function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
 
     local lines = self.MasterConditionSplit(cond_text)
 
-                        -- Master writs always call for CP150 potencies.
-                        -- Whether add or subtract depends on which field of
-                        -- the essence rune matched.
-    local POTENCY_ADD  = self.MATERIAL.REJERA
-    local POTENCY_SUB  = self.MATERIAL.JEHADE
+                        -- Master writs call for CP150 or CP160 potencies.
+                        -- Find out which using additive potencies. They have
+                        -- name_2 fields with "Superb" and "Truly Superb" that
+                        -- subtractive potencies lack. We can switch to
+                        -- subtractive counterparts later.
+    local r = self.ParseDailyConditionGlyph(lines[1])
+    local potency = r.potency
 
     local ESSENCE_LIST = { self.MATERIAL.DEKEIPA
                          , self.MATERIAL.DENI
@@ -693,8 +699,7 @@ function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
                          , [5] = self.MATERIAL.KUTA
                          }
 
-
-    local args = { nil
+    args = { nil
                  , lines[1]
                  , self.RE_ESSENCE[lang]
                  , ESSENCE_LIST
@@ -707,14 +712,20 @@ function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
         self.ParseRegexable(unpack(args))
         ZZDEBUG=ZZDEBUG_OFF
     end
-
-    local potency = POTENCY_ADD
+                        -- Whether we use additive or subtractive potencies
+                        -- depends on which field of the essence mat we
+                        -- matched.
     local find_me = self.DeUmlaut(lines[1]:lower())
     for _,field_name in ipairs({"sub"}) do
         if essence and essence[field_name] then
             local val = self.DeUmlaut(essence[field_name]:lower())
             if find_me:find(val) then
-                potency = POTENCY_SUB
+                        -- It was a subtractive match.
+                if potency == self.MATERIAL.REJERA then     -- CP150
+                    potency = self.MATERIAL.JEHADE
+                elseif potency == self.MATERIAL.REPORA then -- CP160
+                    potency = self.MATERIAL.ITADE
+                end
                 break
             end
         end

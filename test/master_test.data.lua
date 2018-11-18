@@ -23,6 +23,12 @@ MASTER_FODDER = {
                              }
              }
   }
+-- ,   en  = "Craft a Damage Health Poison IX with the following Traits:\n• Gradual Ravage Health\n• Ravage Health\n• Ravage Stamina\n• Progress: 0 / 20"
+-- ,   en  = "Craft a Damage Health Poison IX with the following Traits:\n• Ravage Health\n• Ravage Magicka\n• Ravage Stamina\n• Progress: 0 / 20"
+-- ,   en  = "Craft a Sorcery-Draining Poison IX with the following Traits:\n• Breach\n• Increase Spell Power\n• Spell Critical\n• Progress: 0 / 20"
+-- ,   en  = "Craft a Stealth-Draining Poison IX with the following Traits:\n• Restore Magicka\n• Increase Spell Power\n• Detection\n• Progress: 0 / 20"
+-- ,   en  = "Craft an Escapist's Poison IX with the following Traits:\n• Unstoppable\n• Restore Magicka\n• Spell Critical\n• Progress: 0 / 20"
+-- ,   en  = "Craft an Essence of Ravage Health with the following Traits:\n• Enervation\n• Fracture\n• Ravage Health\n• Progress: 0 / 20"
 
 -- Enchanting ----------------------------------------------------------------
 , { input = "Craft a Superb Glyph of Reduce Spell Cost"
@@ -43,6 +49,55 @@ MASTER_FODDER = {
             .."\n• Quality: Epic\n• Progress: 0 / 1"
   , expect = { potency = LCT.MATERIAL.JEHADE
              , essence = LCT.MATERIAL.DENIMA
+             , aspect  = LCT.MATERIAL.REKUTA
+             }
+  }
+, { input = "Craft a Superb Glyph of Decrease Spell Harm"
+            .."\n• Quality: Epic\n• Progress: 0 / 1"
+  , expect = { potency = LCT.MATERIAL.JEHADE
+             , essence = LCT.MATERIAL.MAKDERI
+             , aspect  = LCT.MATERIAL.REKUTA
+             }
+  }
+, { input = "Craft a Superb Glyph of Flame Resist"
+            .."\n• Quality: Epic\n• Progress: 0 / 1"
+  , expect = { potency = LCT.MATERIAL.JEHADE
+             , essence = LCT.MATERIAL.RAKEIPA
+             , aspect  = LCT.MATERIAL.REKUTA
+             }
+  }
+, { input = "Craft a Superb Glyph of Increase Physical Harm"
+            .."\n• Quality: Epic\n• Progress: 0 / 1"
+  , expect = { potency = LCT.MATERIAL.REJERA
+             , essence = LCT.MATERIAL.TADERI
+             , aspect  = LCT.MATERIAL.REKUTA
+             }
+  }
+, { input = "Craft a Superb Glyph of Poison"
+            .."\n• Quality: Epic\n• Progress: 0 / 1"
+  , expect = { potency = LCT.MATERIAL.REJERA
+             , essence = LCT.MATERIAL.KUOKO
+             , aspect  = LCT.MATERIAL.REKUTA
+             }
+  }
+, { input = "Craft a Superb Glyph of Weakening"
+            .."\n• Quality: Epic\n• Progress: 0 / 1"
+  , expect = { potency = LCT.MATERIAL.JEHADE
+             , essence = LCT.MATERIAL.OKORI
+             , aspect  = LCT.MATERIAL.REKUTA
+             }
+  }
+, { input = "Craft a Truly Superb Glyph of Reduce Feat Cost"
+            .."\n• Quality: Epic\n• Progress: 0 / 1"
+  , expect = { potency = LCT.MATERIAL.ITADE
+             , essence = LCT.MATERIAL.DENIMA
+             , aspect  = LCT.MATERIAL.REKUTA
+             }
+  }
+, { input = "Craft a Truly Superb Glyph of Weakening"
+            .."\n• Quality: Epic\n• Progress: 0 / 1"
+  , expect = { potency = LCT.MATERIAL.ITADE
+             , essence = LCT.MATERIAL.OKORI
              , aspect  = LCT.MATERIAL.REKUTA
              }
   }
@@ -109,7 +164,6 @@ MASTER_FODDER = {
              , motif    = LCT.MOTIF.IMPERIAL
              }
   }
-
 , { input = "Craft a Rubedite Maul with the following Properties:"
             .."\n• Quality: Epic"
             .."\n• Trait: Defending"
@@ -125,7 +179,6 @@ MASTER_FODDER = {
              , bug      = { "es" } -- "Maza" overloaded, used for both H1_MACE and H2_MAUL
              }
   }
-
 , { input = "Craft a Rubedite Pauldron with the following Properties:"
             .."\n• Quality: Epic"
             .."\n• Trait: Nirnhoned"
@@ -140,7 +193,20 @@ MASTER_FODDER = {
              , motif    = LCT.MOTIF.WOOD_ELF
              }
   }
+-- ,   en  = "Craft a Rubedite Axe with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Shalidor's Curse\n• Style: Silken Ring\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedite Axe with the following Properties:\n• Quality: Epic\n• Trait: Sharpened\n• Set: Daedric Trickery\n• Style: Akaviri\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedite Dagger with the following Properties:\n• Quality: Epic\n• Trait: Sharpened\n• Set: Assassin's Guile\n• Style: Dwemer\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedite Gauntlets with the following Properties:\n• Quality: Epic\n• Trait: Sturdy\n• Set: Armor of the Seducer\n• Style: Draugr\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedite Greatsword with the following Properties:\n• Quality: Epic\n• Trait: Defending\n• Set: Kvatch Gladiator\n• Style: Daggerfall Covenant\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedite Greaves with the following Properties:\n• Quality: Epic\n• Trait: Divines\n• Set: Kagrenac's Hope\n• Style: Redoran\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedite Helm with the following Properties:\n• Quality: Epic\n• Trait: Training\n• Set: Death's Wind\n• Style: Worm Cult\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedite Mace with the following Properties:\n• Quality: Epic\n• Trait: Charged\n• Set: Kagrenac's Hope\n• Style: Dark Elf\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedite Mace with the following Properties:\n• Quality: Epic\n• Trait: Sharpened\n• Set: Ashen Grip\n• Style: Ancient Elf\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedite Pauldron with the following Properties:\n• Quality: Epic\n• Trait: Impenetrable\n• Set: Kvatch Gladiator\n• Style: Pyandonean\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedite Sabatons with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Daedric Trickery\n• Style: Buoyant Armiger\n• Progress: 0 / 1"
 
+
+-- Clothier ------------------------------------------------------------------
 , { input = "Craft an Ancestor Silk Sash with the following Properties:"
             .."\n• Quality: Epic"
             .."\n• Trait: Reinforced"
@@ -155,7 +221,6 @@ MASTER_FODDER = {
              , motif    = LCT.MOTIF.WORM_CULT
              }
   }
-
 , { input = "Craft a Rubedo Leather Helmet with the following Properties:"
             .."\n• Quality: Epic"
             .."\n• Trait: Well-Fitted"
@@ -170,7 +235,20 @@ MASTER_FODDER = {
              , motif    = LCT.MOTIF.ABAHS_WATCH
              }
   }
+-- ,   en  = "Craft an Ancestor Silk Breeches with the following Properties:\n• Quality: Epic\n• Trait: Infused\n• Set: Law of Julianos\n• Style: Morag Tong\n• Progress: 0 / 1"
+-- ,   en  = "Craft an Ancestor Silk Breeches with the following Properties:\n• Quality: Epic\n• Trait: Training\n• Set: Magnus' Gift\n• Style: Dark Brotherhood\n• Progress: 0 / 1"
+-- ,   en  = "Craft an Ancestor Silk Breeches with the following Properties:\n• Quality: Epic\n• Trait: Well-Fitted\n• Set: Kagrenac's Hope\n• Style: Ancient Orc\n• Progress: 0 / 1"
+-- ,   en  = "Craft an Ancestor Silk Epaulets with the following Properties:\n• Quality: Epic\n• Trait: Impenetrable\n• Set: Tava's Favor\n• Style: Sapiarch\n• Progress: 0 / 1"
+-- ,   en  = "Craft an Ancestor Silk Epaulets with the following Properties:\n• Quality: Epic\n• Trait: Infused\n• Set: Spectre's Eye\n• Style: Ebonshadow\n• Progress: 0 / 1"
+-- ,   en  = "Craft an Ancestor Silk Sash with the following Properties:\n• Quality: Epic\n• Trait: Well-Fitted\n• Set: Alessia's Bulwark\n• Style: Ancient Elf\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedo Leather Arm Cops with the following Properties:\n• Quality: Epic\n• Trait: Training\n• Set: Oblivion's Foe\n• Style: Ancient Elf\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedo Leather Boots with the following Properties:\n• Quality: Epic\n• Trait: Training\n• Set: Song of Lamae\n• Style: Ebonheart Pact\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedo Leather Bracers with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Noble's Conquest\n• Style: Mercenary\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedo Leather Guards with the following Properties:\n• Quality: Epic\n• Trait: Divines\n• Set: Oblivion's Foe\n• Style: Primal\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Rubedo Leather Helmet with the following Properties:\n• Quality: Epic\n• Trait: Training\n• Set: Hunding's Rage\n• Style: Hlaalu\n• Progress: 0 / 1"
 
+
+-- Woodworking ---------------------------------------------------------------
 , { input = "Craft a Ruby Ash Shield with the following Properties:"
             .."\n• Quality: Epic"
             .."\n• Trait: Invigorating"
@@ -185,7 +263,6 @@ MASTER_FODDER = {
              , motif    = LCT.MOTIF.PSIJIC_ORDER
              }
   }
-
 , { input = "Craft a Ruby Ash Shield with the following Properties:"
             .."\n• Quality: Epic"
             .."\n• Trait: Nirnhoned"
@@ -200,7 +277,6 @@ MASTER_FODDER = {
              , motif    = LCT.MOTIF.PRIMAL
              }
   }
-
 , { input = "Craft a Ruby Ash Restoration Staff with the following Properties:"
             .."\n• Quality: Epic"
             .."\n• Trait: Nirnhoned"
@@ -215,7 +291,20 @@ MASTER_FODDER = {
              , motif    = LCT.MOTIF.BLOODFORGE
              }
   }
+-- ,   en  = "Craft a Ruby Ash Bow with the following Properties:\n• Quality: Epic\n• Trait: Powered\n• Set: Hist Bark\n• Style: Hlaalu\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Ruby Ash Inferno Staff with the following Properties:\n• Quality: Epic\n• Trait: Precise\n• Set: Hist Bark\n• Style: Malacath\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Ruby Ash Lightning Staff with the following Properties:\n• Quality: Epic\n• Trait: Defending\n• Set: Hist Bark\n• Style: Order of the Hour\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Ruby Ash Lightning Staff with the following Properties:\n• Quality: Epic\n• Trait: Powered\n• Set: Eternal Hunt\n• Style: Thieves Guild\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Ruby Ash Lightning Staff with the following Properties:\n• Quality: Epic\n• Trait: Precise\n• Set: Tava's Favor\n• Style: Sapiarch\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Infused\n• Set: Armor of the Seducer\n• Style: Dark Brotherhood\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Infused\n• Set: Song of Lamae\n• Style: Nord\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Invigorating\n• Set: Oblivion's Foe\n• Style: Redoran\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Invigorating\n• Set: Shacklebreaker\n• Style: Aldmeri Dominion\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Kagrenac's Hope\n• Style: Trinimac\n• Progress: 0 / 1"
+-- ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Sturdy\n• Set: Eyes of Mara\n• Style: Daedric\n• Progress: 0 / 1"
 
+
+-- Jewelry -------------------------------------------------------------------
 , { input = "Craft a Platinum Ring with the following Properties:"
             .."\n• Quality: Legendary"
             .."\n• Trait: Protective"
@@ -228,7 +317,6 @@ MASTER_FODDER = {
              , set      = LCT.SET.ARMOR_MASTER
              }
   }
-
 , { input = "Craft a Platinum Necklace with the following Properties:"
             .."\n• Quality: Epic"
             .."\n• Trait: Healthy"
@@ -241,33 +329,6 @@ MASTER_FODDER = {
              , set      = LCT.SET.ASSASSINS_GUILE
              }
   }
-
-, { input  = "Travel to Elden Root to Meet Your Contact"
-  , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_AD }
-  }
-, { input  = "Travel to Mournhold to Meet Your Contact"
-  , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_EP }
-  }
-, { input  = "Travel to Wayrest to Meet Your Contact"
-  , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_DC }
-  }
-
-
--- ,   en  = "Craft a Superb Glyph of Decrease Spell Harm\n• Quality: Epic\n• Progress: 0 / 1"
--- ,   en  = "Craft a Superb Glyph of Flame Resist\n• Quality: Epic\n• Progress: 0 / 1"
--- ,   en  = "Craft a Superb Glyph of Increase Physical Harm\n• Quality: Epic\n• Progress: 0 / 1"
--- ,   en  = "Craft a Superb Glyph of Poison\n• Quality: Epic\n• Progress: 0 / 1"
--- ,   en  = "Craft a Superb Glyph of Weakening\n• Quality: Epic\n• Progress: 0 / 1"
--- ,   en  = "Craft a Truly Superb Glyph of Reduce Feat Cost\n• Quality: Epic\n• Progress: 0 / 1"
--- ,   en  = "Craft a Truly Superb Glyph of Weakening\n• Quality: Epic\n• Progress: 0 / 1"
-
--- ,   en  = "Craft a Damage Health Poison IX with the following Traits:\n• Gradual Ravage Health\n• Ravage Health\n• Ravage Stamina\n• Progress: 0 / 20"
--- ,   en  = "Craft a Damage Health Poison IX with the following Traits:\n• Ravage Health\n• Ravage Magicka\n• Ravage Stamina\n• Progress: 0 / 20"
--- ,   en  = "Craft a Sorcery-Draining Poison IX with the following Traits:\n• Breach\n• Increase Spell Power\n• Spell Critical\n• Progress: 0 / 20"
--- ,   en  = "Craft a Stealth-Draining Poison IX with the following Traits:\n• Restore Magicka\n• Increase Spell Power\n• Detection\n• Progress: 0 / 20"
--- ,   en  = "Craft an Escapist's Poison IX with the following Traits:\n• Unstoppable\n• Restore Magicka\n• Spell Critical\n• Progress: 0 / 20"
--- ,   en  = "Craft an Essence of Ravage Health with the following Traits:\n• Enervation\n• Fracture\n• Ravage Health\n• Progress: 0 / 20"
-
 -- ,   en  = "Craft a Platinum Necklace with the following Properties:\n• Quality: Epic\n• Trait: Bloodthirsty\n• Set: Alessia's Bulwark\n• Progress: 0 / 1"
 -- ,   en  = "Craft a Platinum Necklace with the following Properties:\n• Quality: Epic\n• Trait: Bloodthirsty\n• Set: Eyes of Mara\n• Progress: 0 / 1"
 -- ,   en  = "Craft a Platinum Necklace with the following Properties:\n• Quality: Epic\n• Trait: Bloodthirsty\n• Set: Oblivion's Foe\n• Progress: 0 / 1"
@@ -280,41 +341,20 @@ MASTER_FODDER = {
 -- ,   en  = "Craft a Platinum Ring with the following Properties:\n• Quality: Legendary\n• Trait: Bloodthirsty\n• Set: Redistributor\n• Progress: 0 / 1"
 -- ,   en  = "Craft a Platinum Ring with the following Properties:\n• Quality: Legendary\n• Trait: Swift\n• Set: Twilight's Embrace\n• Progress: 0 / 1"
 
--- ,   en  = "Craft a Rubedite Axe with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Shalidor's Curse\n• Style: Silken Ring\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedite Axe with the following Properties:\n• Quality: Epic\n• Trait: Sharpened\n• Set: Daedric Trickery\n• Style: Akaviri\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedite Dagger with the following Properties:\n• Quality: Epic\n• Trait: Sharpened\n• Set: Assassin's Guile\n• Style: Dwemer\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedite Gauntlets with the following Properties:\n• Quality: Epic\n• Trait: Sturdy\n• Set: Armor of the Seducer\n• Style: Draugr\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedite Greatsword with the following Properties:\n• Quality: Epic\n• Trait: Defending\n• Set: Kvatch Gladiator\n• Style: Daggerfall Covenant\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedite Greaves with the following Properties:\n• Quality: Epic\n• Trait: Divines\n• Set: Kagrenac's Hope\n• Style: Redoran\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedite Helm with the following Properties:\n• Quality: Epic\n• Trait: Training\n• Set: Death's Wind\n• Style: Worm Cult\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedite Mace with the following Properties:\n• Quality: Epic\n• Trait: Charged\n• Set: Kagrenac's Hope\n• Style: Dark Elf\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedite Mace with the following Properties:\n• Quality: Epic\n• Trait: Sharpened\n• Set: Ashen Grip\n• Style: Ancient Elf\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedite Pauldron with the following Properties:\n• Quality: Epic\n• Trait: Impenetrable\n• Set: Kvatch Gladiator\n• Style: Pyandonean\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedite Sabatons with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Daedric Trickery\n• Style: Buoyant Armiger\n• Progress: 0 / 1"
+-- Misc ----------------------------------------------------------------------
+, { input  = "Travel to Elden Root to Meet Your Contact"
+  , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_AD }
+  }
+, { input  = "Travel to Mournhold to Meet Your Contact"
+  , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_EP }
+  }
+, { input  = "Travel to Wayrest to Meet Your Contact"
+  , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_DC }
+  }
 
--- ,   en  = "Craft an Ancestor Silk Breeches with the following Properties:\n• Quality: Epic\n• Trait: Infused\n• Set: Law of Julianos\n• Style: Morag Tong\n• Progress: 0 / 1"
--- ,   en  = "Craft an Ancestor Silk Breeches with the following Properties:\n• Quality: Epic\n• Trait: Training\n• Set: Magnus' Gift\n• Style: Dark Brotherhood\n• Progress: 0 / 1"
--- ,   en  = "Craft an Ancestor Silk Breeches with the following Properties:\n• Quality: Epic\n• Trait: Well-Fitted\n• Set: Kagrenac's Hope\n• Style: Ancient Orc\n• Progress: 0 / 1"
--- ,   en  = "Craft an Ancestor Silk Epaulets with the following Properties:\n• Quality: Epic\n• Trait: Impenetrable\n• Set: Tava's Favor\n• Style: Sapiarch\n• Progress: 0 / 1"
--- ,   en  = "Craft an Ancestor Silk Epaulets with the following Properties:\n• Quality: Epic\n• Trait: Infused\n• Set: Spectre's Eye\n• Style: Ebonshadow\n• Progress: 0 / 1"
--- ,   en  = "Craft an Ancestor Silk Sash with the following Properties:\n• Quality: Epic\n• Trait: Well-Fitted\n• Set: Alessia's Bulwark\n• Style: Ancient Elf\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedo Leather Arm Cops with the following Properties:\n• Quality: Epic\n• Trait: Training\n• Set: Oblivion's Foe\n• Style: Ancient Elf\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedo Leather Boots with the following Properties:\n• Quality: Epic\n• Trait: Training\n• Set: Song of Lamae\n• Style: Ebonheart Pact\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedo Leather Bracers with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Noble's Conquest\n• Style: Mercenary\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedo Leather Guards with the following Properties:\n• Quality: Epic\n• Trait: Divines\n• Set: Oblivion's Foe\n• Style: Primal\n• Progress: 0 / 1"
--- ,   en  = "Craft a Rubedo Leather Helmet with the following Properties:\n• Quality: Epic\n• Trait: Training\n• Set: Hunding's Rage\n• Style: Hlaalu\n• Progress: 0 / 1"
 
--- ,   en  = "Craft a Ruby Ash Bow with the following Properties:\n• Quality: Epic\n• Trait: Powered\n• Set: Hist Bark\n• Style: Hlaalu\n• Progress: 0 / 1"
--- ,   en  = "Craft a Ruby Ash Inferno Staff with the following Properties:\n• Quality: Epic\n• Trait: Precise\n• Set: Hist Bark\n• Style: Malacath\n• Progress: 0 / 1"
--- ,   en  = "Craft a Ruby Ash Lightning Staff with the following Properties:\n• Quality: Epic\n• Trait: Defending\n• Set: Hist Bark\n• Style: Order of the Hour\n• Progress: 0 / 1"
--- ,   en  = "Craft a Ruby Ash Lightning Staff with the following Properties:\n• Quality: Epic\n• Trait: Powered\n• Set: Eternal Hunt\n• Style: Thieves Guild\n• Progress: 0 / 1"
--- ,   en  = "Craft a Ruby Ash Lightning Staff with the following Properties:\n• Quality: Epic\n• Trait: Precise\n• Set: Tava's Favor\n• Style: Sapiarch\n• Progress: 0 / 1"
--- ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Infused\n• Set: Armor of the Seducer\n• Style: Dark Brotherhood\n• Progress: 0 / 1"
--- ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Infused\n• Set: Song of Lamae\n• Style: Nord\n• Progress: 0 / 1"
--- ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Invigorating\n• Set: Oblivion's Foe\n• Style: Redoran\n• Progress: 0 / 1"
--- ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Invigorating\n• Set: Shacklebreaker\n• Style: Aldmeri Dominion\n• Progress: 0 / 1"
--- ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Kagrenac's Hope\n• Style: Trinimac\n• Progress: 0 / 1"
--- ,   en  = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Sturdy\n• Set: Eyes of Mara\n• Style: Daedric\n• Progress: 0 / 1"
+
+
 
 
 
