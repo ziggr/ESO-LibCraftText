@@ -1,4 +1,6 @@
 LibCraftText = LibCraftText or {}
+local Daily = {}
+LibCraftText.Daily = Daily
 
 local function ZZDEBUG_ON(msg, ...) print(string.format(msg, ...)) end
 local function ZZDEBUG_OFF(msg, ...) end
@@ -14,22 +16,20 @@ local CRAFTING_TYPE_PROVISIONING    = CRAFTING_TYPE_PROVISIONING    or 5
 local CRAFTING_TYPE_WOODWORKING     = CRAFTING_TYPE_WOODWORKING     or 6
 local CRAFTING_TYPE_JEWELRYCRAFTING = CRAFTING_TYPE_JEWELRYCRAFTING or 7
 
-
-
 -- Daily Crafting Conditions Parser ------------------------------------------
 --
 -- Turn condition text into "what do I need to make/acquire?" constants.
 --
-function LibCraftText.ParseDailyConditionInternal(crafting_type, cond_text)
+function Daily.ParseConditionInternal(crafting_type, cond_text)
     if not LibCraftText.CRAFTING_TYPE_TO_DAILY_PARSER then
         LibCraftText.CRAFTING_TYPE_TO_DAILY_PARSER = {
-            [CRAFTING_TYPE_BLACKSMITHING  ] = LibCraftText.ParseDailyConditionEquipment
-        ,   [CRAFTING_TYPE_CLOTHIER       ] = LibCraftText.ParseDailyConditionEquipment
-        ,   [CRAFTING_TYPE_ENCHANTING     ] = LibCraftText.ParseDailyConditionConsumable
-        ,   [CRAFTING_TYPE_ALCHEMY        ] = LibCraftText.ParseDailyConditionConsumable
-        ,   [CRAFTING_TYPE_PROVISIONING   ] = LibCraftText.ParseDailyConditionConsumable
-        ,   [CRAFTING_TYPE_WOODWORKING    ] = LibCraftText.ParseDailyConditionEquipment
-        ,   [CRAFTING_TYPE_JEWELRYCRAFTING] = LibCraftText.ParseDailyConditionEquipment
+            [CRAFTING_TYPE_BLACKSMITHING  ] = Daily.ParseConditionEquipment
+        ,   [CRAFTING_TYPE_CLOTHIER       ] = Daily.ParseConditionEquipment
+        ,   [CRAFTING_TYPE_ENCHANTING     ] = Daily.ParseConditionConsumable
+        ,   [CRAFTING_TYPE_ALCHEMY        ] = Daily.ParseConditionConsumable
+        ,   [CRAFTING_TYPE_PROVISIONING   ] = Daily.ParseConditionConsumable
+        ,   [CRAFTING_TYPE_WOODWORKING    ] = Daily.ParseConditionEquipment
+        ,   [CRAFTING_TYPE_JEWELRYCRAFTING] = Daily.ParseConditionEquipment
         }
     end
 
@@ -38,14 +38,14 @@ function LibCraftText.ParseDailyConditionInternal(crafting_type, cond_text)
         func = LibCraftText.CRAFTING_TYPE_TO_DAILY_PARSER[crafting_type]
     end
     if not func then
-        func = LibCraftText.ParseDailyConditionMisc
+        func = Daily.ParseConditionMisc
     end
     return func(crafting_type, cond_text)
 end
 
                         -- Regexes that can extract all gear crafting
                         -- materials and items.
-LibCraftText.RE_CONDITION_DAILY_EQUIPMENT = {
+Daily.RE_CONDITION_EQUIPMENT = {
     ["en"] = { "Craft Normal ([^:]*)"
              , "Craft an? ([^:]*)"
              , "Craft Two ([^:]*)"
@@ -111,10 +111,10 @@ LibCraftText.BUGFIX = {
                         -- acquire an alchemy or enchanting material, return
                         -- nil.
                         --
-function LibCraftText.ParseDailyConditionEquipment(crafting_type, cond_text)
+function Daily.ParseConditionEquipment(crafting_type, cond_text)
     local self      = LibCraftText
     local lang      = self.CurrLang()
-    local re_list   = self.RE_CONDITION_DAILY_EQUIPMENT[lang]
+    local re_list   = Daily.RE_CONDITION_EQUIPMENT[lang]
 
                         -- Rare special case: fix buggy FR translation.
     local bugfix = self.BUGFIX[lang] and self.BUGFIX[lang][cond_text]
@@ -185,32 +185,32 @@ end
                         -- such as gear, or acquire some alchemy or enchanting
                         -- material, return nil.
                         --
-function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
+function Daily.ParseConditionConsumable(crafting_type, cond_text)
     local self          = LibCraftText
 
                         -- Alchemy and Enchanting materials
-    local acquire_mat = self.ParseConsumableAcquireMat(crafting_type, cond_text)
+    local acquire_mat = Daily.ParseConsumableAcquireMat(crafting_type, cond_text)
     if acquire_mat then
         return acquire_mat
     end
 
                         -- Enchanting Glyphs
     if crafting_type == CRAFTING_TYPE_ENCHANTING then
-        return self.ParseDailyConditionGlyph(cond_text)
+        return Daily.ParseConditionGlyph(cond_text)
     end
                         -- Provisioning Recpies
     if crafting_type == CRAFTING_TYPE_PROVISIONING then
-        return self.ParseDailyConditionProvisioning(cond_text)
+        return Daily.ParseConditionProvisioning(cond_text)
     end
                         -- Alchemy Potions/Poisons
     if crafting_type == CRAFTING_TYPE_ALCHEMY then
-        return self.ParseDailyConditionAlchemy(cond_text)
+        return Daily.ParseConditionAlchemy(cond_text)
     end
 
     return nil
 end
 
-LibCraftText.RE_CONDITION_ACQUIRE = {
+Daily.RE_CONDITION_ACQUIRE_MATERIAL = {
     ["en"] = { "Acquire ([^:]*)"
              }
 ,   ["de"] = { "Besorgt ([^:]*)"
@@ -228,7 +228,7 @@ LibCraftText.RE_CONDITION_ACQUIRE = {
 ,   ["ja"] = { "(.*)を手に入れる" }
 }
 
-function LibCraftText.ParseConsumableAcquireMat(crafting_type, cond_text)
+function Daily.ParseConsumableAcquireMat(crafting_type, cond_text)
                         -- Only Enchanting and Alchemy have "Acquire Ta" and
                         -- "Acquire Nirnroot" conditions.
     if not (crafting_type == CRAFTING_TYPE_ENCHANTING
@@ -241,7 +241,7 @@ function LibCraftText.ParseConsumableAcquireMat(crafting_type, cond_text)
     local found_mat     = self.ParseRegexableOptional(
                                    crafting_type
                                  , cond_text
-                                 , self.RE_CONDITION_ACQUIRE[lang]
+                                 , Daily.RE_CONDITION_ACQUIRE_MATERIAL[lang]
                                  , self.MATERIAL
                                  , { "name", "name_2" }
                                  )
@@ -251,8 +251,7 @@ function LibCraftText.ParseConsumableAcquireMat(crafting_type, cond_text)
     return nil
 end
 
-
-LibCraftText.RE_CONDITION_DAILY_RECIPE = {
+Daily.RE_CONDITION_RECIPE = {
     ["en"] = { "Craft ([^:]*)"
              }
 ,   ["de"] = { "Stellt [etwaseinige]+ (.*) her"
@@ -271,12 +270,12 @@ LibCraftText.RE_CONDITION_DAILY_RECIPE = {
              }
 }
 
-function LibCraftText.ParseDailyConditionProvisioning(cond_text)
+function Daily.ParseConditionProvisioning(cond_text)
     local self          = LibCraftText
     local lang          = self.CurrLang()
     local args          = { nil
                           , cond_text
-                          , self.RE_CONDITION_DAILY_RECIPE[lang]
+                          , Daily.RE_CONDITION_RECIPE[lang]
                           , self.RECIPE
                           , { "name", "name_2" }
                           }
@@ -343,7 +342,7 @@ LibCraftText.RE_ESSENCE = {
 ,   ja = { "グリフ ?%((.*)%)"}
 }
 
-function LibCraftText.ParseDailyConditionGlyph(cond_text)
+function Daily.ParseConditionGlyph(cond_text)
     local self = LibCraftText
     local m    = LibCraftText.MATERIAL -- for less typing
     local ESSENCE_LIST = {
@@ -373,7 +372,7 @@ end
                         -- parts instead of most of the string. Match too wide
                         -- a substring and you'll erroneously find a potion or
                         -- trait within that unwanted text.
-LibCraftText.RE_ALCHEMY_TRAIT = {
+Daily.RE_ALCHEMY_TRAIT = {
     en = { "Craft .* of (.*)"
          , "Craft (.*) Poison" }
 ,   de = { "Stellt etwas Gift [ders]+ (.*) [IVX]+ her"  -- NBSP before [IVX] !
@@ -393,7 +392,7 @@ LibCraftText.RE_ALCHEMY_TRAIT = {
          , "[^ ]+ of (.*)" }
 ,   ja = { "(.*)の.*を" }
 }
-LibCraftText.RE_ALCHEMY_SOLVENT = {
+Daily.RE_ALCHEMY_SOLVENT = {
     en = { "([IVX]+)$"          -- [IVX]+ re must occur before any other
          , "Craft (.*) of " }   -- re that might carry an i, v, or x.
 ,   de = { "Stellt etwas Gift [ders]+ .* ([IVX]+) her"
@@ -413,13 +412,13 @@ LibCraftText.RE_ALCHEMY_SOLVENT = {
          , ".*の(.*)を"}
 }
 
-function LibCraftText.ParseDailyConditionAlchemy(cond_text)
+function Daily.ParseConditionAlchemy(cond_text)
     local self  = LibCraftText
     local lang  = self.CurrLang()
     local args  =   {
                       nil
                     , cond_text
-                    , self.RE_ALCHEMY_TRAIT[lang]
+                    , Daily.RE_ALCHEMY_TRAIT[lang]
                     , self.ALCHEMY_TRAIT
                     , { "daily_potion_name"
                       , "daily_poison_name", "daily_poison_name2" }
@@ -428,7 +427,7 @@ function LibCraftText.ParseDailyConditionAlchemy(cond_text)
     args =  {
               CRAFTING_TYPE_ALCHEMY
             , cond_text
-            , self.RE_ALCHEMY_SOLVENT[lang]
+            , Daily.RE_ALCHEMY_SOLVENT[lang]
             , self.MATERIAL
             , { "potion_name"--, "potion_name2"
               , "poison_name" }
@@ -442,7 +441,7 @@ function LibCraftText.ParseDailyConditionAlchemy(cond_text)
            }
 end
 
-function LibCraftText.ParseDailyConditionMisc(crafting_type, cond_text)
+function Daily.ParseConditionMisc(crafting_type, cond_text)
     for k,v in pairs(LibCraftText.DAILY_COND) do
         if cond_text == v then return
             { misc=LibCraftText.DAILY_COND[k] }
@@ -450,6 +449,7 @@ function LibCraftText.ParseDailyConditionMisc(crafting_type, cond_text)
     end
     return nil
 end
+
 
 -- Parse Master Writ Conditions ----------------------------------------------
 
@@ -652,13 +652,13 @@ function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
 end
 
 function LibCraftText.ParseMasterConditionProvisioning(crafting_type, cond_text)
-    return LibCraftText.ParseDailyConditionProvisioning(cond_text)
+    return Daily.ParseConditionProvisioning(cond_text)
 end
 
 function LibCraftText.ParseMasterConditionEquipment(crafting_type, cond_text)
     local self     = LibCraftText
     local lines    = self.MasterConditionSplit(cond_text)
-    local result   = self.ParseDailyConditionEquipment(crafting_type, lines[1])
+    local result   = Daily.ParseConditionEquipment(crafting_type, lines[1])
     if not result then return nil end
 
                         -- Most languages sequence their items in this order:

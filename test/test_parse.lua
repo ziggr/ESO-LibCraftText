@@ -43,7 +43,7 @@ function TestDailyCondition.TestAL()
         local input  = f[1][LibCraftText.CurrLang()]
         if not input then return end
         local expect = f[2]
-        local got    = LibCraftText.ParseDailyConditionEquipment(al, input)
+        local got    = LibCraftText.Daily.ParseConditionEquipment(al, input)
         luaunit.assertEquals(got, expect)
     end
 end
@@ -88,7 +88,7 @@ function TestDailyCondition.TestBS()
         local expect = { material = f[2]
                        , item     = f[3]
                        }
-        local got    = LibCraftText.ParseDailyConditionEquipment(bs, input)
+        local got    = LibCraftText.Daily.ParseConditionEquipment(bs, input)
         luaunit.assertEquals(got, expect)
     end
 end
@@ -134,7 +134,7 @@ function TestDailyCondition.TestCL()
         local expect = { material = f[2]
                        , item     = f[3]
                        }
-        local got    = LibCraftText.ParseDailyConditionEquipment(cl, input)
+        local got    = LibCraftText.Daily.ParseConditionEquipment(cl, input)
         luaunit.assertEquals(got, expect)
     end
 end
@@ -165,7 +165,7 @@ function TestDailyCondition.TestEN()
         local input  = f[1][LibCraftText.CurrLang()]
         if not input then return end
         local expect = f[2]
-        local got    = LibCraftText.ParseDailyConditionEquipment(al, input)
+        local got    = LibCraftText.Daily.ParseConditionEquipment(al, input)
         luaunit.assertEquals(got, expect)
     end
 end
@@ -199,7 +199,7 @@ function TestDailyCondition.TestJW()
         local expect = { material = f[2]
                        , item     = f[3]
                        }
-        local got    = LibCraftText.ParseDailyConditionEquipment(jw, input)
+        local got    = LibCraftText.Daily.ParseConditionEquipment(jw, input)
         luaunit.assertEquals(got, expect)
     end
 end
@@ -231,7 +231,7 @@ function TestDailyCondition.TestPR()
         local input  = f[1][LibCraftText.CurrLang()]
         if not input then return end
         local expect = f[2]
-        local got    = LibCraftText.ParseDailyConditionEquipment(jw, input)
+        local got    = LibCraftText.Daily.ParseConditionEquipment(jw, input)
         luaunit.assertEquals(got, expect)
     end
 end
@@ -267,7 +267,7 @@ function TestDailyCondition.TestWW()
         local expect = { material = f[2]
                        , item     = f[3]
                        }
-        local got    = LibCraftText.ParseDailyConditionEquipment(ww, input)
+        local got    = LibCraftText.Daily.ParseConditionEquipment(ww, input)
         luaunit.assertEquals(got, expect)
     end
 end
@@ -318,7 +318,7 @@ function TestDailyCondition.OneLangDBCondition(lang_table)
 
     local cond_text = lang_table[LibCraftText.CurrLang()]
     if not cond_text then return end
-    local result = LibCraftText.ParseDailyConditionEquipment(crafting_text, cond_text)
+    local result = LibCraftText.Daily.ParseConditionEquipment(crafting_text, cond_text)
 
 
     --                     -- NOT part of this test, just tinkering around.

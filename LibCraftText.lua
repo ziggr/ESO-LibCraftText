@@ -68,7 +68,7 @@ end
 --              MASTER_COND         TRAVEL_EP
 --
 function LibCraftText.ParseDailyCondition(crafting_type, cond_text)
-    return LibCraftText.ParseDailyConditionInternal(crafting_type, cond_text)
+    return LibCraftText.Daily.ParseConditionInternal(crafting_type, cond_text)
 end
 
 function LibCraftText.ParseMasterCondition(crafting_type, cond_text)
