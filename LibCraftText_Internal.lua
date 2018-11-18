@@ -527,14 +527,9 @@ function Master.ParseConditionAlchemy(crafting_type, cond_text)
     local name_trait    = self.ParseRegexable(unpack(args))
     local solvent = nil
     if name_trait and cond_text then
-                        -- The 1,true args to string.find() here are
-                        -- "plain=true" string matches: aka "ignore any special
-                        -- chars in the potion/poison name." Necessary to avoid
-                        -- hyphens in "Stealth-Draining Poison" from failing to
-                        -- match anything.
-        if cond_text:lower():find(name_trait.master_poison:lower(),1,true) then
+        if self.find_no_re(cond_text:lower(), name_trait.master_poison:lower()) then
             solvent = self.MATERIAL.ALKAHEST
-        elseif cond_text:find(name_trait.master_potion,1,true) then
+        elseif self.find_no_re(cond_text, name_trait.master_potion) then
             solvent = self.MATERIAL.LORKHANS_TEARS
         end
     end
@@ -901,9 +896,9 @@ function LibCraftText.LongestMatch(within_me, rows, crafting_type, field_name, .
 
         local row_name = row[fieldname]
         if not row_name then return end
-        row_name = self.escape_re(row_name:lower())
-        if not (   within_me_lower:find(row_name)
-                or within_me_deumlauted:find(self.DeUmlaut(row_name)) ) then
+        row_name = row_name:lower()
+        if not (   self.find_no_re(within_me_lower, row_name)
+                or self.find_no_re(within_me_deumlauted, self.DeUmlaut(row_name)) ) then
             return
         end
 
@@ -993,14 +988,13 @@ function LibCraftText.BuildReverseLookupTables()
     LibCraftText.reverse_tables_built = true
 end
 
-                        -- Convert hyphen-carrying FR French "épine-de-dragon"
-                        -- into something that can we can successfully pass
-                        -- as a search expression to string.find() without
-                        -- turning on string.find()'s plain=true option.
-function LibCraftText.escape_re(t)
-    local r = t:gsub("%%","%%%%")
-    r       = r:gsub("-" ,"%%-" )
-    return r
+                        -- Ask string.find() to ignore any special meaning
+                        -- for regex chars like hypen.
+                        --
+                        -- Allows us to find() hyphen-carrying FR French
+                        -- "épine-de-dragon".
+function LibCraftText.find_no_re(str, expr)
+    return string.find(str,expr,1,true)
 end
 
                         -- To help see surprise unicode chars like non-
