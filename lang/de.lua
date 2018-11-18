@@ -135,8 +135,8 @@ LibCraftText.RECIPE = {
 , ["BARLEY_NECTAR"                   ] = { name="Gerstennektar"                         , food_item_id=033624, recipe_list_index=  8, recipe_index= 14}
 , ["BATTAGLIR_CHOWDER"               ] = { name="Battaglirsuppe"                        , food_item_id=028394, recipe_list_index=  3, recipe_index= 15}
 , ["BITTERLEMON_TEA"                 ] = { name="Bitterzitrustee"                       , food_item_id=028457, recipe_list_index=  9, recipe_index= 13}
-, ["BOG_IRON_ALE"                    ] = { name="Sumpfeisen-Ale"                        , food_item_id=028405, recipe_list_index=  8, recipe_index=  4}
 , ["BLUE_ROAD_MARATHON"              ] = { name="Blauweg-Marathon"                      , food_item_id=028513, recipe_list_index= 10, recipe_index= 25}
+, ["BOG_IRON_ALE"                    ] = { name="Sumpfeisen-Ale"                        , food_item_id=028405, recipe_list_index=  8, recipe_index=  4}
 , ["BRETON_PORK_SAUSAGE"             ] = { name="bretonische Fleischwurst"              , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
 , ["CARROT_SOUP"                     ] = { name="Karottensuppe"                         , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
 , ["CHICKEN_BREAST"                  ] = { name="Hühnerbrust"                           , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
@@ -166,6 +166,7 @@ LibCraftText.RECIPE = {
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="Jerallblick-Karottenkuchen"            , food_item_id=033575, recipe_list_index=  3, recipe_index= 21}
 , ["LEMON_FLOWER_MAZTE"              ] = { name="Zitrusblütenmazte"                     , food_item_id=033945, recipe_list_index=  8, recipe_index=  9}
 , ["LILMOTH_GARLIC_HAGFISH"          ] = { name="Lilmoth-Vettelfisch mit Knoblauch"     , food_item_id=068235, recipe_list_index=  1, recipe_index= 42}
+, ["LONGFIN_PASTY_WITH_MELON_SAUCE"  ] = { name="Langflossenpastete mit Melonensoße"    , food_item_id=068253, recipe_list_index=  7, recipe_index= 30}
 , ["LUSTY_ARGONIAN_MAID_MAZTE"       ] = { name="Mazte der munteren argonischen Maid"   , food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="Mazte der munteren argonischen Maid"}
 , ["MAMMOTH_SNOUT_PIE"               ] = { name="Mammutrüsselpastete"                   , food_item_id=033903, recipe_list_index=  1, recipe_index= 25}
 , ["MAORMER_TEA"                     ] = { name="Maormertee"                            , food_item_id=028465, recipe_list_index=  9, recipe_index= 19}
@@ -180,13 +181,19 @@ LibCraftText.RECIPE = {
 , ["NUT_BROWN_ALE"                   ] = { name="Nussbraunale"                          , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
 , ["ORCREST_AGONY_PALE_ALE"          ] = { name="Orkruh-Schmerzbleichale"               , food_item_id=068275, recipe_list_index= 14, recipe_index= 30}
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="Orkruh-Apfelgelee mit Knoblauch"       , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
+, ["ORZORGAS_BLOOD_PRICE_PIE"        ] = { name="Orzorgas Blutzoll-Pastete"             , food_item_id=071058, recipe_list_index= 16, recipe_index=  3}
+, ["ORZORGAS_RED_FROTHGAR"           ] = { name="Orzorgas rotes Frothgar"               , food_item_id=071056, recipe_list_index= 15, recipe_index= 14}
+, ["ORZORGAS_SMOKED_BEAR_HAUNCH"     ] = { name="Orzorgas geräucherte Bärenlende"       , food_item_id=071059, recipe_list_index= 16, recipe_index=  4}
+, ["ORZORGAS_TRIPE_TRIFLE_POCKET"    ] = { name="Orzorgas kleines Schundtäschchen"      , food_item_id=071057, recipe_list_index= 16, recipe_index=  2}
 , ["PELLITINE_TOMATO_RICE"           ] = { name="Pellitine-Tomatenreis"                 , food_item_id=042814, recipe_list_index=  2, recipe_index= 13}
+, ["PSIJIC_AMBROSIA"                 ] = { name="Psijik-Ambrosia"                       , food_item_id=064221, recipe_list_index= 15, recipe_index=  1}
 , ["RED_RYE_BEER"                    ] = { name="Rotweizenbier"                         , food_item_id=033600, recipe_list_index=  8, recipe_index=  2}
 , ["REDORAN_PEPPERED_MELON"          ] = { name="Redoran-Pfeffermelone"                 , food_item_id=033552, recipe_list_index=  2, recipe_index= 15}
 , ["ROAST_CORN"                      ] = { name="Grillmais"                             , food_item_id=033813, recipe_list_index=  3, recipe_index=  3}
 , ["RYE_IN_YOUR_EYE"                 ] = { name="Durchschlagwhiskey"                    , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="Seeblumentee"                          , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name="Senchal-Curryfisch mit Reis"           , food_item_id=028350, recipe_list_index=  1, recipe_index= 19}
+, ["SENCHE_TIGER_SINGLE_MALT"        ] = { name="Senchetiger-Whiskey"                   , food_item_id=068273, recipe_list_index= 14, recipe_index= 28}
 , ["SKYRIM_JAZBAY_CROSTATA"          ] = { name="Himmelsrand-Jazbuchtcrostata"          , food_item_id=033909, recipe_list_index=  2, recipe_index= 25}
 , ["SORRY_HONEY_LAGER"               ] = { name="Tutmirleidlager"                       , food_item_id=033642, recipe_list_index=  8, recipe_index= 23}
 , ["SOUR_MASH"                       ] = { name="Sauermaische"                          , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
