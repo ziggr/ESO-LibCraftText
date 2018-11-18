@@ -623,11 +623,11 @@ function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
                         -- Whether we use additive or subtractive potencies
                         -- depends on which field of the essence mat we
                         -- matched.
-    local find_me = self.DeUmlaut(lines[1]:lower())
+    local within_me = self.DeUmlaut(lines[1]:lower())
     for _,field_name in ipairs({"sub"}) do
         if essence and essence[field_name] then
-            local val = self.DeUmlaut(essence[field_name]:lower())
-            if find_me:find(val) then
+            local essence_sub_name = self.DeUmlaut(essence[field_name]:lower())
+            if within_me:find(essence_sub_name) then
                         -- It was a subtractive match.
                 if potency == self.MATERIAL.REJERA then     -- CP150
                     potency = self.MATERIAL.JEHADE
@@ -855,22 +855,23 @@ function LibCraftText.ParseRegexableOneRE( crafting_type
 end
 
                         -- Return the first row with an EXACT match (lowercased)
-function LibCraftText.ExactMatch(find_me, rows, crafting_type, field_name, ... )
-    if not find_me then return nil end
-    local find_me_lower      = find_me:lower()
-    local find_me_deumlauted = LibCraftText.DeUmlaut(find_me_lower)
+                        -- with within_me
+function LibCraftText.ExactMatch(within_me, rows, crafting_type, field_name, ... )
+    if not within_me then return nil end
+    local within_me_lower      = within_me:lower()
+    local within_me_deumlauted = LibCraftText.DeUmlaut(within_me_lower)
     for _,fieldname in pairs({ field_name, ... }) do
         if not fieldname then break end
         for _, row in pairs(rows) do
             if (not crafting_type) or row.crafting_type == crafting_type then
                 local name = row[fieldname]
-                if name and (  find_me_lower == name:lower()
-                             or find_me_deumlauted == LibCraftText.DeUmlaut(name) ) then
+                if name and (  within_me_lower == name:lower()
+                             or within_me_deumlauted == LibCraftText.DeUmlaut(name) ) then
 
                     ZZDEBUG("    exact: '%s'", tostring(name))
                     return row
                 else
-                    ZZDEBUG("not exact: '%s' != '%s'", tostring(name), find_me_lower)
+                    ZZDEBUG("not exact: '%s' != '%s'", tostring(name), within_me_lower)
                 end
             end
         end
@@ -878,32 +879,42 @@ function LibCraftText.ExactMatch(find_me, rows, crafting_type, field_name, ... )
     return nil
 end
 
-                        -- Return the row with the longest matching field.
-function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ... )
-    if not find_me then return nil end
+                        -- Return the row with the longest matching field
+                        -- that appears within within_me
+function LibCraftText.LongestMatch(within_me, rows, crafting_type, field_name, ... )
+    if not within_me then return nil end
     local self               = LibCraftText
     local longest_match      = { name=nil, row=nil }
-    local find_me_lower      = find_me:lower()
-    local find_me_deumlauted = self.DeUmlaut(find_me_lower)
+    local within_me_lower      = within_me:lower()
+    local within_me_deumlauted = self.DeUmlaut(within_me_lower)
+
+                        -- Avoid deeply nested loops! Express as a linear
+                        -- gauntlet of tests that "continue" when failed.
+                        -- But Lua lacks "continue", so put gauntlet in an
+                        -- inner function that can "return" when a test fails.
+    local function check(row, fieldname)
+        if crafting_type and row.crafting_type ~= crafting_type then return end
+
+        local row_name = row[fieldname]
+        if not row_name then return end
+        row_name = self.escape_re(row_name:lower())
+        if not (   within_me_lower:find(row_name)
+                or within_me_deumlauted:find(self.DeUmlaut(row_name)) ) then
+            return
+        end
+
+        if longest_match.len and (row_name:len() < longest_match.len) then
+            return
+        end
+
+        longest_match.len = row_name:len()
+        longest_match.row = row
+    end
+
     for _,fieldname in pairs({ field_name, ... }) do
         if not fieldname then break end
         for _, row in pairs(rows) do
-            if (not crafting_type) or row.crafting_type == crafting_type then
-                local name = row[fieldname]
-                if name then
-                    name = self.escape_re(name:lower())
-                    if name and (  find_me_lower:find(name)
-                                 or find_me_deumlauted:find(self.DeUmlaut(name)) ) then
-                        if (not longest_match.name) or (longest_match.name:len() < name:len()) then
-                            longest_match.name = name
-                            longest_match.row  = row
-                            -- 7 indents?! This is what happens when your
-                            -- programming language refuses to support
-                            -- "continue".
-                        end
-                    end
-                end
-            end
+            check(row, fieldname)
         end
     end
     return longest_match.row
