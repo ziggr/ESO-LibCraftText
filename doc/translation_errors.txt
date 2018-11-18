@@ -101,3 +101,16 @@ ES enchanting rank 7 has no translation. falls back to EN English.
 
 ES enchanting rank
 Craft Greater Glyph of Magicka With Ta/Fabrica un glifo grande de magia con Ta
+
+
+ES uses the same word for 1H and 2H variants with no way to differentiate:
+  "Maze"   = H1_MACE  and H2_MAUL
+  "Hacha"  = H1_ACE   and H2_BATTLE_AXE
+  "Espada" = H1_SWORD and H2_GREATSWORD
+
+ES 1h mace and 2h maul both use "Maza" with no way to differentiate between the two:
+  en  = "Craft a Rubedite Maul with the following Properties:...
+  es  = "Fabricar: Maza de rubedita con los siguientes rasgos..."
+
+ES 1h axe and 2h battleaxe both use "Hacha" with no way to differentiate between the two
+

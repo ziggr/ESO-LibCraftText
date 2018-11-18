@@ -456,7 +456,7 @@ LibCraftText.TRAIT = {
 ,   ["ARMOR_WELL_FITTED"   ] = { name="Ajusté"                      , trait_set_id=ts.ARMOR   , trait_index=4 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_WELL_FITTED       or 14 , material=m.ALMANDINE          }
 ,   ["ARMOR_TRAINING"      ] = { name="Entraînement"                , trait_set_id=ts.ARMOR   , trait_index=5 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_TRAINING          or 15 , material=m.EMERALD            }
 ,   ["ARMOR_INFUSED"       ] = { name="Infusé"                      , trait_set_id=ts.ARMOR   , trait_index=6 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_INFUSED           or 16 , material=m.BLOODSTONE         }
-,   ["ARMOR_PROSPEROUS"    ] = { name="Revigorant"                  , trait_set_id=ts.ARMOR   , trait_index=7 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_PROSPEROUS        or 17 , material=m.GARNET             }
+,   ["ARMOR_INVIGORATING"  ] = { name="Revigorant"                  , trait_set_id=ts.ARMOR   , trait_index=7 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_INVIGORATING      or 17 , material=m.GARNET             }
 ,   ["ARMOR_DIVINES"       ] = { name="Divins"                      , trait_set_id=ts.ARMOR   , trait_index=8 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_DIVINES           or 18 , material=m.SAPPHIRE           }
 ,   ["ARMOR_NIRNHONED"     ] = { name="Trempe de Nirn"              , trait_set_id=ts.ARMOR   , trait_index=9 , trait_type_id=ITEM_TRAIT_TYPE_ARMOR_NIRNHONED         or 25 , material=m.FORTIFIED_NIRNCRUX }
 

@@ -74,18 +74,101 @@ MASTER_FODDER = {
              , motif    = LCT.MOTIF.WOOD_ELF
              }
   }
--- , { input = "Craft a Rubedite Helm with the following Properties:\n• Quality: Epic\n• Trait: Divines\n• Set: Whitestrake's Retribution\n• Style: Imperial\n• Progress: 0 / 1"
--- , { input = "Craft a Rubedite Maul with the following Properties:\n• Quality: Epic\n• Trait: Defending\n• Set: Daedric Trickery\n• Style: Argonian\n• Progress: 0 / 1"
--- , { input = "Craft a Rubedite Pauldron with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Eternal Hunt\n• Style: Wood Elf\n• Progress: 0 / 1"
+, { input = "Craft a Rubedite Helm with the following Properties:"
+            .."\n• Quality: Epic"
+            .."\n• Trait: Divines"
+            .."\n• Set: Whitestrake's Retribution"
+            .."\n• Style: Imperial"
+            .."\n• Progress: 0 / 1"
+  , expect = { item     = LCT.ITEM.HELM
+             , material = LCT.MATERIAL.RUBEDITE
+             , quality  = LCT.QUALITY.EPIC
+             , trait    = LCT.TRAIT.ARMOR_DIVINES
+             , set      = LCT.SET.WHITESTRAKES_RETRIBUTION
+             , motif    = LCT.MOTIF.IMPERIAL
+             }
+  }
 
--- , { input = "Craft an Ancestor Silk Sash with the following Properties:\n• Quality: Epic\n• Trait: Reinforced\n• Set: Varen's Legacy\n• Style: Worm Cult\n• Progress: 0 / 1"
--- , { input = "Craft a Rubedo Leather Helmet with the following Properties:\n• Quality: Epic\n• Trait: Well-Fitted\n• Set: Kagrenac's Hope\n• Style: Abah's Watch\n• Progress: 0 / 1"
+, { input = "Craft a Rubedite Maul with the following Properties:"
+            .."\n• Quality: Epic"
+            .."\n• Trait: Defending"
+            .."\n• Set: Daedric Trickery"
+            .."\n• Style: Argonian"
+            .."\n• Progress: 0 / 1"
+  , expect = { item     = LCT.ITEM.H2_MAUL
+             , material = LCT.MATERIAL.RUBEDITE
+             , quality  = LCT.QUALITY.EPIC
+             , trait    = LCT.TRAIT.WEAPON_DEFENDING
+             , set      = LCT.SET.DAEDRIC_TRICKERY
+             , motif    = LCT.MOTIF.ARGONIAN
+             , bug      = { "es" } -- "Maza" overloaded, used for both H1_MACE and H2_MAUL
+             }
+  }
 
--- , { input = "Craft a Platinum Ring with the following Properties:\n• Quality: Legendary\n• Trait: Protective\n• Set: Armor Master\n• Progress: 0 / 1"
+, { input = "Craft a Rubedite Pauldron with the following Properties:"
+            .."\n• Quality: Epic"
+            .."\n• Trait: Nirnhoned"
+            .."\n• Set: Eternal Hunt"
+            .."\n• Style: Wood Elf"
+            .."\n• Progress: 0 / 1"
+  , expect = { item     = LCT.ITEM.PAULDRON
+             , material = LCT.MATERIAL.RUBEDITE
+             , quality  = LCT.QUALITY.EPIC
+             , trait    = LCT.TRAIT.ARMOR_NIRNHONED
+             , set      = LCT.SET.ETERNAL_HUNT
+             , motif    = LCT.MOTIF.WOOD_ELF
+             }
+  }
 
--- , { input = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Invigorating\n• Set: Orgnum's Scales\n• Style: Psijic Order\n• Progress: 0 / 1"
+, { input = "Craft an Ancestor Silk Sash with the following Properties:"
+            .."\n• Quality: Epic"
+            .."\n• Trait: Reinforced"
+            .."\n• Set: Varen's Legacy"
+            .."\n• Style: Worm Cult"
+            .."\n• Progress: 0 / 1"
+  , expect = { item     = LCT.ITEM.SASH
+             , material = LCT.MATERIAL.ANCESTOR_SILK
+             , quality  = LCT.QUALITY.EPIC
+             , trait    = LCT.TRAIT.ARMOR_REINFORCED
+             , set      = LCT.SET.VARENS_LEGACY
+             , motif    = LCT.MOTIF.WORM_CULT
+             }
+  }
+
+, { input = "Craft a Rubedo Leather Helmet with the following Properties:"
+            .."\n• Quality: Epic"
+            .."\n• Trait: Well-Fitted"
+            .."\n• Set: Kagrenac's Hope"
+            .."\n• Style: Abah's Watch"
+            .."\n• Progress: 0 / 1"
+  , expect = { item     = LCT.ITEM.HELMET
+             , material = LCT.MATERIAL.RUBEDO_LEATHER
+             , quality  = LCT.QUALITY.EPIC
+             , trait    = LCT.TRAIT.ARMOR_WELL_FITTED
+             , set      = LCT.SET.KAGRENACS_HOPE
+             , motif    = LCT.MOTIF.ABAHS_WATCH
+             }
+  }
+
+, { input = "Craft a Ruby Ash Shield with the following Properties:"
+            .."\n• Quality: Epic"
+            .."\n• Trait: Invigorating"
+            .."\n• Set: Orgnum's Scales"
+            .."\n• Style: Psijic Order"
+            .."\n• Progress: 0 / 1"
+  , expect = { item     = LCT.ITEM.SHIELD
+             , material = LCT.MATERIAL.RUBY_ASH
+             , quality  = LCT.QUALITY.EPIC
+             , trait    = LCT.TRAIT.ARMOR_INVIGORATING
+             , set      = LCT.SET.ORGNUMS_SCALES
+             , motif    = LCT.MOTIF.PSIJIC_ORDER
+             }
+  }
+
 -- , { input = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Noble's Conquest\n• Style: Primal\n• Progress: 0 / 1"
 -- , { input = "Craft a Ruby Ash Restoration Staff with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Oblivion's Foe\n• Style: Bloodforge\n• Progress: 0 / 1"
+
+-- , { input = "Craft a Platinum Ring with the following Properties:\n• Quality: Legendary\n• Trait: Protective\n• Set: Armor Master\n• Progress: 0 / 1"
 
 -- , { input = "Craft a Platinum Necklace with the following Properties:\n• Quality: Epic\n• Trait: Healthy\n• Set: Assassin's Guile\n• Progress: 0 / 1"
 
