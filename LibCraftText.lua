@@ -94,6 +94,15 @@ function LibCraftText.MasterQuestNameToCraftingTypeList(quest_name)
     return LibCraftText.MASTER_QUEST_TITLES[quest_name]
 end
 
+-- Return a table that describes what this quest condtion requires.
+--
+-- Table fields vary depending on crafting type and condition, but field
+-- values will be rows from lang/xx.lua tables. See ParseDailyCondition()
+-- for field explanations.
+--
+--              Miscellaneous       "Travel to Mournhold to Meet Your Contact"
+-- misc         MASTER_COND         TRAVEL_EP
+--
 function LibCraftText.ParseMasterCondition(crafting_type, cond_text)
     if not LibCraftText.CRAFTING_TYPE_TO_MASTER_PARSER then
         LibCraftText.CRAFTING_TYPE_TO_MASTER_PARSER = {
@@ -127,7 +136,6 @@ function LibCraftText.RolisDialogOptionToCraftingType(dialog_text)
     LibCraftText.BuildReverseLookupTables()
     return LibCraftText.ROLIS_QUEST_TURN_IN[dialog_text]
 end
-
 
 -- Daily Crafting Conditions Parser ------------------------------------------
 --
