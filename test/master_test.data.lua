@@ -66,7 +66,7 @@ MASTER_FODDER = {
             .."\n• Set: Varen's Legacy"
             .."\n• Style: Wood Elf"
             .."\n• Progress: 0 / 1"
-  , expect = { item     = LCT.ITEM.HELM
+  , expect = { item     = LCT.ITEM.CUIRASS
              , material = LCT.MATERIAL.RUBEDITE
              , quality  = LCT.QUALITY.EPIC
              , trait    = LCT.TRAIT.ARMOR_STURDY

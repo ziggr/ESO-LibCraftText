@@ -733,16 +733,15 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 }
 
 LibCraftText.QUALITY = {
-    [1] = "Normal"                   -- "Normal"
-,   [2] = "Bueno"                    -- "Fine"
-,   [3] = "Superior"                 -- "Superior"
-,   [4] = "Épico"                    -- "Epic"
-,   [5] = "Legendario"               -- "Legendary"
-
-,   ["NORMAL"   ] = "Normal"  
-,   ["FINE"     ] = "Bueno"   
-,   ["SUPERIOR" ] = "Superior"
-,   ["EPIC"     ] = "Épico"   
-,   ["LEGENDARY"] = "Legendario"
+    ["NORMAL"   ] = { name="Normal"     , index=ITEM_QUALITY_NORMAL         or 1 }
+,   ["FINE"     ] = { name="Bueno"      , index=ITEM_QUALITY_FINE           or 2 }
+,   ["SUPERIOR" ] = { name="Superior"   , index=ITEM_QUALITY_SUPERIOR       or 3 }
+,   ["EPIC"     ] = { name="Épico"      , index=ITEM_QUALITY_EPIC           or 4 }
+,   ["LEGENDARY"] = { name="Legendario" , index=ITEM_QUALITY_LEGENDARY      or 5 }
 }
+
+
+
+
+
 

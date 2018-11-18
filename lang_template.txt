@@ -733,16 +733,15 @@ LibCraftText.ROLIS_QUEST_TURN_IN = {
 }
 
 LibCraftText.QUALITY = {
-    [1] = $QUALITY_1                 -- "Normal"
-,   [2] = $QUALITY_2                 -- "Fine"
-,   [3] = $QUALITY_3                 -- "Superior"
-,   [4] = $QUALITY_4                 -- "Epic"
-,   [5] = $QUALITY_5                 -- "Legendary"
-
-,   ["NORMAL"   ] = $QUALITY_1
-,   ["FINE"     ] = $QUALITY_2
-,   ["SUPERIOR" ] = $QUALITY_3
-,   ["EPIC"     ] = $QUALITY_4
-,   ["LEGENDARY"] = $QUALITY_5
+    ["NORMAL"   ] = { name=$QUALITY_1   , index=ITEM_QUALITY_NORMAL         or 1 }
+,   ["FINE"     ] = { name=$QUALITY_2   , index=ITEM_QUALITY_FINE           or 2 }
+,   ["SUPERIOR" ] = { name=$QUALITY_3   , index=ITEM_QUALITY_SUPERIOR       or 3 }
+,   ["EPIC"     ] = { name=$QUALITY_4   , index=ITEM_QUALITY_EPIC           or 4 }
+,   ["LEGENDARY"] = { name=$QUALITY_5   , index=ITEM_QUALITY_LEGENDARY      or 5 }
 }
+
+
+
+
+
 

@@ -221,6 +221,7 @@ function LibCraftText.ParseDailyConditionEquipment(crafting_type, cond_text)
     return found
 end
 
+
                         -- Regexes that can extract all gear crafting
                         -- materials and items.
 LibCraftText.RE_CONDITION_DAILY_EQUIPMENT = {
@@ -243,23 +244,27 @@ LibCraftText.RE_CONDITION_DAILY_EQUIPMENT = {
                                               -- regexes to keep preposition
                                               -- "en" out of matitem.
              , "Fabriquez un (.*) d'([^:]*)"
+             , "Fabriquez [uneds]+ (.*) en (.*) avec"
              }
 ,   ["ru"] = { "Craft Normal ([^:]*)"
              , "Craft an? ([^:]*)"
              , "Craft two ([^:]*)"
              , "Craft three ([^:]*)"
+             , "Создать предмет %((.*)%) со следующими"
              }
 ,   ["es"] = { "Fabrica [unaos]+ (.*) norm"
              , "Fabrica [unaos]+ (.*) de (.*) norm"
              , "Fabrica un (.*) de ([^:]*)"
              , "Fabrica dos (.*) de ([^:]*)"
              , "Fabrica tres (.*) de ([^:]*)"
+             , "Fabricar: (.*) con los"
              }
 ,   ["ja"] = { "(.*)%(ノーマル%)を生産する"
              , "(.*)の(.*)%(ノーマル%)を生産する"
              , "(.*)の(.*)を作る"
              , "(.*)を2個作る"
              , "(.*)を3個作る"
+             , "Craft a (.*) with the"
              }
 }
 
@@ -653,15 +658,6 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
            }
 end
 
-LibCraftText.RE_MASTER_QUALITY = {
-    en  = { "Quality: ([^%\n]*)" }
-,   de  = { "Qualität: ([^\n]*)" }
-,   fr  = { "Qualité : ([^\n]*)" }
-,   es  = { "Calidad: ([^\n]*)" }
-,   it  = { "Qualità: ([^\n]*)" }
-,   ru  = { "Качество: ([^\n]*)" }
-,   ja  = { "Quality: ([^\n]*)" }
-}
 function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
     local self = LibCraftText
     local lang = self.CurrLang()
@@ -694,8 +690,8 @@ function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
                          , self.MATERIAL.TADERI
                          }
 
-    local ASPECT_LIST  = { self.MATERIAL.REKUTA
-                         , self.MATERIAL.KUTA
+    local ASPECT_LIST  = { [4] = self.MATERIAL.REKUTA
+                         , [5] = self.MATERIAL.KUTA
                          }
 
 
@@ -725,19 +721,12 @@ function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
         end
     end
 
-    local args = { nil
-                 , lines[2]
-                 , self.RE_MASTER_QUALITY[lang]
-                 , ASPECT_LIST
-                 , { "name_2" }
-             }
-    local aspect    = self.ParseRegexable(unpack(args))
-    if not aspect then
-        ZZDEBUG=ZZDEBUG_ON
-        ZZDEBUG(string.format("### aspect cond_text:'%s'", lines[2]))
-        self.ParseRegexable(unpack(args))
-        ZZDEBUG=ZZDEBUG_OFF
+    local quality = self.ParseMasterQuality(lines[2])
+    local aspect = nil
+    if quality then
+        aspect = ASPECT_LIST[quality.index]
     end
+
     return { potency = potency
            , essence = essence
            , aspect  = aspect
@@ -747,6 +736,130 @@ end
 function LibCraftText.ParseMasterConditionProvisioning(crafting_type, cond_text)
     return LibCraftText.ParseDailyConditionProvisioning(cond_text)
 end
+--[[
+-- Fabriquez une cuirasse en cuprite avec les caractéristiques suivantes :
+-- • Qualité : Épique
+-- • Trait : Solide
+-- • Ensemble : l’Héritage de Varen
+-- • Style : Elfe des bois
+-- • Progression : 0/1
+]]
+function LibCraftText.ParseMasterConditionEquipment(crafting_type, cond_text)
+    local self     = LibCraftText
+    local lines    = self.MasterConditionSplit(cond_text)
+    local result   = self.ParseDailyConditionEquipment(crafting_type, lines[1])
+    if not result then return nil end
+
+                        -- Most languages sequence their items in this order:
+    local line = { quality = 2
+                 , trait   = 3
+                 , set     = 4
+                 , motif   = 5
+                 }
+    if self.CurrLang() == "de" then
+                        -- But DE German differs, because why not?
+        line = { set     = 2
+               , motif   = 3
+               , trait   = 4
+               , quality = 5
+               }
+    end
+
+    result.quality = self.ParseMasterQuality(lines[line.quality])
+    result.trait   = self.ParseMasterTrait(lines[line.trait], result.item.trait_set_id)
+    result.set     = self.ParseMasterSet(lines[line.set])
+    result.motif   = self.ParseMasterMotif(lines[line.motif])
+    return result
+end
+
+LibCraftText.RE_MASTER_QUALITY = {
+    en  = { "Quality: ([^%\n]*)" }
+,   de  = { "Qualität: ([^\n]*)" }
+,   fr  = { "Qualité : ([^\n]*)" }
+,   es  = { "Calidad: ([^\n]*)" }
+,   it  = { "Qualità: ([^\n]*)" }
+,   ru  = { "Качество: ([^\n]*)" }
+,   ja  = { "Quality: ([^\n]*)" }
+}
+function LibCraftText.ParseMasterQuality(cond_line)
+    local self = LibCraftText
+    return self.ParseMasterLine(cond_line, self.RE_MASTER_QUALITY, self.QUALITY)
+end
+
+LibCraftText.RE_MASTER_TRAIT = {
+    en  = { "Trait: ([^\n]*)" }
+,   de  = { "Eigenschaft: ([^\n]*)" }
+,   fr  = { "Trait : ([^\n]*)" }
+,   es  = { "Rasgo: ([^\n]*)" }
+,   it  = { "Tratti: ([^\n]*)" }
+,   ru  = { "Особенность: ([^\n]*)" }
+,   ja  = { "Trait: ([^\n]*)" }
+}
+function LibCraftText.ParseMasterTrait(cond_line, trait_set_id)
+    local self = LibCraftText
+
+                        -- Limit the trait scan to just the nine traits
+                        -- appropriate for this trait_set_id. Otherwise we end
+                        -- up with "Robust" erroneously matching ARMOR_ROBUST
+                        -- for rings. Training,  Ninrhoned, others also suffer
+                        -- similar mismatches.
+    local trait_set = {}
+    for _,trait in pairs(self.TRAIT) do
+        if trait_set_id == trait.trait_set_id then
+            table.insert(trait_set, trait)
+        end
+    end
+
+    return self.ParseMasterLine(cond_line, self.RE_MASTER_TRAIT, trait_set)
+end
+
+LibCraftText.RE_MASTER_SET = {
+    en  = { "Set: ([^\n]*)" }
+,   de  = { "Set: ([^\n]*)" }
+,   fr  = { "Ensemble : ([^\n]*)" }
+,   es  = { "Conjunto: ([^\n]*)" }
+,   it  = { "Set: ([^\n]*)" }
+,   ru  = { "Комплект: ([^\n]*)" }
+,   ja  = { "Set: ([^\n]*)" }
+}
+function LibCraftText.ParseMasterSet(cond_line)
+    local self = LibCraftText
+    return self.ParseMasterLine(cond_line, self.RE_MASTER_SET, self.SET)
+end
+
+LibCraftText.RE_MASTER_MOTIF = {
+    en  = { "Style: ([^\n]*)" }
+,   de  = { "Stil: ([^\n]*)" }
+,   fr  = { "Style : ([^\n]*)" }
+,   es  = { "Estilo: ([^\n]*)" }
+,   it  = { "Stile:([^\n]*)" }
+,   ru  = { "Стиль: ([^\n]*)" }
+,   ja  = { "Style: ([^\n]*)" }
+}
+function LibCraftText.ParseMasterMotif(cond_line)
+    local self = LibCraftText
+    return self.ParseMasterLine(cond_line, self.RE_MASTER_MOTIF, self.MOTIF)
+end
+
+function LibCraftText.ParseMasterLine(cond_line, re_set, row_table)
+    local self = LibCraftText
+    local lang = self.CurrLang()
+    local args = { nil
+                 , cond_line
+                 , re_set[lang]
+                 , row_table
+                 , { "name" }
+             }
+    local quality    = self.ParseRegexable(unpack(args))
+    if not quality then
+        ZZDEBUG=ZZDEBUG_ON
+        ZZDEBUG(string.format("### quality cond_line:'%s'", cond_line))
+        self.ParseRegexable(unpack(args))
+        ZZDEBUG=ZZDEBUG_OFF
+    end
+    return quality
+end
+
 
 -- Parse Util ----------------------------------------------------------------
 
