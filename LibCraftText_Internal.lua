@@ -14,19 +14,103 @@ local CRAFTING_TYPE_PROVISIONING    = CRAFTING_TYPE_PROVISIONING    or 5
 local CRAFTING_TYPE_WOODWORKING     = CRAFTING_TYPE_WOODWORKING     or 6
 local CRAFTING_TYPE_JEWELRYCRAFTING = CRAFTING_TYPE_JEWELRYCRAFTING or 7
 
+
+
 -- Daily Crafting Conditions Parser ------------------------------------------
 --
 -- Turn condition text into "what do I need to make/acquire?" constants.
 --
+function LibCraftText.ParseDailyConditionInternal(crafting_type, cond_text)
+    if not LibCraftText.CRAFTING_TYPE_TO_DAILY_PARSER then
+        LibCraftText.CRAFTING_TYPE_TO_DAILY_PARSER = {
+            [CRAFTING_TYPE_BLACKSMITHING  ] = LibCraftText.ParseDailyConditionEquipment
+        ,   [CRAFTING_TYPE_CLOTHIER       ] = LibCraftText.ParseDailyConditionEquipment
+        ,   [CRAFTING_TYPE_ENCHANTING     ] = LibCraftText.ParseDailyConditionConsumable
+        ,   [CRAFTING_TYPE_ALCHEMY        ] = LibCraftText.ParseDailyConditionConsumable
+        ,   [CRAFTING_TYPE_PROVISIONING   ] = LibCraftText.ParseDailyConditionConsumable
+        ,   [CRAFTING_TYPE_WOODWORKING    ] = LibCraftText.ParseDailyConditionEquipment
+        ,   [CRAFTING_TYPE_JEWELRYCRAFTING] = LibCraftText.ParseDailyConditionEquipment
+        }
+    end
 
--- If the supplied condition requests that we craft a weapon, armor, or jewelry
--- item at a BS/CL/WW/JW station, return the requested item and material rows
--- from LibCraftText.ITEM and LibCraftText.MATERIAL.
---
--- If the supplied condition request something else, such as a consumable
--- glyph, potion, or food, or acquire an alchemy or enchanting material,
--- return nil.
---
+    local func = nil
+    if crafting_type then
+        func = LibCraftText.CRAFTING_TYPE_TO_DAILY_PARSER[crafting_type]
+    end
+    if not func then
+        func = LibCraftText.ParseDailyConditionMisc
+    end
+    return func(crafting_type, cond_text)
+end
+
+                        -- Regexes that can extract all gear crafting
+                        -- materials and items.
+LibCraftText.RE_CONDITION_DAILY_EQUIPMENT = {
+    ["en"] = { "Craft Normal ([^:]*)"
+             , "Craft an? ([^:]*)"
+             , "Craft Two ([^:]*)"
+             , "Craft Three ([^:]*)"
+             }
+,   ["de"] = { "Stellt normale (.*) her"
+             , "Stellt ein[enig]* (.*) her"
+             , "Stellt zwei (.*) her"
+             , "Stellt drei (.*) her"
+             }
+,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norm"
+             , "Fabriquez un (.*) en ([^:]*)"
+             , "Fabriquez des (.*) en (.*) norm"
+             , "Fabriquez deux (.*) en ([^:]*)"
+             , "Fabriquez trois (.*) en ([^:]*)"
+             , "Fabriquez [uneds]+ (.*) norm" -- MUST be after all "X en Y"
+                                              -- regexes to keep preposition
+                                              -- "en" out of matitem.
+             , "Fabriquez un (.*) d'([^:]*)"
+             , "Fabriquez [uneds]+ (.*) en (.*) avec"
+             }
+,   ["ru"] = { "Craft Normal ([^:]*)"
+             , "Craft an? ([^:]*)"
+             , "Craft two ([^:]*)"
+             , "Craft three ([^:]*)"
+             , "Создать предмет %((.*)%) со следующими"
+             }
+,   ["es"] = { "Fabrica [unaos]+ (.*) norm"
+             , "Fabrica [unaos]+ (.*) de (.*) norm"
+             , "Fabrica un (.*) de ([^:]*)"
+             , "Fabrica dos (.*) de ([^:]*)"
+             , "Fabrica tres (.*) de ([^:]*)"
+             , "Fabricar: (.*) con los"
+             }
+,   ["ja"] = { "(.*)%(ノーマル%)を生産する"
+             , "(.*)の(.*)%(ノーマル%)を生産する"
+             , "(.*)の(.*)を作る"
+             , "(.*)を2個作る"
+             , "(.*)を3個作る"
+             , "Craft a (.*) with the"
+             }
+}
+                        -- The official FR French translation has a couple
+                        -- condition strings that completely omit the  material
+                        -- required (EN Oak FR chêne). Replace broken lines
+                        -- with ones that will actually work.
+LibCraftText.BUGFIX = {
+    ["fr"] = {
+                ["Fabriquez un bouclier normal"               ]
+               = "Fabriquez un bouclier en chêne normal"
+             ,  ["Fabriquez un bâton de rétablissement normal"]
+               = "Fabriquez un bâton de rétablissement en chêne normal"
+             }
+}
+
+                        -- If the supplied condition requests that we craft a
+                        -- weapon, armor, or jewelry item at a BS/CL/WW/JW
+                        -- station, return the requested item and material rows
+                        -- from LibCraftText.ITEM and LibCraftText.MATERIAL.
+                        --
+                        -- If the supplied condition request something else,
+                        -- such as a consumable glyph, potion, or food, or
+                        -- acquire an alchemy or enchanting material, return
+                        -- nil.
+                        --
 function LibCraftText.ParseDailyConditionEquipment(crafting_type, cond_text)
     local self      = LibCraftText
     local lang      = self.CurrLang()
@@ -92,87 +176,15 @@ function LibCraftText.ParseDailyConditionEquipment(crafting_type, cond_text)
     if not (found.item or found.material) then return nil end
     return found
 end
-                        -- Regexes that can extract all gear crafting
-                        -- materials and items.
-LibCraftText.RE_CONDITION_DAILY_EQUIPMENT = {
-    ["en"] = { "Craft Normal ([^:]*)"
-             , "Craft an? ([^:]*)"
-             , "Craft Two ([^:]*)"
-             , "Craft Three ([^:]*)"
-             }
-,   ["de"] = { "Stellt normale (.*) her"
-             , "Stellt ein[enig]* (.*) her"
-             , "Stellt zwei (.*) her"
-             , "Stellt drei (.*) her"
-             }
-,   ["fr"] = { "Fabriquez [uneds]+ (.*) en (.*) norm"
-             , "Fabriquez un (.*) en ([^:]*)"
-             , "Fabriquez des (.*) en (.*) norm"
-             , "Fabriquez deux (.*) en ([^:]*)"
-             , "Fabriquez trois (.*) en ([^:]*)"
-             , "Fabriquez [uneds]+ (.*) norm" -- MUST be after all "X en Y"
-                                              -- regexes to keep preposition
-                                              -- "en" out of matitem.
-             , "Fabriquez un (.*) d'([^:]*)"
-             , "Fabriquez [uneds]+ (.*) en (.*) avec"
-             }
-,   ["ru"] = { "Craft Normal ([^:]*)"
-             , "Craft an? ([^:]*)"
-             , "Craft two ([^:]*)"
-             , "Craft three ([^:]*)"
-             , "Создать предмет %((.*)%) со следующими"
-             }
-,   ["es"] = { "Fabrica [unaos]+ (.*) norm"
-             , "Fabrica [unaos]+ (.*) de (.*) norm"
-             , "Fabrica un (.*) de ([^:]*)"
-             , "Fabrica dos (.*) de ([^:]*)"
-             , "Fabrica tres (.*) de ([^:]*)"
-             , "Fabricar: (.*) con los"
-             }
-,   ["ja"] = { "(.*)%(ノーマル%)を生産する"
-             , "(.*)の(.*)%(ノーマル%)を生産する"
-             , "(.*)の(.*)を作る"
-             , "(.*)を2個作る"
-             , "(.*)を3個作る"
-             , "Craft a (.*) with the"
-             }
-}
 
-                        -- The official FR French translation has a couple
-                        -- condition strings that completely omit the  material
-                        -- required (EN Oak FR chêne). Replace broken lines
-                        -- with ones that will actually work.
-LibCraftText.BUGFIX = {
-    ["fr"] = {
-                ["Fabriquez un bouclier normal"               ] = "Fabriquez un bouclier en chêne normal"
-             ,  ["Fabriquez un bâton de rétablissement normal"] = "Fabriquez un bâton de rétablissement en chêne normal"
-             }
-}
-
-LibCraftText.RE_CONDITION_ACQUIRE = {
-    ["en"] = { "Acquire ([^:]*)"
-             }
-,   ["de"] = { "Besorgt ([^:]*)"
-             , "Beschafft ([^:]*)"
-             }
-,   ["fr"] = { "Acquérez ([^:]*)"
-             , "Acquérir ([^:]*)"
-             }
-,   ["ru"] = { "Раздобыть — ([^:]*)"
-             , "Добыть ([^:]*)"
-             , "Достать ([^:]*)"
-             }
-,   ["es"] = { "Adquiere ([^:]*)"
-             }
-,   ["ja"] = { "(.*)を手に入れる" }
-}
-
--- If the supplied condition requests that we craft a potion or poison at
--- an AL station, return the requested item and level.
---
--- If the supplied condition requests something else, such as gear,
--- or acquire some alchemy or enchanting material, return nil.
---
+                        -- If the supplied condition requests that we craft a
+                        -- potion or poison at an AL station, return the
+                        -- requested item and level.
+                        --
+                        -- If the supplied condition requests something else,
+                        -- such as gear, or acquire some alchemy or enchanting
+                        -- material, return nil.
+                        --
 function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
     local self          = LibCraftText
 
@@ -197,6 +209,24 @@ function LibCraftText.ParseDailyConditionConsumable(crafting_type, cond_text)
 
     return nil
 end
+
+LibCraftText.RE_CONDITION_ACQUIRE = {
+    ["en"] = { "Acquire ([^:]*)"
+             }
+,   ["de"] = { "Besorgt ([^:]*)"
+             , "Beschafft ([^:]*)"
+             }
+,   ["fr"] = { "Acquérez ([^:]*)"
+             , "Acquérir ([^:]*)"
+             }
+,   ["ru"] = { "Раздобыть — ([^:]*)"
+             , "Добыть ([^:]*)"
+             , "Достать ([^:]*)"
+             }
+,   ["es"] = { "Adquiere ([^:]*)"
+             }
+,   ["ja"] = { "(.*)を手に入れる" }
+}
 
 function LibCraftText.ParseConsumableAcquireMat(crafting_type, cond_text)
                         -- Only Enchanting and Alchemy have "Acquire Ta" and
@@ -262,8 +292,10 @@ LibCraftText.RE_POTENCY = {
 ,   fr = { "glyphe (.*)"
          , "(petit) glyphe "}
 ,   es = { "glifo (.*) de"
-         , "Craft (.*) Glyph of" }  -- Ayep, there are still untranslated lines in ES Spanish
-,   it = { "(.*) glyph of"}         -- "glifo of health" for all 10 potencies. Broken.
+         , "Craft (.*) Glyph of" }  -- Ayep, there are still untranslated lines
+                                    -- in ES Spanish "glifo of health" for all
+                                    -- 10 potencies. Broken.
+,   it = { "(.*) glyph of"}
 ,   ru = { "(.*) Glyph of"}
 ,   ja = { "(.*)のグリフ"
          , "(.*)なグリフ"}
@@ -421,7 +453,31 @@ end
 
 -- Parse Master Writ Conditions ----------------------------------------------
 
--- Break a multi-line condition into its bullet-prefixed substrings.
+function LibCraftText.ParseMasterConditionInternal(crafting_type, cond_text)
+    if not LibCraftText.CRAFTING_TYPE_TO_MASTER_PARSER then
+        LibCraftText.CRAFTING_TYPE_TO_MASTER_PARSER = {
+            [CRAFTING_TYPE_BLACKSMITHING  ] = LibCraftText.ParseMasterConditionEquipment
+        ,   [CRAFTING_TYPE_CLOTHIER       ] = LibCraftText.ParseMasterConditionEquipment
+        ,   [CRAFTING_TYPE_ENCHANTING     ] = LibCraftText.ParseMasterConditionEnchanting
+        ,   [CRAFTING_TYPE_ALCHEMY        ] = LibCraftText.ParseMasterConditionAlchemy
+        ,   [CRAFTING_TYPE_PROVISIONING   ] = LibCraftText.ParseMasterConditionProvisioning
+        ,   [CRAFTING_TYPE_WOODWORKING    ] = LibCraftText.ParseMasterConditionEquipment
+        ,   [CRAFTING_TYPE_JEWELRYCRAFTING] = LibCraftText.ParseMasterConditionEquipment
+        }
+    end
+
+    local func = nil
+    if crafting_type then
+        func = LibCraftText.CRAFTING_TYPE_TO_MASTER_PARSER[crafting_type]
+    end
+    if not func then
+        func = LibCraftText.ParseMasterConditionMisc
+    end
+    return func(crafting_type, cond_text)
+end
+
+                        -- Break a multi-line condition into its bullet-
+                        -- prefixed substrings.
 function LibCraftText.MasterConditionSplit(cond_text)
     local self = LibCraftText
     local lang = self.CurrLang()
@@ -429,27 +485,21 @@ function LibCraftText.MasterConditionSplit(cond_text)
                         -- to break up their alchemy traits.
                         -- ES Spanish just continues the same line
                         -- without newline, so you have to break on bullet.
+                        -- string.gmatch() does not handle bullet well, so
+                        -- use split_plain() instead of split()
     local BULLET    = "•"   -- UTF-8 E2 80 A2 = U2022 "bullet"
     local lines = self.split_plain(cond_text, BULLET.." ")
-    -- table.remove(lines,1)
     return lines
 end
 
 LibCraftText.RE_MASTER_ALCHEMY_NAME_TRAIT = {
-    en = { "Craft an? (.*) with the following Traits"
-         }
-,   de = { "Stellt eine? (.*) mit bestimmten Eigenschaften her"
-         }
-,   fr = { "Fabriquez une? (.*) avec les traits suivants"
-         }
-,   es = { "Fabricæ una? (.*) con las siguientes propiedades:"
-         }
-,   it = { "Crea un (.*) con i seguenti tratti:"
-         }
-,   ru = { "Создать предмет %((.*)%) со следующими эффектами:"
-         }
-,   ja = { "Craft a (.*) with the following Traits:"
-         }
+    en = { "Craft an? (.*) with the following Traits" }
+,   de = { "Stellt eine? (.*) mit bestimmten Eigenschaften her" }
+,   fr = { "Fabriquez une? (.*) avec les traits suivants" }
+,   es = { "Fabricæ una? (.*) con las siguientes propiedades:" }
+,   it = { "Crea un (.*) con i seguenti tratti:" }
+,   ru = { "Создать предмет %((.*)%) со следующими эффектами:" }
+,   ja = { "Craft a (.*) with the following Traits:" }
 }
 
 -- Parse the condition text from an alchemy master writ quest.
@@ -763,11 +813,11 @@ function LibCraftText.ParseRegexableOptional( crafting_type
     local self              = LibCraftText
     for _,re in ipairs(re_list) do
         local match = self.ParseRegexableOneRE( crafting_type
-                                         , cond_text
-                                         , re
-                                         , result_list
-                                         , result_name_field_list
-                                         )
+                                              , cond_text
+                                              , re
+                                              , result_list
+                                              , result_name_field_list
+                                              )
         if match then return match end
     end
     return nil
@@ -789,51 +839,45 @@ function LibCraftText.ParseRegexableOneRE( crafting_type
     local cond_sub_str = g1
     ZZDEBUG("### cond_sub_str:'%s'", cond_sub_str)
     cond_sub_str = cond_sub_str:lower()
-    local exact_match = self.ExactMatch(cond_sub_str, result_list , crafting_type
-                            , unpack(result_name_field_list))
+    local exact_match = self.ExactMatch( cond_sub_str
+                                       , result_list
+                                       , crafting_type
+                                       , unpack(result_name_field_list))
     if exact_match then return exact_match end
 
-    local longest_match = self.LongestMatch(cond_sub_str, result_list , crafting_type
-                            , unpack(result_name_field_list))
+    local longest_match = self.LongestMatch( cond_sub_str
+                                           , result_list
+                                           , crafting_type
+                                           , unpack(result_name_field_list))
     if longest_match then return longest_match end
 
     return nil
 end
 
+                        -- Return the first row with an EXACT match (lowercased)
+function LibCraftText.ExactMatch(find_me, rows, crafting_type, field_name, ... )
+    if not find_me then return nil end
+    local find_me_lower      = find_me:lower()
+    local find_me_deumlauted = LibCraftText.DeUmlaut(find_me_lower)
+    for _,fieldname in pairs({ field_name, ... }) do
+        if not fieldname then break end
+        for _, row in pairs(rows) do
+            if (not crafting_type) or row.crafting_type == crafting_type then
+                local name = row[fieldname]
+                if name and (  find_me_lower == name:lower()
+                             or find_me_deumlauted == LibCraftText.DeUmlaut(name) ) then
 
--- Test Scaffolding ----------------------------------------------------------
---
--- To enable unit tests to force a specific language.
---
-
-function LibCraftText.ForceLang(lang)
-    LibCraftText.force_lang = lang
-end
-
--- Test Scaffolding to enable unit tests to force a specific language.
-function LibCraftText.CurrLang()
-    if LibCraftText.force_lang then
-        return LibCraftText.force_lang
-    elseif not GetCVar then
-        return "en" -- for running outside of ESO client.
+                    ZZDEBUG("    exact: '%s'", tostring(name))
+                    return row
+                else
+                    ZZDEBUG("not exact: '%s' != '%s'", tostring(name), find_me_lower)
+                end
+            end
+        end
     end
-    return GetCVar("language.2")
+    return nil
 end
 
-
--- Internal Utility ----------------------------------------------------------
-
-local DE_UMLAUT = { ["ä"] = "a"
-                  , ["ö"] = "o"
-                  , ["ü"] = "u"
-                  }
-function LibCraftText.DeUmlaut(t)
-    tt = t
-    for k,v in pairs(DE_UMLAUT) do
-        tt = tt:gsub(k,v)
-    end
-    return tt
-end
                         -- Return the row with the longest matching field.
 function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ... )
     if not find_me then return nil end
@@ -865,29 +909,51 @@ function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ...
     return longest_match.row
 end
 
-                        -- Return the first row with an EXACT match (lowercased)
-function LibCraftText.ExactMatch(find_me, rows, crafting_type, field_name, ... )
-    if not find_me then return nil end
-    local find_me_lower      = find_me:lower()
-    local find_me_deumlauted = LibCraftText.DeUmlaut(find_me_lower)
-    for _,fieldname in pairs({ field_name, ... }) do
-        if not fieldname then break end
-        for _, row in pairs(rows) do
-            if (not crafting_type) or row.crafting_type == crafting_type then
-                local name = row[fieldname]
-                if name and (  find_me_lower == name:lower()
-                             or find_me_deumlauted == LibCraftText.DeUmlaut(name) ) then
 
-                    ZZDEBUG("    exact: '%s'", tostring(name))
-                    return row
-                else
-                    ZZDEBUG("not exact: '%s' != '%s'", tostring(name), find_me_lower)
-                end
-            end
-        end
-    end
-    return nil
+-- Test Scaffolding ----------------------------------------------------------
+--
+-- To enable unit tests to force a specific language.
+--
+
+function LibCraftText.ForceLang(lang)
+    LibCraftText.force_lang = lang
 end
+
+                        -- Test Scaffolding to enable unit tests to force a
+                        -- specific language.
+function LibCraftText.CurrLang()
+    if LibCraftText.force_lang then
+        return LibCraftText.force_lang
+    elseif not GetCVar then
+        return "en"     -- for running outside of ESO client.
+    end
+    return GetCVar("language.2")
+end
+
+
+-- Internal Utility ----------------------------------------------------------
+
+local DE_UMLAUT = { ["ä"] = "a"
+                  , ["ö"] = "o"
+                  , ["ü"] = "u"
+                  }
+function LibCraftText.DeUmlaut(t)
+    tt = t
+    for k,v in pairs(DE_UMLAUT) do
+        tt = tt:gsub(k,v)
+    end
+    return tt
+end
+
+LibCraftText.CRAFTING_TYPES = {
+  CRAFTING_TYPE_BLACKSMITHING
+, CRAFTING_TYPE_CLOTHIER
+, CRAFTING_TYPE_ENCHANTING
+, CRAFTING_TYPE_ALCHEMY
+, CRAFTING_TYPE_PROVISIONING
+, CRAFTING_TYPE_WOODWORKING
+, CRAFTING_TYPE_JEWELRYCRAFTING
+}
 
 -- Build reverse lookup tables to accelerate lookups
 function LibCraftText.BuildReverseLookupTables()
@@ -914,16 +980,6 @@ function LibCraftText.BuildReverseLookupTables()
     LibCraftText.reverse_tables_built = true
 end
 
-LibCraftText.CRAFTING_TYPES = {
-  CRAFTING_TYPE_BLACKSMITHING
-, CRAFTING_TYPE_CLOTHIER
-, CRAFTING_TYPE_ENCHANTING
-, CRAFTING_TYPE_ALCHEMY
-, CRAFTING_TYPE_PROVISIONING
-, CRAFTING_TYPE_WOODWORKING
-, CRAFTING_TYPE_JEWELRYCRAFTING
-}
-
                         -- Convert hyphen-carrying FR French "épine-de-dragon"
                         -- into something that can we can successfully pass
                         -- as a search expression to string.find().
@@ -933,8 +989,9 @@ function LibCraftText.escape_re(t)
     return r
 end
 
--- To help see surprise unicode chars like non-breaking-space.
--- Copied from http://lua-users.org/wiki/HexDump
+                        -- To help see surprise unicode chars like non-
+                        -- breaking-space. Copied from http://lua-
+                        -- users.org/wiki/HexDump
 function LibCraftText.hex_dump(buf)
   for i=1,math.ceil(#buf/16) * 16 do
      if (i-1) % 16 == 0 then io.write(string.format('%08X  ', i-1)) end
@@ -944,24 +1001,27 @@ function LibCraftText.hex_dump(buf)
   end
 end
 
--- From http://lua-users.org/wiki/SplitJoin
---
--- A split that accepts regexes as delimiters, but which returns incorrect
--- results for UTF-8 delimiters such as E2 *0 A2 = U2022 "Bullet".
+                        -- From http://lua-users.org/wiki/SplitJoin
+                        --
+                        -- A split that accepts regexes as delimiters, but
+                        -- which returns incorrect results for UTF-8 delimiters
+                        -- such as E2 *0 A2 = U2022 "Bullet".
 function LibCraftText.split(str,sep)
     local ret={}
     local n=1
     for w in str:gmatch("([^"..sep.."]*)") do
-        ret[n] = ret[n] or w -- only set once (so the blank after a string is ignored)
-        if w=="" then
+        ret[n] = ret[n] or w    -- only set once (so the blank
+        if w=="" then           -- after a string is ignored)
             n = n + 1
         end -- step forwards on a blank but not a string
     end
     return ret
 end
 
-
--- A split which works for string constant delimiters such as bullet.
+                        -- A split which works for string constant delimiters
+                        -- such as bullet or hyphen, ignoring any unwanted
+                        -- regex special function that those delimiters might
+                        -- invoke.
 function LibCraftText.split_plain(str,sep)
     local ret={}
     local n=1
@@ -978,8 +1038,3 @@ function LibCraftText.split_plain(str,sep)
     end
     return ret
 end
-
-
-
-
-
