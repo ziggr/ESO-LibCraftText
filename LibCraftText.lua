@@ -736,14 +736,7 @@ end
 function LibCraftText.ParseMasterConditionProvisioning(crafting_type, cond_text)
     return LibCraftText.ParseDailyConditionProvisioning(cond_text)
 end
---[[
--- Fabriquez une cuirasse en cuprite avec les caractéristiques suivantes :
--- • Qualité : Épique
--- • Trait : Solide
--- • Ensemble : l’Héritage de Varen
--- • Style : Elfe des bois
--- • Progression : 0/1
-]]
+
 function LibCraftText.ParseMasterConditionEquipment(crafting_type, cond_text)
     local self     = LibCraftText
     local lines    = self.MasterConditionSplit(cond_text)
@@ -763,6 +756,13 @@ function LibCraftText.ParseMasterConditionEquipment(crafting_type, cond_text)
                , trait   = 4
                , quality = 5
                }
+        if crafting_type == CRAFTING_TYPE_JEWELRYCRAFTING then
+            line = { set     = 2
+                   , motif   = nil
+                   , trait   = 3
+                   , quality = 4
+                   }
+        end
     end
 
     result.quality = self.ParseMasterQuality(lines[line.quality])
@@ -850,14 +850,7 @@ function LibCraftText.ParseMasterLine(cond_line, re_set, row_table)
                  , row_table
                  , { "name" }
              }
-    local quality    = self.ParseRegexable(unpack(args))
-    if not quality then
-        ZZDEBUG=ZZDEBUG_ON
-        ZZDEBUG(string.format("### quality cond_line:'%s'", cond_line))
-        self.ParseRegexable(unpack(args))
-        ZZDEBUG=ZZDEBUG_OFF
-    end
-    return quality
+    return self.ParseRegexable(unpack(args))
 end
 
 

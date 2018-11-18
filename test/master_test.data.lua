@@ -165,12 +165,62 @@ MASTER_FODDER = {
              }
   }
 
--- , { input = "Craft a Ruby Ash Shield with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Noble's Conquest\n• Style: Primal\n• Progress: 0 / 1"
--- , { input = "Craft a Ruby Ash Restoration Staff with the following Properties:\n• Quality: Epic\n• Trait: Nirnhoned\n• Set: Oblivion's Foe\n• Style: Bloodforge\n• Progress: 0 / 1"
+, { input = "Craft a Ruby Ash Shield with the following Properties:"
+            .."\n• Quality: Epic"
+            .."\n• Trait: Nirnhoned"
+            .."\n• Set: Noble's Conquest"
+            .."\n• Style: Primal"
+            .."\n• Progress: 0 / 1"
+  , expect = { item     = LCT.ITEM.SHIELD
+             , material = LCT.MATERIAL.RUBY_ASH
+             , quality  = LCT.QUALITY.EPIC
+             , trait    = LCT.TRAIT.ARMOR_NIRNHONED
+             , set      = LCT.SET.NOBLES_CONQUEST
+             , motif    = LCT.MOTIF.PRIMAL
+             }
+  }
 
--- , { input = "Craft a Platinum Ring with the following Properties:\n• Quality: Legendary\n• Trait: Protective\n• Set: Armor Master\n• Progress: 0 / 1"
+, { input = "Craft a Ruby Ash Restoration Staff with the following Properties:"
+            .."\n• Quality: Epic"
+            .."\n• Trait: Nirnhoned"
+            .."\n• Set: Oblivion's Foe"
+            .."\n• Style: Bloodforge"
+            .."\n• Progress: 0 / 1"
+  , expect = { item     = LCT.ITEM.RESTO_STAFF
+             , material = LCT.MATERIAL.RUBY_ASH
+             , quality  = LCT.QUALITY.EPIC
+             , trait    = LCT.TRAIT.WEAPON_NIRNHONED
+             , set      = LCT.SET.OBLIVIONS_FOE
+             , motif    = LCT.MOTIF.BLOODFORGE
+             }
+  }
 
--- , { input = "Craft a Platinum Necklace with the following Properties:\n• Quality: Epic\n• Trait: Healthy\n• Set: Assassin's Guile\n• Progress: 0 / 1"
+, { input = "Craft a Platinum Ring with the following Properties:"
+            .."\n• Quality: Legendary"
+            .."\n• Trait: Protective"
+            .."\n• Set: Armor Master"
+            .."\n• Progress: 0 / 1"
+  , expect = { item     = LCT.ITEM.RING
+             , material = LCT.MATERIAL.PLATINUM
+             , quality  = LCT.QUALITY.LEGENDARY
+             , trait    = LCT.TRAIT.JEWELRY_PROTECTIVE
+             , set      = LCT.SET.ARMOR_MASTER
+             }
+  }
+
+, { input = "Craft a Platinum Necklace with the following Properties:"
+            .."\n• Quality: Epic"
+            .."\n• Trait: Healthy"
+            .."\n• Set: Assassin's Guile"
+            .."\n• Progress: 0 / 1"
+  , expect = { item     = LCT.ITEM.NECKLACE
+             , material = LCT.MATERIAL.PLATINUM
+             , quality  = LCT.QUALITY.EPIC
+             , trait    = LCT.TRAIT.JEWELRY_HEALTHY
+             , set      = LCT.SET.ASSASSINS_GUILE
+             }
+  }
+
 
 -- , { input = "Travel to Elden Root to Meet Your Contact"
 -- , { input = "Travel to Mournhold to Meet Your Contact"
