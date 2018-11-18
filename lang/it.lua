@@ -673,6 +673,12 @@ LibCraftText.DAILY_COND = {
 ,   DELIVER_NEAREST_QUARTERMASTER = "TRACKER GOAL TEXT"           
 }
 
+LibCraftText.MASTER_COND = {
+    TRAVEL_AD = "Travel to Elden Root to Meet your Contact"
+,   TRAVEL_DC = "Travel to Wayrest to Meet your Contact"
+,   TRAVEL_EP = "Travel to Mournhold to Meet your Contact"
+}
+
 -- Quest Titles --------------------------------------------------------------
 
 LibCraftText.DAILY_QUEST_TITLES = {

@@ -673,6 +673,12 @@ LibCraftText.DAILY_COND = {
 ,   DELIVER_NEAREST_QUARTERMASTER = "Entrega la mercancía al intendente más cercano"
 }
 
+LibCraftText.MASTER_COND = {
+    TRAVEL_AD = "Reúnete con tu contacto en Raíz de Elden"
+,   TRAVEL_DC = "Reúnete con tu contacto en Quietud"
+,   TRAVEL_EP = "Reúnete con tu contacto en El Duelo"
+}
+
 -- Quest Titles --------------------------------------------------------------
 
 LibCraftText.DAILY_QUEST_TITLES = {

@@ -673,6 +673,12 @@ LibCraftText.DAILY_COND = {
 ,   DELIVER_NEAREST_QUARTERMASTER = "品物を、一番近い依頼を出す補給係に届ける"        
 }
 
+LibCraftText.MASTER_COND = {
+    TRAVEL_AD = "エルデンルートへ行って代理人と会う"   
+,   TRAVEL_DC = "ウェイレストへ行って代理人と会う"    
+,   TRAVEL_EP = "モーンホールドへ行って代理人と会う"   
+}
+
 -- Quest Titles --------------------------------------------------------------
 
 LibCraftText.DAILY_QUEST_TITLES = {

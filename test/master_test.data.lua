@@ -221,8 +221,13 @@ MASTER_FODDER = {
              }
   }
 
-
--- , { input = "Travel to Elden Root to Meet Your Contact"
--- , { input = "Travel to Mournhold to Meet Your Contact"
--- , { input = "Travel to Wayrest to Meet Your Contact"
+, { input  = "Travel to Elden Root to Meet Your Contact"
+  , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_AD }
+  }
+, { input  = "Travel to Mournhold to Meet Your Contact"
+  , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_EP }
+  }
+, { input  = "Travel to Wayrest to Meet Your Contact"
+  , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_DC }
+  }
 }

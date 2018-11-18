@@ -673,6 +673,12 @@ LibCraftText.DAILY_COND = {
 ,   DELIVER_NEAREST_QUARTERMASTER = "Beliefert den nächsten Quartiermeister für Handwerksschriebe"
 }
 
+LibCraftText.MASTER_COND = {
+    TRAVEL_AD = "Reist nach Eldenwurz, um Euren Kontakt zu treffen"
+,   TRAVEL_DC = "Reist nach Wegesruh, um Euren Kontakt zu treffen"
+,   TRAVEL_EP = "Reist nach Gramfeste, um Euren Kontakt zu treffen"
+}
+
 -- Quest Titles --------------------------------------------------------------
 
 LibCraftText.DAILY_QUEST_TITLES = {

@@ -112,7 +112,6 @@ function LibCraftText.ParseMasterCondition(crafting_type, cond_text)
     end
     if not func then
         func = LibCraftText.ParseMasterConditionMisc
-return nil
     end
     return func(crafting_type, cond_text)
 end
@@ -853,6 +852,15 @@ function LibCraftText.ParseMasterLine(cond_line, re_set, row_table)
     return self.ParseRegexable(unpack(args))
 end
 
+function LibCraftText.ParseMasterConditionMisc(crafting_type, cond_text)
+    for k,v in pairs(LibCraftText.MASTER_COND) do
+        if cond_text == v then
+            return { misc=LibCraftText.MASTER_COND[k] }
+        end
+    end
+    return nil
+
+end
 
 -- Parse Util ----------------------------------------------------------------
 
