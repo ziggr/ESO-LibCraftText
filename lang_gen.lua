@@ -246,6 +246,7 @@ local MASTER_QUEST_TITLE_TO_CRAFTING_TYPE_LIST =
 , ["A Masterful Shield"    ] = { ww }
 , ["A Masterful Weapon"    ] = { bs, ww }
 , ["Masterful Jewelry"     ] = { jw }
+, ["Masterful Tailoring"   ] = { cl }
 , ["Masterful Leatherwear" ] = { cl }
 }
 
