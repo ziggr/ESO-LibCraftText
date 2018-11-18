@@ -681,9 +681,16 @@ LibCraftText.DAILY_COND = {
 }
 
 LibCraftText.MASTER_COND = {
-    TRAVEL_AD = "Reúnete con tu contacto en Raíz de Elden"
-,   TRAVEL_DC = "Reúnete con tu contacto en Quietud"
-,   TRAVEL_EP = "Reúnete con tu contacto en El Duelo"
+    TRAVEL_AD       = "Reúnete con tu contacto en Raíz de Elden"
+,   TRAVEL_DC       = "Reúnete con tu contacto en Quietud"
+,   TRAVEL_EP       = "Reúnete con tu contacto en El Duelo"
+
+,   DELIVER_AL      = "Entrega la mezcla"    
+,   DELIVER_EN      = "Entrega el glifo"     
+,   DELIVER_PR      = "Entrega el festín"    
+,   DELIVER_WEAPON  = "Entrega el arma"          
+,   DELIVER_ARMOR   = "Entrega la armadura"     
+,   DELIVER_JW      = "Entrega la joya"      
 }
 
 -- Quest Titles --------------------------------------------------------------

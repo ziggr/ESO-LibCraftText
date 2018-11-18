@@ -960,7 +960,24 @@ MASTER_FODDER = {
 , { input  = "Travel to Wayrest to Meet Your Contact"
   , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_DC }
   }
-
+, { input  = "Deliver the Concoction"
+  , expect = { misc=LibCraftText.MASTER_COND.DELIVER_AL }
+  }
+, { input  = "Deliver the Glyph"
+  , expect = { misc=LibCraftText.MASTER_COND.DELIVER_EN }
+  }
+, { input  = "Deliver the Feast"
+  , expect = { misc=LibCraftText.MASTER_COND.DELIVER_PR }
+  }
+, { input  = "Deliver the Weapon"
+  , expect = { misc=LibCraftText.MASTER_COND.DELIVER_WEAPON }
+  }
+, { input  = "Deliver the Armor"
+  , expect = { misc=LibCraftText.MASTER_COND.DELIVER_ARMOR }
+  }
+, { input  = "Deliver the Jewelry"
+  , expect = { misc=LibCraftText.MASTER_COND.DELIVER_JW }
+  }
 
 
 

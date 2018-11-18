@@ -321,3 +321,6 @@ function LibCraftText.ParseRegexableOptional( crafting_type
 function LibCraftText.ParseRegexableOneRE( crafting_type
 function LibCraftText.ExactMatch(within_me, rows, crafting_type, field_name, ... )
 function LibCraftText.LongestMatch(within_me, rows, crafting_type, field_name, ... )
+
+
+lat neck legendary protect

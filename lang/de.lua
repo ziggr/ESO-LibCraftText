@@ -681,9 +681,16 @@ LibCraftText.DAILY_COND = {
 }
 
 LibCraftText.MASTER_COND = {
-    TRAVEL_AD = "Reist nach Eldenwurz, um Euren Kontakt zu treffen"
-,   TRAVEL_DC = "Reist nach Wegesruh, um Euren Kontakt zu treffen"
-,   TRAVEL_EP = "Reist nach Gramfeste, um Euren Kontakt zu treffen"
+    TRAVEL_AD       = "Reist nach Eldenwurz, um Euren Kontakt zu treffen"
+,   TRAVEL_DC       = "Reist nach Wegesruh, um Euren Kontakt zu treffen"
+,   TRAVEL_EP       = "Reist nach Gramfeste, um Euren Kontakt zu treffen"
+
+,   DELIVER_AL      = "Liefert das Gebräu"   
+,   DELIVER_EN      = "Liefert die Glyphe"   
+,   DELIVER_PR      = "Liefert das Mahl"     
+,   DELIVER_WEAPON  = "Liefert die Waffe"        
+,   DELIVER_ARMOR   = "Liefert die Rüstung"     
+,   DELIVER_JW      = "Liefert den Schmuck aus"
 }
 
 -- Quest Titles --------------------------------------------------------------

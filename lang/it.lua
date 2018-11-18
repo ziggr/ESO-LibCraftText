@@ -681,9 +681,16 @@ LibCraftText.DAILY_COND = {
 }
 
 LibCraftText.MASTER_COND = {
-    TRAVEL_AD = "Travel to Elden Root to Meet your Contact"
-,   TRAVEL_DC = "Travel to Wayrest to Meet your Contact"
-,   TRAVEL_EP = "Travel to Mournhold to Meet your Contact"
+    TRAVEL_AD       = "Travel to Elden Root to Meet your Contact"
+,   TRAVEL_DC       = "Travel to Wayrest to Meet your Contact"
+,   TRAVEL_EP       = "Travel to Mournhold to Meet your Contact"
+
+,   DELIVER_AL      = "Deliver the Concoction"
+,   DELIVER_EN      = "Deliver the Glyph"    
+,   DELIVER_PR      = "Deliver the Feast"    
+,   DELIVER_WEAPON  = "Deliver the Weapon"       
+,   DELIVER_ARMOR   = "Deliver the Armor"       
+,   DELIVER_JW      = "Deliver the Jewelry"  
 }
 
 -- Quest Titles --------------------------------------------------------------

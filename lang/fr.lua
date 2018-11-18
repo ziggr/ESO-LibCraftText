@@ -681,9 +681,16 @@ LibCraftText.DAILY_COND = {
 }
 
 LibCraftText.MASTER_COND = {
-    TRAVEL_AD = "Allez rencontrer votre contact à Faneracine"
-,   TRAVEL_DC = "Allez rencontrer votre contact à Haltevoie"
-,   TRAVEL_EP = "Allez rencontrer votre contact à Longsanglot"
+    TRAVEL_AD       = "Allez rencontrer votre contact à Faneracine"
+,   TRAVEL_DC       = "Allez rencontrer votre contact à Haltevoie"
+,   TRAVEL_EP       = "Allez rencontrer votre contact à Longsanglot"
+
+,   DELIVER_AL      = "Livrer la concoction" 
+,   DELIVER_EN      = "Livrer le glyphe."    
+,   DELIVER_PR      = "Livrer le festin."    
+,   DELIVER_WEAPON  = "Livrer l'arme."           
+,   DELIVER_ARMOR   = "Livrez l'armure"         
+,   DELIVER_JW      = "Livrez le bijou"      
 }
 
 -- Quest Titles --------------------------------------------------------------

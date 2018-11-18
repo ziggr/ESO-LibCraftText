@@ -681,9 +681,16 @@ LibCraftText.DAILY_COND = {
 }
 
 LibCraftText.MASTER_COND = {
-    TRAVEL_AD = "エルデンルートへ行って代理人と会う"   
-,   TRAVEL_DC = "ウェイレストへ行って代理人と会う"    
-,   TRAVEL_EP = "モーンホールドへ行って代理人と会う"   
+    TRAVEL_AD       = "エルデンルートへ行って代理人と会う"   
+,   TRAVEL_DC       = "ウェイレストへ行って代理人と会う"    
+,   TRAVEL_EP       = "モーンホールドへ行って代理人と会う"   
+
+,   DELIVER_AL      = "調合薬を届ける"              
+,   DELIVER_EN      = "グリフを届ける"              
+,   DELIVER_PR      = "料理を届ける"               
+,   DELIVER_WEAPON  = "武器を届ける"                   
+,   DELIVER_ARMOR   = "防具を届ける"                  
+,   DELIVER_JW      = "宝飾を届ける"               
 }
 
 -- Quest Titles --------------------------------------------------------------
