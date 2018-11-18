@@ -6,6 +6,7 @@ luaunit = require("luaunit")
 TestGen            = {}
 TestGen.setUpOuter =  Test.setUpOuter
 TestGen.setUp      =  Test.setUp
+ZZDEBUG_ALLOWED    = true
 
 LCT = LibCraftText
 

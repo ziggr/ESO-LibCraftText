@@ -1,10 +1,11 @@
 LibCraftText = LibCraftText or {}
 
-local function ZZDEBUG_ON(msg) print(msg) end
-local function ZZDEBUG_OFF(msg) end
+local function ZZDEBUG_ON(msg, ...) print(string.format(msg, ...)) end
+local function ZZDEBUG_OFF(msg, ...) end
 local ZZDEBUG = ZZDEBUG_OFF
+-- local ZZDEBUG_ALLOWED = true -- Define this as a global in your test script
 
-                        -- So that this file can run outside of ESO.
+                        -- So that this file can run in tests, outside of ESO.
 local CRAFTING_TYPE_BLACKSMITHING   = CRAFTING_TYPE_BLACKSMITHING   or 1
 local CRAFTING_TYPE_CLOTHIER        = CRAFTING_TYPE_CLOTHIER        or 2
 local CRAFTING_TYPE_ENCHANTING      = CRAFTING_TYPE_ENCHANTING      or 3
@@ -172,9 +173,6 @@ function LibCraftText.ParseDailyConditionEquipment(crafting_type, cond_text)
         if matitem then break end
     end
     if not matitem then
-        -- print(string.format( "matitem:'%s' cond_text:'%s'"
-        --                    , tostring(matitem)
-        --                    , tostring(cond_text)))
         return nil
     end
     matitem = matitem:lower()
@@ -325,7 +323,7 @@ function LibCraftText.ParseConsumableAcquireMat(crafting_type, cond_text)
 
     local self          = LibCraftText
     local lang          = self.CurrLang()
-    local found_mat     = self.ParseRegexable(
+    local found_mat     = self.ParseRegexableOptional(
                                    crafting_type
                                  , cond_text
                                  , self.RE_CONDITION_ACQUIRE[lang]
@@ -368,12 +366,7 @@ function LibCraftText.ParseDailyConditionProvisioning(cond_text)
                           , { "name", "name_2" }
                           }
     local found_item    = self.ParseRegexable(unpack(args))
-    if not found_item then
-        ZZDEBUG=ZZDEBUG_ON
-        self.ParseRegexable(unpack(args))
-        ZZDEBUG=ZZDEBUG_OFF
-        return nil
-    end
+    if not found_item then return nil end
     return { item = found_item }
 end
 
@@ -390,6 +383,35 @@ LibCraftText.RE_POTENCY = {
 ,   ja = { "(.*)のグリフ"
          , "(.*)なグリフ"}
 }
+
+function LibCraftText.ParseEnchantingPotency(cond_text)
+    local self = LibCraftText
+    local lang = self.CurrLang()
+    local m    = LibCraftText.MATERIAL -- for less typing
+    local POTENCY_LIST = {
+                           m.JORA    -- trifling
+                         , m.JERA    -- petty
+                         , m.ODRA    -- minor
+                         , m.EDORA   -- moderate
+                         , m.PORA    -- strong
+                         , m.RERA    -- greater
+                         , m.DERADO  -- grand
+                         , m.REKURA  -- splendid
+                         , m.KURA    -- monumental
+                         , m.REJERA  -- superb
+                         , m.REPORA  -- truly superb  not used in daily,
+                                     --               but used in master writs.
+                         }
+    local potency = self.ParseRegexable(
+                                         CRAFTING_TYPE_ENCHANTING
+                                       , cond_text
+                                       , self.RE_POTENCY[lang]
+                                       , POTENCY_LIST
+                                       , { "name_2", "name_3" }
+                                       )
+    return potency
+end
+
 LibCraftText.RE_ESSENCE = {
     en = { "Glyph of ([^\n]*)" }
 ,   de = { "Glyphe de[sr] (.*) her"}
@@ -407,34 +429,13 @@ LibCraftText.RE_ESSENCE = {
 function LibCraftText.ParseDailyConditionGlyph(cond_text)
     local self = LibCraftText
     local m    = LibCraftText.MATERIAL -- for less typing
-    local POTENCY_LIST = {
-                           m.JORA    -- trifling
-                         , m.JERA    -- petty
-                         , m.ODRA    -- minor
-                         , m.EDORA   -- moderate
-                         , m.PORA    -- strong
-                         , m.RERA    -- greater
-                         , m.DERADO  -- grand
-                         , m.REKURA  -- splendid
-                         , m.KURA    -- monumental
-                         , m.REJERA  -- superb
-                         , m.REPORA  -- truly superb  not used in daily, but
-                                     -- master writ parser calls this function
-                                     -- to handle potency. So leave repora in
-                                     -- this list.
-                         }
     local ESSENCE_LIST = {
                            m.DENI    -- stamina
                          , m.MAKKO   -- magicka
                          , m.OKO     -- health
                          }
     local lang    = self.CurrLang()
-    local potency = self.ParseRegexable( CRAFTING_TYPE_ENCHANTING
-                                       , cond_text
-                                       , self.RE_POTENCY[lang]
-                                       , POTENCY_LIST
-                                       , { "name_2", "name_3" }
-                                       )
+    local potency = self.ParseEnchantingPotency(cond_text)
     local essence = self.ParseRegexable( CRAFTING_TYPE_ENCHANTING
                                        , cond_text
                                        , self.RE_ESSENCE[lang]
@@ -507,12 +508,6 @@ function LibCraftText.ParseDailyConditionAlchemy(cond_text)
                       , "daily_poison_name", "daily_poison_name2" }
                     }
     local trait = self.ParseRegexable(unpack(args))
-    if not trait then
-        ZZDEBUG=ZZDEBUG_ON
-        ZZDEBUG(string.format("### cond_text:'%s'", cond_text))
-        self.ParseRegexable(unpack(args))
-        ZZDEBUG=ZZDEBUG_OFF
-    end
     args =  {
               CRAFTING_TYPE_ALCHEMY
             , cond_text
@@ -523,12 +518,6 @@ function LibCraftText.ParseDailyConditionAlchemy(cond_text)
             }
 
     local solvent = self.ParseRegexable(unpack(args))
-    if not solvent then
-        ZZDEBUG=ZZDEBUG_ON
-        ZZDEBUG(string.format("### cond_text:'%s'", cond_text))
-        self.ParseRegexable(unpack(args))
-        ZZDEBUG=ZZDEBUG_OFF
-    end
 
     if not (trait or solvent) then return nil end
     return { trait   = trait
@@ -599,12 +588,6 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
                  , { "master_potion", "master_poison" }
              }
     local name_trait    = self.ParseRegexable(unpack(args))
-    if not name_trait then
-        ZZDEBUG=ZZDEBUG_ON
-        ZZDEBUG(string.format("### cond_text:'%s'", cond_text))
-        self.ParseRegexable(unpack(args))
-        ZZDEBUG=ZZDEBUG_OFF
-    end
     local solvent = nil
     if name_trait and cond_text then
                         -- The 1,true args to string.find() here are
@@ -636,13 +619,16 @@ function LibCraftText.ParseMasterConditionAlchemy(crafting_type, cond_text)
         end
     end
 
-    if #trait_list ~= 3 then
+    if ZZDEBUG_ALLOWED and (#trait_list ~= 3) then
+                        -- Alchemy master writs always have exactly three
+                        -- traits. Dump the parse failure if we didn't get that
+                        -- many.
         ZZDEBUG=ZZDEBUG_ON
-        ZZDEBUG("AL trait_list.ct not 3. line_ct:"..tostring(#lines))
+        ZZDEBUG("### ParseMasterConditionAlchemy() trait_list.ct not 3. line_ct:%d"
+               , #lines)
         for i,line in ipairs(lines) do
             args[2] = line
-            ZZDEBUG(string.format("### cond_text[%d]:'%s'", i, line))
-            local trait = self.ParseRegexable(unpack(args))
+            ZZDEBUG("###  cond_text[%d]:'%s'", i, line)
             self.ParseRegexable(unpack(args))
         end
         ZZDEBUG=ZZDEBUG_OFF
@@ -665,8 +651,7 @@ function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
                         -- name_2 fields with "Superb" and "Truly Superb" that
                         -- subtractive potencies lack. We can switch to
                         -- subtractive counterparts later.
-    local r = self.ParseDailyConditionGlyph(lines[1])
-    local potency = r.potency
+    local potency = self.ParseEnchantingPotency(lines[1])
 
     local ESSENCE_LIST = { self.MATERIAL.DEKEIPA
                          , self.MATERIAL.DENI
@@ -693,18 +678,13 @@ function LibCraftText.ParseMasterConditionEnchanting(crafting_type, cond_text)
                          }
 
     args = { nil
-                 , lines[1]
-                 , self.RE_ESSENCE[lang]
-                 , ESSENCE_LIST
-                 , { "add", "add_2", "sub" }
-             }
+           , lines[1]
+           , self.RE_ESSENCE[lang]
+           , ESSENCE_LIST
+           , { "add", "add_2", "sub" }
+           }
     local essence    = self.ParseRegexable(unpack(args))
-    if not essence then
-        ZZDEBUG=ZZDEBUG_ON
-        ZZDEBUG(string.format("### essence cond_text:'%s'", lines[1]))
-        self.ParseRegexable(unpack(args))
-        ZZDEBUG=ZZDEBUG_OFF
-    end
+
                         -- Whether we use additive or subtractive potencies
                         -- depends on which field of the essence mat we
                         -- matched.
@@ -868,12 +848,32 @@ end
 
 -- Parse Util ----------------------------------------------------------------
 
-function LibCraftText.ParseRegexable( crafting_type
-                                    , cond_text
-                                    , re_list
-                                    , result_list
-                                    , result_name_field_list
-                                    )
+                        -- Parse a string cond_text for a matching row
+                        -- from result_list. Return a match.
+                        --
+                        -- If no match, re-run the parse, but with debugging
+                        -- turned on to dump info to stdout so that you can
+                        -- see what failed where.
+                        --
+function LibCraftText.ParseRegexable(...)
+    local self      = LibCraftText
+    local result    = self.ParseRegexableOptional(...)
+    if ZZDEBUG_ALLOWED and not result then
+        ZZDEBUG=ZZDEBUG_ON
+        self.ParseRegexableOptional(...)
+        ZZDEBUG=ZZDEBUG_OFF
+    end
+    return result
+end
+
+                        -- Parse a string cond_text, but don't dump to stdout
+                        -- if the result is empty.
+function LibCraftText.ParseRegexableOptional( crafting_type
+                                            , cond_text
+                                            , re_list
+                                            , result_list
+                                            , result_name_field_list
+                                            )
     if not cond_text then return nil end
     local self              = LibCraftText
     for _,re in ipairs(re_list) do
@@ -897,11 +897,12 @@ function LibCraftText.ParseRegexableOneRE( crafting_type
     local self   = LibCraftText
     local _,_,g1 = string.find(cond_text, re)
     if not g1 then
-        ZZDEBUG(string.format("### ParseRegexableOneRE() no match cond_text:'%s'  re:'%s'", cond_text, re))
+        ZZDEBUG( "### ParseRegexableOneRE() no match cond_text:'%s'  re:'%s'"
+               , cond_text, re )
         return nil
     end
     local cond_sub_str = g1
-    ZZDEBUG(string.format("### cond_sub_str:'%s'", cond_sub_str))
+    ZZDEBUG("### cond_sub_str:'%s'", cond_sub_str)
     cond_sub_str = cond_sub_str:lower()
     local exact_match = self.ExactMatch(cond_sub_str, result_list , crafting_type
                             , unpack(result_name_field_list))
@@ -967,15 +968,11 @@ function LibCraftText.LongestMatch(find_me, rows, crafting_type, field_name, ...
                         if (not longest_match.name) or (longest_match.name:len() < name:len()) then
                             longest_match.name = name
                             longest_match.row  = row
--- print(string.format("yep   find_me:'%s'  row:'%s'", find_me, name:lower()))
+                            -- 7 indents?! This is what happens when your
+                            -- programming language refuses to support
+                            -- "continue".
                         end
                     end
--- if ZZDEBUG==ZZDEBUG_ON and not longest_match.row then
--- print("want:"..find_me_lower.. " found:"..tostring(longest_match and longest_match.name))
--- LibCraftText.hex_dump(find_me_lower)
--- print("row:")
--- LibCraftText.hex_dump(name:lower() or "")
--- end
                 end
             end
         end
@@ -993,15 +990,13 @@ function LibCraftText.ExactMatch(find_me, rows, crafting_type, field_name, ... )
         for _, row in pairs(rows) do
             if (not crafting_type) or row.crafting_type == crafting_type then
                 local name = row[fieldname]
--- ZZDEBUG(string.format("ExactMatch() fieldname:%s '%s' ?= '%s'"
---     , tostring(fieldname), tostring(name), find_me_lower ))
                 if name and (  find_me_lower == name:lower()
                              or find_me_deumlauted == LibCraftText.DeUmlaut(name) ) then
 
-                    ZZDEBUG(string.format("    exact: '%s'", tostring(name)))
+                    ZZDEBUG("    exact: '%s'", tostring(name))
                     return row
                 else
-                    ZZDEBUG(string.format("not exact: '%s' != '%s'", tostring(name), find_me_lower))
+                    ZZDEBUG("not exact: '%s' != '%s'", tostring(name), find_me_lower)
                 end
             end
         end
