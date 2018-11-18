@@ -104,7 +104,9 @@ function TestGen.OneTest(input_en, expect)
     luaunit.assertEquals(ct,1,"Empty expect{}: "..input_en)
 
     local lang_table = INPUT_TO_LANG_TABLE[input_en]
-    luaunit.assertNotNil(lang_table,input_en)
+    luaunit.assertNotNil(lang_table,
+            string.format("lang_db lacks a lang_table for input_en='%s'"
+                        , tostring(input_en)))
     local input = lang_table[LibCraftText.CurrLang()] or input_en
 
     local test_func = CRAFTING_TYPE_TO_PARSE_FUNC[crafting_type]

@@ -166,7 +166,7 @@ LibCraftText.RECIPE = {
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="морковный торт таверны «Радушие Джерола»", food_item_id=033575, recipe_list_index=  3, recipe_index= 21}
 , ["LEMON_FLOWER_MAZTE"              ] = { name="лимонный мацт"                         , food_item_id=033945, recipe_list_index=  8, recipe_index=  9}
 , ["LILMOTH_GARLIC_HAGFISH"          ] = { name="пиявкорот с чесноком по-лилмотски"     , food_item_id=068235, recipe_list_index=  1, recipe_index= 42}
-, ["LONGFIN_PASTY_WITH_MELON_SAUCE"  ] = { name="хлебный конверт с окунем в дынном соусе", food_item_id=068253, recipe_list_index=  7, recipe_index= 30}
+, ["LONGFIN_PASTY_WITH_MELON_SAUCE"  ] = { name="хлебный конверт с окунем в дынном соусе", food_item_id=068253, recipe_list_index=  7, recipe_index= 30, name_2="хлебный конверт с окунем в дынном"}
 , ["LUSTY_ARGONIAN_MAID_MAZTE"       ] = { name="мацт «Похотливая аргонианская дева»"   , food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="мацт «Похотливая аргонианская дев"}
 , ["MAMMOTH_SNOUT_PIE"               ] = { name="пирог с хоботом мамонта"               , food_item_id=033903, recipe_list_index=  1, recipe_index= 25}
 , ["MAORMER_TEA"                     ] = { name="маормерский чай"                       , food_item_id=028465, recipe_list_index=  9, recipe_index= 19}
@@ -181,10 +181,10 @@ LibCraftText.RECIPE = {
 , ["NUT_BROWN_ALE"                   ] = { name="темный ореховый эль"                   , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
 , ["ORCREST_AGONY_PALE_ALE"          ] = { name="светлый эль «Агония Оркреста»"         , food_item_id=068275, recipe_list_index= 14, recipe_index= 30}
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="чесночно-яблочное желе из Оркреста"    , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
-, ["ORZORGAS_BLOOD_PRICE_PIE"        ] = { name="ценная корзиночка с кровью от Орзорги" , food_item_id=071058, recipe_list_index= 16, recipe_index=  3}
+, ["ORZORGAS_BLOOD_PRICE_PIE"        ] = { name="ценная корзиночка с кровью от Орзорги" , food_item_id=071058, recipe_list_index= 16, recipe_index=  3, name_2="ценная корзиночка с кровью от Орзо"}
 , ["ORZORGAS_RED_FROTHGAR"           ] = { name="красный пенный напиток от Орзорги"     , food_item_id=071056, recipe_list_index= 15, recipe_index= 14}
-, ["ORZORGAS_SMOKED_BEAR_HAUNCH"     ] = { name="копченый медвежий окорок от Орзорги"   , food_item_id=071059, recipe_list_index= 16, recipe_index=  4}
-, ["ORZORGAS_TRIPE_TRIFLE_POCKET"    ] = { name="хлебный конверт с требухой от Орзорги" , food_item_id=071057, recipe_list_index= 16, recipe_index=  2}
+, ["ORZORGAS_SMOKED_BEAR_HAUNCH"     ] = { name="копченый медвежий окорок от Орзорги"   , food_item_id=071059, recipe_list_index= 16, recipe_index=  4, name_2="копченый медвежий окорок от Орзо"}
+, ["ORZORGAS_TRIPE_TRIFLE_POCKET"    ] = { name="хлебный конверт с требухой от Орзорги" , food_item_id=071057, recipe_list_index= 16, recipe_index=  2, name_2="хлебный конверт с требухой от Орзо"}
 , ["PELLITINE_TOMATO_RICE"           ] = { name="пеллитинский рис с томатом"            , food_item_id=042814, recipe_list_index=  2, recipe_index= 13}
 , ["PSIJIC_AMBROSIA"                 ] = { name="амброзия Псиджиков"                    , food_item_id=064221, recipe_list_index= 15, recipe_index=  1}
 , ["RED_RYE_BEER"                    ] = { name="красное ржаное пиво"                   , food_item_id=033600, recipe_list_index=  8, recipe_index=  2}

@@ -166,7 +166,7 @@ LibCraftText.RECIPE = {
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name=$FOOD_033575                            , food_item_id=033575, recipe_list_index=$FOOD_033575_RLI, recipe_index=$FOOD_033575_RI }
 , ["LEMON_FLOWER_MAZTE"              ] = { name=$FOOD_033945                            , food_item_id=033945, recipe_list_index=$FOOD_033945_RLI, recipe_index=$FOOD_033945_RI }
 , ["LILMOTH_GARLIC_HAGFISH"          ] = { name=$FOOD_068235                            , food_item_id=068235, recipe_list_index=$FOOD_068235_RLI, recipe_index=$FOOD_068235_RI }
-, ["LONGFIN_PASTY_WITH_MELON_SAUCE"  ] = { name=$FOOD_068253                            , food_item_id=068253, recipe_list_index=$FOOD_068253_RLI, recipe_index=$FOOD_068253_RI }
+, ["LONGFIN_PASTY_WITH_MELON_SAUCE"  ] = { name=$FOOD_068253                            , food_item_id=068253, recipe_list_index=$FOOD_068253_RLI, recipe_index=$FOOD_068253_RI , name_2=$FOOD_068253B}
 , ["LUSTY_ARGONIAN_MAID_MAZTE"       ] = { name=$FOOD_068276                            , food_item_id=068276, recipe_list_index=$FOOD_068276_RLI, recipe_index=$FOOD_068276_RI , name_2=$FOOD_068276B }
 , ["MAMMOTH_SNOUT_PIE"               ] = { name=$FOOD_033903                            , food_item_id=033903, recipe_list_index=$FOOD_033903_RLI, recipe_index=$FOOD_033903_RI }
 , ["MAORMER_TEA"                     ] = { name=$FOOD_028465                            , food_item_id=028465, recipe_list_index=$FOOD_028465_RLI, recipe_index=$FOOD_028465_RI }
@@ -181,10 +181,10 @@ LibCraftText.RECIPE = {
 , ["NUT_BROWN_ALE"                   ] = { name=$FOOD_028401                            , food_item_id=028401, recipe_list_index=$FOOD_028401_RLI, recipe_index=$FOOD_028401_RI }
 , ["ORCREST_AGONY_PALE_ALE"          ] = { name=$FOOD_068275                            , food_item_id=068275, recipe_list_index=$FOOD_068275_RLI, recipe_index=$FOOD_068275_RI }
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name=$FOOD_043094                            , food_item_id=043094, recipe_list_index=$FOOD_043094_RLI, recipe_index=$FOOD_043094_RI }
-, ["ORZORGAS_BLOOD_PRICE_PIE"        ] = { name=$FOOD_071058                            , food_item_id=071058, recipe_list_index=$FOOD_071058_RLI, recipe_index=$FOOD_071058_RI }
+, ["ORZORGAS_BLOOD_PRICE_PIE"        ] = { name=$FOOD_071058                            , food_item_id=071058, recipe_list_index=$FOOD_071058_RLI, recipe_index=$FOOD_071058_RI , name_2=$FOOD_071058B }
 , ["ORZORGAS_RED_FROTHGAR"           ] = { name=$FOOD_071056                            , food_item_id=071056, recipe_list_index=$FOOD_071056_RLI, recipe_index=$FOOD_071056_RI }
-, ["ORZORGAS_SMOKED_BEAR_HAUNCH"     ] = { name=$FOOD_071059                            , food_item_id=071059, recipe_list_index=$FOOD_071059_RLI, recipe_index=$FOOD_071059_RI }
-, ["ORZORGAS_TRIPE_TRIFLE_POCKET"    ] = { name=$FOOD_071057                            , food_item_id=071057, recipe_list_index=$FOOD_071057_RLI, recipe_index=$FOOD_071057_RI }
+, ["ORZORGAS_SMOKED_BEAR_HAUNCH"     ] = { name=$FOOD_071059                            , food_item_id=071059, recipe_list_index=$FOOD_071059_RLI, recipe_index=$FOOD_071059_RI , name_2=$FOOD_071059B }
+, ["ORZORGAS_TRIPE_TRIFLE_POCKET"    ] = { name=$FOOD_071057                            , food_item_id=071057, recipe_list_index=$FOOD_071057_RLI, recipe_index=$FOOD_071057_RI , name_2=$FOOD_071057B }
 , ["PELLITINE_TOMATO_RICE"           ] = { name=$FOOD_042814                            , food_item_id=042814, recipe_list_index=$FOOD_042814_RLI, recipe_index=$FOOD_042814_RI }
 , ["PSIJIC_AMBROSIA"                 ] = { name=$FOOD_064221                            , food_item_id=064221, recipe_list_index=$FOOD_064221_RLI, recipe_index=$FOOD_064221_RI }
 , ["RED_RYE_BEER"                    ] = { name=$FOOD_033600                            , food_item_id=033600, recipe_list_index=$FOOD_033600_RLI, recipe_index=$FOOD_033600_RI }

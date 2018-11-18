@@ -47,6 +47,7 @@ MASTER_FODDER = {
              }
   }
 
+-- Provisioning --------------------------------------------------------------
 , { input = "Craft a Lusty Argonian Maid Mazte"
             .."\n• Progress: 0 / 8"
   , expect = { item=LCT.RECIPE.LUSTY_ARGONIAN_MAID_MAZTE }
@@ -59,7 +60,27 @@ MASTER_FODDER = {
             .."\n• Progress: 0 / 8"
   , expect = { item=LCT.RECIPE.VELOTHI_VIEW_VINTAGE_MALBEC }
   }
+, { input = "Craft a Longfin Pasty with Melon Sauce\n• Progress: 0 / 8"
+  , expect = { item=LCT.RECIPE.LONGFIN_PASTY_WITH_MELON_SAUCE }
+  }
+, { input = "Craft a Senche-Tiger Single Malt\n• Progress: 0 / 8"
+  , expect = { item=LCT.RECIPE.SENCHE_TIGER_SINGLE_MALT }
+  }
+, { input = "Craft an Orzorga's Blood Price Pie\n• Progress: 0 / 8"
+  , expect = { item=LCT.RECIPE.ORZORGAS_BLOOD_PRICE_PIE }
+  }
+-- Waiting to capture a full lang_table for this quest condition
+-- , { input = "Craft an Orzorga's Red Frothgar\n• Progress: 0 / 8"
+--   , expect = { item=LCT.RECIPE.ORZORGAS_RED_FROTHGAR }
+--   }
+, { input = "Craft an Orzorga's Smoked Bear Haunch\n• Progress: 0 / 8"
+  , expect = { item=LCT.RECIPE.ORZORGAS_SMOKED_BEAR_HAUNCH }
+  }
+, { input = "Craft an Orzorga's Tripe Trifle Pocket\n• Progress: 0 / 8"
+  , expect = { item=LCT.RECIPE.ORZORGAS_TRIPE_TRIFLE_POCKET }
+  }
 
+-- Blacksmithing -------------------------------------------------------------
 , { input = "Craft a Rubedite Cuirass with the following Properties:"
             .."\n• Quality: Epic"
             .."\n• Trait: Sturdy"
@@ -231,11 +252,6 @@ MASTER_FODDER = {
   , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_DC }
   }
 
--- ,   en  = "Craft a Longfin Pasty with Melon Sauce\n• Progress: 0 / 8"
--- ,   en  = "Craft a Senche-Tiger Single Malt\n• Progress: 0 / 8"
--- ,   en  = "Craft an Orzorga's Blood Price Pie\n• Progress: 0 / 8"
--- ,   en  = "Craft an Orzorga's Smoked Bear Haunch\n• Progress: 0 / 8"
--- ,   en  = "Craft an Orzorga's Tripe Trifle Pocket\n• Progress: 0 / 8"
 
 -- ,   en  = "Craft a Superb Glyph of Decrease Spell Harm\n• Quality: Epic\n• Progress: 0 / 1"
 -- ,   en  = "Craft a Superb Glyph of Flame Resist\n• Quality: Epic\n• Progress: 0 / 1"

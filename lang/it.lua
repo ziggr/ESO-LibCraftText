@@ -166,7 +166,7 @@ LibCraftText.RECIPE = {
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="Jerall View Inn Carrot Cake"           , food_item_id=033575, recipe_list_index=  3, recipe_index= 21}
 , ["LEMON_FLOWER_MAZTE"              ] = { name="Lemon Flower Mazte"                    , food_item_id=033945, recipe_list_index=  8, recipe_index=  9}
 , ["LILMOTH_GARLIC_HAGFISH"          ] = { name="Lilmoth Garlic Hagfish"                , food_item_id=068235, recipe_list_index=  1, recipe_index= 42}
-, ["LONGFIN_PASTY_WITH_MELON_SAUCE"  ] = { name="Longfin Pasty with Melon Sauce"        , food_item_id=068253, recipe_list_index=  7, recipe_index= 30}
+, ["LONGFIN_PASTY_WITH_MELON_SAUCE"  ] = { name="Longfin Pasty with Melon Sauce"        , food_item_id=068253, recipe_list_index=  7, recipe_index= 30, name_2="Longfin Pasty with Melon Sauce"}
 , ["LUSTY_ARGONIAN_MAID_MAZTE"       ] = { name="Lusty Argonian Maid Mazte"             , food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="Lusty Argonian Maid Mazte"}
 , ["MAMMOTH_SNOUT_PIE"               ] = { name="Mammoth Snout Pie"                     , food_item_id=033903, recipe_list_index=  1, recipe_index= 25}
 , ["MAORMER_TEA"                     ] = { name="Maormer Tea"                           , food_item_id=028465, recipe_list_index=  9, recipe_index= 19}
@@ -181,10 +181,10 @@ LibCraftText.RECIPE = {
 , ["NUT_BROWN_ALE"                   ] = { name="Nut Brown Ale"                         , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
 , ["ORCREST_AGONY_PALE_ALE"          ] = { name="Orcrest Agony Pale Ale"                , food_item_id=068275, recipe_list_index= 14, recipe_index= 30}
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="Orcrest Garlic Apple Jelly"            , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
-, ["ORZORGAS_BLOOD_PRICE_PIE"        ] = { name="Orzorga's Blood Price Pie"             , food_item_id=071058, recipe_list_index= 16, recipe_index=  3}
+, ["ORZORGAS_BLOOD_PRICE_PIE"        ] = { name="Orzorga's Blood Price Pie"             , food_item_id=071058, recipe_list_index= 16, recipe_index=  3, name_2="Orzorga's Blood Price Pie"}
 , ["ORZORGAS_RED_FROTHGAR"           ] = { name="Orzorga's Red Frothgar"                , food_item_id=071056, recipe_list_index= 15, recipe_index= 14}
-, ["ORZORGAS_SMOKED_BEAR_HAUNCH"     ] = { name="Orzorga's Smoked Bear Haunch"          , food_item_id=071059, recipe_list_index= 16, recipe_index=  4}
-, ["ORZORGAS_TRIPE_TRIFLE_POCKET"    ] = { name="Orzorga's Tripe Trifle Pocket"         , food_item_id=071057, recipe_list_index= 16, recipe_index=  2}
+, ["ORZORGAS_SMOKED_BEAR_HAUNCH"     ] = { name="Orzorga's Smoked Bear Haunch"          , food_item_id=071059, recipe_list_index= 16, recipe_index=  4, name_2="Orzorga's Smoked Bear Haunch"}
+, ["ORZORGAS_TRIPE_TRIFLE_POCKET"    ] = { name="Orzorga's Tripe Trifle Pocket"         , food_item_id=071057, recipe_list_index= 16, recipe_index=  2, name_2="Orzorga's Tripe Trifle Pocket"}
 , ["PELLITINE_TOMATO_RICE"           ] = { name="Pellitine Tomato Rice"                 , food_item_id=042814, recipe_list_index=  2, recipe_index= 13}
 , ["PSIJIC_AMBROSIA"                 ] = { name="Psijic Ambrosia"                       , food_item_id=064221, recipe_list_index= 15, recipe_index=  1}
 , ["RED_RYE_BEER"                    ] = { name="Red Rye Beer"                          , food_item_id=033600, recipe_list_index=  8, recipe_index=  2}
