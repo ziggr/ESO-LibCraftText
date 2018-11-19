@@ -386,7 +386,9 @@ function LibCraftText.ScanQuestSteps(quest_index)
     for step_i = 1,step_ct do
         local step_info  = { GetJournalQuestStepInfo(quest_index, step_i) }
         local step_text  = step_info[self.JQSI.step_text]
+        local tracker_override_text  = step_info[self.JQSI.tracker_override_text]
         self.RecordStepText( quest_index, step_i, step_text
+                           , tracker_override_text
                            , qi_override )
 
         local condition_ct = step_info[self.JQSI.num_conditions]
@@ -400,7 +402,11 @@ function LibCraftText.ScanQuestSteps(quest_index)
     end
 end
 
-function LibCraftText.RecordStepText(quest_index, step_index, step_text, quest_index_key_override)
+function LibCraftText.RecordStepText( quest_index
+                                    , step_index
+                                    , step_text
+                                    , tracker_override_text
+                                    , quest_index_key_override)
     local self = LibCraftText
     local lang = self.CurrLang()
     if not (step_text and step_text ~= "") then return end
@@ -409,7 +415,13 @@ function LibCraftText.RecordStepText(quest_index, step_index, step_text, quest_i
     self.saved_char.steps[qi] = self.saved_char.steps[qi] or {}
     self.saved_char.steps[qi][step_index]
                           = self.saved_char.steps[qi][step_index] or {}
+    self.saved_char.step_override = self.saved_char.step_override or {}
+    self.saved_char.step_override[qi] = self.saved_char.step_override[qi] or {}
+    self.saved_char.step_override[qi][step_index]
+                          = self.saved_char.step_override[qi][step_index] or {}
+
     self.saved_char.steps[qi][step_index][lang] = step_text
+    self.saved_char.step_override[qi][step_index][lang] = tracker_override_text
 end
 
 function LibCraftText.RecordConditionText( quest_index, step_index

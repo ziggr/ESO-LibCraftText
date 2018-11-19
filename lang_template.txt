@@ -760,8 +760,8 @@ LibCraftText.DIALOG = {
 ,   ["OFFERED_ACCEPT"     ] = { $QUEST_OFFERED_ACCEPT_1                 -- "<Accept the contract.>"
                               , $QUEST_OFFERED_ACCEPT_2                 -- "<Accept the contract.>"
                               }
-
 }
+
 
 LibCraftText.QUALITY = {
     ["NORMAL"   ] = { name=$QUALITY_1   , index=ITEM_QUALITY_NORMAL         or 1 }

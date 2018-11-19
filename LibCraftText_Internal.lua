@@ -981,8 +981,6 @@ function LibCraftText.BuildReverseLookupTables()
             table.insert(LibCraftText.MASTER_QUEST_TITLES[txt], ctype)
         end
 
-        local txt = LibCraftText.ROLIS_QUEST_TURN_IN[ctype]
-        LibCraftText.ROLIS_QUEST_TURN_IN[txt] = ctype
     end
 
     LibCraftText.reverse_tables_built = true
