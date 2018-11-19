@@ -15134,4 +15134,77 @@ LANG_DB = {
           ,   ru  = "-Ремесленные заказы на экипировку-"
           ,   ja  = "-装備品のクラフトの依頼-"
           }
+, [100000] = {
+            key = "$WRIT_BOARD_OPTION_SIGN_MANIFEST"
+        ,   en = "<Sign the Manifest.>"
+        ,   de = "<Das Manifest unterschreiben.>"
+        ,   fr = "<Signer le manifeste.>"
+        ,   ru = "<Подписать декларацию.>"
+        ,   es = "<Firmar el manifiesto.>"
+        ,   it = "<Sign the Manifest.>"
+        ,   ja = "<伝票に署名する>"
+        }
+, [100001] = {
+            key = "$WRIT_CRATE_TITLE_BS"
+        ,   en = "-Blacksmith Delivery Crate-"
+        ,   de ="-Schmiedelieferung-"
+        ,   fr ="-La caisse de livraison du forgeron-"
+        ,   ru ="-Доставочный ящик кузнеца-"
+        ,   es ="-Caja de entregas de herrero-"
+        ,   ja ="-鍛冶屋の配達箱-"
+        }
+, [100002] = {
+            key = "$WRIT_CRATE_TITLE_CL"
+        ,   en = "-Clothier Delivery Crate-"
+        ,   de ="-Schneiderlieferung-"
+        ,   fr ="-La caisse de livraison du tailleur-"
+        ,   ru ="-Доставочный ящик портного-"
+        ,   es ="-Caja de entregas de sastre-"
+        ,   ja ="-仕立師の配達箱-"
+        }
+, [100003] = {
+            key = "$WRIT_CRATE_TITLE_WW"
+        ,   en = "-Woodworker Delivery Crate-"
+        ,   de = "-Schreinerlieferung-"
+        ,   fr ="-La caisse de livraison du travailleur du bois-"
+        ,   ru ="-Доставочный ящик столяра-"
+        ,   es ="-Caja de entregas de carpintero-"
+        ,   ja ="-木工師の配達箱-"
+        }
+, [100004] = {
+            key = "$WRIT_CRATE_TITLE_JW"
+        ,   en = "-Jewelry Crafting Delivery Crate-"
+        ,   de ="-Schmucklieferung-"
+        ,   fr ="-Caisse de livraison de joaillerie-"
+        ,   ru ="-Доставочный ящик ювелира-"
+        ,   es ="-Caja de entrega de joyería-"
+        ,   ja ="-宝飾師の配達箱-"
+        }
+, [100005] = {
+            key = "$WRIT_CRATE_TITLE_AL"
+        ,   en ="-Alchemist Delivery Crate-"
+        ,   de ="-Alchemistenlieferung-"
+        ,   fr ="-La caisse de livraison de l'alchimiste-"
+        ,   ru ="-Доставочный ящик алхимика-"
+        ,   es ="-Caja de entregas de alquimista-"
+        ,   ja ="-錬金術師の配達箱-"
+        }
+, [100006] = {
+            key = "$WRIT_CRATE_TITLE_EN"
+        ,   en ="-Enchanter Delivery Crate-"
+        ,   de ="-Verzaubererlieferung-"
+        ,   fr ="-La caisse de livraison de l'enchanteur-"
+        ,   ru ="-Доставочный ящик зачарователя-"
+        ,   es ="-Caja de entregas de encantador-"
+        ,   ja ="-付呪師の配達箱-"
+        }
+, [100007] = {
+            key = "$WRIT_CRATE_TITLE_PR"
+        ,   en ="-Provisioner Delivery Crate-"
+        ,   de ="-Versorgerlieferung-"
+        ,   fr ="-La caisse de livraison du cuisinier-"
+        ,   ru ="-Доставочный ящик снабженца-"
+        ,   es ="-Caja de entregas de cocina-"
+        ,   ja ="-調理師の配達箱-"
+        }
 }
