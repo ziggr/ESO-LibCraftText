@@ -45,6 +45,17 @@ function LibCraftText.OnAddOnLoaded(event, addonName)
                             , nil
                             , self.default
                             )
+
+                        -- Were you listening for dialog chatter before the
+                        -- most recent reloadui? Restore the listener and save
+                        -- yourself a few `/lct rolis` keystrokes.
+        zo_callLater( function()
+                        if self.saved_char.rolis_registered then
+                            self.saved_char.rolis_registered = false
+                            self.RegisterRolisChatter()
+                        end
+                      end
+                    , 1000)
     end
 end
 
@@ -68,7 +79,7 @@ function LibCraftText.RegisterSlashCommands()
                    , { "discover"   , "Extract material and item names"            }
                    , { "abandon"    , "Abandon all daily crafting quests"          }
                    , { "alchemist"  , "Craft 26 potions to learn all traits"       }
-                   , { "rolis"      , "Record all future dialog text with Rolis"   }
+                   , { "rolis"      , "Record all future dialog text with Rolis or crafting boards"   }
                    }
         for _,c in ipairs(cc) do
             local sub = cmd:RegisterSubCommand()
@@ -1981,7 +1992,7 @@ end
 
 function LibCraftText.ListenForRolis()
     local self = LibCraftText
-    if self.rolis_registered then
+    if self.saved_char.rolis_registered then
         self.UnregisterRolisChatter()
     else
         self.RegisterRolisChatter()
@@ -1994,7 +2005,7 @@ function LibCraftText.RegisterRolisChatter()
     local name = LibCraftText.name .. "_rolis_chatter"
     EVENT_MANAGER:RegisterForEvent( name
                                   , EVENT_CHATTER_BEGIN
-                                  , function() LibCraftText.OnRolisChatterBegin() end )
+                                  , function() LibCraftText.OnChatterBegin() end )
     EVENT_MANAGER:RegisterForEvent( name
                                   , EVENT_QUEST_COMPLETE_DIALOG
                                   , function(quest_index)
@@ -2005,12 +2016,12 @@ function LibCraftText.RegisterRolisChatter()
                                   , function()
                                         LibCraftText.OnQuestOffered()
                                     end )
-    LibCraftText.rolis_registered = true
+    LibCraftText.saved_char.rolis_registered = true
     Info("Dialog listener registered.")
 end
 
 function LibCraftText.UnregisterRolisChatter()
-    LibCraftText.rolis_registered = true
+    LibCraftText.saved_char.rolis_registered = false
     local name = LibCraftText.name .. "_rolis_chatter"
     local event_list = { EVENT_CHATTER_BEGIN
                        , EVENT_QUEST_COMPLETE_DIALOG
@@ -2024,13 +2035,13 @@ function LibCraftText.UnregisterRolisChatter()
     Info("Dialog listener removed.")
 end
 
-function LibCraftText.OnRolisChatterBegin()
-    LibCraftText.RecordRolisDialog()
+function LibCraftText.OnChatterBegin()
+    LibCraftText.RecordDialog()
 end
 
 function LibCraftText.OnQuestCompleteDialog(quest_index)
     Info(string.format("Quest complete  qi:%d",quest_index))
-    LibCraftText.RecordRolisDialog()
+    LibCraftText.RecordDialog()
 end
 
 function LibCraftText.OnQuestOffered()
@@ -2038,23 +2049,22 @@ function LibCraftText.OnQuestOffered()
     LibCraftText.RecordQuestOffered()
 end
 
-function LibCraftText.RecordRolisDialog()
+function LibCraftText.GetDialogTitle()
+    return ZO_InteractWindowTargetAreaTitle:GetText()
+end
+
+                        -- If we're in a dialog with Rolis, loop through
+                        -- their random snarky dialog to collect as much
+                        -- as possible.
+function LibCraftText.RecordRolisSnark()
     local self = LibCraftText
     local lang = self.CurrLang()
 
-                        -- Record current dialog text. Unfortunately this is
-                        -- too ephemeral to retain across language switches and
-                        -- merge programmatically, so we're gonna have to hand-
-                        -- merge these into lang_tables.
-
-                        -- Is this Rolis?
-    local title = ZO_InteractWindowTargetAreaTitle:GetText()
-    if title ~= self.ROLIS.CHATTER_TITLE then
-        Info(string.format("got:'%s' ~= want:'%s'",title,self.ROLIS.CHATTER_TITLE))
-        Info("Hey, this isn't Rolis. Not recording.")
-        -- return
+                        -- Not Rolis? Nothing to record.
+    local title = self.GetDialogTitle()
+    if title ~= self.DIALOG.ROLIS_CHATTER_TITLE then
+        return
     end
-
                         -- New snark? Try to accumulate all dozen or so lines,
                         -- just for grins.
                         --
@@ -2078,38 +2088,49 @@ function LibCraftText.RecordRolisDialog()
         if not known_snark[dialog_text] then
             table.insert(LibCraftText.saved_char.chatter.snark[lang], dialog_text)
             known_snark[dialog_text] = 1
-            Info(string.format("New snark recorded:'%s'", dialog_text))
-        else
-            Info(string.format("Snark already known:'%s'", dialog_text))
+            Info(string.format("|c66FF66New snark recorded:|r'%s'", dialog_text))
         end
     end
-                        -- New option text? Definitely accumulate those.
+    Info("Done recording Rolis snark.")
+end
+
+function LibCraftText.RecordIfUnknown(text, string_list, ui_name)
+    ui_name = "text" or ui_name
+    for k,v in pairs(string_list) do
+        if (v == text) or (k == text) then
+            Info(string.format("%s known:'%s", ui_name, text))
+            return
+        end
+    end
+    table.insert(string_list, text)
+    Info(string.format("|c66FF66%s recorded:|r'%s", ui_name, text))
+    return false
+end
+
+
+function LibCraftText.RecordDialog()
+    local self = LibCraftText
+    local lang = self.CurrLang()
+
+                        -- In case this is Rolis, record their snarky text,
+                        -- just because Zig finds Rolis hilarious.
+    self.RecordRolisSnark()
+
+                        -- New dialog title?
+    local title = self.GetDialogTitle()
+    LibCraftText.saved_char.chatter             = LibCraftText.saved_char.chatter or {}
+    LibCraftText.saved_char.chatter.title       = LibCraftText.saved_char.chatter.title or {}
+    LibCraftText.saved_char.chatter.title[lang] = LibCraftText.saved_char.chatter.title[lang] or {}
+    self.RecordIfUnknown(title, LibCraftText.saved_char.chatter.title[lang], "title")
+
+                        -- New option text?
+    LibCraftText.saved_char.chatter        = LibCraftText.saved_char.chatter or {}
     LibCraftText.saved_char.chatter.option = LibCraftText.saved_char.chatter.option or {}
     LibCraftText.saved_char.chatter.option[lang] = LibCraftText.saved_char.chatter.option[lang] or {}
-    if not self.rolis_known_options then
-        Info("initializing list of known options...")
-        self.rolis_known_options = {
-                                     [self.ROLIS.ACCEPT] = 1
-                                   , [self.ROLIS.FINISH] = 1
-                                   , [self.ROLIS.STORE ] = 1
-                                   , [bs] = 1
-                                   , [cl] = 1
-                                   , [ww] = 1
-                                   , [jw] = 1
-                                   , [en] = 1
-                                   , [al] = 1
-                                   , [pr] = 1
-                                   }
-    end
+    local chatter_data = { GetChatterData() }
     for i = 1,chatter_data[2] do
         local opt_text = GetChatterOption(i)
-        if not self.rolis_known_options[opt_text] then
-            self.rolis_known_options[opt_text] = 1
-            table.insert(LibCraftText.saved_char.chatter.option[lang], opt_text)
-            Info(string.format("|c66FF66New option recorded:|r'%s", opt_text))
-        else
-            Info(string.format("option already known: '%s'", opt_text))
-        end
+        self.RecordIfUnknown(opt_text, LibCraftText.saved_char.chatter.option[lang], "option")
     end
 end
 
@@ -2141,11 +2162,12 @@ function LibCraftText.RecordQuestOffered()
         if self.quest_offered[field_name][value] then
             -- Info("quest offered known:")
         else
+            self.RecordIfUnknown(value, offered[field_name][lang], field_name)
             self.quest_offered[field_name][value] = 1
-            offered[field_name]       = offered[field_name]       or {}
-            offered[field_name][lang] = offered[field_name][lang] or {}
-            table.insert(offered[field_name][lang],value)
-            Info("|c66FF66quest offered learned:|r"..value)
+            -- offered[field_name]       = offered[field_name]       or {}
+            -- offered[field_name][lang] = offered[field_name][lang] or {}
+            -- table.insert(offered[field_name][lang],value)
+            -- Info("|c66FF66quest offered learned:|r"..value)
         end
     end
     local title = ZO_InteractWindowTargetAreaTitle:GetText()
