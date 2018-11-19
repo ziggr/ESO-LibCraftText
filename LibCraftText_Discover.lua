@@ -68,6 +68,7 @@ function LibCraftText.RegisterSlashCommands()
                    , { "discover"   , "Extract material and item names"            }
                    , { "abandon"    , "Abandon all daily crafting quests"          }
                    , { "alchemist"  , "Craft 26 potions to learn all traits"       }
+                   , { "rolis"      , "Record all future dialog text with Rolis"   }
                    }
         for _,c in ipairs(cc) do
             local sub = cmd:RegisterSubCommand()
@@ -107,6 +108,8 @@ function LibCraftText.SlashCommand(args)
         SetCVar("language.2", lang)
     elseif args:lower() == "alchemist" then
         LibCraftText.LearnAllAlchemy()
+    elseif args:lower() == "rolis" then
+        LibCraftText.ListenForRolis()
     else
         Info("Unknown command: '"..tostring(args).."'")
     end
@@ -155,6 +158,7 @@ function LibCraftText.Forget()
                    , "recipes"
                    , "alchemy"
                    , "trait_materials"
+                   , "chatter"
                    }
     for _,field in ipairs(fields) do
         -- LibCraftText.saved_var [field] = nil  Uncomment only when you really need to.
@@ -1973,6 +1977,61 @@ function LibCraftText.LearnOneAlchemy(reagent_list)
     CraftAlchemyItem(unpack(args))
 end
 
+-- Rolis ---------------------------------------------------------------------
+
+function LibCraftText.ListenForRolis()
+    local self = LibCraftText
+    if self.rolis_registered then
+        self.UnregisterRolisChatter()
+    else
+        self.RegisterRolisChatter()
+    end
+end
+
+
+function LibCraftText.RegisterRolisChatter()
+-- d("WWAQ:RegisterRolisChatter")
+    local name = LibCraftText.name .. "_rolis_chatter"
+    EVENT_MANAGER:RegisterForEvent( name
+                                  , EVENT_CHATTER_BEGIN
+                                  , function() LibCraftText.OnRolisChatterBegin() end )
+    LibCraftText.rolis_registered = true
+    Info("Dialog listener registered.")
+end
+
+function LibCraftText.UnregisterRolisChatter()
+    LibCraftText.rolis_registered = true
+    local name = LibCraftText.name .. "_rolis_chatter"
+    local event_list = { EVENT_CHATTER_BEGIN
+                       }
+    for _,event_id in ipairs(event_list) do
+        EVENT_MANAGER:UnregisterForEvent( name
+                                        , event_id
+                                        )
+    end
+    Info("Dialog listener removed.")
+end
+
+function LibCraftText.OnRolisChatterBegin()
+
+                        -- Record current dialog text. Unfortunately this is
+                        -- too ephemeral to retain across language switches and
+                        -- merge programmatically, so we're gonna have to hand-
+                        -- merge these into lang_tables.
+
+    local chatter_data = { GetChatterData() }
+    chatter_data.title = ZO_InteractWindowTargetAreaTitle:GetText()
+    chatter_data.option = {}
+    for i = 1,chatter_data[2] do
+        local opt_text = GetChatterOption(i)
+        chatter_data.option[i] = opt_text
+    end
+
+    LibCraftText.saved_char.chatter = LibCraftText.saved_char.chatter or {}
+    table.insert(LibCraftText.saved_char.chatter, chatter_data)
+
+    Info(string.format("Rolis dialog recorded option ct:%d", chatter_data[2]))
+end
 
 -- Util ----------------------------------------------------------------------
 
