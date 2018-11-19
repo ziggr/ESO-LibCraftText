@@ -739,7 +739,6 @@ LibCraftText.MASTER_LABELS = {
 LibCraftText.DIALOG = {
     ["ROLIS_NAME"         ] = "ロリス・フラール"                                -- "Rolis Hlaalu"
 ,   ["ROLIS_CHATTER_TITLE"] = "-ロリス・フラール-"                              -- "-Rolis Hlaalu-"
-,   ["OPTION_ACCEPT"      ] = "<Accept the contract.>"                  -- "<Accept the contract.>"
 ,   ["OPTION_FINISH"      ] = "<仕事を終える>"                                -- "<Finish the job.>"
 ,   ["OPTION_FINISHED_BS" ] = "鍛冶の仕事を終えた"                               -- "I've finished the Blacksmithing job."
 ,   ["OPTION_FINISHED_CL" ] = "仕立の仕事を終えた"                               -- "I've finished the Clothier job."
@@ -749,6 +748,19 @@ LibCraftText.DIALOG = {
 ,   ["OPTION_FINISHED_WW" ] = "木工の仕事を終えた"                               -- "I've finished the Woodworking job."
 ,   ["OPTION_FINISHED_JW" ] = "宝飾の仕事を終えた"                               -- "I've finished the Jewelry job."
 ,   ["OPTION_STORE"       ] = "Store (名工の調停人)"                          -- "Store (Mastercraft Mediator)"
+
+,   ["OFFERED_TITLE_BS"   ] = "-密封された鍛冶依頼-"                             -- "-Sealed Blacksmithing Writ-"
+,   ["OFFERED_TITLE_CL"   ] = "-密封された仕立依頼-"                             -- "-Sealed Clothier Writ-"
+,   ["OFFERED_TITLE_EN"   ] = "-密封された付呪依頼-"                             -- "-Sealed Enchanting Writ-"
+,   ["OFFERED_TITLE_AL"   ] = "-密封された錬金術依頼-"                            -- "-Sealed Alchemy Writ-"
+,   ["OFFERED_TITLE_PR"   ] = "-密封された調理依頼-"                             -- "-Sealed Provisioning Writ-"
+,   ["OFFERED_TITLE_WW"   ] = "-密封された木工依頼-"                             -- "-Sealed Woodworking Writ-"
+,   ["OFFERED_TITLE_JW"   ] = "-密封された宝飾師依頼-"                            -- "-Sealed Jewelry Crafter Writ-"
+
+,   ["OFFERED_ACCEPT"     ] = { "<契約を受諾する>"                             -- "<Accept the contract.>"
+                              , "<契約を受諾する>"                             -- "<Accept the contract.>"
+                              }
+
 }
 
 LibCraftText.QUALITY = {

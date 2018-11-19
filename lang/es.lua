@@ -739,7 +739,6 @@ LibCraftText.MASTER_LABELS = {
 LibCraftText.DIALOG = {
     ["ROLIS_NAME"         ] = "Rolis Hlaalu"                            -- "Rolis Hlaalu"
 ,   ["ROLIS_CHATTER_TITLE"] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
-,   ["OPTION_ACCEPT"      ] = "<Accept the contract.>"                  -- "<Accept the contract.>"
 ,   ["OPTION_FINISH"      ] = "<Terminar el trabajo>"                   -- "<Finish the job.>"
 ,   ["OPTION_FINISHED_BS" ] = "He terminado el trabajo de herrería."    -- "I've finished the Blacksmithing job."
 ,   ["OPTION_FINISHED_CL" ] = "He terminado el trabajo de sastrería."   -- "I've finished the Clothier job."
@@ -749,6 +748,19 @@ LibCraftText.DIALOG = {
 ,   ["OPTION_FINISHED_WW" ] = "He terminado el trabajo de carpintería." -- "I've finished the Woodworking job."
 ,   ["OPTION_FINISHED_JW" ] = "He terminado el trabajo de joyería."     -- "I've finished the Jewelry job."
 ,   ["OPTION_STORE"       ] = "Tienda (Intermediario de maestros artesanos)"-- "Store (Mastercraft Mediator)"
+
+,   ["OFFERED_TITLE_BS"   ] = "-Encargo de herrería sellado-"           -- "-Sealed Blacksmithing Writ-"
+,   ["OFFERED_TITLE_CL"   ] = "-Encargo de sastrería sellado-"          -- "-Sealed Clothier Writ-"
+,   ["OFFERED_TITLE_EN"   ] = "-Encargo de encantamiento sellado-"      -- "-Sealed Enchanting Writ-"
+,   ["OFFERED_TITLE_AL"   ] = "-Encargo de alquimia sellado-"           -- "-Sealed Alchemy Writ-"
+,   ["OFFERED_TITLE_PR"   ] = " -Encargo de cocina sellado-"            -- "-Sealed Provisioning Writ-"
+,   ["OFFERED_TITLE_WW"   ] = "-Encargo de carpintería sellado-"        -- "-Sealed Woodworking Writ-"
+,   ["OFFERED_TITLE_JW"   ] = "-Encargo de joyería sellado-"            -- "-Sealed Jewelry Crafter Writ-"
+
+,   ["OFFERED_ACCEPT"     ] = { "<Aceptar el contrato.>"                -- "<Accept the contract.>"
+                              , "<Aceptar el contrato.>"                -- "<Accept the contract.>"
+                              }
+
 }
 
 LibCraftText.QUALITY = {

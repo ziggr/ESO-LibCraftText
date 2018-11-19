@@ -739,7 +739,6 @@ LibCraftText.MASTER_LABELS = {
 LibCraftText.DIALOG = {
     ["ROLIS_NAME"         ] = "Rolis Hlaalu"                            -- "Rolis Hlaalu"
 ,   ["ROLIS_CHATTER_TITLE"] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
-,   ["OPTION_ACCEPT"      ] = "<Accepter le contrat>"                   -- "<Accept the contract.>"
 ,   ["OPTION_FINISH"      ] = "<Finir le travail.>"                     -- "<Finish the job.>"
 ,   ["OPTION_FINISHED_BS" ] = "J'ai accompli la tâche de forge."        -- "I've finished the Blacksmithing job."
 ,   ["OPTION_FINISHED_CL" ] = "J'ai accompli la tâche de couture."      -- "I've finished the Clothier job."
@@ -749,6 +748,19 @@ LibCraftText.DIALOG = {
 ,   ["OPTION_FINISHED_WW" ] = "J'ai accompli la tâche du bois."         -- "I've finished the Woodworking job."
 ,   ["OPTION_FINISHED_JW" ] = "J'ai accompli la tâche de joaillerie."   -- "I've finished the Jewelry job."
 ,   ["OPTION_STORE"       ] = "Magasin (intermédiaire pour maîtres artisans)"-- "Store (Mastercraft Mediator)"
+
+,   ["OFFERED_TITLE_BS"   ] = "-Commande de forge scellée-"             -- "-Sealed Blacksmithing Writ-"
+,   ["OFFERED_TITLE_CL"   ] = "-Commande scellée de couture-"           -- "-Sealed Clothier Writ-"
+,   ["OFFERED_TITLE_EN"   ] = "-Commande d'enchantement scellée-"       -- "-Sealed Enchanting Writ-"
+,   ["OFFERED_TITLE_AL"   ] = "-Commande scellée d'alchimie-"           -- "-Sealed Alchemy Writ-"
+,   ["OFFERED_TITLE_PR"   ] = "-Commande scellée de cuisine-"           -- "-Sealed Provisioning Writ-"
+,   ["OFFERED_TITLE_WW"   ] = "-Commande de travail du bois scellée-"   -- "-Sealed Woodworking Writ-"
+,   ["OFFERED_TITLE_JW"   ] = "-Commande scellée de joaillier-"         -- "-Sealed Jewelry Crafter Writ-"
+
+,   ["OFFERED_ACCEPT"     ] = { "<Accepter le contrat>"                 -- "<Accept the contract.>"
+                              , "<Accepter le contrat.>"                -- "<Accept the contract.>"
+                              }
+
 }
 
 LibCraftText.QUALITY = {

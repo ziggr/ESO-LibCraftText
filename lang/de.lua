@@ -739,7 +739,6 @@ LibCraftText.MASTER_LABELS = {
 LibCraftText.DIALOG = {
     ["ROLIS_NAME"         ] = "Rolis Hlaalu"                            -- "Rolis Hlaalu"
 ,   ["ROLIS_CHATTER_TITLE"] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
-,   ["OPTION_ACCEPT"      ] = "<Nehmt den Auftrag an.>"                 -- "<Accept the contract.>"
 ,   ["OPTION_FINISH"      ] = "<Auftrag abschließen.>"                  -- "<Finish the job.>"
 ,   ["OPTION_FINISHED_BS" ] = "Ich habe den Schmiedeauftrag erledigt."  -- "I've finished the Blacksmithing job."
 ,   ["OPTION_FINISHED_CL" ] = "Ich habe den Schneiderauftrag erledigt." -- "I've finished the Clothier job."
@@ -749,6 +748,19 @@ LibCraftText.DIALOG = {
 ,   ["OPTION_FINISHED_WW" ] = "Ich habe den Schreinerauftrag erledigt." -- "I've finished the Woodworking job."
 ,   ["OPTION_FINISHED_JW" ] = "Ich habe den Schmuckauftrag erledigt."   -- "I've finished the Jewelry job."
 ,   ["OPTION_STORE"       ] = "Was habt Ihr anzubieten, Meisterhandwerksvermittler?"-- "Store (Mastercraft Mediator)"
+
+,   ["OFFERED_TITLE_BS"   ] = "-Versiegelter Waffenschmiedeschrieb-"    -- "-Sealed Blacksmithing Writ-"
+,   ["OFFERED_TITLE_CL"   ] = "-Versiegelter Schneiderschrieb-"         -- "-Sealed Clothier Writ-"
+,   ["OFFERED_TITLE_EN"   ] = "-Versiegelter Verzauberungsschrieb-"     -- "-Sealed Enchanting Writ-"
+,   ["OFFERED_TITLE_AL"   ] = "-Versiegelter Alchemieschrieb-"          -- "-Sealed Alchemy Writ-"
+,   ["OFFERED_TITLE_PR"   ] = "-Versiegelter Versorgerschrieb-"         -- "-Sealed Provisioning Writ-"
+,   ["OFFERED_TITLE_WW"   ] = "-Versiegelter Schreinerschrieb-"         -- "-Sealed Woodworking Writ-"
+,   ["OFFERED_TITLE_JW"   ] = "-Versiegelter Schmuckhandwerksschrieb-"  -- "-Sealed Jewelry Crafter Writ-"
+
+,   ["OFFERED_ACCEPT"     ] = { "<Nehmt den Auftrag an.>"               -- "<Accept the contract.>"
+                              , "<Den Auftrag annehmen.>"               -- "<Accept the contract.>"
+                              }
+
 }
 
 LibCraftText.QUALITY = {

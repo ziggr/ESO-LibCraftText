@@ -739,7 +739,6 @@ LibCraftText.MASTER_LABELS = {
 LibCraftText.DIALOG = {
     ["ROLIS_NAME"         ] = "Rolis Hlaalu"                            -- "Rolis Hlaalu"
 ,   ["ROLIS_CHATTER_TITLE"] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
-,   ["OPTION_ACCEPT"      ] = "<Accept the contract.>"                  -- "<Accept the contract.>"
 ,   ["OPTION_FINISH"      ] = "<Finish the job.>"                       -- "<Finish the job.>"
 ,   ["OPTION_FINISHED_BS" ] = "I've finished the Blacksmithing job."    -- "I've finished the Blacksmithing job."
 ,   ["OPTION_FINISHED_CL" ] = "I've finished the Clothier job."         -- "I've finished the Clothier job."
@@ -749,6 +748,19 @@ LibCraftText.DIALOG = {
 ,   ["OPTION_FINISHED_WW" ] = "I've finished the Woodworking job."      -- "I've finished the Woodworking job."
 ,   ["OPTION_FINISHED_JW" ] = "I've finished the Jewelry job."          -- "I've finished the Jewelry job."
 ,   ["OPTION_STORE"       ] = "Store (Mastercraft Mediator)"            -- "Store (Mastercraft Mediator)"
+
+,   ["OFFERED_TITLE_BS"   ] = "-Sealed Blacksmithing Writ-"             -- "-Sealed Blacksmithing Writ-"
+,   ["OFFERED_TITLE_CL"   ] = "-Sealed Clothier Writ-"                  -- "-Sealed Clothier Writ-"
+,   ["OFFERED_TITLE_EN"   ] = "-Sealed Enchanting Writ-"                -- "-Sealed Enchanting Writ-"
+,   ["OFFERED_TITLE_AL"   ] = "-Sealed Alchemy Writ-"                   -- "-Sealed Alchemy Writ-"
+,   ["OFFERED_TITLE_PR"   ] = "-Sealed Provisioning Writ-"              -- "-Sealed Provisioning Writ-"
+,   ["OFFERED_TITLE_WW"   ] = "-Sealed Woodworking Writ-"               -- "-Sealed Woodworking Writ-"
+,   ["OFFERED_TITLE_JW"   ] = "-Sealed Jewelry Crafter Writ-"           -- "-Sealed Jewelry Crafter Writ-"
+
+,   ["OFFERED_ACCEPT"     ] = { "<Accept the contract.>"                -- "<Accept the contract.>"
+                              , "<Accept the contract.>"                -- "<Accept the contract.>"
+                              }
+
 }
 
 LibCraftText.QUALITY = {
