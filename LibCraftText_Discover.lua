@@ -1995,6 +1995,11 @@ function LibCraftText.RegisterRolisChatter()
     EVENT_MANAGER:RegisterForEvent( name
                                   , EVENT_CHATTER_BEGIN
                                   , function() LibCraftText.OnRolisChatterBegin() end )
+    EVENT_MANAGER:RegisterForEvent( name
+                                  , EVENT_QUEST_COMPLETE_DIALOG
+                                  , function(quest_index)
+                                        LibCraftText.OnQuestCompleteDialog(quest_index)
+                                    end )
     LibCraftText.rolis_registered = true
     Info("Dialog listener registered.")
 end
@@ -2003,6 +2008,7 @@ function LibCraftText.UnregisterRolisChatter()
     LibCraftText.rolis_registered = true
     local name = LibCraftText.name .. "_rolis_chatter"
     local event_list = { EVENT_CHATTER_BEGIN
+                       , EVENT_QUEST_COMPLETE_DIALOG
                        }
     for _,event_id in ipairs(event_list) do
         EVENT_MANAGER:UnregisterForEvent( name
@@ -2013,24 +2019,86 @@ function LibCraftText.UnregisterRolisChatter()
 end
 
 function LibCraftText.OnRolisChatterBegin()
+    LibCraftText.RecordRolisDialog()
+end
+
+function LibCraftText.OnQuestCompleteDialog(quest_index)
+    LibCraftText.RecordRolisDialog()
+end
+
+function LibCraftText.RecordRolisDialog()
+    local self = LibCraftText
+    local lang = self.CurrLang()
 
                         -- Record current dialog text. Unfortunately this is
                         -- too ephemeral to retain across language switches and
                         -- merge programmatically, so we're gonna have to hand-
                         -- merge these into lang_tables.
 
-    local chatter_data = { GetChatterData() }
-    chatter_data.title = ZO_InteractWindowTargetAreaTitle:GetText()
-    chatter_data.option = {}
-    for i = 1,chatter_data[2] do
-        local opt_text = GetChatterOption(i)
-        chatter_data.option[i] = opt_text
+                        -- Is this Rolis?
+    local title = ZO_InteractWindowTargetAreaTitle:GetText()
+    if title ~= self.ROLIS.CHATTER_TITLE then
+        Info(string.format("got:'%s' ~= want:'%s'",title,self.ROLIS.CHATTER_TITLE))
+        Info("Hey, this isn't Rolis. Not recording.")
+        -- return
     end
 
-    LibCraftText.saved_char.chatter = LibCraftText.saved_char.chatter or {}
-    table.insert(LibCraftText.saved_char.chatter, chatter_data)
+                        -- New snark? Try to accumulate all dozen or so lines,
+                        -- just for grins.
+                        --
+                        -- SURPRISE! The text you get back from GetChatterData()
+                        -- does not match whatever snarky thing Rolis voiced,
+                        -- or what's on the screen. In fact, you can call it
+                        -- multiple times and it's random each call. So we might
+                        -- as well call it in a loop and grab up to 10 lines...
+    LibCraftText.saved_char.chatter       = LibCraftText.saved_char.chatter or {}
+    LibCraftText.saved_char.chatter.snark = LibCraftText.saved_char.chatter.snark or {}
+    LibCraftText.saved_char.chatter.snark[lang] = LibCraftText.saved_char.chatter.snark[lang] or {}
+    local known_snark = {}
+    for _,s in pairs(LibCraftText.saved_char.chatter.snark[lang]) do
+        known_snark[s] = 1
+    end
 
-    Info(string.format("Rolis dialog recorded option ct:%d", chatter_data[2]))
+    local chatter_data = nil
+    for i=1,10 do
+        chatter_data       = { GetChatterData() }
+        local dialog_text  = chatter_data[1]
+        if not known_snark[dialog_text] then
+            table.insert(LibCraftText.saved_char.chatter.snark[lang], dialog_text)
+            known_snark[dialog_text] = 1
+            Info(string.format("New snark recorded:'%s'", dialog_text))
+        else
+            Info(string.format("Snark already known:'%s'", dialog_text))
+        end
+    end
+                        -- New option text? Definitely accumulate those.
+    LibCraftText.saved_char.chatter.option = LibCraftText.saved_char.chatter.option or {}
+    LibCraftText.saved_char.chatter.option[lang] = LibCraftText.saved_char.chatter.option[lang] or {}
+    if not self.rolis_known_options then
+        Info("initializing list of known options...")
+        self.rolis_known_options = {
+                                     [self.ROLIS.ACCEPT] = 1
+                                   , [self.ROLIS.FINISH] = 1
+                                   , [self.ROLIS.STORE ] = 1
+                                   , [bs] = 1
+                                   , [cl] = 1
+                                   , [ww] = 1
+                                   , [jw] = 1
+                                   , [en] = 1
+                                   , [al] = 1
+                                   , [pr] = 1
+                                   }
+    end
+    for i = 1,chatter_data[2] do
+        local opt_text = GetChatterOption(i)
+        if not self.rolis_known_options[opt_text] then
+            self.rolis_known_options[opt_text] = 1
+            table.insert(LibCraftText.saved_char.chatter.option[lang], opt_text)
+            Info(string.format("New option recorded:'%s", opt_text))
+        else
+            Info(string.format("option already known: '%s'", opt_text))
+        end
+    end
 end
 
 -- Util ----------------------------------------------------------------------

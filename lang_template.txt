@@ -736,9 +736,9 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  $MASTER_LABEL_TRAIT               -- "Trait"
 }
 
-LibCraftText.ROLIS_QUEST_TURN_IN = {
+LibCraftText.ROLIS = {
 
-    ["rolis"]          = $ROLIS_NAME                 -- "Rolis Hlaalu"
+    ["NAME"]           = $ROLIS_NAME                 -- "Rolis Hlaalu"
 ,   ["CHATTER_TITLE"]  = $ROLIS_TITLE                -- "-Rolis Hlaalu-"
 ,   ["ACCEPT"]         = $ROLIS_ACCEPT_CONTRACT      -- "<Accept the contract.>"
 ,   ["FINISH"]         = $ROLIS_FINISH_JOB           -- "<Finish the job.>"
@@ -762,9 +762,6 @@ LibCraftText.QUALITY = {
 ,   ["EPIC"     ] = { name=$QUALITY_4   , index=ITEM_QUALITY_EPIC           or 4 }
 ,   ["LEGENDARY"] = { name=$QUALITY_5   , index=ITEM_QUALITY_LEGENDARY      or 5 }
 }
-
-
-
 
 
 

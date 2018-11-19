@@ -736,12 +736,12 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Особенность"                     -- "Trait"
 }
 
-LibCraftText.ROLIS_QUEST_TURN_IN = {
+LibCraftText.ROLIS = {
 
-    ["rolis"]          = "Ролис Хлаалу"              -- "Rolis Hlaalu"
+    ["NAME"]           = "Ролис Хлаалу"              -- "Rolis Hlaalu"
 ,   ["CHATTER_TITLE"]  = "-Ролис Хлаалу-"            -- "-Rolis Hlaalu-"
 ,   ["ACCEPT"]         = "<Accept the contract.>"    -- "<Accept the contract.>"
-,   ["FINISH"]         = "<Finish the job.>"         -- "<Finish the job.>"
+,   ["FINISH"]         = "<Закончить работу.>"       -- "<Finish the job.>"
 ,   ["DELIVER_SUBSTR"] = "Deliver"                   -- "Deliver"
 
 ,   [bs] = "Я закончил работу кузнеца."              -- "I've finished the Blacksmithing job."
@@ -762,9 +762,6 @@ LibCraftText.QUALITY = {
 ,   ["EPIC"     ] = { name="Эпическое"  , index=ITEM_QUALITY_EPIC           or 4 }
 ,   ["LEGENDARY"] = { name="Легендарное", index=ITEM_QUALITY_LEGENDARY      or 5 }
 }
-
-
-
 
 
 

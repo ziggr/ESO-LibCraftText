@@ -736,12 +736,12 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Rasgo"                           -- "Trait"
 }
 
-LibCraftText.ROLIS_QUEST_TURN_IN = {
+LibCraftText.ROLIS = {
 
-    ["rolis"]          = "Rolis Hlaalu"              -- "Rolis Hlaalu"
+    ["NAME"]           = "Rolis Hlaalu"              -- "Rolis Hlaalu"
 ,   ["CHATTER_TITLE"]  = "-Rolis Hlaalu-"            -- "-Rolis Hlaalu-"
 ,   ["ACCEPT"]         = "<Accept the contract.>"    -- "<Accept the contract.>"
-,   ["FINISH"]         = "<Finish the job.>"         -- "<Finish the job.>"
+,   ["FINISH"]         = "<Terminar el trabajo>"     -- "<Finish the job.>"
 ,   ["DELIVER_SUBSTR"] = "Deliver"                   -- "Deliver"
 
 ,   [bs] = "He terminado el trabajo de herrería."    -- "I've finished the Blacksmithing job."
@@ -762,9 +762,6 @@ LibCraftText.QUALITY = {
 ,   ["EPIC"     ] = { name="Épico"      , index=ITEM_QUALITY_EPIC           or 4 }
 ,   ["LEGENDARY"] = { name="Legendario" , index=ITEM_QUALITY_LEGENDARY      or 5 }
 }
-
-
-
 
 
 

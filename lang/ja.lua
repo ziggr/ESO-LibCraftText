@@ -736,12 +736,12 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Trait"                           -- "Trait"
 }
 
-LibCraftText.ROLIS_QUEST_TURN_IN = {
+LibCraftText.ROLIS = {
 
-    ["rolis"]          = "ロリス・フラール"                  -- "Rolis Hlaalu"
+    ["NAME"]           = "ロリス・フラール"                  -- "Rolis Hlaalu"
 ,   ["CHATTER_TITLE"]  = "-ロリス・フラール-"                -- "-Rolis Hlaalu-"
 ,   ["ACCEPT"]         = "<Accept the contract.>"    -- "<Accept the contract.>"
-,   ["FINISH"]         = "<Finish the job.>"         -- "<Finish the job.>"
+,   ["FINISH"]         = "<仕事を終える>"                  -- "<Finish the job.>"
 ,   ["DELIVER_SUBSTR"] = "Deliver"                   -- "Deliver"
 
 ,   [bs] = "鍛冶の仕事を終えた"                               -- "I've finished the Blacksmithing job."
@@ -762,9 +762,6 @@ LibCraftText.QUALITY = {
 ,   ["EPIC"     ] = { name="Epic"       , index=ITEM_QUALITY_EPIC           or 4 }
 ,   ["LEGENDARY"] = { name="Legendary"  , index=ITEM_QUALITY_LEGENDARY      or 5 }
 }
-
-
-
 
 
 
