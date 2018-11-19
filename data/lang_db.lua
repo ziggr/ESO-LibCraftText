@@ -15044,4 +15044,94 @@ LANG_DB = {
           ,   es  = "Entrenamiento"
           ,   it  = "da Allenamento"
           }
+, [1749] = {
+              key = "$WRIT_BOARD_OPTION_ACCEPT"
+          ,   en  = "<Pull a Writ from the Board.>"
+          ,   de  = "<Einen Schrieb vom Brett nehmen.>"
+          ,   fr  = "<Prendre une commande sur le panneau.>"
+          ,   es  = "<Coger un encargo del tablón.>"
+          ,   ru  = "<Взять заказ с доски.>"
+          ,   ja  = "<依頼を掲示板からはがす>"
+          }
+, [1750] = {
+              key = "$WRIT_BOARD_OPTION_AL"
+          ,   en  = "<Examine the Alchemist Writs.>"
+          ,   de  = "<Die Alchemistenschriebe betrachten.>"
+          ,   fr  = "<Parcourir les commandes d'alchimie.>"
+          ,   es  = "<Revisar los encargos de alquimia.>"
+          ,   ru  = "<Изучить заказы для алхимика.>"
+          ,   ja  = "<錬金術師の依頼を見る>"
+          }
+, [1751] = {
+              key = "$WRIT_BOARD_OPTION_BS"
+          ,   en  = "<Examine the Blacksmith Writs.>"
+          ,   de  = "<Die Schmiedeschriebe betrachten.>"
+          ,   fr  = "<Parcourir les commandes de forge.>"
+          ,   es  = "<Revisar los encargos de herrería.>"
+          ,   ru  = "<Изучить заказы для кузнеца.>"
+          ,   ja  = "<鍛冶屋の依頼を調べる>"
+          }
+, [1752] = {
+              key = "$WRIT_BOARD_OPTION_CL"
+          ,   en  = "<Examine the Clothier Writs.>"
+          ,   de  = "<Die Schneiderschriebe betrachten.>"
+          ,   fr  = "<Parcourir les commandes de couture.>"
+          ,   es  = "<Revisar los encargos de sastrería.>"
+          ,   ru  = "<Изучить заказы для портного.>"
+          ,   ja  = "<仕立屋の依頼を調べる>"
+          }
+, [1753] = {
+              key = "$WRIT_BOARD_OPTION_EN"
+          ,   en  = "<Examine the Enchanter Writs.>"
+          ,   de  = "<Die Verzaubererschriebe betrachten.>"
+          ,   fr  = "<Parcourir les commandes d'enchantement.>"
+          ,   es  = "<Revisar los encargos de encantamiento.>"
+          ,   ru  = "<Изучить заказы для зачарователя.>"
+          ,   ja  = "<付呪師の依頼を調べる>"
+          }
+, [1754] = {
+              key = "$WRIT_BOARD_OPTION_JW"
+          ,   en  = "<Examine the Jewelry Crafting Writs.>"
+          ,   de  = "<Die Schmuckhandwerksschriebe betrachten.>"
+          ,   fr  = "<Examiner les commandes de joaillerie.>"
+          ,   es  = "<Examine the Jewelry Crafting Writs.>"
+          ,   ru  = "<Изучить заказы для ювелира.>"
+          ,   ja  = "<宝飾師のクラフト依頼を調べる>"
+          }
+, [1755] = {
+              key = "$WRIT_BOARD_OPTION_PR"
+          ,   en  = "<Examine the Provisioner Writs.>"
+          ,   de  = "<Die Versorgerschriebe betrachten.>"
+          ,   fr  = "<Parcourir les commandes de cuisine.>"
+          ,   es  = "<Revisar los encargos de cocina.>"
+          ,   ru  = "<Изучить заказы для снабженца.>"
+          ,   ja  = "<調理師の依頼を見る>"
+          }
+, [1756] = {
+              key = "$WRIT_BOARD_OPTION_WW"
+          ,   en  = "<Examine the Woodworker Writs.>"
+          ,   de  = "<Die Schreinerschriebe betrachten.>"
+          ,   fr  = "<Parcourir les commandes de travail du bois.>"
+          ,   es  = "<Revisar los encargos de carpintería.>"
+          ,   ru  = "<Изучить заказы для столяра.>"
+          ,   ja  = "<木工師の依頼を調べる>"
+          }
+, [1757] = {
+              key = "$WRIT_BOARD_TITLE_CONSUMABLES"
+          ,   en  = "-Consumables Crafting Writs-"
+          ,   de  = "-Handwerksschriebe-"
+          ,   fr  = "-Commandes de consommables artisanaux-"
+          ,   es  = "-Encargos de consumibles artesanales-"
+          ,   ru  = "-Ремесленные заказы на расходные материалы-"
+          ,   ja  = "-消費アイテムのクラフトの依頼-"
+          }
+, [1758] = {
+              key = "$WRIT_BOARD_TITLE_EQUIPMENT"
+          ,   en  = "-Equipment Crafting Writs-"
+          ,   de  = "-Handwerksschriebe: Ausrüstung-"
+          ,   fr  = "-Commandes d'équipement artisanal-"
+          ,   es  = "-Encargos de equipamiento artesanal-"
+          ,   ru  = "-Ремесленные заказы на экипировку-"
+          ,   ja  = "-装備品のクラフトの依頼-"
+          }
 }
