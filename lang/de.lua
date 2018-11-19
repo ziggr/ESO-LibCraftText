@@ -739,17 +739,20 @@ LibCraftText.MASTER_LABELS = {
 LibCraftText.ROLIS_QUEST_TURN_IN = {
 
     ["rolis"]          = "Rolis Hlaalu"              -- "Rolis Hlaalu"
-,   ["accept"]         = "<Nehmt den Auftrag an.>"   -- "<Accept the contract.>"
-,   ["finish"]         = "<Auftrag abschließen.>"    -- "<Finish the job.>"
-,   ["deliver_substr"] = "Beliefert"                 -- "Deliver"
+,   ["CHATTER_TITLE"]  = "-Rolis Hlaalu-"            -- "-Rolis Hlaalu-"
+,   ["ACCEPT"]         = "<Nehmt den Auftrag an.>"   -- "<Accept the contract.>"
+,   ["FINISH"]         = "<Auftrag abschließen.>"    -- "<Finish the job.>"
+,   ["DELIVER_SUBSTR"] = "Beliefert"                 -- "Deliver"
 
-,   [bs] = "I've finished the Blacksmithing job."    -- "I've finished the Blacksmithing job."
-,   [cl] = "I've finished the Clothier job."         -- "I've finished the Clothier job."
-,   [en] = "I've finished the Enchanting job."       -- "I've finished the Enchanting job."
-,   [al] = "I've finished the Alchemy job."          -- "I've finished the Alchemy job."
-,   [pr] = "I've finished the Provisioning job."     -- "I've finished the Provisioning job."
-,   [ww] = "I've finished the Woodworking job."      -- "I've finished the Woodworking job."
-,   [jw] = "I've finished the Jewelry job."          -- "I've finished the Jewelry job."
+,   [bs] = "Ich habe den Schmiedeauftrag erledigt."  -- "I've finished the Blacksmithing job."
+,   [cl] = "Ich habe den Schneiderauftrag erledigt." -- "I've finished the Clothier job."
+,   [en] = "Ich habe den Verzaubererauftrag erledigt."-- "I've finished the Enchanting job."
+,   [al] = "Ich habe den Alchemieauftrag erledigt."  -- "I've finished the Alchemy job."
+,   [pr] = "Ich habe den Versorgerauftrag erledigt." -- "I've finished the Provisioning job."
+,   [ww] = "Ich habe den Schreinerauftrag erledigt." -- "I've finished the Woodworking job."
+,   [jw] = "Ich habe den Schmuckauftrag erledigt."   -- "I've finished the Jewelry job."
+
+,   ["STORE"] = "Was habt Ihr anzubieten, Meisterhandwerksvermittler?"-- "Store (Mastercraft Mediator)"
 }
 
 LibCraftText.QUALITY = {

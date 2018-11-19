@@ -739,17 +739,20 @@ LibCraftText.MASTER_LABELS = {
 LibCraftText.ROLIS_QUEST_TURN_IN = {
 
     ["rolis"]          = $ROLIS_NAME                 -- "Rolis Hlaalu"
-,   ["accept"]         = $ROLIS_ACCEPT_CONTRACT      -- "<Accept the contract.>"
-,   ["finish"]         = $ROLIS_FINISH_JOB           -- "<Finish the job.>"
-,   ["deliver_substr"] = $ROLIS_DELIVER_SUBSTR       -- "Deliver"
+,   ["CHATTER_TITLE"]  = $ROLIS_TITLE                -- "-Rolis Hlaalu-"
+,   ["ACCEPT"]         = $ROLIS_ACCEPT_CONTRACT      -- "<Accept the contract.>"
+,   ["FINISH"]         = $ROLIS_FINISH_JOB           -- "<Finish the job.>"
+,   ["DELIVER_SUBSTR"] = $ROLIS_DELIVER_SUBSTR       -- "Deliver"
 
-,   [bs] = $FINISHED_BS                              -- "I've finished the Blacksmithing job."
-,   [cl] = $FINISHED_CL                              -- "I've finished the Clothier job."
-,   [en] = $FINISHED_EN                              -- "I've finished the Enchanting job."
-,   [al] = $FINISHED_AL                              -- "I've finished the Alchemy job."
-,   [pr] = $FINISHED_PR                              -- "I've finished the Provisioning job."
-,   [ww] = $FINISHED_WW                              -- "I've finished the Woodworking job."
-,   [jw] = $FINISHED_JW                              -- "I've finished the Jewelry job."
+,   [bs] = $ROLIS_FINISHED_BS                        -- "I've finished the Blacksmithing job."
+,   [cl] = $ROLIS_FINISHED_CL                        -- "I've finished the Clothier job."
+,   [en] = $ROLIS_FINISHED_EN                        -- "I've finished the Enchanting job."
+,   [al] = $ROLIS_FINISHED_AL                        -- "I've finished the Alchemy job."
+,   [pr] = $ROLIS_FINISHED_PR                        -- "I've finished the Provisioning job."
+,   [ww] = $ROLIS_FINISHED_WW                        -- "I've finished the Woodworking job."
+,   [jw] = $ROLIS_FINISHED_JW                        -- "I've finished the Jewelry job."
+
+,   ["STORE"] = $ROLIS_STORE                         -- "Store (Mastercraft Mediator)"
 }
 
 LibCraftText.QUALITY = {

@@ -738,18 +738,21 @@ LibCraftText.MASTER_LABELS = {
 
 LibCraftText.ROLIS_QUEST_TURN_IN = {
 
-    ["rolis"]          = "Rolis Hlaalu"              -- "Rolis Hlaalu"
-,   ["accept"]         = "<Accept the contract.>"    -- "<Accept the contract.>"
-,   ["finish"]         = "<Finish the job.>"         -- "<Finish the job.>"
-,   ["deliver_substr"] = "Deliver"                   -- "Deliver"
+    ["rolis"]          = "ロリス・フラール"                  -- "Rolis Hlaalu"
+,   ["CHATTER_TITLE"]  = "-ロリス・フラール-"                -- "-Rolis Hlaalu-"
+,   ["ACCEPT"]         = "<Accept the contract.>"    -- "<Accept the contract.>"
+,   ["FINISH"]         = "<Finish the job.>"         -- "<Finish the job.>"
+,   ["DELIVER_SUBSTR"] = "Deliver"                   -- "Deliver"
 
-,   [bs] = "I've finished the Blacksmithing job."    -- "I've finished the Blacksmithing job."
-,   [cl] = "I've finished the Clothier job."         -- "I've finished the Clothier job."
-,   [en] = "I've finished the Enchanting job."       -- "I've finished the Enchanting job."
-,   [al] = "I've finished the Alchemy job."          -- "I've finished the Alchemy job."
-,   [pr] = "I've finished the Provisioning job."     -- "I've finished the Provisioning job."
-,   [ww] = "I've finished the Woodworking job."      -- "I've finished the Woodworking job."
-,   [jw] = "I've finished the Jewelry job."          -- "I've finished the Jewelry job."
+,   [bs] = "鍛冶の仕事を終えた"                               -- "I've finished the Blacksmithing job."
+,   [cl] = "仕立の仕事を終えた"                               -- "I've finished the Clothier job."
+,   [en] = "付呪の仕事を終えた"                               -- "I've finished the Enchanting job."
+,   [al] = "錬金術の仕事を終えた"                              -- "I've finished the Alchemy job."
+,   [pr] = "調理の仕事を終えた"                               -- "I've finished the Provisioning job."
+,   [ww] = "木工の仕事を終えた"                               -- "I've finished the Woodworking job."
+,   [jw] = "宝飾の仕事を終えた"                               -- "I've finished the Jewelry job."
+
+,   ["STORE"] = "Store (名工の調停人)"                     -- "Store (Mastercraft Mediator)"
 }
 
 LibCraftText.QUALITY = {
