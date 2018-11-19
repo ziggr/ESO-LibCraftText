@@ -681,16 +681,16 @@ LibCraftText.DAILY_COND = {
 }
 
 LibCraftText.MASTER_COND = {
-    TRAVEL_AD       = $MASTER_COND_TRAVEL_AD
-,   TRAVEL_DC       = $MASTER_COND_TRAVEL_DC
-,   TRAVEL_EP       = $MASTER_COND_TRAVEL_EP
+    TRAVEL_AD       = $MASTER_COND_TRAVEL_AD                        -- "Travel to Elden Root to Meet Your Contact"
+,   TRAVEL_DC       = $MASTER_COND_TRAVEL_DC                        -- "Travel to Wayrest to Meet Your Contact"
+,   TRAVEL_EP       = $MASTER_COND_TRAVEL_EP                        -- "Travel to Mournhold to Meet Your Contact"
 
-,   DELIVER_AL      = $MASTER_COND_DELIVER_AL
-,   DELIVER_EN      = $MASTER_COND_DELIVER_EN
-,   DELIVER_PR      = $MASTER_COND_DELIVER_PR
-,   DELIVER_WEAPON  = $MASTER_COND_DELIVER_WEAPON
-,   DELIVER_ARMOR   = $MASTER_COND_DELIVER_ARMOR
-,   DELIVER_JW      = $MASTER_COND_DELIVER_JW
+,   DELIVER_AL      = $MASTER_COND_DELIVER_AL                       -- "Deliver the Concoction"
+,   DELIVER_EN      = $MASTER_COND_DELIVER_EN                       -- "Deliver the Glyph"
+,   DELIVER_PR      = $MASTER_COND_DELIVER_PR                       -- "Deliver the Feast"
+,   DELIVER_WEAPON  = $MASTER_COND_DELIVER_WEAPON                   -- "Deliver the Weapon"
+,   DELIVER_ARMOR   = $MASTER_COND_DELIVER_ARMOR                    -- "Deliver the Armor"
+,   DELIVER_JW      = $MASTER_COND_DELIVER_JW                       -- "Deliver the Jewelry"
 }
 
 -- Quest Titles --------------------------------------------------------------
@@ -736,23 +736,19 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  $MASTER_LABEL_TRAIT               -- "Trait"
 }
 
-LibCraftText.ROLIS = {
-
-    ["NAME"]           = $ROLIS_NAME                 -- "Rolis Hlaalu"
-,   ["CHATTER_TITLE"]  = $ROLIS_TITLE                -- "-Rolis Hlaalu-"
-,   ["ACCEPT"]         = $ROLIS_ACCEPT_CONTRACT      -- "<Accept the contract.>"
-,   ["FINISH"]         = $ROLIS_FINISH_JOB           -- "<Finish the job.>"
-,   ["DELIVER_SUBSTR"] = $ROLIS_DELIVER_SUBSTR       -- "Deliver"
-
-,   [bs] = $ROLIS_FINISHED_BS                        -- "I've finished the Blacksmithing job."
-,   [cl] = $ROLIS_FINISHED_CL                        -- "I've finished the Clothier job."
-,   [en] = $ROLIS_FINISHED_EN                        -- "I've finished the Enchanting job."
-,   [al] = $ROLIS_FINISHED_AL                        -- "I've finished the Alchemy job."
-,   [pr] = $ROLIS_FINISHED_PR                        -- "I've finished the Provisioning job."
-,   [ww] = $ROLIS_FINISHED_WW                        -- "I've finished the Woodworking job."
-,   [jw] = $ROLIS_FINISHED_JW                        -- "I've finished the Jewelry job."
-
-,   ["STORE"] = $ROLIS_STORE                         -- "Store (Mastercraft Mediator)"
+LibCraftText.DIALOG = {
+    ["ROLIS_NAME"         ] = $ROLIS_NAME                               -- "Rolis Hlaalu"
+,   ["ROLIS_CHATTER_TITLE"] = $ROLIS_TITLE                              -- "-Rolis Hlaalu-"
+,   ["OPTION_ACCEPT"      ] = $ROLIS_ACCEPT_CONTRACT                    -- "<Accept the contract.>"
+,   ["OPTION_FINISH"      ] = $ROLIS_FINISH_JOB                         -- "<Finish the job.>"
+,   ["OPTION_FINISHED_BS" ] = $ROLIS_FINISHED_BS                        -- "I've finished the Blacksmithing job."
+,   ["OPTION_FINISHED_CL" ] = $ROLIS_FINISHED_CL                        -- "I've finished the Clothier job."
+,   ["OPTION_FINISHED_EN" ] = $ROLIS_FINISHED_EN                        -- "I've finished the Enchanting job."
+,   ["OPTION_FINISHED_AL" ] = $ROLIS_FINISHED_AL                        -- "I've finished the Alchemy job."
+,   ["OPTION_FINISHED_PR" ] = $ROLIS_FINISHED_PR                        -- "I've finished the Provisioning job."
+,   ["OPTION_FINISHED_WW" ] = $ROLIS_FINISHED_WW                        -- "I've finished the Woodworking job."
+,   ["OPTION_FINISHED_JW" ] = $ROLIS_FINISHED_JW                        -- "I've finished the Jewelry job."
+,   ["OPTION_STORE"       ] = $ROLIS_STORE                              -- "Store (Mastercraft Mediator)"
 }
 
 LibCraftText.QUALITY = {

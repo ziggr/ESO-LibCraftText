@@ -8438,7 +8438,6 @@ LANG_DB = {
           ,   de  = "Liefert das Gebräu"
           ,   fr  = "Livrer la concoction"
           ,   es  = "Entrega la mezcla"
-          ,   it  = "Deliver the Concoction"
           ,   ru  = "Доставить варево"
           ,   ja  = "調合薬を届ける"
           }
@@ -8457,7 +8456,6 @@ LANG_DB = {
           ,   de  = "Liefert die Waffe"
           ,   fr  = "Livrer l'arme."
           ,   es  = "Entrega el arma"
-          ,   it  = "Deliver the Weapon"
           ,   ru  = "Доставить оружие"
           ,   ja  = "武器を届ける"
           }
@@ -8467,7 +8465,6 @@ LANG_DB = {
           ,   de  = "Liefert das Mahl"
           ,   fr  = "Livrer le festin."
           ,   es  = "Entrega el festín"
-          ,   it  = "Deliver the Feast"
           ,   ru  = "Доставить еду"
           ,   ja  = "料理を届ける"
           }
@@ -8477,7 +8474,6 @@ LANG_DB = {
           ,   de  = "Liefert die Rüstung"
           ,   fr  = "Livrez l'armure"
           ,   es  = "Entrega la armadura"
-          ,   it  = "Deliver the Armor"
           ,   ru  = "Доставить доспехи"
           ,   ja  = "防具を届ける"
           }
@@ -8487,7 +8483,6 @@ LANG_DB = {
           ,   de  = "Liefert die Glyphe"
           ,   fr  = "Livrer le glyphe."
           ,   es  = "Entrega el glifo"
-          ,   it  = "Deliver the Glyph"
           ,   ru  = "Доставить глиф"
           ,   ja  = "グリフを届ける"
           }
@@ -8537,7 +8532,6 @@ LANG_DB = {
           ,   de  = "Liefert das Gebräu"
           ,   fr  = "Livrer la concoction"
           ,   es  = "Entrega la mezcla"
-          ,   it  = "Deliver the Concoction"
           ,   ru  = "Доставить варево"
           ,   ja  = "調合薬を届ける"
           }
@@ -8547,7 +8541,6 @@ LANG_DB = {
           ,   de  = "Liefert die Rüstung"
           ,   fr  = "Livrez l'armure"
           ,   es  = "Entrega la armadura"
-          ,   it  = "Deliver the Armor"
           ,   ru  = "Доставить доспехи"
           ,   ja  = "防具を届ける"
           }
@@ -8557,7 +8550,6 @@ LANG_DB = {
           ,   de  = "Liefert die Glyphe"
           ,   fr  = "Livrer le glyphe."
           ,   es  = "Entrega el glifo"
-          ,   it  = "Deliver the Glyph"
           ,   ru  = "Доставить глиф"
           ,   ja  = "グリフを届ける"
           }
@@ -8576,7 +8568,6 @@ LANG_DB = {
           ,   de  = "Liefert das Mahl"
           ,   fr  = "Livrer le festin."
           ,   es  = "Entrega el festín"
-          ,   it  = "Deliver the Feast"
           ,   ru  = "Доставить еду"
           ,   ja  = "料理を届ける"
           }
@@ -8586,7 +8577,6 @@ LANG_DB = {
           ,   de  = "Liefert die Waffe"
           ,   fr  = "Livrer l'arme."
           ,   es  = "Entrega el arma"
-          ,   it  = "Deliver the Weapon"
           ,   ru  = "Доставить оружие"
           ,   ja  = "武器を届ける"
           }
@@ -11560,7 +11550,6 @@ LANG_DB = {
           ,   de  = "Ich habe den Schmuckauftrag erledigt."
           ,   fr  = "J'ai accompli la tâche de joaillerie."
           ,   es  = "He terminado el trabajo de joyería."
-          ,   ru  = "I've finished the Jewelry job."
           ,   ja  = "宝飾の仕事を終えた"
           }
 , [1306] = {

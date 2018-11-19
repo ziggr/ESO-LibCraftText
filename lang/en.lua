@@ -681,16 +681,16 @@ LibCraftText.DAILY_COND = {
 }
 
 LibCraftText.MASTER_COND = {
-    TRAVEL_AD       = "Travel to Elden Root to Meet Your Contact"
-,   TRAVEL_DC       = "Travel to Wayrest to Meet Your Contact"
-,   TRAVEL_EP       = "Travel to Mournhold to Meet Your Contact"
+    TRAVEL_AD       = "Travel to Elden Root to Meet Your Contact"   -- "Travel to Elden Root to Meet Your Contact"
+,   TRAVEL_DC       = "Travel to Wayrest to Meet Your Contact"      -- "Travel to Wayrest to Meet Your Contact"
+,   TRAVEL_EP       = "Travel to Mournhold to Meet Your Contact"    -- "Travel to Mournhold to Meet Your Contact"
 
-,   DELIVER_AL      = "Deliver the Concoction"
-,   DELIVER_EN      = "Deliver the Glyph"    
-,   DELIVER_PR      = "Deliver the Feast"    
-,   DELIVER_WEAPON  = "Deliver the Weapon"       
-,   DELIVER_ARMOR   = "Deliver the Armor"       
-,   DELIVER_JW      = "Deliver the Jewelry"  
+,   DELIVER_AL      = "Deliver the Concoction"                      -- "Deliver the Concoction"
+,   DELIVER_EN      = "Deliver the Glyph"                           -- "Deliver the Glyph"
+,   DELIVER_PR      = "Deliver the Feast"                           -- "Deliver the Feast"
+,   DELIVER_WEAPON  = "Deliver the Weapon"                          -- "Deliver the Weapon"
+,   DELIVER_ARMOR   = "Deliver the Armor"                           -- "Deliver the Armor"
+,   DELIVER_JW      = "Deliver the Jewelry"                         -- "Deliver the Jewelry"
 }
 
 -- Quest Titles --------------------------------------------------------------
@@ -736,23 +736,19 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Trait"                           -- "Trait"
 }
 
-LibCraftText.ROLIS = {
-
-    ["NAME"]           = "Rolis Hlaalu"              -- "Rolis Hlaalu"
-,   ["CHATTER_TITLE"]  = "-Rolis Hlaalu-"            -- "-Rolis Hlaalu-"
-,   ["ACCEPT"]         = "<Accept the contract.>"    -- "<Accept the contract.>"
-,   ["FINISH"]         = "<Finish the job.>"         -- "<Finish the job.>"
-,   ["DELIVER_SUBSTR"] = "Deliver"                   -- "Deliver"
-
-,   [bs] = "I've finished the Blacksmithing job."    -- "I've finished the Blacksmithing job."
-,   [cl] = "I've finished the Clothier job."         -- "I've finished the Clothier job."
-,   [en] = "I've finished the Enchanting job."       -- "I've finished the Enchanting job."
-,   [al] = "I've finished the Alchemy job."          -- "I've finished the Alchemy job."
-,   [pr] = "I've finished the Provisioning job."     -- "I've finished the Provisioning job."
-,   [ww] = "I've finished the Woodworking job."      -- "I've finished the Woodworking job."
-,   [jw] = "I've finished the Jewelry job."          -- "I've finished the Jewelry job."
-
-,   ["STORE"] = "Store (Mastercraft Mediator)"       -- "Store (Mastercraft Mediator)"
+LibCraftText.DIALOG = {
+    ["ROLIS_NAME"         ] = "Rolis Hlaalu"                            -- "Rolis Hlaalu"
+,   ["ROLIS_CHATTER_TITLE"] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
+,   ["OPTION_ACCEPT"      ] = "<Accept the contract.>"                  -- "<Accept the contract.>"
+,   ["OPTION_FINISH"      ] = "<Finish the job.>"                       -- "<Finish the job.>"
+,   ["OPTION_FINISHED_BS" ] = "I've finished the Blacksmithing job."    -- "I've finished the Blacksmithing job."
+,   ["OPTION_FINISHED_CL" ] = "I've finished the Clothier job."         -- "I've finished the Clothier job."
+,   ["OPTION_FINISHED_EN" ] = "I've finished the Enchanting job."       -- "I've finished the Enchanting job."
+,   ["OPTION_FINISHED_AL" ] = "I've finished the Alchemy job."          -- "I've finished the Alchemy job."
+,   ["OPTION_FINISHED_PR" ] = "I've finished the Provisioning job."     -- "I've finished the Provisioning job."
+,   ["OPTION_FINISHED_WW" ] = "I've finished the Woodworking job."      -- "I've finished the Woodworking job."
+,   ["OPTION_FINISHED_JW" ] = "I've finished the Jewelry job."          -- "I've finished the Jewelry job."
+,   ["OPTION_STORE"       ] = "Store (Mastercraft Mediator)"            -- "Store (Mastercraft Mediator)"
 }
 
 LibCraftText.QUALITY = {

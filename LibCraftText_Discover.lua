@@ -2000,6 +2000,11 @@ function LibCraftText.RegisterRolisChatter()
                                   , function(quest_index)
                                         LibCraftText.OnQuestCompleteDialog(quest_index)
                                     end )
+    EVENT_MANAGER:RegisterForEvent( name
+                                  , EVENT_QUEST_OFFERED
+                                  , function()
+                                        LibCraftText.OnQuestOffered()
+                                    end )
     LibCraftText.rolis_registered = true
     Info("Dialog listener registered.")
 end
@@ -2009,6 +2014,7 @@ function LibCraftText.UnregisterRolisChatter()
     local name = LibCraftText.name .. "_rolis_chatter"
     local event_list = { EVENT_CHATTER_BEGIN
                        , EVENT_QUEST_COMPLETE_DIALOG
+                       , EVENT_QUEST_OFFERED
                        }
     for _,event_id in ipairs(event_list) do
         EVENT_MANAGER:UnregisterForEvent( name
@@ -2023,7 +2029,13 @@ function LibCraftText.OnRolisChatterBegin()
 end
 
 function LibCraftText.OnQuestCompleteDialog(quest_index)
+    Info(string.format("Quest complete  qi:%d",quest_index))
     LibCraftText.RecordRolisDialog()
+end
+
+function LibCraftText.OnQuestOffered()
+    Info(string.format("Quest offered"))
+    LibCraftText.RecordQuestOffered()
 end
 
 function LibCraftText.RecordRolisDialog()
@@ -2094,11 +2106,53 @@ function LibCraftText.RecordRolisDialog()
         if not self.rolis_known_options[opt_text] then
             self.rolis_known_options[opt_text] = 1
             table.insert(LibCraftText.saved_char.chatter.option[lang], opt_text)
-            Info(string.format("New option recorded:'%s", opt_text))
+            Info(string.format("|c66FF66New option recorded:|r'%s", opt_text))
         else
             Info(string.format("option already known: '%s'", opt_text))
         end
     end
+end
+
+function LibCraftText.RecordQuestOffered()
+    local self = LibCraftText
+    local lang = self.CurrLang()
+
+    self.saved_char.quest         = self.saved_char.quest         or {}
+    self.saved_char.quest.offered = self.saved_char.quest.offered or {}
+    local offered = self.saved_char.quest.offered
+
+                        -- Lazy init from saved vars
+    local function init(field_name)
+        self.quest_offered = self.quest_offered or {}
+        if not self.quest_offered[field_name] then
+            self.quest_offered[field_name] = {}
+            if offered[field_name] and offered[field_name][lang] then
+                for _,t in pairs(offered[field_name][lang]) do
+                    self.quest_offered[field_name][t] = 1
+                end
+            end
+        end
+    end
+    init("title")
+    init("dialog")
+    init("response")
+
+    local function record(field_name, value)
+        if self.quest_offered[field_name][value] then
+            -- Info("quest offered known:")
+        else
+            self.quest_offered[field_name][value] = 1
+            offered[field_name]       = offered[field_name]       or {}
+            offered[field_name][lang] = offered[field_name][lang] or {}
+            table.insert(offered[field_name][lang],value)
+            Info("|c66FF66quest offered learned:|r"..value)
+        end
+    end
+    local title = ZO_InteractWindowTargetAreaTitle:GetText()
+    local info = {GetOfferedQuestInfo()}
+    record("title",    title)
+    record("dialog",   info[1])
+    record("response", info[2])
 end
 
 -- Util ----------------------------------------------------------------------

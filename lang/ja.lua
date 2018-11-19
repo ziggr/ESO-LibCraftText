@@ -681,16 +681,16 @@ LibCraftText.DAILY_COND = {
 }
 
 LibCraftText.MASTER_COND = {
-    TRAVEL_AD       = "エルデンルートへ行って代理人と会う"   
-,   TRAVEL_DC       = "ウェイレストへ行って代理人と会う"    
-,   TRAVEL_EP       = "モーンホールドへ行って代理人と会う"   
+    TRAVEL_AD       = "エルデンルートへ行って代理人と会う"                           -- "Travel to Elden Root to Meet Your Contact"
+,   TRAVEL_DC       = "ウェイレストへ行って代理人と会う"                            -- "Travel to Wayrest to Meet Your Contact"
+,   TRAVEL_EP       = "モーンホールドへ行って代理人と会う"                           -- "Travel to Mournhold to Meet Your Contact"
 
-,   DELIVER_AL      = "調合薬を届ける"              
-,   DELIVER_EN      = "グリフを届ける"              
-,   DELIVER_PR      = "料理を届ける"               
-,   DELIVER_WEAPON  = "武器を届ける"                   
-,   DELIVER_ARMOR   = "防具を届ける"                  
-,   DELIVER_JW      = "宝飾を届ける"               
+,   DELIVER_AL      = "調合薬を届ける"                                     -- "Deliver the Concoction"
+,   DELIVER_EN      = "グリフを届ける"                                     -- "Deliver the Glyph"
+,   DELIVER_PR      = "料理を届ける"                                      -- "Deliver the Feast"
+,   DELIVER_WEAPON  = "武器を届ける"                                      -- "Deliver the Weapon"
+,   DELIVER_ARMOR   = "防具を届ける"                                      -- "Deliver the Armor"
+,   DELIVER_JW      = "宝飾を届ける"                                      -- "Deliver the Jewelry"
 }
 
 -- Quest Titles --------------------------------------------------------------
@@ -736,23 +736,19 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Trait"                           -- "Trait"
 }
 
-LibCraftText.ROLIS = {
-
-    ["NAME"]           = "ロリス・フラール"                  -- "Rolis Hlaalu"
-,   ["CHATTER_TITLE"]  = "-ロリス・フラール-"                -- "-Rolis Hlaalu-"
-,   ["ACCEPT"]         = "<Accept the contract.>"    -- "<Accept the contract.>"
-,   ["FINISH"]         = "<仕事を終える>"                  -- "<Finish the job.>"
-,   ["DELIVER_SUBSTR"] = "Deliver"                   -- "Deliver"
-
-,   [bs] = "鍛冶の仕事を終えた"                               -- "I've finished the Blacksmithing job."
-,   [cl] = "仕立の仕事を終えた"                               -- "I've finished the Clothier job."
-,   [en] = "付呪の仕事を終えた"                               -- "I've finished the Enchanting job."
-,   [al] = "錬金術の仕事を終えた"                              -- "I've finished the Alchemy job."
-,   [pr] = "調理の仕事を終えた"                               -- "I've finished the Provisioning job."
-,   [ww] = "木工の仕事を終えた"                               -- "I've finished the Woodworking job."
-,   [jw] = "宝飾の仕事を終えた"                               -- "I've finished the Jewelry job."
-
-,   ["STORE"] = "Store (名工の調停人)"                     -- "Store (Mastercraft Mediator)"
+LibCraftText.DIALOG = {
+    ["ROLIS_NAME"         ] = "ロリス・フラール"                                -- "Rolis Hlaalu"
+,   ["ROLIS_CHATTER_TITLE"] = "-ロリス・フラール-"                              -- "-Rolis Hlaalu-"
+,   ["OPTION_ACCEPT"      ] = "<Accept the contract.>"                  -- "<Accept the contract.>"
+,   ["OPTION_FINISH"      ] = "<仕事を終える>"                                -- "<Finish the job.>"
+,   ["OPTION_FINISHED_BS" ] = "鍛冶の仕事を終えた"                               -- "I've finished the Blacksmithing job."
+,   ["OPTION_FINISHED_CL" ] = "仕立の仕事を終えた"                               -- "I've finished the Clothier job."
+,   ["OPTION_FINISHED_EN" ] = "付呪の仕事を終えた"                               -- "I've finished the Enchanting job."
+,   ["OPTION_FINISHED_AL" ] = "錬金術の仕事を終えた"                              -- "I've finished the Alchemy job."
+,   ["OPTION_FINISHED_PR" ] = "調理の仕事を終えた"                               -- "I've finished the Provisioning job."
+,   ["OPTION_FINISHED_WW" ] = "木工の仕事を終えた"                               -- "I've finished the Woodworking job."
+,   ["OPTION_FINISHED_JW" ] = "宝飾の仕事を終えた"                               -- "I've finished the Jewelry job."
+,   ["OPTION_STORE"       ] = "Store (名工の調停人)"                          -- "Store (Mastercraft Mediator)"
 }
 
 LibCraftText.QUALITY = {
