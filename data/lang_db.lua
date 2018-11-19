@@ -14890,4 +14890,161 @@ LANG_DB = {
           ,   es  = "Entrenamiento"
           ,   it  = "da Allenamento"
           }
+
+, [100000] = {
+              key = "$ROLIS_TITLE"
+          ,   en  = "-Rolis Hlaalu-"
+          ,   ru  = "-Ролис Хлаалу-"
+          ,   ja  = "-ロリス・フラール-"
+          }
+
+, [100001] = {                                        -- [1]
+              key = "$ROLIS_FINSHED_BS"
+          ,   en  = "I've finished the Blacksmithing job."
+          ,   de  = "Ich habe den Schmiedeauftrag erledigt."
+          ,   fr  = "J'ai accompli la tâche de forge."
+          ,   ru  = "Я закончил работу кузнеца."
+          ,   es  = "He terminado el trabajo de herrería."
+          ,   ja  = "鍛冶の仕事を終えた"
+          }
+, [100002] = {                                       -- [2]
+              key = "$ROLIS_FINSHED_EN"
+          ,   en  = "I've finished the Enchanting job."
+          ,   de  = "Ich habe den Verzaubererauftrag erledigt."
+          ,   fr  = "J'ai accompli la tâche d'enchantement."
+          ,   ru  = "Я закончил работу зачарователя."
+          ,   es  = "He terminado el trabajo de encantamiento."
+          ,   ja  = "付呪の仕事を終えた"
+          }
+, [100003] = {                                       -- [3]
+              key = "$ROLIS_FINSHED_WW"
+          ,   en  = "I've finished the Woodworking job."
+          ,   de  = "Ich habe den Schreinerauftrag erledigt."
+          ,   fr  = "J'ai accompli la tâche du bois."
+          ,   ru  = "Я закончил работу столяра."
+          ,   es  = "He terminado el trabajo de carpintería."
+          ,   ja  = "木工の仕事を終えた"
+          }
+, [100004] = {                                       -- [4]
+              key = "$ROLIS_FINSHED_PR"
+          ,   en  = "I've finished the Provisioning job."
+          ,   de  = "Ich habe den Versorgerauftrag erledigt."
+          ,   fr  = "J'ai rempli la commande de cuisine."
+          ,   ru  = "Я закончил работу снабженца."
+          ,   es  = "He terminado el encargo de cocina."
+          ,   ja  =  "調理の仕事を終えた"
+          }
+, [100005] = {                                       -- [5]
+              key = "$ROLIS_FINSHED_CL"
+          ,   en  = "I've finished the Clothier job."
+          ,   de  = "Ich habe den Schneiderauftrag erledigt."
+          ,   fr  = "J'ai accompli la tâche de couture."
+          ,   ru  = "Я закончил работу портного."
+          ,   es  = "He terminado el trabajo de sastrería."
+          ,   ja  = "仕立の仕事を終えた"
+          }
+, [100006] = {                                       -- [6]
+              key = "$ROLIS_FINSHED_AL"
+          ,   en  = "I've finished the Alchemy job."
+          ,   de  = "Ich habe den Alchemieauftrag erledigt."
+          ,   fr  = "J'ai accompli la tâche d'alchimie."
+          ,   ru  = "Я закончил работу алхимика."
+          ,   es  = "He terminado el trabajo de alquimia."
+          ,   ja  = "錬金術の仕事を終えた"
+          }
+, [100007] = {                                       -- [7]
+              key = "$ROLIS_FINSHED_WW"
+          ,   en  = "I've finished the Jewelry job."
+          ,   de  = "Ich habe den Schmuckauftrag erledigt."
+          ,   fr  = "J'ai accompli la tâche de joaillerie."
+          ,   ru  = "I've finished the Jewelry job."
+          ,   es  = "He terminado el trabajo de joyería."
+          ,   ja  = "宝飾の仕事を終えた"
+          }
+, [100008] = {                                        -- [8]
+              key = "$ROLIS_STORE"
+          ,   en  = "Store (Mastercraft Mediator)"
+          ,   de  = "Was habt Ihr anzubieten, Meisterhandwerksvermittler?"
+          ,   fr  = "Magasin (intermédiaire pour maîtres artisans)"
+          ,   ru  = "Магазин (ремесленный посредник)"
+          ,   es  = "Tienda (Intermediario de maestros artesanos)"
+          ,   it  = "Negozio (Mastercraft Mediator)"
+          ,   ja  = "Store (名工の調停人)"
+          }
+, [100101] = {
+              key = "$ROLIS_SNARK_01"
+          ,   en  = "If I have to wait around anyway, the least you could do is bring me a pillow."
+          ,   ru  = "Если мне все равно придется ждать, самое меньшее, что ты мог бы сделать — это принести подушку."
+          ,   es  = "Si tengo que esperar, al menos me hubieses traído una almohada."
+          ,   ja  = "どうせ待たなくちゃならないんだったら、気を利かせて枕ぐらい持ってきてくれよ"
+          }
+, [100102] = {
+              key = "$ROLIS_SNARK_02"
+          ,   en  = "None of us is getting any younger, you know."
+          ,   de  = "Wir werden ja schließlich alle nicht jünger, wisst Ihr?"
+          ,   fr  = "Vous savez, on ne rajeunit pas, là."
+          ,   ru  = "Никто из нас не молодеет, знаешь ли."
+          ,   es  = "Ninguno de nosotros se hará más joven, ¿sabes?"
+          ,   ja  = "俺たちは誰も、これ以上若くなったりはしないからな"
+          }
+, [100103] = {
+              key = "$ROLIS_SNARK_03"
+          ,   en  = "If it isn't the artisan. I'm given to understand that fine work takes time."
+          ,   ru  = "Неужто это мастер? Я все понимаю — хорошая работа требует времени."
+          ,   ja  = "職人のお出ましか。優れた仕事には時間がかかるって考えることにしてるよ"
+          }
+, [100104] = {
+              key = "$ROLIS_SNARK_04"
+          ,   en  = "APPROX: You look like you're ready to make an impression"
+          ,   de  = "Ihr seht aus, als wärt Ihr bereit, ein bisschen Eindruck zu schinden."
+          ,   fr  = "Vous avez l'air prêt à m'impressionner."
+          }
+, [100105] = {
+              key = "$ROLIS_SNARK_05"
+          ,   en  = "APPROX Come to deliver our little 'private order'?"
+          ,   de  = "Seid Ihr gekommen, um unseren kleinen „Privatkontrakt“ zu erfüllen?"
+          ,   ru  = "Пришел доставить наш маленький 'частный заказ'?"
+          }
+, [100106] = {
+              key = "$ROLIS_SNARK_06"
+          ,   en  = "I've got all the time in the world. The client doesn't, of course."
+          ,   es  = "Tengo todo el tiempo del mundo. Nuestro cliente no, por supuesto."
+          ,   ja  = "長く待たせれば、顧客はそれだけ容赦しなくなる。言ってる意味はわかるよな？"
+          }
+, [100107] = {
+              key = "$ROLIS_SNARK_07"
+          ,   en  = "About time. Got what I need?"
+          }
+, [100108] = {
+              key = "$ROLIS_SNARK_08"
+          ,   en  = "The longer clients wait, the less patient they become. If you know what I mean."
+          ,   es  = "Cuanto más esperan los clientes, menos pacientes se hacen. Si sabes a lo que me refiero."
+          }
+, [100109] = {
+              key = "$ROLIS_SNARK_09"
+          ,   en  = "APPROX most customers do not like to be kept waiting."
+          ,   de  = "Die meisten Kunden warten nicht gerne. So was kann einen Ruf sehr schnell schädigen, wisst Ihr."
+          ,   ja  = "顧客の多くは待たされるのを好まない。評判が下がるからな"
+          }
+, [100110] = {
+              key = "$ROLIS_SNARK_10"
+          ,   en  = "APPROX I like to think of it as indirect patronage"
+          ,   fr  = "J'aime voir ça comme un « soutien indirect ». Alors, voyons ce que vous avez pour notre soutien."
+          ,   es  = "Me gusta pensar en esto como un \"empleo indirecto\". Veamos que tienes para nuestro patrón."
+          ,   ja  = "俺はこいつを「間接的支援」だと思ってる。俺の後援者のためにあんたが何を持ってきたのか、確かめようじゃないか"
+          }
+, [100111] = {
+              key = "$ROLIS_SNARK_11"
+          ,   en  = "APPROX Are you ready to deliver the goods?"
+          ,   fr  = "Vous êtes prêt à livrer les marchandises ?"
+          ,   ru  = "Готов выложить товары?"
+          ,   ja  = "品物を届ける準備はいいか？"
+          }
+, [100112] = {
+              key = "$ROLIS_SNARK_12"
+          ,   en  = "APPROX The artisan arrives. How's work?"
+          ,   es  = "Ha llegado el artesano. ¿Qué tal el trabajo?"
+          }
+
 }
+
