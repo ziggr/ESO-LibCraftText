@@ -11590,7 +11590,7 @@ LANG_DB = {
           ,   fr  = "Livrez"
           }
 , [1310] = {
-              key = "$ROLIS_FINISHED_AL"
+              key = "$ROLIS_OPTION_TURNIN_AL"
           ,   en  = "I've finished the Alchemy job."
           ,   de  = "Ich habe den Alchemieauftrag erledigt."
           ,   fr  = "J'ai accompli la tâche d'alchimie."
@@ -11599,7 +11599,7 @@ LANG_DB = {
           ,   ja  = "錬金術の仕事を終えた"
           }
 , [1311] = {
-              key = "$ROLIS_FINISHED_BS"
+              key = "$ROLIS_OPTION_TURNIN_BS"
           ,   en  = "I've finished the Blacksmithing job."
           ,   de  = "Ich habe den Schmiedeauftrag erledigt."
           ,   fr  = "J'ai accompli la tâche de forge."
@@ -11608,7 +11608,7 @@ LANG_DB = {
           ,   ja  = "鍛冶の仕事を終えた"
           }
 , [1312] = {
-              key = "$ROLIS_FINISHED_CL"
+              key = "$ROLIS_OPTION_TURNIN_CL"
           ,   en  = "I've finished the Clothier job."
           ,   de  = "Ich habe den Schneiderauftrag erledigt."
           ,   fr  = "J'ai accompli la tâche de couture."
@@ -11617,7 +11617,7 @@ LANG_DB = {
           ,   ja  = "仕立の仕事を終えた"
           }
 , [1313] = {
-              key = "$ROLIS_FINISHED_EN"
+              key = "$ROLIS_OPTION_TURNIN_EN"
           ,   en  = "I've finished the Enchanting job."
           ,   de  = "Ich habe den Verzaubererauftrag erledigt."
           ,   fr  = "J'ai accompli la tâche d'enchantement."
@@ -11626,7 +11626,7 @@ LANG_DB = {
           ,   ja  = "付呪の仕事を終えた"
           }
 , [1314] = {
-              key = "$ROLIS_FINISHED_JW"
+              key = "$ROLIS_OPTION_TURNIN_JW"
           ,   en  = "I've finished the Jewelry job."
           ,   de  = "Ich habe den Schmuckauftrag erledigt."
           ,   fr  = "J'ai accompli la tâche de joaillerie."
@@ -11634,7 +11634,7 @@ LANG_DB = {
           ,   ja  = "宝飾の仕事を終えた"
           }
 , [1315] = {
-              key = "$ROLIS_FINISHED_PR"
+              key = "$ROLIS_OPTION_TURNIN_PR"
           ,   en  = "I've finished the Provisioning job."
           ,   de  = "Ich habe den Versorgerauftrag erledigt."
           ,   fr  = "J'ai rempli la commande de cuisine."
@@ -11643,7 +11643,7 @@ LANG_DB = {
           ,   ja  = "調理の仕事を終えた"
           }
 , [1316] = {
-              key = "$ROLIS_FINISHED_WW"
+              key = "$ROLIS_OPTION_TURNIN_WW"
           ,   en  = "I've finished the Woodworking job."
           ,   de  = "Ich habe den Schreinerauftrag erledigt."
           ,   fr  = "J'ai accompli la tâche du bois."
@@ -11652,7 +11652,7 @@ LANG_DB = {
           ,   ja  = "木工の仕事を終えた"
           }
 , [1317] = {
-              key = "$ROLIS_FINISH_JOB"
+              key = "$ROLIS_OPTION_FINISH_JOB"
           ,   en  = "<Finish the job.>"
           ,   de  = "<Auftrag abschließen.>"
           ,   fr  = "<Finir le travail.>"
@@ -15207,4 +15207,15 @@ LANG_DB = {
         ,   es ="-Caja de entregas de cocina-"
         ,   ja ="-調理師の配達箱-"
         }
+, [100008] = {
+            key = "$ROLIS_QUEST_ENDING"
+        ,   en  = "<He notes your work and tenders payment.>"
+        ,   es  = "<Observa tu trabajo y te entrega el pago.>"
+        ,   it  = "<He notes your work and tenders payment.>"
+        ,   ja  = "<彼は仕事を記録し、支払いを提供する>"
+        ,   ru  = "<Он отмечает вашу работу и выдает оплату.>"
+        ,   it  = "<Il note votre travail et se charge du paiement.>"
+        ,   de  = "<Er vermerkt Eure Arbeit und kümmert sich um die Bezahlung.>"
+    }
+
 }

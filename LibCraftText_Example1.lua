@@ -1,9 +1,10 @@
 -- Example code for LibCraftText
 
 
-LibCraftTextExample = {}
+LibCraftText_Example1 = {}
+local Example1 = LibCraftText_Example1
 
-SLASH_COMMANDS["/example1"] = function() LibCraftTextExample.Example1() end
+SLASH_COMMANDS["/example1"] = function() Example1.Example1() end
 
 local red   = "|cFF6666"
 local grey  = "|c999999"
@@ -12,11 +13,11 @@ local white = "|cFFFFFF"
 -- Example1  -----------------------------------------------------------------
 --
 -- Scan quest journal and dump any daily crafting writ quests.
-function LibCraftTextExample.Example1()
+function Example1.Example1()
     local at_least_one = false
     for quest_index = 1, MAX_JOURNAL_QUESTS do
     -- for quest_index = 1, 11 do
-        local is_one = LibCraftTextExample.Example1_OneQuest(quest_index)
+        local is_one = Example1.Example1_OneQuest(quest_index)
         at_least_one = at_least_one or is_one
     end
     if not at_least_one then
@@ -24,7 +25,7 @@ function LibCraftTextExample.Example1()
     end
 end
 
-function LibCraftTextExample.Example1_OneQuest(quest_index)
+function Example1.Example1_OneQuest(quest_index)
                         -- Is this a daily crafting writ quest?
                         --
 
@@ -112,7 +113,7 @@ function LibCraftTextExample.Example1_OneQuest(quest_index)
                 d(string.format( grey.."quest %d  step %d  condition %d :"..white.." '%s'"
                                , quest_index, step_i, cond_i, cond_text ))
                 if parse_results then
-                    LibCraftTextExample.DumpTable(parse_results)
+                    Example1.DumpTable(parse_results)
                 end
             end
         end
@@ -121,7 +122,7 @@ function LibCraftTextExample.Example1_OneQuest(quest_index)
 end
 
                         -- To provide more stable output.
-function LibCraftText.SortedKeys(t)
+function Example1.SortedKeys(t)
     local r = {}
     for k,_ in pairs(t) do
         table.insert(r,k)
@@ -131,7 +132,7 @@ function LibCraftText.SortedKeys(t)
 end
                         -- A recursive table dumper that does a marginally better
                         -- job of indenting than d()
-function LibCraftTextExample.DumpTable(t,indent_ct)
+function Example1.DumpTable(t, indent_ct)
     indent_ct = indent_ct or 1
     local indent = string.format(".%"..(indent_ct*4).."."..(indent_ct*4).."s","")
                         -- Can we squish down to single line?
@@ -144,7 +145,7 @@ function LibCraftTextExample.DumpTable(t,indent_ct)
     end
     if not has_sub_tables then
         local line = ""
-        local sorted = LibCraftText.SortedKeys(t)
+        local sorted = Example1.SortedKeys(t)
         for _,k in ipairs(sorted) do
             local v = t[k]
             line = line .. string.format(grey.."%s:"..white.."%s  ",tostring(k),tostring(v))
@@ -153,14 +154,14 @@ function LibCraftTextExample.DumpTable(t,indent_ct)
     else
                         -- Gonna have to recurse, so print each key/value pair
                         -- on its own line.
-        local sorted = LibCraftText.SortedKeys(t)
+        local sorted = Example1.SortedKeys(t)
         for _,k in ipairs(sorted) do
             local v = t[k]
             local vv = tostring(v)
             if type(v) == "table" then vv = "table" end -- Omit useless hex addresses.
             d(string.format(grey..indent.."%-4s: "..white.."%s", tostring(k), vv))
             if type(v) == "table" then
-                LibCraftTextExample.DumpTable(v,1+indent_ct)
+                Example1.DumpTable(v,1+indent_ct)
             end
         end
     end

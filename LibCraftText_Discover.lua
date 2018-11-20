@@ -2053,7 +2053,8 @@ end
 
 function LibCraftText.OnQuestCompleteDialog(quest_index)
     Info(string.format("Quest complete  qi:%d",quest_index))
-    LibCraftText.RecordDialog()
+    LibCraftText.RecordQuestCompleteDialog(quest_index)
+    -- LibCraftText.RecordDialog()
 end
 
 function LibCraftText.OnQuestOffered()
@@ -2144,6 +2145,35 @@ function LibCraftText.RecordDialog()
         local opt_text = GetChatterOption(i)
         self.RecordIfUnknown(opt_text, LibCraftText.saved_char.chatter.option[lang], "option")
     end
+
+                        -- temp hack to extract
+    LibCraftText.RecordQuestCompleteDialog(2)
+end
+
+function LibCraftText.RecordQuestCompleteDialog(quest_index)
+    Info("## Recording quest complete 2 ")
+    local self = LibCraftText
+    local lang = self.CurrLang()
+
+    self.saved_char.quest           = self.saved_char.quest         or {}
+    self.saved_char.quest.offered   = self.saved_char.quest.offered or {}
+    self.saved_char.quest.offered.complete
+                                    = self.saved_char.quest.offered.complete or {}
+    self.saved_char.quest.offered.complete[lang]
+                                    = self.saved_char.quest.offered.complete[lang] or {}
+
+    local info = { GetJournalQuestEnding(quest_index) }
+    local goal = info[2]
+    self.RecordIfUnknown(goal, self.saved_char.quest.offered.complete[lang], "complete")
+
+-- Returns:
+-- 1  string goal
+-- 2, string dialog
+-- 3, string confirmComplete
+-- 4, string declineComplete
+-- 5, string backgroundText
+-- 6, string journalStepText
+
 end
 
 function LibCraftText.RecordQuestOffered()

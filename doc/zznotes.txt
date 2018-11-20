@@ -324,3 +324,111 @@ function LibCraftText.LongestMatch(within_me, rows, crafting_type, field_name, .
 
 
 lat neck legendary protect
+
+------------------------------------------------------------------------------
+
+
+
+Master Writ Sequence
+
+    inventory: open a sealed master writ
+
+    EVENT_INVENTORY_ITEM_USED
+    EVENT_QUEST_OFFERED
+        title  = "-Sealed Blacksmithing Writ-"  -- LibCraftText.DIALOG.MASTER[bs].title_offer
+        option = "<Accept the contract.>"       -- LibCraftText.DIALOG.OPTION_ACCEPT_CONTRACT[i]
+
+    EVENT_QUEST_ADDED(quest_index, quest_name)
+        quest_name = "A Masterful Plate"        -- LibCraftText.MASTER_QUEST_TITLES[bs][i]
+
+        LibCraftText.MasterQuestNameToCraftingTypeList()
+        LibCraftText.ParseMasterCondition()
+
+    EVENT_CHATTER_END
+
+    craft required items
+
+    EVENT_QUEST_CONDITION_COUNTER_CHANGED
+    EVENT_QUEST_ADVANCED
+
+    cond_text is now "Deliver the Weapon"
+
+    travel to Rolis
+    interact with Rolis
+
+    EVENT_CHATTER_BEGIN
+        title  = "-Rolis Hlaalu-"               -- LibCraftText.DIALOG.MASTER.TITLE_ROLIS
+                                                -- LibCraftText.DIALOG.MASTER[b].option.finish
+        option = "I've finished the Blacksmithing job."
+
+    EVENT_QUEST_ADVANCED(quest_index, quest_name, false, true, true)
+
+    EVENT_QUEST_COMPLETE_DIALOG(quest_index)
+        title  = "-Rolis Hlaalu-"               -- LibCraftText.DIALOG.MASTER.TITLE_ROLIS
+
+        GetJournalQuestEnding(quest_index)
+            [2] = "<He notes your work and tenders payment.>"
+
+        CompleteQuest()
+
+    EVENT_QUEST_REMOVED(true, quest_index, quest_name, 294967291,294967291,5972)
+    EVENT_QUEST_COMPLETE(quest_name, 50, 545317, 619417, 1131, 4, 0)
+
+    EVENT_CHATTER_BEGIN
+        (back to rolis for next writ turn-in)
+
+Daily Writ Board
+
+    interact with board
+
+    EVENT_CHATTER_BEGIN
+        title = "-Equipment Crafting Writs-"
+        opt   = "<Examine the Clothier Writ>"
+
+    choose option blacksmith
+
+    EVENT_QUEST_OFFERED
+        title = "-Equipment Crafting Writs-"
+        info[1] "blah seeing blah"
+        info[2] "<Pull a writ from the Board.>"
+
+    accept quest
+
+    EVENT_QUEST_ADDED(quest_index=2,name="Clothier Writ",?="")
+
+    EVENT_CHATTER_BEGIN
+        back to the crafting board
+
+    leave board
+
+    craft item
+
+    EVENT_QUEST_CONDITION_COUNTER_CHANGED(quest_index, quest_name, text, 44, 0, 1, 1, false, "", false...)
+    EVENT_CHATTER_END  (for exiting the crafting station?
+
+    interact with delivery crate
+
+    EVENT_CHATTER_BEGIN(1)
+        title = "-Blachsmith Delivery Crate-"
+        option == "<Place the goods within the crate.>"
+
+    choose option 1 (place the...)
+
+    EVENT_QUEST_CONDITION_COUNTER_CHANGED()
+    EVENT_QUEST_ADVANCED(qi,qname)
+    EVENT_QUEST_COMPLETE_DIALOG(qi)
+
+    GetJournalQuestEnding(qi)
+        1. Sign Delivery Manifest
+        2. THe client blah blah
+        3. ""
+        4. ""
+        5. "Ite taken a contract blah blah"
+        6. "I've placed my delivery..."
+
+    CompleteQuest()
+
+    EVENT_QUEST_REMOVED(true, qi, qname)
+    EVENT_QUEST_COMPLETE
+    EVENT_CHATTER_END
+
