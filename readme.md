@@ -159,10 +159,14 @@ If they are something more permanent, with a key that appears in `lang_template.
 
 # TO DO
 
+- [x] harvest Rolis dialog text
+- [x] watch quest status changes as we craft things for a currently active master writ quest (Hey, can Dolgubon's Writ Crafter do this for active quests? That'd be helpful while testing. Don't make me write something...)
+- [x] /example2 daily writs works in EN English
+- [x] /example2 daily writs works in other languages EN DE FR RU ES JA
+- [ ] /example3 master writs works in EN English
+- [ ] /example3 master writs works in other languags
 - [ ] More master writ test fodder
 - [ ] Find all master writ recipes
-- [ ] harvest Rolis dialog text
-- [ ] watch quest status changes as we craft things for a currently active master writ quest (Hey, can Dolgubon's Writ Crafter do this for active quests? That'd be helpful while testing. Don't make me write something...)
 - [ ] Use LibCraftText in ZZDailyWrits and WritWorthy_AutoQuest.
 - [ ] performance pass: all those ZZDEBUG string.format() calls are gonna hurt. At least re-express them as variadic ... arg lists
 - [ ] DRY collapse of all that copypasta
@@ -205,3 +209,9 @@ Do this once per alt at the start of each alt's `/lct scanlang` slog.
 Run this while interacting with an alchemy station to craft 26 potions that learn all 30 alchemy traits on all 28 reagents.
 
 Requires alchemy skill `Laboratory Use` for 3 reagents.
+
+## `/lct rolis` listen for events
+
+(Originally was just for Rolis interaction, now for daily as well but I'm not changing its name.)
+
+Installs event listeners and records quest and dialog strings as they go by. You'll have to manually extract the strings from saved variables and build lang_tables. Google Translate is your friend.

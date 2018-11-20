@@ -38,7 +38,6 @@ function Example2.ChatterWritBoard()
     local data          = { GetChatterData() }
     local option_ct     = data[2]
     local option_text_1 = GetChatterOption(1)
-Info(option_text_1)
                         -- If the writ board offers us an option
                         -- to start a daily writ, choose that option.
     local row = LibCraftText.DailyDialogOptionToRow(option_text_1)
