@@ -16,7 +16,7 @@ local grey  = "|c999999"
 local white = "|cFFFFFF"
 
 local function Info(msg, ...)
-    local s = string.format(grey..msg, ...)
+    local s = string.format(grey.."Example2: "..msg, ...)
     d(s)
 end
 
@@ -38,11 +38,12 @@ function Example2.ChatterWritBoard()
     local data          = { GetChatterData() }
     local option_ct     = data[2]
     local option_text_1 = GetChatterOption(1)
-
+Info(option_text_1)
                         -- If the writ board offers us an option
                         -- to start a daily writ, choose that option.
     local row = LibCraftText.DailyDialogOptionToRow(option_text_1)
     if row then
+        Info("ChatterWritBoard() choosing option[1]:'%s'...",option_text_1)
                         -- Must choose options after a delay: picking them
                         -- right away tends to fail silently.
         zo_callLater(function() SelectChatterOption(1) end, 500)
@@ -63,7 +64,10 @@ end
 function Example2.QuestOfferedDailyWrit()
     local dialog_text, response = GetOfferedQuestInfo()
     if response == LibCraftText.DIALOG.DAILY.OPTION_ACCEPT then
+        Info("QuestOfferedDailyWrit() accepting quest...")
         AcceptOfferedQuest()
+    else
+        Info("QuestOfferedDailyWrit() not our quest.")
     end
 end
 
@@ -74,6 +78,7 @@ end
 -- Report the requested item
 function Example2.QuestAdded(quest_index, quest_name)
     if not LibCraftText.DailyQuestNameToCraftingType(quest_name) then
+        Info("QuestAdded() not our quest: '%s'", quest_name)
         return          -- Not one of ours.
     end
                         -- If you have Example1 code loaded, it can dump all
@@ -119,11 +124,22 @@ function Example2.ChatterDeliveryCrate()
     local option_ct     = data[2]
     local option_text_1 = GetChatterOption(1)
 
+
                         -- "<Place the goods within the crate.>"
     if option_text_1 == LibCraftText.DIALOG.DAILY.OPTION_PLACE then
                         -- Must choose options after a delay: picking them
                         -- right away tends to fail silently.
+        Info("ChatterDeliveryCrate() choosing option[1]:'%s'", option_text_1)
         zo_callLater(function() SelectChatterOption(1) end, 500)
+
+    elseif option_text_1 == LibCraftText.DIALOG.DAILY.OPTION_SIGN then
+                        -- "<Sign the Manifest.>"
+                        -- Happens if you exit crate interaction before
+                        -- completing quest.
+        Info("ChatterDeliveryCrate() choosing option[1]:'%s'", option_text_1)
+        zo_callLater(function() SelectChatterOption(1) end, 500)
+    else
+        Info("ChatterDeliveryCrate() not our option:'%s'", option_text_1)
     end
 end
 
@@ -139,9 +155,12 @@ end
 function Example2.QuestCompleteDialog(quest_index)
     local data = { GetJournalQuestEnding(quest_index) }
     local goal = data[1]
-                        -- "<Sign the Manifest.>"
-    if goal == LibCraftText.DIALOG.DAILY.OPTION_SIGN then
+                        -- "Sign Delivery Manifest"
+    if goal == LibCraftText.DIALOG.DAILY.GOAL_SIGN then
+        Info("QuestCompleteDialog() completing quest:'%s'", goal)
         CompleteQuest()
+    else
+        Info("QuestCompleteDialog() not our quest:'%s'", goal)
     end
 end
 
@@ -152,6 +171,7 @@ end
 --     All fired in response to completing the quest.
 --
 --     DONE!
+
 
 -- Distracting Details -------------------------------------------------------
 --
@@ -197,8 +217,8 @@ function Example2.RegisterEventListeners()
                         -- EVENT_QUEST_ADDED fires when a quest has been
                         -- accepted.
     EVENT_MANAGER:RegisterForEvent( name
-                                  , EVENT_QUEST_ADDDED
-                                  , function(quest_index, quest_name)
+                                  , EVENT_QUEST_ADDED
+                                  , function(event_code, quest_index, quest_name)
                                         Example2.OnQuestAdded(quest_index, quest_name)
                                     end )
 
@@ -207,7 +227,7 @@ function Example2.RegisterEventListeners()
                         -- automation code) has turned in a quest.
     EVENT_MANAGER:RegisterForEvent( name
                                   , EVENT_QUEST_COMPLETE_DIALOG
-                                  , function(quest_index)
+                                  , function(event_code, quest_index)
                                         Example2.OnQuestCompleteDialog(quest_index)
                                     end )
 

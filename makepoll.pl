@@ -20,7 +20,8 @@ sub dirls($)
 push @files, dirls('lang');
 push @files, 'LibCraftText.lua';
 push @files, 'LibCraftText_Discover.lua';
-push @files, 'LibCraftText_Example.lua';
+push @files, 'LibCraftText_Example1.lua';
+push @files, 'LibCraftText_Example2.lua';
 print join("\n", @files) . "\n";
 
 @prev_mtime = ();

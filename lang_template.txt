@@ -788,6 +788,7 @@ LibCraftText.DIALOG.DAILY = {
 ,   OPTION_ACCEPT = $WRIT_BOARD_OPTION_ACCEPT                   -- "<Pull a Writ from the Board.>"
 ,   OPTION_SIGN   = $WRIT_CRATE_OPTION_SIGN_MANIFEST            -- "<Sign the Manifest.>"
 ,   OPTION_PLACE  = $WRIT_CRATE_OPTION_TURN_IN                  -- "<Place the goods within the crate.>"
+,   GOAL_SIGN     = $WRIT_CRATE_QUEST_GOAL                      -- "Sign Delivery Manifest"
 
 ,   ROW = {
       [bs] = { option_examine  = $WRIT_BOARD_OPTION_BS          -- "<Examine the Blacksmith Writs.>"

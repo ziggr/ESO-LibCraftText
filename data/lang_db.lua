@@ -11589,6 +11589,10 @@ LANG_DB = {
           ,   de  = "Beliefert"
           ,   fr  = "Livrez"
           }
+, [1310] = {
+              key = "$ROLIS_FINISH_JOB"
+          ,   en  = "<Finish the job.>"
+          }
 , [1311] = {
               key = "$ROLIS_NAME"
           ,   en  = "Rolis Hlaalu"
@@ -15148,7 +15152,6 @@ LANG_DB = {
           ,   de  = "<Das Manifest unterschreiben.>"
           ,   fr  = "<Signer le manifeste.>"
           ,   es  = "<Firmar el manifiesto.>"
-          ,   it  = "<Sign the Manifest.>"
           ,   ru  = "<Подписать декларацию.>"
           ,   ja  = "<伝票に署名する>"
           }
@@ -15162,6 +15165,10 @@ LANG_DB = {
           ,   ja  = "<品物を木箱の中に置く>"
           }
 , [1763] = {
+              key = "$WRIT_CRATE_QUEST_GOAL"
+          ,   en  = "Sign Delivery Manifest"
+          }
+, [1764] = {
               key = "$WRIT_CRATE_TITLE_AL"
           ,   en  = "-Alchemist Delivery Crate-"
           ,   de  = "-Alchemistenlieferung-"
@@ -15170,7 +15177,7 @@ LANG_DB = {
           ,   ru  = "-Доставочный ящик алхимика-"
           ,   ja  = "-錬金術師の配達箱-"
           }
-, [1764] = {
+, [1765] = {
               key = "$WRIT_CRATE_TITLE_BS"
           ,   en  = "-Blacksmith Delivery Crate-"
           ,   de  = "-Schmiedelieferung-"
@@ -15179,7 +15186,7 @@ LANG_DB = {
           ,   ru  = "-Доставочный ящик кузнеца-"
           ,   ja  = "-鍛冶屋の配達箱-"
           }
-, [1765] = {
+, [1766] = {
               key = "$WRIT_CRATE_TITLE_CL"
           ,   en  = "-Clothier Delivery Crate-"
           ,   de  = "-Schneiderlieferung-"
@@ -15188,7 +15195,7 @@ LANG_DB = {
           ,   ru  = "-Доставочный ящик портного-"
           ,   ja  = "-仕立師の配達箱-"
           }
-, [1766] = {
+, [1767] = {
               key = "$WRIT_CRATE_TITLE_EN"
           ,   en  = "-Enchanter Delivery Crate-"
           ,   de  = "-Verzaubererlieferung-"
@@ -15197,7 +15204,7 @@ LANG_DB = {
           ,   ru  = "-Доставочный ящик зачарователя-"
           ,   ja  = "-付呪師の配達箱-"
           }
-, [1767] = {
+, [1768] = {
               key = "$WRIT_CRATE_TITLE_JW"
           ,   en  = "-Jewelry Crafting Delivery Crate-"
           ,   de  = "-Schmucklieferung-"
@@ -15206,7 +15213,7 @@ LANG_DB = {
           ,   ru  = "-Доставочный ящик ювелира-"
           ,   ja  = "-宝飾師の配達箱-"
           }
-, [1768] = {
+, [1769] = {
               key = "$WRIT_CRATE_TITLE_PR"
           ,   en  = "-Provisioner Delivery Crate-"
           ,   de  = "-Versorgerlieferung-"
@@ -15215,7 +15222,7 @@ LANG_DB = {
           ,   ru  = "-Доставочный ящик снабженца-"
           ,   ja  = "-調理師の配達箱-"
           }
-, [1769] = {
+, [1770] = {
               key = "$WRIT_CRATE_TITLE_WW"
           ,   en  = "-Woodworker Delivery Crate-"
           ,   de  = "-Schreinerlieferung-"

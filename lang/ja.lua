@@ -788,6 +788,7 @@ LibCraftText.DIALOG.DAILY = {
 ,   OPTION_ACCEPT = "<依頼を掲示板からはがす>"                             -- "<Pull a Writ from the Board.>"
 ,   OPTION_SIGN   = "<伝票に署名する>"                                 -- "<Sign the Manifest.>"
 ,   OPTION_PLACE  = "<品物を木箱の中に置く>"                              -- "<Place the goods within the crate.>"
+,   GOAL_SIGN     = "Sign Delivery Manifest"                    -- "Sign Delivery Manifest"
 
 ,   ROW = {
       [bs] = { option_examine  = "<鍛冶屋の依頼を調べる>"                 -- "<Examine the Blacksmith Writs.>"
