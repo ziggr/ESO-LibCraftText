@@ -111,11 +111,10 @@ end
 
 -- Turning in Master Writs to Rolis Hlaalu -----------------------------------
 
--- Return the crafting type that matches the given dialog option text.
--- Can return 0 for "<Finish the job.>" when the dialog text is obviously
--- some sort of master writ turn-in, but type is unknown.
+-- Convert Rolis dialog option "I've finished the Blacksmithing job."
+-- into CRAFTING_TYPE_BLACKSMITHING.
 --
 function LibCraftText.RolisDialogOptionToCraftingType(dialog_text)
     LibCraftText.BuildReverseLookupTables()
-    return LibCraftText.ROLIS_QUEST_TURN_IN[dialog_text]
+    return LibCraftText.MASTER_OPTION_FINISH[dialog_text]
 end

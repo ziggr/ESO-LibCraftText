@@ -48,6 +48,7 @@ function Example1.Example1_OneQuest(quest_index)
                         -- ZOS API
                         -- GetJournalQuestRepeatType(number journalQuestIndex)
                         --      Returns: number repeatType
+                        --
     local repeat_type   = GetJournalQuestRepeatType(quest_index)
     if (jqi[10] ~= QUEST_TYPE_CRAFTING) or (repeat_type ~= QUEST_REPEAT_DAILY) then
         d(string.format( grey.."Quest %d: %s not a daily crafting quest."

@@ -11,6 +11,7 @@ LibCraftText_Internal.lua
                         #   /example1  or  /example2
 LibCraftText_Example1.lua
 LibCraftText_Example2.lua
+LibCraftText_Example3.lua
 
                         # Separate each language to its own Lua file,
                         # preferably in a directory.

@@ -695,6 +695,8 @@ LibCraftText.MASTER_COND = {
 
 -- Quest Titles --------------------------------------------------------------
 
+-- ### Merge these with the per-crafting-type dialog tables below
+
 LibCraftText.DAILY_QUEST_TITLES = {
     [bs] = $DAILY_BS                        -- "Blacksmith Writ"
 ,   [cl] = $DAILY_CL                        -- "Clothier Writ"
@@ -736,6 +738,9 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  $MASTER_LABEL_TRAIT               -- "Trait"
 }
 
+
+-- ### merge the per-crafting-type stuff into dialog tables below
+
 LibCraftText.DIALOG = {
     ["ROLIS_NAME"         ] = $ROLIS_NAME                               -- "Rolis Hlaalu"
 ,   ["ROLIS_CHATTER_TITLE"] = $ROLIS_TITLE                              -- "-Rolis Hlaalu-"
@@ -766,7 +771,7 @@ LibCraftText.DIALOG = {
 LibCraftText.DIALOG.MASTER = {
     TITLE_ROLIS             = $ROLIS_TITLE              -- "-Rolis Hlaalu-"
 ,   OPTION_ROLIS_FINISH     = $ROLIS_OPTION_FINISH_JOB  -- "<Finish the job.>"
-,   OPTION_ACCEPT_CONTRACT  = { $QUEST_OFFERED_ACCEPT_1 -- "<Accept the contract.>"
+,   OPTION_ACCEPT           = { $QUEST_OFFERED_ACCEPT_1 -- "<Accept the contract.>"
                               , $QUEST_OFFERED_ACCEPT_2 -- "<Accept the contract>"  (FR French omits the period sometimes)
                               }
 
