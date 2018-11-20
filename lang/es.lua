@@ -739,7 +739,7 @@ LibCraftText.MASTER_LABELS = {
 LibCraftText.DIALOG = {
     ["ROLIS_NAME"         ] = "Rolis Hlaalu"                            -- "Rolis Hlaalu"
 ,   ["ROLIS_CHATTER_TITLE"] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
-,   ["OPTION_FINISH"      ] = "<Terminar el trabajo>"                   -- "<Finish the job.>"
+,   ["OPTION_FINISH"      ] = "<Finish the job.>"                       -- "<Finish the job.>"
 ,   ["OPTION_FINISHED_BS" ] = "He terminado el trabajo de herrería."    -- "I've finished the Blacksmithing job."
 ,   ["OPTION_FINISHED_CL" ] = "He terminado el trabajo de sastrería."   -- "I've finished the Clothier job."
 ,   ["OPTION_FINISHED_EN" ] = "He terminado el trabajo de encantamiento."-- "I've finished the Enchanting job."
@@ -760,8 +760,69 @@ LibCraftText.DIALOG = {
 ,   ["OFFERED_ACCEPT"     ] = { "<Aceptar el contrato.>"                -- "<Accept the contract.>"
                               , "<Aceptar el contrato.>"                -- "<Accept the contract.>"
                               }
+}
+
+
+LibCraftText.DIALOG.MASTER = {
+    TITLE_ROLIS             = "-Rolis Hlaalu-"          -- "-Rolis Hlaalu-"
+,   OPTION_ROLIS_FINISH     = "<Terminar el trabajo>"   -- "<Finish the job.>"
+,   OPTION_ACCEPT_CONTRACT  = { "<Aceptar el contrato.>"-- "<Accept the contract.>"
+                              , "<Aceptar el contrato.>"-- "<Accept the contract>"  (FR French omits the period sometimes)
+                              }
+
+,   ENDING                 =  "<Observa tu trabajo y te entrega el pago.>"-- "<He notes your work and tenders payment.>"
+
+,   [bs] = {
+        title_offer   = "-Encargo de herrería sellado-" -- "-Sealed Blacksmithing Writ-"
+    ,   option_finish = "He terminado el trabajo de herrería."-- "I've finished the Blacksmithing job."
+    ,   crafting_type = bs
+    }
 
 }
+
+LibCraftText.DIALOG.DAILY = {
+    TITLE_OFFER = { "-Encargos de equipamiento artesanal-"      -- "-Equipment Crafting Writs-"
+                  , "-Encargos de consumibles artesanales-"     -- "-Consumables Crafting Writs-"
+                  }
+
+,   OPTION_ACCEPT = "<Coger un encargo del tablón.>"            -- "<Pull a Writ from the Board.>"
+,   OPTION_SIGN   = "<Firmar el manifiesto.>"                   -- "<Sign the Manifest.>"
+,   OPTION_PLACE  = "<Colocar los objetos dentro de la caja.>"  -- "<Place the goods within the crate.>"
+
+,   ROW = {
+      [bs] = { option_examine  = "<Revisar los encargos de herrería.>"-- "<Examine the Blacksmith Writs.>"
+             , title_turn_in   = "-Caja de entregas de herrero-"-- "-Blacksmith Delivery Crate-"
+             , crafting_type   = bs
+             }
+    , [cl] = { option_examine  = "<Revisar los encargos de sastrería.>"-- "<Examine the Clothier Writs.>"
+             , title_turn_in   = "-Caja de entregas de sastre-" -- "-Clothier Delivery Crate-"
+             , crafting_type   = cl
+             }
+    , [en] = { option_examine  = "<Revisar los encargos de encantamiento.>"-- "<Examine the Enchanter Writs.>"
+             , title_turn_in   = "-Caja de entregas de encantador-"-- "-Enchanter Delivery Crate-"
+             , crafting_type   = en
+             }
+    , [al] = { option_examine  = "<Revisar los encargos de alquimia.>"-- "<Examine the Alchemist Writs.>"
+             , title_turn_in   = "-Caja de entregas de alquimista-"-- "-Alchemist Delivery Crate-"
+             , crafting_type   = al
+             }
+    , [pr] = { option_examine  = "<Revisar los encargos de cocina.>"-- "<Examine the Provisioner Writs.>"
+             , title_turn_in   = "-Caja de entregas de cocina-" -- "-Provisioner Delivery Crate-"
+             , crafting_type   = pr
+             }
+    , [ww] = { option_examine  = "<Revisar los encargos de carpintería.>"-- "<Examine the Woodworker Writs.>"
+             , title_turn_in   = "-Caja de entregas de carpintero-"-- "-Woodworker Delivery Crate-"
+             , crafting_type   = ww
+             }
+    , [jw] = { option_examine  = "<Examine the Jewelry Crafting Writs.>"-- "<Examine the Jewelry Crafting Writs.>"
+             , title_turn_in   = "-Caja de entrega de joyería-" -- "-Jewelry Crafting Delivery Crate-"
+             , crafting_type   = jw
+             }
+    }
+
+}
+
+
 
 LibCraftText.QUALITY = {
     ["NORMAL"   ] = { name="Normal"     , index=ITEM_QUALITY_NORMAL         or 1 }

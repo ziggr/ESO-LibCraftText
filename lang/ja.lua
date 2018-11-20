@@ -739,7 +739,7 @@ LibCraftText.MASTER_LABELS = {
 LibCraftText.DIALOG = {
     ["ROLIS_NAME"         ] = "ロリス・フラール"                                -- "Rolis Hlaalu"
 ,   ["ROLIS_CHATTER_TITLE"] = "-ロリス・フラール-"                              -- "-Rolis Hlaalu-"
-,   ["OPTION_FINISH"      ] = "<仕事を終える>"                                -- "<Finish the job.>"
+,   ["OPTION_FINISH"      ] = "<Finish the job.>"                       -- "<Finish the job.>"
 ,   ["OPTION_FINISHED_BS" ] = "鍛冶の仕事を終えた"                               -- "I've finished the Blacksmithing job."
 ,   ["OPTION_FINISHED_CL" ] = "仕立の仕事を終えた"                               -- "I've finished the Clothier job."
 ,   ["OPTION_FINISHED_EN" ] = "付呪の仕事を終えた"                               -- "I've finished the Enchanting job."
@@ -760,8 +760,69 @@ LibCraftText.DIALOG = {
 ,   ["OFFERED_ACCEPT"     ] = { "<契約を受諾する>"                             -- "<Accept the contract.>"
                               , "<契約を受諾する>"                             -- "<Accept the contract.>"
                               }
+}
+
+
+LibCraftText.DIALOG.MASTER = {
+    TITLE_ROLIS             = "-ロリス・フラール-"              -- "-Rolis Hlaalu-"
+,   OPTION_ROLIS_FINISH     = "<仕事を終える>"                -- "<Finish the job.>"
+,   OPTION_ACCEPT_CONTRACT  = { "<契約を受諾する>"             -- "<Accept the contract.>"
+                              , "<契約を受諾する>"             -- "<Accept the contract>"  (FR French omits the period sometimes)
+                              }
+
+,   ENDING                 =  "<彼は仕事を記録し、支払いを提供する>"     -- "<He notes your work and tenders payment.>"
+
+,   [bs] = {
+        title_offer   = "-密封された鍛冶依頼-"                   -- "-Sealed Blacksmithing Writ-"
+    ,   option_finish = "鍛冶の仕事を終えた"                     -- "I've finished the Blacksmithing job."
+    ,   crafting_type = bs
+    }
 
 }
+
+LibCraftText.DIALOG.DAILY = {
+    TITLE_OFFER = { "-装備品のクラフトの依頼-"                             -- "-Equipment Crafting Writs-"
+                  , "-消費アイテムのクラフトの依頼-"                          -- "-Consumables Crafting Writs-"
+                  }
+
+,   OPTION_ACCEPT = "<依頼を掲示板からはがす>"                             -- "<Pull a Writ from the Board.>"
+,   OPTION_SIGN   = "<伝票に署名する>"                                 -- "<Sign the Manifest.>"
+,   OPTION_PLACE  = "<品物を木箱の中に置く>"                              -- "<Place the goods within the crate.>"
+
+,   ROW = {
+      [bs] = { option_examine  = "<鍛冶屋の依頼を調べる>"                 -- "<Examine the Blacksmith Writs.>"
+             , title_turn_in   = "-鍛冶屋の配達箱-"                    -- "-Blacksmith Delivery Crate-"
+             , crafting_type   = bs
+             }
+    , [cl] = { option_examine  = "<仕立屋の依頼を調べる>"                 -- "<Examine the Clothier Writs.>"
+             , title_turn_in   = "-仕立師の配達箱-"                    -- "-Clothier Delivery Crate-"
+             , crafting_type   = cl
+             }
+    , [en] = { option_examine  = "<付呪師の依頼を調べる>"                 -- "<Examine the Enchanter Writs.>"
+             , title_turn_in   = "-付呪師の配達箱-"                    -- "-Enchanter Delivery Crate-"
+             , crafting_type   = en
+             }
+    , [al] = { option_examine  = "<錬金術師の依頼を見る>"                 -- "<Examine the Alchemist Writs.>"
+             , title_turn_in   = "-錬金術師の配達箱-"                   -- "-Alchemist Delivery Crate-"
+             , crafting_type   = al
+             }
+    , [pr] = { option_examine  = "<調理師の依頼を見る>"                  -- "<Examine the Provisioner Writs.>"
+             , title_turn_in   = "-調理師の配達箱-"                    -- "-Provisioner Delivery Crate-"
+             , crafting_type   = pr
+             }
+    , [ww] = { option_examine  = "<木工師の依頼を調べる>"                 -- "<Examine the Woodworker Writs.>"
+             , title_turn_in   = "-木工師の配達箱-"                    -- "-Woodworker Delivery Crate-"
+             , crafting_type   = ww
+             }
+    , [jw] = { option_examine  = "<宝飾師のクラフト依頼を調べる>"             -- "<Examine the Jewelry Crafting Writs.>"
+             , title_turn_in   = "-宝飾師の配達箱-"                    -- "-Jewelry Crafting Delivery Crate-"
+             , crafting_type   = jw
+             }
+    }
+
+}
+
+
 
 LibCraftText.QUALITY = {
     ["NORMAL"   ] = { name="Normal"     , index=ITEM_QUALITY_NORMAL         or 1 }

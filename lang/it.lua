@@ -760,8 +760,69 @@ LibCraftText.DIALOG = {
 ,   ["OFFERED_ACCEPT"     ] = { "<Accept the contract.>"                -- "<Accept the contract.>"
                               , "<Accept the contract.>"                -- "<Accept the contract.>"
                               }
+}
+
+
+LibCraftText.DIALOG.MASTER = {
+    TITLE_ROLIS             = "-Rolis Hlaalu-"          -- "-Rolis Hlaalu-"
+,   OPTION_ROLIS_FINISH     = "<Finish the job.>"       -- "<Finish the job.>"
+,   OPTION_ACCEPT_CONTRACT  = { "<Accept the contract.>"-- "<Accept the contract.>"
+                              , "<Accept the contract.>"-- "<Accept the contract>"  (FR French omits the period sometimes)
+                              }
+
+,   ENDING                 =  "<Il note votre travail et se charge du paiement.>"-- "<He notes your work and tenders payment.>"
+
+,   [bs] = {
+        title_offer   = "-Sealed Blacksmithing Writ-"   -- "-Sealed Blacksmithing Writ-"
+    ,   option_finish = "I've finished the Blacksmithing job."-- "I've finished the Blacksmithing job."
+    ,   crafting_type = bs
+    }
 
 }
+
+LibCraftText.DIALOG.DAILY = {
+    TITLE_OFFER = { "-Equipment Crafting Writs-"                -- "-Equipment Crafting Writs-"
+                  , "-Consumables Crafting Writs-"              -- "-Consumables Crafting Writs-"
+                  }
+
+,   OPTION_ACCEPT = "<Pull a Writ from the Board.>"             -- "<Pull a Writ from the Board.>"
+,   OPTION_SIGN   = "<Sign the Manifest.>"                      -- "<Sign the Manifest.>"
+,   OPTION_PLACE  = "<Place the goods within the crate.>"       -- "<Place the goods within the crate.>"
+
+,   ROW = {
+      [bs] = { option_examine  = "<Examine the Blacksmith Writs.>"-- "<Examine the Blacksmith Writs.>"
+             , title_turn_in   = "-Blacksmith Delivery Crate-"  -- "-Blacksmith Delivery Crate-"
+             , crafting_type   = bs
+             }
+    , [cl] = { option_examine  = "<Examine the Clothier Writs.>"-- "<Examine the Clothier Writs.>"
+             , title_turn_in   = "-Clothier Delivery Crate-"    -- "-Clothier Delivery Crate-"
+             , crafting_type   = cl
+             }
+    , [en] = { option_examine  = "<Examine the Enchanter Writs.>"-- "<Examine the Enchanter Writs.>"
+             , title_turn_in   = "-Enchanter Delivery Crate-"   -- "-Enchanter Delivery Crate-"
+             , crafting_type   = en
+             }
+    , [al] = { option_examine  = "<Examine the Alchemist Writs.>"-- "<Examine the Alchemist Writs.>"
+             , title_turn_in   = "-Alchemist Delivery Crate-"   -- "-Alchemist Delivery Crate-"
+             , crafting_type   = al
+             }
+    , [pr] = { option_examine  = "<Examine the Provisioner Writs.>"-- "<Examine the Provisioner Writs.>"
+             , title_turn_in   = "-Provisioner Delivery Crate-" -- "-Provisioner Delivery Crate-"
+             , crafting_type   = pr
+             }
+    , [ww] = { option_examine  = "<Examine the Woodworker Writs.>"-- "<Examine the Woodworker Writs.>"
+             , title_turn_in   = "-Woodworker Delivery Crate-"  -- "-Woodworker Delivery Crate-"
+             , crafting_type   = ww
+             }
+    , [jw] = { option_examine  = "<Examine the Jewelry Crafting Writs.>"-- "<Examine the Jewelry Crafting Writs.>"
+             , title_turn_in   = "-Jewelry Crafting Delivery Crate-"-- "-Jewelry Crafting Delivery Crate-"
+             , crafting_type   = jw
+             }
+    }
+
+}
+
+
 
 LibCraftText.QUALITY = {
     ["NORMAL"   ] = { name="Normale"    , index=ITEM_QUALITY_NORMAL         or 1 }

@@ -739,7 +739,7 @@ LibCraftText.MASTER_LABELS = {
 LibCraftText.DIALOG = {
     ["ROLIS_NAME"         ] = "Ролис Хлаалу"                            -- "Rolis Hlaalu"
 ,   ["ROLIS_CHATTER_TITLE"] = "-Ролис Хлаалу-"                          -- "-Rolis Hlaalu-"
-,   ["OPTION_FINISH"      ] = "<Закончить работу.>"                     -- "<Finish the job.>"
+,   ["OPTION_FINISH"      ] = "<Finish the job.>"                       -- "<Finish the job.>"
 ,   ["OPTION_FINISHED_BS" ] = "Я закончил работу кузнеца."              -- "I've finished the Blacksmithing job."
 ,   ["OPTION_FINISHED_CL" ] = "Я закончил работу портного."             -- "I've finished the Clothier job."
 ,   ["OPTION_FINISHED_EN" ] = "Я закончил работу зачарователя."         -- "I've finished the Enchanting job."
@@ -760,8 +760,69 @@ LibCraftText.DIALOG = {
 ,   ["OFFERED_ACCEPT"     ] = { "<Принять заказ.>"                      -- "<Accept the contract.>"
                               , "<Принять заказ.>"                      -- "<Accept the contract.>"
                               }
+}
+
+
+LibCraftText.DIALOG.MASTER = {
+    TITLE_ROLIS             = "-Ролис Хлаалу-"          -- "-Rolis Hlaalu-"
+,   OPTION_ROLIS_FINISH     = "<Закончить работу.>"     -- "<Finish the job.>"
+,   OPTION_ACCEPT_CONTRACT  = { "<Принять заказ.>"      -- "<Accept the contract.>"
+                              , "<Принять заказ.>"      -- "<Accept the contract>"  (FR French omits the period sometimes)
+                              }
+
+,   ENDING                 =  "<Он отмечает вашу работу и выдает оплату.>"-- "<He notes your work and tenders payment.>"
+
+,   [bs] = {
+        title_offer   = "-Запечатанный заказ кузнецу-"  -- "-Sealed Blacksmithing Writ-"
+    ,   option_finish = "Я закончил работу кузнеца."    -- "I've finished the Blacksmithing job."
+    ,   crafting_type = bs
+    }
 
 }
+
+LibCraftText.DIALOG.DAILY = {
+    TITLE_OFFER = { "-Ремесленные заказы на экипировку-"        -- "-Equipment Crafting Writs-"
+                  , "-Ремесленные заказы на расходные материалы-"-- "-Consumables Crafting Writs-"
+                  }
+
+,   OPTION_ACCEPT = "<Взять заказ с доски.>"                    -- "<Pull a Writ from the Board.>"
+,   OPTION_SIGN   = "<Подписать декларацию.>"                   -- "<Sign the Manifest.>"
+,   OPTION_PLACE  = "<Положить предметы в ящик.>"               -- "<Place the goods within the crate.>"
+
+,   ROW = {
+      [bs] = { option_examine  = "<Изучить заказы для кузнеца.>"-- "<Examine the Blacksmith Writs.>"
+             , title_turn_in   = "-Доставочный ящик кузнеца-"   -- "-Blacksmith Delivery Crate-"
+             , crafting_type   = bs
+             }
+    , [cl] = { option_examine  = "<Изучить заказы для портного.>"-- "<Examine the Clothier Writs.>"
+             , title_turn_in   = "-Доставочный ящик портного-"  -- "-Clothier Delivery Crate-"
+             , crafting_type   = cl
+             }
+    , [en] = { option_examine  = "<Изучить заказы для зачарователя.>"-- "<Examine the Enchanter Writs.>"
+             , title_turn_in   = "-Доставочный ящик зачарователя-"-- "-Enchanter Delivery Crate-"
+             , crafting_type   = en
+             }
+    , [al] = { option_examine  = "<Изучить заказы для алхимика.>"-- "<Examine the Alchemist Writs.>"
+             , title_turn_in   = "-Доставочный ящик алхимика-"  -- "-Alchemist Delivery Crate-"
+             , crafting_type   = al
+             }
+    , [pr] = { option_examine  = "<Изучить заказы для снабженца.>"-- "<Examine the Provisioner Writs.>"
+             , title_turn_in   = "-Доставочный ящик снабженца-" -- "-Provisioner Delivery Crate-"
+             , crafting_type   = pr
+             }
+    , [ww] = { option_examine  = "<Изучить заказы для столяра.>"-- "<Examine the Woodworker Writs.>"
+             , title_turn_in   = "-Доставочный ящик столяра-"   -- "-Woodworker Delivery Crate-"
+             , crafting_type   = ww
+             }
+    , [jw] = { option_examine  = "<Изучить заказы для ювелира.>"-- "<Examine the Jewelry Crafting Writs.>"
+             , title_turn_in   = "-Доставочный ящик ювелира-"   -- "-Jewelry Crafting Delivery Crate-"
+             , crafting_type   = jw
+             }
+    }
+
+}
+
+
 
 LibCraftText.QUALITY = {
     ["NORMAL"   ] = { name="Обычное"    , index=ITEM_QUALITY_NORMAL         or 1 }
