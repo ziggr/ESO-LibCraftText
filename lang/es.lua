@@ -788,7 +788,7 @@ LibCraftText.DIALOG.DAILY = {
 ,   OPTION_ACCEPT = "<Coger un encargo del tablón.>"            -- "<Pull a Writ from the Board.>"
 ,   OPTION_SIGN   = "<Firmar el manifiesto.>"                   -- "<Sign the Manifest.>"
 ,   OPTION_PLACE  = "<Colocar los objetos dentro de la caja.>"  -- "<Place the goods within the crate.>"
-,   GOAL_SIGN     = "Sign Delivery Manifest"                    -- "Sign Delivery Manifest"
+,   GOAL_SIGN     = "Firma el manifiesto de entrega"            -- "Sign Delivery Manifest"
 
 ,   ROW = {
       [bs] = { option_examine  = "<Revisar los encargos de herrería.>"-- "<Examine the Blacksmith Writs.>"

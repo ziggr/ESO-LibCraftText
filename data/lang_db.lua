@@ -15167,6 +15167,11 @@ LANG_DB = {
 , [1763] = {
               key = "$WRIT_CRATE_QUEST_GOAL"
           ,   en  = "Sign Delivery Manifest"
+          ,   de  = "Unterschreibt das Liefermanifest"
+          ,   fr  = "Signez le manifeste de livraison"
+          ,   es  = "Firma el manifiesto de entrega"
+          ,   ru  = "Подписать доставочный манифест"
+          ,   ja  = "配達伝票に署名する"
           }
 , [1764] = {
               key = "$WRIT_CRATE_TITLE_AL"

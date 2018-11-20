@@ -21,12 +21,12 @@ local pr = CRAFTING_TYPE_PROVISIONING    -- 5
 local ww = CRAFTING_TYPE_WOODWORKING     -- 6
 local jw = CRAFTING_TYPE_JEWELRYCRAFTING -- 7
 
-local function Info(msg)
-    d("|c999999LibCraftText: "..msg)
+local function Info(msg, ...)
+    d(string.format("|c999999LibCraftText: "..msg, ...))
 end
 
-local function Error(msg)
-    d("|cFF6666LibCraftText: "..msg)
+local function Error(msg, ...)
+    d(string.format("|cFF6666LibCraftText: "..msg, ...))
 end
 
 function LibCraftText.OnAddOnLoaded(event, addonName)
@@ -2020,7 +2020,7 @@ function LibCraftText.RegisterRolisChatter()
                                   , function() LibCraftText.OnChatterBegin() end )
     EVENT_MANAGER:RegisterForEvent( name
                                   , EVENT_QUEST_COMPLETE_DIALOG
-                                  , function(quest_index)
+                                  , function(event_code, quest_index)
                                         LibCraftText.OnQuestCompleteDialog(quest_index)
                                     end )
     EVENT_MANAGER:RegisterForEvent( name
@@ -2145,13 +2145,10 @@ function LibCraftText.RecordDialog()
         local opt_text = GetChatterOption(i)
         self.RecordIfUnknown(opt_text, LibCraftText.saved_char.chatter.option[lang], "option")
     end
-
-                        -- temp hack to extract
-    LibCraftText.RecordQuestCompleteDialog(2)
 end
 
 function LibCraftText.RecordQuestCompleteDialog(quest_index)
-    Info("## Recording quest complete 2 ")
+    Info("## Recording quest complete qi:%d",quest_index)
     local self = LibCraftText
     local lang = self.CurrLang()
 
@@ -2163,7 +2160,8 @@ function LibCraftText.RecordQuestCompleteDialog(quest_index)
                                     = self.saved_char.quest.offered.complete[lang] or {}
 
     local info = { GetJournalQuestEnding(quest_index) }
-    local goal = info[2]
+    local goal = info[1]
+Info("qi:%s goal:'%s'",quest_index, goal)
     self.RecordIfUnknown(goal, self.saved_char.quest.offered.complete[lang], "complete")
 
 -- Returns:
@@ -2204,6 +2202,8 @@ function LibCraftText.RecordQuestOffered()
         if self.quest_offered[field_name][value] then
             -- Info("quest offered known:")
         else
+            offered[field_name]       = offered[field_name] or {}
+            offered[field_name][lang] = offered[field_name][lang] or {}
             self.RecordIfUnknown(value, offered[field_name][lang], field_name)
             self.quest_offered[field_name][value] = 1
             -- offered[field_name]       = offered[field_name]       or {}
