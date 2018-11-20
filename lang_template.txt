@@ -763,6 +763,67 @@ LibCraftText.DIALOG = {
 }
 
 
+LibCraftText.DIALOG.MASTER = {
+    TITLE_ROLIS             = $ROLIS_TITLE              -- "-Rolis Hlaalu-"
+,   OPTION_ROLIS_FINISH     = $ROLIS_OPTION_FINISH_JOB  -- "<Finish the job.>"
+,   OPTION_ACCEPT_CONTRACT  = { $QUEST_OFFERED_ACCEPT_1 -- "<Accept the contract.>"
+                              , $QUEST_OFFERED_ACCEPT_2 -- "<Accept the contract>"  (FR French omits the period sometimes)
+                              }
+
+,   ENDING                 =  $ROLIS_QUEST_ENDING       -- "<He notes your work and tenders payment.>"
+
+,   [bs] = {
+        title_offer   = $QUEST_OFFERED_TITLE_BS         -- "-Sealed Blacksmithing Writ-"
+    ,   option_finish = $ROLIS_OPTION_TURNIN_BS         -- "I've finished the Blacksmithing job."
+    ,   crafting_type = bs
+    }
+
+}
+
+LibCraftText.DIALOG.DAILY = {
+    TITLE_OFFER = { $WRIT_BOARD_TITLE_EQUIPMENT         -- "-Equipment Crafting Writs-"
+                  , $WRIT_BOARD_TITLE_CONSUMABLES       -- "-Consumables Crafting Writs-"
+                  }
+
+,   OPTION_ACCEPT = $WRIT_BOARD_OPTION_ACCEPT           -- "<Pull a Writ from the Board.>"
+,   OPTION_SIGN   = $WRIT_CRATE_OPTION_SIGN_MANIFEST    -- "<Sign the Manifest.>"
+,   OPTION_PLACE  = $WRIT_CRATE_OPTION_TURN_IN          -- "<Place the goods within the crate.>"
+
+,   ROW = {
+    , [bs] = { option_examine  = $WRIT_BOARD_OPTION_BS  -- "<Examine the Blacksmith Writs.>"
+             , title_turn_in   = $WRIT_CRATE_TITLE_BS   -- "-Blacksmith Delivery Crate-"
+             , crafting_type   = bs
+             }
+    , [cl] = { option_examine  = $WRIT_BOARD_OPTION_CL  -- "<Examine the Clothier Writs.>"
+             , title_turn_in   = $WRIT_CRATE_TITLE_CL   -- "-Clothier Delivery Crate-"
+             , crafting_type   = cl
+             }
+    , [en] = { option_examine  = $WRIT_BOARD_OPTION_EN  -- "<Examine the Enchanter Writs.>"
+             , title_turn_in   = $WRIT_CRATE_TITLE_EN   -- "-Enchanter Delivery Crate-"
+             , crafting_type   = en
+             }
+    , [al] = { option_examine  = $WRIT_BOARD_OPTION_AL  -- "<Examine the Alchemist Writs.>"
+             , title_turn_in   = $WRIT_CRATE_TITLE_AL   -- "-Alchemist Delivery Crate-"
+             , crafting_type   = al
+             }
+    , [pr] = { option_examine  = $WRIT_BOARD_OPTION_PR  -- "<Examine the Provisioner Writs.>"
+             , title_turn_in   = $WRIT_CRATE_TITLE_PR   -- "-Provisioner Delivery Crate-"
+             , crafting_type   = pr
+             }
+    , [ww] = { option_examine  = $WRIT_BOARD_OPTION_WW  -- "<Examine the Woodworker Writs.>"
+             , title_turn_in   = $WRIT_CRATE_TITLE_WW   -- "-Woodworker Delivery Crate-"
+             , crafting_type   = ww
+             }
+    , [jw] = { option_examine  = $WRIT_BOARD_OPTION_JW  -- "<Examine the Jewelry Crafting Writs.>"
+             , title_turn_in   = $WRIT_CRATE_TITLE_JW   -- "-Jewelry Crafting Delivery Crate-"
+             , crafting_type   = jw
+             }
+    }
+
+}
+
+
+
 LibCraftText.QUALITY = {
     ["NORMAL"   ] = { name=$QUALITY_1   , index=ITEM_QUALITY_NORMAL         or 1 }
 ,   ["FINE"     ] = { name=$QUALITY_2   , index=ITEM_QUALITY_FINE           or 2 }

@@ -15135,7 +15135,7 @@ LANG_DB = {
           ,   ja  = "-装備品のクラフトの依頼-"
           }
 , [100000] = {
-            key = "$WRIT_BOARD_OPTION_SIGN_MANIFEST"
+            key = "$WRIT_CRATE_OPTION_SIGN_MANIFEST"
         ,   en = "<Sign the Manifest.>"
         ,   de = "<Das Manifest unterschreiben.>"
         ,   fr = "<Signer le manifeste.>"
@@ -15216,6 +15216,15 @@ LANG_DB = {
         ,   ru  = "<Он отмечает вашу работу и выдает оплату.>"
         ,   it  = "<Il note votre travail et se charge du paiement.>"
         ,   de  = "<Er vermerkt Eure Arbeit und kümmert sich um die Bezahlung.>"
+    }
+, [100009] = {
+            key = "$WRIT_CRATE_OPTION_TURN_IN"
+        , en  = "<Place the goods within the crate.>"
+        , de  = "<Die Waren in die Kiste legen.>"
+        , fr = "<Placer les produits dans la caisse.>"
+        , ru  = "<Положить предметы в ящик.>"
+        , es  = "<Colocar los objetos dentro de la caja.>"
+        , ja  = "<品物を木箱の中に置く>"
     }
 
 }

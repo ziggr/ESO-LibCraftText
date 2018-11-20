@@ -35,15 +35,13 @@ end
 --    choose option 1 if it's a crafting option
 --
 function Example2.ChatterWritBoard()
-    local self          = Example2
-    local title         = self.GetDialogTitle()
     local data          = { GetChatterData() }
     local option_ct     = data[2]
     local option_text_1 = GetChatterOption(1)
 
                         -- If the writ board offers us an option
                         -- to start a daily writ, choose that option.
-    local row = LibCraftText.DailyWritOptionToRow(option_text_1)
+    local row = LibCraftText.DailyDialogOptionToRow(option_text_1)
     if row then
                         -- Must choose options after a delay: picking them
                         -- right away tends to fail silently.
@@ -75,10 +73,12 @@ end
 --
 -- Report the requested item
 function Example2.QuestAdded(quest_index, quest_name)
-    Info(green.."Quest added:|r", quest_name)
-
+    if not LibCraftText.DailyQuestNameToCraftingType(quest_name) then
+        return          -- Not one of ours.
+    end
                         -- If you have Example1 code loaded, it can dump all
                         -- about this shiny new daily crafting quest.
+    Info(green.."Quest added:|r", quest_name)
     if LibCraftText_Example1 and LibCraftText_Example1.Example1_OneQuest then
         LibCraftText_Example1.Example1_OneQuest(quest_index)
     end
@@ -111,42 +111,52 @@ end
 -- 10. EVENT_CHATTER_BEGIN()
 --     title  = "-Blacksmith Delivery Crate-"
 --     option = "<Place the goods within the crate.>"
+--
+--     Choose dialog option "<Place the goods within the crate.>"
+--     to turn in the quest.
 function Example2.ChatterDeliveryCrate()
-    local self          = Example2
-    local title         = self.GetDialogTitle()
     local data          = { GetChatterData() }
     local option_ct     = data[2]
     local option_text_1 = GetChatterOption(1)
 
-    local
+                        -- "<Place the goods within the crate.>"
+    if option_text_1 == LibCraftText.DIALOG.DAILY.OPTION_PLACE then
+                        -- Must choose options after a delay: picking them
+                        -- right away tends to fail silently.
+        zo_callLater(function() SelectChatterOption(1) end, 500)
+    end
 end
 
+-- 11. EVENT_QUEST_CONDITION_COUNTER_CHANGED()
+--     EVENT_QUEST_ADVANCED(qi,qname)
+--     EVENT_QUEST_COMPLETE_DIALOG(qi)
+--
+--     In response to choosing "<Place the goods within the crate.>",
+--     the quest advances all the way to the "quest complete" dialog.
+--
+--     Complete the quest, receiving rewards.
+--
+function Example2.QuestCompleteDialog(quest_index)
+    local data = { GetJournalQuestEnding(quest_index) }
+    local goal = data[1]
+                        -- "<Sign the Manifest.>"
+    if goal == LibCraftText.DIALOG.DAILY.OPTION_SIGN then
+        CompleteQuest()
+    end
+end
 
---[[
+-- 12. EVENT_QUEST_REMOVED(is_completed, quest_index, quest_name)
+--     EVENT_QUEST_COMPLETE
+--     EVENT_CHATTER_END
+--
+--     All fired in response to completing the quest.
+--
+--     DONE!
 
-
-
-    choose option 1 (place the...)
-
-    EVENT_QUEST_CONDITION_COUNTER_CHANGED()
-    EVENT_QUEST_ADVANCED(qi,qname)
-    EVENT_QUEST_COMPLETE_DIALOG(qi)
-
-    GetJournalQuestEnding(qi)
-        1. Sign Delivery Manifest
-        2. THe client blah blah
-        3. ""
-        4. ""
-        5. "Ite taken a contract blah blah"
-        6. "I've placed my delivery..."
-
-    CompleteQuest()
-
-    EVENT_QUEST_REMOVED(true, qi, qname)
-    EVENT_QUEST_COMPLETE
-    EVENT_CHATTER_END
-
-]]
+-- Distracting Details -------------------------------------------------------
+--
+-- Event listeners and dispatching events to the proper step above.
+--
 
 function Example2.SlashCommand()
     local self = Example2
@@ -168,19 +178,11 @@ function Example2.RegisterEventListeners()
 
                         -- EVENT_CHATTER_BEGIN fires when an NPC dialog appears
                         -- after you interact with them. Use this to detect
-                        -- when talking to Rolis Hlaalu.
+                        -- when talking to Rolis Hlaalu. Or the daily writ
+                        -- board!
     EVENT_MANAGER:RegisterForEvent( name
                                   , EVENT_CHATTER_BEGIN
                                   , function() Example2.OnChatterBegin() end )
-
-                        -- EVENT_QUEST_COMPLETE_DIALOG fires when turning in  a
-                        -- quest. Use this to detect when the user (or your own
-                        -- automation code) has turned in a quest.
-    EVENT_MANAGER:RegisterForEvent( name
-                                  , EVENT_QUEST_COMPLETE_DIALOG
-                                  , function(quest_index)
-                                        Example2.OnQuestCompleteDialog(quest_index)
-                                    end )
 
                         -- EVENT_QUEST_OFFERED fires when a dialog offers a
                         -- quest. Fires when opening a sealed master writ, and
@@ -191,6 +193,24 @@ function Example2.RegisterEventListeners()
                                   , function()
                                         Example2.OnQuestOffered()
                                     end )
+
+                        -- EVENT_QUEST_ADDED fires when a quest has been
+                        -- accepted.
+    EVENT_MANAGER:RegisterForEvent( name
+                                  , EVENT_QUEST_ADDDED
+                                  , function(quest_index, quest_name)
+                                        Example2.OnQuestAdded(quest_index, quest_name)
+                                    end )
+
+                        -- EVENT_QUEST_COMPLETE_DIALOG fires when turning in  a
+                        -- quest. Use this to detect when the user (or your own
+                        -- automation code) has turned in a quest.
+    EVENT_MANAGER:RegisterForEvent( name
+                                  , EVENT_QUEST_COMPLETE_DIALOG
+                                  , function(quest_index)
+                                        Example2.OnQuestCompleteDialog(quest_index)
+                                    end )
+
     LibCraftText.rolis_registered = true
     Info("Dialog listeners registered."
          .." Go acquire or turn in some crafting quests.")
@@ -199,8 +219,9 @@ end
 function Example2.UnregisterEventListeners()
     local name = LibCraftText.name .. "_hello"
     local event_list = { EVENT_CHATTER_BEGIN
-                       , EVENT_QUEST_COMPLETE_DIALOG
                        , EVENT_QUEST_OFFERED
+                       , EVENT_QUEST_ADDED
+                       , EVENT_QUEST_COMPLETE_DIALOG
                        }
     for _,event_id in ipairs(event_list) do
         EVENT_MANAGER:UnregisterForEvent( name
@@ -213,32 +234,38 @@ end
 function Example2.OnChatterBegin()
                         -- A dialog with an NPC (or the daily writ board!)
                         -- has begun. Who is it?
-    local self       = Example2
-    local title      = self.GetDialogTitle()
-    local title_enum = LibCraftText.DialogTitle(title)
-    if not title_enum then
-        Info("Not a crafting dialog.")
+    local self         = Example2
+    local dialog_title = self.GetDialogTitle()
+
+                        -- Is it the daily writ board?
+    if LibCraftText.DailyDialogTitleIsWritBoard(dialog_title) then
+        self.ChatterWritBoard()
         return
     end
 
-    if title_enum == LibCraftText.DIALOG.MASTER.TITLE_ROLIS then
-                        -- It's Rolis! Turn in any completed master writs.
-        self.RolisChoose()
-
-
+                        -- Is it a daily writ turn-in crate?
+    local row = LibCraftText.DailyDialogTitleToRow(dialog_title)
+    if row then
+        Example2.ChatterDeliveryCrate()
+        return
     end
-
+                        -- Not a writ board. Not a turn-in crate.
+                        -- Not part of this example.
 end
 
 function Example2.OnQuestOffered()
+                        -- A "quest offer" dialog is on screen now.
+    Example2.QuestOfferedDailyWrit()
+end
 
+function Example2.OnQuestAdded(quest_index, quest_name)
+                        -- We just accepted a quest.
+    Example2.QuestAdded(quest_index, quest_name)
 end
 
 function Example2.OnQuestCompleteDialog(quest_index)
+    Example2.QuestCompleteDialog(quest_index)
 end
-
-
--- Utility -------------------------------------------------------------------
 
 function Example2.GetDialogTitle()
     return ZO_InteractWindowTargetAreaTitle:GetText()
@@ -247,6 +274,8 @@ end
 
 
 --[[
+
+Example3
 
 Master Writ Sequence
 

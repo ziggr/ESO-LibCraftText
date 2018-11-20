@@ -76,6 +76,39 @@ function LibCraftText.ParseMasterCondition(crafting_type, cond_text)
 end
 
 
+-- Quest Dialogs -------------------------------------------------------------
+--
+-- Convert dialog titles or options to their corresponding crafting_type
+-- and other data.
+--
+-- Returns one of LibCraftText.DIALOG.DAILY.ROW:
+--
+--  option_examine   "<Examine the Blacksmith Writs.>"
+--  title_turn_in    "-Blacksmith Delivery Crate-"
+--  crafting_type    CRAFTING_TYPE_BLACKSMITHING
+--
+function LibCraftText.DailyDialogTitleToRow(dialog_title)
+    for _,row in ipairs(LibCraftText.DIALOG.DAILY.ROW) do
+        if row.title_turn_in == dialot_title then return row end
+    end
+    return nil
+end
+
+function LibCraftText.DailyDialogOptionToRow(option_text)
+    for _,row in ipairs(LibCraftText.DIALOG.DAILY.ROW) do
+        if row.option_examine == dialot_title then return row end
+    end
+    return nil
+end
+                        -- Is this one of the two daily crafting writ boards?
+function LibCraftText.DailyDialogTitleIsWritBoard(dialog_title)
+    for _,t in pairs(LibCraftText.DIALOG.DAILY.TITLE_OFFER) do
+        if t == dialog_title then return true end
+    end
+    return nil
+end
+
+
 -- Turning in Master Writs to Rolis Hlaalu -----------------------------------
 
 -- Return the crafting type that matches the given dialog option text.
