@@ -125,13 +125,13 @@ function Example2.ChatterDeliveryCrate()
 
 
                         -- "<Place the goods within the crate.>"
-    if option_text_1 == LibCraftText.DAILY.DIALOG.OPTION_PLACE then
+    if option_text_1 == LibCraftText.DAILY.DIALOG.OPTION_FINISH_PLACE then
                         -- Must choose options after a delay: picking them
                         -- right away tends to fail silently.
         Info("ChatterDeliveryCrate() choosing option[1]:'%s'", option_text_1)
         zo_callLater(function() SelectChatterOption(1) end, 500)
 
-    elseif option_text_1 == LibCraftText.DAILY.DIALOG.OPTION_SIGN then
+    elseif option_text_1 == LibCraftText.DAILY.DIALOG.OPTION_FINISH_SIGN then
                         -- "<Sign the Manifest.>"
                         -- Happens if you exit crate interaction before
                         -- completing quest.

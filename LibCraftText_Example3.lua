@@ -106,7 +106,7 @@ function Example3.ChatterRolis()
         Info("ChatterRolis() choosing option[1]:'%s'", option_text_1)
         zo_callLater(function() SelectChatterOption(1) end, 500)
 
-    elseif option_text_1 == LibCraftText.MASTER.DIALOG.OPTION_ROLIS_FINISH then
+    elseif option_text_1 == LibCraftText.MASTER.DIALOG.OPTION_FINISH_JOB then
                         -- "<Finish the job.>"
                         -- Happens if you exit Rolis interaction before
                         -- completing quest.

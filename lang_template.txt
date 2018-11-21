@@ -726,13 +726,12 @@ LibCraftText.DAILY.QUEST_NAME = {
 ,   [ww] = $DAILY_WW                            -- "Woodworker Writ"
 ,   [jw] = $DAILY_JW                            -- "Jewelry Crafting Writ"
 }
-                        -- SURPRISE! "A Masterful Weapon" is used
-                        -- by both Blacksmithing and Woodworking.
+                        -- SURPRISE! "A Masterful Weapon" is used by both
+                        -- Blacksmithing and Woodworking.
                         --
-                        -- Why a list? Because BS, CL, and WW can all
-                        -- use different quest titles depending on what
-                        -- item they requested (armor vs. weapon,
-                        -- light vs. medium armor)
+                        -- Why a list? Because BS, CL, and WW can all use
+                        -- different quest titles depending on what item they
+                        -- requested (armor vs. weapon, light vs. medium armor)
                         --
 LibCraftText.MASTER.QUEST_NAME = {
     [bs] = { $MASTER_PLATE                        -- "A Masterful Plate"
@@ -749,8 +748,8 @@ LibCraftText.MASTER.QUEST_NAME = {
 
 LibCraftText.DAILY.DIALOG = {
     ["OPTION_ACCEPT"      ] = $WRIT_BOARD_OPTION_ACCEPT                 -- "<Pull a Writ from the Board.>"
-,   ["OPTION_SIGN"        ] = $WRIT_CRATE_OPTION_SIGN_MANIFEST          -- "<Sign the Manifest.>"
-,   ["OPTION_PLACE"       ] = $WRIT_CRATE_OPTION_TURN_IN                -- "<Place the goods within the crate.>"
+,   ["OPTION_FINISH_SIGN" ] = $WRIT_CRATE_OPTION_SIGN_MANIFEST          -- "<Sign the Manifest.>"
+,   ["OPTION_FINISH_PLACE"] = $WRIT_CRATE_OPTION_TURN_IN                -- "<Place the goods within the crate.>"
 ,   ["GOAL_SIGN"          ] = $WRIT_CRATE_QUEST_GOAL                    -- "Sign Delivery Manifest"
 }
 
@@ -761,7 +760,7 @@ LibCraftText.MASTER.DIALOG = {
 ,   ["ROLIS_NAME"         ] = $ROLIS_NAME                               -- "Rolis Hlaalu"
 ,   ["TITLE_ROLIS"        ] = $ROLIS_TITLE                              -- "-Rolis Hlaalu-"
 ,   ["OPTION_STORE"       ] = $ROLIS_STORE                              -- "Store (Mastercraft Mediator)"
-,   ["OPTION_ROLIS_FINISH"] = $ROLIS_OPTION_FINISH_JOB                  -- "<Finish the job.>"
+,   ["OPTION_FINISH_JOB"  ] = $ROLIS_OPTION_FINISH_JOB                  -- "<Finish the job.>"
 ,   ["RESPONSE_ENDING"    ] = $ROLIS_QUEST_ENDING                       -- "<He notes your work and tenders payment.>"
 }
 

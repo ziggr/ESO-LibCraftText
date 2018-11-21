@@ -726,13 +726,12 @@ LibCraftText.DAILY.QUEST_NAME = {
 ,   [ww] = "木工師の依頼"                             -- "Woodworker Writ"
 ,   [jw] = "宝飾師のクラフト依頼"                         -- "Jewelry Crafting Writ"
 }
-                        -- SURPRISE! "A Masterful Weapon" is used
-                        -- by both Blacksmithing and Woodworking.
+                        -- SURPRISE! "A Masterful Weapon" is used by both
+                        -- Blacksmithing and Woodworking.
                         --
-                        -- Why a list? Because BS, CL, and WW can all
-                        -- use different quest titles depending on what
-                        -- item they requested (armor vs. weapon,
-                        -- light vs. medium armor)
+                        -- Why a list? Because BS, CL, and WW can all use
+                        -- different quest titles depending on what item they
+                        -- requested (armor vs. weapon, light vs. medium armor)
                         --
 LibCraftText.MASTER.QUEST_NAME = {
     [bs] = { "優れた防具"                              -- "A Masterful Plate"
@@ -749,8 +748,8 @@ LibCraftText.MASTER.QUEST_NAME = {
 
 LibCraftText.DAILY.DIALOG = {
     ["OPTION_ACCEPT"      ] = "<依頼を掲示板からはがす>"                           -- "<Pull a Writ from the Board.>"
-,   ["OPTION_SIGN"        ] = "<伝票に署名する>"                               -- "<Sign the Manifest.>"
-,   ["OPTION_PLACE"       ] = "<品物を木箱の中に置く>"                            -- "<Place the goods within the crate.>"
+,   ["OPTION_FINISH_SIGN" ] = "<伝票に署名する>"                               -- "<Sign the Manifest.>"
+,   ["OPTION_FINISH_PLACE"] = "<品物を木箱の中に置く>"                            -- "<Place the goods within the crate.>"
 ,   ["GOAL_SIGN"          ] = "配達伝票に署名する"                               -- "Sign Delivery Manifest"
 }
 
@@ -761,7 +760,7 @@ LibCraftText.MASTER.DIALOG = {
 ,   ["ROLIS_NAME"         ] = "ロリス・フラール"                                -- "Rolis Hlaalu"
 ,   ["TITLE_ROLIS"        ] = "-ロリス・フラール-"                              -- "-Rolis Hlaalu-"
 ,   ["OPTION_STORE"       ] = "Store (名工の調停人)"                          -- "Store (Mastercraft Mediator)"
-,   ["OPTION_ROLIS_FINISH"] = "<仕事を終える>"                                -- "<Finish the job.>"
+,   ["OPTION_FINISH_JOB"  ] = "<仕事を終える>"                                -- "<Finish the job.>"
 ,   ["RESPONSE_ENDING"    ] = "<彼は仕事を記録し、支払いを提供する>"                     -- "<He notes your work and tenders payment.>"
 }
 

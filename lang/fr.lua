@@ -726,13 +726,12 @@ LibCraftText.DAILY.QUEST_NAME = {
 ,   [ww] = "Commande de travail du bois"        -- "Woodworker Writ"
 ,   [jw] = "Commande de joaillerie"             -- "Jewelry Crafting Writ"
 }
-                        -- SURPRISE! "A Masterful Weapon" is used
-                        -- by both Blacksmithing and Woodworking.
+                        -- SURPRISE! "A Masterful Weapon" is used by both
+                        -- Blacksmithing and Woodworking.
                         --
-                        -- Why a list? Because BS, CL, and WW can all
-                        -- use different quest titles depending on what
-                        -- item they requested (armor vs. weapon,
-                        -- light vs. medium armor)
+                        -- Why a list? Because BS, CL, and WW can all use
+                        -- different quest titles depending on what item they
+                        -- requested (armor vs. weapon, light vs. medium armor)
                         --
 LibCraftText.MASTER.QUEST_NAME = {
     [bs] = { "Une protection magistrale"          -- "A Masterful Plate"
@@ -749,8 +748,8 @@ LibCraftText.MASTER.QUEST_NAME = {
 
 LibCraftText.DAILY.DIALOG = {
     ["OPTION_ACCEPT"      ] = "<Prendre une commande sur le panneau.>"  -- "<Pull a Writ from the Board.>"
-,   ["OPTION_SIGN"        ] = "<Signer le manifeste.>"                  -- "<Sign the Manifest.>"
-,   ["OPTION_PLACE"       ] = "<Placer les produits dans la caisse.>"   -- "<Place the goods within the crate.>"
+,   ["OPTION_FINISH_SIGN" ] = "<Signer le manifeste.>"                  -- "<Sign the Manifest.>"
+,   ["OPTION_FINISH_PLACE"] = "<Placer les produits dans la caisse.>"   -- "<Place the goods within the crate.>"
 ,   ["GOAL_SIGN"          ] = "Signez le manifeste de livraison"        -- "Sign Delivery Manifest"
 }
 
@@ -761,7 +760,7 @@ LibCraftText.MASTER.DIALOG = {
 ,   ["ROLIS_NAME"         ] = "Rolis Hlaalu"                            -- "Rolis Hlaalu"
 ,   ["TITLE_ROLIS"        ] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
 ,   ["OPTION_STORE"       ] = "Magasin (intermédiaire pour maîtres artisans)"-- "Store (Mastercraft Mediator)"
-,   ["OPTION_ROLIS_FINISH"] = "<Finir le travail.>"                     -- "<Finish the job.>"
+,   ["OPTION_FINISH_JOB"  ] = "<Finir le travail.>"                     -- "<Finish the job.>"
 ,   ["RESPONSE_ENDING"    ] = "<Il note votre travail et se charge du paiement.>"-- "<He notes your work and tenders payment.>"
 }
 
