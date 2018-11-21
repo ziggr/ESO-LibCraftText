@@ -116,6 +116,7 @@ LibCraftText.BUGFIX = {
 function Daily.ParseConditionEquipment(crafting_type, cond_text)
     local self      = LibCraftText
     local lang      = self.CurrLang()
+    if not cond_text then return nil end
     local re_list   = Daily.RE_CONDITION_EQUIPMENT[lang]
 
                         -- Rare special case: fix buggy FR translation.

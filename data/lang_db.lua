@@ -11674,8 +11674,8 @@ LANG_DB = {
               key = "$ROLIS_QUEST_ENDING"
           ,   en  = "<He notes your work and tenders payment.>"
           ,   de  = "<Er vermerkt Eure Arbeit und kümmert sich um die Bezahlung.>"
+          ,   fr  = "<Il note votre travail et se charge du paiement.>"
           ,   es  = "<Observa tu trabajo y te entrega el pago.>"
-          ,   it  = "<Il note votre travail et se charge du paiement.>"
           ,   ru  = "<Он отмечает вашу работу и выдает оплату.>"
           ,   ja  = "<彼は仕事を記録し、支払いを提供する>"
           }

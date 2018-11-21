@@ -231,6 +231,11 @@ end
 function LibCraftText.DumpTable(t, indent_ct)
     local grey  = "|c999999"
     local white = "|cFFFFFF"
+    local red   = "|cFF6666"
+    if not t then
+        d(red..tostring(t))
+        return
+    end
     indent_ct = indent_ct or 1
     local indent = string.format(".%"..(indent_ct*4).."."..(indent_ct*4).."s","")
                         -- Infinite recursion blocker

@@ -162,15 +162,15 @@ If they are something more permanent, with a key that appears in `lang_template.
 - [x] harvest Rolis dialog text
 - [x] watch quest status changes as we craft things for a currently active master writ quest (Hey, can Dolgubon's Writ Crafter do this for active quests? That'd be helpful while testing. Don't make me write something...)
 - [x] /example2 daily writs works in EN English
-- [x] /example2 daily writs works in other languages EN DE FR RU ES
-- [ ] /example3 master writs works in EN English
-- [ ] /example3 master writs works in other languages
-- [ ] iterator-generator given a quest_index, visits all steps, all conditions
-- [ ] public API variants that accept a quest_index and return a flat list of
+- [x] /example2 daily writs works in other languages EN DE FR RU ES JA
+- [x] /example3 master writs works in EN English
+- [x] /example3 master writs works in other languages EN DE FR RU ES JA
+- [x] iterator-generator given a quest_index, visits all steps, all conditions
+- [x] public API variants that accept a quest_index and return a flat list of
       parse_result tables, one for each matching condition. Insert into
       parse_result tables additional keys for step_i, step_info, condition_i,
       condition_info, crafting_type.
-- [ ] Use the above API variants in examples when dumping.
+- [x] Use the above API variants in examples when dumping.
 - [ ] More master writ test fodder
 - [ ] Find all master writ recipes
 - [ ] Use LibCraftText in ZZDailyWrits and WritWorthy_AutoQuest.

@@ -775,7 +775,7 @@ LibCraftText.DIALOG.MASTER = {
                               , "<Accept the contract.>"        -- "<Accept the contract>"  (FR French omits the period sometimes)
                               }
 
-,   ENDING                 =  "<Il note votre travail et se charge du paiement.>"-- "<He notes your work and tenders payment.>"
+,   ENDING                 =  "<He notes your work and tenders payment.>"-- "<He notes your work and tenders payment.>"
 
 ,   [bs] = {
         title_offer   = "-Sealed Blacksmithing Writ-"           -- "-Sealed Blacksmithing Writ-"
