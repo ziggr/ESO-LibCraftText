@@ -84,7 +84,7 @@ function Example2.QuestAdded(quest_index, quest_name)
                         -- about this shiny new daily crafting quest.
     Info(green.."Quest added:|r", quest_name)
     if LibCraftText_Example1 and LibCraftText_Example1.Example1_OneQuest then
-        LibCraftText_Example1.Example1_OneQuest(quest_index)
+        LibCraftText.ParseAndDump(quest_index)
     end
 end
 

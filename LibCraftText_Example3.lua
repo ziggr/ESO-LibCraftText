@@ -37,12 +37,16 @@ end
 --
 function Example3.QuestOfferedMasterWrit()
     local dialog_text, response = GetOfferedQuestInfo()
-    if response == LibCraftText.DIALOG.DAILY.OPTION_ACCEPT[1]
-        or response == LibCraftText.DIALOG.DAILY.OPTION_ACCEPT[2] then
+    if response == LibCraftText.DIALOG.MASTER.OPTION_ACCEPT[1]
+        or response == LibCraftText.DIALOG.MASTER.OPTION_ACCEPT[2] then
         Info("QuestOfferedMasterWrit() accepting quest...")
-        AcceptOfferedQuest()
+        zo_callLater( function()
+                        AcceptOfferedQuest()
+                        ResetChatter()
+                      end
+                    , 500)
     else
-        Info("QuestOfferedMasterWrit() not our quest.")
+        Info(green.."Done turning in master writ quests.")
     end
 end
 
@@ -62,7 +66,7 @@ function Example3.QuestAdded(quest_index, quest_name)
         local parse_result = Example3.ParseMasterQuest(quest_index)
         LibCraftText.DumpTable(parse_result)
     end
-    Info(green.."Go craft the requestedd item, then bring it to Rolis.")
+    Info(green.."Go craft the requested item, then bring it to Rolis.")
 end
 
 --  3. EVENT_CHATTER_END
