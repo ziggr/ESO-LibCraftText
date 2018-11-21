@@ -919,49 +919,6 @@ function LibCraftText.LongestMatch(within_me, rows, crafting_type, field_name, .
     return longest_match.row
 end
 
--- Iterating -----------------------------------------------------------------
---
--- I've written and re-written the same quest/step/condition iteration loop
--- so many times that it's time for some reusable code.
---
-function LibCraftText.EachCondition(quest_index)
-    local step_i = 1
-    local cond_i = 0
-                        -- Re-fetch step and condition counts with
-                        -- each iteration, just in case calling code
-                        -- changed things out from under us.
-
-    local function next()
-                        -- Advance to next condition within current step
-        cond_i = cond_i + 1
-                        -- Did we advance to the next step?
-        local step_info    = { GetJournalQuestStepInfo(quest_index, step_i) }
-        local condition_ct = step_info[5]
-        if cond_i <= condition_ct then
-                        -- RETURN next condtion within current step.
-            return step_i, cond_i
-        end
-
-        cond_i = 1
-
-                    -- Advance to next step that has conditions.
-        step_ct = GetJournalQuestNumSteps(quest_index)
-        step_i  = step_i + 1
-        while step_i <= step_ct do
-            local step_info = { GetJournalQuestStepInfo(quest_index, step_i) }
-            local cond_ct   = step_info[5]
-            if 1 <= cond_ct then
-                    -- RETURN first condition of next step.
-                return step_i, cond_i
-            end
-        end
-                    -- END ITERATION: We've run out of steps. We're done
-        return nil
-    end
-
-    return next
-end
-
 
 -- Test Scaffolding ----------------------------------------------------------
 --

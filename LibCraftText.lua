@@ -118,3 +118,104 @@ function LibCraftText.RolisDialogOptionToCraftingType(dialog_text)
     LibCraftText.BuildReverseLookupTables()
     return LibCraftText.MASTER_OPTION_FINISH[dialog_text]
 end
+
+
+-- Helpful Utilities ---------------------------------------------------------
+--
+-- These utilities are not the primary purpose of LibCraftText, but they
+-- prove so helpful when using LibCraftText that I'll make them public.
+--
+
+-- Iterating
+--
+-- for step_i, cond_i in LibCraftText.EachCondition(quest_index) do
+--      cond_text = GetJournalQuestConditionInfo(quest_index, step_i, cond_i)
+--      result = LibCraftText.ParseDailyCondition(crafting_type, cond_text)
+--      ...
+-- end
+--
+function LibCraftText.EachCondition(quest_index)
+    local step_i = 1
+    local cond_i = 0
+                        -- Re-fetch step and condition counts with
+                        -- each iteration, just in case calling code
+                        -- changed things out from under us.
+
+    local function next()
+                        -- Advance to next condition within current step
+        cond_i = cond_i + 1
+                        -- Did we advance to the next step?
+        local step_info    = { GetJournalQuestStepInfo(quest_index, step_i) }
+        local condition_ct = step_info[5]
+        if cond_i <= condition_ct then
+                        -- RETURN next condtion within current step.
+            return step_i, cond_i
+        end
+
+        cond_i = 1
+
+                    -- Advance to next step that has conditions.
+        step_ct = GetJournalQuestNumSteps(quest_index)
+        step_i  = step_i + 1
+        while step_i <= step_ct do
+            local step_info = { GetJournalQuestStepInfo(quest_index, step_i) }
+            local cond_ct   = step_info[5]
+            if 1 <= cond_ct then
+                    -- RETURN first condition of next step.
+                return step_i, cond_i
+            end
+        end
+                    -- END ITERATION: We've run out of steps. We're done
+        return nil
+    end
+
+    return next
+end
+
+-- Just parse it and tell me the results.
+--
+-- Figures out whether the quest is a daily or master writ quest, then
+-- returns a list of result tables from either ParseDailyCondition() or
+-- ParseMasterCondition().
+--
+function LibCraftText.ParseQuest(quest_index)
+    local self = LibCraftText
+
+                        -- Differentiate between daily or master writ.
+
+                        -- Master writs never have more than one required item.
+    local return_first_hit = true
+                        -- Find the correct crafting_type(s)
+    local quest_name       = GetJournalQuestInfo(i)
+    local ct_list          = self.MasterQuestNameToCraftingType(quest_name)
+    local func             = self.ParseMasterCondition
+    if not ct_list then
+        local ct = self.DailyQuestNameToCraftingType(quest_name)
+        if not ct then return nil end
+        ct_list = { ct }
+        func = self.ParseDailyCondition
+                        -- Daily writs have a list of up to three required
+                        -- items (such as medium arm cops, bracers, helmet)
+        return_first_hit = false
+    end
+
+    for _,crafting_type in ipairs(ct_list) do
+        local result_list = {}
+        for step_i, cond_i in self.EachCondition(quest_index) do
+            local cond_text = GetJournalQuestConditionInfo( quest_index
+                                                          , step_i
+                                                          , cond_i )
+            local result = func(crafting_type, cond_text)
+            if result then
+                table.insert(result_list, result)
+                if return_first_hit then
+                    return result_list
+                end
+            end
+        end
+        if 0 < #result_list then
+            return result_list
+        end
+    end
+    return nil
+end
