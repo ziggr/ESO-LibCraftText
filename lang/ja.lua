@@ -769,20 +769,49 @@ LibCraftText.DIALOG = {
 
 
 LibCraftText.DIALOG.MASTER = {
-    TITLE_ROLIS             = "-ロリス・フラール-"              -- "-Rolis Hlaalu-"
-,   OPTION_ROLIS_FINISH     = "<仕事を終える>"                -- "<Finish the job.>"
-,   OPTION_ACCEPT           = { "<契約を受諾する>"             -- "<Accept the contract.>"
-                              , "<契約を受諾する>"             -- "<Accept the contract>"  (FR French omits the period sometimes)
+    TITLE_ROLIS             = "-ロリス・フラール-"                      -- "-Rolis Hlaalu-"
+,   OPTION_ROLIS_FINISH     = "<仕事を終える>"                        -- "<Finish the job.>"
+,   OPTION_ACCEPT           = { "<契約を受諾する>"                     -- "<Accept the contract.>"
+                              , "<契約を受諾する>"                     -- "<Accept the contract>"  (FR French omits the period sometimes)
                               }
 
-,   ENDING                 =  "<彼は仕事を記録し、支払いを提供する>"     -- "<He notes your work and tenders payment.>"
+,   ENDING                 =  "<彼は仕事を記録し、支払いを提供する>"             -- "<He notes your work and tenders payment.>"
 
 ,   [bs] = {
-        title_offer   = "-密封された鍛冶依頼-"                   -- "-Sealed Blacksmithing Writ-"
-    ,   option_finish = "鍛冶の仕事を終えた"                     -- "I've finished the Blacksmithing job."
+        title_offer   = "-密封された鍛冶依頼-"                           -- "-Sealed Blacksmithing Writ-"
+    ,   option_finish = "鍛冶の仕事を終えた"                             -- "I've finished the Blacksmithing job."
     ,   crafting_type = bs
     }
-
+,   [cl] = {
+        title_offer   = "-密封された仕立依頼-"                           -- "-Sealed Clothier Writ-"
+    ,   option_finish = "仕立の仕事を終えた"                             -- "I've finished the Clothier job."
+    ,   crafting_type = cl
+    }
+,   [en] = {
+        title_offer   = "-密封された付呪依頼-"                           -- "-Sealed Enchanting Writ-"
+    ,   option_finish = "付呪の仕事を終えた"                             -- "I've finished the Enchanting job."
+    ,   crafting_type = en
+    }
+,   [al] = {
+        title_offer   = "-密封された錬金術依頼-"                          -- "-Sealed Alchemy Writ-"
+    ,   option_finish = "錬金術の仕事を終えた"                            -- "I've finished the Alchemy job."
+    ,   crafting_type = al
+    }
+,   [pr] = {
+        title_offer   = "-密封された調理依頼-"                           -- "-Sealed Provisioning Writ-"
+    ,   option_finish = "調理の仕事を終えた"                             -- "I've finished the Provisioning job."
+    ,   crafting_type = pr
+    }
+,   [ww] = {
+        title_offer   = "-密封された木工依頼-"                           -- "-Sealed Woodworking Writ-"
+    ,   option_finish = "木工の仕事を終えた"                             -- "I've finished the Woodworking job."
+    ,   crafting_type = ww
+    }
+,   [jw] = {
+        title_offer   = "-密封された宝飾師依頼-"                          -- "-Sealed Jewelry Crafter Writ-"
+    ,   option_finish = "宝飾の仕事を終えた"                             -- "I've finished the Jewelry job."
+    ,   crafting_type = jw
+    }
 }
 
 LibCraftText.DIALOG.DAILY = {

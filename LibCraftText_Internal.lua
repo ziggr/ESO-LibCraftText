@@ -969,6 +969,8 @@ function LibCraftText.BuildReverseLookupTables()
         return
     end
 
+    LibCraftText.MASTER_OPTION_FINISH = {}
+
     for _,ctype in pairs(LibCraftText.CRAFTING_TYPES) do
         local txt = LibCraftText.DAILY_QUEST_TITLES[ctype]
         LibCraftText.DAILY_QUEST_TITLES[txt] = ctype

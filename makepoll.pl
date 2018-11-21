@@ -19,6 +19,7 @@ sub dirls($)
 @files = ( 'Makefile' );
 push @files, dirls('lang');
 push @files, 'LibCraftText.lua';
+push @files, 'LibCraftText_Internal.lua';
 push @files, 'LibCraftText_Discover.lua';
 push @files, 'LibCraftText_Example1.lua';
 push @files, 'LibCraftText_Example2.lua';

@@ -769,20 +769,49 @@ LibCraftText.DIALOG = {
 
 
 LibCraftText.DIALOG.MASTER = {
-    TITLE_ROLIS             = $ROLIS_TITLE              -- "-Rolis Hlaalu-"
-,   OPTION_ROLIS_FINISH     = $ROLIS_OPTION_FINISH_JOB  -- "<Finish the job.>"
-,   OPTION_ACCEPT           = { $QUEST_OFFERED_ACCEPT_1 -- "<Accept the contract.>"
-                              , $QUEST_OFFERED_ACCEPT_2 -- "<Accept the contract>"  (FR French omits the period sometimes)
+    TITLE_ROLIS             = $ROLIS_TITLE                      -- "-Rolis Hlaalu-"
+,   OPTION_ROLIS_FINISH     = $ROLIS_OPTION_FINISH_JOB          -- "<Finish the job.>"
+,   OPTION_ACCEPT           = { $QUEST_OFFERED_ACCEPT_1         -- "<Accept the contract.>"
+                              , $QUEST_OFFERED_ACCEPT_2         -- "<Accept the contract>"  (FR French omits the period sometimes)
                               }
 
-,   ENDING                 =  $ROLIS_QUEST_ENDING       -- "<He notes your work and tenders payment.>"
+,   ENDING                 =  $ROLIS_QUEST_ENDING               -- "<He notes your work and tenders payment.>"
 
 ,   [bs] = {
-        title_offer   = $QUEST_OFFERED_TITLE_BS         -- "-Sealed Blacksmithing Writ-"
-    ,   option_finish = $ROLIS_OPTION_TURNIN_BS         -- "I've finished the Blacksmithing job."
+        title_offer   = $QUEST_OFFERED_TITLE_BS                 -- "-Sealed Blacksmithing Writ-"
+    ,   option_finish = $ROLIS_OPTION_TURNIN_BS                 -- "I've finished the Blacksmithing job."
     ,   crafting_type = bs
     }
-
+,   [cl] = {
+        title_offer   = $QUEST_OFFERED_TITLE_CL                 -- "-Sealed Clothier Writ-"
+    ,   option_finish = $ROLIS_OPTION_TURNIN_CL                 -- "I've finished the Clothier job."
+    ,   crafting_type = cl
+    }
+,   [en] = {
+        title_offer   = $QUEST_OFFERED_TITLE_EN                 -- "-Sealed Enchanting Writ-"
+    ,   option_finish = $ROLIS_OPTION_TURNIN_EN                 -- "I've finished the Enchanting job."
+    ,   crafting_type = en
+    }
+,   [al] = {
+        title_offer   = $QUEST_OFFERED_TITLE_AL                 -- "-Sealed Alchemy Writ-"
+    ,   option_finish = $ROLIS_OPTION_TURNIN_AL                 -- "I've finished the Alchemy job."
+    ,   crafting_type = al
+    }
+,   [pr] = {
+        title_offer   = $QUEST_OFFERED_TITLE_PR                 -- "-Sealed Provisioning Writ-"
+    ,   option_finish = $ROLIS_OPTION_TURNIN_PR                 -- "I've finished the Provisioning job."
+    ,   crafting_type = pr
+    }
+,   [ww] = {
+        title_offer   = $QUEST_OFFERED_TITLE_WW                 -- "-Sealed Woodworking Writ-"
+    ,   option_finish = $ROLIS_OPTION_TURNIN_WW                 -- "I've finished the Woodworking job."
+    ,   crafting_type = ww
+    }
+,   [jw] = {
+        title_offer   = $QUEST_OFFERED_TITLE_JW                 -- "-Sealed Jewelry Crafter Writ-"
+    ,   option_finish = $ROLIS_OPTION_TURNIN_JW                 -- "I've finished the Jewelry job."
+    ,   crafting_type = jw
+    }
 }
 
 LibCraftText.DIALOG.DAILY = {

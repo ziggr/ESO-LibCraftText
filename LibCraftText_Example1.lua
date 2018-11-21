@@ -114,57 +114,11 @@ function Example1.Example1_OneQuest(quest_index)
                 d(string.format( grey.."quest %d  step %d  condition %d :"..white.." '%s'"
                                , quest_index, step_i, cond_i, cond_text ))
                 if parse_results then
-                    Example1.DumpTable(parse_results)
+                    LibCraftText.DumpTable(parse_results)
                 end
             end
         end
     end
     return true
-end
-
-                        -- To provide more stable output.
-function Example1.SortedKeys(t)
-    local r = {}
-    for k,_ in pairs(t) do
-        table.insert(r,k)
-    end
-    table.sort(r)
-    return r
-end
-                        -- A recursive table dumper that does a marginally better
-                        -- job of indenting than d()
-function Example1.DumpTable(t, indent_ct)
-    indent_ct = indent_ct or 1
-    local indent = string.format(".%"..(indent_ct*4).."."..(indent_ct*4).."s","")
-                        -- Can we squish down to single line?
-    local has_sub_tables = false
-    for _,v in pairs(t) do
-        if type(v) == "table" then
-            has_sub_tables = true
-            break
-        end
-    end
-    if not has_sub_tables then
-        local line = ""
-        local sorted = Example1.SortedKeys(t)
-        for _,k in ipairs(sorted) do
-            local v = t[k]
-            line = line .. string.format(grey.."%s:"..white.."%s  ",tostring(k),tostring(v))
-        end
-        d(indent..line)
-    else
-                        -- Gonna have to recurse, so print each key/value pair
-                        -- on its own line.
-        local sorted = Example1.SortedKeys(t)
-        for _,k in ipairs(sorted) do
-            local v = t[k]
-            local vv = tostring(v)
-            if type(v) == "table" then vv = "table" end -- Omit useless hex addresses.
-            d(string.format(grey..indent.."%-4s: "..white.."%s", tostring(k), vv))
-            if type(v) == "table" then
-                Example1.DumpTable(v,1+indent_ct)
-            end
-        end
-    end
 end
 

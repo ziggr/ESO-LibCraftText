@@ -769,20 +769,49 @@ LibCraftText.DIALOG = {
 
 
 LibCraftText.DIALOG.MASTER = {
-    TITLE_ROLIS             = "-Rolis Hlaalu-"          -- "-Rolis Hlaalu-"
-,   OPTION_ROLIS_FINISH     = "<Finir le travail.>"     -- "<Finish the job.>"
-,   OPTION_ACCEPT           = { "<Accepter le contrat>" -- "<Accept the contract.>"
-                              , "<Accepter le contrat.>"-- "<Accept the contract>"  (FR French omits the period sometimes)
+    TITLE_ROLIS             = "-Rolis Hlaalu-"                  -- "-Rolis Hlaalu-"
+,   OPTION_ROLIS_FINISH     = "<Finir le travail.>"             -- "<Finish the job.>"
+,   OPTION_ACCEPT           = { "<Accepter le contrat>"         -- "<Accept the contract.>"
+                              , "<Accepter le contrat.>"        -- "<Accept the contract>"  (FR French omits the period sometimes)
                               }
 
 ,   ENDING                 =  "<He notes your work and tenders payment.>"-- "<He notes your work and tenders payment.>"
 
 ,   [bs] = {
-        title_offer   = "-Commande de forge scellée-"   -- "-Sealed Blacksmithing Writ-"
-    ,   option_finish = "J'ai accompli la tâche de forge."-- "I've finished the Blacksmithing job."
+        title_offer   = "-Commande de forge scellée-"           -- "-Sealed Blacksmithing Writ-"
+    ,   option_finish = "J'ai accompli la tâche de forge."      -- "I've finished the Blacksmithing job."
     ,   crafting_type = bs
     }
-
+,   [cl] = {
+        title_offer   = "-Commande scellée de couture-"         -- "-Sealed Clothier Writ-"
+    ,   option_finish = "J'ai accompli la tâche de couture."    -- "I've finished the Clothier job."
+    ,   crafting_type = cl
+    }
+,   [en] = {
+        title_offer   = "-Commande d'enchantement scellée-"     -- "-Sealed Enchanting Writ-"
+    ,   option_finish = "J'ai accompli la tâche d'enchantement."-- "I've finished the Enchanting job."
+    ,   crafting_type = en
+    }
+,   [al] = {
+        title_offer   = "-Commande scellée d'alchimie-"         -- "-Sealed Alchemy Writ-"
+    ,   option_finish = "J'ai accompli la tâche d'alchimie."    -- "I've finished the Alchemy job."
+    ,   crafting_type = al
+    }
+,   [pr] = {
+        title_offer   = "-Commande scellée de cuisine-"         -- "-Sealed Provisioning Writ-"
+    ,   option_finish = "J'ai rempli la commande de cuisine."   -- "I've finished the Provisioning job."
+    ,   crafting_type = pr
+    }
+,   [ww] = {
+        title_offer   = "-Commande de travail du bois scellée-" -- "-Sealed Woodworking Writ-"
+    ,   option_finish = "J'ai accompli la tâche du bois."       -- "I've finished the Woodworking job."
+    ,   crafting_type = ww
+    }
+,   [jw] = {
+        title_offer   = "-Commande scellée de joaillier-"       -- "-Sealed Jewelry Crafter Writ-"
+    ,   option_finish = "J'ai accompli la tâche de joaillerie." -- "I've finished the Jewelry job."
+    ,   crafting_type = jw
+    }
 }
 
 LibCraftText.DIALOG.DAILY = {

@@ -140,7 +140,6 @@ function LibCraftText.EachCondition(quest_index)
                         -- Re-fetch step and condition counts with
                         -- each iteration, just in case calling code
                         -- changed things out from under us.
-
     local function next()
                         -- Advance to next condition within current step
         cond_i = cond_i + 1
@@ -155,7 +154,7 @@ function LibCraftText.EachCondition(quest_index)
         cond_i = 1
 
                     -- Advance to next step that has conditions.
-        step_ct = GetJournalQuestNumSteps(quest_index)
+        local step_ct = GetJournalQuestNumSteps(quest_index)
         step_i  = step_i + 1
         while step_i <= step_ct do
             local step_info = { GetJournalQuestStepInfo(quest_index, step_i) }
@@ -186,8 +185,8 @@ function LibCraftText.ParseQuest(quest_index)
                         -- Master writs never have more than one required item.
     local return_first_hit = true
                         -- Find the correct crafting_type(s)
-    local quest_name       = GetJournalQuestInfo(i)
-    local ct_list          = self.MasterQuestNameToCraftingType(quest_name)
+    local quest_name       = GetJournalQuestInfo(quest_index)
+    local ct_list          = self.MasterQuestNameToCraftingTypeList(quest_name)
     local func             = self.ParseMasterCondition
     if not ct_list then
         local ct = self.DailyQuestNameToCraftingType(quest_name)
@@ -218,4 +217,64 @@ function LibCraftText.ParseQuest(quest_index)
         end
     end
     return nil
+end
+
+                        -- Dump to chat window
+function LibCraftText.ParseAndDump(quest_index)
+    local self        = LibCraftText
+    local result_list = self.ParseQuest(quest_index)
+    self.DumpTable(result_list)
+end
+
+                        -- A recursive table dumper that does a marginally better
+                        -- job of indenting than d()
+function LibCraftText.DumpTable(t, indent_ct)
+    local grey  = "|c999999"
+    local white = "|cFFFFFF"
+    indent_ct = indent_ct or 1
+    local indent = string.format(".%"..(indent_ct*4).."."..(indent_ct*4).."s","")
+                        -- Infinite recursion blocker
+    if 4 < indent_ct then
+        d(grey..indent.."...")
+        return
+    end
+                        -- Can we squish down to single line?
+    local has_sub_tables = false
+    for _,v in pairs(t) do
+        if type(v) == "table" then
+            has_sub_tables = true
+            break
+        end
+    end
+    if not has_sub_tables then
+        local line = ""
+        local sorted = LibCraftText.SortedKeys(t)
+        for _,k in ipairs(sorted) do
+            local v = t[k]
+            line = line .. string.format(grey.."%s:"..white.."%s  ",tostring(k),tostring(v))
+        end
+        d(indent..line)
+    else
+                        -- Gonna have to recurse, so print each key/value pair
+                        -- on its own line.
+        local sorted = LibCraftText.SortedKeys(t)
+        for _,k in ipairs(sorted) do
+            local v = t[k]
+            local vv = tostring(v)
+            if type(v) == "table" then vv = "table" end -- Omit useless hex addresses.
+            d(string.format(grey..indent.."%-4s: "..white.."%s", tostring(k), vv))
+            if type(v) == "table" then
+                LibCraftText.DumpTable(v,1+indent_ct)
+            end
+        end
+    end
+end
+                        -- To provide more stable output.
+function LibCraftText.SortedKeys(t)
+    local r = {}
+    for k,_ in pairs(t) do
+        table.insert(r,k)
+    end
+    table.sort(r)
+    return r
 end

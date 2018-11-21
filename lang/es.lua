@@ -769,20 +769,49 @@ LibCraftText.DIALOG = {
 
 
 LibCraftText.DIALOG.MASTER = {
-    TITLE_ROLIS             = "-Rolis Hlaalu-"          -- "-Rolis Hlaalu-"
-,   OPTION_ROLIS_FINISH     = "<Terminar el trabajo>"   -- "<Finish the job.>"
-,   OPTION_ACCEPT           = { "<Aceptar el contrato.>"-- "<Accept the contract.>"
-                              , "<Aceptar el contrato.>"-- "<Accept the contract>"  (FR French omits the period sometimes)
+    TITLE_ROLIS             = "-Rolis Hlaalu-"                  -- "-Rolis Hlaalu-"
+,   OPTION_ROLIS_FINISH     = "<Terminar el trabajo>"           -- "<Finish the job.>"
+,   OPTION_ACCEPT           = { "<Aceptar el contrato.>"        -- "<Accept the contract.>"
+                              , "<Aceptar el contrato.>"        -- "<Accept the contract>"  (FR French omits the period sometimes)
                               }
 
 ,   ENDING                 =  "<Observa tu trabajo y te entrega el pago.>"-- "<He notes your work and tenders payment.>"
 
 ,   [bs] = {
-        title_offer   = "-Encargo de herrería sellado-" -- "-Sealed Blacksmithing Writ-"
-    ,   option_finish = "He terminado el trabajo de herrería."-- "I've finished the Blacksmithing job."
+        title_offer   = "-Encargo de herrería sellado-"         -- "-Sealed Blacksmithing Writ-"
+    ,   option_finish = "He terminado el trabajo de herrería."  -- "I've finished the Blacksmithing job."
     ,   crafting_type = bs
     }
-
+,   [cl] = {
+        title_offer   = "-Encargo de sastrería sellado-"        -- "-Sealed Clothier Writ-"
+    ,   option_finish = "He terminado el trabajo de sastrería." -- "I've finished the Clothier job."
+    ,   crafting_type = cl
+    }
+,   [en] = {
+        title_offer   = "-Encargo de encantamiento sellado-"    -- "-Sealed Enchanting Writ-"
+    ,   option_finish = "He terminado el trabajo de encantamiento."-- "I've finished the Enchanting job."
+    ,   crafting_type = en
+    }
+,   [al] = {
+        title_offer   = "-Encargo de alquimia sellado-"         -- "-Sealed Alchemy Writ-"
+    ,   option_finish = "He terminado el trabajo de alquimia."  -- "I've finished the Alchemy job."
+    ,   crafting_type = al
+    }
+,   [pr] = {
+        title_offer   = " -Encargo de cocina sellado-"          -- "-Sealed Provisioning Writ-"
+    ,   option_finish = "He terminado el encargo de cocina."    -- "I've finished the Provisioning job."
+    ,   crafting_type = pr
+    }
+,   [ww] = {
+        title_offer   = "-Encargo de carpintería sellado-"      -- "-Sealed Woodworking Writ-"
+    ,   option_finish = "He terminado el trabajo de carpintería."-- "I've finished the Woodworking job."
+    ,   crafting_type = ww
+    }
+,   [jw] = {
+        title_offer   = "-Encargo de joyería sellado-"          -- "-Sealed Jewelry Crafter Writ-"
+    ,   option_finish = "He terminado el trabajo de joyería."   -- "I've finished the Jewelry job."
+    ,   crafting_type = jw
+    }
 }
 
 LibCraftText.DIALOG.DAILY = {

@@ -60,7 +60,7 @@ function Example3.QuestAdded(quest_index, quest_name)
     Info(green.."Quest added:|r", quest_name)
     if LibCraftText_Example1 then
         local parse_result = Example3.ParseMasterQuest(quest_index)
-        LibCraftText_Example1.DumpTable(parse_result)
+        LibCraftText.DumpTable(parse_result)
     end
     Info(green.."Go craft the requestedd item, then bring it to Rolis.")
 end

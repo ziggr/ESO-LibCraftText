@@ -769,20 +769,49 @@ LibCraftText.DIALOG = {
 
 
 LibCraftText.DIALOG.MASTER = {
-    TITLE_ROLIS             = "-Rolis Hlaalu-"          -- "-Rolis Hlaalu-"
-,   OPTION_ROLIS_FINISH     = "<Auftrag abschließen.>"  -- "<Finish the job.>"
-,   OPTION_ACCEPT           = { "<Nehmt den Auftrag an.>"-- "<Accept the contract.>"
-                              , "<Den Auftrag annehmen.>"-- "<Accept the contract>"  (FR French omits the period sometimes)
+    TITLE_ROLIS             = "-Rolis Hlaalu-"                  -- "-Rolis Hlaalu-"
+,   OPTION_ROLIS_FINISH     = "<Auftrag abschließen.>"          -- "<Finish the job.>"
+,   OPTION_ACCEPT           = { "<Nehmt den Auftrag an.>"       -- "<Accept the contract.>"
+                              , "<Den Auftrag annehmen.>"       -- "<Accept the contract>"  (FR French omits the period sometimes)
                               }
 
 ,   ENDING                 =  "<Er vermerkt Eure Arbeit und kümmert sich um die Bezahlung.>"-- "<He notes your work and tenders payment.>"
 
 ,   [bs] = {
-        title_offer   = "-Versiegelter Waffenschmiedeschrieb-"-- "-Sealed Blacksmithing Writ-"
+        title_offer   = "-Versiegelter Waffenschmiedeschrieb-"  -- "-Sealed Blacksmithing Writ-"
     ,   option_finish = "Ich habe den Schmiedeauftrag erledigt."-- "I've finished the Blacksmithing job."
     ,   crafting_type = bs
     }
-
+,   [cl] = {
+        title_offer   = "-Versiegelter Schneiderschrieb-"       -- "-Sealed Clothier Writ-"
+    ,   option_finish = "Ich habe den Schneiderauftrag erledigt."-- "I've finished the Clothier job."
+    ,   crafting_type = cl
+    }
+,   [en] = {
+        title_offer   = "-Versiegelter Verzauberungsschrieb-"   -- "-Sealed Enchanting Writ-"
+    ,   option_finish = "Ich habe den Verzaubererauftrag erledigt."-- "I've finished the Enchanting job."
+    ,   crafting_type = en
+    }
+,   [al] = {
+        title_offer   = "-Versiegelter Alchemieschrieb-"        -- "-Sealed Alchemy Writ-"
+    ,   option_finish = "Ich habe den Alchemieauftrag erledigt."-- "I've finished the Alchemy job."
+    ,   crafting_type = al
+    }
+,   [pr] = {
+        title_offer   = "-Versiegelter Versorgerschrieb-"       -- "-Sealed Provisioning Writ-"
+    ,   option_finish = "Ich habe den Versorgerauftrag erledigt."-- "I've finished the Provisioning job."
+    ,   crafting_type = pr
+    }
+,   [ww] = {
+        title_offer   = "-Versiegelter Schreinerschrieb-"       -- "-Sealed Woodworking Writ-"
+    ,   option_finish = "Ich habe den Schreinerauftrag erledigt."-- "I've finished the Woodworking job."
+    ,   crafting_type = ww
+    }
+,   [jw] = {
+        title_offer   = "-Versiegelter Schmuckhandwerksschrieb-"-- "-Sealed Jewelry Crafter Writ-"
+    ,   option_finish = "Ich habe den Schmuckauftrag erledigt." -- "I've finished the Jewelry job."
+    ,   crafting_type = jw
+    }
 }
 
 LibCraftText.DIALOG.DAILY = {
