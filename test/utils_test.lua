@@ -67,3 +67,19 @@ function Test:setUp()
     dofile(string.format("lang/%s.lua",want_lang))
 end
 
+
+                        -- Load the lang_db so that we can roll through all
+                        -- supported languages
+INPUT_TO_LANG_TABLE = INPUT_TO_LANG_TABLE or {}
+INPUT_TO_LANG_TABLE_LOADED = nil
+function LoadLangDB()
+    if INPUT_TO_LANG_TABLE_LOADED then return end
+    dofile("data/lang_db.lua")
+    for k,v in pairs(LANG_DB) do
+        if v.en then
+            INPUT_TO_LANG_TABLE[v.en] = v
+        end
+    end
+    INPUT_TO_LANG_TABLE_LOADED = true
+end
+

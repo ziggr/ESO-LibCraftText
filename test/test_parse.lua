@@ -8,14 +8,6 @@ TestDailyCondition = {}
 TestDailyCondition.setUpOuter =  Test.setUpOuter
 TestDailyCondition.setUp      =  Test.setUp
 
-
--- Belonga LCT ---------------------------------------------------------------
-
-
-
--- End Belonga LCT -----------------------------------------------------------
-
-
 function TestDailyCondition.TestAL()
     local fodder = {
       { {
@@ -379,6 +371,28 @@ function TestDailyCondition.OneMaster(crafting_type, lang_table, expect)
     luaunit.assertEquals(got, expect)
 end
 
+
+function TestDialogTitle()
+    LoadLangDB()    -- Defined in utils_test.lua. Need those lang_tables.
+    local lang = LibCraftText.CurrLang()
+
+    local fodder = {
+      {input="-Blacksmith Delivery Crate-"       ,expect=bs }
+    , {input="-Clothier Delivery Crate-"         ,expect=cl }
+    , {input="-Enchanter Delivery Crate-"        ,expect=en }
+    , {input="-Alchemist Delivery Crate-"        ,expect=al }
+    , {input="-Provisioner Delivery Crate-"      ,expect=pr }
+    , {input="-Woodworker Delivery Crate-"       ,expect=ww }
+    , {input="-Jewelry Crafting Delivery Crate-" ,expect=jw }
+    }
+
+    for _,row in ipairs(fodder) do
+        local lang_table = INPUT_TO_LANG_TABLE[row.input]
+        local input      = lang_table[lang]
+        local got = LibCraftText.DailyDialogTitleToCraftingType(input)
+        luaunit.assertEquals(got, row.expect)
+    end
+end
 
 
 os.exit( luaunit.LuaUnit.run() )

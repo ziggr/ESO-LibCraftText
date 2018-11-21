@@ -93,6 +93,12 @@ function LibCraftText.DailyDialogTitleToRow(dialog_title)
     end
     return nil
 end
+function LibCraftText.DailyDialogTitleToCraftingType(dialog_title)
+    for _,row in ipairs(LibCraftText.DIALOG.DAILY.ROW) do
+        if row.title_turn_in == dialog_title then return row.crafting_type end
+    end
+    return nil
+end
 
 function LibCraftText.DailyDialogOptionToRow(option_text)
     for _,row in ipairs(LibCraftText.DIALOG.DAILY.ROW) do
