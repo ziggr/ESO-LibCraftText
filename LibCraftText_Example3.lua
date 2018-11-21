@@ -37,8 +37,8 @@ end
 --
 function Example3.QuestOfferedMasterWrit()
     local dialog_text, response = GetOfferedQuestInfo()
-    if response == LibCraftText.DIALOG.MASTER.OPTION_ACCEPT[1]
-        or response == LibCraftText.DIALOG.MASTER.OPTION_ACCEPT[2] then
+    if response == LibCraftText.MASTER.DIALOG.OPTION_ACCEPT[1]
+        or response == LibCraftText.MASTER.DIALOG.OPTION_ACCEPT[2] then
         Info("QuestOfferedMasterWrit() accepting quest...")
         zo_callLater( function()
                         AcceptOfferedQuest()
@@ -106,7 +106,7 @@ function Example3.ChatterRolis()
         Info("ChatterRolis() choosing option[1]:'%s'", option_text_1)
         zo_callLater(function() SelectChatterOption(1) end, 500)
 
-    elseif option_text_1 == LibCraftText.DIALOG.MASTER.OPTION_ROLIS_FINISH then
+    elseif option_text_1 == LibCraftText.MASTER.DIALOG.OPTION_ROLIS_FINISH then
                         -- "<Finish the job.>"
                         -- Happens if you exit Rolis interaction before
                         -- completing quest.
@@ -139,7 +139,7 @@ function Example3.QuestCompleteDialog(quest_index)
     local response = data[2]
 
                         -- "<He notes your work and tenders payment.>"
-    if response == LibCraftText.DIALOG.MASTER.ENDING then
+    if response == LibCraftText.MASTER.DIALOG.RESPONSE_ENDING then
         Info("QuestCompleteDialog() completing quest:'%s'", response)
         CompleteQuest()
     else
@@ -242,11 +242,11 @@ function Example3.ParseMasterQuest(quest_index)
     return nil
 end
 
+
 -- Distracting Details -------------------------------------------------------
 --
 -- Event listeners and dispatching events to the proper step above
 --
-
 
 function Example3.SlashCommand()
     local self = Example3
@@ -327,7 +327,7 @@ function Example3.OnChatterBegin()
     local dialog_title = self.GetDialogTitle()
 
                         -- Is it Rolis?
-    if dialog_title == LibCraftText.MASTER.DIALOG.ROLIS_CHATTER_TITLE then
+    if dialog_title == LibCraftText.MASTER.DIALOG.TITLE_ROLIS then
         self.ChatterRolis()
         return
     end

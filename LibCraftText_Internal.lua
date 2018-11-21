@@ -971,8 +971,6 @@ function LibCraftText.BuildReverseLookupTables()
         return
     end
 
-    LibCraftText.MASTER_OPTION_FINISH = {}
-
     for _,ctype in pairs(LibCraftText.CRAFTING_TYPES) do
         local txt = LibCraftText.DAILY.QUEST_NAME[ctype]
         LibCraftText.DAILY.QUEST_NAME[txt] = ctype
@@ -985,8 +983,8 @@ function LibCraftText.BuildReverseLookupTables()
             table.insert(LibCraftText.MASTER.QUEST_NAME[txt], ctype)
         end
 
-        LibCraftText.MASTER_OPTION_FINISH[
-                LibCraftText.DIALOG.MASTER[ctype].option_finish] = ctype
+        local txt = LibCraftText.MASTER.DIALOG.OPTION_FINISH[ctype]
+        LibCraftText.MASTER.DIALOG.OPTION_FINISH[txt] = ctype
     end
 
     LibCraftText.reverse_tables_built = true

@@ -62,7 +62,7 @@ end
 --
 function Example2.QuestOfferedDailyWrit()
     local dialog_text, response = GetOfferedQuestInfo()
-    if response == LibCraftText.DIALOG.DAILY.OPTION_ACCEPT then
+    if response == LibCraftText.DAILY.DIALOG.OPTION_ACCEPT then
         Info("QuestOfferedDailyWrit() accepting quest...")
         AcceptOfferedQuest()
     else
@@ -125,13 +125,13 @@ function Example2.ChatterDeliveryCrate()
 
 
                         -- "<Place the goods within the crate.>"
-    if option_text_1 == LibCraftText.DIALOG.DAILY.OPTION_PLACE then
+    if option_text_1 == LibCraftText.DAILY.DIALOG.OPTION_PLACE then
                         -- Must choose options after a delay: picking them
                         -- right away tends to fail silently.
         Info("ChatterDeliveryCrate() choosing option[1]:'%s'", option_text_1)
         zo_callLater(function() SelectChatterOption(1) end, 500)
 
-    elseif option_text_1 == LibCraftText.DIALOG.DAILY.OPTION_SIGN then
+    elseif option_text_1 == LibCraftText.DAILY.DIALOG.OPTION_SIGN then
                         -- "<Sign the Manifest.>"
                         -- Happens if you exit crate interaction before
                         -- completing quest.
@@ -155,7 +155,7 @@ function Example2.QuestCompleteDialog(quest_index)
     local data = { GetJournalQuestEnding(quest_index) }
     local goal = data[1]
                         -- "Sign Delivery Manifest"
-    if goal == LibCraftText.DIALOG.DAILY.GOAL_SIGN then
+    if goal == LibCraftText.DAILY.DIALOG.GOAL_SIGN then
         Info("QuestCompleteDialog() completing quest:'%s'", goal)
         CompleteQuest()
     else

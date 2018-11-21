@@ -335,8 +335,8 @@ Master Writ Sequence
 
     EVENT_INVENTORY_ITEM_USED
     EVENT_QUEST_OFFERED
-        title  = "-Sealed Blacksmithing Writ-"  -- LibCraftText.DIALOG.MASTER[bs].title_offer
-        option = "<Accept the contract.>"       -- LibCraftText.DIALOG.OPTION_ACCEPT_CONTRACT[i]
+        title  = "-Sealed Blacksmithing Writ-"  -- LibCraftText.MASTER.DIALOG.TITLE_OFFER[bs]
+        option = "<Accept the contract.>"       -- LibCraftText.MASTER.DIALOG.OPTION_ACCEPT[i]
 
     EVENT_QUEST_ADDED(quest_index, quest_name)
         quest_name = "A Masterful Plate"        -- LibCraftText.MASTER.QUEST_NAME[bs][i]
@@ -357,14 +357,14 @@ Master Writ Sequence
     interact with Rolis
 
     EVENT_CHATTER_BEGIN
-        title  = "-Rolis Hlaalu-"               -- LibCraftText.MASTER.DIALOG.ROLIS_CHATTER_TITLE
-                                                -- LibCraftText.DIALOG.MASTER[b].option.finish
+        title  = "-Rolis Hlaalu-"               -- LibCraftText.MASTER.DIALOG.TITLE_ROLIS
+                                                -- LibCraftText.MASTER.DIALOG.OPTION_FINISH[bs]
         option = "I've finished the Blacksmithing job."
 
     EVENT_QUEST_ADVANCED(quest_index, quest_name, false, true, true)
 
     EVENT_QUEST_COMPLETE_DIALOG(quest_index)
-        title  = "-Rolis Hlaalu-"               -- LibCraftText.MASTER.DIALOG.ROLIS_CHATTER_TITLE
+        title  = "-Rolis Hlaalu-"               -- LibCraftText.MASTER.DIALOG.TITLE_ROLIS
 
         GetJournalQuestEnding(quest_index)
             [2] = "<He notes your work and tenders payment.>"

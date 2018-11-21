@@ -730,8 +730,43 @@ LibCraftText.MASTER.QUEST_NAME = {
 
 LibCraftText.MASTER.DIALOG = {
     ["ROLIS_NAME"         ] = "Rolis Hlaalu"                            -- "Rolis Hlaalu"
-,   ["ROLIS_CHATTER_TITLE"] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
+,   ["TITLE_ROLIS"        ] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
 ,   ["OPTION_STORE"       ] = "Magasin (intermédiaire pour maîtres artisans)"-- "Store (Mastercraft Mediator)"
+,   ["OPTION_ROLIS_FINISH"] = "<Finir le travail.>"                     -- "<Finish the job.>"
+,   ["OPTION_ACCEPT"      ] = { "<Accepter le contrat>"                 -- "<Accept the contract.>"
+                              , "<Accepter le contrat.>"                -- "<Accept the contract>"  (FR French omits the period sometimes)
+                              }
+,   ["RESPONSE_ENDING"    ] =  "<Il note votre travail et se charge du paiement.>"-- "<He notes your work and tenders payment.>"
+}
+
+LibCraftText.DAILY.DIALOG = {
+    ["TITLE_OFFER"        ] = { "-Commandes d'équipement artisanal-"    -- "-Equipment Crafting Writs-"
+                              , "-Commandes de consommables artisanaux-"-- "-Consumables Crafting Writs-"
+                              }
+,   ["OPTION_ACCEPT"      ] = "<Prendre une commande sur le panneau.>"  -- "<Pull a Writ from the Board.>"
+,   ["OPTION_SIGN"        ] = "<Signer le manifeste.>"                  -- "<Sign the Manifest.>"
+,   ["OPTION_PLACE"       ] = "<Placer les produits dans la caisse.>"   -- "<Place the goods within the crate.>"
+,   ["GOAL_SIGN"          ] = "Signez le manifeste de livraison"        -- "Sign Delivery Manifest"
+}
+
+LibCraftText.MASTER.DIALOG.TITLE_OFFER = {
+    [bs] = "-Commande de forge scellée-"          -- "-Sealed Blacksmithing Writ-"
+,   [cl] = "-Commande scellée de couture-"        -- "-Sealed Clothier Writ-"
+,   [en] = "-Commande d'enchantement scellée-"    -- "-Sealed Enchanting Writ-"
+,   [al] = "-Commande scellée d'alchimie-"        -- "-Sealed Alchemy Writ-"
+,   [pr] = "-Commande scellée de cuisine-"        -- "-Sealed Provisioning Writ-"
+,   [ww] = "-Commande de travail du bois scellée-"-- "-Sealed Woodworking Writ-"
+,   [jw] = "-Commande scellée de joaillier-"      -- "-Sealed Jewelry Crafter Writ-"
+}
+
+LibCraftText.MASTER.DIALOG.OPTION_FINISH = {
+    [bs] = "J'ai accompli la tâche de forge."     -- "I've finished the Blacksmithing job."
+,   [cl] = "J'ai accompli la tâche de couture."   -- "I've finished the Clothier job."
+,   [en] = "J'ai accompli la tâche d'enchantement."-- "I've finished the Enchanting job."
+,   [al] = "J'ai accompli la tâche d'alchimie."   -- "I've finished the Alchemy job."
+,   [pr] = "J'ai rempli la commande de cuisine."  -- "I've finished the Provisioning job."
+,   [ww] = "J'ai accompli la tâche du bois."      -- "I've finished the Woodworking job."
+,   [jw] = "J'ai accompli la tâche de joaillerie."-- "I've finished the Jewelry job."
 }
 
 -- Random Unsorted Stuff -----------------------------------------------------
@@ -744,63 +779,9 @@ LibCraftText.MASTER_LABELS = {
 }
 
 LibCraftText.DIALOG = LibCraftText.DIALOG or {} -- zztemp until this table is gone
-LibCraftText.DIALOG.MASTER = {
-    TITLE_ROLIS             = "-Rolis Hlaalu-"                  -- "-Rolis Hlaalu-"
-,   OPTION_ROLIS_FINISH     = "<Finir le travail.>"             -- "<Finish the job.>"
-,   OPTION_ACCEPT           = { "<Accepter le contrat>"         -- "<Accept the contract.>"
-                              , "<Accepter le contrat.>"        -- "<Accept the contract>"  (FR French omits the period sometimes)
-                              }
-
-,   ENDING                 =  "<Il note votre travail et se charge du paiement.>"-- "<He notes your work and tenders payment.>"
-
-,   [bs] = {
-        title_offer   = "-Commande de forge scellée-"           -- "-Sealed Blacksmithing Writ-"
-    ,   option_finish = "J'ai accompli la tâche de forge."      -- "I've finished the Blacksmithing job."
-    ,   crafting_type = bs
-    }
-,   [cl] = {
-        title_offer   = "-Commande scellée de couture-"         -- "-Sealed Clothier Writ-"
-    ,   option_finish = "J'ai accompli la tâche de couture."    -- "I've finished the Clothier job."
-    ,   crafting_type = cl
-    }
-,   [en] = {
-        title_offer   = "-Commande d'enchantement scellée-"     -- "-Sealed Enchanting Writ-"
-    ,   option_finish = "J'ai accompli la tâche d'enchantement."-- "I've finished the Enchanting job."
-    ,   crafting_type = en
-    }
-,   [al] = {
-        title_offer   = "-Commande scellée d'alchimie-"         -- "-Sealed Alchemy Writ-"
-    ,   option_finish = "J'ai accompli la tâche d'alchimie."    -- "I've finished the Alchemy job."
-    ,   crafting_type = al
-    }
-,   [pr] = {
-        title_offer   = "-Commande scellée de cuisine-"         -- "-Sealed Provisioning Writ-"
-    ,   option_finish = "J'ai rempli la commande de cuisine."   -- "I've finished the Provisioning job."
-    ,   crafting_type = pr
-    }
-,   [ww] = {
-        title_offer   = "-Commande de travail du bois scellée-" -- "-Sealed Woodworking Writ-"
-    ,   option_finish = "J'ai accompli la tâche du bois."       -- "I've finished the Woodworking job."
-    ,   crafting_type = ww
-    }
-,   [jw] = {
-        title_offer   = "-Commande scellée de joaillier-"       -- "-Sealed Jewelry Crafter Writ-"
-    ,   option_finish = "J'ai accompli la tâche de joaillerie." -- "I've finished the Jewelry job."
-    ,   crafting_type = jw
-    }
-}
 
 LibCraftText.DIALOG.DAILY = {
-    TITLE_OFFER = { "-Commandes d'équipement artisanal-"        -- "-Equipment Crafting Writs-"
-                  , "-Commandes de consommables artisanaux-"    -- "-Consumables Crafting Writs-"
-                  }
-
-,   OPTION_ACCEPT = "<Prendre une commande sur le panneau.>"    -- "<Pull a Writ from the Board.>"
-,   OPTION_SIGN   = "<Signer le manifeste.>"                    -- "<Sign the Manifest.>"
-,   OPTION_PLACE  = "<Placer les produits dans la caisse.>"     -- "<Place the goods within the crate.>"
-,   GOAL_SIGN     = "Signez le manifeste de livraison"          -- "Sign Delivery Manifest"
-
-,   ROW = {
+    ROW = {
       [bs] = { option_examine  = "<Parcourir les commandes de forge.>"-- "<Examine the Blacksmith Writs.>"
              , title_turn_in   = "-La caisse de livraison du forgeron-"-- "-Blacksmith Delivery Crate-"
              , crafting_type   = bs

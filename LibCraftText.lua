@@ -102,7 +102,7 @@ function LibCraftText.DailyDialogOptionToRow(option_text)
 end
                         -- Is this one of the two daily crafting writ boards?
 function LibCraftText.DailyDialogTitleIsWritBoard(dialog_title)
-    for _,t in pairs(LibCraftText.DIALOG.DAILY.TITLE_OFFER) do
+    for _,t in pairs(LibCraftText.DAILY.DIALOG.TITLE_OFFER) do
         if t == dialog_title then return true end
     end
     return nil
@@ -116,7 +116,7 @@ end
 --
 function LibCraftText.RolisDialogOptionToCraftingType(dialog_text)
     LibCraftText.BuildReverseLookupTables()
-    return LibCraftText.MASTER_OPTION_FINISH[dialog_text]
+    return LibCraftText.MASTER.DIALOG.OPTION_FINISH[dialog_text]
 end
 
 

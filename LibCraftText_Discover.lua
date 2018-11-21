@@ -2075,7 +2075,7 @@ function LibCraftText.RecordRolisSnark()
 
                         -- Not Rolis? Nothing to record.
     local title = self.GetDialogTitle()
-    if title ~= self.MASTER.DIALOG.ROLIS_CHATTER_TITLE then
+    if title ~= self.MASTER.DIALOG.TITLE_ROLIS then
         return
     end
                         -- New snark? Try to accumulate all dozen or so lines,
