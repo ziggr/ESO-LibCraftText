@@ -191,16 +191,16 @@ function LibCraftText.AbandonSomeDailies()
     for quest_index = MAX_JOURNAL_QUESTS,1,-1  do
         local jqi = { GetJournalQuestInfo(quest_index) }
         local repeat_type = GetJournalQuestRepeatType(quest_index)
--- Info(string.format("qi:%d  qtype:%d ?= %d  rtype:%d ?= %d   name:%s"
+-- Info("qi:%d  qtype:%d ?= %d  rtype:%d ?= %d   name:%s"
 --     , quest_index
 --     , jqi[self.JQI.quest_type]  , QUEST_TYPE_CRAFTING
 --     , repeat_type               , QUEST_REPEAT_DAILY
 --     , jqi[self.JQI.quest_name]
---     ))
+--     )
         if jqi[self.JQI.quest_type] == QUEST_TYPE_CRAFTING
             and repeat_type == QUEST_REPEAT_DAILY then
             local name = jqi[self.JQI.quest_name]
-            Info(string.format("abandoned %d:%s", quest_index, tostring(name)))
+            Info("abandoned %d:%s", quest_index, tostring(name))
             AbandonQuest(quest_index)
             abandon_ct = abandon_ct + 1
         end
@@ -274,9 +274,9 @@ function LibCraftText.NextLang(want_lang)
     end
     local want_lang2 = lang_list[want_i]
 
-    Info(string.format("Switching languages %s -> %s"
-            , tostring(curr_lang)
-            , tostring(want_lang2)))
+    Info( "Switching languages %s -> %s"
+        , tostring(curr_lang)
+        , tostring(want_lang2))
 
     SetCVar("language.2", want_lang2)
 end
@@ -1213,11 +1213,11 @@ function LibCraftText.DiscoverRecipes()
             end
         end
 
-        Info(string.format( "EN recipes  want:%d  found:%d  seen:%d"
-                          , want_recipe_ct
-                          , found_recipe_ct
-                          , seen_recipe_ct
-                          ))
+        Info( "EN recipes  want:%d  found:%d  seen:%d"
+            , want_recipe_ct
+            , found_recipe_ct
+            , seen_recipe_ct
+            )
         if found_recipe_ct < want_recipe_ct then
             Error("Missing some recipes!")
             for _,name in ipairs(RECIPE_NAMES_EN) do
@@ -1422,7 +1422,7 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
             if found then
                 name = found
             else
-                Error(string.format("potion name '%s'",name))
+                Error("potion name '%s'", name)
             end
             self.saved_var.alchemy[solvent_key][reagent_key]
                 = self.saved_var.alchemy[solvent_key][reagent_key] or {}
@@ -1489,7 +1489,7 @@ function LibCraftText.DiscoverCraftingStationAlchemy(crafting_type)
             if found then
                 name = found
             else
-                Error(string.format("solvent name '%s'",name))
+                Error("solvent name '%s'",name)
             end
             self.saved_var.alchemy.solvent = self.saved_var.alchemy.solvent or {}
             self.saved_var.alchemy.solvent[key]
@@ -1747,7 +1747,7 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
             self.saved_var.potencies = self.saved_var.potencies or {}
             self.saved_var.potencies[i] = self.saved_var.potencies[i] or {}
             self.saved_var.potencies[i][lang] = potency_name
-            Info(string.format("potency %2d: %s", i, potency_name))
+            Info("potency %2d: %s", i, potency_name)
         end
     end
 
@@ -1822,10 +1822,10 @@ function LibCraftText.DiscoverCraftingStationEnchanting(crafting_type)
         self.saved_var.essences[i].sub = self.saved_var.essences[i].sub or {}
         self.saved_var.essences[i].add[lang] = essence_name_add
         self.saved_var.essences[i].sub[lang] = essence_name_sub
-        Info(string.format( "essence %2d: %s/%s"
-                          , i
-                          , tostring(essence_name_add)
-                          , tostring(essence_name_sub)))
+        Info( "essence %2d: %s/%s"
+            , i
+            , tostring(essence_name_add)
+            , tostring(essence_name_sub))
     end
 
                         -- Gather add and subtract names because master writs require subtractive glyphs often.
@@ -1857,13 +1857,12 @@ function LibCraftText.GetEnchantingInfo(mat_potency, mat_essence, mat_aspect)
     local name = GetEnchantingResultingItemInfo(unpack(args))
     local link = GetEnchantingResultingItemLink(unpack(args))
     if name == "" then
-        Error(string.format(
-              "Enchanting: character lacks rune knowlege."
+        Error("Enchanting: character lacks rune knowlege."
               .." Go make some glyphs then try again. %s %s %s"
-              , tostring(mat_potency.name)
-              , tostring(mat_essence.name)
-              , tostring(mat_aspect.name)
-              ))
+             , tostring(mat_potency.name)
+             , tostring(mat_essence.name)
+             , tostring(mat_aspect.name)
+             )
         return nil
     end
     local item_id = self.ItemLinkToItemID(link)
@@ -1882,12 +1881,12 @@ function LibCraftText.ToMatBag(mat_row)
         Error("Inventory missing:"..tostring(mat_row.name).."   item_id:"..tostring(mat_row.item_id))
         return nil
     -- else
-    --     Info(string.format( "bag_id:%d slot_id:%d item_id:%d %s"
-    --                       , mat_bag.bag_id
-    --                       , mat_bag.slot_id
-    --                       , mat_row.item_id
-    --                       , mat_row.name
-    --                       ))
+    --     Info( "bag_id:%d slot_id:%d item_id:%d %s"
+    --         , mat_bag.bag_id
+    --         , mat_bag.slot_id
+    --         , mat_row.item_id
+    --         , mat_row.name
+    --         )
     end
     return mat_bag
 end
@@ -1907,7 +1906,7 @@ function LibCraftText.IndexBags()
             local item_id = GetItemId(bag_id, slot_id, LINK_STYLE_DEFAULT)
             if item_id and 0 < item_id then
                 -- local name = GetItemName(bag_id, slot_id)
-                -- Info(string.format("%d %d %d %s", bag_id, slot_id, item_id, name))
+                -- Info("%d %d %d %s", bag_id, slot_id, item_id, name)
                 item_id_to_mat_bag[item_id] = item_id_to_mat_bag[item_id] or {}
                 item_id_to_mat_bag[item_id].bag_id     = bag_id
                 item_id_to_mat_bag[item_id].slot_id = slot_id
@@ -1973,10 +1972,10 @@ function LibCraftText.LearnAllAlchemy()
                     Info("Done.")
                     return
                 end
-                Info(string.format( "Learning %2d/%2d"
-                                  , index
-                                  , #LibCraftText.LEARN_ALCHEMY
-                                  ))
+                Info( "Learning %2d/%2d"
+                    , index
+                    , #LibCraftText.LEARN_ALCHEMY
+                    )
                 local reagent_list = LibCraftText.LEARN_ALCHEMY[index]
                 if not reagent_list then return false end
                 LibCraftText.LearnOneAlchemy(reagent_list)
@@ -2052,13 +2051,13 @@ function LibCraftText.OnChatterBegin()
 end
 
 function LibCraftText.OnQuestCompleteDialog(quest_index)
-    Info(string.format("Quest complete  qi:%d",quest_index))
+    Info("Quest complete  qi:%d",quest_index)
     LibCraftText.RecordQuestCompleteDialog(quest_index)
     -- LibCraftText.RecordDialog()
 end
 
 function LibCraftText.OnQuestOffered()
-    Info(string.format("Quest offered"))
+    Info("Quest offered")
     LibCraftText.RecordQuestOffered()
 end
 
@@ -2101,7 +2100,7 @@ function LibCraftText.RecordRolisSnark()
         if not known_snark[dialog_text] then
             table.insert(LibCraftText.saved_char.chatter.snark[lang], dialog_text)
             known_snark[dialog_text] = 1
-            Info(string.format("|c66FF66New snark recorded:|r'%s'", dialog_text))
+            Info("|c66FF66New snark recorded:|r'%s'", dialog_text)
         end
     end
     Info("Done recording Rolis snark.")
@@ -2111,12 +2110,12 @@ function LibCraftText.RecordIfUnknown(text, string_list, ui_name)
     ui_name = "text" or ui_name
     for k,v in pairs(string_list) do
         if (v == text) or (k == text) then
-            Info(string.format("%s known:'%s", ui_name, text))
+            Info("%s known:'%s", ui_name, text)
             return
         end
     end
     table.insert(string_list, text)
-    Info(string.format("|c66FF66%s recorded:|r'%s", ui_name, text))
+    Info("|c66FF66%s recorded:|r'%s", ui_name, text)
     return false
 end
 
