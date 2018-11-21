@@ -683,7 +683,7 @@ LibCraftText.DAILY.COND = {
 ,   DELIVER_NEAREST_QUARTERMASTER = "Доставить товары ближайшему интенданту заказов"
 }
 
-LibCraftText.MASTER_COND = {
+LibCraftText.MASTER.COND = {
     TRAVEL_AD       = "Отправиться в Элден-Рут, чтобы встретиться с работодателем"-- "Travel to Elden Root to Meet Your Contact"
 ,   TRAVEL_DC       = "Отправиться в Вэйрест, чтобы встретиться с работодателем"-- "Travel to Wayrest to Meet Your Contact"
 ,   TRAVEL_EP       = "Отправиться в Морнхолд, чтобы встретиться с работодателем"-- "Travel to Mournhold to Meet Your Contact"
@@ -696,10 +696,17 @@ LibCraftText.MASTER_COND = {
 ,   DELIVER_JW      = "Доставить ювелирное изделие"                 -- "Deliver the Jewelry"
 }
 
--- Quest Titles --------------------------------------------------------------
+-- Quest and Dialog ----------------------------------------------------------
 
--- ### Merge these with the per-crafting-type dialog tables below
-
+LibCraftText.DAILY.QUEST_NAME = {
+    [bs] = "Заказ кузнецу"                      -- "Blacksmith Writ"
+,   [cl] = "Заказ портному"                     -- "Clothier Writ"
+,   [en] = "Заказ зачарователю"                 -- "Enchanter Writ"
+,   [al] = "Заказ алхимику"                     -- "Alchemist Writ"
+,   [pr] = "Заказ снабженцу"                    -- "Provisioner Writ"
+,   [ww] = "Заказ столяру"                      -- "Woodworker Writ"
+,   [jw] = "Заказ ювелиру"                      -- "Jewelry Crafting Writ"
+}
                         -- SURPRISE! "A Masterful Weapon" is used
                         -- by both Blacksmithing and Woodworking.
                         --
@@ -708,7 +715,7 @@ LibCraftText.MASTER_COND = {
                         -- item they requested (armor vs. weapon,
                         -- light vs. medium armor)
                         --
-LibCraftText.MASTER_QUEST_TITLES = {
+LibCraftText.MASTER.QUEST_NAME = {
     [bs] = { "Искусные латы"                      -- "A Masterful Plate"
            , "Искусное оружие"                  } -- "A Masterful Weapon"
 ,   [cl] = { "Искусные тканевые доспехи"          -- "Masterful Tailoring"
@@ -800,37 +807,30 @@ LibCraftText.DIALOG.DAILY = {
 ,   ROW = {
       [bs] = { option_examine  = "<Изучить заказы для кузнеца.>"-- "<Examine the Blacksmith Writs.>"
              , title_turn_in   = "-Доставочный ящик кузнеца-"   -- "-Blacksmith Delivery Crate-"
-             , quest_name      = "Заказ кузнецу"                -- "Blacksmith Writ"
              , crafting_type   = bs
              }
     , [cl] = { option_examine  = "<Изучить заказы для портного.>"-- "<Examine the Clothier Writs.>"
              , title_turn_in   = "-Доставочный ящик портного-"  -- "-Clothier Delivery Crate-"
-             , quest_name      = "Заказ портному"               -- "Clothier Writ"
              , crafting_type   = cl
              }
     , [en] = { option_examine  = "<Изучить заказы для зачарователя.>"-- "<Examine the Enchanter Writs.>"
              , title_turn_in   = "-Доставочный ящик зачарователя-"-- "-Enchanter Delivery Crate-"
-             , quest_name      = "Заказ зачарователю"           -- "Enchanter Writ"
              , crafting_type   = en
              }
     , [al] = { option_examine  = "<Изучить заказы для алхимика.>"-- "<Examine the Alchemist Writs.>"
              , title_turn_in   = "-Доставочный ящик алхимика-"  -- "-Alchemist Delivery Crate-"
-             , quest_name      = "Заказ алхимику"               -- "Alchemist Writ"
              , crafting_type   = al
              }
     , [pr] = { option_examine  = "<Изучить заказы для снабженца.>"-- "<Examine the Provisioner Writs.>"
              , title_turn_in   = "-Доставочный ящик снабженца-" -- "-Provisioner Delivery Crate-"
-             , quest_name      = "Заказ снабженцу"              -- "Provisioner Writ"
              , crafting_type   = pr
              }
     , [ww] = { option_examine  = "<Изучить заказы для столяра.>"-- "<Examine the Woodworker Writs.>"
              , title_turn_in   = "-Доставочный ящик столяра-"   -- "-Woodworker Delivery Crate-"
-             , quest_name      = "Заказ столяру"                -- "Woodworker Writ"
              , crafting_type   = ww
              }
     , [jw] = { option_examine  = "<Изучить заказы для ювелира.>"-- "<Examine the Jewelry Crafting Writs.>"
              , title_turn_in   = "-Доставочный ящик ювелира-"   -- "-Jewelry Crafting Delivery Crate-"
-             , quest_name      = "Заказ ювелиру"                -- "Jewelry Crafting Writ"
              , crafting_type   = jw
              }
     }

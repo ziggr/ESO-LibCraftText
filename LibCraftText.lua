@@ -13,7 +13,7 @@ LibCraftText = LibCraftText or {}
 --
 function LibCraftText.DailyQuestNameToCraftingType(quest_name)
     LibCraftText.BuildReverseLookupTables()
-    return LibCraftText.DAILY_QUEST_TITLES[quest_name]
+    return LibCraftText.DAILY.QUEST_NAME[quest_name]
 end
 
 -- Return a list of 1 or more crafting types that match the given
@@ -25,7 +25,7 @@ end
 --
 function LibCraftText.MasterQuestNameToCraftingTypeList(quest_name)
     LibCraftText.BuildReverseLookupTables()
-    return LibCraftText.MASTER_QUEST_TITLES[quest_name]
+    return LibCraftText.MASTER.QUEST_NAME[quest_name]
 end
 
 

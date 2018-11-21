@@ -965,9 +965,6 @@ LibCraftText.CRAFTING_TYPES = {
 , CRAFTING_TYPE_JEWELRYCRAFTING
 }
 
-                        -- ["Blacksmith Writ"] = CRAFTING_TYPE_BLACKSMITHING
-LibCraftText.DAILY_QUEST_TITLES = {}
-
 -- Build reverse lookup tables to accelerate lookups
 function LibCraftText.BuildReverseLookupTables()
     if LibCraftText.reverse_tables_built then
@@ -977,15 +974,15 @@ function LibCraftText.BuildReverseLookupTables()
     LibCraftText.MASTER_OPTION_FINISH = {}
 
     for _,ctype in pairs(LibCraftText.CRAFTING_TYPES) do
-        local txt = LibCraftText.DIALOG.DAILY.ROW[ctype].quest_name
-        LibCraftText.DAILY_QUEST_TITLES[txt] = ctype
+        local txt = LibCraftText.DAILY.QUEST_NAME[ctype]
+        LibCraftText.DAILY.QUEST_NAME[txt] = ctype
 
-        local tlist = LibCraftText.MASTER_QUEST_TITLES[ctype]
+        local tlist = LibCraftText.MASTER.QUEST_NAME[ctype]
         for _,txt in pairs(tlist) do
-            if not LibCraftText.MASTER_QUEST_TITLES[txt] then
-                LibCraftText.MASTER_QUEST_TITLES[txt] = {}
+            if not LibCraftText.MASTER.QUEST_NAME[txt] then
+                LibCraftText.MASTER.QUEST_NAME[txt] = {}
             end
-            table.insert(LibCraftText.MASTER_QUEST_TITLES[txt], ctype)
+            table.insert(LibCraftText.MASTER.QUEST_NAME[txt], ctype)
         end
 
         LibCraftText.MASTER_OPTION_FINISH[

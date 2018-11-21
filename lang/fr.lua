@@ -683,7 +683,7 @@ LibCraftText.DAILY.COND = {
 ,   DELIVER_NEAREST_QUARTERMASTER = "Livrez les marchandises au quartier-maître le plus proche"
 }
 
-LibCraftText.MASTER_COND = {
+LibCraftText.MASTER.COND = {
     TRAVEL_AD       = "Allez rencontrer votre contact à Faneracine" -- "Travel to Elden Root to Meet Your Contact"
 ,   TRAVEL_DC       = "Allez rencontrer votre contact à Haltevoie"  -- "Travel to Wayrest to Meet Your Contact"
 ,   TRAVEL_EP       = "Allez rencontrer votre contact à Longsanglot"-- "Travel to Mournhold to Meet Your Contact"
@@ -696,10 +696,17 @@ LibCraftText.MASTER_COND = {
 ,   DELIVER_JW      = "Livrez le bijou"                             -- "Deliver the Jewelry"
 }
 
--- Quest Titles --------------------------------------------------------------
+-- Quest and Dialog ----------------------------------------------------------
 
--- ### Merge these with the per-crafting-type dialog tables below
-
+LibCraftText.DAILY.QUEST_NAME = {
+    [bs] = "Commande de forge"                  -- "Blacksmith Writ"
+,   [cl] = "Commande de tailleur"               -- "Clothier Writ"
+,   [en] = "Commandes d'enchantement"           -- "Enchanter Writ"
+,   [al] = "Commande d'alchimie"                -- "Alchemist Writ"
+,   [pr] = "Commande de cuisine"                -- "Provisioner Writ"
+,   [ww] = "Commande de travail du bois"        -- "Woodworker Writ"
+,   [jw] = "Commande de joaillerie"             -- "Jewelry Crafting Writ"
+}
                         -- SURPRISE! "A Masterful Weapon" is used
                         -- by both Blacksmithing and Woodworking.
                         --
@@ -708,7 +715,7 @@ LibCraftText.MASTER_COND = {
                         -- item they requested (armor vs. weapon,
                         -- light vs. medium armor)
                         --
-LibCraftText.MASTER_QUEST_TITLES = {
+LibCraftText.MASTER.QUEST_NAME = {
     [bs] = { "Une protection magistrale"          -- "A Masterful Plate"
            , "Une arme magistrale"              } -- "A Masterful Weapon"
 ,   [cl] = { "Une tenue magistrale"               -- "Masterful Tailoring"
@@ -800,37 +807,30 @@ LibCraftText.DIALOG.DAILY = {
 ,   ROW = {
       [bs] = { option_examine  = "<Parcourir les commandes de forge.>"-- "<Examine the Blacksmith Writs.>"
              , title_turn_in   = "-La caisse de livraison du forgeron-"-- "-Blacksmith Delivery Crate-"
-             , quest_name      = "Commande de forge"            -- "Blacksmith Writ"
              , crafting_type   = bs
              }
     , [cl] = { option_examine  = "<Parcourir les commandes de couture.>"-- "<Examine the Clothier Writs.>"
              , title_turn_in   = "-La caisse de livraison du tailleur-"-- "-Clothier Delivery Crate-"
-             , quest_name      = "Commande de tailleur"         -- "Clothier Writ"
              , crafting_type   = cl
              }
     , [en] = { option_examine  = "<Parcourir les commandes d'enchantement.>"-- "<Examine the Enchanter Writs.>"
              , title_turn_in   = "-La caisse de livraison de l'enchanteur-"-- "-Enchanter Delivery Crate-"
-             , quest_name      = "Commandes d'enchantement"     -- "Enchanter Writ"
              , crafting_type   = en
              }
     , [al] = { option_examine  = "<Parcourir les commandes d'alchimie.>"-- "<Examine the Alchemist Writs.>"
              , title_turn_in   = "-La caisse de livraison de l'alchimiste-"-- "-Alchemist Delivery Crate-"
-             , quest_name      = "Commande d'alchimie"          -- "Alchemist Writ"
              , crafting_type   = al
              }
     , [pr] = { option_examine  = "<Parcourir les commandes de cuisine.>"-- "<Examine the Provisioner Writs.>"
              , title_turn_in   = "-La caisse de livraison du cuisinier-"-- "-Provisioner Delivery Crate-"
-             , quest_name      = "Commande de cuisine"          -- "Provisioner Writ"
              , crafting_type   = pr
              }
     , [ww] = { option_examine  = "<Parcourir les commandes de travail du bois.>"-- "<Examine the Woodworker Writs.>"
              , title_turn_in   = "-La caisse de livraison du travailleur du bois-"-- "-Woodworker Delivery Crate-"
-             , quest_name      = "Commande de travail du bois"  -- "Woodworker Writ"
              , crafting_type   = ww
              }
     , [jw] = { option_examine  = "<Examiner les commandes de joaillerie.>"-- "<Examine the Jewelry Crafting Writs.>"
              , title_turn_in   = "-Caisse de livraison de joaillerie-"-- "-Jewelry Crafting Delivery Crate-"
-             , quest_name      = "Commande de joaillerie"       -- "Jewelry Crafting Writ"
              , crafting_type   = jw
              }
     }

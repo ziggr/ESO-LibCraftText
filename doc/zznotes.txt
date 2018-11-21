@@ -339,7 +339,7 @@ Master Writ Sequence
         option = "<Accept the contract.>"       -- LibCraftText.DIALOG.OPTION_ACCEPT_CONTRACT[i]
 
     EVENT_QUEST_ADDED(quest_index, quest_name)
-        quest_name = "A Masterful Plate"        -- LibCraftText.MASTER_QUEST_TITLES[bs][i]
+        quest_name = "A Masterful Plate"        -- LibCraftText.MASTER.QUEST_NAME[bs][i]
 
         LibCraftText.MasterQuestNameToCraftingTypeList()
         LibCraftText.ParseMasterCondition()

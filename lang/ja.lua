@@ -683,7 +683,7 @@ LibCraftText.DAILY.COND = {
 ,   DELIVER_NEAREST_QUARTERMASTER = "品物を、一番近い依頼を出す補給係に届ける"        
 }
 
-LibCraftText.MASTER_COND = {
+LibCraftText.MASTER.COND = {
     TRAVEL_AD       = "エルデンルートへ行って代理人と会う"                           -- "Travel to Elden Root to Meet Your Contact"
 ,   TRAVEL_DC       = "ウェイレストへ行って代理人と会う"                            -- "Travel to Wayrest to Meet Your Contact"
 ,   TRAVEL_EP       = "モーンホールドへ行って代理人と会う"                           -- "Travel to Mournhold to Meet Your Contact"
@@ -696,10 +696,17 @@ LibCraftText.MASTER_COND = {
 ,   DELIVER_JW      = "宝飾を届ける"                                      -- "Deliver the Jewelry"
 }
 
--- Quest Titles --------------------------------------------------------------
+-- Quest and Dialog ----------------------------------------------------------
 
--- ### Merge these with the per-crafting-type dialog tables below
-
+LibCraftText.DAILY.QUEST_NAME = {
+    [bs] = "鍛冶師の依頼"                             -- "Blacksmith Writ"
+,   [cl] = "仕立師の依頼"                             -- "Clothier Writ"
+,   [en] = "付呪師の依頼"                             -- "Enchanter Writ"
+,   [al] = "錬金術師の依頼"                            -- "Alchemist Writ"
+,   [pr] = "調理師の依頼"                             -- "Provisioner Writ"
+,   [ww] = "木工師の依頼"                             -- "Woodworker Writ"
+,   [jw] = "宝飾師のクラフト依頼"                         -- "Jewelry Crafting Writ"
+}
                         -- SURPRISE! "A Masterful Weapon" is used
                         -- by both Blacksmithing and Woodworking.
                         --
@@ -708,7 +715,7 @@ LibCraftText.MASTER_COND = {
                         -- item they requested (armor vs. weapon,
                         -- light vs. medium armor)
                         --
-LibCraftText.MASTER_QUEST_TITLES = {
+LibCraftText.MASTER.QUEST_NAME = {
     [bs] = { "優れた防具"                              -- "A Masterful Plate"
            , "優れた武器"                            } -- "A Masterful Weapon"
 ,   [cl] = { "優れた服"                               -- "Masterful Tailoring"
@@ -800,37 +807,30 @@ LibCraftText.DIALOG.DAILY = {
 ,   ROW = {
       [bs] = { option_examine  = "<鍛冶屋の依頼を調べる>"                 -- "<Examine the Blacksmith Writs.>"
              , title_turn_in   = "-鍛冶屋の配達箱-"                    -- "-Blacksmith Delivery Crate-"
-             , quest_name      = "鍛冶師の依頼"                       -- "Blacksmith Writ"
              , crafting_type   = bs
              }
     , [cl] = { option_examine  = "<仕立屋の依頼を調べる>"                 -- "<Examine the Clothier Writs.>"
              , title_turn_in   = "-仕立師の配達箱-"                    -- "-Clothier Delivery Crate-"
-             , quest_name      = "仕立師の依頼"                       -- "Clothier Writ"
              , crafting_type   = cl
              }
     , [en] = { option_examine  = "<付呪師の依頼を調べる>"                 -- "<Examine the Enchanter Writs.>"
              , title_turn_in   = "-付呪師の配達箱-"                    -- "-Enchanter Delivery Crate-"
-             , quest_name      = "付呪師の依頼"                       -- "Enchanter Writ"
              , crafting_type   = en
              }
     , [al] = { option_examine  = "<錬金術師の依頼を見る>"                 -- "<Examine the Alchemist Writs.>"
              , title_turn_in   = "-錬金術師の配達箱-"                   -- "-Alchemist Delivery Crate-"
-             , quest_name      = "錬金術師の依頼"                      -- "Alchemist Writ"
              , crafting_type   = al
              }
     , [pr] = { option_examine  = "<調理師の依頼を見る>"                  -- "<Examine the Provisioner Writs.>"
              , title_turn_in   = "-調理師の配達箱-"                    -- "-Provisioner Delivery Crate-"
-             , quest_name      = "調理師の依頼"                       -- "Provisioner Writ"
              , crafting_type   = pr
              }
     , [ww] = { option_examine  = "<木工師の依頼を調べる>"                 -- "<Examine the Woodworker Writs.>"
              , title_turn_in   = "-木工師の配達箱-"                    -- "-Woodworker Delivery Crate-"
-             , quest_name      = "木工師の依頼"                       -- "Woodworker Writ"
              , crafting_type   = ww
              }
     , [jw] = { option_examine  = "<宝飾師のクラフト依頼を調べる>"             -- "<Examine the Jewelry Crafting Writs.>"
              , title_turn_in   = "-宝飾師の配達箱-"                    -- "-Jewelry Crafting Delivery Crate-"
-             , quest_name      = "宝飾師のクラフト依頼"                   -- "Jewelry Crafting Writ"
              , crafting_type   = jw
              }
     }
