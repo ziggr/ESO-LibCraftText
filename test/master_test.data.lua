@@ -952,31 +952,31 @@ MASTER_FODDER = {
 
 -- Misc ----------------------------------------------------------------------
 , { input  = "Travel to Elden Root to Meet Your Contact"
-  , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_AD }
+  , expect = { misc=LibCraftText.MASTER.COND.TRAVEL_AD }
   }
 , { input  = "Travel to Mournhold to Meet Your Contact"
-  , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_EP }
+  , expect = { misc=LibCraftText.MASTER.COND.TRAVEL_EP }
   }
 , { input  = "Travel to Wayrest to Meet Your Contact"
-  , expect = { misc=LibCraftText.MASTER_COND.TRAVEL_DC }
+  , expect = { misc=LibCraftText.MASTER.COND.TRAVEL_DC }
   }
 , { input  = "Deliver the Concoction"
-  , expect = { misc=LibCraftText.MASTER_COND.DELIVER_AL }
+  , expect = { misc=LibCraftText.MASTER.COND.DELIVER_AL }
   }
 , { input  = "Deliver the Glyph"
-  , expect = { misc=LibCraftText.MASTER_COND.DELIVER_EN }
+  , expect = { misc=LibCraftText.MASTER.COND.DELIVER_EN }
   }
 , { input  = "Deliver the Feast"
-  , expect = { misc=LibCraftText.MASTER_COND.DELIVER_PR }
+  , expect = { misc=LibCraftText.MASTER.COND.DELIVER_PR }
   }
 , { input  = "Deliver the Weapon"
-  , expect = { misc=LibCraftText.MASTER_COND.DELIVER_WEAPON }
+  , expect = { misc=LibCraftText.MASTER.COND.DELIVER_WEAPON }
   }
 , { input  = "Deliver the Armor"
-  , expect = { misc=LibCraftText.MASTER_COND.DELIVER_ARMOR }
+  , expect = { misc=LibCraftText.MASTER.COND.DELIVER_ARMOR }
   }
 , { input  = "Deliver the Jewelry"
-  , expect = { misc=LibCraftText.MASTER_COND.DELIVER_JW }
+  , expect = { misc=LibCraftText.MASTER.COND.DELIVER_JW }
   }
 
 

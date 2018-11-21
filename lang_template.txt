@@ -1,4 +1,6 @@
-LibCraftText = LibCraftText or {}
+LibCraftText        = LibCraftText        or {}
+LibCraftText.DAILY  = LibCraftText.DAILY  or {}
+LibCraftText.MASTER = LibCraftText.MASTER or {}
 
 
 -- Table Setup ---------------------------------------------------------------
@@ -39,6 +41,7 @@ LibCraftText.TRAIT_SET_ID = {
 local trait_weap    = LibCraftText.TRAIT_SET_ID.WEAPON
 local trait_armr    = LibCraftText.TRAIT_SET_ID.ARMOR
 local trait_jewl    = LibCraftText.TRAIT_SET_ID.JEWELRY
+
 
 -- Craftable Equipment -------------------------------------------------------
 --
@@ -441,9 +444,9 @@ LibCraftText.MATERIAL = {
 
 
 -- Equipment Traits ----------------------------------------------------------
-
+--
 -- For master writ quests that require Nirnhoned or whatever.
-
+--
 local ts=LibCraftText.TRAIT_SET_ID -- for less typing
 local m =LibCraftText.MATERIAL
 LibCraftText.TRAIT = {
@@ -483,7 +486,7 @@ ts = nil
 
 
 -- Alchemy Traits ------------------------------------------------------------
-
+--
 -- Answering "which trait?" for "Craft a potion/poison with the following traits".
 --
 -- trait_index      integer 1 through 30. Appears in one of the 4 bytes of
@@ -675,7 +678,7 @@ LibCraftText.MOTIF = {
 
 -- Miscellaneous conditions --------------------------------------------------
 
-LibCraftText.DAILY_COND = {
+LibCraftText.DAILY.COND = {
     HINT_PR_BREWERS_COOKS_RECIPES = $HINT_PR_BREWERS_COOKS_RECIPES
 ,   DELIVER_NEAREST_QUARTERMASTER = $DELIVER_NEAREST_QUARTERMASTER
 }

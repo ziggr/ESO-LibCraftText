@@ -446,9 +446,9 @@ function Daily.ParseConditionAlchemy(cond_text)
 end
 
 function Daily.ParseConditionMisc(crafting_type, cond_text)
-    for k,v in pairs(LibCraftText.DAILY_COND) do
+    for k,v in pairs(LibCraftText.DAILY.COND) do
         if cond_text == v then return
-            { misc=LibCraftText.DAILY_COND[k] }
+            { misc=LibCraftText.DAILY.COND[k] }
         end
     end
     return nil
@@ -773,9 +773,9 @@ function Master.ParseBulletLine(cond_line, re_set, row_table)
 end
 
 function Master.ParseConditionMisc(crafting_type, cond_text)
-    for k,v in pairs(LibCraftText.MASTER_COND) do
+    for k,v in pairs(LibCraftText.MASTER.COND) do
         if cond_text == v then
-            return { misc=LibCraftText.MASTER_COND[k] }
+            return { misc=LibCraftText.MASTER.COND[k] }
         end
     end
     return nil

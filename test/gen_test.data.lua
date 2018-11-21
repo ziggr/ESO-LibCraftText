@@ -39,7 +39,7 @@ COND_TEXT_FODDER = {
 , { input="Acquire Violet Coprinus"                         , expect={ material=LCT.MATERIAL.VIOLET_COPRINUS }          }
 , { input="Acquire Water Hyacinth"                          , expect={ material=LCT.MATERIAL.WATER_HYACINTH  }          }
 , { input="Acquire Wormwood"                                , expect={ material=LCT.MATERIAL.WORMWOOD        }          }
-, { input="Brewers and Cooks Can Provide Recipes"           , expect={ misc=LCT.DAILY_COND.HINT_PR_BREWERS_COOKS_RECIPES } }
+, { input="Brewers and Cooks Can Provide Recipes"           , expect={ misc=LCT.DAILY.COND.HINT_PR_BREWERS_COOKS_RECIPES } }
 , { input="Craft Aetherial Tea"                             , expect={ item=LCT.RECIPE.AETHERIAL_TEA                    } }
 , { input="Craft Alik'r Beets with Goat Cheese"             , expect={ item=LCT.RECIPE.ALIKR_BEETS_WITH_GOAT_CHEESE     } }
 , { input="Craft Baked Apples"                              , expect={ item=LCT.RECIPE.BAKED_APPLES                     } }
@@ -447,5 +447,5 @@ COND_TEXT_FODDER = {
 , { input="Craft a Silver Ring"                             , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.SILVER         } }
 , { input="Craft an Electrum Necklace"                      , expect={ item=LCT.ITEM.NECKLACE       , material=LCT.MATERIAL.ELECTRUM       } }
 , { input="Craft an Electrum Ring"                          , expect={ item=LCT.ITEM.RING           , material=LCT.MATERIAL.ELECTRUM       } }
-, { input="Deliver Goods to Nearest Writ Quartermaster"     , expect={ misc=LCT.DAILY_COND.DELIVER_NEAREST_QUARTERMASTER    } }
+, { input="Deliver Goods to Nearest Writ Quartermaster"     , expect={ misc=LCT.DAILY.COND.DELIVER_NEAREST_QUARTERMASTER    } }
 }

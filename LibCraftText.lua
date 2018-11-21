@@ -63,9 +63,9 @@ end
 -- material     MATERIAL            TA
 --
 --              Miscellaneous       "Deliver Goods to Nearest Writ Quartermaster"
--- misc         DAILY_COND          DELIVER_NEAREST_QUARTERMASTER
+-- misc         DAILY.COND          DELIVER_NEAREST_QUARTERMASTER
 --                                  "Travel to Mournhold to Meet Your Contact"
---              MASTER_COND         TRAVEL_EP
+--              MASTER.COND         TRAVEL_EP
 --
 function LibCraftText.ParseDailyCondition(crafting_type, cond_text)
     return LibCraftText.Daily.ParseConditionInternal(crafting_type, cond_text)
