@@ -40,8 +40,8 @@ function Example2.ChatterWritBoard()
     local option_text_1 = GetChatterOption(1)
                         -- If the writ board offers us an option
                         -- to start a daily writ, choose that option.
-    local row = LibCraftText.DailyDialogOptionToRow(option_text_1)
-    if row then
+    local crafting_type = LibCraftText.DailyDialogOptionToCraftingType(option_text_1)
+    if crafting_type then
         Info("ChatterWritBoard() choosing option[1]:'%s'...",option_text_1)
                         -- Must choose options after a delay: picking them
                         -- right away tends to fail silently.
@@ -263,8 +263,8 @@ function Example2.OnChatterBegin()
     end
 
                         -- Is it a daily writ turn-in crate?
-    local row = LibCraftText.DailyDialogTitleToRow(dialog_title)
-    if row then
+    local crafting_type = LibCraftText.DailyDialogTurnInTitleToCraftingType(dialog_title)
+    if crafting_type then
         Example2.ChatterDeliveryCrate()
         return
     end

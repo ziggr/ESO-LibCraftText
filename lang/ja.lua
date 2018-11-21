@@ -696,7 +696,26 @@ LibCraftText.MASTER.COND = {
 ,   DELIVER_JW      = "宝飾を届ける"                                      -- "Deliver the Jewelry"
 }
 
--- Quest and Dialog ----------------------------------------------------------
+
+-- Random Unsorted Stuff -----------------------------------------------------
+
+LibCraftText.MASTER_LABELS = {
+    ["quality"] =  "Quality"                         -- "Quality"
+,   ["set"    ] =  "Set"                             -- "Set"
+,   ["style"  ] =  "Style"                           -- "Style"
+,   ["trait"  ] =  "Trait"                           -- "Trait"
+}
+
+LibCraftText.QUALITY = {
+    ["NORMAL"   ] = { name="Normal"     , index=ITEM_QUALITY_NORMAL         or 1 }
+,   ["FINE"     ] = { name="Fine"       , index=ITEM_QUALITY_FINE           or 2 }
+,   ["SUPERIOR" ] = { name="Superior"   , index=ITEM_QUALITY_SUPERIOR       or 3 }
+,   ["EPIC"     ] = { name="Epic"       , index=ITEM_QUALITY_EPIC           or 4 }
+,   ["LEGENDARY"] = { name="Legendary"  , index=ITEM_QUALITY_LEGENDARY      or 5 }
+}
+
+
+-- Quest and Dialog Text -----------------------------------------------------
 
 LibCraftText.DAILY.QUEST_NAME = {
     [bs] = "鍛冶師の依頼"                             -- "Blacksmith Writ"
@@ -728,25 +747,27 @@ LibCraftText.MASTER.QUEST_NAME = {
 ,   [jw] = { "優れた宝飾"                            } -- "Masterful Jewelry"
 }
 
-LibCraftText.MASTER.DIALOG = {
-    ["ROLIS_NAME"         ] = "ロリス・フラール"                                -- "Rolis Hlaalu"
-,   ["TITLE_ROLIS"        ] = "-ロリス・フラール-"                              -- "-Rolis Hlaalu-"
-,   ["OPTION_STORE"       ] = "Store (名工の調停人)"                          -- "Store (Mastercraft Mediator)"
-,   ["OPTION_ROLIS_FINISH"] = "<仕事を終える>"                                -- "<Finish the job.>"
-,   ["OPTION_ACCEPT"      ] = { "<契約を受諾する>"                             -- "<Accept the contract.>"
-                              , "<契約を受諾する>"                             -- "<Accept the contract>"  (FR French omits the period sometimes)
-                              }
-,   ["RESPONSE_ENDING"    ] =  "<彼は仕事を記録し、支払いを提供する>"                    -- "<He notes your work and tenders payment.>"
-}
-
 LibCraftText.DAILY.DIALOG = {
-    ["TITLE_OFFER"        ] = { "-装備品のクラフトの依頼-"                         -- "-Equipment Crafting Writs-"
-                              , "-消費アイテムのクラフトの依頼-"                      -- "-Consumables Crafting Writs-"
-                              }
-,   ["OPTION_ACCEPT"      ] = "<依頼を掲示板からはがす>"                           -- "<Pull a Writ from the Board.>"
+    ["OPTION_ACCEPT"      ] = "<依頼を掲示板からはがす>"                           -- "<Pull a Writ from the Board.>"
 ,   ["OPTION_SIGN"        ] = "<伝票に署名する>"                               -- "<Sign the Manifest.>"
 ,   ["OPTION_PLACE"       ] = "<品物を木箱の中に置く>"                            -- "<Place the goods within the crate.>"
 ,   ["GOAL_SIGN"          ] = "配達伝票に署名する"                               -- "Sign Delivery Manifest"
+}
+
+LibCraftText.MASTER.DIALOG = {
+    ["OPTION_ACCEPT"      ] = { "<契約を受諾する>"                             -- "<Accept the contract.>"
+                              , "<契約を受諾する>"                             -- "<Accept the contract>"  (FR French omits the period sometimes)
+                              }
+,   ["ROLIS_NAME"         ] = "ロリス・フラール"                                -- "Rolis Hlaalu"
+,   ["TITLE_ROLIS"        ] = "-ロリス・フラール-"                              -- "-Rolis Hlaalu-"
+,   ["OPTION_STORE"       ] = "Store (名工の調停人)"                          -- "Store (Mastercraft Mediator)"
+,   ["OPTION_ROLIS_FINISH"] = "<仕事を終える>"                                -- "<Finish the job.>"
+,   ["RESPONSE_ENDING"    ] = "<彼は仕事を記録し、支払いを提供する>"                     -- "<He notes your work and tenders payment.>"
+}
+
+LibCraftText.DAILY.DIALOG.TITLE_OFFER = {
+    "-装備品のクラフトの依頼-"                               -- "-Equipment Crafting Writs-"
+,   "-消費アイテムのクラフトの依頼-"                            -- "-Consumables Crafting Writs-"
 }
 
 LibCraftText.MASTER.DIALOG.TITLE_OFFER = {
@@ -759,6 +780,26 @@ LibCraftText.MASTER.DIALOG.TITLE_OFFER = {
 ,   [jw] = "-密封された宝飾師依頼-"                         -- "-Sealed Jewelry Crafter Writ-"
 }
 
+LibCraftText.DAILY.DIALOG.TITLE_TURN_IN = {
+    [bs] = "-鍛冶屋の配達箱-"                            -- "-Blacksmith Delivery Crate-"
+,   [cl] = "-仕立師の配達箱-"                            -- "-Clothier Delivery Crate-"
+,   [en] = "-付呪師の配達箱-"                            -- "-Enchanter Delivery Crate-"
+,   [al] = "-錬金術師の配達箱-"                           -- "-Alchemist Delivery Crate-"
+,   [pr] = "-調理師の配達箱-"                            -- "-Provisioner Delivery Crate-"
+,   [ww] = "-木工師の配達箱-"                            -- "-Woodworker Delivery Crate-"
+,   [jw] = "-宝飾師の配達箱-"                            -- "-Jewelry Crafting Delivery Crate-"
+}
+
+LibCraftText.DAILY.DIALOG.OPTION_EXAMINE = {
+    [bs] = "<鍛冶屋の依頼を調べる>"                         -- "<Examine the Blacksmith Writs.>"
+,   [cl] = "<仕立屋の依頼を調べる>"                         -- "<Examine the Clothier Writs.>"
+,   [en] = "<付呪師の依頼を調べる>"                         -- "<Examine the Enchanter Writs.>"
+,   [al] = "<錬金術師の依頼を見る>"                         -- "<Examine the Alchemist Writs.>"
+,   [pr] = "<調理師の依頼を見る>"                          -- "<Examine the Provisioner Writs.>"
+,   [ww] = "<木工師の依頼を調べる>"                         -- "<Examine the Woodworker Writs.>"
+,   [jw] = "<宝飾師のクラフト依頼を調べる>"                     -- "<Examine the Jewelry Crafting Writs.>"
+}
+
 LibCraftText.MASTER.DIALOG.OPTION_FINISH = {
     [bs] = "鍛冶の仕事を終えた"                            -- "I've finished the Blacksmithing job."
 ,   [cl] = "仕立の仕事を終えた"                            -- "I've finished the Clothier job."
@@ -768,61 +809,3 @@ LibCraftText.MASTER.DIALOG.OPTION_FINISH = {
 ,   [ww] = "木工の仕事を終えた"                            -- "I've finished the Woodworking job."
 ,   [jw] = "宝飾の仕事を終えた"                            -- "I've finished the Jewelry job."
 }
-
--- Random Unsorted Stuff -----------------------------------------------------
-
-LibCraftText.MASTER_LABELS = {
-    ["quality"] =  "Quality"                         -- "Quality"
-,   ["set"    ] =  "Set"                             -- "Set"
-,   ["style"  ] =  "Style"                           -- "Style"
-,   ["trait"  ] =  "Trait"                           -- "Trait"
-}
-
-LibCraftText.DIALOG = LibCraftText.DIALOG or {} -- zztemp until this table is gone
-
-LibCraftText.DIALOG.DAILY = {
-    ROW = {
-      [bs] = { option_examine  = "<鍛冶屋の依頼を調べる>"                 -- "<Examine the Blacksmith Writs.>"
-             , title_turn_in   = "-鍛冶屋の配達箱-"                    -- "-Blacksmith Delivery Crate-"
-             , crafting_type   = bs
-             }
-    , [cl] = { option_examine  = "<仕立屋の依頼を調べる>"                 -- "<Examine the Clothier Writs.>"
-             , title_turn_in   = "-仕立師の配達箱-"                    -- "-Clothier Delivery Crate-"
-             , crafting_type   = cl
-             }
-    , [en] = { option_examine  = "<付呪師の依頼を調べる>"                 -- "<Examine the Enchanter Writs.>"
-             , title_turn_in   = "-付呪師の配達箱-"                    -- "-Enchanter Delivery Crate-"
-             , crafting_type   = en
-             }
-    , [al] = { option_examine  = "<錬金術師の依頼を見る>"                 -- "<Examine the Alchemist Writs.>"
-             , title_turn_in   = "-錬金術師の配達箱-"                   -- "-Alchemist Delivery Crate-"
-             , crafting_type   = al
-             }
-    , [pr] = { option_examine  = "<調理師の依頼を見る>"                  -- "<Examine the Provisioner Writs.>"
-             , title_turn_in   = "-調理師の配達箱-"                    -- "-Provisioner Delivery Crate-"
-             , crafting_type   = pr
-             }
-    , [ww] = { option_examine  = "<木工師の依頼を調べる>"                 -- "<Examine the Woodworker Writs.>"
-             , title_turn_in   = "-木工師の配達箱-"                    -- "-Woodworker Delivery Crate-"
-             , crafting_type   = ww
-             }
-    , [jw] = { option_examine  = "<宝飾師のクラフト依頼を調べる>"             -- "<Examine the Jewelry Crafting Writs.>"
-             , title_turn_in   = "-宝飾師の配達箱-"                    -- "-Jewelry Crafting Delivery Crate-"
-             , crafting_type   = jw
-             }
-    }
-
-}
-
-
-
-LibCraftText.QUALITY = {
-    ["NORMAL"   ] = { name="Normal"     , index=ITEM_QUALITY_NORMAL         or 1 }
-,   ["FINE"     ] = { name="Fine"       , index=ITEM_QUALITY_FINE           or 2 }
-,   ["SUPERIOR" ] = { name="Superior"   , index=ITEM_QUALITY_SUPERIOR       or 3 }
-,   ["EPIC"     ] = { name="Epic"       , index=ITEM_QUALITY_EPIC           or 4 }
-,   ["LEGENDARY"] = { name="Legendary"  , index=ITEM_QUALITY_LEGENDARY      or 5 }
-}
-
-
-

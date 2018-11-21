@@ -990,6 +990,16 @@ function LibCraftText.BuildReverseLookupTables()
     LibCraftText.reverse_tables_built = true
 end
 
+                        -- Reverse lookup.
+                        -- If profiling shows the O(n) scan to be worth
+                        -- avoiding, consider BuildReverseLookupTables().
+function LibCraftText.TableValueToKey(tabll, value)
+    for k,v in pairs(tabll) do
+        if v == value then return k end
+    end
+    return nil
+end
+
                         -- Ask string.find() to ignore any special meaning
                         -- for regex chars like hypen.
                         --

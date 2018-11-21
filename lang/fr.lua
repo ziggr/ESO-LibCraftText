@@ -696,7 +696,26 @@ LibCraftText.MASTER.COND = {
 ,   DELIVER_JW      = "Livrez le bijou"                             -- "Deliver the Jewelry"
 }
 
--- Quest and Dialog ----------------------------------------------------------
+
+-- Random Unsorted Stuff -----------------------------------------------------
+
+LibCraftText.MASTER_LABELS = {
+    ["quality"] =  "Qualité"                         -- "Quality"
+,   ["set"    ] =  "Ensemble"                        -- "Set"
+,   ["style"  ] =  "Style"                           -- "Style"
+,   ["trait"  ] =  "Trait"                           -- "Trait"
+}
+
+LibCraftText.QUALITY = {
+    ["NORMAL"   ] = { name="Normal"     , index=ITEM_QUALITY_NORMAL         or 1 }
+,   ["FINE"     ] = { name="Raffiné"    , index=ITEM_QUALITY_FINE           or 2 }
+,   ["SUPERIOR" ] = { name="Supérieur"  , index=ITEM_QUALITY_SUPERIOR       or 3 }
+,   ["EPIC"     ] = { name="Épique"     , index=ITEM_QUALITY_EPIC           or 4 }
+,   ["LEGENDARY"] = { name="Légendaire" , index=ITEM_QUALITY_LEGENDARY      or 5 }
+}
+
+
+-- Quest and Dialog Text -----------------------------------------------------
 
 LibCraftText.DAILY.QUEST_NAME = {
     [bs] = "Commande de forge"                  -- "Blacksmith Writ"
@@ -728,25 +747,27 @@ LibCraftText.MASTER.QUEST_NAME = {
 ,   [jw] = { "Joaillerie magistrale"            } -- "Masterful Jewelry"
 }
 
-LibCraftText.MASTER.DIALOG = {
-    ["ROLIS_NAME"         ] = "Rolis Hlaalu"                            -- "Rolis Hlaalu"
-,   ["TITLE_ROLIS"        ] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
-,   ["OPTION_STORE"       ] = "Magasin (intermédiaire pour maîtres artisans)"-- "Store (Mastercraft Mediator)"
-,   ["OPTION_ROLIS_FINISH"] = "<Finir le travail.>"                     -- "<Finish the job.>"
-,   ["OPTION_ACCEPT"      ] = { "<Accepter le contrat>"                 -- "<Accept the contract.>"
-                              , "<Accepter le contrat.>"                -- "<Accept the contract>"  (FR French omits the period sometimes)
-                              }
-,   ["RESPONSE_ENDING"    ] =  "<Il note votre travail et se charge du paiement.>"-- "<He notes your work and tenders payment.>"
-}
-
 LibCraftText.DAILY.DIALOG = {
-    ["TITLE_OFFER"        ] = { "-Commandes d'équipement artisanal-"    -- "-Equipment Crafting Writs-"
-                              , "-Commandes de consommables artisanaux-"-- "-Consumables Crafting Writs-"
-                              }
-,   ["OPTION_ACCEPT"      ] = "<Prendre une commande sur le panneau.>"  -- "<Pull a Writ from the Board.>"
+    ["OPTION_ACCEPT"      ] = "<Prendre une commande sur le panneau.>"  -- "<Pull a Writ from the Board.>"
 ,   ["OPTION_SIGN"        ] = "<Signer le manifeste.>"                  -- "<Sign the Manifest.>"
 ,   ["OPTION_PLACE"       ] = "<Placer les produits dans la caisse.>"   -- "<Place the goods within the crate.>"
 ,   ["GOAL_SIGN"          ] = "Signez le manifeste de livraison"        -- "Sign Delivery Manifest"
+}
+
+LibCraftText.MASTER.DIALOG = {
+    ["OPTION_ACCEPT"      ] = { "<Accepter le contrat>"                 -- "<Accept the contract.>"
+                              , "<Accepter le contrat.>"                -- "<Accept the contract>"  (FR French omits the period sometimes)
+                              }
+,   ["ROLIS_NAME"         ] = "Rolis Hlaalu"                            -- "Rolis Hlaalu"
+,   ["TITLE_ROLIS"        ] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
+,   ["OPTION_STORE"       ] = "Magasin (intermédiaire pour maîtres artisans)"-- "Store (Mastercraft Mediator)"
+,   ["OPTION_ROLIS_FINISH"] = "<Finir le travail.>"                     -- "<Finish the job.>"
+,   ["RESPONSE_ENDING"    ] = "<Il note votre travail et se charge du paiement.>"-- "<He notes your work and tenders payment.>"
+}
+
+LibCraftText.DAILY.DIALOG.TITLE_OFFER = {
+    "-Commandes d'équipement artisanal-"          -- "-Equipment Crafting Writs-"
+,   "-Commandes de consommables artisanaux-"      -- "-Consumables Crafting Writs-"
 }
 
 LibCraftText.MASTER.DIALOG.TITLE_OFFER = {
@@ -759,6 +780,26 @@ LibCraftText.MASTER.DIALOG.TITLE_OFFER = {
 ,   [jw] = "-Commande scellée de joaillier-"      -- "-Sealed Jewelry Crafter Writ-"
 }
 
+LibCraftText.DAILY.DIALOG.TITLE_TURN_IN = {
+    [bs] = "-La caisse de livraison du forgeron-" -- "-Blacksmith Delivery Crate-"
+,   [cl] = "-La caisse de livraison du tailleur-" -- "-Clothier Delivery Crate-"
+,   [en] = "-La caisse de livraison de l'enchanteur-"-- "-Enchanter Delivery Crate-"
+,   [al] = "-La caisse de livraison de l'alchimiste-"-- "-Alchemist Delivery Crate-"
+,   [pr] = "-La caisse de livraison du cuisinier-"-- "-Provisioner Delivery Crate-"
+,   [ww] = "-La caisse de livraison du travailleur du bois-"-- "-Woodworker Delivery Crate-"
+,   [jw] = "-Caisse de livraison de joaillerie-"  -- "-Jewelry Crafting Delivery Crate-"
+}
+
+LibCraftText.DAILY.DIALOG.OPTION_EXAMINE = {
+    [bs] = "<Parcourir les commandes de forge.>"  -- "<Examine the Blacksmith Writs.>"
+,   [cl] = "<Parcourir les commandes de couture.>"-- "<Examine the Clothier Writs.>"
+,   [en] = "<Parcourir les commandes d'enchantement.>"-- "<Examine the Enchanter Writs.>"
+,   [al] = "<Parcourir les commandes d'alchimie.>"-- "<Examine the Alchemist Writs.>"
+,   [pr] = "<Parcourir les commandes de cuisine.>"-- "<Examine the Provisioner Writs.>"
+,   [ww] = "<Parcourir les commandes de travail du bois.>"-- "<Examine the Woodworker Writs.>"
+,   [jw] = "<Examiner les commandes de joaillerie.>"-- "<Examine the Jewelry Crafting Writs.>"
+}
+
 LibCraftText.MASTER.DIALOG.OPTION_FINISH = {
     [bs] = "J'ai accompli la tâche de forge."     -- "I've finished the Blacksmithing job."
 ,   [cl] = "J'ai accompli la tâche de couture."   -- "I've finished the Clothier job."
@@ -768,61 +809,3 @@ LibCraftText.MASTER.DIALOG.OPTION_FINISH = {
 ,   [ww] = "J'ai accompli la tâche du bois."      -- "I've finished the Woodworking job."
 ,   [jw] = "J'ai accompli la tâche de joaillerie."-- "I've finished the Jewelry job."
 }
-
--- Random Unsorted Stuff -----------------------------------------------------
-
-LibCraftText.MASTER_LABELS = {
-    ["quality"] =  "Qualité"                         -- "Quality"
-,   ["set"    ] =  "Ensemble"                        -- "Set"
-,   ["style"  ] =  "Style"                           -- "Style"
-,   ["trait"  ] =  "Trait"                           -- "Trait"
-}
-
-LibCraftText.DIALOG = LibCraftText.DIALOG or {} -- zztemp until this table is gone
-
-LibCraftText.DIALOG.DAILY = {
-    ROW = {
-      [bs] = { option_examine  = "<Parcourir les commandes de forge.>"-- "<Examine the Blacksmith Writs.>"
-             , title_turn_in   = "-La caisse de livraison du forgeron-"-- "-Blacksmith Delivery Crate-"
-             , crafting_type   = bs
-             }
-    , [cl] = { option_examine  = "<Parcourir les commandes de couture.>"-- "<Examine the Clothier Writs.>"
-             , title_turn_in   = "-La caisse de livraison du tailleur-"-- "-Clothier Delivery Crate-"
-             , crafting_type   = cl
-             }
-    , [en] = { option_examine  = "<Parcourir les commandes d'enchantement.>"-- "<Examine the Enchanter Writs.>"
-             , title_turn_in   = "-La caisse de livraison de l'enchanteur-"-- "-Enchanter Delivery Crate-"
-             , crafting_type   = en
-             }
-    , [al] = { option_examine  = "<Parcourir les commandes d'alchimie.>"-- "<Examine the Alchemist Writs.>"
-             , title_turn_in   = "-La caisse de livraison de l'alchimiste-"-- "-Alchemist Delivery Crate-"
-             , crafting_type   = al
-             }
-    , [pr] = { option_examine  = "<Parcourir les commandes de cuisine.>"-- "<Examine the Provisioner Writs.>"
-             , title_turn_in   = "-La caisse de livraison du cuisinier-"-- "-Provisioner Delivery Crate-"
-             , crafting_type   = pr
-             }
-    , [ww] = { option_examine  = "<Parcourir les commandes de travail du bois.>"-- "<Examine the Woodworker Writs.>"
-             , title_turn_in   = "-La caisse de livraison du travailleur du bois-"-- "-Woodworker Delivery Crate-"
-             , crafting_type   = ww
-             }
-    , [jw] = { option_examine  = "<Examiner les commandes de joaillerie.>"-- "<Examine the Jewelry Crafting Writs.>"
-             , title_turn_in   = "-Caisse de livraison de joaillerie-"-- "-Jewelry Crafting Delivery Crate-"
-             , crafting_type   = jw
-             }
-    }
-
-}
-
-
-
-LibCraftText.QUALITY = {
-    ["NORMAL"   ] = { name="Normal"     , index=ITEM_QUALITY_NORMAL         or 1 }
-,   ["FINE"     ] = { name="Raffiné"    , index=ITEM_QUALITY_FINE           or 2 }
-,   ["SUPERIOR" ] = { name="Supérieur"  , index=ITEM_QUALITY_SUPERIOR       or 3 }
-,   ["EPIC"     ] = { name="Épique"     , index=ITEM_QUALITY_EPIC           or 4 }
-,   ["LEGENDARY"] = { name="Légendaire" , index=ITEM_QUALITY_LEGENDARY      or 5 }
-}
-
-
-

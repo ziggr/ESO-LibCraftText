@@ -696,7 +696,26 @@ LibCraftText.MASTER.COND = {
 ,   DELIVER_JW      = $MASTER_COND_DELIVER_JW                       -- "Deliver the Jewelry"
 }
 
--- Quest and Dialog ----------------------------------------------------------
+
+-- Random Unsorted Stuff -----------------------------------------------------
+
+LibCraftText.MASTER_LABELS = {
+    ["quality"] =  $MASTER_LABEL_QUALITY             -- "Quality"
+,   ["set"    ] =  $MASTER_LABEL_SET                 -- "Set"
+,   ["style"  ] =  $MASTER_LABEL_STYLE               -- "Style"
+,   ["trait"  ] =  $MASTER_LABEL_TRAIT               -- "Trait"
+}
+
+LibCraftText.QUALITY = {
+    ["NORMAL"   ] = { name=$QUALITY_1   , index=ITEM_QUALITY_NORMAL         or 1 }
+,   ["FINE"     ] = { name=$QUALITY_2   , index=ITEM_QUALITY_FINE           or 2 }
+,   ["SUPERIOR" ] = { name=$QUALITY_3   , index=ITEM_QUALITY_SUPERIOR       or 3 }
+,   ["EPIC"     ] = { name=$QUALITY_4   , index=ITEM_QUALITY_EPIC           or 4 }
+,   ["LEGENDARY"] = { name=$QUALITY_5   , index=ITEM_QUALITY_LEGENDARY      or 5 }
+}
+
+
+-- Quest and Dialog Text -----------------------------------------------------
 
 LibCraftText.DAILY.QUEST_NAME = {
     [bs] = $DAILY_BS                            -- "Blacksmith Writ"
@@ -728,25 +747,27 @@ LibCraftText.MASTER.QUEST_NAME = {
 ,   [jw] = { $MASTER_JEWELRY                    } -- "Masterful Jewelry"
 }
 
-LibCraftText.MASTER.DIALOG = {
-    ["ROLIS_NAME"         ] = $ROLIS_NAME                               -- "Rolis Hlaalu"
-,   ["TITLE_ROLIS"        ] = $ROLIS_TITLE                              -- "-Rolis Hlaalu-"
-,   ["OPTION_STORE"       ] = $ROLIS_STORE                              -- "Store (Mastercraft Mediator)"
-,   ["OPTION_ROLIS_FINISH"] = $ROLIS_OPTION_FINISH_JOB                  -- "<Finish the job.>"
-,   ["OPTION_ACCEPT"      ] = { $QUEST_OFFERED_ACCEPT_1                 -- "<Accept the contract.>"
-                              , $QUEST_OFFERED_ACCEPT_2                 -- "<Accept the contract>"  (FR French omits the period sometimes)
-                              }
-,   ["RESPONSE_ENDING"    ] =  $ROLIS_QUEST_ENDING                      -- "<He notes your work and tenders payment.>"
-}
-
 LibCraftText.DAILY.DIALOG = {
-    ["TITLE_OFFER"        ] = { $WRIT_BOARD_TITLE_EQUIPMENT             -- "-Equipment Crafting Writs-"
-                              , $WRIT_BOARD_TITLE_CONSUMABLES           -- "-Consumables Crafting Writs-"
-                              }
-,   ["OPTION_ACCEPT"      ] = $WRIT_BOARD_OPTION_ACCEPT                 -- "<Pull a Writ from the Board.>"
+    ["OPTION_ACCEPT"      ] = $WRIT_BOARD_OPTION_ACCEPT                 -- "<Pull a Writ from the Board.>"
 ,   ["OPTION_SIGN"        ] = $WRIT_CRATE_OPTION_SIGN_MANIFEST          -- "<Sign the Manifest.>"
 ,   ["OPTION_PLACE"       ] = $WRIT_CRATE_OPTION_TURN_IN                -- "<Place the goods within the crate.>"
 ,   ["GOAL_SIGN"          ] = $WRIT_CRATE_QUEST_GOAL                    -- "Sign Delivery Manifest"
+}
+
+LibCraftText.MASTER.DIALOG = {
+    ["OPTION_ACCEPT"      ] = { $QUEST_OFFERED_ACCEPT_1                 -- "<Accept the contract.>"
+                              , $QUEST_OFFERED_ACCEPT_2                 -- "<Accept the contract>"  (FR French omits the period sometimes)
+                              }
+,   ["ROLIS_NAME"         ] = $ROLIS_NAME                               -- "Rolis Hlaalu"
+,   ["TITLE_ROLIS"        ] = $ROLIS_TITLE                              -- "-Rolis Hlaalu-"
+,   ["OPTION_STORE"       ] = $ROLIS_STORE                              -- "Store (Mastercraft Mediator)"
+,   ["OPTION_ROLIS_FINISH"] = $ROLIS_OPTION_FINISH_JOB                  -- "<Finish the job.>"
+,   ["RESPONSE_ENDING"    ] = $ROLIS_QUEST_ENDING                       -- "<He notes your work and tenders payment.>"
+}
+
+LibCraftText.DAILY.DIALOG.TITLE_OFFER = {
+    $WRIT_BOARD_TITLE_EQUIPMENT                   -- "-Equipment Crafting Writs-"
+,   $WRIT_BOARD_TITLE_CONSUMABLES                 -- "-Consumables Crafting Writs-"
 }
 
 LibCraftText.MASTER.DIALOG.TITLE_OFFER = {
@@ -759,6 +780,26 @@ LibCraftText.MASTER.DIALOG.TITLE_OFFER = {
 ,   [jw] = $QUEST_OFFERED_TITLE_JW                -- "-Sealed Jewelry Crafter Writ-"
 }
 
+LibCraftText.DAILY.DIALOG.TITLE_TURN_IN = {
+    [bs] = $WRIT_CRATE_TITLE_BS                   -- "-Blacksmith Delivery Crate-"
+,   [cl] = $WRIT_CRATE_TITLE_CL                   -- "-Clothier Delivery Crate-"
+,   [en] = $WRIT_CRATE_TITLE_EN                   -- "-Enchanter Delivery Crate-"
+,   [al] = $WRIT_CRATE_TITLE_AL                   -- "-Alchemist Delivery Crate-"
+,   [pr] = $WRIT_CRATE_TITLE_PR                   -- "-Provisioner Delivery Crate-"
+,   [ww] = $WRIT_CRATE_TITLE_WW                   -- "-Woodworker Delivery Crate-"
+,   [jw] = $WRIT_CRATE_TITLE_JW                   -- "-Jewelry Crafting Delivery Crate-"
+}
+
+LibCraftText.DAILY.DIALOG.OPTION_EXAMINE = {
+    [bs] = $WRIT_BOARD_OPTION_BS                  -- "<Examine the Blacksmith Writs.>"
+,   [cl] = $WRIT_BOARD_OPTION_CL                  -- "<Examine the Clothier Writs.>"
+,   [en] = $WRIT_BOARD_OPTION_EN                  -- "<Examine the Enchanter Writs.>"
+,   [al] = $WRIT_BOARD_OPTION_AL                  -- "<Examine the Alchemist Writs.>"
+,   [pr] = $WRIT_BOARD_OPTION_PR                  -- "<Examine the Provisioner Writs.>"
+,   [ww] = $WRIT_BOARD_OPTION_WW                  -- "<Examine the Woodworker Writs.>"
+,   [jw] = $WRIT_BOARD_OPTION_JW                  -- "<Examine the Jewelry Crafting Writs.>"
+}
+
 LibCraftText.MASTER.DIALOG.OPTION_FINISH = {
     [bs] = $ROLIS_OPTION_TURNIN_BS                -- "I've finished the Blacksmithing job."
 ,   [cl] = $ROLIS_OPTION_TURNIN_CL                -- "I've finished the Clothier job."
@@ -768,61 +809,3 @@ LibCraftText.MASTER.DIALOG.OPTION_FINISH = {
 ,   [ww] = $ROLIS_OPTION_TURNIN_WW                -- "I've finished the Woodworking job."
 ,   [jw] = $ROLIS_OPTION_TURNIN_JW                -- "I've finished the Jewelry job."
 }
-
--- Random Unsorted Stuff -----------------------------------------------------
-
-LibCraftText.MASTER_LABELS = {
-    ["quality"] =  $MASTER_LABEL_QUALITY             -- "Quality"
-,   ["set"    ] =  $MASTER_LABEL_SET                 -- "Set"
-,   ["style"  ] =  $MASTER_LABEL_STYLE               -- "Style"
-,   ["trait"  ] =  $MASTER_LABEL_TRAIT               -- "Trait"
-}
-
-LibCraftText.DIALOG = LibCraftText.DIALOG or {} -- zztemp until this table is gone
-
-LibCraftText.DIALOG.DAILY = {
-    ROW = {
-      [bs] = { option_examine  = $WRIT_BOARD_OPTION_BS          -- "<Examine the Blacksmith Writs.>"
-             , title_turn_in   = $WRIT_CRATE_TITLE_BS           -- "-Blacksmith Delivery Crate-"
-             , crafting_type   = bs
-             }
-    , [cl] = { option_examine  = $WRIT_BOARD_OPTION_CL          -- "<Examine the Clothier Writs.>"
-             , title_turn_in   = $WRIT_CRATE_TITLE_CL           -- "-Clothier Delivery Crate-"
-             , crafting_type   = cl
-             }
-    , [en] = { option_examine  = $WRIT_BOARD_OPTION_EN          -- "<Examine the Enchanter Writs.>"
-             , title_turn_in   = $WRIT_CRATE_TITLE_EN           -- "-Enchanter Delivery Crate-"
-             , crafting_type   = en
-             }
-    , [al] = { option_examine  = $WRIT_BOARD_OPTION_AL          -- "<Examine the Alchemist Writs.>"
-             , title_turn_in   = $WRIT_CRATE_TITLE_AL           -- "-Alchemist Delivery Crate-"
-             , crafting_type   = al
-             }
-    , [pr] = { option_examine  = $WRIT_BOARD_OPTION_PR          -- "<Examine the Provisioner Writs.>"
-             , title_turn_in   = $WRIT_CRATE_TITLE_PR           -- "-Provisioner Delivery Crate-"
-             , crafting_type   = pr
-             }
-    , [ww] = { option_examine  = $WRIT_BOARD_OPTION_WW          -- "<Examine the Woodworker Writs.>"
-             , title_turn_in   = $WRIT_CRATE_TITLE_WW           -- "-Woodworker Delivery Crate-"
-             , crafting_type   = ww
-             }
-    , [jw] = { option_examine  = $WRIT_BOARD_OPTION_JW          -- "<Examine the Jewelry Crafting Writs.>"
-             , title_turn_in   = $WRIT_CRATE_TITLE_JW           -- "-Jewelry Crafting Delivery Crate-"
-             , crafting_type   = jw
-             }
-    }
-
-}
-
-
-
-LibCraftText.QUALITY = {
-    ["NORMAL"   ] = { name=$QUALITY_1   , index=ITEM_QUALITY_NORMAL         or 1 }
-,   ["FINE"     ] = { name=$QUALITY_2   , index=ITEM_QUALITY_FINE           or 2 }
-,   ["SUPERIOR" ] = { name=$QUALITY_3   , index=ITEM_QUALITY_SUPERIOR       or 3 }
-,   ["EPIC"     ] = { name=$QUALITY_4   , index=ITEM_QUALITY_EPIC           or 4 }
-,   ["LEGENDARY"] = { name=$QUALITY_5   , index=ITEM_QUALITY_LEGENDARY      or 5 }
-}
-
-
-

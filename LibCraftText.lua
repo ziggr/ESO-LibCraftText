@@ -78,40 +78,30 @@ end
 
 -- Quest Dialogs -------------------------------------------------------------
 --
--- Convert dialog titles or options to their corresponding crafting_type
--- and other data.
---
--- Returns one of LibCraftText.DIALOG.DAILY.ROW:
---
---  option_examine   "<Examine the Blacksmith Writs.>"
---  title_turn_in    "-Blacksmith Delivery Crate-"
---  crafting_type    CRAFTING_TYPE_BLACKSMITHING
---
-function LibCraftText.DailyDialogTitleToRow(dialog_title)
-    for _,row in ipairs(LibCraftText.DIALOG.DAILY.ROW) do
-        if row.title_turn_in == dialog_title then return row end
-    end
-    return nil
-end
-function LibCraftText.DailyDialogTitleToCraftingType(dialog_title)
-    for _,row in ipairs(LibCraftText.DIALOG.DAILY.ROW) do
-        if row.title_turn_in == dialog_title then return row.crafting_type end
-    end
-    return nil
-end
+-- Convert dialog titles or options to their corresponding crafting_type.
 
-function LibCraftText.DailyDialogOptionToRow(option_text)
-    for _,row in ipairs(LibCraftText.DIALOG.DAILY.ROW) do
-        if row.option_examine == option_text then return row end
-    end
-    return nil
+                        -- "-Blacksmith Delivery Crate-"
+function LibCraftText.DailyDialogTurnInTitleToCraftingType(dialog_title)
+    return LibCraftText.TableValueToKey(
+              LibCraftText.DAILY.DIALOG.TITLE_TURN_IN
+            , dialog_title
+            )
+end
+                        -- "<Examine the Blacksmith Writs.>"
+function LibCraftText.DailyDialogOptionToCraftingType(option_text)
+    return LibCraftText.TableValueToKey(
+              LibCraftText.DAILY.DIALOG.OPTION_EXAMINE
+            , option_text
+            )
 end
                         -- Is this one of the two daily crafting writ boards?
+                        -- "-Equipment Crafting Writs-"
+                        -- "-Consumables Crafting Writs-"
 function LibCraftText.DailyDialogTitleIsWritBoard(dialog_title)
-    for _,t in pairs(LibCraftText.DAILY.DIALOG.TITLE_OFFER) do
-        if t == dialog_title then return true end
-    end
-    return nil
+    return LibCraftText.TableValueToKey(
+              LibCraftText.DAILY.DIALOG.TITLE_OFFER
+            , dialog_title
+            )
 end
 
 

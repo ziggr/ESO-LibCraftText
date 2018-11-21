@@ -389,7 +389,29 @@ function TestDialogTitle()
     for _,row in ipairs(fodder) do
         local lang_table = INPUT_TO_LANG_TABLE[row.input]
         local input      = lang_table[lang]
-        local got = LibCraftText.DailyDialogTitleToCraftingType(input)
+        local got = LibCraftText.DailyDialogTurnInTitleToCraftingType(input)
+        luaunit.assertEquals(got, row.expect)
+    end
+end
+
+function TestDialogOption()
+    LoadLangDB()    -- Defined in utils_test.lua. Need those lang_tables.
+    local lang = LibCraftText.CurrLang()
+
+    local fodder = {
+      {input="<Examine the Blacksmith Writs.>"         ,expect=bs }
+    , {input="<Examine the Clothier Writs.>"           ,expect=cl }
+    , {input="<Examine the Enchanter Writs.>"          ,expect=en }
+    , {input="<Examine the Alchemist Writs.>"          ,expect=al }
+    , {input="<Examine the Provisioner Writs.>"        ,expect=pr }
+    , {input="<Examine the Woodworker Writs.>"         ,expect=ww }
+    , {input="<Examine the Jewelry Crafting Writs.>"   ,expect=jw }
+    }
+
+    for _,row in ipairs(fodder) do
+        local lang_table = INPUT_TO_LANG_TABLE[row.input]
+        local input      = lang_table[lang]
+        local got = LibCraftText.DailyDialogOptionToCraftingType(input)
         luaunit.assertEquals(got, row.expect)
     end
 end
