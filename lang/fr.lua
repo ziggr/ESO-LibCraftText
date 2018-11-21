@@ -697,16 +697,6 @@ LibCraftText.MASTER_COND = {
 
 -- ### Merge these with the per-crafting-type dialog tables below
 
-LibCraftText.DAILY_QUEST_TITLES = {
-    [bs] = "Commande de forge"              -- "Blacksmith Writ"
-,   [cl] = "Commande de tailleur"           -- "Clothier Writ"
-,   [en] = "Commandes d'enchantement"       -- "Enchanter Writ"
-,   [al] = "Commande d'alchimie"            -- "Alchemist Writ"
-,   [pr] = "Commande de cuisine"            -- "Provisioner Writ"
-,   [ww] = "Commande de travail du bois"    -- "Woodworker Writ"
-,   [jw] = "Commande de joaillerie"         -- "Jewelry Crafting Writ"
-}
-
                         -- SURPRISE! "A Masterful Weapon" is used
                         -- by both Blacksmithing and Woodworking.
                         --
@@ -738,35 +728,15 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Trait"                           -- "Trait"
 }
 
-
--- ### merge the per-crafting-type stuff into dialog tables below
-
 LibCraftText.DIALOG = {
     ["ROLIS_NAME"         ] = "Rolis Hlaalu"                            -- "Rolis Hlaalu"
 ,   ["ROLIS_CHATTER_TITLE"] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
 ,   ["OPTION_FINISH"      ] = "<Finish the job.>"                       -- "<Finish the job.>"
-,   ["OPTION_FINISHED_BS" ] = "J'ai accompli la tâche de forge."        -- "I've finished the Blacksmithing job."
-,   ["OPTION_FINISHED_CL" ] = "J'ai accompli la tâche de couture."      -- "I've finished the Clothier job."
-,   ["OPTION_FINISHED_EN" ] = "J'ai accompli la tâche d'enchantement."  -- "I've finished the Enchanting job."
-,   ["OPTION_FINISHED_AL" ] = "J'ai accompli la tâche d'alchimie."      -- "I've finished the Alchemy job."
-,   ["OPTION_FINISHED_PR" ] = "J'ai rempli la commande de cuisine."     -- "I've finished the Provisioning job."
-,   ["OPTION_FINISHED_WW" ] = "J'ai accompli la tâche du bois."         -- "I've finished the Woodworking job."
-,   ["OPTION_FINISHED_JW" ] = "J'ai accompli la tâche de joaillerie."   -- "I've finished the Jewelry job."
 ,   ["OPTION_STORE"       ] = "Magasin (intermédiaire pour maîtres artisans)"-- "Store (Mastercraft Mediator)"
-
-,   ["OFFERED_TITLE_BS"   ] = "-Commande de forge scellée-"             -- "-Sealed Blacksmithing Writ-"
-,   ["OFFERED_TITLE_CL"   ] = "-Commande scellée de couture-"           -- "-Sealed Clothier Writ-"
-,   ["OFFERED_TITLE_EN"   ] = "-Commande d'enchantement scellée-"       -- "-Sealed Enchanting Writ-"
-,   ["OFFERED_TITLE_AL"   ] = "-Commande scellée d'alchimie-"           -- "-Sealed Alchemy Writ-"
-,   ["OFFERED_TITLE_PR"   ] = "-Commande scellée de cuisine-"           -- "-Sealed Provisioning Writ-"
-,   ["OFFERED_TITLE_WW"   ] = "-Commande de travail du bois scellée-"   -- "-Sealed Woodworking Writ-"
-,   ["OFFERED_TITLE_JW"   ] = "-Commande scellée de joaillier-"         -- "-Sealed Jewelry Crafter Writ-"
-
 ,   ["OFFERED_ACCEPT"     ] = { "<Accepter le contrat>"                 -- "<Accept the contract.>"
                               , "<Accepter le contrat.>"                -- "<Accept the contract.>"
                               }
 }
-
 
 LibCraftText.DIALOG.MASTER = {
     TITLE_ROLIS             = "-Rolis Hlaalu-"                  -- "-Rolis Hlaalu-"
@@ -827,30 +797,37 @@ LibCraftText.DIALOG.DAILY = {
 ,   ROW = {
       [bs] = { option_examine  = "<Parcourir les commandes de forge.>"-- "<Examine the Blacksmith Writs.>"
              , title_turn_in   = "-La caisse de livraison du forgeron-"-- "-Blacksmith Delivery Crate-"
+             , quest_name      = "Commande de forge"            -- "Blacksmith Writ"
              , crafting_type   = bs
              }
     , [cl] = { option_examine  = "<Parcourir les commandes de couture.>"-- "<Examine the Clothier Writs.>"
              , title_turn_in   = "-La caisse de livraison du tailleur-"-- "-Clothier Delivery Crate-"
+             , quest_name      = "Commande de tailleur"         -- "Clothier Writ"
              , crafting_type   = cl
              }
     , [en] = { option_examine  = "<Parcourir les commandes d'enchantement.>"-- "<Examine the Enchanter Writs.>"
              , title_turn_in   = "-La caisse de livraison de l'enchanteur-"-- "-Enchanter Delivery Crate-"
+             , quest_name      = "Commandes d'enchantement"     -- "Enchanter Writ"
              , crafting_type   = en
              }
     , [al] = { option_examine  = "<Parcourir les commandes d'alchimie.>"-- "<Examine the Alchemist Writs.>"
              , title_turn_in   = "-La caisse de livraison de l'alchimiste-"-- "-Alchemist Delivery Crate-"
+             , quest_name      = "Commande d'alchimie"          -- "Alchemist Writ"
              , crafting_type   = al
              }
     , [pr] = { option_examine  = "<Parcourir les commandes de cuisine.>"-- "<Examine the Provisioner Writs.>"
              , title_turn_in   = "-La caisse de livraison du cuisinier-"-- "-Provisioner Delivery Crate-"
+             , quest_name      = "Commande de cuisine"          -- "Provisioner Writ"
              , crafting_type   = pr
              }
     , [ww] = { option_examine  = "<Parcourir les commandes de travail du bois.>"-- "<Examine the Woodworker Writs.>"
              , title_turn_in   = "-La caisse de livraison du travailleur du bois-"-- "-Woodworker Delivery Crate-"
+             , quest_name      = "Commande de travail du bois"  -- "Woodworker Writ"
              , crafting_type   = ww
              }
     , [jw] = { option_examine  = "<Examiner les commandes de joaillerie.>"-- "<Examine the Jewelry Crafting Writs.>"
              , title_turn_in   = "-Caisse de livraison de joaillerie-"-- "-Jewelry Crafting Delivery Crate-"
+             , quest_name      = "Commande de joaillerie"       -- "Jewelry Crafting Writ"
              , crafting_type   = jw
              }
     }

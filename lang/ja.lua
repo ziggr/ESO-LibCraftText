@@ -697,16 +697,6 @@ LibCraftText.MASTER_COND = {
 
 -- ### Merge these with the per-crafting-type dialog tables below
 
-LibCraftText.DAILY_QUEST_TITLES = {
-    [bs] = "鍛冶師の依頼"                         -- "Blacksmith Writ"
-,   [cl] = "仕立師の依頼"                         -- "Clothier Writ"
-,   [en] = "付呪師の依頼"                         -- "Enchanter Writ"
-,   [al] = "錬金術師の依頼"                        -- "Alchemist Writ"
-,   [pr] = "調理師の依頼"                         -- "Provisioner Writ"
-,   [ww] = "木工師の依頼"                         -- "Woodworker Writ"
-,   [jw] = "宝飾師のクラフト依頼"                     -- "Jewelry Crafting Writ"
-}
-
                         -- SURPRISE! "A Masterful Weapon" is used
                         -- by both Blacksmithing and Woodworking.
                         --
@@ -738,35 +728,15 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Trait"                           -- "Trait"
 }
 
-
--- ### merge the per-crafting-type stuff into dialog tables below
-
 LibCraftText.DIALOG = {
     ["ROLIS_NAME"         ] = "ロリス・フラール"                                -- "Rolis Hlaalu"
 ,   ["ROLIS_CHATTER_TITLE"] = "-ロリス・フラール-"                              -- "-Rolis Hlaalu-"
 ,   ["OPTION_FINISH"      ] = "<Finish the job.>"                       -- "<Finish the job.>"
-,   ["OPTION_FINISHED_BS" ] = "鍛冶の仕事を終えた"                               -- "I've finished the Blacksmithing job."
-,   ["OPTION_FINISHED_CL" ] = "仕立の仕事を終えた"                               -- "I've finished the Clothier job."
-,   ["OPTION_FINISHED_EN" ] = "付呪の仕事を終えた"                               -- "I've finished the Enchanting job."
-,   ["OPTION_FINISHED_AL" ] = "錬金術の仕事を終えた"                              -- "I've finished the Alchemy job."
-,   ["OPTION_FINISHED_PR" ] = "調理の仕事を終えた"                               -- "I've finished the Provisioning job."
-,   ["OPTION_FINISHED_WW" ] = "木工の仕事を終えた"                               -- "I've finished the Woodworking job."
-,   ["OPTION_FINISHED_JW" ] = "宝飾の仕事を終えた"                               -- "I've finished the Jewelry job."
 ,   ["OPTION_STORE"       ] = "Store (名工の調停人)"                          -- "Store (Mastercraft Mediator)"
-
-,   ["OFFERED_TITLE_BS"   ] = "-密封された鍛冶依頼-"                             -- "-Sealed Blacksmithing Writ-"
-,   ["OFFERED_TITLE_CL"   ] = "-密封された仕立依頼-"                             -- "-Sealed Clothier Writ-"
-,   ["OFFERED_TITLE_EN"   ] = "-密封された付呪依頼-"                             -- "-Sealed Enchanting Writ-"
-,   ["OFFERED_TITLE_AL"   ] = "-密封された錬金術依頼-"                            -- "-Sealed Alchemy Writ-"
-,   ["OFFERED_TITLE_PR"   ] = "-密封された調理依頼-"                             -- "-Sealed Provisioning Writ-"
-,   ["OFFERED_TITLE_WW"   ] = "-密封された木工依頼-"                             -- "-Sealed Woodworking Writ-"
-,   ["OFFERED_TITLE_JW"   ] = "-密封された宝飾師依頼-"                            -- "-Sealed Jewelry Crafter Writ-"
-
 ,   ["OFFERED_ACCEPT"     ] = { "<契約を受諾する>"                             -- "<Accept the contract.>"
                               , "<契約を受諾する>"                             -- "<Accept the contract.>"
                               }
 }
-
 
 LibCraftText.DIALOG.MASTER = {
     TITLE_ROLIS             = "-ロリス・フラール-"                      -- "-Rolis Hlaalu-"
@@ -827,30 +797,37 @@ LibCraftText.DIALOG.DAILY = {
 ,   ROW = {
       [bs] = { option_examine  = "<鍛冶屋の依頼を調べる>"                 -- "<Examine the Blacksmith Writs.>"
              , title_turn_in   = "-鍛冶屋の配達箱-"                    -- "-Blacksmith Delivery Crate-"
+             , quest_name      = "鍛冶師の依頼"                       -- "Blacksmith Writ"
              , crafting_type   = bs
              }
     , [cl] = { option_examine  = "<仕立屋の依頼を調べる>"                 -- "<Examine the Clothier Writs.>"
              , title_turn_in   = "-仕立師の配達箱-"                    -- "-Clothier Delivery Crate-"
+             , quest_name      = "仕立師の依頼"                       -- "Clothier Writ"
              , crafting_type   = cl
              }
     , [en] = { option_examine  = "<付呪師の依頼を調べる>"                 -- "<Examine the Enchanter Writs.>"
              , title_turn_in   = "-付呪師の配達箱-"                    -- "-Enchanter Delivery Crate-"
+             , quest_name      = "付呪師の依頼"                       -- "Enchanter Writ"
              , crafting_type   = en
              }
     , [al] = { option_examine  = "<錬金術師の依頼を見る>"                 -- "<Examine the Alchemist Writs.>"
              , title_turn_in   = "-錬金術師の配達箱-"                   -- "-Alchemist Delivery Crate-"
+             , quest_name      = "錬金術師の依頼"                      -- "Alchemist Writ"
              , crafting_type   = al
              }
     , [pr] = { option_examine  = "<調理師の依頼を見る>"                  -- "<Examine the Provisioner Writs.>"
              , title_turn_in   = "-調理師の配達箱-"                    -- "-Provisioner Delivery Crate-"
+             , quest_name      = "調理師の依頼"                       -- "Provisioner Writ"
              , crafting_type   = pr
              }
     , [ww] = { option_examine  = "<木工師の依頼を調べる>"                 -- "<Examine the Woodworker Writs.>"
              , title_turn_in   = "-木工師の配達箱-"                    -- "-Woodworker Delivery Crate-"
+             , quest_name      = "木工師の依頼"                       -- "Woodworker Writ"
              , crafting_type   = ww
              }
     , [jw] = { option_examine  = "<宝飾師のクラフト依頼を調べる>"             -- "<Examine the Jewelry Crafting Writs.>"
              , title_turn_in   = "-宝飾師の配達箱-"                    -- "-Jewelry Crafting Delivery Crate-"
+             , quest_name      = "宝飾師のクラフト依頼"                   -- "Jewelry Crafting Writ"
              , crafting_type   = jw
              }
     }

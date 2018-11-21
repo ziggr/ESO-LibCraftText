@@ -65,6 +65,5 @@ function Test:setUp()
     local want_lang = LANG_ORDER[self.lang_index]
     LibCraftText.ForceLang(want_lang)
     dofile(string.format("lang/%s.lua",want_lang))
-    -- print(want_lang.."  "..LibCraftText.DAILY_QUEST_TITLES[1])
 end
 

@@ -30,8 +30,8 @@ end
 --
 --      EVENT_INVENTORY_ITEM_USED
 --      EVENT_QUEST_OFFERED
---        title  = "-Sealed Blacksmithing Writ-"  -- LibCraftText.DIALOG.MASTER[bs].title_offer
---        option = "<Accept the contract.>"       -- LibCraftText.DIALOG.OPTION_ACCEPT_CONTRACT[i]
+--        title  = "-Sealed Blacksmithing Writ-"
+--        option = "<Accept the contract.>"
 --
 --    Accept the quest.
 --

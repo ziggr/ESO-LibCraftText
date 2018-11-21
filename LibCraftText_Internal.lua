@@ -4,6 +4,7 @@ local Master        = {}
 LibCraftText.Daily  = Daily
 LibCraftText.Master = Master
 
+
 local function ZZDEBUG_ON(msg, ...) print(string.format(msg, ...)) end
 local function ZZDEBUG_OFF(msg, ...) end
 local ZZDEBUG = ZZDEBUG_OFF
@@ -964,6 +965,9 @@ LibCraftText.CRAFTING_TYPES = {
 , CRAFTING_TYPE_JEWELRYCRAFTING
 }
 
+                        -- ["Blacksmith Writ"] = CRAFTING_TYPE_BLACKSMITHING
+LibCraftText.DAILY_QUEST_TITLES = {}
+
 -- Build reverse lookup tables to accelerate lookups
 function LibCraftText.BuildReverseLookupTables()
     if LibCraftText.reverse_tables_built then
@@ -973,7 +977,7 @@ function LibCraftText.BuildReverseLookupTables()
     LibCraftText.MASTER_OPTION_FINISH = {}
 
     for _,ctype in pairs(LibCraftText.CRAFTING_TYPES) do
-        local txt = LibCraftText.DAILY_QUEST_TITLES[ctype]
+        local txt = LibCraftText.DIALOG.DAILY.ROW[ctype].quest_name
         LibCraftText.DAILY_QUEST_TITLES[txt] = ctype
 
         local tlist = LibCraftText.MASTER_QUEST_TITLES[ctype]

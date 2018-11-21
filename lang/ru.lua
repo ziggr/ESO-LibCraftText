@@ -697,16 +697,6 @@ LibCraftText.MASTER_COND = {
 
 -- ### Merge these with the per-crafting-type dialog tables below
 
-LibCraftText.DAILY_QUEST_TITLES = {
-    [bs] = "Заказ кузнецу"                  -- "Blacksmith Writ"
-,   [cl] = "Заказ портному"                 -- "Clothier Writ"
-,   [en] = "Заказ зачарователю"             -- "Enchanter Writ"
-,   [al] = "Заказ алхимику"                 -- "Alchemist Writ"
-,   [pr] = "Заказ снабженцу"                -- "Provisioner Writ"
-,   [ww] = "Заказ столяру"                  -- "Woodworker Writ"
-,   [jw] = "Заказ ювелиру"                  -- "Jewelry Crafting Writ"
-}
-
                         -- SURPRISE! "A Masterful Weapon" is used
                         -- by both Blacksmithing and Woodworking.
                         --
@@ -738,35 +728,15 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Особенность"                     -- "Trait"
 }
 
-
--- ### merge the per-crafting-type stuff into dialog tables below
-
 LibCraftText.DIALOG = {
     ["ROLIS_NAME"         ] = "Ролис Хлаалу"                            -- "Rolis Hlaalu"
 ,   ["ROLIS_CHATTER_TITLE"] = "-Ролис Хлаалу-"                          -- "-Rolis Hlaalu-"
 ,   ["OPTION_FINISH"      ] = "<Finish the job.>"                       -- "<Finish the job.>"
-,   ["OPTION_FINISHED_BS" ] = "Я закончил работу кузнеца."              -- "I've finished the Blacksmithing job."
-,   ["OPTION_FINISHED_CL" ] = "Я закончил работу портного."             -- "I've finished the Clothier job."
-,   ["OPTION_FINISHED_EN" ] = "Я закончил работу зачарователя."         -- "I've finished the Enchanting job."
-,   ["OPTION_FINISHED_AL" ] = "Я закончил работу алхимика."             -- "I've finished the Alchemy job."
-,   ["OPTION_FINISHED_PR" ] = "Я закончил работу снабженца."            -- "I've finished the Provisioning job."
-,   ["OPTION_FINISHED_WW" ] = "Я закончил работу столяра."              -- "I've finished the Woodworking job."
-,   ["OPTION_FINISHED_JW" ] = "I've finished the Jewelry job."          -- "I've finished the Jewelry job."
 ,   ["OPTION_STORE"       ] = "Магазин (ремесленный посредник)"         -- "Store (Mastercraft Mediator)"
-
-,   ["OFFERED_TITLE_BS"   ] = "-Запечатанный заказ кузнецу-"            -- "-Sealed Blacksmithing Writ-"
-,   ["OFFERED_TITLE_CL"   ] = "-Запечатанный заказ портному-"           -- "-Sealed Clothier Writ-"
-,   ["OFFERED_TITLE_EN"   ] = "-Запечатанный заказ зачарователю-"       -- "-Sealed Enchanting Writ-"
-,   ["OFFERED_TITLE_AL"   ] = "-Запечатанный заказ алхимику-"           -- "-Sealed Alchemy Writ-"
-,   ["OFFERED_TITLE_PR"   ] = "-Запечатанный заказ снабженцу-"          -- "-Sealed Provisioning Writ-"
-,   ["OFFERED_TITLE_WW"   ] = "-Запечатанный заказ столяру-"            -- "-Sealed Woodworking Writ-"
-,   ["OFFERED_TITLE_JW"   ] = "-Запечатанный заказ ювелиру-"            -- "-Sealed Jewelry Crafter Writ-"
-
 ,   ["OFFERED_ACCEPT"     ] = { "<Принять заказ.>"                      -- "<Accept the contract.>"
                               , "<Принять заказ.>"                      -- "<Accept the contract.>"
                               }
 }
-
 
 LibCraftText.DIALOG.MASTER = {
     TITLE_ROLIS             = "-Ролис Хлаалу-"                  -- "-Rolis Hlaalu-"
@@ -827,30 +797,37 @@ LibCraftText.DIALOG.DAILY = {
 ,   ROW = {
       [bs] = { option_examine  = "<Изучить заказы для кузнеца.>"-- "<Examine the Blacksmith Writs.>"
              , title_turn_in   = "-Доставочный ящик кузнеца-"   -- "-Blacksmith Delivery Crate-"
+             , quest_name      = "Заказ кузнецу"                -- "Blacksmith Writ"
              , crafting_type   = bs
              }
     , [cl] = { option_examine  = "<Изучить заказы для портного.>"-- "<Examine the Clothier Writs.>"
              , title_turn_in   = "-Доставочный ящик портного-"  -- "-Clothier Delivery Crate-"
+             , quest_name      = "Заказ портному"               -- "Clothier Writ"
              , crafting_type   = cl
              }
     , [en] = { option_examine  = "<Изучить заказы для зачарователя.>"-- "<Examine the Enchanter Writs.>"
              , title_turn_in   = "-Доставочный ящик зачарователя-"-- "-Enchanter Delivery Crate-"
+             , quest_name      = "Заказ зачарователю"           -- "Enchanter Writ"
              , crafting_type   = en
              }
     , [al] = { option_examine  = "<Изучить заказы для алхимика.>"-- "<Examine the Alchemist Writs.>"
              , title_turn_in   = "-Доставочный ящик алхимика-"  -- "-Alchemist Delivery Crate-"
+             , quest_name      = "Заказ алхимику"               -- "Alchemist Writ"
              , crafting_type   = al
              }
     , [pr] = { option_examine  = "<Изучить заказы для снабженца.>"-- "<Examine the Provisioner Writs.>"
              , title_turn_in   = "-Доставочный ящик снабженца-" -- "-Provisioner Delivery Crate-"
+             , quest_name      = "Заказ снабженцу"              -- "Provisioner Writ"
              , crafting_type   = pr
              }
     , [ww] = { option_examine  = "<Изучить заказы для столяра.>"-- "<Examine the Woodworker Writs.>"
              , title_turn_in   = "-Доставочный ящик столяра-"   -- "-Woodworker Delivery Crate-"
+             , quest_name      = "Заказ столяру"                -- "Woodworker Writ"
              , crafting_type   = ww
              }
     , [jw] = { option_examine  = "<Изучить заказы для ювелира.>"-- "<Examine the Jewelry Crafting Writs.>"
              , title_turn_in   = "-Доставочный ящик ювелира-"   -- "-Jewelry Crafting Delivery Crate-"
+             , quest_name      = "Заказ ювелиру"                -- "Jewelry Crafting Writ"
              , crafting_type   = jw
              }
     }

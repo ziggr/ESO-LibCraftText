@@ -697,16 +697,6 @@ LibCraftText.MASTER_COND = {
 
 -- ### Merge these with the per-crafting-type dialog tables below
 
-LibCraftText.DAILY_QUEST_TITLES = {
-    [bs] = $DAILY_BS                        -- "Blacksmith Writ"
-,   [cl] = $DAILY_CL                        -- "Clothier Writ"
-,   [en] = $DAILY_EN                        -- "Enchanter Writ"
-,   [al] = $DAILY_AL                        -- "Alchemist Writ"
-,   [pr] = $DAILY_PR                        -- "Provisioner Writ"
-,   [ww] = $DAILY_WW                        -- "Woodworker Writ"
-,   [jw] = $DAILY_JW                        -- "Jewelry Crafting Writ"
-}
-
                         -- SURPRISE! "A Masterful Weapon" is used
                         -- by both Blacksmithing and Woodworking.
                         --
@@ -738,35 +728,15 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  $MASTER_LABEL_TRAIT               -- "Trait"
 }
 
-
--- ### merge the per-crafting-type stuff into dialog tables below
-
 LibCraftText.DIALOG = {
     ["ROLIS_NAME"         ] = $ROLIS_NAME                               -- "Rolis Hlaalu"
 ,   ["ROLIS_CHATTER_TITLE"] = $ROLIS_TITLE                              -- "-Rolis Hlaalu-"
 ,   ["OPTION_FINISH"      ] = $ROLIS_FINISH_JOB                         -- "<Finish the job.>"
-,   ["OPTION_FINISHED_BS" ] = $ROLIS_OPTION_TURNIN_BS                   -- "I've finished the Blacksmithing job."
-,   ["OPTION_FINISHED_CL" ] = $ROLIS_OPTION_TURNIN_CL                   -- "I've finished the Clothier job."
-,   ["OPTION_FINISHED_EN" ] = $ROLIS_OPTION_TURNIN_EN                   -- "I've finished the Enchanting job."
-,   ["OPTION_FINISHED_AL" ] = $ROLIS_OPTION_TURNIN_AL                   -- "I've finished the Alchemy job."
-,   ["OPTION_FINISHED_PR" ] = $ROLIS_OPTION_TURNIN_PR                   -- "I've finished the Provisioning job."
-,   ["OPTION_FINISHED_WW" ] = $ROLIS_OPTION_TURNIN_WW                   -- "I've finished the Woodworking job."
-,   ["OPTION_FINISHED_JW" ] = $ROLIS_OPTION_TURNIN_JW                   -- "I've finished the Jewelry job."
 ,   ["OPTION_STORE"       ] = $ROLIS_STORE                              -- "Store (Mastercraft Mediator)"
-
-,   ["OFFERED_TITLE_BS"   ] = $QUEST_OFFERED_TITLE_BS                   -- "-Sealed Blacksmithing Writ-"
-,   ["OFFERED_TITLE_CL"   ] = $QUEST_OFFERED_TITLE_CL                   -- "-Sealed Clothier Writ-"
-,   ["OFFERED_TITLE_EN"   ] = $QUEST_OFFERED_TITLE_EN                   -- "-Sealed Enchanting Writ-"
-,   ["OFFERED_TITLE_AL"   ] = $QUEST_OFFERED_TITLE_AL                   -- "-Sealed Alchemy Writ-"
-,   ["OFFERED_TITLE_PR"   ] = $QUEST_OFFERED_TITLE_PR                   -- "-Sealed Provisioning Writ-"
-,   ["OFFERED_TITLE_WW"   ] = $QUEST_OFFERED_TITLE_WW                   -- "-Sealed Woodworking Writ-"
-,   ["OFFERED_TITLE_JW"   ] = $QUEST_OFFERED_TITLE_JW                   -- "-Sealed Jewelry Crafter Writ-"
-
 ,   ["OFFERED_ACCEPT"     ] = { $QUEST_OFFERED_ACCEPT_1                 -- "<Accept the contract.>"
                               , $QUEST_OFFERED_ACCEPT_2                 -- "<Accept the contract.>"
                               }
 }
-
 
 LibCraftText.DIALOG.MASTER = {
     TITLE_ROLIS             = $ROLIS_TITLE                      -- "-Rolis Hlaalu-"
@@ -827,30 +797,37 @@ LibCraftText.DIALOG.DAILY = {
 ,   ROW = {
       [bs] = { option_examine  = $WRIT_BOARD_OPTION_BS          -- "<Examine the Blacksmith Writs.>"
              , title_turn_in   = $WRIT_CRATE_TITLE_BS           -- "-Blacksmith Delivery Crate-"
+             , quest_name      = $DAILY_BS                      -- "Blacksmith Writ"
              , crafting_type   = bs
              }
     , [cl] = { option_examine  = $WRIT_BOARD_OPTION_CL          -- "<Examine the Clothier Writs.>"
              , title_turn_in   = $WRIT_CRATE_TITLE_CL           -- "-Clothier Delivery Crate-"
+             , quest_name      = $DAILY_CL                      -- "Clothier Writ"
              , crafting_type   = cl
              }
     , [en] = { option_examine  = $WRIT_BOARD_OPTION_EN          -- "<Examine the Enchanter Writs.>"
              , title_turn_in   = $WRIT_CRATE_TITLE_EN           -- "-Enchanter Delivery Crate-"
+             , quest_name      = $DAILY_EN                      -- "Enchanter Writ"
              , crafting_type   = en
              }
     , [al] = { option_examine  = $WRIT_BOARD_OPTION_AL          -- "<Examine the Alchemist Writs.>"
              , title_turn_in   = $WRIT_CRATE_TITLE_AL           -- "-Alchemist Delivery Crate-"
+             , quest_name      = $DAILY_AL                      -- "Alchemist Writ"
              , crafting_type   = al
              }
     , [pr] = { option_examine  = $WRIT_BOARD_OPTION_PR          -- "<Examine the Provisioner Writs.>"
              , title_turn_in   = $WRIT_CRATE_TITLE_PR           -- "-Provisioner Delivery Crate-"
+             , quest_name      = $DAILY_PR                      -- "Provisioner Writ"
              , crafting_type   = pr
              }
     , [ww] = { option_examine  = $WRIT_BOARD_OPTION_WW          -- "<Examine the Woodworker Writs.>"
              , title_turn_in   = $WRIT_CRATE_TITLE_WW           -- "-Woodworker Delivery Crate-"
+             , quest_name      = $DAILY_WW                      -- "Woodworker Writ"
              , crafting_type   = ww
              }
     , [jw] = { option_examine  = $WRIT_BOARD_OPTION_JW          -- "<Examine the Jewelry Crafting Writs.>"
              , title_turn_in   = $WRIT_CRATE_TITLE_JW           -- "-Jewelry Crafting Delivery Crate-"
+             , quest_name      = $DAILY_JW                      -- "Jewelry Crafting Writ"
              , crafting_type   = jw
              }
     }

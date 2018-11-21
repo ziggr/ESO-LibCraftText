@@ -171,6 +171,7 @@ If they are something more permanent, with a key that appears in `lang_template.
       parse_result tables additional keys for step_i, step_info, condition_i,
       condition_info, crafting_type.
 - [x] Use the above API variants in examples when dumping.
+- [ ] Merge standalone Rolis/dialog stuff into tables lower in the file
 - [ ] More master writ test fodder
 - [ ] Find all master writ recipes
 - [ ] Use LibCraftText in ZZDailyWrits and WritWorthy_AutoQuest.
