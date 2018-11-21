@@ -327,7 +327,7 @@ function Example3.OnChatterBegin()
     local dialog_title = self.GetDialogTitle()
 
                         -- Is it Rolis?
-    if dialog_title == LibCraftText.DIALOG.ROLIS_CHATTER_TITLE then
+    if dialog_title == LibCraftText.MASTER.DIALOG.ROLIS_CHATTER_TITLE then
         self.ChatterRolis()
         return
     end

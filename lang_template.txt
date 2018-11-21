@@ -728,6 +728,11 @@ LibCraftText.MASTER.QUEST_NAME = {
 ,   [jw] = { $MASTER_JEWELRY                    } -- "Masterful Jewelry"
 }
 
+LibCraftText.MASTER.DIALOG = {
+    ["ROLIS_NAME"         ] = $ROLIS_NAME                               -- "Rolis Hlaalu"
+,   ["ROLIS_CHATTER_TITLE"] = $ROLIS_TITLE                              -- "-Rolis Hlaalu-"
+,   ["OPTION_STORE"       ] = $ROLIS_STORE                              -- "Store (Mastercraft Mediator)"
+}
 
 -- Random Unsorted Stuff -----------------------------------------------------
 
@@ -738,16 +743,7 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  $MASTER_LABEL_TRAIT               -- "Trait"
 }
 
-LibCraftText.DIALOG = {
-    ["ROLIS_NAME"         ] = $ROLIS_NAME                               -- "Rolis Hlaalu"
-,   ["ROLIS_CHATTER_TITLE"] = $ROLIS_TITLE                              -- "-Rolis Hlaalu-"
-,   ["OPTION_FINISH"      ] = $ROLIS_FINISH_JOB                         -- "<Finish the job.>"
-,   ["OPTION_STORE"       ] = $ROLIS_STORE                              -- "Store (Mastercraft Mediator)"
-,   ["OFFERED_ACCEPT"     ] = { $QUEST_OFFERED_ACCEPT_1                 -- "<Accept the contract.>"
-                              , $QUEST_OFFERED_ACCEPT_2                 -- "<Accept the contract.>"
-                              }
-}
-
+LibCraftText.DIALOG = LibCraftText.DIALOG or {} -- zztemp until this table is gone
 LibCraftText.DIALOG.MASTER = {
     TITLE_ROLIS             = $ROLIS_TITLE                      -- "-Rolis Hlaalu-"
 ,   OPTION_ROLIS_FINISH     = $ROLIS_OPTION_FINISH_JOB          -- "<Finish the job.>"

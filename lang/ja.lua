@@ -728,6 +728,11 @@ LibCraftText.MASTER.QUEST_NAME = {
 ,   [jw] = { "優れた宝飾"                            } -- "Masterful Jewelry"
 }
 
+LibCraftText.MASTER.DIALOG = {
+    ["ROLIS_NAME"         ] = "ロリス・フラール"                                -- "Rolis Hlaalu"
+,   ["ROLIS_CHATTER_TITLE"] = "-ロリス・フラール-"                              -- "-Rolis Hlaalu-"
+,   ["OPTION_STORE"       ] = "Store (名工の調停人)"                          -- "Store (Mastercraft Mediator)"
+}
 
 -- Random Unsorted Stuff -----------------------------------------------------
 
@@ -738,16 +743,7 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Trait"                           -- "Trait"
 }
 
-LibCraftText.DIALOG = {
-    ["ROLIS_NAME"         ] = "ロリス・フラール"                                -- "Rolis Hlaalu"
-,   ["ROLIS_CHATTER_TITLE"] = "-ロリス・フラール-"                              -- "-Rolis Hlaalu-"
-,   ["OPTION_FINISH"      ] = "<Finish the job.>"                       -- "<Finish the job.>"
-,   ["OPTION_STORE"       ] = "Store (名工の調停人)"                          -- "Store (Mastercraft Mediator)"
-,   ["OFFERED_ACCEPT"     ] = { "<契約を受諾する>"                             -- "<Accept the contract.>"
-                              , "<契約を受諾する>"                             -- "<Accept the contract.>"
-                              }
-}
-
+LibCraftText.DIALOG = LibCraftText.DIALOG or {} -- zztemp until this table is gone
 LibCraftText.DIALOG.MASTER = {
     TITLE_ROLIS             = "-ロリス・フラール-"                      -- "-Rolis Hlaalu-"
 ,   OPTION_ROLIS_FINISH     = "<仕事を終える>"                        -- "<Finish the job.>"

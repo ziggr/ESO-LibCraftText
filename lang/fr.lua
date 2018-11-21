@@ -728,6 +728,11 @@ LibCraftText.MASTER.QUEST_NAME = {
 ,   [jw] = { "Joaillerie magistrale"            } -- "Masterful Jewelry"
 }
 
+LibCraftText.MASTER.DIALOG = {
+    ["ROLIS_NAME"         ] = "Rolis Hlaalu"                            -- "Rolis Hlaalu"
+,   ["ROLIS_CHATTER_TITLE"] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
+,   ["OPTION_STORE"       ] = "Magasin (intermédiaire pour maîtres artisans)"-- "Store (Mastercraft Mediator)"
+}
 
 -- Random Unsorted Stuff -----------------------------------------------------
 
@@ -738,16 +743,7 @@ LibCraftText.MASTER_LABELS = {
 ,   ["trait"  ] =  "Trait"                           -- "Trait"
 }
 
-LibCraftText.DIALOG = {
-    ["ROLIS_NAME"         ] = "Rolis Hlaalu"                            -- "Rolis Hlaalu"
-,   ["ROLIS_CHATTER_TITLE"] = "-Rolis Hlaalu-"                          -- "-Rolis Hlaalu-"
-,   ["OPTION_FINISH"      ] = "<Finish the job.>"                       -- "<Finish the job.>"
-,   ["OPTION_STORE"       ] = "Magasin (intermédiaire pour maîtres artisans)"-- "Store (Mastercraft Mediator)"
-,   ["OFFERED_ACCEPT"     ] = { "<Accepter le contrat>"                 -- "<Accept the contract.>"
-                              , "<Accepter le contrat.>"                -- "<Accept the contract.>"
-                              }
-}
-
+LibCraftText.DIALOG = LibCraftText.DIALOG or {} -- zztemp until this table is gone
 LibCraftText.DIALOG.MASTER = {
     TITLE_ROLIS             = "-Rolis Hlaalu-"                  -- "-Rolis Hlaalu-"
 ,   OPTION_ROLIS_FINISH     = "<Finir le travail.>"             -- "<Finish the job.>"

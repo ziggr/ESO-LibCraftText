@@ -357,14 +357,14 @@ Master Writ Sequence
     interact with Rolis
 
     EVENT_CHATTER_BEGIN
-        title  = "-Rolis Hlaalu-"               -- LibCraftText.DIALOG.MASTER.TITLE_ROLIS
+        title  = "-Rolis Hlaalu-"               -- LibCraftText.MASTER.DIALOG.ROLIS_CHATTER_TITLE
                                                 -- LibCraftText.DIALOG.MASTER[b].option.finish
         option = "I've finished the Blacksmithing job."
 
     EVENT_QUEST_ADVANCED(quest_index, quest_name, false, true, true)
 
     EVENT_QUEST_COMPLETE_DIALOG(quest_index)
-        title  = "-Rolis Hlaalu-"               -- LibCraftText.DIALOG.MASTER.TITLE_ROLIS
+        title  = "-Rolis Hlaalu-"               -- LibCraftText.MASTER.DIALOG.ROLIS_CHATTER_TITLE
 
         GetJournalQuestEnding(quest_index)
             [2] = "<He notes your work and tenders payment.>"
