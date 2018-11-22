@@ -1077,6 +1077,7 @@ end
                         -- dozen recipe names that we actually want.
 
 local RECIPE_NAMES_EN = {
+-- daily
   "Aetherial Tea"                   -- 9 31
 , "Alik'r Beets with Goat Cheese"   -- 3 13
 , "Baked Apples"
@@ -1116,8 +1117,6 @@ local RECIPE_NAMES_EN = {
 , "Jerall View Inn Carrot Cake"
 , "Lemon Flower Mazte"
 , "Lilmoth Garlic Hagfish"
-, "Longfin Pasty with Melon Sauce"
-, "Lusty Argonian Maid Mazte"
 , "Mammoth Snout Pie"
 , "Maormer Tea"
 , "Markarth Mead"
@@ -1129,21 +1128,14 @@ local RECIPE_NAMES_EN = {
 , "Nereid Wine"
 , "Nibenese Garlic Carrots"
 , "Nut Brown Ale"
-, "Orcrest Agony Pale Ale"
 , "Orcrest Garlic Apple Jelly"
-, "Orzorga's Blood Price Pie"
-, "Orzorga's Red Frothgar"
-, "Orzorga's Smoked Bear Haunch"
-, "Orzorga's Tripe Trifle Pocket"
 , "Pellitine Tomato Rice"
-, "Psijic Ambrosia"
 , "Red Rye Beer"
 , "Redoran Peppered Melon"
 , "Roast Corn"
 , "Rye-in-Your-Eye"
 , "Seaflower Tea"
 , "Senchal Curry Fish and Rice"
-, "Senche-Tiger Single Malt"
 , "Skyrim Jazbay Crostata"
 , "Sorry, Honey Lager"
 , "Sour Mash"
@@ -1154,11 +1146,23 @@ local RECIPE_NAMES_EN = {
 , "Torval Mint Tea"
 , "Treacleberry Tea"
 , "Two-Zephyr Tea"
-, "Velothi View Vintage Malbec"
 , "Venison Pasty"
 , "West Weald Corn Chowder"
 , "Whiterun Cheese-Baked Trout"
-
+-- master
+, "Capon Tomato-Beet Casserole"
+, "Jugged Rabbit in Preserves"
+, "Longfin Pasty with Melon Sauce"
+, "Lusty Argonian Maid Mazte"
+, "Orcrest Agony Pale Ale"
+, "Orzorga's Blood Price Pie"
+, "Orzorga's Red Frothgar"
+, "Orzorga's Smoked Bear Haunch"
+, "Orzorga's Tripe Trifle Pocket"
+, "Psijic Ambrosia"
+, "Senche-Tiger Single Malt"
+, "Velothi View Vintage Malbec"
+, "Withered Tree Inn Venison Pot Roast"
 }
 function LibCraftText.DiscoverRecipes()
     local self   = LibCraftText
@@ -1220,10 +1224,12 @@ function LibCraftText.DiscoverRecipes()
             )
         if found_recipe_ct < want_recipe_ct then
             Error("Missing some recipes!")
-            for _,name in ipairs(RECIPE_NAMES_EN) do
-                local r = name_to_recipe[name]
-                if not (r and r.name) then
-                    Error(name)
+            for i,name in ipairs(RECIPE_NAMES_EN) do
+                local r = name_to_recipe[name:lower()]
+                if not (r and r.name and r.name.en) then
+                    Error("%2d: %s",i,name)
+                else
+                    Info("%2d: %s",i,name)
                 end
             end
         end

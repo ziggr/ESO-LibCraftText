@@ -130,6 +130,7 @@ LibCraftText.ITEM = {
 -- recipe_index     API value for GetRecipeResultItemInfo() and others
 --
 LibCraftText.RECIPE = {
+-- daily
   ["AETHERIAL_TEA"                   ] = { name="エセリアルティー"                              , food_item_id=033602, recipe_list_index=  9, recipe_index= 31, name_2="エセリアルティー"    }
 , ["ALIKR_BEETS_WITH_GOAT_CHEESE"    ] = { name="アリクルのビートの山羊乳チーズ添え"                     , food_item_id=028338, recipe_list_index=  3, recipe_index= 13}
 , ["BAKED_APPLES"                    ] = { name="焼きリンゴ"                                 , food_item_id=033837, recipe_list_index=  2, recipe_index=  1}
@@ -169,7 +170,6 @@ LibCraftText.RECIPE = {
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="宿屋〈ジェラールビュー〉のニンジンケーキ"                  , food_item_id=033575, recipe_list_index=  3, recipe_index= 21}
 , ["LEMON_FLOWER_MAZTE"              ] = { name="レモンフラワーのマッツェ"                          , food_item_id=033945, recipe_list_index=  8, recipe_index=  9}
 , ["LILMOTH_GARLIC_HAGFISH"          ] = { name="リルモスのニンニクのヌタウナギ焼き"                     , food_item_id=068235, recipe_list_index=  1, recipe_index= 42}
-, ["LONGFIN_PASTY_WITH_MELON_SAUCE"  ] = { name="ロングフィンのパイのメロンソース添え"                    , food_item_id=068253, recipe_list_index=  7, recipe_index= 30, name_2="ロングフィンのパイのメロンソース添え"}
 , ["LUSTY_ARGONIAN_MAID_MAZTE"       ] = { name="好色なアルゴニアンの侍女のマッツェ"                     , food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="好色なアルゴニアンの侍女のマッツェ"}
 , ["MAMMOTH_SNOUT_PIE"               ] = { name="マンモスの鼻のパイ"                             , food_item_id=033903, recipe_list_index=  1, recipe_index= 25}
 , ["MAORMER_TEA"                     ] = { name="マオマーティー"                               , food_item_id=028465, recipe_list_index=  9, recipe_index= 19}
@@ -182,21 +182,14 @@ LibCraftText.RECIPE = {
 , ["NEREID_WINE"                     ] = { name="ネレイドワイン"                               , food_item_id=033975, recipe_list_index=  8, recipe_index= 24}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="ニベン人のニンジンのニンニク炒め"                      , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
 , ["NUT_BROWN_ALE"                   ] = { name="ナット・ブラウンエール"                           , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
-, ["ORCREST_AGONY_PALE_ALE"          ] = { name="オークレストの苦悶のペールエール"                      , food_item_id=068275, recipe_list_index= 14, recipe_index= 30}
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="オークレストのニンニクとリンゴのゼリー"                   , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
-, ["ORZORGAS_BLOOD_PRICE_PIE"        ] = { name="オーゾーガのブラッド・プライス・パイ"                    , food_item_id=071058, recipe_list_index= 16, recipe_index=  3, name_2="オーゾーガのブラッド・プライス・パイ"}
-, ["ORZORGAS_RED_FROTHGAR"           ] = { name="オーゾーガのレッド・フロスガー"                       , food_item_id=071056, recipe_list_index= 15, recipe_index= 14}
-, ["ORZORGAS_SMOKED_BEAR_HAUNCH"     ] = { name="オーゾーガの熊の腰肉の燻製"                         , food_item_id=071059, recipe_list_index= 16, recipe_index=  4, name_2="オーゾーガの熊の腰肉の燻製"}
-, ["ORZORGAS_TRIPE_TRIFLE_POCKET"    ] = { name="オーゾーガの牛の内臓ミンチ入りのパン"                    , food_item_id=071057, recipe_list_index= 16, recipe_index=  2, name_2="オーゾーガの牛の内臓ミンチ入りのパン"}
 , ["PELLITINE_TOMATO_RICE"           ] = { name="ペレタインのトマトライス"                          , food_item_id=042814, recipe_list_index=  2, recipe_index= 13}
-, ["PSIJIC_AMBROSIA"                 ] = { name="サイジックのアンブロージア"                         , food_item_id=064221, recipe_list_index= 15, recipe_index=  1}
 , ["RED_RYE_BEER"                    ] = { name="赤いライ麦ビール"                              , food_item_id=033600, recipe_list_index=  8, recipe_index=  2}
 , ["REDORAN_PEPPERED_MELON"          ] = { name="レドランのペッパードメロン"                         , food_item_id=033552, recipe_list_index=  2, recipe_index= 15}
 , ["ROAST_CORN"                      ] = { name="焼きトウモロコシ"                              , food_item_id=033813, recipe_list_index=  3, recipe_index=  3}
 , ["RYE_IN_YOUR_EYE"                 ] = { name="瞳に映るライ・ウイスキー"                          , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="海花茶"                                   , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name="センシャルのシーフードカレー"                        , food_item_id=028350, recipe_list_index=  1, recipe_index= 19}
-, ["SENCHE_TIGER_SINGLE_MALT"        ] = { name="センチタイガーのシングルモルト"                       , food_item_id=068273, recipe_list_index= 14, recipe_index= 28}
 , ["SKYRIM_JAZBAY_CROSTATA"          ] = { name="スカイリムのジャズベイ・クロスタータ"                    , food_item_id=033909, recipe_list_index=  2, recipe_index= 25}
 , ["SORRY_HONEY_LAGER"               ] = { name="ソーリー、ハニーラガー"                           , food_item_id=033642, recipe_list_index=  8, recipe_index= 23}
 , ["SOUR_MASH"                       ] = { name="すっぱい麦芽汁"                               , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
@@ -207,11 +200,24 @@ LibCraftText.RECIPE = {
 , ["TORVAL_MINT_TEA"                 ] = { name="トルヴァルミントティー"                           , food_item_id=034017, recipe_list_index=  9, recipe_index= 21}
 , ["TREACLEBERRY_TEA"                ] = { name="トリークルベリーティー"                           , food_item_id=033672, recipe_list_index=  9, recipe_index= 14}
 , ["TWO_ZEPHYR_TEA"                  ] = { name="トゥーゼファーティー"                            , food_item_id=028473, recipe_list_index=  9, recipe_index= 25}
-, ["VELOTHI_VIEW_VINTAGE_MALBEC"     ] = { name="ヴェロシビューのビンテージマルベックワイン"                 , food_item_id=068274, recipe_list_index= 14, recipe_index= 29, name_2="ヴェロシビューのビンテージマルベックワイン"}
 , ["VENISON_PASTY"                   ] = { name="鹿肉のパスティ"                               , food_item_id=028398, recipe_list_index=  1, recipe_index= 15}
 , ["WEST_WEALD_CORN_CHOWDER"         ] = { name="ウェストウィールドのコーンチャウダー"                    , food_item_id=032160, recipe_list_index=  3, recipe_index= 31}
 , ["WHITERUN_CHEESE_BAKED_TROUT"     ] = { name="ホワイトランのマスのチーズ焼き"                       , food_item_id=033484, recipe_list_index=  1, recipe_index= 14}
 
+-- master
+, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="肥育鶏とトマトビーツのキャセロール"                     , food_item_id=068251, recipe_list_index=  7, recipe_index= 28, name_2="ロングフィンのパイのメロンソース添え"}
+, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="ジャムで煮込んだ兎肉"                            , food_item_id=068252, recipe_list_index=  7, recipe_index= 29, name_2="ロングフィンのパイのメロンソース添え"}
+, ["LONGFIN_PASTY_WITH_MELON_SAUCE"     ] = { name="ロングフィンのパイのメロンソース添え"                    , food_item_id=068253, recipe_list_index=  7, recipe_index= 30, name_2="ロングフィンのパイのメロンソース添え"}
+, ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name="好色なアルゴニアンの侍女のマッツェ"                     , food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="好色なアルゴニアンの侍女のマッツェ"}
+, ["ORCREST_AGONY_PALE_ALE"             ] = { name="オークレストの苦悶のペールエール"                      , food_item_id=068275, recipe_list_index= 14, recipe_index= 30, name_2="オークレストの苦悶のペールエール"}
+, ["ORZORGAS_BLOOD_PRICE_PIE"           ] = { name="オーゾーガのブラッド・プライス・パイ"                    , food_item_id=071058, recipe_list_index= 16, recipe_index=  3, name_2="オーゾーガのブラッド・プライス・パイ"}
+, ["ORZORGAS_RED_FROTHGAR"              ] = { name="オーゾーガのレッド・フロスガー"                       , food_item_id=071056, recipe_list_index= 15, recipe_index= 14, name_2="オーゾーガのレッド・フロスガー"}
+, ["ORZORGAS_SMOKED_BEAR_HAUNCH"        ] = { name="オーゾーガの熊の腰肉の燻製"                         , food_item_id=071059, recipe_list_index= 16, recipe_index=  4, name_2="オーゾーガの熊の腰肉の燻製"}
+, ["ORZORGAS_TRIPE_TRIFLE_POCKET"       ] = { name="オーゾーガの牛の内臓ミンチ入りのパン"                    , food_item_id=071057, recipe_list_index= 16, recipe_index=  2, name_2="オーゾーガの牛の内臓ミンチ入りのパン"}
+, ["PSIJIC_AMBROSIA"                    ] = { name="サイジックのアンブロージア"                         , food_item_id=064221, recipe_list_index= 15, recipe_index=  1, name_2="サイジックのアンブロージア"}
+, ["SENCHE_TIGER_SINGLE_MALT"           ] = { name="センチタイガーのシングルモルト"                       , food_item_id=068273, recipe_list_index= 14, recipe_index= 28, name_2="センチタイガーのシングルモルト"}
+, ["VELOTHI_VIEW_VINTAGE_MALBEC"        ] = { name="ヴェロシビューのビンテージマルベックワイン"                 , food_item_id=068274, recipe_list_index= 14, recipe_index= 29, name_2="ヴェロシビューのビンテージマルベックワイン"}
+, ["WITHERED_TREE_INN_VENISON_POT_ROAST"] = { name="ウィサードツリーの鹿肉のポットロースト"                   , food_item_id=068254, recipe_list_index=  7, recipe_index= 31, name_2="ロングフィンのパイのメロンソース添え"}
 }
 
 

@@ -130,6 +130,7 @@ LibCraftText.ITEM = {
 -- recipe_index     API value for GetRecipeResultItemInfo() and others
 --
 LibCraftText.RECIPE = {
+-- daily
   ["AETHERIAL_TEA"                   ] = { name="thé éthérien"                          , food_item_id=033602, recipe_list_index=  9, recipe_index= 31, name_2="thé éthérien"}
 , ["ALIKR_BEETS_WITH_GOAT_CHEESE"    ] = { name="betteraves d'Alik'r au chèvre"         , food_item_id=028338, recipe_list_index=  3, recipe_index= 13}
 , ["BAKED_APPLES"                    ] = { name="pommes cuites"                         , food_item_id=033837, recipe_list_index=  2, recipe_index=  1}
@@ -169,7 +170,6 @@ LibCraftText.RECIPE = {
 , ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="gâteau de carotte de l'auberge de la vue de Jerall", food_item_id=033575, recipe_list_index=  3, recipe_index= 21}
 , ["LEMON_FLOWER_MAZTE"              ] = { name="mazté à la fleur de citronnier"        , food_item_id=033945, recipe_list_index=  8, recipe_index=  9}
 , ["LILMOTH_GARLIC_HAGFISH"          ] = { name="anguille des harfreuses à l'ail de Lilmoth", food_item_id=068235, recipe_list_index=  1, recipe_index= 42}
-, ["LONGFIN_PASTY_WITH_MELON_SAUCE"  ] = { name="friand de nagelongue à la sauce au melon", food_item_id=068253, recipe_list_index=  7, recipe_index= 30, name_2="friand de nagelongue à la sauce au melon"}
 , ["LUSTY_ARGONIAN_MAID_MAZTE"       ] = { name="mazté de la femme de chambre argonienne", food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="mazté de la femme de chambre argonienne"}
 , ["MAMMOTH_SNOUT_PIE"               ] = { name="tourte au groin de mammouth"           , food_item_id=033903, recipe_list_index=  1, recipe_index= 25}
 , ["MAORMER_TEA"                     ] = { name="thé maormer"                           , food_item_id=028465, recipe_list_index=  9, recipe_index= 19}
@@ -182,21 +182,14 @@ LibCraftText.RECIPE = {
 , ["NEREID_WINE"                     ] = { name="vin de la néréïde"                     , food_item_id=033975, recipe_list_index=  8, recipe_index= 24}
 , ["NIBENESE_GARLIC_CARROTS"         ] = { name="carottes à l'ail nibenaises"           , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
 , ["NUT_BROWN_ALE"                   ] = { name="bière brune à la noisette"             , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
-, ["ORCREST_AGONY_PALE_ALE"          ] = { name="bière blonde d'agonie d'Orcrête"       , food_item_id=068275, recipe_list_index= 14, recipe_index= 30}
 , ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="gelée de pommes à l'ail d'Orcrête"     , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
-, ["ORZORGAS_BLOOD_PRICE_PIE"        ] = { name="tarte « Prix du sang » d'Orzorga"      , food_item_id=071058, recipe_list_index= 16, recipe_index=  3, name_2="tarte « Prix du sang » d'Orzorga"}
-, ["ORZORGAS_RED_FROTHGAR"           ] = { name="bouillon rouge d'Orzorga"              , food_item_id=071056, recipe_list_index= 15, recipe_index= 14}
-, ["ORZORGAS_SMOKED_BEAR_HAUNCH"     ] = { name="cuissot d'ours fumé d'Orzorga"         , food_item_id=071059, recipe_list_index= 16, recipe_index=  4, name_2="cuissot d'ours fumé d'Orzorga"}
-, ["ORZORGAS_TRIPE_TRIFLE_POCKET"    ] = { name="charlotte aux tripes d'Orzorga"        , food_item_id=071057, recipe_list_index= 16, recipe_index=  2, name_2="charlotte aux tripes d'Orzorga"}
 , ["PELLITINE_TOMATO_RICE"           ] = { name="riz à la tomate de Pellitine"          , food_item_id=042814, recipe_list_index=  2, recipe_index= 13}
-, ["PSIJIC_AMBROSIA"                 ] = { name="ambroisie psijique"                    , food_item_id=064221, recipe_list_index= 15, recipe_index=  1}
 , ["RED_RYE_BEER"                    ] = { name="bière de seigle rousse"                , food_item_id=033600, recipe_list_index=  8, recipe_index=  2}
 , ["REDORAN_PEPPERED_MELON"          ] = { name="melon poivré de Rédoran"               , food_item_id=033552, recipe_list_index=  2, recipe_index= 15}
 , ["ROAST_CORN"                      ] = { name="maïs rôti"                             , food_item_id=033813, recipe_list_index=  3, recipe_index=  3}
 , ["RYE_IN_YOUR_EYE"                 ] = { name="scotch-dans-ta-face"                   , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
 , ["SEAFLOWER_TEA"                   ] = { name="thé à l'anémone"                       , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
 , ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name="curry de poisson de Senchal"           , food_item_id=028350, recipe_list_index=  1, recipe_index= 19}
-, ["SENCHE_TIGER_SINGLE_MALT"        ] = { name="single malt du tigre-senche"           , food_item_id=068273, recipe_list_index= 14, recipe_index= 28}
 , ["SKYRIM_JAZBAY_CROSTATA"          ] = { name="croustillant au jazbay de Bordeciel"   , food_item_id=033909, recipe_list_index=  2, recipe_index= 25}
 , ["SORRY_HONEY_LAGER"               ] = { name="cervoise « Désolé, chérie »"           , food_item_id=033642, recipe_list_index=  8, recipe_index= 23}
 , ["SOUR_MASH"                       ] = { name="moût aigre"                            , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
@@ -207,11 +200,24 @@ LibCraftText.RECIPE = {
 , ["TORVAL_MINT_TEA"                 ] = { name="thé à la menthe de Torval"             , food_item_id=034017, recipe_list_index=  9, recipe_index= 21}
 , ["TREACLEBERRY_TEA"                ] = { name="thé de mélassine"                      , food_item_id=033672, recipe_list_index=  9, recipe_index= 14}
 , ["TWO_ZEPHYR_TEA"                  ] = { name="thé des deux zéphyrs"                  , food_item_id=028473, recipe_list_index=  9, recipe_index= 25}
-, ["VELOTHI_VIEW_VINTAGE_MALBEC"     ] = { name="vieux cru vélothi de Malbec"           , food_item_id=068274, recipe_list_index= 14, recipe_index= 29, name_2="vieux cru vélothi de Malbec"}
 , ["VENISON_PASTY"                   ] = { name="friand de gibier"                      , food_item_id=028398, recipe_list_index=  1, recipe_index= 15}
 , ["WEST_WEALD_CORN_CHOWDER"         ] = { name="bisque au maïs occidental froide"      , food_item_id=032160, recipe_list_index=  3, recipe_index= 31}
 , ["WHITERUN_CHEESE_BAKED_TROUT"     ] = { name="truite gratinée de Blancherive"        , food_item_id=033484, recipe_list_index=  1, recipe_index= 14}
 
+-- master
+, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="ragoût de capon aux tomates et aux betteraves", food_item_id=068251, recipe_list_index=  7, recipe_index= 28, name_2="friand de nagelongue à la sauce au melon"}
+, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="conserve de lapin confit"              , food_item_id=068252, recipe_list_index=  7, recipe_index= 29, name_2="friand de nagelongue à la sauce au melon"}
+, ["LONGFIN_PASTY_WITH_MELON_SAUCE"     ] = { name="friand de nagelongue à la sauce au melon", food_item_id=068253, recipe_list_index=  7, recipe_index= 30, name_2="friand de nagelongue à la sauce au melon"}
+, ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name="mazté de la femme de chambre argonienne", food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="mazté de la femme de chambre argonienne"}
+, ["ORCREST_AGONY_PALE_ALE"             ] = { name="bière blonde d'agonie d'Orcrête"       , food_item_id=068275, recipe_list_index= 14, recipe_index= 30, name_2="bière blonde d'agonie d'Orcrête"}
+, ["ORZORGAS_BLOOD_PRICE_PIE"           ] = { name="tarte « Prix du sang » d'Orzorga"      , food_item_id=071058, recipe_list_index= 16, recipe_index=  3, name_2="tarte « Prix du sang » d'Orzorga"}
+, ["ORZORGAS_RED_FROTHGAR"              ] = { name="bouillon rouge d'Orzorga"              , food_item_id=071056, recipe_list_index= 15, recipe_index= 14, name_2="bouillon rouge d'Orzorga"}
+, ["ORZORGAS_SMOKED_BEAR_HAUNCH"        ] = { name="cuissot d'ours fumé d'Orzorga"         , food_item_id=071059, recipe_list_index= 16, recipe_index=  4, name_2="cuissot d'ours fumé d'Orzorga"}
+, ["ORZORGAS_TRIPE_TRIFLE_POCKET"       ] = { name="charlotte aux tripes d'Orzorga"        , food_item_id=071057, recipe_list_index= 16, recipe_index=  2, name_2="charlotte aux tripes d'Orzorga"}
+, ["PSIJIC_AMBROSIA"                    ] = { name="ambroisie psijique"                    , food_item_id=064221, recipe_list_index= 15, recipe_index=  1, name_2="ambroisie psijique"}
+, ["SENCHE_TIGER_SINGLE_MALT"           ] = { name="single malt du tigre-senche"           , food_item_id=068273, recipe_list_index= 14, recipe_index= 28, name_2="single malt du tigre-senche"}
+, ["VELOTHI_VIEW_VINTAGE_MALBEC"        ] = { name="vieux cru vélothi de Malbec"           , food_item_id=068274, recipe_list_index= 14, recipe_index= 29, name_2="vieux cru vélothi de Malbec"}
+, ["WITHERED_TREE_INN_VENISON_POT_ROAST"] = { name="rôti de gibier de l'auberge de l'Arbre flétri", food_item_id=068254, recipe_list_index=  7, recipe_index= 31, name_2="friand de nagelongue à la sauce au melon"}
 }
 
 
