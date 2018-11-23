@@ -173,6 +173,15 @@ end
 -- returns a list of result tables from either ParseDailyCondition() or
 -- ParseMasterCondition().
 --
+-- Returns a list of result_table elements from Parse(Daily/Master)Condition above.
+-- result_table elements also include step/condition indexes so that you can
+-- match up these table with additional data from the ZOS API:
+--
+-- quest_index
+-- step_index
+-- condition_index
+-- condition_text
+--
 function LibCraftText.ParseQuest(quest_index)
     local self = LibCraftText
 
@@ -202,6 +211,10 @@ function LibCraftText.ParseQuest(quest_index)
                                                           , cond_i )
             local result = func(crafting_type, cond_text)
             if result then
+                result.quest_index     = quest_index
+                result.step_index      = step_i
+                result.condition_index = cond_i
+                result.condition_text  = cont_text
                 table.insert(result_list, result)
                 if return_first_hit then
                     return result_list
