@@ -42,8 +42,8 @@ CRAFTING_TYPE_ABBREV = {
     , [jw] = "JW"
 }
 
-function Warn(msg)
-    print(msg)
+function Warn(msg,...)
+    print(string.format(msg,...))
 end
 
 
@@ -633,6 +633,7 @@ function ImportSavedVars()
             ImportSavedVarLangTable(lang_table, key)
             DB[key].recipe_list_index = recipe.recipe_list_index
             DB[key].recipe_index      = recipe.recipe_index
+            DB[key].recipe_item_id    = recipe.recipe_item_id
         end
     end
 
@@ -757,7 +758,7 @@ function ExportDB()
             end
         end
                         -- Include numeric recipe indexes after all the text.
-        local field_list = { "recipe_list_index", "recipe_index" }
+        local field_list = { "recipe_list_index", "recipe_index", "recipe_item_id" }
         for k,v in ipairs(field_list) do
             if entry_hash[v] then
                 table.insert(entry_list, { v, entry_hash[v] })
@@ -862,8 +863,10 @@ function ReplaceKeys(template_line, lang)
                         -- Programmatic keys for numeric recipe indexes.
                         -- Yeah, cramming recipe numbers into a text-processor
                         -- lang_db is a gross hack. Blech.
-        local programmatic = { {"_RLI", "recipe_list_index"}
-                             , { "_RI", "recipe_index"     }
+                        --      suffix, field name         , fmt
+        local programmatic = { {"_RLI", "recipe_list_index", "%3d"}
+                             , {"_RID", "recipe_item_id"   ,"%06d"}
+                             , { "_RI", "recipe_index"     , "%3d"}
                              }
         for _,p in ipairs(programmatic) do
             if key:find(p[1].."$") then
@@ -871,7 +874,11 @@ function ReplaceKeys(template_line, lang)
                 local lang_table = DB[key]
                 if not lang_table then return key end
                 local value = lang_table[p[2]]
-                return string.format("%3d",value)
+                if not value then
+                    Warn(string.format("lang_db value for key:%s field:%s", key, p[2]))
+                    return "0"
+                end
+                return string.format(p[3],value)
             end
         end
 

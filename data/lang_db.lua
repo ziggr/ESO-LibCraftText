@@ -6229,6 +6229,7 @@ LANG_DB = {
           ,   ja  = "びっくりバナナ"
           ,   recipe_list_index = 2
           ,   recipe_index = 2
+          ,   recipe_item_id = 45913
           }
 , [716] = {
               key = "$FOOD_028321"
@@ -6240,6 +6241,7 @@ LANG_DB = {
           ,   ja  = "ニンジンスープ"
           ,   recipe_list_index = 3
           ,   recipe_index = 1
+          ,   recipe_item_id = 45887
           }
 , [717] = {
               key = "$FOOD_028338"
@@ -6251,6 +6253,7 @@ LANG_DB = {
           ,   ja  = "アリクルのビートの山羊乳チーズ添え"
           ,   recipe_list_index = 3
           ,   recipe_index = 13
+          ,   recipe_item_id = 45899
           }
 , [718] = {
               key = "$FOOD_028342"
@@ -6262,6 +6265,7 @@ LANG_DB = {
           ,   ja  = "ブレトンのポークソーセージ"
           ,   recipe_list_index = 1
           ,   recipe_index = 13
+          ,   recipe_item_id = 45900
           }
 , [719] = {
               key = "$FOOD_028346"
@@ -6273,6 +6277,7 @@ LANG_DB = {
           ,   ja  = "ガーリックマッシュポテト"
           ,   recipe_list_index = 3
           ,   recipe_index = 19
+          ,   recipe_item_id = 45905
           }
 , [720] = {
               key = "$FOOD_028350"
@@ -6284,6 +6289,7 @@ LANG_DB = {
           ,   ja  = "センシャルのシーフードカレー"
           ,   recipe_list_index = 1
           ,   recipe_index = 19
+          ,   recipe_item_id = 45906
           }
 , [721] = {
               key = "$FOOD_028354"
@@ -6295,6 +6301,7 @@ LANG_DB = {
           ,   ja  = "ベイクドポテト"
           ,   recipe_list_index = 3
           ,   recipe_index = 2
+          ,   recipe_item_id = 45912
           }
 , [722] = {
               key = "$FOOD_028394"
@@ -6306,6 +6313,7 @@ LANG_DB = {
           ,   ja  = "バタグリアのチャウダー"
           ,   recipe_list_index = 3
           ,   recipe_index = 15
+          ,   recipe_item_id = 45946
           }
 , [723] = {
               key = "$FOOD_028398"
@@ -6317,6 +6325,7 @@ LANG_DB = {
           ,   ja  = "鹿肉のパスティ"
           ,   recipe_list_index = 1
           ,   recipe_index = 15
+          ,   recipe_item_id = 45947
           }
 , [724] = {
               key = "$FOOD_028401"
@@ -6328,6 +6337,7 @@ LANG_DB = {
           ,   ja  = "ナット・ブラウンエール"
           ,   recipe_list_index = 8
           ,   recipe_index = 1
+          ,   recipe_item_id = 45970
           }
 , [725] = {
               key = "$FOOD_028402"
@@ -6339,6 +6349,7 @@ LANG_DB = {
           ,   ja  = "カムリーウェンチ・ウイスキー"
           ,   recipe_list_index = 8
           ,   recipe_index = 31
+          ,   recipe_item_id = 46048
           }
 , [726] = {
               key = "$FOOD_028405"
@@ -6350,6 +6361,7 @@ LANG_DB = {
           ,   ja  = "泥鉄鉱のエール"
           ,   recipe_list_index = 8
           ,   recipe_index = 4
+          ,   recipe_item_id = 45971
           }
 , [727] = {
               key = "$FOOD_028409"
@@ -6361,6 +6373,7 @@ LANG_DB = {
           ,   ja  = "シラーワインの蒸留酒"
           ,   recipe_list_index = 8
           ,   recipe_index = 7
+          ,   recipe_item_id = 45972
           }
 , [728] = {
               key = "$FOOD_028409B"
@@ -6381,6 +6394,7 @@ LANG_DB = {
           ,   ja  = "エルセリックの安酒"
           ,   recipe_list_index = 8
           ,   recipe_index = 13
+          ,   recipe_item_id = 45974
           }
 , [730] = {
               key = "$FOOD_028417B"
@@ -6401,6 +6415,7 @@ LANG_DB = {
           ,   ja  = "ハニーライ・ウイスキー"
           ,   recipe_list_index = 8
           ,   recipe_index = 16
+          ,   recipe_item_id = 45975
           }
 , [732] = {
               key = "$FOOD_028425"
@@ -6412,6 +6427,7 @@ LANG_DB = {
           ,   ja  = "すっぱい麦芽汁"
           ,   recipe_list_index = 8
           ,   recipe_index = 19
+          ,   recipe_item_id = 45976
           }
 , [733] = {
               key = "$FOOD_028429"
@@ -6423,6 +6439,7 @@ LANG_DB = {
           ,   ja  = "瞳に映るライ・ウイスキー"
           ,   recipe_list_index = 8
           ,   recipe_index = 22
+          ,   recipe_item_id = 45977
           }
 , [734] = {
               key = "$FOOD_028433"
@@ -6434,6 +6451,7 @@ LANG_DB = {
           ,   ja  = "ゴッズ・ブラインド・ミー"
           ,   recipe_list_index = 8
           ,   recipe_index = 25
+          ,   recipe_item_id = 45978
           }
 , [735] = {
               key = "$FOOD_028433B"
@@ -6456,6 +6474,7 @@ LANG_DB = {
           ,   ja  = "グランパのベッドタイム・トニック"
           ,   recipe_list_index = 10
           ,   recipe_index = 31
+          ,   recipe_item_id = 46050
           }
 , [737] = {
               key = "$FOOD_028457"
@@ -6467,6 +6486,7 @@ LANG_DB = {
           ,   ja  = "ビターレモンティー"
           ,   recipe_list_index = 9
           ,   recipe_index = 13
+          ,   recipe_item_id = 46000
           }
 , [738] = {
               key = "$FOOD_028465"
@@ -6478,6 +6498,7 @@ LANG_DB = {
           ,   ja  = "マオマーティー"
           ,   recipe_list_index = 9
           ,   recipe_index = 19
+          ,   recipe_item_id = 46002
           }
 , [739] = {
               key = "$FOOD_028473"
@@ -6489,6 +6510,7 @@ LANG_DB = {
           ,   ja  = "トゥーゼファーティー"
           ,   recipe_list_index = 9
           ,   recipe_index = 25
+          ,   recipe_item_id = 46004
           }
 , [740] = {
               key = "$FOOD_028513"
@@ -6500,6 +6522,7 @@ LANG_DB = {
           ,   ja  = "ブルーロード・マラソン"
           ,   recipe_list_index = 10
           ,   recipe_index = 25
+          ,   recipe_item_id = 46030
           }
 , [741] = {
               key = "$FOOD_032160"
@@ -6511,6 +6534,7 @@ LANG_DB = {
           ,   ja  = "ウェストウィールドのコーンチャウダー"
           ,   recipe_list_index = 3
           ,   recipe_index = 31
+          ,   recipe_item_id = 45964
           }
 , [742] = {
               key = "$FOOD_033478"
@@ -6522,6 +6546,7 @@ LANG_DB = {
           ,   ja  = "ニベン人のニンジンのニンニク炒め"
           ,   recipe_list_index = 3
           ,   recipe_index = 14
+          ,   recipe_item_id = 45923
           }
 , [743] = {
               key = "$FOOD_033484"
@@ -6533,6 +6558,7 @@ LANG_DB = {
           ,   ja  = "ホワイトランのマスのチーズ焼き"
           ,   recipe_list_index = 1
           ,   recipe_index = 14
+          ,   recipe_item_id = 45924
           }
 , [744] = {
               key = "$FOOD_033490"
@@ -6544,6 +6570,7 @@ LANG_DB = {
           ,   ja  = "カボチャの種のニンニク炒め"
           ,   recipe_list_index = 2
           ,   recipe_index = 14
+          ,   recipe_item_id = 45925
           }
 , [745] = {
               key = "$FOOD_033514"
@@ -6555,6 +6582,7 @@ LANG_DB = {
           ,   ja  = "コロールの軸付きトウモロコシ"
           ,   recipe_list_index = 3
           ,   recipe_index = 20
+          ,   recipe_item_id = 45929
           }
 , [746] = {
               key = "$FOOD_033520"
@@ -6566,6 +6594,7 @@ LANG_DB = {
           ,   ja  = "エリンヒルの羚羊の肉のロースト"
           ,   recipe_list_index = 1
           ,   recipe_index = 20
+          ,   recipe_item_id = 45930
           }
 , [747] = {
               key = "$FOOD_033526"
@@ -6577,6 +6606,7 @@ LANG_DB = {
           ,   ja  = "魚のフライ"
           ,   recipe_list_index = 1
           ,   recipe_index = 1
+          ,   recipe_item_id = 45888
           }
 , [748] = {
               key = "$FOOD_033552"
@@ -6588,6 +6618,7 @@ LANG_DB = {
           ,   ja  = "レドランのペッパードメロン"
           ,   recipe_list_index = 2
           ,   recipe_index = 15
+          ,   recipe_item_id = 45948
           }
 , [749] = {
               key = "$FOOD_033575"
@@ -6599,6 +6630,7 @@ LANG_DB = {
           ,   ja  = "宿屋〈ジェラールビュー〉のニンジンケーキ"
           ,   recipe_list_index = 3
           ,   recipe_index = 21
+          ,   recipe_item_id = 45952
           }
 , [750] = {
               key = "$FOOD_033581"
@@ -6610,6 +6642,7 @@ LANG_DB = {
           ,   ja  = "野兎のガーリックソース添え"
           ,   recipe_list_index = 1
           ,   recipe_index = 21
+          ,   recipe_item_id = 45953
           }
 , [751] = {
               key = "$FOOD_033581B"
@@ -6632,6 +6665,7 @@ LANG_DB = {
           ,   ja  = "ストームホールドの焼きバナナ"
           ,   recipe_list_index = 2
           ,   recipe_index = 21
+          ,   recipe_item_id = 45954
           }
 , [753] = {
               key = "$FOOD_033600"
@@ -6643,6 +6677,7 @@ LANG_DB = {
           ,   ja  = "赤いライ麦ビール"
           ,   recipe_list_index = 8
           ,   recipe_index = 2
+          ,   recipe_item_id = 45980
           }
 , [754] = {
               key = "$FOOD_033602"
@@ -6654,6 +6689,7 @@ LANG_DB = {
           ,   ja  = "エセリアルティー"
           ,   recipe_list_index = 9
           ,   recipe_index = 31
+          ,   recipe_item_id = 46049
           }
 , [755] = {
               key = "$FOOD_033602B"
@@ -6675,6 +6711,7 @@ LANG_DB = {
           ,   ja  = "マッツェ"
           ,   recipe_list_index = 8
           ,   recipe_index = 5
+          ,   recipe_item_id = 45981
           }
 , [757] = {
               key = "$FOOD_033612"
@@ -6686,6 +6723,7 @@ LANG_DB = {
           ,   ja  = "4つ目のグロッグ"
           ,   recipe_list_index = 8
           ,   recipe_index = 8
+          ,   recipe_item_id = 45982
           }
 , [758] = {
               key = "$FOOD_033624"
@@ -6697,6 +6735,7 @@ LANG_DB = {
           ,   ja  = "大麦のビール"
           ,   recipe_list_index = 8
           ,   recipe_index = 14
+          ,   recipe_item_id = 45984
           }
 , [759] = {
               key = "$FOOD_033630"
@@ -6708,6 +6747,7 @@ LANG_DB = {
           ,   ja  = "マーメイド・ウイスキー"
           ,   recipe_list_index = 8
           ,   recipe_index = 17
+          ,   recipe_item_id = 45985
           }
 , [760] = {
               key = "$FOOD_033636"
@@ -6719,6 +6759,7 @@ LANG_DB = {
           ,   ja  = "香辛料入りマッツェ"
           ,   recipe_list_index = 8
           ,   recipe_index = 20
+          ,   recipe_item_id = 45986
           }
 , [761] = {
               key = "$FOOD_033642"
@@ -6730,6 +6771,7 @@ LANG_DB = {
           ,   ja  = "ソーリー、ハニーラガー"
           ,   recipe_list_index = 8
           ,   recipe_index = 23
+          ,   recipe_item_id = 45987
           }
 , [762] = {
               key = "$FOOD_033672"
@@ -6741,6 +6783,7 @@ LANG_DB = {
           ,   ja  = "トリークルベリーティー"
           ,   recipe_list_index = 9
           ,   recipe_index = 14
+          ,   recipe_item_id = 46010
           }
 , [763] = {
               key = "$FOOD_033684"
@@ -6752,6 +6795,7 @@ LANG_DB = {
           ,   ja  = "スパイスベリーのチャイ"
           ,   recipe_list_index = 9
           ,   recipe_index = 20
+          ,   recipe_item_id = 46012
           }
 , [764] = {
               key = "$FOOD_033789"
@@ -6763,6 +6807,7 @@ LANG_DB = {
           ,   ja  = "シロディールのカボチャのフリッター"
           ,   recipe_list_index = 2
           ,   recipe_index = 20
+          ,   recipe_item_id = 45931
           }
 , [765] = {
               key = "$FOOD_033813"
@@ -6774,6 +6819,7 @@ LANG_DB = {
           ,   ja  = "焼きトウモロコシ"
           ,   recipe_list_index = 3
           ,   recipe_index = 3
+          ,   recipe_item_id = 45934
           }
 , [766] = {
               key = "$FOOD_033819"
@@ -6785,6 +6831,7 @@ LANG_DB = {
           ,   ja  = "鶏の胸肉"
           ,   recipe_list_index = 1
           ,   recipe_index = 3
+          ,   recipe_item_id = 45935
           }
 , [767] = {
               key = "$FOOD_033825"
@@ -6796,6 +6843,7 @@ LANG_DB = {
           ,   ja  = "ブドウのジャム"
           ,   recipe_list_index = 2
           ,   recipe_index = 3
+          ,   recipe_item_id = 45936
           }
 , [768] = {
               key = "$FOOD_033837"
@@ -6807,6 +6855,7 @@ LANG_DB = {
           ,   ja  = "焼きリンゴ"
           ,   recipe_list_index = 2
           ,   recipe_index = 1
+          ,   recipe_item_id = 45889
           }
 , [769] = {
               key = "$FOOD_033897"
@@ -6818,6 +6867,7 @@ LANG_DB = {
           ,   ja  = "シロディールのコーンブレッド"
           ,   recipe_list_index = 3
           ,   recipe_index = 25
+          ,   recipe_item_id = 45958
           }
 , [770] = {
               key = "$FOOD_033903"
@@ -6829,6 +6879,7 @@ LANG_DB = {
           ,   ja  = "マンモスの鼻のパイ"
           ,   recipe_list_index = 1
           ,   recipe_index = 25
+          ,   recipe_item_id = 45959
           }
 , [771] = {
               key = "$FOOD_033909"
@@ -6840,6 +6891,7 @@ LANG_DB = {
           ,   ja  = "スカイリムのジャズベイ・クロスタータ"
           ,   recipe_list_index = 2
           ,   recipe_index = 25
+          ,   recipe_item_id = 45960
           }
 , [772] = {
               key = "$FOOD_033933"
@@ -6851,6 +6903,7 @@ LANG_DB = {
           ,   ja  = "ゴールデンラガー"
           ,   recipe_list_index = 8
           ,   recipe_index = 3
+          ,   recipe_item_id = 45988
           }
 , [773] = {
               key = "$FOOD_033939"
@@ -6862,6 +6915,7 @@ LANG_DB = {
           ,   ja  = "スリリーのシラーワイン"
           ,   recipe_list_index = 8
           ,   recipe_index = 6
+          ,   recipe_item_id = 45989
           }
 , [774] = {
               key = "$FOOD_033945"
@@ -6873,6 +6927,7 @@ LANG_DB = {
           ,   ja  = "レモンフラワーのマッツェ"
           ,   recipe_list_index = 8
           ,   recipe_index = 9
+          ,   recipe_item_id = 45990
           }
 , [775] = {
               key = "$FOOD_033957"
@@ -6884,6 +6939,7 @@ LANG_DB = {
           ,   ja  = "手の込んだマッツェ"
           ,   recipe_list_index = 8
           ,   recipe_index = 15
+          ,   recipe_item_id = 45992
           }
 , [776] = {
               key = "$FOOD_033963"
@@ -6895,6 +6951,7 @@ LANG_DB = {
           ,   ja  = "ジンジャービール"
           ,   recipe_list_index = 8
           ,   recipe_index = 18
+          ,   recipe_item_id = 45993
           }
 , [777] = {
               key = "$FOOD_033969"
@@ -6906,6 +6963,7 @@ LANG_DB = {
           ,   ja  = "ホットワイン"
           ,   recipe_list_index = 8
           ,   recipe_index = 21
+          ,   recipe_item_id = 45994
           }
 , [778] = {
               key = "$FOOD_033975"
@@ -6917,6 +6975,7 @@ LANG_DB = {
           ,   ja  = "ネレイドワイン"
           ,   recipe_list_index = 8
           ,   recipe_index = 24
+          ,   recipe_item_id = 45995
           }
 , [779] = {
               key = "$FOOD_034005"
@@ -6928,6 +6987,7 @@ LANG_DB = {
           ,   ja  = "海花茶"
           ,   recipe_list_index = 9
           ,   recipe_index = 15
+          ,   recipe_item_id = 46018
           }
 , [780] = {
               key = "$FOOD_034017"
@@ -6939,6 +6999,7 @@ LANG_DB = {
           ,   ja  = "トルヴァルミントティー"
           ,   recipe_list_index = 9
           ,   recipe_index = 21
+          ,   recipe_item_id = 46020
           }
 , [781] = {
               key = "$FOOD_042790"
@@ -6950,6 +7011,7 @@ LANG_DB = {
           ,   ja  = "グレープシナモンゼリー"
           ,   recipe_list_index = 2
           ,   recipe_index = 19
+          ,   recipe_item_id = 45907
           }
 , [782] = {
               key = "$FOOD_042814"
@@ -6961,6 +7023,7 @@ LANG_DB = {
           ,   ja  = "ペレタインのトマトライス"
           ,   recipe_list_index = 2
           ,   recipe_index = 13
+          ,   recipe_item_id = 45901
           }
 , [783] = {
               key = "$FOOD_043088"
@@ -6972,6 +7035,7 @@ LANG_DB = {
           ,   ja  = "雑穀の豚腰肉包み焼き"
           ,   recipe_list_index = 1
           ,   recipe_index = 31
+          ,   recipe_item_id = 45965
           }
 , [784] = {
               key = "$FOOD_043094"
@@ -6983,6 +7047,7 @@ LANG_DB = {
           ,   ja  = "オークレストのニンニクとリンゴのゼリー"
           ,   recipe_list_index = 2
           ,   recipe_index = 31
+          ,   recipe_item_id = 45966
           }
 , [785] = {
               key = "$FOOD_064221"
@@ -6994,6 +7059,7 @@ LANG_DB = {
           ,   ja  = "サイジックのアンブロージア"
           ,   recipe_list_index = 15
           ,   recipe_index = 1
+          ,   recipe_item_id = 64223
           }
 , [786] = {
               key = "$FOOD_064221B"
@@ -7016,6 +7082,7 @@ LANG_DB = {
           ,   ja  = "リルモスのニンニクのヌタウナギ焼き"
           ,   recipe_list_index = 1
           ,   recipe_index = 42
+          ,   recipe_item_id = 68191
           }
 , [788] = {
               key = "$FOOD_068236"
@@ -7027,6 +7094,7 @@ LANG_DB = {
           ,   ja  = "ファーストホールドの果実とチーズのプレート"
           ,   recipe_list_index = 2
           ,   recipe_index = 40
+          ,   recipe_item_id = 68192
           }
 , [789] = {
               key = "$FOOD_068239"
@@ -7038,6 +7106,7 @@ LANG_DB = {
           ,   ja  = "ヘルシーなガーリックとコーンのチャウダー"
           ,   recipe_list_index = 3
           ,   recipe_index = 40
+          ,   recipe_item_id = 68195
           }
 , [790] = {
               key = "$FOOD_068251"
@@ -7048,6 +7117,7 @@ LANG_DB = {
           ,   ja  = "肥育鶏とトマトビーツのキャセロール"
           ,   recipe_list_index = 7
           ,   recipe_index = 28
+          ,   recipe_item_id = 68207
           }
 , [791] = {
               key = "$FOOD_068252"
@@ -7058,6 +7128,7 @@ LANG_DB = {
           ,   ja  = "ジャムで煮込んだ兎肉"
           ,   recipe_list_index = 7
           ,   recipe_index = 29
+          ,   recipe_item_id = 68208
           }
 , [792] = {
               key = "$FOOD_068253"
@@ -7068,6 +7139,7 @@ LANG_DB = {
           ,   ja  = "ロングフィンのパイのメロンソース添え"
           ,   recipe_list_index = 7
           ,   recipe_index = 30
+          ,   recipe_item_id = 68209
           }
 , [793] = {
               key = "$FOOD_068253B"
@@ -7088,6 +7160,7 @@ LANG_DB = {
           ,   ja  = "ウィサードツリーの鹿肉のポットロースト"
           ,   recipe_list_index = 7
           ,   recipe_index = 31
+          ,   recipe_item_id = 68210
           }
 , [795] = {
               key = "$FOOD_068257"
@@ -7099,6 +7172,7 @@ LANG_DB = {
           ,   ja  = "マルカルスのハチミツ酒"
           ,   recipe_list_index = 8
           ,   recipe_index = 42
+          ,   recipe_item_id = 68213
           }
 , [796] = {
               key = "$FOOD_068260"
@@ -7110,6 +7184,7 @@ LANG_DB = {
           ,   ja  = "ムスセラの良心の呵責"
           ,   recipe_list_index = 9
           ,   recipe_index = 42
+          ,   recipe_item_id = 68216
           }
 , [797] = {
               key = "$FOOD_068263"
@@ -7121,6 +7196,7 @@ LANG_DB = {
           ,   ja  = "ハグレイヴンのトニック"
           ,   recipe_list_index = 10
           ,   recipe_index = 42
+          ,   recipe_item_id = 68219
           }
 , [798] = {
               key = "$FOOD_068273"
@@ -7131,6 +7207,7 @@ LANG_DB = {
           ,   ja  = "センチタイガーのシングルモルト"
           ,   recipe_list_index = 14
           ,   recipe_index = 28
+          ,   recipe_item_id = 68229
           }
 , [799] = {
               key = "$FOOD_068273B"
@@ -7151,6 +7228,7 @@ LANG_DB = {
           ,   ja  = "ヴェロシビューのビンテージマルベックワイン"
           ,   recipe_list_index = 14
           ,   recipe_index = 29
+          ,   recipe_item_id = 68230
           }
 , [801] = {
               key = "$FOOD_068274B"
@@ -7172,6 +7250,7 @@ LANG_DB = {
           ,   ja  = "オークレストの苦悶のペールエール"
           ,   recipe_list_index = 14
           ,   recipe_index = 30
+          ,   recipe_item_id = 68231
           }
 , [803] = {
               key = "$FOOD_068275B"
@@ -7194,6 +7273,7 @@ LANG_DB = {
           ,   ja  = "好色なアルゴニアンの侍女のマッツェ"
           ,   recipe_list_index = 14
           ,   recipe_index = 31
+          ,   recipe_item_id = 68232
           }
 , [805] = {
               key = "$FOOD_068276B"
@@ -7216,6 +7296,7 @@ LANG_DB = {
           ,   ja  = "オーゾーガのレッド・フロスガー"
           ,   recipe_list_index = 15
           ,   recipe_index = 14
+          ,   recipe_item_id = 71060
           }
 , [807] = {
               key = "$FOOD_071056B"
@@ -7238,6 +7319,7 @@ LANG_DB = {
           ,   ja  = "オーゾーガの牛の内臓ミンチ入りのパン"
           ,   recipe_list_index = 16
           ,   recipe_index = 2
+          ,   recipe_item_id = 71061
           }
 , [809] = {
               key = "$FOOD_071057B"
@@ -7260,6 +7342,7 @@ LANG_DB = {
           ,   ja  = "オーゾーガのブラッド・プライス・パイ"
           ,   recipe_list_index = 16
           ,   recipe_index = 3
+          ,   recipe_item_id = 71062
           }
 , [811] = {
               key = "$FOOD_071058B"
@@ -7282,6 +7365,7 @@ LANG_DB = {
           ,   ja  = "オーゾーガの熊の腰肉の燻製"
           ,   recipe_list_index = 16
           ,   recipe_index = 4
+          ,   recipe_item_id = 71063
           }
 , [813] = {
               key = "$FOOD_071059B"

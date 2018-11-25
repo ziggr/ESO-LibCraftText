@@ -123,101 +123,105 @@ LibCraftText.ITEM = {
 
 -- Craftable Food and Drink --------------------------------------------------
 --
--- name             string that appears in "Craft Banana Surprise"
+-- name                 string that appears in "Craft Banana Surprise"
+--
+-- food_item_id         item_id for crafted food/drink
+--
+-- recipe_item_id       item_id for recipe to learn how to make this food/drink
 --
 -- recipe_list_index    API value for GetRecipeResultItemInfo() and others
 --
--- recipe_index     API value for GetRecipeResultItemInfo() and others
+-- recipe_index         API value for GetRecipeResultItemInfo() and others
 --
 LibCraftText.RECIPE = {
 -- daily
-  ["AETHERIAL_TEA"                   ] = { name="エセリアルティー"                              , food_item_id=033602, recipe_list_index=  9, recipe_index= 31, name_2="エセリアルティー"    }
-, ["ALIKR_BEETS_WITH_GOAT_CHEESE"    ] = { name="アリクルのビートの山羊乳チーズ添え"                     , food_item_id=028338, recipe_list_index=  3, recipe_index= 13}
-, ["BAKED_APPLES"                    ] = { name="焼きリンゴ"                                 , food_item_id=033837, recipe_list_index=  2, recipe_index=  1}
-, ["BAKED_POTATO"                    ] = { name="ベイクドポテト"                               , food_item_id=028354, recipe_list_index=  3, recipe_index=  2}
-, ["BANANA_SURPRISE"                 ] = { name="びっくりバナナ"                               , food_item_id=028281, recipe_list_index=  2, recipe_index=  2}
-, ["BARLEY_NECTAR"                   ] = { name="大麦のビール"                                , food_item_id=033624, recipe_list_index=  8, recipe_index= 14}
-, ["BATTAGLIR_CHOWDER"               ] = { name="バタグリアのチャウダー"                           , food_item_id=028394, recipe_list_index=  3, recipe_index= 15}
-, ["BITTERLEMON_TEA"                 ] = { name="ビターレモンティー"                             , food_item_id=028457, recipe_list_index=  9, recipe_index= 13}
-, ["BLUE_ROAD_MARATHON"              ] = { name="ブルーロード・マラソン"                           , food_item_id=028513, recipe_list_index= 10, recipe_index= 25}
-, ["BOG_IRON_ALE"                    ] = { name="泥鉄鉱のエール"                               , food_item_id=028405, recipe_list_index=  8, recipe_index=  4}
-, ["BRETON_PORK_SAUSAGE"             ] = { name="ブレトンのポークソーセージ"                         , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
-, ["CARROT_SOUP"                     ] = { name="ニンジンスープ"                               , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
-, ["CHICKEN_BREAST"                  ] = { name="鶏の胸肉"                                  , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
-, ["CHORROL_CORN_ON_THE_COB"         ] = { name="コロールの軸付きトウモロコシ"                        , food_item_id=033514, recipe_list_index=  3, recipe_index= 20}
-, ["CINNAMON_GRAPE_JELLY"            ] = { name="グレープシナモンゼリー"                           , food_item_id=042790, recipe_list_index=  2, recipe_index= 19}
-, ["CLARIFIED_SYRAH_WINE"            ] = { name="シラーワインの蒸留酒"                            , food_item_id=028409, recipe_list_index=  8, recipe_index=  7, name_2="シラーワインの蒸留酒"  }
-, ["COMELY_WENCH_WHISKEY"            ] = { name="カムリーウェンチ・ウイスキー"                        , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
-, ["CYRODILIC_CORNBREAD"             ] = { name="シロディールのコーンブレッド"                        , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
-, ["CYRODILIC_PUMPKIN_FRITTERS"      ] = { name="シロディールのカボチャのフリッター"                     , food_item_id=033789, recipe_list_index=  2, recipe_index= 20}
-, ["ELENHIR_ROAST_ANTELOPE"          ] = { name="エリンヒルの羚羊の肉のロースト"                       , food_item_id=033520, recipe_list_index=  1, recipe_index= 20}
-, ["ELTHERIC_HOOCH"                  ] = { name="エルセリックの安酒"                             , food_item_id=028417, recipe_list_index=  8, recipe_index= 13, name_2="エルセリックの安酒"   }
-, ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="ファーストホールドの果実とチーズのプレート"                 , food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
-, ["FISHY_STICK"                     ] = { name="魚のフライ"                                 , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
-, ["FOUR_EYE_GROG"                   ] = { name="4つ目のグロッグ"                              , food_item_id=033612, recipe_list_index=  8, recipe_index=  8}
-, ["GARLIC_MASHED_POTATOES"          ] = { name="ガーリックマッシュポテト"                          , food_item_id=028346, recipe_list_index=  3, recipe_index= 19}
-, ["GARLIC_PUMPKIN_SEEDS"            ] = { name="カボチャの種のニンニク炒め"                         , food_item_id=033490, recipe_list_index=  2, recipe_index= 14}
-, ["GINGER_WHEAT_BEER"               ] = { name="ジンジャービール"                              , food_item_id=033963, recipe_list_index=  8, recipe_index= 18}
-, ["GODS_BLIND_ME"                   ] = { name="ゴッズ・ブラインド・ミー"                          , food_item_id=028433, recipe_list_index=  8, recipe_index= 25, name_2="ゴッズ・ブラインド・ミー"}
-, ["GOLDEN_LAGER"                    ] = { name="ゴールデンラガー"                              , food_item_id=033933, recipe_list_index=  8, recipe_index=  3}
-, ["GOSSAMER_MAZTE"                  ] = { name="手の込んだマッツェ"                             , food_item_id=033957, recipe_list_index=  8, recipe_index= 15}
-, ["GRANDPAS_BEDTIME_TONIC"          ] = { name="グランパのベッドタイム・トニック"                      , food_item_id=028444, recipe_list_index= 10, recipe_index= 31}
-, ["GRAPE_PRESERVES"                 ] = { name="ブドウのジャム"                               , food_item_id=033825, recipe_list_index=  2, recipe_index=  3}
-, ["HAGRAVENS_TONIC"                 ] = { name="ハグレイヴンのトニック"                           , food_item_id=068263, recipe_list_index= 10, recipe_index= 42}
-, ["HARE_IN_GARLIC_SAUCE"            ] = { name="野兎のガーリックソース添え"                         , food_item_id=033581, recipe_list_index=  1, recipe_index= 21, name_2="野兎のガーリックソース添え"}
-, ["HEARTY_GARLIC_CORN_CHOWDER"      ] = { name="ヘルシーなガーリックとコーンのチャウダー"                  , food_item_id=068239, recipe_list_index=  3, recipe_index= 40}
-, ["HONEY_RYE"                       ] = { name="ハニーライ・ウイスキー"                           , food_item_id=028421, recipe_list_index=  8, recipe_index= 16}
-, ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="宿屋〈ジェラールビュー〉のニンジンケーキ"                  , food_item_id=033575, recipe_list_index=  3, recipe_index= 21}
-, ["LEMON_FLOWER_MAZTE"              ] = { name="レモンフラワーのマッツェ"                          , food_item_id=033945, recipe_list_index=  8, recipe_index=  9}
-, ["LILMOTH_GARLIC_HAGFISH"          ] = { name="リルモスのニンニクのヌタウナギ焼き"                     , food_item_id=068235, recipe_list_index=  1, recipe_index= 42}
-, ["LUSTY_ARGONIAN_MAID_MAZTE"       ] = { name="好色なアルゴニアンの侍女のマッツェ"                     , food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="好色なアルゴニアンの侍女のマッツェ"}
-, ["MAMMOTH_SNOUT_PIE"               ] = { name="マンモスの鼻のパイ"                             , food_item_id=033903, recipe_list_index=  1, recipe_index= 25}
-, ["MAORMER_TEA"                     ] = { name="マオマーティー"                               , food_item_id=028465, recipe_list_index=  9, recipe_index= 19}
-, ["MARKARTH_MEAD"                   ] = { name="マルカルスのハチミツ酒"                           , food_item_id=068257, recipe_list_index=  8, recipe_index= 42}
-, ["MAZTE"                           ] = { name="マッツェ"                                  , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
-, ["MERMAID_WHISKEY"                 ] = { name="マーメイド・ウイスキー"                           , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
-, ["MILLET_STUFFED_PORK_LOIN"        ] = { name="雑穀の豚腰肉包み焼き"                            , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
-, ["MULLED_WINE"                     ] = { name="ホットワイン"                                , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
-, ["MUTHSERAS_REMORSE"               ] = { name="ムスセラの良心の呵責"                            , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}
-, ["NEREID_WINE"                     ] = { name="ネレイドワイン"                               , food_item_id=033975, recipe_list_index=  8, recipe_index= 24}
-, ["NIBENESE_GARLIC_CARROTS"         ] = { name="ニベン人のニンジンのニンニク炒め"                      , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
-, ["NUT_BROWN_ALE"                   ] = { name="ナット・ブラウンエール"                           , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
-, ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="オークレストのニンニクとリンゴのゼリー"                   , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
-, ["PELLITINE_TOMATO_RICE"           ] = { name="ペレタインのトマトライス"                          , food_item_id=042814, recipe_list_index=  2, recipe_index= 13}
-, ["RED_RYE_BEER"                    ] = { name="赤いライ麦ビール"                              , food_item_id=033600, recipe_list_index=  8, recipe_index=  2}
-, ["REDORAN_PEPPERED_MELON"          ] = { name="レドランのペッパードメロン"                         , food_item_id=033552, recipe_list_index=  2, recipe_index= 15}
-, ["ROAST_CORN"                      ] = { name="焼きトウモロコシ"                              , food_item_id=033813, recipe_list_index=  3, recipe_index=  3}
-, ["RYE_IN_YOUR_EYE"                 ] = { name="瞳に映るライ・ウイスキー"                          , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
-, ["SEAFLOWER_TEA"                   ] = { name="海花茶"                                   , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
-, ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name="センシャルのシーフードカレー"                        , food_item_id=028350, recipe_list_index=  1, recipe_index= 19}
-, ["SKYRIM_JAZBAY_CROSTATA"          ] = { name="スカイリムのジャズベイ・クロスタータ"                    , food_item_id=033909, recipe_list_index=  2, recipe_index= 25}
-, ["SORRY_HONEY_LAGER"               ] = { name="ソーリー、ハニーラガー"                           , food_item_id=033642, recipe_list_index=  8, recipe_index= 23}
-, ["SOUR_MASH"                       ] = { name="すっぱい麦芽汁"                               , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
-, ["SPICEBERRY_CHAI"                 ] = { name="スパイスベリーのチャイ"                           , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
-, ["SPICED_MAZTE"                    ] = { name="香辛料入りマッツェ"                             , food_item_id=033636, recipe_list_index=  8, recipe_index= 20}
-, ["STORMHOLD_BAKED_BANANAS"         ] = { name="ストームホールドの焼きバナナ"                        , food_item_id=033587, recipe_list_index=  2, recipe_index= 21}
-, ["SURILIE_SYRAH_WINE"              ] = { name="スリリーのシラーワイン"                           , food_item_id=033939, recipe_list_index=  8, recipe_index=  6}
-, ["TORVAL_MINT_TEA"                 ] = { name="トルヴァルミントティー"                           , food_item_id=034017, recipe_list_index=  9, recipe_index= 21}
-, ["TREACLEBERRY_TEA"                ] = { name="トリークルベリーティー"                           , food_item_id=033672, recipe_list_index=  9, recipe_index= 14}
-, ["TWO_ZEPHYR_TEA"                  ] = { name="トゥーゼファーティー"                            , food_item_id=028473, recipe_list_index=  9, recipe_index= 25}
-, ["VENISON_PASTY"                   ] = { name="鹿肉のパスティ"                               , food_item_id=028398, recipe_list_index=  1, recipe_index= 15}
-, ["WEST_WEALD_CORN_CHOWDER"         ] = { name="ウェストウィールドのコーンチャウダー"                    , food_item_id=032160, recipe_list_index=  3, recipe_index= 31}
-, ["WHITERUN_CHEESE_BAKED_TROUT"     ] = { name="ホワイトランのマスのチーズ焼き"                       , food_item_id=033484, recipe_list_index=  1, recipe_index= 14}
+  ["AETHERIAL_TEA"                      ] = { name="エセリアルティー"                              , food_item_id=033602, recipe_item_id=046049, recipe_list_index=  9, recipe_index= 31, name_2="エセリアルティー"    }
+, ["ALIKR_BEETS_WITH_GOAT_CHEESE"       ] = { name="アリクルのビートの山羊乳チーズ添え"                     , food_item_id=028338, recipe_item_id=045899, recipe_list_index=  3, recipe_index= 13}
+, ["BAKED_APPLES"                       ] = { name="焼きリンゴ"                                 , food_item_id=033837, recipe_item_id=045889, recipe_list_index=  2, recipe_index=  1}
+, ["BAKED_POTATO"                       ] = { name="ベイクドポテト"                               , food_item_id=028354, recipe_item_id=045912, recipe_list_index=  3, recipe_index=  2}
+, ["BANANA_SURPRISE"                    ] = { name="びっくりバナナ"                               , food_item_id=028281, recipe_item_id=045913, recipe_list_index=  2, recipe_index=  2}
+, ["BARLEY_NECTAR"                      ] = { name="大麦のビール"                                , food_item_id=033624, recipe_item_id=045984, recipe_list_index=  8, recipe_index= 14}
+, ["BATTAGLIR_CHOWDER"                  ] = { name="バタグリアのチャウダー"                           , food_item_id=028394, recipe_item_id=045946, recipe_list_index=  3, recipe_index= 15}
+, ["BITTERLEMON_TEA"                    ] = { name="ビターレモンティー"                             , food_item_id=028457, recipe_item_id=046000, recipe_list_index=  9, recipe_index= 13}
+, ["BLUE_ROAD_MARATHON"                 ] = { name="ブルーロード・マラソン"                           , food_item_id=028513, recipe_item_id=046030, recipe_list_index= 10, recipe_index= 25}
+, ["BOG_IRON_ALE"                       ] = { name="泥鉄鉱のエール"                               , food_item_id=028405, recipe_item_id=045971, recipe_list_index=  8, recipe_index=  4}
+, ["BRETON_PORK_SAUSAGE"                ] = { name="ブレトンのポークソーセージ"                         , food_item_id=028342, recipe_item_id=045900, recipe_list_index=  1, recipe_index= 13}
+, ["CARROT_SOUP"                        ] = { name="ニンジンスープ"                               , food_item_id=028321, recipe_item_id=045887, recipe_list_index=  3, recipe_index=  1}
+, ["CHICKEN_BREAST"                     ] = { name="鶏の胸肉"                                  , food_item_id=033819, recipe_item_id=045935, recipe_list_index=  1, recipe_index=  3}
+, ["CHORROL_CORN_ON_THE_COB"            ] = { name="コロールの軸付きトウモロコシ"                        , food_item_id=033514, recipe_item_id=045929, recipe_list_index=  3, recipe_index= 20}
+, ["CINNAMON_GRAPE_JELLY"               ] = { name="グレープシナモンゼリー"                           , food_item_id=042790, recipe_item_id=045907, recipe_list_index=  2, recipe_index= 19}
+, ["CLARIFIED_SYRAH_WINE"               ] = { name="シラーワインの蒸留酒"                            , food_item_id=028409, recipe_item_id=045972, recipe_list_index=  8, recipe_index=  7, name_2="シラーワインの蒸留酒"  }
+, ["COMELY_WENCH_WHISKEY"               ] = { name="カムリーウェンチ・ウイスキー"                        , food_item_id=028402, recipe_item_id=046048, recipe_list_index=  8, recipe_index= 31}
+, ["CYRODILIC_CORNBREAD"                ] = { name="シロディールのコーンブレッド"                        , food_item_id=033897, recipe_item_id=045958, recipe_list_index=  3, recipe_index= 25}
+, ["CYRODILIC_PUMPKIN_FRITTERS"         ] = { name="シロディールのカボチャのフリッター"                     , food_item_id=033789, recipe_item_id=045931, recipe_list_index=  2, recipe_index= 20}
+, ["ELENHIR_ROAST_ANTELOPE"             ] = { name="エリンヒルの羚羊の肉のロースト"                       , food_item_id=033520, recipe_item_id=045930, recipe_list_index=  1, recipe_index= 20}
+, ["ELTHERIC_HOOCH"                     ] = { name="エルセリックの安酒"                             , food_item_id=028417, recipe_item_id=045974, recipe_list_index=  8, recipe_index= 13, name_2="エルセリックの安酒"   }
+, ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"   ] = { name="ファーストホールドの果実とチーズのプレート"                 , food_item_id=068236, recipe_item_id=068192, recipe_list_index=  2, recipe_index= 40}
+, ["FISHY_STICK"                        ] = { name="魚のフライ"                                 , food_item_id=033526, recipe_item_id=045888, recipe_list_index=  1, recipe_index=  1}
+, ["FOUR_EYE_GROG"                      ] = { name="4つ目のグロッグ"                              , food_item_id=033612, recipe_item_id=045982, recipe_list_index=  8, recipe_index=  8}
+, ["GARLIC_MASHED_POTATOES"             ] = { name="ガーリックマッシュポテト"                          , food_item_id=028346, recipe_item_id=045905, recipe_list_index=  3, recipe_index= 19}
+, ["GARLIC_PUMPKIN_SEEDS"               ] = { name="カボチャの種のニンニク炒め"                         , food_item_id=033490, recipe_item_id=045925, recipe_list_index=  2, recipe_index= 14}
+, ["GINGER_WHEAT_BEER"                  ] = { name="ジンジャービール"                              , food_item_id=033963, recipe_item_id=045993, recipe_list_index=  8, recipe_index= 18}
+, ["GODS_BLIND_ME"                      ] = { name="ゴッズ・ブラインド・ミー"                          , food_item_id=028433, recipe_item_id=045978, recipe_list_index=  8, recipe_index= 25, name_2="ゴッズ・ブラインド・ミー"}
+, ["GOLDEN_LAGER"                       ] = { name="ゴールデンラガー"                              , food_item_id=033933, recipe_item_id=045988, recipe_list_index=  8, recipe_index=  3}
+, ["GOSSAMER_MAZTE"                     ] = { name="手の込んだマッツェ"                             , food_item_id=033957, recipe_item_id=045992, recipe_list_index=  8, recipe_index= 15}
+, ["GRANDPAS_BEDTIME_TONIC"             ] = { name="グランパのベッドタイム・トニック"                      , food_item_id=028444, recipe_item_id=046050, recipe_list_index= 10, recipe_index= 31}
+, ["GRAPE_PRESERVES"                    ] = { name="ブドウのジャム"                               , food_item_id=033825, recipe_item_id=045936, recipe_list_index=  2, recipe_index=  3}
+, ["HAGRAVENS_TONIC"                    ] = { name="ハグレイヴンのトニック"                           , food_item_id=068263, recipe_item_id=068219, recipe_list_index= 10, recipe_index= 42}
+, ["HARE_IN_GARLIC_SAUCE"               ] = { name="野兎のガーリックソース添え"                         , food_item_id=033581, recipe_item_id=045953, recipe_list_index=  1, recipe_index= 21, name_2="野兎のガーリックソース添え"}
+, ["HEARTY_GARLIC_CORN_CHOWDER"         ] = { name="ヘルシーなガーリックとコーンのチャウダー"                  , food_item_id=068239, recipe_item_id=068195, recipe_list_index=  3, recipe_index= 40}
+, ["HONEY_RYE"                          ] = { name="ハニーライ・ウイスキー"                           , food_item_id=028421, recipe_item_id=045975, recipe_list_index=  8, recipe_index= 16}
+, ["JERALL_VIEW_INN_CARROT_CAKE"        ] = { name="宿屋〈ジェラールビュー〉のニンジンケーキ"                  , food_item_id=033575, recipe_item_id=045952, recipe_list_index=  3, recipe_index= 21}
+, ["LEMON_FLOWER_MAZTE"                 ] = { name="レモンフラワーのマッツェ"                          , food_item_id=033945, recipe_item_id=045990, recipe_list_index=  8, recipe_index=  9}
+, ["LILMOTH_GARLIC_HAGFISH"             ] = { name="リルモスのニンニクのヌタウナギ焼き"                     , food_item_id=068235, recipe_item_id=068191, recipe_list_index=  1, recipe_index= 42}
+, ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name="好色なアルゴニアンの侍女のマッツェ"                     , food_item_id=068276, recipe_item_id=068232, recipe_list_index= 14, recipe_index= 31, name_2="好色なアルゴニアンの侍女のマッツェ"}
+, ["MAMMOTH_SNOUT_PIE"                  ] = { name="マンモスの鼻のパイ"                             , food_item_id=033903, recipe_item_id=045959, recipe_list_index=  1, recipe_index= 25}
+, ["MAORMER_TEA"                        ] = { name="マオマーティー"                               , food_item_id=028465, recipe_item_id=046002, recipe_list_index=  9, recipe_index= 19}
+, ["MARKARTH_MEAD"                      ] = { name="マルカルスのハチミツ酒"                           , food_item_id=068257, recipe_item_id=068213, recipe_list_index=  8, recipe_index= 42}
+, ["MAZTE"                              ] = { name="マッツェ"                                  , food_item_id=033606, recipe_item_id=045981, recipe_list_index=  8, recipe_index=  5}
+, ["MERMAID_WHISKEY"                    ] = { name="マーメイド・ウイスキー"                           , food_item_id=033630, recipe_item_id=045985, recipe_list_index=  8, recipe_index= 17}
+, ["MILLET_STUFFED_PORK_LOIN"           ] = { name="雑穀の豚腰肉包み焼き"                            , food_item_id=043088, recipe_item_id=045965, recipe_list_index=  1, recipe_index= 31}
+, ["MULLED_WINE"                        ] = { name="ホットワイン"                                , food_item_id=033969, recipe_item_id=045994, recipe_list_index=  8, recipe_index= 21}
+, ["MUTHSERAS_REMORSE"                  ] = { name="ムスセラの良心の呵責"                            , food_item_id=068260, recipe_item_id=068216, recipe_list_index=  9, recipe_index= 42}
+, ["NEREID_WINE"                        ] = { name="ネレイドワイン"                               , food_item_id=033975, recipe_item_id=045995, recipe_list_index=  8, recipe_index= 24}
+, ["NIBENESE_GARLIC_CARROTS"            ] = { name="ニベン人のニンジンのニンニク炒め"                      , food_item_id=033478, recipe_item_id=045923, recipe_list_index=  3, recipe_index= 14}
+, ["NUT_BROWN_ALE"                      ] = { name="ナット・ブラウンエール"                           , food_item_id=028401, recipe_item_id=045970, recipe_list_index=  8, recipe_index=  1}
+, ["ORCREST_GARLIC_APPLE_JELLY"         ] = { name="オークレストのニンニクとリンゴのゼリー"                   , food_item_id=043094, recipe_item_id=045966, recipe_list_index=  2, recipe_index= 31}
+, ["PELLITINE_TOMATO_RICE"              ] = { name="ペレタインのトマトライス"                          , food_item_id=042814, recipe_item_id=045901, recipe_list_index=  2, recipe_index= 13}
+, ["RED_RYE_BEER"                       ] = { name="赤いライ麦ビール"                              , food_item_id=033600, recipe_item_id=045980, recipe_list_index=  8, recipe_index=  2}
+, ["REDORAN_PEPPERED_MELON"             ] = { name="レドランのペッパードメロン"                         , food_item_id=033552, recipe_item_id=045948, recipe_list_index=  2, recipe_index= 15}
+, ["ROAST_CORN"                         ] = { name="焼きトウモロコシ"                              , food_item_id=033813, recipe_item_id=045934, recipe_list_index=  3, recipe_index=  3}
+, ["RYE_IN_YOUR_EYE"                    ] = { name="瞳に映るライ・ウイスキー"                          , food_item_id=028429, recipe_item_id=045977, recipe_list_index=  8, recipe_index= 22}
+, ["SEAFLOWER_TEA"                      ] = { name="海花茶"                                   , food_item_id=034005, recipe_item_id=046018, recipe_list_index=  9, recipe_index= 15}
+, ["SENCHAL_CURRY_FISH_AND_RICE"        ] = { name="センシャルのシーフードカレー"                        , food_item_id=028350, recipe_item_id=045906, recipe_list_index=  1, recipe_index= 19}
+, ["SKYRIM_JAZBAY_CROSTATA"             ] = { name="スカイリムのジャズベイ・クロスタータ"                    , food_item_id=033909, recipe_item_id=045960, recipe_list_index=  2, recipe_index= 25}
+, ["SORRY_HONEY_LAGER"                  ] = { name="ソーリー、ハニーラガー"                           , food_item_id=033642, recipe_item_id=045987, recipe_list_index=  8, recipe_index= 23}
+, ["SOUR_MASH"                          ] = { name="すっぱい麦芽汁"                               , food_item_id=028425, recipe_item_id=045976, recipe_list_index=  8, recipe_index= 19}
+, ["SPICEBERRY_CHAI"                    ] = { name="スパイスベリーのチャイ"                           , food_item_id=033684, recipe_item_id=046012, recipe_list_index=  9, recipe_index= 20}
+, ["SPICED_MAZTE"                       ] = { name="香辛料入りマッツェ"                             , food_item_id=033636, recipe_item_id=045986, recipe_list_index=  8, recipe_index= 20}
+, ["STORMHOLD_BAKED_BANANAS"            ] = { name="ストームホールドの焼きバナナ"                        , food_item_id=033587, recipe_item_id=045954, recipe_list_index=  2, recipe_index= 21}
+, ["SURILIE_SYRAH_WINE"                 ] = { name="スリリーのシラーワイン"                           , food_item_id=033939, recipe_item_id=045989, recipe_list_index=  8, recipe_index=  6}
+, ["TORVAL_MINT_TEA"                    ] = { name="トルヴァルミントティー"                           , food_item_id=034017, recipe_item_id=046020, recipe_list_index=  9, recipe_index= 21}
+, ["TREACLEBERRY_TEA"                   ] = { name="トリークルベリーティー"                           , food_item_id=033672, recipe_item_id=046010, recipe_list_index=  9, recipe_index= 14}
+, ["TWO_ZEPHYR_TEA"                     ] = { name="トゥーゼファーティー"                            , food_item_id=028473, recipe_item_id=046004, recipe_list_index=  9, recipe_index= 25}
+, ["VENISON_PASTY"                      ] = { name="鹿肉のパスティ"                               , food_item_id=028398, recipe_item_id=045947, recipe_list_index=  1, recipe_index= 15}
+, ["WEST_WEALD_CORN_CHOWDER"            ] = { name="ウェストウィールドのコーンチャウダー"                    , food_item_id=032160, recipe_item_id=045964, recipe_list_index=  3, recipe_index= 31}
+, ["WHITERUN_CHEESE_BAKED_TROUT"        ] = { name="ホワイトランのマスのチーズ焼き"                       , food_item_id=033484, recipe_item_id=045924, recipe_list_index=  1, recipe_index= 14}
 
 -- master
-, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="肥育鶏とトマトビーツのキャセロール"                     , food_item_id=068251, recipe_list_index=  7, recipe_index= 28, name_2="ロングフィンのパイのメロンソース添え"}
-, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="ジャムで煮込んだ兎肉"                            , food_item_id=068252, recipe_list_index=  7, recipe_index= 29, name_2="ロングフィンのパイのメロンソース添え"}
-, ["LONGFIN_PASTY_WITH_MELON_SAUCE"     ] = { name="ロングフィンのパイのメロンソース添え"                    , food_item_id=068253, recipe_list_index=  7, recipe_index= 30, name_2="ロングフィンのパイのメロンソース添え"}
-, ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name="好色なアルゴニアンの侍女のマッツェ"                     , food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="好色なアルゴニアンの侍女のマッツェ"}
-, ["ORCREST_AGONY_PALE_ALE"             ] = { name="オークレストの苦悶のペールエール"                      , food_item_id=068275, recipe_list_index= 14, recipe_index= 30, name_2="オークレストの苦悶のペールエール"}
-, ["ORZORGAS_BLOOD_PRICE_PIE"           ] = { name="オーゾーガのブラッド・プライス・パイ"                    , food_item_id=071058, recipe_list_index= 16, recipe_index=  3, name_2="オーゾーガのブラッド・プライス・パイ"}
-, ["ORZORGAS_RED_FROTHGAR"              ] = { name="オーゾーガのレッド・フロスガー"                       , food_item_id=071056, recipe_list_index= 15, recipe_index= 14, name_2="オーゾーガのレッド・フロスガー"}
-, ["ORZORGAS_SMOKED_BEAR_HAUNCH"        ] = { name="オーゾーガの熊の腰肉の燻製"                         , food_item_id=071059, recipe_list_index= 16, recipe_index=  4, name_2="オーゾーガの熊の腰肉の燻製"}
-, ["ORZORGAS_TRIPE_TRIFLE_POCKET"       ] = { name="オーゾーガの牛の内臓ミンチ入りのパン"                    , food_item_id=071057, recipe_list_index= 16, recipe_index=  2, name_2="オーゾーガの牛の内臓ミンチ入りのパン"}
-, ["PSIJIC_AMBROSIA"                    ] = { name="サイジックのアンブロージア"                         , food_item_id=064221, recipe_list_index= 15, recipe_index=  1, name_2="サイジックのアンブロージア"}
-, ["SENCHE_TIGER_SINGLE_MALT"           ] = { name="センチタイガーのシングルモルト"                       , food_item_id=068273, recipe_list_index= 14, recipe_index= 28, name_2="センチタイガーのシングルモルト"}
-, ["VELOTHI_VIEW_VINTAGE_MALBEC"        ] = { name="ヴェロシビューのビンテージマルベックワイン"                 , food_item_id=068274, recipe_list_index= 14, recipe_index= 29, name_2="ヴェロシビューのビンテージマルベックワイン"}
-, ["WITHERED_TREE_INN_VENISON_POT_ROAST"] = { name="ウィサードツリーの鹿肉のポットロースト"                   , food_item_id=068254, recipe_list_index=  7, recipe_index= 31, name_2="ロングフィンのパイのメロンソース添え"}
+, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="肥育鶏とトマトビーツのキャセロール"                     , food_item_id=068251, recipe_item_id=068207, recipe_list_index=  7, recipe_index= 28, name_2="ロングフィンのパイのメロンソース添え"}
+, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="ジャムで煮込んだ兎肉"                            , food_item_id=068252, recipe_item_id=068208, recipe_list_index=  7, recipe_index= 29, name_2="ロングフィンのパイのメロンソース添え"}
+, ["LONGFIN_PASTY_WITH_MELON_SAUCE"     ] = { name="ロングフィンのパイのメロンソース添え"                    , food_item_id=068253, recipe_item_id=068209, recipe_list_index=  7, recipe_index= 30, name_2="ロングフィンのパイのメロンソース添え"}
+, ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name="好色なアルゴニアンの侍女のマッツェ"                     , food_item_id=068276, recipe_item_id=068232, recipe_list_index= 14, recipe_index= 31, name_2="好色なアルゴニアンの侍女のマッツェ"}
+, ["ORCREST_AGONY_PALE_ALE"             ] = { name="オークレストの苦悶のペールエール"                      , food_item_id=068275, recipe_item_id=068231, recipe_list_index= 14, recipe_index= 30, name_2="オークレストの苦悶のペールエール"}
+, ["ORZORGAS_BLOOD_PRICE_PIE"           ] = { name="オーゾーガのブラッド・プライス・パイ"                    , food_item_id=071058, recipe_item_id=071062, recipe_list_index= 16, recipe_index=  3, name_2="オーゾーガのブラッド・プライス・パイ"}
+, ["ORZORGAS_RED_FROTHGAR"              ] = { name="オーゾーガのレッド・フロスガー"                       , food_item_id=071056, recipe_item_id=071060, recipe_list_index= 15, recipe_index= 14, name_2="オーゾーガのレッド・フロスガー"}
+, ["ORZORGAS_SMOKED_BEAR_HAUNCH"        ] = { name="オーゾーガの熊の腰肉の燻製"                         , food_item_id=071059, recipe_item_id=071063, recipe_list_index= 16, recipe_index=  4, name_2="オーゾーガの熊の腰肉の燻製"}
+, ["ORZORGAS_TRIPE_TRIFLE_POCKET"       ] = { name="オーゾーガの牛の内臓ミンチ入りのパン"                    , food_item_id=071057, recipe_item_id=071061, recipe_list_index= 16, recipe_index=  2, name_2="オーゾーガの牛の内臓ミンチ入りのパン"}
+, ["PSIJIC_AMBROSIA"                    ] = { name="サイジックのアンブロージア"                         , food_item_id=064221, recipe_item_id=064223, recipe_list_index= 15, recipe_index=  1, name_2="サイジックのアンブロージア"}
+, ["SENCHE_TIGER_SINGLE_MALT"           ] = { name="センチタイガーのシングルモルト"                       , food_item_id=068273, recipe_item_id=068229, recipe_list_index= 14, recipe_index= 28, name_2="センチタイガーのシングルモルト"}
+, ["VELOTHI_VIEW_VINTAGE_MALBEC"        ] = { name="ヴェロシビューのビンテージマルベックワイン"                 , food_item_id=068274, recipe_item_id=068230, recipe_list_index= 14, recipe_index= 29, name_2="ヴェロシビューのビンテージマルベックワイン"}
+, ["WITHERED_TREE_INN_VENISON_POT_ROAST"] = { name="ウィサードツリーの鹿肉のポットロースト"                   , food_item_id=068254, recipe_item_id=068210, recipe_list_index=  7, recipe_index= 31, name_2="ロングフィンのパイのメロンソース添え"}
 }
 
 

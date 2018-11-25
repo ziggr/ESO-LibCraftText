@@ -1233,9 +1233,17 @@ function LibCraftText.DiscoverRecipes()
                 end
             end
         end
+
+                        -- Start a long, async, scan of entire itemId table
+                        -- to find recipes. There is no food->recipe pointer in
+                        -- ESO data, so O(n) 200,000 row table scan it is!
+                        --
+                        -- First recipe that we care about is in 45,000s.
+                        -- Last recipe that we care about is in ?
+        self.DiscoverRecipeFoodPairs(40001, 20000, 200000)
     end
                         -- For ALL languages, collect food names.
-                        -- Assumes that you
+                        -- Assumes that you actually know the recipe.
     local recorded_ct = 0
     self.saved_var.recipes = self.saved_var.recipes or {}
     for food_item_id,recipe in pairs(self.saved_var.recipes) do
@@ -1249,6 +1257,69 @@ function LibCraftText.DiscoverRecipes()
     if recorded_ct <= 0 then
         Error("Cannot scan recipes. Start in EN English.")
     end
+end
+
+function LibCraftText.DiscoverRecipeFoodPairs(start_item_id, scan_ct, final_end_id, discovered_ct)
+    local self = LibCraftText
+    discovered_ct = discovered_ct or 0
+    self.saved_var.recipes = self.saved_var.recipes or {}
+    local recipes = self.saved_var.recipes
+    for item_id = start_item_id,start_item_id+scan_ct-1 do
+        local item_link = LibCraftText.ItemIDToItemLink(item_id)
+-- if item_id == 45935 then
+--     local crafting_type = GetItemLinkRecipeCraftingSkillType(item_link)
+--     local item_name = GetItemLinkName(item_link)
+--     Info("%6d %d '%s' %s"
+--         ,item_id, crafting_type, item_name, item_link)
+-- end
+        if self.IsRecipe(item_link) then
+            local recipe_link    = item_link
+            local recipe_item_id = item_id
+            local food_link = GetItemLinkRecipeResultItemLink(recipe_link)
+            local food_item_id = self.ItemLinkToItemID(food_link)
+                        -- Only record recipes for the 20 or so foods we
+                        -- actually recorded in DiscoverRecipes().
+            if recipes[food_item_id] then
+                recipes[food_item_id].recipe_item_id = recipe_item_id
+                -- Info("recipe scan recipe_item_id:%6d %s", recipe_item_id
+                --         , recipes[food_item_id].name.en)
+                discovered_ct = discovered_ct + 1
+            end
+        end
+    end
+    Info( "recipe scan item_id:%6d to %6d,  discovered_ct: %d"
+        , start_item_id
+        , start_item_id+scan_ct-1
+        , discovered_ct
+        )
+
+                        -- Still have more rows to scan? Resume scan after
+                        -- giving UI a second to breathe.
+    if start_item_id + scan_ct < final_end_id then
+        zo_callLater( function()
+                        LibCraftText.DiscoverRecipeFoodPairs(
+                                  start_item_id + scan_ct
+                                , scan_ct
+                                , final_end_id
+                                , discovered_ct )
+                      end
+                    , 1000 )
+    else
+        Info("recipe scan complete.")
+    end
+end
+
+function LibCraftText.IsRecipe(item_link)
+    local crafting_type = GetItemLinkRecipeCraftingSkillType(item_link)
+    if crafting_type ~= CRAFTING_TYPE_PROVISIONING then return false end
+
+                        -- Only works in EN English. Part of the giant
+                        -- scan that only occurs when you /lct discover
+                        -- in EN English.
+    local item_name = GetItemLinkName(item_link)
+    if not (item_name and item_name:find("Recipe:",1,false)) then return false end
+
+    return true
 end
 
 function LibCraftText.RegisterCraftingStationListener()

@@ -123,101 +123,105 @@ LibCraftText.ITEM = {
 
 -- Craftable Food and Drink --------------------------------------------------
 --
--- name             string that appears in "Craft Banana Surprise"
+-- name                 string that appears in "Craft Banana Surprise"
+--
+-- food_item_id         item_id for crafted food/drink
+--
+-- recipe_item_id       item_id for recipe to learn how to make this food/drink
 --
 -- recipe_list_index    API value for GetRecipeResultItemInfo() and others
 --
--- recipe_index     API value for GetRecipeResultItemInfo() and others
+-- recipe_index         API value for GetRecipeResultItemInfo() and others
 --
 LibCraftText.RECIPE = {
 -- daily
-  ["AETHERIAL_TEA"                   ] = { name="этерический чай"                       , food_item_id=033602, recipe_list_index=  9, recipe_index= 31, name_2="этерический чай"}
-, ["ALIKR_BEETS_WITH_GOAT_CHEESE"    ] = { name="алик'рская свекла с козьим сыром"      , food_item_id=028338, recipe_list_index=  3, recipe_index= 13}
-, ["BAKED_APPLES"                    ] = { name="печеные яблоки"                        , food_item_id=033837, recipe_list_index=  2, recipe_index=  1}
-, ["BAKED_POTATO"                    ] = { name="печеный картофель"                     , food_item_id=028354, recipe_list_index=  3, recipe_index=  2}
-, ["BANANA_SURPRISE"                 ] = { name="банановый сюрприз"                     , food_item_id=028281, recipe_list_index=  2, recipe_index=  2}
-, ["BARLEY_NECTAR"                   ] = { name="ячменный нектар"                       , food_item_id=033624, recipe_list_index=  8, recipe_index= 14}
-, ["BATTAGLIR_CHOWDER"               ] = { name="чаудер из баттаглира"                  , food_item_id=028394, recipe_list_index=  3, recipe_index= 15}
-, ["BITTERLEMON_TEA"                 ] = { name="горький чай с лимоном"                 , food_item_id=028457, recipe_list_index=  9, recipe_index= 13}
-, ["BLUE_ROAD_MARATHON"              ] = { name="«Марафон по Синей дороге»"             , food_item_id=028513, recipe_list_index= 10, recipe_index= 25}
-, ["BOG_IRON_ALE"                    ] = { name="болотнорудный эль"                     , food_item_id=028405, recipe_list_index=  8, recipe_index=  4}
-, ["BRETON_PORK_SAUSAGE"             ] = { name="бретонская свиная колбаса"             , food_item_id=028342, recipe_list_index=  1, recipe_index= 13}
-, ["CARROT_SOUP"                     ] = { name="морковный суп"                         , food_item_id=028321, recipe_list_index=  3, recipe_index=  1}
-, ["CHICKEN_BREAST"                  ] = { name="куриная грудка"                        , food_item_id=033819, recipe_list_index=  1, recipe_index=  3}
-, ["CHORROL_CORN_ON_THE_COB"         ] = { name="корролский початок кукурузы"           , food_item_id=033514, recipe_list_index=  3, recipe_index= 20}
-, ["CINNAMON_GRAPE_JELLY"            ] = { name="виноградное желе с корицей"            , food_item_id=042790, recipe_list_index=  2, recipe_index= 19}
-, ["CLARIFIED_SYRAH_WINE"            ] = { name="очищенное вино сорта шираз"            , food_item_id=028409, recipe_list_index=  8, recipe_index=  7, name_2="очищенное вино сорта шираз"}
-, ["COMELY_WENCH_WHISKEY"            ] = { name="виски «Смазливая девка»"               , food_item_id=028402, recipe_list_index=  8, recipe_index= 31}
-, ["CYRODILIC_CORNBREAD"             ] = { name="сиродильский кукурузный хлеб"          , food_item_id=033897, recipe_list_index=  3, recipe_index= 25}
-, ["CYRODILIC_PUMPKIN_FRITTERS"      ] = { name="тыква во фритюре по-сиродильски"       , food_item_id=033789, recipe_list_index=  2, recipe_index= 20}
-, ["ELENHIR_ROAST_ANTELOPE"          ] = { name="жареная оленина по-элинирски"          , food_item_id=033520, recipe_list_index=  1, recipe_index= 20}
-, ["ELTHERIC_HOOCH"                  ] = { name="самогон «Элтерический»"                , food_item_id=028417, recipe_list_index=  8, recipe_index= 13, name_2="самогон «Элтерический»"}
-, ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"] = { name="сырная тарелка с фруктами по-фестхолдски", food_item_id=068236, recipe_list_index=  2, recipe_index= 40}
-, ["FISHY_STICK"                     ] = { name="рыбные палочки"                        , food_item_id=033526, recipe_list_index=  1, recipe_index=  1}
-, ["FOUR_EYE_GROG"                   ] = { name="грог «Четыре глаза»"                   , food_item_id=033612, recipe_list_index=  8, recipe_index=  8}
-, ["GARLIC_MASHED_POTATOES"          ] = { name="картофельное пюре с чесноком"          , food_item_id=028346, recipe_list_index=  3, recipe_index= 19}
-, ["GARLIC_PUMPKIN_SEEDS"            ] = { name="тыквенные семена с чесноком"           , food_item_id=033490, recipe_list_index=  2, recipe_index= 14}
-, ["GINGER_WHEAT_BEER"               ] = { name="пшенично-имбирное пиво"                , food_item_id=033963, recipe_list_index=  8, recipe_index= 18}
-, ["GODS_BLIND_ME"                   ] = { name="«Боги, ослепите меня»"                 , food_item_id=028433, recipe_list_index=  8, recipe_index= 25, name_2="«Боги, ослепите меня»"}
-, ["GOLDEN_LAGER"                    ] = { name="золотой лагер"                         , food_item_id=033933, recipe_list_index=  8, recipe_index=  3}
-, ["GOSSAMER_MAZTE"                  ] = { name="мацт «Паутинка»"                       , food_item_id=033957, recipe_list_index=  8, recipe_index= 15}
-, ["GRANDPAS_BEDTIME_TONIC"          ] = { name="тоник «Дедушкин сонный час»"           , food_item_id=028444, recipe_list_index= 10, recipe_index= 31}
-, ["GRAPE_PRESERVES"                 ] = { name="виноградное варенье"                   , food_item_id=033825, recipe_list_index=  2, recipe_index=  3}
-, ["HAGRAVENS_TONIC"                 ] = { name="тоник ворожеи"                         , food_item_id=068263, recipe_list_index= 10, recipe_index= 42}
-, ["HARE_IN_GARLIC_SAUCE"            ] = { name="заяц в чесночном соусе"                , food_item_id=033581, recipe_list_index=  1, recipe_index= 21, name_2="заяц в чесночном соусе"}
-, ["HEARTY_GARLIC_CORN_CHOWDER"      ] = { name="наваристый зерновой чаудер с чесноком" , food_item_id=068239, recipe_list_index=  3, recipe_index= 40}
-, ["HONEY_RYE"                       ] = { name="медово-ржаной виски"                   , food_item_id=028421, recipe_list_index=  8, recipe_index= 16}
-, ["JERALL_VIEW_INN_CARROT_CAKE"     ] = { name="морковный торт таверны «Радушие Джерола»", food_item_id=033575, recipe_list_index=  3, recipe_index= 21}
-, ["LEMON_FLOWER_MAZTE"              ] = { name="лимонный мацт"                         , food_item_id=033945, recipe_list_index=  8, recipe_index=  9}
-, ["LILMOTH_GARLIC_HAGFISH"          ] = { name="пиявкорот с чесноком по-лилмотски"     , food_item_id=068235, recipe_list_index=  1, recipe_index= 42}
-, ["LUSTY_ARGONIAN_MAID_MAZTE"       ] = { name="мацт «Похотливая аргонианская дева»"   , food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="мацт «Похотливая аргонианская дев"}
-, ["MAMMOTH_SNOUT_PIE"               ] = { name="пирог с хоботом мамонта"               , food_item_id=033903, recipe_list_index=  1, recipe_index= 25}
-, ["MAORMER_TEA"                     ] = { name="маормерский чай"                       , food_item_id=028465, recipe_list_index=  9, recipe_index= 19}
-, ["MARKARTH_MEAD"                   ] = { name="маркартский мед"                       , food_item_id=068257, recipe_list_index=  8, recipe_index= 42}
-, ["MAZTE"                           ] = { name="мацт"                                  , food_item_id=033606, recipe_list_index=  8, recipe_index=  5}
-, ["MERMAID_WHISKEY"                 ] = { name="виски «Русалка»"                       , food_item_id=033630, recipe_list_index=  8, recipe_index= 17}
-, ["MILLET_STUFFED_PORK_LOIN"        ] = { name="свиная вырезка с начинкой из пшена"    , food_item_id=043088, recipe_list_index=  1, recipe_index= 31}
-, ["MULLED_WINE"                     ] = { name="пряное вино"                           , food_item_id=033969, recipe_list_index=  8, recipe_index= 21}
-, ["MUTHSERAS_REMORSE"               ] = { name="«Раскаяние мутсэры»"                   , food_item_id=068260, recipe_list_index=  9, recipe_index= 42}
-, ["NEREID_WINE"                     ] = { name="вино нереиды"                          , food_item_id=033975, recipe_list_index=  8, recipe_index= 24}
-, ["NIBENESE_GARLIC_CARROTS"         ] = { name="нибенейская морковь с чесноком"        , food_item_id=033478, recipe_list_index=  3, recipe_index= 14}
-, ["NUT_BROWN_ALE"                   ] = { name="темный ореховый эль"                   , food_item_id=028401, recipe_list_index=  8, recipe_index=  1}
-, ["ORCREST_GARLIC_APPLE_JELLY"      ] = { name="чесночно-яблочное желе из Оркреста"    , food_item_id=043094, recipe_list_index=  2, recipe_index= 31}
-, ["PELLITINE_TOMATO_RICE"           ] = { name="пеллитинский рис с томатом"            , food_item_id=042814, recipe_list_index=  2, recipe_index= 13}
-, ["RED_RYE_BEER"                    ] = { name="красное ржаное пиво"                   , food_item_id=033600, recipe_list_index=  8, recipe_index=  2}
-, ["REDORAN_PEPPERED_MELON"          ] = { name="редоранская перченая дыня"             , food_item_id=033552, recipe_list_index=  2, recipe_index= 15}
-, ["ROAST_CORN"                      ] = { name="жареная кукуруза"                      , food_item_id=033813, recipe_list_index=  3, recipe_index=  3}
-, ["RYE_IN_YOUR_EYE"                 ] = { name="«Рожь-в-глазах»"                       , food_item_id=028429, recipe_list_index=  8, recipe_index= 22}
-, ["SEAFLOWER_TEA"                   ] = { name="чай «Морской цветок»"                  , food_item_id=034005, recipe_list_index=  9, recipe_index= 15}
-, ["SENCHAL_CURRY_FISH_AND_RICE"     ] = { name="сенчальское рыбное карри с рисом"      , food_item_id=028350, recipe_list_index=  1, recipe_index= 19}
-, ["SKYRIM_JAZBAY_CROSTATA"          ] = { name="песочная полоска с желе из винограда джазби", food_item_id=033909, recipe_list_index=  2, recipe_index= 25}
-, ["SORRY_HONEY_LAGER"               ] = { name="лагер «Извини, дорогая»"               , food_item_id=033642, recipe_list_index=  8, recipe_index= 23}
-, ["SOUR_MASH"                       ] = { name="кислый затор"                          , food_item_id=028425, recipe_list_index=  8, recipe_index= 19}
-, ["SPICEBERRY_CHAI"                 ] = { name="пряный ягодный чай"                    , food_item_id=033684, recipe_list_index=  9, recipe_index= 20}
-, ["SPICED_MAZTE"                    ] = { name="пряный мацт"                           , food_item_id=033636, recipe_list_index=  8, recipe_index= 20}
-, ["STORMHOLD_BAKED_BANANAS"         ] = { name="печеные бананы по-стормхолдски"        , food_item_id=033587, recipe_list_index=  2, recipe_index= 21}
-, ["SURILIE_SYRAH_WINE"              ] = { name="вино Сурили сорта шираз"               , food_item_id=033939, recipe_list_index=  8, recipe_index=  6}
-, ["TORVAL_MINT_TEA"                 ] = { name="торвальский мятный чай"                , food_item_id=034017, recipe_list_index=  9, recipe_index= 21}
-, ["TREACLEBERRY_TEA"                ] = { name="ягодный чай с патокой"                 , food_item_id=033672, recipe_list_index=  9, recipe_index= 14}
-, ["TWO_ZEPHYR_TEA"                  ] = { name="чай «Два зефира»"                      , food_item_id=028473, recipe_list_index=  9, recipe_index= 25}
-, ["VENISON_PASTY"                   ] = { name="корзиночка с олениной"                 , food_item_id=028398, recipe_list_index=  1, recipe_index= 15}
-, ["WEST_WEALD_CORN_CHOWDER"         ] = { name="зерновой чаудер Западного Вельда"      , food_item_id=032160, recipe_list_index=  3, recipe_index= 31}
-, ["WHITERUN_CHEESE_BAKED_TROUT"     ] = { name="запеченная с сыром вайтранская форель" , food_item_id=033484, recipe_list_index=  1, recipe_index= 14}
+  ["AETHERIAL_TEA"                      ] = { name="этерический чай"                       , food_item_id=033602, recipe_item_id=046049, recipe_list_index=  9, recipe_index= 31, name_2="этерический чай"}
+, ["ALIKR_BEETS_WITH_GOAT_CHEESE"       ] = { name="алик'рская свекла с козьим сыром"      , food_item_id=028338, recipe_item_id=045899, recipe_list_index=  3, recipe_index= 13}
+, ["BAKED_APPLES"                       ] = { name="печеные яблоки"                        , food_item_id=033837, recipe_item_id=045889, recipe_list_index=  2, recipe_index=  1}
+, ["BAKED_POTATO"                       ] = { name="печеный картофель"                     , food_item_id=028354, recipe_item_id=045912, recipe_list_index=  3, recipe_index=  2}
+, ["BANANA_SURPRISE"                    ] = { name="банановый сюрприз"                     , food_item_id=028281, recipe_item_id=045913, recipe_list_index=  2, recipe_index=  2}
+, ["BARLEY_NECTAR"                      ] = { name="ячменный нектар"                       , food_item_id=033624, recipe_item_id=045984, recipe_list_index=  8, recipe_index= 14}
+, ["BATTAGLIR_CHOWDER"                  ] = { name="чаудер из баттаглира"                  , food_item_id=028394, recipe_item_id=045946, recipe_list_index=  3, recipe_index= 15}
+, ["BITTERLEMON_TEA"                    ] = { name="горький чай с лимоном"                 , food_item_id=028457, recipe_item_id=046000, recipe_list_index=  9, recipe_index= 13}
+, ["BLUE_ROAD_MARATHON"                 ] = { name="«Марафон по Синей дороге»"             , food_item_id=028513, recipe_item_id=046030, recipe_list_index= 10, recipe_index= 25}
+, ["BOG_IRON_ALE"                       ] = { name="болотнорудный эль"                     , food_item_id=028405, recipe_item_id=045971, recipe_list_index=  8, recipe_index=  4}
+, ["BRETON_PORK_SAUSAGE"                ] = { name="бретонская свиная колбаса"             , food_item_id=028342, recipe_item_id=045900, recipe_list_index=  1, recipe_index= 13}
+, ["CARROT_SOUP"                        ] = { name="морковный суп"                         , food_item_id=028321, recipe_item_id=045887, recipe_list_index=  3, recipe_index=  1}
+, ["CHICKEN_BREAST"                     ] = { name="куриная грудка"                        , food_item_id=033819, recipe_item_id=045935, recipe_list_index=  1, recipe_index=  3}
+, ["CHORROL_CORN_ON_THE_COB"            ] = { name="корролский початок кукурузы"           , food_item_id=033514, recipe_item_id=045929, recipe_list_index=  3, recipe_index= 20}
+, ["CINNAMON_GRAPE_JELLY"               ] = { name="виноградное желе с корицей"            , food_item_id=042790, recipe_item_id=045907, recipe_list_index=  2, recipe_index= 19}
+, ["CLARIFIED_SYRAH_WINE"               ] = { name="очищенное вино сорта шираз"            , food_item_id=028409, recipe_item_id=045972, recipe_list_index=  8, recipe_index=  7, name_2="очищенное вино сорта шираз"}
+, ["COMELY_WENCH_WHISKEY"               ] = { name="виски «Смазливая девка»"               , food_item_id=028402, recipe_item_id=046048, recipe_list_index=  8, recipe_index= 31}
+, ["CYRODILIC_CORNBREAD"                ] = { name="сиродильский кукурузный хлеб"          , food_item_id=033897, recipe_item_id=045958, recipe_list_index=  3, recipe_index= 25}
+, ["CYRODILIC_PUMPKIN_FRITTERS"         ] = { name="тыква во фритюре по-сиродильски"       , food_item_id=033789, recipe_item_id=045931, recipe_list_index=  2, recipe_index= 20}
+, ["ELENHIR_ROAST_ANTELOPE"             ] = { name="жареная оленина по-элинирски"          , food_item_id=033520, recipe_item_id=045930, recipe_list_index=  1, recipe_index= 20}
+, ["ELTHERIC_HOOCH"                     ] = { name="самогон «Элтерический»"                , food_item_id=028417, recipe_item_id=045974, recipe_list_index=  8, recipe_index= 13, name_2="самогон «Элтерический»"}
+, ["FIRSTHOLD_FRUIT_AND_CHEESE_PLATE"   ] = { name="сырная тарелка с фруктами по-фестхолдски", food_item_id=068236, recipe_item_id=068192, recipe_list_index=  2, recipe_index= 40}
+, ["FISHY_STICK"                        ] = { name="рыбные палочки"                        , food_item_id=033526, recipe_item_id=045888, recipe_list_index=  1, recipe_index=  1}
+, ["FOUR_EYE_GROG"                      ] = { name="грог «Четыре глаза»"                   , food_item_id=033612, recipe_item_id=045982, recipe_list_index=  8, recipe_index=  8}
+, ["GARLIC_MASHED_POTATOES"             ] = { name="картофельное пюре с чесноком"          , food_item_id=028346, recipe_item_id=045905, recipe_list_index=  3, recipe_index= 19}
+, ["GARLIC_PUMPKIN_SEEDS"               ] = { name="тыквенные семена с чесноком"           , food_item_id=033490, recipe_item_id=045925, recipe_list_index=  2, recipe_index= 14}
+, ["GINGER_WHEAT_BEER"                  ] = { name="пшенично-имбирное пиво"                , food_item_id=033963, recipe_item_id=045993, recipe_list_index=  8, recipe_index= 18}
+, ["GODS_BLIND_ME"                      ] = { name="«Боги, ослепите меня»"                 , food_item_id=028433, recipe_item_id=045978, recipe_list_index=  8, recipe_index= 25, name_2="«Боги, ослепите меня»"}
+, ["GOLDEN_LAGER"                       ] = { name="золотой лагер"                         , food_item_id=033933, recipe_item_id=045988, recipe_list_index=  8, recipe_index=  3}
+, ["GOSSAMER_MAZTE"                     ] = { name="мацт «Паутинка»"                       , food_item_id=033957, recipe_item_id=045992, recipe_list_index=  8, recipe_index= 15}
+, ["GRANDPAS_BEDTIME_TONIC"             ] = { name="тоник «Дедушкин сонный час»"           , food_item_id=028444, recipe_item_id=046050, recipe_list_index= 10, recipe_index= 31}
+, ["GRAPE_PRESERVES"                    ] = { name="виноградное варенье"                   , food_item_id=033825, recipe_item_id=045936, recipe_list_index=  2, recipe_index=  3}
+, ["HAGRAVENS_TONIC"                    ] = { name="тоник ворожеи"                         , food_item_id=068263, recipe_item_id=068219, recipe_list_index= 10, recipe_index= 42}
+, ["HARE_IN_GARLIC_SAUCE"               ] = { name="заяц в чесночном соусе"                , food_item_id=033581, recipe_item_id=045953, recipe_list_index=  1, recipe_index= 21, name_2="заяц в чесночном соусе"}
+, ["HEARTY_GARLIC_CORN_CHOWDER"         ] = { name="наваристый зерновой чаудер с чесноком" , food_item_id=068239, recipe_item_id=068195, recipe_list_index=  3, recipe_index= 40}
+, ["HONEY_RYE"                          ] = { name="медово-ржаной виски"                   , food_item_id=028421, recipe_item_id=045975, recipe_list_index=  8, recipe_index= 16}
+, ["JERALL_VIEW_INN_CARROT_CAKE"        ] = { name="морковный торт таверны «Радушие Джерола»", food_item_id=033575, recipe_item_id=045952, recipe_list_index=  3, recipe_index= 21}
+, ["LEMON_FLOWER_MAZTE"                 ] = { name="лимонный мацт"                         , food_item_id=033945, recipe_item_id=045990, recipe_list_index=  8, recipe_index=  9}
+, ["LILMOTH_GARLIC_HAGFISH"             ] = { name="пиявкорот с чесноком по-лилмотски"     , food_item_id=068235, recipe_item_id=068191, recipe_list_index=  1, recipe_index= 42}
+, ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name="мацт «Похотливая аргонианская дева»"   , food_item_id=068276, recipe_item_id=068232, recipe_list_index= 14, recipe_index= 31, name_2="мацт «Похотливая аргонианская дев"}
+, ["MAMMOTH_SNOUT_PIE"                  ] = { name="пирог с хоботом мамонта"               , food_item_id=033903, recipe_item_id=045959, recipe_list_index=  1, recipe_index= 25}
+, ["MAORMER_TEA"                        ] = { name="маормерский чай"                       , food_item_id=028465, recipe_item_id=046002, recipe_list_index=  9, recipe_index= 19}
+, ["MARKARTH_MEAD"                      ] = { name="маркартский мед"                       , food_item_id=068257, recipe_item_id=068213, recipe_list_index=  8, recipe_index= 42}
+, ["MAZTE"                              ] = { name="мацт"                                  , food_item_id=033606, recipe_item_id=045981, recipe_list_index=  8, recipe_index=  5}
+, ["MERMAID_WHISKEY"                    ] = { name="виски «Русалка»"                       , food_item_id=033630, recipe_item_id=045985, recipe_list_index=  8, recipe_index= 17}
+, ["MILLET_STUFFED_PORK_LOIN"           ] = { name="свиная вырезка с начинкой из пшена"    , food_item_id=043088, recipe_item_id=045965, recipe_list_index=  1, recipe_index= 31}
+, ["MULLED_WINE"                        ] = { name="пряное вино"                           , food_item_id=033969, recipe_item_id=045994, recipe_list_index=  8, recipe_index= 21}
+, ["MUTHSERAS_REMORSE"                  ] = { name="«Раскаяние мутсэры»"                   , food_item_id=068260, recipe_item_id=068216, recipe_list_index=  9, recipe_index= 42}
+, ["NEREID_WINE"                        ] = { name="вино нереиды"                          , food_item_id=033975, recipe_item_id=045995, recipe_list_index=  8, recipe_index= 24}
+, ["NIBENESE_GARLIC_CARROTS"            ] = { name="нибенейская морковь с чесноком"        , food_item_id=033478, recipe_item_id=045923, recipe_list_index=  3, recipe_index= 14}
+, ["NUT_BROWN_ALE"                      ] = { name="темный ореховый эль"                   , food_item_id=028401, recipe_item_id=045970, recipe_list_index=  8, recipe_index=  1}
+, ["ORCREST_GARLIC_APPLE_JELLY"         ] = { name="чесночно-яблочное желе из Оркреста"    , food_item_id=043094, recipe_item_id=045966, recipe_list_index=  2, recipe_index= 31}
+, ["PELLITINE_TOMATO_RICE"              ] = { name="пеллитинский рис с томатом"            , food_item_id=042814, recipe_item_id=045901, recipe_list_index=  2, recipe_index= 13}
+, ["RED_RYE_BEER"                       ] = { name="красное ржаное пиво"                   , food_item_id=033600, recipe_item_id=045980, recipe_list_index=  8, recipe_index=  2}
+, ["REDORAN_PEPPERED_MELON"             ] = { name="редоранская перченая дыня"             , food_item_id=033552, recipe_item_id=045948, recipe_list_index=  2, recipe_index= 15}
+, ["ROAST_CORN"                         ] = { name="жареная кукуруза"                      , food_item_id=033813, recipe_item_id=045934, recipe_list_index=  3, recipe_index=  3}
+, ["RYE_IN_YOUR_EYE"                    ] = { name="«Рожь-в-глазах»"                       , food_item_id=028429, recipe_item_id=045977, recipe_list_index=  8, recipe_index= 22}
+, ["SEAFLOWER_TEA"                      ] = { name="чай «Морской цветок»"                  , food_item_id=034005, recipe_item_id=046018, recipe_list_index=  9, recipe_index= 15}
+, ["SENCHAL_CURRY_FISH_AND_RICE"        ] = { name="сенчальское рыбное карри с рисом"      , food_item_id=028350, recipe_item_id=045906, recipe_list_index=  1, recipe_index= 19}
+, ["SKYRIM_JAZBAY_CROSTATA"             ] = { name="песочная полоска с желе из винограда джазби", food_item_id=033909, recipe_item_id=045960, recipe_list_index=  2, recipe_index= 25}
+, ["SORRY_HONEY_LAGER"                  ] = { name="лагер «Извини, дорогая»"               , food_item_id=033642, recipe_item_id=045987, recipe_list_index=  8, recipe_index= 23}
+, ["SOUR_MASH"                          ] = { name="кислый затор"                          , food_item_id=028425, recipe_item_id=045976, recipe_list_index=  8, recipe_index= 19}
+, ["SPICEBERRY_CHAI"                    ] = { name="пряный ягодный чай"                    , food_item_id=033684, recipe_item_id=046012, recipe_list_index=  9, recipe_index= 20}
+, ["SPICED_MAZTE"                       ] = { name="пряный мацт"                           , food_item_id=033636, recipe_item_id=045986, recipe_list_index=  8, recipe_index= 20}
+, ["STORMHOLD_BAKED_BANANAS"            ] = { name="печеные бананы по-стормхолдски"        , food_item_id=033587, recipe_item_id=045954, recipe_list_index=  2, recipe_index= 21}
+, ["SURILIE_SYRAH_WINE"                 ] = { name="вино Сурили сорта шираз"               , food_item_id=033939, recipe_item_id=045989, recipe_list_index=  8, recipe_index=  6}
+, ["TORVAL_MINT_TEA"                    ] = { name="торвальский мятный чай"                , food_item_id=034017, recipe_item_id=046020, recipe_list_index=  9, recipe_index= 21}
+, ["TREACLEBERRY_TEA"                   ] = { name="ягодный чай с патокой"                 , food_item_id=033672, recipe_item_id=046010, recipe_list_index=  9, recipe_index= 14}
+, ["TWO_ZEPHYR_TEA"                     ] = { name="чай «Два зефира»"                      , food_item_id=028473, recipe_item_id=046004, recipe_list_index=  9, recipe_index= 25}
+, ["VENISON_PASTY"                      ] = { name="корзиночка с олениной"                 , food_item_id=028398, recipe_item_id=045947, recipe_list_index=  1, recipe_index= 15}
+, ["WEST_WEALD_CORN_CHOWDER"            ] = { name="зерновой чаудер Западного Вельда"      , food_item_id=032160, recipe_item_id=045964, recipe_list_index=  3, recipe_index= 31}
+, ["WHITERUN_CHEESE_BAKED_TROUT"        ] = { name="запеченная с сыром вайтранская форель" , food_item_id=033484, recipe_item_id=045924, recipe_list_index=  1, recipe_index= 14}
 
 -- master
-, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="томатно-свекольная запеканка с каплуном", food_item_id=068251, recipe_list_index=  7, recipe_index= 28, name_2="хлебный конверт с окунем в дынном"}
-, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="консервированный тушеный кролик"       , food_item_id=068252, recipe_list_index=  7, recipe_index= 29, name_2="хлебный конверт с окунем в дынном"}
-, ["LONGFIN_PASTY_WITH_MELON_SAUCE"     ] = { name="хлебный конверт с окунем в дынном соусе", food_item_id=068253, recipe_list_index=  7, recipe_index= 30, name_2="хлебный конверт с окунем в дынном"}
-, ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name="мацт «Похотливая аргонианская дева»"   , food_item_id=068276, recipe_list_index= 14, recipe_index= 31, name_2="мацт «Похотливая аргонианская дев"}
-, ["ORCREST_AGONY_PALE_ALE"             ] = { name="светлый эль «Агония Оркреста»"         , food_item_id=068275, recipe_list_index= 14, recipe_index= 30, name_2="светлый эль «Агония Орк"}
-, ["ORZORGAS_BLOOD_PRICE_PIE"           ] = { name="ценная корзиночка с кровью от Орзорги" , food_item_id=071058, recipe_list_index= 16, recipe_index=  3, name_2="ценная корзиночка с кровью от Орзо"}
-, ["ORZORGAS_RED_FROTHGAR"              ] = { name="красный пенный напиток от Орзорги"     , food_item_id=071056, recipe_list_index= 15, recipe_index= 14, name_2="красный пенный напиток от Ор"}
-, ["ORZORGAS_SMOKED_BEAR_HAUNCH"        ] = { name="копченый медвежий окорок от Орзорги"   , food_item_id=071059, recipe_list_index= 16, recipe_index=  4, name_2="копченый медвежий окорок от Орзо"}
-, ["ORZORGAS_TRIPE_TRIFLE_POCKET"       ] = { name="хлебный конверт с требухой от Орзорги" , food_item_id=071057, recipe_list_index= 16, recipe_index=  2, name_2="хлебный конверт с требухой от Орзо"}
-, ["PSIJIC_AMBROSIA"                    ] = { name="амброзия Псиджиков"                    , food_item_id=064221, recipe_list_index= 15, recipe_index=  1, name_2="амброзия Псид"}
-, ["SENCHE_TIGER_SINGLE_MALT"           ] = { name="односолодовый виски «Сенч-тигр»"       , food_item_id=068273, recipe_list_index= 14, recipe_index= 28, name_2="односолодовый виски «Сенч"}
-, ["VELOTHI_VIEW_VINTAGE_MALBEC"        ] = { name="выдержанный мальбек «Велотийский вид»" , food_item_id=068274, recipe_list_index= 14, recipe_index= 29, name_2="выдержанный мальбек «Велотийский"}
-, ["WITHERED_TREE_INN_VENISON_POT_ROAST"] = { name="тушеная оленина из «Высохшего дерева»" , food_item_id=068254, recipe_list_index=  7, recipe_index= 31, name_2="хлебный конверт с окунем в дынном"}
+, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="томатно-свекольная запеканка с каплуном", food_item_id=068251, recipe_item_id=068207, recipe_list_index=  7, recipe_index= 28, name_2="хлебный конверт с окунем в дынном"}
+, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="консервированный тушеный кролик"       , food_item_id=068252, recipe_item_id=068208, recipe_list_index=  7, recipe_index= 29, name_2="хлебный конверт с окунем в дынном"}
+, ["LONGFIN_PASTY_WITH_MELON_SAUCE"     ] = { name="хлебный конверт с окунем в дынном соусе", food_item_id=068253, recipe_item_id=068209, recipe_list_index=  7, recipe_index= 30, name_2="хлебный конверт с окунем в дынном"}
+, ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name="мацт «Похотливая аргонианская дева»"   , food_item_id=068276, recipe_item_id=068232, recipe_list_index= 14, recipe_index= 31, name_2="мацт «Похотливая аргонианская дев"}
+, ["ORCREST_AGONY_PALE_ALE"             ] = { name="светлый эль «Агония Оркреста»"         , food_item_id=068275, recipe_item_id=068231, recipe_list_index= 14, recipe_index= 30, name_2="светлый эль «Агония Орк"}
+, ["ORZORGAS_BLOOD_PRICE_PIE"           ] = { name="ценная корзиночка с кровью от Орзорги" , food_item_id=071058, recipe_item_id=071062, recipe_list_index= 16, recipe_index=  3, name_2="ценная корзиночка с кровью от Орзо"}
+, ["ORZORGAS_RED_FROTHGAR"              ] = { name="красный пенный напиток от Орзорги"     , food_item_id=071056, recipe_item_id=071060, recipe_list_index= 15, recipe_index= 14, name_2="красный пенный напиток от Ор"}
+, ["ORZORGAS_SMOKED_BEAR_HAUNCH"        ] = { name="копченый медвежий окорок от Орзорги"   , food_item_id=071059, recipe_item_id=071063, recipe_list_index= 16, recipe_index=  4, name_2="копченый медвежий окорок от Орзо"}
+, ["ORZORGAS_TRIPE_TRIFLE_POCKET"       ] = { name="хлебный конверт с требухой от Орзорги" , food_item_id=071057, recipe_item_id=071061, recipe_list_index= 16, recipe_index=  2, name_2="хлебный конверт с требухой от Орзо"}
+, ["PSIJIC_AMBROSIA"                    ] = { name="амброзия Псиджиков"                    , food_item_id=064221, recipe_item_id=064223, recipe_list_index= 15, recipe_index=  1, name_2="амброзия Псид"}
+, ["SENCHE_TIGER_SINGLE_MALT"           ] = { name="односолодовый виски «Сенч-тигр»"       , food_item_id=068273, recipe_item_id=068229, recipe_list_index= 14, recipe_index= 28, name_2="односолодовый виски «Сенч"}
+, ["VELOTHI_VIEW_VINTAGE_MALBEC"        ] = { name="выдержанный мальбек «Велотийский вид»" , food_item_id=068274, recipe_item_id=068230, recipe_list_index= 14, recipe_index= 29, name_2="выдержанный мальбек «Велотийский"}
+, ["WITHERED_TREE_INN_VENISON_POT_ROAST"] = { name="тушеная оленина из «Высохшего дерева»" , food_item_id=068254, recipe_item_id=068210, recipe_list_index=  7, recipe_index= 31, name_2="хлебный конверт с окунем в дынном"}
 }
 
 
