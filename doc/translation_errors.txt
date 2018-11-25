@@ -1,6 +1,7 @@
 Typos in translations
 
 
+------------------------------------------------------------------------------
 FR baudier should be baudrier
               key = "$DAILY_COND_CL_03_06"
           ,   en  = "Craft Normal Cotton Sash"
@@ -17,10 +18,32 @@ FR Oak Shield is broken, lacks material mention
           ,   fr  = "Fabriquez un bouclier normal"
           }
 
+2018-11-25 Bug filed:
+    3x Daily Crafting Writ quest condition text typo/omissions in FR French translations:
+
+    1. "Fabriquez un baudier en coton normal"
+    should be: "baudrier"
+    (EN "Craft Normal Cotton Sash")
+
+    2. "Fabriquez un bouclier normal"
+    should be: "Fabriquez un bouclier en chêne normal"
+    missing material name "chêne"
+    (EN "Craft Normal Oak Shield")
+
+    3.  "Fabriquez un bâton de rétablissement normal"
+    should be: "Fabriquez un bâton de rétablissement en chêne normal"
+    missing material name "chêne"
+    (EN "Craft Normal Oak Restoration Staff")
+
+    These errors make it hard for add-ons to determine what to craft.
+------------------------------------------------------------------------------
+
+
 
 CL Rank 6 daily  for Kresh Shoes/Hat/Sash
 - asks for Spider Silk shoes, should ask for Kresh
 - asks for Spider Silk sash,  should ask for Kresh Hat
+
 - asks for Kresh Sash, correct.
 
 "Fabriquez un baudrier en soie d'araignee normal" is FR "make a spider silk sash" but that particular condition is actually "Craft a Normal Kresh Hat"
@@ -57,6 +80,22 @@ ES Spanish has the same bug.
           ,   ru  = "Craft Normal Kresh Sash"
           ,   ja  = "クレッシュのサッシュ(ノーマル)を生産する"
           }
+
+2018-11-25 bug NOT filed until I care enough to re-verify on a CL Rank 6 character:
+
+2x more FR Translation errors:
+
+Daily crafting writ, quest condition text for daily crafting writ, tier 6, erroneously asks for Spider Silk "soie d'araignée" instead of Kresh:
+
+1. "Fabriquez un baudrier en soie d'araignée normal"
+should be: "Fabriquez un baudrier de kresh normal"
+(EN "Craft Normal Kresh Hat")
+
+2. "Fabriquez un baudrier en soie d'araignée normal"
+should be: "Fabriquez un baudrier de kresh normal"
+
+------------------------------------------------------------------------------
+
 
 
 ES enchanting rank 6 uses RERA (EN:Greater, ES:superior), but asks for DERADO (EN:grand ES:grande)
