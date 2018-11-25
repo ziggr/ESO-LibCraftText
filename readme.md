@@ -174,7 +174,7 @@ If they are something more permanent, with a key that appears in `lang_template.
 - [x] Rearrange quest/dialog stuff into tables lower in the file
 - [x] Find all master writ recipes!
 - [x] More master writ test fodder? Meh.
-- [ ] Use LibCraftText in ZZDailyWrits and WritWorthy_AutoQuest.
+- [x] Use LibCraftText in ZZDailyWrits and WritWorthy_AutoQuest.
 - [ ] performance pass: call ParseQuest() in a loop over all quests and see if anything is pointlessly expensive.
 - [ ] DRY collapse of all that copypasta
 
