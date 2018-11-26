@@ -61,10 +61,6 @@ GitHub repo at [https://github.com/ziggr/ESO-LibCraftText](https://github.com/zi
 - IT Italian [ESO Italian Translation](https://www.esoui.com/downloads/info1067-ESOItalianTranslationWIP.html) has not yet gotten to crafting writs. Not supported.
 - JA Japanese [ESO Japanese Translation](https://www.esoui.com/downloads/info2154-ESO-JapaneseLocalization.html)
 
-## Master Writs
-
-**Master writs/Rolis:** As of 2018-11-12, I'm still waiting until ZOS fixes the October 2018 "cannot interact with any crafting stations in player housing" bug that is really making life difficult for guild hall users on both PTS and Live servers.
-
 ---
 Begin notes to Future Zig: developing LibCraftText
 

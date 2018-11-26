@@ -1,3 +1,11 @@
+[B]4.2.5 2018-11-25[/B]
+[LIST]
+[*] Example2 code for daily writ quests
+[*] Example3 code for master writ quests
+[*] I finally caved in and added [FONT="Courier New"]for EachCondition(quest_index)[/FONT] utility code for iterating over quest conditions. If I had to write that loop a dozen times, other folks probably will, too.
+[*] Also added [FONT="Courier New"]ParseQuest(quest_index)[/FONT] to use that iterator on a quest and return a list of its parsed conditions.
+[/LIST]
+
 [B]4.2.4 2018-11-12[/B]
 [LIST]
 [*] Example1 code

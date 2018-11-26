@@ -22,10 +22,11 @@ getpts:
 
 zip:
 	-rm -rf published/LibCraftText published/LibCraftText\ x.x.x.zip
-	mkdir -p 				   published/LibCraftText
-	cp -R lang 				   published/LibCraftText/lang
-	cp ./LibCraftText.* 	   published/LibCraftText/
-	cp ./LibCraftText_Example* published/LibCraftText/
+	mkdir -p 				   		published/LibCraftText
+	cp -R lang 				   		published/LibCraftText/lang
+	cp ./LibCraftText.* 	   		published/LibCraftText/
+	cp ./LibCraftText_Internal.* 	published/LibCraftText/
+	cp ./LibCraftText_Example* 		published/LibCraftText/
 
 	cd published; zip -r LibCraftText\ x.x.x.zip LibCraftText
 
