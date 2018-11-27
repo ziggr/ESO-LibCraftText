@@ -4,6 +4,9 @@ local Master        = {}
 LibCraftText.Daily  = Daily
 LibCraftText.Master = Master
 
+local NBSP=" "          -- Non-breaking space. U+00A0 = UTF=8 C2 A0
+                        -- Variable isn't used anywhere, but I like
+                        -- to have the character handy for copy/paste.
 
 local function ZZDEBUG_ON(msg, ...) print(string.format(msg, ...)) end
 local function ZZDEBUG_OFF(msg, ...) end
@@ -397,19 +400,19 @@ Daily.RE_ALCHEMY_TRAIT = {
 ,   ja = { "(.*)の.*を" }
 }
 Daily.RE_ALCHEMY_SOLVENT = {
-    en = { "([IVX]+)$"          -- [IVX]+ re must occur before any other
+    en = { "([IVX]+)[ :$]"      -- [IVX]+ re must occur before any other. NBSP in [ :$]
          , "Craft (.*) of " }   -- re that might carry an i, v, or x.
 ,   de = { "Stellt etwas Gift [ders]+ .* ([IVX]+) her"
          , "Stellt (.*) [ders]+ .* her" }   -- Must come after Gift re.
-,   fr = { "([IVX]+)$"
+,   fr = { "([IVX]+) ?"         -- NBSP
          , "Préparez une? (.*) de (.*)"
          , "Fabriquez une? ([^ ]+) de .*" }
-,   es = { "([IVX]+)$"
+,   es = { "([IVX]+)[ :$]"
          , "Prepara un[ea]? (.*) de .*"
          , "Crea un[ea]? (.*) de .*"
          }
 ,   it = { "(.*) glyph of"}         -- "health" for all 9 ranks.
-,   ru = { "([IVX]+)$"
+,   ru = { "([IVX]+)[ :$]"
          , "Craft (.*) of "
          , "([^ ]+) of " }
 ,   ja = { "毒(.*)を生産する"
@@ -1020,6 +1023,18 @@ function LibCraftText.hex_dump(buf)
      if i % 16 == 0 then io.write( buf:sub(i-16+1, i):gsub('%c','.'), '\n' ) end
   end
 end
+
+function LibCraftText.hex_dump_str(buf)
+  local out = ""
+  for i=1,math.ceil(#buf/16) * 16 do
+     if (i-1) % 16 == 0 then out = out..(string.format('%08X  ', i-1)) end
+     out = out..( i > #buf and '   ' or string.format('%02X ', buf:byte(i)) )
+     if i %  8 == 0 then out=out..(' ') end
+     if i % 16 == 0 then out=out..buf:sub(i-16+1, i):gsub('%c','.') .. '\n' end
+  end
+  return out
+end
+
 
                         -- From http://lua-users.org/wiki/SplitJoin
                         --

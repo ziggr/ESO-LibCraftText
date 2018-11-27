@@ -214,7 +214,7 @@ function LibCraftText.ParseQuest(quest_index)
                 result.quest_index     = quest_index
                 result.step_index      = step_i
                 result.condition_index = cond_i
-                result.condition_text  = cont_text
+                result.condition_text  = cond_text
                 table.insert(result_list, result)
                 if return_first_hit then
                     return result_list
