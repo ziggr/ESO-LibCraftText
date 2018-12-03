@@ -400,21 +400,25 @@ Daily.RE_ALCHEMY_TRAIT = {
 ,   ja = { "(.*)の.*を" }
 }
 Daily.RE_ALCHEMY_SOLVENT = {
+    -- en = { "([IVX]+)[ :$]"      -- [IVX]+ re must occur before any other. NBSP in [ :$]
     en = { "([IVX]+)[ :$]"      -- [IVX]+ re must occur before any other. NBSP in [ :$]
-         , "Craft (.*) of " }   -- re that might carry an i, v, or x.
+         , "Craft (.*) of "     -- re that might carry an i, v, or x.
+         , "([IVX]+)$" }
 ,   de = { "Stellt etwas Gift [ders]+ .* ([IVX]+) her"
          , "Stellt (.*) [ders]+ .* her" }   -- Must come after Gift re.
 ,   fr = { "([IVX]+) ?"         -- NBSP
          , "Préparez une? (.*) de (.*)"
-         , "Fabriquez une? ([^ ]+) de .*" }
+         , "Fabriquez une? ([^ ]+) de .*"
+         , "([IVX]+)$" }
 ,   es = { "([IVX]+)[ :$]"
+         , "([IVX]+)$"
          , "Prepara un[ea]? (.*) de .*"
-         , "Crea un[ea]? (.*) de .*"
-         }
+         , "Crea un[ea]? (.*) de .*" }
 ,   it = { "(.*) glyph of"}         -- "health" for all 9 ranks.
 ,   ru = { "([IVX]+)[ :$]"
          , "Craft (.*) of "
-         , "([^ ]+) of " }
+         , "([^ ]+) of "
+         , "([IVX]+)$" }
 ,   ja = { "毒(.*)を生産する"
          , ".*の(.*)を"}
 }
