@@ -209,8 +209,8 @@ LibCraftText.RECIPE = {
 , ["WHITERUN_CHEESE_BAKED_TROUT"        ] = { name="ホワイトランのマスのチーズ焼き"                       , food_item_id=033484, recipe_item_id=045924, recipe_list_index=  1, recipe_index= 14}
 
 -- master
-, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="肥育鶏とトマトビーツのキャセロール"                     , food_item_id=068251, recipe_item_id=068207, recipe_list_index=  7, recipe_index= 28, name_2="ロングフィンのパイのメロンソース添え"}
-, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="ジャムで煮込んだ兎肉"                            , food_item_id=068252, recipe_item_id=068208, recipe_list_index=  7, recipe_index= 29, name_2="ロングフィンのパイのメロンソース添え"}
+, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="肥育鶏とトマトビーツのキャセロール"                     , food_item_id=068251, recipe_item_id=068207, recipe_list_index=  7, recipe_index= 28}
+, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="ジャムで煮込んだ兎肉"                            , food_item_id=068252, recipe_item_id=068208, recipe_list_index=  7, recipe_index= 29}
 , ["LONGFIN_PASTY_WITH_MELON_SAUCE"     ] = { name="ロングフィンのパイのメロンソース添え"                    , food_item_id=068253, recipe_item_id=068209, recipe_list_index=  7, recipe_index= 30, name_2="ロングフィンのパイのメロンソース添え"}
 , ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name="好色なアルゴニアンの侍女のマッツェ"                     , food_item_id=068276, recipe_item_id=068232, recipe_list_index= 14, recipe_index= 31, name_2="好色なアルゴニアンの侍女のマッツェ"}
 , ["ORCREST_AGONY_PALE_ALE"             ] = { name="オークレストの苦悶のペールエール"                      , food_item_id=068275, recipe_item_id=068231, recipe_list_index= 14, recipe_index= 30, name_2="オークレストの苦悶のペールエール"}

@@ -209,8 +209,8 @@ LibCraftText.RECIPE = {
 , ["WHITERUN_CHEESE_BAKED_TROUT"        ] = { name="Weißlauf-Käseforelle"                  , food_item_id=033484, recipe_item_id=045924, recipe_list_index=  1, recipe_index= 14}
 
 -- master
-, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="Kapaunauflauf mit Tomaten und Gemüse"  , food_item_id=068251, recipe_item_id=068207, recipe_list_index=  7, recipe_index= 28, name_2="Langflossenpastete mit Melonensoße"}
-, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="Hasenpfeffer mit Eingemachtem"         , food_item_id=068252, recipe_item_id=068208, recipe_list_index=  7, recipe_index= 29, name_2="Langflossenpastete mit Melonensoße"}
+, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="Kapaunauflauf mit Tomaten und Gemüse"  , food_item_id=068251, recipe_item_id=068207, recipe_list_index=  7, recipe_index= 28}
+, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="Hasenpfeffer mit Eingemachtem"         , food_item_id=068252, recipe_item_id=068208, recipe_list_index=  7, recipe_index= 29}
 , ["LONGFIN_PASTY_WITH_MELON_SAUCE"     ] = { name="Langflossenpastete mit Melonensoße"    , food_item_id=068253, recipe_item_id=068209, recipe_list_index=  7, recipe_index= 30, name_2="Langflossenpastete mit Melonensoße"}
 , ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name="Mazte der munteren argonischen Maid"   , food_item_id=068276, recipe_item_id=068232, recipe_list_index= 14, recipe_index= 31, name_2="Mazte der munteren argonischen Maid"}
 , ["ORCREST_AGONY_PALE_ALE"             ] = { name="Orkruh-Schmerzbleichale"               , food_item_id=068275, recipe_item_id=068231, recipe_list_index= 14, recipe_index= 30, name_2="Orkruh-Schmerzbleichale"}

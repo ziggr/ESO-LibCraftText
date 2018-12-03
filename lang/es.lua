@@ -209,8 +209,8 @@ LibCraftText.RECIPE = {
 , ["WHITERUN_CHEESE_BAKED_TROUT"        ] = { name="trucha gratinada de Carrera Blanca"    , food_item_id=033484, recipe_item_id=045924, recipe_list_index=  1, recipe_index= 14}
 
 -- master
-, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="Capon Tomato-Beet Casserole"           , food_item_id=068251, recipe_item_id=068207, recipe_list_index=  7, recipe_index= 28, name_2="Longfin Pasty with Melon Sauce"}
-, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="Jugged Rabbit in Preserves"            , food_item_id=068252, recipe_item_id=068208, recipe_list_index=  7, recipe_index= 29, name_2="Longfin Pasty with Melon Sauce"}
+, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="Capon Tomato-Beet Casserole"           , food_item_id=068251, recipe_item_id=068207, recipe_list_index=  7, recipe_index= 28}
+, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="Jugged Rabbit in Preserves"            , food_item_id=068252, recipe_item_id=068208, recipe_list_index=  7, recipe_index= 29}
 , ["LONGFIN_PASTY_WITH_MELON_SAUCE"     ] = { name="Longfin Pasty with Melon Sauce"        , food_item_id=068253, recipe_item_id=068209, recipe_list_index=  7, recipe_index= 30, name_2="Longfin Pasty with Melon Sauce"}
 , ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name="Mazte de la sensual doncella argoniana", food_item_id=068276, recipe_item_id=068232, recipe_list_index= 14, recipe_index= 31, name_2="Mazte de la sensual doncella argoniana"}
 , ["ORCREST_AGONY_PALE_ALE"             ] = { name="cerveza pálida de la agonía de Orcelia", food_item_id=068275, recipe_item_id=068231, recipe_list_index= 14, recipe_index= 30, name_2="cerveza pálida de la agonía de Orcelia"}

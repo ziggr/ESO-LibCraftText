@@ -209,8 +209,8 @@ LibCraftText.RECIPE = {
 , ["WHITERUN_CHEESE_BAKED_TROUT"        ] = { name="запеченная с сыром вайтранская форель" , food_item_id=033484, recipe_item_id=045924, recipe_list_index=  1, recipe_index= 14}
 
 -- master
-, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="томатно-свекольная запеканка с каплуном", food_item_id=068251, recipe_item_id=068207, recipe_list_index=  7, recipe_index= 28, name_2="хлебный конверт с окунем в дынном"}
-, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="консервированный тушеный кролик"       , food_item_id=068252, recipe_item_id=068208, recipe_list_index=  7, recipe_index= 29, name_2="хлебный конверт с окунем в дынном"}
+, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="томатно-свекольная запеканка с каплуном", food_item_id=068251, recipe_item_id=068207, recipe_list_index=  7, recipe_index= 28}
+, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="консервированный тушеный кролик"       , food_item_id=068252, recipe_item_id=068208, recipe_list_index=  7, recipe_index= 29}
 , ["LONGFIN_PASTY_WITH_MELON_SAUCE"     ] = { name="хлебный конверт с окунем в дынном соусе", food_item_id=068253, recipe_item_id=068209, recipe_list_index=  7, recipe_index= 30, name_2="хлебный конверт с окунем в дынном"}
 , ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name="мацт «Похотливая аргонианская дева»"   , food_item_id=068276, recipe_item_id=068232, recipe_list_index= 14, recipe_index= 31, name_2="мацт «Похотливая аргонианская дев"}
 , ["ORCREST_AGONY_PALE_ALE"             ] = { name="светлый эль «Агония Оркреста»"         , food_item_id=068275, recipe_item_id=068231, recipe_list_index= 14, recipe_index= 30, name_2="светлый эль «Агония Орк"}

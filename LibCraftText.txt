@@ -34,5 +34,5 @@ lang/$(language).lua
 # Normally leave these two lines commented out: LibCraftText does not
 # require saved variables, nor do most users ever want to run "/lct discover"
 #
-# ## SavedVariables: LibCraftTextVars
-# LibCraftText_Discover.lua
+## SavedVariables: LibCraftTextVars
+LibCraftText_Discover.lua

@@ -209,8 +209,8 @@ LibCraftText.RECIPE = {
 , ["WHITERUN_CHEESE_BAKED_TROUT"        ] = { name="truite gratinée de Blancherive"        , food_item_id=033484, recipe_item_id=045924, recipe_list_index=  1, recipe_index= 14}
 
 -- master
-, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="ragoût de capon aux tomates et aux betteraves", food_item_id=068251, recipe_item_id=068207, recipe_list_index=  7, recipe_index= 28, name_2="friand de nagelongue à la sauce au melon"}
-, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="conserve de lapin confit"              , food_item_id=068252, recipe_item_id=068208, recipe_list_index=  7, recipe_index= 29, name_2="friand de nagelongue à la sauce au melon"}
+, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name="ragoût de capon aux tomates et aux betteraves", food_item_id=068251, recipe_item_id=068207, recipe_list_index=  7, recipe_index= 28}
+, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name="conserve de lapin confit"              , food_item_id=068252, recipe_item_id=068208, recipe_list_index=  7, recipe_index= 29}
 , ["LONGFIN_PASTY_WITH_MELON_SAUCE"     ] = { name="friand de nagelongue à la sauce au melon", food_item_id=068253, recipe_item_id=068209, recipe_list_index=  7, recipe_index= 30, name_2="friand de nagelongue à la sauce au melon"}
 , ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name="mazté de la femme de chambre argonienne", food_item_id=068276, recipe_item_id=068232, recipe_list_index= 14, recipe_index= 31, name_2="mazté de la femme de chambre argonienne"}
 , ["ORCREST_AGONY_PALE_ALE"             ] = { name="bière blonde d'agonie d'Orcrête"       , food_item_id=068275, recipe_item_id=068231, recipe_list_index= 14, recipe_index= 30, name_2="bière blonde d'agonie d'Orcrête"}

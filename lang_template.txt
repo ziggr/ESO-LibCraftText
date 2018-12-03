@@ -209,8 +209,8 @@ LibCraftText.RECIPE = {
 , ["WHITERUN_CHEESE_BAKED_TROUT"        ] = { name=$FOOD_033484                            , food_item_id=033484, recipe_item_id=$FOOD_033484_RID, recipe_list_index=$FOOD_033484_RLI, recipe_index=$FOOD_033484_RI }
 
 -- master
-, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name=$FOOD_068251                            , food_item_id=068251, recipe_item_id=$FOOD_068251_RID, recipe_list_index=$FOOD_068251_RLI, recipe_index=$FOOD_068251_RI , name_2=$FOOD_068253B}
-, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name=$FOOD_068252                            , food_item_id=068252, recipe_item_id=$FOOD_068252_RID, recipe_list_index=$FOOD_068252_RLI, recipe_index=$FOOD_068252_RI , name_2=$FOOD_068253B}
+, ["CAPON_TOMATO_BEET_CASSEROLE"        ] = { name=$FOOD_068251                            , food_item_id=068251, recipe_item_id=$FOOD_068251_RID, recipe_list_index=$FOOD_068251_RLI, recipe_index=$FOOD_068251_RI }
+, ["JUGGED_RABBIT_IN_PRESERVES"         ] = { name=$FOOD_068252                            , food_item_id=068252, recipe_item_id=$FOOD_068252_RID, recipe_list_index=$FOOD_068252_RLI, recipe_index=$FOOD_068252_RI }
 , ["LONGFIN_PASTY_WITH_MELON_SAUCE"     ] = { name=$FOOD_068253                            , food_item_id=068253, recipe_item_id=$FOOD_068253_RID, recipe_list_index=$FOOD_068253_RLI, recipe_index=$FOOD_068253_RI , name_2=$FOOD_068253B}
 , ["LUSTY_ARGONIAN_MAID_MAZTE"          ] = { name=$FOOD_068276                            , food_item_id=068276, recipe_item_id=$FOOD_068276_RID, recipe_list_index=$FOOD_068276_RLI, recipe_index=$FOOD_068276_RI , name_2=$FOOD_068276B}
 , ["ORCREST_AGONY_PALE_ALE"             ] = { name=$FOOD_068275                            , food_item_id=068275, recipe_item_id=$FOOD_068275_RID, recipe_list_index=$FOOD_068275_RLI, recipe_index=$FOOD_068275_RI , name_2=$FOOD_068275B}
