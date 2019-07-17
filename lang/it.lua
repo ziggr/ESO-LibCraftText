@@ -691,6 +691,7 @@ LibCraftText.MOTIF = {
 LibCraftText.DAILY.COND = {
     HINT_PR_BREWERS_COOKS_RECIPES = "TRACKER GOAL TEXT"           
 ,   DELIVER_NEAREST_QUARTERMASTER = "TRACKER GOAL TEXT"           
+,   DELIVER_ALLIANCE_DEPOT        = "Deliver Goods to Alliance Supply Depot"
 }
 
 LibCraftText.MASTER.COND = {
