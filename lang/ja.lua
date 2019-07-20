@@ -692,6 +692,7 @@ LibCraftText.DAILY.COND = {
     HINT_PR_BREWERS_COOKS_RECIPES = "醸造家と料理人はレシピを提供できる"           
 ,   DELIVER_NEAREST_QUARTERMASTER = "品物を、一番近い依頼を出す補給係に届ける"        
 ,   DELIVER_ALLIANCE_DEPOT        = "Deliver Goods to Alliance Supply Depot"
+,   DELIVER_CONSORTIUM_TRADEPOST  = "Deliver Goods to Consortium Tradepost"
 }
 
 LibCraftText.MASTER.COND = {

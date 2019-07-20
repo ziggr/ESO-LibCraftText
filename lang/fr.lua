@@ -692,6 +692,7 @@ LibCraftText.DAILY.COND = {
     HINT_PR_BREWERS_COOKS_RECIPES = "Les brasseurs et cuisiniers peuvent fournir des recettes"
 ,   DELIVER_NEAREST_QUARTERMASTER = "Livrez les marchandises au quartier-maître le plus proche"
 ,   DELIVER_ALLIANCE_DEPOT        = "Deliver Goods to Alliance Supply Depot"
+,   DELIVER_CONSORTIUM_TRADEPOST  = "Deliver Goods to Consortium Tradepost"
 }
 
 LibCraftText.MASTER.COND = {
