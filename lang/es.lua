@@ -690,10 +690,12 @@ LibCraftText.MOTIF = {
 
 LibCraftText.DAILY.COND = {
     HINT_PR_BREWERS_COOKS_RECIPES = "Los cerveceros y los cocineros pueden proporcionar recetas"
+,   DELIVER_GOODS_SUBSTRING       = "Entrega la mercancía"  
 ,   DELIVER_NEAREST_QUARTERMASTER = "Entrega la mercancía al intendente más cercano"
 ,   DELIVER_ALLIANCE_DEPOT        = "Deliver Goods to Alliance Supply Depot"
 ,   DELIVER_CONSORTIUM_TRADEPOST  = "Deliver Goods to Consortium Tradepost"
 ,   DELIVER_REFUGEE_RELIEF        = "Deliver Goods to Refugee Relief Site"
+,   DELIVER_FIGHTERS_GUILD        = "Deliver Goods to Fighters Guild Provisioner"
 }
 
 LibCraftText.MASTER.COND = {
