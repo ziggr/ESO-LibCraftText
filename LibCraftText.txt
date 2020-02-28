@@ -1,7 +1,7 @@
 ## Title: LibCraftText
-## AddOnVersion: 501
+## AddOnVersion: 531
 ## Author: ziggr
-## APIVersion: 100026 100027
+## APIVersion: 100030
 ## IsLibrary: true
 ## Description: Multiple language support for detecting crafting quests by name.
 
