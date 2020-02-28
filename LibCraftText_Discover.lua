@@ -65,7 +65,7 @@ EVENT_MANAGER:RegisterForEvent( LibCraftText.name
                               )
 
 function LibCraftText.RegisterSlashCommands()
-    local lsc = LibStub and LibStub:GetLibrary("LibSlashCommander", true)
+    local lsc = LibSlashCommander
     if lsc then
         local cmd = lsc:Register( "/lct"
                                 , function(arg) LibCraftText.SlashCommand(arg) end
