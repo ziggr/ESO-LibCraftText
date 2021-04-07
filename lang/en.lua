@@ -689,8 +689,8 @@ LibCraftText.MOTIF = {
 -- Miscellaneous conditions --------------------------------------------------
 
 LibCraftText.DAILY.COND = {
-    HINT_PR_BREWERS_COOKS_RECIPES = "Brewers and Cooks Can Provide Recipes"
-,   DELIVER_GOODS_SUBSTRING       = "Deliver Goods to "     
+    HINT_PR_BREWERS_COOKS_RECIPES = "Brewer and Chef Merchants Sell Recipes for Writs"
+,   DELIVER_GOODS_SUBSTRING       = "Deliver Goods to "
 ,   DELIVER_NEAREST_QUARTERMASTER = "Deliver Goods to Nearest Writ Quartermaster"
 ,   DELIVER_ALLIANCE_DEPOT        = "Deliver Goods to Alliance Supply Depot"
 ,   DELIVER_CONSORTIUM_TRADEPOST  = "Deliver Goods to Consortium Tradepost"
